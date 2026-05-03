@@ -53,26 +53,38 @@ export default function HomePage() {
 
       <section className="bg-paper py-20 lg:py-28 border-t border-rule">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="meta-marine mb-6">Preface to Edition One</p>
-            <p className="font-serif font-light text-2xl lg:text-[1.875rem] leading-[1.4] tracking-tight text-charcoal">
-              The First Owner&rsquo;s Reference is an annual editorial
-              publication addressing the structural, financial, and
-              operational dimensions of first-time superyacht acquisition.
-              Across nine chapters it surveys the cost of ownership, the
-              structure of the contemporary market, the acquisition
-              process, the new build and brokerage decision, refit,
-              operations, the motor against sailing yacht question, and
-              the team architecture appropriate to a principal entering
-              the asset class. Material is drawn from named published
-              industry data, identified practitioner sources, and an
-              aggregated archive of managed projects; every claim is
-              cited. Content is updated online between editions and
-              republished annually in print so that the figures retain
-              their currency. The publication is edited by experts
-              working inside the superyacht industry, independently
-              funded, and carries no advertising.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+            <div className="lg:col-span-3">
+              <p className="meta-marine mb-3">Preface</p>
+              <p className="meta">Edition One</p>
+            </div>
+            <div className="lg:col-span-9 space-y-6">
+              <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal">
+                An annual editorial publication addressing the structural,
+                financial, and operational dimensions of first-time
+                superyacht acquisition.
+              </p>
+              <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
+                Nine chapters surveying the cost of ownership, the
+                structure of the contemporary market, how the industry
+                actually works, the acquisition process, the new build
+                and brokerage decision, refit, operations, the motor
+                against sailing yacht question, and the team architecture
+                appropriate to a principal entering the asset class.
+              </p>
+              <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
+                Material is drawn from named published industry data,
+                identified practitioner sources, and an aggregated archive
+                of managed projects. Every claim is cited. Content is
+                updated continuously online and republished annually in
+                print so that the figures retain their currency.
+              </p>
+              <ul className="meta-marine flex flex-wrap gap-x-6 gap-y-2 pt-4 border-t border-rule">
+                <li>Edited by industry practitioners</li>
+                <li>Independently funded</li>
+                <li>No advertising, ever</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -99,7 +111,7 @@ export default function HomePage() {
       <section className="bg-paper py-24 lg:py-32">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
           <div className="max-w-2xl">
-            <p className="meta mb-8">From the editor</p>
+            <p className="meta mb-8">From the editors</p>
             <p className="font-serif text-2xl lg:text-3xl leading-relaxed tracking-tight text-charcoal mb-8">
               A reference written from outside the industry that sells the asset.
             </p>
