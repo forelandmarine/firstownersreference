@@ -100,7 +100,7 @@ export default function ColophonPage() {
 
             <h2>Editorial board</h2>
             <p>
-              Editor in Chief: Jack MacNally, Founder, Foreland Marine.
+              Editor in Chief: Daniel Marks.
               <br />
               Editor: To be appointed.
               <br />
@@ -109,6 +109,16 @@ export default function ColophonPage() {
               Picture editor: Fraser Edwards, partnering on Edition One.
               <br />
               Researcher and fact checker: To be appointed.
+            </p>
+            <p>
+              Editorial correspondence:{" "}
+              <a
+                href="mailto:editor@firstownersreference.com"
+                className="link-marine"
+              >
+                editor@firstownersreference.com
+              </a>
+              .
             </p>
 
             <h2>Publisher</h2>

@@ -14,6 +14,15 @@ export function SiteFooter() {
             A yachting field manual, published annually. Independent. Contributor-led.
             Written by Foreland Marine. No advertising, ever.
           </p>
+          <p className="caption mt-4">
+            Editorial:{" "}
+            <a
+              href="mailto:editor@firstownersreference.com"
+              className="link-marine"
+            >
+              editor@firstownersreference.com
+            </a>
+          </p>
         </div>
         <div>
           <p className="meta mb-4">Read</p>

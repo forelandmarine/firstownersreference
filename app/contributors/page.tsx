@@ -68,6 +68,21 @@ export default function ContributorsPage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-20 border-t border-charcoal pt-10 max-w-2xl">
+            <p className="meta-marine mb-4">Propose a contribution</p>
+            <p className="caption leading-relaxed">
+              Editorial proposals, expressions of interest, and corrections
+              are welcome. Write to{" "}
+              <a
+                href="mailto:editor@firstownersreference.com"
+                className="link-marine"
+              >
+                editor@firstownersreference.com
+              </a>
+              . We read everything.
+            </p>
+          </div>
         </section>
       </article>
 
