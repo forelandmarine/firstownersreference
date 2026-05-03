@@ -42,6 +42,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-paper py-20 lg:py-28 border-t border-rule">
+        <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+          <div className="max-w-3xl">
+            <p className="meta mb-6">Edition One &middot; 2026</p>
+            <p className="font-serif font-light text-2xl lg:text-[1.875rem] leading-[1.4] tracking-tight text-charcoal">
+              The Reference is written for principals considering a first
+              yacht acquisition. Nine chapters covering the cost of
+              ownership, the structure of the market, the acquisition
+              process, new build, refit, operations, motor versus sail, and
+              the team to assemble before any contract is signed. Every
+              figure is sourced. The publication is independently funded
+              and carries no advertising.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section
         id="chapters"
         className="bg-paper-deep py-24 lg:py-32 border-t border-rule"

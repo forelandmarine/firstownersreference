@@ -14,7 +14,11 @@ export type SearchEntry = {
   excerpt: string;
   url: string;
   haystack: string;
+  text: string;
 };
+
+export type SnippetPart = { value: string; highlight: boolean };
+export type Snippet = { parts: SnippetPart[] };
 
 function trim(text: string, max = 240): string {
   if (text.length <= max) return text;
@@ -37,6 +41,7 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
   const entries: SearchEntry[] = [];
   const sectionUrl = `/${section.slug}`;
 
+  const sectionText = `${section.title} ${section.standfirst}`;
   entries.push({
     id: `section-${section.slug}`,
     kind: "section",
@@ -46,12 +51,14 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
     title: section.title,
     excerpt: trim(section.standfirst),
     url: sectionUrl,
-    haystack: `${section.title} ${section.standfirst}`.toLowerCase(),
+    haystack: sectionText.toLowerCase(),
+    text: sectionText,
   });
 
   const essay = leadEssays[section.slug];
   if (essay) {
     const essayText = joinParagraphs(essay.paragraphs);
+    const text = `${essay.title} ${essay.standfirst} ${essayText}`;
     entries.push({
       id: `essay-${section.slug}`,
       kind: "essay",
@@ -61,7 +68,8 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
       title: essay.title,
       excerpt: trim(essay.standfirst || essayText),
       url: `${sectionUrl}#essay`,
-      haystack: `${essay.title} ${essay.standfirst} ${essayText}`.toLowerCase(),
+      haystack: text.toLowerCase(),
+      text,
     });
   }
 
@@ -88,6 +96,7 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
     const sourcesText = spread.sources
       .map((s) => `${s.label} ${s.line}`)
       .join(" ");
+    const text = `${spread.title} ${spread.standfirst} ${spreadText} ${sourcesText}`;
     entries.push({
       id: `data-${section.slug}`,
       kind: "data",
@@ -97,8 +106,8 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
       title: spread.title,
       excerpt: trim(spread.standfirst),
       url: `${sectionUrl}#data-spread`,
-      haystack:
-        `${spread.title} ${spread.standfirst} ${spreadText} ${sourcesText}`.toLowerCase(),
+      haystack: text.toLowerCase(),
+      text,
     });
   }
 
@@ -106,6 +115,7 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
   if (study) {
     const caseText = joinParagraphs(study.paragraphs);
     const takeawaysText = study.takeaways.join(" ");
+    const text = `${study.title} ${study.standfirst} ${caseText} ${takeawaysText}`;
     entries.push({
       id: `case-${section.slug}`,
       kind: "case",
@@ -115,8 +125,8 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
       title: study.title,
       excerpt: trim(study.standfirst),
       url: `${sectionUrl}#case`,
-      haystack:
-        `${study.title} ${study.standfirst} ${caseText} ${takeawaysText}`.toLowerCase(),
+      haystack: text.toLowerCase(),
+      text,
     });
   }
 
@@ -128,6 +138,7 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
         ...g.items.map((i) => `${i.question} ${i.detail ?? ""}`),
       ])
       .join(" ");
+    const text = `${list.title} ${list.standfirst} ${list.intent} ${listText}`;
     entries.push({
       id: `checklist-${section.slug}`,
       kind: "checklist",
@@ -137,8 +148,8 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
       title: list.title,
       excerpt: trim(list.standfirst),
       url: `${sectionUrl}#checklist`,
-      haystack:
-        `${list.title} ${list.standfirst} ${list.intent} ${listText}`.toLowerCase(),
+      haystack: text.toLowerCase(),
+      text,
     });
   }
 
@@ -170,4 +181,81 @@ export function searchEntries(query: string): SearchEntry[] {
     .map((s) => s.entry);
 
   return scored;
+}
+
+export function extractSnippets(
+  entry: SearchEntry,
+  tokens: string[],
+  maxSnippets = 3,
+  windowChars = 140
+): Snippet[] {
+  if (tokens.length === 0) return [];
+  const haystack = entry.haystack;
+  const text = entry.text;
+
+  const matches: { start: number; end: number; token: string }[] = [];
+  for (const token of tokens) {
+    let from = 0;
+    while (true) {
+      const idx = haystack.indexOf(token, from);
+      if (idx === -1) break;
+      matches.push({ start: idx, end: idx + token.length, token });
+      from = idx + token.length;
+    }
+  }
+  if (matches.length === 0) return [];
+  matches.sort((a, b) => a.start - b.start);
+
+  type Window = { from: number; to: number; matches: typeof matches };
+  const windows: Window[] = [];
+  for (const m of matches) {
+    const desiredFrom = Math.max(0, m.start - Math.floor(windowChars / 2));
+    const desiredTo = Math.min(text.length, m.end + Math.floor(windowChars / 2));
+    const last = windows[windows.length - 1];
+    if (last && desiredFrom <= last.to) {
+      last.to = Math.max(last.to, desiredTo);
+      last.matches.push(m);
+    } else {
+      windows.push({ from: desiredFrom, to: desiredTo, matches: [m] });
+    }
+  }
+
+  const trimmed = windows.slice(0, maxSnippets);
+
+  return trimmed.map((w) => {
+    let from = w.from;
+    let to = w.to;
+    if (from > 0) {
+      const space = text.indexOf(" ", from);
+      if (space !== -1 && space - from < 30) from = space + 1;
+    }
+    if (to < text.length) {
+      const space = text.lastIndexOf(" ", to);
+      if (space !== -1 && to - space < 30) to = space;
+    }
+
+    const parts: SnippetPart[] = [];
+    let cursor = from;
+    if (from > 0) parts.push({ value: "\u2026 ", highlight: false });
+    for (const m of w.matches) {
+      if (m.start < cursor) continue;
+      if (m.start > cursor) {
+        parts.push({ value: text.slice(cursor, m.start), highlight: false });
+      }
+      parts.push({ value: text.slice(m.start, m.end), highlight: true });
+      cursor = m.end;
+    }
+    if (cursor < to) parts.push({ value: text.slice(cursor, to), highlight: false });
+    if (to < text.length) parts.push({ value: " \u2026", highlight: false });
+
+    return { parts };
+  });
+}
+
+export function tokenise(query: string): string[] {
+  return query
+    .toLowerCase()
+    .split(/\s+/)
+    .map((t) => t.trim())
+    .filter((t) => t.length > 1);
 }
