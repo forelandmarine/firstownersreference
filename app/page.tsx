@@ -42,6 +42,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section
+        id="sections"
+        className="bg-paper-deep py-24 lg:py-32 border-t border-rule"
+      >
+        <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+          <div className="flex items-baseline justify-between mb-16 border-b border-charcoal pb-6">
+            <h2 className="font-serif text-headline leading-tight tracking-tight">
+              Chapters
+            </h2>
+            <p className="meta">Edition One, 2026</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
+            {sections.map((section) => (
+              <SectionCard key={section.slug} section={section} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-paper py-24 lg:py-32">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
           <div className="max-w-2xl">
@@ -66,7 +85,7 @@ export default function HomePage() {
                 holds no yard affiliations and takes no broker commissions.
               </p>
               <p>
-                The publication is structured in numbered sections. Each carries
+                The publication is structured in numbered chapters. Each carries
                 a lead essay, a data spread, a guest opinion from a named
                 contributor, an anonymised case, and a one-page checklist. The
                 aim is a calm, evidence-led reference a first-time owner can
@@ -74,33 +93,14 @@ export default function HomePage() {
               </p>
               <p>
                 Read in any order. Run your own numbers through the calculator.
-                The independence test, in the closing section, is offered for
+                The independence test, in the closing chapter, is offered for
                 application to any adviser under consideration, including the
                 publisher.
               </p>
             </div>
             <p className="meta mt-10">
-              Jack MacNally, Editor in Chief
+              Daniel Marks, Editor in Chief
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="sections"
-        className="bg-paper-deep py-24 lg:py-32 border-t border-rule"
-      >
-        <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-          <div className="flex items-baseline justify-between mb-16 border-b border-charcoal pb-6">
-            <h2 className="font-serif text-headline leading-tight tracking-tight">
-              The sections
-            </h2>
-            <p className="meta">Edition One, 2026</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
-            {sections.map((section) => (
-              <SectionCard key={section.slug} section={section} />
-            ))}
           </div>
         </div>
       </section>
