@@ -206,6 +206,32 @@ export default async function SectionPage(props: {
                         </blockquote>
                       );
                     }
+                    if (p.type === "figure") {
+                      return (
+                        <figure
+                          key={i}
+                          className="my-12 -mx-6 lg:mx-0 lg:-mr-[calc((100vw-80rem)/2+5rem)] xl:-mr-[calc((100vw-80rem)/2+8rem)]"
+                        >
+                          <div className="relative aspect-[3/2] bg-stone-soft overflow-hidden">
+                            <Image
+                              src={p.src}
+                              alt={p.alt}
+                              fill
+                              sizes="(max-width: 1024px) 100vw, 70vw"
+                              className="object-cover"
+                            />
+                          </div>
+                          <figcaption className="caption mt-3 px-6 lg:px-0 max-w-prose">
+                            {p.caption}
+                            {p.credit && (
+                              <span className="meta block mt-1">
+                                {p.credit}
+                              </span>
+                            )}
+                          </figcaption>
+                        </figure>
+                      );
+                    }
                     return null;
                   })}
                 </div>

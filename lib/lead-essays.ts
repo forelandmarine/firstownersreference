@@ -6,6 +6,13 @@ export type LeadEssay = {
     | string
     | { type: "h2"; text: string }
     | { type: "blockquote"; text: string; attribution?: string }
+    | {
+        type: "figure";
+        src: string;
+        alt: string;
+        caption: string;
+        credit?: string;
+      }
   )[];
   readingTime: string;
 };
@@ -215,6 +222,14 @@ export const leadEssays: Record<string, LeadEssay> = {
         type: "blockquote",
         text: "The new build contract is where inexperience gets priced. The cost overrun appears later, but it was paid for at signature.",
       },
+      {
+        type: "figure",
+        src: "/images/raven-side.jpg",
+        alt: "The 60 metre Baltic 111 sailing yacht Raven photographed in profile under sail",
+        caption:
+          "Raven, Baltic 111. A new build delivered against a contract whose change-order procedure, refund guarantee, and dispute forum had been settled at heads of terms.",
+        credit: "Photograph: Fraser Edwards.",
+      },
       { type: "h2", text: "The contract is where it happens" },
       "A new build contract is the most consequential document a yacht buyer signs. It governs USD 30 to USD 200 million of capital across two to five years, and structures every variation, every dispute, every interpretation question in the period during which the yard holds the cards.",
       "Top-tier yards do not contract on industry-standard forms. The MYBA Memorandum of Agreement is the dominant standard for second-hand sale, not new construction. Standard shipbuilding forms exist (the Shipbuilders' Association of Japan SAJ form, the Association of Western European Shipbuilders AWES form, BIMCO's NEWBUILDCON, the Norwegian SHIP 2000) and are summarised in Robert Jardine-Brown's Chambers commentary. SAJ is most used globally and \"thought to favour the shipyard\" in unamended form. But the European yards that matter (Lurssen, Feadship, Oceanco, Royal Huisman, Heesen, Sanlorenzo, Benetti) do not contract on any of those. They contract on heavily customised in-house templates drafted by their counsel, with English law and London arbitration grafted on.",
@@ -273,6 +288,14 @@ export const leadEssays: Record<string, LeadEssay> = {
       {
         type: "blockquote",
         text: "The 30 to 50 percent overrun is not a project management failure. It is the empirical expectation.",
+      },
+      {
+        type: "figure",
+        src: "/images/hetairos-stbarths.jpg",
+        alt: "Hetairos racing in the Caribbean with sails set",
+        caption:
+          "Hetairos at Saint Barths. A well-maintained hull is a refit decision made in advance and prosecuted in writing.",
+        credit: "Photograph: Fraser Edwards.",
       },
       { type: "h2", text: "The 30 to 50 percent overrun pattern" },
       "Industry consensus is that refit projects routinely run 30 to 50 percent over original quoted scope. The pattern is well-rehearsed in trade press. Practitioner consensus from independent owner's representatives points to the same range, with poor specification and weak project management as the dominant drivers. Dockwalk documented a 600 percent overrun on a 1967 Camper & Nicholsons refit (USD 1 million budget, USD 6 million actual, an extreme case but illustrative). The contingency reserves practitioners build into refit budgets reflect this: 10 to 15 percent for known scope, 15 to 20 percent for opened-up vessels, 20 to 25 percent for first-time-opened older hulls.",
@@ -374,6 +397,14 @@ export const leadEssays: Record<string, LeadEssay> = {
       "Above 50 metres the structure expands to 12 to 18 crew. Above 60 metres, 18 to 25. Above 80 metres, 25 to 35 crew. The numbers scale roughly linearly with size to 70 metres and then increase faster as the operational complexity grows.",
       "The crew is the largest single line in the operating budget, 30 to 40 percent of total cost. Crew salary inflation post-pandemic was significant; the bracket between 2021 and 2023 saw double-digit annual increases at junior levels. By 2024 to 2025 the curve has flattened at junior level and continues to rise at senior level. The captain and chief engineer pay growth continues to outpace inflation. Junior crew pay has plateaued.",
       "The operational implication: crew are not a fixed cost. They are a variable cost that the owner manages through retention, reputation, and culture. A yacht that is known to be a good operation, with a captain crew respect, has lower turnover and lower recruitment cost than a yacht with a difficult atmosphere. Turnover compounds. The owner who manages the captain manages the crew. The captain who manages the crew manages the cost.",
+      {
+        type: "figure",
+        src: "/images/adix-onboard-crew.jpg",
+        alt: "Crew aboard the schooner Adix at work on deck",
+        caption:
+          "Adix, deck crew. Operations is the part of yacht ownership that lasts the longest, costs the most over a hold, and is most often delegated without the care it warrants.",
+        credit: "Photograph: Fraser Edwards.",
+      },
       { type: "h2", text: "ISM, MLC, and flag state compliance" },
       "Yachts above 500 gross tonnes operate under the International Safety Management Code, which mandates a documented Safety Management System and regular audit. Yachts engaged in commercial operation (charter) operate under the Maritime Labour Convention, which governs crew working conditions, contracts, hours, and welfare. Both frameworks are binding and audited.",
       "Compliance is delegated to a yacht management company in most cases. Recognised firms include Hill Robinson, Burgess (yacht management arm), Y.CO, Doehle Yachts, Moran, Edmiston (management arm), Camper & Nicholsons (management), and Fraser (management). The management company maintains the SMS, files the regulatory paperwork, runs the audit cycle, and supports the captain on flag state interactions.",
@@ -390,7 +421,8 @@ export const leadEssays: Record<string, LeadEssay> = {
       "AON Marine offers yacht insurance as part of a broader marine and corporate insurance practice. Strengths are integration with broader risk programmes (where the principal\u2019s family office insurance, aviation cover, and other lines are also placed with AON), global reach, and capital. The trade-off is that yacht specialism is one practice within a multi-line firm; service depth on yacht-specific matters varies by team.",
       "Gallagher Specialty (Arthur J. Gallagher & Co.) operates a strong yacht practice particularly active on the US East Coast. Strengths include US fleet coverage, hurricane region underwriting, and access to US syndicate markets. The trade-off is that for European-domiciled owners or yachts cruising primarily in the Mediterranean, the firm\u2019s European depth is thinner than Pantaenius or Howden.",
       "Marsh, the largest broker by revenue globally, places yacht business through its specialty marine teams. Strengths include capital, global reach, and capability for the largest hulls (above 100 m) where bespoke structuring is required. The trade-off is that yacht-specialist service depth varies; many smaller owners find the firm less responsive than a yacht-only broker on routine matters.",
-      "The smaller specialist brokers (Norton & Co, J&H Marsh, AXA Marine, YachtSure, Northstar) carry the rest of the segment. Selection at this level is mostly relationship-based; the underwriting markets accessed are similar to the larger brokers.",
+      "PIB Insurance Brokers is the established UK specialist alternative to the multi-line firms. PIB carries long-standing partnerships with naval architects, designers, and project managers, and maintains a marine division alongside its private-clients yacht book. Its strengths are independence at the broker layer (no underwriting captive to defend), strong relationships across Lloyd\u2019s, and a depth of service that reads closer to Pantaenius than to the global brokers. Worth shortlisting alongside Howden and Pantaenius for owners who want a third specialist quote.",
+      "The smaller specialist brokers (Norton & Co, J&H Marsh, AXA Marine, YachtSure, Northstar, and a small group of single-jurisdiction houses) carry the rest of the segment. Selection at this level is mostly relationship-based; the underwriting markets accessed are similar to the larger brokers.",
       { type: "h2", text: "The underwriting that sits behind the broker" },
       "The broker accesses the underwriters; the underwriting is what pays at claim time. The two are easy to conflate and rarely should be. Three points matter most.",
       "First, the hull and machinery policy should be written on agreed value, not actual cash value. Agreed value means the insurer and the buyer agree, in advance, on the figure that will be paid in a total loss. Actual cash value means the insurer pays the depreciated market value at the time of loss, which is typically materially less. The premium difference is small; the claim difference can be tens of millions on a large hull.",
@@ -455,6 +487,14 @@ export const leadEssays: Record<string, LeadEssay> = {
       "Heesen Yachts\u2019 hybrid programme is the deepest commercial deployment of parallel diesel-electric propulsion in the production-yacht segment. The 50 metre FDHF aluminium series (delivered hulls include Home, Amare II, and Project Orion in early 2025) pairs two main diesels, two diesel generators, and two electric motors that can be operated separately or in any combination. Owners use the electric mode for harbour transits, anchor approaches, and short coastal hops, with the diesels held back for passage work. Owners report meaningful annual fuel reductions; the operational character is closer to a sailing yacht\u2019s silence at anchor than to conventional motor.",
       "Royal Huisman has taken the deeper-engineering route. Aquarius II, a 65 metre sailing yacht, integrates a 580 kWh battery bank capable of running the entire hotel load silently for around 11 hours, with hydro-generators trickle-charging the bank under sail. The shipyard\u2019s AERA concept, developed with Rondal, Artemis Technologies, and Cor D. Rover Design, layers wind-assisted propulsion, hydro-generation, and a hydrogen fuel cell with three pressurised hydrogen bottles for up to 72 hours of zero-emission operation. AERA remains a concept; the technologies behind it are in delivered hulls.",
       "For the buyer thinking about the next ten years, hybrid and electric capability is now a question to ask of any new build at every yard, sailing yacht or motor yacht. Bering Yachts, Wider, Sanlorenzo (with the SX series), Lurssen, Feadship, and Oceanco all have hybrid hulls in build or delivered. The 5,000 GT threshold problem aside, a hybrid motor yacht with strong battery hotel-load capability narrows the carbon gap to a sailing yacht meaningfully. The decision is no longer two-way; it is three-way, with hybrid sitting between.",
+      {
+        type: "figure",
+        src: "/images/velsheda-detail.jpg",
+        alt: "Detail of the J Class yacht Velsheda under sail",
+        caption:
+          "Velsheda, J Class original. The racing-pedigree segment is the part of the sailing yacht world the trade press covers least carefully and the part that most defines value retention at the top of the segment.",
+        credit: "Photograph: Fraser Edwards.",
+      },
       { type: "h2", text: "Racing pedigree and value retention" },
       "Racing is the part of the sailing yacht world the trade press covers least carefully and the part that does most to support residual values at the top of the segment. Three circuits matter.",
       "The J Class circuit. Nine J Class hulls are currently active in the fleet: three surviving originals (Velsheda, Shamrock, Endeavour) refitted for cruising and racing, and six modern builds since 2003 (Ranger, Rainbow, Hanuman, Lionheart, Topaz, Svea). They race at Newport, the Saint Barths Bucket, the Maxi Yacht Rolex Cup, and the J Class World Championship. A further hull is reported in build at Brodotrogir in Croatia. The hulls hold value materially better than comparable cruising sailing yachts, on the strength of provenance, regatta access, and the closed-class nature of the racing. A J Class hull is, in practice, a hold-forever asset for the families who own them.",
