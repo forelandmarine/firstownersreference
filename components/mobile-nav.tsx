@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const NAV_ITEMS = [
   { href: "/#chapters", label: "Chapters" },
@@ -14,6 +14,8 @@ const NAV_ITEMS = [
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (open) {
@@ -27,9 +29,36 @@ export function MobileNav() {
   }, [open]);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open) {
+      triggerRef.current?.focus();
+      return;
+    }
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const focusables = dialog.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    focusables[0]?.focus();
+
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const list = Array.from(focusables);
+      if (list.length === 0) return;
+      const first = list[0];
+      const last = list[list.length - 1];
+      const active = document.activeElement as HTMLElement | null;
+      if (e.shiftKey && active === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && active === last) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -38,6 +67,7 @@ export function MobileNav() {
   return (
     <div className="md:hidden">
       <button
+        ref={triggerRef}
         type="button"
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
@@ -63,6 +93,7 @@ export function MobileNav() {
 
       {open && (
         <div
+          ref={dialogRef}
           role="dialog"
           aria-modal="true"
           aria-label="Site navigation"

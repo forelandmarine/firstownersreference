@@ -7,6 +7,10 @@ import { SiteFooter } from "@/components/site-footer";
 import { DataSpreadBody } from "@/components/data-spread-body";
 import { CaseBody } from "@/components/case-body";
 import { ChecklistBody } from "@/components/checklist-body";
+import { ReadingProgress } from "@/components/reading-progress";
+import { BackToTop } from "@/components/back-to-top";
+import { ChapterStrip } from "@/components/chapter-strip";
+import { ShareChapter } from "@/components/share-chapter";
 import { sections, getSection } from "@/lib/sections";
 import { getLeadEssay } from "@/lib/lead-essays";
 import { getDataSpread } from "@/lib/data-spreads";
@@ -44,9 +48,22 @@ export default async function SectionPage(props: {
   const prev = sections[index - 1];
   const next = sections[index + 1];
 
+  const stripSections: { id: string; label: string }[] = [
+    { id: "essay", label: "Essay" },
+    ...(dataSpread ? [{ id: "data-spread", label: "Data" }] : []),
+    ...(caseStudy ? [{ id: "case", label: "Case" }] : []),
+    ...(checklist ? [{ id: "checklist", label: "Checklist" }] : []),
+  ];
+
   return (
     <>
       <SiteHeader />
+      <ReadingProgress />
+      <ChapterStrip
+        number={section.number}
+        title={section.title}
+        sections={stripSections}
+      />
 
       <article>
         <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[80dvh] lg:min-h-[90dvh]">
@@ -72,13 +89,14 @@ export default async function SectionPage(props: {
               <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-xl">
                 {section.standfirst}
               </p>
-              <div className="mt-10">
+              <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
                 <a
                   href="#essay"
                   className="inline-flex items-center gap-2 meta-marine"
                 >
                   Begin the chapter <span aria-hidden>&darr;</span>
                 </a>
+                <ShareChapter title={section.title} slug={section.slug} />
               </div>
             </div>
             <div className="mt-16 grid grid-cols-2 gap-x-8 gap-y-2">
@@ -329,6 +347,7 @@ export default async function SectionPage(props: {
         </nav>
       </article>
 
+      <BackToTop />
       <SiteFooter />
     </>
   );
