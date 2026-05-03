@@ -100,7 +100,7 @@ export default function ColophonPage() {
 
             <h2>Editorial board</h2>
             <p>
-              Editor in Chief: Jack Norman, Founder, Foreland Marine.
+              Editor in Chief: Jack MacNally, Founder, Foreland Marine.
               <br />
               Editor: To be appointed.
               <br />
@@ -161,7 +161,7 @@ export default function ColophonPage() {
             </p>
             <p>
               <strong>6. Named principals.</strong> The director of Foreland
-              is Jack Norman. Listed at Companies House. Registered with the
+              is Jack MacNally. Listed at Companies House. Registered with the
               Yacht Owners&rsquo; Representative Register (YORR). Resident in
               London.
             </p>

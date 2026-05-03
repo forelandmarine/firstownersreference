@@ -80,7 +80,7 @@ export default function HomePage() {
               </p>
             </div>
             <p className="meta mt-10">
-              Jack Norman, Editor in Chief
+              Jack MacNally, Editor in Chief
             </p>
           </div>
         </div>
