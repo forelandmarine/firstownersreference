@@ -5,7 +5,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-rule">
       <div className="max-w-[80rem] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
         <Link href="/" className="leading-none">
-          <span className="font-serif text-3xl tracking-tight text-charcoal">
+          <span className="font-serif text-2xl tracking-tight text-charcoal">
             The First Owner&rsquo;s Reference
           </span>
         </Link>
