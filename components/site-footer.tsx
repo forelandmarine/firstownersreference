@@ -14,14 +14,6 @@ export function SiteFooter() {
             A yachting field manual, published annually. Independent. Contributor-led.
             Written by Foreland Marine. No advertising, ever.
           </p>
-          <div className="mt-10 opacity-30">
-            <Image
-              src="/brand/foreland-lighthouse-charcoal.svg"
-              alt="Foreland Marine lighthouse"
-              width={28}
-              height={28}
-            />
-          </div>
         </div>
         <div>
           <p className="meta mb-4">Read</p>
@@ -53,20 +45,29 @@ export function SiteFooter() {
             </li>
           </ul>
         </div>
-        <div>
-          <p className="meta mb-4">Publisher</p>
-          <p className="caption mb-2">Published by Foreland Marine.</p>
-          <p className="caption mb-6">
-            An independent superyacht consultancy headquartered in London.
-          </p>
-          <a
-            href="https://forelandmarine.com"
-            className="link-marine caption"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            forelandmarine.com
-          </a>
+        <div className="flex justify-between items-end gap-4">
+          <div>
+            <p className="meta mb-4">Publisher</p>
+            <p className="caption mb-2">Published by Foreland Marine.</p>
+            <p className="caption mb-6">
+              An independent superyacht consultancy headquartered in London.
+            </p>
+            <a
+              href="https://forelandmarine.com"
+              className="link-marine caption"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              forelandmarine.com
+            </a>
+          </div>
+          <Image
+            src="/brand/foreland-lighthouse-charcoal.svg"
+            alt="Foreland Marine lighthouse"
+            width={42}
+            height={42}
+            className="opacity-40 shrink-0"
+          />
         </div>
       </div>
       <div className="border-t border-rule">

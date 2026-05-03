@@ -24,8 +24,8 @@ export default function HomePage() {
           <Image
             src="/brand/foreland-lighthouse-paper.svg"
             alt="Foreland Marine"
-            width={36}
-            height={36}
+            width={54}
+            height={54}
             priority
           />
         </div>
