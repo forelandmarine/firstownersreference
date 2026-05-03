@@ -12,8 +12,8 @@ export default function HomePage() {
 
       <section className="relative h-[100dvh] min-h-[640px] w-full overflow-hidden">
         <Image
-          src="/images/velsheda-aerial.jpg"
-          alt="Velsheda, J Class, under sail"
+          src="/images/stock/jclass-bow.jpg"
+          alt="J Class yacht under sail at the St Barths Bucket regatta"
           fill
           priority
           sizes="100vw"
@@ -35,8 +35,8 @@ export default function HomePage() {
                 Edition One &middot; September 2026
               </p>
               <p className="caption text-paper/90 max-w-sm">
-                Photograph: <em>Velsheda</em>, J Class. 50.7588&deg;N
-                1.2982&deg;W. By Fraser Edwards.
+                Photograph: J Class racing, St Barths Bucket. 17.8995&deg;N
+                62.8333&deg;W.
               </p>
             </div>
           </div>
@@ -55,32 +55,32 @@ export default function HomePage() {
                 The superyacht industry has its glossy magazines. They cover
                 charter destinations, owner profiles, the latest Lürssen
                 delivery. They are funded by the yards and brokers whose
-                interests they cannot critically examine. We are not one of
-                them.
+                interests they cannot critically examine. The Reference is
+                not one of them.
               </p>
               <p>
-                The Reference is written for the reader who has just exited a
-                business, has the means to buy a yacht, and would like to do
-                so without being fleeced. It is published once a year, in print
-                and online, by Foreland Marine, an independent consultancy
-                that holds no yard affiliations and takes no broker
-                commissions. The independence is structural, not stylistic.
+                It is written for the reader who has just exited a business,
+                has the means to buy a yacht, and would like to do so without
+                being fleeced. It is published once a year, in print and
+                online, by an independent consultancy that holds no yard
+                affiliations and takes no broker commissions. The independence
+                is structural, not stylistic.
               </p>
               <p>
                 Eight sections. Each carries a lead essay, a data spread, a
                 guest opinion from a named contributor, an anonymised case,
                 and a one-page checklist. Together they form the field manual
-                we wish a first-time owner had been handed before the
-                conversations that mattered.
+                a first-time owner would benefit from holding before the
+                conversations that matter.
               </p>
               <p>
-                Read it in any order. Run your own numbers through the
-                calculator. Apply the independence test, in the back of the
-                edition, to any adviser you are considering. Including us.
+                Read in any order. Run your own numbers through the calculator.
+                Apply the independence test, in section 8, to any adviser
+                under consideration.
               </p>
             </div>
             <p className="meta mt-10">
-              Jack Norman, Editor in Chief &middot; Foreland Marine
+              Jack Norman, Editor in Chief
             </p>
           </div>
         </div>
@@ -171,8 +171,8 @@ export default function HomePage() {
           </div>
           <div className="relative aspect-[3/4] bg-stone-soft">
             <Image
-              src="/images/rebecca-asyc.jpg"
-              alt="Rebecca, sailing yacht, photographed at the Antigua Superyacht Challenge"
+              src="/images/stock/explorer-sunset.jpg"
+              alt="Explorer-style superyacht at sunset against a Mediterranean headland"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

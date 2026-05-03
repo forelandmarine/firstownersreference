@@ -36,16 +36,16 @@ export default function ColophonPage() {
           <div className="lg:col-span-9 prose-body max-w-prose">
             <h2>Editorial principles</h2>
             <p>
-              No advertising, ever. The Reference is funded by Foreland Marine
-              and by no other commercial party. We do not run advertorial,
-              sponsored content, or any form of paid placement. This is the
-              editorial wedge on which every other decision rests.
+              No advertising, ever. The Reference is funded by the publisher
+              and by no other commercial party. No advertorial, no sponsored
+              content, no paid placement. This is the editorial wedge on which
+              every other decision rests.
             </p>
             <p>
-              Pricing appears only where backed by published market data
-              (Quay Crew, IYBA, SuperYacht Times, MYBA) or by Foreland
-              Marine&rsquo;s own operational data anonymised across at least
-              five projects. Single-source anecdotal numbers do not appear.
+              Pricing appears only where backed by published market data (Quay
+              Crew, IYBA, SuperYacht Times, MYBA) or by aggregated practitioner
+              data anonymised across at least five projects. Single-source
+              anecdotal numbers do not appear.
             </p>
             <p>
               Every guest contributor is paid a flat editorial fee, named
@@ -116,6 +116,54 @@ export default function ColophonPage() {
               Published by Foreland Marine Consultancy Limited. 7 Bell Yard,
               London WC2A 2JR. Companies House registered. SYBAss accredited.
               YORR registered.
+            </p>
+
+            <h2>Publisher disclosure: the independence test, applied</h2>
+            <p>
+              The publisher of this Reference is also a yacht consultancy and
+              has a commercial interest in being engaged by readers. This is
+              disclosed openly. The six-element independence test that runs
+              through the Reference applies to the publisher as it does to
+              every other adviser. Its answers are set out below.
+            </p>
+            <p>
+              <strong>1. Earnings contingent on closing.</strong> Foreland Marine
+              charges fixed and time-based fees. Income does not vary with
+              whether a transaction closes. The firm has walked away from
+              engagements where the right advice was for the client not to
+              proceed.
+            </p>
+            <p>
+              <strong>2. Equity, employment, or referral relationships.</strong>{" "}
+              Foreland holds no equity in any yard, broker, supplier,
+              management company, or charter operation. It accepts no referral
+              fees from any of those parties. The director of Foreland holds
+              no shareholdings in any commercial counterparty in the yacht
+              industry.
+            </p>
+            <p>
+              <strong>3. Counterparty list.</strong> Foreland publishes a
+              complete list of yards, brokers, lawyers, surveyors, and
+              management companies engaged by clients of the firm in the past
+              three years, available on request. The list is provided to
+              readers under standard confidentiality terms.
+            </p>
+            <p>
+              <strong>4. Fee transparency.</strong> Fees are quoted in writing
+              before any engagement. Hourly rates, fixed project fees, and
+              retainer rates are published on engagement. No success fees. No
+              commissions.
+            </p>
+            <p>
+              <strong>5. Professional indemnity insurance.</strong> Foreland
+              holds professional indemnity at GBP 5 million per claim, written
+              through a Lloyd&rsquo;s syndicate.
+            </p>
+            <p>
+              <strong>6. Named principals.</strong> The director of Foreland
+              is Jack Norman. Listed at Companies House. Registered with the
+              Yacht Owners&rsquo; Representative Register (YORR). Resident in
+              London.
             </p>
 
             <h2>Citation</h2>
