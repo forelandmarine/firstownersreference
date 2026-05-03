@@ -1,4 +1,5 @@
 import type { DataSpread } from "@/lib/data-spreads";
+import { getChart } from "@/lib/charts";
 
 export function DataSpreadBody({ spread }: { spread: DataSpread }) {
   return (
@@ -113,6 +114,11 @@ export function DataSpreadBody({ spread }: { spread: DataSpread }) {
               {block.text}
             </p>
           );
+        }
+        if (block.type === "chart") {
+          const chart = getChart(block.chartId);
+          if (!chart) return null;
+          return <div key={i}>{chart}</div>;
         }
         return null;
       })}

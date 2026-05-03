@@ -14,7 +14,8 @@ export type DataSpreadBlock =
       rows: { label: string; value: string; note?: string }[];
       sourceLine?: string;
     }
-  | { type: "note"; text: string };
+  | { type: "note"; text: string }
+  | { type: "chart"; chartId: string };
 
 export type DataSpread = {
   slug: string;
@@ -52,6 +53,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "Foreland Marine project archive, cross-referenced against Fraser, Ocean Independence, and YachtBuyer published guidance.",
       },
+      { type: "chart", chartId: "operating-cost-by-size-band" },
       { type: "h2", text: "Where the money goes, on a typical 50 m" },
       {
         type: "kv",
@@ -101,6 +103,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "BOAT International published case studies.",
       },
+      { type: "chart", chartId: "charter-cases-2025" },
       {
         type: "note",
         text: "Run your own numbers using the running cost calculator. Source assumptions are named on every line.",
@@ -974,6 +977,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey.",
       },
+      { type: "chart", chartId: "captain-pay-by-size" },
       { type: "h2", text: "Crew structure, by yacht size" },
       {
         type: "kv",
@@ -1340,6 +1344,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "Foreland Marine project archive; YPI Crew 2026 salary guide; aggregated published practitioner ranges.",
       },
+      { type: "chart", chartId: "operating-cost-50m-motor-vs-sail" },
       { type: "h2", text: "Capital and depreciation, 35 m comparable" },
       {
         type: "kv",
