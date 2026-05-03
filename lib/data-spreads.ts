@@ -563,9 +563,9 @@ export const dataSpreads: Record<string, DataSpread> = {
     ],
     sources: [
       {
-        label: "SYBAss / IAMI / GUEST, YORP launch June 2023; YORR launch November 2024",
-        line: "Yacht Owner\u2019s Representative Programme and Register, administered by the Superyacht Alliance for Professional Standards.",
-        url: "https://www.sybass.org",
+        label: "SYBAss, IAMI, GUEST: YORP launch July 2023; YORR launch November 2024",
+        line: "Yacht Owner\u2019s Representative Programme and Register, administered by the Superyacht Alliance for Professional Standards. First pilot course 24 to 28 July 2023 at Benetti Yachts Livorno.",
+        url: "https://sybass.org/news/raising-the-game-yacht-owner-representative-course/",
       },
       {
         label: "Watson Farley & Williams",
@@ -932,7 +932,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "IMO MSC.337(91)",
         line: "Code on Noise Levels on Board Ships.",
-        url: "https://www.imo.org",
+        url: "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.337(91).pdf",
       },
       {
         label: "Hill Dickinson, Watson Farley & Williams",
@@ -1147,8 +1147,9 @@ export const dataSpreads: Record<string, DataSpread> = {
         line: "Time-for-time rotation share; year-on-year pay growth in 70 to 79 m bracket.",
       },
       {
-        label: "Pantaenius",
-        line: "Michelle van der Merwe on record on the Bayesian sinking and the limited insurance-market response.",
+        label: "Pantaenius (Michelle van der Merwe)",
+        line: "On record on the Bayesian sinking and the limited insurance-market response: tighter clauses on crew qualifications and stability rather than blanket rate rises.",
+        url: "https://www.boatinternational.com/yachts/news/impacts-of-bayesian-sailing-yacht-sinking-on-superyacht-industry",
       },
       {
         label: "Howden",
@@ -1256,7 +1257,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "UBS Global Family Office Report 2025",
         line: "317 family offices; USD 1.1 bn AUM average; no yacht references across 80 pages.",
-        url: "https://www.ubs.com/global/en/family-office-uhnw/reports/global-family-office-report-2025.html",
+        url: "https://www.ubs.com/content/dam/assets/wma/static/documents/ubs-gfo-report.pdf",
       },
       {
         label: "Capgemini World Wealth Report 2025",
@@ -1354,13 +1355,13 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         type: "table",
         caption:
-          "EU Emissions Trading System Maritime extension, in force from 1 January 2024, applies to ships above 5,000 GT, phasing to 100 percent of emissions by 2026. Most yachts sit below the threshold; very large motor yachts now sit inside it.",
+          "EU Emissions Trading System Maritime extension, in force from 1 January 2024, applies to ships of and above 5,000 gross tonnage calling at EEA ports. Compliance is phased: 40 percent of 2024 emissions paid in 2025, 70 percent of 2025 emissions paid in 2026, 100 percent from 2027. Methane and nitrous oxide added from 2026.",
         head: ["Yacht profile", "Typical GT", "EU ETS exposure"],
         rows: [
           ["60 m motor", "700 to 1,200 GT", "Below threshold"],
           ["80 m motor", "2,000 to 2,800 GT", "Below threshold"],
           ["90 m motor", "Around 5,000 GT", "Borderline; some inside"],
-          ["110 m+ motor", "Above 5,000 GT", "Inside, EUR 200 to 400 k per year"],
+          ["110 m+ motor", "Above 5,000 GT", "Inside, EUR 200 to 400 k per year on current carbon prices"],
           ["50 m sail", "300 to 600 GT", "Below threshold"],
           [
             "Annual carbon footprint, 50 m sail vs 50 m motor",
@@ -1369,7 +1370,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           ],
         ],
         sourceLine:
-          "EU Commission ETS Maritime guidance; Royal Huisman published sustainability commentary; IMO MEPC 80 (July 2023) targets.",
+          "EU Commission FAQ on EU ETS for maritime transport; Royal Huisman published sustainability commentary; IMO 2023 GHG Strategy (MEPC 80).",
       },
       { type: "h2", text: "Brokerage market, sail vs motor" },
       {
@@ -1397,24 +1398,30 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "Denison Yachting market report 2025; broker-aggregated practitioner commentary.",
       },
-      { type: "h2", text: "Two notable 2025 transactions" },
+      { type: "h2", text: "Two 2025 reference points in the segment" },
       {
         type: "kv",
         caption:
-          "Both transactions on the published trade press record. Cited as markers of segment health rather than specific market signals.",
+          "Reference points on the published trade press record, cited as markers of segment health rather than as specific market signals.",
         rows: [
           {
-            label: "Edmiston 40 m sail yacht sale, brokered by Malcolm McKewon",
+            label: "Edmiston / Nautor Swan partnership, Palm Beach, March 2025",
             value:
-              "Largest sail brokerage transaction in the 30 to 45 m segment recorded in 2025; price not published; private programme with Caribbean and Mediterranean racing access",
+              "New alloy sailing yacht range designed by Malcolm McKeon Yacht Design; Edmiston Newport, Rhode Island, as the operational hub.",
           },
           {
-            label: "Tom Cruise acquisition of 30 m sailing yacht, 2025",
+            label: "Tom Cruise commission, Swan 108, ordered February 2025",
             value:
-              "First-time sail owner with prior motor exposure; racing-capable hull; widely reported in trade and consumer press",
+              "33 metre carbon-fibre sailing yacht under construction at Nautor Swan, Jakobstad, Finland; estimated total cost above USD 30 million.",
+          },
+          {
+            label: "MMYD-designed Feadship 830 \u201cProject Solent\u201d",
+            value:
+              "83 metre Feadship hull with Cecil Wright as owner\u2019s representative; technical launch from NMC Alblasserdam; delivery summer 2027.",
           },
         ],
-        sourceLine: "BOAT International, Superyacht News, broker statements.",
+        sourceLine:
+          "Nautor Swan and Edmiston press statements; Robb Report; BoatInternational; Feadship and Cecil Wright press statements.",
       },
       { type: "h2", text: "Aggregate effect, 35 m hold over seven years" },
       {
@@ -1445,14 +1452,14 @@ export const dataSpreads: Record<string, DataSpread> = {
         line: "Sail share of order book; major sail and motor builders.",
       },
       {
-        label: "EU Commission ETS Maritime guidance",
-        line: "Carbon market extension to maritime, in force from 1 January 2024; phase-in to 100 percent of emissions by 2026.",
-        url: "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-shipping-sector_en",
+        label: "EU Commission FAQ, EU ETS for maritime transport",
+        line: "Carbon market extension to maritime, in force from 1 January 2024; compliance phased 40 / 70 / 100 percent across 2025 to 2027.",
+        url: "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-shipping-sector/faq-maritime-transport-eu-emissions-trading-system-ets_en",
       },
       {
-        label: "IMO MEPC 80, July 2023",
-        line: "30 percent reduction in well-to-wake GHG by 2030, 80 percent by 2040, net zero by 2050.",
-        url: "https://www.imo.org",
+        label: "IMO 2023 Strategy on Reduction of GHG Emissions from Ships",
+        line: "Resolution MEPC.377(80), adopted at MEPC 80, July 2023. Targets: 20 percent (striving for 30 percent) by 2030, 70 percent (striving for 80 percent) by 2040, net zero by/around 2050.",
+        url: "https://www.imo.org/en/ourwork/environment/pages/2023-imo-strategy-on-reduction-of-ghg-emissions-from-ships.aspx",
       },
       {
         label: "Capgemini World Wealth Report 2024",
