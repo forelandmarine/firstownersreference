@@ -722,6 +722,110 @@ export const checklists: Record<string, Checklist> = {
       "The page is designed to print onto a single A4. Complete with the captain and owner\u2019s representative in year one. Revisit annually.",
   },
 
+  "08-motor-versus-sail": {
+    slug: "08-motor-versus-sail",
+    title: "Running the comparison, before defaulting to motor.",
+    standfirst:
+      "A reference for the buyer at the point of choosing between motor, sailing yacht, and hybrid drive. The work below tends to be an afternoon. The comparison rarely changes the decision against, but it often refines it.",
+    intent:
+      "Most first-time buyers default to motor without running the comparison. Some are right to. Others have skipped a useful exercise. The items below are the variables on which the decision actually moves.",
+    groups: [
+      {
+        heading: "The threshold tests",
+        items: [
+          {
+            question:
+              "An honest read of the cruising calendar. Are the buyer\u2019s seasons fixed-date and inflexible, or is there room for weather-window planning of 36 to 60 hours on transatlantics?",
+            detail:
+              "Fixed-schedule cruising tilts toward motor or hybrid. A flexible season opens the sailing yacht and hybrid options.",
+          },
+          {
+            question:
+              "A clear position on the carbon question. Is the principal\u2019s family office, foundation, or public profile likely to ask the question over the next decade?",
+            detail:
+              "If the question is coming, the answer is easier to give from a sailing yacht or a hybrid programme than from a conventional motor yacht.",
+          },
+          {
+            question:
+              "The seven-year arithmetic, run on paper, across capex, opex, depreciation, and residual.",
+            detail:
+              "Quality sailing yacht builders typically come in 25 to 40 percent below the equivalent motor programme on total seven-year cost.",
+          },
+        ],
+      },
+      {
+        heading: "Operating cost comparison, on a 50 m",
+        items: [
+          {
+            question:
+              "Annual fuel projection, sailing yacht against motor. EUR 60 to 120 k for the sailing yacht, EUR 200 to 350 k for the motor at 400 cruising hours.",
+          },
+          {
+            question:
+              "Crew complement and pay, sailing yacht against motor. 9 to 12 crew on a 50 m sailing yacht, 12 to 16 on a comparable motor.",
+          },
+          {
+            question:
+              "Maintenance shape: rigging and sail wardrobe reserves on the sailing yacht set against engine wear and stabiliser systems on the motor. Net annual maintenance is broadly comparable; the cost shape differs.",
+          },
+          {
+            question:
+              "Total annual operating cost. Sailing yacht typically 70 to 85 percent of the motor figure on equivalent length and use.",
+          },
+        ],
+      },
+      {
+        heading: "Carbon and regulation",
+        items: [
+          {
+            question:
+              "EU ETS Maritime exposure. Below 5,000 GT, the system does not apply. Most yachts (including 60 to 80 m motor) sit below the threshold.",
+            detail:
+              "Above 5,000 GT (110 m+ motor) the cost is now real: EUR 200 to 400 k per year on current carbon prices.",
+          },
+          {
+            question:
+              "HVO availability at the buyer\u2019s home cruising port. HVO is a drop-in diesel replacement at 85 to 90 percent lifecycle CO2 reduction; bunker availability is strongest in the Mediterranean.",
+          },
+          {
+            question:
+              "If new build, the 2026 IMO 2023 GHG Strategy trajectory and any methanol-ready specification. Available from the larger Northern European yards on request.",
+          },
+        ],
+      },
+      {
+        heading: "The hybrid third path",
+        items: [
+          {
+            question:
+              "Whether hybrid drive (Heesen FDHF, Sanlorenzo SX, and equivalent programmes) has been priced into the comparison alongside motor and sailing yacht.",
+            detail:
+              "Hybrid threads the cost and carbon needle for owners with fixed cruising schedules and a real carbon position.",
+          },
+          {
+            question:
+              "Battery hotel-load capability on the relevant new build candidates. Royal Huisman\u2019s 580 kWh installation on Aquarius II is the published reference; equivalent capacity is appearing across the larger builders.",
+          },
+        ],
+      },
+      {
+        heading: "The decision",
+        items: [
+          {
+            question:
+              "A written summary of the comparison, signed off by the buyer and the independent adviser before any broker engagement on the chosen path.",
+          },
+          {
+            question:
+              "Acceptance, on paper, of the residual case for whichever path is chosen. The chapter does not arbitrate between motor, sailing yacht, and hybrid; it asks the comparison to be run on the variables that move.",
+          },
+        ],
+      },
+    ],
+    printable:
+      "The page is designed to print onto a single A4. Complete in writing before approaching any broker on the chosen path.",
+  },
+
   "09-decision-framework": {
     slug: "09-decision-framework",
     title: "The ten questions, applied to every adviser.",

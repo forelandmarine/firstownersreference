@@ -100,7 +100,7 @@ export default function ColophonPage() {
 
             <h2>Editorial board</h2>
             <p>
-              Editor in Chief: Daniel Marks.
+              Co-editors in Chief: Jack MacNally and Daniel Marks.
               <br />
               Editor: To be appointed.
               <br />

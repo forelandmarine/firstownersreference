@@ -134,7 +134,7 @@ export default function HomePage() {
               </p>
             </div>
             <p className="meta mt-10">
-              Daniel Marks, Editor in Chief
+              Jack MacNally &amp; Daniel Marks, Co-editors in Chief
             </p>
           </div>
         </div>

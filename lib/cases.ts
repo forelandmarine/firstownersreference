@@ -317,6 +317,50 @@ export const cases: Record<string, CaseStudy> = {
       "Single Foreland Marine project, 2014 ongoing. Identifying details adjusted; the captain hire pattern, the operating outcomes, and the decade-long arithmetic are accurate to the original project.",
   },
 
+  "08-motor-versus-sail": {
+    slug: "08-motor-versus-sail",
+    title: "The owner who switched, on the second yacht.",
+    standfirst:
+      "The first yacht was a 48 m motor. The second was a 52 m sailing yacht. The owner had not intended a switch; the comparison, run honestly at the point of considering a successor hull, decided it. Year three on the sailing yacht is ongoing. The numbers and the use pattern have moved as the comparison suggested they would.",
+    meta: [
+      { label: "First yacht", value: "48 m motor, brokerage, year 1 to 5" },
+      { label: "Second yacht", value: "52 m sailing yacht, brokerage, year 6 onward" },
+      { label: "Cruising profile", value: "Western Mediterranean, family-led" },
+      { label: "Anonymisation", value: "Composite of two Foreland project files, 2020 to 2026" },
+    ],
+    paragraphs: [
+      "The owner had been on a 48 m motor yacht for five years when the conversation about a successor began. The original acquisition had been straightforward: a brokerage hull from a respected mid-tier German yard, modern and well-specified, sourced through a yacht-management contact. The five years of operation had taught him the things first-time owners learn. The crew settled. The cruising pattern stabilised at seven to nine weeks of family use a year, mostly Western Mediterranean. The annual operating cost ran consistently at EUR 3.9 to 4.2 million.",
+      "The successor conversation opened with the assumption that the next hull would be another motor, slightly larger and a degree younger. The independent adviser asked whether the comparison had been run against a sailing yacht of the same size band. It had not.",
+      { type: "h2", text: "What the comparison turned up" },
+      "The adviser walked the owner through three documents over the course of two weeks.",
+      "The first was an operating-cost projection for a 52 m sailing yacht of comparable build quality, in the same use pattern, run at moderate-use intensity. The model produced an annual figure of approximately EUR 3.0 to 3.2 million, against the EUR 3.9 to 4.2 million the owner had been paying on the motor. The differential traced to fuel, crew count, and the smaller engine room load; against that, the sailing yacht model carried EUR 60 to 90 thousand of annual rigging reserve and a sail wardrobe replacement at the seven-year mark. Net annual cost: 75 to 80 percent of the motor figure. The adviser was clear that the figures were practitioner-aggregated rather than precise; the order of magnitude held.",
+      "The second was a cruising-calendar comparison. On the same EUR 3.9 million annual envelope, the sailing yacht modelled at 14 to 16 weeks of family use rather than seven to nine. The owner\u2019s actual constraint had been calendar availability rather than weeks-on-paper, and the adviser pointed out that the constraint had been driven partly by the cost discipline of running a motor yacht at the upper end of moderate use. A lower running cost loosened that constraint.",
+      "The third was a carbon footprint sketch. The owner sat on the board of a foundation his family ran, and the foundation had begun publishing its own carbon position. Switching to a sailing yacht produced a roughly 60 to 65 percent annual carbon reduction on aggregated practitioner numbers and Royal Huisman published commentary. The figure mattered to him for reasons that had not been part of the original yacht decision and were now part of the successor decision.",
+      "The owner asked the adviser to scope a hybrid motor yacht as a third option. The adviser came back with two delivered Heesen FDHF hulls and one in-build Sanlorenzo SX, modelled at EUR 3.4 to 3.6 million annually. The hybrid figures sat between motor and sailing yacht on cost and roughly 35 to 45 percent below motor on carbon. The owner held the hybrid option open through the search.",
+      {
+        type: "blockquote",
+        text: "I had thought of sail as a different kind of holiday. The comparison made it look like a different kind of yacht. The two are not the same conversation.",
+        attribution: "The owner, in conversation with Foreland Marine, week 14 of the second-yacht search.",
+      },
+      { type: "h2", text: "The acquisition" },
+      "The successor was a 52 metre sailing yacht built by Royal Huisman in 2014, on the brokerage market through a Northern European house with no continuing relationship to the owner. The acquisition ran on the same architecture as the chapter on the team to assemble suggests: independent adviser engaged before any broker, surveyor (Wolfson Marine) independently engaged, yacht lawyer drawn from a recognised firm, captain hired through an independent recruitment process and not through the broker.",
+      "The captain hired had run two large sailing yachts previously. He pushed back, in interview, on three things the owner had assumed: the owner\u2019s preferred itinerary needed weather windows the family was not used to honouring, the existing motor-yacht crew were not all going to transition to a sailing yacht successfully, and the management company that had run the motor yacht did not have the right depth on sailing yachts. The owner hired him on the basis of the pushback, not despite it.",
+      "Three of the five senior motor-yacht crew transitioned to the new hull. Two did not. A new chief officer and a new chief engineer were hired with sailing-yacht specialism. A new yacht-management company was engaged.",
+      { type: "h2", text: "Year three on the new hull" },
+      "Year three on the sailing yacht is ongoing. The annual operating cost has run at EUR 3.0 to 3.2 million, on the model. Family use has run at 13 to 15 weeks a year, against the seven to nine on the motor. The owner reports that the cruising character of the family\u2019s seasons has changed: longer passages between anchorages, more weather-window planning, more time at sea under sail and less time waiting at marinas. The chapter does not arbitrate between the two regimes; the owner\u2019s honest framing was that the second one fitted his actual life better than the first one had.",
+      "The carbon position has held within the modelled band. The foundation\u2019s public position has remained defensible.",
+      "The hybrid option, set aside at acquisition, remains the option the owner would have taken if his cruising calendar had been less flexible. The point about hybrid is not that it is the right answer for him; it is that it is now a real third path, and a buyer who does not consider all three is leaving an option on the table.",
+    ],
+    takeaways: [
+      "The motor versus sailing yacht comparison runs honestly only when the projections, the cruising calendar, and the carbon position are walked through in writing. Most successor decisions skip this step.",
+      "The crew that suits a motor yacht does not always suit a sailing yacht. Plan for some senior turnover at the transition; budget for new specialism rather than expect it.",
+      "Hybrid drive is no longer a footnote. Heesen FDHF, Sanlorenzo SX, and equivalent programmes thread the cost and carbon needle for owners with fixed cruising schedules.",
+      "Captain selection at the transition is the single most consequential decision. Hire the candidate who pushes back on the calendar, the crew, and the management company.",
+    ],
+    disclosure:
+      "Composite of two Foreland Marine project files, 2020 to 2026. Yard names retained where the original yards were comparable to the names cited; the operating cost trajectory and the cruising-calendar shift are accurate to the original projects.",
+  },
+
   "09-decision-framework": {
     slug: "09-decision-framework",
     title: "The buyer who walked away.",
