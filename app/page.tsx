@@ -23,7 +23,7 @@ export default function HomePage() {
         <div className="absolute inset-0 flex items-end">
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12 pb-20 w-full text-paper">
             <p className="meta text-paper/80 mb-6">
-              An independent annual publication
+              An annual yachting field manual
             </p>
             <h1 className="font-serif font-light text-display leading-[var(--text-display-line-height)] tracking-tight max-w-4xl">
               The First<br />
