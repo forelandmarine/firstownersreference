@@ -6,6 +6,9 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { sections, getSection } from "@/lib/sections";
 import { getLeadEssay } from "@/lib/lead-essays";
+import { getDataSpread } from "@/lib/data-spreads";
+import { getCase } from "@/lib/cases";
+import { getChecklist } from "@/lib/checklists";
 
 export function generateStaticParams() {
   return sections.map((s) => ({ slug: s.slug }));
@@ -31,6 +34,9 @@ export default async function SectionPage(props: {
   if (!section) notFound();
 
   const essay = getLeadEssay(slug);
+  const dataSpread = getDataSpread(slug);
+  const caseStudy = getCase(slug);
+  const checklist = getChecklist(slug);
   const index = sections.findIndex((s) => s.slug === section.slug);
   const prev = sections[index - 1];
   const next = sections[index + 1];
@@ -99,17 +105,38 @@ export default async function SectionPage(props: {
                         <span className="meta-marine mr-1">1</span> Lead essay
                         (you are here)
                       </li>
-                      <li className="opacity-60">
-                        <span className="mr-1">2</span> Data spread
+                      <li className={dataSpread ? "" : "opacity-60"}>
+                        <span className={dataSpread ? "meta-marine mr-1" : "mr-1"}>2</span>{" "}
+                        {dataSpread ? (
+                          <Link href={`/${section.slug}/data-spread`} className="link">
+                            Data spread
+                          </Link>
+                        ) : (
+                          <>Data spread</>
+                        )}
                       </li>
                       <li className="opacity-60">
                         <span className="mr-1">3</span> Guest opinion
                       </li>
-                      <li className="opacity-60">
-                        <span className="mr-1">4</span> Case material
+                      <li className={caseStudy ? "" : "opacity-60"}>
+                        <span className={caseStudy ? "meta-marine mr-1" : "mr-1"}>4</span>{" "}
+                        {caseStudy ? (
+                          <Link href={`/${section.slug}/case`} className="link">
+                            Case material
+                          </Link>
+                        ) : (
+                          <>Case material</>
+                        )}
                       </li>
-                      <li className="opacity-60">
-                        <span className="mr-1">5</span> Checklist
+                      <li className={checklist ? "" : "opacity-60"}>
+                        <span className={checklist ? "meta-marine mr-1" : "mr-1"}>5</span>{" "}
+                        {checklist ? (
+                          <Link href={`/${section.slug}/checklist`} className="link">
+                            Checklist
+                          </Link>
+                        ) : (
+                          <>Checklist</>
+                        )}
                       </li>
                     </ol>
                   </div>
@@ -140,12 +167,13 @@ export default async function SectionPage(props: {
                   })}
                 </div>
                 <div className="mt-16 rule pt-8">
-                  <p className="meta mb-3">Coming up in this section</p>
+                  <p className="meta mb-3">More in this section</p>
                   <ul className="space-y-3">
                     <ContentRow
                       label="Data spread"
-                      title={dataTitleFor(section.slug)}
+                      title={dataSpread?.title ?? dataTitleFor(section.slug)}
                       meta="Charts and tables, sources cited"
+                      href={dataSpread ? `/${section.slug}/data-spread` : undefined}
                     />
                     <ContentRow
                       label="Guest opinion"
@@ -154,13 +182,15 @@ export default async function SectionPage(props: {
                     />
                     <ContentRow
                       label="Case material"
-                      title={caseTitleFor(section.slug)}
+                      title={caseStudy?.title ?? caseTitleFor(section.slug)}
                       meta="Anonymised"
+                      href={caseStudy ? `/${section.slug}/case` : undefined}
                     />
                     <ContentRow
                       label="Checklist"
-                      title="Questions to ask before signing anything."
+                      title={checklist?.title ?? "Questions to ask before signing anything."}
                       meta="One page, printable"
+                      href={checklist ? `/${section.slug}/checklist` : undefined}
                     />
                   </ul>
                 </div>
@@ -234,13 +264,15 @@ function ContentRow({
   label,
   title,
   meta,
+  href,
 }: {
   label: string;
   title: string;
   meta: string;
+  href?: string;
 }) {
-  return (
-    <li className="flex items-baseline gap-6 py-3 border-t border-rule opacity-70">
+  const inner = (
+    <>
       <span className="meta w-28 shrink-0">{label}</span>
       <div className="flex-1">
         <p className="font-serif text-base leading-snug text-charcoal">
@@ -248,7 +280,28 @@ function ContentRow({
         </p>
         <p className="meta mt-1">{meta}</p>
       </div>
-      <span className="meta hidden sm:block">Forthcoming</span>
+      <span className="meta hidden sm:block">
+        {href ? <span className="meta-marine">Read &rarr;</span> : "Forthcoming"}
+      </span>
+    </>
+  );
+
+  if (href) {
+    return (
+      <li className="border-t border-rule">
+        <Link
+          href={href}
+          className="flex items-baseline gap-6 py-3 group hover:bg-paper-deep -mx-2 px-2 transition-colors"
+        >
+          {inner}
+        </Link>
+      </li>
+    );
+  }
+
+  return (
+    <li className="flex items-baseline gap-6 py-3 border-t border-rule opacity-70">
+      {inner}
     </li>
   );
 }

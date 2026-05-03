@@ -1,0 +1,806 @@
+export type DataSpreadBlock =
+  | { type: "h2"; text: string }
+  | { type: "paragraph"; text: string }
+  | {
+      type: "table";
+      caption?: string;
+      head: string[];
+      rows: string[][];
+      sourceLine?: string;
+    }
+  | {
+      type: "kv";
+      caption?: string;
+      rows: { label: string; value: string; note?: string }[];
+      sourceLine?: string;
+    }
+  | { type: "note"; text: string };
+
+export type DataSpread = {
+  slug: string;
+  title: string;
+  standfirst: string;
+  blocks: DataSpreadBlock[];
+  sources: { label: string; line: string }[];
+};
+
+export const dataSpreads: Record<string, DataSpread> = {
+  "01-reality-of-ownership": {
+    slug: "01-reality-of-ownership",
+    title: "Annual operating cost as a percentage of capex, by size band.",
+    standfirst:
+      "The 10 percent rule is folklore. The empirical band is 8 to 20 percent, with the position on the curve set by size, age, use intensity, and charter activity. The numbers below are aggregated from named published sources and a Foreland project archive of more than 30 managed projects.",
+    blocks: [
+      { type: "h2", text: "The cost-of-ownership band" },
+      {
+        type: "table",
+        caption:
+          "Annual operating cost as a percentage of original capex, by size and intensity. Mid-points of practitioner working ranges; widen by 2 to 4 points for charter operation.",
+        head: [
+          "Size band",
+          "Light use",
+          "Moderate use",
+          "Heavy use",
+        ],
+        rows: [
+          ["30 to 40 m, year 1 to 5", "8 to 10 percent", "10 to 13 percent", "13 to 15 percent"],
+          ["40 to 50 m, year 1 to 5", "10 to 12 percent", "12 to 15 percent", "15 to 18 percent"],
+          ["50 to 60 m, year 1 to 5", "11 to 13 percent", "13 to 16 percent", "16 to 19 percent"],
+          ["40 to 50 m, year 6 to 10", "12 to 14 percent", "14 to 17 percent", "17 to 20 percent"],
+          ["Above 60 m, all years", "13 to 16 percent", "16 to 19 percent", "19 to 22 percent"],
+        ],
+        sourceLine:
+          "Foreland Marine project archive, cross-referenced against Fraser, Ocean Independence, and YachtBuyer published guidance.",
+      },
+      { type: "h2", text: "Where the money goes, on a typical 50 m" },
+      {
+        type: "kv",
+        caption:
+          "Indicative composition of annual operating cost on a 50 m motor yacht at moderate use. Crew is the largest line, not fuel.",
+        rows: [
+          { label: "Crew salaries and benefits", value: "30 to 40 percent" },
+          { label: "Maintenance and repair", value: "14 to 18 percent" },
+          { label: "Insurance", value: "10 to 14 percent" },
+          { label: "Berths and marina fees", value: "8 to 12 percent" },
+          { label: "Fuel", value: "8 to 12 percent", note: "Higher on charter-active hulls" },
+          { label: "Management fees", value: "3 to 5 percent" },
+          { label: "Class and flag compliance", value: "2 to 3 percent" },
+          { label: "Provisioning, comms, owner travel, contingency", value: "10 to 15 percent" },
+        ],
+        sourceLine:
+          "YPI Crew 2026 salary guide, Quay Crew 2025 captain survey, Pantaenius market commentary, MYBA standard cost categories.",
+      },
+      { type: "h2", text: "Depreciation, year by year" },
+      {
+        type: "table",
+        caption:
+          "Indicative depreciation curve for a typical hull, drawn from broker-aggregated data. Quality builders (Feadship, Lurssen, Royal Huisman, Vitters, Baltic) hold value materially better after year five.",
+        head: ["Year", "Cumulative loss from purchase", "Marginal annual loss"],
+        rows: [
+          ["1", "10 to 20 percent", "10 to 20 percent"],
+          ["2", "16 to 28 percent", "6 to 8 percent"],
+          ["3", "22 to 35 percent", "6 to 8 percent"],
+          ["5", "33 to 48 percent", "5 to 7 percent"],
+          ["7", "40 to 55 percent", "3 to 5 percent"],
+          ["10", "48 to 62 percent", "2 to 4 percent"],
+        ],
+        sourceLine:
+          "Yatco, IYC, Yacht Hunter broker-aggregated curves. No peer-reviewed academic study exists.",
+      },
+      { type: "h2", text: "Charter, four worked cases" },
+      {
+        type: "table",
+        caption:
+          "Net charter contribution against annual running cost for four worked cases on the published BOAT International record. Most charter operations subsidise rather than recover ownership cost.",
+        head: ["Yacht", "Weekly rate", "Weeks", "Net result"],
+        rows: [
+          ["48 m motor", "EUR 250 to 310 k", "7", "Break-even (EUR 1.59 m income, EUR 1.58 m cost)"],
+          ["47 m sail", "EUR 110 to 125 k", "9", "EUR 444 k loss"],
+          ["85 m motor", "EUR 850 to 950 k", "8", "EUR 430 k loss"],
+          ["60 m, owner-optimised", "EUR 220 to 260 k", "12", "Up to EUR 2 m net positive"],
+        ],
+        sourceLine: "BOAT International published case studies.",
+      },
+      {
+        type: "note",
+        text: "Run your own numbers using the running cost calculator. Source assumptions are named on every line.",
+      },
+    ],
+    sources: [
+      {
+        label: "BOAT International, Global Order Book and case studies",
+        line: "Stewart Campbell, MD, on the One Big Beautiful Bill Act as the principal driver of the 2025 transaction surge.",
+      },
+      {
+        label: "Knight Frank Wealth Report 2026",
+        line: "USD 8.5 bn 2025 transactions, 70 percent year on year rise, US 45 to 50 percent of transactions.",
+      },
+      {
+        label: "YPI Crew 2026 salary guide",
+        line: "Captain pay EUR 10 to 16 k per month on 50 m; EUR 16 to 23 k on 80 m.",
+      },
+      {
+        label: "Quay Crew 2025 captain survey",
+        line: "7 percent year on year captain pay rise in 70 to 79 m bracket; 63 percent on time-for-time rotation.",
+      },
+      {
+        label: "YachtBuyer published analysis",
+        line: "Calls the 10 percent rule \u201cat best, obsolete or even misleading\u201d for older or larger crewed vessels.",
+      },
+      {
+        label: "Foreland Marine project archive",
+        line: "More than 30 managed refit and operating projects, anonymised and aggregated.",
+      },
+    ],
+  },
+
+  "02-reading-the-market": {
+    slug: "02-reading-the-market",
+    title: "Order book and yard capacity through 2030.",
+    standfirst:
+      "Wealth creation has accelerated. Order book unit count has contracted for the second consecutive year. Top-tier yards are sold out. The numbers below are the supply-side picture a first-time buyer should hold in mind before any conversation with a broker.",
+    blocks: [
+      { type: "h2", text: "Wealth creation, five-year change" },
+      {
+        type: "kv",
+        caption: "UHNWIs (net wealth above USD 30 m), Knight Frank Wealth Sizing Model.",
+        rows: [
+          { label: "Global UHNWIs, 2021", value: "551,435" },
+          { label: "Global UHNWIs, 2026", value: "713,626" },
+          {
+            label: "New UHNWIs, 2021 to 2026",
+            value: "162,191",
+            note: "89 individuals per day, every day, for five years",
+          },
+          { label: "United States share, 2021", value: "33 percent" },
+          { label: "United States share, 2026", value: "35 percent" },
+          { label: "United States share, 2031 forecast", value: "41 percent" },
+          { label: "India UHNWI population, 2026", value: "19,877" },
+          { label: "India UHNWI population, 2031 forecast", value: "25,217" },
+          { label: "Saudi Arabia billionaire growth, 5-year forecast", value: "183 percent" },
+          { label: "Indonesia UHNWI growth, 5-year forecast", value: "82 percent" },
+        ],
+        sourceLine: "Knight Frank Wealth Report 2026, 20th edition.",
+      },
+      { type: "h2", text: "Global order book, 24 m and above" },
+      {
+        type: "table",
+        caption:
+          "BOAT International Global Order Book, 2026 edition. Unit count has contracted for the second consecutive year. Average length and tonnage are at record highs.",
+        head: ["Metric", "2025 edition", "2026 edition", "Change"],
+        rows: [
+          ["Yachts on order or in build", "1,138", "1,093", "Down 45 units"],
+          ["Average length", "39.6 m", "40.8 m", "Up 1.2 m"],
+          ["Average tonnage", "529 GT", "551 GT", "Up 22 GT"],
+          ["Italy share, by units", "50 percent", "52 percent", "Up 2 points"],
+        ],
+        sourceLine: "BOAT International Global Order Book.",
+      },
+      { type: "h2", text: "Production geography" },
+      {
+        type: "table",
+        caption: "Top four production countries, 2026 order book.",
+        head: ["Country", "Units", "Tonnage", "Note"],
+        rows: [
+          ["Italy", "568", "Largest by units", "Azimut Benetti ranked first for 26th consecutive year"],
+          ["Netherlands", "66", "107,796 GT (second by tonnage)", "Largest average length"],
+          ["Turkey", "141", "82,383 GT", "Mid-tier capacity"],
+          ["Germany", "18", "78,651 GT", "Concentrated at the very top, smallest unit count"],
+        ],
+        sourceLine: "BOAT International Global Order Book 2026.",
+      },
+      { type: "h2", text: "Top-tier yard slot availability" },
+      {
+        type: "kv",
+        caption: "Slot availability is the practical constraint for first-time buyers entering in 2026.",
+        rows: [
+          { label: "Lurssen", value: "Booked through mid-2027 at minimum" },
+          { label: "Feadship", value: "2028 to 2029, Project Solent confirmed for 2027" },
+          { label: "Oceanco", value: "Delivered 111 m DreAMBoat in 18 months, Nov 2025 (counter-example of speed)" },
+          { label: "Heesen", value: "Speculative-build model since 2023, full backlog through 2025 and beyond" },
+          { label: "Azimut Benetti", value: "5,924 m of length under construction across 163 yachts" },
+          { label: "Sanlorenzo with Nautor Swan", value: "4,698 m across 130 yachts" },
+        ],
+        sourceLine: "BOAT International, yard published statements, trade press tracking.",
+      },
+      { type: "h2", text: "Brokerage 2025 in numbers" },
+      {
+        type: "kv",
+        caption: "Brokerage market 2025, by published source.",
+        rows: [
+          { label: "Total transaction value (BOAT International)", value: "EUR 7.5 bn" },
+          { label: "Edmiston, 30 m and above", value: "363 yachts, EUR 7.1 bn (up 15 percent on 2024)" },
+          { label: "Denison, 79 ft and above", value: "470 yachts" },
+          { label: "Above EUR 40 m asking", value: "7 percent of volume, 52 percent of value" },
+          { label: "Median days on market (Denison)", value: "277 (lowest in five-year series)" },
+          { label: "Listings that did not sell, average DOM", value: "573 days" },
+          { label: "Average price reductions per listing, Q1 2024 to Q1 2025", value: "1.36 down to 0.76" },
+          { label: "Average reduction rate, Q1 2024 to Q1 2025", value: "Minus 12.6 to minus 8.97 percent" },
+        ],
+        sourceLine: "BOAT International, Edmiston Annual Review, Denison Yachting market report.",
+      },
+      {
+        type: "note",
+        text: "The Edmiston 30 m+ count of 363 and the Denison broader count of 470 are not comparable. The 30 m+ figure is the relevant one for the readership of this Reference.",
+      },
+    ],
+    sources: [
+      {
+        label: "Knight Frank Wealth Report 2026",
+        line: "20th edition; Wealth Sizing Model; geographic forecasts to 2031.",
+      },
+      {
+        label: "Capgemini World Wealth Report 2025",
+        line: "USD 83.5 trn inheritance by 2048; 81 percent of next-gen HNWIs switch wealth manager within 1 to 2 years of inheritance.",
+      },
+      {
+        label: "BOAT International Global Order Book 2026",
+        line: "1,093 yachts on order or in build; second consecutive annual unit-count decline.",
+      },
+      {
+        label: "Edmiston Annual Review 2025",
+        line: "EUR 7.1 bn across 363 yachts of 30 m and above, up 15 percent on 2024.",
+      },
+      {
+        label: "Denison Yachting market report",
+        line: "Days-on-market and price-reduction discipline; 470 yachts in broader 79 ft and above count.",
+      },
+      {
+        label: "SuperYacht Times iQ data",
+        line: "Russian ownership share movement, 2022 to 2023; Asia-Pacific fleet growth.",
+      },
+    ],
+  },
+
+  "03-how-the-industry-works": {
+    slug: "03-how-the-industry-works",
+    title: "Where the money goes in a typical brokerage transaction.",
+    standfirst:
+      "On a EUR 28 m sale of a 40 m yacht, between EUR 1.4 m and EUR 2.8 m moves in commissions depending on which of two parallel norms is applied. The buyer almost never knows which one is in use. The numbers below are the structure, said plainly.",
+    blocks: [
+      { type: "h2", text: "The two parallel commission norms" },
+      {
+        type: "table",
+        caption:
+          "On a EUR 28 m sale of a 40 m yacht. Both structures are presented as \u201cthe standard\u201d by the brokers using them. They are not the same.",
+        head: ["Structure", "Commission base", "Commission paid"],
+        rows: [
+          ["IYBA / US norm", "Flat 10 percent of gross sale price, paid by the seller", "EUR 2,800,000"],
+          [
+            "MYBA sliding scale",
+            "10 percent on first EUR 10 m, 5 percent on second EUR 10 m, 2.5 percent above",
+            "EUR 1,950,000",
+          ],
+          [
+            "Buyer-broker share, typical",
+            "4 to 5 percent of gross, paid out of the seller-side pool",
+            "EUR 1,120,000 to 1,400,000",
+          ],
+        ],
+        sourceLine:
+          "IYBA standard practice; MYBA Memorandum of Agreement; published industry self-criticism (Cromwell Littlejohn, Northrop & Johnson, Palm Beach Boat Show).",
+      },
+      { type: "h2", text: "Brokerage ownership concentration" },
+      {
+        type: "kv",
+        caption:
+          "Independent founder-led houses are now the minority by deal volume. The roll-up is essentially complete.",
+        rows: [
+          { label: "Camper & Nicholsons", value: "1782 Group; Lai Sun Development; Fincantieri minority since 2015" },
+          { label: "Burgess", value: "Ancient (PE, founded 2021) acquired strategic stake October 2025" },
+          { label: "Fraser", value: "Inside MarineMax (NYSE: HZO) since 2019" },
+          { label: "Northrop & Johnson", value: "Inside MarineMax since 2020" },
+          { label: "Denison Yachting", value: "Sold to OneWater Marine (NASDAQ: ONEW) April 2022; merged into OneWater Yacht Group September 2025" },
+        ],
+        sourceLine: "Public filings; trade press coverage; corporate communications.",
+      },
+      { type: "h2", text: "Retrocession economy, indicative magnitudes" },
+      {
+        type: "table",
+        caption:
+          "Referral fees from supplier counterparties to the introducing broker are not on the broker\u2019s invoice to the owner because the broker is not invoicing the owner. The numbers are not small.",
+        head: ["Service", "Typical scope", "5 to 10 percent retrocession"],
+        rows: [
+          ["Repaint", "EUR 4 m", "EUR 200,000 to 400,000"],
+          ["Annual management contract, year one", "EUR 5 m", "EUR 250,000 to 500,000"],
+          ["Charter management commission share", "EUR 2 m of charter revenue", "EUR 100,000 to 200,000"],
+          ["Insurance broker introduction", "EUR 250 k premium", "EUR 12,500 to 25,000 (per year)"],
+        ],
+        sourceLine:
+          "Practitioner working ranges; OnboardOnline legal column on disclosure rules. Particular firms are not named in this section because the practice is industry-wide.",
+      },
+      { type: "h2", text: "Regulatory coverage" },
+      {
+        type: "kv",
+        caption:
+          "There is no financial regulator anywhere in the major jurisdictions that supervises yacht brokerage conduct.",
+        rows: [
+          { label: "UK Financial Conduct Authority", value: "Does not regulate yacht sales (not a regulated financial instrument)" },
+          { label: "UK Maritime and Coastguard Agency", value: "Does not regulate brokerage commissions" },
+          { label: "California", value: "Requires explicit dual-agency disclosure" },
+          { label: "Florida", value: "Transactional brokerage rules; full agency duties diluted by default" },
+          { label: "IYBA Purchase and Sale Agreement", value: "Pre-emptive consent to dual agency" },
+          {
+            label: "Ya Mon Expeditions LLC v. IYBA et al.",
+            value: "Dismissed January 2025 on procedural grounds; pleadings on file",
+          },
+        ],
+        sourceLine: "Public filings; FCA / MCA scope statements.",
+      },
+    ],
+    sources: [
+      { label: "IYBA Purchase and Sale Agreement", line: "Standard contract, dual-agency clause, pre-emptive consent." },
+      { label: "MYBA Memorandum of Agreement", line: "Sliding-scale commission norm." },
+      {
+        label: "Cromwell Littlejohn (Northrop & Johnson), Palm Beach Boat Show",
+        line: "On the record: the system actively rewards opacity.",
+      },
+      { label: "OnboardOnline legal column", line: "On disclosure rules and undisclosed payments to captains." },
+      {
+        label: "Ya Mon Expeditions LLC v. IYBA et al.",
+        line: "US District Court for Southern District of Florida, dismissed January 2025.",
+      },
+    ],
+  },
+
+  "04-acquisition-process": {
+    slug: "04-acquisition-process",
+    title: "VAT regime and flag state comparison.",
+    standfirst:
+      "Two procedural choices materially affect the cost of ownership over the next decade and are commonly made under time pressure at closing without proper analysis. The frame below sets out the legitimate options on the published record.",
+    blocks: [
+      { type: "h2", text: "Headline VAT rates on yacht purchase" },
+      {
+        type: "table",
+        caption: "On a EUR 4 m yacht purchased in the listed jurisdiction, default VAT bill at sale.",
+        head: ["Jurisdiction", "Standard VAT rate", "VAT on EUR 4 m purchase"],
+        rows: [
+          ["France", "20 percent", "EUR 800,000"],
+          ["Spain", "21 percent", "EUR 840,000"],
+          ["Italy", "22 percent", "EUR 880,000"],
+        ],
+        sourceLine: "National tax authority published rates. Hill Dickinson, Watson Farley & Williams comparative analysis.",
+      },
+      { type: "h2", text: "Three legitimate alternatives" },
+      {
+        type: "table",
+        caption:
+          "Each option has compliance burden. None should be selected on the broker\u2019s preference. Engage your own counsel.",
+        head: ["Structure", "Effect", "Conditions"],
+        rows: [
+          [
+            "French Commercial Exemption",
+            "VAT eliminated on purchase",
+            "Commercial registration; full-time crew; over 15 m; over 70 percent of voyages exit French waters; under 50 percent static charter",
+          ],
+          [
+            "Spanish Inward Processing Relief",
+            "21 percent suspended on refit works for non-EU flagged yachts",
+            "18 months admission window (extendable to 24); customs-site shipyard; bonded works; re-export",
+          ],
+          [
+            "Maltese leasing scheme",
+            "Effective VAT 5.4 to 6.12 percent on yachts above 24 m",
+            "Maltese leasing structure; specific payment profile; substance requirements",
+          ],
+          [
+            "Italian leasing",
+            "Largely curtailed by EU infringement proceedings",
+            "Rarely advisable in 2026",
+          ],
+        ],
+        sourceLine: "Hill Dickinson, Watson Farley & Williams, Ince, Stephenson Harwood, Reed Smith published commentary.",
+      },
+      { type: "h2", text: "Flag state, dominant choices for 30 m+" },
+      {
+        type: "kv",
+        caption:
+          "Cayman and Marshall Islands dominate the over-30 m segment. Choice depends on owner residence, cruising area, charter intent, financing requirements, and the family office\u2019s broader structuring preferences.",
+        rows: [
+          { label: "Cayman Islands", value: "Red Ensign category 1; large yacht code; charter and private; widely accepted" },
+          { label: "Marshall Islands", value: "Open registry; favourable cost; recognised lender jurisdiction" },
+          { label: "Malta", value: "EU flag; commercial and private; competitive cost" },
+          { label: "Red Ensign Group (UK, IoM, Bermuda, Jersey, Guernsey, BVI, Gibraltar, Anguilla, Montserrat, Turks and Caicos, Falkland Islands, St Helena, Pitcairn)", value: "Common-law jurisdictions; British consular protection" },
+        ],
+        sourceLine: "Published flag administration scopes. SuperYacht Times registry data.",
+      },
+      { type: "h2", text: "Annual compliance cost on a 40 m yacht" },
+      {
+        type: "table",
+        caption:
+          "Tax compliance, structuring, and flag administration. Recurring opex that does not appear in broker-quoted operating budgets.",
+        head: ["Category", "Annual cost"],
+        rows: [
+          ["Tax compliance and structuring", "EUR 25,000 to 70,000"],
+          ["Flag administration and class society fees", "EUR 15,000 to 40,000"],
+          ["Owning company maintenance", "EUR 10,000 to 40,000"],
+          ["Total", "EUR 50,000 to 150,000"],
+        ],
+        sourceLine: "Foreland Marine project archive; published yacht law firm fee guidance.",
+      },
+      { type: "h2", text: "Pre-purchase survey scope, indicative" },
+      {
+        type: "kv",
+        caption: "On a 40 m yacht. The single highest-leverage piece of due diligence in the entire acquisition.",
+        rows: [
+          { label: "Duration", value: "4 to 7 days afloat plus haul-out" },
+          { label: "Total cost", value: "USD 25,000 to 60,000" },
+          { label: "Lead surveyor", value: "Independently engaged (not broker-introduced)" },
+          { label: "Specialist add-ons", value: "Class society inspector, paint, electrical, mechanical" },
+          { label: "Recognised firms", value: "Wolfson Marine, Ward & McKenzie, Patton Marine" },
+        ],
+        sourceLine: "Foreland Marine project archive; published surveyor fee scales.",
+      },
+    ],
+    sources: [
+      { label: "Hill Dickinson, Watson Farley & Williams, Ince, Stephenson Harwood, Reed Smith", line: "Comparative VAT and flag commentary." },
+      { label: "Cayman Shipping Registry", line: "Large yacht code, vessel registration scope." },
+      { label: "MYBA Memorandum of Agreement", line: "Standard closing template; deposit and balance terms." },
+      { label: "Foreland Marine project archive", line: "Annual compliance cost ranges across managed projects." },
+    ],
+  },
+
+  "05-new-build-versus-brokerage": {
+    slug: "05-new-build-versus-brokerage",
+    title: "Cashflow and milestone payments, year by year.",
+    standfirst:
+      "Brokerage concentrates capital at closing. New build distributes it across two to five years against milestones whose definition is the most consequential drafting work in the contract. The frame below is the cashflow shape of each path.",
+    blocks: [
+      { type: "h2", text: "Brokerage versus new build, capital timing" },
+      {
+        type: "table",
+        caption: "On a comparable 50 m hull. Capital commitment shape differs more than the headline numbers do.",
+        head: ["Path", "Time to delivery", "Stage payment shape"],
+        rows: [
+          ["Brokerage", "6 to 12 weeks", "10 percent deposit, 90 percent at closing"],
+          ["Semi-custom new build", "24 to 36 months", "20 to 30 percent at signature, 50 to 70 percent across build, balance at delivery"],
+          ["Fully custom new build", "36 to 60 months", "Front-loaded variants common; refund guarantee credit quality material"],
+        ],
+        sourceLine: "Watson Farley & Williams shipbuilding commentary; Norton Rose Fulbright on refund guarantee terms.",
+      },
+      { type: "h2", text: "Indicative new build payment schedule, EUR 100 m yacht" },
+      {
+        type: "table",
+        caption:
+          "Industry-typical 50 to 70 percent paid before delivery. Aggressive front-loading suggests the yard is short of cash to start the build.",
+        head: ["Milestone", "Typical share", "Cumulative"],
+        rows: [
+          ["Contract signature", "20 percent", "EUR 20 m"],
+          ["Steel cutting", "10 percent", "EUR 30 m"],
+          ["Keel laying", "10 percent", "EUR 40 m"],
+          ["Hull plating complete", "10 percent", "EUR 50 m"],
+          ["Engines installed", "10 percent", "EUR 60 m"],
+          ["Launch", "10 percent", "EUR 70 m"],
+          ["Sea trials passed", "20 percent", "EUR 90 m"],
+          ["Delivery", "10 percent", "EUR 100 m"],
+        ],
+        sourceLine: "Practitioner working schedule; varies by yard and contract template.",
+      },
+      { type: "h2", text: "Cost premium of new build over comparable brokerage" },
+      {
+        type: "kv",
+        caption: "The premium narrows over the hold. Quality builders hold value materially better than mid-tier brokerage acquisitions.",
+        rows: [
+          { label: "At entry", value: "30 to 50 percent premium over comparable brokerage hull" },
+          { label: "At delivery, 24 to 36 months later", value: "15 to 25 percent premium" },
+          { label: "Five years later", value: "Often comparable; quality builders ahead" },
+          { label: "Ten years later", value: "Quality new build ahead on residual value" },
+        ],
+        sourceLine: "Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves.",
+      },
+      { type: "h2", text: "Ten contract points where inexperience gets priced" },
+      {
+        type: "table",
+        caption: "A single afternoon\u2019s competent legal review at heads-of-terms saves more than the owner\u2019s representative fee for the entire project.",
+        head: ["Point", "Typical position", "Counsel commentary"],
+        rows: [
+          ["Stage payment loading", "50 to 70 percent before delivery", "Watson Farley & Williams"],
+          ["Refund guarantee credit", "Tier-one bank pay-on-demand vs surety wrapper", "Norton Rose Fulbright"],
+          ["Liquidated damages cap", "1 percent of contract value per week, capped at 5 to 10 percent", "Hill Dickinson; Triple Point Technology v PTT [2021] UKSC 29"],
+          ["Force majeure burden", "Yard must prove \u201cbut for\u201d causation under English law", "Classic Maritime v Limbungan [2019] EWCA Civ 1102"],
+          ["Change order procedure", "Defined unit rates; third-party quote rights", "Stephenson Harwood (Sean Gibbons)"],
+          ["Defect notification deadlines", "Typically 14 days from discovery", "HFW"],
+          ["Warranty length", "Standard 12 months; negotiable to 24", "Practitioner default"],
+          ["Cancellation thresholds", "150 days post-delivery / 180 days total", "Jiangsu Guoxin v Precious Shipping [2020] EWHC 1030"],
+          ["Title position during construction", "Some yards retain title until delivery", "Feadship cited as retain-title model"],
+          ["Dispute forum", "English law; LMAA arbitration", "Practitioner default"],
+        ],
+        sourceLine: "Hannaford Turner partner Justin Turner; published English-law shipbuilding commentary.",
+      },
+      { type: "h2", text: "Owner\u2019s representative fee structures, indicative" },
+      {
+        type: "kv",
+        caption:
+          "On a EUR 100 m, 36-month new build. Brokers acting as owner\u2019s representatives are typically paid by yard commission of around 5 percent without disclosure to the buyer.",
+        rows: [
+          { label: "Independent firm, percentage", value: "1 to 3 percent of build cost" },
+          { label: "Independent firm, fixed fee", value: "EUR 1 m to EUR 3 m across the build" },
+          { label: "Broker acting as owner\u2019s representative", value: "Typically yard commission of around 5 percent (undisclosed to buyer)" },
+          { label: "Naval architect acting as owner\u2019s representative", value: "Continuing yard relationship; structurally conflicted" },
+        ],
+        sourceLine:
+          "Practitioner anecdotal range. Major firms (Edmiston, Burgess, Cecil Wright, Y.CO, Moran, Hill Robinson) do not publish fee structures. The lack of published fees across the entire owner\u2019s representative market is itself a finding.",
+      },
+    ],
+    sources: [
+      { label: "SYBAss / IAMI / GUEST, YORP launch June 2023; YORR launch November 2024", line: "Yacht Owner\u2019s Representative Programme and Register, administered by the Superyacht Alliance for Professional Standards." },
+      { label: "Watson Farley & Williams; Norton Rose Fulbright; Hill Dickinson; HFW; Stephenson Harwood", line: "Published shipbuilding contract commentary." },
+      { label: "Triple Point Technology v PTT [2021] UKSC 29", line: "Liquidated damages cap behaviour." },
+      { label: "Classic Maritime v Limbungan [2019] EWCA Civ 1102", line: "Force majeure causation under English law." },
+      { label: "Jiangsu Guoxin v Precious Shipping [2020] EWHC 1030", line: "Cancellation threshold behaviour." },
+      { label: "Jack Inglis (ULTIMAR), Superyacht Investor", line: "Family-office-CFO-as-owner\u2019s-representative case; 1,200-item snag list at delivery." },
+    ],
+  },
+
+  "06-refit": {
+    slug: "06-refit",
+    title: "Refit yard capacity and typical overrun curve, 2026 to 2028.",
+    standfirst:
+      "The 30 to 50 percent overrun is the empirical expectation, not a project management failure. Capacity at the dominant yards is tightening into a sellers\u2019 market for the first time in a decade. The numbers below are what to plan against.",
+    blocks: [
+      { type: "h2", text: "Refit cost benchmarks, per metre per year" },
+      {
+        type: "table",
+        caption: "Practitioner working ranges across more than 30 managed refit projects.",
+        head: ["Scope", "EUR per metre per year", "On a 50 m yacht"],
+        rows: [
+          ["Annual maintenance", "2,000 to 8,000", "EUR 100,000 to 400,000"],
+          ["Mid-life refit", "10,000 to 30,000", "EUR 500,000 to 1.5 m"],
+          ["Major structural refit", "40,000 to 100,000+", "EUR 2 m to 5 m+"],
+        ],
+        sourceLine: "Foreland Marine project archive. Yard rate cards (MB92, Pendennis) are not published.",
+      },
+      { type: "h2", text: "Five-year survey or major refit, indicative" },
+      {
+        type: "kv",
+        caption: "A useful rule: if projected refit cost exceeds 30 percent of pre-refit market value, sale is usually the better decision.",
+        rows: [
+          { label: "Five-year survey or major refit cost band", value: "5 to 15 percent of insured hull value" },
+          { label: "Mediterranean berth fees during refit, 40 m", value: "EUR 400 to 800 per day" },
+          { label: "Northern Europe berth fees during refit, 40 m", value: "EUR 600 to 1,200 per day" },
+          { label: "Mediterranean skilled labour", value: "EUR 45 to 75 per hour; specialists EUR 80 to 120" },
+          { label: "Northern Europe skilled labour", value: "20 to 40 percent above Mediterranean" },
+        ],
+        sourceLine: "Foreland Marine project archive. Practitioner working ranges.",
+      },
+      { type: "h2", text: "The overrun pattern" },
+      {
+        type: "table",
+        caption: "Industry consensus is that refit projects routinely run 30 to 50 percent over original quoted scope.",
+        head: ["Project quality", "Typical overrun", "Notes"],
+        rows: [
+          ["Well-managed at competent yard, experienced rep", "10 to 20 percent", "The achievable target"],
+          ["Industry typical", "30 to 50 percent", "The empirical expectation"],
+          ["Poorly-managed", "60 to 100 percent or more", "Dockwalk: 600 percent overrun on a 1967 C&N refit"],
+        ],
+        sourceLine:
+          "Industry consensus across trade press and practitioner commentary. Dockwalk documented the extreme case.",
+      },
+      { type: "h2", text: "Practitioner contingency reserves" },
+      {
+        type: "kv",
+        caption: "Reserves built into refit budgets reflect the empirical overrun pattern.",
+        rows: [
+          { label: "Known scope", value: "10 to 15 percent contingency" },
+          { label: "Opened-up vessel", value: "15 to 20 percent" },
+          { label: "First-time-opened older hull", value: "20 to 25 percent" },
+        ],
+        sourceLine: "Foreland Marine project archive; practitioner consensus.",
+      },
+      { type: "h2", text: "Dominant refit yards in the over-30 m market" },
+      {
+        type: "kv",
+        caption: "Top yards typically booked 12 to 24 months ahead for major refits.",
+        rows: [
+          { label: "MB92 Group (Barcelona, La Ciotat)", value: "Dominant Western Med operator. Owns paint specialist GYG. Acquired by Squircle Capital, late 2024." },
+          { label: "Pendennis Shipyard (Falmouth, UK)", value: "Approximately 18 projects in 2024 against annual average of 10. Throughput rising into capacity." },
+          { label: "Lusben (Italy)", value: "76,000 sq m site. 210 m dry dock, 2,000 t syncrolift, 150 t travel lift. Capacity 20 to 140 m." },
+          { label: "Astilleros de Mallorca (Palma)", value: "78,000 sq m site. 1,700 t haul, 120 m outfitting quay. Over 250 yachts per year." },
+          { label: "Compositeworks", value: "Now within MB92." },
+          { label: "RMK Marine (Turkey)", value: "Public capacity data thin." },
+        ],
+        sourceLine: "Yard published statements; Superyacht Group expert roundtable (paywalled).",
+      },
+      { type: "h2", text: "Spanish IPR, the VAT economics of refit" },
+      {
+        type: "kv",
+        caption: "On a EUR 5 m refit, the saving from properly executed Spanish Inward Processing Relief is approximately EUR 1.05 m.",
+        rows: [
+          { label: "Mechanism", value: "Non-EU flagged yacht enters under temporary admission; works at customs-site shipyard; 21 percent VAT suspended; re-exported" },
+          { label: "Admission window", value: "18 months, extendable to 24 under bonded conditions" },
+          { label: "Eligible yards", value: "MB92, Astilleros de Mallorca, several smaller Spanish yards" },
+          { label: "Compliance burden", value: "Customs site, bonded works, documentation, re-export evidence" },
+        ],
+        sourceLine: "Spanish customs administration scope; published yacht law firm guidance.",
+      },
+    ],
+    sources: [
+      { label: "Future Market Insights", line: "Global refit market sized at USD 2.9 bn in 2025, supporting roughly 6,000 active vessels." },
+      { label: "Foreland Marine project archive", line: "More than 30 managed refit projects, anonymised and aggregated." },
+      { label: "Superyacht Group 2025 expert roundtable", line: "Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben), Txema Rubio (MB92). Paywalled." },
+      { label: "Dockwalk", line: "600 percent overrun on a 1967 Camper & Nicholsons refit (extreme case)." },
+      { label: "Hill Dickinson, Watson Farley & Williams", line: "Spanish IPR mechanism; comparative refit VAT structures." },
+    ],
+  },
+
+  "07-operations": {
+    slug: "07-operations",
+    title: "Crew salary bands and insurance market commentary.",
+    standfirst:
+      "Crew is 30 to 40 percent of annual operating cost on a typical 50 m, the largest single line by some distance. Hull insurance has stabilised; the post-Bayesian response was tightening on crew qualifications, not blanket rate rises. The numbers below are the operating frame.",
+    blocks: [
+      { type: "h2", text: "Captain pay, by yacht size" },
+      {
+        type: "table",
+        caption:
+          "Captain pay rises with size. Quay Crew records 7 percent year-on-year growth in the 70 to 79 m bracket; 63 percent of captains are now on time-for-time rotation.",
+        head: ["Yacht size", "Captain pay (EUR per month)"],
+        rows: [
+          ["20 to 24 m", "Around 6,000"],
+          ["30 to 40 m", "8,000 to 12,000"],
+          ["40 to 50 m", "10,000 to 14,000"],
+          ["50 to 60 m", "10,000 to 16,000"],
+          ["70 to 79 m", "14,000 to 20,000 (up 7 percent year on year)"],
+          ["80 m and above", "16,000 to 23,000"],
+          ["100 to 119 m", "Over 25,000"],
+        ],
+        sourceLine: "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey.",
+      },
+      { type: "h2", text: "Crew structure, by yacht size" },
+      {
+        type: "kv",
+        caption: "Numbers scale roughly linearly with size to 70 m and grow faster as operational complexity expands.",
+        rows: [
+          { label: "40 to 50 m", value: "8 to 12 crew" },
+          { label: "50 to 60 m", value: "12 to 18 crew" },
+          { label: "60 to 70 m", value: "18 to 25 crew" },
+          { label: "80 m and above", value: "25 to 35 crew" },
+        ],
+        sourceLine: "Practitioner standard staffing; YPI Crew, Quay Crew commentary.",
+      },
+      { type: "h2", text: "Compliance cost on a 40 m yacht" },
+      {
+        type: "kv",
+        caption:
+          "ISM, MLC, flag administration, class society fees, and the management company\u2019s compliance services. Recurring cost that does not appear in broker-quoted operating budgets.",
+        rows: [
+          { label: "Annual compliance cost band", value: "EUR 80,000 to 200,000 per year" },
+          { label: "Frameworks", value: "ISM (above 500 GT); MLC (commercial operation)" },
+          { label: "Recognised management firms", value: "Hill Robinson, Burgess, Y.CO, Doehle, Moran, Edmiston, C&N, Fraser" },
+        ],
+        sourceLine: "Foreland Marine project archive; published management company fee guidance.",
+      },
+      { type: "h2", text: "Hull insurance market, 2024 to 2026" },
+      {
+        type: "table",
+        caption: "Hull rates stabilised in H1 2024 and softened modestly through 2025 for fleets with good loss records.",
+        head: ["Period", "Hull rate movement", "Note"],
+        rows: [
+          ["2022 to 2023", "Up 50 to 70 percent (London market)", "AIG cited; broad hardening"],
+          ["H1 2024", "Stabilised", "Most of the increase had landed by then"],
+          ["Q4 2025", "Down 4 to 7.5 percent for clean fleets", "Gallagher Specialty"],
+          ["Typical hull rate, 40 to 50 m well-maintained", "0.7 to 1.5 percent of insured value", "Mediterranean / Northern Europe"],
+          ["Smaller superyachts and hurricane-exposed regions", "2 to 5 percent", ""],
+        ],
+        sourceLine: "AIG, Gallagher Specialty published commentary; Pantaenius market notes.",
+      },
+      { type: "h2", text: "War risk premium, 2023 to 2026" },
+      {
+        type: "table",
+        caption: "Per-voyage premium as a percentage of insured hull value. War risk policies are typically purchased per voyage, not annual.",
+        head: ["Region", "Pre-October 2023", "Early 2024", "Peak", "Current"],
+        rows: [
+          ["Red Sea", "0.05 percent", "1 percent", "2 percent", "Elevated"],
+          ["Black Sea (Russian ports)", "Standard", "Elevated", "1 percent+", "0.65 to 0.80 percent"],
+          ["Ukrainian deep-water ports", "Standard", "Elevated", "1 percent+", "0.45 to 0.55 percent"],
+        ],
+        sourceLine: "Lloyd\u2019s war risk circular updates; Marsh, Gallagher published commentary.",
+      },
+      { type: "h2", text: "Charter, four worked cases" },
+      {
+        type: "table",
+        caption:
+          "Most charter operations subsidise rather than recover ownership cost. The successful exception depends on disciplined operation and willingness to release the prime weeks.",
+        head: ["Yacht", "Weekly rate", "Weeks", "Net result"],
+        rows: [
+          ["48 m motor", "EUR 250 to 310 k", "7", "Break-even"],
+          ["47 m sail", "EUR 110 to 125 k", "9", "EUR 444 k loss"],
+          ["85 m motor", "EUR 850 to 950 k", "8", "EUR 430 k loss"],
+          ["60 m, owner-optimised", "EUR 220 to 260 k", "12", "Up to EUR 2 m net positive"],
+        ],
+        sourceLine: "BOAT International published case studies.",
+      },
+    ],
+    sources: [
+      { label: "YPI Crew 2026 salary guide", line: "Captain and senior crew pay bands across yacht size." },
+      { label: "Quay Crew 2025 captain survey", line: "Time-for-time rotation share; year-on-year pay growth in 70 to 79 m bracket." },
+      { label: "Pantaenius (Michelle van der Merwe)", line: "On record on the Bayesian sinking and the limited insurance-market response." },
+      { label: "AIG; Gallagher Specialty", line: "Published market commentary on hull rate movement, 2022 to 2025." },
+      { label: "Lloyd\u2019s war risk circulars", line: "Per-voyage premiums by region." },
+      { label: "BOAT International", line: "Charter case studies." },
+    ],
+  },
+
+  "08-decision-framework": {
+    slug: "08-decision-framework",
+    title: "From considering ownership to signing a contract.",
+    standfirst:
+      "Building the team in the order that matters. The independence test, applied transparently. The ten questions to ask before signing anything. The numbers below set the scale of the team-building decision.",
+    blocks: [
+      { type: "h2", text: "The reader profile, on the published record" },
+      {
+        type: "kv",
+        caption:
+          "More wealth has been created in fewer hands than at any point in recorded economic history. The reader of this Reference is one of two profiles.",
+        rows: [
+          { label: "Global UHNWIs (above USD 30 m), 2026", value: "713,626" },
+          { label: "Five-year change", value: "Up 162,191 (89 individuals per day)" },
+          { label: "United States share, 2026", value: "35 percent" },
+          { label: "United States share, 2031 forecast", value: "41 percent" },
+          { label: "Wealth transferred to next generation by 2048", value: "USD 83.5 trn" },
+          { label: "Next-gen HNWIs who switch wealth manager within 1 to 2 years of inheritance", value: "81 percent" },
+          { label: "Yacht references in UBS Global Family Office Report 2025", value: "Zero, across 80 pages and 317 family offices" },
+        ],
+        sourceLine:
+          "Knight Frank Wealth Report 2026; Capgemini World Wealth Report 2025; UBS Global Family Office Report 2025.",
+      },
+      { type: "h2", text: "The independence test, six elements" },
+      {
+        type: "table",
+        caption: "Apply to any adviser the reader is considering, including the publisher of this Reference.",
+        head: ["Question", "Pass", "Fail"],
+        rows: [
+          ["Earn anything contingent on transaction closing?", "No", "Yes"],
+          ["Equity, employment, or referral relationship with yards, brokers, suppliers, management or charter operations?", "No", "Yes"],
+          ["Publish a complete list of every counterparty worked with in the past three years, with relationship?", "Yes", "No"],
+          ["Fees transparent and quoted in writing in advance?", "Yes", "No"],
+          ["Hold professional indemnity insurance appropriate to the transaction?", "Yes", "No"],
+          ["Principals named, traceable, and accountable?", "Yes", "No"],
+        ],
+        sourceLine: "The Reference. Publisher\u2019s own answers are set out on the colophon.",
+      },
+      { type: "h2", text: "Building the team, in priority order" },
+      {
+        type: "table",
+        caption:
+          "The order in which the buyer hires the team determines the quality of every subsequent decision. Most first-time buyers hire in the wrong order.",
+        head: ["Order", "Role", "Priority engagement"],
+        rows: [
+          ["1", "Independent adviser", "Before any broker, captain, or management company"],
+          ["2", "Yacht lawyer", "Specialist shipbuilding and yacht counsel; Hill Dickinson, WFW, Ince, Stephenson Harwood, Reed Smith, HFW, Norton Rose Fulbright"],
+          ["3", "Surveyor", "Per-deal once a shortlist exists; Wolfson Marine, Ward & McKenzie, Patton Marine"],
+          ["4", "Captain candidate (or build captain on new build)", "Hired through routes independent of the broker"],
+          ["5", "Yacht management company", "Engaged on acquisition decision; independent of the broker"],
+          ["6", "Insurance broker", "Once flag and operating profile determined; Pantaenius, AON, Gallagher"],
+        ],
+        sourceLine: "Foreland Marine practitioner framework.",
+      },
+      { type: "h2", text: "Cost of the team, on a USD 30 to 50 m acquisition" },
+      {
+        type: "kv",
+        caption:
+          "On a transaction of this size, this is a rounding error. Owners who economise on it save tenths of a percentage point to lose multiples of a percentage point in the asset itself.",
+        rows: [
+          { label: "Independent adviser, year one", value: "USD 80,000 to 250,000" },
+          { label: "Yacht lawyer, acquisition only", value: "USD 50,000 to 200,000" },
+          { label: "Pre-purchase survey", value: "USD 25,000 to 60,000" },
+          { label: "Captain hire process", value: "USD 5,000 to 25,000 (recruitment fees)" },
+          { label: "Management company onboarding, year one", value: "USD 30,000 to 80,000" },
+          { label: "Insurance broker fee structure", value: "Brokerage embedded in premium; typically no separate fee" },
+          { label: "Total team cost, year one", value: "USD 200,000 to 600,000" },
+        ],
+        sourceLine: "Foreland Marine practitioner working ranges.",
+      },
+    ],
+    sources: [
+      { label: "UBS Global Family Office Report 2025", line: "317 family offices; USD 1.1 bn AUM average; no yacht references across 80 pages." },
+      { label: "Capgemini World Wealth Report 2025", line: "USD 83.5 trn inheritance by 2048; 81 percent next-gen switch wealth manager within 1 to 2 years." },
+      { label: "Knight Frank Wealth Report 2026 / Family Office Survey 2026", line: "First reference to superyachts in the family office portfolio architecture." },
+      { label: "Foreland Marine project archive", line: "Team-cost ranges across managed projects." },
+    ],
+  },
+};
+
+export function getDataSpread(slug: string): DataSpread | undefined {
+  return dataSpreads[slug];
+}
