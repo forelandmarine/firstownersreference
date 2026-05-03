@@ -100,7 +100,7 @@ export default function HomePage() {
                 The superyacht trade press is funded by the yards and brokers
                 whose interests it covers. That structure is not a moral
                 failing; it is simply how the publications fund themselves.
-                The Reference is funded differently and written differently.
+                The First Owner’s Reference is funded differently and written differently.
                 The independence is structural rather than stylistic.
               </p>
               <p>
@@ -185,7 +185,7 @@ export default function HomePage() {
               </p>
               <p>
                 If you would like one, write to us. Tell us briefly who you
-                are and why the Reference is useful to you. We read every
+                are and why The First Owner’s Reference is useful to you. We read every
                 request.
               </p>
             </div>

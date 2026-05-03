@@ -40,7 +40,7 @@ export function SearchForm({ initialQuery = "" }: { initialQuery?: string }) {
     <div className="space-y-12">
       <div className="border-b border-charcoal pb-2">
         <label htmlFor="search-input" className="meta-marine block mb-2">
-          Search the Reference
+          Search The First Owner’s Reference
         </label>
         <input
           id="search-input"

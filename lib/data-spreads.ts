@@ -232,7 +232,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
       {
         type: "note",
-        text: "The Edmiston 30 m+ count of 363 and the Denison broader count of 470 are not comparable. The 30 m+ figure is the relevant one for the readership of this Reference.",
+        text: "The Edmiston 30 m+ count of 363 and the Denison broader count of 470 are not comparable. The 30 m+ figure is the relevant one for the readership of The First Owner’s Reference.",
       },
     ],
     sources: [
@@ -1213,7 +1213,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         type: "kv",
         caption:
-          "More wealth has been created in fewer hands than at any point in recorded economic history. The reader of this Reference is one of two profiles.",
+          "More wealth has been created in fewer hands than at any point in recorded economic history. The reader of The First Owner’s Reference is one of two profiles.",
         rows: [
           { label: "Global UHNWIs (above USD 30 m), 2026", value: "713,626" },
           { label: "Five-year change", value: "Up 162,191 (89 individuals per day)" },
@@ -1229,7 +1229,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       { type: "h2", text: "The independence test, six elements" },
       {
         type: "table",
-        caption: "Apply to any adviser the reader is considering, including the publisher of this Reference.",
+        caption: "Apply to any adviser the reader is considering, including the publisher of The First Owner’s Reference.",
         head: ["Question", "Pass", "Fail"],
         rows: [
           ["Earn anything contingent on transaction closing?", "No", "Yes"],
@@ -1239,7 +1239,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           ["Hold professional indemnity insurance appropriate to the transaction?", "Yes", "No"],
           ["Principals named, traceable, and accountable?", "Yes", "No"],
         ],
-        sourceLine: "The Reference. Publisher\u2019s own answers are set out on the colophon.",
+        sourceLine: "The First Owner’s Reference. Publisher\u2019s own answers are set out on the colophon.",
       },
       { type: "h2", text: "Building the team, in priority order" },
       {

@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 export const metadata = {
   title: "Colophon",
   description:
-    "How the Reference is made. Editorial principles, type, paper, photography, sources, and the names behind the publication.",
+    "How The First Owner’s Reference is made. Editorial principles, type, paper, photography, sources, and the names behind the publication.",
 };
 
 export default function ColophonPage() {
@@ -24,7 +24,7 @@ export default function ColophonPage() {
               <span>Colophon</span>
             </div>
             <h1 className="font-serif font-light text-headline lg:text-display leading-[1.05] tracking-tight max-w-3xl">
-              How the Reference is made.
+              How The First Owner’s Reference is made.
             </h1>
           </div>
         </header>
@@ -36,7 +36,7 @@ export default function ColophonPage() {
           <div className="lg:col-span-9 prose-body max-w-prose">
             <h2>Editorial principles</h2>
             <p>
-              No advertising, ever. The Reference is funded by the publisher
+              No advertising, ever. The First Owner’s Reference is funded by the publisher
               and by no other commercial party. No advertorial, no sponsored
               content, no paid placement. This is the editorial wedge on which
               every other decision rests.
@@ -120,10 +120,10 @@ export default function ColophonPage() {
 
             <h2>Publisher disclosure: the independence test, applied</h2>
             <p>
-              The publisher of this Reference is also a yacht consultancy and
+              The publisher of The First Owner’s Reference is also a yacht consultancy and
               has a commercial interest in being engaged by readers. This is
               disclosed openly. The six-element independence test that runs
-              through the Reference applies to the publisher as it does to
+              through The First Owner’s Reference applies to the publisher as it does to
               every other adviser. Its answers are set out below.
             </p>
             <p>

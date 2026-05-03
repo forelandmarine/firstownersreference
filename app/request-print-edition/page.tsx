@@ -39,7 +39,7 @@ export default function PrintRequestPage() {
               <p>
                 We do not sell copies. The print edition exists as an
                 editorial artefact and as a relationship object. We send
-                copies to readers for whom the Reference is genuinely useful:
+                copies to readers for whom The First Owner’s Reference is genuinely useful:
                 first-time buyers approaching an acquisition, family office
                 principals, wealth managers, and members of a small number of
                 clubs and learned societies whose members we expect to have
@@ -93,7 +93,7 @@ export default function PrintRequestPage() {
                   className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine"
                 />
               </FormField>
-              <FormField label="Why the Reference is useful to you" required>
+              <FormField label="Why The First Owner’s Reference is useful to you" required>
                 <textarea
                   name="why"
                   required

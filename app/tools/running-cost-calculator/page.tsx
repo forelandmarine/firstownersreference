@@ -873,7 +873,7 @@ export default function RunningCostCalculatorPage() {
                   These are indicative estimates against named source
                   assumptions. Every yacht is different. For a tailored
                   budget, write to Foreland Marine, the consultancy that
-                  publishes this Reference.
+                  publishes The First Owner’s Reference.
                 </p>
                 <ButtonPrimary
                   href="https://forelandmarine.com/contact"

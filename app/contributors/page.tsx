@@ -28,7 +28,7 @@ export default function ContributorsPage() {
               Eight guest contributors. Each transparent on commercial relationships.
             </h1>
             <p className="font-serif italic text-xl lg:text-2xl text-charcoal-soft mt-8 max-w-2xl">
-              The Reference is collaborative by design. Every chapter carries
+              The First Owner’s Reference is collaborative by design. Every chapter carries
               an opinion piece by a named external contributor with deep
               first-hand knowledge of the topic.
             </p>
