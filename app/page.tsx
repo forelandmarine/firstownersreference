@@ -12,8 +12,8 @@ export default function HomePage() {
 
       <section className="relative h-[100dvh] min-h-[640px] w-full overflow-hidden">
         <Image
-          src="/images/stock/jclass-bow.jpg"
-          alt="J Class yacht under sail at the St Barths Bucket regatta"
+          src="/images/stock/marina-bows.jpg"
+          alt="Superyacht bows and upper decks ranged along a marina berth at dusk"
           fill
           priority
           sizes="100vw"
@@ -35,8 +35,7 @@ export default function HomePage() {
                 Edition One &middot; September 2026
               </p>
               <p className="caption text-paper/90 max-w-sm">
-                Photograph: J Class racing, St Barths Bucket. 17.8995&deg;N
-                62.8333&deg;W.
+                Photograph: Parej Richard.
               </p>
             </div>
           </div>
