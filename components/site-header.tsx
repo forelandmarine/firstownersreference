@@ -20,11 +20,27 @@ export function SiteHeader() {
           <Link href="/tools/running-cost-calculator" className="link">
             Calculator
           </Link>
-          <Link href="/contributors" className="link">
-            Contributors
-          </Link>
           <Link href="/glossary" className="link">
             Glossary
+          </Link>
+          <Link
+            href="/search"
+            className="link inline-flex items-center gap-2"
+            aria-label="Search"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="6" cy="6" r="4.5" />
+              <path d="M9.5 9.5 L13 13" strokeLinecap="round" />
+            </svg>
+            Search
           </Link>
           <Link href="/request-print-edition" className="link-marine">
             Request print copy

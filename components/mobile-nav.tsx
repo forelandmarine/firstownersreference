@@ -6,8 +6,9 @@ import { useState, useEffect } from "react";
 const NAV_ITEMS = [
   { href: "/#sections", label: "Sections" },
   { href: "/tools/running-cost-calculator", label: "Calculator" },
-  { href: "/contributors", label: "Contributors" },
   { href: "/glossary", label: "Glossary" },
+  { href: "/contributors", label: "Contributors" },
+  { href: "/search", label: "Search" },
 ];
 
 export function MobileNav() {
