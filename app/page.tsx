@@ -54,16 +54,24 @@ export default function HomePage() {
       <section className="bg-paper py-20 lg:py-28 border-t border-rule">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
           <div className="max-w-3xl">
-            <p className="meta mb-6">Edition One &middot; 2026</p>
+            <p className="meta-marine mb-6">Preface to Edition One</p>
             <p className="font-serif font-light text-2xl lg:text-[1.875rem] leading-[1.4] tracking-tight text-charcoal">
-              The First Owner&rsquo;s Reference is written for principals
-              considering a first yacht acquisition. Nine chapters covering
-              the cost of ownership, the structure of the market, the
-              acquisition process, new build, refit, operations, motor
-              versus sail, and the team to assemble before any contract is
-              signed. Led by experts working inside the superyacht
-              industry. Every figure is sourced. Independently funded. No
-              advertising, ever.
+              The First Owner&rsquo;s Reference is an annual editorial
+              publication addressing the structural, financial, and
+              operational dimensions of first-time superyacht acquisition.
+              Across nine chapters it surveys the cost of ownership, the
+              structure of the contemporary market, the acquisition
+              process, the new build and brokerage decision, refit,
+              operations, the motor against sailing yacht question, and
+              the team architecture appropriate to a principal entering
+              the asset class. Material is drawn from named published
+              industry data, identified practitioner sources, and an
+              aggregated archive of managed projects; every claim is
+              cited. Content is updated online between editions and
+              republished annually in print so that the figures retain
+              their currency. The publication is edited by experts
+              working inside the superyacht industry, independently
+              funded, and carries no advertising.
             </p>
           </div>
         </div>
