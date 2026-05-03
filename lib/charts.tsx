@@ -58,7 +58,7 @@ export const charts: Record<string, () => React.ReactElement> = {
 
   "operating-cost-50m-motor-vs-sail": () => (
     <ChartFrame
-      number="09.01"
+      number="08.01"
       title="Annual operating cost on a 50 metre, motor against sail"
       standfirst="A 50 metre sailing yacht typically runs 70 to 85 percent of the comparable motor cost. Crew, fuel, and insurance are the lines that move."
       caption="Indicative cost split, EUR million per year, moderate use (8 to 10 weeks family use). Fuel modelled at Mediterranean rates, 400 cruising hours."
@@ -383,7 +383,7 @@ export const charts: Record<string, () => React.ReactElement> = {
 
   "eu-ets-exposure": () => (
     <ChartFrame
-      number="09.02"
+      number="08.02"
       title="EU ETS Maritime exposure, by yacht profile"
       standfirst="The EU ETS extension from 1 January 2024 applies to ships of and above 5,000 GT. Compliance phased 40 percent in 2025, 70 percent in 2026, 100 percent from 2027."
       caption="Most yachts sit below the threshold. Very large motor yachts now sit inside it. Sail yachts at every size band sit below."
@@ -407,7 +407,7 @@ export const charts: Record<string, () => React.ReactElement> = {
 
   "days-on-market-sail-vs-motor": () => (
     <ChartFrame
-      number="09.03"
+      number="08.03"
       title="Brokerage days on market, sail against motor, 25 to 45 m"
       standfirst="Sail yachts in this band moved at meaningfully shorter days on market than comparable motor in 2025."
       caption="Median days on market, 25 to 45 m segment, 2025."

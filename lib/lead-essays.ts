@@ -49,7 +49,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       "None of this argues against ownership. It argues against ownership undertaken on the assumption that the cost is what the broker said it was. The right ownership decision, taken with full visibility of the financial reality, is one of the great purchases a person can make. The same decision, taken on the back of folkloric numbers and contingent advice, tends to be among the more costly errors a UHNW buyer can make.",
       "Ownership makes sense when the owner intends to use the yacht for at least 12 weeks per year, plans to hold for at least seven years, has the cash flow to absorb operating cost without strain, and wants the kind of programme that a charter cannot deliver. Repeated, predictable, family-led use of a known asset that has been specified, crewed, and operated to the owner's preferences. That is the genuine ownership case. It is not financial. It is operational.",
       "The first task is to ask whether your intended use pattern fits this case. The running cost calculator on this site lets you run your own numbers through a structure calibrated against MYBA, Pantaenius, Quay Crew, IGY, and aggregated industry practitioner data. Source assumptions are named on every category. The answer should be sobering.",
-      "If after that exercise the answer is still ownership, the rest of the Reference is written with that reader in mind. The remaining chapters cover how the market is structured, how the industry actually works, what the acquisition process looks like, the new build versus brokerage decision, refit, operations, and how to build the team that protects the buyer through all of it. Read in any order. Apply the independence test in chapter 8 to anyone proposing to advise.",
+      "If after that exercise the answer is still ownership, the rest of the Reference is written with that reader in mind. The remaining chapters cover how the market is structured, how the industry actually works, what the acquisition process looks like, the new build versus brokerage decision, refit, operations, and how to build the team that protects the buyer through all of it. Read in any order. Apply the independence test in chapter 9 to anyone proposing to advise.",
     ],
   },
 
@@ -131,7 +131,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       "The captain is also a human being with a career and a network. They have worked for other owners, for other yards, for other brokers. They have relationships that long pre-date the owner's involvement. Most captains are honest professionals who do their best for the owner who employs them. A small minority are not. The structure of the role provides ample opportunity for either, and the owner will struggle to tell which they have hired until well after the decision is made.",
       "A useful framework: the captain who tells you what you want to hear in the first three meetings is not the captain you want. The one who pushes back, who asks hard questions about your intended use, who is sceptical of your timeline, is the one to hire. Captains who agree easily are pleasant to work with and expensive to live with.",
       { type: "h2", text: "What independence actually means" },
-      "Several firms describe themselves as independent. The word does meaningful work in some cases and is decorative in others. The independence test, set out in full in chapter 8, has six elements.",
+      "Several firms describe themselves as independent. The word does meaningful work in some cases and is decorative in others. The independence test, set out in full in chapter 9, has six elements.",
       "One: does the firm earn anything contingent on a transaction closing? If yes, they are not independent of the deal. Two: does the firm hold any equity, employment, or referral relationship with any yard, broker, supplier, management company, or charter operation? If yes, they are not independent of those counterparties. Three: does the firm publish a complete list of every counterparty they have worked with in the past three years, with the nature of the relationship? If no, the reader cannot test claims one and two. Four: are the firm's fees transparent and quoted in writing in advance? If no, the structure can hide commissions. Five: does the firm hold professional indemnity insurance at a level appropriate to the transaction? If no, the firm cannot afford to be wrong on the buyer's behalf. Six: are the firm's principals named, traceable, and accountable? If no, none of the above can be verified.",
       "Six questions. Apply them to anyone proposing to advise on the acquisition, including the publisher of this Reference. The publisher's own answers are set out on the colophon.",
       { type: "h2", text: "The honest version of the conversation" },
@@ -421,8 +421,8 @@ export const leadEssays: Record<string, LeadEssay> = {
     ],
   },
 
-  "08-decision-framework": {
-    slug: "08-decision-framework",
+  "09-decision-framework": {
+    slug: "09-decision-framework",
     title: "The decision framework",
     standfirst:
       "Building the team that protects you, in the order that matters. The independence test, applied transparently to every adviser including us.",
@@ -484,8 +484,8 @@ export const leadEssays: Record<string, LeadEssay> = {
     ],
   },
 
-  "09-motor-versus-sail": {
-    slug: "09-motor-versus-sail",
+  "08-motor-versus-sail": {
+    slug: "08-motor-versus-sail",
     title: "Motor versus sail",
     standfirst:
       "The structural decision few first-time buyers spend enough time on. The trade press treats it as a matter of taste. The data treats it differently.",

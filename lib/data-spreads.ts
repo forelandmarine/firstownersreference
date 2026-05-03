@@ -1203,8 +1203,8 @@ export const dataSpreads: Record<string, DataSpread> = {
     ],
   },
 
-  "08-decision-framework": {
-    slug: "08-decision-framework",
+  "09-decision-framework": {
+    slug: "09-decision-framework",
     title: "From considering ownership to signing a contract.",
     standfirst:
       "Building the team in the order that matters. The independence test, applied transparently. The ten questions to ask before signing anything. The numbers below set the scale of the team-building decision.",
@@ -1298,8 +1298,8 @@ export const dataSpreads: Record<string, DataSpread> = {
     ],
   },
 
-  "09-motor-versus-sail": {
-    slug: "09-motor-versus-sail",
+  "08-motor-versus-sail": {
+    slug: "08-motor-versus-sail",
     title: "Motor versus sail, by the numbers.",
     standfirst:
       "The trade press treats the choice as taste. The data treats it as structural. The frame below sets out market share, operating cost, environmental footprint, and the racing market that supports value retention at the top of the segment.",

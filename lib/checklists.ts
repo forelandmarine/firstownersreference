@@ -722,13 +722,13 @@ export const checklists: Record<string, Checklist> = {
       "The page is designed to print onto a single A4. Complete with the captain and owner\u2019s representative in year one. Revisit annually.",
   },
 
-  "08-decision-framework": {
-    slug: "08-decision-framework",
+  "09-decision-framework": {
+    slug: "09-decision-framework",
     title: "The ten questions, applied to every adviser.",
     standfirst:
       "The ten questions are designed to be put to anyone proposing to advise on the acquisition, including the publisher of this Reference. The publisher\u2019s own answers are on the colophon. They are kind to ask. They tend to be answered helpfully.",
     intent:
-      "The questions below are the device of chapter eight: a calm reference for testing whether any adviser is structurally aligned with the buyer. They are designed to be put to people, not to be answered alone. Asking is the discipline; the answers are usually informative.",
+      "The questions below are the device of chapter nine: a calm reference for testing whether any adviser is structurally aligned with the buyer. They are designed to be put to people, not to be answered alone. Asking is the discipline; the answers are usually informative.",
     groups: [
       {
         heading: "The introductions",

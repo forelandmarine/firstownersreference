@@ -89,18 +89,7 @@ export const sections: Section[] = [
   },
   {
     number: "08",
-    slug: "08-decision-framework",
-    title: "The decision framework",
-    standfirst:
-      "Building your team. The ten questions to ask before signing anything. The independence test, applied transparently.",
-    coordinates: "51.5114°N 0.1126°W",
-    hero: "/images/stock/heritage-bw.jpg",
-    contributor: "To be confirmed",
-    contributorRole: "Family office principal",
-  },
-  {
-    number: "09",
-    slug: "09-motor-versus-sail",
+    slug: "08-motor-versus-sail",
     title: "Motor versus sail",
     standfirst:
       "The structural decision few first-time buyers spend enough time on. Operating cost, environmental footprint, racing pedigree, and the case for sail in 2026.",
@@ -108,6 +97,17 @@ export const sections: Section[] = [
     hero: "/images/velsheda-aerial.jpg",
     contributor: "To be confirmed",
     contributorRole: "Sailing yacht captain",
+  },
+  {
+    number: "09",
+    slug: "09-decision-framework",
+    title: "The decision framework",
+    standfirst:
+      "Building your team. The ten questions to ask before signing anything. The independence test, applied transparently.",
+    coordinates: "51.5114°N 0.1126°W",
+    hero: "/images/stock/heritage-bw.jpg",
+    contributor: "To be confirmed",
+    contributorRole: "Family office principal",
   },
 ];
 

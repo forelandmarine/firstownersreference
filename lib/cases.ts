@@ -317,8 +317,8 @@ export const cases: Record<string, CaseStudy> = {
       "Single Foreland Marine project, 2014 ongoing. Identifying details adjusted; the captain hire pattern, the operating outcomes, and the decade-long arithmetic are accurate to the original project.",
   },
 
-  "08-decision-framework": {
-    slug: "08-decision-framework",
+  "09-decision-framework": {
+    slug: "09-decision-framework",
     title: "The buyer who walked away.",
     standfirst:
       "Six months of search. Three shortlisted yachts. A surveyed hull at the right yard, at a price the buyer\u2019s adviser considered fair. Then the buyer ran the team architecture against the independence test, found that the structure he was being asked to operate inside did not pass it, and walked away from the acquisition. He has not re-entered the market. He considers the decision the right one.",
