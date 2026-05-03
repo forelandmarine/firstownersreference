@@ -9,7 +9,7 @@ export function SiteFooter() {
           <p className="font-serif text-2xl leading-tight tracking-tight">
             The First Owner&rsquo;s Reference
           </p>
-          <p className="meta mt-3">Edition One &middot; 2026</p>
+          <p className="meta mt-3">1st Edition &middot; 2026</p>
           <p className="caption mt-6 max-w-md">
             A yachting field manual, published annually. Independent. Contributor-led.
             Written by Foreland Marine. No advertising, ever.

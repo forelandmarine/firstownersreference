@@ -18,7 +18,7 @@ export default function ColophonPage() {
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
             <div className="flex items-center gap-3 mb-10 meta">
               <Link href="/" className="link">
-                Edition One
+                1st Edition
               </Link>
               <span>/</span>
               <span>Colophon</span>
@@ -31,7 +31,7 @@ export default function ColophonPage() {
 
         <section className="max-w-[80rem] mx-auto px-6 lg:px-12 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-3 space-y-2">
-            <p className="meta sticky top-32">Edition One &middot; 2026</p>
+            <p className="meta sticky top-32">1st Edition &middot; 2026</p>
           </div>
           <div className="lg:col-span-9 prose-body max-w-prose">
             <h2>Editorial principles</h2>
@@ -72,7 +72,7 @@ export default function ColophonPage() {
 
             <h2>Photography</h2>
             <p>
-              Edition One photography by{" "}
+              1st Edition photography by{" "}
               <a
                 href="https://fraseredwards.vercel.app"
                 className="link-marine"
@@ -106,7 +106,7 @@ export default function ColophonPage() {
               <br />
               Art director: To be appointed.
               <br />
-              Picture editor: Fraser Edwards, partnering on Edition One.
+              Picture editor: Fraser Edwards, partnering on 1st Edition.
               <br />
               Researcher and fact checker: To be appointed.
             </p>
@@ -178,10 +178,10 @@ export default function ColophonPage() {
 
             <h2>Citation</h2>
             <p>
-              The First Owner&rsquo;s Reference, Edition One, 2026. Published
+              The First Owner&rsquo;s Reference, 1st Edition, 2026. Published
               by Foreland Marine, London. ISSN pending. Citation suggested as
               author Foreland Marine, year 2026, title of essay or chapter,
-              published in The First Owner&rsquo;s Reference Edition One, URL.
+              published in The First Owner&rsquo;s Reference 1st Edition, URL.
             </p>
           </div>
         </section>

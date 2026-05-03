@@ -6,7 +6,7 @@ import { sections } from "@/lib/sections";
 export const metadata = {
   title: "Contributors",
   description:
-    "Named external contributors to Edition One of The First Owner's Reference. Yacht lawyers, surveyors, yard CEOs, captains, family office principals.",
+    "Named external contributors to 1st Edition of The First Owner's Reference. Yacht lawyers, surveyors, yard CEOs, captains, family office principals.",
 };
 
 export default function ContributorsPage() {
@@ -19,7 +19,7 @@ export default function ContributorsPage() {
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
             <div className="flex items-center gap-3 mb-10 meta">
               <Link href="/" className="link">
-                Edition One
+                1st Edition
               </Link>
               <span>/</span>
               <span>Contributors</span>

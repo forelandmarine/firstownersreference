@@ -41,7 +41,7 @@ export default function HomePage() {
             </h1>
             <div className="mt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               <p className="meta text-paper/80">
-                Edition One &middot; September 2026
+                1st Edition &middot; September 2026
               </p>
               <p className="caption text-paper/90 max-w-sm">
                 Photograph: Parej Richard.
@@ -56,7 +56,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             <div className="lg:col-span-3">
               <p className="meta-marine mb-3">Preface</p>
-              <p className="meta">Edition One</p>
+              <p className="meta">1st Edition</p>
             </div>
             <div className="lg:col-span-9 space-y-6">
               <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal">
@@ -76,11 +76,10 @@ export default function HomePage() {
                 projects. Every claim cited. Updated continuously online,
                 republished annually in print, so figures stay current.
               </p>
-              <ul className="meta-marine flex flex-wrap gap-x-6 gap-y-2 pt-4 border-t border-rule">
-                <li>Edited by industry practitioners</li>
-                <li>Independently funded</li>
-                <li>No advertising, ever</li>
-              </ul>
+              <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
+                Edited by industry practitioners. Independently funded.
+                Carries no advertising, ever.
+              </p>
             </div>
           </div>
         </div>
@@ -95,7 +94,7 @@ export default function HomePage() {
             <h2 className="font-serif text-headline leading-tight tracking-tight">
               Chapters
             </h2>
-            <p className="meta">Edition One, 2026</p>
+            <p className="meta">1st Edition, 2026</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
             {sections.map((section) => (

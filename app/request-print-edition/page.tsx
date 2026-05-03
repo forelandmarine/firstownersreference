@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 export const metadata = {
   title: "Request a print copy",
   description:
-    "Edition One of The First Owner's Reference is a limited print run of 500 copies, hand numbered and signed. Distribution is curated. Tell us briefly who you are.",
+    "1st Edition of The First Owner's Reference is a limited print run of 500 copies, hand numbered and signed. Distribution is curated. Tell us briefly who you are.",
 };
 
 export default function PrintRequestPage() {
@@ -18,7 +18,7 @@ export default function PrintRequestPage() {
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
             <div className="flex items-center gap-3 mb-10 meta">
               <Link href="/" className="link">
-                Edition One
+                1st Edition
               </Link>
               <span>/</span>
               <span>Request print copy</span>

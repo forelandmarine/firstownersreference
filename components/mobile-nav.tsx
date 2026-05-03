@@ -147,7 +147,7 @@ export function MobileNav() {
             <footer className="mt-auto border-t border-rule px-6 py-8">
               <div className="flex items-end justify-between gap-4">
                 <div>
-                  <p className="meta mb-2">Edition One &middot; 2026</p>
+                  <p className="meta mb-2">1st Edition &middot; 2026</p>
                   <p className="caption max-w-xs">
                     Edited by Jack MacNally and Daniel Marks. Published by
                     Foreland Marine.

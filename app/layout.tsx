@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | The First Owner's Reference",
   },
   description:
-    "A yachting field manual, published annually for first-time superyacht buyers. Independent, contributor-led, written by Foreland Marine. Edition One, 2026.",
+    "A yachting field manual, published annually for first-time superyacht buyers. Independent, contributor-led, written by Foreland Marine. 1st Edition, 2026.",
   metadataBase: new URL("https://firstownersreference.com"),
   openGraph: {
     title: "The First Owner's Reference",

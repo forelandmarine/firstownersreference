@@ -101,7 +101,7 @@ export default function GlossaryPage() {
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
             <div className="flex items-center gap-3 mb-10 meta">
               <Link href="/" className="link">
-                Edition One
+                1st Edition
               </Link>
               <span>/</span>
               <span>Glossary</span>
