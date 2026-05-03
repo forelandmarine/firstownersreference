@@ -110,7 +110,6 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "BOAT International, Global Order Book and case studies",
         line: "Stewart Campbell, MD, on the One Big Beautiful Bill Act as the principal driver of the 2025 transaction surge.",
-        url: "https://www.boatinternational.com",
       },
       {
         label: "Knight Frank Wealth Report 2026",
@@ -120,17 +119,14 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "YPI Crew 2026 salary guide",
         line: "Captain pay EUR 10 to 16 k per month on 50 m; EUR 16 to 23 k on 80 m.",
-        url: "https://www.ypicrew.com",
       },
       {
         label: "Quay Crew 2025 captain survey",
         line: "7 percent year on year captain pay rise in 70 to 79 m bracket; 63 percent on time-for-time rotation.",
-        url: "https://www.quaycrew.com",
       },
       {
         label: "YachtBuyer published analysis",
         line: "Calls the 10 percent rule \u201cat best, obsolete or even misleading\u201d for older or larger crewed vessels.",
-        url: "https://www.yachtbuyer.com",
       },
       {
         label: "Foreland Marine project archive",
@@ -244,22 +240,18 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "BOAT International Global Order Book 2026",
         line: "1,093 yachts on order or in build; second consecutive annual unit-count decline.",
-        url: "https://www.boatinternational.com",
       },
       {
         label: "Edmiston Annual Review 2025",
         line: "EUR 7.1 bn across 363 yachts of 30 m and above, up 15 percent on 2024.",
-        url: "https://www.edmiston.com",
       },
       {
         label: "Denison Yachting market report",
         line: "Days-on-market and price-reduction discipline; 470 yachts in broader 79 ft and above count.",
-        url: "https://www.denisonyachtsales.com",
       },
       {
         label: "SuperYacht Times iQ data",
         line: "Russian ownership share movement, 2022 to 2023; Asia-Pacific fleet growth.",
-        url: "https://www.superyachttimes.com",
       },
     ],
   },
@@ -344,22 +336,18 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "IYBA Purchase and Sale Agreement",
         line: "Standard contract, dual-agency clause, pre-emptive consent.",
-        url: "https://www.iyba.org",
       },
       {
         label: "MYBA Memorandum of Agreement",
         line: "Sliding-scale commission norm.",
-        url: "https://www.mybaca.org",
       },
       {
         label: "Cromwell Littlejohn (Northrop & Johnson), Palm Beach Boat Show",
         line: "On the record: the system actively rewards opacity.",
-        url: "https://www.northropandjohnson.com",
       },
       {
         label: "OnboardOnline legal column",
         line: "On disclosure rules and undisclosed payments to captains.",
-        url: "https://www.onboardonline.com",
       },
       {
         label: "Ya Mon Expeditions LLC v. IYBA et al.",
@@ -461,22 +449,18 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Hill Dickinson",
         line: "Comparative VAT and flag commentary.",
-        url: "https://www.hilldickinson.com",
       },
       {
         label: "Watson Farley & Williams",
         line: "Comparative VAT and flag commentary; shipbuilding commentary.",
-        url: "https://www.wfw.com",
       },
       {
         label: "Stephenson Harwood",
         line: "Yacht and shipbuilding commentary.",
-        url: "https://www.shlegal.com",
       },
       {
         label: "Reed Smith",
         line: "Yacht and shipbuilding commentary.",
-        url: "https://www.reedsmith.com",
       },
       {
         label: "Cayman Shipping Registry",
@@ -486,7 +470,6 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "MYBA Memorandum of Agreement",
         line: "Standard closing template; deposit and balance terms.",
-        url: "https://www.mybaca.org",
       },
       {
         label: "Foreland Marine project archive",
@@ -587,27 +570,22 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Watson Farley & Williams",
         line: "Published shipbuilding contract commentary.",
-        url: "https://www.wfw.com",
       },
       {
         label: "Norton Rose Fulbright",
         line: "Published shipbuilding contract commentary; refund guarantee credit quality.",
-        url: "https://www.nortonrosefulbright.com",
       },
       {
         label: "Hill Dickinson",
         line: "Published shipbuilding contract commentary.",
-        url: "https://www.hilldickinson.com",
       },
       {
         label: "HFW (Holman Fenwick Willan)",
         line: "Published shipbuilding contract commentary.",
-        url: "https://www.hfw.com",
       },
       {
         label: "Stephenson Harwood",
         line: "Published shipbuilding contract commentary; Sean Gibbons on change order procedure.",
-        url: "https://www.shlegal.com",
       },
       {
         label: "Triple Point Technology v PTT [2021] UKSC 29",
@@ -627,7 +605,6 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Jack Inglis (ULTIMAR), Superyacht Investor",
         line: "Family-office-CFO-as-owner\u2019s-representative case; 1,200-item snag list at delivery.",
-        url: "https://www.superyachtinvestor.com",
       },
     ],
   },
@@ -923,7 +900,6 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Future Market Insights",
         line: "Global refit market sized at USD 2.9 bn in 2025, supporting roughly 6,000 active vessels.",
-        url: "https://www.futuremarketinsights.com",
       },
       {
         label: "Foreland Marine project archive",
@@ -933,12 +909,10 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Superyacht Group 2025 expert roundtable",
         line: "Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben), Txema Rubio (MB92). Paywalled.",
-        url: "https://www.thesuperyachtgroup.com",
       },
       {
         label: "Dockwalk",
         line: "600 percent overrun on a 1967 Camper & Nicholsons refit (extreme case).",
-        url: "https://www.dockwalk.com",
       },
       {
         label: "Awlgrip technical data sheets",
@@ -963,7 +937,6 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Hill Dickinson, Watson Farley & Williams",
         line: "Spanish IPR mechanism; comparative refit VAT structures.",
-        url: "https://www.hilldickinson.com",
       },
     ],
   },
@@ -1168,52 +1141,42 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "YPI Crew 2026 salary guide",
         line: "Captain and senior crew pay bands across yacht size.",
-        url: "https://www.ypicrew.com",
       },
       {
         label: "Quay Crew 2025 captain survey",
         line: "Time-for-time rotation share; year-on-year pay growth in 70 to 79 m bracket.",
-        url: "https://www.quaycrew.com",
       },
       {
         label: "Pantaenius",
         line: "Michelle van der Merwe on record on the Bayesian sinking and the limited insurance-market response.",
-        url: "https://www.pantaenius.com",
       },
       {
         label: "Howden",
         line: "Published broker capability statements; structuring commentary on agreed-value rebuild basis.",
-        url: "https://www.howdengroup.com",
       },
       {
         label: "AON",
         line: "Marine and yacht insurance practice.",
-        url: "https://www.aon.com",
       },
       {
         label: "Gallagher Specialty",
         line: "Published broker commentary on hull rate movement, 2022 to 2025.",
-        url: "https://www.ajg.com",
       },
       {
         label: "Marsh",
         line: "Specialty marine practice; large-yacht structuring.",
-        url: "https://www.marsh.com",
       },
       {
         label: "Lloyd\u2019s of London",
         line: "Hull and war risk underwriting markets; CNA Hardy, Beazley, Brit, Liberty, Tokio Marine HCC, MS Amlin.",
-        url: "https://www.lloyds.com",
       },
       {
         label: "AIG",
         line: "On the record on 50 to 70 percent rate increases across 2022 to 2023.",
-        url: "https://www.aig.com",
       },
       {
         label: "BOAT International",
         line: "Charter case studies.",
-        url: "https://www.boatinternational.com",
       },
     ],
   },
@@ -1480,7 +1443,6 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "BOAT International Global Order Book 2026",
         line: "Sail share of order book; major sail and motor builders.",
-        url: "https://www.boatinternational.com",
       },
       {
         label: "EU Commission ETS Maritime guidance",
@@ -1500,12 +1462,10 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Royal Huisman published sustainability commentary",
         line: "Sail vs motor carbon footprint comparison; HVO and methanol-ready new builds.",
-        url: "https://www.royalhuisman.com",
       },
       {
         label: "Denison Yachting market report 2025",
         line: "Days-on-market series across motor and sail brokerage.",
-        url: "https://www.denisonyachtsales.com",
       },
       {
         label: "Foreland Marine project archive",
