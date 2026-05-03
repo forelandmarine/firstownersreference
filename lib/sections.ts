@@ -17,7 +17,7 @@ export const sections: Section[] = [
     standfirst:
       "What the first three years of yacht ownership actually look like, in time and in money.",
     coordinates: "39.5696°N 2.6502°E",
-    hero: "/images/raven-side.jpg",
+    hero: "/images/velsheda-detail.jpg",
     contributor: "To be confirmed",
     contributorRole: "Charter management CEO",
   },
@@ -27,8 +27,8 @@ export const sections: Section[] = [
     title: "Reading the market in 2026",
     standfirst:
       "Where the order book actually sits, who has capacity, and what that means for a buyer entering this year.",
-    coordinates: "53.4129°N 5.2569°E",
-    hero: "/images/raven-drone-368.jpg",
+    coordinates: "17.8995°N 62.8333°W",
+    hero: "/images/hetairos-stbarths.jpg",
     contributor: "To be confirmed",
     contributorRole: "Market intelligence head",
   },
@@ -39,7 +39,7 @@ export const sections: Section[] = [
     standfirst:
       "Conflicts, commissions, retrocessions, and the captain's loyalty problem. Said plainly.",
     coordinates: "43.5528°N 7.0174°E",
-    hero: "/images/raven-rorc-side.jpg",
+    hero: "/images/raven-aerial-36.jpg",
     contributor: "Sarah Linton",
     contributorRole: "Yacht lawyer, Hill Dickinson",
   },
@@ -49,8 +49,8 @@ export const sections: Section[] = [
     title: "The acquisition process",
     standfirst:
       "From shortlist to closing. Surveys, sea trials, VAT regimes, flag choice, and the five most common pitfalls.",
-    coordinates: "43.7037°N 7.2680°E",
-    hero: "/images/raven-cockpit.jpg",
+    coordinates: "17.8995°N 62.8333°W",
+    hero: "/images/adix-onboard.jpg",
     contributor: "To be confirmed",
     contributorRole: "Senior surveyor",
   },
@@ -60,8 +60,8 @@ export const sections: Section[] = [
     title: "New build versus brokerage",
     standfirst:
       "The 24 to 36 month commitment of a new build, against the immediacy of brokerage. Trade-offs and the cases for each.",
-    coordinates: "53.0040°N 5.6603°E",
-    hero: "/images/raven-bow.jpg",
+    coordinates: "17.8995°N 62.8333°W",
+    hero: "/images/ravenger-stbarths.jpg",
     contributor: "To be confirmed",
     contributorRole: "Yard CEO",
   },
@@ -72,7 +72,7 @@ export const sections: Section[] = [
     standfirst:
       "When to refit and when to sell. Yard selection, scope discipline, and the budget overrun pattern that defines the market.",
     coordinates: "41.3381°N 2.1647°E",
-    hero: "/images/raven-drone-453.jpg",
+    hero: "/images/velsheda-portfolio-aerial.jpg",
     contributor: "To be confirmed",
     contributorRole: "Refit yard CEO",
   },
@@ -83,7 +83,7 @@ export const sections: Section[] = [
     standfirst:
       "The captain hire, the crew structure, the compliance reality, the insurance market, and the charter economics that almost never work.",
     coordinates: "17.0608°N 61.7964°W",
-    hero: "/images/raven-drone-23.jpg",
+    hero: "/images/adix-onboard-crew.jpg",
     contributor: "To be confirmed",
     contributorRole: "Captain and insurance broker",
   },
@@ -94,7 +94,7 @@ export const sections: Section[] = [
     standfirst:
       "Building your team. The ten questions to ask before signing anything. The independence test, applied transparently.",
     coordinates: "51.5114°N 0.1126°W",
-    hero: "/images/hero-aerial.jpg",
+    hero: "/images/ravenger-aerial.jpg",
     contributor: "To be confirmed",
     contributorRole: "Family office principal",
   },

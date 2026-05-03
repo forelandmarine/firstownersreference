@@ -12,8 +12,8 @@ export default function HomePage() {
 
       <section className="relative h-[100dvh] min-h-[640px] w-full overflow-hidden">
         <Image
-          src="/images/raven-yachtingworld.jpg"
-          alt="Raven, Baltic 111, under sail"
+          src="/images/velsheda-aerial.jpg"
+          alt="Velsheda, J Class, under sail"
           fill
           priority
           sizes="100vw"
@@ -35,8 +35,8 @@ export default function HomePage() {
                 Edition One &middot; September 2026
               </p>
               <p className="caption text-paper/90 max-w-sm">
-                Photograph: <em>Raven</em>, Baltic 111. 43.5528&deg;N
-                7.0174&deg;E. By Fraser Edwards.
+                Photograph: <em>Velsheda</em>, J Class. 50.7588&deg;N
+                1.2982&deg;W. By Fraser Edwards.
               </p>
             </div>
           </div>
@@ -171,8 +171,8 @@ export default function HomePage() {
           </div>
           <div className="relative aspect-[3/4] bg-stone-soft">
             <Image
-              src="/images/raven-drone-473.jpg"
-              alt="Print edition reference photograph"
+              src="/images/rebecca-asyc.jpg"
+              alt="Rebecca, sailing yacht, photographed at the Antigua Superyacht Challenge"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
