@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 export const metadata = {
   title: "Glossary",
   description:
-    "Plain definitions of the terms that recur in superyacht acquisition, refit, and operation. Citable. Linked from every section of the Reference.",
+    "Plain definitions of the terms that recur in superyacht acquisition, refit, and operation. Citable. Linked from every chapter of the Reference.",
 };
 
 const entries = [
@@ -111,7 +111,7 @@ export default function GlossaryPage() {
             </h1>
             <p className="font-serif italic text-xl lg:text-2xl text-charcoal-soft mt-8 max-w-2xl">
               Plain definitions of the terms that recur in this Reference.
-              Linked from every section. Citable.
+              Linked from every chapter. Citable.
             </p>
           </div>
         </header>

@@ -82,7 +82,7 @@ export const cases: Record<string, CaseStudy> = {
       {
         type: "blockquote",
         text: "Well-priced inventory moves in months. Over-priced inventory rots for a year and a half. The buyer who pays close attention to days-on-market and price-reduction history will find that this is the most legible the brokerage market has been in a decade.",
-        attribution: "Section 02, lead essay.",
+        attribution: "Chapter 02, lead essay.",
       },
       { type: "h2", text: "The mechanism, said plainly" },
       "Buyer A had access to the same data Buyer B did. Both buyers could have pulled the listing\u2019s history from broker portals. Both could have run a comparable scan. The difference was that Buyer A had engaged an adviser whose only job was to read the market on the buyer\u2019s behalf. Buyer B had engaged a broker whose job was to close the transaction.",
@@ -124,7 +124,7 @@ export const cases: Record<string, CaseStudy> = {
       {
         type: "blockquote",
         text: "Free advice is the most expensive advice in this industry. The buyer who pays the adviser directly is the only buyer who knows what the advice is worth.",
-        attribution: "Section 03, lead essay.",
+        attribution: "Chapter 03, lead essay.",
       },
       { type: "h2", text: "What changed in year two" },
       "The buyer engaged an independent adviser at the end of year one for an unrelated assessment of his refit reserve planning. The adviser, on reviewing the operating arrangements, identified the referral structure. The buyer was not, in the end, particularly outraged. He understood the structure. He had simply not known about it. He renegotiated the management contract at year two with a clear understanding of the cost base, moved the insurance to a broker with no relationship to the original brokerage, and adjusted the recruitment process for future hires.",
@@ -167,7 +167,7 @@ export const cases: Record<string, CaseStudy> = {
       {
         type: "blockquote",
         text: "The survey is the moment at which the asymmetry between buyer and seller is most acute. Inexperienced buyers spend it reassuring themselves. Disciplined buyers spend it negotiating.",
-        attribution: "Section 04, lead essay.",
+        attribution: "Chapter 04, lead essay.",
       },
       { type: "h2", text: "The arithmetic of the survey fee" },
       "The Wolfson Marine survey fee was EUR 48,000. The independently engaged chief engineer\u2019s fee was EUR 12,000. The lawyer\u2019s fee for the renegotiation alone was approximately EUR 25,000. Total cost of the disciplined survey process: EUR 85,000.",
@@ -258,7 +258,7 @@ export const cases: Record<string, CaseStudy> = {
       {
         type: "blockquote",
         text: "The 30 to 50 percent overrun is the empirical expectation. The 100 percent overrun is the case where the contract structure and the representation discipline have failed together.",
-        attribution: "Section 06, lead essay.",
+        attribution: "Chapter 06, lead essay.",
       },
       { type: "h2", text: "The recovery" },
       "The owner engaged an independent adviser at month nine, with two months of project remaining. The adviser ran the snag list discipline, the technical handover, the sea trials post-redelivery, and the warranty claim management for the remaining 12 months. Five claims under the yard\u2019s warranty, totalling approximately EUR 410,000, were prosecuted to closure with the yard within the warranty period.",
@@ -297,7 +297,7 @@ export const cases: Record<string, CaseStudy> = {
       {
         type: "blockquote",
         text: "Captains who agree easily are pleasant to work with and expensive to live with.",
-        attribution: "Section 07, lead essay.",
+        attribution: "Chapter 07, lead essay.",
       },
       { type: "h2", text: "The next decade" },
       "Ten years on, the captain is still on the yacht. The senior crew (chief officer, chief engineer, chief stewardess, chef) have averaged 6.5 years of tenure. Junior crew turnover has run at approximately one-third the industry average. The yacht has had two refits, both delivered within practitioner cost discipline. The captain has, on three occasions across the decade, recommended that the owner not proceed with a particular refit yard, supplier, or charter arrangement. In each case, the recommendation was inconvenient in the moment and proved correct in retrospect.",
@@ -355,7 +355,7 @@ export const cases: Record<string, CaseStudy> = {
       { type: "h2", text: "The arithmetic, post-decision" },
       "The buyer\u2019s six-month engagement with Foreland Marine cost approximately USD 110,000 in adviser fees, plus the survey, lawyer, and incidental costs of the search. Total cost of the search that did not result in an acquisition: approximately USD 195,000.",
       "Across a decade of not-owning, on the practitioner average, the buyer would have spent approximately USD 30 to 45 m on a 49 m yacht acquisition, operating cost, and depreciation. He chose to deploy that capital into a property programme, a venture investment portfolio, and a charter relationship that gives him 30 to 40 days a year on similar-grade yachts without owning any of them. The total cost of his alternative architecture, across the decade, is approximately USD 12 to 18 m. The arithmetic is approximately USD 15 to 25 m of capital not committed to the asset class he had been ready, at week 25, to enter.",
-      "The buyer is, on the published record of the family office sector, an unusual case. Most buyers do not walk. He did. The Reference exists because the conversation that prompted the decision is not the conversation the trade press is structured to publish. It is, however, available. To this buyer, on this engagement, it was. The reader of this section is invited to have the equivalent conversation, with whichever adviser they consider, before signing.",
+      "The buyer is, on the published record of the family office sector, an unusual case. Most buyers do not walk. He did. The Reference exists because the conversation that prompted the decision is not the conversation the trade press is structured to publish. It is, however, available. To this buyer, on this engagement, it was. The reader of this chapter is invited to have the equivalent conversation, with whichever adviser they consider, before signing.",
     ],
     takeaways: [
       "The independence test, applied to the team architecture, is not the only test. The opportunity-cost test (\u201cwhat else might my decade absorb?\u201d) is the test that produces the rarest outcome.",

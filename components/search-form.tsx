@@ -71,7 +71,7 @@ export function SearchForm({ initialQuery = "" }: { initialQuery?: string }) {
               >
                 <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1 mb-2">
                   <span className="meta-marine">
-                    Section {entry.sectionNumber}
+                    Chapter {entry.sectionNumber}
                   </span>
                   <span className="meta">{entry.kindLabel}</span>
                   <span className="meta text-stone-soft">

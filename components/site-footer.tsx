@@ -18,8 +18,8 @@ export function SiteFooter() {
           <p className="meta mb-4">Read</p>
           <ul className="space-y-2 caption">
             <li>
-              <Link href="/#sections" className="link">
-                All sections
+              <Link href="/#chapters" className="link">
+                All chapters
               </Link>
             </li>
             <li>

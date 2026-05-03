@@ -23,14 +23,14 @@ export function SectionCard({ section }: { section: Section }) {
       <div className="relative aspect-[4/3] overflow-hidden bg-stone-soft">
         <Image
           src={section.hero}
-          alt={`Section ${section.number}: ${section.title}`}
+          alt={`Chapter ${section.number}: ${section.title}`}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
         />
       </div>
       <div className="mt-4 flex justify-between items-baseline">
-        <span className="meta">Read section</span>
+        <span className="meta">Read chapter</span>
         <span className="meta-marine">&rarr;</span>
       </div>
     </Link>

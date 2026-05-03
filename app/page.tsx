@@ -43,7 +43,7 @@ export default function HomePage() {
       </section>
 
       <section
-        id="sections"
+        id="chapters"
         className="bg-paper-deep py-24 lg:py-32 border-t border-rule"
       >
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">

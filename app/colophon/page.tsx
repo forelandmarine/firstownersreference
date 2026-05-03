@@ -81,7 +81,7 @@ export default function ColophonPage() {
               >
                 Fraser Edwards
               </a>
-              . The yacht in the cover and several section openers is{" "}
+              . The yacht in the cover and several chapter openers is{" "}
               <em>Raven</em>, Baltic 111, photographed under sail in the
               Western Mediterranean and during the RORC Caribbean 600. Full
               image credits appear on the print edition&rsquo;s back matter.
@@ -170,7 +170,7 @@ export default function ColophonPage() {
             <p>
               The First Owner&rsquo;s Reference, Edition One, 2026. Published
               by Foreland Marine, London. ISSN pending. Citation suggested as
-              author Foreland Marine, year 2026, title of essay or section,
+              author Foreland Marine, year 2026, title of essay or chapter,
               published in The First Owner&rsquo;s Reference Edition One, URL.
             </p>
           </div>

@@ -53,7 +53,7 @@ export default async function SectionPage(props: {
           <div className="relative aspect-[4/5] lg:aspect-auto lg:min-h-[90dvh] order-2 lg:order-1">
             <Image
               src={section.hero}
-              alt={`Section ${section.number}: ${section.title}`}
+              alt={`Chapter ${section.number}: ${section.title}`}
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -63,7 +63,7 @@ export default async function SectionPage(props: {
           <div className="order-1 lg:order-2 flex flex-col justify-between bg-paper px-6 lg:px-16 py-16 lg:py-24">
             <div>
               <p className="meta mb-12">
-                Edition One &middot; 2026 &middot; Section
+                Edition One &middot; 2026 &middot; Chapter
               </p>
               <p className="numeral mb-8">{section.number}</p>
               <h1 className="font-serif font-light text-headline lg:text-[3.5rem] leading-[1.05] tracking-tight text-charcoal mb-8 max-w-xl">
@@ -77,7 +77,7 @@ export default async function SectionPage(props: {
                   href="#essay"
                   className="inline-flex items-center gap-2 meta-marine"
                 >
-                  Begin the section <span aria-hidden>&darr;</span>
+                  Begin the chapter <span aria-hidden>&darr;</span>
                 </a>
               </div>
             </div>
@@ -102,10 +102,10 @@ export default async function SectionPage(props: {
             <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
               <div className="lg:col-span-2">
                 <div className="lg:sticky lg:top-32 space-y-6">
-                  <p className="meta">Section {section.number}</p>
+                  <p className="meta">Chapter {section.number}</p>
                   <p className="meta-marine">{section.coordinates}</p>
                   <div className="rule pt-4 space-y-3">
-                    <p className="meta">In this section</p>
+                    <p className="meta">In this chapter</p>
                     <ol className="space-y-2 caption">
                       <li>
                         <a href="#essay" className="link">
@@ -221,7 +221,7 @@ export default async function SectionPage(props: {
               <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
                 <div className="lg:col-span-8 lg:col-start-3">
                   <p className="meta-marine mb-4">
-                    Section {section.number} &middot; Data spread
+                    Chapter {section.number} &middot; Data spread
                   </p>
                   <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
                     {dataSpread.title}
@@ -248,7 +248,7 @@ export default async function SectionPage(props: {
             <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
               <header className="mb-20">
                 <p className="meta-marine mb-4">
-                  Section {section.number} &middot; Case material
+                  Chapter {section.number} &middot; Case material
                 </p>
                 <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
                   {caseStudy.title}
@@ -271,7 +271,7 @@ export default async function SectionPage(props: {
               <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
                 <div className="lg:col-span-8 lg:col-start-3">
                   <p className="meta-marine mb-4">
-                    Section {section.number} &middot; Checklist
+                    Chapter {section.number} &middot; Checklist
                   </p>
                   <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
                     {checklist.title}
@@ -288,12 +288,12 @@ export default async function SectionPage(props: {
 
         <nav className="border-t border-rule bg-paper py-16">
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-            <p className="meta mb-8">End of Section {section.number}</p>
+            <p className="meta mb-8">End of Chapter {section.number}</p>
             <div className="flex justify-between items-start gap-6">
               {prev ? (
                 <Link href={`/${prev.slug}`} className="group flex flex-col">
                   <span className="meta mb-2">
-                    &larr; Previous, Section {prev.number}
+                    &larr; Previous, Chapter {prev.number}
                   </span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors max-w-sm">
                     {prev.title}
@@ -308,16 +308,16 @@ export default async function SectionPage(props: {
                   className="group flex flex-col text-right"
                 >
                   <span className="meta mb-2">
-                    Next, Section {next.number} &rarr;
+                    Next, Chapter {next.number} &rarr;
                   </span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors max-w-sm">
                     {next.title}
                   </span>
                 </Link>
               ) : (
-                <Link href="/#sections" className="group flex flex-col text-right">
+                <Link href="/#chapters" className="group flex flex-col text-right">
                   <span className="meta mb-2">
-                    Return to all sections &rarr;
+                    Return to all chapters &rarr;
                   </span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors">
                     Edition One

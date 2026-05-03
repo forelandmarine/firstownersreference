@@ -14,8 +14,8 @@ export function SiteHeader() {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 font-serif text-base text-charcoal">
-          <Link href="/#sections" className="link">
-            Sections
+          <Link href="/#chapters" className="link">
+            Chapters
           </Link>
           <Link href="/tools/running-cost-calculator" className="link">
             Calculator

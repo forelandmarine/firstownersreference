@@ -28,7 +28,7 @@ export default function ContributorsPage() {
               Eight guest contributors. Each transparent on commercial relationships.
             </h1>
             <p className="font-serif italic text-xl lg:text-2xl text-charcoal-soft mt-8 max-w-2xl">
-              The Reference is collaborative by design. Every section carries
+              The Reference is collaborative by design. Every chapter carries
               an opinion piece by a named external contributor with deep
               first-hand knowledge of the topic.
             </p>
@@ -49,7 +49,7 @@ export default function ContributorsPage() {
             {sections.map((s) => (
               <div key={s.slug} className="border-t border-charcoal pt-6">
                 <p className="meta mb-3">
-                  Section {s.number} &middot; {s.title}
+                  Chapter {s.number} &middot; {s.title}
                 </p>
                 <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal mb-2">
                   {s.contributor}
@@ -63,7 +63,7 @@ export default function ContributorsPage() {
                   href={`/${s.slug}`}
                   className="inline-block mt-6 meta-marine"
                 >
-                  Read section &rarr;
+                  Read chapter &rarr;
                 </Link>
               </div>
             ))}

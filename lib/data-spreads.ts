@@ -311,7 +311,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           ["Insurance broker introduction", "EUR 250 k premium", "EUR 12,500 to 25,000 (per year)"],
         ],
         sourceLine:
-          "Practitioner working ranges; OnboardOnline legal column on disclosure rules. Particular firms are not named in this section because the practice is industry-wide.",
+          "Practitioner working ranges; OnboardOnline legal column on disclosure rules. Particular firms are not named in this chapter because the practice is industry-wide.",
       },
       { type: "h2", text: "Regulatory coverage" },
       {
