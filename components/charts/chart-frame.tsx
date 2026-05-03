@@ -20,9 +20,9 @@ export function ChartFrame({
   children,
 }: ChartFrameProps) {
   return (
-    <figure className="space-y-4 border-t border-charcoal pt-6">
-      <header className="space-y-2 max-w-prose">
-        <p className="meta-marine">
+    <figure className="space-y-6">
+      <header className="space-y-3 max-w-prose">
+        <p className="meta">
           {label}
           {number ? ` ${number}` : ""}
         </p>

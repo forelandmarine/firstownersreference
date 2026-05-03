@@ -1,133 +1,163 @@
-import type { DataSpread } from "@/lib/data-spreads";
+import type { DataSpread, DataSpreadBlock } from "@/lib/data-spreads";
 import { getChart } from "@/lib/charts";
 
-export function DataSpreadBody({ spread }: { spread: DataSpread }) {
-  return (
-    <div className="space-y-12">
-      {spread.blocks.map((block, i) => {
-        if (block.type === "h2") {
-          return (
-            <h3
-              key={i}
-              className="font-serif font-light text-2xl lg:text-3xl tracking-tight border-t border-charcoal pt-8"
-            >
-              {block.text}
-            </h3>
-          );
-        }
-        if (block.type === "paragraph") {
-          return (
-            <p
-              key={i}
-              className="font-serif text-lg leading-relaxed text-charcoal-soft max-w-prose"
-            >
-              {block.text}
-            </p>
-          );
-        }
-        if (block.type === "table") {
-          return (
-            <figure key={i} className="space-y-4">
-              {block.caption && (
-                <figcaption className="caption max-w-prose">
-                  {block.caption}
-                </figcaption>
-              )}
-              <div className="overflow-x-auto -mx-6 lg:mx-0">
-                <table className="w-full text-sm border-t border-charcoal">
-                  <thead>
-                    <tr className="border-b border-rule">
-                      {block.head.map((h, hi) => (
-                        <th
-                          key={hi}
-                          className="meta text-charcoal text-left py-3 pr-6"
-                        >
-                          {h}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {block.rows.map((row, ri) => (
-                      <tr key={ri} className="border-b border-rule">
-                        {row.map((cell, ci) => (
-                          <td
-                            key={ci}
-                            className={`py-4 pr-6 align-top ${
-                              ci === 0
-                                ? "font-serif text-base text-charcoal"
-                                : "font-sans text-sm text-charcoal-soft"
-                            }`}
-                          >
-                            {cell}
-                          </td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              {block.sourceLine && (
-                <p className="meta">Source. {block.sourceLine}</p>
-              )}
-            </figure>
-          );
-        }
-        if (block.type === "kv") {
-          return (
-            <figure key={i} className="space-y-4">
-              {block.caption && (
-                <figcaption className="caption max-w-prose">
-                  {block.caption}
-                </figcaption>
-              )}
-              <dl className="border-t border-charcoal">
-                {block.rows.map((row, ri) => (
-                  <div
-                    key={ri}
-                    className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-6 py-4 border-b border-rule"
-                  >
-                    <dt className="md:col-span-5 font-serif text-base text-charcoal">
-                      {row.label}
-                    </dt>
-                    <dd className="md:col-span-7">
-                      <p className="font-sans text-sm text-charcoal-soft">
-                        {row.value}
-                      </p>
-                      {row.note && <p className="meta mt-1">{row.note}</p>}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              {block.sourceLine && (
-                <p className="meta">Source. {block.sourceLine}</p>
-              )}
-            </figure>
-          );
-        }
-        if (block.type === "note") {
-          return (
-            <p
-              key={i}
-              className="caption border-l-2 border-marine pl-4 max-w-prose"
-            >
-              {block.text}
-            </p>
-          );
-        }
-        if (block.type === "chart") {
-          const chart = getChart(block.chartId);
-          if (!chart) return null;
-          return <div key={i}>{chart}</div>;
-        }
-        return null;
-      })}
+type Group = { heading: string | null; blocks: DataSpreadBlock[] };
 
-      <section className="border-t border-charcoal pt-8 space-y-4">
-        <h3 className="meta">Sources</h3>
-        <ul className="space-y-3">
+function groupByHeading(blocks: DataSpreadBlock[]): Group[] {
+  const groups: Group[] = [];
+  let current: Group | null = null;
+  for (const block of blocks) {
+    if (block.type === "h2") {
+      if (current) groups.push(current);
+      current = { heading: block.text, blocks: [] };
+      continue;
+    }
+    if (!current) {
+      current = { heading: null, blocks: [] };
+    }
+    current.blocks.push(block);
+  }
+  if (current) groups.push(current);
+  return groups;
+}
+
+function renderBlock(block: DataSpreadBlock, key: number) {
+  if (block.type === "paragraph") {
+    return (
+      <p
+        key={key}
+        className="font-serif text-lg leading-relaxed text-charcoal-soft max-w-prose"
+      >
+        {block.text}
+      </p>
+    );
+  }
+  if (block.type === "table") {
+    return (
+      <figure key={key} className="space-y-5">
+        {block.caption && (
+          <figcaption className="caption max-w-prose">
+            {block.caption}
+          </figcaption>
+        )}
+        <div className="overflow-x-auto -mx-6 lg:mx-0">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-charcoal">
+                {block.head.map((h, hi) => (
+                  <th
+                    key={hi}
+                    className="meta text-charcoal text-left py-3 pr-6 font-normal"
+                  >
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, ri) => (
+                <tr key={ri} className="border-b border-rule last:border-b-0">
+                  {row.map((cell, ci) => (
+                    <td
+                      key={ci}
+                      className={`py-5 pr-6 align-top ${
+                        ci === 0
+                          ? "font-serif text-base text-charcoal"
+                          : "font-sans text-sm text-charcoal-soft leading-relaxed"
+                      }`}
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {block.sourceLine && (
+          <p className="meta">Source. {block.sourceLine}</p>
+        )}
+      </figure>
+    );
+  }
+  if (block.type === "kv") {
+    return (
+      <figure key={key} className="space-y-5">
+        {block.caption && (
+          <figcaption className="caption max-w-prose">
+            {block.caption}
+          </figcaption>
+        )}
+        <dl>
+          {block.rows.map((row, ri) => (
+            <div
+              key={ri}
+              className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8 py-5 border-b border-rule last:border-b-0 first:border-t first:border-charcoal"
+            >
+              <dt className="md:col-span-5 font-serif text-base text-charcoal">
+                {row.label}
+              </dt>
+              <dd className="md:col-span-7">
+                <p className="font-sans text-sm text-charcoal-soft leading-relaxed">
+                  {row.value}
+                </p>
+                {row.note && <p className="meta mt-1.5">{row.note}</p>}
+              </dd>
+            </div>
+          ))}
+        </dl>
+        {block.sourceLine && (
+          <p className="meta">Source. {block.sourceLine}</p>
+        )}
+      </figure>
+    );
+  }
+  if (block.type === "note") {
+    return (
+      <p
+        key={key}
+        className="caption border-l-2 border-marine pl-4 max-w-prose"
+      >
+        {block.text}
+      </p>
+    );
+  }
+  if (block.type === "chart") {
+    const chart = getChart(block.chartId);
+    if (!chart) return null;
+    return <div key={key}>{chart}</div>;
+  }
+  return null;
+}
+
+export function DataSpreadBody({ spread }: { spread: DataSpread }) {
+  const groups = groupByHeading(spread.blocks);
+
+  return (
+    <div className="space-y-24 lg:space-y-32">
+      {groups.map((group, gi) => (
+        <section key={gi} className="space-y-10">
+          {group.heading && (
+            <header>
+              <p className="meta-marine mb-3">
+                {String(gi + 1).padStart(2, "0")}
+              </p>
+              <h3 className="font-serif font-light text-2xl lg:text-3xl tracking-tight text-charcoal max-w-3xl">
+                {group.heading}
+              </h3>
+            </header>
+          )}
+          <div className="space-y-12">
+            {group.blocks.map((block, bi) => renderBlock(block, bi))}
+          </div>
+        </section>
+      ))}
+
+      <section className="pt-12 border-t border-charcoal space-y-6">
+        <p className="meta-marine">Sources</p>
+        <ul className="space-y-4">
           {spread.sources.map((s, si) => (
-            <li key={si} className="caption max-w-prose">
+            <li key={si} className="caption max-w-prose leading-relaxed">
               {s.url ? (
                 <a
                   href={s.url}
@@ -140,7 +170,7 @@ export function DataSpreadBody({ spread }: { spread: DataSpread }) {
               ) : (
                 <span className="font-serif text-charcoal">{s.label}</span>
               )}
-              <span>. {s.line}</span>
+              <span className="text-charcoal-soft">. {s.line}</span>
             </li>
           ))}
         </ul>
