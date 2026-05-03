@@ -19,7 +19,7 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/30 via-charcoal/10 to-charcoal/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/30 to-charcoal/85" />
         <div className="absolute top-6 right-6 lg:top-10 lg:right-12 opacity-70 mix-blend-screen">
           <Image
             src="/brand/foreland-lighthouse-paper.svg"
@@ -56,13 +56,14 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <p className="meta mb-6">Edition One &middot; 2026</p>
             <p className="font-serif font-light text-2xl lg:text-[1.875rem] leading-[1.4] tracking-tight text-charcoal">
-              The Reference is written for principals considering a first
-              yacht acquisition. Nine chapters covering the cost of
-              ownership, the structure of the market, the acquisition
-              process, new build, refit, operations, motor versus sail, and
-              the team to assemble before any contract is signed. Every
-              figure is sourced. The publication is independently funded
-              and carries no advertising.
+              The First Owner&rsquo;s Reference is written for principals
+              considering a first yacht acquisition. Nine chapters covering
+              the cost of ownership, the structure of the market, the
+              acquisition process, new build, refit, operations, motor
+              versus sail, and the team to assemble before any contract is
+              signed. Led by experts working inside the superyacht
+              industry. Every figure is sourced. Independently funded. No
+              advertising, ever.
             </p>
           </div>
         </div>
