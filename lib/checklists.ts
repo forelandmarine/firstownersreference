@@ -344,7 +344,7 @@ export const checklists: Record<string, Checklist> = {
             question:
               "An independently engaged surveyor, with no relationship to the broker.",
             detail:
-              "Wolfson Marine, Ward & McKenzie, Patton Marine are recognised firms.",
+              "Wolfson Marine, Ward & McKenzie, Patton Marine, and Winterbothams are recognised firms.",
           },
           {
             question:

@@ -21,7 +21,7 @@ export type DataSpread = {
   title: string;
   standfirst: string;
   blocks: DataSpreadBlock[];
-  sources: { label: string; line: string }[];
+  sources: { label: string; line: string; url?: string }[];
 };
 
 export const dataSpreads: Record<string, DataSpread> = {
@@ -110,26 +110,32 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "BOAT International, Global Order Book and case studies",
         line: "Stewart Campbell, MD, on the One Big Beautiful Bill Act as the principal driver of the 2025 transaction surge.",
+        url: "https://www.boatinternational.com",
       },
       {
         label: "Knight Frank Wealth Report 2026",
         line: "USD 8.5 bn 2025 transactions, 70 percent year on year rise, US 45 to 50 percent of transactions.",
+        url: "https://www.knightfrank.com/wealthreport",
       },
       {
         label: "YPI Crew 2026 salary guide",
         line: "Captain pay EUR 10 to 16 k per month on 50 m; EUR 16 to 23 k on 80 m.",
+        url: "https://www.ypicrew.com",
       },
       {
         label: "Quay Crew 2025 captain survey",
         line: "7 percent year on year captain pay rise in 70 to 79 m bracket; 63 percent on time-for-time rotation.",
+        url: "https://www.quaycrew.com",
       },
       {
         label: "YachtBuyer published analysis",
         line: "Calls the 10 percent rule \u201cat best, obsolete or even misleading\u201d for older or larger crewed vessels.",
+        url: "https://www.yachtbuyer.com",
       },
       {
         label: "Foreland Marine project archive",
         line: "More than 30 managed refit and operating projects, anonymised and aggregated.",
+        url: "https://www.forelandmarine.com",
       },
     ],
   },
@@ -228,26 +234,32 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Knight Frank Wealth Report 2026",
         line: "20th edition; Wealth Sizing Model; geographic forecasts to 2031.",
+        url: "https://www.knightfrank.com/wealthreport",
       },
       {
         label: "Capgemini World Wealth Report 2025",
         line: "USD 83.5 trn inheritance by 2048; 81 percent of next-gen HNWIs switch wealth manager within 1 to 2 years of inheritance.",
+        url: "https://www.capgemini.com/insights/research-library/world-wealth-report",
       },
       {
         label: "BOAT International Global Order Book 2026",
         line: "1,093 yachts on order or in build; second consecutive annual unit-count decline.",
+        url: "https://www.boatinternational.com",
       },
       {
         label: "Edmiston Annual Review 2025",
         line: "EUR 7.1 bn across 363 yachts of 30 m and above, up 15 percent on 2024.",
+        url: "https://www.edmiston.com",
       },
       {
         label: "Denison Yachting market report",
         line: "Days-on-market and price-reduction discipline; 470 yachts in broader 79 ft and above count.",
+        url: "https://www.denisonyachtsales.com",
       },
       {
         label: "SuperYacht Times iQ data",
         line: "Russian ownership share movement, 2022 to 2023; Asia-Pacific fleet growth.",
+        url: "https://www.superyachttimes.com",
       },
     ],
   },
@@ -329,13 +341,26 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
     ],
     sources: [
-      { label: "IYBA Purchase and Sale Agreement", line: "Standard contract, dual-agency clause, pre-emptive consent." },
-      { label: "MYBA Memorandum of Agreement", line: "Sliding-scale commission norm." },
+      {
+        label: "IYBA Purchase and Sale Agreement",
+        line: "Standard contract, dual-agency clause, pre-emptive consent.",
+        url: "https://www.iyba.org",
+      },
+      {
+        label: "MYBA Memorandum of Agreement",
+        line: "Sliding-scale commission norm.",
+        url: "https://www.mybaca.org",
+      },
       {
         label: "Cromwell Littlejohn (Northrop & Johnson), Palm Beach Boat Show",
         line: "On the record: the system actively rewards opacity.",
+        url: "https://www.northropandjohnson.com",
       },
-      { label: "OnboardOnline legal column", line: "On disclosure rules and undisclosed payments to captains." },
+      {
+        label: "OnboardOnline legal column",
+        line: "On disclosure rules and undisclosed payments to captains.",
+        url: "https://www.onboardonline.com",
+      },
       {
         label: "Ya Mon Expeditions LLC v. IYBA et al.",
         line: "US District Court for Southern District of Florida, dismissed January 2025.",
@@ -427,16 +452,47 @@ export const dataSpreads: Record<string, DataSpread> = {
           { label: "Total cost", value: "USD 25,000 to 60,000" },
           { label: "Lead surveyor", value: "Independently engaged (not broker-introduced)" },
           { label: "Specialist add-ons", value: "Class society inspector, paint, electrical, mechanical" },
-          { label: "Recognised firms", value: "Wolfson Marine, Ward & McKenzie, Patton Marine" },
+          { label: "Recognised firms", value: "Wolfson Marine, Ward & McKenzie, Patton Marine, Winterbothams" },
         ],
         sourceLine: "Foreland Marine project archive; published surveyor fee scales.",
       },
     ],
     sources: [
-      { label: "Hill Dickinson, Watson Farley & Williams, Ince, Stephenson Harwood, Reed Smith", line: "Comparative VAT and flag commentary." },
-      { label: "Cayman Shipping Registry", line: "Large yacht code, vessel registration scope." },
-      { label: "MYBA Memorandum of Agreement", line: "Standard closing template; deposit and balance terms." },
-      { label: "Foreland Marine project archive", line: "Annual compliance cost ranges across managed projects." },
+      {
+        label: "Hill Dickinson",
+        line: "Comparative VAT and flag commentary.",
+        url: "https://www.hilldickinson.com",
+      },
+      {
+        label: "Watson Farley & Williams",
+        line: "Comparative VAT and flag commentary; shipbuilding commentary.",
+        url: "https://www.wfw.com",
+      },
+      {
+        label: "Stephenson Harwood",
+        line: "Yacht and shipbuilding commentary.",
+        url: "https://www.shlegal.com",
+      },
+      {
+        label: "Reed Smith",
+        line: "Yacht and shipbuilding commentary.",
+        url: "https://www.reedsmith.com",
+      },
+      {
+        label: "Cayman Shipping Registry",
+        line: "Large yacht code, vessel registration scope.",
+        url: "https://www.cishipping.com",
+      },
+      {
+        label: "MYBA Memorandum of Agreement",
+        line: "Standard closing template; deposit and balance terms.",
+        url: "https://www.mybaca.org",
+      },
+      {
+        label: "Foreland Marine project archive",
+        line: "Annual compliance cost ranges across managed projects.",
+        url: "https://www.forelandmarine.com",
+      },
     ],
   },
 
@@ -523,12 +579,56 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
     ],
     sources: [
-      { label: "SYBAss / IAMI / GUEST, YORP launch June 2023; YORR launch November 2024", line: "Yacht Owner\u2019s Representative Programme and Register, administered by the Superyacht Alliance for Professional Standards." },
-      { label: "Watson Farley & Williams; Norton Rose Fulbright; Hill Dickinson; HFW; Stephenson Harwood", line: "Published shipbuilding contract commentary." },
-      { label: "Triple Point Technology v PTT [2021] UKSC 29", line: "Liquidated damages cap behaviour." },
-      { label: "Classic Maritime v Limbungan [2019] EWCA Civ 1102", line: "Force majeure causation under English law." },
-      { label: "Jiangsu Guoxin v Precious Shipping [2020] EWHC 1030", line: "Cancellation threshold behaviour." },
-      { label: "Jack Inglis (ULTIMAR), Superyacht Investor", line: "Family-office-CFO-as-owner\u2019s-representative case; 1,200-item snag list at delivery." },
+      {
+        label: "SYBAss / IAMI / GUEST, YORP launch June 2023; YORR launch November 2024",
+        line: "Yacht Owner\u2019s Representative Programme and Register, administered by the Superyacht Alliance for Professional Standards.",
+        url: "https://www.sybass.org",
+      },
+      {
+        label: "Watson Farley & Williams",
+        line: "Published shipbuilding contract commentary.",
+        url: "https://www.wfw.com",
+      },
+      {
+        label: "Norton Rose Fulbright",
+        line: "Published shipbuilding contract commentary; refund guarantee credit quality.",
+        url: "https://www.nortonrosefulbright.com",
+      },
+      {
+        label: "Hill Dickinson",
+        line: "Published shipbuilding contract commentary.",
+        url: "https://www.hilldickinson.com",
+      },
+      {
+        label: "HFW (Holman Fenwick Willan)",
+        line: "Published shipbuilding contract commentary.",
+        url: "https://www.hfw.com",
+      },
+      {
+        label: "Stephenson Harwood",
+        line: "Published shipbuilding contract commentary; Sean Gibbons on change order procedure.",
+        url: "https://www.shlegal.com",
+      },
+      {
+        label: "Triple Point Technology v PTT [2021] UKSC 29",
+        line: "Liquidated damages cap behaviour.",
+        url: "https://www.bailii.org/uk/cases/UKSC/2021/29.html",
+      },
+      {
+        label: "Classic Maritime v Limbungan [2019] EWCA Civ 1102",
+        line: "Force majeure causation under English law.",
+        url: "https://www.bailii.org/ew/cases/EWCA/Civ/2019/1102.html",
+      },
+      {
+        label: "Jiangsu Guoxin v Precious Shipping [2020] EWHC 1030",
+        line: "Cancellation threshold behaviour.",
+        url: "https://www.bailii.org/ew/cases/EWHC/Comm/2020/1030.html",
+      },
+      {
+        label: "Jack Inglis (ULTIMAR), Superyacht Investor",
+        line: "Family-office-CFO-as-owner\u2019s-representative case; 1,200-item snag list at delivery.",
+        url: "https://www.superyachtinvestor.com",
+      },
     ],
   },
 
@@ -735,6 +835,62 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "Yard published statements; Superyacht Group 2025 expert roundtable (paywalled); BOAT International coverage; practitioner working knowledge.",
       },
+      { type: "h2", text: "Quality specifications, what \u201csuperyacht standard\u201d should mean" },
+      {
+        type: "table",
+        caption:
+          "Disciplined refit specifications cite the manufacturer data sheet and the relevant ISO standard. The phrase \u201csuperyacht standard\u201d does not appear in a contract that has been written.",
+        head: ["Element", "Reference standard", "Practitioner figure"],
+        rows: [
+          [
+            "Paint dry film thickness (DFT)",
+            "Awlgrip / Alexseal manufacturer data sheets",
+            "Topcoat 75 to 125 microns per coat; system 200 to 450 microns",
+          ],
+          [
+            "Paint application conditions",
+            "Manufacturer data sheets, controlled atmosphere",
+            "18 to 29\u00b0C ambient; RH below 80 percent; surface 3\u00b0C above dew point",
+          ],
+          [
+            "Drying and recoat windows",
+            "Awlcraft 2000, Awlgrip Awlbrite, Alexseal manufacturer tables",
+            "Min and max recoat hours specified at given temp and humidity",
+          ],
+          [
+            "Shipboard vibration",
+            "ISO 6954:2000; ISO 20283-5",
+            "mm/s RMS at relevant frequency band, plus engine manufacturer figures (MTU, CAT, MAN, Rolls-Royce, ZF)",
+          ],
+          [
+            "Noise levels, master cabin underway",
+            "ISO 6954; IMO MSC.337(91)",
+            "45 to 50 dB(A) at design cruising speed",
+          ],
+          [
+            "Whole-body vibration, occupied spaces",
+            "ISO 2631",
+            "Below 0.315 m/s\u00b2 RMS at master cabin",
+          ],
+          [
+            "HVAC duct velocity in occupied spaces",
+            "ISO 7547; Heinen & Hopman, Westmar, Drews Marine data sheets",
+            "Below 2.5 to 3.0 m/s; agreed air change rates",
+          ],
+          [
+            "Stabiliser noise and isolation",
+            "Quantum, Naiad, ABT-TRAC, Veem manufacturer data sheets",
+            "dB(A) at equipment; isolation mount specification agreed",
+          ],
+          [
+            "Substrate preparation, steel",
+            "ISO 8501-1 cleanliness; manufacturer profile guidance",
+            "Sa 2.5 cleanliness; 50 to 75 micron surface profile",
+          ],
+        ],
+        sourceLine:
+          "Awlgrip / Alexseal published technical data sheets; ISO standards (6954:2000, 20283-5, 2631, 7547, 8501-1); IMO MSC.337(91) noise code; engine and equipment manufacturer technical data.",
+      },
       { type: "h2", text: "Spanish IPR, the VAT economics of refit" },
       {
         type: "kv",
@@ -764,11 +920,51 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
     ],
     sources: [
-      { label: "Future Market Insights", line: "Global refit market sized at USD 2.9 bn in 2025, supporting roughly 6,000 active vessels." },
-      { label: "Foreland Marine project archive", line: "More than 30 managed refit projects, anonymised and aggregated." },
-      { label: "Superyacht Group 2025 expert roundtable", line: "Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben), Txema Rubio (MB92). Paywalled." },
-      { label: "Dockwalk", line: "600 percent overrun on a 1967 Camper & Nicholsons refit (extreme case)." },
-      { label: "Hill Dickinson, Watson Farley & Williams", line: "Spanish IPR mechanism; comparative refit VAT structures." },
+      {
+        label: "Future Market Insights",
+        line: "Global refit market sized at USD 2.9 bn in 2025, supporting roughly 6,000 active vessels.",
+        url: "https://www.futuremarketinsights.com",
+      },
+      {
+        label: "Foreland Marine project archive",
+        line: "More than 30 managed refit projects, anonymised and aggregated.",
+        url: "https://www.forelandmarine.com",
+      },
+      {
+        label: "Superyacht Group 2025 expert roundtable",
+        line: "Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben), Txema Rubio (MB92). Paywalled.",
+        url: "https://www.thesuperyachtgroup.com",
+      },
+      {
+        label: "Dockwalk",
+        line: "600 percent overrun on a 1967 Camper & Nicholsons refit (extreme case).",
+        url: "https://www.dockwalk.com",
+      },
+      {
+        label: "Awlgrip technical data sheets",
+        line: "Paint DFT specifications, application conditions, recoat windows.",
+        url: "https://www.awlgrip.com",
+      },
+      {
+        label: "Alexseal technical data sheets",
+        line: "Paint DFT specifications, application conditions, recoat windows.",
+        url: "https://www.alexseal.com",
+      },
+      {
+        label: "International Organization for Standardization (ISO)",
+        line: "ISO 6954:2000 (vibration), ISO 20283-5, ISO 2631 (whole-body vibration), ISO 7547 (HVAC), ISO 8501-1 (substrate preparation).",
+        url: "https://www.iso.org",
+      },
+      {
+        label: "IMO MSC.337(91)",
+        line: "Code on Noise Levels on Board Ships.",
+        url: "https://www.imo.org",
+      },
+      {
+        label: "Hill Dickinson, Watson Farley & Williams",
+        line: "Spanish IPR mechanism; comparative refit VAT structures.",
+        url: "https://www.hilldickinson.com",
+      },
     ],
   },
 
@@ -969,13 +1165,56 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
     ],
     sources: [
-      { label: "YPI Crew 2026 salary guide", line: "Captain and senior crew pay bands across yacht size." },
-      { label: "Quay Crew 2025 captain survey", line: "Time-for-time rotation share; year-on-year pay growth in 70 to 79 m bracket." },
-      { label: "Pantaenius (Michelle van der Merwe)", line: "On record on the Bayesian sinking and the limited insurance-market response." },
-      { label: "Howden; AON; Gallagher Specialty; Marsh", line: "Published broker capability statements; structuring commentary on agreed-value rebuild basis." },
-      { label: "AIG", line: "On the record on 50 to 70 percent rate increases across 2022 to 2023." },
-      { label: "Lloyd\u2019s of London syndicate guidance", line: "Hull and war risk underwriting markets; CNA Hardy, Beazley, Brit, Liberty, Tokio Marine HCC, MS Amlin." },
-      { label: "BOAT International", line: "Charter case studies." },
+      {
+        label: "YPI Crew 2026 salary guide",
+        line: "Captain and senior crew pay bands across yacht size.",
+        url: "https://www.ypicrew.com",
+      },
+      {
+        label: "Quay Crew 2025 captain survey",
+        line: "Time-for-time rotation share; year-on-year pay growth in 70 to 79 m bracket.",
+        url: "https://www.quaycrew.com",
+      },
+      {
+        label: "Pantaenius",
+        line: "Michelle van der Merwe on record on the Bayesian sinking and the limited insurance-market response.",
+        url: "https://www.pantaenius.com",
+      },
+      {
+        label: "Howden",
+        line: "Published broker capability statements; structuring commentary on agreed-value rebuild basis.",
+        url: "https://www.howdengroup.com",
+      },
+      {
+        label: "AON",
+        line: "Marine and yacht insurance practice.",
+        url: "https://www.aon.com",
+      },
+      {
+        label: "Gallagher Specialty",
+        line: "Published broker commentary on hull rate movement, 2022 to 2025.",
+        url: "https://www.ajg.com",
+      },
+      {
+        label: "Marsh",
+        line: "Specialty marine practice; large-yacht structuring.",
+        url: "https://www.marsh.com",
+      },
+      {
+        label: "Lloyd\u2019s of London",
+        line: "Hull and war risk underwriting markets; CNA Hardy, Beazley, Brit, Liberty, Tokio Marine HCC, MS Amlin.",
+        url: "https://www.lloyds.com",
+      },
+      {
+        label: "AIG",
+        line: "On the record on 50 to 70 percent rate increases across 2022 to 2023.",
+        url: "https://www.aig.com",
+      },
+      {
+        label: "BOAT International",
+        line: "Charter case studies.",
+        url: "https://www.boatinternational.com",
+      },
     ],
   },
 
@@ -1026,7 +1265,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         rows: [
           ["1", "Independent adviser", "Before any broker, captain, or management company"],
           ["2", "Yacht lawyer", "Specialist shipbuilding and yacht counsel; Hill Dickinson, WFW, Ince, Stephenson Harwood, Reed Smith, HFW, Norton Rose Fulbright"],
-          ["3", "Surveyor", "Per-deal once a shortlist exists; Wolfson Marine, Ward & McKenzie, Patton Marine"],
+          ["3", "Surveyor", "Per-deal once a shortlist exists; Wolfson Marine, Ward & McKenzie, Patton Marine, Winterbothams"],
           ["4", "Captain candidate (or build captain on new build)", "Hired through routes independent of the broker"],
           ["5", "Yacht management company", "Engaged on acquisition decision; independent of the broker"],
           ["6", "Insurance broker", "Once flag and operating profile determined; Pantaenius, AON, Gallagher"],
@@ -1051,10 +1290,26 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
     ],
     sources: [
-      { label: "UBS Global Family Office Report 2025", line: "317 family offices; USD 1.1 bn AUM average; no yacht references across 80 pages." },
-      { label: "Capgemini World Wealth Report 2025", line: "USD 83.5 trn inheritance by 2048; 81 percent next-gen switch wealth manager within 1 to 2 years." },
-      { label: "Knight Frank Wealth Report 2026 / Family Office Survey 2026", line: "First reference to superyachts in the family office portfolio architecture." },
-      { label: "Foreland Marine project archive", line: "Team-cost ranges across managed projects." },
+      {
+        label: "UBS Global Family Office Report 2025",
+        line: "317 family offices; USD 1.1 bn AUM average; no yacht references across 80 pages.",
+        url: "https://www.ubs.com/global/en/family-office-uhnw/reports/global-family-office-report-2025.html",
+      },
+      {
+        label: "Capgemini World Wealth Report 2025",
+        line: "USD 83.5 trn inheritance by 2048; 81 percent next-gen switch wealth manager within 1 to 2 years.",
+        url: "https://www.capgemini.com/insights/research-library/world-wealth-report",
+      },
+      {
+        label: "Knight Frank Wealth Report 2026 / Family Office Survey 2026",
+        line: "First reference to superyachts in the family office portfolio architecture.",
+        url: "https://www.knightfrank.com/wealthreport",
+      },
+      {
+        label: "Foreland Marine project archive",
+        line: "Team-cost ranges across managed projects.",
+        url: "https://www.forelandmarine.com",
+      },
     ],
   },
 
@@ -1225,30 +1480,37 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "BOAT International Global Order Book 2026",
         line: "Sail share of order book; major sail and motor builders.",
+        url: "https://www.boatinternational.com",
       },
       {
         label: "EU Commission ETS Maritime guidance",
         line: "Carbon market extension to maritime, in force from 1 January 2024; phase-in to 100 percent of emissions by 2026.",
+        url: "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-shipping-sector_en",
       },
       {
         label: "IMO MEPC 80, July 2023",
         line: "30 percent reduction in well-to-wake GHG by 2030, 80 percent by 2040, net zero by 2050.",
+        url: "https://www.imo.org",
       },
       {
         label: "Capgemini World Wealth Report 2024",
         line: "Sustainability identified as a top-three concern for next-generation HNWIs.",
+        url: "https://www.capgemini.com/insights/research-library/world-wealth-report",
       },
       {
         label: "Royal Huisman published sustainability commentary",
         line: "Sail vs motor carbon footprint comparison; HVO and methanol-ready new builds.",
+        url: "https://www.royalhuisman.com",
       },
       {
         label: "Denison Yachting market report 2025",
         line: "Days-on-market series across motor and sail brokerage.",
+        url: "https://www.denisonyachtsales.com",
       },
       {
         label: "Foreland Marine project archive",
         line: "Operating cost ranges across managed sail and motor projects.",
+        url: "https://www.forelandmarine.com",
       },
     ],
   },

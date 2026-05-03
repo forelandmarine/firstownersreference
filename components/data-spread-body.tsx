@@ -122,8 +122,19 @@ export function DataSpreadBody({ spread }: { spread: DataSpread }) {
         <ul className="space-y-3">
           {spread.sources.map((s, si) => (
             <li key={si} className="caption max-w-prose">
-              <span className="font-serif text-charcoal">{s.label}.</span>{" "}
-              {s.line}
+              {s.url ? (
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serif text-charcoal link hover:text-marine"
+                >
+                  {s.label}
+                </a>
+              ) : (
+                <span className="font-serif text-charcoal">{s.label}</span>
+              )}
+              <span>. {s.line}</span>
             </li>
           ))}
         </ul>
