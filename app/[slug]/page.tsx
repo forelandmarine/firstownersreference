@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { sections, getSection } from "@/lib/sections";
+import { getLeadEssay } from "@/lib/lead-essays";
 
 export function generateStaticParams() {
   return sections.map((s) => ({ slug: s.slug }));
@@ -29,6 +30,7 @@ export default async function SectionPage(props: {
   const section = getSection(slug);
   if (!section) notFound();
 
+  const essay = getLeadEssay(slug);
   const index = sections.findIndex((s) => s.slug === section.slug);
   const prev = sections[index - 1];
   const next = sections[index + 1];
@@ -61,56 +63,133 @@ export default async function SectionPage(props: {
               <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-xl">
                 {section.standfirst}
               </p>
+              <div className="mt-10">
+                <a
+                  href="#essay"
+                  className="inline-flex items-center gap-2 meta-marine"
+                >
+                  Read the essay <span aria-hidden>&darr;</span>
+                </a>
+              </div>
             </div>
             <div className="mt-16 grid grid-cols-2 gap-x-8 gap-y-2">
               <p className="meta">Coordinates</p>
               <p className="meta-marine">{section.coordinates}</p>
-              <p className="meta">Guest contributor</p>
-              <p className="meta text-charcoal">{section.contributor}</p>
-              <p className="meta">Role</p>
-              <p className="meta text-charcoal">{section.contributorRole}</p>
+              <p className="meta">Reading time</p>
+              <p className="meta text-charcoal">
+                {essay?.readingTime ?? "Forthcoming"}
+              </p>
+              <p className="meta">Author</p>
+              <p className="meta text-charcoal">Foreland Marine</p>
             </div>
           </div>
         </section>
 
-        <section className="bg-paper py-24 lg:py-32 border-t border-rule">
-          <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-3">
-              <p className="meta sticky top-32">
-                In this section
+        <section id="essay" className="bg-paper py-20 lg:py-32 border-t border-rule scroll-mt-24">
+          {essay ? (
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-2">
+                <div className="sticky top-32 space-y-6">
+                  <p className="meta">Section {section.number}</p>
+                  <p className="meta-marine">{section.coordinates}</p>
+                  <div className="rule pt-4 space-y-3">
+                    <p className="meta">Section anatomy</p>
+                    <ol className="space-y-2 caption">
+                      <li>
+                        <span className="meta-marine mr-1">1</span> Lead essay
+                        (you are here)
+                      </li>
+                      <li className="opacity-60">
+                        <span className="mr-1">2</span> Data spread
+                      </li>
+                      <li className="opacity-60">
+                        <span className="mr-1">3</span> Guest opinion
+                      </li>
+                      <li className="opacity-60">
+                        <span className="mr-1">4</span> Case material
+                      </li>
+                      <li className="opacity-60">
+                        <span className="mr-1">5</span> Checklist
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:col-span-7 lg:col-start-3">
+                <div className="prose-body max-w-prose">
+                  {essay.paragraphs.map((p, i) => {
+                    if (typeof p === "string") {
+                      return <p key={i}>{p}</p>;
+                    }
+                    if (p.type === "h2") {
+                      return <h2 key={i}>{p.text}</h2>;
+                    }
+                    if (p.type === "blockquote") {
+                      return (
+                        <blockquote key={i}>
+                          {p.text}
+                          {p.attribution && (
+                            <footer className="meta mt-3 not-italic">
+                              {p.attribution}
+                            </footer>
+                          )}
+                        </blockquote>
+                      );
+                    }
+                    return null;
+                  })}
+                </div>
+                <div className="mt-16 rule pt-8">
+                  <p className="meta mb-3">Coming up in this section</p>
+                  <ul className="space-y-3">
+                    <ContentRow
+                      label="Data spread"
+                      title={dataTitleFor(section.slug)}
+                      meta="Charts and tables, sources cited"
+                    />
+                    <ContentRow
+                      label="Guest opinion"
+                      title={guestTitleFor(section.slug)}
+                      meta={`${section.contributor}, ${section.contributorRole}`}
+                    />
+                    <ContentRow
+                      label="Case material"
+                      title={caseTitleFor(section.slug)}
+                      meta="Anonymised"
+                    />
+                    <ContentRow
+                      label="Checklist"
+                      title="Questions to ask before signing anything."
+                      meta="One page, printable"
+                    />
+                  </ul>
+                </div>
+              </div>
+              <aside className="hidden lg:block lg:col-span-3">
+                <div className="sticky top-32 space-y-8">
+                  <div className="relative aspect-[3/4] bg-stone-soft">
+                    <Image
+                      src={section.hero}
+                      alt="Editorial photograph"
+                      fill
+                      sizes="25vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="caption">
+                    Photograph by Fraser Edwards. {section.coordinates}.
+                  </p>
+                </div>
+              </aside>
+            </div>
+          ) : (
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+              <p className="caption max-w-2xl">
+                The lead essay for this section is in editorial. Edition One
+                ships in September 2026.
               </p>
             </div>
-            <div className="lg:col-span-9">
-              <ol className="space-y-1">
-                <ContentRow
-                  label="Lead essay"
-                  title="The reality, written without the reverence."
-                  meta="Foreland editorial &middot; 14 min read"
-                  href={`/${section.slug}/lead-essay`}
-                />
-                <ContentRow
-                  label="Data spread"
-                  title={dataTitleFor(section.slug)}
-                  meta="Charts and tables &middot; sources cited"
-                />
-                <ContentRow
-                  label="Guest opinion"
-                  title={guestTitleFor(section.slug)}
-                  meta={`${section.contributor}, ${section.contributorRole} \u00b7 9 min read`}
-                />
-                <ContentRow
-                  label="Case material"
-                  title={caseTitleFor(section.slug)}
-                  meta="Anonymised &middot; 6 min read"
-                />
-                <ContentRow
-                  label="Checklist"
-                  title="Questions to ask before signing anything."
-                  meta="One page &middot; printable"
-                />
-              </ol>
-            </div>
-          </div>
+          )}
         </section>
 
         <nav className="border-t border-rule bg-paper-deep py-12">
@@ -155,35 +234,22 @@ function ContentRow({
   label,
   title,
   meta,
-  href,
 }: {
   label: string;
   title: string;
   meta: string;
-  href?: string;
 }) {
-  const Inner = (
-    <div className="flex items-baseline gap-8 py-6 border-t border-rule group-hover:border-marine transition-colors">
-      <span className="meta w-32 shrink-0">{label}</span>
+  return (
+    <li className="flex items-baseline gap-6 py-3 border-t border-rule opacity-70">
+      <span className="meta w-28 shrink-0">{label}</span>
       <div className="flex-1">
-        <p className="font-serif text-xl lg:text-2xl leading-snug tracking-tight text-charcoal group-hover:text-marine transition-colors">
+        <p className="font-serif text-base leading-snug text-charcoal">
           {title}
         </p>
-        <p className="meta mt-2">{meta}</p>
+        <p className="meta mt-1">{meta}</p>
       </div>
-      <span className="meta-marine hidden sm:block">
-        {href ? "Read \u2192" : "Forthcoming"}
-      </span>
-    </div>
-  );
-  return href ? (
-    <li>
-      <Link href={href} className="group block">
-        {Inner}
-      </Link>
+      <span className="meta hidden sm:block">Forthcoming</span>
     </li>
-  ) : (
-    <li className="group block opacity-60 cursor-default">{Inner}</li>
   );
 }
 
@@ -191,12 +257,10 @@ function dataTitleFor(slug: string): string {
   const map: Record<string, string> = {
     "01-reality-of-ownership":
       "Annual operating cost as a percentage of capex, by size band.",
-    "02-reading-the-market":
-      "Order book and yard capacity through 2030.",
+    "02-reading-the-market": "Order book and yard capacity through 2030.",
     "03-how-the-industry-works":
       "Where the money goes in a typical brokerage transaction.",
-    "04-acquisition-process":
-      "VAT regime and flag state comparison.",
+    "04-acquisition-process": "VAT regime and flag state comparison.",
     "05-new-build-versus-brokerage":
       "Cashflow and milestone payments, year by year.",
     "06-refit": "Refit yard capacity and typical overrun curve, 2026 to 2028.",
@@ -209,10 +273,8 @@ function dataTitleFor(slug: string): string {
 
 function guestTitleFor(slug: string): string {
   const map: Record<string, string> = {
-    "01-reality-of-ownership":
-      "What first-year owners do not see coming.",
-    "02-reading-the-market":
-      "What the data tells you, and what it does not.",
+    "01-reality-of-ownership": "What first-year owners do not see coming.",
+    "02-reading-the-market": "What the data tells you, and what it does not.",
     "03-how-the-industry-works":
       "Dual agency, retrocessions, and disclosure.",
     "04-acquisition-process":
@@ -230,7 +292,8 @@ function guestTitleFor(slug: string): string {
 function caseTitleFor(slug: string): string {
   const map: Record<string, string> = {
     "01-reality-of-ownership": "The owner who bought twice.",
-    "02-reading-the-market": "The deal that closed because someone read the market correctly.",
+    "02-reading-the-market":
+      "The deal that closed because someone read the market correctly.",
     "03-how-the-industry-works": "The free advice that cost \u00a3400,000.",
     "04-acquisition-process": "The pre-purchase survey that saved \u00a32m.",
     "05-new-build-versus-brokerage": "The spec change in month 18.",
