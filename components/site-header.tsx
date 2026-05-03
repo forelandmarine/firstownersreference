@@ -12,7 +12,7 @@ export function SiteHeader() {
             An annual yachting field manual
           </span>
         </Link>
-        <nav className="hidden md:flex items-center gap-8 meta">
+        <nav className="hidden md:flex items-center gap-8 font-serif text-base text-charcoal">
           <Link href="/#sections" className="link">
             Sections
           </Link>

@@ -20,32 +20,38 @@ export type Checklist = {
 export const checklists: Record<string, Checklist> = {
   "01-reality-of-ownership": {
     slug: "01-reality-of-ownership",
-    title: "Questions to ask before signing anything.",
+    title: "The cost picture, on paper.",
     standfirst:
-      "A one-page checklist for testing the cost picture against the folklore. Apply before any term sheet, with any adviser whose income depends on the deal closing.",
+      "A one-page reference to keep alongside any acquisition conversation. The items below are the things most worth having in writing before signing. The work is an afternoon. The conversations afterwards tend to be cleaner for it.",
     intent:
-      "If the answer to any item below is \u201cthe broker said,\u201d \u201cthe captain said,\u201d or \u201cwe will sort it out after closing,\u201d the answer is wrong.",
+      "Most experienced buyers do this naturally. For a first acquisition, putting the picture on paper is the calmest way to enter the negotiations. The numbers do not need to be perfect. They need to be written down.",
     groups: [
       {
         heading: "The numbers",
         items: [
           {
             question:
-              "Do I have a written annual operating-cost projection that names every assumption (crew salary, insurance, berths, fuel, refit reserve, compliance, contingency)?",
+              "An annual operating-cost projection in writing, with each line named (crew salary, insurance, berths, fuel, refit reserve, compliance, contingency).",
             detail:
-              "If not, what you have is a 10 percent rule applied to a number, not a budget.",
+              "The folkloric percentages are reasonable starting points. A written line-by-line projection is materially more useful than any single-figure estimate.",
           },
           {
             question:
-              "Has my projection been benchmarked against named published sources (YPI Crew, Quay Crew, Pantaenius, MYBA)?",
+              "The projection benchmarked against named published sources (YPI Crew, Quay Crew, Pantaenius, MYBA).",
+            detail:
+              "Each of those publishes data that can be cited rather than inferred from a conversation.",
           },
           {
             question:
-              "Have I run the running cost calculator on this site, with my own size, type, region, and intensity inputs?",
+              "The running cost calculator on this site, run with the buyer\u2019s own size, type, region, and intensity.",
+            detail:
+              "Source assumptions are named on every line; the output is a starting point for the conversation, not a final number.",
           },
           {
             question:
-              "Do I have a depreciation projection across my intended hold period, against broker-aggregated data?",
+              "A depreciation projection across the intended hold period, against broker-aggregated data.",
+            detail:
+              "Quality builders hold value materially better; the curve is well-documented in published series.",
           },
         ],
       },
@@ -54,16 +60,21 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Have I committed, on paper, to the number of weeks per year I intend to use the yacht?",
-            detail: "Below 12 weeks of intended use, ownership economics are unfavourable for most operations.",
+              "An honest estimate of the number of weeks per year the yacht will be used.",
+            detail:
+              "Below 12 weeks of intended use, the ownership economics are unfavourable for most operations. Above 12, ownership is the natural answer; below, charter and fractional access are worth considering.",
           },
           {
             question:
-              "Is my hold horizon at least seven years, on paper?",
+              "An intended hold horizon, ideally seven years or more.",
+            detail:
+              "Shorter holds amplify the depreciation curve. Seven years is the practitioner threshold at which the arithmetic settles.",
           },
           {
             question:
-              "Have I tested the use-case against my actual calendar, household, and family availability for the next five years?",
+              "The use case tested against the buyer\u2019s actual calendar, household, and family availability for the next five years.",
+            detail:
+              "The yacht will absorb 40 to 60 days a year of attention. This is best treated as a chosen commitment, not a discovered one.",
           },
         ],
       },
@@ -72,15 +83,19 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "If I am being told that charter will offset ownership cost, has anyone shown me a worked case based on my yacht size, charter rate, and weeks?",
+              "If charter has been proposed as an offset to ownership cost, a worked case based on yacht size, weekly rate, and weeks.",
+            detail:
+              "The published BOAT International cases are the cleanest reference; most operations break even or run at a loss.",
           },
           {
             question:
-              "Am I prepared to release prime-season weeks (mid-July to mid-August in the Med, December to early January in the Caribbean) to charter?",
+              "A clear position, in advance, on whether the prime-season weeks (mid-July to mid-August in the Med, December to early January in the Caribbean) are available for charter.",
+            detail:
+              "Releasing prime weeks is the discipline that makes charter economics work. Holding them back is fine; it just means the charter case is structurally smaller.",
           },
           {
             question:
-              "Has the charter projection been pressure-tested against the published BOAT International case studies for break-even, loss, and exception cases?",
+              "The charter projection pressure-tested against the published case studies for break-even, loss, and exception cases.",
           },
         ],
       },
@@ -89,48 +104,54 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Has any party I am working with offered to help me think through the case for not buying?",
-            detail: "Parties paid contingent on a sale closing rarely raise this.",
+              "A conversation, with someone whose income is not contingent on the deal, about the case for not buying.",
+            detail:
+              "Parties paid contingent on a sale rarely raise this. It is worth having on its own.",
           },
           {
             question:
-              "Have I committed, in writing, to a maximum hold cost across years one to three that I am prepared to absorb?",
+              "A maximum hold cost across years one to three that the buyer is comfortable absorbing, written down.",
+            detail:
+              "Cost discipline starts with a number agreed in advance, not derived under pressure.",
           },
           {
             question:
-              "If my honest answer to any of the above is uncertain, am I prepared to delay the acquisition by six months to clarify it?",
+              "An option to delay the acquisition by six months if any of the items above remain uncertain.",
+            detail:
+              "Delay rarely costs anything beyond opportunity. Acquiring without clarity tends to cost more.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; sit with it; answer in writing. The cost of working through twelve questions on paper is approximately one hour. The cost of failing to is the subject of the rest of this Reference.",
+      "The page is designed to print onto a single A4. Sit with it for an hour. Bring it to the conversations that follow.",
   },
 
   "02-reading-the-market": {
     slug: "02-reading-the-market",
-    title: "Tests to run before any offer.",
+    title: "Reading any hull, before any offer.",
     standfirst:
-      "Twelve questions to apply to any shortlist hull, with the data that is publicly available before the broker tells the buyer the data. The market is more legible than the trade press makes it look.",
+      "Twelve items to keep alongside any shortlist conversation. The brokerage market in 2026 is the most legible it has been in a decade; the items below are simply what the data already shows, written down in the order it helps to look.",
     intent:
-      "The brokerage market in 2026 is the most legible it has been in a decade. Days-on-market and price-reduction history are public. Use them.",
+      "Days-on-market and price-reduction history are public on the listing portals. The items below are what to look at before the broker frames it. None of them require specialist skill; they require a quiet hour with the data.",
     groups: [
       {
         heading: "The hull, on the published record",
         items: [
           {
             question:
-              "How long has this listing been on the market, in days, on the original broker portal?",
+              "Days-on-market, from the listing\u2019s original entry, on the broker portal.",
             detail: "Compare against the Denison median of 277 days for 2025.",
           },
           {
             question:
-              "What is the listing\u2019s price-reduction history, by date and amount?",
-            detail: "A listing reduced more than twice signals seller asking is wrong.",
+              "Price-reduction history by date and amount.",
+            detail:
+              "More than two reductions usually signals that the seller\u2019s asking discipline is wrong, not the market\u2019s.",
           },
           {
             question:
-              "What are three comparable hulls (size, age, yard tier, propulsion) currently on market, and how do their asking, days, and reductions compare?",
+              "Three comparable hulls (size, age, yard tier, propulsion) currently on market, with their asking, days, and reductions.",
           },
         ],
       },
@@ -139,15 +160,17 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Where does this hull sit in the wider supply picture, against the BOAT International Global Order Book and the over-30 m brokerage inventory?",
+              "The hull\u2019s position in the wider supply picture, against the BOAT International Global Order Book and the over-30 m brokerage inventory.",
           },
           {
             question:
-              "If the buyer is considering new build alternatives, what is the slot availability at the relevant yard tier (Lurssen, Feadship, Oceanco, Heesen, Sanlorenzo)?",
+              "If new build is also under consideration: slot availability at the relevant yard tier (Lurssen, Feadship, Oceanco, Heesen, Sanlorenzo).",
           },
           {
             question:
-              "Is the buyer competing with US capital under the One Big Beautiful Bill Act 100 percent depreciation provision, and how does that change the negotiation dynamic?",
+              "An understanding of the US-capital dynamic in the relevant size band, given the One Big Beautiful Bill Act 100 percent depreciation provision.",
+            detail:
+              "It varies by segment rather than across the whole market. The independent adviser can speak to it for the specific hull.",
           },
         ],
       },
@@ -156,17 +179,21 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Has the broker described another buyer as \u201cabout to offer\u201d, the price as \u201cabout to move\u201d, or the market as \u201ctightening\u201d?",
-            detail: "All three are negotiation framings. None constitute market evidence.",
+              "Awareness that negotiation framings (\u201cabout to offer\u201d, \u201cabout to move\u201d, \u201ctightening\u201d) are not, on their own, market evidence.",
+            detail:
+              "They may be true. They are also what a broker would say in either case. The data is the better reference.",
           },
           {
             question:
-              "Has the broker offered to introduce surveyor, lawyer, captain, or management company?",
-            detail: "Each introduction is a referral relationship; ask, in writing, about the economics.",
+              "A note, in writing, of any introductions the broker is offering (surveyor, lawyer, captain, management company), and the relationships behind them.",
+            detail:
+              "Each introduction tends to carry referral economics. Asking is normal; the broker is not always the one who has to volunteer.",
           },
           {
             question:
-              "Has the broker put the comparable scan in writing, with named comparables and reasoning, or has the framing been verbal?",
+              "The comparable scan, in writing, with named comparables and reasoning.",
+            detail:
+              "Verbal comparisons are common. Written ones are rarer and tend to make the negotiation easier.",
           },
         ],
       },
@@ -175,46 +202,53 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Have I committed, in advance and in writing, to a hold price below which I will walk away?",
+              "A hold price, agreed in advance and in writing, below which the buyer is comfortable walking away.",
+            detail:
+              "Walking is a normal outcome on at least one hull before closing on another.",
           },
           {
             question:
-              "Have I run the comparable scan independently of the listing broker, through my own adviser?",
+              "The comparable scan run independently of the listing broker, through the buyer\u2019s own adviser.",
+            detail:
+              "A second scan rarely contradicts the first dramatically. Where it does, it is usually decisive.",
           },
           {
             question:
-              "If I walk away from this hull, do I have two further candidates, or am I committed to this one because the search has run for too long?",
+              "Two further candidates on the shortlist, in case this hull does not close.",
+            detail:
+              "Single-candidate searches concentrate negotiation pressure on the buyer; multi-candidate searches do the opposite.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; complete in writing alongside the comparable scan; hand to the lawyer at heads of terms.",
+      "The page is designed to print onto a single A4. Complete in writing alongside the comparable scan. Hand to the lawyer at heads of terms.",
   },
 
   "03-how-the-industry-works": {
     slug: "03-how-the-industry-works",
-    title: "Disclosures to require, in writing.",
+    title: "Disclosures worth having in writing.",
     standfirst:
-      "A checklist of the structural questions to ask of any party introduced into the acquisition. The list is short. The disclosures are not always offered. Asking is the discipline.",
+      "A short reference list of the structural questions worth asking of any party introduced into the acquisition. Disclosure is sometimes offered, often not. The items below are what to ask, calmly, and what to expect in answer.",
     intent:
-      "When a brokerage offers \u201cfree\u201d buyer support, the support is paid for somewhere in the structure. The questions below identify where.",
+      "When a brokerage offers buyer support without an explicit fee, the work is paid for somewhere in the structure. The items below identify where, and they are usually answered helpfully when the question is asked plainly.",
     groups: [
       {
         heading: "The brokerage",
         items: [
           {
             question:
-              "Which commission structure (IYBA flat 10 percent, MYBA sliding scale) is being applied, and what is the resulting fee?",
+              "The commission structure being applied (IYBA flat 10 percent, MYBA sliding scale), and the resulting fee.",
           },
           {
             question:
-              "Is the brokerage acting in dual agency on this transaction, and if so, has consent been documented in writing beyond the standard form clause?",
+              "Any dual agency on the transaction, documented in writing beyond the standard form clause.",
           },
           {
             question:
-              "What is the brokerage\u2019s ownership structure?",
-            detail: "PE-backed, public-parent, founder-led, yard-tied? Each carries different incentives.",
+              "The brokerage\u2019s ownership structure (PE-backed, public-parent, founder-led, yard-tied).",
+            detail:
+              "Each ownership pattern carries different incentives; awareness is the first step.",
           },
         ],
       },
@@ -223,16 +257,19 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "For each party the brokerage has introduced (lawyer, surveyor, management company, paint specialist, insurance broker, recruitment agency), is there a referral or retrocession arrangement, and at what rate?",
+              "For each party the brokerage has introduced (lawyer, surveyor, management company, paint specialist, insurance broker, recruitment agency): the referral or retrocession arrangement, if any, and at what rate.",
           },
           {
             question:
-              "Is the brokerage prepared to disclose, in writing, every referral relationship and retrocession arrangement on every introduction?",
-            detail: "The OnboardOnline legal column states clearly: referral fees are legal only if disclosed.",
+              "Written disclosure of every referral relationship and retrocession arrangement on every introduction.",
+            detail:
+              "The OnboardOnline legal column is clear: referral fees are legal only if disclosed. Asking is the discipline.",
           },
           {
             question:
-              "If the brokerage will not disclose, am I prepared to engage a parallel adviser whose only role is to scan for and document the relationships?",
+              "If disclosure is declined, a parallel adviser whose only role is to scan for and document the relationships.",
+            detail:
+              "Independent advisers do this routinely; the work is straightforward and inexpensive.",
           },
         ],
       },
@@ -241,15 +278,15 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Was the captain candidate introduced by the brokerage, the seller, or by an independent recruitment agency engaged by me?",
+              "The candidate\u2019s introduction route (broker, seller, or independent agency engaged by the buyer).",
           },
           {
             question:
-              "Has the captain disclosed any prior commercial relationships with brokers, yards, suppliers, or management companies that might continue into employment?",
+              "Any prior commercial relationships with brokers, yards, suppliers, or management companies that might continue into employment.",
           },
           {
             question:
-              "Is the captain\u2019s pay structure straight salary, or are there bonus, charter share, or referral-related elements that could affect operational decisions?",
+              "The captain\u2019s pay structure (straight salary, or any bonus, charter share, or referral-related elements).",
           },
         ],
       },
@@ -258,42 +295,45 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "If I asked any party in this transaction to walk away from a deal that did not benefit me, would they?",
-            detail: "If the answer is no, the party is not aligned with me.",
+              "An understanding of which parties in the transaction would walk away from a deal that did not benefit the buyer.",
+            detail:
+              "The independent adviser is the party for whom this is structurally true. Knowing where the alignment sits is the point.",
           },
           {
             question:
-              "Do I have one party in this transaction whose income is contingent only on the quality of advice they give me, and not on the deal closing?",
+              "At least one party in the transaction whose income is contingent only on the quality of advice given, not on the deal closing.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; require written answers from each counterparty; file with the closing documents.",
+      "The page is designed to print onto a single A4. Require written answers from each counterparty. File with the closing documents.",
   },
 
   "04-acquisition-process": {
     slug: "04-acquisition-process",
     title: "The acquisition discipline, in fifteen items.",
     standfirst:
-      "A checklist tracking the five most common pitfalls plus the procedural disciplines that defeat them. Apply across the 12 to 24 week acquisition window. Tick each item before progressing to the next phase.",
+      "A reference list across the 12 to 24 week acquisition window. The items below are the disciplines that defeat the most common pitfalls. Most of the work is upstream of closing.",
     intent:
-      "Most consequential acquisition errors are upstream of closing. By closing, the buyer has either negotiated the right contract or has not. The window for the right work is the first ten weeks.",
+      "By closing, the buyer has either negotiated the right contract or has not. The window for the right work is the first ten weeks; the items below are what to do in it. None require specialist knowledge; they require sequence.",
     groups: [
       {
         heading: "Shortlist",
         items: [
           {
             question:
-              "Is my shortlist drawn from at least two brokerages, plus an independent off-market scan?",
+              "A shortlist drawn from at least two brokerages, plus an independent off-market scan.",
           },
           {
             question:
-              "Have I disclosed budget only to the independent adviser, not to any party paid contingent on a sale?",
+              "Budget shared only with the independent adviser, not with parties paid contingent on a sale.",
+            detail:
+              "Budget conversations belong with the adviser. Broker conversations go better when shaped by use case rather than by budget.",
           },
           {
             question:
-              "Have I walked the shortlisted yachts in the company of the independent adviser as well as the broker?",
+              "Shortlisted yachts walked in the company of the independent adviser as well as the broker.",
           },
         ],
       },
@@ -302,16 +342,19 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Is my surveyor independently engaged, with no relationship to the broker?",
-            detail: "Wolfson Marine, Ward & McKenzie, Patton Marine are recognised firms.",
+              "An independently engaged surveyor, with no relationship to the broker.",
+            detail:
+              "Wolfson Marine, Ward & McKenzie, Patton Marine are recognised firms.",
           },
           {
             question:
-              "Is the survey scope sufficient (4 to 7 days afloat plus haul-out, USD 25 to 60 k, full mechanical and electrical scope, paint specialist, class society inspector)?",
+              "Survey scope sufficient for the yacht (4 to 7 days afloat plus haul-out, USD 25 to 60 k, full mechanical and electrical, paint specialist, class society inspector).",
           },
           {
             question:
-              "Am I prepared to renegotiate price on every material deficiency the survey finds?",
+              "A renegotiation, on every material deficiency the survey finds.",
+            detail:
+              "This is the disciplined response, not an aggressive one. Sellers expect it on a proper survey.",
           },
         ],
       },
@@ -320,15 +363,15 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Is my own captain candidate, my surveyor, and (where relevant) a chief engineer present at the sea trial?",
+              "The buyer\u2019s own captain candidate, surveyor, and (where relevant) chief engineer present.",
           },
           {
             question:
-              "Has the sea trial scope tested the failure modes the survey identified, plus stability, vibration, noise, and electronics under representative load?",
+              "Trial scope covering the failure modes the survey identified, plus stability, vibration, noise, and electronics under representative load.",
           },
           {
             question:
-              "If the sea trial reveals issues, am I prepared to renegotiate or walk away rather than close on time?",
+              "Readiness to renegotiate or walk away if the trial reveals issues, rather than closing on schedule.",
           },
         ],
       },
@@ -337,16 +380,17 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Have I had a separate written legal opinion from independent counsel on the VAT structure, not the broker\u2019s preferred lawyer?",
-            detail: "Hill Dickinson, WFW, Ince, Stephenson Harwood, Reed Smith are recognised firms.",
+              "A separate written legal opinion from independent counsel on the VAT structure.",
+            detail:
+              "Hill Dickinson, WFW, Ince, Stephenson Harwood, Reed Smith are recognised firms.",
           },
           {
             question:
-              "Has the flag-state choice been analysed against my owner residence, cruising area, charter intent, financing, and family-office structuring?",
+              "Flag-state choice analysed against owner residence, cruising area, charter intent, financing, and family-office structuring.",
           },
           {
             question:
-              "Is the projected annual compliance cost (EUR 50 to 150 k on a 40 m yacht) included in my operating budget?",
+              "Projected annual compliance cost (EUR 50 to 150 k on a 40 m yacht) included in the operating budget.",
           },
         ],
       },
@@ -355,48 +399,53 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Does the contract include clean title warranties, an inventory matching the sale, agreed deficiencies remediated or priced, an acceptance protocol with adequate time, and a governing law clause that is not the seller\u2019s home jurisdiction?",
+              "A contract with clean title warranties, an inventory matching the sale, agreed deficiencies remediated or priced, an acceptance protocol with adequate time, and a governing law clause that is not the seller\u2019s home jurisdiction.",
           },
           {
             question:
-              "Is a 3 to 5 day technical handover with the seller\u2019s captain, my captain, and the chief engineer scheduled?",
+              "A 3 to 5 day technical handover with the seller\u2019s captain, the buyer\u2019s captain, and the chief engineer.",
           },
           {
             question:
-              "Have I resisted any pressure to compress the closing schedule, on the basis that closing acceleration is almost always the seller\u2019s interest?",
+              "A closing schedule resistant to acceleration.",
+            detail:
+              "Closing acceleration is almost always the seller\u2019s interest. Three weeks of additional due diligence costs nothing and tends to save significantly.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; tick items in writing as the process progresses; file with the closing documents.",
+      "The page is designed to print onto a single A4. Tick items in writing as the process progresses. File with the closing documents.",
   },
 
   "05-new-build-versus-brokerage": {
     slug: "05-new-build-versus-brokerage",
-    title: "The new build threshold tests, and what to require in the contract.",
+    title: "What to settle, before signing the new build contract.",
     standfirst:
-      "Three threshold tests for whether new build is the right path. Ten contract points to negotiate at heads of terms. Apply before signing anything; signing without doing so is the central failure pattern in the published record.",
+      "Three threshold tests for whether new build is the right path. Ten contract points worth settling at heads of terms. The items below are what specialist counsel would normally walk through; having them in writing first tends to make the conversation faster.",
     intent:
-      "The new build contract is where inexperience gets priced. The cost overrun appears later, but it was paid for at signature.",
+      "An afternoon\u2019s work at heads of terms is the cheapest insurance available against the variation-margin pattern. The items below are the points specialist counsel and the owner\u2019s representative settle as a matter of routine; settling them in advance is the thing.",
     groups: [
       {
         heading: "The threshold tests",
         items: [
           {
             question:
-              "Is my hold horizon at least seven to ten years, on paper?",
-            detail: "Below seven years, the new build cost premium does not amortise.",
+              "A hold horizon of seven to ten years, on paper.",
+            detail:
+              "Below seven years, the new build cost premium does not amortise.",
           },
           {
             question:
-              "Is my intended use pattern materially specific to the yacht (size, layout, propulsion, range, operational profile) such that no brokerage hull within a reasonable search window delivers 80 percent of the use case?",
-            detail: "Custom is for the residual 20 percent that genuinely matters.",
+              "An intended use pattern materially specific to the yacht (size, layout, propulsion, range, operational profile).",
+            detail:
+              "If a brokerage hull within a reasonable search window delivers 80 percent of the use case, brokerage is normally the right path. Custom is for the residual 20 percent that genuinely matters.",
           },
           {
             question:
-              "Am I prepared to commit to independent owner\u2019s representative engaged before contract, specialist shipbuilding counsel from a top firm, technical due diligence on the yard\u2019s order book and financial condition, and a willingness to push back on every point of the yard\u2019s first-draft contract?",
-            detail: "If the answer to any of these is no, brokerage is the right path.",
+              "Commitment to four disciplines: independent owner\u2019s representative engaged before contract, specialist shipbuilding counsel from a top firm, technical due diligence on the yard\u2019s order book and financial condition, and willingness to push back on the yard\u2019s first-draft contract.",
+            detail:
+              "If any of these is uncertain, brokerage is the calmer path. New build with weak representation is the most expensive form of yacht ownership available.",
           },
         ],
       },
@@ -405,46 +454,49 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Stage payment loading: is the schedule front-loaded above industry-typical 50 to 70 percent before delivery?",
-            detail: "Aggressive front-loading suggests yard cash-flow weakness.",
+              "Stage payment loading reviewed against the industry-typical 50 to 70 percent before delivery.",
+            detail:
+              "Aggressive front-loading sometimes signals yard cash-flow weakness; counsel can identify this from the schedule.",
           },
           {
             question:
-              "Refund guarantee: is it tier-one bank pay-on-demand, or a surety wrapper or weaker guarantee?",
+              "Refund guarantee credit quality (tier-one bank pay-on-demand vs surety wrapper).",
           },
           {
             question:
-              "Liquidated damages cap: is the cap defined, and at what level?",
-            detail: "Industry typical: 1 percent of contract value per week, capped at 5 to 10 percent.",
+              "Liquidated damages cap defined and at a level that reflects the project.",
+            detail:
+              "Industry typical: 1 percent of contract value per week of delay, capped at 5 to 10 percent.",
           },
           {
             question:
-              "Force majeure: is the burden on the yard to prove \u201cbut for\u201d causation, per English law?",
+              "Force majeure burden on the yard to prove \u201cbut for\u201d causation, per English law.",
           },
           {
             question:
-              "Change order procedure: are unit rates pre-agreed, with third-party quote rights for variations above a defined threshold?",
-            detail: "Without this, the yard prices variations at its discretion.",
+              "Change order procedure with pre-agreed unit rates and third-party quote rights for variations above a defined threshold.",
+            detail:
+              "Without this, the yard prices variations at its discretion. With it, the cost of changes during the build is constrained.",
           },
           {
             question:
-              "Defect notification deadlines: how long does the buyer have from discovery, and what is the consequence of late notification?",
+              "Defect notification deadlines understood, with the consequences of late notification clear.",
           },
           {
             question:
-              "Warranty length: 12 months standard, negotiable to 24. Has it been negotiated?",
+              "Warranty length negotiated (12 months standard, 24 months achievable).",
           },
           {
             question:
-              "Cancellation thresholds: 150 days post-delivery date / 180 days total delay are practitioner defaults; is the contract within or beyond these?",
+              "Cancellation thresholds (150 days post-delivery / 180 days total) understood and within the project\u2019s tolerance.",
           },
           {
             question:
-              "Title position during construction: does the yard retain title until delivery, or transfer progressively? Who carries insolvency risk?",
+              "Title position during construction clarified (yard-retained until delivery, or progressive transfer).",
           },
           {
             question:
-              "Dispute forum: English law plus LMAA arbitration is the practitioner default. Is the contract on this footing?",
+              "Dispute forum on English law plus LMAA arbitration, the practitioner default.",
           },
         ],
       },
@@ -453,46 +505,47 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Is my owner\u2019s representative paid only by me, with no yard commission and no broker commission?",
+              "Owner\u2019s representative paid only by the buyer, with no yard commission and no broker commission.",
           },
           {
             question:
-              "Has my representative shown me their fee structure in writing, before contract signature?",
+              "Fee structure shown in writing before contract signature.",
           },
           {
             question:
-              "Is my representative present on site weekly through the build, with quantified snag list reporting against original scope?",
+              "Representative present on site weekly through the build, with quantified snag list reporting against original scope.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; complete in writing with specialist shipbuilding counsel before signing the heads of terms.",
+      "The page is designed to print onto a single A4. Walk through with specialist shipbuilding counsel before signing the heads of terms.",
   },
 
   "06-refit": {
     slug: "06-refit",
-    title: "The refit checklist.",
+    title: "What to settle, before the refit contract.",
     standfirst:
-      "A checklist for the three disciplines that distinguish well-managed refits from disasters: scope, milestone payments, and weekly site presence. Plus the threshold tests for whether to refit at all.",
+      "A reference list across the four refit disciplines: whether to refit at all, yard selection, scope, and on-site discipline. The empirical overrun pattern is well-documented; the items below are what contains it.",
     intent:
-      "If the projected refit cost exceeds 30 percent of the yacht\u2019s pre-refit market value, sale is usually the better decision. Below 30 percent, refit is normally better. The disciplines below contain the overrun within reason.",
+      "If the projected refit cost exceeds 30 percent of the yacht\u2019s pre-refit market value, sale is usually the better decision. Below that threshold, refit is normally the right answer. The items below are the disciplines that contain the overrun within reason.",
     groups: [
       {
         heading: "Refit or sell",
         items: [
           {
             question:
-              "What is the projected refit cost as a percentage of the yacht\u2019s pre-refit market value?",
-            detail: "Above 30 percent, the threshold tilts toward sale.",
+              "Projected refit cost as a percentage of the yacht\u2019s pre-refit market value.",
+            detail:
+              "Above 30 percent, the threshold tilts toward sale. Below, refit is usually the right call. The threshold is rough; the calculation is bespoke.",
           },
           {
             question:
-              "Have I tested the strategic fit of the post-refit yacht against my actual continued use case, on paper?",
+              "Strategic fit of the post-refit yacht against the actual continued use case, on paper.",
           },
           {
             question:
-              "Have I run the alternative arithmetic (sale, reacquisition of comparable hull, depreciation, transaction cost, crew continuity loss) against the refit case?",
+              "The alternative arithmetic (sale, reacquisition of comparable hull, depreciation, transaction cost, crew continuity loss) tested against the refit case.",
           },
         ],
       },
@@ -501,15 +554,15 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Is the chosen yard appropriate for the scope (paint, structural, mechanical, interior) and tonnage of the work?",
+              "A yard appropriate for the scope (paint, structural, mechanical, interior) and tonnage.",
           },
           {
             question:
-              "Has the yard been booked 12 to 18 months ahead of the work itself, in line with current top-yard lead times?",
+              "Yard slot booked 12 to 18 months ahead of the work itself, in line with current top-yard lead times.",
           },
           {
             question:
-              "Has the yard been selected on track record, alignment, and project manager experience, not on cheapest quote?",
+              "Selection on track record, alignment, and project manager experience, rather than cheapest quote.",
           },
         ],
       },
@@ -518,15 +571,17 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Is the scope defined in writing, with specific deliverables, materials, and finishes, before the contract is signed?",
+              "Scope defined in writing, with specific deliverables, materials, and finishes, before the contract is signed.",
           },
           {
             question:
-              "Has my owner\u2019s representative reviewed and edited the scope, with line-by-line deliverables?",
+              "Owner\u2019s representative review and edit of the scope, line by line.",
           },
           {
             question:
-              "Is a contingency reserve of 15 to 25 percent included in my budget, against the empirical opened-up-vessel pattern?",
+              "A contingency reserve of 15 to 25 percent included in the budget.",
+            detail:
+              "This is the empirical opened-up-vessel pattern. Reserving for it is calm planning rather than pessimism.",
           },
         ],
       },
@@ -535,11 +590,11 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Are payments tied to defined deliverables (paint cells complete, engine reinstall complete, sea trials passed) rather than calendar dates?",
+              "Payments tied to defined deliverables (paint cells complete, engine reinstall complete, sea trials passed) rather than calendar dates.",
           },
           {
             question:
-              "Is there a final payment held against snag list closure, after redelivery, to incentivise warranty discipline?",
+              "A final payment held against snag list closure, after redelivery, to incentivise warranty discipline.",
           },
         ],
       },
@@ -548,46 +603,47 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Is my owner\u2019s representative on site at least one day per week, with photographic snag list and quantified variance against budget?",
+              "Owner\u2019s representative on site at least one day per week, with photographic snag list and quantified variance against budget.",
           },
           {
             question:
-              "Has the VAT structure (Spanish IPR if applicable, French Commercial Exemption, Maltese leasing) been analysed and selected by independent counsel?",
+              "VAT structure (Spanish IPR if applicable, French Commercial Exemption, Maltese leasing) analysed and selected by independent counsel.",
           },
           {
             question:
-              "Is the builder\u2019s risk insurance verified, with my interest noted and the policy covering transit between subcontractor sites?",
+              "Builder\u2019s risk insurance verified, with the buyer\u2019s interest noted and the policy covering transit between subcontractor sites.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; complete in writing with the owner\u2019s representative; revisit at each milestone.",
+      "The page is designed to print onto a single A4. Complete with the owner\u2019s representative. Revisit at each milestone.",
   },
 
   "07-operations": {
     slug: "07-operations",
-    title: "The five operational decisions of year one.",
+    title: "The operational pillars, in year one.",
     standfirst:
-      "A checklist for the operational pillars that compound across a hold period. Apply in year one, revisit annually thereafter. Captain hire is the highest-leverage; refit reserve is the most overlooked.",
+      "Five decisions that compound across a hold period. The captain hire is the highest-leverage; the refit reserve is the most overlooked. The list below is what to take time on in year one and revisit annually.",
     intent:
-      "The captain hire alone determines whether the yacht is a pleasure or a chronic source of friction. The other four decisions compound with it across the decade.",
+      "The captain hire alone determines whether the yacht is a pleasure or a chronic source of friction. The other four decisions compound with it across the decade. The items below are the operational pillars; getting them set up well in year one is the work.",
     groups: [
       {
         heading: "Captain hire",
         items: [
           {
             question:
-              "Have I interviewed at least five captain candidates, all sourced through routes outside the broker\u2019s relationship?",
+              "At least five captain candidates, all sourced through routes outside the broker\u2019s relationship.",
           },
           {
             question:
-              "Have I hired the candidate who pushed back hardest in interview on itinerary, maintenance, budget, and crew?",
-            detail: "Captains who agree easily are pleasant in interview and expensive in year two.",
+              "The candidate hired having pushed back hardest on itinerary, maintenance, budget, and crew.",
+            detail:
+              "Captains who agree easily are pleasant in interview. The disciplined candidate is the one who asks the difficult questions; that is the captain to hire.",
           },
           {
             question:
-              "Has the captain disclosed prior commercial relationships with brokers, yards, suppliers, or management companies that might continue into employment?",
+              "Disclosure of the captain\u2019s prior commercial relationships with brokers, yards, suppliers, or management companies that might continue into employment.",
           },
         ],
       },
@@ -596,15 +652,15 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Was the management company introduced by my independent adviser, not by the broker?",
+              "Management company introduced by the independent adviser, not by the broker.",
           },
           {
             question:
-              "Has the management company disclosed referral economics from suppliers (paint, refit yards, insurance, recruitment) in writing?",
+              "Written disclosure of any referral economics from suppliers (paint, refit yards, insurance, recruitment).",
           },
           {
             question:
-              "Is the management contract structured to protect my interests in flag-state interactions, ISM and MLC compliance, and audit cycles?",
+              "Contract structured to protect the buyer\u2019s interests in flag-state interactions, ISM and MLC compliance, and audit cycles.",
           },
         ],
       },
@@ -613,15 +669,15 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Have I taken competitive quotes from at least three of Pantaenius, AON, and Gallagher Specialty?",
+              "Competitive quotes from at least three of Pantaenius, AON, and Gallagher Specialty.",
           },
           {
             question:
-              "Is hull insurance at the practitioner band of 0.7 to 1.5 percent of insured value (well-maintained 40 to 50 m), with explanations for any deviation?",
+              "Hull insurance at the practitioner band of 0.7 to 1.5 percent of insured value (well-maintained 40 to 50 m), with explanations for any deviation.",
           },
           {
             question:
-              "Is P&I cover (crew injury, environmental, third-party, charter guest claims) at EUR 500 m third-party limit through Shipowners\u2019 Club or Steamship Mutual?",
+              "P&I cover (crew injury, environmental, third-party, charter guest claims) at EUR 500 m third-party limit through Shipowners\u2019 Club or Steamship Mutual.",
           },
         ],
       },
@@ -630,15 +686,17 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Have I committed to private operation for years one to three, with a deliberate decision in year four whether to introduce charter?",
+              "Private operation across years one to three, with a deliberate decision in year four whether to introduce charter.",
+            detail:
+              "First-year owners benefit from a season or two of private operation before the charter discipline is added. The data of actual use makes the year-four decision much cleaner.",
           },
           {
             question:
-              "If considering charter from year one, have I run a worked case based on yacht size, weekly rate, and weeks against the BOAT International published cases?",
+              "If charter is being considered from year one, a worked case based on yacht size, weekly rate, and weeks against the BOAT International published cases.",
           },
           {
             question:
-              "Am I prepared to release prime-season weeks to charter, recognising that charter does not pay for ownership for the median operator?",
+              "A clear position on releasing prime-season weeks, given that charter does not pay for ownership for the median operator.",
           },
         ],
       },
@@ -647,30 +705,30 @@ export const checklists: Record<string, Checklist> = {
         items: [
           {
             question:
-              "Have I built a refit reserve from year one, sized at 5 to 15 percent of insured hull value across the five-year cycle?",
+              "A refit reserve from year one, sized at 5 to 15 percent of insured hull value across the five-year cycle.",
           },
           {
             question:
-              "Has the reserve been tested against the empirical 30 to 50 percent overrun pattern?",
+              "The reserve tested against the empirical 30 to 50 percent overrun pattern.",
           },
           {
             question:
-              "Is the capex plan revisited annually, with the captain and owner\u2019s representative present?",
+              "An annual capex plan revisited with the captain and owner\u2019s representative present.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; complete with the captain and owner\u2019s representative in year one; revisit annually thereafter.",
+      "The page is designed to print onto a single A4. Complete with the captain and owner\u2019s representative in year one. Revisit annually.",
   },
 
   "08-decision-framework": {
     slug: "08-decision-framework",
-    title: "The ten questions to ask before signing anything.",
+    title: "The ten questions, applied to every adviser.",
     standfirst:
-      "A one-page checklist applying the independence test to the team architecture. Apply to every adviser the buyer is considering, including the publisher of this Reference. The publisher\u2019s own answers are set out on the colophon.",
+      "The ten questions are designed to be put to anyone proposing to advise on the acquisition, including the publisher of this Reference. The publisher\u2019s own answers are on the colophon. They are kind to ask. They tend to be answered helpfully.",
     intent:
-      "A buyer who can answer all ten questions clearly, with documentary evidence, is exceptionally well-protected. A buyer who cannot is, by industry default, working in the structure this Reference has spent its previous seven sections describing.",
+      "The questions below are the device of section eight: a calm reference for testing whether any adviser is structurally aligned with the buyer. They are designed to be put to people, not to be answered alone. Asking is the discipline; the answers are usually informative.",
     groups: [
       {
         heading: "The introductions",
@@ -730,13 +788,13 @@ export const checklists: Record<string, Checklist> = {
             question:
               "If I asked any of these parties to walk away from a deal that would not benefit me, would they?",
             detail:
-              "If the answer is no for any party, the relationship is not structurally aligned with the buyer.",
+              "If the answer is no for any party, the relationship is not structurally aligned with the buyer. This is information, not judgment.",
           },
         ],
       },
     ],
     printable:
-      "Print this page; require written answers from every party in the team architecture; file with the closing documents and revisit annually.",
+      "The page is designed to print onto a single A4. Use it to open the conversation with each adviser. The publisher\u2019s answers are on the colophon.",
   },
 };
 
