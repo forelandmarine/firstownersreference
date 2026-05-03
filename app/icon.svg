@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="geometricPrecision">
+  <rect width="64" height="64" fill="#f5f2ec"/>
+  <text
+    x="32"
+    y="46"
+    font-family="Georgia, 'Times New Roman', 'Newsreader', serif"
+    font-size="38"
+    font-weight="400"
+    text-anchor="middle"
+    fill="#1a1a1a"
+    letter-spacing="-1"
+  >FOR</text>
+  <circle cx="56.5" cy="44" r="2.4" fill="#0f3b5c"/>
+</svg>

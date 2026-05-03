@@ -1,14 +1,15 @@
 import Link from "next/link";
+import { MobileNav } from "@/components/mobile-nav";
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-rule">
-      <div className="max-w-[80rem] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="font-serif text-2xl tracking-tight text-charcoal">
+      <div className="max-w-[80rem] mx-auto px-6 lg:px-12 py-3 md:py-4 flex items-center justify-between gap-4">
+        <Link href="/" className="flex flex-col leading-none min-w-0">
+          <span className="font-serif text-lg md:text-2xl tracking-tight text-charcoal whitespace-nowrap">
             The First Owner&rsquo;s Reference
           </span>
-          <span className="font-serif italic text-sm text-stone mt-1">
+          <span className="hidden sm:block font-serif italic text-sm text-stone mt-1">
             An annual yachting field manual
           </span>
         </Link>
@@ -29,6 +30,7 @@ export function SiteHeader() {
             Request print copy
           </Link>
         </nav>
+        <MobileNav />
       </div>
     </header>
   );

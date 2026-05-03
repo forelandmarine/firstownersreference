@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" shape-rendering="geometricPrecision">
+  <rect width="180" height="180" fill="#f5f2ec"/>
+  <text
+    x="90"
+    y="106"
+    font-family="Georgia, 'Times New Roman', 'Newsreader', serif"
+    font-size="84"
+    font-weight="400"
+    text-anchor="middle"
+    fill="#1a1a1a"
+    letter-spacing="-2"
+  >FOR</text>
+  <circle cx="143" cy="100" r="6" fill="#0f3b5c"/>
+  <text
+    x="90"
+    y="148"
+    font-family="Georgia, 'Times New Roman', 'Newsreader', serif"
+    font-style="italic"
+    font-size="14"
+    font-weight="400"
+    text-anchor="middle"
+    fill="#7a756d"
+    letter-spacing="0.3"
+  >The First Owner&#x2019;s Reference</text>
+</svg>
