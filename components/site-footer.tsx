@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function SiteFooter() {
   return (
@@ -13,6 +14,14 @@ export function SiteFooter() {
             A yachting field manual, published annually. Independent. Contributor-led.
             Written by Foreland Marine. No advertising, ever.
           </p>
+          <div className="mt-10 opacity-30">
+            <Image
+              src="/brand/foreland-lighthouse-charcoal.svg"
+              alt="Foreland Marine lighthouse"
+              width={28}
+              height={28}
+            />
+          </div>
         </div>
         <div>
           <p className="meta mb-4">Read</p>

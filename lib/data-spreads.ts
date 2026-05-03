@@ -72,6 +72,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "YPI Crew 2026 salary guide, Quay Crew 2025 captain survey, Pantaenius market commentary, MYBA standard cost categories.",
       },
+      { type: "chart", chartId: "cost-composition-50m" },
       { type: "h2", text: "Depreciation, year by year" },
       {
         type: "table",
@@ -89,6 +90,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "Yatco, IYC, Yacht Hunter broker-aggregated curves. No peer-reviewed academic study exists.",
       },
+      { type: "chart", chartId: "depreciation-curve" },
       { type: "h2", text: "Charter, four worked cases" },
       {
         type: "table",
@@ -169,6 +171,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "Knight Frank Wealth Report 2026, 20th edition.",
       },
+      { type: "chart", chartId: "uhnwi-2021-2031" },
       { type: "h2", text: "Global order book, 24 m and above" },
       {
         type: "table",
@@ -183,6 +186,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "BOAT International Global Order Book.",
       },
+      { type: "chart", chartId: "order-book-2025-2026" },
       { type: "h2", text: "Production geography" },
       {
         type: "table",
@@ -381,6 +385,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "National tax authority published rates. Hill Dickinson, Watson Farley & Williams comparative analysis.",
       },
+      { type: "chart", chartId: "vat-on-purchase" },
       { type: "h2", text: "Three legitimate alternatives" },
       {
         type: "table",
@@ -640,6 +645,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "Foreland Marine project archive. Yard rate cards (MB92, Pendennis) are not published.",
       },
+      { type: "chart", chartId: "refit-cost-per-metre" },
       { type: "h2", text: "Five-year survey or major refit, indicative" },
       {
         type: "kv",
@@ -1124,6 +1130,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "AIG, Gallagher Specialty published commentary; Pantaenius market notes.",
       },
+      { type: "chart", chartId: "hull-rate-movement" },
       { type: "h2", text: "War risk premium, 2023 to 2026" },
       {
         type: "table",
@@ -1387,6 +1394,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "EU Commission FAQ on EU ETS for maritime transport; Royal Huisman published sustainability commentary; IMO 2023 GHG Strategy (MEPC 80).",
       },
+      { type: "chart", chartId: "eu-ets-exposure" },
       { type: "h2", text: "Brokerage market, sail vs motor" },
       {
         type: "kv",
@@ -1413,6 +1421,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "Denison Yachting market report 2025; broker-aggregated practitioner commentary.",
       },
+      { type: "chart", chartId: "days-on-market-sail-vs-motor" },
       { type: "h2", text: "Two 2025 reference points in the segment" },
       {
         type: "kv",
