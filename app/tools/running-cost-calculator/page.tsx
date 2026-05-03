@@ -1,359 +1,1083 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-type YachtType = "sail" | "motor";
-type Use = "private" | "charter";
-type Region =
-  | "west-med"
-  | "east-med"
-  | "caribbean"
-  | "us-east"
-  | "se-asia"
-  | "northern-europe"
-  | "arabian-gulf"
-  | "south-pacific"
-  | "global";
-type Intensity = "light" | "moderate" | "heavy";
-type Currency = "GBP" | "EUR" | "USD";
+/* ------------------------------------------------------------------ */
+/*  Inline editorial UI                                                */
+/* ------------------------------------------------------------------ */
 
-const intensityMultiplier: Record<Intensity, number> = {
-  light: 0.85,
-  moderate: 1,
-  heavy: 1.2,
-};
-
-const regionMultiplier: Record<Region, number> = {
-  "west-med": 1.1,
-  "east-med": 0.95,
-  caribbean: 1.05,
-  "us-east": 1.08,
-  "se-asia": 0.92,
-  "northern-europe": 0.98,
-  "arabian-gulf": 1.15,
-  "south-pacific": 1.12,
-  global: 1.2,
-};
-
-const currencyRate: Record<Currency, number> = {
-  GBP: 1,
-  EUR: 1.18,
-  USD: 1.27,
-};
-
-const currencySymbol: Record<Currency, string> = {
-  GBP: "\u00a3",
-  EUR: "\u20ac",
-  USD: "$",
-};
-
-const categories = [
-  { key: "crew", label: "Crew", share: 0.35 },
-  { key: "maintenance", label: "Maintenance and repair", share: 0.16 },
-  { key: "insurance", label: "Insurance", share: 0.13 },
-  { key: "berths", label: "Berths and marina fees", share: 0.11 },
-  { key: "fuel", label: "Fuel and consumables", share: 0.1 },
-  { key: "contingency", label: "Contingency", share: 0.08 },
-  { key: "management", label: "Management fees", share: 0.04 },
-  { key: "regulatory", label: "Regulatory and compliance", share: 0.02 },
-  { key: "other", label: "Other operating", share: 0.01 },
-];
-
-function baseAnnualCostGBP(length: number, type: YachtType, use: Use): number {
-  const sailFactor = type === "sail" ? 0.92 : 1;
-  const charterFactor = use === "charter" ? 1.15 : 1;
-  // Calibrated to roughly 10% of capex per year, scaled by length.
-  const lengthCost = 4500 * Math.pow(length, 1.85);
-  return lengthCost * sailFactor * charterFactor;
+function HorizonLine() {
+  return <div aria-hidden="true" className="w-full h-px bg-rule" />;
 }
 
-export default function CalculatorPage() {
-  const [length, setLength] = useState(40);
-  const [type, setType] = useState<YachtType>("sail");
-  const [use, setUse] = useState<Use>("private");
-  const [region, setRegion] = useState<Region>("west-med");
-  const [intensity, setIntensity] = useState<Intensity>("moderate");
-  const [currency, setCurrency] = useState<Currency>("GBP");
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return <p className="meta-marine mb-3">{children}</p>;
+}
 
-  const total = useMemo(() => {
-    const base = baseAnnualCostGBP(length, type, use);
-    const adjusted =
-      base * regionMultiplier[region] * intensityMultiplier[intensity];
-    return adjusted * currencyRate[currency];
-  }, [length, type, use, region, intensity, currency]);
-
-  const formatted = useMemo(
-    () =>
-      new Intl.NumberFormat("en-GB", {
-        maximumFractionDigits: 0,
-      }).format(Math.round(total / 1000) * 1000),
-    [total]
+function ButtonPrimary({
+  href,
+  children,
+  external,
+}: {
+  href: string;
+  children: React.ReactNode;
+  external?: boolean;
+}) {
+  const cls =
+    "inline-flex items-center justify-center border border-charcoal hover:border-marine hover:text-marine font-serif text-base px-6 py-3 transition-colors";
+  if (external) {
+    return (
+      <a
+        href={href}
+        className={cls}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={cls}>
+      {children}
+    </Link>
   );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Types                                                              */
+/* ------------------------------------------------------------------ */
+
+type YachtType = "sailing" | "motor";
+type Currency = "EUR" | "USD" | "GBP";
+type CruisingArea =
+  | "west_med"
+  | "east_med"
+  | "caribbean"
+  | "us_east_coast"
+  | "southeast_asia"
+  | "northern_europe"
+  | "arabian_gulf"
+  | "south_pacific"
+  | "global";
+type UseType = "private" | "charter";
+type SeasonType = "single" | "dual";
+type UsageIntensity = "light" | "moderate" | "heavy";
+
+interface SubItem {
+  label: string;
+  amount: number;
+}
+
+interface CostBreakdown {
+  crew: number;
+  insurance: number;
+  maintenance: number;
+  berths: number;
+  fuel: number;
+  management: number;
+  regulatory: number;
+  contingency: number;
+  total: number;
+  detail: Record<string, SubItem[]>;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Helpers                                                            */
+/* ------------------------------------------------------------------ */
+
+function lerp(a: number, b: number, t: number) {
+  return a + (b - a) * t;
+}
+
+const currencyRates: Record<Currency, number> = {
+  EUR: 1,
+  USD: 1.09,
+  GBP: 0.86,
+};
+
+const currencyLocales: Record<Currency, string> = {
+  EUR: "en-GB",
+  USD: "en-US",
+  GBP: "en-GB",
+};
+
+function fmt(n: number, currency: Currency = "EUR"): string {
+  const converted = n * currencyRates[currency];
+  return new Intl.NumberFormat(currencyLocales[currency], {
+    style: "currency",
+    currency,
+    maximumFractionDigits: 0,
+  }).format(converted);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Cost model                                                         */
+/* ------------------------------------------------------------------ */
+
+function calculateCosts(
+  length: number,
+  yachtType: YachtType,
+  area: CruisingArea,
+  usage: UsageIntensity,
+  useType: UseType,
+  season: SeasonType,
+): CostBreakdown {
+  const t = (length - 24) / (60 - 24);
+  const isCharter = useType === "charter";
+  const isDual = season === "dual";
+  const isSail = yachtType === "sailing";
+  const charterAdj = (base: number, mult: number) =>
+    base * (isCharter ? mult : 1.0);
+
+  const crewCount = isSail
+    ? Math.round(lerp(4, 12, t))
+    : Math.round(lerp(5, 14, t));
+  const salaries = isSail
+    ? lerp(220_000, 520_000, t)
+    : lerp(260_000, 620_000, t);
+  const socialCharges = salaries * 0.18;
+  const crewInsurance = crewCount * lerp(1_800, 2_500, t);
+  const travelBase = crewCount * lerp(2_500, 4_000, t);
+  const travel = isDual ? travelBase * 1.6 : travelBase;
+  const training = crewCount * lerp(1_500, 3_000, t);
+  const uniforms = crewCount * lerp(400, 800, t);
+  const provisions = crewCount * lerp(5_000, 8_000, t);
+  const usageMult = usage === "heavy" ? 1.15 : usage === "moderate" ? 1.05 : 1.0;
+  const crewSub = [
+    salaries,
+    socialCharges,
+    crewInsurance,
+    travel,
+    training,
+    uniforms,
+    provisions,
+  ];
+  const crewRaw = crewSub.reduce((a, b) => a + b, 0) * usageMult;
+  const crew = charterAdj(crewRaw, 1.25);
+
+  const valueMotor = lerp(3_000_000, 35_000_000, t);
+  const value = isSail ? valueMotor * 0.85 : valueMotor;
+  const areaInsuranceMult: Record<CruisingArea, number> = {
+    west_med: 1.0,
+    east_med: 1.05,
+    caribbean: 1.15,
+    us_east_coast: 1.1,
+    southeast_asia: 1.1,
+    northern_europe: 0.95,
+    arabian_gulf: 1.05,
+    south_pacific: 1.15,
+    global: 1.25,
+  };
+  const areaMult = areaInsuranceMult[area];
+  const hullRate = isSail ? 0.008 : 0.01;
+  const hull = value * hullRate * areaMult * (isDual ? 1.15 : 1.0);
+  const pandi =
+    value * (isSail ? 0.003 : 0.004) * areaMult * (isDual ? 1.1 : 1.0);
+  const crewMedical = crewCount * lerp(1_200, 2_000, t);
+  const warRisk =
+    area === "arabian_gulf" || area === "global" ? value * 0.001 : 0;
+  const insuranceRaw = hull + pandi + crewMedical + warRisk;
+  const insurance = charterAdj(insuranceRaw, 1.4);
+
+  const engineService = isSail
+    ? lerp(25_000, 80_000, t)
+    : lerp(50_000, 200_000, t);
+  const hullAntifoul = lerp(20_000, 90_000, t);
+  const rig = isSail ? lerp(30_000, 120_000, t) : 0;
+  const sailInventory = isSail ? lerp(15_000, 80_000, t) : 0;
+  const deckHardware = lerp(10_000, 50_000, t);
+  const electronics = lerp(8_000, 35_000, t);
+  const interiorUpkeep = lerp(10_000, 45_000, t);
+  const classReserve = lerp(20_000, 80_000, t);
+  const maintRaw =
+    engineService +
+    hullAntifoul +
+    rig +
+    sailInventory +
+    deckHardware +
+    electronics +
+    interiorUpkeep +
+    classReserve;
+  const maintenance = charterAdj(maintRaw, 1.2);
+
+  const berthMultiplier: Record<CruisingArea, number> = {
+    west_med: 1.0,
+    east_med: 0.8,
+    caribbean: 0.7,
+    us_east_coast: 0.9,
+    southeast_asia: 0.5,
+    northern_europe: 0.6,
+    arabian_gulf: 0.75,
+    south_pacific: 0.55,
+    global: 0.85,
+  };
+  const homeBerth = lerp(60_000, 280_000, t) * berthMultiplier[area];
+  const secondBerth = isDual ? lerp(30_000, 150_000, t) * 0.7 : 0;
+  const transitBerths =
+    lerp(15_000, 60_000, t) * berthMultiplier[area] * (isDual ? 1.4 : 1.0);
+  const launchHaulout = lerp(5_000, 20_000, t);
+  const berths = homeBerth + secondBerth + transitBerths + launchHaulout;
+
+  const fuelOnly = isSail
+    ? lerp(15_000, 60_000, t)
+    : lerp(50_000, 280_000, t);
+  const deliveryFuel = isDual
+    ? isSail
+      ? lerp(8_000, 25_000, t)
+      : lerp(20_000, 80_000, t)
+    : 0;
+  const lubricants = (fuelOnly + deliveryFuel) * 0.06;
+  const waterTreatment = lerp(2_000, 8_000, t);
+  const stores = lerp(8_000, 30_000, t);
+  const fuelUsageMult = usage === "heavy" ? 1.5 : usage === "moderate" ? 1.0 : 0.7;
+  const fuelRaw =
+    (fuelOnly + deliveryFuel + lubricants + waterTreatment + stores) *
+    fuelUsageMult;
+  const fuel = charterAdj(fuelRaw, 1.3);
+
+  const baseFee = lerp(3_000, 8_000, t) * 12;
+  const accounting = lerp(6_000, 18_000, t);
+  const charterAdmin = isCharter ? baseFee * 0.35 : 0;
+  const management = baseFee + accounting + charterAdmin;
+
+  const flagState = lerp(3_000, 12_000, t);
+  const classSurvey = lerp(5_000, 18_000, t);
+  const radioLicensing = lerp(500, 2_000, t);
+  const ismCompliance = isCharter
+    ? lerp(4_000, 15_000, t)
+    : lerp(2_000, 8_000, t);
+  const yachtCode = isCharter ? lerp(3_000, 10_000, t) : 0;
+  const regulatory =
+    flagState + classSurvey + radioLicensing + ismCompliance + yachtCode;
+
+  const deliveryCrew = isDual ? lerp(8_000, 25_000, t) : 0;
+  const agentFees = isDual ? lerp(3_000, 10_000, t) : 0;
+  const crewWithDelivery = crew + deliveryCrew + agentFees;
+
+  const charterScale = (items: SubItem[], mult: number): SubItem[] => {
+    if (!isCharter) return items;
+    const raw = items.reduce((a, b) => a + b.amount, 0);
+    const scaled = raw * mult;
+    const diff = scaled - raw;
+    return [...items, { label: "Charter uplift", amount: diff }];
+  };
+
+  const usageScale = (items: SubItem[], mult: number): SubItem[] => {
+    if (mult === 1.0) return items;
+    const raw = items.reduce((a, b) => a + b.amount, 0);
+    const scaled = raw * mult;
+    const diff = scaled - raw;
+    const usageLabel =
+      usage === "heavy" ? "Heavy use adjustment" : "Moderate use adjustment";
+    return [...items, { label: usageLabel, amount: diff }];
+  };
+
+  const detail: Record<string, SubItem[]> = {
+    crew: charterScale(
+      usageScale(
+        [
+          { label: "Salaries", amount: salaries },
+          { label: "Social charges & tax", amount: socialCharges },
+          { label: "Crew insurance", amount: crewInsurance },
+          { label: "Travel & repatriation", amount: travel },
+          { label: "Training & certs", amount: training },
+          { label: "Uniforms", amount: uniforms },
+          { label: "Provisions", amount: provisions },
+          ...(isDual
+            ? [
+                { label: "Delivery crew", amount: deliveryCrew },
+                { label: "Port agent fees", amount: agentFees },
+              ]
+            : []),
+        ],
+        usageMult
+      ),
+      1.25
+    ),
+    insurance: charterScale(
+      [
+        { label: "Hull & machinery", amount: hull },
+        { label: "P&I cover", amount: pandi },
+        { label: "Crew medical", amount: crewMedical },
+        ...(warRisk > 0
+          ? [{ label: "War risk", amount: warRisk }]
+          : []),
+      ],
+      1.4
+    ),
+    maintenance: charterScale(
+      [
+        { label: "Engine & generator service", amount: engineService },
+        { label: "Hull, antifoul & paint", amount: hullAntifoul },
+        ...(isSail
+          ? [{ label: "Rig inspection & maintenance", amount: rig }]
+          : []),
+        ...(isSail
+          ? [{ label: "Sail inventory", amount: sailInventory }]
+          : []),
+        { label: "Deck hardware", amount: deckHardware },
+        { label: "Electronics & nav", amount: electronics },
+        { label: "Interior upkeep", amount: interiorUpkeep },
+        { label: "Class survey reserve", amount: classReserve },
+      ],
+      1.2
+    ),
+    berths: [
+      { label: "Annual home berth", amount: homeBerth },
+      ...(isDual
+        ? [{ label: "Second season berth", amount: secondBerth }]
+        : []),
+      { label: "Transit & visitor berths", amount: transitBerths },
+      { label: "Launch & haulout", amount: launchHaulout },
+    ],
+    fuel: charterScale(
+      usageScale(
+        [
+          { label: "Fuel", amount: fuelOnly },
+          ...(isDual
+            ? [{ label: "Delivery passage fuel", amount: deliveryFuel }]
+            : []),
+          { label: "Lubricants", amount: lubricants },
+          { label: "Water treatment", amount: waterTreatment },
+          { label: "General stores", amount: stores },
+        ],
+        fuelUsageMult
+      ),
+      1.3
+    ),
+    management: [
+      { label: "Management fee", amount: baseFee },
+      { label: "Accounting & payroll", amount: accounting },
+      ...(isCharter
+        ? [{ label: "Charter administration", amount: charterAdmin }]
+        : []),
+    ],
+    regulatory: [
+      { label: "Flag state fees", amount: flagState },
+      { label: "Class society surveys", amount: classSurvey },
+      { label: "Radio licensing", amount: radioLicensing },
+      { label: "ISM / SMS compliance", amount: ismCompliance },
+      ...(isCharter
+        ? [{ label: "Yacht code (LY3/PYC)", amount: yachtCode }]
+        : []),
+    ],
+    contingency: [],
+  };
+
+  const subtotal =
+    crewWithDelivery +
+    insurance +
+    maintenance +
+    berths +
+    fuel +
+    management +
+    regulatory;
+  const contingency = subtotal * 0.08;
+  const total = subtotal + contingency;
+
+  return {
+    crew: crewWithDelivery,
+    insurance,
+    maintenance,
+    berths,
+    fuel,
+    management,
+    regulatory,
+    contingency,
+    total,
+    detail,
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/*  Small UI pieces                                                    */
+/* ------------------------------------------------------------------ */
+
+function ToggleGroup<T extends string>({
+  options,
+  value,
+  onChange,
+}: {
+  options: { value: T; label: string }[];
+  value: T;
+  onChange: (v: T) => void;
+}) {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {options.map((o) => (
+        <button
+          key={o.value}
+          type="button"
+          onClick={() => onChange(o.value)}
+          className={`px-4 py-2 font-serif text-sm transition-colors duration-150 ${
+            value === o.value
+              ? "bg-marine text-paper border border-marine"
+              : "text-charcoal-soft border border-rule hover:text-marine hover:border-marine"
+          }`}
+        >
+          {o.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function CostRow({
+  label,
+  amount,
+  total,
+  currency,
+  detail,
+}: {
+  label: string;
+  amount: number;
+  total: number;
+  currency: Currency;
+  detail?: SubItem[];
+}) {
+  const [open, setOpen] = useState(false);
+  const pct = (amount / total) * 100;
+  const hasDetail = detail && detail.length > 0;
+
+  return (
+    <div
+      className={hasDetail ? "cursor-pointer" : ""}
+      onMouseEnter={() => hasDetail && setOpen(true)}
+      onMouseLeave={() => hasDetail && setOpen(false)}
+    >
+      <div className="flex justify-between items-baseline mb-1.5">
+        <span
+          className={`font-serif text-sm ${
+            open ? "text-charcoal" : "text-charcoal-soft"
+          } transition-colors`}
+        >
+          {label}
+          {hasDetail && (
+            <span
+              className={`ml-1.5 meta ${
+                open ? "text-marine" : "text-stone"
+              } transition-colors`}
+            >
+              {open ? "\u2212" : "+"}
+            </span>
+          )}
+        </span>
+        <div className="flex items-baseline gap-3">
+          <span
+            className="meta text-stone"
+            style={{ fontVariantNumeric: "tabular-nums" }}
+          >
+            {pct.toFixed(0)}%
+          </span>
+          <span
+            className="font-mono text-sm text-charcoal"
+            style={{ fontVariantNumeric: "tabular-nums" }}
+          >
+            {fmt(amount, currency)}
+          </span>
+        </div>
+      </div>
+      <div className="w-full h-1.5 bg-rule overflow-hidden">
+        <div
+          className="h-full bg-marine transition-all duration-500 ease-out"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+      {open && hasDetail && (
+        <div className="mt-2 mb-1 ml-1 pl-3 border-l border-rule space-y-1.5">
+          {detail.map((sub) => (
+            <div
+              key={sub.label}
+              className="flex justify-between items-baseline"
+            >
+              <span className="caption">{sub.label}</span>
+              <span
+                className="font-mono text-xs text-charcoal-soft"
+                style={{ fontVariantNumeric: "tabular-nums" }}
+              >
+                {fmt(sub.amount, currency)}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Page                                                               */
+/* ------------------------------------------------------------------ */
+
+const areaLabels: Record<CruisingArea, string> = {
+  west_med: "Western Mediterranean",
+  east_med: "Eastern Mediterranean",
+  caribbean: "Caribbean",
+  us_east_coast: "US East Coast",
+  southeast_asia: "Southeast Asia",
+  northern_europe: "Northern Europe",
+  arabian_gulf: "Arabian Gulf",
+  south_pacific: "South Pacific",
+  global: "Global",
+};
+
+export default function RunningCostCalculatorPage() {
+  const [length, setLength] = useState(35);
+  const [yachtType, setYachtType] = useState<YachtType>("motor");
+  const [area, setArea] = useState<CruisingArea>("west_med");
+  const [useType, setUseType] = useState<UseType>("private");
+  const [season, setSeason] = useState<SeasonType>("single");
+  const [usage, setUsage] = useState<UsageIntensity>("moderate");
+  const [currency, setCurrency] = useState<Currency>("EUR");
+
+  const costs = calculateCosts(length, yachtType, area, usage, useType, season);
+
+  const breakdown = [
+    { label: "Crew", amount: costs.crew, key: "crew" },
+    { label: "Insurance", amount: costs.insurance, key: "insurance" },
+    { label: "Maintenance & Repair", amount: costs.maintenance, key: "maintenance" },
+    { label: "Berths & Marina Fees", amount: costs.berths, key: "berths" },
+    { label: "Fuel & Consumables", amount: costs.fuel, key: "fuel" },
+    { label: "Management Fees", amount: costs.management, key: "management" },
+    { label: "Regulatory & Compliance", amount: costs.regulatory, key: "regulatory" },
+    { label: "Contingency (8%)", amount: costs.contingency, key: "contingency" },
+  ];
+
+  const handleSlider = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setLength(Number(e.target.value));
+    },
+    []
+  );
+
+  const faqData = [
+    {
+      question: "How much does it cost to run a superyacht per year?",
+      answer:
+        "Annual running costs for a superyacht typically range from EUR 400,000 for a 24-metre sailing yacht with light use, to over EUR 2 million for a 60-metre motor yacht operating year-round. The main cost categories are crew (30-40% of the total), insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. As a rough guide, expect to spend 8-12% of the yacht's purchase price each year, though the actual figure depends heavily on vessel type, size, cruising area, and how intensively the yacht is used.",
+    },
+    {
+      question: "What is the 10% rule for yachts?",
+      answer:
+        "The 10% rule is a long-standing industry rule of thumb that says you should budget approximately 10% of the yacht's purchase price each year for running costs. While useful as a starting point, the 10% rule is a simplification. Actual costs are driven by the vessel's size, type, age, crew complement, cruising area, and operational profile, not by the purchase price.",
+    },
+    {
+      question: "What are the biggest costs of owning a superyacht?",
+      answer:
+        "Crew costs are almost always the largest single expense, typically 30-40% of the annual budget. After crew, the next largest costs are maintenance and repair (including class surveys and periodic refits), insurance (hull, P&I, and crew medical), and marina berths. Fuel costs vary dramatically between sailing and motor yachts. Management fees, regulatory compliance, and a contingency reserve of 8-10% should also be budgeted.",
+    },
+    {
+      question: "How much does a superyacht crew cost?",
+      answer:
+        "Crew costs depend on yacht size and the number of crew required. A 30-metre yacht with 5-7 crew might spend EUR 300,000-450,000 per year on total crew costs. A 50-metre yacht with 12-16 crew could spend EUR 900,000-1,400,000. These figures include salaries, social charges, insurance, travel, training, uniforms, and provisions.",
+    },
+    {
+      question: "Is it cheaper to run a sailing yacht or a motor yacht?",
+      answer:
+        "Sailing yachts are generally less expensive to run than motor yachts of equivalent size. The main saving is fuel. However, sailing yachts have costs that motor yachts do not, including rig maintenance, sail inventory, and specialist rigging inspections. Overall, a sailing yacht's annual running costs are typically 15-25% lower than a comparable motor yacht.",
+    },
+    {
+      question: "How much does superyacht insurance cost?",
+      answer:
+        "Insurance costs depend on the yacht's value, type, age, cruising area, and claims history. Hull and machinery insurance typically costs 0.8-1.5% of the yacht's insured value per year. P&I (Protection and Indemnity) cover adds another 0.3-0.4%. Charter yachts require commercial insurance, which can be 30-40% more expensive than private cover.",
+    },
+  ];
 
   return (
     <>
       <SiteHeader />
 
-      <article className="bg-paper">
-        <header className="border-b border-rule pt-16 pb-16">
-          <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-            <div className="flex items-center gap-3 mb-10 meta">
-              <Link href="/" className="link">
-                Edition One
-              </Link>
-              <span>/</span>
-              <span>Tools</span>
-              <span>/</span>
-              <span>Running cost calculator</span>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-              <div className="lg:col-span-8">
-                <p className="meta mb-6">Tool</p>
-                <h1 className="font-serif font-light text-headline lg:text-display leading-[1.05] tracking-tight text-charcoal">
-                  Running cost calculator
-                </h1>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqData.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: "Superyacht Running Cost Calculator",
+            url: "https://firstownersreference.com/tools/running-cost-calculator",
+            description:
+              "Interactive calculator that estimates annual superyacht running costs by crew, insurance, maintenance, berths, fuel, management, and compliance.",
+            applicationCategory: "FinanceApplication",
+            operatingSystem: "Any",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "EUR",
+            },
+            author: {
+              "@type": "Organization",
+              name: "Foreland Marine Consultancy",
+              url: "https://forelandmarine.com",
+            },
+            publisher: {
+              "@type": "Periodical",
+              name: "The First Owner\u2019s Reference",
+              url: "https://firstownersreference.com",
+            },
+          }),
+        }}
+      />
+
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-rule">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/calculator-hero.jpg"
+            alt="Superyacht berthed in a Mediterranean marina"
+            fill
+            sizes="100vw"
+            className="object-cover opacity-90"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-charcoal/70" />
+        </div>
+        <div className="relative z-10 max-w-[80rem] mx-auto px-6 lg:px-12 py-24 lg:py-32 text-paper">
+          <p className="meta text-paper/80 mb-6">
+            A tool from The First Owner&rsquo;s Reference
+          </p>
+          <h1 className="font-serif font-light text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.05] tracking-tight max-w-3xl mb-8">
+            What does it actually cost
+            <br />
+            to run a superyacht?
+          </h1>
+          <p className="font-serif text-xl lg:text-2xl leading-relaxed text-paper/85 max-w-2xl">
+            Ownership is more than the purchase price. The calculator below
+            produces a realistic annual running-cost estimate, broken down by
+            category, against named source assumptions.
+          </p>
+        </div>
+      </section>
+
+      {/* CALCULATOR */}
+      <section className="bg-paper py-16 lg:py-24">
+        <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {/* INPUTS */}
+            <div className="bg-paper-deep border border-rule p-6 sm:p-8 space-y-8">
+              <div>
+                <SectionLabel>Your yacht</SectionLabel>
+                <h2 className="font-serif font-light text-2xl sm:text-3xl tracking-tight text-charcoal">
+                  Configure the basics.
+                </h2>
               </div>
-              <div className="lg:col-span-4">
-                <p className="caption max-w-md">
-                  Estimates annual operating cost for a yacht of given size,
-                  type, region, and use intensity. Calibrated against MYBA,
-                  Pantaenius, Quay Crew, and Foreland Marine&rsquo;s
-                  operational data. Sources are named on every assumption.
+
+              {/* Length slider */}
+              <div className="space-y-3">
+                <div className="flex justify-between items-baseline">
+                  <label className="meta">Yacht length</label>
+                  <span
+                    className="font-serif text-lg text-charcoal"
+                    style={{ fontVariantNumeric: "tabular-nums" }}
+                  >
+                    {length} m
+                  </span>
+                </div>
+                <input
+                  type="range"
+                  min={24}
+                  max={60}
+                  step={1}
+                  value={length}
+                  onChange={handleSlider}
+                  className="w-full cursor-pointer"
+                  style={{
+                    background: `linear-gradient(to right, var(--color-marine) ${
+                      ((length - 24) / 36) * 100
+                    }%, var(--color-rule) ${
+                      ((length - 24) / 36) * 100
+                    }%)`,
+                    height: "4px",
+                    borderRadius: "2px",
+                    WebkitAppearance: "none",
+                    accentColor: "var(--color-marine)",
+                  }}
+                />
+                <div className="flex justify-between meta">
+                  <span>24 m</span>
+                  <span>60 m</span>
+                </div>
+              </div>
+
+              {/* Yacht type */}
+              <div className="space-y-2.5">
+                <label className="meta block">Yacht type</label>
+                <ToggleGroup
+                  options={[
+                    { value: "sailing" as YachtType, label: "Sailing" },
+                    { value: "motor" as YachtType, label: "Motor" },
+                  ]}
+                  value={yachtType}
+                  onChange={setYachtType}
+                />
+              </div>
+
+              {/* Use type */}
+              <div className="space-y-2.5">
+                <label className="meta block">Use</label>
+                <ToggleGroup
+                  options={[
+                    { value: "private" as UseType, label: "Private" },
+                    { value: "charter" as UseType, label: "Charter" },
+                  ]}
+                  value={useType}
+                  onChange={setUseType}
+                />
+                {useType === "charter" && (
+                  <p className="caption pt-1">
+                    Charter yachts require commercial insurance, larger crews,
+                    LY3/PYC compliance, and dedicated charter management.
+                  </p>
+                )}
+              </div>
+
+              {/* Currency */}
+              <div className="space-y-2.5">
+                <label className="meta block">Currency</label>
+                <ToggleGroup
+                  options={[
+                    { value: "EUR" as Currency, label: "EUR" },
+                    { value: "USD" as Currency, label: "USD" },
+                    { value: "GBP" as Currency, label: "GBP" },
+                  ]}
+                  value={currency}
+                  onChange={setCurrency}
+                />
+              </div>
+
+              {/* Cruising area */}
+              <div className="space-y-2.5">
+                <label className="meta block">Primary operating area</label>
+                <ToggleGroup
+                  options={[
+                    { value: "west_med" as CruisingArea, label: "West Med" },
+                    { value: "east_med" as CruisingArea, label: "East Med" },
+                    { value: "caribbean" as CruisingArea, label: "Caribbean" },
+                    { value: "us_east_coast" as CruisingArea, label: "US East Coast" },
+                    { value: "southeast_asia" as CruisingArea, label: "SE Asia" },
+                    { value: "northern_europe" as CruisingArea, label: "Northern Europe" },
+                    { value: "arabian_gulf" as CruisingArea, label: "Arabian Gulf" },
+                    { value: "south_pacific" as CruisingArea, label: "South Pacific" },
+                    { value: "global" as CruisingArea, label: "Global" },
+                  ]}
+                  value={area}
+                  onChange={setArea}
+                />
+              </div>
+
+              {/* Season */}
+              <div className="space-y-2.5">
+                <label className="meta block">Season</label>
+                <ToggleGroup
+                  options={[
+                    { value: "single" as SeasonType, label: "Single season" },
+                    { value: "dual" as SeasonType, label: "Dual season" },
+                  ]}
+                  value={season}
+                  onChange={setSeason}
+                />
+                {season === "dual" && (
+                  <p className="caption pt-1">
+                    Dual season (e.g. Med summer, Caribbean winter) adds
+                    delivery passage costs, a second berth, additional crew
+                    travel, and wider-range insurance cover.
+                  </p>
+                )}
+              </div>
+
+              {/* Usage intensity */}
+              <div className="space-y-2.5">
+                <label className="meta block">Usage intensity</label>
+                <ToggleGroup
+                  options={[
+                    { value: "light" as UsageIntensity, label: "Light (under 6 wks)" },
+                    { value: "moderate" as UsageIntensity, label: "Moderate (6-12 wks)" },
+                    { value: "heavy" as UsageIntensity, label: "Heavy (12+ wks)" },
+                  ]}
+                  value={usage}
+                  onChange={setUsage}
+                />
+              </div>
+            </div>
+
+            {/* RESULTS */}
+            <div className="space-y-6 lg:sticky lg:top-32 lg:self-start">
+              {/* Total card */}
+              <div className="bg-charcoal text-paper p-6 sm:p-8">
+                <p className="meta text-paper/60 mb-3">
+                  Estimated annual cost
+                </p>
+                <p
+                  className="font-serif font-light text-4xl sm:text-5xl tracking-tight"
+                  style={{ fontVariantNumeric: "tabular-nums" }}
+                >
+                  {fmt(costs.total, currency)}
+                </p>
+                <p className="caption text-paper/70 mt-3">
+                  {length} m{" "}
+                  {yachtType === "motor" ? "motor yacht" : "sailing yacht"},{" "}
+                  {useType === "charter" ? "charter" : "private"},{" "}
+                  {season === "dual" ? "dual season" : "single season"},{" "}
+                  {areaLabels[area]}, {usage} use
                 </p>
               </div>
-            </div>
-          </div>
-        </header>
 
-        <section className="max-w-[80rem] mx-auto px-6 lg:px-12 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-          <div className="lg:col-span-5 space-y-10">
-            <Field label="Yacht length" meta={`${length} metres`}>
-              <input
-                type="range"
-                min={24}
-                max={60}
-                step={1}
-                value={length}
-                onChange={(e) => setLength(Number(e.target.value))}
-                className="w-full accent-marine"
-              />
-              <div className="flex justify-between meta mt-2">
-                <span>24m</span>
-                <span>60m</span>
-              </div>
-            </Field>
-
-            <Field label="Yacht type">
-              <Toggle
-                options={[
-                  { value: "sail", label: "Sail" },
-                  { value: "motor", label: "Motor" },
-                ]}
-                value={type}
-                onChange={(v) => setType(v as YachtType)}
-              />
-            </Field>
-
-            <Field label="Use">
-              <Toggle
-                options={[
-                  { value: "private", label: "Private" },
-                  { value: "charter", label: "Charter" },
-                ]}
-                value={use}
-                onChange={(v) => setUse(v as Use)}
-              />
-            </Field>
-
-            <Field label="Primary operating area">
-              <select
-                value={region}
-                onChange={(e) => setRegion(e.target.value as Region)}
-                className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine"
-              >
-                <option value="west-med">Western Mediterranean</option>
-                <option value="east-med">Eastern Mediterranean</option>
-                <option value="caribbean">Caribbean</option>
-                <option value="us-east">US East Coast</option>
-                <option value="se-asia">Southeast Asia</option>
-                <option value="northern-europe">Northern Europe</option>
-                <option value="arabian-gulf">Arabian Gulf</option>
-                <option value="south-pacific">South Pacific</option>
-                <option value="global">Global cruising</option>
-              </select>
-            </Field>
-
-            <Field label="Usage intensity">
-              <Toggle
-                options={[
-                  { value: "light", label: "Light" },
-                  { value: "moderate", label: "Moderate" },
-                  { value: "heavy", label: "Heavy" },
-                ]}
-                value={intensity}
-                onChange={(v) => setIntensity(v as Intensity)}
-              />
-              <p className="caption mt-3">
-                Light: under 6 weeks per year. Moderate: 6 to 12. Heavy: 12
-                or more.
-              </p>
-            </Field>
-
-            <Field label="Currency">
-              <Toggle
-                options={[
-                  { value: "GBP", label: "GBP" },
-                  { value: "EUR", label: "EUR" },
-                  { value: "USD", label: "USD" },
-                ]}
-                value={currency}
-                onChange={(v) => setCurrency(v as Currency)}
-              />
-            </Field>
-          </div>
-
-          <div className="lg:col-span-7 lg:border-l lg:border-rule lg:pl-12">
-            <div className="border-b border-charcoal pb-10">
-              <p className="meta mb-4">Estimated annual operating cost</p>
-              <p className="font-serif font-light text-display leading-none tracking-tight text-marine">
-                {currencySymbol[currency]}
-                {formatted}
-              </p>
-              <p className="caption mt-4">
-                Estimate. Range plus or minus 15 percent at this confidence
-                band. Refits and major repairs not included; budget separately
-                at roughly 2 percent of capex per year.
-              </p>
-            </div>
-
-            <div className="mt-10 space-y-3">
-              <div className="flex items-baseline justify-between meta border-b border-rule pb-3">
-                <span>Category</span>
-                <span>Share &middot; Annual</span>
-              </div>
-              {categories.map((cat) => {
-                const value = total * cat.share;
-                const formattedCat = new Intl.NumberFormat("en-GB", {
-                  maximumFractionDigits: 0,
-                }).format(Math.round(value / 1000) * 1000);
-                return (
-                  <div
-                    key={cat.key}
-                    className="flex items-baseline justify-between border-b border-rule py-3"
+              {/* Breakdown */}
+              <div className="bg-paper-deep border border-rule p-6 sm:p-8 space-y-4">
+                <p className="meta-marine mb-2">Cost breakdown</p>
+                {breakdown.map((item) => (
+                  <CostRow
+                    key={item.label}
+                    label={item.label}
+                    amount={item.amount}
+                    total={costs.total}
+                    currency={currency}
+                    detail={costs.detail[item.key]}
+                  />
+                ))}
+                <div className="pt-3 border-t border-charcoal flex justify-between items-baseline">
+                  <span className="font-serif text-base text-charcoal">Total</span>
+                  <span
+                    className="font-mono text-base text-charcoal"
+                    style={{ fontVariantNumeric: "tabular-nums" }}
                   >
-                    <div className="flex-1">
-                      <p className="font-serif text-lg text-charcoal">
-                        {cat.label}
-                      </p>
-                      <div className="mt-2 h-1 bg-paper-deep relative">
-                        <div
-                          className="absolute inset-y-0 left-0 bg-marine"
-                          style={{ width: `${cat.share * 100}%` }}
-                        />
-                      </div>
-                    </div>
-                    <div className="ml-6 text-right shrink-0">
-                      <p className="meta-marine">
-                        {(cat.share * 100).toFixed(0)}%
-                      </p>
-                      <p className="font-serif text-base text-charcoal">
-                        {currencySymbol[currency]}
-                        {formattedCat}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+                    {fmt(costs.total, currency)}
+                  </span>
+                </div>
+              </div>
 
-            <div className="mt-12 rule pt-6 space-y-3">
-              <p className="meta">Source assumptions</p>
-              <ul className="caption space-y-2 max-w-prose">
-                <li>
-                  Crew salaries: Quay Crew Annual Salary Survey, 2025
-                  edition.
-                </li>
-                <li>
-                  Insurance bands: Pantaenius and AON Marine market commentary,
-                  2026 Q1.
-                </li>
-                <li>
-                  Marina fees: IGY Marinas, MB92 Group, Marina Port Vell
-                  published rates.
-                </li>
-                <li>
-                  Charter market reference: MYBA Charter Agreement and recent
-                  central agency listings.
-                </li>
-                <li>
-                  Operational data: Foreland Marine aggregated, 2018 to 2025,
-                  anonymised across more than 30 managed yachts.
-                </li>
-              </ul>
-              <p className="caption italic">
-                This calculator is a wireframe placeholder. The production
-                version will share calculation logic with
-                forelandmarine.com/tools/running-cost-calculator and add per
-                assumption citations.
-              </p>
+              {/* Disclaimer + CTA */}
+              <div className="bg-paper-deep border border-rule p-6 sm:p-8">
+                <p className="caption mb-5">
+                  These are indicative estimates against named source
+                  assumptions. Every yacht is different. For a tailored
+                  budget, write to Foreland Marine, the consultancy that
+                  publishes this Reference.
+                </p>
+                <ButtonPrimary
+                  href="https://forelandmarine.com/contact"
+                  external
+                >
+                  Speak with Foreland Marine &rarr;
+                </ButtonPrimary>
+              </div>
             </div>
           </div>
-        </section>
-      </article>
+        </div>
+      </section>
+
+      <HorizonLine />
+
+      {/* EDITORIAL SECTION */}
+      <section className="bg-paper py-16 lg:py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-12">
+          <SectionLabel>Understanding the numbers</SectionLabel>
+          <h2 className="font-serif font-light text-headline tracking-tight mb-8 text-charcoal">
+            What actually drives the cost of running a superyacht?
+          </h2>
+
+          <div className="prose-body text-charcoal-soft">
+            <p>
+              Crew is almost always the single largest line item in your
+              annual budget. A 40 m motor yacht might carry a crew of seven
+              or eight, each with salary, insurance, travel, and training
+              costs. As the yacht grows, crew numbers increase and so do the
+              qualifications required. A captain on a 60 m vessel commands a
+              very different salary to one on a 24 m sailing yacht.
+            </p>
+
+            <p>
+              Insurance and maintenance are the two categories that catch
+              first-time owners off guard. Hull and P&amp;I premiums are
+              driven by yacht value, cruising range, and claims history.
+              Maintenance is not optional. Even a well-built yacht needs
+              continuous attention, and deferred maintenance always costs
+              more in the long run.
+            </p>
+
+            <p>
+              Fuel costs vary dramatically between sailing and motor yachts.
+              A 50 m motor yacht burning 300 litres per hour at cruising
+              speed will spend more on fuel in a single Mediterranean season
+              than a similar-sized sailing yacht spends in a year. Usage
+              intensity matters too.
+            </p>
+
+            <p>
+              The best way to avoid budget surprises is to work with an
+              experienced management company that provides transparent
+              monthly reporting. A good manager will not just pay the bills.
+              They will help plan ahead, negotiate contracts, and make
+              informed decisions about where to spend and where to save.
+            </p>
+          </div>
+
+          <div className="mt-10 space-y-3">
+            <p className="meta mb-2">Read alongside</p>
+            {[
+              {
+                href: "/01-reality-of-ownership",
+                label: "Chapter 01 \u00b7 The reality of ownership",
+              },
+              {
+                href: "/06-refit",
+                label: "Chapter 06 \u00b7 Refit",
+              },
+              {
+                href: "/07-operations",
+                label: "Chapter 07 \u00b7 Operations",
+              },
+              {
+                href: "/04-acquisition-process",
+                label: "Chapter 04 \u00b7 The acquisition process",
+              },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block font-serif text-base text-charcoal-soft hover:text-marine transition-colors"
+              >
+                {link.label} &rarr;
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <HorizonLine />
+
+      {/* FAQ SECTION */}
+      <section className="bg-paper-deep py-16 lg:py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-12">
+          <SectionLabel>Frequently asked questions</SectionLabel>
+          <h2 className="font-serif font-light text-headline tracking-tight mb-10 text-charcoal">
+            Common questions about superyacht running costs
+          </h2>
+
+          <div className="space-y-8">
+            {faqData.map((faq) => (
+              <div key={faq.question}>
+                <h3 className="font-serif text-lg text-charcoal mb-3">
+                  {faq.question}
+                </h3>
+                <p className="caption leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="meta mt-10">
+            Last updated 2026. Figures based on current market data and
+            Foreland Marine operational experience.
+          </p>
+        </div>
+      </section>
+
+      <HorizonLine />
+
+      {/* SOURCES */}
+      <section className="bg-paper py-16 lg:py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-12">
+          <SectionLabel>Sources</SectionLabel>
+          <h2 className="font-serif font-light text-headline tracking-tight mb-6 text-charcoal">
+            Where do these numbers come from?
+          </h2>
+          <p className="prose-body text-charcoal-soft mb-8">
+            The cost model behind this calculator is based on published
+            industry data, supplemented by Foreland Marine&rsquo;s direct
+            experience managing yachts in the 24 to 60 metre range.
+          </p>
+          <ul className="space-y-4">
+            {[
+              {
+                title: "Quay Crew Superyacht Captain Salary & Leave Report 2025/26",
+                detail:
+                  "Captain, officer, and crew salary ranges by vessel size and type.",
+                href: "https://quaygroup.com/blog/superyacht-captain-salary-leave-report-2025-26/",
+              },
+              {
+                title: "YPI Crew Yacht Crew Salary Guide 2026",
+                detail: "Senior and junior crew pay bands.",
+                href: "https://www.ypicrew.com/yacht-crew-salary-guide",
+              },
+              {
+                title: "Pantaenius Yacht Insurance",
+                detail:
+                  "Hull and machinery insurance rates, P&I cover premiums, and regional risk factors.",
+                href: "https://www.pantaenius.com",
+              },
+              {
+                title: "MYBA Charter Market practice",
+                detail:
+                  "Charter fleet operating costs, commercial insurance premium ranges, and crew benchmarks.",
+              },
+              {
+                title: "MCA Large Yacht Code (LY3)",
+                detail:
+                  "Commercial compliance survey costs, manning requirements, and flag-state fee schedules.",
+                href: "https://www.gov.uk/government/collections/large-commercial-yacht-code",
+              },
+              {
+                title: "Foreland Marine operational data",
+                detail:
+                  "Real-world budget data from yachts under our management, anonymised and aggregated.",
+              },
+            ].map((source) => (
+              <li
+                key={source.title}
+                className="border-l border-rule pl-4 py-1"
+              >
+                {source.href ? (
+                  <a
+                    href={source.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-serif text-base text-charcoal hover:text-marine transition-colors"
+                  >
+                    {source.title}
+                    <span className="meta text-stone ml-1.5">
+                      {"\u2197"}
+                    </span>
+                  </a>
+                ) : (
+                  <p className="font-serif text-base text-charcoal">
+                    {source.title}
+                  </p>
+                )}
+                <p className="caption">{source.detail}</p>
+              </li>
+            ))}
+          </ul>
+          <p className="meta mt-8 leading-relaxed max-w-prose">
+            Regional multipliers and charter adjustments are derived from a
+            combination of these sources and internal benchmarks. Verify
+            against current market conditions before making financial
+            decisions.
+          </p>
+        </div>
+      </section>
 
       <SiteFooter />
     </>
-  );
-}
-
-function Field({
-  label,
-  meta,
-  children,
-}: {
-  label: string;
-  meta?: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div>
-      <div className="flex items-baseline justify-between mb-3">
-        <label className="meta">{label}</label>
-        {meta && <span className="meta-marine">{meta}</span>}
-      </div>
-      {children}
-    </div>
-  );
-}
-
-function Toggle({
-  options,
-  value,
-  onChange,
-}: {
-  options: { value: string; label: string }[];
-  value: string;
-  onChange: (v: string) => void;
-}) {
-  return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-0 border border-rule">
-      {options.map((opt) => (
-        <button
-          key={opt.value}
-          type="button"
-          onClick={() => onChange(opt.value)}
-          className={`py-3 px-4 meta transition-colors border-r last:border-r-0 border-rule ${
-            value === opt.value
-              ? "bg-charcoal text-paper border-charcoal"
-              : "bg-paper hover:bg-paper-deep text-charcoal"
-          }`}
-        >
-          {opt.label}
-        </button>
-      ))}
-    </div>
   );
 }
