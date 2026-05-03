@@ -8,7 +8,9 @@ export function SiteHeader() {
           <span className="font-serif text-2xl tracking-tight text-charcoal">
             The First Owner&rsquo;s Reference
           </span>
-          <span className="meta mt-1.5">An annual yachting field manual</span>
+          <span className="font-serif italic text-sm text-stone mt-1">
+            An annual yachting field manual
+          </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 meta">
           <Link href="/#sections" className="link">
