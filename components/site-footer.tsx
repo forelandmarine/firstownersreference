@@ -10,9 +10,8 @@ export function SiteFooter() {
           </p>
           <p className="meta mt-3">Edition One &middot; 2026</p>
           <p className="caption mt-6 max-w-md">
-            An annual editorial publication for first-time superyacht buyers.
-            Independent. Contributor-led. Written by Foreland Marine. No
-            advertising, ever.
+            An annual yachting field manual. Independent. Contributor-led.
+            Written by Foreland Marine. No advertising, ever.
           </p>
         </div>
         <div>
