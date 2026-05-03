@@ -121,12 +121,14 @@ export const dataSpreads: Record<string, DataSpread> = {
         line: "Captain pay EUR 10 to 16 k per month on 50 m; EUR 16 to 23 k on 80 m.",
       },
       {
-        label: "Quay Crew 2025 captain survey",
-        line: "7 percent year on year captain pay rise in 70 to 79 m bracket; 63 percent on time-for-time rotation.",
+        label: "Quay Crew Superyacht Captain Salary & Leave Report 2025/26",
+        line: "367 captains surveyed; 7 percent year-on-year pay rise in the 70 to 79 m bracket; 63 percent on time-for-time rotation; 62 percent admit to working during rotational leave.",
+        url: "https://quaygroup.com/blog/superyacht-captain-salary-leave-report-2025-26/",
       },
       {
-        label: "YachtBuyer published analysis",
+        label: "YachtBuyer, How Much Does a New Yacht Cost to Run? And Why the 10 Percent Rule Doesn\u2019t Add Up",
         line: "Calls the 10 percent rule \u201cat best, obsolete or even misleading\u201d for older or larger crewed vessels.",
+        url: "https://www.yachtbuyer.com/en/advice/how-much-does-a-new-yacht-cost-to-run",
       },
       {
         label: "Foreland Marine project archive",
@@ -211,7 +213,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         caption: "Brokerage market 2025, by published source.",
         rows: [
           { label: "Total transaction value (BOAT International)", value: "EUR 7.5 bn" },
-          { label: "Edmiston, 30 m and above", value: "363 yachts, EUR 7.1 bn (up 15 percent on 2024)" },
+          { label: "Edmiston house transactions, 2025 market review", value: "Above EUR 2.6 bn; more 40 m+ yachts sold than any other brokerage; more EUR 20 m+ yachts than any competitor" },
           { label: "Denison, 79 ft and above", value: "470 yachts" },
           { label: "Above EUR 40 m asking", value: "7 percent of volume, 52 percent of value" },
           { label: "Median days on market (Denison)", value: "277 (lowest in five-year series)" },
@@ -233,17 +235,18 @@ export const dataSpreads: Record<string, DataSpread> = {
         url: "https://www.knightfrank.com/wealthreport",
       },
       {
-        label: "Capgemini World Wealth Report 2025",
-        line: "USD 83.5 trn inheritance by 2048; 81 percent of next-gen HNWIs switch wealth manager within 1 to 2 years of inheritance.",
-        url: "https://www.capgemini.com/insights/research-library/world-wealth-report",
+        label: "Capgemini World Wealth Report 2025, Sail the Great Wealth Transfer",
+        line: "USD 83.5 trn inheritance by 2048; 30 percent of HNWIs receive an inheritance by end of 2030, 63 percent by 2035, 84 percent by 2040; 81 percent of next-gen HNWIs intend to switch wealth manager within 1 to 2 years of inheritance.",
+        url: "https://www.capgemini.com/wp-content/uploads/2025/06/WWR_2025.pdf",
       },
       {
         label: "BOAT International Global Order Book 2026",
         line: "1,093 yachts on order or in build; second consecutive annual unit-count decline.",
       },
       {
-        label: "Edmiston Annual Review 2025",
-        line: "EUR 7.1 bn across 363 yachts of 30 m and above, up 15 percent on 2024.",
+        label: "Edmiston 2025 luxury superyacht brokerage market review",
+        line: "Above EUR 2.6 bn in house transactions; more 40 m+ yachts sold than any other brokerage; more EUR 20 m+ yachts than any competitor.",
+        url: "https://www.edmiston.com/2025-luxury-superyacht-brokerage-market-review/",
       },
       {
         label: "Denison Yachting market report",

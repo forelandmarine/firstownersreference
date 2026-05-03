@@ -10,7 +10,7 @@ export function SiteFooter() {
           </p>
           <p className="meta mt-3">Edition One &middot; 2026</p>
           <p className="caption mt-6 max-w-md">
-            An annual yachting field manual. Independent. Contributor-led.
+            A yachting field manual, published annually. Independent. Contributor-led.
             Written by Foreland Marine. No advertising, ever.
           </p>
         </div>
