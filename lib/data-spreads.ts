@@ -351,7 +351,8 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
       {
         label: "Ya Mon Expeditions LLC v. IYBA et al.",
-        line: "US District Court for Southern District of Florida, dismissed January 2025.",
+        line: "US District Court for Southern District of Florida; dismissed January 2025 by Judge K. Michael Moore on procedural grounds.",
+        url: "https://tradeonlytoday.com/industry-news/judge-dismisses-ya-mon-case/",
       },
     ],
   },
@@ -604,7 +605,13 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
       {
         label: "Jack Inglis (ULTIMAR), Superyacht Investor",
-        line: "Family-office-CFO-as-owner\u2019s-representative case; 1,200-item snag list at delivery.",
+        line: "Owner\u2019s representative on risk and the cost of inadequate oversight during construction.",
+        url: "https://www.superyachtinvestor.com/opinion/jack-inglis-owners-representative-risk-superyacht/",
+      },
+      {
+        label: "Winch Design Limited v Le Souef [2025] EWHC 120 (Comm)",
+        line: "UK High Court, January 2025: Carl Le Souef personally liable for GBP 733,750 in unpaid invoices on the 222 m Project Somnio.",
+        url: "https://www.bailii.org/ew/cases/EWHC/Comm/2025/120.html",
       },
     ],
   },
