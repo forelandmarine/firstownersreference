@@ -414,7 +414,7 @@ function ToggleGroup<T extends string>({
           key={o.value}
           type="button"
           onClick={() => onChange(o.value)}
-          className={`px-4 py-2 font-serif text-sm transition-colors duration-150 ${
+          className={`px-4 py-3 font-serif text-sm transition-colors duration-150 ${
             value === o.value
               ? "bg-marine text-paper border border-marine"
               : "text-charcoal-soft border border-rule hover:text-marine hover:border-marine"
@@ -444,68 +444,93 @@ function CostRow({
   const pct = (amount / total) * 100;
   const hasDetail = detail && detail.length > 0;
 
-  return (
-    <div
-      className={hasDetail ? "cursor-pointer" : ""}
-      onMouseEnter={() => hasDetail && setOpen(true)}
-      onMouseLeave={() => hasDetail && setOpen(false)}
-    >
-      <div className="flex justify-between items-baseline mb-1.5">
+  const Header = (
+    <div className="flex justify-between items-baseline mb-1.5">
+      <span
+        className={`font-serif text-sm ${
+          open ? "text-charcoal" : "text-charcoal-soft"
+        } transition-colors`}
+      >
+        {label}
+        {hasDetail && (
+          <span
+            className={`ml-1.5 meta ${
+              open ? "text-marine" : "text-stone"
+            } transition-colors`}
+            aria-hidden="true"
+          >
+            {open ? "\u2212" : "+"}
+          </span>
+        )}
+      </span>
+      <div className="flex items-baseline gap-3">
         <span
-          className={`font-serif text-sm ${
-            open ? "text-charcoal" : "text-charcoal-soft"
-          } transition-colors`}
+          className="meta text-stone"
+          style={{ fontVariantNumeric: "tabular-nums" }}
         >
-          {label}
-          {hasDetail && (
-            <span
-              className={`ml-1.5 meta ${
-                open ? "text-marine" : "text-stone"
-              } transition-colors`}
-            >
-              {open ? "\u2212" : "+"}
-            </span>
-          )}
+          {pct.toFixed(0)}%
         </span>
-        <div className="flex items-baseline gap-3">
-          <span
-            className="meta text-stone"
-            style={{ fontVariantNumeric: "tabular-nums" }}
-          >
-            {pct.toFixed(0)}%
-          </span>
-          <span
-            className="font-mono text-sm text-charcoal"
-            style={{ fontVariantNumeric: "tabular-nums" }}
-          >
-            {fmt(amount, currency)}
-          </span>
-        </div>
+        <span
+          className="font-mono text-sm text-charcoal"
+          style={{ fontVariantNumeric: "tabular-nums" }}
+        >
+          {fmt(amount, currency)}
+        </span>
       </div>
-      <div className="w-full h-1.5 bg-rule overflow-hidden">
+    </div>
+  );
+
+  const Bar = (
+    <div className="w-full h-1.5 bg-rule overflow-hidden">
+      <div
+        className="h-full bg-marine transition-all duration-500 ease-out"
+        style={{ width: `${pct}%` }}
+      />
+    </div>
+  );
+
+  const Detail = open && hasDetail && (
+    <div className="mt-3 mb-1 ml-1 pl-3 border-l border-rule space-y-1.5">
+      {detail.map((sub) => (
         <div
-          className="h-full bg-marine transition-all duration-500 ease-out"
-          style={{ width: `${pct}%` }}
-        />
-      </div>
-      {open && hasDetail && (
-        <div className="mt-2 mb-1 ml-1 pl-3 border-l border-rule space-y-1.5">
-          {detail.map((sub) => (
-            <div
-              key={sub.label}
-              className="flex justify-between items-baseline"
-            >
-              <span className="caption">{sub.label}</span>
-              <span
-                className="font-mono text-xs text-charcoal-soft"
-                style={{ fontVariantNumeric: "tabular-nums" }}
-              >
-                {fmt(sub.amount, currency)}
-              </span>
-            </div>
-          ))}
+          key={sub.label}
+          className="flex justify-between items-baseline"
+        >
+          <span className="caption">{sub.label}</span>
+          <span
+            className="font-mono text-xs text-charcoal-soft"
+            style={{ fontVariantNumeric: "tabular-nums" }}
+          >
+            {fmt(sub.amount, currency)}
+          </span>
         </div>
-      )}
+      ))}
+    </div>
+  );
+
+  if (!hasDetail) {
+    return (
+      <div>
+        {Header}
+        {Bar}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+        className="block w-full text-left cursor-pointer"
+      >
+        {Header}
+        {Bar}
+      </button>
+      {Detail}
     </div>
   );
 }

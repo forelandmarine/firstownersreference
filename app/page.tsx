@@ -60,24 +60,21 @@ export default function HomePage() {
             </div>
             <div className="lg:col-span-9 space-y-6">
               <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal">
-                An annual editorial publication addressing the structural,
+                An annual editorial publication on the structural,
                 financial, and operational dimensions of first-time
                 superyacht acquisition.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
-                Nine chapters surveying the cost of ownership, the
-                structure of the contemporary market, how the industry
-                actually works, the acquisition process, the new build
-                and brokerage decision, refit, operations, the motor
-                against sailing yacht question, and the team architecture
-                appropriate to a principal entering the asset class.
+                Nine chapters: cost of ownership; market structure; how
+                the industry works; acquisition; new build and brokerage;
+                refit; operations; motor against sailing yacht; and
+                team to assemble before signing.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
-                Material is drawn from named published industry data,
-                identified practitioner sources, and an aggregated archive
-                of managed projects. Every claim is cited. Content is
-                updated continuously online and republished annually in
-                print so that the figures retain their currency.
+                Material drawn from named industry data, identified
+                practitioner sources, and an aggregated archive of managed
+                projects. Every claim cited. Updated continuously online,
+                republished annually in print, so figures stay current.
               </p>
               <ul className="meta-marine flex flex-wrap gap-x-6 gap-y-2 pt-4 border-t border-rule">
                 <li>Edited by industry practitioners</li>

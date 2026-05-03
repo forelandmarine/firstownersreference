@@ -49,7 +49,7 @@ export default async function SectionPage(props: {
       <SiteHeader />
 
       <article>
-        <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[90dvh]">
+        <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[80dvh] lg:min-h-[90dvh]">
           <div className="relative aspect-[4/5] lg:aspect-auto lg:min-h-[90dvh] order-2 lg:order-1">
             <Image
               src={section.hero}

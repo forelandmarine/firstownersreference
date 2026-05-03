@@ -69,11 +69,17 @@ body {
 .prose-body p:first-of-type::first-letter {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 4.5em;
+  font-size: 3.4em;
   float: left;
   line-height: 0.85;
   margin: 0.05em 0.08em 0 -0.05em;
   color: var(--color-marine);
+}
+
+@media (min-width: 768px) {
+  .prose-body p:first-of-type::first-letter {
+    font-size: 4.5em;
+  }
 }
 
 .prose-body h2 {
@@ -143,7 +149,7 @@ body {
 .numeral {
   font-family: var(--font-serif);
   font-weight: 300;
-  font-size: clamp(5.5rem, 14vw, 14rem);
+  font-size: clamp(4rem, 14vw, 14rem);
   line-height: 0.85;
   letter-spacing: -0.04em;
   color: var(--color-marine);
