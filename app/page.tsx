@@ -47,35 +47,36 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <p className="meta mb-8">From the editor</p>
             <p className="font-serif text-2xl lg:text-3xl leading-relaxed tracking-tight text-charcoal mb-8">
-              This Reference exists because the trade press does not.
+              A reference written from outside the industry that sells the asset.
             </p>
             <div className="prose-body max-w-prose text-charcoal-soft">
               <p>
-                The superyacht industry has its glossy magazines. They cover
-                charter destinations, owner profiles, the latest Lürssen
-                delivery. They are funded by the yards and brokers whose
-                interests they cannot critically examine. The Reference is
-                not one of them.
+                The superyacht trade press is funded by the yards and brokers
+                whose interests it covers. That structure is not a moral
+                failing; it is simply how the publications fund themselves.
+                The Reference is funded differently and written differently.
+                The independence is structural rather than stylistic.
               </p>
               <p>
-                It is written for the reader who has just exited a business,
-                has the means to buy a yacht, and would like to do so without
-                being fleeced. It is published once a year, in print and
-                online, by an independent consultancy that holds no yard
-                affiliations and takes no broker commissions. The independence
-                is structural, not stylistic.
+                It is written for the reader who has recently exited a business
+                or come into liquidity, has the means to buy a yacht, and would
+                like to do so with full visibility of cost, time, and the
+                structure of the conversations ahead. It is published once a
+                year, in print and online, by an independent consultancy that
+                holds no yard affiliations and takes no broker commissions.
               </p>
               <p>
-                Eight sections. Each carries a lead essay, a data spread, a
-                guest opinion from a named contributor, an anonymised case,
-                and a one-page checklist. Together they form the field manual
-                a first-time owner would benefit from holding before the
-                conversations that matter.
+                The publication is structured in numbered sections. Each carries
+                a lead essay, a data spread, a guest opinion from a named
+                contributor, an anonymised case, and a one-page checklist. The
+                aim is a calm, evidence-led reference a first-time owner can
+                hold alongside the conversations that matter.
               </p>
               <p>
                 Read in any order. Run your own numbers through the calculator.
-                Apply the independence test, in section 8, to any adviser
-                under consideration.
+                The independence test, in the closing section, is offered for
+                application to any adviser under consideration, including the
+                publisher.
               </p>
             </div>
             <p className="meta mt-10">
@@ -92,7 +93,7 @@ export default function HomePage() {
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
           <div className="flex items-baseline justify-between mb-16 border-b border-charcoal pb-6">
             <h2 className="font-serif text-headline leading-tight tracking-tight">
-              Eight sections
+              The sections
             </h2>
             <p className="meta">Edition One, 2026</p>
           </div>

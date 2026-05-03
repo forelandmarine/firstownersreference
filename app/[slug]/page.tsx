@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { DataSpreadBody } from "@/components/data-spread-body";
+import { CaseBody } from "@/components/case-body";
+import { ChecklistBody } from "@/components/checklist-body";
 import { sections, getSection } from "@/lib/sections";
 import { getLeadEssay } from "@/lib/lead-essays";
 import { getDataSpread } from "@/lib/data-spreads";
@@ -74,7 +77,7 @@ export default async function SectionPage(props: {
                   href="#essay"
                   className="inline-flex items-center gap-2 meta-marine"
                 >
-                  Read the essay <span aria-hidden>&darr;</span>
+                  Begin the section <span aria-hidden>&darr;</span>
                 </a>
               </div>
             </div>
@@ -91,26 +94,36 @@ export default async function SectionPage(props: {
           </div>
         </section>
 
-        <section id="essay" className="bg-paper py-20 lg:py-32 border-t border-rule scroll-mt-24">
-          {essay ? (
+        {essay && (
+          <section
+            id="essay"
+            className="bg-paper py-20 lg:py-32 border-t border-rule scroll-mt-24"
+          >
             <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
               <div className="lg:col-span-2">
-                <div className="sticky top-32 space-y-6">
+                <div className="lg:sticky lg:top-32 space-y-6">
                   <p className="meta">Section {section.number}</p>
                   <p className="meta-marine">{section.coordinates}</p>
                   <div className="rule pt-4 space-y-3">
-                    <p className="meta">Section anatomy</p>
+                    <p className="meta">In this section</p>
                     <ol className="space-y-2 caption">
                       <li>
-                        <span className="meta-marine mr-1">1</span> Lead essay
-                        (you are here)
+                        <a href="#essay" className="link">
+                          <span className="meta-marine mr-1">1</span> Lead essay
+                        </a>
                       </li>
                       <li className={dataSpread ? "" : "opacity-60"}>
-                        <span className={dataSpread ? "meta-marine mr-1" : "mr-1"}>2</span>{" "}
+                        <span
+                          className={
+                            dataSpread ? "meta-marine mr-1" : "mr-1"
+                          }
+                        >
+                          2
+                        </span>{" "}
                         {dataSpread ? (
-                          <Link href={`/${section.slug}/data-spread`} className="link">
+                          <a href="#data-spread" className="link">
                             Data spread
-                          </Link>
+                          </a>
                         ) : (
                           <>Data spread</>
                         )}
@@ -119,21 +132,33 @@ export default async function SectionPage(props: {
                         <span className="mr-1">3</span> Guest opinion
                       </li>
                       <li className={caseStudy ? "" : "opacity-60"}>
-                        <span className={caseStudy ? "meta-marine mr-1" : "mr-1"}>4</span>{" "}
+                        <span
+                          className={
+                            caseStudy ? "meta-marine mr-1" : "mr-1"
+                          }
+                        >
+                          4
+                        </span>{" "}
                         {caseStudy ? (
-                          <Link href={`/${section.slug}/case`} className="link">
+                          <a href="#case" className="link">
                             Case material
-                          </Link>
+                          </a>
                         ) : (
                           <>Case material</>
                         )}
                       </li>
                       <li className={checklist ? "" : "opacity-60"}>
-                        <span className={checklist ? "meta-marine mr-1" : "mr-1"}>5</span>{" "}
+                        <span
+                          className={
+                            checklist ? "meta-marine mr-1" : "mr-1"
+                          }
+                        >
+                          5
+                        </span>{" "}
                         {checklist ? (
-                          <Link href={`/${section.slug}/checklist`} className="link">
+                          <a href="#checklist" className="link">
                             Checklist
-                          </Link>
+                          </a>
                         ) : (
                           <>Checklist</>
                         )}
@@ -166,37 +191,9 @@ export default async function SectionPage(props: {
                     return null;
                   })}
                 </div>
-                <div className="mt-16 rule pt-8">
-                  <p className="meta mb-3">More in this section</p>
-                  <ul className="space-y-3">
-                    <ContentRow
-                      label="Data spread"
-                      title={dataSpread?.title ?? dataTitleFor(section.slug)}
-                      meta="Charts and tables, sources cited"
-                      href={dataSpread ? `/${section.slug}/data-spread` : undefined}
-                    />
-                    <ContentRow
-                      label="Guest opinion"
-                      title={guestTitleFor(section.slug)}
-                      meta={`${section.contributor}, ${section.contributorRole}`}
-                    />
-                    <ContentRow
-                      label="Case material"
-                      title={caseStudy?.title ?? caseTitleFor(section.slug)}
-                      meta="Anonymised"
-                      href={caseStudy ? `/${section.slug}/case` : undefined}
-                    />
-                    <ContentRow
-                      label="Checklist"
-                      title={checklist?.title ?? "Questions to ask before signing anything."}
-                      meta="One page, printable"
-                      href={checklist ? `/${section.slug}/checklist` : undefined}
-                    />
-                  </ul>
-                </div>
               </div>
               <aside className="hidden lg:block lg:col-span-3">
-                <div className="sticky top-32 space-y-8">
+                <div className="lg:sticky lg:top-32 space-y-8">
                   <div className="relative aspect-[3/4] bg-stone-soft">
                     <Image
                       src={section.hero}
@@ -212,45 +209,122 @@ export default async function SectionPage(props: {
                 </div>
               </aside>
             </div>
-          ) : (
-            <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-              <p className="caption max-w-2xl">
-                The lead essay for this section is in editorial. Edition One
-                ships in September 2026.
-              </p>
-            </div>
-          )}
-        </section>
+          </section>
+        )}
 
-        <nav className="border-t border-rule bg-paper-deep py-12">
-          <div className="max-w-[80rem] mx-auto px-6 lg:px-12 flex justify-between items-center gap-6">
-            {prev ? (
-              <Link href={`/${prev.slug}`} className="group flex flex-col">
-                <span className="meta mb-1">
-                  &larr; Section {prev.number}
-                </span>
-                <span className="font-serif text-lg group-hover:text-marine transition-colors">
-                  {prev.title}
-                </span>
-              </Link>
-            ) : (
-              <span />
-            )}
-            {next ? (
-              <Link
-                href={`/${next.slug}`}
-                className="group flex flex-col text-right"
-              >
-                <span className="meta mb-1">
-                  Section {next.number} &rarr;
-                </span>
-                <span className="font-serif text-lg group-hover:text-marine transition-colors">
-                  {next.title}
-                </span>
-              </Link>
-            ) : (
-              <span />
-            )}
+        {dataSpread && (
+          <section
+            id="data-spread"
+            className="bg-paper-deep py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+              <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+                <div className="lg:col-span-8 lg:col-start-3">
+                  <p className="meta-marine mb-4">
+                    Section {section.number} &middot; Data spread
+                  </p>
+                  <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
+                    {dataSpread.title}
+                  </h2>
+                  <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl">
+                    {dataSpread.standfirst}
+                  </p>
+                </div>
+              </header>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div className="lg:col-span-8 lg:col-start-3">
+                  <DataSpreadBody spread={dataSpread} />
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {caseStudy && (
+          <section
+            id="case"
+            className="bg-paper py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+              <header className="mb-20">
+                <p className="meta-marine mb-4">
+                  Section {section.number} &middot; Case material
+                </p>
+                <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
+                  {caseStudy.title}
+                </h2>
+                <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl">
+                  {caseStudy.standfirst}
+                </p>
+              </header>
+              <CaseBody study={caseStudy} />
+            </div>
+          </section>
+        )}
+
+        {checklist && (
+          <section
+            id="checklist"
+            className="bg-paper-deep py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+              <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+                <div className="lg:col-span-8 lg:col-start-3">
+                  <p className="meta-marine mb-4">
+                    Section {section.number} &middot; Checklist
+                  </p>
+                  <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
+                    {checklist.title}
+                  </h2>
+                  <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl">
+                    {checklist.standfirst}
+                  </p>
+                </div>
+              </header>
+              <ChecklistBody list={checklist} />
+            </div>
+          </section>
+        )}
+
+        <nav className="border-t border-rule bg-paper py-16">
+          <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+            <p className="meta mb-8">End of Section {section.number}</p>
+            <div className="flex justify-between items-start gap-6">
+              {prev ? (
+                <Link href={`/${prev.slug}`} className="group flex flex-col">
+                  <span className="meta mb-2">
+                    &larr; Previous, Section {prev.number}
+                  </span>
+                  <span className="font-serif text-xl group-hover:text-marine transition-colors max-w-sm">
+                    {prev.title}
+                  </span>
+                </Link>
+              ) : (
+                <span />
+              )}
+              {next ? (
+                <Link
+                  href={`/${next.slug}`}
+                  className="group flex flex-col text-right"
+                >
+                  <span className="meta mb-2">
+                    Next, Section {next.number} &rarr;
+                  </span>
+                  <span className="font-serif text-xl group-hover:text-marine transition-colors max-w-sm">
+                    {next.title}
+                  </span>
+                </Link>
+              ) : (
+                <Link href="/#sections" className="group flex flex-col text-right">
+                  <span className="meta mb-2">
+                    Return to all sections &rarr;
+                  </span>
+                  <span className="font-serif text-xl group-hover:text-marine transition-colors">
+                    Edition One
+                  </span>
+                </Link>
+              )}
+            </div>
           </div>
         </nav>
       </article>
@@ -258,101 +332,4 @@ export default async function SectionPage(props: {
       <SiteFooter />
     </>
   );
-}
-
-function ContentRow({
-  label,
-  title,
-  meta,
-  href,
-}: {
-  label: string;
-  title: string;
-  meta: string;
-  href?: string;
-}) {
-  const inner = (
-    <>
-      <span className="meta w-28 shrink-0">{label}</span>
-      <div className="flex-1">
-        <p className="font-serif text-base leading-snug text-charcoal">
-          {title}
-        </p>
-        <p className="meta mt-1">{meta}</p>
-      </div>
-      <span className="meta hidden sm:block">
-        {href ? <span className="meta-marine">Read &rarr;</span> : "Forthcoming"}
-      </span>
-    </>
-  );
-
-  if (href) {
-    return (
-      <li className="border-t border-rule">
-        <Link
-          href={href}
-          className="flex items-baseline gap-6 py-3 group hover:bg-paper-deep -mx-2 px-2 transition-colors"
-        >
-          {inner}
-        </Link>
-      </li>
-    );
-  }
-
-  return (
-    <li className="flex items-baseline gap-6 py-3 border-t border-rule opacity-70">
-      {inner}
-    </li>
-  );
-}
-
-function dataTitleFor(slug: string): string {
-  const map: Record<string, string> = {
-    "01-reality-of-ownership":
-      "Annual operating cost as a percentage of capex, by size band.",
-    "02-reading-the-market": "Order book and yard capacity through 2030.",
-    "03-how-the-industry-works":
-      "Where the money goes in a typical brokerage transaction.",
-    "04-acquisition-process": "VAT regime and flag state comparison.",
-    "05-new-build-versus-brokerage":
-      "Cashflow and milestone payments, year by year.",
-    "06-refit": "Refit yard capacity and typical overrun curve, 2026 to 2028.",
-    "07-operations": "Crew salary bands and insurance market commentary.",
-    "08-decision-framework":
-      "From considering ownership to signing a contract.",
-  };
-  return map[slug] ?? "Data spread";
-}
-
-function guestTitleFor(slug: string): string {
-  const map: Record<string, string> = {
-    "01-reality-of-ownership": "What first-year owners do not see coming.",
-    "02-reading-the-market": "What the data tells you, and what it does not.",
-    "03-how-the-industry-works":
-      "Dual agency, retrocessions, and disclosure.",
-    "04-acquisition-process":
-      "What surveys actually catch, and what they miss.",
-    "05-new-build-versus-brokerage":
-      "What makes a good owner, from the yard's side.",
-    "06-refit": "Why refits run over, and why some still end well.",
-    "07-operations": "Captain selection, from inside the wheelhouse.",
-    "08-decision-framework":
-      "Integrating ownership into a wider portfolio.",
-  };
-  return map[slug] ?? "Guest opinion";
-}
-
-function caseTitleFor(slug: string): string {
-  const map: Record<string, string> = {
-    "01-reality-of-ownership": "The owner who bought twice.",
-    "02-reading-the-market":
-      "The deal that closed because someone read the market correctly.",
-    "03-how-the-industry-works": "The free advice that cost \u00a3400,000.",
-    "04-acquisition-process": "The pre-purchase survey that saved \u00a32m.",
-    "05-new-build-versus-brokerage": "The spec change in month 18.",
-    "06-refit": "The refit that doubled in scope.",
-    "07-operations": "The captain hire that defined the next decade.",
-    "08-decision-framework": "The buyer who walked away.",
-  };
-  return map[slug] ?? "Case material";
 }

@@ -445,7 +445,7 @@ export const checklists: Record<string, Checklist> = {
             question:
               "Commitment to four disciplines: independent owner\u2019s representative engaged before contract, specialist shipbuilding counsel from a top firm, technical due diligence on the yard\u2019s order book and financial condition, and willingness to push back on the yard\u2019s first-draft contract.",
             detail:
-              "If any of these is uncertain, brokerage is the calmer path. New build with weak representation is the most expensive form of yacht ownership available.",
+              "If any of these is uncertain, brokerage tends to be the calmer path. New build with weak representation tends to be among the more costly ways to acquire a yacht.",
           },
         ],
       },

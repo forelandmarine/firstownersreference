@@ -98,6 +98,17 @@ export const sections: Section[] = [
     contributor: "To be confirmed",
     contributorRole: "Family office principal",
   },
+  {
+    number: "09",
+    slug: "09-motor-versus-sail",
+    title: "Motor versus sail",
+    standfirst:
+      "The structural decision few first-time buyers spend enough time on. Operating cost, environmental footprint, racing pedigree, and the case for sail in 2026.",
+    coordinates: "41.4901°N 71.3128°W",
+    hero: "/images/velsheda-aerial.jpg",
+    contributor: "To be confirmed",
+    contributorRole: "Sailing yacht captain",
+  },
 ];
 
 export function getSection(slug: string): Section | undefined {

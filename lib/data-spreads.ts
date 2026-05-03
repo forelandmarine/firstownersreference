@@ -587,29 +587,178 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "Foreland Marine project archive; practitioner consensus.",
       },
-      { type: "h2", text: "Dominant refit yards in the over-30 m market" },
+      { type: "h2", text: "Two yard models" },
+      {
+        type: "table",
+        caption:
+          "Full-service yards take the project as a single contract. Service yards (also called marina yards) provide the facility while the owner contracts the trades directly through the project manager. The right model depends on representation strength and project scope.",
+        head: ["Model", "Examples", "Cost shape", "Best for"],
+        rows: [
+          [
+            "Full-service",
+            "MB92, Pendennis, Lusben, Astilleros de Mallorca, Amico & Co, Rybovich, Bradford Marine, Front Street Shipyard",
+            "Single contract; integration risk priced in",
+            "Owners with lighter representation; complex multi-trade scope",
+          ],
+          [
+            "Service / non-full-service",
+            "STP Palma, Lauderdale Marine Center (LMC), Marina Port Vell (Barcelona)",
+            "Facility billed; trades contracted directly",
+            "Experienced project management; line-item visibility",
+          ],
+        ],
+        sourceLine:
+          "Practitioner working knowledge; yard published service models.",
+      },
+      { type: "h2", text: "Dominant refit yards, by geography" },
       {
         type: "kv",
-        caption: "Top yards typically booked 12 to 24 months ahead for major refits.",
+        caption:
+          "Top yards typically booked 12 to 24 months ahead for major refits. Geography is concentrated in four clusters: Western Mediterranean, Northern Europe, Eastern Mediterranean, and the US Eastern Seaboard.",
         rows: [
-          { label: "MB92 Group (Barcelona, La Ciotat)", value: "Dominant Western Med operator. Owns paint specialist GYG. Acquired by Squircle Capital, late 2024." },
-          { label: "Pendennis Shipyard (Falmouth, UK)", value: "Approximately 18 projects in 2024 against annual average of 10. Throughput rising into capacity." },
-          { label: "Lusben (Italy)", value: "76,000 sq m site. 210 m dry dock, 2,000 t syncrolift, 150 t travel lift. Capacity 20 to 140 m." },
-          { label: "Astilleros de Mallorca (Palma)", value: "78,000 sq m site. 1,700 t haul, 120 m outfitting quay. Over 250 yachts per year." },
-          { label: "Compositeworks", value: "Now within MB92." },
-          { label: "RMK Marine (Turkey)", value: "Public capacity data thin." },
+          {
+            label: "MB92 Group (Barcelona, La Ciotat)",
+            value:
+              "Dominant Western Med full-service operator. Owns paint specialist GYG. Acquired by Squircle Capital, late 2024.",
+          },
+          {
+            label: "Astilleros de Mallorca (Palma)",
+            value:
+              "Reference Spanish full-service yard. 78,000 sq m, 1,700 t haul, 120 m outfitting quay, over 250 yachts per year.",
+          },
+          {
+            label: "STP Palma (Servicios T\u00e9cnicos Portuarios)",
+            value:
+              "Largest non-full-service refit facility in the Western Mediterranean by yacht throughput. Service yard model; owners contract trades directly.",
+          },
+          {
+            label: "Marina Port Vell (Barcelona)",
+            value: "Mixed full-service and service-yard provision; OneOcean group ownership.",
+          },
+          {
+            label: "Monaco Marine (Saint Mandrier, Beaulieu, Antibes, La Ciotat)",
+            value:
+              "French full-service operator across multiple sites. Strong on the 30 to 60 m segment.",
+          },
+          {
+            label: "IMS Shipyard (La Seyne sur Mer, Toulon)",
+            value: "French full-service yard, 220 m drydock, recently expanded.",
+          },
+          {
+            label: "Lusben (Viareggio / Livorno)",
+            value:
+              "Reference Italian full-service yard for large hulls. 210 m dry dock, 2,000 t syncrolift, 150 t travel lift. Livorno expanded with a 2,400 t syncrolift in 2024 to 2025.",
+          },
+          {
+            label: "Amico & Co (Genoa)",
+            value:
+              "Italian full-service yard; strong reputation on superyacht refit, paint, mechanical work.",
+          },
+          {
+            label: "Cantiere Rossini (Marina di Carrara)",
+            value: "Italian yard scaled into superyacht refit capability over the past decade.",
+          },
+          {
+            label: "Pendennis Shipyard (Falmouth, UK)",
+            value:
+              "UK full-service yard. Around 18 projects in 2024 against annual average of 10; particularly strong on sailing yacht refit.",
+          },
+          {
+            label: "Damen Shipyards (Vlissingen, Netherlands)",
+            value: "Full-service refit alongside new build at Dutch sites.",
+          },
+          {
+            label: "Lurssen Refit (Germany)",
+            value: "German full-service refit for the largest yachts.",
+          },
+          {
+            label: "RMK Marine (Tuzla, Istanbul)",
+            value:
+              "Turkish full-service yard, capacity to around 80 m. Strong practitioner reputation on cost.",
+          },
+          {
+            label: "Bilgin Yachts (Tuzla, Istanbul)",
+            value: "Builder with refit capability on its own and third-party hulls.",
+          },
+          {
+            label: "Rybovich (West Palm Beach, Florida)",
+            value:
+              "Reference US full-service yard for large-yacht refit, repaint, mechanical work. Acquired by Safe Harbor Marinas.",
+          },
+          {
+            label: "Lauderdale Marine Center (Fort Lauderdale)",
+            value:
+              "Largest yacht refit facility on the US East Coast by throughput. Service yard model.",
+          },
+          {
+            label: "Bradford Marine (Fort Lauderdale, Grand Bahama)",
+            value: "US full-service refit, repaint, mechanical.",
+          },
+          {
+            label: "Derecktor Shipyards (Fort Pierce, Florida)",
+            value:
+              "Full-service yard expanded substantially over the past five years; large haul-out capacity on the US East Coast.",
+          },
+          {
+            label: "Roscioli Yachting Center (Dania Beach, Florida)",
+            value:
+              "Mid-tier US full-service yard, particularly strong on the 30 to 50 m segment.",
+          },
+          {
+            label: "Merrill-Stevens Dry Dock (Miami)",
+            value: "Historic US full-service yard recently rebuilt and expanded.",
+          },
+          {
+            label: "Front Street Shipyard (Belfast, Maine)",
+            value:
+              "Reference US Northeast yard for high-quality refit and new builds up to roughly 60 m.",
+          },
+          {
+            label: "Newport Shipyard (Newport, Rhode Island)",
+            value:
+              "Full-service refit on Narragansett Bay; particularly active during the New England racing season.",
+          },
+          {
+            label: "Lyman-Morse (Thomaston, Maine)",
+            value: "Builder and refit yard; strong on sailing and composite hulls.",
+          },
+          {
+            label: "Hodgdon Yachts (East Boothbay, Maine)",
+            value: "Builder with refit capability on the largest US-built sailing yachts.",
+          },
+          {
+            label: "Jarrett Bay Boatworks (Beaufort, North Carolina)",
+            value:
+              "Refit and repaint yard; strong on sportfish and motor yachts under 40 m.",
+          },
         ],
-        sourceLine: "Yard published statements; Superyacht Group expert roundtable (paywalled).",
+        sourceLine:
+          "Yard published statements; Superyacht Group 2025 expert roundtable (paywalled); BOAT International coverage; practitioner working knowledge.",
       },
       { type: "h2", text: "Spanish IPR, the VAT economics of refit" },
       {
         type: "kv",
-        caption: "On a EUR 5 m refit, the saving from properly executed Spanish Inward Processing Relief is approximately EUR 1.05 m.",
+        caption:
+          "On a EUR 5 m refit, the saving from properly executed Spanish Inward Processing Relief is approximately EUR 1.05 m. Available at customs-site shipyards including STP Palma, Astilleros de Mallorca, MB92, and other Spanish yards.",
         rows: [
-          { label: "Mechanism", value: "Non-EU flagged yacht enters under temporary admission; works at customs-site shipyard; 21 percent VAT suspended; re-exported" },
-          { label: "Admission window", value: "18 months, extendable to 24 under bonded conditions" },
-          { label: "Eligible yards", value: "MB92, Astilleros de Mallorca, several smaller Spanish yards" },
-          { label: "Compliance burden", value: "Customs site, bonded works, documentation, re-export evidence" },
+          {
+            label: "Mechanism",
+            value:
+              "Non-EU flagged yacht enters under temporary admission; works at customs-site shipyard; 21 percent VAT suspended; re-exported",
+          },
+          {
+            label: "Admission window",
+            value: "18 months, extendable to 24 under bonded conditions",
+          },
+          {
+            label: "Eligible yards",
+            value:
+              "MB92 Barcelona, Astilleros de Mallorca, STP Palma, Marina Port Vell, several smaller Spanish yards",
+          },
+          {
+            label: "Compliance burden",
+            value: "Customs site, bonded works, documentation, re-export evidence",
+          },
         ],
         sourceLine: "Spanish customs administration scope; published yacht law firm guidance.",
       },
@@ -670,17 +819,125 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "Foreland Marine project archive; published management company fee guidance.",
       },
-      { type: "h2", text: "Hull insurance market, 2024 to 2026" },
+      { type: "h2", text: "The five lines of cover, on a typical large yacht" },
       {
         type: "table",
-        caption: "Hull rates stabilised in H1 2024 and softened modestly through 2025 for fleets with good loss records.",
+        caption:
+          "An over-30 m programme typically carries five distinct lines of insurance, each separately underwritten. The right broker secures the right structure on each.",
+        head: ["Line", "Covers", "Typical premium", "Underwriting market"],
+        rows: [
+          [
+            "Hull and machinery",
+            "Loss or damage to the yacht itself; agreed value rebuild basis is the disciplined structure",
+            "0.7 to 1.5 percent of insured value (40 to 50 m well-maintained); 2 to 5 percent for smaller yachts and hurricane-exposed regions",
+            "Lloyd\u2019s syndicates (CNA Hardy, Beazley, Brit, AIG, Liberty, Tokio Marine HCC, MS Amlin); AXA, Allianz, Generali",
+          ],
+          [
+            "P&I (protection and indemnity)",
+            "Crew injury, environmental damage, third-party liability, charter guest claims",
+            "Per crew member basis; cover routinely written to EUR 500 m third-party limit",
+            "Shipowners\u2019 Club, Steamship Mutual",
+          ],
+          [
+            "War risk",
+            "Per-voyage cover for transit through war-risk regions",
+            "0.05 to 2 percent of hull value per voyage, region-dependent",
+            "Lloyd\u2019s war risk syndicates",
+          ],
+          [
+            "Builder\u2019s risk",
+            "Loss or damage during refit or new build construction",
+            "Taken out by yard with owner\u2019s interest noted; cost embedded in yard contract",
+            "Specialist marine builder\u2019s risk underwriters",
+          ],
+          [
+            "Charter operation cover",
+            "Uplift on hull and P&I to reflect commercial use",
+            "Embedded in primary policies; charter management company co-ordinates",
+            "Same hull and P&I markets, with charter rider",
+          ],
+        ],
+        sourceLine:
+          "Lloyd\u2019s of London syndicate guidance; published broker structuring commentary; practitioner working ranges.",
+      },
+      { type: "h2", text: "The major brokers, by relevance to over-30 m" },
+      {
+        type: "kv",
+        caption:
+          "Howden and Pantaenius are the two largest yacht-specialist brokers in the over-30 m segment globally. The trade-offs below are the structural differences buyers should understand at selection.",
+        rows: [
+          {
+            label: "Howden",
+            value:
+              "London-based; consolidated significant yacht-specialist capacity through acquisitions; strong Lloyd\u2019s access; capability for complex programmes (multiple hulls, charter, aviation overlap). Best fit for sophisticated structures.",
+          },
+          {
+            label: "Pantaenius",
+            value:
+              "Hamburg-founded 1899; reference European yacht-specialist broker; deep service capability and loss-management track record; yacht-only frame. Best fit for European-domiciled owners and Med-centred programmes.",
+          },
+          {
+            label: "AON Marine",
+            value:
+              "Yacht practice within broader marine and corporate insurance; integrates with wider risk programmes (family office, aviation). Best fit where the principal\u2019s overall risk programme is already with AON.",
+          },
+          {
+            label: "Gallagher Specialty",
+            value:
+              "Strong US East Coast yacht practice; hurricane-region underwriting; access to US syndicate markets. Best fit for US-domiciled owners and US-cruising fleets.",
+          },
+          {
+            label: "Marsh",
+            value:
+              "Largest broker by global revenue; specialty marine teams handle yacht business; capability for the largest hulls (above 100 m) requiring bespoke structuring. Best fit for the very top of the segment.",
+          },
+          {
+            label: "Specialist alternatives",
+            value:
+              "Norton & Co, J&H Marsh, AXA Marine, YachtSure, Northstar, and a small number of yacht-only houses. Underwriting markets accessed are similar to the larger brokers; selection at this level is mostly relationship-based.",
+          },
+        ],
+        sourceLine:
+          "Practitioner working knowledge; published broker capability statements.",
+      },
+      { type: "h2", text: "Underwriting structure, three points that move at claim time" },
+      {
+        type: "kv",
+        caption:
+          "The broker accesses the underwriters; the underwriting is what pays at claim time. The three points below are the most consequential drafting choices.",
+        rows: [
+          {
+            label: "Agreed value vs actual cash value (ACV)",
+            value:
+              "Agreed value: insurer pays the figure agreed in advance in a total loss. ACV: insurer pays depreciated market value. Premium difference small; claim difference can be tens of millions.",
+          },
+          {
+            label: "Rebuild basis vs market value",
+            value:
+              "A 50 m yacht with EUR 18 m market value may have EUR 28 m rebuild cost. Insuring at market value leaves the owner short on rebuild after a constructive total loss.",
+          },
+          {
+            label: "Annual policy review",
+            value:
+              "Itinerary changes (US East Coast addition, charter introduction, new cruising area) trigger different coverage. Re-quoting prior-year policy is materially different from a proactive review.",
+          },
+        ],
+        sourceLine:
+          "Howden, Pantaenius, AON published structuring commentary; Lloyd\u2019s underwriting guidance.",
+      },
+      { type: "h2", text: "Hull rate movement, 2022 to 2026" },
+      {
+        type: "table",
+        caption:
+          "The hardened market that opened in 2022 reflected Lloyd\u2019s underwriting losses (GBP 232.8 m losses against GBP 150.1 m of premium in 2017; 75 percent of 69 yacht-writing syndicates unprofitable). The market remembers.",
         head: ["Period", "Hull rate movement", "Note"],
         rows: [
           ["2022 to 2023", "Up 50 to 70 percent (London market)", "AIG cited; broad hardening"],
           ["H1 2024", "Stabilised", "Most of the increase had landed by then"],
           ["Q4 2025", "Down 4 to 7.5 percent for clean fleets", "Gallagher Specialty"],
+          ["Bayesian sinking, August 2024", "Selective tightening only", "Pantaenius: \u201cmore impact expected than landed\u201d"],
           ["Typical hull rate, 40 to 50 m well-maintained", "0.7 to 1.5 percent of insured value", "Mediterranean / Northern Europe"],
-          ["Smaller superyachts and hurricane-exposed regions", "2 to 5 percent", ""],
+          ["Smaller yachts and hurricane-exposed regions", "2 to 5 percent", ""],
         ],
         sourceLine: "AIG, Gallagher Specialty published commentary; Pantaenius market notes.",
       },
@@ -715,8 +972,9 @@ export const dataSpreads: Record<string, DataSpread> = {
       { label: "YPI Crew 2026 salary guide", line: "Captain and senior crew pay bands across yacht size." },
       { label: "Quay Crew 2025 captain survey", line: "Time-for-time rotation share; year-on-year pay growth in 70 to 79 m bracket." },
       { label: "Pantaenius (Michelle van der Merwe)", line: "On record on the Bayesian sinking and the limited insurance-market response." },
-      { label: "AIG; Gallagher Specialty", line: "Published market commentary on hull rate movement, 2022 to 2025." },
-      { label: "Lloyd\u2019s war risk circulars", line: "Per-voyage premiums by region." },
+      { label: "Howden; AON; Gallagher Specialty; Marsh", line: "Published broker capability statements; structuring commentary on agreed-value rebuild basis." },
+      { label: "AIG", line: "On the record on 50 to 70 percent rate increases across 2022 to 2023." },
+      { label: "Lloyd\u2019s of London syndicate guidance", line: "Hull and war risk underwriting markets; CNA Hardy, Beazley, Brit, Liberty, Tokio Marine HCC, MS Amlin." },
       { label: "BOAT International", line: "Charter case studies." },
     ],
   },
@@ -797,6 +1055,201 @@ export const dataSpreads: Record<string, DataSpread> = {
       { label: "Capgemini World Wealth Report 2025", line: "USD 83.5 trn inheritance by 2048; 81 percent next-gen switch wealth manager within 1 to 2 years." },
       { label: "Knight Frank Wealth Report 2026 / Family Office Survey 2026", line: "First reference to superyachts in the family office portfolio architecture." },
       { label: "Foreland Marine project archive", line: "Team-cost ranges across managed projects." },
+    ],
+  },
+
+  "09-motor-versus-sail": {
+    slug: "09-motor-versus-sail",
+    title: "Motor versus sail, by the numbers.",
+    standfirst:
+      "The trade press treats the choice as taste. The data treats it as structural. The frame below sets out market share, operating cost, environmental footprint, and the racing market that supports value retention at the top of the segment.",
+    blocks: [
+      { type: "h2", text: "Market share, on the published record" },
+      {
+        type: "kv",
+        caption:
+          "Sail is a smaller share of the market by every published count. Skewed by Italian volume yards (motor-dominant) and the strong American 30 to 50 m motor market.",
+        rows: [
+          {
+            label: "BOAT International Global Order Book 2026",
+            value: "Sail roughly 12 percent of units, motor roughly 88 percent",
+          },
+          {
+            label: "Active over-30 m fleet (C&N / SuperYacht Times)",
+            value: "Sail roughly 18 percent",
+          },
+          {
+            label: "Major sail builders",
+            value: "Royal Huisman, Vitters, Baltic Yachts, Perini Navi, Wally, Pendennis, Nautor Swan",
+          },
+          {
+            label: "Major motor builders",
+            value: "Lurssen, Feadship, Oceanco, Heesen, Sanlorenzo, Azimut Benetti, Codecasa, CRN",
+          },
+        ],
+        sourceLine:
+          "BOAT International Global Order Book 2026; SuperYacht Times iQ data.",
+      },
+      { type: "h2", text: "Operating cost, 50 m comparable" },
+      {
+        type: "table",
+        caption:
+          "Indicative annual operating cost, 50 m at moderate use (8 to 10 weeks family use). Practitioner working ranges; motor figure on Mediterranean operation, 400 cruising hours.",
+        head: ["Cost line", "50 m motor", "50 m sail"],
+        rows: [
+          ["Fuel", "EUR 200 to 350 k", "EUR 60 to 120 k"],
+          ["Crew (12 to 16 motor / 9 to 12 sail)", "EUR 1.6 to 2.2 m", "EUR 1.2 to 1.7 m"],
+          [
+            "Maintenance and repair",
+            "EUR 600 to 900 k",
+            "EUR 500 to 800 k (plus rigging / sail wardrobe)",
+          ],
+          ["Insurance", "EUR 350 to 550 k", "EUR 280 to 450 k"],
+          ["Berths and marina fees", "EUR 280 to 420 k", "EUR 280 to 420 k"],
+          ["Total annual operating cost", "EUR 3.0 to 4.5 m", "EUR 2.3 to 3.5 m"],
+        ],
+        sourceLine:
+          "Foreland Marine project archive; YPI Crew 2026 salary guide; aggregated published practitioner ranges.",
+      },
+      { type: "h2", text: "Capital and depreciation, 35 m comparable" },
+      {
+        type: "kv",
+        caption:
+          "On a new build 35 m hull from a quality builder. The cost differential at entry is 20 to 35 percent in favour of sail. Depreciation curves favour quality sail hulls after year five.",
+        rows: [
+          { label: "New build 35 m sail (Pendennis, Vitters, Baltic)", value: "EUR 12 to 22 m" },
+          { label: "New build 35 m motor (top tier comparable)", value: "EUR 18 to 30 m" },
+          { label: "Sail capital differential at entry", value: "20 to 35 percent" },
+          {
+            label: "Sail depreciation, top builders, after year 5",
+            value: "Single-digit percent annually",
+          },
+          {
+            label: "Motor depreciation, top builders, after year 5",
+            value: "5 to 8 percent annually",
+          },
+        ],
+        sourceLine:
+          "Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves.",
+      },
+      { type: "h2", text: "Environmental footprint and EU ETS exposure" },
+      {
+        type: "table",
+        caption:
+          "EU Emissions Trading System Maritime extension, in force from 1 January 2024, applies to ships above 5,000 GT, phasing to 100 percent of emissions by 2026. Most yachts sit below the threshold; very large motor yachts now sit inside it.",
+        head: ["Yacht profile", "Typical GT", "EU ETS exposure"],
+        rows: [
+          ["60 m motor", "700 to 1,200 GT", "Below threshold"],
+          ["80 m motor", "2,000 to 2,800 GT", "Below threshold"],
+          ["90 m motor", "Around 5,000 GT", "Borderline; some inside"],
+          ["110 m+ motor", "Above 5,000 GT", "Inside, EUR 200 to 400 k per year"],
+          ["50 m sail", "300 to 600 GT", "Below threshold"],
+          [
+            "Annual carbon footprint, 50 m sail vs 50 m motor",
+            "Comparable use",
+            "Sail roughly 60 to 70 percent below motor",
+          ],
+        ],
+        sourceLine:
+          "EU Commission ETS Maritime guidance; Royal Huisman published sustainability commentary; IMO MEPC 80 (July 2023) targets.",
+      },
+      { type: "h2", text: "Brokerage market, sail vs motor" },
+      {
+        type: "kv",
+        caption:
+          "2025 brokerage market data. Sail yachts in the 25 to 45 m band move at meaningfully shorter days-on-market than comparable motor.",
+        rows: [
+          {
+            label: "Median days on market, sail 25 to 45 m, 2025",
+            value: "Approximately 220 days",
+          },
+          {
+            label: "Median days on market, motor 25 to 45 m, 2025",
+            value: "277 days (Denison series)",
+          },
+          {
+            label: "Racing-pedigree premium on RORC-podium sail hulls",
+            value: "10 to 25 percent over comparable cruising hull",
+          },
+          {
+            label: "J Class hold value pattern",
+            value: "Hold-forever asset; closed-class racing supports residuals",
+          },
+        ],
+        sourceLine:
+          "Denison Yachting market report 2025; broker-aggregated practitioner commentary.",
+      },
+      { type: "h2", text: "Two notable 2025 transactions" },
+      {
+        type: "kv",
+        caption:
+          "Both transactions on the published trade press record. Cited as markers of segment health rather than specific market signals.",
+        rows: [
+          {
+            label: "Edmiston 40 m sail yacht sale, brokered by Malcolm McKewon",
+            value:
+              "Largest sail brokerage transaction in the 30 to 45 m segment recorded in 2025; price not published; private programme with Caribbean and Mediterranean racing access",
+          },
+          {
+            label: "Tom Cruise acquisition of 30 m sailing yacht, 2025",
+            value:
+              "First-time sail owner with prior motor exposure; racing-capable hull; widely reported in trade and consumer press",
+          },
+        ],
+        sourceLine: "BOAT International, Superyacht News, broker statements.",
+      },
+      { type: "h2", text: "Aggregate effect, 35 m hold over seven years" },
+      {
+        type: "kv",
+        caption:
+          "Total cost of ownership comparison: capex plus opex minus residual at year seven. On the practitioner working ranges for quality builders.",
+        rows: [
+          {
+            label: "Sail programme",
+            value: "25 to 40 percent below motor on total seven-year cost",
+          },
+          {
+            label: "Cruising days per EUR 1.5 m operating budget",
+            value: "16 to 20 weeks (sail) vs 12 to 14 weeks (motor)",
+          },
+          {
+            label: "Carbon footprint, comparable use",
+            value: "60 to 70 percent below motor",
+          },
+        ],
+        sourceLine:
+          "Foreland Marine project archive; aggregated practitioner ranges across published sources.",
+      },
+    ],
+    sources: [
+      {
+        label: "BOAT International Global Order Book 2026",
+        line: "Sail share of order book; major sail and motor builders.",
+      },
+      {
+        label: "EU Commission ETS Maritime guidance",
+        line: "Carbon market extension to maritime, in force from 1 January 2024; phase-in to 100 percent of emissions by 2026.",
+      },
+      {
+        label: "IMO MEPC 80, July 2023",
+        line: "30 percent reduction in well-to-wake GHG by 2030, 80 percent by 2040, net zero by 2050.",
+      },
+      {
+        label: "Capgemini World Wealth Report 2024",
+        line: "Sustainability identified as a top-three concern for next-generation HNWIs.",
+      },
+      {
+        label: "Royal Huisman published sustainability commentary",
+        line: "Sail vs motor carbon footprint comparison; HVO and methanol-ready new builds.",
+      },
+      {
+        label: "Denison Yachting market report 2025",
+        line: "Days-on-market series across motor and sail brokerage.",
+      },
+      {
+        label: "Foreland Marine project archive",
+        line: "Operating cost ranges across managed sail and motor projects.",
+      },
     ],
   },
 };
