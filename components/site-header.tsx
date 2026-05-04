@@ -10,7 +10,7 @@ export function SiteHeader() {
             The First Owner&rsquo;s Reference
           </span>
           <span className="hidden sm:block font-serif italic text-sm text-stone mt-1">
-            A yachting field manual, published annually
+            A yachting field manual
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 font-serif text-base text-charcoal">

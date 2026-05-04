@@ -264,6 +264,28 @@ export default async function SectionPage(props: {
                         </figure>
                       );
                     }
+                    if (p.type === "editorsNote") {
+                      return (
+                        <aside
+                          key={i}
+                          className="not-prose my-12 border-l-2 border-marine pl-6"
+                        >
+                          <p className="meta mb-2">Editor&rsquo;s note</p>
+                          <p className="font-serif italic text-charcoal-soft leading-relaxed">
+                            {p.text}
+                            {p.href && (
+                              <>
+                                {" "}
+                                <Link href={p.href} className="link-marine not-italic">
+                                  {p.linkText ?? "Read more"}
+                                </Link>
+                                .
+                              </>
+                            )}
+                          </p>
+                        </aside>
+                      );
+                    }
                     return null;
                   })}
                 </div>

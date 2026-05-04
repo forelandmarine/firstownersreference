@@ -13,6 +13,12 @@ export type LeadEssay = {
         caption: string;
         credit?: string;
       }
+    | {
+        type: "editorsNote";
+        text: string;
+        href?: string;
+        linkText?: string;
+      }
   )[];
   readingTime: string;
 };
@@ -31,7 +37,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       "The industry shorthand for annual operating cost is 10 percent of the yacht's purchase price per year. Brokers quote it. Management companies quote it. Wealth managers, when they engage with the topic at all, quote it. The rule has no traceable origin. No primary source attributes it to a single study or institution. It survives because it is roughly correct for new, mid-sized, lightly used yachts and because it is easy.",
       "It is also wrong for most readers of The First Owner’s Reference.",
       "YachtBuyer, in published analysis, calls the rule \"at best, obsolete or even misleading\" for older or larger crewed vessels. The arithmetic is simple. As the asset depreciates, the percentage rises mechanically, since running cost is a function of size and complexity, not residual value. A 50m yacht that cost EUR 50 million new and is worth EUR 30 million eight years later does not become 40 percent cheaper to operate. Its operating cost may have risen with crew inflation, insurance hardening, and refit accumulation. The same EUR 5 million annual run rate that was 10 percent of value at purchase is now nearly 17 percent.",
-      "Working ranges from independent practitioner sources (Foreland Marine, Fraser Yachts, Ocean Independence, Luxcenture) cluster between 8 and 15 percent for the first decade. For yachts over 40 metres, or older than seven years, the empirical band is closer to 12 to 20 percent. Charter-active vessels run higher still.",
+      "Working ranges from independent practitioner sources (Fraser Yachts, Ocean Independence, Foreland Marine) cluster between 8 and 15 percent for the first decade. For yachts over 40 metres, or older than seven years, the empirical band is closer to 12 to 20 percent. Charter-active vessels run higher still.",
       "The honest position: budget on 12 to 15 percent for a typical 40m to 50m new build operated privately at moderate use, and revise upward for charter operation, larger size, or older age. Do not let any party who is paid contingent on a deal closing tell you otherwise.",
       { type: "h2", text: "What you actually buy" },
       "The cost categories compound in an unintuitive way. The crew, not the fuel, is the dominant line. On a typical 50m yacht the breakdown looks roughly as follows.",
@@ -57,6 +63,12 @@ export const leadEssays: Record<string, LeadEssay> = {
       "Ownership makes sense when the owner intends to use the yacht for at least 12 weeks per year, plans to hold for at least seven years, has the cash flow to absorb operating cost without strain, and wants the kind of programme that a charter cannot deliver. Repeated, predictable, family-led use of a known asset that has been specified, crewed, and operated to the owner's preferences. That is the genuine ownership case. It is not financial. It is operational.",
       "The first task is to ask whether your intended use pattern fits this case. The running cost calculator on this site lets you run your own numbers through a structure calibrated against MYBA, Pantaenius, Quay Crew, IGY, and aggregated industry practitioner data. Source assumptions are named on every category. The answer should be sobering.",
       "If after that exercise the answer is still ownership, the rest of The First Owner’s Reference is written with that reader in mind. The remaining chapters cover how the market is structured, how the industry actually works, what the acquisition process looks like, the new build versus brokerage decision, refit, operations, and how to build the team that protects the buyer through all of it. Read in any order. Apply the independence test in chapter 9 to anyone proposing to advise.",
+      {
+        type: "editorsNote",
+        text: "The running cost calculator on this site runs these figures against your own size, type, region, and use intensity. Source assumptions are named on every line.",
+        href: "/tools/running-cost-calculator",
+        linkText: "Open the calculator",
+      },
     ],
   },
 
