@@ -34,8 +34,8 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 flex items-start">
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12 pt-[8dvh] lg:pt-[10dvh] w-full text-paper">
-            <h1 className="font-serif font-light text-display leading-[var(--text-display-line-height)] tracking-tight max-w-4xl">
-              The First<br />
+            <h1 className="font-serif font-light text-[clamp(2.75rem,5vw,5rem)] leading-[1.05] tracking-tight max-w-2xl">
+              The&nbsp;First<br />
               Owner&rsquo;s<br />
               Reference
             </h1>
