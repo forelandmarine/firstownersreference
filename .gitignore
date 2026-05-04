@@ -24,6 +24,11 @@
 .DS_Store
 *.pem
 
+# editorial materials, kept out of the repo
+*.docx
+*.doc
+*.pdf
+
 # debug
 npm-debug.log*
 yarn-debug.log*
