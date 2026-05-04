@@ -220,7 +220,7 @@ export default async function SectionPage(props: {
                       return (
                         <figure
                           key={i}
-                          className="my-12 -mx-6 lg:mx-0 lg:-mr-[calc((100vw-80rem)/2+5rem)] xl:-mr-[calc((100vw-80rem)/2+8rem)]"
+                          className="my-12 -mx-6 lg:mx-0"
                         >
                           <div className="relative aspect-[3/2] bg-stone-soft overflow-hidden">
                             <Image
