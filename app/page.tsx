@@ -68,18 +68,19 @@ export default function HomePage() {
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
                 Nine chapters: cost of ownership; market structure; how
                 the industry works; acquisition; new build and brokerage;
-                refit; operations; motor against sailing yacht; and
-                team to assemble before signing.
+                refit; operations; motor vs.&nbsp;sail; and team to
+                assemble before signing.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
                 Material drawn from named industry data, identified
                 practitioner sources, and an aggregated archive of managed
-                projects. Every claim cited. Updated continuously online,
+                projects. Cited claims. Updated quarterly online,
                 republished annually in print, so figures stay current.
+                Keep it in your pocket.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
-                Edited by industry practitioners. Independently funded.
-                Carries no advertising, ever.
+                Written and edited by industry experts. Independently
+                funded. Carries no advertising, ever.
               </p>
             </div>
           </div>
