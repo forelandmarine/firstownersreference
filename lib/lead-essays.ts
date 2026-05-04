@@ -303,9 +303,9 @@ export const leadEssays: Record<string, LeadEssay> = {
       {
         type: "figure",
         src: "/images/hetairos-stbarths.jpg",
-        alt: "Hetairos racing in the Caribbean with sails set",
+        alt: "Hetairos and Pink Gin IV racing in the Caribbean with sails set",
         caption:
-          "Hetairos at Saint Barths. A well-maintained hull is a refit decision made in advance and prosecuted in writing."
+          "Hetairos and Pink Gin IV at Saint Barths. A well-maintained hull is a refit decision made in advance and prosecuted in writing."
       },
       { type: "h2", text: "The 30 to 50 percent overrun pattern" },
       "Industry consensus is that refit projects routinely run 30 to 50 percent over original quoted scope. The pattern is well-rehearsed in trade press. Practitioner consensus from independent owner's representatives points to the same range, with poor specification and weak project management as the dominant drivers. Dockwalk documented a 600 percent overrun on a 1967 Camper & Nicholsons refit (USD 1 million budget, USD 6 million actual, an extreme case but illustrative). The contingency reserves practitioners build into refit budgets reflect this: 10 to 15 percent for known scope, 15 to 20 percent for opened-up vessels, 20 to 25 percent for first-time-opened older hulls.",
