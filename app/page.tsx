@@ -66,7 +66,7 @@ export default function HomePage() {
               <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal">
                 An annual editorial publication on the structural,
                 financial, and operational dimensions of first-time
-                superyacht acquisition, or, how to buy a boat..
+                superyacht acquisition, or, how to buy a boat.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
                 Nine chapters: cost of ownership; market structure; how
