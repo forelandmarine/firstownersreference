@@ -75,6 +75,7 @@ export const sections: Section[] = [
       "When to refit and when to sell. Yard selection, scope discipline, and the budget overrun pattern that defines the market.",
     coordinates: "41.3381°N 2.1647°E",
     hero: "/images/stock/boatshed-cradles.jpg",
+    heroFocus: "bottom",
     contributor: "To be confirmed",
     contributorRole: "Refit yard CEO",
   },
