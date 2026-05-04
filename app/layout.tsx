@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Newsreader } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { JsonLd } from "@/components/json-ld";
 import {
@@ -90,6 +91,7 @@ export default function RootLayout({
           ]}
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );
