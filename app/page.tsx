@@ -79,7 +79,7 @@ export default function HomePage() {
                 practitioner sources, and an aggregated archive of managed
                 projects. Cited claims. Updated quarterly online,
                 republished annually in print, so figures stay current.
-                Keep it in your pocket.
+                To keep in your pocket.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
                 Written and edited by industry experts. Independently
