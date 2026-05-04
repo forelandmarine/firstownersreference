@@ -28,7 +28,7 @@ export const sections: Section[] = [
     standfirst:
       "Where the order book actually sits, who has capacity, and what that means for a buyer entering this year.",
     coordinates: "50.7601°N 1.2982°W",
-    hero: "/images/stock/marina-flags.jpg",
+    hero: "/images/stock/monaco-fleet.jpg",
     contributor: "To be confirmed",
     contributorRole: "Market intelligence head",
   },
