@@ -39,7 +39,7 @@ export const sections: Section[] = [
     standfirst:
       "Conflicts, commissions, retrocessions, and the captain's loyalty problem. Said plainly.",
     coordinates: "43.5528°N 7.0174°E",
-    hero: "/images/stock/superyacht-night.jpg",
+    hero: "/images/stock/cap-cove-tenders.jpg",
     contributor: "Sarah Linton",
     contributorRole: "Yacht lawyer, Hill Dickinson",
   },

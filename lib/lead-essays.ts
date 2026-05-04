@@ -227,8 +227,7 @@ export const leadEssays: Record<string, LeadEssay> = {
         src: "/images/raven-side.jpg",
         alt: "The 60 metre Baltic 111 sailing yacht Raven photographed in profile under sail",
         caption:
-          "Raven, Baltic 111. A new build delivered against a contract whose change-order procedure, refund guarantee, and dispute forum had been settled at heads of terms.",
-        credit: "Photograph: Fraser Edwards.",
+          "Raven, Baltic 111. A new build delivered against a contract whose change-order procedure, refund guarantee, and dispute forum had been settled at heads of terms."
       },
       { type: "h2", text: "The contract is where it happens" },
       "A new build contract is the most consequential document a yacht buyer signs. It governs USD 30 to USD 200 million of capital across two to five years, and structures every variation, every dispute, every interpretation question in the period during which the yard holds the cards.",
@@ -294,8 +293,7 @@ export const leadEssays: Record<string, LeadEssay> = {
         src: "/images/hetairos-stbarths.jpg",
         alt: "Hetairos racing in the Caribbean with sails set",
         caption:
-          "Hetairos at Saint Barths. A well-maintained hull is a refit decision made in advance and prosecuted in writing.",
-        credit: "Photograph: Fraser Edwards.",
+          "Hetairos at Saint Barths. A well-maintained hull is a refit decision made in advance and prosecuted in writing."
       },
       { type: "h2", text: "The 30 to 50 percent overrun pattern" },
       "Industry consensus is that refit projects routinely run 30 to 50 percent over original quoted scope. The pattern is well-rehearsed in trade press. Practitioner consensus from independent owner's representatives points to the same range, with poor specification and weak project management as the dominant drivers. Dockwalk documented a 600 percent overrun on a 1967 Camper & Nicholsons refit (USD 1 million budget, USD 6 million actual, an extreme case but illustrative). The contingency reserves practitioners build into refit budgets reflect this: 10 to 15 percent for known scope, 15 to 20 percent for opened-up vessels, 20 to 25 percent for first-time-opened older hulls.",
@@ -402,8 +400,7 @@ export const leadEssays: Record<string, LeadEssay> = {
         src: "/images/adix-onboard-crew.jpg",
         alt: "Crew aboard the schooner Adix at work on deck",
         caption:
-          "Adix, deck crew. Operations is the part of yacht ownership that lasts the longest, costs the most over a hold, and is most often delegated without the care it warrants.",
-        credit: "Photograph: Fraser Edwards.",
+          "Adix, deck crew. Operations is the part of yacht ownership that lasts the longest, costs the most over a hold, and is most often delegated without the care it warrants."
       },
       { type: "h2", text: "ISM, MLC, and flag state compliance" },
       "Yachts above 500 gross tonnes operate under the International Safety Management Code, which mandates a documented Safety Management System and regular audit. Yachts engaged in commercial operation (charter) operate under the Maritime Labour Convention, which governs crew working conditions, contracts, hours, and welfare. Both frameworks are binding and audited.",
@@ -503,8 +500,7 @@ export const leadEssays: Record<string, LeadEssay> = {
         src: "/images/velsheda-detail.jpg",
         alt: "Detail of the J Class yacht Velsheda under sail",
         caption:
-          "Velsheda, J Class original. The racing-pedigree segment is the part of the sailing yacht world the trade press covers least carefully and the part that most defines value retention at the top of the segment.",
-        credit: "Photograph: Fraser Edwards.",
+          "Velsheda, J Class original. The racing-pedigree segment is the part of the sailing yacht world the trade press covers least carefully and the part that most defines value retention at the top of the segment."
       },
       { type: "h2", text: "Racing pedigree and value retention" },
       "Racing is the part of the sailing yacht world the trade press covers least carefully and the part that does most to support residual values at the top of the segment. Three circuits matter.",

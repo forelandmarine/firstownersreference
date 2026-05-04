@@ -72,19 +72,9 @@ export default function ColophonPage() {
 
             <h2>Photography</h2>
             <p>
-              1st Edition photography by{" "}
-              <a
-                href="https://fraseredwards.vercel.app"
-                className="link-marine"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Fraser Edwards
-              </a>
-              . The yacht in the cover and several chapter openers is{" "}
-              <em>Raven</em>, Baltic 111, photographed under sail in the
-              Western Mediterranean and during the RORC Caribbean 600. Full
-              image credits appear on the print edition&rsquo;s back matter.
+              Photography for 1st Edition is drawn from a curated stock
+              pool plus selected commissioned work. Full image credits
+              appear on the print edition&rsquo;s back matter.
             </p>
 
             <h2>Web</h2>
@@ -106,7 +96,7 @@ export default function ColophonPage() {
               <br />
               Art director: To be appointed.
               <br />
-              Picture editor: Fraser Edwards, partnering on 1st Edition.
+              Picture editor: To be appointed.
               <br />
               Researcher and fact checker: To be appointed.
             </p>
