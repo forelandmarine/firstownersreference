@@ -10,11 +10,20 @@ import { ReadingProgress } from "@/components/reading-progress";
 import { BackToTop } from "@/components/back-to-top";
 import { ChapterStrip } from "@/components/chapter-strip";
 import { ShareChapter } from "@/components/share-chapter";
+import { JsonLd } from "@/components/json-ld";
 import { sections, getSection } from "@/lib/sections";
 import { getLeadEssay } from "@/lib/lead-essays";
 import { getDataSpread } from "@/lib/data-spreads";
 import { getCase } from "@/lib/cases";
 import { getChecklist } from "@/lib/checklists";
+import { getChapterFaqs } from "@/lib/faqs";
+import { glossaryEntries } from "@/lib/glossary";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  faqPageSchema,
+  SITE_URL,
+} from "@/lib/jsonld";
 
 function linkifyEmails(text: string): React.ReactNode[] {
   const emailRegex = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
@@ -49,9 +58,24 @@ export async function generateMetadata(props: {
   const { slug } = await props.params;
   const section = getSection(slug);
   if (!section) return {};
+  const url = `${SITE_URL}/${section.slug}`;
   return {
-    title: section.title,
-    description: section.standfirst,
+    title: section.seoTitle,
+    description: section.seoDescription,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${section.seoTitle} | The First Owner's Reference`,
+      description: section.seoDescription,
+      url,
+      type: "article",
+      publishedTime: section.datePublished,
+      modifiedTime: section.dateModified ?? section.datePublished,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: section.seoTitle,
+      description: section.seoDescription,
+    },
   };
 }
 
@@ -66,19 +90,48 @@ export default async function SectionPage(props: {
   const dataSpread = getDataSpread(slug);
   const caseStudy = getCase(slug);
   const checklist = getChecklist(slug);
+  const faqs = getChapterFaqs(slug);
+  const chapterGlossary = glossaryEntries.filter((entry) =>
+    entry.relatedChapters?.includes(slug)
+  );
   const index = sections.findIndex((s) => s.slug === section.slug);
   const prev = sections[index - 1];
   const next = sections[index + 1];
+  const url = `${SITE_URL}/${section.slug}`;
 
   const stripSections: { id: string; label: string; href?: string }[] = [
     { id: "essay", label: "Essay" },
     ...(dataSpread ? [{ id: "data-spread", label: "Data" }] : []),
     ...(caseStudy ? [{ id: "case", label: "Case", href: `/${section.slug}/case` }] : []),
     ...(checklist ? [{ id: "checklist", label: "Checklist" }] : []),
+    ...(chapterGlossary.length ? [{ id: "terms", label: "Terms" }] : []),
+    ...(faqs.length ? [{ id: "faqs", label: "FAQ" }] : []),
   ];
+
+  const schemaNodes: object[] = [
+    articleSchema({
+      url,
+      headline: section.seoTitle,
+      description: section.seoDescription,
+      datePublished: section.datePublished,
+      dateModified: section.dateModified,
+      author: "both",
+      image: `${url}/opengraph-image`,
+      articleSection: `Chapter ${section.number}`,
+    }),
+    breadcrumbSchema([
+      { name: "Home", url: SITE_URL },
+      { name: "Chapters", url: `${SITE_URL}/#chapters` },
+      { name: `Chapter ${section.number}: ${section.title}`, url },
+    ]),
+  ];
+  if (faqs.length) {
+    schemaNodes.push(faqPageSchema(faqs));
+  }
 
   return (
     <>
+      <JsonLd nodes={schemaNodes} />
       <SiteHeader />
       <ReadingProgress />
       <ChapterStrip
@@ -295,7 +348,7 @@ export default async function SectionPage(props: {
                   <div className="relative aspect-[3/4] bg-stone-soft">
                     <Image
                       src={section.hero}
-                      alt="Editorial photograph"
+                      alt={`Editorial photograph illustrating Chapter ${section.number}: ${section.title}`}
                       fill
                       sizes="25vw"
                       className={`object-cover ${
@@ -393,6 +446,89 @@ export default async function SectionPage(props: {
                 </div>
               </header>
               <ChecklistBody list={checklist} />
+            </div>
+          </section>
+        )}
+
+        {chapterGlossary.length > 0 && (
+          <section
+            id="terms"
+            className="bg-paper py-20 lg:py-24 border-t border-charcoal scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-3">
+                <p className="meta-marine mb-3">
+                  Chapter {section.number}
+                </p>
+                <p className="meta">Terms used</p>
+              </div>
+              <div className="lg:col-span-8 lg:col-start-4">
+                <h2 className="font-serif font-light text-3xl lg:text-4xl leading-tight tracking-tight text-charcoal mb-10">
+                  Glossary terms in this chapter
+                </h2>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+                  {chapterGlossary.map((entry) => (
+                    <li
+                      key={entry.slug}
+                      className="border-t border-rule pt-4"
+                    >
+                      <Link
+                        href={`/glossary/${entry.slug}`}
+                        className="block group"
+                      >
+                        <p className="font-serif text-xl text-charcoal group-hover:text-marine transition-colors mb-1">
+                          {entry.term}
+                        </p>
+                        <p className="caption max-w-prose">
+                          {entry.shortDefinition}
+                        </p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/glossary"
+                  className="meta-marine inline-flex items-center gap-2 mt-10"
+                >
+                  Open the full glossary <span aria-hidden>&rarr;</span>
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {faqs.length > 0 && (
+          <section
+            id="faqs"
+            className="bg-paper-deep py-20 lg:py-28 border-t border-charcoal scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-3">
+                <p className="meta-marine mb-3">
+                  Chapter {section.number}
+                </p>
+                <p className="meta">FAQ</p>
+              </div>
+              <div className="lg:col-span-8 lg:col-start-4">
+                <h2 className="font-serif font-light text-headline lg:text-[2.5rem] leading-tight tracking-tight text-charcoal mb-12 max-w-3xl">
+                  Frequently asked
+                </h2>
+                <dl className="space-y-10">
+                  {faqs.map((faq, i) => (
+                    <div
+                      key={i}
+                      className="border-t border-rule pt-6"
+                    >
+                      <dt className="font-serif text-xl lg:text-2xl leading-snug tracking-tight text-charcoal mb-4">
+                        {faq.question}
+                      </dt>
+                      <dd className="font-serif text-base lg:text-lg leading-relaxed text-charcoal-soft max-w-prose">
+                        {faq.answer}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
             </div>
           </section>
         )}

@@ -8,6 +8,10 @@ export type Section = {
   heroFocus?: "top" | "center" | "bottom" | "left" | "right";
   contributor: string;
   contributorRole: string;
+  seoTitle: string;
+  seoDescription: string;
+  datePublished: string;
+  dateModified?: string;
 };
 
 export const sections: Section[] = [
@@ -21,6 +25,10 @@ export const sections: Section[] = [
     hero: "/images/stock/overwater-deck.jpg",
     contributor: "To be confirmed",
     contributorRole: "Charter management CEO",
+    seoTitle: "Superyacht running costs and the 10 percent rule",
+    seoDescription:
+      "Annual running costs, the folkloric 10 percent rule, depreciation reality, and the charter delusion. What the first three years of superyacht ownership actually cost. Sourced from Knight Frank, BOAT International, Quay Crew, and aggregated practitioner data.",
+    datePublished: "2026-05-01",
   },
   {
     number: "02",
@@ -32,6 +40,10 @@ export const sections: Section[] = [
     hero: "/images/stock/monaco-fleet.jpg",
     contributor: "To be confirmed",
     contributorRole: "Market intelligence head",
+    seoTitle: "Superyacht market 2026: order book, wealth growth, supply",
+    seoDescription:
+      "The 2026 superyacht market: BOAT International Global Order Book at 1,093 yachts, Knight Frank UHNW growth, Italian yard dominance, and what the structural narrowing means for a first-time buyer.",
+    datePublished: "2026-05-01",
   },
   {
     number: "03",
@@ -43,6 +55,11 @@ export const sections: Section[] = [
     hero: "/images/stock/cap-cove-tenders.jpg",
     contributor: "Sarah Linton",
     contributorRole: "Yacht lawyer, Hill Dickinson",
+    seoTitle:
+      "Yacht broker commissions, retrocessions, and conflicts of interest",
+    seoDescription:
+      "The structural conflicts in superyacht acquisition: who pays the broker commission, how dual agency works in practice, what retrocession arrangements look like, and the captain's loyalty problem.",
+    datePublished: "2026-05-01",
   },
   {
     number: "04",
@@ -54,6 +71,10 @@ export const sections: Section[] = [
     hero: "/images/stock/bridge-radar.jpg",
     contributor: "To be confirmed",
     contributorRole: "Senior surveyor",
+    seoTitle: "How to buy a superyacht: the 12 to 24 week acquisition process",
+    seoDescription:
+      "The yacht acquisition process from shortlist to closing: pre-purchase survey, sea trial, MOA, VAT and flag-state choice, and the disciplines that defeat the most common pitfalls.",
+    datePublished: "2026-05-01",
   },
   {
     number: "05",
@@ -66,6 +87,11 @@ export const sections: Section[] = [
     heroFocus: "bottom",
     contributor: "To be confirmed",
     contributorRole: "Yard CEO",
+    seoTitle:
+      "New build vs brokerage superyacht: contract, owner's rep, costs",
+    seoDescription:
+      "Yacht new build versus brokerage. Threshold tests, contract drafting at heads of terms, the owner's representative role, and the variation-margin overrun pattern documented across SYBAss yards.",
+    datePublished: "2026-05-01",
   },
   {
     number: "06",
@@ -78,6 +104,10 @@ export const sections: Section[] = [
     heroFocus: "bottom",
     contributor: "To be confirmed",
     contributorRole: "Refit yard CEO",
+    seoTitle: "Superyacht refit cost: when to refit, when to sell",
+    seoDescription:
+      "Superyacht refit cost, yard selection, scope discipline, and the 30 to 50 percent overrun pattern. The 30 percent of pre-refit value threshold for refit-or-sell. Spanish IPR, French Commercial Exemption, and Maltese leasing.",
+    datePublished: "2026-05-01",
   },
   {
     number: "07",
@@ -90,6 +120,11 @@ export const sections: Section[] = [
     heroFocus: "top",
     contributor: "To be confirmed",
     contributorRole: "Captain and insurance broker",
+    seoTitle:
+      "Yacht operations: captain salary, crew, insurance, charter economics",
+    seoDescription:
+      "Yacht operations year one: captain hire discipline, crew structure and salary 2026, MLC and ISM compliance, insurance market, and the charter economics for the median programme. Sources named.",
+    datePublished: "2026-05-01",
   },
   {
     number: "08",
@@ -101,6 +136,11 @@ export const sections: Section[] = [
     hero: "/images/stock/cannes-sail-motor.jpg",
     contributor: "To be confirmed",
     contributorRole: "Sailing yacht captain",
+    seoTitle:
+      "Motor vs sail superyacht: cost, carbon, hybrid drive comparison",
+    seoDescription:
+      "Motor versus sail versus hybrid drive on a 50 metre yacht. Annual operating cost comparison, EU ETS exposure, HVO availability, and the hybrid third path. Quality sailing builders typically 25 to 40 percent below the equivalent motor programme.",
+    datePublished: "2026-05-01",
   },
   {
     number: "09",
@@ -112,6 +152,11 @@ export const sections: Section[] = [
     hero: "/images/stock/brass-compass.jpg",
     contributor: "To be confirmed",
     contributorRole: "Family office principal",
+    seoTitle:
+      "Questions to ask before buying a yacht: the independence test",
+    seoDescription:
+      "The ten questions to put to anyone proposing to advise on a superyacht acquisition, including the publisher of The First Owner's Reference. The independence test for owner's representatives, lawyers, surveyors, and management companies.",
+    datePublished: "2026-05-01",
   },
 ];
 

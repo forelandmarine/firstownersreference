@@ -24,7 +24,7 @@ export default function HomePage() {
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12 flex justify-end">
             <Image
               src="/brand/foreland-lighthouse-paper.svg"
-              alt="Foreland Marine"
+              alt="Foreland Marine lighthouse, the publisher of The First Owner's Reference"
               width={54}
               height={54}
               priority

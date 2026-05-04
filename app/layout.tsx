@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
+import { JsonLd } from "@/components/json-ld";
+import {
+  organizationSchema,
+  websiteSchema,
+  jackPersonSchema,
+  danPersonSchema,
+} from "@/lib/jsonld";
 
 const newsreader = Newsreader({
   variable: "--font-serif",
@@ -26,18 +33,40 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "The First Owner's Reference",
+    default:
+      "The First Owner's Reference — A yachting field manual for first-time superyacht buyers",
     template: "%s | The First Owner's Reference",
   },
   description:
-    "A yachting field manual, published annually for first-time superyacht buyers. Independent, contributor-led, written by Foreland Marine. 1st Edition, 2026.",
+    "An independent, contributor-led yachting field manual for first-time superyacht buyers. Cost of ownership, market structure, acquisition, refit, operations, and the questions to ask before signing. Written by Foreland Marine. 1st Edition, 2026.",
   metadataBase: new URL("https://firstownersreference.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "The First Owner's Reference",
     description:
-      "A yachting field manual, published annually for first-time superyacht buyers. Independent, contributor-led, written by Foreland Marine.",
+      "An independent, contributor-led yachting field manual for first-time superyacht buyers. 1st Edition, 2026.",
     type: "website",
     locale: "en_GB",
+    siteName: "The First Owner's Reference",
+    url: "https://firstownersreference.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The First Owner's Reference",
+    description:
+      "An independent yachting field manual for first-time superyacht buyers. 1st Edition, 2026.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -52,6 +81,14 @@ export default function RootLayout({
       className={`${newsreader.variable} ${geist.variable} ${geistMono.variable} antialiased`}
     >
       <body className="min-h-screen bg-paper text-charcoal font-serif">
+        <JsonLd
+          nodes={[
+            organizationSchema(),
+            websiteSchema(),
+            jackPersonSchema(),
+            danPersonSchema(),
+          ]}
+        />
         {children}
       </body>
     </html>

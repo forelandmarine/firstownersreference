@@ -8,6 +8,7 @@ import { ReadingProgress } from "@/components/reading-progress";
 import { BackToTop } from "@/components/back-to-top";
 import { sections, getSection } from "@/lib/sections";
 import { getCase } from "@/lib/cases";
+import { SITE_URL } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return sections
@@ -22,9 +23,23 @@ export async function generateMetadata(props: {
   const section = getSection(slug);
   const caseStudy = getCase(slug);
   if (!section || !caseStudy) return {};
+  const url = `${SITE_URL}/${section.slug}/case`;
   return {
     title: `${caseStudy.title} | Chapter ${section.number}`,
     description: caseStudy.standfirst,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${caseStudy.title} | Chapter ${section.number}, The First Owner's Reference`,
+      description: caseStudy.standfirst,
+      url,
+      type: "article",
+      publishedTime: section.datePublished,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: caseStudy.title,
+      description: caseStudy.standfirst,
+    },
   };
 }
 

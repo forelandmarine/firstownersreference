@@ -3,10 +3,27 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { sections } from "@/lib/sections";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Contributors",
   description:
-    "Named external contributors to 1st Edition of The First Owner's Reference. Yacht lawyers, surveyors, yard CEOs, captains, family office principals.",
+    "Named external contributors to 1st Edition of The First Owner's Reference. Yacht lawyers, surveyors, yard CEOs, captains, family office principals. Each transparent on commercial relationships.",
+  alternates: {
+    canonical: "https://firstownersreference.com/contributors",
+  },
+  openGraph: {
+    title: "Contributors | The First Owner's Reference",
+    description:
+      "Named external contributors to 1st Edition. Each transparent on commercial relationships.",
+    url: "https://firstownersreference.com/contributors",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contributors",
+    description: "Named external contributors to 1st Edition.",
+  },
 };
 
 export default function ContributorsPage() {

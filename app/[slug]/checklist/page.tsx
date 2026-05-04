@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { sections, getSection } from "@/lib/sections";
 import { getChecklist } from "@/lib/checklists";
 import { PrintButton } from "@/components/print-button";
+import { SITE_URL } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return sections.map((s) => ({ slug: s.slug }));
@@ -16,9 +17,17 @@ export async function generateMetadata(props: {
   const section = getSection(slug);
   const checklist = getChecklist(slug);
   if (!section || !checklist) return {};
+  const url = `${SITE_URL}/${section.slug}/checklist`;
   return {
     title: `${checklist.title} — Chapter ${section.number}, The First Owner's Reference`,
     description: checklist.standfirst,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${checklist.title} — One-page printable checklist`,
+      description: checklist.standfirst,
+      url,
+      type: "article",
+    },
   };
 }
 

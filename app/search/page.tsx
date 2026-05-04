@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Search",
   description:
     "Search The First Owner\u2019s Reference by topic, builder, yacht name, or keyword.",
+  alternates: {
+    canonical: "https://firstownersreference.com/search",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function SearchPage() {

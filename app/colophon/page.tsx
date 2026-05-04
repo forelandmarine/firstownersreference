@@ -2,10 +2,27 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-export const metadata = {
-  title: "Colophon",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Colophon: how The First Owner's Reference is made",
   description:
-    "How The First Owner’s Reference is made. Editorial principles, type, paper, photography, sources, and the names behind the publication.",
+    "Editorial principles, type, paper, photography, sources, and the names behind The First Owner's Reference. The independence test, applied to the publisher.",
+  alternates: {
+    canonical: "https://firstownersreference.com/colophon",
+  },
+  openGraph: {
+    title: "Colophon | The First Owner's Reference",
+    description:
+      "How the publication is made. Editorial principles, type, paper, photography, the independence test applied to the publisher.",
+    url: "https://firstownersreference.com/colophon",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Colophon | The First Owner's Reference",
+    description: "How the publication is made.",
+  },
 };
 
 export default function ColophonPage() {

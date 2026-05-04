@@ -2,10 +2,27 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-export const metadata = {
-  title: "Request a print copy",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Request a print copy of The First Owner's Reference",
   description:
-    "1st Edition of The First Owner's Reference is a limited print run of 500 copies, hand numbered and signed. Distribution is curated. Tell us briefly who you are.",
+    "1st Edition is a limited print run of 500 copies, casebound on Munken Pure stock, hand numbered and signed. Distribution is curated. Write to request a copy.",
+  alternates: {
+    canonical: "https://firstownersreference.com/request-print-edition",
+  },
+  openGraph: {
+    title: "Request a print copy | The First Owner's Reference",
+    description:
+      "Hand-numbered 1st Edition. Curated distribution. Write to request a copy.",
+    url: "https://firstownersreference.com/request-print-edition",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Request a print copy",
+    description: "Hand-numbered 1st Edition. Curated distribution.",
+  },
 };
 
 export default function PrintRequestPage() {
