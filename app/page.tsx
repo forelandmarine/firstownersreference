@@ -19,7 +19,7 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/30 to-charcoal/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/30 to-charcoal/40" />
         <div className="absolute top-6 right-6 lg:top-10 lg:right-12 opacity-70 mix-blend-screen">
           <Image
             src="/brand/foreland-lighthouse-paper.svg"
@@ -29,8 +29,8 @@ export default function HomePage() {
             priority
           />
         </div>
-        <div className="absolute inset-0 flex items-end">
-          <div className="max-w-[80rem] mx-auto px-6 lg:px-12 pb-20 w-full text-paper">
+        <div className="absolute inset-0 flex items-start">
+          <div className="max-w-[80rem] mx-auto px-6 lg:px-12 pt-[18dvh] lg:pt-[20dvh] w-full text-paper">
             <p className="meta text-paper/80 mb-6">
               A yachting field manual, published annually
             </p>
