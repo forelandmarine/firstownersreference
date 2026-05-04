@@ -111,7 +111,7 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <p className="meta mb-8">From the editors</p>
             <p className="font-serif text-2xl lg:text-3xl leading-relaxed tracking-tight text-charcoal mb-8">
-              A reference written from outside the industry that sells the asset.
+              A reference written from the other side of the table.
             </p>
             <div className="prose-body max-w-prose text-charcoal-soft">
               <p>
