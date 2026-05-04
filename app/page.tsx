@@ -30,13 +30,7 @@ export default function HomePage() {
           />
         </div>
         <div className="absolute inset-0 flex items-start">
-          <div className="max-w-[80rem] mx-auto px-6 lg:px-12 pt-[18dvh] lg:pt-[20dvh] w-full text-paper">
-            <p
-              className="meta mb-6"
-              style={{ color: "var(--color-paper)" }}
-            >
-              A yachting field manual, published annually
-            </p>
+          <div className="max-w-[80rem] mx-auto px-6 lg:px-12 pt-[8dvh] lg:pt-[10dvh] w-full text-paper">
             <h1 className="font-serif font-light text-display leading-[var(--text-display-line-height)] tracking-tight max-w-4xl">
               The First<br />
               Owner&rsquo;s<br />
