@@ -85,6 +85,17 @@ export function SiteFooter() {
             &copy; 2026 Foreland Marine Consultancy Limited
           </p>
           <p className="meta">ISSN pending &middot; Print run 500 &middot; Hand numbered</p>
+          <p className="meta">
+            Website by{" "}
+            <a
+              href="https://faro.is"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-marine"
+            >
+              FARO Creative
+            </a>
+          </p>
         </div>
       </div>
     </footer>
