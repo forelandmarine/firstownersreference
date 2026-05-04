@@ -17,6 +17,29 @@ import { getDataSpread } from "@/lib/data-spreads";
 import { getCase } from "@/lib/cases";
 import { getChecklist } from "@/lib/checklists";
 
+function linkifyEmails(text: string): React.ReactNode[] {
+  const emailRegex = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = emailRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <a key={`email-${key++}`} href={`mailto:${match[0]}`} className="link-marine">
+        {match[0]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts.length > 0 ? parts : [text];
+}
+
 export function generateStaticParams() {
   return sections.map((s) => ({ slug: s.slug }));
 }
@@ -199,7 +222,7 @@ export default async function SectionPage(props: {
                 <div className="prose-body max-w-prose">
                   {essay.paragraphs.map((p, i) => {
                     if (typeof p === "string") {
-                      return <p key={i}>{p}</p>;
+                      return <p key={i}>{linkifyEmails(p)}</p>;
                     }
                     if (p.type === "h2") {
                       return <h2 key={i}>{p.text}</h2>;
