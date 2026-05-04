@@ -5,6 +5,7 @@ export type Section = {
   standfirst: string;
   coordinates: string;
   hero: string;
+  heroFocus?: "top" | "center" | "bottom" | "left" | "right";
   contributor: string;
   contributorRole: string;
 };

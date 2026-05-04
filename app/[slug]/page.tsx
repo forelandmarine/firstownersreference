@@ -74,7 +74,17 @@ export default async function SectionPage(props: {
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              className={`object-cover ${
+                section.heroFocus === "bottom"
+                  ? "object-bottom"
+                  : section.heroFocus === "top"
+                  ? "object-top"
+                  : section.heroFocus === "left"
+                  ? "object-left"
+                  : section.heroFocus === "right"
+                  ? "object-right"
+                  : "object-center"
+              }`}
             />
           </div>
           <div className="order-1 lg:order-2 flex flex-col justify-between bg-paper px-6 lg:px-16 py-16 lg:py-24">
@@ -244,7 +254,17 @@ export default async function SectionPage(props: {
                       alt="Editorial photograph"
                       fill
                       sizes="25vw"
-                      className="object-cover"
+                      className={`object-cover ${
+                        section.heroFocus === "bottom"
+                          ? "object-bottom"
+                          : section.heroFocus === "top"
+                          ? "object-top"
+                          : section.heroFocus === "left"
+                          ? "object-left"
+                          : section.heroFocus === "right"
+                          ? "object-right"
+                          : "object-center"
+                      }`}
                     />
                   </div>
                   <p className="caption">{section.coordinates}.</p>
