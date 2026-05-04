@@ -12,8 +12,8 @@ export default function HomePage() {
 
       <section className="relative h-[100dvh] min-h-[640px] w-full overflow-hidden">
         <Image
-          src="/images/stock/marina-bows.jpg"
-          alt="Superyacht bows and upper decks ranged along a marina berth at dusk"
+          src="/images/stock/monaco-harbour.jpg"
+          alt="A row of moored superyachts in Port Hercule, Monaco, with the Monte Carlo hillside behind"
           fill
           priority
           sizes="100vw"
@@ -44,7 +44,7 @@ export default function HomePage() {
                 1st Edition &middot; September 2026
               </p>
               <p className="caption text-paper/90 max-w-sm">
-                Photograph: Parej Richard.
+                Photograph: Zoe Jackson, Port Hercule, Monaco.
               </p>
             </div>
           </div>
