@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { DataSpreadBody } from "@/components/data-spread-body";
-import { CaseBody } from "@/components/case-body";
 import { ChecklistBody } from "@/components/checklist-body";
 import { ReadingProgress } from "@/components/reading-progress";
 import { BackToTop } from "@/components/back-to-top";
@@ -71,10 +70,10 @@ export default async function SectionPage(props: {
   const prev = sections[index - 1];
   const next = sections[index + 1];
 
-  const stripSections: { id: string; label: string }[] = [
+  const stripSections: { id: string; label: string; href?: string }[] = [
     { id: "essay", label: "Essay" },
     ...(dataSpread ? [{ id: "data-spread", label: "Data" }] : []),
-    ...(caseStudy ? [{ id: "case", label: "Case" }] : []),
+    ...(caseStudy ? [{ id: "case", label: "Case", href: `/${section.slug}/case` }] : []),
     ...(checklist ? [{ id: "checklist", label: "Checklist" }] : []),
   ];
 
@@ -191,9 +190,9 @@ export default async function SectionPage(props: {
                           4
                         </span>{" "}
                         {caseStudy ? (
-                          <a href="#case" className="link">
+                          <Link href={`/${section.slug}/case`} className="link">
                             Case material
-                          </a>
+                          </Link>
                         ) : (
                           <>Case material</>
                         )}
@@ -331,18 +330,23 @@ export default async function SectionPage(props: {
             className="bg-paper py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
           >
             <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-              <header className="mb-20">
-                <p className="meta-marine mb-4">
+              <Link
+                href={`/${section.slug}/case`}
+                className="group block border-t border-charcoal pt-10 transition-colors hover:border-marine"
+              >
+                <p className="meta-marine mb-6">
                   Chapter {section.number} &middot; Case material
                 </p>
-                <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
+                <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl group-hover:text-marine transition-colors">
                   {caseStudy.title}
                 </h2>
-                <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl">
+                <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl mb-10">
                   {caseStudy.standfirst}
                 </p>
-              </header>
-              <CaseBody study={caseStudy} />
+                <span className="meta-marine inline-flex items-center gap-2">
+                  Read the case study <span aria-hidden>&rarr;</span>
+                </span>
+              </Link>
             </div>
           </section>
         )}

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 export type ChapterStripSection = {
   id: string;
   label: string;
+  href?: string;
 };
 
 export function ChapterStrip({
@@ -64,9 +65,9 @@ export function ChapterStrip({
           {sections.map((s) => (
             <a
               key={s.id}
-              href={`#${s.id}`}
+              href={s.href ?? `#${s.id}`}
               className={`meta whitespace-nowrap transition-colors ${
-                activeId === s.id ? "text-marine" : "text-stone hover:text-charcoal"
+                !s.href && activeId === s.id ? "text-marine" : "text-stone hover:text-charcoal"
               }`}
             >
               {s.label}
