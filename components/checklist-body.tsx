@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Checklist } from "@/lib/checklists";
 
 export function ChecklistBody({ list }: { list: Checklist }) {
@@ -46,7 +47,13 @@ export function ChecklistBody({ list }: { list: Checklist }) {
 
         <section className="border-t border-charcoal pt-6">
           <p className="meta mb-3">Print the page</p>
-          <p className="caption max-w-prose">{list.printable}</p>
+          <p className="caption max-w-prose mb-4">{list.printable}</p>
+          <Link
+            href={`/${list.slug}/checklist`}
+            className="meta-marine inline-flex items-center gap-2"
+          >
+            Open the printable checklist <span aria-hidden>&rarr;</span>
+          </Link>
         </section>
       </div>
     </div>

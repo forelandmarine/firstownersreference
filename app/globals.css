@@ -179,3 +179,186 @@ body {
   color: var(--color-marine);
   border-bottom: 1px solid currentColor;
 }
+
+/* ---------------------------------------------------------------------------
+   Printable single-A4 checklist sheet
+   --------------------------------------------------------------------------- */
+
+.checklist-print {
+  background: var(--color-paper-deep);
+  min-height: 100vh;
+}
+
+.checklist-print .screen-toolbar {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--color-rule);
+  background: var(--color-paper);
+}
+
+.checklist-print .checklist-sheet {
+  background: var(--color-paper);
+  color: var(--color-charcoal);
+  width: 210mm;
+  min-height: 297mm;
+  margin: 24px auto 48px;
+  padding: 14mm 12mm 18mm;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.checklist-print .sheet-header {
+  border-bottom: 1px solid var(--color-charcoal);
+  padding-bottom: 5mm;
+  margin-bottom: 5mm;
+}
+
+.checklist-print .sheet-meta {
+  font-family: var(--font-mono);
+  font-size: 8pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-marine);
+}
+
+.checklist-print .sheet-title {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: 18pt;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--color-charcoal);
+  margin-top: 3mm;
+}
+
+.checklist-print .sheet-intent {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 9.5pt;
+  line-height: 1.35;
+  color: var(--color-charcoal-soft);
+  margin-top: 3mm;
+  max-width: 175mm;
+}
+
+.checklist-print .sheet-groups {
+  column-count: 2;
+  column-gap: 8mm;
+  column-rule: 1px solid var(--color-rule);
+  flex: 1 1 auto;
+}
+
+.checklist-print .sheet-group {
+  break-inside: avoid;
+  margin-bottom: 5mm;
+}
+
+.checklist-print .sheet-group-heading {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 8pt;
+  color: var(--color-marine);
+  border-top: 1px solid var(--color-charcoal);
+  padding-top: 2mm;
+  margin-bottom: 2.5mm;
+}
+
+.checklist-print .sheet-group-num {
+  display: inline-block;
+  margin-right: 3mm;
+  font-family: var(--font-mono);
+  color: var(--color-stone);
+}
+
+.checklist-print .sheet-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist-print .sheet-item {
+  display: flex;
+  gap: 3mm;
+  break-inside: avoid;
+  padding-bottom: 2.5mm;
+  margin-bottom: 2.5mm;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.checklist-print .sheet-item:last-child {
+  border-bottom: 0;
+}
+
+.checklist-print .sheet-item-num {
+  flex: 0 0 6mm;
+  font-family: var(--font-mono);
+  font-size: 7.5pt;
+  color: var(--color-marine);
+  padding-top: 0.5mm;
+}
+
+.checklist-print .sheet-item-body {
+  flex: 1 1 auto;
+}
+
+.checklist-print .sheet-question {
+  font-family: var(--font-serif);
+  font-size: 9pt;
+  line-height: 1.3;
+  color: var(--color-charcoal);
+}
+
+.checklist-print .sheet-detail {
+  font-family: var(--font-sans);
+  font-size: 7.5pt;
+  line-height: 1.3;
+  color: var(--color-stone);
+  margin-top: 1mm;
+}
+
+.checklist-print .sheet-footer {
+  font-family: var(--font-mono);
+  font-size: 7pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  text-align: center;
+  border-top: 1px solid var(--color-rule);
+  padding-top: 3mm;
+  margin-top: 5mm;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .checklist-print {
+    background: #fff !important;
+    min-height: 0;
+  }
+  .checklist-print .screen-only {
+    display: none !important;
+  }
+  .checklist-print .checklist-sheet {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;
+    box-shadow: none;
+    page-break-after: avoid;
+  }
+}
