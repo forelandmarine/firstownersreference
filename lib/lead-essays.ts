@@ -599,6 +599,8 @@ export const leadEssays: Record<string, LeadEssay> = {
       "For a reader considering a first yacht acquisition, whether as a newly liquidated principal or as an heir for whom the family yacht has become a new responsibility, the next three months are the most consequential of ownership. The decisions made in that window, about the team built, set the trajectory of the next ten years.",
       "The single most important of those decisions is to engage an adviser who is structurally aligned with the buyer, before engaging anyone who is structurally aligned with someone else. That is the argument. The rest is detail.",
       "There are several such advisers. The publisher of The First Owner’s Reference is one of them. The independence test, applied to all of them, is how the right one is chosen.",
+      { type: "h2", text: "From the editors" },
+      "Thank you for reading. The First Owner’s Reference is written for the reader, not for the trade, and the reader is therefore the only audience whose response shapes the next edition. If a chapter has been useful, tell us. If a chapter has been wrong, tell us with more force. If a question you wanted answered has not been answered, that is the most useful note of all and should arrive in the same email. Disagreement is welcomed; agreement is welcomed; correction is most welcomed of all. Editorial correspondence reaches us at editor@firstownersreference.com and is read by Jack and Daniel personally.",
     ],
   },
 };
