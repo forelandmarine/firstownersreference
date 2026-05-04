@@ -247,9 +247,7 @@ export default async function SectionPage(props: {
                       className="object-cover"
                     />
                   </div>
-                  <p className="caption">
-                    Photograph by Fraser Edwards. {section.coordinates}.
-                  </p>
+                  <p className="caption">{section.coordinates}.</p>
                 </div>
               </aside>
             </div>

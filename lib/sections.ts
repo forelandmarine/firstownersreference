@@ -17,7 +17,7 @@ export const sections: Section[] = [
     standfirst:
       "What the first three years of yacht ownership actually look like, in time and in money.",
     coordinates: "39.5696°N 2.6502°E",
-    hero: "/images/stock/black-hull-profile.jpg",
+    hero: "/images/stock/overwater-deck.jpg",
     contributor: "To be confirmed",
     contributorRole: "Charter management CEO",
   },
