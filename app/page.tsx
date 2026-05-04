@@ -31,7 +31,7 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 flex items-start">
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12 pt-[18dvh] lg:pt-[20dvh] w-full text-paper">
-            <p className="meta text-paper/80 mb-6">
+            <p className="meta text-paper mb-6">
               A yachting field manual, published annually
             </p>
             <h1 className="font-serif font-light text-display leading-[var(--text-display-line-height)] tracking-tight max-w-4xl">
@@ -40,10 +40,10 @@ export default function HomePage() {
               Reference
             </h1>
             <div className="mt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-              <p className="meta text-paper/80">
+              <p className="meta text-paper">
                 1st Edition &middot; September 2026
               </p>
-              <p className="caption text-paper/90 max-w-sm">
+              <p className="caption text-paper max-w-sm">
                 Photograph: Zoe Jackson, Port Hercule, Monaco.
               </p>
             </div>
