@@ -118,8 +118,8 @@ export const sections: Section[] = [
     coordinates: "17.0608°N 61.7964°W",
     hero: "/images/stock/captain-uniform.jpg",
     heroFocus: "top",
-    contributor: "To be confirmed",
-    contributorRole: "Captain and insurance broker",
+    contributor: "Erica Lay",
+    contributorRole: "Crew recruitment specialist, EL Crew Co",
     seoTitle:
       "Yacht operations: captain salary, crew, insurance, charter economics",
     seoDescription:
