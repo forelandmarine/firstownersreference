@@ -30,7 +30,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "01-reality-of-ownership",
     title: "Annual operating cost as a percentage of capex, by size band.",
     standfirst:
-      "The 10 percent rule is folklore. The empirical band is 8 to 20 percent, with the position on the curve set by size, age, use intensity, and charter activity. The numbers below are aggregated from named published sources and a Foreland project archive of more than 30 managed projects.",
+      "The 10 percent rule is folklore. The empirical band is 8 to 20 percent; size, age, use intensity, and charter activity set the position. Numbers aggregated from named published sources and a Foreland archive of more than 30 managed projects.",
     blocks: [
       { type: "h2", text: "The cost-of-ownership band" },
       {
@@ -147,7 +147,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "02-reading-the-market",
     title: "Order book and yard capacity through 2030.",
     standfirst:
-      "Wealth creation has accelerated. Order book unit count has contracted for the second consecutive year. Top-tier yards are sold out. The numbers below are the supply-side picture a first-time buyer should hold in mind before any conversation with a broker.",
+      "Wealth creation has accelerated; order-book unit count has contracted for the second consecutive year; top-tier yards are sold out. The supply-side picture to hold in mind before any broker conversation.",
     blocks: [
       { type: "h2", text: "Wealth creation, five-year change" },
       {
@@ -270,7 +270,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "03-how-the-industry-works",
     title: "Where the money goes in a typical brokerage transaction.",
     standfirst:
-      "On a EUR 28 m sale of a 40 m yacht, between EUR 1.4 m and EUR 2.8 m moves in commissions depending on which of two parallel norms is applied. The buyer almost never knows which one is in use. The numbers below are the structure, said plainly.",
+      "On a EUR 28 m sale of a 40 m yacht, EUR 1.4 to 2.8 million moves in commissions depending on which of two parallel norms is applied. The buyer almost never knows which is in use. The structure, said plainly.",
     blocks: [
       { type: "h2", text: "The two parallel commission norms" },
       {
@@ -371,7 +371,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "04-acquisition-process",
     title: "VAT regime and flag state comparison.",
     standfirst:
-      "Two procedural choices materially affect the cost of ownership over the next decade and are commonly made under time pressure at closing without proper analysis. The frame below sets out the legitimate options on the published record.",
+      "Two procedural choices that materially affect a decade of ownership cost, often made under time pressure at closing without proper analysis. The legitimate options on the published record.",
     blocks: [
       { type: "h2", text: "Headline VAT rates on yacht purchase" },
       {
@@ -495,7 +495,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "05-new-build-versus-brokerage",
     title: "Cashflow and milestone payments, year by year.",
     standfirst:
-      "Brokerage concentrates capital at closing. New build distributes it across two to five years against milestones whose definition is the most consequential drafting work in the contract. The frame below is the cashflow shape of each path.",
+      "Brokerage concentrates capital at closing. New build distributes it across two to five years against milestones whose definition is the most consequential drafting work in the contract. The cashflow shape of each path.",
     blocks: [
       { type: "h2", text: "Brokerage versus new build, capital timing" },
       {
@@ -631,7 +631,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "06-refit",
     title: "Refit yard capacity and typical overrun curve, 2026 to 2028.",
     standfirst:
-      "The 30 to 50 percent overrun is the empirical expectation, not a project management failure. Capacity at the dominant yards is tightening into a sellers\u2019 market for the first time in a decade. The numbers below are what to plan against.",
+      "The 30 to 50 percent overrun is the empirical expectation, not a project management failure. Capacity at dominant yards is tightening into a sellers' market for the first time in a decade. The numbers to plan against.",
     blocks: [
       { type: "h2", text: "Refit cost benchmarks, per metre per year" },
       {
@@ -964,7 +964,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "07-operations",
     title: "Crew salary bands and insurance market commentary.",
     standfirst:
-      "Crew is 30 to 40 percent of annual operating cost on a typical 50 m, the largest single line by some distance. Hull insurance has stabilised; the post-Bayesian response was tightening on crew qualifications, not blanket rate rises. The numbers below are the operating frame.",
+      "Crew is 30 to 40 percent of annual operating cost on a typical 50m, the largest single line by some distance. Hull insurance has stabilised; the post-Bayesian response was tightening on crew qualifications, not blanket rate rises.",
     blocks: [
       { type: "h2", text: "Captain pay, by yacht size" },
       {
@@ -1207,7 +1207,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "09-decision-framework",
     title: "From considering ownership to signing a contract.",
     standfirst:
-      "Building the team in the order that matters. The independence test, applied transparently. The ten questions to ask before signing anything. The numbers below set the scale of the team-building decision.",
+      "Building the team in the order that matters. The independence test, applied transparently. The ten questions before signing anything. The scale of the team-building decision.",
     blocks: [
       { type: "h2", text: "The reader profile, on the published record" },
       {
@@ -1302,7 +1302,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "08-motor-versus-sail",
     title: "Motor versus sail, by the numbers.",
     standfirst:
-      "The trade press treats the choice as taste. The data treats it as structural. The frame below sets out market share, operating cost, environmental footprint, and the racing market that supports value retention at the top of the segment.",
+      "Trade press treats the choice as taste; the data treats it as structural. Market share, operating cost, environmental footprint, and the racing market that supports value retention at the top of the segment.",
     blocks: [
       { type: "h2", text: "Market share, on the published record" },
       {
