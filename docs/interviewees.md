@@ -264,7 +264,9 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Kevin Laverty | 3 | Pending | - | Cold via Hill Robinson |
 | Jo Assael | 7 | Pending | - | Cold via IRI London |
 | Pavlos Filippakis | 7 | Pending | - | Warm via Foreland captain network |
-| Erica Lay | 7 | Responses received | 2026-05-05 | Light editorial pass; integrate into chapter 7 (done); send draft for sign-off |
+| Erica Lay | 7 | Confirmed, integrated as Q&A | 2026-05-05 | Sign-off accepted; published |
+| Toby Brand | - | Declined | 2026-05-05 | Replaced on chapter 8 by Ella Johnstone |
+| Ella Johnstone | 7 | To approach | - | Warm via Foreland captain network / Baltic Yachts; Captain of M/Y Liara (Baltic 112); chapter 8 |
 | (others) | - | Pending | - | Per approach order |
 
 Update this table as outreach progresses.
