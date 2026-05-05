@@ -180,6 +180,15 @@ body {
   border-bottom: 1px solid currentColor;
 }
 
+/* Native disclosure widget (used for chapter glossary and FAQ accordions) */
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
 /* ---------------------------------------------------------------------------
    Printable single-A4 checklist sheet
    --------------------------------------------------------------------------- */

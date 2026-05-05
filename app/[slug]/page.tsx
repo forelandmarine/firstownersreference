@@ -538,26 +538,45 @@ export default async function SectionPage(props: {
                 <h2 className="font-serif font-light text-3xl lg:text-4xl leading-tight tracking-tight text-charcoal mb-10">
                   Glossary terms in this chapter
                 </h2>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+                <div className="space-y-2">
                   {chapterGlossary.map((entry) => (
-                    <li
+                    <details
                       key={entry.slug}
-                      className="border-t border-rule pt-4"
+                      className="group border-t border-rule"
                     >
-                      <Link
-                        href={`/glossary/${entry.slug}`}
-                        className="block group"
-                      >
-                        <p className="font-serif text-xl text-charcoal group-hover:text-marine transition-colors mb-1">
+                      <summary className="flex items-center justify-between gap-4 py-4">
+                        <span className="font-serif text-lg lg:text-xl text-charcoal group-hover:text-marine transition-colors">
                           {entry.term}
-                        </p>
-                        <p className="caption max-w-prose">
+                        </span>
+                        <svg
+                          className="shrink-0 w-4 h-4 text-stone transition-transform group-open:rotate-180"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          aria-hidden
+                        >
+                          <path
+                            d="M3 6 L8 11 L13 6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </summary>
+                      <div className="pb-6 max-w-prose">
+                        <p className="caption mb-4">
                           {entry.shortDefinition}
                         </p>
-                      </Link>
-                    </li>
+                        <Link
+                          href={`/glossary/${entry.slug}`}
+                          className="meta-marine inline-flex items-center gap-2"
+                        >
+                          Read in full <span aria-hidden>&rarr;</span>
+                        </Link>
+                      </div>
+                    </details>
                   ))}
-                </ul>
+                </div>
                 <Link
                   href="/glossary"
                   className="meta-marine inline-flex items-center gap-2 mt-10"
@@ -585,21 +604,37 @@ export default async function SectionPage(props: {
                 <h2 className="font-serif font-light text-headline lg:text-[2.5rem] leading-tight tracking-tight text-charcoal mb-12 max-w-3xl">
                   Frequently asked
                 </h2>
-                <dl className="space-y-10">
+                <div className="space-y-2">
                   {faqs.map((faq, i) => (
-                    <div
+                    <details
                       key={i}
-                      className="border-t border-rule pt-6"
+                      className="group border-t border-rule"
                     >
-                      <dt className="font-serif text-xl lg:text-2xl leading-snug tracking-tight text-charcoal mb-4">
-                        {faq.question}
-                      </dt>
-                      <dd className="font-serif text-base lg:text-lg leading-relaxed text-charcoal-soft max-w-prose">
+                      <summary className="flex items-start justify-between gap-6 py-6">
+                        <span className="font-serif text-lg lg:text-xl leading-snug tracking-tight text-charcoal group-hover:text-marine transition-colors">
+                          {faq.question}
+                        </span>
+                        <svg
+                          className="shrink-0 w-5 h-5 text-stone mt-1 transition-transform group-open:rotate-180"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          aria-hidden
+                        >
+                          <path
+                            d="M3 6 L8 11 L13 6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </summary>
+                      <p className="font-serif text-base lg:text-lg leading-relaxed text-charcoal-soft max-w-prose pb-6">
                         {faq.answer}
-                      </dd>
-                    </div>
+                      </p>
+                    </details>
                   ))}
-                </dl>
+                </div>
               </div>
             </div>
           </section>
