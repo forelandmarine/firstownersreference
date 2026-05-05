@@ -267,7 +267,8 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Erica Lay | 7 | Confirmed, integrated as Q&A | 2026-05-05 | Sign-off accepted; published |
 | Toby Brand | - | Declined | 2026-05-05 | Replaced on chapter 8 by Ella Johnstone |
 | Ella Johnstone | 7 | To approach | - | Warm via Foreland captain network / Baltic Yachts; Captain of S/Y Liara (Baltic 112); chapter 8 |
-| Sam Forbes | 7 | To approach | - | Captain of 33 metre Nautor Swan; chapter 1; boat name redacted from publication; credit as "Captain, sailing yacht" unless directs otherwise |
+| Richard Masters | 2 | To approach | - | Master Yachts (yacht management + new build representation); chapter 1 lead candidate; possible secondary on chapter 5; conflict disclosure required |
+| Sam Forbes | 7 | To approach | - | Captain of 33 metre Nautor Swan; moved from chapter 1 lead to chapter 8 sidebar alongside Ella Johnstone; boat name redacted |
 | (others) | - | Pending | - | Per approach order |
 
 Update this table as outreach progresses.

@@ -24,7 +24,7 @@ export const sections: Section[] = [
     coordinates: "39.5696°N 2.6502°E",
     hero: "/images/stock/overwater-deck.jpg",
     contributor: "To be confirmed",
-    contributorRole: "Charter management CEO",
+    contributorRole: "Yacht management head",
     seoTitle: "Superyacht running costs and the 10 percent rule",
     seoDescription:
       "Annual running costs, the folkloric 10 percent rule, depreciation reality, and the charter delusion. What the first three years of superyacht ownership actually cost. Sourced from Knight Frank, BOAT International, Quay Crew, and aggregated practitioner data.",
