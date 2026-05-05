@@ -194,8 +194,12 @@ export default async function SectionPage(props: {
               <p className="meta text-charcoal">
                 {essay?.readingTime ?? "Forthcoming"}
               </p>
-              <p className="meta">Author</p>
-              <p className="meta text-charcoal">Foreland Marine</p>
+              <p className="meta">Contributor</p>
+              <p className="meta text-charcoal">
+                {section.contributor === "To be confirmed"
+                  ? "Forthcoming"
+                  : section.contributor}
+              </p>
             </div>
           </div>
         </section>
