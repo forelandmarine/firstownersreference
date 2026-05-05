@@ -535,54 +535,56 @@ export default async function SectionPage(props: {
                 <p className="meta">Terms used</p>
               </div>
               <div className="lg:col-span-8 lg:col-start-4">
-                <h2 className="font-serif font-light text-3xl lg:text-4xl leading-tight tracking-tight text-charcoal mb-10">
-                  Glossary terms in this chapter
-                </h2>
-                <div className="space-y-2">
-                  {chapterGlossary.map((entry) => (
-                    <details
-                      key={entry.slug}
-                      className="group border-t border-rule"
+                <details className="group">
+                  <summary className="flex items-center justify-between gap-6 mb-2">
+                    <h2 className="font-serif font-light text-3xl lg:text-4xl leading-tight tracking-tight text-charcoal group-hover:text-marine transition-colors">
+                      Glossary terms in this chapter
+                    </h2>
+                    <svg
+                      className="shrink-0 w-6 h-6 text-stone transition-transform group-open:rotate-180"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      aria-hidden
                     >
-                      <summary className="flex items-center justify-between gap-4 py-4">
-                        <span className="font-serif text-lg lg:text-xl text-charcoal group-hover:text-marine transition-colors">
-                          {entry.term}
-                        </span>
-                        <svg
-                          className="shrink-0 w-4 h-4 text-stone transition-transform group-open:rotate-180"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          aria-hidden
-                        >
-                          <path
-                            d="M3 6 L8 11 L13 6"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </summary>
-                      <div className="pb-6 max-w-prose">
-                        <p className="caption mb-4">
-                          {entry.shortDefinition}
-                        </p>
+                      <path
+                        d="M3 6 L8 11 L13 6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </summary>
+                  <p className="meta mt-2 mb-10">
+                    {chapterGlossary.length} terms
+                  </p>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+                    {chapterGlossary.map((entry) => (
+                      <li
+                        key={entry.slug}
+                        className="border-t border-rule pt-4"
+                      >
                         <Link
                           href={`/glossary/${entry.slug}`}
-                          className="meta-marine inline-flex items-center gap-2"
+                          className="block group/term"
                         >
-                          Read in full <span aria-hidden>&rarr;</span>
+                          <p className="font-serif text-xl text-charcoal group-hover/term:text-marine transition-colors mb-1">
+                            {entry.term}
+                          </p>
+                          <p className="caption max-w-prose">
+                            {entry.shortDefinition}
+                          </p>
                         </Link>
-                      </div>
-                    </details>
-                  ))}
-                </div>
-                <Link
-                  href="/glossary"
-                  className="meta-marine inline-flex items-center gap-2 mt-10"
-                >
-                  Open the full glossary <span aria-hidden>&rarr;</span>
-                </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="/glossary"
+                    className="meta-marine inline-flex items-center gap-2 mt-10"
+                  >
+                    Open the full glossary <span aria-hidden>&rarr;</span>
+                  </Link>
+                </details>
               </div>
             </div>
           </section>
@@ -601,40 +603,45 @@ export default async function SectionPage(props: {
                 <p className="meta">FAQ</p>
               </div>
               <div className="lg:col-span-8 lg:col-start-4">
-                <h2 className="font-serif font-light text-headline lg:text-[2.5rem] leading-tight tracking-tight text-charcoal mb-12 max-w-3xl">
-                  Frequently asked
-                </h2>
-                <div className="space-y-2">
-                  {faqs.map((faq, i) => (
-                    <details
-                      key={i}
-                      className="group border-t border-rule"
+                <details className="group">
+                  <summary className="flex items-center justify-between gap-6 mb-2 max-w-3xl">
+                    <h2 className="font-serif font-light text-headline lg:text-[2.5rem] leading-tight tracking-tight text-charcoal group-hover:text-marine transition-colors">
+                      Frequently asked
+                    </h2>
+                    <svg
+                      className="shrink-0 w-6 h-6 text-stone transition-transform group-open:rotate-180"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      aria-hidden
                     >
-                      <summary className="flex items-start justify-between gap-6 py-6">
-                        <span className="font-serif text-lg lg:text-xl leading-snug tracking-tight text-charcoal group-hover:text-marine transition-colors">
+                      <path
+                        d="M3 6 L8 11 L13 6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </summary>
+                  <p className="meta mt-2 mb-12">
+                    {faqs.length} questions
+                  </p>
+                  <dl className="space-y-10">
+                    {faqs.map((faq, i) => (
+                      <div
+                        key={i}
+                        className="border-t border-rule pt-6"
+                      >
+                        <dt className="font-serif text-xl lg:text-2xl leading-snug tracking-tight text-charcoal mb-4">
                           {faq.question}
-                        </span>
-                        <svg
-                          className="shrink-0 w-5 h-5 text-stone mt-1 transition-transform group-open:rotate-180"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          aria-hidden
-                        >
-                          <path
-                            d="M3 6 L8 11 L13 6"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </summary>
-                      <p className="font-serif text-base lg:text-lg leading-relaxed text-charcoal-soft max-w-prose pb-6">
-                        {faq.answer}
-                      </p>
-                    </details>
-                  ))}
-                </div>
+                        </dt>
+                        <dd className="font-serif text-base lg:text-lg leading-relaxed text-charcoal-soft max-w-prose">
+                          {faq.answer}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </details>
               </div>
             </div>
           </section>
