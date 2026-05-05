@@ -982,7 +982,8 @@ export const dataSpreads: Record<string, DataSpread> = {
           ["80 m and above", "16,000 to 23,000"],
           ["100 to 119 m", "Over 25,000"],
         ],
-        sourceLine: "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey.",
+        sourceLine:
+          "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey; Erica Lay (EL Crew Co) on senior-captain package premiums.",
       },
       { type: "chart", chartId: "captain-pay-by-size" },
       { type: "h2", text: "Crew structure, by yacht size" },
@@ -995,7 +996,8 @@ export const dataSpreads: Record<string, DataSpread> = {
           { label: "60 to 70 m", value: "18 to 25 crew" },
           { label: "80 m and above", value: "25 to 35 crew" },
         ],
-        sourceLine: "Practitioner standard staffing; YPI Crew, Quay Crew commentary.",
+        sourceLine:
+          "Practitioner standard staffing; YPI Crew, Quay Crew commentary; Erica Lay (EL Crew Co) on senior-crew specialism and rotation expectations.",
       },
       { type: "h2", text: "Compliance cost on a 40 m yacht" },
       {
@@ -1167,6 +1169,10 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Quay Crew 2025 captain survey",
         line: "Time-for-time rotation share; year-on-year pay growth in 70 to 79 m bracket.",
+      },
+      {
+        label: "Erica Lay (EL Crew Co, Mallorca)",
+        line: "Recruitment-side reading on senior-captain package premiums above guide rates, rotation as price of entry to the senior-crew market, junior-crew expectation gap, and inconsistency from the top as the most common cause of turnover. Places crew across the over-24 metre fleet.",
       },
       {
         label: "Pantaenius (Michelle van der Merwe)",
