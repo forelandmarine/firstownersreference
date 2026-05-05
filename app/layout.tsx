@@ -70,6 +70,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=2", sizes: "any", type: "image/x-icon" },
+      { url: "/icon.svg?v=2", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-icon.svg?v=2", type: "image/svg+xml" }],
+    shortcut: ["/favicon.ico?v=2"],
+  },
 };
 
 export default function RootLayout({
