@@ -36,7 +36,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "The First Owner's Reference — A yachting field manual for first-time superyacht buyers",
+      "The First Owner's Reference | A yachting field manual",
     template: "%s | The First Owner's Reference",
   },
   description:

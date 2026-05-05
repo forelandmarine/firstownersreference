@@ -28,7 +28,7 @@ export async function generateMetadata(props: {
   if (!entry) return {};
   const url = `${SITE_URL}/glossary/${slug}`;
   return {
-    title: `${entry.term} — Yacht industry definition`,
+    title: `${entry.term} | Yacht industry definition`,
     description: entry.shortDefinition,
     alternates: { canonical: url },
     openGraph: {
