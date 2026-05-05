@@ -426,7 +426,7 @@ export default async function SectionPage(props: {
                   <p className="meta-marine">
                     Chapter {section.number} &middot; Guest opinion
                   </p>
-                  <p className="meta">By</p>
+                  <p className="meta">In conversation with</p>
                   <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal">
                     {guestOpinion.contributor}
                   </p>
@@ -434,22 +434,38 @@ export default async function SectionPage(props: {
                 </div>
               </div>
               <div className="lg:col-span-8 lg:col-start-4">
-                <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
-                  {guestOpinion.title}
-                </h2>
-                <p className="font-serif italic text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl mb-12">
-                  {guestOpinion.standfirst}
-                </p>
-                <div className="prose-body max-w-prose">
-                  {guestOpinion.paragraphs.map((p, i) => (
-                    <p key={i}>{p}</p>
+                {guestOpinion.intro && (
+                  <p className="font-serif italic text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl mb-16">
+                    {guestOpinion.intro}
+                  </p>
+                )}
+                <div className="space-y-12">
+                  {guestOpinion.questions.map((qa, i) => (
+                    <div
+                      key={i}
+                      className="border-t border-rule pt-8 first:border-t-0 first:pt-0"
+                    >
+                      <div className="flex gap-6 mb-6">
+                        <span className="meta-marine shrink-0 pt-1">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <p className="font-serif text-xl lg:text-2xl leading-snug tracking-tight text-charcoal max-w-2xl">
+                          {qa.question}
+                        </p>
+                      </div>
+                      <div className="prose-body max-w-prose pl-12">
+                        {qa.answer.map((para, j) => (
+                          <p key={j}>{para}</p>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
-                {guestOpinion.pullQuote && (
-                  <blockquote className="prose-body my-10">
-                    {guestOpinion.pullQuote}
-                  </blockquote>
-                )}
+                <p className="meta mt-16 pt-6 border-t border-charcoal max-w-prose">
+                  Answers given by {guestOpinion.contributor},{" "}
+                  {guestOpinion.contributorRole}. Lightly edited for typography
+                  and approved by the contributor before publication.
+                </p>
               </div>
             </div>
           </section>
