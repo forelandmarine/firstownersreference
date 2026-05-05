@@ -65,9 +65,10 @@ export default function ColophonPage() {
               anecdotal numbers do not appear.
             </p>
             <p>
-              Every guest contributor is paid a flat editorial fee, named
-              transparently. Every commercial relationship is disclosed
-              alongside the piece. Where there is none, that is stated.
+              Every guest contribution is given voluntarily and named
+              transparently. No contributor is paid by The First Owner&rsquo;s
+              Reference. Every commercial relationship is disclosed alongside
+              the piece. Where there is none, that is stated.
             </p>
 
             <h2>Type</h2>

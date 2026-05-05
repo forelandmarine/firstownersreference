@@ -59,10 +59,11 @@ export default function ContributorsPage() {
         <section className="max-w-[80rem] mx-auto px-6 lg:px-12 py-20 lg:py-24">
           <div className="rule-marine pt-4 mb-16 max-w-2xl">
             <p className="caption">
-              Disclosure: every contributor is paid a flat editorial fee for
-              their piece. None hold a commercial relationship with Foreland
-              Marine. Where any past relationship exists, it is disclosed
-              alongside the piece itself.
+              Disclosure: every contribution is given voluntarily. No
+              contributor is paid by The First Owner&rsquo;s Reference, and
+              none holds a commercial relationship with Foreland Marine.
+              Where any past relationship exists, it is disclosed alongside
+              the piece itself.
             </p>
           </div>
 

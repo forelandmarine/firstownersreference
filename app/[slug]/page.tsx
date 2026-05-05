@@ -17,6 +17,7 @@ import { getDataSpread } from "@/lib/data-spreads";
 import { getCase } from "@/lib/cases";
 import { getChecklist } from "@/lib/checklists";
 import { getChapterFaqs } from "@/lib/faqs";
+import { getGuestOpinion } from "@/lib/guest-opinions";
 import { glossaryEntries } from "@/lib/glossary";
 import {
   articleSchema,
@@ -91,6 +92,7 @@ export default async function SectionPage(props: {
   const caseStudy = getCase(slug);
   const checklist = getChecklist(slug);
   const faqs = getChapterFaqs(slug);
+  const guestOpinion = getGuestOpinion(slug);
   const chapterGlossary = glossaryEntries.filter((entry) =>
     entry.relatedChapters?.includes(slug)
   );
@@ -102,6 +104,7 @@ export default async function SectionPage(props: {
   const stripSections: { id: string; label: string; href?: string }[] = [
     { id: "essay", label: "Essay" },
     ...(dataSpread ? [{ id: "data-spread", label: "Data" }] : []),
+    ...(guestOpinion ? [{ id: "guest-opinion", label: "Opinion" }] : []),
     ...(caseStudy ? [{ id: "case", label: "Case", href: `/${section.slug}/case` }] : []),
     ...(checklist ? [{ id: "checklist", label: "Checklist" }] : []),
     ...(chapterGlossary.length ? [{ id: "terms", label: "Terms" }] : []),
@@ -231,8 +234,21 @@ export default async function SectionPage(props: {
                           <>Data spread</>
                         )}
                       </li>
-                      <li className="opacity-60">
-                        <span className="mr-1">3</span> Guest opinion
+                      <li className={guestOpinion ? "" : "opacity-60"}>
+                        <span
+                          className={
+                            guestOpinion ? "meta-marine mr-1" : "mr-1"
+                          }
+                        >
+                          3
+                        </span>{" "}
+                        {guestOpinion ? (
+                          <a href="#guest-opinion" className="link">
+                            Guest opinion
+                          </a>
+                        ) : (
+                          <>Guest opinion</>
+                        )}
                       </li>
                       <li className={caseStudy ? "" : "opacity-60"}>
                         <span
@@ -394,6 +410,46 @@ export default async function SectionPage(props: {
                 <div className="lg:col-span-8 lg:col-start-3">
                   <DataSpreadBody spread={dataSpread} />
                 </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {guestOpinion && (
+          <section
+            id="guest-opinion"
+            className="bg-paper py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-3">
+                <div className="lg:sticky lg:top-32 space-y-3">
+                  <p className="meta-marine">
+                    Chapter {section.number} &middot; Guest opinion
+                  </p>
+                  <p className="meta">By</p>
+                  <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal">
+                    {guestOpinion.contributor}
+                  </p>
+                  <p className="caption">{guestOpinion.contributorRole}</p>
+                </div>
+              </div>
+              <div className="lg:col-span-8 lg:col-start-4">
+                <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
+                  {guestOpinion.title}
+                </h2>
+                <p className="font-serif italic text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl mb-12">
+                  {guestOpinion.standfirst}
+                </p>
+                <div className="prose-body max-w-prose">
+                  {guestOpinion.paragraphs.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+                {guestOpinion.pullQuote && (
+                  <blockquote className="prose-body my-10">
+                    {guestOpinion.pullQuote}
+                  </blockquote>
+                )}
               </div>
             </div>
           </section>
