@@ -1441,9 +1441,9 @@ export const dataSpreads: Record<string, DataSpread> = {
               "New alloy sailing yacht range designed by Malcolm McKeon Yacht Design; Edmiston Newport, Rhode Island, as the operational hub.",
           },
           {
-            label: "Tom Cruise commission, Swan 108, ordered February 2025",
+            label: "33 metre Nautor Swan commission, ordered February 2025",
             value:
-              "33 metre carbon-fibre sailing yacht under construction at Nautor Swan, Jakobstad, Finland; estimated total cost above USD 30 million.",
+              "33 metre carbon-fibre racing-capable sailing yacht under construction at Nautor Swan, Jakobstad, Finland; estimated total cost above USD 30 million.",
           },
           {
             label: "MMYD-designed Feadship 830 \u201cProject Solent\u201d",
