@@ -17,7 +17,7 @@ export const guestOpinions: Record<string, GuestOpinion> = {
     contributor: "Erica Lay",
     contributorRole: "Crew recruitment specialist, EL Crew Co",
     intro:
-      "EL Crew Co operates from Mallorca and places senior and junior crew across the over-30 metre fleet. We put five questions to Erica Lay on the senior captain market, rotation, junior crew dynamics, retention, and the first-time owner's captain hire. Her answers are published as given, lightly edited for typography.",
+      "EL Crew Co operates from Mallorca and places senior and junior crew across the over-24 metre fleet. We put five questions to Erica Lay on the senior captain market, rotation, junior crew dynamics, retention, and the first-time owner's captain hire. Her answers are published as given, lightly edited for typography.",
     questions: [
       {
         question:
