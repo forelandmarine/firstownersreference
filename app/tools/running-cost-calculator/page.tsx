@@ -996,25 +996,42 @@ export default function RunningCostCalculatorPage() {
       <section className="bg-paper-deep py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
           <SectionLabel>Frequently asked questions</SectionLabel>
-          <h2 className="font-serif font-light text-headline tracking-tight mb-10 text-charcoal">
-            Common questions about superyacht running costs
-          </h2>
-
-          <div className="space-y-8">
-            {faqData.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="font-serif text-lg text-charcoal mb-3">
-                  {faq.question}
-                </h3>
-                <p className="caption leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-
-          <p className="meta mt-10">
-            Last updated 2026. Figures based on current market data and
-            Foreland Marine operational experience.
-          </p>
+          <details className="group">
+            <summary className="flex items-center justify-between gap-6 mb-2">
+              <h2 className="font-serif font-light text-headline tracking-tight text-charcoal group-hover:text-marine transition-colors">
+                Common questions about superyacht running costs
+              </h2>
+              <svg
+                className="shrink-0 w-6 h-6 text-stone transition-transform group-open:rotate-180"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                aria-hidden
+              >
+                <path
+                  d="M3 6 L8 11 L13 6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </summary>
+            <p className="meta mt-2 mb-10">{faqData.length} questions</p>
+            <div className="space-y-8">
+              {faqData.map((faq) => (
+                <div key={faq.question}>
+                  <h3 className="font-serif text-lg text-charcoal mb-3">
+                    {faq.question}
+                  </h3>
+                  <p className="caption leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+            <p className="meta mt-10">
+              Last updated 2026. Figures based on current market data and
+              Foreland Marine operational experience.
+            </p>
+          </details>
         </div>
       </section>
 
