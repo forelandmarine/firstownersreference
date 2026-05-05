@@ -183,10 +183,12 @@ Working document. Updated as outreach progresses. Approach order at the foot of 
 - **Sections:** 07.
 - **Brief:** Hardening-then-stabilising market.
 
-### A senior captain (40m+, 15 years tenure, currently in post)
-- **Approach:** Off the record likely; on the record possible if anonymised.
-- **Sections:** 03, 07.
+### Pavlos Filippakis
+- **Role:** Master Mariner, Class I (unlimited), with STCW Polar Code endorsement (ice class).
+- **Why:** Captain voice for chapters 03 and 07. Chapter 03's "captain's loyalty problem" thesis (broker introductions, retrocession economics, captain career incentives) and chapter 07's captain-hire framework benefit materially from a named master mariner on the record. Polar Code endorsement adds high-latitude operational depth as sidebar support to chapter 04 (cruising-area and flag implications) and chapter 08 (the explorer / expedition third path beyond motor and sail).
 - **Approach:** Warm via Foreland's captain network.
+- **Sections:** 03 (anchor on captain's-vantage industry conflicts), 07 (anchor on captain hire and crew dynamics). Sidebar support to 04 (sea-trial and acquisition discipline) and 08 (explorer / high-latitude angle).
+- **Status:** To approach. On-the-record naming preferred for the operational frame in chapter 07; anonymisation acceptable for chapter 03's commercial-conflict material if Pavlos prefers it on those passages.
 
 ### Jo Assael
 - **Role:** Commercial Director, International Registries Inc. (IRI / Marshall Islands Registry); Ambassador, British Superyacht
@@ -243,7 +245,7 @@ Working document. Updated as outreach progresses. Approach order at the foot of 
 2. **Week 2.** Jack Inglis (cold). Dominique Gruber (cold). Kevin Laverty (cold via Hill Robinson).
 3. **Week 3.** Stephenson Harwood (Stefou, dal Maso, or Gibbons). HFW (Sayegh).
 4. **Week 4.** Mike Carr (Pendennis). Tony Gale (ICON).
-5. **Week 5.** A senior captain (warm via Foreland network). Anonymous family office principal (warm via existing client base).
+5. **Week 5.** Pavlos Filippakis (warm via Foreland's captain network). Anonymous family office principal (warm via existing client base).
 6. **Week 6.** Pantaenius (van der Merwe). A senior surveyor (warm via Foreland network). Jo Assael (cold via IRI London).
 7. **Week 7.** Espen Oeino. Occam (cold).
 8. **Week 8.** Reserve for follow-ups, second-call confirmations, and any wider-circle introductions surfaced through the first batch.
@@ -261,6 +263,7 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Dominique Gruber | 4 | Pending | - | Cold via Megayacht News |
 | Kevin Laverty | 3 | Pending | - | Cold via Hill Robinson |
 | Jo Assael | 7 | Pending | - | Cold via IRI London |
+| Pavlos Filippakis | 7 | Pending | - | Warm via Foreland captain network |
 | (others) | - | Pending | - | Per approach order |
 
 Update this table as outreach progresses.
