@@ -8,25 +8,28 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contributors",
   description:
-    "Named external contributors to 1st Edition of The First Owner's Reference. Yacht lawyers, surveyors, yard CEOs, captains, family office principals. Each transparent on commercial relationships.",
+    "Named external contributors to the 1st Edition of The First Owner's Reference. Each transparent on commercial relationships.",
   alternates: {
     canonical: "https://firstownersreference.com/contributors",
   },
   openGraph: {
     title: "Contributors | The First Owner's Reference",
     description:
-      "Named external contributors to 1st Edition. Each transparent on commercial relationships.",
+      "Named external contributors to the 1st Edition. Each transparent on commercial relationships.",
     url: "https://firstownersreference.com/contributors",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Contributors",
-    description: "Named external contributors to 1st Edition.",
+    description: "Named external contributors to the 1st Edition.",
   },
 };
 
 export default function ContributorsPage() {
+  const confirmed = sections.filter((s) => s.contributor !== "To be confirmed");
+  const forthcoming = sections.filter((s) => s.contributor === "To be confirmed");
+
   return (
     <>
       <SiteHeader />
@@ -42,12 +45,13 @@ export default function ContributorsPage() {
               <span>Contributors</span>
             </div>
             <h1 className="font-serif font-light text-headline lg:text-display leading-[1.05] tracking-tight max-w-3xl">
-              Eight guest contributors. Each transparent on commercial relationships.
+              Confirmed contributors. Each transparent on commercial relationships.
             </h1>
             <p className="font-serif italic text-xl lg:text-2xl text-charcoal-soft mt-8 max-w-2xl">
-              The First Owner’s Reference is collaborative by design. Every chapter carries
-              an opinion piece by a named external contributor with deep
-              first-hand knowledge of the topic.
+              The First Owner&rsquo;s Reference is collaborative by design. Each chapter is
+              anchored by a named external contributor with deep first-hand
+              knowledge of the topic. Outreach is ongoing for the
+              remaining slots; this page is updated as contributors confirm.
             </p>
           </div>
         </header>
@@ -63,7 +67,7 @@ export default function ContributorsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-            {sections.map((s) => (
+            {confirmed.map((s) => (
               <div key={s.slug} className="border-t border-charcoal pt-6">
                 <p className="meta mb-3">
                   Chapter {s.number} &middot; {s.title}
@@ -72,19 +76,35 @@ export default function ContributorsPage() {
                   {s.contributor}
                 </p>
                 <p className="caption mb-6">{s.contributorRole}</p>
-                <p className="caption max-w-md">
-                  Bio and headshot to be added once contributor confirms.
-                  Editorial outreach in progress.
-                </p>
                 <Link
                   href={`/${s.slug}`}
-                  className="inline-block mt-6 meta-marine"
+                  className="inline-block mt-2 meta-marine"
                 >
                   Read chapter &rarr;
                 </Link>
               </div>
             ))}
           </div>
+
+          {forthcoming.length > 0 && (
+            <div className="mt-24 border-t border-charcoal pt-10">
+              <p className="meta-marine mb-4">Forthcoming</p>
+              <p className="caption max-w-2xl mb-8">
+                Outreach is in progress on the remaining {forthcoming.length} chapters. Names
+                are added here only on confirmation.
+              </p>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 max-w-3xl">
+                {forthcoming.map((s) => (
+                  <li key={s.slug} className="caption">
+                    <span className="meta-marine mr-2">
+                      {s.number}
+                    </span>
+                    {s.title}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div className="mt-20 border-t border-charcoal pt-10 max-w-2xl">
             <p className="meta-marine mb-4">Propose a contribution</p>
