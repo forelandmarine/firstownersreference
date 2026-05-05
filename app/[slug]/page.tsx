@@ -103,8 +103,8 @@ export default async function SectionPage(props: {
 
   const stripSections: { id: string; label: string; href?: string }[] = [
     { id: "essay", label: "Essay" },
-    ...(dataSpread ? [{ id: "data-spread", label: "Data" }] : []),
     ...(guestOpinion ? [{ id: "guest-opinion", label: "Opinion" }] : []),
+    ...(dataSpread ? [{ id: "data-spread", label: "Data" }] : []),
     ...(caseStudy ? [{ id: "case", label: "Case", href: `/${section.slug}/case` }] : []),
     ...(checklist ? [{ id: "checklist", label: "Checklist" }] : []),
     ...(chapterGlossary.length ? [{ id: "terms", label: "Terms" }] : []),
@@ -222,29 +222,13 @@ export default async function SectionPage(props: {
                           <span className="meta-marine mr-1">1</span> Lead essay
                         </a>
                       </li>
-                      <li className={dataSpread ? "" : "opacity-60"}>
-                        <span
-                          className={
-                            dataSpread ? "meta-marine mr-1" : "mr-1"
-                          }
-                        >
-                          2
-                        </span>{" "}
-                        {dataSpread ? (
-                          <a href="#data-spread" className="link">
-                            Data spread
-                          </a>
-                        ) : (
-                          <>Data spread</>
-                        )}
-                      </li>
                       <li className={guestOpinion ? "" : "opacity-60"}>
                         <span
                           className={
                             guestOpinion ? "meta-marine mr-1" : "mr-1"
                           }
                         >
-                          3
+                          2
                         </span>{" "}
                         {guestOpinion ? (
                           <a href="#guest-opinion" className="link">
@@ -252,6 +236,22 @@ export default async function SectionPage(props: {
                           </a>
                         ) : (
                           <>Guest opinion</>
+                        )}
+                      </li>
+                      <li className={dataSpread ? "" : "opacity-60"}>
+                        <span
+                          className={
+                            dataSpread ? "meta-marine mr-1" : "mr-1"
+                          }
+                        >
+                          3
+                        </span>{" "}
+                        {dataSpread ? (
+                          <a href="#data-spread" className="link">
+                            Data spread
+                          </a>
+                        ) : (
+                          <>Data spread</>
                         )}
                       </li>
                       <li className={caseStudy ? "" : "opacity-60"}>
@@ -391,34 +391,6 @@ export default async function SectionPage(props: {
           </section>
         )}
 
-        {dataSpread && (
-          <section
-            id="data-spread"
-            className="bg-paper-deep py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
-          >
-            <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-              <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
-                <div className="lg:col-span-8 lg:col-start-3">
-                  <p className="meta-marine mb-4">
-                    Chapter {section.number} &middot; Data spread
-                  </p>
-                  <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
-                    {dataSpread.title}
-                  </h2>
-                  <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl">
-                    {dataSpread.standfirst}
-                  </p>
-                </div>
-              </header>
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <div className="lg:col-span-8 lg:col-start-3">
-                  <DataSpreadBody spread={dataSpread} />
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
         {guestOpinion && (
           <section
             id="guest-opinion"
@@ -470,6 +442,34 @@ export default async function SectionPage(props: {
                   {guestOpinion.contributorRole}. Lightly edited for typography
                   and approved by the contributor before publication.
                 </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {dataSpread && (
+          <section
+            id="data-spread"
+            className="bg-paper-deep py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+              <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+                <div className="lg:col-span-8 lg:col-start-3">
+                  <p className="meta-marine mb-4">
+                    Chapter {section.number} &middot; Data spread
+                  </p>
+                  <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
+                    {dataSpread.title}
+                  </h2>
+                  <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-2xl">
+                    {dataSpread.standfirst}
+                  </p>
+                </div>
+              </header>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div className="lg:col-span-8 lg:col-start-3">
+                  <DataSpreadBody spread={dataSpread} />
+                </div>
               </div>
             </div>
           </section>
