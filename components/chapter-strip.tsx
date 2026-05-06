@@ -69,15 +69,20 @@ export function ChapterStrip({
       }`}
       style={{ top: "var(--header-h, 50px)" }}
     >
-      <div
-        ref={scrollerRef}
-        className="px-6 py-2.5 flex items-baseline gap-3 overflow-x-auto scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-      >
-        <span className="meta-marine shrink-0">Ch&nbsp;{number}</span>
-        <span className="font-serif text-sm text-charcoal-soft shrink-0 truncate max-w-[40%]">
-          {title}
-        </span>
-        <nav className="flex items-baseline gap-4 shrink-0 ml-auto pr-2">
+      <div className="px-6 pt-2 pb-2.5 space-y-1.5">
+        {/* Chapter context — always fully visible */}
+        <div className="flex items-baseline gap-3">
+          <span className="meta-marine shrink-0">Ch&nbsp;{number}</span>
+          <span className="font-serif text-sm text-charcoal-soft leading-snug">
+            {title}
+          </span>
+        </div>
+
+        {/* Section nav — scrolls horizontally, auto-centres active label */}
+        <nav
+          ref={scrollerRef}
+          className="-mx-6 px-6 pb-1 flex items-baseline gap-5 overflow-x-auto scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+        >
           {sections.map((s) => {
             const isActive = !s.href && activeId === s.id;
             return (
@@ -97,7 +102,7 @@ export function ChapterStrip({
                 {s.label}
                 <span
                   aria-hidden
-                  className={`absolute left-0 right-0 -bottom-1.5 h-px bg-marine transition-opacity duration-200 ${
+                  className={`absolute left-0 right-0 -bottom-1 h-px bg-marine transition-opacity duration-200 ${
                     isActive ? "opacity-100" : "opacity-0"
                   }`}
                 />
