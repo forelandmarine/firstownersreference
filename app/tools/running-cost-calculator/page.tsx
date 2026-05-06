@@ -682,12 +682,12 @@ export default function RunningCostCalculatorPage() {
           <p className="meta text-paper/80 mb-6">
             A tool from The First Owner&rsquo;s Reference
           </p>
-          <h1 className="font-serif font-light text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.05] tracking-tight max-w-3xl mb-8">
+          <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.1] tracking-tight max-w-3xl mb-8">
             What does it actually cost
             <br />
             to run a superyacht?
           </h1>
-          <p className="font-serif text-xl lg:text-2xl leading-relaxed text-paper/85 max-w-2xl">
+          <p className="font-serif text-lg sm:text-xl lg:text-2xl leading-relaxed text-paper/85 max-w-2xl">
             Ownership is more than the purchase price. The calculator below
             produces a realistic annual running-cost estimate, broken down by
             category, against named source assumptions.

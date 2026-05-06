@@ -26,7 +26,7 @@ function renderBlock(block: DataSpreadBlock, key: number) {
     return (
       <p
         key={key}
-        className="font-serif text-lg leading-relaxed text-charcoal-soft max-w-prose"
+        className="font-serif text-base sm:text-lg leading-relaxed text-charcoal-soft max-w-prose"
       >
         {block.text}
       </p>
