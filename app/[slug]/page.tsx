@@ -174,7 +174,7 @@ export default async function SectionPage(props: {
               <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-xl">
                 {section.title}
               </h1>
-              <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-xl">
+              <p className="font-serif text-lg sm:text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-xl">
                 {section.standfirst}
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
@@ -187,20 +187,26 @@ export default async function SectionPage(props: {
                 <ShareChapter title={section.title} slug={section.slug} />
               </div>
             </div>
-            <div className="mt-12 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-2">
-              <p className="meta">Coordinates</p>
-              <p className="meta-marine">{section.coordinates}</p>
-              <p className="meta">Reading time</p>
-              <p className="meta text-charcoal">
-                {essay?.readingTime ?? "Forthcoming"}
-              </p>
-              <p className="meta">Contributor</p>
-              <p className="meta text-charcoal">
-                {section.contributor === "To be confirmed"
-                  ? "Forthcoming"
-                  : section.contributor}
-              </p>
-            </div>
+            <dl className="mt-10 lg:mt-16 space-y-4 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-2">
+              <div className="flex items-baseline justify-between gap-6 border-t border-rule pt-4 lg:border-0 lg:pt-0 lg:contents">
+                <dt className="meta">Coordinates</dt>
+                <dd className="meta-marine text-right lg:text-left">{section.coordinates}</dd>
+              </div>
+              <div className="flex items-baseline justify-between gap-6 border-t border-rule pt-4 lg:border-0 lg:pt-0 lg:contents">
+                <dt className="meta">Reading time</dt>
+                <dd className="meta text-charcoal text-right lg:text-left">
+                  {essay?.readingTime ?? "Forthcoming"}
+                </dd>
+              </div>
+              <div className="flex items-baseline justify-between gap-6 border-t border-rule pt-4 lg:border-0 lg:pt-0 lg:contents">
+                <dt className="meta">Contributor</dt>
+                <dd className="meta text-charcoal text-right lg:text-left">
+                  {section.contributor === "To be confirmed"
+                    ? "Forthcoming"
+                    : section.contributor}
+                </dd>
+              </div>
+            </dl>
           </div>
         </section>
 
