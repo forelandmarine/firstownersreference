@@ -216,7 +216,7 @@ export default async function SectionPage(props: {
             className="bg-paper py-20 lg:py-32 border-t border-rule scroll-mt-24"
           >
             <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
-              <div className="lg:col-span-2">
+              <div className="hidden lg:block lg:col-span-2">
                 <div className="lg:sticky lg:top-32 space-y-6">
                   <p className="meta">Chapter {section.number}</p>
                   <p className="meta-marine">{section.coordinates}</p>
