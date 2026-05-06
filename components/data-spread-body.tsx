@@ -47,7 +47,7 @@ function renderBlock(block: DataSpreadBlock, key: number) {
                 {block.head.map((h, hi) => (
                   <th
                     key={hi}
-                    className="meta text-charcoal text-left py-3 pr-6 font-normal"
+                    className="meta text-charcoal text-left py-3 pl-3 sm:pl-0 pr-3 sm:pr-6 font-normal"
                   >
                     {h}
                   </th>
@@ -60,10 +60,10 @@ function renderBlock(block: DataSpreadBlock, key: number) {
                   {row.map((cell, ci) => (
                     <td
                       key={ci}
-                      className={`py-5 pr-6 align-top ${
+                      className={`py-4 sm:py-5 pl-3 sm:pl-0 pr-3 sm:pr-6 align-top ${
                         ci === 0
-                          ? "font-serif text-base text-charcoal"
-                          : "font-sans text-sm text-charcoal-soft leading-relaxed"
+                          ? "font-serif text-sm sm:text-base text-charcoal"
+                          : "font-sans text-xs sm:text-sm text-charcoal-soft leading-relaxed"
                       }`}
                     >
                       {cell}
@@ -92,7 +92,7 @@ function renderBlock(block: DataSpreadBlock, key: number) {
           {block.rows.map((row, ri) => (
             <div
               key={ri}
-              className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8 py-5 border-b border-rule last:border-b-0 first:border-t first:border-charcoal"
+              className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-8 py-5 border-b border-rule last:border-b-0 first:border-t first:border-charcoal"
             >
               <dt className="md:col-span-5 font-serif text-base text-charcoal">
                 {row.label}
@@ -125,7 +125,11 @@ function renderBlock(block: DataSpreadBlock, key: number) {
   if (block.type === "chart") {
     const chart = getChart(block.chartId);
     if (!chart) return null;
-    return <div key={key}>{chart}</div>;
+    return (
+      <div key={key} className="-mx-6 sm:mx-0 overflow-x-auto px-6 sm:px-0">
+        <div className="min-w-[640px] sm:min-w-0">{chart}</div>
+      </div>
+    );
   }
   return null;
 }

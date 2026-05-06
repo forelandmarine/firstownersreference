@@ -101,7 +101,7 @@ export default function HomePage() {
             </h2>
             <p className="meta">1st Edition, 2026</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-10 gap-y-12 sm:gap-y-16">
             {sections.map((section) => (
               <SectionCard key={section.slug} section={section} />
             ))}
@@ -173,7 +173,7 @@ export default function HomePage() {
               Open the calculator &rarr;
             </Link>
           </div>
-          <div className="meta text-paper/60 grid grid-cols-2 gap-y-4 gap-x-8 lg:pl-12 lg:border-l lg:border-paper/20">
+          <div className="meta text-paper/60 grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-6 gap-x-8 lg:pl-12 lg:border-l lg:border-paper/20">
             <p>Yacht length</p>
             <p className="text-paper">24m to 60m</p>
             <p>Yacht type</p>

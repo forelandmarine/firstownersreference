@@ -171,7 +171,7 @@ export default async function SectionPage(props: {
                 1st Edition &middot; 2026 &middot; Chapter
               </p>
               <p className="numeral mb-8">{section.number}</p>
-              <h1 className="font-serif font-light text-headline lg:text-[3.5rem] leading-[1.05] tracking-tight text-charcoal mb-8 max-w-xl">
+              <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-xl">
                 {section.title}
               </h1>
               <p className="font-serif text-xl lg:text-2xl leading-relaxed text-charcoal-soft max-w-xl">
@@ -187,7 +187,7 @@ export default async function SectionPage(props: {
                 <ShareChapter title={section.title} slug={section.slug} />
               </div>
             </div>
-            <div className="mt-16 grid grid-cols-2 gap-x-8 gap-y-2">
+            <div className="mt-12 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-2">
               <p className="meta">Coordinates</p>
               <p className="meta-marine">{section.coordinates}</p>
               <p className="meta">Reading time</p>
