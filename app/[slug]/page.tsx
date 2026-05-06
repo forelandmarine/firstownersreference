@@ -217,75 +217,73 @@ export default async function SectionPage(props: {
                   <div className="rule pt-4 space-y-3">
                     <p className="meta">In this chapter</p>
                     <ol className="space-y-2 caption">
-                      <li>
-                        <a href="#essay" className="link">
-                          <span className="meta-marine mr-1">1</span> Lead essay
-                        </a>
-                      </li>
-                      <li className={guestOpinion ? "" : "opacity-60"}>
-                        <span
-                          className={
-                            guestOpinion ? "meta-marine mr-1" : "mr-1"
-                          }
+                      {[
+                        {
+                          id: "essay",
+                          label: "Lead essay",
+                          present: true,
+                          href: "#essay",
+                          internal: false,
+                        },
+                        ...(guestOpinion
+                          ? [
+                              {
+                                id: "guest-opinion",
+                                label: "Guest opinion",
+                                present: true,
+                                href: "#guest-opinion",
+                                internal: false,
+                              },
+                            ]
+                          : []),
+                        {
+                          id: "data-spread",
+                          label: "Data spread",
+                          present: !!dataSpread,
+                          href: "#data-spread",
+                          internal: false,
+                        },
+                        {
+                          id: "case",
+                          label: "Case material",
+                          present: !!caseStudy,
+                          href: `/${section.slug}/case`,
+                          internal: true,
+                        },
+                        {
+                          id: "checklist",
+                          label: "Checklist",
+                          present: !!checklist,
+                          href: "#checklist",
+                          internal: false,
+                        },
+                      ].map((item, i) => (
+                        <li
+                          key={item.id}
+                          className={item.present ? "" : "opacity-60"}
                         >
-                          2
-                        </span>{" "}
-                        {guestOpinion ? (
-                          <a href="#guest-opinion" className="link">
-                            Guest opinion
-                          </a>
-                        ) : (
-                          <>Guest opinion</>
-                        )}
-                      </li>
-                      <li className={dataSpread ? "" : "opacity-60"}>
-                        <span
-                          className={
-                            dataSpread ? "meta-marine mr-1" : "mr-1"
-                          }
-                        >
-                          3
-                        </span>{" "}
-                        {dataSpread ? (
-                          <a href="#data-spread" className="link">
-                            Data spread
-                          </a>
-                        ) : (
-                          <>Data spread</>
-                        )}
-                      </li>
-                      <li className={caseStudy ? "" : "opacity-60"}>
-                        <span
-                          className={
-                            caseStudy ? "meta-marine mr-1" : "mr-1"
-                          }
-                        >
-                          4
-                        </span>{" "}
-                        {caseStudy ? (
-                          <Link href={`/${section.slug}/case`} className="link">
-                            Case material
-                          </Link>
-                        ) : (
-                          <>Case material</>
-                        )}
-                      </li>
-                      <li className={checklist ? "" : "opacity-60"}>
-                        <span
-                          className={
-                            checklist ? "meta-marine mr-1" : "mr-1"
-                          }
-                        >
-                          5
-                        </span>{" "}
-                        {checklist ? (
-                          <a href="#checklist" className="link">
-                            Checklist
-                          </a>
-                        ) : (
-                          <>Checklist</>
-                        )}
-                      </li>
+                          <span
+                            className={
+                              item.present ? "meta-marine mr-1" : "mr-1"
+                            }
+                          >
+                            {i + 1}
+                          </span>{" "}
+                          {item.present ? (
+                            item.internal ? (
+                              <Link href={item.href} className="link">
+                                {item.label}
+                              </Link>
+                            ) : (
+                              <a href={item.href} className="link">
+                                {item.label}
+                              </a>
+                            )
+                          ) : (
+                            <>{item.label}</>
+                          )}
+                        </li>
+                      ))}
                     </ol>
                   </div>
                 </div>
