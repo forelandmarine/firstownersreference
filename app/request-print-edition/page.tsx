@@ -76,49 +76,75 @@ export default function PrintRequestPage() {
           </div>
 
           <div className="lg:col-span-7 lg:border-l lg:border-rule lg:pl-12">
-            <form className="space-y-8">
-              <FormField label="Name" required>
+            <p className="caption mb-8 border border-rule bg-paper-deep px-4 py-3">
+              Wireframe form. The production version will route to an editorial
+              inbox at the publication. Until then, write to{" "}
+              <a
+                href="mailto:editor@firstownersreference.com"
+                className="link-marine"
+              >
+                editor@firstownersreference.com
+              </a>
+              .
+            </p>
+            <form className="space-y-8" aria-disabled="true">
+              <FormField id="print-name" label="Name" required>
                 <input
+                  id="print-name"
                   type="text"
                   name="name"
-                  required
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine"
+                  disabled
+                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
                 />
               </FormField>
-              <FormField label="Role and organisation" required>
+              <FormField id="print-role" label="Role and organisation" required>
                 <input
+                  id="print-role"
                   type="text"
                   name="role"
-                  required
+                  disabled
                   placeholder="e.g. Family office principal, Acme Capital"
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine"
+                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
                 />
               </FormField>
-              <FormField label="Email" required>
+              <FormField id="print-email" label="Email" required>
                 <input
+                  id="print-email"
                   type="email"
                   name="email"
-                  required
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine"
+                  disabled
+                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
                 />
               </FormField>
-              <FormField label="Postal address" required>
+              <FormField id="print-address" label="Postal address" required>
                 <textarea
+                  id="print-address"
                   name="address"
-                  required
+                  disabled
                   rows={4}
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine"
+                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
                 />
               </FormField>
-              <FormField label="Why The First Owner’s Reference is useful to you" required>
+              <FormField
+                id="print-why"
+                label="Why The First Owner’s Reference is useful to you"
+                required
+              >
                 <textarea
+                  id="print-why"
                   name="why"
-                  required
+                  disabled
                   rows={5}
                   placeholder="A few sentences. We read every request."
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine"
+                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
                 />
               </FormField>
+              <p className="caption text-charcoal-soft">
+                Your details are used solely to send the print copy and to
+                reply to your request. They are not shared, sold, or used for
+                marketing. You may ask us to delete them at any time by writing
+                to the editorial address above.
+              </p>
               <button
                 type="submit"
                 disabled
@@ -126,10 +152,6 @@ export default function PrintRequestPage() {
               >
                 Submit request
               </button>
-              <p className="caption">
-                Wireframe form. The production version will route to an
-                editorial inbox at the publication.
-              </p>
             </form>
           </div>
         </section>
@@ -141,17 +163,19 @@ export default function PrintRequestPage() {
 }
 
 function FormField({
+  id,
   label,
   required,
   children,
 }: {
+  id: string;
   label: string;
   required?: boolean;
   children: React.ReactNode;
 }) {
   return (
     <div>
-      <label className="meta block mb-3">
+      <label htmlFor={id} className="meta block mb-3">
         {label}
         {required && <span className="text-marine ml-1">*</span>}
       </label>

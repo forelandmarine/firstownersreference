@@ -48,6 +48,16 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link href="/search" className="link">
+                Search
+              </Link>
+            </li>
+            <li>
+              <Link href="/request-print-edition" className="link">
+                Request print copy
+              </Link>
+            </li>
+            <li>
               <Link href="/colophon" className="link">
                 Colophon
               </Link>

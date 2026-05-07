@@ -96,11 +96,7 @@ export function RangeBars({
             </text>
             {isPoint ? (
               <circle cx={x1} cy={y} r={5} fill="#0f3b5c">
-                <title>
-                  {row.label}: {row.from}
-                  {unit}
-                  {row.note ? ` (${row.note})` : ""}
-                </title>
+                <title>{`${row.label}: ${row.from}${unit}${row.note ? ` (${row.note})` : ""}`}</title>
               </circle>
             ) : (
               <>
@@ -113,11 +109,7 @@ export function RangeBars({
                   strokeWidth={7}
                   strokeLinecap="round"
                 >
-                  <title>
-                    {row.label}: {row.from} to {row.to}
-                    {unit}
-                    {row.note ? ` (${row.note})` : ""}
-                  </title>
+                  <title>{`${row.label}: ${row.from} to ${row.to}${unit}${row.note ? ` (${row.note})` : ""}`}</title>
                 </line>
               </>
             )}

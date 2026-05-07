@@ -60,9 +60,7 @@ export function CompositionBar({
             stroke="#f5f2ec"
             strokeWidth={1}
           >
-            <title>
-              {seg.label}: {seg.display ?? `${seg.value}${unit}`}
-            </title>
+            <title>{`${seg.label}: ${seg.display ?? `${seg.value}${unit}`}`}</title>
           </rect>
           {seg.width > 64 && (
             <text

@@ -87,10 +87,7 @@ export function PairedStackedBars({
                     stroke="#f5f2ec"
                     strokeWidth={1}
                   >
-                    <title>
-                      {group.label} \u2014 {seg.label}: {seg.value}
-                      {unit}
-                    </title>
+                    <title>{`${group.label}, ${seg.label}: ${seg.value}${unit}`}</title>
                   </rect>
                   {w > 60 && (
                     <text

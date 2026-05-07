@@ -117,9 +117,7 @@ export function ComparisonBars({
               height={barH}
               fill={fill}
             >
-              <title>
-                {row.label}: {row.display ?? `${row.value}${unit}`}
-              </title>
+              <title>{`${row.label}: ${row.display ?? `${row.value}${unit}`}`}</title>
             </rect>
             <text
               x={plotRight + 12}

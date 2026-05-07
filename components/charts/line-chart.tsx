@@ -141,11 +141,7 @@ export function LineChart({
               r={3}
               fill={s.emphasis ? "#0f3b5c" : "#1a1a1a"}
             >
-              <title>
-                {s.name}: {p.x}
-                {xUnit}, {p.y}
-                {yUnit}
-              </title>
+              <title>{`${s.name}: ${p.x}${xUnit}, ${p.y}${yUnit}`}</title>
             </circle>
           ))}
           {s.values.length > 0 && (

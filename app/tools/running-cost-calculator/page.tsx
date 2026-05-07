@@ -676,7 +676,7 @@ export default function RunningCostCalculatorPage() {
             className="object-cover opacity-90"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-charcoal/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/55 to-charcoal/80" />
         </div>
         <div className="relative z-10 max-w-[80rem] mx-auto px-6 lg:px-12 py-24 lg:py-32 text-paper">
           <p className="meta text-paper/80 mb-6">

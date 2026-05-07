@@ -91,9 +91,7 @@ export function SlopeGraph({
                 r={s.emphasis ? 4 : 3}
                 fill={stroke}
               >
-                <title>
-                  {s.name}, {v.x}: {v.display ?? `${v.y}${yUnit}`}
-                </title>
+                <title>{`${s.name}, ${v.x}: ${v.display ?? `${v.y}${yUnit}`}`}</title>
               </circle>
             ))}
             {first && (

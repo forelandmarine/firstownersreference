@@ -48,8 +48,8 @@ export function SearchForm({ initialQuery = "" }: { initialQuery?: string }) {
           autoFocus
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Type a topic, yacht name, builder, or keyword"
-          className="w-full bg-transparent font-serif text-2xl sm:text-3xl lg:text-5xl placeholder:text-stone-soft focus:outline-none py-4"
+          placeholder="Topic, yacht, builder, keyword"
+          className="w-full bg-transparent font-serif text-xl sm:text-3xl lg:text-5xl placeholder:text-stone-soft focus:outline-none py-4"
         />
       </div>
 
