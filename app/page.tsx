@@ -63,7 +63,7 @@ export default function HomePage() {
               <p className="meta">1st Edition</p>
             </div>
             <div className="lg:col-span-9 space-y-6">
-              <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal">
+              <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal max-w-2xl">
                 An annual editorial publication on the structural,
                 financial, and operational dimensions of first-time
                 superyacht acquisition, or rather, how to buy a boat.
