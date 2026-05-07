@@ -50,7 +50,7 @@ export const sections: Section[] = [
     slug: "03-how-the-industry-works",
     title: "How the industry actually works",
     standfirst:
-      "Conflicts, commissions, retrocessions, and the captain's loyalty problem. Said plainly.",
+      "Conflicts, commissions, retrocessions, and the captain's role at the centre of it. Said plainly.",
     coordinates: "43.5528°N 7.0174°E",
     hero: "/images/stock/cap-cove-tenders.jpg",
     contributor: "To be confirmed",
@@ -58,7 +58,7 @@ export const sections: Section[] = [
     seoTitle:
       "Yacht broker commissions, retrocessions, and conflicts of interest",
     seoDescription:
-      "The structural conflicts in superyacht acquisition: who pays the broker commission, how dual agency works in practice, what retrocession arrangements look like, and the captain's loyalty problem.",
+      "The structural conflicts in superyacht acquisition: who pays the broker commission, how dual agency works in practice, what retrocession arrangements look like, and the captain's role at the centre of the structure.",
     datePublished: "2026-05-01",
   },
   {
