@@ -72,11 +72,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=2", sizes: "any", type: "image/x-icon" },
-      { url: "/icon.svg?v=2", type: "image/svg+xml" },
+      { url: "/favicon.ico?v=3", sizes: "any", type: "image/x-icon" },
+      { url: "/icon.svg?v=3", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/apple-icon.svg?v=2", type: "image/svg+xml" }],
-    shortcut: ["/favicon.ico?v=2"],
+    apple: [{ url: "/apple-icon.svg?v=3", type: "image/svg+xml" }],
+    shortcut: ["/favicon.ico?v=3"],
   },
 };
 
