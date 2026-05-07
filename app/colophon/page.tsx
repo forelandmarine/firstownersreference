@@ -121,10 +121,10 @@ export default function ColophonPage() {
             <p>
               Editorial correspondence:{" "}
               <a
-                href="mailto:editor@firstownersreference.com"
+                href="mailto:editors@firstownersreference.com"
                 className="link-marine"
               >
-                editor@firstownersreference.com
+                editors@firstownersreference.com
               </a>
               .
             </p>

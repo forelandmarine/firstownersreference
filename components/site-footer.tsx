@@ -17,10 +17,10 @@ export function SiteFooter() {
           <p className="caption mt-4">
             Editorial:{" "}
             <a
-              href="mailto:editor@firstownersreference.com"
+              href="mailto:editors@firstownersreference.com"
               className="link-marine"
             >
-              editor@firstownersreference.com
+              editors@firstownersreference.com
             </a>
           </p>
         </div>

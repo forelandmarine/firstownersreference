@@ -96,7 +96,7 @@ Measured weekly:
 - **Print copy requests.** The conversion that matters. Track source per request (LinkedIn organic, Instagram organic, direct, referral).
 - **Calculator runs.** Distinct sessions on /tools/running-cost-calculator. Stratify by social-referred and direct.
 - **Chapter reads.** Sessions per chapter slug, time on page, scroll depth.
-- **Inbound interview and contributor inquiries.** Email count per week into editor@firstownersreference.com tagged by referral source.
+- **Inbound interview and contributor inquiries.** Email count per week into editors@firstownersreference.com tagged by referral source.
 - **Citations from named industry voices.** Manual count: when SuperYacht Times, BOAT International, Megayacht News, Quay Crew, Pantaenius, or a yacht law firm cites the publication in their own content. This is the long-term legitimacy metric.
 
 Not measured:

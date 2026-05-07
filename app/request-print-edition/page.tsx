@@ -80,10 +80,10 @@ export default function PrintRequestPage() {
               Wireframe form. The production version will route to an editorial
               inbox at the publication. Until then, write to{" "}
               <a
-                href="mailto:editor@firstownersreference.com"
+                href="mailto:editors@firstownersreference.com"
                 className="link-marine"
               >
-                editor@firstownersreference.com
+                editors@firstownersreference.com
               </a>
               .
             </p>

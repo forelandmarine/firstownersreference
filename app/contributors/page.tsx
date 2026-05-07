@@ -113,10 +113,10 @@ export default function ContributorsPage() {
               Editorial proposals, expressions of interest, and corrections
               are welcome. Write to{" "}
               <a
-                href="mailto:editor@firstownersreference.com"
+                href="mailto:editors@firstownersreference.com"
                 className="link-marine"
               >
-                editor@firstownersreference.com
+                editors@firstownersreference.com
               </a>
               . We read everything.
             </p>

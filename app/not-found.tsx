@@ -71,10 +71,10 @@ export default function NotFound() {
             <p className="caption pt-4">
               Citation issue? Write to{" "}
               <a
-                href="mailto:editor@firstownersreference.com"
+                href="mailto:editors@firstownersreference.com"
                 className="link-marine"
               >
-                editor@firstownersreference.com
+                editors@firstownersreference.com
               </a>
               .
             </p>
