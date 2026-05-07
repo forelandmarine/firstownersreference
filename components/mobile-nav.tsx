@@ -4,9 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
+import { sections } from "@/lib/sections";
 
 const NAV_ITEMS = [
-  { href: "/#chapters", label: "Chapters" },
   { href: "/tools/running-cost-calculator", label: "Calculator" },
   { href: "/glossary", label: "Glossary" },
   { href: "/contributors", label: "Contributors" },
@@ -130,13 +130,30 @@ export function MobileNav() {
             </header>
 
             <nav className="px-6 py-10 flex flex-col">
-              <p className="meta mb-5">Read</p>
-              {NAV_ITEMS.map((item) => (
+              <p className="meta mb-5">Chapters</p>
+              {sections.map((section, index) => (
+                <Link
+                  key={section.slug}
+                  href={`/${section.slug}`}
+                  onClick={() => setOpen(false)}
+                  className={`font-serif text-xl text-charcoal py-3 border-b border-rule flex items-baseline gap-4 ${
+                    index === 0 ? "border-t border-rule" : ""
+                  }`}
+                >
+                  <span className="meta-marine shrink-0 w-8">{section.number}</span>
+                  <span>{section.title}</span>
+                </Link>
+              ))}
+
+              <p className="meta mt-10 mb-5">Reference</p>
+              {NAV_ITEMS.map((item, index) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="font-serif text-3xl text-charcoal py-4 border-b border-rule first:border-t first:border-rule"
+                  className={`font-serif text-2xl text-charcoal py-3 border-b border-rule ${
+                    index === 0 ? "border-t border-rule" : ""
+                  }`}
                 >
                   {item.label}
                 </Link>
@@ -144,7 +161,7 @@ export function MobileNav() {
               <Link
                 href="/request-print-edition"
                 onClick={() => setOpen(false)}
-                className="font-serif text-2xl text-marine py-4 mt-8 inline-flex items-center gap-2 border-b border-marine"
+                className="font-serif text-xl text-marine py-4 mt-8 inline-flex items-center gap-2 border-b border-marine"
               >
                 Request a print copy <span aria-hidden>&rarr;</span>
               </Link>
