@@ -113,7 +113,7 @@ export const cases: Record<string, CaseStudy> = {
       "The acquisition itself ran cleanly. A 38 m semi-custom motor yacht from an Italian yard was sourced over four months. The pre-purchase survey was conducted by a surveyor the broker introduced. The contract was drafted by the broker\u2019s preferred yacht lawyer. The yacht closed at EUR 19 m, on terms slightly more favourable than the asking. The buyer felt well-served.",
       { type: "h2", text: "The introductions" },
       "Once closed, the buyer needed a management company, a paint specialist for an early refit on the bow, an insurance broker, and a senior crew. The brokerage made the introductions. Each was warm, professional, and competent.",
-      "The management company was Hill Robinson, on a EUR 5.2 m annual contract. The buyer was told, accurately, that this was a market-rate structure. He was not told that the brokerage held a referral relationship with the management company. The introductory referral on the contract, paid from the management company\u2019s side, was approximately GBP 250,000 in year one.",
+      "The management company was a recognised industry firm, on a EUR 5.2 m annual contract. The buyer was told, accurately, that this was a market-rate structure. He was not told that the brokerage held a referral relationship with the management company. The introductory referral on the contract, paid from the management company\u2019s side, was approximately GBP 250,000 in year one.",
       "The paint specialist was selected from a list of three the brokerage maintained. The chosen contractor delivered a EUR 1.8 m repaint job. A 5 percent retrocession back to the brokerage on this job was approximately EUR 90,000. The buyer paid the paint contractor in full; the GBP 80,000 of the EUR 90,000 sterling-equivalent did not appear on the buyer\u2019s invoices.",
       "The insurance broker was a relationship of long standing for the brokerage. Premium in year one was approximately EUR 250,000. Brokerage commission on the policy was approximately 15 percent (EUR 37,500). A back-end referral fee from the insurance broker to the introducing brokerage was approximately 10 percent of that commission, or EUR 3,750. Small, but recurring annually.",
       "The recruitment agency that placed the new captain charged a placement fee of approximately three months of the captain\u2019s salary, around EUR 35,000. A referral fee of around 10 percent flowed back to the brokerage. The buyer was charged the full agency fee.",
@@ -137,7 +137,7 @@ export const cases: Record<string, CaseStudy> = {
       "Renegotiating supplier relationships at year two, with full disclosure of the original referral economics, is the single most consequential cost-reduction step available to a first-year owner.",
     ],
     disclosure:
-      "Composite of two Foreland Marine project files, 2024. Specific firm references in the text (Hill Robinson) are illustrative of the management-company role; the referral economics described are industry-standard pattern, not an attribution of any particular firm\u2019s practice.",
+      "Composite of two Foreland Marine project files, 2024. No specific firms are named; the referral economics described are an industry-standard pattern, not an attribution of any particular firm\u2019s practice.",
   },
 
   "04-acquisition-process": {
@@ -296,7 +296,7 @@ export const cases: Record<string, CaseStudy> = {
       "The owner hired the second candidate. The decision was uncomfortable in the moment. The reasoning, on the adviser\u2019s framing, was that the discomfort was the signal.",
       {
         type: "blockquote",
-        text: "Captains who agree easily are pleasant to work with and expensive to live with.",
+        text: "Do not just hire the best captain on paper. Hire the one who can manage you. A good captain runs the yacht. A great captain manages the entire ecosystem around it, including the owner.",
         attribution: "Chapter 07, lead essay.",
       },
       { type: "h2", text: "The next decade" },
