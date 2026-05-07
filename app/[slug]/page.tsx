@@ -281,7 +281,12 @@ export default async function SectionPage(props: {
                                 {item.label}
                               </Link>
                             ) : (
-                              <a href={item.href} className="link">
+                              <a
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="link"
+                              >
                                 {item.label}
                               </a>
                             )
@@ -353,9 +358,20 @@ export default async function SectionPage(props: {
                             {p.href && (
                               <>
                                 {" "}
-                                <Link href={p.href} className="link-marine not-italic">
-                                  {p.linkText ?? "Read more"}
-                                </Link>
+                                {/^https?:\/\//.test(p.href) ? (
+                                  <a
+                                    href={p.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="link-marine not-italic"
+                                  >
+                                    {p.linkText ?? "Read more"}
+                                  </a>
+                                ) : (
+                                  <Link href={p.href} className="link-marine not-italic">
+                                    {p.linkText ?? "Read more"}
+                                  </Link>
+                                )}
                                 .
                               </>
                             )}
