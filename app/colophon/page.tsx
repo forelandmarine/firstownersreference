@@ -132,8 +132,9 @@ export default function ColophonPage() {
             <h2>Publisher</h2>
             <p>
               Published by Foreland Marine Consultancy Limited. 7 Bell Yard,
-              London WC2A 2JR. Companies House registered. SYBAss accredited.
-              YORR registered.
+              London WC2A 2JR. Companies House registered. SYBAss
+              (Superyacht Builders Association) accredited. YORR (Yacht
+              Owner&rsquo;s Representative Register) registered.
             </p>
 
             <h2>Publisher disclosure: the independence test, applied</h2>
