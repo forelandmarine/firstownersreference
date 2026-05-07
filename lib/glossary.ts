@@ -183,9 +183,13 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "yorr",
     term: "YORR",
     shortDefinition:
-      "Yacht Owners' Register of Representatives. The independent register on which qualifying owner's representatives are listed.",
+      "Yacht Owner's Representative Register. The cross-industry register on which qualifying owner's representatives are listed; administered by the Superyacht Alliance for Professional Standards and searchable at superyachtalliance.org/register/register-table/.",
     longDefinition:
-      "YORR is the cross-industry register of vetted owner's representatives, founded jointly in June 2023 by SYBAss, the Superyacht Alliance for Professional Standards, IAMI, and GUEST. Inclusion requires demonstrated independence from yards, brokers, and management companies, plus a documented track record on builds above 40 metres.",
+      "YORR is the cross-industry register of vetted owner's representatives, launched at The Superyacht Forum in Amsterdam in November 2024 by SYBAss, the Superyacht Alliance for Professional Standards, IAMI, and GUEST. Inclusion requires demonstrated independence from yards, brokers, and management companies, the SYBAss-aligned YORP training (Unit 40 is the compulsory unit for register membership), a CV audit, and a documented track record on builds above 40 metres. The register is published as a public table at superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal; buyers considering an owner's representative can verify the firm and the principal directly on the register before engagement.",
+    source: {
+      name: "Yacht Owner's Representative Register",
+      url: "https://superyachtalliance.org/register/register-table/",
+    },
     relatedChapters: ["05-new-build-versus-brokerage", "09-decision-framework"],
     relatedTerms: ["owners-representative", "sybass"],
   },

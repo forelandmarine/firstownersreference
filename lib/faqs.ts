@@ -122,6 +122,11 @@ export const chapterFaqs: Record<string, FaqItem[]> = {
       answer:
         "SYBAss founded the Yacht Owners' Register of Representatives jointly with the Superyacht Alliance, IAMI, and GUEST in June 2023 because owner-side representation quality was structurally inadequate at the world's top yards. Jack Inglis of ULTIMAR has published a case in which a family office CFO acted as deputised owner's representative; the deficiency snag list at delivery ran to 1,200 items against the 100 the family office reported. The structural problem is that brokers, yards, and management companies have established relationships with each other; the unconflicted independent representative is the structural counterweight.",
     },
+    {
+      question: "How do I check if an owner's representative is on the YOR Register?",
+      answer:
+        "The Yacht Owner's Representative Register (YORR) is the cross-industry list of vetted owner's representatives. The register table is published by the Superyacht Alliance for Professional Standards at https://superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal. Inclusion requires demonstrated independence from yards, brokers, and management companies; the SYBAss-aligned YORP training, of which Unit 40 is the compulsory unit for register membership; a CV audit; and a documented track record on builds above 40 metres. Buyers considering an owner's representative can look up the firm and its principals on the register table directly before signing any engagement letter.",
+    },
   ],
 
   "06-refit": [
