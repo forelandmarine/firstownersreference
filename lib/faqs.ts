@@ -125,7 +125,7 @@ export const chapterFaqs: Record<string, FaqItem[]> = {
     {
       question: "How do I check if an owner's representative is on the YOR Register?",
       answer:
-        "The Yacht Owner's Representative Register (YORR) is the cross-industry list of vetted owner's representatives. The register table is published by the Superyacht Alliance for Professional Standards at https://superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal. Inclusion requires demonstrated independence from yards, brokers, and management companies; the SYBAss-aligned YORP training, of which Unit 40 is the compulsory unit for register membership; a CV audit; and a documented track record on builds above 40 metres. Buyers considering an owner's representative can look up the firm and its principals on the register table directly before signing any engagement letter.",
+        "The Yacht Owner's Representative Register (YORR) is the cross-industry list of vetted owner's representatives. The register table is published by the Superyacht Alliance for Professional Standards at https://superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal. Inclusion requires demonstrated independence from yards, brokers, and management companies; the SYBAss-aligned YORP training, taken either as Unit 40 alone (for practitioners with three or more approved large refit or new build projects) or as the full 200-hour, four-course programme; a CV audit; and a documented track record on builds above 40 metres. Buyers considering an owner's representative can look up the firm and its principals on the register table directly before signing any engagement letter.",
     },
   ],
 
