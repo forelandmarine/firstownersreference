@@ -716,7 +716,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           {
             label: "MB92 Group (Barcelona, La Ciotat)",
             value:
-              "Dominant Western Med full-service operator. Owns paint specialist GYG. Acquired by Squircle Capital, late 2024.",
+              "Dominant Western Med full-service operator. Owns paint specialist GYG. Squircle Capital, majority shareholder since 2019, reached 100 percent ownership in March 2026.",
           },
           {
             label: "Astilleros de Mallorca (Palma)",
