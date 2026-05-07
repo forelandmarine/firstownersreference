@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 
 const NAV_ITEMS = [
   { href: "/#chapters", label: "Chapters" },
@@ -14,8 +15,13 @@ const NAV_ITEMS = [
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (open) {
@@ -91,13 +97,13 @@ export function MobileNav() {
         />
       </button>
 
-      {open && (
+      {open && mounted && createPortal(
         <div
           ref={dialogRef}
           role="dialog"
           aria-modal="true"
           aria-label="Site navigation"
-          className="fixed inset-0 z-50 bg-paper overflow-y-auto"
+          className="fixed inset-0 z-[100] bg-paper overflow-y-auto"
         >
           <div className="min-h-full flex flex-col">
             <header className="border-b border-rule px-6 py-4 flex items-start justify-between gap-4">
@@ -171,7 +177,8 @@ export function MobileNav() {
               </div>
             </footer>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
