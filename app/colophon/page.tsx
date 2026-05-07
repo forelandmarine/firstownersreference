@@ -156,7 +156,7 @@ export default function ColophonPage() {
               <strong>2. Equity, employment, or referral relationships.</strong>{" "}
               Foreland holds no equity in any yard, broker, supplier,
               management company, or charter operation. It accepts no referral
-              fees from any of those parties. The director of Foreland holds
+              fees from any of those parties. The directors of Foreland hold
               no shareholdings in any commercial counterparty in the yacht
               industry.
             </p>
@@ -179,10 +179,10 @@ export default function ColophonPage() {
               through a Lloyd&rsquo;s syndicate.
             </p>
             <p>
-              <strong>6. Named principals.</strong> The director of Foreland
-              is Jack MacNally. Listed at Companies House. Registered with the
-              Yacht Owners&rsquo; Representative Register (YORR). Resident in
-              London.
+              <strong>6. Named principals.</strong> The directors of Foreland
+              are Jack MacNally and Daniel Marks. Both listed at Companies
+              House. Registered with the Yacht Owners&rsquo; Representative
+              Register (YORR). Resident in London.
             </p>
 
             <h2>Citation</h2>
