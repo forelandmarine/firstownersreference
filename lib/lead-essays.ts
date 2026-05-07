@@ -262,7 +262,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       "The independent owner's representative market is structurally undersized and structurally conflicted. Genuinely independent firms, paid only by the owner, with no broker commission and no yard affiliation, are a small group. They include A2B Marine Projects, ULTIMAR, Divergent Yachting, Mariner Technical Services, Praxis Marine, JMS Yachting, ABL Yachts, KRM Yacht, Saor Alba, Occam Naval Architecture and Project Management, and Foreland Marine, the publishers of this reference.",
       {
         type: "editorsNote",
-        text: "Disclosure. The publisher, Foreland Marine, is an independent yacht consultancy directed by Jack MacNally (co-editor in chief) and Dan Marks. SYBAss accredited and YORR registered. The independence test in chapter 09 applies to Foreland as it does to any other firm a reader is considering.",
+        text: "Disclosure. The publisher, Foreland Marine, is an independent yacht consultancy led by Jack MacNally and Daniel Marks, with a team of 20+ industry consultants. Foreland is SYBAss accredited and YORR registered. The independence test in chapter 09 applies just as it does to any other firm a reader is considering.",
         href: "https://forelandmarine.com/owners-representation",
         linkText: "Foreland Marine’s owner’s representation service",
       },
