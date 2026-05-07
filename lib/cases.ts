@@ -153,7 +153,7 @@ export const cases: Record<string, CaseStudy> = {
     ],
     paragraphs: [
       "The yacht was a 55 m motor from a respected Northern European yard, 11 years old, with a clean class history and a recent five-year survey. The seller had instructed the listing broker to position the yacht as turnkey and to discourage extensive pre-purchase scoping on the basis that \u201cthe class survey covered everything that mattered.\u201d The asking was EUR 22 m.",
-      "The buyer engaged an independent surveyor on the recommendation of his independent adviser, not on the recommendation of the broker. The surveyor was Wolfson Marine. Wolfson\u2019s scope was broader than the seller\u2019s recent class survey: 6 days afloat, 2 days haul-out, full mechanical inspection by an independently engaged chief engineer, paint condition assessment, electrical compliance audit, and opening of two compartments the class surveyor had not opened (the forepeak void and a section of the lazarette adjacent to the stabiliser pumps).",
+      "The buyer engaged an independent surveyor on the recommendation of his independent adviser, not on the recommendation of the broker. The surveyor's scope was broader than the seller's recent class survey: 6 days afloat, 2 days haul-out, full mechanical inspection by an independently engaged chief engineer, paint condition assessment, electrical compliance audit, and opening of two compartments the class surveyor had not opened (the forepeak void and a section of the lazarette adjacent to the stabiliser pumps).",
       { type: "h2", text: "What the survey found" },
       "The class survey had passed the yacht. The pre-purchase survey did not. Three categories of finding mattered.",
       "First, the forepeak void showed early-stage corrosion in the structural framing, consistent with prolonged moisture from a leaking deck fitting two decks above. The corrosion had not penetrated the primary structural members but the affected secondary framing was within five years of needing replacement. Estimated remediation cost: EUR 350,000 to 500,000.",
@@ -170,7 +170,7 @@ export const cases: Record<string, CaseStudy> = {
         attribution: "Chapter 04, lead essay.",
       },
       { type: "h2", text: "The arithmetic of the survey fee" },
-      "The Wolfson Marine survey fee was EUR 48,000. The independently engaged chief engineer\u2019s fee was EUR 12,000. The lawyer\u2019s fee for the renegotiation alone was approximately EUR 25,000. Total cost of the disciplined survey process: EUR 85,000.",
+      "The independent surveyor's fee was EUR 48,000. The independently engaged chief engineer\u2019s fee was EUR 12,000. The lawyer\u2019s fee for the renegotiation alone was approximately EUR 25,000. Total cost of the disciplined survey process: EUR 85,000.",
       "The price reduction was EUR 2.1 m. The pre-purchase scoping returned approximately 25 to 1 against its own cost. This is not unusual. It is the case for engaging an independent surveyor in every acquisition where the cost permits, which is every acquisition above approximately EUR 5 m.",
       "What would have happened without the survey: the buyer would have closed at EUR 22 m and absorbed the EUR 2.0 to 2.4 m of remediation across his first three years of ownership. The total cost would have been approximately EUR 2.1 m higher than what he paid. The seller, in that scenario, would have been the beneficiary.",
     ],
@@ -181,7 +181,7 @@ export const cases: Record<string, CaseStudy> = {
       "Survey-driven renegotiation is the disciplined response to material findings. Walking away is the right answer when the seller will not move.",
     ],
     disclosure:
-      "Single Foreland Marine project, 2023, with specific identifying details adjusted. Wolfson Marine is named because the firm\u2019s scope is illustrative; the recommendation was not commissioned by the firm.",
+      "Single Foreland Marine project, 2023, with specific identifying details adjusted. No specific firms are named in the body.",
   },
 
   "05-new-build-versus-brokerage": {
@@ -343,7 +343,7 @@ export const cases: Record<string, CaseStudy> = {
         attribution: "The owner, in conversation with Foreland Marine, week 14 of the second-yacht search.",
       },
       { type: "h2", text: "The acquisition" },
-      "The successor was a 52 metre sailing yacht built by Royal Huisman in 2014, on the brokerage market through a Northern European house with no continuing relationship to the owner. The acquisition ran on the same architecture as the chapter on the team to assemble suggests: independent adviser engaged before any broker, surveyor (Wolfson Marine) independently engaged, yacht lawyer drawn from a recognised firm, captain hired through an independent recruitment process and not through the broker.",
+      "The successor was a 52 metre sailing yacht built by Royal Huisman in 2014, on the brokerage market through a Northern European house with no continuing relationship to the owner. The acquisition ran on the same architecture as the chapter on the team to assemble suggests: independent adviser engaged before any broker, surveyor independently engaged, yacht lawyer drawn from a recognised firm, captain hired through an independent recruitment process and not through the broker.",
       "The captain hired had run two large sailing yachts previously. He pushed back, in interview, on three things the owner had assumed: the owner\u2019s preferred itinerary needed weather windows the family was not used to honouring, the existing motor-yacht crew were not all going to transition to a sailing yacht successfully, and the management company that had run the motor yacht did not have the right depth on sailing yachts. The owner hired him on the basis of the pushback, not despite it.",
       "Three of the five senior motor-yacht crew transitioned to the new hull. Two did not. A new chief officer and a new chief engineer were hired with sailing-yacht specialism. A new yacht-management company was engaged.",
       { type: "h2", text: "Year three on the new hull" },
