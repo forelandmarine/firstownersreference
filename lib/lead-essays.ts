@@ -609,12 +609,6 @@ export const leadEssays: Record<string, LeadEssay> = {
       "6. Reference depth. Will the firm provide named references, including at least one engagement that did not land cleanly? The reference list of triumphs is universal. The reference list that includes a project where things ran hot, and what the firm did about it, is the test. A firm that cannot produce one has either not been busy long enough, or has not been honest about what busy means.",
       "A representative who answers these six questions clearly, with documentary evidence, is suited to the engagement they are being considered for. A representative who cannot is not necessarily a poor firm; they may be the right firm for a different project. Suitability is project-specific.",
       "The independence test and the suitability test are applied together. A firm that passes both is the firm to engage. A separate filter is the Yacht Owner's Representative Register, the cross-industry register of vetted representatives administered by the Superyacht Alliance for Professional Standards. The publisher of The First Owner's Reference offers both tests for application to itself alongside any other firm a reader is considering.",
-      {
-        type: "editorsNote",
-        text: "The Yacht Owner's Representative Register lists owner's representatives who have completed the SYBAss-aligned YORP training (Unit 40 alone for practitioners with three or more approved large projects, the full 200-hour programme otherwise), a CV audit, and an independence assessment. The register is the simplest cross-check available before engagement.",
-        href: "https://superyachtalliance.org/register/register-table/",
-        linkText: "Yacht Owner's Representative Register table",
-      },
       { type: "h2", text: "Building the team, in priority order" },
       "The order in which the buyer hires the team determines the quality of every subsequent decision. Most first-time buyers hire in the wrong order. The right order:",
       "1. Independent adviser. Engaged before any broker, any captain, any management company. The independent adviser's role is to scope the acquisition, evaluate brokers, support the negotiation, and build the rest of the team.",
