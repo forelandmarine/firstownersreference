@@ -1007,7 +1007,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         rows: [
           { label: "Annual compliance cost band", value: "EUR 80,000 to 200,000 per year" },
           { label: "Frameworks", value: "ISM (above 500 GT); MLC (commercial operation)" },
-          { label: "Recognised management firms", value: "Hill Robinson, Burgess, Y.CO, Doehle, Moran, Edmiston, C&N, Fraser" },
+          { label: "Recognised management firms", value: "Hill Robinson, Burgess, Y.CO, Döhle, Moran, Edmiston, C&N, Fraser" },
         ],
         sourceLine: "Foreland Marine project archive; published management company fee guidance.",
       },
