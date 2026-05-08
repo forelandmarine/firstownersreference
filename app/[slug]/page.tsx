@@ -121,6 +121,8 @@ export default async function SectionPage(props: {
       author: "both",
       image: `${url}/opengraph-image`,
       articleSection: `Chapter ${section.number}`,
+      chapterNumber: section.number,
+      chapterTitle: section.title,
     }),
     breadcrumbSchema([
       { name: "Home", url: SITE_URL },
@@ -670,6 +672,34 @@ export default async function SectionPage(props: {
             </div>
           </section>
         )}
+
+        <section className="border-t border-rule bg-paper py-16">
+          <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-3">
+                <p className="meta-marine">Cite this chapter</p>
+              </div>
+              <div className="lg:col-span-9 max-w-prose space-y-6">
+                <div>
+                  <p className="meta mb-2">Short form</p>
+                  <p className="font-serif text-base text-charcoal leading-relaxed">
+                    &ldquo;{section.title},&rdquo; The First
+                    Owner&rsquo;s Reference, 1st Edition, 2026.
+                  </p>
+                </div>
+                <div>
+                  <p className="meta mb-2">Full form</p>
+                  <p className="font-serif text-base text-charcoal leading-relaxed">
+                    Foreland Marine, &ldquo;{section.title},&rdquo;
+                    in The First Owner&rsquo;s Reference, 1st Edition
+                    (2026), Chapter {section.number},
+                    https://firstownersreference.com/{section.slug}.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <nav className="border-t border-rule bg-paper py-16">
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">

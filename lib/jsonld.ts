@@ -78,6 +78,8 @@ export function articleSchema(opts: {
   image?: string;
   articleSection?: string;
   wordCount?: number;
+  chapterNumber?: string;
+  chapterTitle?: string;
 }) {
   const author =
     opts.author === "jack"
@@ -85,6 +87,10 @@ export function articleSchema(opts: {
       : opts.author === "daniel"
         ? [{ "@id": DAN_ID }]
         : [{ "@id": JACK_ID }, { "@id": DAN_ID }];
+
+  const suggestedCitation = opts.chapterTitle
+    ? `Foreland Marine, "${opts.chapterTitle}," in The First Owner's Reference, 1st Edition (2026)${opts.chapterNumber ? `, Chapter ${opts.chapterNumber}` : ""}, ${opts.url}.`
+    : undefined;
 
   return {
     "@type": "Article",
@@ -109,6 +115,7 @@ export function articleSchema(opts: {
       : {}),
     ...(opts.articleSection ? { articleSection: opts.articleSection } : {}),
     ...(opts.wordCount ? { wordCount: opts.wordCount } : {}),
+    ...(suggestedCitation ? { citation: suggestedCitation } : {}),
   };
 }
 
