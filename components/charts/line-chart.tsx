@@ -129,7 +129,7 @@ export function LineChart({
           <path
             d={buildPath(s.values)}
             fill="none"
-            stroke={s.emphasis ? "#0f3b5c" : "#1a1a1a"}
+            stroke={s.emphasis ? "#0f3b5c" : "#4a7da9"}
             strokeWidth={s.emphasis ? 2.5 : 1.5}
             strokeDasharray={s.dashed ? "5 4" : undefined}
           />
@@ -139,7 +139,7 @@ export function LineChart({
               cx={sx(p.x)}
               cy={sy(p.y)}
               r={3}
-              fill={s.emphasis ? "#0f3b5c" : "#1a1a1a"}
+              fill={s.emphasis ? "#0f3b5c" : "#4a7da9"}
             >
               <title>{`${s.name}: ${p.x}${xUnit}, ${p.y}${yUnit}`}</title>
             </circle>
@@ -150,7 +150,7 @@ export function LineChart({
               y={sy(s.values[s.values.length - 1].y) + 4}
               fontSize={11}
               fontFamily="var(--font-serif), Georgia, serif"
-              fill={s.emphasis ? "#0f3b5c" : "#1a1a1a"}
+              fill={s.emphasis ? "#0f3b5c" : "#4a7da9"}
               fontStyle={s.emphasis ? "normal" : "italic"}
             >
               {s.name}

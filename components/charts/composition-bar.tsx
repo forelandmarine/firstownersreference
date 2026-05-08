@@ -12,8 +12,8 @@ export type CompositionBarProps = {
 
 const PALETTE = [
   "#0f3b5c",
-  "#1a1a1a",
-  "#3a3a3a",
+  "#4a7da9",
+  "#88a9c6",
   "#5a554d",
   "#7a756d",
   "#a8a39a",

@@ -51,6 +51,20 @@ export function ComparisonBars({
       role="img"
       aria-label="Comparison bar chart"
     >
+      {rows.map((_, i) =>
+        i % 2 === 1 ? (
+          <rect
+            key={`zebra-${i}`}
+            x={plotLeft}
+            y={top + i * rowHeight}
+            width={plotWidth}
+            height={rowHeight}
+            fill="#ede8df"
+            opacity={0.45}
+          />
+        ) : null
+      )}
+
       {ticks.map((t) => (
         <line
           key={t}
@@ -91,7 +105,7 @@ export function ComparisonBars({
 
       {rows.map((row, i) => {
         const y = top + i * rowHeight + rowHeight / 2;
-        const fill = row.emphasis ? "#0f3b5c" : "#1a1a1a";
+        const fill = row.emphasis ? "#0f3b5c" : "#4a7da9";
         const x = row.value < 0 ? scale(row.value) : zeroX;
         const w =
           row.value < 0

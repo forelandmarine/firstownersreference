@@ -70,10 +70,18 @@ export function SlopeGraph({
               `${vi === 0 ? "M" : "L"} ${colXs[columns.indexOf(v.x)]} ${sy(v.y)}`
           )
           .join(" ");
-        const stroke = s.emphasis ? "#0f3b5c" : "#1a1a1a";
-        const opacity = s.emphasis ? 1 : 0.55;
+        const stroke = s.emphasis ? "#0f3b5c" : "#88a9c6";
+        const opacity = s.emphasis ? 1 : 0.9;
         const last = s.values[s.values.length - 1];
         const first = s.values[0];
+        const delta = last && first ? last.y - first.y : 0;
+        const deltaMag = Math.abs(delta);
+        const deltaText =
+          delta === 0
+            ? ""
+            : `${delta > 0 ? "↑" : "↓"} ${
+                deltaMag >= 100 ? Math.round(deltaMag) : deltaMag.toFixed(1)
+              }${yUnit}`;
 
         return (
           <g key={si} opacity={opacity}>
@@ -81,7 +89,7 @@ export function SlopeGraph({
               d={path}
               fill="none"
               stroke={stroke}
-              strokeWidth={s.emphasis ? 2.25 : 1.25}
+              strokeWidth={s.emphasis ? 2.25 : 1.5}
             />
             {s.values.map((v, vi) => (
               <circle
@@ -116,6 +124,21 @@ export function SlopeGraph({
                 style={{ fontVariantNumeric: "tabular-nums" }}
               >
                 {last.display ?? `${last.y}${yUnit}`}
+              </text>
+            )}
+            {last && deltaText && (
+              <text
+                x={colXs[columns.indexOf(last.x)] + 12}
+                y={sy(last.y) + 20}
+                fontSize={10}
+                fontFamily="var(--font-mono), monospace"
+                fill="#7a756d"
+                style={{
+                  fontVariantNumeric: "tabular-nums",
+                  letterSpacing: "0.02em",
+                }}
+              >
+                {deltaText}
               </text>
             )}
           </g>

@@ -12,9 +12,9 @@ export type PairedStackedBarsProps = {
 
 const PALETTE = [
   "#0f3b5c",
-  "#1a1a1a",
+  "#4a7da9",
+  "#88a9c6",
   "#7a756d",
-  "#a8a39a",
   "#d8d2c4",
 ];
 
