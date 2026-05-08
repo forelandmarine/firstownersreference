@@ -28,7 +28,6 @@ export const metadata: Metadata = {
 
 export default function ContributorsPage() {
   const confirmed = sections.filter((s) => s.contributor !== "To be confirmed");
-  const forthcoming = sections.filter((s) => s.contributor === "To be confirmed");
 
   return (
     <>
@@ -86,26 +85,6 @@ export default function ContributorsPage() {
               </div>
             ))}
           </div>
-
-          {forthcoming.length > 0 && (
-            <div className="mt-24 border-t border-charcoal pt-10">
-              <p className="meta-marine mb-4">Forthcoming</p>
-              <p className="caption max-w-2xl mb-8">
-                Outreach is in progress on the remaining {forthcoming.length} chapters. Names
-                are added here only on confirmation.
-              </p>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 max-w-3xl">
-                {forthcoming.map((s) => (
-                  <li key={s.slug} className="caption">
-                    <span className="meta-marine mr-2">
-                      {s.number}
-                    </span>
-                    {s.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
 
           <div className="mt-20 border-t border-charcoal pt-10 max-w-2xl">
             <p className="meta-marine mb-4">Propose a contribution</p>

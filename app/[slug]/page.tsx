@@ -198,14 +198,14 @@ export default async function SectionPage(props: {
                   {essay?.readingTime ?? "Forthcoming"}
                 </dd>
               </div>
-              <div className="flex items-baseline justify-between gap-6 border-t border-rule pt-4 lg:border-0 lg:pt-0 lg:contents">
-                <dt className="meta">Contributor</dt>
-                <dd className="meta text-charcoal text-right lg:text-left">
-                  {section.contributor === "To be confirmed"
-                    ? "Forthcoming"
-                    : section.contributor}
-                </dd>
-              </div>
+              {section.contributor !== "To be confirmed" && (
+                <div className="flex items-baseline justify-between gap-6 border-t border-rule pt-4 lg:border-0 lg:pt-0 lg:contents">
+                  <dt className="meta">Contributor</dt>
+                  <dd className="meta text-charcoal text-right lg:text-left">
+                    {section.contributor}
+                  </dd>
+                </div>
+              )}
             </dl>
           </div>
         </section>

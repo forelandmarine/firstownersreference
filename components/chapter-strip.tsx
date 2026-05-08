@@ -69,13 +69,17 @@ export function ChapterStrip({
       }`}
     >
       <div className="px-6 pt-2 pb-2.5 space-y-1.5">
-        {/* Chapter context — always fully visible */}
-        <div className="flex items-baseline gap-3">
+        {/* Chapter context — taps to scroll back to chapter top */}
+        <a
+          href="#essay"
+          className="flex items-baseline gap-3 active:opacity-60 transition-opacity"
+          aria-label={`Jump to top of chapter ${number}`}
+        >
           <span className="meta-marine shrink-0">Ch&nbsp;{number}</span>
           <span className="font-serif text-sm text-charcoal-soft leading-snug">
             {title}
           </span>
-        </div>
+        </a>
 
         {/* Section nav — scrolls horizontally, auto-centres active label */}
         <nav
