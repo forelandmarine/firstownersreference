@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title:
     "How Much Does It Cost to Run a Superyacht? | Running Cost Calculator",
   description:
-    "Annual running costs for a 30-50m superyacht typically range from EUR 500,000 to EUR 1.5 million. Use our interactive calculator to get a full breakdown by crew, insurance, maintenance, berths, fuel, management, and compliance. Updated 2026.",
+    "Annual running costs for a 40-50 metre superyacht run EUR 1.5 to 5 million in 2026, scaling with size, age, and use intensity. Use the interactive calculator to get the breakdown by crew, insurance, maintenance, berths, fuel, management, and compliance against your own size and operating profile.",
   alternates: {
     canonical:
       "https://firstownersreference.com/tools/running-cost-calculator",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title:
       "How Much Does It Cost to Run a Superyacht? | Running Cost Calculator",
     description:
-      "Annual running costs for a 30-50m superyacht typically range from EUR 500,000 to EUR 1.5 million. A calculator with full breakdown by crew, insurance, maintenance, berths, fuel, management, and compliance.",
+      "Annual running costs for a 40-50 metre superyacht run EUR 1.5 to 5 million in 2026. A calculator with full breakdown by crew, insurance, maintenance, berths, fuel, management, and compliance.",
   },
 };
 

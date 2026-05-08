@@ -584,12 +584,12 @@ export default function RunningCostCalculatorPage() {
     {
       question: "How much does it cost to run a superyacht per year?",
       answer:
-        "Annual running costs for a superyacht typically range from EUR 400,000 for a 24-metre sailing yacht with light use, to over EUR 2 million for a 60-metre motor yacht operating year-round. The main cost categories are crew (30-40% of the total), insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. As a rough guide, expect to spend 8-12% of the yacht's purchase price each year, though the actual figure depends heavily on vessel type, size, cruising area, and how intensively the yacht is used.",
+        "Annual running costs run from approximately EUR 600,000 for a 24-metre sailing yacht at light use, to EUR 4 to 5 million for a 50-metre motor yacht at moderate use, to EUR 8 million and above for an 80-metre operating year-round. The main cost categories are crew (30-40% of the total), insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. As a rough guide, expect 12 to 15 percent of purchase price for a new 40 to 50 metre yacht at moderate use, rising to 12 to 20 percent for older or larger vessels and higher again on charter-active programmes. The actual figure depends heavily on vessel type, size, cruising area, age, and use intensity.",
     },
     {
       question: "What is the 10% rule for yachts?",
       answer:
-        "The 10% rule is a long-standing industry rule of thumb that says you should budget approximately 10% of the yacht's purchase price each year for running costs. While useful as a starting point, the 10% rule is a simplification. Actual costs are driven by the vessel's size, type, age, crew complement, cruising area, and operational profile, not by the purchase price.",
+        "The 10% rule is industry shorthand for budgeting roughly 10 percent of the yacht's purchase price each year for running costs. The rule has no traceable origin and is roughly correct only for new, mid-sized, lightly used yachts. Independent practitioner ranges cluster between 8 and 15 percent for the first decade; for yachts over 40 metres, older than seven years, or operating charter, the empirical band runs 12 to 20 percent. The rule is a starting point, not a budget.",
     },
     {
       question: "What are the biggest costs of owning a superyacht?",
