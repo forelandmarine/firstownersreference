@@ -62,6 +62,11 @@ export function SiteFooter() {
                 Colophon
               </Link>
             </li>
+            <li>
+              <Link href="/press" className="link">
+                Press
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex justify-between items-end gap-4">

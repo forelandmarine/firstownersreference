@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/glossary`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/contributors`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/colophon`, lastModified, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${BASE_URL}/press`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/tools/running-cost-calculator`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/tools/yacht-vat-2026`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/tools/captain-and-crew-salary-2026`, lastModified, changeFrequency: "monthly", priority: 0.9 },
