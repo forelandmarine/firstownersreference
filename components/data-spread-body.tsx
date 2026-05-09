@@ -126,7 +126,12 @@ function renderBlock(block: DataSpreadBlock, key: number) {
     const chart = getChart(block.chartId);
     if (!chart) return null;
     return (
-      <div key={key} className="w-full">{chart}</div>
+      <div
+        key={key}
+        className="-mx-6 sm:mx-0 overflow-x-auto sm:overflow-visible chart-scroll-mask"
+      >
+        <div className="px-6 sm:px-0 min-w-[640px] sm:min-w-0">{chart}</div>
+      </div>
     );
   }
   return null;

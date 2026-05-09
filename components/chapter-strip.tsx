@@ -87,7 +87,7 @@ export function ChapterStrip({
           className="-mx-6 px-6 pb-1 flex items-baseline gap-5 overflow-x-auto scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
         >
           {sections.map((s) => {
-            const isActive = !s.href && activeId === s.id;
+            const isActive = activeId === s.id;
             return (
               <a
                 key={s.id}

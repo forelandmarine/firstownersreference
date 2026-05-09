@@ -349,6 +349,30 @@ summary::-webkit-details-marker {
   margin-top: 5mm;
 }
 
+/* Subtle fade on the right edge of horizontally scrolled charts on mobile, */
+/* so users see there's more chart beyond the visible window. */
+@media (max-width: 640px) {
+  .chart-scroll-mask {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      black 0,
+      black calc(100% - 32px),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      black 0,
+      black calc(100% - 32px),
+      transparent 100%
+    );
+  }
+  .chart-scroll-mask:hover,
+  .chart-scroll-mask:active {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
 @media print {
   @page {
     size: A4 portrait;
