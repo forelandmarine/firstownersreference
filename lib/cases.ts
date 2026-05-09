@@ -84,7 +84,7 @@ export const cases: Record<string, CaseStudy> = {
         text: "Well-priced inventory moves in months. Over-priced inventory rots for a year and a half. The buyer who pays close attention to days-on-market and price-reduction history will find that this is the most legible the brokerage market has been in a decade.",
         attribution: "Chapter 02, lead essay.",
       },
-      { type: "h2", text: "The mechanism, said plainly" },
+      { type: "h2", text: "The mechanism" },
       "Buyer A had access to the same data Buyer B did. Both buyers could have pulled the listing\u2019s history from broker portals. Both could have run a comparable scan. The difference was that Buyer A had engaged an adviser whose only job was to read the market on the buyer\u2019s behalf. Buyer B had engaged a broker whose job was to close the transaction.",
       "The 11 percent price differential was not a market efficiency problem. It was a buyer-representation problem. The market was reading correctly. One buyer read it. One did not.",
     ],
