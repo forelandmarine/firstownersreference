@@ -18,6 +18,12 @@ function chapterImagePath(slug: string) {
   return `/print-images/print/${printImages.chapters[slug]?.filename ?? "ch01.jpg"}`;
 }
 
+function supportingImagePath(slug: string, i: number) {
+  const list = printImages.supporting?.[slug] ?? [];
+  if (i < list.length) return `/print-images/print/${list[i].filename}`;
+  return null;
+}
+
 export default function PrintEdition() {
   const allEssays = sections.map((s) => ({
     section: s,
@@ -41,7 +47,7 @@ export default function PrintEdition() {
         />
         <div className="cover-page__inner">
           <p className="cover-page__edition">1st Edition · 2026</p>
-          <div>
+          <div className="cover-page__title-block">
             <h1 className="cover-page__wordmark">
               The First Owner&rsquo;s Reference
             </h1>
@@ -58,7 +64,7 @@ export default function PrintEdition() {
         <p className="half-title__wordmark">The First Owner&rsquo;s Reference</p>
       </section>
 
-      {/* === FRONTISPIECE (verso) === */}
+      {/* === FRONTISPIECE === */}
       <section className="frontispiece">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -68,7 +74,7 @@ export default function PrintEdition() {
         />
       </section>
 
-      {/* === TITLE PAGE (recto) === */}
+      {/* === TITLE PAGE === */}
       <section className="title-page">
         <div>
           <p className="title-page__edition">1st Edition · 2026</p>
@@ -77,8 +83,8 @@ export default function PrintEdition() {
           </h1>
           <p className="title-page__strap">
             An annual editorial publication on the structural, financial, and
-            operational dimensions of first-time superyacht acquisition. Or
-            rather, how to buy a boat.
+            operational dimensions of first-time superyacht acquisition.
+            Or rather, how to buy a boat.
           </p>
         </div>
         <p className="title-page__publisher">
@@ -89,8 +95,8 @@ export default function PrintEdition() {
       {/* === IMPRINT === */}
       <section className="imprint">
         <p>
-          <strong>The First Owner&rsquo;s Reference</strong>, 1st Edition, 2026.
-          Published by Foreland Marine Consultancy Limited, 7 Bell Yard,
+          <strong>The First Owner&rsquo;s Reference</strong>, 1st Edition,
+          2026. Published by Foreland Marine Consultancy Limited, 7 Bell Yard,
           London WC2A 2JR.
         </p>
         <p>
@@ -98,19 +104,19 @@ export default function PrintEdition() {
           editors@firstownersreference.com.
         </p>
         <p>
-          Set in Newsreader by Production Type, Geist and Geist Mono by Vercel.
-          Printed on Munken Pure 120gsm uncoated text stock with GF Smith
-          Colorplan cover boards. Smyth-sewn, casebound. Trim 230 by 300 mm.
-          Five hundred copies, hand numbered.
+          Set in Newsreader by Production Type, Geist and Geist Mono by
+          Vercel. Printed on Munken Pure 120gsm uncoated text stock with GF
+          Smith Colorplan cover boards. Smyth-sewn, casebound. Trim 230 by
+          300 mm. Five hundred copies, hand numbered.
         </p>
         <p>
-          ISSN pending. © 2026 Foreland Marine Consultancy Limited.
-          All rights reserved. No advertising, ever.
+          ISSN pending. © 2026 Foreland Marine Consultancy Limited. All rights
+          reserved. No advertising, ever.
         </p>
         <p>
-          The independence test that runs through this publication is
-          applied to the publisher itself. The full disclosure is on the
-          colophon at the back of this edition.
+          The independence test that runs through this publication is applied
+          to the publisher itself. The full disclosure is on the colophon at
+          the back of this edition.
         </p>
       </section>
 
@@ -122,44 +128,40 @@ export default function PrintEdition() {
         </h2>
 
         <p>
-          The superyacht trade press is funded by the yards and brokers
-          whose interests it covers. That structure is not a moral
-          failing; it is simply how those publications fund themselves.
-          The First Owner&rsquo;s Reference is funded differently, and
-          written differently. The independence is structural rather
-          than stylistic.
+          The superyacht trade press is funded by the yards and brokers whose
+          interests it covers. That structure is not a moral failing; it is
+          simply how those publications fund themselves. The First
+          Owner&rsquo;s Reference is funded differently, and written
+          differently. The independence is structural rather than stylistic.
         </p>
 
         <p>
-          It is written for the reader who has recently exited a business
-          or come into liquidity, has the means to buy a yacht, and would
-          like to do so with full visibility of cost, time, and the
-          structure of the conversations ahead. It is published once a
-          year, in print and online, by an independent consultancy that
-          holds no yard affiliations and takes no broker commissions.
+          It is written for the reader who has recently exited a business or
+          come into liquidity, has the means to buy a yacht, and would like
+          to do so with full visibility of cost, time, and the structure of
+          the conversations ahead. It is published once a year, in print and
+          online, by an independent consultancy that holds no yard
+          affiliations and takes no broker commissions.
         </p>
 
         <p>
-          The publication is structured in numbered chapters. Each
-          carries a lead essay, a data spread, a guest opinion from a
-          named contributor, an anonymised case, and a one-page
-          checklist. The aim is a calm, evidence-led reference a
-          first-time owner can hold alongside the conversations that
-          matter.
+          The publication is structured in numbered chapters. Each carries
+          a lead essay, a data spread, a guest opinion from a named
+          contributor, an anonymised case, and a one-page checklist. The
+          aim is a calm, evidence-led reference a first-time owner can hold
+          alongside the conversations that matter.
         </p>
 
         <p>
-          Read in any order. Run your own numbers through the calculator
-          on the website. The independence test in the closing chapter
-          is offered for application to the publisher first, and then to
-          any other firm a reader is considering. Editorial
-          correspondence reaches us at editors@firstownersreference.com
-          and is read by the team personally.
+          Read in any order. Run your own numbers through the calculator on
+          the website. The independence test in the closing chapter is
+          offered for application to the publisher first, and then to any
+          other firm a reader is considering. Editorial correspondence
+          reaches us at editors@firstownersreference.com and is read by the
+          team personally.
         </p>
 
-        <p>
-          We do hope it is useful.
-        </p>
+        <p>We do hope it is useful.</p>
 
         <p className="editors-letter__signature">
           Jack MacNally and Daniel Marks
@@ -183,14 +185,12 @@ export default function PrintEdition() {
                   {section.standfirst}
                 </p>
               </div>
-              <span className="contents-list__folio" aria-hidden>
-                ·
-              </span>
+              <span className="contents-list__folio" aria-hidden>·</span>
             </li>
           ))}
         </ol>
 
-        <ol className="contents-list" style={{ marginTop: "10mm" }}>
+        <ol className="contents-list" style={{ marginTop: "12mm" }}>
           <li className="contents-list__item">
             <span className="contents-list__num">A</span>
             <div className="contents-list__main">
@@ -233,8 +233,7 @@ export default function PrintEdition() {
               <h3 className="contents-list__title">Colophon</h3>
               <p className="contents-list__standfirst">
                 Editorial principles, type, paper, photography, and the
-                publisher&rsquo;s own answers to the independence test in
-                chapter 09.
+                publisher&rsquo;s own answers to the independence test.
               </p>
             </div>
             <span className="contents-list__folio">·</span>
@@ -289,8 +288,8 @@ export default function PrintEdition() {
         <h2 className="glossary-section__title">Glossary</h2>
         <p className="glossary-section__strap">
           Terms used across the chapters, set as a continuous reference. Cross-
-          references appear in italic in the body of the chapter where the term
-          is first defined.
+          references appear in italic in the body of the chapter where the
+          term is first defined.
         </p>
         <dl className="glossary-list">
           {glossaryEntries
@@ -309,7 +308,7 @@ export default function PrintEdition() {
       <section className="index-section glossary-section">
         <p className="glossary-section__label">B — Reference</p>
         <h2 className="glossary-section__title">
-          Index <em style={{ fontWeight: 300, fontSize: "0.65em" }}>(working)</em>
+          Index <em style={{ fontWeight: 300, fontSize: "0.6em" }}>(working)</em>
         </h2>
         <p className="glossary-section__strap">
           Auto-generated from chapter section headings, glossary terms, and
@@ -354,7 +353,7 @@ export default function PrintEdition() {
                     {src.url ? (
                       <>
                         {" "}
-                        <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: "7pt" }}>
+                        <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: "7.5pt" }}>
                           {src.url}
                         </span>
                       </>
@@ -363,13 +362,7 @@ export default function PrintEdition() {
                 ))}
               </ul>
             ) : (
-              <p
-                style={{
-                  fontStyle: "italic",
-                  fontSize: "8pt",
-                  color: "var(--colour-stone)",
-                }}
-              >
+              <p style={{ fontStyle: "italic", fontSize: "9pt", color: "var(--colour-stone)" }}>
                 Sources cited inline in the chapter text.
               </p>
             )}
@@ -380,27 +373,24 @@ export default function PrintEdition() {
       {/* === COLOPHON === */}
       <section className="colophon-section">
         <p className="glossary-section__label">D — Reference</p>
-        <h2
-          className="glossary-section__title"
-          style={{ marginBottom: "8mm" }}
-        >
+        <h2 className="glossary-section__title" style={{ marginBottom: "10mm" }}>
           Colophon
         </h2>
 
         <h2>Editorial principles</h2>
         <p>
-          No advertising, ever. The First Owner&rsquo;s Reference is funded
-          by the publisher and by no other commercial party. Pricing appears
-          only where backed by published market data or by aggregated
-          practitioner data anonymised across at least five projects. Every
-          guest contribution is given voluntarily and named transparently;
-          no contributor is paid.
+          No advertising, ever. The First Owner&rsquo;s Reference is funded by
+          the publisher and by no other commercial party. Pricing appears only
+          where backed by published market data or by aggregated practitioner
+          data anonymised across at least five projects. Every guest
+          contribution is given voluntarily and named transparently; no
+          contributor is paid.
         </p>
 
         <h2>Type</h2>
         <p>
-          Body and display type set in <strong>Newsreader</strong> by Production
-          Type. Sans and metadata in <strong>Geist</strong> and{" "}
+          Body and display type set in <strong>Newsreader</strong> by
+          Production Type. Sans and metadata in <strong>Geist</strong> and{" "}
           <strong>Geist Mono</strong> by Vercel. All families are open source
           and self-hosted on the web edition.
         </p>
@@ -505,18 +495,13 @@ export default function PrintEdition() {
       {/* === CLOSING IMAGE === */}
       <section className="closing-image">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={CLOSING_PATH}
-          alt={printImages.closing.alt}
-          className=""
-        />
+        <img src={CLOSING_PATH} alt={printImages.closing.alt} />
       </section>
-
     </>
   );
 }
 
-/* === Chapter block component === */
+/* === Chapter block === */
 function ChapterBlock({
   section,
   essay,
@@ -532,119 +517,170 @@ function ChapterBlock({
 }) {
   const chapterRunning = `Ch ${section.number} · ${section.title}`;
 
+  // Split paragraphs: first paragraph (string) becomes intro with drop cap;
+  // rest go in two-column flow.
+  const paras = essay?.paragraphs ?? [];
+  let firstStringIdx = paras.findIndex((p) => typeof p === "string");
+  if (firstStringIdx < 0) firstStringIdx = 0;
+  const introPara = paras[firstStringIdx];
+  const restParas = paras.filter((_, i) => i !== firstStringIdx);
+
+  // Identify positions to insert supporting images. Place after every 4th
+  // string paragraph in the rest flow.
+  const supList = printImages.supporting?.[section.slug] ?? [];
+
   return (
     <>
-      {/* Chapter opener: image verso, title recto */}
-      <section className="chapter-opener-image">
+      {/* === Image-led chapter opener === */}
+      <section className="chapter-opener">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={chapterImagePath(section.slug)}
           alt={printImages.chapters[section.slug]?.alt ?? `Chapter ${section.number}`}
+          className="chapter-opener__image"
         />
-      </section>
-      <section className="chapter-opener-text">
-        <div>
-          <p className="chapter-opener-text__num-label">
-            Chapter {section.number}
-          </p>
-          <h1 className="chapter-opener-text__num">{section.number}</h1>
-          <h2 className="chapter-opener-text__title">{section.title}</h2>
-          <p className="chapter-opener-text__standfirst">{section.standfirst}</p>
-        </div>
-        <div className="chapter-opener-text__meta">
-          <div className="chapter-opener-text__meta-item">
-            <p className="chapter-opener-text__meta-label">Reading time</p>
-            <p className="chapter-opener-text__meta-value">
-              {essay?.readingTime ?? "—"}
-            </p>
+        <div className="chapter-opener__inner">
+          <div className="chapter-opener__num-row">
+            <p className="chapter-opener__num-label">Chapter {section.number}</p>
+            <h1 className="chapter-opener__num">{section.number}</h1>
           </div>
-          {section.contributor !== "To be confirmed" && (
-            <div className="chapter-opener-text__meta-item">
-              <p className="chapter-opener-text__meta-label">Contributor</p>
-              <p className="chapter-opener-text__meta-value">
-                {section.contributor}
-              </p>
+          <div className="chapter-opener__title-block">
+            <h2 className="chapter-opener__title">{section.title}</h2>
+            <p className="chapter-opener__standfirst">{section.standfirst}</p>
+            <div className="chapter-opener__meta">
+              <div className="chapter-opener__meta-item">
+                <p className="chapter-opener__meta-label">Reading time</p>
+                <p className="chapter-opener__meta-value">
+                  {essay?.readingTime ?? "—"}
+                </p>
+              </div>
+              {section.contributor !== "To be confirmed" && (
+                <div className="chapter-opener__meta-item">
+                  <p className="chapter-opener__meta-label">Contributor</p>
+                  <p className="chapter-opener__meta-value">
+                    {section.contributor}
+                  </p>
+                </div>
+              )}
+              <div className="chapter-opener__meta-item">
+                <p className="chapter-opener__meta-label">Coordinates</p>
+                <p className="chapter-opener__meta-value">
+                  {section.coordinates}
+                </p>
+              </div>
             </div>
-          )}
-          <div className="chapter-opener-text__meta-item">
-            <p className="chapter-opener-text__meta-label">Coordinates</p>
-            <p className="chapter-opener-text__meta-value">
-              {section.coordinates}
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Lead essay */}
+      {/* === Lead essay: intro paragraph (single-column with drop cap) + rest (two-column) === */}
       {essay && (
         <section className="chapter-body" data-chapter={chapterRunning}>
-          {essay.paragraphs.map((para, i) => {
-            if (typeof para === "string") {
-              return <p key={i}>{para}</p>;
-            }
-            if (para.type === "h2") {
-              return <h2 key={i}>{para.text}</h2>;
-            }
-            if (para.type === "blockquote") {
-              return (
-                <blockquote key={i} className="chapter-body__pull">
-                  {para.text}
-                </blockquote>
-              );
-            }
-            if (para.type === "figure") {
-              return (
-                <figure key={i} className="chapter-body__figure">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={para.src} alt={para.alt} />
-                  <figcaption>{para.caption}</figcaption>
-                </figure>
-              );
-            }
-            if (para.type === "editorsNote") {
-              return (
-                <aside key={i} className="chapter-body__editors-note">
-                  {para.text}
-                </aside>
-              );
-            }
-            return null;
-          })}
+          {introPara && typeof introPara === "string" && (
+            <div className="chapter-body__intro">
+              <p>{introPara}</p>
+            </div>
+          )}
+
+          <div className="chapter-body__cols">
+            {(() => {
+              const out: React.ReactNode[] = [];
+              let stringCount = 0;
+              let supIdx = 0;
+              for (let i = 0; i < restParas.length; i++) {
+                const para = restParas[i];
+                if (typeof para === "string") {
+                  out.push(<p key={`p-${i}`}>{para}</p>);
+                  stringCount++;
+                  // Insert a supporting image after every 5th string para
+                  if (
+                    stringCount % 5 === 0 &&
+                    supIdx < supList.length
+                  ) {
+                    const sup = supList[supIdx];
+                    out.push(
+                      <figure key={`sup-${i}`} className="chapter-body__figure chapter-body__figure--wide">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={`/print-images/print/${sup.filename}`}
+                          alt={sup.alt}
+                        />
+                      </figure>
+                    );
+                    supIdx++;
+                  }
+                  continue;
+                }
+                if (para.type === "h2") {
+                  out.push(<h2 key={`h2-${i}`}>{para.text}</h2>);
+                  continue;
+                }
+                if (para.type === "blockquote") {
+                  out.push(
+                    <blockquote key={`bq-${i}`} className="chapter-body__pull">
+                      {para.text}
+                    </blockquote>
+                  );
+                  continue;
+                }
+                if (para.type === "figure") {
+                  out.push(
+                    <figure key={`fig-${i}`} className="chapter-body__figure chapter-body__figure--wide">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={para.src} alt={para.alt} />
+                      <figcaption>{para.caption}</figcaption>
+                    </figure>
+                  );
+                  continue;
+                }
+                if (para.type === "editorsNote") {
+                  out.push(
+                    <aside key={`en-${i}`} className="chapter-body__editors-note">
+                      {para.text}
+                    </aside>
+                  );
+                  continue;
+                }
+              }
+              // If supporting images remain unused, append the rest at the end
+              while (supIdx < supList.length) {
+                const sup = supList[supIdx];
+                out.push(
+                  <figure key={`sup-tail-${supIdx}`} className="chapter-body__figure chapter-body__figure--wide">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`/print-images/print/${sup.filename}`}
+                      alt={sup.alt}
+                    />
+                  </figure>
+                );
+                supIdx++;
+              }
+              return out;
+            })()}
+          </div>
         </section>
       )}
 
       {/* Guest opinion */}
       {guestOpinion && (
-        <section className="case-section" data-chapter={chapterRunning}>
-          <header className="case-section__opener">
-            <p className="case-section__label">Guest opinion</p>
-            <h2 className="case-section__title">
-              In conversation with {guestOpinion.contributor}
-            </h2>
-            <p className="case-section__standfirst">
-              {guestOpinion.contributorRole}.{" "}
-              {guestOpinion.intro}
-            </p>
-          </header>
+        <section className="guest-opinion" data-chapter={chapterRunning}>
+          <p className="guest-opinion__label">Guest opinion</p>
+          <h2 className="guest-opinion__title">
+            In conversation with {guestOpinion.contributor}
+          </h2>
+          <p className="guest-opinion__intro">
+            {guestOpinion.contributorRole}.{" "}
+            {guestOpinion.intro}
+          </p>
           {guestOpinion.questions.map((qa, i) => (
-            <div key={i} style={{ marginBottom: "8mm", breakInside: "avoid" }}>
-              <p
-                style={{
-                  fontFamily: "Newsreader, Georgia, serif",
-                  fontWeight: 600,
-                  fontSize: "10pt",
-                  lineHeight: "14pt",
-                  margin: "0 0 4pt 0",
-                  color: "var(--colour-marine)",
-                }}
-              >
-                {qa.question}
-              </p>
-              {qa.answer.map((para, ai) => (
-                <p key={ai} style={{ margin: "0 0 8pt 0" }}>
-                  {para}
-                </p>
-              ))}
+            <div key={i} className="guest-opinion__qa">
+              <p className="guest-opinion__q">{qa.question}</p>
+              <div className="guest-opinion__a">
+                {qa.answer.map((para, ai) => (
+                  <p key={ai}>{para}</p>
+                ))}
+              </div>
             </div>
           ))}
         </section>
@@ -755,58 +791,31 @@ function ChapterBlock({
               ))}
             </div>
           </header>
-          {caseStudy.paragraphs.map((p, i) => {
-            if (typeof p === "string") {
-              return (
-                <p key={i} style={{ margin: "0 0 11pt 0" }}>
-                  {p}
-                </p>
-              );
-            }
-            if (p.type === "h2") {
-              return (
-                <h2
-                  key={i}
-                  style={{
-                    fontFamily: "Newsreader, Georgia, serif",
-                    fontWeight: 400,
-                    fontSize: "12pt",
-                    lineHeight: "16pt",
-                    margin: "14pt 0 6pt 0",
-                    color: "var(--colour-marine)",
-                  }}
-                >
-                  {p.text}
-                </h2>
-              );
-            }
-            if (p.type === "blockquote") {
-              return (
-                <blockquote key={i} className="chapter-body__pull">
-                  {p.text}
-                  {p.attribution && (
-                    <footer
-                      style={{
-                        fontFamily: "Geist Mono, monospace",
-                        fontSize: "7pt",
-                        fontStyle: "normal",
-                        textTransform: "uppercase",
-                        letterSpacing: "0.12em",
-                        color: "var(--colour-stone)",
-                        marginTop: "4pt",
-                      }}
-                    >
-                      {p.attribution}
-                    </footer>
-                  )}
-                </blockquote>
-              );
-            }
-            return null;
-          })}
-          <p className="case-section__disclosure">
-            <strong>Disclosure.</strong> {caseStudy.disclosure}
-          </p>
+
+          <div className="case-section__body">
+            {caseStudy.paragraphs.map((p, i) => {
+              if (typeof p === "string") {
+                return <p key={i}>{p}</p>;
+              }
+              if (p.type === "h2") {
+                return <h2 key={i}>{p.text}</h2>;
+              }
+              if (p.type === "blockquote") {
+                return (
+                  <blockquote key={i} className="chapter-body__pull">
+                    {p.text}
+                    {p.attribution && (
+                      <footer>{p.attribution}</footer>
+                    )}
+                  </blockquote>
+                );
+              }
+              return null;
+            })}
+            <p className="case-section__disclosure">
+              <strong>Disclosure.</strong> {caseStudy.disclosure}
+            </p>
+          </div>
         </section>
       )}
     </>
