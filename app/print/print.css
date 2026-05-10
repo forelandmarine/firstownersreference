@@ -226,21 +226,23 @@ body::before {
 .cover-page__wordmark {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 38pt;
-  line-height: 1.05;
-  letter-spacing: -0.01em;
+  font-size: 44pt;
+  line-height: 1.04;
+  letter-spacing: -0.012em;
   color: var(--colour-paper);
-  max-width: 130mm;
+  max-width: 140mm;
+  text-shadow: 0 0 24mm rgba(0, 0, 0, 0.15);
 }
 
 .cover-page__strap {
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
-  font-size: 11pt;
+  font-size: 12.5pt;
   line-height: 1.4;
   color: var(--colour-paper);
-  opacity: 0.85;
-  max-width: 100mm;
+  opacity: 0.92;
+  max-width: 110mm;
+  margin-top: 6mm;
 }
 
 .cover-page__publisher {

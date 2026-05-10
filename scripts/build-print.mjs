@@ -332,7 +332,16 @@ function writeArtifacts(manifest, assignments, pageCount) {
   }
   fs.writeFileSync(ASSIGNMENTS_OUT, lines.join("\n"), "utf8");
 
+  // Skip writing notes/todo if they already contain custom content the
+  // editor has marked up. Heuristic: if the file exists and is larger
+  // than 8KB it has been hand-edited; preserve.
+  const skipNotes = fs.existsSync(NOTES_OUT) && fs.statSync(NOTES_OUT).size > 8000;
+  const skipTodo = fs.existsSync(TODO_OUT) && fs.statSync(TODO_OUT).size > 8000;
+
   // Design notes
+  if (skipNotes) {
+    log(`  ${NOTES_OUT} preserved (looks hand-edited)`);
+  } else
   fs.writeFileSync(
     NOTES_OUT,
     `# Print proof: design notes
@@ -415,6 +424,9 @@ Image manifest is in \`lib/print-images.ts\`. Mark up which images to swap in th
   );
 
   // Todo
+  if (skipTodo) {
+    log(`  ${TODO_OUT} preserved (looks hand-edited)`);
+  } else
   fs.writeFileSync(
     TODO_OUT,
     `# Print proof: todo and editorial notes
