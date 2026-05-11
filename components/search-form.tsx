@@ -38,19 +38,34 @@ export function SearchForm({ initialQuery = "" }: { initialQuery?: string }) {
 
   return (
     <div className="space-y-12">
-      <div className="border-b border-charcoal pb-2">
-        <label htmlFor="search-input" className="meta-marine block mb-2">
+      <div className="space-y-3">
+        <label htmlFor="search-input" className="meta-marine block">
           Search The First Owner’s Reference
         </label>
-        <input
-          id="search-input"
-          type="search"
-          autoFocus
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Topic, yacht, builder, keyword"
-          className="w-full bg-transparent font-serif text-xl sm:text-3xl lg:text-5xl placeholder:text-stone-soft focus:outline-none py-4"
-        />
+        <div className="flex items-center gap-4 border border-charcoal focus-within:border-marine transition-colors px-5 sm:px-6 py-3 sm:py-4 bg-paper">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 14 14"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.25"
+            className="text-charcoal-soft shrink-0"
+            aria-hidden="true"
+          >
+            <circle cx="6" cy="6" r="4.5" />
+            <path d="M9.5 9.5 L13 13" strokeLinecap="round" />
+          </svg>
+          <input
+            id="search-input"
+            type="search"
+            autoFocus
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Type to search…"
+            className="flex-1 bg-transparent font-serif text-xl sm:text-2xl lg:text-3xl placeholder:text-stone-soft focus:outline-none py-1"
+          />
+        </div>
       </div>
 
       {query.trim().length > 1 && (
