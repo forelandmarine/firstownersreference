@@ -85,6 +85,11 @@ export default function HomePage() {
                 Written and edited by industry experts. Independently
                 funded. Carries no advertising, ever.
               </p>
+              <p className="font-serif italic text-base leading-relaxed text-stone max-w-2xl pt-6 mt-2 border-t border-rule">
+                N.B. The First Owner&rsquo;s Reference is still being
+                written and contributed to, ahead of publication towards
+                the end of 2026.
+              </p>
             </div>
           </div>
         </div>
