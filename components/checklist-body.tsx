@@ -52,7 +52,7 @@ export function ChecklistBody({ list }: { list: Checklist }) {
             href={`/${list.slug}/checklist`}
             className="meta-marine inline-flex items-center gap-2"
           >
-            Open the printable checklist <span aria-hidden>&rarr;</span>
+            Open the printable checklist
           </Link>
         </section>
       </div>

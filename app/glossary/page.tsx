@@ -107,7 +107,7 @@ export default function GlossaryPage() {
                   href={`/glossary/${entry.slug}`}
                   className="meta-marine inline-flex items-center gap-2 mt-4"
                 >
-                  Read in full <span aria-hidden>&rarr;</span>
+                  Read in full
                 </Link>
               </div>
             ))}

@@ -849,17 +849,15 @@ export default function RunningCostCalculatorPage() {
             {/* RESULTS */}
             <div className="space-y-6 lg:sticky lg:top-32 lg:self-start">
               {/* Total card */}
-              <div className="bg-charcoal text-paper p-6 sm:p-8">
-                <p className="meta text-paper/60 mb-3">
-                  Estimated annual cost
-                </p>
+              <div className="bg-paper-deep border border-rule p-6 sm:p-8">
+                <p className="meta-marine mb-3">Estimated annual cost</p>
                 <p
-                  className="font-serif font-light text-4xl sm:text-5xl tracking-tight"
+                  className="font-serif font-light text-4xl sm:text-5xl tracking-tight text-charcoal"
                   style={{ fontVariantNumeric: "tabular-nums" }}
                 >
                   {fmt(costs.total, currency)}
                 </p>
-                <p className="caption text-paper/70 mt-3">
+                <p className="caption mt-3">
                   {length} m{" "}
                   {yachtType === "motor" ? "motor yacht" : "sailing yacht"},{" "}
                   {useType === "charter" ? "charter" : "private"},{" "}
@@ -904,7 +902,7 @@ export default function RunningCostCalculatorPage() {
                   href="https://forelandmarine.com/contact"
                   external
                 >
-                  Speak with Foreland Marine &rarr;
+                  Speak with Foreland Marine
                 </ButtonPrimary>
               </div>
             </div>
@@ -983,7 +981,7 @@ export default function RunningCostCalculatorPage() {
                 href={link.href}
                 className="block font-serif text-base text-charcoal-soft hover:text-marine transition-colors"
               >
-                {link.label} &rarr;
+                {link.label}
               </Link>
             ))}
           </div>

@@ -80,7 +80,7 @@ export default function ContributorsPage() {
                   href={`/${s.slug}`}
                   className="inline-block mt-2 meta-marine"
                 >
-                  Read chapter &rarr;
+                  Read chapter
                 </Link>
               </div>
             ))}

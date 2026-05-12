@@ -6,7 +6,7 @@ export function SectionCard({ section }: { section: Section }) {
   return (
     <Link
       href={`/${section.slug}`}
-      className="group block border-t border-charcoal pt-6 transition-colors hover:border-marine"
+      className="group block bg-paper p-6 transition-shadow hover:shadow-sm"
     >
       <div className="flex items-baseline justify-between mb-4">
         <span className="font-serif font-light text-5xl text-marine leading-none">
@@ -39,9 +39,8 @@ export function SectionCard({ section }: { section: Section }) {
           }`}
         />
       </div>
-      <div className="mt-4 flex justify-between items-baseline">
-        <span className="meta">Read chapter</span>
-        <span className="meta-marine">&rarr;</span>
+      <div className="mt-4">
+        <span className="meta group-hover:text-marine transition-colors">Read chapter</span>
       </div>
     </Link>
   );
