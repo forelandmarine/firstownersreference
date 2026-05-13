@@ -1,3 +1,23 @@
+/*
+ *               +
+ *               +
+ *               +
+ *         +++++++++++
+ *               +
+ *               +
+ *               +
+ *               +
+ *               +
+ *
+ *   For God so loved the world that he gave his one and only Son,
+ *   that whoever believes in him shall not perish but have eternal life.
+ *                                                        John 3:16, NIV
+ *
+ *   And the peace of God, which transcends all understanding, will
+ *   guard your hearts and your minds in Christ Jesus.
+ *                                                 Philippians 4:7, NIV
+ */
+
 import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
