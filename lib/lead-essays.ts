@@ -176,7 +176,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       },
       { type: "h2", text: "Sea trial" },
       "The sea trial happens after the survey, typically on the same yard visit. Standard MOA terms allow 4 to 8 hours at the seller's expense. The buyer brings their own captain candidate, surveyor, and a chief engineer where propulsion is central to the use case.",
-      "What is being tested: handling at speed and at anchor, stability, vibration, noise at various engine loads, navigation and comms, autopilot and control systems, comfort underway, and any failure mode the survey did not catch. Common failures: vibration at certain RPM bands, poor noise insulation in master cabin underway, unmaintained navigation electronics, stabilisers that work at one heel angle and not another.",
+      "What is being tested: handling, stability, vibration, noise at various engine loads, anchoring and ground tackle, navigation and comms, autopilot and control systems, comfort underway, and any failure mode the survey did not catch. Common failures: vibration at certain RPM bands, poor noise insulation in master cabin underway, unmaintained navigation electronics, stabilisers that work at one heel angle and not another.",
       "If the trial reveals issues, the renegotiation continues. If not, the next step is closing.",
       { type: "h2", text: "VAT, flag, and registration" },
       "Two procedural choices materially affect the cost of ownership over the next decade and are commonly made under time pressure at closing without proper analysis.",
