@@ -73,17 +73,14 @@ export default function ColophonPage() {
 
             <h2>On reception</h2>
             <p>
-              The Superyacht Alliance for Professional Standards has expressed
-              support for the editorial mission of this publication. Hein
-              Velema, Secretary General, May 2026: &ldquo;The whole purpose of
-              the Alliance is to promote professionalism. That is not the only
-              role in the industry that needs to be made clearer. We are very
-              happy to support work outside the Alliance that is contributing
-              to the education and clarity of the people in the industry.&rdquo;
-              The Alliance&rsquo;s support is for the editorial mission; it is
-              not a formal endorsement of any specific claim or framing in
-              this publication, which remains independent of the Alliance and
-              of any other industry body.
+              The Superyacht Alliance for Professional Standards has
+              expressed support for the editorial mission of this
+              publication as an external contribution to industry
+              professionalisation. The Alliance&rsquo;s support is for
+              the editorial mission; it is not a formal endorsement of
+              any specific claim or framing in this publication, which
+              remains independent of the Alliance and of any other
+              industry body.
             </p>
 
             <h2>Type</h2>

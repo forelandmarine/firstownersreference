@@ -85,14 +85,9 @@ export default function PressPage() {
             </p>
             <p>
               Institutional reception, May 2026. The Superyacht Alliance
-              for Professional Standards, through its Secretary General
-              Hein Velema, has expressed support for the publication&rsquo;s
-              editorial mission as an external contribution to industry
-              professionalisation. The full reception note is on the{" "}
-              <Link href="/colophon" className="link-marine">
-                colophon
-              </Link>
-              .
+              for Professional Standards has expressed support for the
+              publication&rsquo;s editorial mission as an external
+              contribution to industry professionalisation.
             </p>
 
             <h2>Masthead</h2>
