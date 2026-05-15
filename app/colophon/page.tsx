@@ -73,12 +73,12 @@ export default function ColophonPage() {
 
             <h2>On reception</h2>
             <p>
-              The Superyacht Alliance for Professional Standards has
-              expressed support for the editorial mission of this
-              publication as an external contribution to industry
-              professionalisation. The Alliance&rsquo;s support is for
-              the editorial mission; it is not a formal endorsement of
-              any specific claim or framing in this publication, which
+              Editorial conversations with the Superyacht Alliance for
+              Professional Standards have noted support for the
+              publication&rsquo;s mission as an external contribution to
+              industry professionalisation. That support is for the
+              editorial mission; it is not a formal endorsement of any
+              specific claim or framing in this publication, which
               remains independent of the Alliance and of any other
               industry body.
             </p>
