@@ -236,7 +236,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributor: "Ella Johnson",
       contributorRole: "Captain, 34m Baltic Yachts Performance Sloop",
       intro:
-        "We put four questions to Capt. Ella on sail at the top of the market: race week on a performance sloop, what she would specify differently with seven years' operational experience, a passage that stands for the case for sail, and what life onboard takes from a family new to it. Answers are given on the record, lightly edited for typography.",
+        "We put four questions to Ella on sail at the top of the market: race week on a performance sloop, what she would specify differently with seven years' operational experience, a passage that stands for the case for sail, and what life onboard takes from a family new to it. Answers are given on the record, lightly edited for typography.",
       questions: [
         {
           question:
