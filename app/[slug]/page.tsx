@@ -283,12 +283,7 @@ export default async function SectionPage(props: {
                                 {item.label}
                               </Link>
                             ) : (
-                              <a
-                                href={item.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="link"
-                              >
+                              <a href={item.href} className="link">
                                 {item.label}
                               </a>
                             )
