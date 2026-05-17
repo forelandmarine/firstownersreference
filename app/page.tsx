@@ -1,3 +1,23 @@
+/*
+ *               +
+ *               +
+ *               +
+ *         +++++++++++
+ *               +
+ *               +
+ *               +
+ *               +
+ *               +
+ *
+ *   For God so loved the world that he gave his one and only Son,
+ *   that whoever believes in him shall not perish but have eternal life.
+ *                                                        John 3:16, NIV
+ *
+ *   And the peace of God, which transcends all understanding, will
+ *   guard your hearts and your minds in Christ Jesus.
+ *                                                 Philippians 4:7, NIV
+ */
+
 import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
@@ -87,8 +107,7 @@ export default function HomePage() {
               </p>
               <p className="font-serif italic text-base leading-relaxed text-stone max-w-2xl pt-6 mt-2 border-t border-rule">
                 N.B. The First Owner&rsquo;s Reference is still being
-                written and contributed to, ahead of publication towards
-                the end of 2026.
+                written and contributed to, ahead of publication Q4 2026.
               </p>
             </div>
           </div>
@@ -97,10 +116,10 @@ export default function HomePage() {
 
       <section
         id="chapters"
-        className="bg-paper-deep py-24 lg:py-32 border-t border-rule"
+        className="bg-paper-deep py-24 lg:py-32"
       >
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-          <div className="flex items-baseline justify-between mb-16 border-b border-charcoal pb-6">
+          <div className="flex items-baseline justify-between mb-16">
             <h2 className="font-serif text-headline leading-tight tracking-tight">
               Chapters
             </h2>
@@ -175,7 +194,7 @@ export default function HomePage() {
               href="/tools/running-cost-calculator"
               className="inline-block border border-paper/40 hover:border-paper px-6 py-3 meta text-paper transition-colors"
             >
-              Open the calculator &rarr;
+              Open the calculator
             </Link>
           </div>
           <div className="meta text-paper/60 grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-6 gap-x-8 lg:pl-12 lg:border-l lg:border-paper/20">
@@ -219,7 +238,7 @@ export default function HomePage() {
               href="/request-print-edition"
               className="inline-block mt-8 border border-charcoal hover:border-marine hover:text-marine px-6 py-3 meta transition-colors"
             >
-              Request a print copy &rarr;
+              Request a print copy
             </Link>
           </div>
           <div className="relative aspect-[3/4] bg-stone-soft">

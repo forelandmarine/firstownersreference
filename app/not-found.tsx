@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata = {
-  title: "Page not found | The First Owner’s Reference",
+  title: "Page not found",
   robots: { index: false, follow: false },
 };
 

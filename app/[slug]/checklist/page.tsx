@@ -19,7 +19,7 @@ export async function generateMetadata(props: {
   if (!section || !checklist) return {};
   const url = `${SITE_URL}/${section.slug}/checklist`;
   return {
-    title: `${checklist.title} | Chapter ${section.number}, The First Owner's Reference`,
+    title: `${checklist.title} | Chapter ${section.number}`,
     description: checklist.standfirst,
     alternates: { canonical: url },
     openGraph: {

@@ -212,6 +212,8 @@ export const dataSpreads: Record<string, DataSpread> = {
           { label: "Damen Yachting", value: "Yacht Support range booked through Q4 2028 / Q1 2029 on certain models" },
           { label: "Sanlorenzo", value: "Order book extends to Q4 2028 / Q1 2029 on SX, SD, and Steel ranges; with Nautor Swan, 4,698 m across 130 yachts" },
           { label: "Azimut Benetti", value: "5,924 m of length under construction across 163 yachts" },
+          { label: "Southern Wind", value: "Order book extending through 2028 as of May 2026 (Superyacht Investor)" },
+          { label: "Sanlorenzo UK and Ireland, late-Q1 2026 read", value: "Buyer-meeting volume approximately 10 percent above the same window in 2025 (Nick Hatfield, Superyacht Investor)" },
         ],
         sourceLine: "BOAT International, yard published statements, trade press tracking.",
       },
@@ -263,6 +265,11 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "SuperYacht Times iQ data",
         line: "Russian ownership share movement, 2022 to 2023; Asia-Pacific fleet growth.",
+      },
+      {
+        label: "Superyacht Investor, May 2026",
+        line: "Rob Hodgetts, \u201cPalma finds groove in search for sailing\u2019s new generation.\u201d Southern Wind order book through 2028; SW108 Kalantis owner demographic; Sanlorenzo buyer-meeting volume.",
+        url: "https://www.superyachtinvestor.com/opinion/palma-finds-groove-in-search-for-sailings-new-generation/",
       },
     ],
   },
@@ -1454,6 +1461,51 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "Nautor Swan and Edmiston press statements; Robb Report; BoatInternational; Feadship and Cecil Wright press statements.",
       },
+      { type: "h2", text: "Palma May 2026, on the trade-side record" },
+      {
+        type: "kv",
+        caption:
+          "Palma International Boat Show 2026 reporting points relevant to the sail-versus-motor decision. Segment differentiation inside the sailing yacht market, capacity at the major sail yards, and the start of an observable shift in buyer age.",
+        rows: [
+          {
+            label: "Performance sail, 28 to 34 metres",
+            value:
+              "Trading strongly, frequent off-market deals (Will Bishop, Superyacht Partners).",
+          },
+          {
+            label: "Performance sail, 35 to 45 metres and above",
+            value:
+              "Materially softer than the 28 to 34 metre band; longer days on market, more price negotiation.",
+          },
+          {
+            label: "Baltic Yachts at Palma",
+            value:
+              "Canova, 43 metres, asking EUR 29.8 million, fifth build for the same owner. Liara, 34 metres, the Baltic 112.",
+          },
+          {
+            label: "Southern Wind, May 2026",
+            value:
+              "SW108 Kalantis delivered February 2026 against an August 2024 contract. Yard reports order book extending through 2028.",
+          },
+          {
+            label: "Sailing yacht ownership age curve",
+            value:
+              "SW108 Kalantis owner in his 30s; average ownership age across three Southern Wind hulls at Palma in the late 40s.",
+          },
+          {
+            label: "Multihull, the only growing sub-segment",
+            value:
+              "Catamarans the only part of the sailing market reporting unit growth among UHNW buyers (Fraser Yachts). Baltic Yachts cat in build for 2027.",
+          },
+          {
+            label: "Sanlorenzo UK and Ireland, late-Q1 2026 read",
+            value:
+              "Buyer-meeting volume approximately 10 percent above the same window in 2025 (Nick Hatfield).",
+          },
+        ],
+        sourceLine:
+          "Superyacht Investor, \u201cPalma finds groove in search for sailing\u2019s new generation,\u201d May 2026.",
+      },
       { type: "h2", text: "Aggregate effect, 35 m hold over seven years" },
       {
         type: "kv",
@@ -1504,6 +1556,11 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         label: "Denison Yachting market report 2025",
         line: "Days-on-market series across motor and sail brokerage.",
+      },
+      {
+        label: "Superyacht Investor, May 2026",
+        line: "Rob Hodgetts, \u201cPalma finds groove in search for sailing\u2019s new generation.\u201d Palma 2026 segment data, Baltic and Southern Wind reporting, multihull growth, Sanlorenzo buyer-meeting volume.",
+        url: "https://www.superyachtinvestor.com/opinion/palma-finds-groove-in-search-for-sailings-new-generation/",
       },
       {
         label: "Foreland Marine project archive",

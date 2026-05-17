@@ -87,7 +87,7 @@ export const sections: Section[] = [
     heroFocus: "bottom",
     contributor: "Hein Velema",
     contributorRole:
-      "Secretary General, Superyacht Alliance for Professional Standards",
+      "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
     seoTitle:
       "New build vs brokerage superyacht: contract, owner's rep, costs",
     seoDescription:

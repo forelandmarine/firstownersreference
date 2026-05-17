@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Press: brand details, masthead, and assets | The First Owner's Reference",
+  title: "Press: brand details, masthead, and assets",
   description:
     "Press resources for The First Owner's Reference. Masthead, brand assets, citation format, and contact for editorial enquiries from yachting and financial press.",
   alternates: {
@@ -82,6 +82,12 @@ export default function PressPage() {
                 colophon
               </Link>
               .
+            </p>
+            <p>
+              Institutional reception, May 2026. Editorial conversations
+              with the Superyacht Alliance for Professional Standards
+              have noted support for the publication&rsquo;s mission as
+              an external contribution to industry professionalisation.
             </p>
 
             <h2>Masthead</h2>

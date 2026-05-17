@@ -129,7 +129,7 @@ export default async function CaseStudyPage(props: {
                   className="group flex flex-col md:text-right"
                 >
                   <span className="meta mb-2">
-                    Next chapter &rarr;
+                    Next chapter
                   </span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors">
                     {next.number}, {next.title}
@@ -140,7 +140,7 @@ export default async function CaseStudyPage(props: {
                   href="/#chapters"
                   className="group flex flex-col md:text-right"
                 >
-                  <span className="meta mb-2">All chapters &rarr;</span>
+                  <span className="meta mb-2">All chapters</span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors">
                     1st Edition
                   </span>

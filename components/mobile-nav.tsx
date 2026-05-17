@@ -163,7 +163,7 @@ export function MobileNav() {
                 onClick={() => setOpen(false)}
                 className="font-serif text-xl text-marine py-4 mt-8 inline-flex items-center gap-2 border-b border-marine"
               >
-                Request a print copy <span aria-hidden>&rarr;</span>
+                Request a print copy
               </Link>
             </nav>
 

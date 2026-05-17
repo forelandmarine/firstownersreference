@@ -71,6 +71,18 @@ export default function ColophonPage() {
               the piece. Where there is none, that is stated.
             </p>
 
+            <h2>On reception</h2>
+            <p>
+              Editorial conversations with the Superyacht Alliance for
+              Professional Standards have noted support for the
+              publication&rsquo;s mission as an external contribution to
+              industry professionalisation. That support is for the
+              editorial mission; it is not a formal endorsement of any
+              specific claim or framing in this publication, which
+              remains independent of the Alliance and of any other
+              industry body.
+            </p>
+
             <h2>Type</h2>
             <p>
               Body and display type set in Newsreader by Production Type. Sans

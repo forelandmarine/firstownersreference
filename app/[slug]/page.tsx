@@ -522,7 +522,7 @@ export default async function SectionPage(props: {
                   {caseStudy.standfirst}
                 </p>
                 <span className="meta-marine inline-flex items-center gap-2">
-                  Read the case study <span aria-hidden>&rarr;</span>
+                  Read the case study
                 </span>
               </Link>
             </div>
@@ -613,7 +613,7 @@ export default async function SectionPage(props: {
                     href="/glossary"
                     className="meta-marine inline-flex items-center gap-2 mt-10"
                   >
-                    Open the full glossary <span aria-hidden>&rarr;</span>
+                    Open the full glossary
                   </Link>
                 </details>
               </div>
@@ -728,7 +728,7 @@ export default async function SectionPage(props: {
                   className="group flex flex-col text-right"
                 >
                   <span className="meta mb-2">
-                    Next, Chapter {next.number} &rarr;
+                    Next, Chapter {next.number}
                   </span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors max-w-sm">
                     {next.title}
@@ -737,7 +737,7 @@ export default async function SectionPage(props: {
               ) : (
                 <Link href="/#chapters" className="group flex flex-col text-right">
                   <span className="meta mb-2">
-                    Return to all chapters &rarr;
+                    Return to all chapters
                   </span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors">
                     1st Edition

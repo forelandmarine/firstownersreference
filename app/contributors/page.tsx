@@ -138,7 +138,7 @@ export default function ContributorsPage() {
                         href={`/${ch.slug}`}
                         className="meta-marine inline-block"
                       >
-                        Chapter {ch.number} &middot; {ch.title} &rarr;
+                        Chapter {ch.number} &middot; {ch.title}
                       </Link>
                     </li>
                   ))}
