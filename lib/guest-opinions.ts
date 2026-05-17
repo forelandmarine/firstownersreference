@@ -16,7 +16,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
     {
       slug: "03-how-the-industry-works",
       contributor: "Capt. Pavlos Filippakis",
-      contributorRole: "Master Mariner (Class 1)",
+      contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
       intro:
         "Capt. Filippakis came to large-yacht command from a career in LNG and has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands. We put five questions to him on the captain's loyalty problem: the introduction route, the broker call, the referral-fee question, the disclosure rule, and the first conversation a first-time owner should have with a captain candidate. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -72,7 +72,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
     {
       slug: "04-acquisition-process",
       contributor: "Capt. Pavlos Filippakis",
-      contributorRole: "Master Mariner (Class 1)",
+      contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
       intro:
         "We put two questions to Capt. Filippakis on sea-trial discipline: what a competent captain is doing during the trial that a buyer would not see, and the failure modes he has personally found during sea trial that a survey did not catch. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -180,7 +180,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
     {
       slug: "07-operations",
       contributor: "Capt. Pavlos Filippakis",
-      contributorRole: "Master Mariner (Class 1)",
+      contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
       intro:
         "We put five questions to Capt. Filippakis on captain hire and crew dynamics: what separates a good captain from a competent one, where to push back in interview, the cost of rotation that the salary line does not show, what compounds crew turnover, and the single most consequential operational discipline of year one. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -276,7 +276,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
     {
       slug: "08-motor-versus-sail",
       contributor: "Capt. Pavlos Filippakis",
-      contributorRole: "Master Mariner (Class 1)",
+      contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
       intro:
         "We put three questions to Capt. Filippakis on the explorer and high-latitude angle: how the segment compares operationally with a conventional 50 metre Mediterranean motor programme, what Polar Code-certified operation actually requires of owner, crew, and build, and the honest case versus the romantic mistake for a first-time UHNW buyer attracted to the explorer profile. Answers are given on the record, lightly edited for typography.",
       questions: [

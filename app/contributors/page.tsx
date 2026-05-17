@@ -130,7 +130,7 @@ export default function ContributorsPage() {
                 <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal mb-2">
                   {c.name}
                 </p>
-                <p className="caption mb-6">{c.role}</p>
+                <p className="caption mb-6 whitespace-pre-line">{c.role}</p>
                 <ul className="space-y-2">
                   {c.chapters.map((ch) => (
                     <li key={ch.slug}>

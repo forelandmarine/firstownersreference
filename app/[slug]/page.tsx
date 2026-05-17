@@ -427,7 +427,7 @@ export default async function SectionPage(props: {
                     <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal">
                       {guestOpinion.contributor}
                     </p>
-                    <p className="caption">{guestOpinion.contributorRole}</p>
+                    <p className="caption whitespace-pre-line">{guestOpinion.contributorRole}</p>
                   </div>
                 </div>
                 <div className="lg:col-span-8 lg:col-start-4">
