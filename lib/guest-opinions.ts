@@ -233,17 +233,16 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
   "08-motor-versus-sail": [
     {
       slug: "08-motor-versus-sail",
-      contributor: "Capt. Ella Johnson",
-      contributorRole:
-        "Master of a 34 metre Baltic Yachts performance sloop",
+      contributor: "Ella Johnson",
+      contributorRole: "Captain, 34m Baltic Yachts Performance Sloop",
       intro:
-        "We put four questions to Capt. Johnson on sail at the top of the market: race week on a performance sloop, what she would specify differently with seven years' operational experience, a passage that stands for the case for sail, and what life onboard takes from a family new to it. Answers are given on the record, lightly edited for typography.",
+        "We put four questions to Capt. Ella on sail at the top of the market: race week on a performance sloop, what she would specify differently with seven years' operational experience, a passage that stands for the case for sail, and what life onboard takes from a family new to it. Answers are given on the record, lightly edited for typography.",
       questions: [
         {
           question:
             "You raced a 35 metre Nautor Swan on the Maxi circuit earlier in your career. Walk us through a race week on that boat: what changed in the programme, who was on the rail, and what did the owner take from those seven days?",
           answer: [
-            "My current owner does not race the boat — he is hesitant about the potential for someone getting hurt — but in my younger career I raced against her on a 35 metre Nautor Swan. On that boat, we used to change the entire boat for racing.",
+            "My current owner does not race the boat — he is hesitant about the potential for someone getting hurt — but in my earlier career I raced against her on a 35 metre Nautor Swan. On that boat, we used to change the entire boat for racing.",
             "We would change the back stays to running back stays and the mainsail to a square top, and all the halyards and sheets to lighter weight race ropes. We would empty lockers and change all the floorboards inside the boat. We used to bring in a race boss who organised the crew and assigned positions.",
             "The owner loved the racing, and for me it was the highlight of sailing superyachts. I miss it greatly.",
           ],
