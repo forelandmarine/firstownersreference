@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { sections } from "@/lib/sections";
+import { guestOpinions } from "@/lib/guest-opinions";
 
 import type { Metadata } from "next";
 
@@ -26,8 +27,63 @@ export const metadata: Metadata = {
   },
 };
 
+type ContributorChapter = {
+  number: string;
+  title: string;
+  slug: string;
+};
+
+type Contributor = {
+  name: string;
+  role: string;
+  chapters: ContributorChapter[];
+};
+
+function buildContributors(): Contributor[] {
+  const byName = new Map<string, Contributor>();
+
+  const upsert = (name: string, role: string, chapter: ContributorChapter) => {
+    const existing = byName.get(name);
+    if (existing) {
+      if (!existing.chapters.some((c) => c.slug === chapter.slug)) {
+        existing.chapters.push(chapter);
+      }
+      return;
+    }
+    byName.set(name, { name, role, chapters: [chapter] });
+  };
+
+  for (const s of sections) {
+    if (s.contributor === "To be confirmed") continue;
+    upsert(s.contributor, s.contributorRole, {
+      number: s.number,
+      title: s.title,
+      slug: s.slug,
+    });
+  }
+
+  for (const [slug, opinions] of Object.entries(guestOpinions)) {
+    const section = sections.find((s) => s.slug === slug);
+    if (!section) continue;
+    for (const opinion of opinions) {
+      upsert(opinion.contributor, opinion.contributorRole, {
+        number: section.number,
+        title: section.title,
+        slug: section.slug,
+      });
+    }
+  }
+
+  return Array.from(byName.values()).sort((a, b) => {
+    const aFirst = a.chapters[0]?.number ?? "99";
+    const bFirst = b.chapters[0]?.number ?? "99";
+    if (aFirst !== bFirst) return aFirst.localeCompare(bFirst);
+    return a.name.localeCompare(b.name);
+  });
+}
+
 export default function ContributorsPage() {
-  const confirmed = sections.filter((s) => s.contributor !== "To be confirmed");
+  const contributors = buildContributors();
 
   return (
     <>
@@ -49,8 +105,10 @@ export default function ContributorsPage() {
             <p className="font-serif italic text-xl lg:text-2xl text-charcoal-soft mt-8 max-w-2xl">
               The First Owner&rsquo;s Reference is collaborative by design. Each chapter is
               anchored by a named external contributor with deep first-hand
-              knowledge of the topic. Outreach is ongoing for the
-              remaining slots; this page is updated as contributors confirm.
+              knowledge of the topic, with additional voices on the record where
+              their experience adds material the anchor cannot. Outreach is
+              ongoing for the remaining slots; this page is updated as
+              contributors confirm.
             </p>
           </div>
         </header>
@@ -67,21 +125,24 @@ export default function ContributorsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-            {confirmed.map((s) => (
-              <div key={s.slug} className="border-t border-charcoal pt-6">
-                <p className="meta mb-3">
-                  Chapter {s.number} &middot; {s.title}
-                </p>
+            {contributors.map((c) => (
+              <div key={c.name} className="border-t border-charcoal pt-6">
                 <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal mb-2">
-                  {s.contributor}
+                  {c.name}
                 </p>
-                <p className="caption mb-6">{s.contributorRole}</p>
-                <Link
-                  href={`/${s.slug}`}
-                  className="inline-block mt-2 meta-marine"
-                >
-                  Read chapter &rarr;
-                </Link>
+                <p className="caption mb-6">{c.role}</p>
+                <ul className="space-y-2">
+                  {c.chapters.map((ch) => (
+                    <li key={ch.slug}>
+                      <Link
+                        href={`/${ch.slug}`}
+                        className="meta-marine inline-block"
+                      >
+                        Chapter {ch.number} &middot; {ch.title} &rarr;
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>

@@ -263,7 +263,7 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Dominique Gruber | 4 | Pending | - | Cold via Megayacht News |
 | Kevin Laverty | 3 | Pending | - | Cold via Hill Robinson |
 | Jo Assael | 7 | Pending | - | Cold via IRI London |
-| Pavlos Filippakis | 3, 4, 7, 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network; Master Mariner; on-the-record across loyalty problem (ch 3), sea trial (ch 4), captain hire and crew dynamics (ch 7), explorer and high-latitude angle (ch 8) |
+| Pavlos Filippakis | 3, 4, 7, 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network; Master Mariner (Class 1); on-the-record across loyalty problem (ch 3), sea trial (ch 4), captain hire and crew dynamics (ch 7), explorer and high-latitude angle (ch 8) |
 | Erica Lay | 7 | Confirmed, integrated as Q&A | 2026-05-05 | Sign-off accepted; published |
 | Toby Brand | - | Declined | 2026-05-05 | Replaced on chapter 8 by Ella Johnson |
 | Ella Johnson | 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network / Baltic Yachts; Master of a 34 metre Baltic Yachts performance sloop (boat name redacted); chapter 8 sidebar on sail. Q5 and Q6 declined |
