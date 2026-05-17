@@ -3,7 +3,7 @@ import { getLeadEssay } from "@/lib/lead-essays";
 import { getCase } from "@/lib/cases";
 import { getDataSpread } from "@/lib/data-spreads";
 import { glossaryEntries } from "@/lib/glossary";
-import { getGuestOpinion } from "@/lib/guest-opinions";
+import { getGuestOpinions } from "@/lib/guest-opinions";
 import { printImages } from "@/lib/print-images";
 import { renderChartForPrint } from "@/components/print/print-chart";
 import { buildPrintIndex } from "@/lib/print-index";
@@ -30,7 +30,7 @@ export default function PrintEdition() {
     essay: getLeadEssay(s.slug),
     caseStudy: getCase(s.slug),
     dataSpread: getDataSpread(s.slug),
-    guestOpinion: getGuestOpinion(s.slug),
+    guestOpinions: getGuestOpinions(s.slug),
   }));
 
   const indexEntries = buildPrintIndex(sections, glossaryEntries);
@@ -59,11 +59,6 @@ export default function PrintEdition() {
         </div>
       </section>
 
-      {/* === HALF TITLE === */}
-      <section className="half-title">
-        <p className="half-title__wordmark">The First Owner&rsquo;s Reference</p>
-      </section>
-
       {/* === FRONTISPIECE === */}
       <section className="frontispiece">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -76,48 +71,163 @@ export default function PrintEdition() {
 
       {/* === TITLE PAGE === */}
       <section className="title-page">
-        <div>
-          <p className="title-page__edition">1st Edition · 2026</p>
-          <h1 className="title-page__title">
-            The First Owner&rsquo;s Reference
-          </h1>
-          <p className="title-page__strap">
-            An annual editorial publication on the structural, financial, and
-            operational dimensions of first-time superyacht acquisition.
-            Or rather, how to buy a boat.
+        <p className="title-page__edition">1st Edition · 2026</p>
+        <h1 className="title-page__title">
+          The First Owner&rsquo;s Reference
+        </h1>
+        <p className="title-page__strap">
+          An annual editorial publication on the structural, financial, and
+          operational dimensions of first-time superyacht acquisition.
+          Or rather, how to buy a boat.
+        </p>
+
+        <div className="title-page__frame">
+          <p className="title-page__frame-label">The publisher&rsquo;s frame</p>
+          <p className="title-page__frame-body">
+            The publication is funded by an independent superyacht consultancy
+            that holds no yard affiliations and takes no broker commissions.
+            It is published once a year, in print and online. It carries no
+            advertising. Sources are named in the back matter. The
+            independence test in the closing chapter is offered for
+            application to the publisher first.
           </p>
         </div>
-        <p className="title-page__publisher">
-          Foreland Marine, London &nbsp;&middot;&nbsp; firstownersreference.com
-        </p>
+
+        <div className="title-page__foot">
+          <div>
+            <p className="title-page__foot-label">Publisher</p>
+            <p className="title-page__foot-value">Foreland Marine, London</p>
+          </div>
+          <div>
+            <p className="title-page__foot-label">Web</p>
+            <p className="title-page__foot-value">firstownersreference.com</p>
+          </div>
+          <div>
+            <p className="title-page__foot-label">Edition</p>
+            <p className="title-page__foot-value">First, September 2026</p>
+          </div>
+        </div>
+
+        <div className="title-page__sections">
+          <p className="title-page__sections-label">In this edition</p>
+          <ol className="title-page__sections-list">
+            {sections.map((s) => (
+              <li key={s.slug}>
+                <span className="title-page__sections-num">
+                  {String(s.number).padStart(2, "0")}
+                </span>
+                <p className="title-page__sections-title">{s.title}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
 
       {/* === IMPRINT === */}
       <section className="imprint">
-        <p>
-          <strong>The First Owner&rsquo;s Reference</strong>, 1st Edition,
-          2026. Published by Foreland Marine Consultancy Limited, 7 Bell Yard,
-          London WC2A 2JR.
-        </p>
-        <p>
-          Edited by Jack MacNally and Daniel Marks. Editorial correspondence:
-          editors@firstownersreference.com.
-        </p>
-        <p>
-          Set in Newsreader by Production Type, Geist and Geist Mono by
-          Vercel. Printed on Munken Pure 120gsm uncoated text stock with GF
-          Smith Colorplan cover boards. Smyth-sewn, casebound. Trim 230 by
-          300 mm. Five hundred copies, hand numbered.
-        </p>
-        <p>
-          ISSN pending. © 2026 Foreland Marine Consultancy Limited. All rights
-          reserved. No advertising, ever.
-        </p>
-        <p>
-          The independence test that runs through this publication is applied
-          to the publisher itself. The full disclosure is on the colophon at
-          the back of this edition.
-        </p>
+        <p className="imprint__label">Imprint &amp; Masthead</p>
+        <h2 className="imprint__title">
+          The First Owner&rsquo;s Reference, 1st Edition, 2026.
+        </h2>
+
+        <div className="imprint__cols">
+          <p>
+            Published by Foreland Marine Consultancy Limited, 7 Bell Yard,
+            London WC2A 2JR. ISSN pending. © 2026 Foreland Marine Consultancy
+            Limited. All rights reserved. No advertising, ever.
+          </p>
+          <p>
+            Set in Newsreader by Production Type, DM Sans and DM Mono by
+            Indian Type Foundry. Printed on Munken Pure 120gsm uncoated
+            text stock with GF Smith Colorplan cover boards. Smyth-sewn,
+            casebound. Trim 230 by 300 mm. Five hundred copies, hand
+            numbered.
+          </p>
+          <p>
+            Editorial correspondence: editors@firstownersreference.com. The
+            independence test that runs through this publication is applied
+            to the publisher itself. The full disclosure is on the colophon
+            at the back of this edition.
+          </p>
+        </div>
+
+        <div className="imprint__masthead">
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Co-editors in Chief</p>
+            <p className="imprint__masthead-name">Jack MacNally</p>
+            <p className="imprint__masthead-name">Daniel Marks</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Publisher</p>
+            <p className="imprint__masthead-name">Foreland Marine Consultancy</p>
+            <p className="imprint__masthead-role">Independent superyacht consultancy, London</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Editorial board</p>
+            <p className="imprint__masthead-name">To be confirmed</p>
+            <p className="imprint__masthead-role">Three external advisors, named in the second edition</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Production</p>
+            <p className="imprint__masthead-name">Foreland Marine in-house</p>
+            <p className="imprint__masthead-role">Designer engaged for the press edition</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Photography</p>
+            <p className="imprint__masthead-name">Stock for proof; commissioned for press</p>
+            <p className="imprint__masthead-role">Picture editor engaged June 2026</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Web</p>
+            <p className="imprint__masthead-name">firstownersreference.com</p>
+            <p className="imprint__masthead-role">Updated quarterly between editions</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Indexer</p>
+            <p className="imprint__masthead-name">Working draft auto-set</p>
+            <p className="imprint__masthead-role">Re-set by professional indexer for the press edition</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Copy editor</p>
+            <p className="imprint__masthead-name">In-house</p>
+            <p className="imprint__masthead-role">External pass scheduled August 2026</p>
+          </div>
+          <div className="imprint__masthead-block">
+            <p className="imprint__masthead-label">Bindery</p>
+            <p className="imprint__masthead-name">UK fine bindery, TBC</p>
+            <p className="imprint__masthead-role">Smyth-sewn, casebound, hand-numbered</p>
+          </div>
+        </div>
+
+        <div className="imprint__note">
+          <p className="imprint__note-label">A note on the first edition</p>
+          <div className="imprint__note-cols">
+            <p>
+              This is the first edition. Where editorial roles are listed as
+              to be confirmed, the appointment is in process and will be named
+              in the colophon of the press edition. Where contributors are
+              still being approached, the chapter carries a placeholder. No
+              editorial line has been drawn against a contributor&rsquo;s
+              eventual identity.
+            </p>
+            <p>
+              The publication is funded by Foreland Marine Consultancy
+              Limited as a working reference. It carries no advertising,
+              accepts no broker commissions, and takes no editorial direction
+              from yards. Sources are named in the back matter. The
+              independence test in chapter nine is offered for application to
+              the publisher first.
+            </p>
+            <p>
+              Reader correspondence reaches the editors directly at
+              editors@firstownersreference.com. Errata, contributor
+              recommendations, and disagreements are read in full and
+              acknowledged. The next edition is scheduled for September 2027,
+              with a quarterly update published online between editions at
+              firstownersreference.com.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* === EDITORS' LETTER === */}
@@ -127,47 +237,94 @@ export default function PrintEdition() {
           A reference written from the other side of the table.
         </h2>
 
-        <p>
-          The superyacht trade press is funded by the yards and brokers whose
-          interests it covers. That structure is not a moral failing; it is
-          simply how those publications fund themselves. The First
-          Owner&rsquo;s Reference is funded differently, and written
-          differently. The independence is structural rather than stylistic.
-        </p>
+        <div className="editors-letter__body">
+          <p>
+            The superyacht trade press is funded by the yards and brokers
+            whose interests it covers. That is not a moral failing. It is
+            simply how those publications fund themselves. This one is
+            funded differently, and written differently.
+          </p>
 
-        <p>
-          It is written for the reader who has recently exited a business or
-          come into liquidity, has the means to buy a yacht, and would like
-          to do so with full visibility of cost, time, and the structure of
-          the conversations ahead. It is published once a year, in print and
-          online, by an independent consultancy that holds no yard
-          affiliations and takes no broker commissions.
-        </p>
+          <p>
+            The independence is structural rather than stylistic. The First
+            Owner&rsquo;s Reference is published once a year, in print and
+            online, by an independent consultancy that holds no yard
+            affiliations and takes no broker commissions.
+          </p>
 
-        <p>
-          The publication is structured in numbered chapters. Each carries
-          a lead essay, a data spread, a guest opinion from a named
-          contributor, an anonymised case, and a one-page checklist. The
-          aim is a calm, evidence-led reference a first-time owner can hold
-          alongside the conversations that matter.
-        </p>
+          <p>
+            It is written for the reader who has recently exited a business
+            or come into liquidity, has the means to buy a yacht, and would
+            like to do so with full visibility of cost, time, and the
+            structure of the conversations ahead.
+          </p>
 
-        <p>
-          Read in any order. Run your own numbers through the calculator on
-          the website. The independence test in the closing chapter is
-          offered for application to the publisher first, and then to any
-          other firm a reader is considering. Editorial correspondence
-          reaches us at editors@firstownersreference.com and is read by the
-          team personally.
-        </p>
+          <p>
+            The publication is structured in numbered chapters. Each carries
+            a lead essay, a data spread, a guest opinion from a named
+            contributor, an anonymised case, and a one-page checklist. The
+            aim is a calm, evidence-led reference a first-time owner can
+            hold alongside the conversations that matter.
+          </p>
 
-        <p>We do hope it is useful.</p>
+          <p>
+            Read in any order. Run your own numbers through the calculator
+            on the website. The independence test in the closing chapter is
+            offered for application to the publisher first, and then to any
+            other firm a reader is considering.
+          </p>
 
-        <p className="editors-letter__signature">
-          Jack MacNally and Daniel Marks
-          <br />
-          Co-editors in Chief, London, September 2026
-        </p>
+          <p>
+            Editorial correspondence reaches us at
+            editors@firstownersreference.com and is read by the team
+            personally. We do hope it is useful.
+          </p>
+
+          <p className="editors-letter__signature">
+            Jack MacNally and Daniel Marks
+            <br />
+            Co-editors in Chief, London, September 2026
+          </p>
+        </div>
+
+        <div className="editors-letter__keys">
+          <p className="editors-letter__keys-label">How to read this edition</p>
+          <ol className="editors-letter__keys-list">
+            <li>
+              <span>1.</span>
+              <p>
+                <strong>Read in any order.</strong> The chapters stand alone.
+                The acquisition process in chapter four can be read before
+                the market overview in chapter two if that is the live
+                question.
+              </p>
+            </li>
+            <li>
+              <span>2.</span>
+              <p>
+                <strong>Run your own numbers.</strong> The data spread in
+                each chapter cites its sources. The running cost calculator
+                on the website applies the same numbers to a yacht profile.
+              </p>
+            </li>
+            <li>
+              <span>3.</span>
+              <p>
+                <strong>Apply the test.</strong> The independence test in
+                chapter nine is offered for application to the publisher
+                first, and then to any firm a reader is considering.
+              </p>
+            </li>
+            <li>
+              <span>4.</span>
+              <p>
+                <strong>Mark up the proof.</strong> Reader correspondence
+                shapes the press edition. Disagreements, errata, and
+                contributor recommendations are read in full.
+              </p>
+            </li>
+          </ol>
+        </div>
       </section>
 
       {/* === CONTENTS === */}
@@ -190,7 +347,7 @@ export default function PrintEdition() {
           ))}
         </ol>
 
-        <ol className="contents-list" style={{ marginTop: "12mm" }}>
+        <ol className="contents-list" style={{ marginTop: "6mm" }}>
           <li className="contents-list__item">
             <span className="contents-list__num">A</span>
             <div className="contents-list__main">
@@ -256,29 +413,51 @@ export default function PrintEdition() {
         </p>
 
         <div className="contributors-grid">
-          {sections
-            .filter((s) => s.contributor && s.contributor !== "To be confirmed")
-            .map((s) => (
-              <div key={s.slug} className="contributor-entry">
+          {sections.map((s) => {
+            const confirmed =
+              s.contributor && s.contributor !== "To be confirmed";
+            return (
+              <div
+                key={s.slug}
+                className={`contributor-entry ${
+                  confirmed ? "" : "contributor-entry--pending"
+                }`}
+              >
                 <p className="contributor-entry__chapter">
                   Chapter {s.number} · {s.title}
                 </p>
-                <h3 className="contributor-entry__name">{s.contributor}</h3>
-                <p className="contributor-entry__role">{s.contributorRole}</p>
+                <h3 className="contributor-entry__name">
+                  {confirmed ? s.contributor : "To be confirmed"}
+                </h3>
+                <p className="contributor-entry__role">
+                  {confirmed
+                    ? s.contributorRole
+                    : "Approached; named in the press edition."}
+                </p>
               </div>
-            ))}
+            );
+          })}
         </div>
+
+        <p className="contributors-page__note">
+          Eight chapter contributors are still being confirmed for the press
+          edition. Approaches are made on the explicit basis that the
+          contribution is voluntary and that the contributor&rsquo;s
+          relationships are disclosed alongside the piece. Reader
+          recommendations are welcomed at editors@firstownersreference.com.
+        </p>
       </section>
 
       {/* === CHAPTERS === */}
-      {allEssays.map(({ section, essay, caseStudy, dataSpread, guestOpinion }) => (
+      {allEssays.map(({ section, essay, caseStudy, dataSpread, guestOpinions }, i) => (
         <ChapterBlock
           key={section.slug}
           section={section}
           essay={essay}
           caseStudy={caseStudy}
           dataSpread={dataSpread}
-          guestOpinion={guestOpinion}
+          guestOpinions={guestOpinions}
+          nextSection={allEssays[i + 1]?.section ?? null}
         />
       ))}
 
@@ -390,9 +569,9 @@ export default function PrintEdition() {
         <h2>Type</h2>
         <p>
           Body and display type set in <strong>Newsreader</strong> by
-          Production Type. Sans and metadata in <strong>Geist</strong> and{" "}
-          <strong>Geist Mono</strong> by Vercel. All families are open source
-          and self-hosted on the web edition.
+          Production Type. Sans and metadata in <strong>DM Sans</strong>{" "}
+          and <strong>DM Mono</strong> by Indian Type Foundry. All
+          families are open source and self-hosted on the web edition.
         </p>
 
         <h2>Paper and binding</h2>
@@ -486,9 +665,42 @@ export default function PrintEdition() {
         <h2>Acknowledgements</h2>
         <p>
           The 1st Edition is in production. The acknowledgements section will
-          be set after contributors are confirmed. To the editors, to
-          contributors named and forthcoming, and to the readers whose
-          questions shaped the publication: thank you.
+          be set in full after contributors are confirmed for the press
+          edition.
+        </p>
+        <p>
+          Provisional thanks: to the practitioners who agreed to read draft
+          chapters on the basis that disagreement would be welcomed. To
+          Erica Lay for the first confirmed guest opinion. To the readers
+          who responded to the homepage&rsquo;s initial publication and
+          shaped the editorial register through their questions.
+        </p>
+        <p>
+          To the brokerage and management teams who, knowing the
+          publication&rsquo;s structural position, agreed to be quoted and
+          to have their commentary anonymised in the case studies. To the
+          court reporters whose published rulings on the buyer-side cases
+          made the chapter on industry conduct possible.
+        </p>
+        <p>
+          To Foreland Marine&rsquo;s consulting team, whose anonymised
+          project files form the practitioner archive cross-referenced
+          throughout the data spreads.
+        </p>
+        <p>
+          The publication takes editorial responsibility for any error that
+          survived. Errata are corrected on the website between editions
+          and reflected in the next print edition.
+        </p>
+
+        <h2>Reading the second edition</h2>
+        <p>
+          The second edition is scheduled for September 2027. It will carry
+          named contributors against every chapter, a fully indexed back
+          matter set by a professional indexer, commissioned photography
+          throughout, and the acknowledgements written in full. The
+          editorial register and the independence test do not change
+          between editions.
         </p>
       </section>
 
@@ -507,13 +719,15 @@ function ChapterBlock({
   essay,
   caseStudy,
   dataSpread,
-  guestOpinion,
+  guestOpinions,
+  nextSection,
 }: {
   section: (typeof sections)[number];
   essay: ReturnType<typeof getLeadEssay>;
   caseStudy: ReturnType<typeof getCase>;
   dataSpread: ReturnType<typeof getDataSpread>;
-  guestOpinion: ReturnType<typeof getGuestOpinion>;
+  guestOpinions: ReturnType<typeof getGuestOpinions>;
+  nextSection: (typeof sections)[number] | null;
 }) {
   const chapterRunning = `Ch ${section.number} · ${section.title}`;
 
@@ -528,6 +742,22 @@ function ChapterBlock({
   // Identify positions to insert supporting images. Place after every 4th
   // string paragraph in the rest flow.
   const supList = printImages.supporting?.[section.slug] ?? [];
+
+  // Extract chapter h2 section headings to use as the "at a glance" list at
+  // the chapter close. These are the structural argument of the chapter and
+  // make a useful reader summary.
+  const sectionHeadings = paras
+    .filter((p): p is { type: "h2"; text: string } =>
+      typeof p === "object" && p !== null && p.type === "h2"
+    )
+    .map((p) => p.text);
+
+  // Pull the first blockquote in the essay for use as the chapter-close
+  // pull quote. Falls back to the chapter standfirst if no quote exists.
+  const firstQuote = paras.find(
+    (p): p is { type: "blockquote"; text: string; attribution?: string } =>
+      typeof p === "object" && p !== null && p.type === "blockquote"
+  );
 
   return (
     <>
@@ -573,16 +803,13 @@ function ChapterBlock({
         </div>
       </section>
 
-      {/* === Lead essay: intro paragraph (single-column with drop cap) + rest (two-column) === */}
+      {/* === Lead essay: intro paragraph (drop cap, full-width) followed by two-column body in a single column context === */}
       {essay && (
         <section className="chapter-body" data-chapter={chapterRunning}>
-          {introPara && typeof introPara === "string" && (
-            <div className="chapter-body__intro">
-              <p>{introPara}</p>
-            </div>
-          )}
-
           <div className="chapter-body__cols">
+            {introPara && typeof introPara === "string" && (
+              <p className="chapter-body__intro-para">{introPara}</p>
+            )}
             {(() => {
               const out: React.ReactNode[] = [];
               let stringCount = 0;
@@ -592,14 +819,20 @@ function ChapterBlock({
                 if (typeof para === "string") {
                   out.push(<p key={`p-${i}`}>{para}</p>);
                   stringCount++;
-                  // Insert a supporting image after every 5th string para
+                  // Inject supporting images at column-spanning feature size
+                  // every 5 paragraphs. Reliable column-spanning placement
+                  // avoids the float-wrap edge cases where the adjacent
+                  // column strands empty at section ends.
                   if (
                     stringCount % 5 === 0 &&
                     supIdx < supList.length
                   ) {
                     const sup = supList[supIdx];
                     out.push(
-                      <figure key={`sup-${i}`} className="chapter-body__figure chapter-body__figure--wide">
+                      <figure
+                        key={`sup-${i}`}
+                        className="chapter-body__figure chapter-body__figure--feature"
+                      >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={`/print-images/print/${sup.filename}`}
@@ -662,9 +895,13 @@ function ChapterBlock({
         </section>
       )}
 
-      {/* Guest opinion */}
-      {guestOpinion && (
-        <section className="guest-opinion" data-chapter={chapterRunning}>
+      {/* Guest opinions */}
+      {guestOpinions.map((guestOpinion, gi) => (
+        <section
+          key={gi}
+          className="guest-opinion"
+          data-chapter={chapterRunning}
+        >
           <p className="guest-opinion__label">Guest opinion</p>
           <h2 className="guest-opinion__title">
             In conversation with {guestOpinion.contributor}
@@ -684,14 +921,16 @@ function ChapterBlock({
             </div>
           ))}
         </section>
-      )}
+      ))}
 
       {/* Data spread */}
       {dataSpread && (
         <section className="data-spread" data-chapter={chapterRunning}>
-          <p className="data-spread__label">Data</p>
-          <h2 className="data-spread__title">{dataSpread.title}</h2>
-          <p className="data-spread__standfirst">{dataSpread.standfirst}</p>
+          <header className="data-spread__opener">
+            <p className="data-spread__label">Data</p>
+            <h2 className="data-spread__title">{dataSpread.title}</h2>
+            <p className="data-spread__standfirst">{dataSpread.standfirst}</p>
+          </header>
           {dataSpread.blocks.map((block, i) => {
             if (block.type === "h2") {
               return <h2 key={i}>{block.text}</h2>;
@@ -701,7 +940,7 @@ function ChapterBlock({
             }
             if (block.type === "table") {
               return (
-                <div key={i}>
+                <div key={i} className="data-spread__block">
                   {block.caption && (
                     <p className="data-spread__caption">{block.caption}</p>
                   )}
@@ -731,7 +970,7 @@ function ChapterBlock({
             }
             if (block.type === "kv") {
               return (
-                <div key={i}>
+                <div key={i} className="data-spread__block">
                   {block.caption && (
                     <p className="data-spread__caption">{block.caption}</p>
                   )}
@@ -817,6 +1056,93 @@ function ChapterBlock({
             </p>
           </div>
         </section>
+      )}
+
+      {/* Chapter close: a full-page typographic moment that ends the chapter.
+          Top half is a large pull quote echoing the chapter argument. Bottom
+          half is a structural foot with Read next and the at-a-glance list of
+          the chapter's section headings. A giant chapter number sits behind
+          the composition as architecture, not decoration. */}
+      {nextSection && (
+        <aside className="chapter-close" data-chapter={chapterRunning}>
+          <div className="chapter-close__big-num" aria-hidden>
+            {String(section.number).padStart(2, "0")}
+          </div>
+          <div className="chapter-close__head">
+            <p className="chapter-close__end-label">
+              Chapter {String(section.number).padStart(2, "0")} closes
+            </p>
+            <h3 className="chapter-close__section-title">{section.title}</h3>
+          </div>
+          {firstQuote && (
+            <blockquote className="chapter-close__quote">
+              {firstQuote.text}
+              <footer>
+                {firstQuote.attribution ?? `Chapter ${String(section.number).padStart(2, "0")} · ${section.title}`}
+              </footer>
+            </blockquote>
+          )}
+          <div className="chapter-close__bottom">
+          <div className="chapter-close__method">
+            <div className="chapter-close__method-block">
+              <p className="chapter-close__method-label">Case provenance</p>
+              <p className="chapter-close__method-body">
+                Cases are drawn from the Foreland Marine project archive,
+                from a single engagement or a composite of closely analogous
+                engagements where anonymity demanded it. Adjusted figures
+                preserve the structural pattern of cost, decision, and
+                outcome.
+              </p>
+            </div>
+            <div className="chapter-close__method-block">
+              <p className="chapter-close__method-label">How to read</p>
+              <p className="chapter-close__method-body">
+                Cases sit alongside the chapter&rsquo;s data spread, not in
+                place of it. The arithmetic is the load-bearing argument.
+                Apply the test in chapter nine to your own situation before
+                drawing any conclusion from the case.
+              </p>
+            </div>
+            <div className="chapter-close__method-block">
+              <p className="chapter-close__method-label">Correspondence</p>
+              <p className="chapter-close__method-body">
+                Practitioners who recognise the pattern or who disagree with
+                the reading are welcome at editors@firstownersreference.com.
+                Disagreement is read in full and reflected in the next
+                edition where it holds up.
+              </p>
+            </div>
+          </div>
+
+          <div className="chapter-close__foot">
+            <div className="chapter-close__foot-col chapter-close__foot-col--next">
+              <p className="chapter-close__label">Read next</p>
+              <p className="chapter-close__num">
+                Chapter {nextSection.number}
+              </p>
+              <h3 className="chapter-close__title">{nextSection.title}</h3>
+              <p className="chapter-close__standfirst">
+                {nextSection.standfirst}
+              </p>
+            </div>
+            {sectionHeadings.length > 0 && (
+              <div className="chapter-close__foot-col chapter-close__foot-col--glance">
+                <p className="chapter-close__glance-label">
+                  Chapter {section.number} at a glance
+                </p>
+                <ol className="chapter-close__glance-list">
+                  {sectionHeadings.map((h, i) => (
+                    <li key={i}>
+                      <span>{String(i + 1).padStart(2, "0")}</span>
+                      <p>{h}</p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
+          </div>
+          </div>
+        </aside>
       )}
     </>
   );
