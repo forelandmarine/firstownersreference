@@ -85,8 +85,9 @@ export const sections: Section[] = [
     coordinates: "53.0040°N 5.6603°E",
     hero: "/images/stock/red-hull-launch.jpg",
     heroFocus: "bottom",
-    contributor: "To be confirmed",
-    contributorRole: "Yard CEO",
+    contributor: "Hein Velema",
+    contributorRole:
+      "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
     seoTitle:
       "New build vs brokerage superyacht: contract, owner's rep, costs",
     seoDescription:

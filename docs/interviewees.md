@@ -263,12 +263,12 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Dominique Gruber | 4 | Pending | - | Cold via Megayacht News |
 | Kevin Laverty | 3 | Pending | - | Cold via Hill Robinson |
 | Jo Assael | 7 | Pending | - | Cold via IRI London |
-| Pavlos Filippakis | 7 | Pending | - | Warm via Foreland captain network |
+| Pavlos Filippakis | 3, 4, 7, 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network; Master Mariner (Class 1); on-the-record across loyalty problem (ch 3), sea trial (ch 4), captain hire and crew dynamics (ch 7), explorer and high-latitude angle (ch 8) |
 | Erica Lay | 7 | Confirmed, integrated as Q&A | 2026-05-05 | Sign-off accepted; published |
-| Toby Brand | - | Declined | 2026-05-05 | Replaced on chapter 8 by Ella Johnstone |
-| Ella Johnstone | 7 | To approach | - | Warm via Foreland captain network / Baltic Yachts; Captain of S/Y Liara (Baltic 112); chapter 8 |
+| Toby Brand | - | Declined | 2026-05-05 | Replaced on chapter 8 by Ella Johnson |
+| Ella Johnson | 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network / Baltic Yachts; Master of a 34 metre Baltic Yachts performance sloop (boat name redacted); chapter 8 sidebar on sail. Q5 and Q6 declined |
 | Richard Masters | 2 | To approach | - | Master Yachts (yacht management + new build representation); chapter 1 lead candidate; possible secondary on chapter 5; conflict disclosure required |
-| Sam Forbes | 7 | To approach | - | Captain of 33 metre Nautor Swan; moved from chapter 1 lead to chapter 8 sidebar alongside Ella Johnstone; boat name redacted |
+| Sam Forbes | 7 | To approach | - | Captain of 33 metre Nautor Swan; moved from chapter 1 lead to chapter 8 sidebar alongside Ella Johnson; boat name redacted |
 | (others) | - | Pending | - | Per approach order |
 
 Update this table as outreach progresses.

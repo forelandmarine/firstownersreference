@@ -1,0 +1,1441 @@
+/*
+  Print stylesheet, magazine register.
+  230 x 300 mm trim. Two-column body. Newsreader serif throughout, Geist Mono
+  for metadata and tabular numerals. Marine accent.
+
+  Body 12.5/17pt. Two columns at 91.5mm with 7mm gutter. Pull quotes and
+  h2 headings span both columns as display breakouts. Drop caps four lines
+  deep. Chapter openers are full-bleed images with title overprinted.
+*/
+
+/* === Variables === */
+:root {
+  --colour-ink: #1a1a1a;
+  --colour-soft: #4a4a4a;
+  --colour-stone: #7a756d;
+  --colour-paper: #f5f2ec;
+  --colour-paper-deep: #ede8df;
+  --colour-rule: #c8c2b4;
+  --colour-marine: #0f3b5c;
+  --colour-marine-deep: #0a2a44;
+  --colour-sail: #4a7da9;
+}
+
+/* === Page master === */
+@page {
+  size: 230mm 300mm;
+  margin: 22mm 18mm 22mm 18mm;
+  background: #f5f2ec;
+}
+
+@page :left {
+  margin-left: 18mm;
+  margin-right: 22mm;
+  @top-left {
+    content: "1st Edition";
+    font-family: "Geist", "Helvetica Neue", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7a756d;
+    padding-top: 8mm;
+  }
+  @bottom-left {
+    content: counter(page);
+    font-family: "Geist Mono", "SF Mono", monospace;
+    font-size: 9pt;
+    color: #7a756d;
+    padding-bottom: 8mm;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@page :right {
+  margin-left: 22mm;
+  margin-right: 18mm;
+  @top-right {
+    content: "The First Owner\2019s Reference";
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 8pt;
+    font-style: italic;
+    letter-spacing: 0.04em;
+    color: #7a756d;
+    padding-top: 8mm;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: "Geist Mono", "SF Mono", monospace;
+    font-size: 9pt;
+    color: #7a756d;
+    padding-bottom: 8mm;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@page no-folio {
+  margin: 22mm 18mm 22mm 22mm;
+  background: #f5f2ec;
+  @top-left { content: ""; }
+  @top-right { content: ""; }
+  @bottom-left { content: ""; }
+  @bottom-right { content: ""; }
+}
+
+@page bleed {
+  margin: 0;
+  background: #f5f2ec;
+  @top-left { content: ""; }
+  @top-right { content: ""; }
+  @bottom-left { content: ""; }
+  @bottom-right { content: ""; }
+}
+
+@page :blank {
+  background: #f5f2ec;
+  @top-left { content: ""; }
+  @top-right { content: ""; }
+  @bottom-left { content: ""; }
+  @bottom-right { content: ""; }
+}
+
+@page cover {
+  margin: 0;
+  background: #1a1a1a;
+  @top-left { content: ""; }
+  @top-right { content: ""; }
+  @bottom-left { content: ""; }
+  @bottom-right { content: ""; }
+}
+
+/* === Base === */
+html, body {
+  background: #f5f2ec;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f5f2ec;
+  z-index: -1;
+}
+
+.print-edition {
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-size: 12.5pt;
+  line-height: 17pt;
+  color: var(--colour-ink);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  hanging-punctuation: first last;
+}
+
+.print-edition * {
+  box-sizing: border-box;
+}
+
+/* ===========================================================
+   COVER
+   =========================================================== */
+
+.cover-page {
+  page: cover;
+  page-break-after: always;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: var(--colour-paper);
+  background: var(--colour-ink);
+}
+
+.cover-page__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.78) contrast(1.05);
+}
+
+.cover-page__inner {
+  position: absolute;
+  inset: 0;
+  padding: 22mm 18mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.cover-page__edition {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8.5pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-paper);
+  opacity: 0.92;
+}
+
+.cover-page__title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+.cover-page__wordmark {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 60pt;
+  line-height: 1.0;
+  letter-spacing: -0.018em;
+  color: var(--colour-paper);
+  max-width: 160mm;
+  text-shadow: 0 0 24mm rgba(0, 0, 0, 0.18);
+}
+
+.cover-page__strap {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14pt;
+  line-height: 1.4;
+  color: var(--colour-paper);
+  opacity: 0.95;
+  max-width: 130mm;
+}
+
+.cover-page__publisher {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-paper);
+  opacity: 0.82;
+}
+
+/* ===========================================================
+   FRONT MATTER (half title, frontispiece, title, imprint, letter, contents)
+   =========================================================== */
+
+.half-title {
+  page: no-folio;
+  page-break-before: right;
+  page-break-after: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+}
+
+.half-title__wordmark {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 28pt;
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  text-align: center;
+  max-width: 130mm;
+}
+
+.frontispiece {
+  page: bleed;
+  page-break-before: left;
+  page-break-after: always;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.frontispiece__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-page {
+  page: no-folio;
+  page-break-before: right;
+  page-break-after: always;
+  position: relative;
+  min-height: 85vh;
+  padding-top: 56mm;
+}
+
+.title-page__edition {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8.5pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  margin-bottom: 22mm;
+}
+
+.title-page__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 56pt;
+  line-height: 1.02;
+  letter-spacing: -0.018em;
+  color: var(--colour-ink);
+  margin: 0 0 16mm 0;
+  max-width: 180mm;
+}
+
+.title-page__strap {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 17pt;
+  line-height: 1.42;
+  color: var(--colour-soft);
+  max-width: 140mm;
+}
+
+.title-page__publisher {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8.5pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.imprint {
+  page: no-folio;
+  page-break-before: left;
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 85vh;
+  font-size: 10pt;
+  line-height: 15pt;
+  color: var(--colour-soft);
+  max-width: 110mm;
+}
+
+.imprint p {
+  margin: 0 0 11pt 0;
+}
+
+.imprint p strong {
+  font-weight: 600;
+  color: var(--colour-ink);
+}
+
+/* === Editor's letter === */
+.editors-letter {
+  page-break-before: right;
+  page-break-after: always;
+  string-set: chapter-running "Editors\2019 letter";
+  padding-top: 16mm;
+}
+
+.editors-letter__label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 10mm 0;
+}
+
+.editors-letter__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 36pt;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  margin: 0 0 16mm 0;
+  max-width: 160mm;
+}
+
+.editors-letter p {
+  margin: 0 0 14pt 0;
+  max-width: 140mm;
+  font-size: 13pt;
+  line-height: 18pt;
+}
+
+.editors-letter__signature {
+  margin-top: 16mm;
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 13pt;
+  color: var(--colour-soft);
+}
+
+/* === Contents === */
+.contents-page {
+  page-break-before: right;
+  page-break-after: always;
+  string-set: chapter-running "Contents";
+  padding-top: 16mm;
+}
+
+.contents-page__label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 10mm 0;
+}
+
+.contents-page__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 42pt;
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+  margin: 0 0 18mm 0;
+}
+
+.contents-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 0.5pt solid var(--colour-rule);
+}
+
+.contents-list__item {
+  display: grid;
+  grid-template-columns: 18mm 1fr 14mm;
+  gap: 8mm;
+  padding: 7mm 0;
+  border-bottom: 0.5pt solid var(--colour-rule);
+  break-inside: avoid;
+}
+
+.contents-list__num {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 10pt;
+  letter-spacing: 0.06em;
+  color: var(--colour-marine);
+  font-variant-numeric: tabular-nums;
+  padding-top: 2pt;
+}
+
+.contents-list__main {
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
+}
+
+.contents-list__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 17pt;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  color: var(--colour-ink);
+  margin: 0;
+}
+
+.contents-list__standfirst {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 11pt;
+  line-height: 1.45;
+  color: var(--colour-soft);
+  max-width: 130mm;
+  margin: 0;
+}
+
+.contents-list__folio {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 10pt;
+  font-variant-numeric: tabular-nums;
+  color: var(--colour-stone);
+  text-align: right;
+  padding-top: 2pt;
+}
+
+/* === Contributors === */
+.contributors-page {
+  page-break-before: right;
+  page-break-after: always;
+  string-set: chapter-running "Contributors";
+  padding-top: 16mm;
+}
+
+.contributors-page__label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 10mm 0;
+}
+
+.contributors-page__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 36pt;
+  line-height: 1.08;
+  margin: 0 0 6mm 0;
+}
+
+.contributors-page__strap {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 1.45;
+  color: var(--colour-soft);
+  max-width: 150mm;
+  margin: 0 0 14mm 0;
+}
+
+.contributors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12mm 16mm;
+}
+
+.contributor-entry {
+  break-inside: avoid;
+  border-top: 0.5pt solid var(--colour-rule);
+  padding-top: 5mm;
+}
+
+.contributor-entry__chapter {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 7.5pt;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 3mm 0;
+}
+
+.contributor-entry__name {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.18;
+  margin: 0 0 2mm 0;
+}
+
+.contributor-entry__role {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 11pt;
+  line-height: 1.45;
+  color: var(--colour-soft);
+}
+
+/* ===========================================================
+   CHAPTER OPENER — image-led, full-bleed with overprinted title
+   =========================================================== */
+
+.chapter-opener {
+  page: bleed;
+  page-break-before: right;
+  page-break-after: always;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--colour-ink);
+}
+
+.chapter-opener__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.82) contrast(1.04);
+}
+
+/* Soft gradient at the bottom so the overprinted headline lifts cleanly */
+.chapter-opener::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0,
+    rgba(0, 0, 0, 0.32) 25%,
+    rgba(0, 0, 0, 0) 55%
+  );
+  z-index: 1;
+}
+
+.chapter-opener__inner {
+  position: absolute;
+  inset: 0;
+  padding: 22mm 18mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+  color: var(--colour-paper);
+}
+
+.chapter-opener__num-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4mm;
+}
+
+.chapter-opener__num-label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--colour-paper);
+  opacity: 0.88;
+}
+
+.chapter-opener__num {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 240pt;
+  line-height: 0.85;
+  letter-spacing: -0.045em;
+  color: var(--colour-paper);
+  text-shadow: 0 0 36mm rgba(0, 0, 0, 0.22);
+  margin: 0;
+}
+
+.chapter-opener__title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+  max-width: 180mm;
+}
+
+.chapter-opener__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 50pt;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--colour-paper);
+  margin: 0;
+  text-shadow: 0 0 24mm rgba(0, 0, 0, 0.22);
+}
+
+.chapter-opener__standfirst {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16pt;
+  line-height: 1.4;
+  color: var(--colour-paper);
+  max-width: 150mm;
+  margin: 0;
+  opacity: 0.94;
+}
+
+.chapter-opener__meta {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 14mm;
+  margin-top: 8mm;
+  padding-top: 5mm;
+  border-top: 0.5pt solid rgba(245, 242, 236, 0.45);
+}
+
+.chapter-opener__meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-opener__meta-label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 7pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-paper);
+  opacity: 0.7;
+  margin: 0 0 2mm 0;
+}
+
+.chapter-opener__meta-value {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 12pt;
+  color: var(--colour-paper);
+  margin: 0;
+}
+
+/* ===========================================================
+   CHAPTER BODY — two-column magazine layout
+   =========================================================== */
+
+.chapter-body {
+  page-break-before: right;
+  padding-top: 6mm;
+  string-set: chapter-running attr(data-chapter);
+}
+
+.chapter-body__intro {
+  /* the paragraph immediately after the chapter opener; sits before the
+     two-column flow as a wider lead. drop cap goes here. */
+  column-count: 1;
+  margin-bottom: 8mm;
+}
+
+.chapter-body__intro p {
+  font-size: 14pt;
+  line-height: 19pt;
+  text-align: left;
+  margin: 0 0 13pt 0;
+  max-width: 158mm;
+}
+
+/* drop cap on the very first paragraph of the chapter */
+.chapter-body__intro p:first-child::first-letter {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  float: left;
+  font-size: 70pt;
+  line-height: 0.92;
+  padding: 6pt 8pt 0 0;
+  color: var(--colour-marine);
+}
+
+/* the rest of the body runs as two columns */
+.chapter-body__cols {
+  column-count: 2;
+  column-gap: 7mm;
+  column-fill: balance;
+}
+
+.chapter-body__cols p {
+  margin: 0 0 12pt 0;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 7 3 3;
+  hyphenate-limit-lines: 2;
+  orphans: 3;
+  widows: 3;
+  break-inside: avoid-column;
+}
+
+/* h2 spans both columns and breaks the visual rhythm */
+.chapter-body__cols h2,
+.chapter-body h2 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 400;
+  font-size: 18pt;
+  line-height: 22pt;
+  letter-spacing: -0.005em;
+  color: var(--colour-marine);
+  margin: 18pt 0 10pt 0;
+  page-break-after: avoid;
+  break-after: avoid-page;
+  column-span: all;
+  max-width: 95%;
+  border-top: 0.75pt solid var(--colour-marine);
+  padding-top: 10pt;
+}
+
+.chapter-body__cols h2 + p,
+.chapter-body h2 + p {
+  page-break-before: avoid;
+}
+
+/* Pull quotes break out of the column flow */
+.chapter-body__pull {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 28pt;
+  line-height: 32pt;
+  letter-spacing: -0.005em;
+  color: var(--colour-marine);
+  margin: 16pt 0;
+  padding: 12pt 0 12pt 14mm;
+  border-left: 2pt solid var(--colour-marine);
+  break-inside: avoid;
+  column-span: all;
+  max-width: 165mm;
+}
+
+.chapter-body__pull footer {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-style: normal;
+  font-size: 8pt;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  margin-top: 6pt;
+}
+
+/* Editor's note as tinted sidebar inside body */
+.chapter-body__editors-note {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 11pt;
+  line-height: 16pt;
+  color: var(--colour-soft);
+  margin: 14pt 0;
+  padding: 10pt 8mm 10pt 8mm;
+  background: rgba(15, 59, 92, 0.06);
+  border-left: 1.5pt solid var(--colour-marine);
+  break-inside: avoid;
+}
+
+.chapter-body__editors-note a {
+  color: var(--colour-marine);
+  text-decoration: underline;
+}
+
+/* Inline figure inside two-column body — column-width by default */
+.chapter-body__figure {
+  margin: 14pt 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.chapter-body__figure img {
+  width: 100%;
+  display: block;
+}
+
+.chapter-body__figure figcaption {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 9pt;
+  line-height: 13pt;
+  color: var(--colour-soft);
+  margin-top: 4pt;
+  padding-top: 3pt;
+  border-top: 0.5pt solid var(--colour-rule);
+  max-width: 92%;
+}
+
+/* Wide figure spans both columns */
+.chapter-body__figure--wide {
+  column-span: all;
+  margin: 18pt 0;
+}
+
+/* ===========================================================
+   GUEST OPINION (interview format, set as feature article)
+   =========================================================== */
+
+.guest-opinion {
+  page-break-before: right;
+  padding-top: 6mm;
+  string-set: chapter-running "Guest opinion";
+}
+
+.guest-opinion__label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 8mm 0;
+}
+
+.guest-opinion__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 38pt;
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+  margin: 0 0 8mm 0;
+  max-width: 170mm;
+}
+
+.guest-opinion__intro {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 19pt;
+  color: var(--colour-soft);
+  max-width: 150mm;
+  margin: 0 0 14mm 0;
+}
+
+.guest-opinion__qa {
+  break-inside: avoid;
+  margin-bottom: 10mm;
+}
+
+.guest-opinion__q {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: 15pt;
+  line-height: 19pt;
+  color: var(--colour-marine);
+  margin: 0 0 6pt 0;
+  max-width: 150mm;
+}
+
+.guest-opinion__a p {
+  font-size: 12pt;
+  line-height: 17pt;
+  margin: 0 0 9pt 0;
+  max-width: 150mm;
+}
+
+/* ===========================================================
+   CASE STUDY (feature article register)
+   =========================================================== */
+
+.case-section {
+  page-break-before: right;
+  padding-top: 6mm;
+  string-set: chapter-running "Case study";
+}
+
+.case-section__opener {
+  margin-bottom: 14mm;
+}
+
+.case-section__label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 8mm 0;
+}
+
+.case-section__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 38pt;
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+  margin: 0 0 8mm 0;
+  max-width: 170mm;
+}
+
+.case-section__standfirst {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 16pt;
+  line-height: 22pt;
+  color: var(--colour-soft);
+  max-width: 150mm;
+  margin: 0 0 12mm 0;
+}
+
+.case-section__meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5mm 12mm;
+  margin-bottom: 12mm;
+  padding: 5mm 0;
+  border-top: 0.5pt solid var(--colour-rule);
+  border-bottom: 0.5pt solid var(--colour-rule);
+}
+
+.case-section__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+}
+
+.case-section__meta-label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 7pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+}
+
+.case-section__meta-value {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 11.5pt;
+  line-height: 1.32;
+  color: var(--colour-ink);
+}
+
+.case-section__body {
+  column-count: 2;
+  column-gap: 7mm;
+}
+
+.case-section__body p {
+  margin: 0 0 12pt 0;
+  text-align: justify;
+  hyphens: auto;
+  hyphenate-limit-chars: 7 3 3;
+  orphans: 3;
+  widows: 3;
+}
+
+.case-section__body p:first-child::first-letter {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  float: left;
+  font-size: 60pt;
+  line-height: 0.95;
+  padding: 4pt 7pt 0 0;
+  color: var(--colour-marine);
+}
+
+.case-section__body h2 {
+  column-span: all;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 400;
+  font-size: 16pt;
+  line-height: 20pt;
+  color: var(--colour-marine);
+  margin: 14pt 0 8pt 0;
+  page-break-after: avoid;
+  border-top: 0.75pt solid var(--colour-marine);
+  padding-top: 8pt;
+}
+
+.case-section__disclosure {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 10pt;
+  line-height: 15pt;
+  color: var(--colour-stone);
+  margin-top: 14mm;
+  padding-top: 6mm;
+  border-top: 0.5pt solid var(--colour-rule);
+  column-span: all;
+}
+
+/* ===========================================================
+   DATA SPREAD
+   =========================================================== */
+
+.data-spread {
+  page-break-before: right;
+  padding-top: 6mm;
+  string-set: chapter-running attr(data-chapter);
+}
+
+.data-spread__label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 6mm 0;
+}
+
+.data-spread__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 32pt;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  margin: 0 0 6mm 0;
+  max-width: 170mm;
+}
+
+.data-spread__standfirst {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 20pt;
+  color: var(--colour-soft);
+  max-width: 150mm;
+  margin: 0 0 14mm 0;
+}
+
+.data-spread h2 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 400;
+  font-size: 17pt;
+  line-height: 22pt;
+  color: var(--colour-marine);
+  margin: 14pt 0 7pt 0;
+  page-break-after: avoid;
+  border-top: 0.75pt solid var(--colour-marine);
+  padding-top: 8pt;
+}
+
+.data-spread p {
+  margin: 0 0 11pt 0;
+  max-width: 160mm;
+  font-size: 12pt;
+  line-height: 17pt;
+}
+
+.data-spread__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8pt 0 12pt 0;
+  break-inside: avoid;
+  font-size: 10pt;
+  line-height: 14pt;
+}
+
+.data-spread__table thead th {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 7.5pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 0.75pt solid var(--colour-ink);
+  padding: 5pt 7pt 5pt 0;
+}
+
+.data-spread__table tbody td {
+  font-family: "Newsreader", Georgia, serif;
+  border-bottom: 0.5pt solid var(--colour-rule);
+  padding: 5pt 7pt 5pt 0;
+  vertical-align: top;
+  font-variant-numeric: tabular-nums;
+}
+
+.data-spread__table tbody td:first-child {
+  font-weight: 500;
+  color: var(--colour-ink);
+}
+
+.data-spread__caption {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 10pt;
+  line-height: 14pt;
+  color: var(--colour-soft);
+  margin: 0 0 5pt 0;
+  max-width: 160mm;
+}
+
+.data-spread__source {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 7pt;
+  letter-spacing: 0.04em;
+  color: var(--colour-stone);
+  margin: 3pt 0 14pt 0;
+  max-width: 160mm;
+  text-transform: none;
+}
+
+.data-spread__kv {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8pt 0 12pt 0;
+  font-size: 10pt;
+  line-height: 14pt;
+  break-inside: avoid;
+}
+
+.data-spread__kv tr {
+  border-bottom: 0.5pt solid var(--colour-rule);
+}
+
+.data-spread__kv tr:first-child {
+  border-top: 0.75pt solid var(--colour-ink);
+}
+
+.data-spread__kv td {
+  padding: 5pt 7pt 5pt 0;
+  vertical-align: top;
+  font-variant-numeric: tabular-nums;
+}
+
+.data-spread__kv-label {
+  width: 50%;
+  font-family: "Newsreader", Georgia, serif;
+  color: var(--colour-ink);
+}
+
+.data-spread__kv-value {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 9.5pt;
+  color: var(--colour-marine);
+  text-align: right;
+}
+
+.data-spread__kv-note {
+  display: block;
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 8.5pt;
+  color: var(--colour-stone);
+  text-align: right;
+  margin-top: 1pt;
+}
+
+.data-spread__chart {
+  margin: 10pt 0 16pt 0;
+  break-inside: avoid;
+}
+
+.data-spread__chart svg {
+  width: 100%;
+  height: auto;
+  max-height: 100mm;
+}
+
+.data-spread__chart figure > header,
+.data-spread__chart figure > footer {
+  display: none;
+}
+
+.data-spread__chart figure {
+  margin: 0;
+  padding: 0;
+}
+
+.data-spread__sources {
+  margin-top: 14mm;
+  padding-top: 6mm;
+  border-top: 0.5pt solid var(--colour-rule);
+}
+
+.data-spread__sources h3 {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  font-weight: 600;
+  margin: 0 0 5mm 0;
+}
+
+.data-spread__sources ol {
+  list-style: decimal;
+  padding-left: 6mm;
+  margin: 0;
+}
+
+.data-spread__sources li {
+  font-size: 9pt;
+  line-height: 13pt;
+  margin: 0 0 5pt 0;
+  color: var(--colour-soft);
+  break-inside: avoid;
+}
+
+.data-spread__sources li strong {
+  font-weight: 500;
+  color: var(--colour-ink);
+}
+
+/* ===========================================================
+   GLOSSARY
+   =========================================================== */
+
+.glossary-section {
+  page-break-before: right;
+  padding-top: 16mm;
+  string-set: chapter-running "Glossary";
+}
+
+.glossary-section__label {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 6mm 0;
+}
+
+.glossary-section__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 38pt;
+  line-height: 1.08;
+  margin: 0 0 6mm 0;
+}
+
+.glossary-section__strap {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 20pt;
+  color: var(--colour-soft);
+  max-width: 150mm;
+  margin: 0 0 14mm 0;
+}
+
+.glossary-list {
+  column-count: 2;
+  column-gap: 8mm;
+  font-size: 10pt;
+  line-height: 14pt;
+}
+
+.glossary-list dt {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 600;
+  font-size: 11pt;
+  color: var(--colour-marine);
+  margin: 7pt 0 1pt 0;
+  break-after: avoid;
+}
+
+.glossary-list dt:first-of-type {
+  margin-top: 0;
+}
+
+.glossary-list dd {
+  margin: 0 0 5pt 0;
+  color: var(--colour-soft);
+  break-inside: avoid;
+}
+
+/* ===========================================================
+   INDEX
+   =========================================================== */
+
+.index-section {
+  page-break-before: right;
+  padding-top: 16mm;
+  string-set: chapter-running "Index";
+}
+
+.index-list {
+  column-count: 3;
+  column-gap: 6mm;
+  font-size: 9pt;
+  line-height: 12.5pt;
+}
+
+.index-list__group {
+  break-inside: avoid;
+  margin-bottom: 5pt;
+}
+
+.index-list__letter {
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 2pt 0;
+}
+
+.index-list__entry {
+  margin: 0;
+}
+
+.index-list__entry-folio {
+  color: var(--colour-stone);
+  font-variant-numeric: tabular-nums;
+  font-family: "Geist Mono", "SF Mono", monospace;
+  font-size: 8pt;
+}
+
+/* ===========================================================
+   SOURCES
+   =========================================================== */
+
+.sources-section {
+  page-break-before: right;
+  padding-top: 16mm;
+  string-set: chapter-running "Sources";
+}
+
+.sources-section h2 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 400;
+  font-size: 17pt;
+  color: var(--colour-marine);
+  margin: 16pt 0 5pt 0;
+  page-break-after: avoid;
+  border-top: 0.75pt solid var(--colour-marine);
+  padding-top: 7pt;
+}
+
+.sources-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  column-count: 2;
+  column-gap: 8mm;
+}
+
+.sources-section li {
+  font-size: 9pt;
+  line-height: 13pt;
+  margin: 0 0 6pt 0;
+  break-inside: avoid;
+  color: var(--colour-soft);
+}
+
+.sources-section li strong {
+  color: var(--colour-ink);
+  font-weight: 500;
+}
+
+/* ===========================================================
+   COLOPHON
+   =========================================================== */
+
+.colophon-section {
+  page-break-before: right;
+  padding-top: 16mm;
+  string-set: chapter-running "Colophon";
+}
+
+.colophon-section h2 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: 13pt;
+  color: var(--colour-marine);
+  margin: 14pt 0 5pt 0;
+  page-break-after: avoid;
+}
+
+.colophon-section p {
+  font-size: 11pt;
+  line-height: 15.5pt;
+  margin: 0 0 9pt 0;
+  max-width: 145mm;
+  color: var(--colour-soft);
+}
+
+.colophon-section p strong {
+  color: var(--colour-ink);
+  font-weight: 500;
+}
+
+/* ===========================================================
+   CLOSING IMAGE
+   =========================================================== */
+
+.closing-image {
+  page: bleed;
+  page-break-before: left;
+  page-break-after: always;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.closing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===========================================================
+   UTILITIES
+   =========================================================== */
+
+.page-break-after { page-break-after: always; break-after: page; }
+.page-break-before { page-break-before: always; break-before: page; }
+.no-folio { page: no-folio; }
+.right-page { page-break-before: right; break-before: right; }
+.left-page { page-break-before: left; break-before: left; }

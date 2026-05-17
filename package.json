@@ -12,6 +12,7 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "next": "16.2.4",
+    "pagedjs": "^0.4.3",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -22,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "puppeteer": "^24.43.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
