@@ -8,6 +8,7 @@ export type Section = {
   heroFocus?: "top" | "center" | "bottom" | "left" | "right";
   contributor: string;
   contributorRole: string;
+  contributorLinkedIn?: string;
   seoTitle: string;
   seoDescription: string;
   datePublished: string;
@@ -88,6 +89,7 @@ export const sections: Section[] = [
     contributor: "Hein Velema",
     contributorRole:
       "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
+    contributorLinkedIn: "https://www.linkedin.com/in/hein-velema-a4061aa6/",
     seoTitle:
       "New build vs brokerage superyacht: contract, owner's rep, costs",
     seoDescription:

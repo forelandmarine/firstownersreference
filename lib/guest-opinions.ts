@@ -7,6 +7,7 @@ export type GuestOpinion = {
   slug: string;
   contributor: string;
   contributorRole: string;
+  contributorLinkedIn?: string;
   intro?: string;
   questions: GuestOpinionQA[];
 };
@@ -17,6 +18,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "03-how-the-industry-works",
       contributor: "Capt. Pavlos Filippakis",
       contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
+      contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
         "Capt. Filippakis came to large-yacht command from a career in LNG and has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands. We put five questions to him on the captain's loyalty problem: the introduction route, the broker call, the referral-fee question, the disclosure rule, and the first conversation a first-time owner should have with a captain candidate. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -73,6 +75,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "04-acquisition-process",
       contributor: "Capt. Pavlos Filippakis",
       contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
+      contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
         "We put two questions to Capt. Filippakis on sea-trial discipline: what a competent captain is doing during the trial that a buyer would not see, and the failure modes he has personally found during sea trial that a survey did not catch. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -117,6 +120,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "07-operations",
       contributor: "Erica Lay",
       contributorRole: "Crew recruitment specialist, EL Crew Co",
+      contributorLinkedIn: "https://www.linkedin.com/in/erica-lay-4b0179292/",
       intro:
         "EL Crew Co operates from Mallorca and places senior and junior crew across the over-24 metre fleet. We put five questions to Erica Lay on the senior captain market, rotation, junior crew dynamics, retention, and the first-time owner's captain hire. Her answers are published as given, lightly edited for typography.",
       questions: [
@@ -181,6 +185,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "07-operations",
       contributor: "Capt. Pavlos Filippakis",
       contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
+      contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
         "We put five questions to Capt. Filippakis on captain hire and crew dynamics: what separates a good captain from a competent one, where to push back in interview, the cost of rotation that the salary line does not show, what compounds crew turnover, and the single most consequential operational discipline of year one. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -235,6 +240,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "08-motor-versus-sail",
       contributor: "Ella Johnson",
       contributorRole: "Captain, 34m Baltic Yachts Performance Sloop",
+      contributorLinkedIn: "https://www.linkedin.com/in/ella-johnson-26070634b/",
       intro:
         "We put four questions to Ella on sail at the top of the market: race week on a performance sloop, what she would specify differently with seven years' operational experience, a passage that stands for the case for sail, and what life onboard takes from a family new to it. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -277,6 +283,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "08-motor-versus-sail",
       contributor: "Capt. Pavlos Filippakis",
       contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
+      contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
         "We put three questions to Capt. Filippakis on the explorer and high-latitude angle: how the segment compares operationally with a conventional 50 metre Mediterranean motor programme, what Polar Code-certified operation actually requires of owner, crew, and build, and the honest case versus the romantic mistake for a first-time UHNW buyer attracted to the explorer profile. Answers are given on the record, lightly edited for typography.",
       questions: [
@@ -320,6 +327,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributor: "Hein Velema",
       contributorRole:
         "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
+      contributorLinkedIn: "https://www.linkedin.com/in/hein-velema-a4061aa6/",
       intro:
         "The Superyacht Alliance for Professional Standards administers the Yacht Owner's Representative Register (YORR) and oversees YORP, the cross-industry training programme for owner's representatives. We put five questions to Hein Velema on the gap YORP was built to close, the curriculum, the verification process, the dual-role conflict, and yard selection beyond the big names. His answers are published as given, lightly edited for typography.",
       questions: [

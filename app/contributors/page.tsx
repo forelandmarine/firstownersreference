@@ -36,26 +36,35 @@ type ContributorChapter = {
 type Contributor = {
   name: string;
   role: string;
+  linkedin?: string;
   chapters: ContributorChapter[];
 };
 
 function buildContributors(): Contributor[] {
   const byName = new Map<string, Contributor>();
 
-  const upsert = (name: string, role: string, chapter: ContributorChapter) => {
+  const upsert = (
+    name: string,
+    role: string,
+    linkedin: string | undefined,
+    chapter: ContributorChapter
+  ) => {
     const existing = byName.get(name);
     if (existing) {
       if (!existing.chapters.some((c) => c.slug === chapter.slug)) {
         existing.chapters.push(chapter);
       }
+      if (!existing.linkedin && linkedin) {
+        existing.linkedin = linkedin;
+      }
       return;
     }
-    byName.set(name, { name, role, chapters: [chapter] });
+    byName.set(name, { name, role, linkedin, chapters: [chapter] });
   };
 
   for (const s of sections) {
     if (s.contributor === "To be confirmed") continue;
-    upsert(s.contributor, s.contributorRole, {
+    upsert(s.contributor, s.contributorRole, s.contributorLinkedIn, {
       number: s.number,
       title: s.title,
       slug: s.slug,
@@ -66,7 +75,7 @@ function buildContributors(): Contributor[] {
     const section = sections.find((s) => s.slug === slug);
     if (!section) continue;
     for (const opinion of opinions) {
-      upsert(opinion.contributor, opinion.contributorRole, {
+      upsert(opinion.contributor, opinion.contributorRole, opinion.contributorLinkedIn, {
         number: section.number,
         title: section.title,
         slug: section.slug,
@@ -130,7 +139,17 @@ export default function ContributorsPage() {
                 <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal mb-2">
                   {c.name}
                 </p>
-                <p className="caption mb-6 whitespace-pre-line">{c.role}</p>
+                <p className="caption mb-4 whitespace-pre-line">{c.role}</p>
+                {c.linkedin && (
+                  <a
+                    href={c.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-marine caption inline-block mb-6"
+                  >
+                    LinkedIn &rarr;
+                  </a>
+                )}
                 <ul className="space-y-2">
                   {c.chapters.map((ch) => (
                     <li key={ch.slug}>
