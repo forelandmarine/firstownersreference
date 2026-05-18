@@ -95,47 +95,6 @@ export const charts: Record<string, () => React.ReactElement> = {
     </ChartFrame>
   ),
 
-  "charter-cases-2025": () => (
-    <ChartFrame
-      number="01.02"
-      title="Charter operation, four worked cases"
-      standfirst="Most charter operations subsidise rather than recover ownership cost. The successful exception is owner-optimised, with disciplined release of the prime weeks."
-      caption="Net charter contribution against annual running cost, EUR million, on the BOAT International published case record."
-      source="BOAT International published case studies."
-    >
-      <ComparisonBars
-        domainMin={-1}
-        domainMax={2.2}
-        unit=" m"
-        zeroLine
-        axisTicks={[-1, -0.5, 0, 0.5, 1, 1.5, 2]}
-        rows={[
-          {
-            label: "60 m owner-optimised, 12 weeks",
-            value: 2,
-            display: "Up to EUR 2 m net positive",
-            emphasis: true,
-          },
-          {
-            label: "48 m motor, 7 weeks",
-            value: 0.017,
-            display: "Break-even",
-          },
-          {
-            label: "47 m sail, 9 weeks",
-            value: -0.444,
-            display: "EUR 444 k loss",
-          },
-          {
-            label: "85 m motor, 8 weeks",
-            value: -0.43,
-            display: "EUR 430 k loss",
-          },
-        ]}
-      />
-    </ChartFrame>
-  ),
-
   "cost-composition-50m": () => (
     <ChartFrame
       number="01.03"
@@ -405,32 +364,6 @@ export const charts: Record<string, () => React.ReactElement> = {
     </ChartFrame>
   ),
 
-  "days-on-market-sail-vs-motor": () => (
-    <ChartFrame
-      number="08.03"
-      title="Brokerage days on market, sail against motor, 25 to 45 m"
-      standfirst="Sail yachts in this band moved at meaningfully shorter days on market than comparable motor in 2025."
-      caption="Median days on market, 25 to 45 m segment, 2025."
-      source="Denison Yachting market report 2025."
-    >
-      <ComparisonBars
-        domainMax={300}
-        rows={[
-          {
-            label: "Sail, 25 to 45 m",
-            value: 220,
-            display: "approx. 220 days",
-            emphasis: true,
-          },
-          {
-            label: "Motor, 25 to 45 m",
-            value: 277,
-            display: "277 days (Denison series)",
-          },
-        ]}
-      />
-    </ChartFrame>
-  ),
 };
 
 export function getChart(id: string): React.ReactElement | null {
