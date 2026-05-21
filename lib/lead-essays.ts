@@ -660,6 +660,13 @@ export const leadEssays: Record<string, LeadEssay> = {
         attribution: "Georges Bourgoignie, Fraser, Palma May 2026 (Superyacht Investor)",
       },
       "Sailing yachts in the 25 to 45 metre band moved at median days on market of approximately 220 in 2025, against 277 for comparable motor yachts (Denison). The segment is healthier than the headline unit-share suggests, and harder to transact; both can be true.",
+      "Stefan Zimmermann Zschocke, CEO of Oyster Yachts, on the Superyacht Investor London panel in April 2026, located the buyer-side instinct behind the sail demand at the top of the segment:",
+      {
+        type: "blockquote",
+        text: "We're seeing more and more younger centi-millionaires coming. So these centi-millionaires, at least in our niche, they want to have a purpose … either authenticity, adventure or community.",
+        attribution: "Stefan Zimmermann Zschocke, CEO, Oyster Yachts (Superyacht Investor London, April 2026)",
+      },
+      "The Oyster World Rally — the owner-driven circumnavigation Oyster runs roughly every other year — is the operational expression of what Zimmermann Zschocke calls the rise of experiential ownership and the power of community. The retention thesis the segment uses sits on top of it: the buyer who completes one rally tends to commission the next, larger boat.",
       { type: "h2", text: "Bang for buck, on a 35 metre" },
       "For a buyer in the 24 to 40 metre band, a sailing yacht typically delivers more cruising days per pound or euro than a motor yacht of comparable build quality.",
       "A new build 35m sailing yacht from a quality builder (Pendennis, Vitters, Baltic) runs EUR 12 to 22 million; a comparable 35m motor yacht runs EUR 18 to 30 million. Capital differential 20 to 35 percent in favour of the sailing yacht. Annual operating cost runs 70 to 85 percent of the motor figure. A EUR 1.5 million annual operating budget delivers 16 to 20 weeks of family use on a 35m sailing yacht against 12 to 14 weeks on the equivalent motor.",
