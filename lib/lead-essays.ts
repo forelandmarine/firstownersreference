@@ -174,11 +174,11 @@ export const leadEssays: Record<string, LeadEssay> = {
         attribution: "Hein Velema, May 2026",
       },
       "None of the structural critique above applies to that work. The critique applies to the undisclosed incentives that travel alongside the commission, and to the role ambiguity that asks one firm to answer to both sides of the same transaction. Disclosure and clearly named roles solve most of it; their absence is what the chapter has documented.",
-      "Cecil-Wright, on the panel at the Superyacht Investor London forum in April 2026, located the broker's value precisely:",
+      "Chris Cecil-Wright, founder of Cecil Wright, on the panel at the Superyacht Investor London forum in April 2026, located the broker's value precisely:",
       {
         type: "blockquote",
         text: "We operate in the 'information and confidence delivery' part of the ecosystem. All the deals we're doing offline are the ones where the value is. AI doesn't know the nuance of the deal.",
-        attribution: "Cecil-Wright, Superyacht Investor London forum, April 2026",
+        attribution: "Chris Cecil-Wright, founder, Cecil Wright (Superyacht Investor London, April 2026)",
       },
       "Held to that frame, the broker the buyer wants is the one paid to deliver information and confidence transparently — not the one paid to keep both quietly opaque.",
       { type: "h2", text: "The captain's role in the structure" },
