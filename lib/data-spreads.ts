@@ -292,6 +292,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "IYBA standard practice; MYBA Memorandum of Agreement; published industry self-criticism (Cromwell Littlejohn, Northrop & Johnson, Palm Beach Boat Show).",
       },
+      { type: "chart", chartId: "commission-norms-28m-sale" },
       { type: "h2", text: "Brokerage ownership concentration" },
       {
         type: "kv",

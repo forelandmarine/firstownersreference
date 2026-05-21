@@ -36,7 +36,7 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="01.01"
       title="Annual operating cost as a percentage of capex, by size band"
-      standfirst="The 10 percent rule is folklore. The empirical band is 8 to 22 percent. Mid-points of practitioner working ranges, moderate use intensity."
+      standfirst="The 10 percent rule has no traceable origin. The working range is 8 to 22 percent. Mid-points of practitioner working ranges, moderate use intensity."
       caption="Bands widen by 2 to 4 points for charter operation. Year-1 to year-5 unless noted."
       source="Foreland Marine project archive, cross-referenced against Fraser, Ocean Independence, and YachtBuyer published guidance."
     >
@@ -245,6 +245,38 @@ export const charts: Record<string, () => React.ReactElement> = {
             value: 1093,
             display: "1,093 units",
             emphasis: true,
+          },
+        ]}
+      />
+    </ChartFrame>
+  ),
+
+  "commission-norms-28m-sale": () => (
+    <ChartFrame
+      number="03.01"
+      title="Two parallel commission norms, on a EUR 28 m sale"
+      standfirst="The same yacht, the same buyer, the same seller — and a EUR 850,000 spread between which scale the brokers apply. The seller does not always know which is being used. The buyer almost never does."
+      caption="Commission paid by the seller under each scale. Both structures are routinely described as 'the standard' by the brokers using them."
+      source="IYBA standard practice; MYBA Memorandum of Agreement; practitioner commentary by Cromwell Littlejohn (Northrop & Johnson)."
+    >
+      <ComparisonBars
+        domainMax={3000}
+        rows={[
+          {
+            label: "IYBA / US norm — flat 10 percent",
+            value: 2800,
+            display: "EUR 2,800,000",
+            emphasis: true,
+          },
+          {
+            label: "MYBA sliding scale",
+            value: 1950,
+            display: "EUR 1,950,000",
+          },
+          {
+            label: "Buyer-broker share (mid)",
+            value: 1260,
+            display: "EUR 1,120,000 to 1,400,000",
           },
         ]}
       />
