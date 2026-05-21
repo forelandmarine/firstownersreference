@@ -30,7 +30,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "01-reality-of-ownership",
     title: "Annual operating cost as a percentage of capex, by size band",
     standfirst:
-      "The 10 percent rule is folklore. The empirical band is 8 to 20 percent; size, age, use intensity, and charter activity set the position. Numbers aggregated from named published sources and a Foreland archive of more than 30 managed projects.",
+      "The 10 percent rule has no traceable origin. The working range is 8 to 20 percent; size, age, use intensity, and charter activity set the position. Numbers aggregated from named published sources and a Foreland archive of more than 30 managed projects.",
     blocks: [
       { type: "h2", text: "The cost-of-ownership band" },
       {
@@ -77,7 +77,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         type: "table",
         caption:
-          "Indicative depreciation curve for a typical hull, drawn from broker-aggregated data. Quality builders (Feadship, Lurssen, Royal Huisman, Vitters, Baltic) hold value materially better after year five.",
+          "Indicative depreciation curve for a typical hull, drawn from broker-aggregated data. Quality builders (Feadship, Lurssen, Royal Huisman, Vitters, Baltic) hold value much better after year five.",
         head: ["Year", "Cumulative loss from purchase", "Marginal annual loss"],
         rows: [
           ["1", "10 to 20 percent", "10 to 20 percent"],
@@ -364,7 +364,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "04-acquisition-process",
     title: "VAT regime and flag state comparison",
     standfirst:
-      "Two procedural choices that materially affect a decade of ownership cost, often made under time pressure at closing without proper analysis. The legitimate options on the published record.",
+      "Two procedural choices that shape a decade of ownership cost, often made under time pressure at closing without proper analysis. The legitimate options on the published record.",
     blocks: [
       { type: "h2", text: "Headline VAT rates on yacht purchase" },
       {
@@ -523,7 +523,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       { type: "h2", text: "Cost premium of new build over comparable brokerage" },
       {
         type: "kv",
-        caption: "The premium narrows over the hold. Quality builders hold value materially better than mid-tier brokerage acquisitions.",
+        caption: "The premium narrows over the hold. Quality builders hold value much better than mid-tier brokerage acquisitions.",
         rows: [
           { label: "At entry", value: "30 to 50 percent premium over comparable brokerage hull" },
           { label: "At delivery, 24 to 36 months later", value: "15 to 25 percent premium" },
@@ -560,7 +560,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           { label: "Independent firm, percentage", value: "1 to 3 percent of build cost" },
           { label: "Independent firm, fixed fee", value: "EUR 1 m to EUR 3 m across the build" },
           { label: "Broker acting as owner\u2019s representative", value: "Typically yard commission of around 5 percent (undisclosed to buyer)" },
-          { label: "Naval architect acting as owner\u2019s representative", value: "Continuing yard relationship; structurally conflicted" },
+          { label: "Naval architect acting as owner\u2019s representative", value: "Continuing yard relationship; carries an ongoing conflict" },
         ],
         sourceLine:
           "Practitioner anecdotal range. Major firms (Edmiston, Burgess, Cecil Wright, Y.CO, Moran, Hill Robinson) do not publish fee structures. The lack of published fees across the entire owner\u2019s representative market is itself a finding.",
@@ -624,7 +624,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "06-refit",
     title: "Refit yard capacity and typical overrun curve, 2026 to 2028",
     standfirst:
-      "The 30 to 50 percent overrun is the empirical expectation, not a project management failure. Capacity at dominant yards is tightening into a sellers' market for the first time in a decade. The numbers to plan against.",
+      "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. Capacity at dominant yards is tightening into a sellers' market for the first time in a decade. The numbers to plan against.",
     blocks: [
       { type: "h2", text: "Refit cost benchmarks, per metre per year" },
       {
@@ -646,7 +646,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         head: ["Project quality", "Typical overrun", "Notes"],
         rows: [
           ["Well-managed at competent yard, experienced rep", "10 to 20 percent", "The achievable target"],
-          ["Industry typical", "30 to 50 percent", "The empirical expectation"],
+          ["Industry typical", "30 to 50 percent", "What the work actually costs"],
           ["Poorly-managed", "60 to 100 percent or more", "Dockwalk: 600 percent overrun on a 1967 C&N refit"],
         ],
         sourceLine:
@@ -817,7 +817,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "07-operations",
     title: "Crew salary bands and insurance market commentary",
     standfirst:
-      "Crew is 30 to 40 percent of annual operating cost on a typical 50m, the largest single line by some distance. Hull insurance has stabilised; the post-Bayesian response was tightening on crew qualifications, not blanket rate rises.",
+      "Crew is 30 to 40 percent of annual operating cost on a typical 50m, by far the largest single line. Hull insurance has stabilised; the post-Bayesian response was tightening on crew qualifications, not blanket rate rises.",
     blocks: [
       { type: "h2", text: "Captain pay, by yacht size" },
       {

@@ -221,7 +221,7 @@ export const cases: Record<string, CaseStudy> = {
     ],
     takeaways: [
       "The change order clause is the most consequential piece of new-build contract drafting. Without defined unit rates and third-party quote rights, the buyer pays the yard\u2019s discretion.",
-      "Dual-role brokerage representation is not free. It is paid by the yard, structurally aligned with the yard\u2019s margin, and not incentivised to negotiate clauses that constrain that margin.",
+      "Dual-role brokerage representation is not free. It is paid by the yard, aligned with the yard\u2019s margin, and not incentivised to negotiate clauses that constrain that margin.",
       "Engage specialist shipbuilding counsel at heads of terms, not after the contract is signed. The afternoon\u2019s legal review at signature saves more than the representative fee for the entire project.",
       "The independent owner\u2019s representative on a EUR 100 m build, paid 1 to 3 percent of build cost, is the cheapest form of structural insurance available against the variation-margin pattern.",
     ],
@@ -250,14 +250,14 @@ export const cases: Record<string, CaseStudy> = {
       "Three weeks later, the electrical compliance team found that the previous yard\u2019s compliance work had been incomplete. Two switchboards had been left in a configuration that would not pass current class inspection. The remediation cost was EUR 220,000.",
       "Four weeks later, the paint cells found that the underlying primer beneath the topsides had failed in two locations, requiring full strip and re-prime before the new topcoat could be applied. The additional cost was EUR 480,000.",
       "Six weeks later, the interior team found that the air handling units in two of the guest cabins had been running at reduced capacity for years and required complete replacement. The additional cost was EUR 290,000.",
-      "Each finding was real. Each was within the empirical pattern of refit discovery. None could have been quoted for in the original visual inspection. The yard\u2019s communication on each finding was technically competent and commercially aligned with the yard.",
+      "Each finding was real. Each fit the standard pattern of refit discovery. None could have been quoted for in the original visual inspection. The yard\u2019s communication on each finding was technically competent and commercially aligned with the yard.",
       { type: "h2", text: "The structural problem" },
       "The owner\u2019s representative attended on Tuesdays. The owner himself attended once a month for two days. The representative\u2019s reporting was framed largely in narrative form (\u201cpaint cell complete,\u201d \u201cengine work ongoing\u201d) without a quantified snag list against original scope or a running variance against budget.",
       "By month four, the project was at EUR 4.6 m, against the EUR 3.2 m original quote. The owner asked the representative for a fixed final cost. The representative offered EUR 5.0 m. By month seven, the project was at EUR 5.8 m. By month nine, it was at EUR 6.1 m. The yacht delivered at EUR 6.4 m, double the original quote, four months past the planned redelivery.",
       "The 100 percent overrun is at the high end of practitioner experience. It is not unique. It is the pattern when scope is loosely specified, milestone payments are tied to calendar rather than deliverables, and the owner\u2019s representative is not paid by the owner.",
       {
         type: "blockquote",
-        text: "The 30 to 50 percent overrun is the empirical expectation. The 100 percent overrun is the case where the contract structure and the representation discipline have failed together.",
+        text: "The 30 to 50 percent overrun is what the work usually costs. The 100 percent overrun is the case where the contract structure and the representation discipline have failed together.",
         attribution: "Chapter 06, lead essay.",
       },
       { type: "h2", text: "The recovery" },
@@ -267,7 +267,7 @@ export const cases: Record<string, CaseStudy> = {
     takeaways: [
       "Tie milestone payments to defined deliverables (paint cells complete, engine reinstall complete, sea trials passed) rather than to calendar dates.",
       "The owner\u2019s representative on a EUR 5 m refit, paid 4 to 8 percent of project value, is the cheapest insurance against the doubling pattern.",
-      "Practitioner contingency reserves of 15 to 25 percent are not pessimism. They are the empirical expectation against opened-up vessels.",
+      "Practitioner contingency reserves of 15 to 25 percent are not pessimism. They are what opened-up vessels typically need.",
       "Weekly site presence with photographs and a quantified snag list surfaces issues at the point they can still be addressed cheaply.",
     ],
     disclosure:
@@ -287,7 +287,7 @@ export const cases: Record<string, CaseStudy> = {
     ],
     paragraphs: [
       "The owner had taken delivery of a 52 m semi-custom motor yacht 18 months earlier. The first captain, hired through a recruitment agency introduced by the brokerage that sold the yacht, had run the yacht for 14 months before resigning citing \u201cdifferences in operational philosophy.\u201d The hand-over was orderly. The yacht needed a new captain, and the owner had used the first hire as a learning experience.",
-      "The owner engaged an independent recruitment agency on his independent adviser\u2019s recommendation. The agency was not introduced by anyone with a continuing commercial relationship with the yacht. The adviser\u2019s framing was that the captain hire was the highest-leverage decision the owner would make on the yacht, and that the time to do it carefully was now.",
+      "The owner engaged an independent recruitment agency on his independent adviser\u2019s recommendation. The agency was not introduced by anyone with a continuing commercial relationship with the yacht. The adviser\u2019s framing was that the captain hire was the most consequential decision the owner would make on the yacht, and that the time to do it carefully was now.",
       { type: "h2", text: "Two interviews" },
       "Two final candidates emerged from the search. Both had the credentials. Both had worked on similar-sized yachts. Both had references the agency had verified.",
       "The first candidate, a Swedish captain with twelve years of experience, was charming, professional, and accommodating in interview. He agreed with the owner\u2019s preferred itinerary for the upcoming season. He agreed with the owner\u2019s suggestion that the autumn refit period could be \u201ckept tight\u201d to allow for late-season use. He agreed with the recruitment of two crew members the owner\u2019s wife had met socially. The owner left the interview comfortable.",
@@ -305,7 +305,7 @@ export const cases: Record<string, CaseStudy> = {
       "The cumulative cost saving across ten years from the captain\u2019s discipline (refit cost discipline, crew retention, supplier negotiation) is difficult to quantify precisely. A conservative estimate, applied across a 30 to 40 percent crew cost line, modest savings on refit overrun versus practitioner average, and the avoidance of two specific decisions the captain pushed back on, is approximately EUR 4 to 6 m across the decade. The captain\u2019s pay across the same period was approximately EUR 1.6 m. The arithmetic of the hire is not subtle.",
       { type: "h2", text: "The first captain, in retrospect" },
       "The first captain, who left after 14 months, has run two further yachts since. Both have had above-average crew turnover. Both have had operating cost growth above their size band\u2019s practitioner norm. The captain is, by every public-record indicator, a competent professional. He is not the captain to hire on the discipline-test. The owner\u2019s first hire had been a credential check. The owner\u2019s second hire had been a discipline check.",
-      "The independent adviser\u2019s view, in conversation, is that the captain hire is the highest-leverage operational decision an owner makes, that most first-time owners do not realise this until the second hire, and that the cost of getting it wrong on the first yacht is approximately one full year of operating cost wasted. The cost of getting it right on the second hire is approximately one year of independent recruitment process. The arithmetic, again, is not subtle.",
+      "The independent adviser\u2019s view, in conversation, is that the captain hire is the most consequential operational decision an owner makes, that most first-time owners do not realise this until the second hire, and that the cost of getting it wrong on the first yacht is approximately one full year of operating cost wasted. The cost of getting it right on the second hire is approximately one year of independent recruitment process. The arithmetic, again, is not subtle.",
     ],
     takeaways: [
       "Hire the captain who pushes back hardest. The discomfort in interview is the signal that the captain is doing the job in interview that they will do operationally.",
@@ -385,7 +385,7 @@ export const cases: Record<string, CaseStudy> = {
       "The yacht management company, recommended by the adviser from a list of candidates none of which had a continuing relationship with the listing broker, would be paid by the buyer directly. Pass.",
       "The insurance broker, selected by the adviser from a panel of three, would carry a brokerage commission embedded in the premium. Standard practice. Disclosed to the buyer in writing. Acceptable, on the adviser\u2019s framing. Pass with disclosure.",
       "The yard for any future refit work was an open question. The adviser noted that for the buyer\u2019s preferred cruising profile, the natural refit yard would be in the Western Mediterranean, and that the dominant operator in that segment had a corporate ownership history the buyer might want to consider against his independence test. The adviser walked him through the corporate history.",
-      "The buyer asked, separately, about the management company. The adviser noted that of the recognised firms in the over-30 m segment, several had ownership relationships with brokerages the buyer had previously interacted with, and that the structurally cleanest option (based on the six-element independence test applied to the management company itself) was a smaller firm the adviser could recommend.",
+      "The buyer asked, separately, about the management company. The adviser noted that of the recognised firms in the over-30 m segment, several had ownership relationships with brokerages the buyer had previously interacted with, and that the cleanest option (based on the six-element independence test applied to the management company itself) was a smaller firm the adviser could recommend.",
       "By the end of the conversation, the buyer had a clean architecture. Every fee was disclosed. Every party was paid by him directly or with full disclosure. The team passed the independence test, applied transparently.",
       { type: "h2", text: "What he saw, that the architecture did not solve" },
       "The buyer asked one further question. He asked his adviser, in private, what proportion of his time, attention, and household conversation the yacht was likely to absorb across the next decade.",
@@ -399,7 +399,7 @@ export const cases: Record<string, CaseStudy> = {
       { type: "h2", text: "The arithmetic, post-decision" },
       "The buyer\u2019s six-month engagement with Foreland Marine cost approximately USD 110,000 in adviser fees, plus the survey, lawyer, and incidental costs of the search. Total cost of the search that did not result in an acquisition: approximately USD 195,000.",
       "Across a decade of not-owning, on the practitioner average, the buyer would have spent approximately USD 30 to 45 m on a 49 m yacht acquisition, operating cost, and depreciation. He chose to deploy that capital into a property programme, a venture investment portfolio, and a charter relationship that gives him 30 to 40 days a year on similar-grade yachts without owning any of them. The total cost of his alternative architecture, across the decade, is approximately USD 12 to 18 m. The arithmetic is approximately USD 15 to 25 m of capital not committed to the asset class he had been ready, at week 25, to enter.",
-      "The buyer is, on the published record of the family office sector, an unusual case. Most buyers do not walk. He did. The First Owner’s Reference exists because the conversation that prompted the decision is not the conversation the trade press is structured to publish. It is, however, available. To this buyer, on this engagement, it was. The reader of this chapter is invited to have the equivalent conversation, with whichever adviser they consider, before signing.",
+      "The buyer is, on the published record of the family office sector, an unusual case. Most buyers do not walk. He did. The First Owner’s Reference exists because the conversation that prompted the decision is not the conversation the trade press tends to publish. It is, however, available. To this buyer, on this engagement, it was. The reader of this chapter is invited to have the equivalent conversation, with whichever adviser they consider, before signing.",
     ],
     takeaways: [
       "The independence test, applied to the team architecture, is not the only test. The opportunity-cost test (\u201cwhat else might my decade absorb?\u201d) is the test that produces the rarest outcome.",
