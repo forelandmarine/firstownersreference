@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { JsonLd } from "@/components/json-ld";
-import { glossaryEntries } from "@/lib/glossary";
+import { glossaryEntries, type GlossaryEntry } from "@/lib/glossary";
+import { sections } from "@/lib/sections";
 import {
   breadcrumbSchema,
   definedTermSetSchema,
@@ -32,6 +33,20 @@ export const metadata: Metadata = {
   },
 };
 
+function relatedChapters(entry: GlossaryEntry) {
+  if (!entry.relatedChapters?.length) return [];
+  return entry.relatedChapters
+    .map((slug) => sections.find((s) => s.slug === slug))
+    .filter((s): s is NonNullable<typeof s> => Boolean(s));
+}
+
+function relatedTerms(entry: GlossaryEntry, all: GlossaryEntry[]) {
+  if (!entry.relatedTerms?.length) return [];
+  return entry.relatedTerms
+    .map((slug) => all.find((e) => e.slug === slug))
+    .filter((e): e is GlossaryEntry => Boolean(e));
+}
+
 export default function GlossaryPage() {
   const sorted = [...glossaryEntries].sort((a, b) =>
     a.term.localeCompare(b.term, "en")
@@ -51,7 +66,7 @@ export default function GlossaryPage() {
             description:
               "Plain definitions of the terms that recur in superyacht acquisition, refit, and operation. Curated by Foreland Marine.",
             hasDefinedTerm: sorted.map((e) => ({
-              url: `${SITE_URL}/glossary/${e.slug}`,
+              url: `${SITE_URL}/glossary#${e.slug}`,
               name: e.term,
             })),
           }),
@@ -85,32 +100,78 @@ export default function GlossaryPage() {
               {sorted.length} terms &middot; A to Z
             </p>
           </div>
-          <div className="lg:col-span-9 space-y-10">
-            {sorted.map((entry) => (
-              <div
-                key={entry.slug}
-                id={entry.slug}
-                className="border-t border-rule pt-6"
-              >
-                <h2 className="font-serif text-2xl leading-tight tracking-tight text-charcoal mb-3">
-                  <Link
-                    href={`/glossary/${entry.slug}`}
-                    className="hover:text-marine transition-colors"
-                  >
-                    {entry.term}
-                  </Link>
-                </h2>
-                <p className="font-serif text-base lg:text-lg leading-relaxed text-charcoal-soft max-w-prose">
-                  {entry.shortDefinition}
-                </p>
-                <Link
-                  href={`/glossary/${entry.slug}`}
-                  className="meta-marine inline-flex items-center gap-2 mt-4"
+          <div className="lg:col-span-9 space-y-12">
+            {sorted.map((entry) => {
+              const chapters = relatedChapters(entry);
+              const related = relatedTerms(entry, sorted);
+              return (
+                <div
+                  key={entry.slug}
+                  id={entry.slug}
+                  className="border-t border-rule pt-6 scroll-mt-32"
                 >
-                  Read in full
-                </Link>
-              </div>
-            ))}
+                  <h2 className="font-serif text-2xl leading-tight tracking-tight text-charcoal mb-3">
+                    <a
+                      href={`#${entry.slug}`}
+                      className="hover:text-marine transition-colors"
+                    >
+                      {entry.term}
+                    </a>
+                  </h2>
+                  <p className="font-serif text-base lg:text-lg leading-relaxed text-charcoal-soft max-w-prose">
+                    {entry.shortDefinition}
+                  </p>
+                  {entry.longDefinition && (
+                    <p className="font-serif text-base lg:text-lg leading-relaxed text-charcoal max-w-prose mt-4">
+                      {entry.longDefinition}
+                    </p>
+                  )}
+                  {(entry.source || chapters.length > 0 || related.length > 0) && (
+                    <div className="mt-5 space-y-2 text-sm">
+                      {entry.source && (
+                        <p className="caption">
+                          <span className="meta mr-2">Source</span>
+                          <a
+                            href={entry.source.url}
+                            className="link-marine"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {entry.source.name}
+                          </a>
+                        </p>
+                      )}
+                      {chapters.length > 0 && (
+                        <p className="caption">
+                          <span className="meta mr-2">Discussed in</span>
+                          {chapters.map((chapter, i) => (
+                            <span key={chapter.slug}>
+                              {i > 0 && <span>, </span>}
+                              <Link href={`/${chapter.slug}`} className="link-marine">
+                                Chapter {chapter.number}
+                              </Link>
+                            </span>
+                          ))}
+                        </p>
+                      )}
+                      {related.length > 0 && (
+                        <p className="caption">
+                          <span className="meta mr-2">See also</span>
+                          {related.map((r, i) => (
+                            <span key={r.slug}>
+                              {i > 0 && <span>, </span>}
+                              <a href={`#${r.slug}`} className="link-marine">
+                                {r.term}
+                              </a>
+                            </span>
+                          ))}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </section>
       </article>

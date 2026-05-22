@@ -26,15 +26,16 @@ export async function generateMetadata(props: {
   const { slug } = await props.params;
   const entry = getGlossaryEntry(slug);
   if (!entry) return {};
-  const url = `${SITE_URL}/glossary/${slug}`;
+  const canonical = `${SITE_URL}/glossary#${slug}`;
   return {
     title: `${entry.term} | Yacht industry definition`,
     description: entry.shortDefinition,
-    alternates: { canonical: url },
+    alternates: { canonical },
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${entry.term} | The First Owner's Reference`,
       description: entry.shortDefinition,
-      url,
+      url: canonical,
       type: "article",
     },
     twitter: {
@@ -66,7 +67,7 @@ export default async function GlossaryEntryPage(props: {
   const entry = getGlossaryEntry(slug);
   if (!entry) notFound();
 
-  const url = `${SITE_URL}/glossary/${slug}`;
+  const url = `${SITE_URL}/glossary#${slug}`;
   const setUrl = `${SITE_URL}/glossary`;
 
   const chapters = relatedChapters(entry);

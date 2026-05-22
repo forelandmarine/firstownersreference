@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { sections } from "@/lib/sections";
 import { getCase } from "@/lib/cases";
 import { getChecklist } from "@/lib/checklists";
-import { glossaryEntries } from "@/lib/glossary";
 
 const BASE_URL = "https://firstownersreference.com";
 
@@ -49,12 +48,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return routes;
   });
 
-  const glossaryRoutes: MetadataRoute.Sitemap = glossaryEntries.map((entry) => ({
-    url: `${BASE_URL}/glossary/${entry.slug}`,
-    lastModified,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
-
-  return [...staticRoutes, ...chapterRoutes, ...glossaryRoutes];
+  return [...staticRoutes, ...chapterRoutes];
 }
