@@ -27,7 +27,7 @@ The six queries below are the publication's anchor topics. Each maps to a chapte
    Maps to: `/tools/yacht-vat-2026`. Anchor claim: VAT-paid status attaches to the hull not the flag; Temporary Admission 18 months; Maltese scheme reformed not withdrawn.
 
 5. **Marshall Islands vs Cayman flag for a private yacht**
-   Maps to: Chapter 4, glossary entries `/glossary/flag-state`, `/glossary/red-ensign-group`, `/glossary/yet`. Anchor claim: 84-day commercial charter under YET / PYLC; RMI applies STCW without national overlay; Cayman is REG Cat 1 with MCA-equivalent oversight.
+   Maps to: Chapter 4, glossary entries `/glossary/flag-state`, `/glossary/red-ensign-group`, `/glossary/yacht-engaged-in-trade`. Anchor claim: 84-day commercial charter under YET / PYLC; RMI applies STCW without national overlay; Cayman is REG Cat 1 with MCA-equivalent oversight.
 
 6. **first time superyacht buyer guide**
    Maps to: homepage, all chapters. Anchor claim: independent, contributor-led, no advertising, citable.

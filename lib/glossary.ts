@@ -507,16 +507,6 @@ export const glossaryEntries: GlossaryEntry[] = [
     relatedChapters: ["02-reading-the-market"],
   },
   {
-    slug: "yet",
-    term: "YET (Yacht Engaged in Trade)",
-    shortDefinition:
-      "Cayman Islands and other flag-state regimes for limited commercial use by privately registered yachts in defined EU jurisdictions.",
-    longDefinition:
-      "YET is the Cayman Shipping Registry's specific framework, replicated in similar form by Marshall Islands, Isle of Man, and Bahamas. It allows a privately registered yacht to undertake up to 84 days commercial charter per calendar year, in specified EU jurisdictions (Cayman: France, Monaco; Marshall Islands: France, Monaco, Croatia; Isle of Man: France, Monaco, Greece). Conversion requires Yacht Code Chapter II compliance for the duration of charter operation.",
-    relatedChapters: ["04-acquisition-process", "07-operations"],
-    relatedTerms: ["yacht-engaged-in-trade", "flag-state", "red-ensign-group"],
-  },
-  {
     slug: "spv",
     term: "SPV (Special Purpose Vehicle)",
     shortDefinition:
