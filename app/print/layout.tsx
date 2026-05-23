@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./print.css";
 
 export const metadata: Metadata = {
-  title: "The First Owner's Reference — 1st Edition (proof)",
+  title: "1st Edition (proof)",
   description: "Print proof, internal use only.",
   robots: { index: false, follow: false, nocache: true },
 };

@@ -1,7 +1,7 @@
 /*
   Print stylesheet, magazine register.
-  230 x 300 mm trim. Two-column body. Newsreader serif throughout, Geist Mono
-  for metadata and tabular numerals. Marine accent.
+  230 x 300 mm trim. Two-column body. Newsreader serif throughout, DM Sans
+  and DM Mono for metadata and tabular numerals. Marine accent.
 
   Body 12.5/17pt. Two columns at 91.5mm with 7mm gutter. Pull quotes and
   h2 headings span both columns as display breakouts. Drop caps four lines
@@ -22,37 +22,57 @@
 }
 
 /* === Page master === */
+/* @page background fills the entire page sheet edge-to-edge per the
+   CSS Paged Media spec. @page margins set the visual content area which
+   is consistent across multi-page sections. The body bg is also set so
+   any client that fails to fill @page margin area still shows paper. */
 @page {
   size: 230mm 300mm;
-  margin: 22mm 18mm 22mm 18mm;
+  margin: 26mm 24mm 26mm 24mm;
   background: #f5f2ec;
 }
 
 @page :left {
-  margin-left: 18mm;
-  margin-right: 22mm;
+  margin-left: 24mm;
+  margin-right: 26mm;
+  background: #f5f2ec;
   @top-left {
     content: "1st Edition";
-    font-family: "Geist", "Helvetica Neue", sans-serif;
+    font-family: "DM Sans", "Helvetica Neue", sans-serif;
     font-size: 7pt;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #7a756d;
     padding-top: 8mm;
+    background: #f5f2ec;
+  }
+  @top-right {
+    background: #f5f2ec;
+  }
+  @top-center {
+    background: #f5f2ec;
   }
   @bottom-left {
     content: counter(page);
-    font-family: "Geist Mono", "SF Mono", monospace;
-    font-size: 9pt;
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 9.5pt;
     color: #7a756d;
     padding-bottom: 8mm;
-    font-variant-numeric: tabular-nums;
+    font-variant-numeric: oldstyle-nums tabular-nums;
+    background: #f5f2ec;
+  }
+  @bottom-right {
+    background: #f5f2ec;
+  }
+  @bottom-center {
+    background: #f5f2ec;
   }
 }
 
 @page :right {
-  margin-left: 22mm;
-  margin-right: 18mm;
+  margin-left: 26mm;
+  margin-right: 24mm;
+  background: #f5f2ec;
   @top-right {
     content: "The First Owner\2019s Reference";
     font-family: "Newsreader", Georgia, serif;
@@ -61,74 +81,91 @@
     letter-spacing: 0.04em;
     color: #7a756d;
     padding-top: 8mm;
+    background: #f5f2ec;
+  }
+  @top-left {
+    background: #f5f2ec;
+  }
+  @top-center {
+    background: #f5f2ec;
   }
   @bottom-right {
     content: counter(page);
-    font-family: "Geist Mono", "SF Mono", monospace;
-    font-size: 9pt;
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 9.5pt;
     color: #7a756d;
     padding-bottom: 8mm;
-    font-variant-numeric: tabular-nums;
+    font-variant-numeric: oldstyle-nums tabular-nums;
+    background: #f5f2ec;
+  }
+  @bottom-left {
+    background: #f5f2ec;
+  }
+  @bottom-center {
+    background: #f5f2ec;
   }
 }
 
 @page no-folio {
-  margin: 22mm 18mm 22mm 22mm;
+  margin: 26mm 24mm 26mm 26mm;
   background: #f5f2ec;
-  @top-left { content: ""; }
-  @top-right { content: ""; }
-  @bottom-left { content: ""; }
-  @bottom-right { content: ""; }
+  @top-left { content: ""; background: #f5f2ec; }
+  @top-right { content: ""; background: #f5f2ec; }
+  @top-center { background: #f5f2ec; }
+  @bottom-left { content: ""; background: #f5f2ec; }
+  @bottom-right { content: ""; background: #f5f2ec; }
+  @bottom-center { background: #f5f2ec; }
 }
 
 @page bleed {
   margin: 0;
   background: #f5f2ec;
-  @top-left { content: ""; }
-  @top-right { content: ""; }
-  @bottom-left { content: ""; }
-  @bottom-right { content: ""; }
 }
 
 @page :blank {
   background: #f5f2ec;
-  @top-left { content: ""; }
-  @top-right { content: ""; }
-  @bottom-left { content: ""; }
-  @bottom-right { content: ""; }
+  @top-left { content: ""; background: #f5f2ec; }
+  @top-right { content: ""; background: #f5f2ec; }
+  @bottom-left { content: ""; background: #f5f2ec; }
+  @bottom-right { content: ""; background: #f5f2ec; }
 }
 
 @page cover {
   margin: 0;
   background: #1a1a1a;
-  @top-left { content: ""; }
-  @top-right { content: ""; }
-  @bottom-left { content: ""; }
-  @bottom-right { content: ""; }
 }
 
 /* === Base === */
-html, body {
-  background: #f5f2ec;
+html {
   margin: 0;
   padding: 0;
+  background: #f5f2ec;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
   background: #f5f2ec;
-  z-index: -1;
+  min-height: 100vh;
 }
+
+.print-edition {
+  background: #f5f2ec;
+  min-height: 100vh;
+}
+
+/* Section padding is handled per-class below; @page margins handle the
+   page edge margin so multi-page sections get consistent margins on
+   continuation pages. */
+
+/* Running heads and folios are not rendered in the proof. Press edition
+   sets these in InDesign so chapter-aware running heads and computed
+   folios work correctly; Chrome's headless print does not. */
 
 .print-edition {
   font-family: "Newsreader", Georgia, "Times New Roman", serif;
   font-size: 12.5pt;
-  line-height: 17pt;
+  line-height: 16pt;
   color: var(--colour-ink);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -138,6 +175,14 @@ body::before {
 
 .print-edition * {
   box-sizing: border-box;
+}
+
+/* Prevent hyphenation on proper nouns, brand names, court citations, and
+   currency strings. Wrap any term that must stay intact in <span class="nb">. */
+.print-edition .nb {
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  white-space: nowrap;
 }
 
 /* ===========================================================
@@ -169,57 +214,77 @@ body::before {
 .cover-page__inner {
   position: absolute;
   inset: 0;
-  padding: 22mm 18mm;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 24mm 22mm;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   z-index: 2;
 }
 
+.cover-page__inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.10) 35%,
+    rgba(0, 0, 0, 0.10) 65%,
+    rgba(0, 0, 0, 0.50) 100%
+  );
+  z-index: -1;
+}
+
 .cover-page__edition {
-  font-family: "Geist Mono", "SF Mono", monospace;
-  font-size: 8.5pt;
-  letter-spacing: 0.2em;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--colour-paper);
-  opacity: 0.92;
+  opacity: 0.95;
+  margin: 0;
 }
 
 .cover-page__title-block {
+  align-self: end;
   display: flex;
   flex-direction: column;
-  gap: 6mm;
+  gap: 10mm;
+  padding-bottom: 6mm;
 }
 
 .cover-page__wordmark {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 60pt;
-  line-height: 1.0;
-  letter-spacing: -0.018em;
+  font-size: 96pt;
+  line-height: 0.92;
+  letter-spacing: -0.022em;
   color: var(--colour-paper);
-  max-width: 160mm;
-  text-shadow: 0 0 24mm rgba(0, 0, 0, 0.18);
+  max-width: 180mm;
+  margin: 0;
 }
 
 .cover-page__strap {
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 16pt;
   line-height: 1.4;
   color: var(--colour-paper);
   opacity: 0.95;
-  max-width: 130mm;
+  max-width: 140mm;
+  margin: 0;
+  border-top: 0.5pt solid rgba(245, 242, 236, 0.55);
+  padding-top: 6mm;
 }
 
 .cover-page__publisher {
-  font-family: "Geist Mono", "SF Mono", monospace;
-  font-size: 8pt;
-  letter-spacing: 0.18em;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 8.5pt;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--colour-paper);
-  opacity: 0.82;
+  opacity: 0.85;
+  margin: 0;
 }
 
 /* ===========================================================
@@ -268,28 +333,26 @@ body::before {
   page: no-folio;
   page-break-before: right;
   page-break-after: always;
-  position: relative;
-  min-height: 85vh;
-  padding-top: 56mm;
+  padding-top: 22mm;
 }
 
 .title-page__edition {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8.5pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--colour-stone);
-  margin-bottom: 22mm;
+  color: var(--colour-marine);
+  margin: 0 0 16mm 0;
 }
 
 .title-page__title {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 56pt;
+  font-size: 60pt;
   line-height: 1.02;
   letter-spacing: -0.018em;
   color: var(--colour-ink);
-  margin: 0 0 16mm 0;
+  margin: 0 0 12mm 0;
   max-width: 180mm;
 }
 
@@ -301,41 +364,217 @@ body::before {
   line-height: 1.42;
   color: var(--colour-soft);
   max-width: 140mm;
+  margin: 0 0 30mm 0;
 }
 
-.title-page__publisher {
-  font-family: "Geist Mono", "SF Mono", monospace;
-  font-size: 8.5pt;
+.title-page__frame {
+  margin: 0 0 30mm 0;
+  padding-top: 4mm;
+  max-width: 160mm;
+}
+
+.title-page__frame-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7.5pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--colour-stone);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  color: var(--colour-marine);
+  margin: 0 0 5mm 0;
+}
+
+.title-page__frame-body {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 12pt;
+  line-height: 17pt;
+  color: var(--colour-soft);
+  margin: 0;
+}
+
+.title-page__foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9mm;
+  padding-top: 8mm;
+  border-top: 0.5pt solid var(--colour-rule);
+  max-width: 180mm;
+}
+
+.title-page__foot-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 2mm 0;
+}
+
+.title-page__foot-value {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 11pt;
+  color: var(--colour-ink);
+  margin: 0;
+}
+
+.title-page__sections {
+  margin-top: 16mm;
+  padding-top: 10mm;
+  border-top: 1.25pt solid var(--colour-marine);
+}
+
+.title-page__sections-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 8mm 0;
+}
+
+.title-page__sections-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  column-count: 3;
+  column-gap: 12mm;
+}
+
+.title-page__sections-list li {
+  display: grid;
+  grid-template-columns: 10mm 1fr;
+  gap: 4mm;
+  align-items: baseline;
+  margin: 0 0 4mm 0;
+  break-inside: avoid;
+}
+
+.title-page__sections-num {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 10pt;
+  color: var(--colour-marine);
+  font-variant-numeric: tabular-nums;
+}
+
+.title-page__sections-title {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 12pt;
+  line-height: 1.3;
+  color: var(--colour-ink);
+  margin: 0;
 }
 
 .imprint {
   page: no-folio;
   page-break-before: left;
   page-break-after: always;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 85vh;
-  font-size: 10pt;
-  line-height: 15pt;
+  padding-top: 8mm;
+  font-size: 9.5pt;
+  line-height: 14pt;
   color: var(--colour-soft);
-  max-width: 110mm;
 }
 
-.imprint p {
-  margin: 0 0 11pt 0;
+.imprint__label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 8mm 0;
 }
 
-.imprint p strong {
+.imprint__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 30pt;
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+  margin: 0 0 12mm 0;
+  color: var(--colour-ink);
+}
+
+.imprint__cols {
+  column-count: 3;
+  column-gap: 9mm;
+  column-fill: balance;
+}
+
+.imprint__cols p {
+  margin: 0 0 10pt 0;
+  break-inside: avoid;
+}
+
+.imprint__cols p strong {
   font-weight: 600;
   color: var(--colour-ink);
+}
+
+.imprint__masthead {
+  margin-top: 14mm;
+  padding-top: 8mm;
+  border-top: 0.75pt solid var(--colour-marine);
+  column-count: 3;
+  column-gap: 9mm;
+  break-inside: avoid;
+}
+
+.imprint__masthead-block {
+  break-inside: avoid;
+  margin: 0 0 8mm 0;
+}
+
+.imprint__masthead-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 3mm 0;
+}
+
+.imprint__masthead-name {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.35;
+  color: var(--colour-ink);
+  margin: 0 0 1mm 0;
+}
+
+.imprint__masthead-role {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 9pt;
+  line-height: 1.35;
+  color: var(--colour-soft);
+  margin: 0 0 2mm 0;
+}
+
+.imprint__note {
+  margin-top: 12mm;
+  padding-top: 8mm;
+  border-top: 0.75pt solid var(--colour-marine);
+  break-inside: avoid;
+}
+
+.imprint__note-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 5mm 0;
+}
+
+.imprint__note-cols {
+  column-count: 3;
+  column-gap: 9mm;
+}
+
+.imprint__note-cols p {
+  margin: 0 0 9pt 0;
+  font-size: 9pt;
+  line-height: 13.5pt;
+  color: var(--colour-soft);
+  break-inside: avoid;
 }
 
 /* === Editor's letter === */
@@ -343,41 +582,112 @@ body::before {
   page-break-before: right;
   page-break-after: always;
   string-set: chapter-running "Editors\2019 letter";
-  padding-top: 16mm;
+  padding-top: 8mm;
 }
 
 .editors-letter__label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--colour-marine);
-  margin: 0 0 10mm 0;
+  margin: 0 0 8mm 0;
 }
 
 .editors-letter__title {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 36pt;
-  line-height: 1.08;
+  font-size: 40pt;
+  line-height: 1.05;
   letter-spacing: -0.012em;
-  margin: 0 0 16mm 0;
-  max-width: 160mm;
+  margin: 0 0 12mm 0;
+  max-width: 170mm;
 }
 
-.editors-letter p {
-  margin: 0 0 14pt 0;
-  max-width: 140mm;
-  font-size: 13pt;
-  line-height: 18pt;
+.editors-letter__body {
+  column-count: 2;
+  column-gap: 9mm;
+  column-fill: balance;
+}
+
+.editors-letter__body p {
+  margin: 0 0 16pt 0;
+  font-size: 14.5pt;
+  line-height: 20.5pt;
+  text-indent: 5mm;
+}
+
+.editors-letter__body p:first-child {
+  text-indent: 0;
+  font-style: italic;
+  font-size: 19pt;
+  line-height: 25pt;
+  color: var(--colour-marine);
+  margin-bottom: 18pt;
+  font-weight: 300;
 }
 
 .editors-letter__signature {
-  margin-top: 16mm;
+  margin-top: 8mm;
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
-  font-size: 13pt;
+  font-size: 12pt;
   color: var(--colour-soft);
+  text-indent: 0;
+  break-inside: avoid;
+}
+
+.editors-letter__keys {
+  margin-top: 14mm;
+  padding-top: 8mm;
+  border-top: 0.75pt solid var(--colour-marine);
+}
+
+.editors-letter__keys-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 6mm 0;
+}
+
+.editors-letter__keys-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12mm;
+  row-gap: 12mm;
+}
+
+.editors-letter__keys-list li {
+  display: grid;
+  grid-template-columns: 12mm 1fr;
+  gap: 5mm;
+  break-inside: avoid;
+}
+
+.editors-letter__keys-list li span {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 16pt;
+  color: var(--colour-marine);
+  font-variant-numeric: tabular-nums;
+  align-self: start;
+}
+
+.editors-letter__keys-list li p {
+  margin: 0;
+  font-size: 12pt;
+  line-height: 17pt;
+  color: var(--colour-ink);
+  text-indent: 0;
+}
+
+.editors-letter__keys-list li p strong {
+  font-weight: 600;
+  color: var(--colour-marine);
 }
 
 /* === Contents === */
@@ -385,11 +695,11 @@ body::before {
   page-break-before: right;
   page-break-after: always;
   string-set: chapter-running "Contents";
-  padding-top: 16mm;
+  padding-top: 8mm;
 }
 
 .contents-page__label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -400,10 +710,10 @@ body::before {
 .contents-page__title {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 42pt;
+  font-size: 36pt;
   line-height: 1.05;
   letter-spacing: -0.012em;
-  margin: 0 0 18mm 0;
+  margin: 0 0 10mm 0;
 }
 
 .contents-list {
@@ -415,15 +725,15 @@ body::before {
 
 .contents-list__item {
   display: grid;
-  grid-template-columns: 18mm 1fr 14mm;
-  gap: 8mm;
-  padding: 7mm 0;
+  grid-template-columns: 16mm 1fr 14mm;
+  gap: 6mm;
+  padding: 4mm 0;
   border-bottom: 0.5pt solid var(--colour-rule);
   break-inside: avoid;
 }
 
 .contents-list__num {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 10pt;
   letter-spacing: 0.06em;
   color: var(--colour-marine);
@@ -434,12 +744,12 @@ body::before {
 .contents-list__main {
   display: flex;
   flex-direction: column;
-  gap: 3mm;
+  gap: 2mm;
 }
 
 .contents-list__title {
   font-family: "Newsreader", Georgia, serif;
-  font-size: 17pt;
+  font-size: 14pt;
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: -0.005em;
@@ -450,15 +760,15 @@ body::before {
 .contents-list__standfirst {
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
-  font-size: 11pt;
-  line-height: 1.45;
+  font-size: 9.5pt;
+  line-height: 1.4;
   color: var(--colour-soft);
-  max-width: 130mm;
+  max-width: 140mm;
   margin: 0;
 }
 
 .contents-list__folio {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 10pt;
   font-variant-numeric: tabular-nums;
   color: var(--colour-stone);
@@ -471,11 +781,11 @@ body::before {
   page-break-before: right;
   page-break-after: always;
   string-set: chapter-running "Contributors";
-  padding-top: 16mm;
+  padding-top: 8mm;
 }
 
 .contributors-page__label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -514,7 +824,7 @@ body::before {
 }
 
 .contributor-entry__chapter {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 7.5pt;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -536,6 +846,28 @@ body::before {
   font-size: 11pt;
   line-height: 1.45;
   color: var(--colour-soft);
+  margin: 0;
+}
+
+.contributor-entry--pending {
+  opacity: 0.55;
+}
+
+.contributor-entry--pending .contributor-entry__name {
+  color: var(--colour-stone);
+  font-weight: 300;
+}
+
+.contributors-page__note {
+  margin-top: 12mm;
+  padding-top: 6mm;
+  border-top: 0.5pt solid var(--colour-rule);
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  color: var(--colour-soft);
+  max-width: 165mm;
 }
 
 /* ===========================================================
@@ -544,7 +876,7 @@ body::before {
 
 .chapter-opener {
   page: bleed;
-  page-break-before: right;
+  page-break-before: always;
   page-break-after: always;
   width: 100%;
   height: 100vh;
@@ -597,7 +929,7 @@ body::before {
 }
 
 .chapter-opener__num-label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 9pt;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -661,7 +993,7 @@ body::before {
 }
 
 .chapter-opener__meta-label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 7pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -682,28 +1014,34 @@ body::before {
    =========================================================== */
 
 .chapter-body {
-  page-break-before: right;
-  padding-top: 6mm;
+  /* No forced recto break: the chapter image opener already ends a page.
+     Body starts on whatever page follows. Continuous flow saves blank pages. */
+  padding-top: 4mm;
   string-set: chapter-running attr(data-chapter);
 }
 
-.chapter-body__intro {
-  /* the paragraph immediately after the chapter opener; sits before the
-     two-column flow as a wider lead. drop cap goes here. */
-  column-count: 1;
-  margin-bottom: 8mm;
+/* Chapter body is a single two-column context. The intro paragraph spans
+   both columns at the top and carries the drop cap, then the body flows
+   naturally into the two columns below without a forced page break.
+   column-fill: auto so col 1 fills top to bottom before col 2 begins,
+   which produces natural left-to-right reading and avoids stranding col 2
+   empty above a column-span element. */
+.chapter-body__cols {
+  column-count: 2;
+  column-gap: 9mm;
+  column-fill: auto;
 }
 
-.chapter-body__intro p {
+.chapter-body__intro-para {
+  column-span: all;
   font-size: 14pt;
   line-height: 19pt;
   text-align: left;
-  margin: 0 0 13pt 0;
-  max-width: 158mm;
+  margin: 0 0 8mm 0;
+  max-width: 125mm;
 }
 
-/* drop cap on the very first paragraph of the chapter */
-.chapter-body__intro p:first-child::first-letter {
+.chapter-body__intro-para::first-letter {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   float: left;
@@ -713,41 +1051,60 @@ body::before {
   color: var(--colour-marine);
 }
 
-/* the rest of the body runs as two columns */
-.chapter-body__cols {
-  column-count: 2;
-  column-gap: 7mm;
-  column-fill: balance;
-}
-
+/* Magazine paragraph style: first-line indent, no blank line between        */
+/* paragraphs. First paragraph of a section (after h2 or after intro) is NOT */
+/* indented (typographic convention).                                         */
 .chapter-body__cols p {
-  margin: 0 0 12pt 0;
+  margin: 0;
+  text-indent: 4mm;
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
-  hyphenate-limit-chars: 7 3 3;
+  hyphenate-limit-chars: 9 4 4;
   hyphenate-limit-lines: 2;
   orphans: 3;
   widows: 3;
   break-inside: avoid-column;
 }
 
-/* h2 spans both columns and breaks the visual rhythm */
+.chapter-body__cols > p:first-child,
+.chapter-body__cols h2 + p,
+.chapter-body__cols .chapter-body__pull + p,
+.chapter-body__cols .chapter-body__editors-note + p,
+.chapter-body__cols .chapter-body__figure + p {
+  text-indent: 0;
+}
+
+/* h2 spans both columns and breaks the visual rhythm. Strong keep-with-next
+   so a heading does not get stranded at the foot of a page above its body.
+   No horizontal rule: typographic weight and breathing space alone do the
+   sectioning so the page is not crossed by multiple blue lines. */
 .chapter-body__cols h2,
 .chapter-body h2 {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 400;
-  font-size: 18pt;
-  line-height: 22pt;
+  font-size: 19pt;
+  line-height: 23pt;
   letter-spacing: -0.005em;
   color: var(--colour-marine);
-  margin: 18pt 0 10pt 0;
+  margin: 24pt 0 11pt 0;
   page-break-after: avoid;
   break-after: avoid-page;
+  page-break-inside: avoid;
+  break-inside: avoid;
   column-span: all;
   max-width: 95%;
-  border-top: 0.75pt solid var(--colour-marine);
-  padding-top: 10pt;
+}
+
+/* The paragraph that immediately follows an h2 carries the heading with
+   it across page breaks. Together with page-break-after on h2 this makes
+   the pair behave as one keep-together unit. */
+.chapter-body__cols h2 + p,
+.chapter-body h2 + p,
+.chapter-body__cols h2 + .chapter-body__pull,
+.chapter-body h2 + .chapter-body__pull {
+  page-break-before: avoid;
+  break-before: avoid-page;
 }
 
 .chapter-body__cols h2 + p,
@@ -773,7 +1130,7 @@ body::before {
 }
 
 .chapter-body__pull footer {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-style: normal;
   font-size: 8pt;
   letter-spacing: 0.15em;
@@ -825,10 +1182,68 @@ body::before {
   max-width: 92%;
 }
 
-/* Wide figure spans both columns */
+/* Wide figure spans both columns at a fixed magazine-style height */
+/* Supporting images stay inside their column so the adjacent column keeps
+   filling with body text. Column-spanning figures are reserved for genuine
+   feature images via .chapter-body__figure--feature. */
 .chapter-body__figure--wide {
+  margin: 14pt 0;
+  break-inside: avoid;
+}
+
+.chapter-body__figure--wide img {
+  width: 100%;
+  height: 70mm;
+  object-fit: cover;
+  display: block;
+}
+
+/* Feature image: spans both columns, sits as a visual break between
+   sections. Use for the most consequential supporting image per chapter. */
+.chapter-body__figure--feature {
   column-span: all;
-  margin: 18pt 0;
+  margin: 16pt 0;
+}
+
+.chapter-body__figure--feature img {
+  width: 100%;
+  height: 110mm;
+  object-fit: cover;
+  display: block;
+}
+
+/* Half-bleed image: runs from the inner column out to the trim edge with
+   text continuing in the inner column. Uses negative margin to push past
+   the page margin into the bleed area. */
+.chapter-body__figure--halfbleed {
+  float: right;
+  width: 50%;
+  margin: 4pt 0 8pt 6mm;
+  shape-outside: margin-box;
+  break-inside: avoid;
+}
+
+.chapter-body__figure--halfbleed img {
+  width: 100%;
+  height: 130mm;
+  object-fit: cover;
+  display: block;
+}
+
+/* Quarter-page inset: small image with text wrap, used as a body
+   interruption rather than a feature. */
+.chapter-body__figure--inset {
+  float: right;
+  width: 38%;
+  margin: 2pt 0 6pt 5mm;
+  break-inside: avoid;
+}
+
+.chapter-body__figure--inset img {
+  width: 100%;
+  height: 60mm;
+  object-fit: cover;
+  display: block;
 }
 
 /* ===========================================================
@@ -836,38 +1251,46 @@ body::before {
    =========================================================== */
 
 .guest-opinion {
-  page-break-before: right;
-  padding-top: 6mm;
+  /* Flows continuously after the chapter body — no recto break. */
+  margin-top: 18mm;
+  padding-top: 10mm;
+  border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running "Guest opinion";
 }
 
 .guest-opinion__label {
-  font-family: "Geist Mono", "SF Mono", monospace;
-  font-size: 8pt;
-  letter-spacing: 0.18em;
+  page-break-after: avoid;
+  break-after: avoid-page;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--colour-marine);
-  margin: 0 0 8mm 0;
+  margin: 0 0 6mm 0;
 }
 
 .guest-opinion__title {
+  page-break-after: avoid;
+  break-after: avoid-page;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 38pt;
+  font-size: 36pt;
   line-height: 1.05;
   letter-spacing: -0.012em;
-  margin: 0 0 8mm 0;
+  margin: 0 0 6mm 0;
   max-width: 170mm;
 }
 
 .guest-opinion__intro {
+  page-break-after: avoid;
+  break-after: avoid-page;
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
   font-size: 14pt;
   line-height: 19pt;
   color: var(--colour-soft);
   max-width: 150mm;
-  margin: 0 0 14mm 0;
+  margin: 0 0 7mm 0;
 }
 
 .guest-opinion__qa {
@@ -888,8 +1311,13 @@ body::before {
 .guest-opinion__a p {
   font-size: 12pt;
   line-height: 17pt;
-  margin: 0 0 9pt 0;
+  margin: 0;
+  text-indent: 4mm;
   max-width: 150mm;
+}
+
+.guest-opinion__a p:first-child {
+  text-indent: 0;
 }
 
 /* ===========================================================
@@ -897,50 +1325,317 @@ body::before {
    =========================================================== */
 
 .case-section {
-  page-break-before: right;
-  padding-top: 6mm;
+  margin-top: 18mm;
+  padding-top: 10mm;
+  border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running "Case study";
 }
 
-.case-section__opener {
-  margin-bottom: 14mm;
+/* Chapter close: orienting block at the end of each chapter that takes the
+   bottom of the verso. The case study above ends naturally; the close sits
+   below with a forced page break so it always occupies a full page. This
+   means readers always know a chapter has ended; the next image opener is a
+   deliberate restart, not a gap in flow. */
+/* The chapter close is a full-page typographic moment that ends the chapter
+   and prepares the reader for the next one. It always occupies its own page,
+   creating a clear two-spread chapter-end rhythm: case study trailing page,
+   then a deliberate close, then the image opener of the next chapter. The
+   trailing case-study page gets a small chapter-end pull-line to absorb any
+   remaining space. */
+/* Chapter close: flows inline after the case study disclosure so it absorbs
+   any trailing space on the case page. When there is enough room it sits at
+   page foot; when the case page is already full it carries to the next page.
+   Either way, the close fills the available vertical space: the foot block
+   is pushed to the bottom via margin-top: auto so dead space falls in the
+   middle as a deliberate breath rather than at the foot. */
+/* Chapter close flows inline after the case study disclosure so it absorbs
+   trailing space on the case page. The block CAN split across pages so the
+   pull quote anchors the trailing case page, with method/foot continuing
+   to the next page where the chapter number watermark sits. This avoids
+   the standalone close page with 30% dead space. */
+.chapter-close {
+  position: relative;
+  display: block;
+  margin-top: 14mm;
+  padding-top: 10mm;
+  border-top: 1pt solid var(--colour-marine);
 }
 
-.case-section__label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+.chapter-close__head,
+.chapter-close__quote {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Bottom half of the chapter close (method + foot) is a single break-inside
+   avoid unit so the foot does not strand alone on the next page. If the
+   bottom does not fit on the case trailing page it pushes whole to the
+   following page. */
+.chapter-close__bottom {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.chapter-close__method {
+  margin-top: 22mm;
+  padding-top: 8mm;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 9mm;
+  position: relative;
+  z-index: 2;
+}
+
+.chapter-close__method-block {
+  break-inside: avoid;
+}
+
+.chapter-close__method-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7.5pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 4mm 0;
+}
+
+.chapter-close__method-body {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 9.5pt;
+  line-height: 13.5pt;
+  color: var(--colour-soft);
+  margin: 0;
+}
+
+.chapter-close__head {
+  padding-bottom: 4mm;
+  margin-bottom: 0;
+}
+
+.chapter-close__section-title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 44pt;
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+  color: var(--colour-ink);
+  margin: 4mm 0 0 0;
+  max-width: 180mm;
+}
+
+.chapter-close__head {
+  position: relative;
+  z-index: 2;
+}
+
+.chapter-close__end-label {
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--colour-marine);
   margin: 0 0 8mm 0;
 }
 
+.chapter-close__foot-col--glance {
+  border-left: 0.5pt solid var(--colour-rule);
+  padding-left: 14mm;
+}
+
+.chapter-close__glance-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 6mm 0;
+}
+
+.chapter-close__glance-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5mm;
+}
+
+.chapter-close__glance-list li {
+  display: grid;
+  grid-template-columns: 9mm 1fr;
+  gap: 4mm;
+  align-items: baseline;
+}
+
+.chapter-close__glance-list li span {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 11pt;
+  color: var(--colour-marine);
+  font-variant-numeric: oldstyle-nums tabular-nums;
+}
+
+.chapter-close__glance-list li p {
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 12pt;
+  line-height: 1.3;
+  color: var(--colour-ink);
+}
+
+.chapter-close__quote {
+  align-self: start;
+  margin: 0;
+  padding: 18mm 0 0 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 34pt;
+  line-height: 1.12;
+  letter-spacing: -0.008em;
+  color: var(--colour-ink);
+  max-width: 180mm;
+  position: relative;
+  z-index: 2;
+}
+
+.chapter-close__quote footer {
+  margin-top: 10mm;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  font-style: normal;
+}
+
+.chapter-close__big-num {
+  position: absolute;
+  bottom: -8mm;
+  right: -12mm;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 280pt;
+  line-height: 0.82;
+  color: var(--colour-paper-deep);
+  z-index: 0;
+  pointer-events: none;
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: -0.04em;
+  opacity: 0.55;
+}
+
+.chapter-close__foot {
+  align-self: end;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 14mm;
+  padding-top: 12mm;
+  border-top: 1pt solid var(--colour-marine);
+  align-items: start;
+}
+
+.chapter-close__foot-col {
+  break-inside: avoid;
+}
+
+.chapter-close__label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 6mm 0;
+}
+
+.chapter-close__num {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 11pt;
+  color: var(--colour-stone);
+  margin: 0 0 4mm 0;
+}
+
+.chapter-close__title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 400;
+  font-size: 28pt;
+  line-height: 1.05;
+  letter-spacing: -0.005em;
+  color: var(--colour-ink);
+  margin: 0 0 6mm 0;
+  max-width: 90mm;
+}
+
+.chapter-close__standfirst {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 12pt;
+  line-height: 1.45;
+  color: var(--colour-soft);
+  margin: 0;
+  max-width: 90mm;
+}
+
+.case-section__opener {
+  margin-bottom: 8mm;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
+/* The first body paragraph after the case opener keeps with the opener so
+   the case title does not strand at the foot of a page above its first
+   body content. */
+.case-section__opener + .case-section__body {
+  page-break-before: avoid;
+  break-before: avoid-page;
+}
+
+.case-section__label {
+  page-break-after: avoid;
+  break-after: avoid-page;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 6mm 0;
+}
+
 .case-section__title {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 38pt;
+  font-size: 36pt;
   line-height: 1.05;
   letter-spacing: -0.012em;
-  margin: 0 0 8mm 0;
+  margin: 0 0 6mm 0;
   max-width: 170mm;
 }
 
 .case-section__standfirst {
+  page-break-after: avoid;
+  break-after: avoid-page;
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
   font-size: 16pt;
   line-height: 22pt;
   color: var(--colour-soft);
   max-width: 150mm;
-  margin: 0 0 12mm 0;
+  margin: 0 0 6mm 0;
 }
 
 .case-section__meta {
+  page-break-after: avoid;
+  break-after: avoid-page;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5mm 12mm;
-  margin-bottom: 12mm;
-  padding: 5mm 0;
+  gap: 4mm 12mm;
+  margin-bottom: 6mm;
+  padding: 4mm 0;
   border-top: 0.5pt solid var(--colour-rule);
   border-bottom: 0.5pt solid var(--colour-rule);
 }
@@ -952,7 +1647,7 @@ body::before {
 }
 
 .case-section__meta-label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 7pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -968,16 +1663,24 @@ body::before {
 
 .case-section__body {
   column-count: 2;
-  column-gap: 7mm;
+  column-gap: 9mm;
+  column-fill: balance;
 }
 
 .case-section__body p {
-  margin: 0 0 12pt 0;
+  margin: 0;
+  text-indent: 4mm;
   text-align: justify;
   hyphens: auto;
-  hyphenate-limit-chars: 7 3 3;
+  hyphenate-limit-chars: 9 4 4;
   orphans: 3;
   widows: 3;
+}
+
+.case-section__body > p:first-child,
+.case-section__body h2 + p,
+.case-section__body .chapter-body__pull + p {
+  text-indent: 0;
 }
 
 .case-section__body p:first-child::first-letter {
@@ -997,10 +1700,28 @@ body::before {
   font-size: 16pt;
   line-height: 20pt;
   color: var(--colour-marine);
-  margin: 14pt 0 8pt 0;
+  margin: 18pt 0 8pt 0;
   page-break-after: avoid;
-  border-top: 0.75pt solid var(--colour-marine);
-  padding-top: 8pt;
+  break-after: avoid-page;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* The paragraph after a case-section h2 keeps with the heading. */
+.case-section__body h2 + p {
+  page-break-before: avoid;
+  break-before: avoid-page;
+  orphans: 3;
+  widows: 3;
+}
+
+/* The paragraph after a data-spread h2 keeps with the heading. */
+.data-spread h2 + p,
+.data-spread h2 + .data-spread__caption {
+  page-break-before: avoid;
+  break-before: avoid-page;
+  orphans: 3;
+  widows: 3;
 }
 
 .case-section__disclosure {
@@ -1013,6 +1734,90 @@ body::before {
   padding-top: 6mm;
   border-top: 0.5pt solid var(--colour-rule);
   column-span: all;
+  position: relative;
+}
+
+.case-section__disclosure::after {
+  content: "■";
+  display: inline-block;
+  margin-left: 6pt;
+  font-size: 7pt;
+  color: var(--colour-marine);
+  vertical-align: 1pt;
+}
+
+/* Case section closing pull quote: sits inline after the disclosure to
+   absorb trailing space on the case page and act as a clear chapter-end
+   typographic moment that prefaces the standalone close page following. */
+.case-section__close {
+  margin-top: 14mm;
+  padding-top: 10mm;
+  border-top: 0.5pt solid var(--colour-rule);
+  column-span: all;
+  break-inside: avoid;
+}
+
+.case-section__close-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 8mm 0;
+}
+
+.case-section__close-quote {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 26pt;
+  line-height: 1.18;
+  letter-spacing: -0.008em;
+  color: var(--colour-ink);
+  margin: 0;
+  max-width: 170mm;
+}
+
+.case-section__close-quote footer {
+  margin-top: 6mm;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  font-style: normal;
+}
+
+/* Unused — kept in case the case method block reappears. */
+.case-section__method {
+  margin-top: 14mm;
+  padding-top: 8mm;
+  border-top: 0.5pt solid var(--colour-rule);
+  column-span: all;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 9mm;
+}
+
+.case-section__method-block {
+  break-inside: avoid;
+}
+
+.case-section__method-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7.5pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 4mm 0;
+}
+
+.case-section__method-body {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 9.5pt;
+  line-height: 13.5pt;
+  color: var(--colour-soft);
+  margin: 0;
 }
 
 /* ===========================================================
@@ -1020,38 +1825,52 @@ body::before {
    =========================================================== */
 
 .data-spread {
-  page-break-before: right;
-  padding-top: 6mm;
+  margin-top: 18mm;
+  padding-top: 10mm;
+  border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running attr(data-chapter);
 }
 
+.data-spread__opener {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
 .data-spread__label {
-  font-family: "Geist Mono", "SF Mono", monospace;
-  font-size: 8pt;
-  letter-spacing: 0.18em;
+  page-break-after: avoid;
+  break-after: avoid-page;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--colour-marine);
   margin: 0 0 6mm 0;
 }
 
 .data-spread__title {
+  page-break-after: avoid;
+  break-after: avoid-page;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
-  font-size: 32pt;
-  line-height: 1.08;
+  font-size: 36pt;
+  line-height: 1.05;
   letter-spacing: -0.012em;
   margin: 0 0 6mm 0;
   max-width: 170mm;
 }
 
 .data-spread__standfirst {
+  page-break-after: avoid;
+  break-after: avoid-page;
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
   font-size: 14pt;
   line-height: 20pt;
   color: var(--colour-soft);
   max-width: 150mm;
-  margin: 0 0 14mm 0;
+  margin: 0 0 7mm 0;
 }
 
 .data-spread h2 {
@@ -1060,9 +1879,11 @@ body::before {
   font-size: 17pt;
   line-height: 22pt;
   color: var(--colour-marine);
-  margin: 14pt 0 7pt 0;
+  margin: 16pt 0 7pt 0;
   page-break-after: avoid;
-  border-top: 0.75pt solid var(--colour-marine);
+  break-after: avoid-page;
+  page-break-inside: avoid;
+  break-inside: avoid;
   padding-top: 8pt;
 }
 
@@ -1083,7 +1904,7 @@ body::before {
 }
 
 .data-spread__table thead th {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 7.5pt;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1115,16 +1936,37 @@ body::before {
   color: var(--colour-soft);
   margin: 0 0 5pt 0;
   max-width: 160mm;
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
+/* Tables and charts that follow a data-spread heading keep with the heading
+   so the heading does not strand at the foot of a page above its data. The
+   data-spread__block wrapper carries the keep-with-previous and binds the
+   block internally so the heading + caption + table or chart move as one. */
+.data-spread h2 + .data-spread__block,
+.data-spread h2 + .data-spread__chart,
+.data-spread h2 + .data-spread__caption,
+.data-spread__caption + .data-spread__block {
+  page-break-before: avoid;
+  break-before: avoid-page;
+}
+
+.data-spread__block {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-before: avoid;
+  break-before: avoid-page;
 }
 
 .data-spread__source {
-  font-family: "Geist Mono", "SF Mono", monospace;
-  font-size: 7pt;
-  letter-spacing: 0.04em;
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 9pt;
+  line-height: 12pt;
   color: var(--colour-stone);
   margin: 3pt 0 14pt 0;
   max-width: 160mm;
-  text-transform: none;
 }
 
 .data-spread__kv {
@@ -1157,8 +1999,9 @@ body::before {
 }
 
 .data-spread__kv-value {
-  font-family: "Geist Mono", "SF Mono", monospace;
-  font-size: 9.5pt;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 10pt;
+  font-variant-numeric: tabular-nums;
   color: var(--colour-marine);
   text-align: right;
 }
@@ -1201,7 +2044,7 @@ body::before {
 }
 
 .data-spread__sources h3 {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1235,12 +2078,12 @@ body::before {
 
 .glossary-section {
   page-break-before: right;
-  padding-top: 16mm;
+  padding-top: 8mm;
   string-set: chapter-running "Glossary";
 }
 
 .glossary-section__label {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1298,13 +2141,14 @@ body::before {
 
 .index-section {
   page-break-before: right;
-  padding-top: 16mm;
+  padding-top: 8mm;
   string-set: chapter-running "Index";
 }
 
 .index-list {
   column-count: 3;
   column-gap: 6mm;
+  column-fill: balance;
   font-size: 9pt;
   line-height: 12.5pt;
 }
@@ -1315,7 +2159,7 @@ body::before {
 }
 
 .index-list__letter {
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1330,7 +2174,7 @@ body::before {
 .index-list__entry-folio {
   color: var(--colour-stone);
   font-variant-numeric: tabular-nums;
-  font-family: "Geist Mono", "SF Mono", monospace;
+  font-family: "DM Mono", "SF Mono", monospace;
   font-size: 8pt;
 }
 
@@ -1340,7 +2184,7 @@ body::before {
 
 .sources-section {
   page-break-before: right;
-  padding-top: 16mm;
+  padding-top: 8mm;
   string-set: chapter-running "Sources";
 }
 
@@ -1349,10 +2193,8 @@ body::before {
   font-weight: 400;
   font-size: 17pt;
   color: var(--colour-marine);
-  margin: 16pt 0 5pt 0;
+  margin: 18pt 0 5pt 0;
   page-break-after: avoid;
-  border-top: 0.75pt solid var(--colour-marine);
-  padding-top: 7pt;
 }
 
 .sources-section ul {
@@ -1382,25 +2224,29 @@ body::before {
 
 .colophon-section {
   page-break-before: right;
-  padding-top: 16mm;
+  padding-top: 8mm;
   string-set: chapter-running "Colophon";
+  column-count: 2;
+  column-gap: 9mm;
+  column-fill: auto;
 }
 
 .colophon-section h2 {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 500;
-  font-size: 13pt;
+  font-size: 12pt;
   color: var(--colour-marine);
-  margin: 14pt 0 5pt 0;
+  margin: 12pt 0 4pt 0;
   page-break-after: avoid;
+  break-after: avoid;
 }
 
 .colophon-section p {
-  font-size: 11pt;
-  line-height: 15.5pt;
-  margin: 0 0 9pt 0;
-  max-width: 145mm;
+  font-size: 10pt;
+  line-height: 14.5pt;
+  margin: 0 0 8pt 0;
   color: var(--colour-soft);
+  break-inside: avoid;
 }
 
 .colophon-section p strong {
@@ -1415,7 +2261,6 @@ body::before {
 .closing-image {
   page: bleed;
   page-break-before: left;
-  page-break-after: always;
   width: 100%;
   height: 100vh;
   position: relative;

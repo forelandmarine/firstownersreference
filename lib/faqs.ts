@@ -97,7 +97,7 @@ export const chapterFaqs: Record<string, FaqItem[]> = {
     {
       question: "What flag should I register a private yacht under?",
       answer:
-        "Selection sits at the intersection of compliance, charter intent, financing, and owner residence. Cayman Islands carries the highest reputational weight, REG Category 1 with MCA-equivalent oversight. Marshall Islands offers an open registry with 84 days commercial use under Yacht Engaged in Trade or Private Yacht Limited Charter regimes. Malta is the EU flag of choice for owners who want unrestricted EU charter operation through the reformed lease scheme. Red Ensign Group includes Isle of Man, Bermuda, Gibraltar, BVI, and Cayman in Category 1; Jersey and Guernsey are Category 2 with a 400 GT cap.",
+        "Selection depends on four things in combination: compliance, charter intent, financing, and owner residence. Cayman Islands carries the highest reputational weight, REG Category 1 with MCA-equivalent oversight. Marshall Islands offers an open registry with 84 days commercial use under Yacht Engaged in Trade or Private Yacht Limited Charter regimes. Malta is the EU flag of choice for owners who want unrestricted EU charter operation through the reformed lease scheme. Red Ensign Group includes Isle of Man, Bermuda, Gibraltar, BVI, and Cayman in Category 1; Jersey and Guernsey are Category 2 with a 400 GT cap.",
     },
   ],
 

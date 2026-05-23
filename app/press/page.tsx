@@ -190,9 +190,9 @@ export default function PressPage() {
               <strong>Newsreader</strong> by Production Type, used for
               headlines, body, and editorial display. Open source.
               <br />
-              <strong>Geist</strong> and <strong>Geist Mono</strong> by
-              Vercel, used for metadata, navigation labels, and numerals.
-              Open source.
+              <strong>DM Sans</strong> and <strong>DM Mono</strong> by
+              Indian Type Foundry, used for metadata, navigation labels,
+              and numerals. Open source.
             </p>
 
             <h2>Colour</h2>

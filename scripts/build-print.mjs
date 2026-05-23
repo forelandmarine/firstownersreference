@@ -329,6 +329,29 @@ async function generatePdf() {
   log(`  PDF size: ${(pdfStat.size / 1024 / 1024).toFixed(1)} MB`);
 
   await browser.close();
+
+  // Convert RGB to CMYK via Ghostscript. The CMYK file is the press-ready
+  // master; the RGB file is the screen-only reference. If Ghostscript is not
+  // installed the conversion is skipped silently.
+  const CMYK_OUT = PDF_OUT.replace(/\.pdf$/, "-CMYK.pdf");
+  try {
+    const { execSync } = await import("node:child_process");
+    log("  Converting to CMYK via Ghostscript...");
+    execSync(
+      `gs -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress ` +
+      `-dProcessColorModel=/DeviceCMYK -sColorConversionStrategy=CMYK ` +
+      `-dEmbedAllFonts=true -dSubsetFonts=true -dCompatibilityLevel=1.5 ` +
+      `-dNOPAUSE -dQUIET -dBATCH ` +
+      `-sOutputFile="${CMYK_OUT}" "${PDF_OUT}"`,
+      { stdio: "ignore" }
+    );
+    const cmykStat = fs.statSync(CMYK_OUT);
+    log(`  CMYK saved: ${CMYK_OUT}`);
+    log(`  CMYK size: ${(cmykStat.size / 1024 / 1024).toFixed(1)} MB`);
+  } catch (err) {
+    log(`  CMYK conversion skipped: ${err.message ?? "ghostscript not available"}`);
+  }
+
   return -1; // page count unknown without paged.js
 }
 

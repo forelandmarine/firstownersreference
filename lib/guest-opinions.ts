@@ -389,6 +389,60 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
         },
       ],
     },
+    {
+      slug: "05-new-build-versus-brokerage",
+      contributor: "Jack Inglis",
+      contributorRole: "Founder, ULTIMAR",
+      contributorLinkedIn: "https://www.linkedin.com/in/philipjackinglis/",
+      intro:
+        "Jack Inglis is the founder of ULTIMAR and the practitioner whose 1,200-item delivery snag list anecdote is cited in the chapter above. We put five questions to him on what a snag list actually measures, how warranty looks on a well-managed build versus a poorly-managed one, what a proper construction contract should contain, the moments in a build when the broker's role gives way to the owner's representative's, and the one thing he would tell a first-time UHNW buyer in their first meeting. His answers are published as given, lightly edited for typography.",
+      questions: [
+        {
+          question:
+            "Walk us through the 1,200-item snag list project. What were the categories the family office CFO missed, and in what proportion?",
+          answer: [
+            "When I handed the snag list to the owner's representative (the CFO) at the time, they saw 1,200 liabilities. I saw something very different. A snag list is not a list of broken things; that is the mistake people make.",
+            "Yes, a lot of it is cosmetic, between interior and exterior. But commissioning, integration, calibrations, flag and class items and bespoke owner items all get counted together, and they are not equal. You can have 300 cosmetic snags and sleep perfectly well, or you can have 15 critical commissioning issues and lose the first season.",
+            "So the real issue is never the number. It is understanding the difference between quantity and consequence, and that is what was being missed. It is also important to understand that shipyards work to agreed contractual delivery criteria, and a yacht can still technically be delivered with a substantial snag list. The real objective is not simply reducing the number, but ensuring that the critical items affecting safety, operation and technical conformity are reduced to an acceptable level.",
+          ],
+        },
+        {
+          question:
+            "You have said vessels poorly overseen during construction return to the yard for warranty work faster than they were delivered. What does the warranty period actually look like for a well-managed build versus a poorly-managed one, in real numbers?",
+          answer: [
+            "People often misunderstand warranty because they think it is simply a period of time on paper. It isn't. Every yacht will have warranty issues after delivery; that is normal. The real question is whether you are dealing with minor defects and operational bedding in, or whether the owner has effectively taken delivery of an unfinished yacht.",
+            "A well managed build should allow for structured warranty works: small defects, adjustments, tweaks, and the odd operational issue that can be accounted for after delivery. Inconvenient, yes, but manageable.",
+            "A poorly managed build is different. Warranty stops being warranty and starts feeling like an extension of construction, with repeated yard returns, unresolved defects, systems failures, crew frustration, and owners losing valuable use of the yacht. So the real measure is not whether a yacht has a two year warranty; it is how much of that period is spent enjoying the yacht versus fixing it.",
+          ],
+        },
+        {
+          question:
+            "The 33-page Hill Robinson contract example for a 77 metre yacht: what should a properly drafted superyacht construction contract actually contain? Where should the document length come from?",
+          answer: [
+            "People get caught up on the size of a contract, but page count means very little on its own. What matters is whether the contract actually controls risk.",
+            "At its core, a proper yacht construction contract should define what is being built, what happens if things change, how quality is measured, what constitutes acceptance, how delays are handled, and where responsibility sits when something goes wrong.",
+            "But in reality, the real substance is rarely in the legal wording alone. It sits in the technical schedules behind it — specifications, criteria, protocols, milestones, procedures, conditions and acceptance standards — areas where most disputes begin. A solid contract creates the framework, and the technical detail gives the owner real clarity and protection.",
+          ],
+        },
+        {
+          question:
+            "You operate independently. What are the specific moments in a build when the broker's technical department, even when capable, is structurally not the right party to lead?",
+          answer: [
+            "The best brokers today have to work far harder than people realise. They need commercial knowledge, technical understanding, market intelligence and often a very deep grasp of the realities behind ownership. That is part of being successful in today's market.",
+            "The question is not capability. It is role alignment. A broker's role is to guide, advise and help navigate a transaction, and often far beyond that. But there are moments in a build where the owner needs someone whose role is solely focused on delivery, technical compliance, risk management and long term operational consequence, without any commercial gravity attached to the transaction itself. Between a broker and an owner's representative, they are different disciplines.",
+            "The best projects usually happen when everyone brings their expertise to the table, with clear roles and alignment around the owner.",
+          ],
+        },
+        {
+          question:
+            "If you were briefing a first-time UHNW buyer in their first meeting, what is the one thing you would tell them that no broker would say?",
+          answer: [
+            "A yacht is only the visible part. If you have a beautiful yacht but a bad ecosystem around it, it becomes an ugly yacht very quickly.",
+            "Yacht ownership is not defined by the yacht. It is defined by the people, systems and infrastructure behind it. That is the part first-time buyers often do not see.",
+          ],
+        },
+      ],
+    },
   ],
 };
 

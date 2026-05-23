@@ -294,6 +294,11 @@ export const leadEssays: Record<string, LeadEssay> = {
       },
       { type: "h2", text: "The contract is where it happens" },
       "A new build contract is the most consequential document a yacht buyer signs. It governs USD 30 to 200 million of capital across two to five years, and structures every variation, every dispute, every interpretation question in the period during which the yard holds the cards.",
+      {
+        type: "blockquote",
+        text: "Page count means very little on its own. What matters is whether the contract actually controls risk.",
+        attribution: "Jack Inglis, founder, ULTIMAR, May 2026",
+      },
       "Top-tier yards do not contract on industry-standard forms. Standard shipbuilding forms exist (SAJ, AWES, NEWBUILDCON, SHIP 2000); SAJ is most used globally and \"thought to favour the shipyard\" in unamended form. But the European yards that matter (Lürssen, Feadship, Oceanco, Royal Huisman, Heesen, Sanlorenzo, Benetti) do not contract on any of those. They contract on heavily customised in-house templates drafted by their counsel, with English law and London arbitration grafted on.",
       "The buyer who does not retain specialist shipbuilding counsel before signing is being asked to negotiate a bespoke document drafted entirely by the yard's lawyers, against standard forms the buyer's representative has likely never seen.",
       "Ten specific points an inexperienced representative gives away at signature:",
@@ -320,7 +325,18 @@ export const leadEssays: Record<string, LeadEssay> = {
       "The register's application form is built to demand that level of detail. In which parts of the owner's representation were you involved, what were you responsible for at each stage, who else was on the owner-side team. Some applicants ask for the documentation, read what is being asked of them, and decide not to apply. Of those who do, the reference is called. There have been cases where the reference described a different role than the form did, and projects have been reclassified accordingly: still good experience, but not representation work on that build.",
       "The institutional movement is the story: SYBAss member yards (Lürssen, Feadship, Oceanco, Heesen, Royal Huisman, Vitters, Baltic, Abeking & Rasmussen, Codecasa, CRN, Benetti, Sanlorenzo) collectively build roughly two thirds of yachts over 40 metres. They do not stand up an industry register without a problem they want fixed.",
       "The yard side has begun hosting the programme directly. Lürssen welcomed the Superyacht Leadership Academy to its Hamburg shipyard in April 2026 to deliver Unit 40, framing the visit on its own corporate channel as evidence that owner's representatives \"play an equally critical role\" alongside the shipyard. A top-tier SYBAss member publicly hosting the unit is the clearest available evidence that the institutional movement is endorsed on both sides of the table.",
-      "The strongest single anecdote on the published record comes from Jack Inglis at ULTIMAR. Writing in Superyacht Investor in October 2025: a semi-custom new build where the owner deputised a family-office CFO with no maritime expertise as owner's representative. The delivery snag list exceeded 1,200 items against the family office's reported figure of around 100, and the yacht was sold after a single season. Inglis's broader framing of the pattern: \"quantity does not mean quality, speed just equals more problems.\" His warning to first-time buyers in the present order-book expansion is that vessels poorly overseen during construction return to the yards for warranty works faster than they were delivered.",
+      "The strongest single anecdote on the published record comes from Jack Inglis at ULTIMAR. Writing in Superyacht Investor in October 2025: a semi-custom new build where the owner deputised a family-office CFO with no maritime expertise as owner's representative. The delivery snag list exceeded 1,200 items against the family office's reported figure of around 100, and the yacht was sold after a single season. Inglis's broader framing of the pattern: \"quantity does not mean quality, speed just equals more problems.\"",
+      {
+        type: "blockquote",
+        text: "A snag list is not a list of broken things, that is the mistake people make. You can have 300 cosmetic snags and sleep perfectly well, or you can have 15 critical commissioning issues and lose the first season. The real issue is never the number, it is understanding the difference between quantity and consequence.",
+        attribution: "Jack Inglis, May 2026",
+      },
+      "His warning to first-time buyers in the present order-book expansion is that vessels poorly overseen during construction return to the yards for warranty works faster than they were delivered.",
+      {
+        type: "blockquote",
+        text: "The real measure is not whether a yacht has a two year warranty; it is how much of that period is spent enjoying the yacht versus fixing it.",
+        attribution: "Jack Inglis, May 2026",
+      },
       "Yard-side voices have been consistent in published interviews. Tony Gale (ICON Yachts) in BOAT International, September 2025, on the value of a professional owner-side team to brief clarity and project execution. Kevin Laverty (Hill Robinson) in BOAT International on the relative thinness of yacht-construction contracts as drafted: one widely cited example was a 33-page contract for a 77 metre yacht against the multi-volume documentation typical of oil and gas projects of comparable cost.",
       "The Superyacht Alliance's view of professionalisation extends past its courses and its register.",
       {
@@ -371,6 +387,11 @@ export const leadEssays: Record<string, LeadEssay> = {
       "Second, is your intended use pattern genuinely specific to the yacht (size, layout, propulsion, range, operational profile)? If a brokerage hull within a reasonable search window can deliver 80 percent of your use case, brokerage. Custom is for the residual 20 percent that genuinely matters.",
       "Third, can you commit to the team-building discipline that new build requires? Independent owner\u2019s representative engaged before contract, specialist shipbuilding counsel from a top firm, technical due diligence on the yard\u2019s current order book and financial condition, and a willingness to push back against the yard\u2019s first-draft contract on every point that matters. If commitment to all four is not in place, brokerage tends to be the calmer path.",
       "If those three threshold tests are positive, new build at a SYBAss member yard is one of the great purchases a UHNW principal can make. Without those conditions, it tends to be one of the more expensive ways to acquire a yacht. The case in this chapter is for the conditions, not against the path.",
+      {
+        type: "blockquote",
+        text: "A yacht is only the visible part. If you have a beautiful yacht but a bad ecosystem around it, it becomes an ugly yacht very quickly. Yacht ownership is not defined by the yacht; it is defined by the people, systems and infrastructure behind it.",
+        attribution: "Jack Inglis, founder, ULTIMAR, May 2026",
+      },
     ],
   },
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Newsreader } from "next/font/google";
+import { DM_Sans, DM_Mono, Newsreader } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -19,14 +19,14 @@ const newsreader = Newsreader({
   display: "swap",
 });
 
-const geist = Geist({
+const dmSans = DM_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
+const dmMono = DM_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
   weight: ["400", "500"],
@@ -88,7 +88,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${newsreader.variable} ${geist.variable} ${geistMono.variable} antialiased`}
+      className={`${newsreader.variable} ${dmSans.variable} ${dmMono.variable} antialiased`}
     >
       <body className="min-h-screen bg-paper text-charcoal font-serif">
         <JsonLd

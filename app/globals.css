@@ -374,17 +374,15 @@ summary::-webkit-details-marker {
 }
 
 @media print {
-  @page {
-    size: A4 portrait;
-    margin: 0;
-  }
-  html,
-  body {
-    background: #fff !important;
-  }
+  /* Print rules scoped to the checklist tool only. The /print magazine
+     route uses its own stylesheet and must not be forced to white. */
   .checklist-print {
     background: #fff !important;
     min-height: 0;
+  }
+  .checklist-print,
+  .checklist-print * {
+    box-sizing: border-box;
   }
   .checklist-print .screen-only {
     display: none !important;

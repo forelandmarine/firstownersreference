@@ -45,7 +45,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The country under whose laws a yacht is registered. Common choices for superyachts include Cayman Islands, Marshall Islands, Malta, and the Red Ensign Group jurisdictions.",
     longDefinition:
-      "The flag state determines the safety, manning, and operational rules a yacht must comply with, the access to commercial charter regimes, and the tax-and-substance treatment of the owning entity. Cayman, Marshall Islands, and Malta carry roughly 84-day commercial charter allowances under their respective YET, PYLC, and lease frameworks. Selection sits at the intersection of compliance, charter intent, financing, and owner residence.",
+      "The flag state determines the safety, manning, and operational rules a yacht must comply with, the access to commercial charter regimes, and the tax-and-substance treatment of the owning entity. Cayman, Marshall Islands, and Malta carry roughly 84-day commercial charter allowances under their respective YET, PYLC, and lease regimes. Selection depends on four things in combination: compliance, charter intent, financing, and owner residence.",
     source: {
       name: "Red Ensign Group",
       url: "https://www.redensigngroup.org/",

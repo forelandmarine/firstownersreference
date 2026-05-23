@@ -85,9 +85,9 @@ export default function ColophonPage() {
 
             <h2>Type</h2>
             <p>
-              Body and display type set in Newsreader by Production Type. Sans
-              and metadata in Geist and Geist Mono by Vercel. Both families
-              are open source and self-hosted.
+              Body and display type set in Newsreader by Production Type.
+              Sans and metadata in DM Sans and DM Mono by Indian Type
+              Foundry. All families are open source and self-hosted.
             </p>
 
             <h2>Paper and binding</h2>

@@ -25,8 +25,8 @@ export function ComparisonBars({
   rowHeight = 36,
 }: ComparisonBarsProps) {
   const width = 760;
-  const labelWidth = 220;
-  const valueWidth = 150;
+  const labelWidth = 200;
+  const valueWidth = 230;
   const plotLeft = labelWidth;
   const plotRight = width - valueWidth;
   const plotWidth = plotRight - plotLeft;
