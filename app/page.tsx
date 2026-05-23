@@ -119,12 +119,17 @@ export default function HomePage() {
         className="bg-paper-deep py-24 lg:py-32"
       >
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
-          <div className="flex items-baseline justify-between mb-16">
+          <div className="flex items-baseline justify-between mb-6">
             <h2 className="font-serif text-headline leading-tight tracking-tight">
               Chapters
             </h2>
             <p className="meta">1st Edition, 2026</p>
           </div>
+          <p className="font-serif italic text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl mb-16">
+            Each chapter pairs a lead essay with a data spread, a guest
+            opinion from a named contributor, an anonymised case, and a
+            one-page checklist.
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-10 gap-y-12 sm:gap-y-16">
             {sections.map((section) => (
               <SectionCard key={section.slug} section={section} />
