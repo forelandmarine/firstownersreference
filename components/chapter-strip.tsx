@@ -64,7 +64,7 @@ export function ChapterStrip({
   return (
     <div
       aria-hidden={!visible}
-      className={`md:hidden fixed left-0 right-0 top-[50px] z-40 bg-paper/95 backdrop-blur-sm border-b border-rule transition-transform duration-200 ${
+      className={`md:hidden fixed left-0 right-0 top-[50px] z-40 bg-paper-deep/95 backdrop-blur-sm border-b border-rule transition-transform duration-200 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
