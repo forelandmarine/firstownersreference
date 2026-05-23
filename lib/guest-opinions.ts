@@ -329,7 +329,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
         "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
       contributorLinkedIn: "https://www.linkedin.com/in/hein-velema-a4061aa6/",
       intro:
-        "The Superyacht Alliance for Professional Standards administers the Yacht Owner's Representative Register (YORR) and oversees YORP, the cross-industry training programme for owner's representatives. We put five questions to Hein Velema on the gap YORP was built to close, the curriculum, the verification process, the dual-role conflict, and yard selection beyond the big names. His answers are published as given, lightly edited for typography.",
+        "The Superyacht Alliance for Professional Standards administers the Yacht Owner's Representative Register (YORR) and oversees the Yacht Owner Representative Programme (YORP), the cross-industry course for owner's representatives. We put five questions to Hein Velema on the gap YORP was built to close, the curriculum, the verification process, the dual-role conflict, and yard selection beyond the big names. His answers are published as given, lightly edited for typography.",
       questions: [
         {
           question:
