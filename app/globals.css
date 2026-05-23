@@ -66,6 +66,10 @@ body {
   line-height: var(--text-body-line-height);
   margin-bottom: 1.25em;
   hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 10 5 4;
+  hyphenate-limit-lines: 2;
+  text-wrap: pretty;
 }
 
 .prose-body p:first-of-type::first-letter {
