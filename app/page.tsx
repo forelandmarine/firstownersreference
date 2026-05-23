@@ -128,7 +128,8 @@ export default function HomePage() {
           <p className="font-serif italic text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl mb-16">
             Each chapter pairs a lead essay with a data spread, a guest
             opinion from a named contributor, an anonymised case, and a
-            one-page checklist.
+            one-page checklist to print for meeting notes and further
+            reference.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-10 gap-y-12 sm:gap-y-16">
             {sections.map((section) => (
