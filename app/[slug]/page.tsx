@@ -200,14 +200,30 @@ export default async function SectionPage(props: {
                   {essay?.readingTime ?? "Forthcoming"}
                 </dd>
               </div>
-              {section.contributor !== "To be confirmed" && (
-                <div className="flex items-baseline justify-between gap-6 border-t border-rule pt-4 lg:border-0 lg:pt-0 lg:contents">
-                  <dt className="meta">Contributor</dt>
-                  <dd className="meta text-charcoal text-right lg:text-left">
-                    {section.contributor}
-                  </dd>
-                </div>
-              )}
+              {(() => {
+                const seen = new Set<string>();
+                const contributors = guestOpinions
+                  .filter((g) => {
+                    if (seen.has(g.contributor)) return false;
+                    seen.add(g.contributor);
+                    return true;
+                  })
+                  .map((g) => g.contributor);
+                if (!contributors.length && section.contributor !== "To be confirmed") {
+                  contributors.push(section.contributor);
+                }
+                if (!contributors.length) return null;
+                return (
+                  <div className="flex items-baseline justify-between gap-6 border-t border-rule pt-4 lg:border-0 lg:pt-0 lg:contents">
+                    <dt className="meta">{contributors.length > 1 ? "Contributors" : "Contributor"}</dt>
+                    <dd className="meta text-charcoal text-right lg:text-left">
+                      {contributors.map((name) => (
+                        <span key={name} className="block">{name}</span>
+                      ))}
+                    </dd>
+                  </div>
+                );
+              })()}
             </dl>
           </div>
         </section>

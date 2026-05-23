@@ -388,11 +388,6 @@ export const leadEssays: Record<string, LeadEssay> = {
       "Second, is your intended use pattern genuinely specific to the yacht (size, layout, propulsion, range, operational profile)? If a brokerage hull within a reasonable search window can deliver 80 percent of your use case, brokerage. Custom is for the residual 20 percent that genuinely matters.",
       "Third, can you commit to the team-building discipline that new build requires? Independent owner\u2019s representative engaged before contract, specialist shipbuilding counsel from a top firm, technical due diligence on the yard\u2019s current order book and financial condition, and a willingness to push back against the yard\u2019s first-draft contract on every point that matters. If commitment to all four is not in place, brokerage tends to be the calmer path.",
       "If those three threshold tests are positive, new build at a SYBAss member yard is one of the great purchases a UHNW principal can make. Without those conditions, it tends to be one of the more expensive ways to acquire a yacht. The case in this chapter is for the conditions, not against the path.",
-      {
-        type: "blockquote",
-        text: "A yacht is only the visible part. If you have a beautiful yacht but a bad ecosystem around it, it becomes an ugly yacht very quickly. Yacht ownership is not defined by the yacht; it is defined by the people, systems and infrastructure behind it.",
-        attribution: "Jack Inglis, founder, ULTIMAR, May 2026",
-      },
     ],
   },
 
@@ -535,6 +530,11 @@ export const leadEssays: Record<string, LeadEssay> = {
       "Time-for-time rotation, which Quay Crew records at 63 percent of the 70 to 79 metre captain bracket, is no longer a perk on senior-crew programmes; it is the price of entry to the top end of the market. Roles offered without rotation take longer to fill, draw a narrower and less experienced pool, and on Erica Lay's reading typically replace the hire within 12 to 18 months. Owners trading the rotation provision against headline salary tend to pay both costs.",
       "Crew is a variable cost managed through retention, reputation, and culture. The owner who manages the captain manages the crew; the captain who manages the crew manages the cost.",
       "The most common cause of turnover, on the recruitment-side view, is inconsistency from the top, whether owner, captain, or management structure. Crew can handle hard work, long hours, and demanding programmes. What they struggle with is unpredictability and a lack of trust in leadership. Yachts that retain crew well share clear, consistent leadership, open communication, and an onboard culture that does not change overnight.",
+      {
+        type: "blockquote",
+        text: "A yacht is only the visible part. If you have a beautiful yacht but a bad ecosystem around it, it becomes an ugly yacht very quickly. Yacht ownership is not defined by the yacht; it is defined by the people, systems and infrastructure behind it.",
+        attribution: "Jack Inglis, founder, ULTIMAR, May 2026",
+      },
       {
         type: "figure",
         src: "/images/adix-onboard-crew.jpg",
