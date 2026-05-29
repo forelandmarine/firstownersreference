@@ -116,6 +116,33 @@ function fmt(n: number, currency: Currency = "EUR"): string {
 }
 
 /* ------------------------------------------------------------------ */
+/*  TSR OpEx Survey calibration                                        */
+/*  The Superyacht Report OpEx Survey, Q2 2026: distribution of        */
+/*  annual operating budgets across 28-83m captain-led responses.      */
+/* ------------------------------------------------------------------ */
+
+interface TsrBand {
+  label: string;
+  share: number;
+  lowerEUR: number;
+  upperEUR: number;
+}
+
+const tsrBands: TsrBand[] = [
+  { label: "Under €/$2m", share: 38, lowerEUR: 0, upperEUR: 2_000_000 },
+  { label: "€/$2 to 4m", share: 23, lowerEUR: 2_000_000, upperEUR: 4_000_000 },
+  { label: "€/$4 to 6m", share: 31, lowerEUR: 4_000_000, upperEUR: 6_000_000 },
+  { label: "€/$6 to 10m", share: 8, lowerEUR: 6_000_000, upperEUR: 10_000_000 },
+];
+
+function tsrBandFor(totalEUR: number): TsrBand {
+  for (const b of tsrBands) {
+    if (totalEUR < b.upperEUR) return b;
+  }
+  return tsrBands[tsrBands.length - 1];
+}
+
+/* ------------------------------------------------------------------ */
 /*  Cost model                                                         */
 /* ------------------------------------------------------------------ */
 
@@ -843,6 +870,11 @@ export default function RunningCostCalculatorPage() {
                   value={usage}
                   onChange={setUsage}
                 />
+                <p className="caption pt-1">
+                  The Superyacht Report OpEx Survey, Q2 2026, places average
+                  owner time aboard private yachts at 17 weeks per year. The
+                  vessel, crew, and cost structure run for all 52.
+                </p>
               </div>
             </div>
 
@@ -888,6 +920,53 @@ export default function RunningCostCalculatorPage() {
                     {fmt(costs.total, currency)}
                   </span>
                 </div>
+              </div>
+
+              {/* Reality check against TSR OpEx Survey */}
+              <div className="bg-paper-deep border border-rule p-6 sm:p-8 space-y-4">
+                <p className="meta-marine mb-2">Where this sits in the surveyed fleet</p>
+                <p className="caption">
+                  The Superyacht Report OpEx Survey, Q2 2026, captures annual
+                  operating budgets across the 28 to 83 metre captain-led
+                  fleet. Your modelled total sits in the {tsrBandFor(costs.total).label} band, where {tsrBandFor(costs.total).share}% of surveyed yachts report.
+                </p>
+                <div className="space-y-2">
+                  {tsrBands.map((b) => {
+                    const active = b === tsrBandFor(costs.total);
+                    return (
+                      <div key={b.label} className="flex items-baseline gap-3">
+                        <span
+                          className={`font-serif text-xs w-24 shrink-0 ${
+                            active ? "text-marine" : "text-stone"
+                          }`}
+                          style={{ fontVariantNumeric: "tabular-nums" }}
+                        >
+                          {b.label}
+                        </span>
+                        <div className="flex-1 h-1.5 bg-rule overflow-hidden">
+                          <div
+                            className={`h-full ${
+                              active ? "bg-marine" : "bg-stone/40"
+                            }`}
+                            style={{ width: `${b.share * 2}%` }}
+                          />
+                        </div>
+                        <span
+                          className={`font-mono text-xs w-10 text-right ${
+                            active ? "text-marine" : "text-stone"
+                          }`}
+                          style={{ fontVariantNumeric: "tabular-nums" }}
+                        >
+                          {b.share}%
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+                <p className="caption text-stone">
+                  Survey covers 28 to 83 metre yachts; results below 28 metres
+                  are extrapolated downward from the model.
+                </p>
               </div>
 
               {/* Disclaimer + CTA */}
@@ -1070,6 +1149,12 @@ export default function RunningCostCalculatorPage() {
                 title: "MYBA Charter Market practice",
                 detail:
                   "Charter fleet operating costs, commercial insurance premium ranges, and crew benchmarks.",
+              },
+              {
+                title: "The Superyacht Report OpEx Survey, Q2 2026",
+                detail:
+                  "Captain-led survey across the 28-83 metre fleet: annual operating budget distribution, owner time aboard, yard weeks, and per-charter-week spend.",
+                href: "https://www.superyachtnews.com/reports/thesuperyachtreport",
               },
               {
                 title: "MCA Large Yacht Code (LY3)",
