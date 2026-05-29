@@ -234,6 +234,68 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
         },
       ],
     },
+    {
+      slug: "07-operations",
+      contributor: "Ollie Davis",
+      contributorRole: "PIB Marine (formerly Zorab Insurance Services)",
+      contributorLinkedIn: "https://www.linkedin.com/in/ollie-davis-43994392/",
+      intro:
+        "PIB Marine is the established UK specialist alternative to the multi-line yacht insurance brokers. We put five questions to Ollie Davis on the post-Bayesian market response, the 2022 to 2024 hardening cycle, the USD 500 million P&I limit, owner deductibles negotiable at quote stage, and war risk clauses since 2022. Answers are given on the record, lightly edited for typography.",
+      questions: [
+        {
+          question:
+            "The post-Bayesian market response was selective tightening rather than blanket rate rises. Where exactly did underwriters tighten, and which clauses changed?",
+          answer: [
+            "From our experience with several large sailing yachts, we have not observed any significant increases in rating. In the case of Bayesian, although the hull is based on a design that has been produced multiple times by Perini, the rig is effectively a one-off within their range, making this hopefully an isolated incident.",
+            "What we have seen, however, is an increase in underwriters' and insurers' requests for Risk Management Surveys. These are now being used to assess how crew procedures, training, and onboard management contribute to the safe day-to-day operation of the yacht. This represents a shift away from the more traditional focus on fire risk and watertight integrity alone.",
+            "The direct underwriters and insurers involved in the tragedy — which we believe to include Travelers and British Marine — may have taken a more conservative view. Historically, one-off incidents of this nature have not had a noticeable impact on the yacht insurance market, compared to incidents affecting a larger number of clients or a particular model of yacht, as seen with the NTS losses and the Oyster Yachts incidents, where keels detached due to delamination at the hull-to-keel joint. Following the Oyster losses, some insurers declined to quote on multiple Oyster models because they could not be confident the problem would not recur.",
+            "As the findings from the Bayesian incident continue to be published, if the designer, builder, or naval architect is ultimately found to be at fault, then potentially underwriters and insurers may reassess their appetite for other vessels they have designed or constructed previously.",
+          ],
+        },
+        {
+          question:
+            "The hardening cycle in hull and machinery 2022 to 2024: what drove it, where has it landed, and what do you expect through 2026?",
+          answer: [
+            "We consider 2024 to have been the peak of the hardening cycle, driven largely by the pandemic and the onset of the war in Ukraine. These two events alone significantly increased the cost of yachting, due to a shortage of spare parts, increased repair costs, constraints on employment, and limited yard capacity for maintenance and refit work, particularly with larger Russian-owned yachts being \u201Cstuck\u201D in yards due to sanctions.",
+            "During COVID, travel restrictions led to increased yacht purchases among those who could afford them, as yachts offered a practical way to self-isolate and work. With a reduction in new yachts being launched, second-hand yacht sales growing, cruising activity increasing, and yachts struggling to get into yards for maintenance periods or repair works, the insurance premiums also grew. There was also a large concern with many yachts being out in the Caribbean and Florida during the hurricane season as they were unable to return back to the Mediterranean, either due to lockdowns or lack of crew available. Insurers were concerned that they could see a repeat of the 2018 hurricane damage, particularly with so many yachts in the area, so they began to build up the premium \u201Cstockpile\u201D, should this happen again.",
+            "At present, we are in a softer market and are seeing premiums slowly decrease following the recent hardening cycle. There is increased competitiveness in the brokerage market, with more yachts being remarketed at renewal. This naturally results, in most cases, in lower premiums. The downside is that, if an underwriter sees the same yacht presented for a few years consecutively, usually three or more times and by different brokers, then they can start declining to offer terms.",
+            "Looking ahead through 2026, our expectation is that the insurance market will stabilise. Feedback from our markets is that premiums will be unchanged or with minimal increases applied in line with global inflation due to increasing claims costs. With the P&I Clubs, they continue to see more claims going over the USD 1 million limit, so they are keen to continue applying their usual 5 percent increases to their premiums.",
+          ],
+        },
+        {
+          question:
+            "P&I for charter use: the USD 500 million third-party limit is now standard. What sits behind that figure, and how often is it seriously tested?",
+          answer: [
+            "As of now, at PIB Marine we have not had any experience of the now industry-standard USD 500 million limit being tested in practice — thankfully. One P&I club is even offering a USD 1 billion limit as standard now.",
+            "Protection & Indemnity policies were originally developed for the commercial shipping industry, and P&I Clubs have a standard USD 500 million limit to align with the International Maritime Organisation (IMO) conventions and reinsurance limits. Thankfully, claims exceeding this limit are extremely rare, so the feeling is that this limit is a good balance between adequate catastrophic coverage and keeping the reinsurance premiums viable. For any amounts exceeding USD 500 million, the International Group of P&I Clubs can rely on their group pooling and reinsurance to handle these claims. The USD 500 million just acts as the initial primary layer.",
+            "Looking at previous commercial shipping incidents that have led to substantial P&I claims, the most notable examples include the Costa Concordia loss and, more recently, the Baltimore Bridge accident. While the final claim settlements have not been officially published, it is widely understood that the Costa Concordia loss is expected to be in the region of USD 1.4 to 1.5 billion. The Baltimore Bridge loss is regarded as potentially the single largest marine insurance loss in history, at nearly USD 2.8 billion. By comparison, recent major yachting losses such as Bayesian are thought to be in the region of USD 150 million. Other scenarios where we might expect these higher limits to be tested include major damage to reefs and significant pollution incidents.",
+            "It is also worth noting that, despite the availability of USD 500 million limits, some smaller vessels — while technically falling within this capacity — are offered reduced P&I limits by certain clubs, with premiums set at levels that better reflect the realistic exposure for a 25 to 35 metre yacht. In our experience, this approach has been welcomed by owners of vessels in this size range.",
+          ],
+        },
+        {
+          question:
+            "Owner deductibles and warranty terms most owners do not negotiate well. Pick three that buyers should push back on at quote stage.",
+          answer: [
+            "Recently, we have pushed back on several deductible structures, particularly on yachts aged five years or older. We have seen a trend towards Actual Cash Value clauses for machinery, or increased engine deductibles being added to Hull & Machinery policies, as a way for insurers to mitigate potential risk for older yachts.",
+            "Where yachts are well maintained by both crew and owners, supported by detailed maintenance logs, oil sample test results, and documented manufacturer inspections at the prescribed intervals, these measures can often be challenged. In many cases, underwriters are prepared to remove separate machinery deductibles, although this may sometimes result in a modest increase to the overall H&M deductible or the premium.",
+            "Another area where we look to enhance cover, without increasing premium, is the inclusion of a No Claims Discount (NCD) at renewal the following year. Some insurers can offer this upfront but we don't normally advocate this, as it has to be repaid in the event of non-renewal or in the event of a claim. We do find clients are keen to take it out to reduce premiums initially but aren't so happy if they have to repay it.",
+            "We have also seen a growing number of cases where vessels wish to tow tenders over longer passages, beyond their usual coastal cruising areas. Advances in technology — for example, systems from providers such as Yacht Trace — now offer sophisticated tender-towing solutions that enable improved monitoring and make extended towing more acceptable to underwriters. If an insurer's standard towing terms aren't suitable then we will always push back on them and ask if they can be modified.",
+            "Similar to machinery deductibles, if a separate mast, spars, sails and rigging (MSSR) deductible is applied then this can sometimes be negotiated to improve terms for the owner. Many inner deductibles for things like fixtures and fittings, emergency towing, tenders and toys can be negotiated, and with personal effects, maximum limits for single items relating to both owner and crew personal effects may also be adjustable.",
+            "In summary, most deductibles and warranties can usually be reviewed, negotiated, and adjusted to better reflect the vessel's actual risk profile.",
+          ],
+        },
+        {
+          question:
+            "War risk clauses since 2022: how should a buyer think about the geographic exclusions and the additional premium structure?",
+          answer: [
+            "Ironically, War Risks cover does not provide cover for you while you are in designated War Risk areas, which is something that is often misunderstood. Instead, it is intended to cover the yacht whilst outside of high-risk areas for unexpected damage to your yacht arising from events such as riots, uprisings, or protests. A good example is the damage sustained by MY Kaos in Barcelona while alongside the dock, when the vessel was vandalised, and the failed Turkish coup in 2016. If a vessel were to enter a high-risk area, then we would need to discuss this with insurers and an additional premium would be due.",
+            "The additional premium (AP) structure for cruising within War Risk exclusion zones is not fixed; it depends on several variables, including whether the vessel is a motor yacht or sailing yacht, maximum cruising speed, the vessel's profile and appearance, freeboard height, length of stay in the War Risk area, and captain and crew experience of the areas they are entering. These factors directly influence how the insurer assesses the risk of the yacht transiting or cruising through exclusion zones. It is common that, in addition to an AP being charged, increased deductibles can also apply while the vessel is in these areas. Typically, a 50 percent No Claims Discount on the AP is returned to the client following a successful passage or transit through the affected area.",
+            "When planning a cruise in a high-risk area, insurers will normally require a separate Kidnap & Ransom (K&R) policy to be put in place, and armed guards provided by a separate security company will normally be needed on board. These will be an additional cost for the owner that would need to be factored in. Some insurers are happy to offer recommendations or have partnered with specialist security providers to offer additional support, which would be included within their additional premium.",
+            "In light of the recent conflict in the Middle East and, before that, the war in Ukraine, we have seen insurers issue a seven-day notice of cancellation on all H&M and P&I policies in respect of certain cruising areas. This cover can usually be bought back from the insurer if the owner plans on visiting those areas, but this will involve an additional premium.",
+          ],
+        },
+      ],
+    },
   ],
   "08-motor-versus-sail": [
     {

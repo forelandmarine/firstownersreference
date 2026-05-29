@@ -299,7 +299,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         caption:
           "Independent founder-led houses are now the minority by deal volume. The roll-up is essentially complete.",
         rows: [
-          { label: "Camper & Nicholsons", value: "1782 Group; Lai Sun Development; Fincantieri minority since 2015" },
+          { label: "Camper & Nicholsons", value: "1782 Group / Lai Sun Development; Fincantieri 15 percent minority since 2015; 80 percent stake sold to Wave Expandary Ltd (Sea Expandary, JD.com's Richard Liu) signed 28 May 2026 at EUR 50m EV (~12x EBITDA), pending regulatory clearance" },
           { label: "Burgess", value: "Ancient (PE, founded 2021) acquired strategic stake October 2025" },
           { label: "Fraser", value: "Inside MarineMax (NYSE: HZO) since 2019" },
           { label: "Northrop & Johnson", value: "Inside MarineMax since 2020" },
