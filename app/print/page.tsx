@@ -896,7 +896,7 @@ function ChapterBlock({
       )}
 
       {/* Guest opinions */}
-      {guestOpinions.map((guestOpinion, gi) => (
+      {guestOpinions.filter((g) => g.questions.length > 0).map((guestOpinion, gi) => (
         <section
           key={gi}
           className="guest-opinion"

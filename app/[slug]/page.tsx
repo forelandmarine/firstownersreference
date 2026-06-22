@@ -93,6 +93,9 @@ export default async function SectionPage(props: {
   const checklist = getChecklist(slug);
   const faqs = getChapterFaqs(slug);
   const guestOpinions = getGuestOpinions(slug);
+  const publishedGuestOpinions = guestOpinions.filter(
+    (g) => g.questions.length > 0
+  );
   const chapterGlossary = glossaryEntries.filter((entry) =>
     entry.relatedChapters?.includes(slug)
   );
@@ -103,7 +106,7 @@ export default async function SectionPage(props: {
 
   const stripSections: { id: string; label: string; href?: string }[] = [
     { id: "essay", label: "Essay" },
-    ...(guestOpinions.length ? [{ id: "guest-opinion", label: "Opinion" }] : []),
+    ...(publishedGuestOpinions.length ? [{ id: "guest-opinion", label: "Opinion" }] : []),
     ...(dataSpread ? [{ id: "data-spread", label: "Data" }] : []),
     ...(caseStudy ? [{ id: "case", label: "Case", href: `/${section.slug}/case` }] : []),
     ...(checklist ? [{ id: "checklist", label: "Checklist" }] : []),
@@ -249,7 +252,7 @@ export default async function SectionPage(props: {
                           href: "#essay",
                           internal: false,
                         },
-                        ...(guestOpinions.length
+                        ...(publishedGuestOpinions.length
                           ? [
                               {
                                 id: "guest-opinion",
@@ -424,12 +427,12 @@ export default async function SectionPage(props: {
           </section>
         )}
 
-        {guestOpinions.length > 0 && (
+        {publishedGuestOpinions.length > 0 && (
           <section
             id="guest-opinion"
             className="bg-paper py-20 lg:py-32 border-t border-charcoal scroll-mt-24"
           >
-            {guestOpinions.map((guestOpinion, gi) => (
+            {publishedGuestOpinions.map((guestOpinion, gi) => (
               <div
                 key={gi}
                 className={`max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 ${gi > 0 ? "mt-24 pt-20 border-t border-charcoal" : ""}`}

@@ -16,6 +16,15 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
   "03-how-the-industry-works": [
     {
       slug: "03-how-the-industry-works",
+      contributor: "Andrew Roch",
+      contributorRole:
+        "Founder and CEO, Yacht Crew Recruitment and Training\nIAMI board; co-architect, Yacht Owner's Representative Program with SYBAss",
+      intro:
+        "Yacht Crew Recruitment and Training operates from Sussex and Palma, combining IAMI/GUEST-accredited leadership and purser training under The Crew Academy with senior-crew placement under The Crew Hunter; its founder, Andrew Roch, sits on the IAMI board and co-architected the Yacht Owner's Representative Program with SYBAss. We put five questions to him on captain authority and the modern command role, the structural position of the yacht management company, the first-time owner's captain hire, the function of the owner's representative and the YORR register, and the question the chain of advisers around a first acquisition rarely asks. His answers are published as given, lightly edited for typography.",
+      questions: [],
+    },
+    {
+      slug: "03-how-the-industry-works",
       contributor: "Capt. Pavlos Filippakis",
       contributorRole: "Master Mariner (Class 1)\nIce Class Captain",
       contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",

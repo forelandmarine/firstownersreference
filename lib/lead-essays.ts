@@ -191,6 +191,13 @@ export const leadEssays: Record<string, LeadEssay> = {
         text: "If you accept a fee for giving out the work, how can you still audit the quality of the result you are directly responsible for? You can't. So for me it's not really a question.",
         attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1), May 2026",
       },
+      "Andrew Roch, founder of Yacht Crew Recruitment and Training and a co-architect of the Yacht Owner's Representative Program with SYBAss, sets out the structural extension of the same argument across the management-company tier. Writing in Superyacht News in June 2026, Roch documents the post-1990s shift in which large-yacht management companies migrated from administrative support into operational and financial control, drawing decision-making authority away from the captain on board and into shore-based offices. Responsibility for the vessel remained with the master; the authority that should accompany it did not.",
+      {
+        type: "blockquote",
+        text: "The authority the role implies and the authority the role carries have come apart almost completely, and the captain is left holding a position that has been quietly emptied of its substance.",
+        attribution: "Andrew Roch, Founder and CEO, Yacht Crew Recruitment and Training (Superyacht News, June 2026)",
+      },
+      "On Roch's reading the cost of that hollowing-out shows up first in psychological safety on board, and the most capable crew, those with employment options elsewhere, are the first to leave. The structural critique he traces across the management-company tier is the same critique the chapter has traced across the broker tier: authority and accountability have come apart, and the owner sits at the end of the chain.",
       "A useful framework for the interview: the captain who pushes back, asks hard questions about intended use, and is sceptical of the timeline is the one to keep talking to. Easy agreement in the first three meetings is pleasant in the room and not necessarily the strongest indicator of the right hire.",
       { type: "h2", text: "What independence means" },
       "Several firms describe themselves as independent. The word does meaningful work in some cases and is decorative in others. The full six-element independence test is set out in chapter 9 and applied to the publisher on the colophon. The questions are: contingent earnings; equity or referral relationships; published counterparty list; transparent fees; appropriate professional indemnity; named, accountable principals.",
