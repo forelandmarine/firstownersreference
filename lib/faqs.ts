@@ -13,7 +13,7 @@ export const chapterFaqs: Record<string, FaqItem[]> = {
     {
       question: "Is the 10 percent rule for yacht ownership accurate?",
       answer:
-        "The 10 percent rule, that annual operating cost equals roughly 10 percent of purchase price, is a folkloric figure with no traceable origin. It is roughly correct for new, mid-sized, lightly used yachts and wrong for most readers of The First Owner's Reference. As the asset depreciates the percentage rises mechanically, since running cost is a function of size and complexity, not residual value. YachtBuyer in published analysis calls the rule at best obsolete or even misleading for older or larger crewed vessels. The honest budgetary figure is 12 to 15 percent for a typical 40 to 50 metre new build privately operated at moderate use.",
+        "The 10 percent rule, that annual operating cost equals roughly 10 percent of purchase price, is a folkloric figure with no traceable origin. It is roughly correct for new, mid-sized, lightly used yachts, but wrong for most readers of The First Owner's Reference. As the asset depreciates the percentage rises mechanically, since running cost is a function of size and complexity, not residual value. YachtBuyer in published analysis calls the rule at best obsolete or even misleading for older or larger crewed vessels. The honest budgetary figure is 12 to 15 percent for a typical 40 to 50 metre new build privately operated at moderate use.",
     },
     {
       question: "How much does a superyacht depreciate?",
