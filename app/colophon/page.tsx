@@ -109,9 +109,20 @@ export default function ColophonPage() {
 
             <h2>Web</h2>
             <p>
-              Built with Next.js, deployed on Vercel. Privacy-respecting
-              analytics. No cookies beyond session essentials. No tracking
-              scripts. The web edition is permanently archived at{" "}
+              Designed and developed by{" "}
+              <a
+                href="https://faro.is"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-marine"
+              >
+                Faro Creative
+              </a>
+              , the founder-led design and development studio run by Jack
+              MacNally, who is also editor in chief of this Reference. Built
+              with Next.js, deployed on Vercel. Privacy-respecting analytics.
+              No cookies beyond session essentials. No tracking scripts. The
+              web edition is permanently archived at{" "}
               <Link href="/" className="link-marine">
                 firstownersreference.com
               </Link>

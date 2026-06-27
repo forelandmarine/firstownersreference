@@ -108,7 +108,7 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               className="link-marine"
             >
-              FARO Creative
+              Faro Creative
             </a>
           </p>
         </div>
