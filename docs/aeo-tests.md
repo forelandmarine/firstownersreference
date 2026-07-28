@@ -32,6 +32,17 @@ The six queries below are the publication's anchor topics. Each maps to a chapte
 6. **first time superyacht buyer guide**
    Maps to: homepage, all chapters. Anchor claim: independent, contributor-led, no advertising, citable.
 
+Added 2026-07-28, after the Q3 asset ship (queries are only ever added, never replaced):
+
+7. **how many superyachts are on order in 2026**
+   Maps to: `/tools/order-book-tracker`, Chapter 2. Anchor claim: 1,093 yachts 24m+ on order or in build (down from 1,138), second consecutive unit decline; average 40.8m and 551 GT are records; the "record order book" claim is true only by size, not units.
+
+8. **questions to ask before buying a yacht**
+   Maps to: `/09a-questions-to-ask-before-you-buy`, Chapter 9. Anchor claim: ten questions, all of the shape "who pays whom"; independent adviser hired first; walk-away test.
+
+9. **does a yacht need to visit a non-EU port to reset temporary admission**
+   Maps to: `/tools/yacht-vat-2026`. Anchor claim: no; under the EC Guidance Note (30 Apr 2026) and ADM Circular 11/2026, reaching international waters discharges TA (AIS, logbook, bunker receipts as proof), no minimum time outside the EU between periods.
+
 ## Surfaces to test
 
 Run each query against each surface. Fresh session, no logged-in account, geographically neutral.
