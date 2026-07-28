@@ -217,6 +217,42 @@ export function softwareApplicationSchema(opts: {
   };
 }
 
+export function datasetSchema(opts: {
+  url: string;
+  name: string;
+  description: string;
+  dateModified: string;
+  temporalCoverage: string;
+  basedOn?: { name: string; url: string }[];
+  variablesMeasured?: string[];
+}) {
+  return {
+    "@type": "Dataset",
+    "@id": `${opts.url}#dataset`,
+    url: opts.url,
+    name: opts.name,
+    description: opts.description,
+    dateModified: opts.dateModified,
+    temporalCoverage: opts.temporalCoverage,
+    creator: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+    inLanguage: "en-GB",
+    isAccessibleForFree: true,
+    ...(opts.basedOn
+      ? {
+          isBasedOn: opts.basedOn.map((s) => ({
+            "@type": "CreativeWork",
+            name: s.name,
+            url: s.url,
+          })),
+        }
+      : {}),
+    ...(opts.variablesMeasured
+      ? { variableMeasured: opts.variablesMeasured }
+      : {}),
+  };
+}
+
 export function graph(...nodes: object[]) {
   return {
     "@context": "https://schema.org",

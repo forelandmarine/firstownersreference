@@ -51,7 +51,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       url: "https://www.redensigngroup.org/",
     },
     relatedChapters: ["04-acquisition-process", "07-operations"],
-    relatedTerms: ["yacht-engaged-in-trade", "red-ensign-group"],
+    relatedTerms: ["yacht-engaged-in-trade", "red-ensign-group", "cayman-islands-registry", "marshall-islands-registry", "malta-flag", "isle-of-man-registry"],
   },
   {
     slug: "ism",
@@ -273,7 +273,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       url: "https://www.redensigngroup.org/",
     },
     relatedChapters: ["04-acquisition-process"],
-    relatedTerms: ["flag-state", "yacht-engaged-in-trade"],
+    relatedTerms: ["flag-state", "yacht-engaged-in-trade", "cayman-islands-registry", "isle-of-man-registry"],
   },
   {
     slug: "moa",
@@ -525,6 +525,62 @@ export const glossaryEntries: GlossaryEntry[] = [
       "Beneficial ownership disclosure regimes vary by jurisdiction. EU member states post-Sovim (CJEU Joined Cases C-37/20 and C-601/20, 22 November 2022) restrict public access; legitimate-interest filters now apply under the post-2024 AML package. UK Companies House Persons with Significant Control register remains publicly searchable. Cayman Islands operates a Beneficial Ownership Transparency Act 2023 (in force July 2024) with Legitimate Interest Access Regulations 2024 (in force February 2025), restricting access to defined applicants.",
     relatedChapters: ["04-acquisition-process"],
     relatedTerms: ["spv"],
+  },
+  {
+    slug: "cayman-islands-registry",
+    term: "Cayman Islands Registry",
+    shortDefinition:
+      "The Cayman Islands ship registry, a Red Ensign Group Category 1 member able to register yachts of unlimited size. The most common flag at the large end of the superyacht fleet.",
+    longDefinition:
+      "The registry is administered by the Maritime Authority of the Cayman Islands from George Town, with survey and client offices in Europe. As a Category 1 Red Ensign Group member it applies MCA-equivalent standards, which is what port-state control officers and marine lenders respond to; mortgages register under an English-law framework, and provisional registration is available ahead of full registration. The Yacht Engaged in Trade programme allows a private yacht of 24 metres or more to charter for up to 84 days per calendar year without converting to full commercial registration.",
+    source: {
+      name: "Maritime Authority of the Cayman Islands",
+      url: "https://www.cishipping.com/",
+    },
+    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedTerms: ["flag-state", "red-ensign-group", "yacht-engaged-in-trade", "marshall-islands-registry", "malta-flag"],
+  },
+  {
+    slug: "marshall-islands-registry",
+    term: "Marshall Islands Registry",
+    shortDefinition:
+      "The open registry of the Republic of the Marshall Islands, administered by International Registries, Inc. Applies the international conventions without an additional national overlay, at competitive cost.",
+    longDefinition:
+      "The RMI flag is administered by International Registries, Inc. from Reston, Virginia through a worldwide office network, which in practice means responsive service across time zones. Its regulatory posture is to apply the international framework (STCW, MLC, the applicable yacht code) without a layer of additional national requirements on top, which keeps crewing flexible and costs below the premium British registries. The Private Yacht Limited Charter provision allows a private yacht of 24 metres or more to charter for up to 84 days per calendar year, the RMI counterpart to Cayman's YET programme.",
+    source: {
+      name: "International Registries, Inc.",
+      url: "https://www.register-iri.com/",
+    },
+    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedTerms: ["flag-state", "yacht-engaged-in-trade", "cayman-islands-registry", "malta-flag", "stcw"],
+  },
+  {
+    slug: "malta-flag",
+    term: "Malta flag",
+    shortDefinition:
+      "The ship register of Malta, the largest in Europe by tonnage and the leading EU flag for yachts. Registration under an EU flag changes the charter and VAT position inside the Union.",
+    longDefinition:
+      "Malta is an EU member state, so a Maltese-flagged commercial yacht operates inside the Union on a different footing from the offshore registries: EU charter operations do not depend on Temporary Admission mechanics, and the reformed Maltese lease structure remains available for VAT planning on documented effective use. The Commercial Yacht Code 2025 governs commercial registration, and includes a voluntary route to ISM certification for yachts below the mandatory 500 GT threshold. The trade-off against Cayman or RMI is a fuller EU regulatory and substance environment for the owning entity.",
+    source: {
+      name: "Transport Malta, Merchant Shipping Directorate",
+      url: "https://www.transport.gov.mt/maritime",
+    },
+    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedTerms: ["flag-state", "vat-regime", "ism", "cayman-islands-registry", "marshall-islands-registry"],
+  },
+  {
+    slug: "isle-of-man-registry",
+    term: "Isle of Man Ship Registry",
+    shortDefinition:
+      "The British ship registry at Douglas, a Red Ensign Group Category 1 member. A frequent pairing of flag and owning-company jurisdiction for private superyachts.",
+    longDefinition:
+      "The Isle of Man Ship Registry is a Category 1 member of the Red Ensign Group, able to register yachts of unlimited size under the British flag with MCA-equivalent oversight. It is particularly common where the owning structure is also Manx: the island's long-established marine corporate-services sector allows flag, SPV, and administration to sit in one jurisdiction, which simplifies mortgage registration, crew employment, and annual compliance for a private yacht.",
+    source: {
+      name: "Isle of Man Ship Registry",
+      url: "https://www.iomshipregistry.com/",
+    },
+    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedTerms: ["flag-state", "red-ensign-group", "spv", "cayman-islands-registry"],
   },
 ];
 

@@ -12,25 +12,27 @@ import {
 
 const URL = `${SITE_URL}/tools/yacht-vat-2026`;
 const PUBLISHED = "2026-05-04";
+const MODIFIED = "2026-07-27";
 
 export const metadata: Metadata = {
   title: "Yacht VAT 2026: EU rules, Temporary Admission, post-Brexit position",
   description:
-    "A current reference on yacht VAT in the EU and UK in 2026. EU VAT-paid status, Temporary Admission, Brexit, Spanish IPR, French Commercial Exemption, Italian charter VAT, the reformed Maltese scheme. Sources cited.",
+    "A current reference on yacht VAT in the EU and UK in 2026, updated for the European Commission Guidance Note of 30 April 2026 and Italian ADM Circular 11/2026. EU VAT-paid status, Temporary Admission, Brexit, Spanish IPR, French Commercial Exemption, Italian charter VAT, the reformed Maltese scheme. Sources cited.",
   alternates: { canonical: URL },
   openGraph: {
     title: "Yacht VAT 2026 | The First Owner's Reference",
     description:
-      "A current reference on yacht VAT in the EU and UK in 2026. EU VAT-paid status, Temporary Admission, post-Brexit, Spanish IPR. Sources cited.",
+      "A current reference on yacht VAT in the EU and UK in 2026, updated for the April 2026 EC Guidance Note and ADM Circular 11/2026. Sources cited.",
     url: URL,
     type: "article",
     publishedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
   },
   twitter: {
     card: "summary_large_image",
     title: "Yacht VAT 2026",
     description:
-      "EU VAT-paid status, Temporary Admission, post-Brexit, Spanish IPR. Current as of May 2026.",
+      "EU VAT-paid status, Temporary Admission, post-Brexit, Spanish IPR. Current as of July 2026.",
   },
 };
 
@@ -43,7 +45,17 @@ const FAQS = [
   {
     question: "How does Temporary Admission work for non-EU yachts?",
     answer:
-      "A non-EU registered yacht with non-EU established owner and non-EU established users may cruise EU waters for up to 18 months at a stretch under Temporary Admission, with an aggregate cap of up to 10 years cumulative. Commercial charter from EU ports under TA is prohibited. Sale of a yacht under TA inside the EU triggers VAT and duty. TA resets when the yacht leaves EU waters and obtains evidence of a third-country call (typically a customs stamp).",
+      "A non-EU registered yacht with non-EU established owner and non-EU established users may cruise EU waters for up to 18 months at a stretch under Temporary Admission, with cumulative use normally capped at 10 years. Commercial charter from EU ports under TA is prohibited. Sale of a yacht under TA inside the EU triggers VAT and duty. The procedure discharges on exit from EU territorial waters; a fresh period runs from the next entry.",
+  },
+  {
+    question: "What did the EU's April 2026 guidance on pleasure craft change?",
+    answer:
+      "The European Commission Guidance Note for Pleasure Craft (30 April 2026) changes interpretation, not law. It confirms that 'VAT-paid yacht' has no legal standing and the operative concept is Union goods status; that yachts inside EU customs territory are presumed Union goods, with proof requested only on specific doubt; that flag, registration, and owner nationality do not determine VAT status; and that Temporary Admission runs 18 months per stay, normally capped at 10 years cumulative. Italian ADM Circular 11/2026 applies the same reading at national level.",
+  },
+  {
+    question: "Does a yacht need to visit a non-EU port to reset Temporary Admission?",
+    answer:
+      "No. Under the 2026 guidance and Italian ADM Circular 11/2026, Temporary Admission discharges when the yacht exits EU territorial waters; reaching international waters is sufficient, evidenced by AIS data, logbook entries, or bunker receipts, without a third-country port call. A new 18-month period runs from the next entry, and no minimum time outside the EU is required between periods. The traditional token call at a non-EU port for a customs stamp remains valid evidence but is no longer necessary.",
   },
   {
     question: "What was the Maltese yacht VAT lease scheme and is it still valid?",
@@ -84,7 +96,7 @@ export default function YachtVat2026Page() {
             description:
               "A current reference on yacht VAT in the EU and UK in 2026. Sources cited.",
             datePublished: PUBLISHED,
-            dateModified: PUBLISHED,
+            dateModified: MODIFIED,
             author: "both",
             articleSection: "Reference tool",
           }),
@@ -110,7 +122,7 @@ export default function YachtVat2026Page() {
               <span>/</span>
               <span>Yacht VAT 2026</span>
             </div>
-            <p className="meta-marine mb-3">Reference, current to May 2026</p>
+            <p className="meta-marine mb-3">Reference, current to July 2026</p>
             <h1 className="font-serif font-light text-headline lg:text-display leading-[1.05] tracking-tight max-w-3xl">
               Yacht VAT 2026
             </h1>
@@ -139,33 +151,38 @@ export default function YachtVat2026Page() {
                   </a>
                 </li>
                 <li>
+                  <a href="#guidance-2026" className="link">
+                    <span className="meta-marine mr-1">3</span> The 2026 guidance
+                  </a>
+                </li>
+                <li>
                   <a href="#brexit" className="link">
-                    <span className="meta-marine mr-1">3</span> Post-Brexit
+                    <span className="meta-marine mr-1">4</span> Post-Brexit
                   </a>
                 </li>
                 <li>
                   <a href="#refit-regimes" className="link">
-                    <span className="meta-marine mr-1">4</span> Refit regimes
+                    <span className="meta-marine mr-1">5</span> Refit regimes
                   </a>
                 </li>
                 <li>
                   <a href="#charter-vat" className="link">
-                    <span className="meta-marine mr-1">5</span> Charter VAT
+                    <span className="meta-marine mr-1">6</span> Charter VAT
                   </a>
                 </li>
                 <li>
                   <a href="#malta" className="link">
-                    <span className="meta-marine mr-1">6</span> Malta reformed
+                    <span className="meta-marine mr-1">7</span> Malta reformed
                   </a>
                 </li>
                 <li>
                   <a href="#eu-ets" className="link">
-                    <span className="meta-marine mr-1">7</span> EU ETS
+                    <span className="meta-marine mr-1">8</span> EU ETS
                   </a>
                 </li>
                 <li>
                   <a href="#faqs" className="link">
-                    <span className="meta-marine mr-1">8</span> FAQ
+                    <span className="meta-marine mr-1">9</span> FAQ
                   </a>
                 </li>
               </ol>
@@ -213,12 +230,16 @@ export default function YachtVat2026Page() {
                 <p>
                   Commercial charter from EU ports while under TA is prohibited.
                   Sale of a yacht under TA inside the EU triggers VAT and any
-                  duty. TA resets when the yacht leaves EU waters and obtains a
-                  third-country customs stamp; the regime then runs from the
-                  next entry.
+                  duty. The procedure discharges when the yacht leaves EU
+                  territorial waters; a third-country port call is not
+                  required, and proof that the vessel reached international
+                  waters (AIS data, log entries, bunker receipts) is
+                  sufficient. A fresh 18-month period runs from the next
+                  entry, with no minimum time outside the EU required between
+                  periods.
                 </p>
                 <p className="caption">
-                  Source:{" "}
+                  Sources:{" "}
                   <a
                     href="https://taxation-customs.ec.europa.eu/document/download/fa095d6b-45dd-4c7a-94c7-bad21d0473a9_en"
                     className="link-marine"
@@ -228,7 +249,84 @@ export default function YachtVat2026Page() {
                     European Commission Taxation and Customs FAQ on private
                     boats
                   </a>
+                  ;{" "}
+                  <a
+                    href="https://taxation-customs.ec.europa.eu/document/download/8c62e3be-807f-4607-bb1e-9ff46db7d97e_en?filename=Guidance_pleasure_craft.pdf"
+                    className="link-marine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    EC Guidance Note for Pleasure Craft, 30 April 2026
+                  </a>
                   .
+                </p>
+              </div>
+            </section>
+
+            <section id="guidance-2026" className="scroll-mt-24">
+              <h2 className="font-serif font-light text-3xl lg:text-4xl leading-tight tracking-tight text-charcoal mb-6">
+                The 2026 guidance: Brussels and Rome put it in writing
+              </h2>
+              <div className="prose-body text-charcoal max-w-prose space-y-4">
+                <p>
+                  Two documents issued in spring 2026 turned much of the
+                  practice described on this page from professional consensus
+                  into stated official position. Neither creates new law; both
+                  matter because member-state customs officers now have a
+                  common text to point to.
+                </p>
+                <p>
+                  The{" "}
+                  <a
+                    href="https://taxation-customs.ec.europa.eu/document/download/8c62e3be-807f-4607-bb1e-9ff46db7d97e_en?filename=Guidance_pleasure_craft.pdf"
+                    className="link-marine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    European Commission Guidance Note for Pleasure Craft
+                  </a>{" "}
+                  (DG TAXUD, finalised 30 April 2026, published 11 May 2026)
+                  confirms that &ldquo;VAT-paid yacht&rdquo; is an industry
+                  term with no standing in EU customs law; the operative
+                  concept is Union goods status, exactly as section 1 of this
+                  page has it. It states that a yacht inside EU customs
+                  territory benefits from a presumption of Union status, and
+                  that customs authorities should request proof only where a
+                  specific doubt arises rather than systematically. It
+                  restates that flag, country of registration, and the
+                  owner&rsquo;s residence or nationality do not determine
+                  customs or VAT status; that Union status is lost on
+                  departure from the customs territory and recoverable within
+                  three years under Returned Goods Relief for the same yacht,
+                  in the same condition, with the same owner; and that
+                  cumulative Temporary Admission use should normally not
+                  exceed ten years.
+                </p>
+                <p>
+                  Italian ADM Circular No. 11/2026 (15 May 2026) is the
+                  national companion piece for the busiest cruising ground in
+                  the Mediterranean. Its clarifications: crossing the
+                  12-nautical-mile line places a non-EU yacht under TA without
+                  any formal declaration, though lodging an oral declaration
+                  on Form 71-01 fixes the entry date, and without one the
+                  burden of proving entry and exit dates sits with the owner.
+                  Discharge requires only proof of reaching international
+                  waters. During a shipyard-held Inward Processing procedure
+                  for repair work, time does not count against the 18-month
+                  TA clock. A commercial yacht cannot charter under private
+                  TA; it must exit EU waters and re-enter presenting the
+                  charter contract. Ordinary maintenance under TA requires no
+                  customs guarantee; works that alter structure or materially
+                  increase value do.
+                </p>
+                <p>
+                  The practical consequence for a first owner: the documentary
+                  discipline this page recommends (importation declaration,
+                  VAT receipt, log evidence of movements) is now the stated
+                  basis on which status questions are resolved, and the
+                  informal habit of a token third-country port call to
+                  &ldquo;reset the clock&rdquo; has an official, less
+                  burdensome replacement.
                 </p>
               </div>
             </section>
@@ -403,7 +501,9 @@ export default function YachtVat2026Page() {
             <section className="border-t border-charcoal pt-10">
               <p className="meta mb-3">A note on currency</p>
               <p className="caption max-w-prose">
-                This page is current to May 2026. EU VAT, customs, and ETS
+                This page is current to July 2026, incorporating the European
+                Commission Guidance Note for Pleasure Craft of 30 April 2026
+                and Italian ADM Circular No. 11/2026. EU VAT, customs, and ETS
                 regimes change. The First Owner&rsquo;s Reference reviews and
                 updates this page on each quarterly digital supplement (January,
                 April, July, October). The print edition fixes the position as

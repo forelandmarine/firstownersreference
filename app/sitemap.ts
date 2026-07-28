@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/running-cost-calculator`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/tools/yacht-vat-2026`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/tools/captain-and-crew-salary-2026`, lastModified, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/tools/order-book-tracker`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/request-print-edition`, lastModified, changeFrequency: "monthly", priority: 0.5 },
   ];
 
