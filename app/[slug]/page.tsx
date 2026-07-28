@@ -19,35 +19,13 @@ import { getChecklist } from "@/lib/checklists";
 import { getChapterFaqs } from "@/lib/faqs";
 import { getGuestOpinions } from "@/lib/guest-opinions";
 import { glossaryEntries } from "@/lib/glossary";
+import { linkifyEssayText } from "@/lib/glossary-autolink";
 import {
   articleSchema,
   breadcrumbSchema,
   faqPageSchema,
   SITE_URL,
 } from "@/lib/jsonld";
-
-function linkifyEmails(text: string): React.ReactNode[] {
-  const emailRegex = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
-  const parts: React.ReactNode[] = [];
-  let lastIndex = 0;
-  let match: RegExpExecArray | null;
-  let key = 0;
-  while ((match = emailRegex.exec(text)) !== null) {
-    if (match.index > lastIndex) {
-      parts.push(text.slice(lastIndex, match.index));
-    }
-    parts.push(
-      <a key={`email-${key++}`} href={`mailto:${match[0]}`} className="link-marine">
-        {match[0]}
-      </a>
-    );
-    lastIndex = match.index + match[0].length;
-  }
-  if (lastIndex < text.length) {
-    parts.push(text.slice(lastIndex));
-  }
-  return parts.length > 0 ? parts : [text];
-}
 
 export function generateStaticParams() {
   return sections.map((s) => ({ slug: s.slug }));
@@ -317,9 +295,13 @@ export default async function SectionPage(props: {
               </div>
               <div className="lg:col-span-7 lg:col-start-3">
                 <div className="prose-body max-w-prose">
-                  {essay.paragraphs.map((p, i) => {
+                  {(() => {
+                    const linkedTerms = new Set<string>();
+                    return essay.paragraphs.map((p, i) => {
                     if (typeof p === "string") {
-                      return <p key={i}>{linkifyEmails(p)}</p>;
+                      return (
+                        <p key={i}>{linkifyEssayText(p, linkedTerms, `p${i}`)}</p>
+                      );
                     }
                     if (p.type === "h2") {
                       return <h2 key={i}>{p.text}</h2>;
@@ -396,7 +378,8 @@ export default async function SectionPage(props: {
                       );
                     }
                     return null;
-                  })}
+                    });
+                  })()}
                 </div>
               </div>
               <aside className="hidden lg:block lg:col-span-3">

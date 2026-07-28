@@ -802,6 +802,12 @@ export const leadEssays: Record<string, LeadEssay> = {
       "9. If I am building, is my owner's representative paid solely by me, with no contingent fee, no yard commission, and no referral relationship?",
       "10. If I asked any of these parties to walk away from a deal that would not benefit me, would they?",
       "A buyer who can answer all ten questions clearly, with documentary evidence, is exceptionally well-protected. The buyer who cannot is, by industry default, operating in the structure described across the earlier chapters. That is information rather than judgment.",
+      {
+        type: "editorsNote",
+        text: "The ten questions, the hiring order, and the independence test are collected on a single reference page for use during a live transaction.",
+        href: "/09a-questions-to-ask-before-you-buy",
+        linkText: "Open the one-page version",
+      },
       { type: "h2", text: "The closing argument" },
       "The First Owner's Reference exists because trade press is structurally less able to publish what is set out across these chapters. None of this is a moral failing of the people who work in trade press; it is a fact about how the industry funds itself. The publisher of this reference is funded by independent consultancy work rather than advertising, and that single difference is more or less the entire publication. The publisher's own answers to the independence test are on the colophon.",
       "For a reader considering a first acquisition, whether as a newly liquidated principal or as an heir for whom the family yacht has become a new responsibility, the next three months are the most consequential of ownership. The decisions made in that window, about the team built, set the trajectory of the next ten years.",
