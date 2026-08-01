@@ -224,8 +224,38 @@ export const dataSpreads: Record<string, DataSpread> = {
         type: "note",
         text: "The Edmiston 30 m+ count of 363 and the Denison broader count of 470 are not comparable. The 30 m+ figure is the relevant one for the readership of The First Owner’s Reference.",
       },
+      { type: "h2", text: "Brokerage 2026, the first half" },
+      {
+        type: "note",
+        text: "Brokerage sales through the first half of 2026 ran at a three-year high. The published monthly figures aggregate to above EUR 3.35 bn across the 24 m-plus market, led by a small number of large transactions. The pattern of 2025 held: value concentrated at the top, and the mid-size range softened.",
+      },
+      {
+        type: "table",
+        caption:
+          "The 24 m-plus brokerage market, month by month. Compiled from BOAT International monthly reports. May value and June unit count were not disclosed publicly, so the half-year total is a floor, not a ceiling.",
+        head: ["Month", "Yachts sold", "Total value", "Year on year"],
+        rows: [
+          ["January", "41", "EUR 721.6 m", "Up 23.8 percent on EUR 582.7 m"],
+          ["February", "30", "EUR 396.8 m", "Up 1.6 percent on EUR 390.5 m (33 yachts)"],
+          ["March", "52", "EUR 817.4 m", "Up 39 percent on EUR 586.8 m"],
+          ["April", "41", "EUR 381 m", "Up 133.7 percent on EUR 163 m"],
+          ["May", "59", "Not disclosed", "Volume up on April"],
+          ["June", "Not disclosed", "EUR 1.03 bn", "More than double June 2025"],
+        ],
+        sourceLine:
+          "BOAT International monthly brokerage reports, January to June 2026. The consolidated half-year total is aggregated from these published monthly figures; it is not an official BOAT International number.",
+      },
+      {
+        type: "note",
+        text: "June was carried largely by the EUR 325 m sale of the 100 m Feadship Moonrise. Average sale price rose year on year, from EUR 12.5 m to EUR 15.7 m in March, the clearest sign of value concentrating in the largest hulls while the mid-size range thins. This tracks the second consecutive contraction in order-book unit count shown above.",
+      },
     ],
     sources: [
+      {
+        label: "BOAT International monthly brokerage reports, H1 2026",
+        line: "Free monthly write-ups, January to June 2026, on the 24 m-plus market. The consolidated H1 report is a paid BOATPro product and is not reproduced here; figures above are drawn only from the public monthly articles.",
+        url: "https://www.boatinternational.com/boat-pro/superyacht-insight",
+      },
       {
         label: "Knight Frank Wealth Report 2026",
         line: "20th edition; Wealth Sizing Model; geographic forecasts to 2031.",
