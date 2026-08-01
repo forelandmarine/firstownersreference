@@ -245,6 +245,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine:
           "BOAT International monthly brokerage reports, January to June 2026. The consolidated half-year total is aggregated from these published monthly figures; it is not an official BOAT International number.",
       },
+      { type: "chart", chartId: "brokerage-h1-2026-vs-2025" },
       {
         type: "note",
         text: "June was carried largely by the EUR 325 m sale of the 100 m Feadship Moonrise. Average sale price rose year on year, from EUR 12.5 m to EUR 15.7 m in March, the clearest sign of value concentrating in the largest hulls while the mid-size range thins. This tracks the second consecutive contraction in order-book unit count shown above.",

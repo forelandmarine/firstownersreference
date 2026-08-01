@@ -251,6 +251,31 @@ export const charts: Record<string, () => React.ReactElement> = {
     </ChartFrame>
   ),
 
+  "brokerage-h1-2026-vs-2025": () => (
+    <ChartFrame
+      number="02.03"
+      title="Brokerage sales, first four months, 2025 against 2026"
+      standfirst="Every month of early 2026 ran ahead of the same month in 2025. The gap is widest in April, where the market more than doubled year on year."
+      caption="The 24 m-plus brokerage market, monthly closed value in EUR millions. May and June are omitted because May value and June unit count were not disclosed publicly. Compiled from BOAT International monthly reports."
+      source="BOAT International monthly brokerage reports, January to April 2026."
+    >
+      <ComparisonBars
+        domainMax={850}
+        axisTicks={[0, 200, 400, 600, 800]}
+        rows={[
+          { label: "January 2026", value: 721.6, display: "EUR 721.6 m", emphasis: true },
+          { label: "January 2025", value: 582.7, display: "EUR 582.7 m" },
+          { label: "February 2026", value: 396.8, display: "EUR 396.8 m", emphasis: true },
+          { label: "February 2025", value: 390.5, display: "EUR 390.5 m" },
+          { label: "March 2026", value: 817.4, display: "EUR 817.4 m", emphasis: true },
+          { label: "March 2025", value: 586.8, display: "EUR 586.8 m" },
+          { label: "April 2026", value: 381, display: "EUR 381 m", emphasis: true },
+          { label: "April 2025", value: 163, display: "EUR 163 m" },
+        ]}
+      />
+    </ChartFrame>
+  ),
+
   "commission-norms-28m-sale": () => (
     <ChartFrame
       number="03.01"
