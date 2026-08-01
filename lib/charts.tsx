@@ -308,6 +308,25 @@ export const charts: Record<string, () => React.ReactElement> = {
     </ChartFrame>
   ),
 
+  "family-office-yacht-management": () => (
+    <ChartFrame
+      number="03.02"
+      title="How family offices handle a yacht"
+      standfirst="Only a quarter of Swiss single family offices manage a boat or aircraft in-house. Nearly half do not offer the service at all. The office that runs the family's money is rarely the office that runs the yacht."
+      caption="Swiss single family offices, share by how they handle management and maintenance of boats and aircraft. Survey of 82 offices, about 27 percent of the roughly 300 in Switzerland."
+      source="University of St. Gallen, Swiss Institute of Banking and Finance, with SFOA and UBS, The Swiss Single Family Office Landscape 2026."
+    >
+      <CompositionBar
+        unit="%"
+        segments={[
+          { label: "Not offered at all", value: 48, display: "48%" },
+          { label: "Outsourced", value: 27, display: "27%" },
+          { label: "Handled in-house", value: 25, display: "25%" },
+        ]}
+      />
+    </ChartFrame>
+  ),
+
   "vat-on-purchase": () => (
     <ChartFrame
       number="04.01"

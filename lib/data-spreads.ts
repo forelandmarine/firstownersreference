@@ -159,6 +159,29 @@ export const dataSpreads: Record<string, DataSpread> = {
         sourceLine: "Knight Frank Wealth Report 2026, 20th edition.",
       },
       { type: "chart", chartId: "uhnwi-2021-2031" },
+      { type: "h2", text: "What the wealth actually looks like, up close" },
+      {
+        type: "note",
+        text: "Headline net worth overstates the capital that is free to spend. For the typical Swiss single family office, about half of family wealth is illiquid, tied up in the operating business itself, and the office managing the rest runs it preservation-first, not spending-first.",
+      },
+      {
+        type: "kv",
+        caption:
+          "The buyer behind a first purchase, measured. Swiss single family offices, survey of 82 offices, about 27 percent of the roughly 300 in Switzerland.",
+        rows: [
+          { label: "Median net worth per office", value: "About CHF 1 bn" },
+          { label: "Median financial AUM, operating business stripped out", value: "About CHF 550 m", note: "Roughly half of family wealth is illiquid, held in the family business" },
+          { label: "Total Swiss single family office wealth", value: "About CHF 785 bn", note: "Up about 30 percent on 2023; more than 90 percent of Swiss GDP" },
+          { label: "Most common investment objective", value: "Capital preservation, cited by 44 percent" },
+          { label: "Home bias", value: "Switzerland, North America, and Western Europe hold 89 percent of assets" },
+        ],
+        sourceLine:
+          "University of St. Gallen, Swiss Institute of Banking and Finance, with SFOA and UBS, The Swiss Single Family Office Landscape 2026.",
+      },
+      {
+        type: "note",
+        text: "The discretionary capital behind a first yacht is therefore smaller, and more conservatively managed, than a wealth-report headline suggests. The record brokerage totals above and the preserve-first capital below are the two halves of the same market.",
+      },
       { type: "h2", text: "Global order book, 24 m and above" },
       {
         type: "table",
@@ -258,6 +281,11 @@ export const dataSpreads: Record<string, DataSpread> = {
         url: "https://www.boatinternational.com/boat-pro/superyacht-insight",
       },
       {
+        label: "The Swiss Single Family Office Landscape 2026",
+        line: "University of St. Gallen, Swiss Institute of Banking and Finance, with the Swiss Single Family Office Association and UBS. Second edition; 82 responding offices, about 27 percent of the roughly 300 in Switzerland; fieldwork November to December 2025. Swiss single family offices only.",
+        url: "https://sbf.unisg.ch",
+      },
+      {
         label: "Knight Frank Wealth Report 2026",
         line: "20th edition; Wealth Sizing Model; geographic forecasts to 2031.",
         url: "https://www.knightfrank.com/wealthreport",
@@ -299,8 +327,32 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "03-how-the-industry-works",
     title: "Where the money goes in a typical brokerage transaction",
     standfirst:
-      "On a EUR 28 m sale of a 40 m yacht, EUR 1.4 to 2.8 million moves in commissions depending on which of two parallel norms is applied. The buyer almost never knows which is in use. The structure, said plainly.",
+      "Most first-time buyers reach this market through a family office, yet only a quarter of single family offices handle a yacht in-house. The buyer arrives under-advised, into a sale structure where EUR 1.4 to 2.8 million in commission moves on a EUR 28 m deal and the buyer almost never knows which norm applied. The structure, said plainly.",
     blocks: [
+      { type: "h2", text: "Who the buyer is, and who advises them" },
+      {
+        type: "note",
+        text: "Most first-time buyers reach this market through a family office. But the family office is a lean investment shop, median five people, and the yacht sits outside its competence. Only a quarter of Swiss single family offices manage a boat or aircraft in-house, and nearly half do not offer the service at all.",
+      },
+      {
+        type: "table",
+        caption:
+          "What the office that stands behind a first-time buyer actually does, and does not do. Swiss single family offices, survey of 82 offices, about 27 percent of the roughly 300 in Switzerland.",
+        head: ["Function", "How the office handles it", "What it means for a first purchase"],
+        rows: [
+          ["Typical office size", "Median 5 staff in Switzerland; 61 percent run 1 to 5", "A small expert team, not a department with a yacht specialist"],
+          ["Investment management", "Offered in-house by more than 60 percent", "The office runs the family's money itself"],
+          ["Succession planning and legal counsel", "Outsourced by more than half", "For specialist matters the office already reaches outside"],
+          ["Boat and aircraft management", "In-house 25 percent, outsourced 27 percent, not offered 48 percent", "The yacht is the one asset the office is least set up to run"],
+        ],
+        sourceLine:
+          "University of St. Gallen, Swiss Institute of Banking and Finance, with SFOA and UBS, The Swiss Single Family Office Landscape 2026.",
+      },
+      { type: "chart", chartId: "family-office-yacht-management" },
+      {
+        type: "note",
+        text: "This is the gap independent representation fills. The office that preserves the family's capital is not built to run a refit, vet a broker, or read a sale-and-purchase agreement against the commission structures set out below. Where it does not build that capacity in-house, it reaches for an outside specialist, exactly as it already does for succession and legal work.",
+      },
       { type: "h2", text: "The two parallel commission norms" },
       {
         type: "table",
@@ -373,6 +425,11 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
     ],
     sources: [
+      {
+        label: "The Swiss Single Family Office Landscape 2026",
+        line: "University of St. Gallen, Swiss Institute of Banking and Finance, with the Swiss Single Family Office Association and UBS. 82 responding offices, about 27 percent of the roughly 300 in Switzerland. Boat and aircraft management handled in-house by 25 percent, outsourced by 27 percent, not offered by 48 percent.",
+        url: "https://sbf.unisg.ch",
+      },
       {
         label: "IYBA Purchase and Sale Agreement",
         line: "Standard contract, dual-agency clause, pre-emptive consent.",
