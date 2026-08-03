@@ -19,6 +19,11 @@ export type LeadEssay = {
         href?: string;
         linkText?: string;
       }
+    | {
+        type: "webOnly";
+        heading?: string;
+        paragraphs: string[];
+      }
   )[];
   readingTime: string;
 };
@@ -572,25 +577,37 @@ export const leadEssays: Record<string, LeadEssay> = {
       },
       "The contingent risk is whether published findings from the Bayesian investigation ultimately attribute fault to the designer, builder, or naval architect. The precedent is Oyster's keel-detachment losses, after which some insurers declined to quote on multiple Oyster models because they could not rule out recurrence. If Bayesian's findings land on builder or designer responsibility, underwriter appetite for other vessels of the same provenance gets reassessed before any segment-wide rate signal moves.",
       { type: "h2", text: "The brokers, by relevance to the over-30m segment" },
-      "Howden and Pantaenius are the two largest yacht insurance brokers in the over-30m segment globally; the remaining substantial players are AON Marine, Gallagher Specialty, and Marsh.",
-      "Howden Group has consolidated significant yacht-specialist capacity through acquisitions, building a London practice with strong access to Lloyd's syndicates and European specialty markets. Operates across hull, P&I, war risk, builder's risk, and charter cover. Strong on scale, underwriting access, and structuring for complex programmes; less personal than a specialist alternative for smaller, single-hull buyers.",
-      "Pantaenius (Hamburg, 1899) is the reference for European yacht insurance and one of the largest yacht-specialist brokers globally. Deep service capability, strong loss-management track record, yacht-only frame, disciplined coverage drafting. Relationships are weighted toward European underwriters; owners with heavy US East Coast use can sometimes access tighter US rates elsewhere.",
-      "AON Marine offers yacht insurance within a broader marine and corporate practice. Integrates with wider family-office programmes (aviation, other lines) where AON also holds the relationship; yacht-specialism depth varies by team.",
-      "Gallagher Specialty operates a strong yacht practice on the US East Coast (US fleet coverage, hurricane underwriting, US syndicate access). European depth is thinner than Pantaenius or Howden.",
-      "Marsh, largest broker globally by revenue, places yacht business through its specialty marine teams. Capital and reach for the largest hulls (above 100m) where bespoke structuring is required; yacht-specialist service depth varies.",
-      "PIB Insurance Brokers (historically Zorab Insurance Services, ZIS) is the established UK specialist alternative to the multi-line firms. Long-standing partnerships with naval architects, designers, project managers; independence at the broker layer; depth closer to Pantaenius than to the global brokers. Worth a third specialist quote alongside Howden and Pantaenius.",
-      "Smaller specialist brokers (Norton & Co, J&H Marsh, AXA Marine, YachtSure, Northstar, and single-jurisdiction houses) carry the rest of the segment. Selection here is mostly relationship-based; underwriting markets accessed are similar to the larger brokers.",
+      "Howden and Pantaenius are the two largest yacht insurance brokers in the over-30m segment globally; the other substantial players are AON Marine, Gallagher Specialty, and Marsh. PIB Insurance Brokers (historically Zorab Insurance Services) is the established UK specialist alternative to the multi-line firms, independent at the broker layer, and worth a third quote alongside the first two. The practical point is not which name but the discipline of three quotes from firms with genuine over-30m depth.",
+      {
+        type: "webOnly",
+        heading: "The brokers, firm by firm",
+        paragraphs: [
+          "Howden Group has consolidated significant yacht-specialist capacity through acquisitions, building a London practice with strong access to Lloyd's syndicates and European specialty markets. Operates across hull, P&I, war risk, builder's risk, and charter cover. Strong on scale, underwriting access, and structuring for complex programmes; less personal than a specialist alternative for smaller, single-hull buyers.",
+          "Pantaenius (Hamburg, 1899) is the reference for European yacht insurance and one of the largest yacht-specialist brokers globally. Deep service capability, strong loss-management track record, yacht-only frame, disciplined coverage drafting. Relationships are weighted toward European underwriters; owners with heavy US East Coast use can sometimes access tighter US rates elsewhere.",
+          "AON Marine offers yacht insurance within a broader marine and corporate practice. Integrates with wider family-office programmes (aviation, other lines) where AON also holds the relationship; yacht-specialism depth varies by team.",
+          "Gallagher Specialty operates a strong yacht practice on the US East Coast (US fleet coverage, hurricane underwriting, US syndicate access). European depth is thinner than Pantaenius or Howden.",
+          "Marsh, largest broker globally by revenue, places yacht business through its specialty marine teams. Capital and reach for the largest hulls (above 100m) where bespoke structuring is required; yacht-specialist service depth varies.",
+          "PIB Insurance Brokers (historically Zorab Insurance Services, ZIS) has long-standing partnerships with naval architects, designers, and project managers; depth closer to Pantaenius than to the global brokers.",
+          "Smaller specialist brokers (Norton & Co, J&H Marsh, AXA Marine, YachtSure, Northstar, and single-jurisdiction houses) carry the rest of the segment. Selection here is mostly relationship-based; underwriting markets accessed are similar to the larger brokers.",
+        ],
+      },
       { type: "h2", text: "The underwriting that sits behind the broker" },
-      "The broker accesses the underwriters; the underwriting pays at claim time. Three points matter most.",
+      "The broker accesses the underwriters; the underwriting pays at claim time. Four points matter most.",
       "First, the hull and machinery policy should be written on agreed value, not actual cash value. Agreed value: the figure paid in a total loss is fixed in advance. Actual cash value: insurer pays the depreciated market value, typically much less. Premium difference small; claim difference tens of millions on a large hull.",
       "Second, agreed value should reflect rebuild cost, not market value. A 50m yacht with EUR 18 million market value may have EUR 28 million rebuild cost. Insuring at market value leaves the owner short on rebuild after constructive total loss. Howden and Pantaenius templates support agreed-value rebuild-basis structures; ask for them and verify with a current yard quote.",
       "Third, review the policy annually for coverage drift. Itinerary changes (US East Coast, charter introduction, new cruising area) trigger different coverage requirements. The broker who reviews proactively at renewal is meaningfully different from the broker who re-quotes the prior year.",
       "Fourth, several common deductible and warranty terms are negotiable at quote stage; the broker should be pushing back, not accepting templates. Davis flags four for first-time owners. Actual Cash Value clauses on machinery, increasingly added on yachts five years and older — well-documented maintenance logs, oil-sample results, and manufacturer inspections at the prescribed intervals can often persuade underwriters to remove the separate machinery deductible, sometimes at a modest H&M deductible uplift. No Claims Discount offered upfront — repayable on non-renewal or claim, and not normally worth taking. Mast, spars, sails and rigging (MSSR) deductibles and the inner deductibles on fixtures, emergency towing, tenders, and personal effects — most reviewable to the vessel's actual risk profile. And tender-towing terms, where standard templates are often more restrictive than current practice supports; monitoring technology from providers like Yacht Trace has made extended towing acceptable to underwriters who previously declined longer passages.",
-      "Lloyd's syndicates underwrite the majority of large-yacht hull capacity (active: CNA Hardy, Beazley, Brit, AIG, Liberty Specialty, Tokio Marine HCC, MS Amlin). AXA, Allianz, Generali, and Helvetia also underwrite directly on European-domiciled programmes.",
+      {
+        type: "webOnly",
+        heading: "Who carries the capacity",
+        paragraphs: [
+          "Lloyd's syndicates underwrite the majority of large-yacht hull capacity (active: CNA Hardy, Beazley, Brit, AIG, Liberty Specialty, Tokio Marine HCC, MS Amlin). AXA, Allianz, Generali, and Helvetia also underwrite directly on European-domiciled programmes.",
+        ],
+      },
       { type: "h2", text: "The five lines of cover, on a typical large yacht" },
       "An over-30m programme will typically carry five distinct lines of insurance, each separately underwritten and renewed.",
       "Hull and machinery: 0.7 to 1.5 percent of insured value annually for well-maintained 40 to 50m; 2 to 5 percent for smaller yachts and hurricane-exposed regions.",
-      "P&I (protection and indemnity): crew injury, environmental damage, third-party liability, charter-guest claims. Shipowners' Club and Steamship Mutual dominate the over-30m segment; cover routinely written to USD 500 million third-party limit. The figure is not arbitrary: it aligns with IMO conventions and the reinsurance market the International Group of P&I Clubs accesses, with the USD 500 million sitting as the primary layer and group pooling plus reinsurance behind it. Claims testing the limit are extremely rare on yachts. Reference points from commercial shipping: Costa Concordia is widely understood to have settled near USD 1.4 to 1.5 billion; the Baltimore Bridge incident near USD 2.8 billion, regarded as the single largest marine insurance loss in history. Bayesian by comparison sits near USD 150 million. The plausible scenarios that would test the limit on a yacht are major reef damage and significant pollution events. One P&I club is now offering a USD 1 billion limit as standard; some clubs offer 25 to 35 metre vessels reduced limits at premiums that reflect realistic exposure, which Davis reports as welcomed by owners in that size range.",
+      "P&I (protection and indemnity): crew injury, environmental damage, third-party liability, charter-guest claims. Shipowners' Club and Steamship Mutual dominate the over-30m segment; cover routinely written to USD 500 million third-party limit. The figure is not arbitrary: it aligns with IMO conventions and the reinsurance market the International Group of P&I Clubs accesses. Claims testing the limit are extremely rare on yachts; the plausible scenarios are major reef damage and significant pollution events. One P&I club now offers a USD 1 billion limit as standard, and some clubs offer 25 to 35 metre vessels reduced limits at premiums that reflect realistic exposure, which Davis reports as welcomed by owners in that size range.",
       "War risk, per voyage rather than annual. Pre-October 2023 Red Sea was 0.05 percent of hull value per voyage; by early 2024, 1 percent; at peaks 2 percent. Black Sea (Russian ports) currently 0.65 to 0.80 percent; Ukrainian deep-water ports 0.45 to 0.55. The cover itself is widely misunderstood. War Risk does not cover the vessel inside designated War Risk areas; it covers unexpected damage from riots, uprisings, vandalism, or political incident while the yacht is outside high-risk zones. MY Kaos vandalised alongside the dock in Barcelona and damage during the 2016 Turkish coup attempt are the reference incidents.",
       {
         type: "blockquote",

@@ -377,6 +377,27 @@ export default async function SectionPage(props: {
                         </aside>
                       );
                     }
+                    if (p.type === "webOnly") {
+                      return (
+                        <aside
+                          key={i}
+                          className="not-prose my-12 border-l-2 border-stone pl-6"
+                        >
+                          <p className="meta mb-3">
+                            Extended reference, web edition
+                            {p.heading ? `: ${p.heading}` : ""}
+                          </p>
+                          {p.paragraphs.map((text, j) => (
+                            <p
+                              key={j}
+                              className="font-serif text-charcoal-soft leading-relaxed mb-3 last:mb-0"
+                            >
+                              {linkifyEssayText(text, linkedTerms, `wo${i}-${j}`)}
+                            </p>
+                          ))}
+                        </aside>
+                      );
+                    }
                     return null;
                     });
                   })()}
