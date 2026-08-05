@@ -153,8 +153,9 @@ export const sections: Section[] = [
       "Building your team. The ten questions to ask before signing anything. The independence test, applied transparently.",
     coordinates: "51.5114°N 0.1126°W",
     hero: "/images/stock/brass-compass.jpg",
-    contributor: "To be confirmed",
-    contributorRole: "Family office principal",
+    contributor: "Simon Roberts, Quadrant Group",
+    contributorRole:
+      "Corporate services provider; Isle of Man, Jersey, Malta, Palma",
     seoTitle:
       "Questions to ask before buying a yacht: the independence test",
     seoDescription:
