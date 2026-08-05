@@ -54,8 +54,8 @@ export const sections: Section[] = [
       "Conflicts, commissions, retrocessions, and the captain's role at the centre of it. Said plainly.",
     coordinates: "43.5528°N 7.0174°E",
     hero: "/images/stock/cap-cove-tenders.jpg",
-    contributor: "To be confirmed",
-    contributorRole: "Yacht lawyer",
+    contributor: "Andrew Roch",
+    contributorRole: "Founder and CEO, Yacht Crew Recruitment and Training",
     seoTitle:
       "Yacht broker commissions, retrocessions, and conflicts of interest",
     seoDescription:
@@ -70,8 +70,8 @@ export const sections: Section[] = [
       "From shortlist to closing. Surveys, sea trials, VAT regimes, flag choice, and the five most common pitfalls.",
     coordinates: "35.8989°N 14.5146°E",
     hero: "/images/stock/bridge-radar.jpg",
-    contributor: "To be confirmed",
-    contributorRole: "Senior surveyor",
+    contributor: "Capt. Pavlos Filippakis",
+    contributorRole: "Master Mariner (Class 1), Ice Class Captain",
     seoTitle: "How to buy a superyacht: the 12 to 24 week acquisition process",
     seoDescription:
       "The yacht acquisition process from shortlist to closing: pre-purchase survey, sea trial, MOA, VAT and flag-state choice, and the disciplines that defeat the most common pitfalls.",
@@ -137,8 +137,8 @@ export const sections: Section[] = [
       "The structural decision few first-time buyers spend enough time on. Operating cost, environmental footprint, racing pedigree, and the case for sail in 2026.",
     coordinates: "41.4901°N 71.3128°W",
     hero: "/images/stock/cannes-sail-motor.jpg",
-    contributor: "To be confirmed",
-    contributorRole: "Sailing yacht captain",
+    contributor: "Ella Johnson",
+    contributorRole: "Captain, 34m Baltic Yachts performance sloop",
     seoTitle:
       "Motor vs sail superyacht: cost, carbon, hybrid drive comparison",
     seoDescription:
