@@ -150,9 +150,6 @@ export default async function SectionPage(props: {
           </div>
           <div className="order-1 lg:order-2 flex flex-col justify-between bg-paper px-6 lg:px-16 py-16 lg:py-24">
             <div>
-              <p className="meta mb-12">
-                1st Edition &middot; 2026 &middot; Chapter
-              </p>
               <p className="numeral mb-8">{section.number}</p>
               <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-xl">
                 {section.title}
