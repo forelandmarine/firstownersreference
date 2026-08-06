@@ -199,6 +199,14 @@ Working document. Updated as outreach progresses. Approach order at the foot of 
 
 ## Tier 8: market intelligence
 
+### Martin Redmayne
+- **Role:** Chairman and Editor-in-Chief, The Superyacht Group (The Superyacht Report, SuperyachtNews, The Superyacht Agency, The Superyacht Intelligence Agency)
+- **Why:** The other major independent market-intelligence house alongside BOAT International, and arguably the deepest on fleet, order-book, and operational data through The Superyacht Intelligence Agency. Fills the market-intelligence gap in chapter 02 with a data vantage distinct from BOAT and Knight Frank. A warm line is already open: Jack pitched the "unsecured owner" long-form to him for The Superyacht Report.
+- **Approach:** Warm, off the existing article correspondence.
+- **Conflict/tension:** The Superyacht Group is advertising-funded trade press, the model the publication positions against. Disclose plainly and frame his contribution as market-data authority, not endorsement. Note the same implicit editorial tension that applies to Stewart Campbell.
+- **Sections:** 02 (market intelligence anchor).
+- **Status:** To approach, warm.
+
 ### Stewart Campbell
 - **Role:** Managing Director, BOAT International
 - **Why:** Most quoted yacht market authority. Source of the data Knight Frank republishes.
@@ -269,6 +277,7 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Ella Johnson | 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network / Baltic Yachts; Master of a 34 metre Baltic Yachts performance sloop (boat name redacted); chapter 8 sidebar on sail. Q5 and Q6 declined |
 | Richard Masters | 2 | To approach | - | Master Yachts (yacht management + new build representation); chapter 1 lead candidate; possible secondary on chapter 5; conflict disclosure required |
 | Sam Forbes | 7 | To approach | - | Captain of 33 metre Nautor Swan; moved from chapter 1 lead to chapter 8 sidebar alongside Ella Johnson; boat name redacted |
+| Martin Redmayne | 8 | To approach (warm) | - | Chairman and Editor-in-Chief, The Superyacht Group; market-intelligence anchor for chapter 2; warm off the "unsecured owner" article correspondence; disclose ad-funded trade-press tension |
 | (others) | - | Pending | - | Per approach order |
 
 Update this table as outreach progresses.
