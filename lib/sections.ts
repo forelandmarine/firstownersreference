@@ -156,6 +156,7 @@ export const sections: Section[] = [
     contributor: "Simon Roberts, Quadrant Group",
     contributorRole:
       "Corporate services provider; Isle of Man, Jersey, Malta, Palma",
+    contributorLinkedIn: "https://www.linkedin.com/in/simon-roberts-quadrant/",
     seoTitle:
       "Questions to ask before buying a yacht: the independence test",
     seoDescription:
