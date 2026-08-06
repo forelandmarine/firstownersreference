@@ -209,6 +209,31 @@ export const chapterFaqs: Record<string, FaqItem[]> = {
       answer:
         "If a party in the transaction would walk away from a deal that did not benefit the buyer, they are structurally aligned. If they would not, the relationship is not aligned. The independent adviser, paid only by the buyer, is the party for whom this is structurally true. Brokerages with new build arms (Edmiston, Burgess, Y.CO, Ocean Independence, Camper & Nicholsons, Fraser, Cecil Wright, Moran), yacht management firms extending into new build, and naval architects acting as owner's representatives all carry structural conflicts. Disclosure of the conflict is required; the buyer's response is to weight the advice accordingly.",
     },
+    {
+      question: "Do you pay VAT when buying a superyacht as a non-EU resident?",
+      answer:
+        "A non-EU resident using the yacht privately can often avoid paying VAT on the purchase by operating under Temporary Admission relief, which lets a non-EU-owned yacht cruise in EU waters without importing it, provided the eligibility and time-limit conditions are met. If the yacht is imported, or the owner is EU-resident, VAT is generally due unless another relief applies. Quadrant Group's position, in chapter nine, is that the ownership structure, VAT position, and importation strategy have to be decided together from the outset; getting the sequence wrong exposes the owner to liabilities and penalties calculated on the value of the yacht.",
+    },
+    {
+      question: "Isle of Man or Malta for yacht ownership?",
+      answer:
+        "Neither is universally better; the right jurisdiction depends on the owner's use, residency and tax position, financing, and succession plans. The Isle of Man is a long-established superyacht jurisdiction with a mature professional services sector, though Quadrant Group estimates an Isle of Man structure is the right answer for only around a quarter of purchases. Malta is often more appropriate for an EU-resident owner who wants VAT-paid certainty within Europe. The British Virgin Islands and the Cayman Islands are further established alternatives. Jurisdiction should be the outcome of the planning, not the starting point.",
+    },
+    {
+      question: "What does a corporate services provider do for a yacht owner?",
+      answer:
+        "A corporate services provider designs and administers the ownership structure: maintaining the ownership vehicle, meeting statutory and regulatory obligations, and coordinating the banks, flag administrations, insurers, lawyers, and tax advisers around the yacht. It typically becomes the central point through which those relationships are managed across the life of the asset, and it helps separate the owner's personal assets from the yacht, providing legal protection should liabilities arise. Fees are charged either on a fixed annual basis or by time spent; owners should understand which model applies.",
+    },
+    {
+      question: "Should a yacht be registered privately or commercially?",
+      answer:
+        "The real question is how the owner intends to use the yacht. Commercial registration is not simply a way to offset running costs with charter income; chartering is closer to operating a business, with additional regulatory, tax, and operational obligations, and the owner pays VAT on their own time aboard. Private ownership deserves the same scrutiny before it is assumed to be simpler. The decision should follow genuine intended use rather than what the yacht could do, with flexibility built in where plans may change.",
+    },
+    {
+      question: "What is Temporary Admission relief for yachts?",
+      answer:
+        "Temporary Admission is a customs relief that allows a yacht owned by a non-EU resident to be used in EU waters for a limited period without paying import VAT, provided the conditions are met, including that the yacht is not placed at the disposal of an EU resident and is re-exported within the permitted time. It is commonly used for private, non-EU-owned yachts cruising the Mediterranean, and is one of the broad ownership models set out in chapter nine.",
+    },
   ],
 };
 

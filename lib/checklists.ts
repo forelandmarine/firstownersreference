@@ -882,6 +882,32 @@ export const checklists: Record<string, Checklist> = {
           },
         ],
       },
+      {
+        heading: "Before the structure: settle these first",
+        items: [
+          {
+            question:
+              "Will the yacht be for private enjoyment only, or is charter a possibility, even if not immediately?",
+          },
+          {
+            question:
+              "Where will the yacht primarily operate and cruise?",
+          },
+          {
+            question: "Will finance be involved?",
+          },
+          {
+            question:
+              "Will ownership rest with one individual, or involve family, succession, or more than one beneficial owner?",
+          },
+          {
+            question:
+              "How and where will the yacht be imported, and what will its VAT position be?",
+            detail:
+              "Develop the ownership structure, VAT position, and importation strategy together, before contracts are exchanged, not as separate decisions afterwards. Getting the sequence wrong exposes the owner to VAT liabilities and penalties calculated on the value of the yacht.",
+          },
+        ],
+      },
     ],
     printable:
       "The page is designed to print onto a single A4. Use it to open the conversation with each adviser. The publisher\u2019s answers are on the colophon.",

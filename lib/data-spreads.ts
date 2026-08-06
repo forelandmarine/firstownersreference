@@ -1205,6 +1205,40 @@ export const dataSpreads: Record<string, DataSpread> = {
         ],
         sourceLine: "Foreland Marine practitioner working ranges.",
       },
+      { type: "h2", text: "Ownership models at a glance" },
+      {
+        type: "table",
+        caption:
+          "The early conversations tend to resolve into one of a few broad models. The jurisdiction is the outcome of the planning, not its starting point; every owner's circumstances differ.",
+        head: ["Model", "Typical owner", "VAT on purchase", "Key conditions"],
+        rows: [
+          [
+            "Non-EU private, Temporary Admission",
+            "Non-EU resident, private use only",
+            "Not paid while under relief",
+            "Yacht cruises EU waters under Temporary Admission relief; eligibility and time limits apply",
+          ],
+          [
+            "EU VAT-paid, typically Malta",
+            "EU resident, private use within Europe",
+            "Paid; VAT-paid status established",
+            "Certainty and continuity for a yacht kept in the European market",
+          ],
+          [
+            "Commercial charter",
+            "Genuine charter business",
+            "Recoverable on qualifying costs",
+            "Regulatory, technical and operational obligations; owner pays VAT on their own use",
+          ],
+          [
+            "BVI or Cayman Islands",
+            "Varies with circumstances",
+            "Depends on use and cruising area",
+            "Established alternatives; suitability depends on the owner's circumstances",
+          ],
+        ],
+        sourceLine: "Quadrant Group. Guidance for orientation, not advice.",
+      },
     ],
     sources: [
       {

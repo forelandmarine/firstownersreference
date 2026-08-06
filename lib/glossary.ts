@@ -200,7 +200,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       "Confirmation that EU VAT has been settled on the yacht's hull, attaching to the asset rather than the flag. A VAT-paid yacht can move freely within the EU customs territory.",
     longDefinition:
       "EU VAT-paid status attaches to the hull, not the flag. A Maltese-flagged yacht owned by a non-EU SPV is not automatically EU VAT-paid; conversely a Cayman-flagged hull on which import VAT was settled in Italy is EU VAT-paid. Documentary evidence is the importation declaration and VAT receipt. Loss of VAT-paid status can occur on certain ownership changes, modifications, or extended absence from EU waters under specific circumstances.",
-    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedChapters: ["04-acquisition-process", "07-operations", "09-decision-framework"],
     relatedTerms: ["importation", "temporary-admission", "vat-regime"],
   },
   {
@@ -210,7 +210,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       "The customs procedure under which a yacht enters EU customs territory and Union customs status is granted, typically with VAT and any duty paid at the point of entry.",
     longDefinition:
       "Importation is the customs act by which a non-EU yacht obtains Union goods status. It involves payment of VAT on the customs value of the yacht, plus any applicable duty. Once imported, the yacht can move freely within the EU customs territory without further customs formalities, subject to retention of VAT-paid status. The importing entity must be EU-established for standard importation; non-EU buyers route through an EU representative or via Spanish IPR or French Commercial Exemption to defer the VAT trigger.",
-    relatedChapters: ["04-acquisition-process", "06-refit"],
+    relatedChapters: ["04-acquisition-process", "06-refit", "09-decision-framework"],
     relatedTerms: ["vat-paid-status", "spanish-ipr", "temporary-admission"],
   },
   {
@@ -224,7 +224,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       name: "European Commission Taxation and Customs Union",
       url: "https://taxation-customs.ec.europa.eu/document/download/fa095d6b-45dd-4c7a-94c7-bad21d0473a9_en",
     },
-    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedChapters: ["04-acquisition-process", "07-operations", "09-decision-framework"],
     relatedTerms: ["vat-paid-status", "importation", "vat-regime"],
   },
   {
@@ -244,7 +244,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       "Value-added tax applied to commercial yacht charters, charged where the charter is enjoyed. Standard EU rates range from 8 to 22 percent depending on jurisdiction and effective use.",
     longDefinition:
       "EU charter VAT is taxed at the place of enjoyment. The historic length-based reductions (Maltese, Cypriot, Greek lease schemes) were withdrawn between 2018 and 2020 under EU Commission infringement procedures. Effective-use approaches now apply, with pro-rata reductions documented against international-waters time. Italian charters carry 22 percent standard rate; French and Spanish standard rates apply locally. Maltese charters since the 2019 reform follow effective-use rules. Charter VAT is the operator's liability; the published charter rate is typically VAT-exclusive.",
-    relatedChapters: ["07-operations"],
+    relatedChapters: ["07-operations", "09-decision-framework"],
     relatedTerms: ["vat-regime", "myba", "vat-paid-status"],
   },
   {
@@ -523,7 +523,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       "The natural person who ultimately owns or controls a legal entity. EU public access to UBO registers was restricted by the 2022 CJEU Sovim ruling.",
     longDefinition:
       "Beneficial ownership disclosure regimes vary by jurisdiction. EU member states post-Sovim (CJEU Joined Cases C-37/20 and C-601/20, 22 November 2022) restrict public access; legitimate-interest filters now apply under the post-2024 AML package. UK Companies House Persons with Significant Control register remains publicly searchable. Cayman Islands operates a Beneficial Ownership Transparency Act 2023 (in force July 2024) with Legitimate Interest Access Regulations 2024 (in force February 2025), restricting access to defined applicants.",
-    relatedChapters: ["04-acquisition-process"],
+    relatedChapters: ["04-acquisition-process", "09-decision-framework"],
     relatedTerms: ["spv"],
   },
   {
@@ -565,7 +565,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       name: "Transport Malta, Merchant Shipping Directorate",
       url: "https://www.transport.gov.mt/maritime",
     },
-    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedChapters: ["04-acquisition-process", "07-operations", "09-decision-framework"],
     relatedTerms: ["flag-state", "vat-regime", "ism", "cayman-islands-registry", "marshall-islands-registry"],
   },
   {
@@ -579,8 +579,18 @@ export const glossaryEntries: GlossaryEntry[] = [
       name: "Isle of Man Ship Registry",
       url: "https://www.iomshipregistry.com/",
     },
-    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedChapters: ["04-acquisition-process", "07-operations", "09-decision-framework"],
     relatedTerms: ["flag-state", "red-ensign-group", "spv", "cayman-islands-registry"],
+  },
+  {
+    slug: "corporate-services-provider",
+    term: "Corporate services provider",
+    shortDefinition:
+      "A firm that designs, establishes, and administers a yacht's ownership structure, and coordinates the professional advisers around it across the life of the asset.",
+    longDefinition:
+      "A corporate services provider maintains the ownership vehicle, meets statutory and regulatory obligations, and coordinates the banks, flag administrations, insurers, lawyers, and tax advisers around the yacht, typically becoming the central point through which those relationships are managed. It helps separate the owner's personal assets from the yacht, providing legal protection should liabilities arise, and a degree of privacy consistent with transparency and information-sharing obligations. Fees are charged on a fixed annual basis or by time spent. A provider should work alongside independent legal and tax advisers, not replace them.",
+    relatedChapters: ["09-decision-framework"],
+    relatedTerms: ["beneficial-ownership", "spv", "vat-paid-status", "temporary-admission", "isle-of-man-registry", "malta-flag"],
   },
 ];
 
