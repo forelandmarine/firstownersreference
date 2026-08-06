@@ -1,6 +1,7 @@
 export type GuestOpinionQA = {
   question: string;
   answer: string[];
+  pullQuote?: string;
 };
 
 export type GuestOpinion = {
@@ -536,6 +537,8 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "Once a purchase is underway, decisions often become driven by deadlines rather than careful planning. Opportunities can be lost, unnecessary costs can arise, and changes that would have been relatively straightforward before completion may become far more complex afterwards. Another common assumption is that today's ownership model will remain unchanged. In reality, ownership often evolves. A yacht that begins as a purely private asset may later become available for charter. Family circumstances change, financing may be introduced, or ownership may pass to the next generation. A structure that only works on the day the yacht is purchased may not work nearly as well five years later.",
             "For that reason, we always encourage owners to think beyond the transaction itself. The objective is not simply to establish an ownership structure that allows the purchase to complete in the quickest time possible. It is to create a framework that supports the way the yacht is likely to be owned, operated and managed throughout its life.",
           ],
+          pullQuote:
+            "The biggest mistakes are not usually caused by choosing the wrong structure. They are caused because the right questions were not asked early enough.",
         },
         {
           question:
@@ -576,6 +579,8 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "That said, ownership plans often evolve. A yacht purchased for private use may later become available for charter, while a commercially operated yacht may eventually transition to purely private use. Those possibilities do not necessarily require a more complex ownership structure from the outset, but they should be recognised during the planning process so that flexibility can be built in where appropriate.",
             "Ultimately, there is no inherently better route. Private and commercial ownership each have advantages, responsibilities and ongoing obligations. The objective is not simply to choose one over the other, but to establish an ownership framework that reflects the owner's current intentions while remaining capable of adapting should those intentions change over time.",
           ],
+          pullQuote:
+            "Private or commercial use is not simply a registration choice. It is an operating model that influences almost every aspect of ownership.",
         },
         {
           question:
@@ -600,6 +605,8 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "Where significant tax planning is involved, where family wealth or succession planning forms part of the ownership strategy, or where complex cross-border issues arise, obtaining an independent legal or tax opinion is not a sign of distrust. It is simply good governance.",
             "A reputable corporate services provider should welcome that process and be comfortable working collaboratively with the owner's wider advisory team. Ultimately, the owner's interests are best served when advice is transparent, specialist and collaborative. The objective should never be to find one adviser with all the answers, but to assemble the right team of professionals who can challenge assumptions, provide independent perspectives and arrive at the best long-term solution together.",
           ],
+          pullQuote:
+            "A good corporate services provider should never be the only adviser involved in an ownership decision.",
         },
         {
           question:

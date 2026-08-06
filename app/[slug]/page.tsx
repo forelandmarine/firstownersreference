@@ -495,6 +495,13 @@ export default async function SectionPage(props: {
                             <p key={j}>{para}</p>
                           ))}
                         </div>
+                        {qa.pullQuote && (
+                          <blockquote className="mt-10 pl-12">
+                            <p className="font-serif text-2xl lg:text-3xl leading-tight tracking-tight text-marine max-w-2xl">
+                              {qa.pullQuote}
+                            </p>
+                          </blockquote>
+                        )}
                       </div>
                     ))}
                   </div>
