@@ -521,7 +521,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "09-decision-framework",
       contributor: "Simon Roberts",
       contributorRole:
-        "Corporate services provider, Quadrant Group\nIsle of Man, Jersey, Malta, Palma",
+        "Corporate services provider, Quadrant Group\nIsle of Man",
       contributorLinkedIn:
         "https://www.linkedin.com/in/simon-roberts-quadrant/",
       intro:
