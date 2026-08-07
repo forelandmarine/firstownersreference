@@ -3,10 +3,11 @@ import { leadEssays } from "./lead-essays";
 import { dataSpreads } from "./data-spreads";
 import { cases } from "./cases";
 import { checklists } from "./checklists";
+import { getGuestOpinions, qaPersonSlug } from "./guest-opinions";
 
 export type SearchEntry = {
   id: string;
-  kind: "section" | "essay" | "data" | "case" | "checklist";
+  kind: "section" | "essay" | "data" | "case" | "checklist" | "qa";
   kindLabel: string;
   sectionNumber: string;
   sectionTitle: string;
@@ -125,6 +126,27 @@ export const searchIndex: SearchEntry[] = sections.flatMap((section) => {
       title: study.title,
       excerpt: trim(study.standfirst),
       url: `${sectionUrl}#case`,
+      haystack: text.toLowerCase(),
+      text,
+    });
+  }
+
+  for (const opinion of getGuestOpinions(section.slug).filter(
+    (g) => g.questions.length > 0
+  )) {
+    const qaText = opinion.questions
+      .map((qa) => `${qa.question} ${qa.answer.join(" ")}`)
+      .join(" ");
+    const text = `In conversation with ${opinion.contributor} ${opinion.contributorRole} ${opinion.intro ?? ""} ${qaText}`;
+    entries.push({
+      id: `qa-${section.slug}-${qaPersonSlug(opinion.contributor)}`,
+      kind: "qa",
+      kindLabel: "Guest opinion",
+      sectionNumber: section.number,
+      sectionTitle: section.title,
+      title: `In conversation with ${opinion.contributor}`,
+      excerpt: trim(opinion.intro ?? opinion.contributorRole),
+      url: `${sectionUrl}/qa/${qaPersonSlug(opinion.contributor)}`,
       haystack: text.toLowerCase(),
       text,
     });

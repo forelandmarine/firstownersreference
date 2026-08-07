@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { sections } from "@/lib/sections";
 import { getCase } from "@/lib/cases";
 import { getChecklist } from "@/lib/checklists";
+import { getGuestOpinions, qaPersonSlug } from "@/lib/guest-opinions";
 
 const BASE_URL = "https://firstownersreference.com";
 
@@ -34,6 +35,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (getCase(section.slug)) {
       routes.push({
         url: `${BASE_URL}/${section.slug}/case`,
+        lastModified,
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
+    }
+    for (const opinion of getGuestOpinions(section.slug).filter(
+      (g) => g.questions.length > 0
+    )) {
+      routes.push({
+        url: `${BASE_URL}/${section.slug}/qa/${qaPersonSlug(opinion.contributor)}`,
         lastModified,
         changeFrequency: "monthly",
         priority: 0.7,

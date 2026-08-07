@@ -17,7 +17,7 @@ import { getDataSpread } from "@/lib/data-spreads";
 import { getCase } from "@/lib/cases";
 import { getChecklist } from "@/lib/checklists";
 import { getChapterFaqs } from "@/lib/faqs";
-import { getGuestOpinions } from "@/lib/guest-opinions";
+import { getGuestOpinions, qaPersonSlug } from "@/lib/guest-opinions";
 import { ContributorAvatar } from "@/components/contributor-avatar";
 import { getContributorProfile } from "@/lib/contributors";
 import { glossaryEntries } from "@/lib/glossary";
@@ -483,40 +483,46 @@ export default async function SectionPage(props: {
                       {guestOpinion.intro}
                     </p>
                   )}
-                  <div className="space-y-12">
-                    {guestOpinion.questions.map((qa, i) => (
-                      <div
-                        key={i}
-                        className="border-t border-rule pt-8 first:border-t-0 first:pt-0"
-                      >
-                        <div className="flex gap-6 mb-6">
-                          <span className="meta-marine shrink-0 pt-1">
-                            {String(i + 1).padStart(2, "0")}
-                          </span>
-                          <p className="font-serif text-xl lg:text-2xl leading-snug tracking-tight text-charcoal max-w-2xl">
-                            {qa.question}
-                          </p>
-                        </div>
-                        <div className="prose-body max-w-prose pl-12">
-                          {qa.answer.map((para, j) => (
-                            <p key={j}>{para}</p>
-                          ))}
-                        </div>
-                        {qa.pullQuote && (
-                          <blockquote className="mt-10 pl-12">
+                  {(() => {
+                    const firstPull = guestOpinion.questions.find(
+                      (qa) => qa.pullQuote
+                    )?.pullQuote;
+                    return (
+                      <div className="space-y-10">
+                        {firstPull && (
+                          <blockquote>
                             <p className="font-serif text-2xl lg:text-3xl leading-tight tracking-tight text-marine max-w-2xl">
-                              {qa.pullQuote}
+                              {firstPull}
                             </p>
                           </blockquote>
                         )}
+                        <ul className="space-y-5 max-w-2xl">
+                          {guestOpinion.questions.slice(0, 3).map((qa, i) => (
+                            <li key={i} className="flex gap-6">
+                              <span className="meta-marine shrink-0 pt-1">
+                                {String(i + 1).padStart(2, "0")}
+                              </span>
+                              <p className="font-serif text-lg lg:text-xl leading-snug tracking-tight text-charcoal">
+                                {qa.question}
+                              </p>
+                            </li>
+                          ))}
+                        </ul>
+                        <Link
+                          href={`/${section.slug}/qa/${qaPersonSlug(guestOpinion.contributor)}`}
+                          className="inline-flex items-baseline gap-3 group"
+                        >
+                          <span className="font-serif text-xl text-charcoal group-hover:text-marine transition-colors">
+                            Read the conversation
+                          </span>
+                          <span className="meta-marine">
+                            {guestOpinion.questions.length} questions on the
+                            record
+                          </span>
+                        </Link>
                       </div>
-                    ))}
-                  </div>
-                  <p className="meta mt-16 pt-6 border-t border-charcoal max-w-prose">
-                    Answers given by {guestOpinion.contributor},{" "}
-                    {guestOpinion.contributorRole}. Lightly edited for typography
-                    and approved by the contributor before publication.
-                  </p>
+                    );
+                  })()}
                 </div>
               </div>
             ))}
