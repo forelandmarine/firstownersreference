@@ -523,27 +523,6 @@ export default async function SectionPage(props: {
           </section>
         )}
 
-        {essay?.closingNote && essay.closingNote.length > 0 && (
-          <section
-            id="from-the-editors"
-            className="bg-paper py-20 lg:py-32 border-t border-rule scroll-mt-24"
-          >
-            <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
-              <div className="lg:col-span-7 lg:col-start-3">
-                <div className="prose-body max-w-prose">
-                  {essay.closingNote.map((p, i) =>
-                    typeof p === "string" ? (
-                      <p key={i}>{p}</p>
-                    ) : (
-                      <h2 key={i}>{p.text}</h2>
-                    )
-                  )}
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
         {dataSpread && (
           <section
             id="data-spread"
@@ -775,6 +754,79 @@ export default async function SectionPage(props: {
             </div>
           </div>
         </section>
+
+        {essay?.closingNote && essay.closingNote.length > 0 && (
+          <section
+            id="from-the-editors"
+            className="relative isolate overflow-hidden scroll-mt-24"
+          >
+            <Image
+              src="/images/stock/sailing-sunset.jpg"
+              alt="A sailing yacht under way at sunset"
+              fill
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/55 to-charcoal/85" />
+            <div className="absolute inset-0 bg-gradient-to-r from-charcoal/55 via-charcoal/15 to-transparent" />
+            <div className="relative z-10 max-w-[80rem] mx-auto px-6 lg:px-12 py-28 lg:py-40">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div className="lg:col-span-7 lg:col-start-3 text-paper">
+                  {(() => {
+                    const note = essay.closingNote!;
+                    const eyebrow = note.find(
+                      (p): p is { type: "h2"; text: string } =>
+                        typeof p !== "string"
+                    );
+                    const strings = note.filter(
+                      (p): p is string => typeof p === "string"
+                    );
+                    const body = strings.filter((s) => s.length >= 40);
+                    const sign = strings.filter((s) => s.length < 40);
+                    return (
+                      <>
+                        {eyebrow && (
+                          <p className="meta text-paper/70 mb-10">
+                            {eyebrow.text}
+                          </p>
+                        )}
+                        {body.map((p, i) => (
+                          <p
+                            key={i}
+                            className="font-serif font-light text-xl sm:text-2xl lg:text-[1.75rem] leading-relaxed text-paper mb-10 max-w-2xl"
+                          >
+                            {p}
+                          </p>
+                        ))}
+                        {sign.length > 0 && (
+                          <div className="mt-14">
+                            {sign.map((s, i) =>
+                              i === sign.length - 1 ? (
+                                <p
+                                  key={i}
+                                  className="font-serif text-3xl lg:text-4xl tracking-tight text-paper"
+                                >
+                                  {s}
+                                </p>
+                              ) : (
+                                <p
+                                  key={i}
+                                  className="font-serif italic text-lg text-paper/75 mb-2"
+                                >
+                                  {s}
+                                </p>
+                              )
+                            )}
+                          </div>
+                        )}
+                      </>
+                    );
+                  })()}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         <nav className="border-t border-rule bg-paper py-16">
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
