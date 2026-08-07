@@ -516,6 +516,27 @@ export default async function SectionPage(props: {
           </section>
         )}
 
+        {essay?.closingNote && essay.closingNote.length > 0 && (
+          <section
+            id="from-the-editors"
+            className="bg-paper py-20 lg:py-32 border-t border-rule scroll-mt-24"
+          >
+            <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-7 lg:col-start-3">
+                <div className="prose-body max-w-prose">
+                  {essay.closingNote.map((p, i) =>
+                    typeof p === "string" ? (
+                      <p key={i}>{p}</p>
+                    ) : (
+                      <h2 key={i}>{p.text}</h2>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {dataSpread && (
           <section
             id="data-spread"

@@ -737,7 +737,9 @@ function ChapterBlock({
   let firstStringIdx = paras.findIndex((p) => typeof p === "string");
   if (firstStringIdx < 0) firstStringIdx = 0;
   const introPara = paras[firstStringIdx];
-  const restParas = paras.filter((_, i) => i !== firstStringIdx);
+  const restParas = paras
+    .filter((_, i) => i !== firstStringIdx)
+    .concat(essay?.closingNote ?? []);
 
   // Identify positions to insert supporting images. Place after every 4th
   // string paragraph in the rest flow.
