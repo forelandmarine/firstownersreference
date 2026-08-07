@@ -829,6 +829,13 @@ export const leadEssays: Record<string, LeadEssay> = {
         href: "/09a-questions-to-ask-before-you-buy",
         linkText: "Open the one-page version",
       },
+      { type: "h2", text: "The structure the team builds" },
+      "Every adviser above is tested against the ten questions. One of them works earlier than the rest: the corporate services provider who sets up the ownership structure the yacht will sit inside, before the lawyer reviews a contract or the surveyor boards. It is among the first decisions an owner makes, among the hardest to unwind, and the one most often left too late. We put it to Simon Roberts of Quadrant Group, which has built these structures from the Isle of Man for forty years; his answers, on jurisdiction, VAT, private against commercial use, the annual cost, and the decision hardest to reverse, follow this essay.",
+      {
+        type: "blockquote",
+        text: "The structure should be built around the owner's objectives, rather than the other way around.",
+        attribution: "Simon Roberts, Quadrant Group",
+      },
       { type: "h2", text: "The closing argument" },
       "The First Owner's Reference exists because trade press is structurally less able to publish what is set out across these chapters. None of this is a moral failing of the people who work in trade press; it is a fact about how the industry funds itself. The publisher of this reference is funded by independent consultancy work rather than advertising, and that single difference is more or less the entire publication. The publisher's own answers to the independence test are on the colophon.",
       "For a reader considering a first acquisition, whether as a newly liquidated principal or as an heir for whom the family yacht has become a new responsibility, the next three months are the most consequential of ownership. The decisions made in that window, about the team built, set the trajectory of the next ten years.",
