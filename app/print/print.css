@@ -1294,27 +1294,37 @@ body {
   margin: 0 0 7mm 0;
 }
 
+.guest-opinion__body {
+  column-count: 2;
+  column-gap: 9mm;
+  column-fill: auto;
+}
+
 .guest-opinion__qa {
-  break-inside: avoid;
-  margin-bottom: 10mm;
+  margin-bottom: 8mm;
 }
 
 .guest-opinion__q {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 500;
-  font-size: 15pt;
-  line-height: 19pt;
+  font-size: 13pt;
+  line-height: 17pt;
   color: var(--colour-marine);
   margin: 0 0 6pt 0;
-  max-width: 150mm;
+  break-after: avoid;
+  break-inside: avoid;
 }
 
 .guest-opinion__a p {
-  font-size: 12pt;
-  line-height: 17pt;
+  font-size: 11.5pt;
+  line-height: 16pt;
   margin: 0;
   text-indent: 4mm;
-  max-width: 150mm;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  orphans: 3;
+  widows: 3;
 }
 
 .guest-opinion__a p:first-child {
@@ -1356,8 +1366,13 @@ body {
    the standalone close page with 30% dead space. */
 .chapter-close {
   position: relative;
-  display: block;
-  margin-top: 14mm;
+  display: flex;
+  flex-direction: column;
+  min-height: 240mm;
+  break-before: page;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-top: 0;
   padding-top: 10mm;
   border-top: 1pt solid var(--colour-marine);
 }
@@ -1375,6 +1390,7 @@ body {
 .chapter-close__bottom {
   break-inside: avoid;
   page-break-inside: avoid;
+  margin-top: auto;
 }
 
 .chapter-close__method {
@@ -1512,8 +1528,8 @@ body {
 
 .chapter-close__big-num {
   position: absolute;
-  bottom: -8mm;
-  right: -12mm;
+  bottom: 0;
+  right: 0;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   font-size: 280pt;
@@ -2113,6 +2129,7 @@ body {
 .glossary-list {
   column-count: 2;
   column-gap: 8mm;
+  column-fill: auto;
   font-size: 10pt;
   line-height: 14pt;
 }
@@ -2133,7 +2150,8 @@ body {
 .glossary-list dd {
   margin: 0 0 5pt 0;
   color: var(--colour-soft);
-  break-inside: avoid;
+  orphans: 2;
+  widows: 2;
 }
 
 /* ===========================================================
@@ -2149,7 +2167,7 @@ body {
 .index-list {
   column-count: 3;
   column-gap: 6mm;
-  column-fill: balance;
+  column-fill: auto;
   font-size: 9pt;
   line-height: 12.5pt;
 }
@@ -2194,7 +2212,7 @@ body {
   font-weight: 400;
   font-size: 17pt;
   color: var(--colour-marine);
-  margin: 18pt 0 5pt 0;
+  margin: 13pt 0 4pt 0;
   page-break-after: avoid;
 }
 
@@ -2208,8 +2226,8 @@ body {
 
 .sources-section li {
   font-size: 9pt;
-  line-height: 13pt;
-  margin: 0 0 6pt 0;
+  line-height: 12.5pt;
+  margin: 0 0 5pt 0;
   break-inside: avoid;
   color: var(--colour-soft);
 }
@@ -2368,4 +2386,20 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Drop-cap paragraphs move as one unit: Chrome can strand the
+   ::first-letter box on one page with its text lines pushed to the
+   next, leaving a lone giant initial (seen on case openers). */
+.chapter-body__intro-para,
+.case-section__body p:first-child {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* A pull quote binds to the paragraph after it so a chapter tail page
+   never opens with a stranded quote. */
+.chapter-body__pull {
+  break-after: avoid-page;
+  page-break-after: avoid;
 }

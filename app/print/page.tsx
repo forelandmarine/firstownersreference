@@ -920,16 +920,18 @@ function ChapterBlock({
             {guestOpinion.contributorRole}.{" "}
             {guestOpinion.intro}
           </p>
-          {guestOpinion.questions.map((qa, i) => (
-            <div key={i} className="guest-opinion__qa">
-              <p className="guest-opinion__q">{qa.question}</p>
-              <div className="guest-opinion__a">
-                {qa.answer.map((para, ai) => (
-                  <p key={ai}>{para}</p>
-                ))}
+          <div className="guest-opinion__body">
+            {guestOpinion.questions.map((qa, i) => (
+              <div key={i} className="guest-opinion__qa">
+                <p className="guest-opinion__q">{qa.question}</p>
+                <div className="guest-opinion__a">
+                  {qa.answer.map((para, ai) => (
+                    <p key={ai}>{para}</p>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
       ))}
 
