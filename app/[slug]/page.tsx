@@ -18,6 +18,8 @@ import { getCase } from "@/lib/cases";
 import { getChecklist } from "@/lib/checklists";
 import { getChapterFaqs } from "@/lib/faqs";
 import { getGuestOpinions } from "@/lib/guest-opinions";
+import { ContributorAvatar } from "@/components/contributor-avatar";
+import { getContributorProfile } from "@/lib/contributors";
 import { glossaryEntries } from "@/lib/glossary";
 import { linkifyEssayText } from "@/lib/glossary-autolink";
 import {
@@ -443,6 +445,11 @@ export default async function SectionPage(props: {
                     <p className="meta-marine">
                       Chapter {section.number} &middot; Guest opinion
                     </p>
+                    <ContributorAvatar
+                      name={guestOpinion.contributor}
+                      avatar={getContributorProfile(guestOpinion.contributor)?.avatar}
+                      size={80}
+                    />
                     <p className="meta">In conversation with</p>
                     <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal">
                       {guestOpinion.contributor}

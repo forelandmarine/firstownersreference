@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ContributorAvatar } from "@/components/contributor-avatar";
 import { sections } from "@/lib/sections";
 import { guestOpinions } from "@/lib/guest-opinions";
+import { getContributorProfile } from "@/lib/contributors";
 
 import type { Metadata } from "next";
 
@@ -37,6 +39,8 @@ type Contributor = {
   name: string;
   role: string;
   linkedin?: string;
+  bio?: string;
+  avatar?: string;
   chapters: ContributorChapter[];
 };
 
@@ -83,12 +87,17 @@ function buildContributors(): Contributor[] {
     }
   }
 
-  return Array.from(byName.values()).sort((a, b) => {
-    const aFirst = a.chapters[0]?.number ?? "99";
-    const bFirst = b.chapters[0]?.number ?? "99";
-    if (aFirst !== bFirst) return aFirst.localeCompare(bFirst);
-    return a.name.localeCompare(b.name);
-  });
+  return Array.from(byName.values())
+    .map((c) => {
+      const profile = getContributorProfile(c.name);
+      return { ...c, bio: profile?.bio, avatar: profile?.avatar };
+    })
+    .sort((a, b) => {
+      const aFirst = a.chapters[0]?.number ?? "99";
+      const bFirst = b.chapters[0]?.number ?? "99";
+      if (aFirst !== bFirst) return aFirst.localeCompare(bFirst);
+      return a.name.localeCompare(b.name);
+    });
 }
 
 export default function ContributorsPage() {
@@ -133,38 +142,57 @@ export default function ContributorsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+          <ul className="border-t border-charcoal">
             {contributors.map((c) => (
-              <div key={c.name} className="border-t border-charcoal pt-6">
-                <p className="font-serif text-2xl leading-tight tracking-tight text-charcoal mb-2">
-                  {c.name}
-                </p>
-                <p className="caption mb-4 whitespace-pre-line">{c.role}</p>
-                {c.linkedin && (
-                  <a
-                    href={c.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-marine caption inline-block mb-6"
-                  >
-                    LinkedIn &rarr;
-                  </a>
-                )}
-                <ul className="space-y-2">
-                  {c.chapters.map((ch) => (
-                    <li key={ch.slug}>
-                      <Link
-                        href={`/${ch.slug}`}
-                        className="meta-marine inline-block"
+              <li
+                key={c.name}
+                className="flex flex-col gap-6 border-b border-rule py-10 sm:flex-row sm:gap-8 lg:gap-12"
+              >
+                <div className="sm:pt-1">
+                  <ContributorAvatar
+                    name={c.name}
+                    avatar={c.avatar}
+                    size={96}
+                  />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                    <h2 className="font-serif text-2xl leading-tight tracking-tight text-charcoal">
+                      {c.name}
+                    </h2>
+                    {c.linkedin && (
+                      <a
+                        href={c.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-marine caption"
                       >
-                        Chapter {ch.number} &middot; {ch.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                        LinkedIn &rarr;
+                      </a>
+                    )}
+                  </div>
+                  <p className="caption mt-1 whitespace-pre-line">{c.role}</p>
+                  {c.bio && (
+                    <p className="prose-body mt-4 max-w-2xl text-charcoal-soft">
+                      {c.bio}
+                    </p>
+                  )}
+                  <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
+                    {c.chapters.map((ch) => (
+                      <li key={ch.slug}>
+                        <Link
+                          href={`/${ch.slug}`}
+                          className="meta-marine inline-block"
+                        >
+                          Chapter {ch.number} &middot; {ch.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
             ))}
-          </div>
+          </ul>
 
           <div className="mt-20 border-t border-charcoal pt-10 max-w-2xl">
             <p className="meta-marine mb-4">Propose a contribution</p>

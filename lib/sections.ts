@@ -56,6 +56,7 @@ export const sections: Section[] = [
     hero: "/images/stock/cap-cove-tenders.jpg",
     contributor: "Andrew Roch",
     contributorRole: "Founder and CEO, Yacht Crew Recruitment and Training",
+    contributorLinkedIn: "https://www.linkedin.com/in/andrew-roch-293435189/",
     seoTitle:
       "Yacht broker commissions, retrocessions, and conflicts of interest",
     seoDescription:
