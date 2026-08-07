@@ -212,7 +212,7 @@ export const chapterFaqs: Record<string, FaqItem[]> = {
     {
       question: "Do you pay VAT when buying a superyacht as a non-EU resident?",
       answer:
-        "A non-EU resident using the yacht privately can often avoid paying VAT on the purchase by operating under Temporary Admission relief, which lets a non-EU-owned yacht cruise in EU waters without importing it, provided the eligibility and time-limit conditions are met. If the yacht is imported, or the owner is EU-resident, VAT is generally due unless another relief applies. Quadrant Group's position, in chapter nine, is that the ownership structure, VAT position, and importation strategy have to be decided together from the outset; getting the sequence wrong exposes the owner to liabilities and penalties calculated on the value of the yacht.",
+        "A non-EU resident using the yacht privately can often avoid paying VAT on the purchase by operating under Temporary Admission relief, which lets a non-EU-owned yacht cruise in EU waters without importing it, provided the eligibility and time-limit conditions are met. If the yacht is imported, or the owner is EU-resident, VAT is generally due unless another relief applies. As chapter nine sets out, the ownership structure, VAT position, and importation strategy have to be decided together from the outset; getting the sequence wrong exposes the owner to liabilities and penalties calculated on the value of the yacht.",
     },
     {
       question: "Isle of Man or Malta for yacht ownership?",

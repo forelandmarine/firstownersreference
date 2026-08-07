@@ -1237,7 +1237,7 @@ export const dataSpreads: Record<string, DataSpread> = {
             "Established alternatives; suitability depends on the owner's circumstances",
           ],
         ],
-        sourceLine: "Quadrant Group. Guidance for orientation, not advice.",
+        sourceLine: "The First Owner's Reference, drawing on practitioner guidance. For orientation, not advice.",
       },
     ],
     sources: [
