@@ -8,18 +8,25 @@
       chosen filenames.
    2. Resize each chosen image into public/print-images/print/ at long-edge
       2700 px JPG quality 85, sRGB.
-   3. Spin up `next start` on a free port (assumes the production build has
-      already completed).
-   4. Launch headless Chrome via Puppeteer, navigate to /print, inject the
-      paged.js polyfill, wait for pagination, print to PDF at 230 × 300 mm.
-   5. Save the PDF to ~/Desktop/firstownersreference-1st-edition-proof.pdf.
+   3. Two-pass native Chrome print of /print at the 236 × 306 mm sheet
+      (230 × 300 trim + 3 mm bleed): pass one discovers where chapters
+      land, feeds real contents folios and verso/recto parity spacers
+      back into lib/print-folios.json, later passes verify stability.
+   4. Print each full-bleed page (cover, frontispiece, chapter openers,
+      closing) standalone via /print-opener/[key] and merge them over
+      the flow document's placeholder pages (mid-document full-page
+      boxes fragment against the root master and show a seam).
+   5. Save the proof to ~/Desktop, stamp TrimBox/BleedBox, convert to
+      CMYK, build the padded press block, and print the case artwork
+      from /print-case.
    6. Write the assignment manifest, design notes, and todo list to the
       desktop alongside the PDF.
 
   Run with:
-    node scripts/build-print.mjs
+    node scripts/build-print.mjs        (SKIP_BUILD=1 to reuse .next)
 
-  Requires: pagedjs, puppeteer, sips (macOS built-in).
+  Requires: puppeteer, sips, pdftotext (poppler), gs (ghostscript),
+  python3 + pypdf.
 */
 
 import { execSync, spawn } from "node:child_process";
@@ -275,7 +282,7 @@ async function generatePdf() {
   page.setDefaultNavigationTimeout(180000);
   // Use a print-style viewport so the layout the page renders matches the
   // print one we'll capture.
-  await page.setViewport({ width: 870, height: 1134, deviceScaleFactor: 1 });
+  await page.setViewport({ width: 893, height: 1157, deviceScaleFactor: 1 });
   // Switch the renderer into "print" media so @media print rules apply.
   await page.emulateMediaType("print");
 
@@ -312,11 +319,9 @@ async function generatePdf() {
   // small settle time
   await wait(2000);
 
-  log("  Generating PDF via Chrome native print path...");
+  log("  Generating PDF via Chrome native print (236 x 306 mm sheet)...");
   await page.pdf({
     path: PDF_OUT,
-    width: "230mm",
-    height: "300mm",
     printBackground: true,
     preferCSSPageSize: true,
     displayHeaderFooter: false,
@@ -324,35 +329,291 @@ async function generatePdf() {
   });
   log(`  PDF saved: ${PDF_OUT}`);
 
-  // approximate page count from the file
   const pdfStat = fs.statSync(PDF_OUT);
   log(`  PDF size: ${(pdfStat.size / 1024 / 1024).toFixed(1)} MB`);
 
   await browser.close();
+}
 
-  // Convert RGB to CMYK via Ghostscript. The CMYK file is the press-ready
-  // master; the RGB file is the screen-only reference. If Ghostscript is not
-  // installed the conversion is skipped silently.
-  const CMYK_OUT = PDF_OUT.replace(/\.pdf$/, "-CMYK.pdf");
-  try {
-    const { execSync } = await import("node:child_process");
-    log("  Converting to CMYK via Ghostscript...");
-    execSync(
-      `gs -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress ` +
-      `-dProcessColorModel=/DeviceCMYK -sColorConversionStrategy=CMYK ` +
-      `-dEmbedAllFonts=true -dSubsetFonts=true -dCompatibilityLevel=1.5 ` +
-      `-dNOPAUSE -dQUIET -dBATCH ` +
-      `-sOutputFile="${CMYK_OUT}" "${PDF_OUT}"`,
-      { stdio: "ignore" }
-    );
-    const cmykStat = fs.statSync(CMYK_OUT);
-    log(`  CMYK saved: ${CMYK_OUT}`);
-    log(`  CMYK size: ${(cmykStat.size / 1024 / 1024).toFixed(1)} MB`);
-  } catch (err) {
-    log(`  CMYK conversion skipped: ${err.message ?? "ghostscript not available"}`);
+/* === Two-pass page map ===================================== */
+
+const FOLIOS_FILE = path.join(ROOT, "lib/print-folios.json");
+
+// Parse the printed PDF's text layer for the invisible [[CH..]] and
+// [[REF-..]] markers so the build knows which sheet each chapter and
+// reference section landed on.
+function parsePageMap(pdfPath) {
+  const txt = execSync(`pdftotext "${pdfPath}" -`, {
+    maxBuffer: 1024 * 1024 * 256,
+  }).toString();
+  const pages = txt.split("\f");
+  const map = { chapters: {}, refs: {}, singles: {}, total: pages.length };
+  if (pages[pages.length - 1].trim() === "") map.total -= 1;
+  pages.forEach((t, i) => {
+    const pdfPage = i + 1;
+    for (const m of t.matchAll(/\[\[CH(\d{2})\]\]/g)) {
+      const n = parseInt(m[1], 10);
+      if (!(n in map.chapters)) map.chapters[n] = pdfPage;
+    }
+    for (const m of t.matchAll(/\[\[REF-([A-Z]+)\]\]/g)) {
+      const k = m[1].toLowerCase();
+      if (!(k in map.refs)) map.refs[k] = pdfPage;
+    }
+    for (const m of t.matchAll(/\[\[(FRONTIS|CLOSING)\]\]/g)) {
+      const k = m[1].toLowerCase();
+      if (!(k in map.singles)) map.singles[k] = pdfPage;
+    }
+  });
+  return map;
+}
+
+// The flow document IS the book block (the cover is prepended at merge
+// time), so block page = PDF page. Chapter openers must land on a verso
+// (even block page) so body copy opens on the facing recto; a spacer page
+// is inserted where parity is wrong. Folios listed in the contents are
+// the opener's block page.
+function computeFolios(map, currentSpacers) {
+  const chapterNums = Object.keys(map.chapters)
+    .map(Number)
+    .sort((a, b) => a - b);
+
+  // Strip the effect of spacers already present in this print so the
+  // greedy walk below starts from the raw, spacer-free layout.
+  const rawPage = {};
+  for (const n of chapterNums) {
+    const before = currentSpacers.filter((s) => {
+      const sn = parseInt(s.replace("ch", ""), 10);
+      return sn <= n;
+    }).length;
+    rawPage[n] = map.chapters[n] - before;
+  }
+  const rawRefs = {};
+  for (const [k, v] of Object.entries(map.refs)) {
+    rawRefs[k] = v - currentSpacers.length;
   }
 
-  return -1; // page count unknown without paged.js
+  const spacers = [];
+  const chapters = {};
+  let shift = 0;
+  for (const n of chapterNums) {
+    let block = rawPage[n] + shift;
+    if (block % 2 !== 0) {
+      spacers.push(`ch${String(n).padStart(2, "0")}`);
+      shift += 1;
+      block += 1;
+    }
+    chapters[n] = block;
+  }
+  const refs = {};
+  for (const [k, v] of Object.entries(rawRefs)) refs[k] = v + shift;
+  return { chapters, refs, spacers };
+}
+
+function foliosEqual(a, b) {
+  return JSON.stringify(a) === JSON.stringify(b);
+}
+
+function readFoliosFile() {
+  return JSON.parse(fs.readFileSync(FOLIOS_FILE, "utf8"));
+}
+
+function writeFoliosFile(folios) {
+  fs.writeFileSync(FOLIOS_FILE, JSON.stringify(folios, null, 2) + "\n");
+}
+
+/* === Standalone full-bleed pages =========================== */
+
+// Print each full-bleed page (cover, frontispiece, chapter openers,
+// closing) as its own single-page margin-0 document and merge it over
+// the flow document's placeholder page. Chrome fragments mid-document
+// full-page boxes against the root master; single-page prints don't.
+async function printFullBleedPages(map) {
+  const keys = {};
+  if (map.singles.frontis) keys.frontispiece = map.singles.frontis;
+  if (map.singles.closing) keys.closing = map.singles.closing;
+  for (const [n, pg] of Object.entries(map.chapters)) {
+    keys[`ch${String(n).padStart(2, "0")}`] = pg;
+  }
+
+  const outDir = fs.mkdtempSync(path.join(os.tmpdir(), "tfor-fullbleed-"));
+  const replace = {};
+  let serverProc;
+  try {
+    serverProc = await startServer();
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
+    const page = await browser.newPage();
+    await page.emulateMediaType("print");
+    for (const [key, pdfPage] of Object.entries(keys)) {
+      const out = path.join(outDir, `${key}.pdf`);
+      await page.goto(`http://localhost:3939/print-opener/${key}`, {
+        waitUntil: "networkidle0",
+        timeout: 120000,
+      });
+      await page.evaluate(async () => {
+        await Promise.all(
+          Array.from(document.images).map((img) =>
+            img.complete
+              ? Promise.resolve()
+              : new Promise((r) => {
+                  img.addEventListener("load", r, { once: true });
+                  img.addEventListener("error", r, { once: true });
+                })
+          )
+        );
+      });
+      await page.pdf({
+        path: out,
+        printBackground: true,
+        preferCSSPageSize: true,
+        displayHeaderFooter: false,
+        timeout: 120000,
+      });
+      replace[pdfPage] = out;
+      log(`  full-bleed ${key} -> page ${pdfPage}`);
+    }
+    await browser.close();
+  } finally {
+    if (serverProc) serverProc.kill("SIGTERM");
+  }
+
+  // The cover is printed standalone too, and prepended so the proof PDF
+  // reads cover-first while the block's page parity stays intact.
+  const coverOut = path.join(outDir, "cover.pdf");
+  {
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
+    let serverProc2;
+    try {
+      serverProc2 = await startServer();
+      const page = await browser.newPage();
+      await page.emulateMediaType("print");
+      await page.goto(`http://localhost:3939/print-opener/cover`, {
+        waitUntil: "networkidle0",
+        timeout: 120000,
+      });
+      await page.pdf({
+        path: coverOut,
+        printBackground: true,
+        preferCSSPageSize: true,
+        displayHeaderFooter: false,
+        timeout: 120000,
+      });
+      log("  full-bleed cover -> prepended");
+    } finally {
+      await browser.close();
+      if (serverProc2) serverProc2.kill("SIGTERM");
+    }
+  }
+
+  const specFile = path.join(outDir, "merge.json");
+  fs.writeFileSync(
+    specFile,
+    JSON.stringify({ base: PDF_OUT, out: PDF_OUT, replace, prepend: [coverOut] })
+  );
+  execSync(`python3 "${path.join(ROOT, "scripts/merge-fullbleed.py")}" "${specFile}"`, {
+    stdio: "pipe",
+  });
+  log("  full-bleed pages merged into flow document");
+}
+
+// Flat case artwork for the binder, printed from /print-case.
+async function printCaseArtwork() {
+  const CASE_OUT = path.join(DESKTOP, "firstownersreference-1st-edition-case.pdf");
+  let serverProc;
+  try {
+    serverProc = await startServer();
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
+    const page = await browser.newPage();
+    await page.emulateMediaType("print");
+    await page.goto("http://localhost:3939/print-case", {
+      waitUntil: "networkidle0",
+      timeout: 120000,
+    });
+    await page.pdf({
+      path: CASE_OUT,
+      printBackground: true,
+      preferCSSPageSize: true,
+      displayHeaderFooter: false,
+      timeout: 120000,
+    });
+    await browser.close();
+    log(`  Case artwork saved: ${CASE_OUT}`);
+  } catch (err) {
+    log(`  Case artwork failed: ${err.message}`);
+  } finally {
+    if (serverProc) serverProc.kill("SIGTERM");
+  }
+}
+
+/* === Press post-processing ================================= */
+
+function convertCmyk(src) {
+  const CMYK_OUT = src.replace(/\.pdf$/, "-CMYK.pdf");
+  try {
+    log(`  Converting ${path.basename(src)} to CMYK via Ghostscript...`);
+    execSync(
+      `gs -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress ` +
+        `-dProcessColorModel=/DeviceCMYK -sColorConversionStrategy=CMYK ` +
+        `-dEmbedAllFonts=true -dSubsetFonts=true -dCompatibilityLevel=1.5 ` +
+        `-dNOPAUSE -dQUIET -dBATCH ` +
+        `-sOutputFile="${CMYK_OUT}" "${src}"`,
+      { stdio: "ignore" }
+    );
+    log(`  CMYK saved: ${CMYK_OUT}`);
+  } catch (err) {
+    log(`  CMYK conversion skipped: ${err.message ?? "ghostscript not available"}`);
+    return null;
+  }
+  return CMYK_OUT;
+}
+
+// The press block: cover dropped, tail padded to a signature multiple
+// with paper blanks, boxes stamped. This is the file the printer gets.
+function makePressBlock() {
+  const PRESS_OUT = PDF_OUT.replace(/\.pdf$/, "-press-block.pdf");
+  const folios = readFoliosFile();
+  const spacerChapters = (folios.spacers ?? [])
+    .map((s) => parseInt(s.replace("ch", ""), 10))
+    .sort((a, b) => a - b);
+  if (spacerChapters.length === 0) {
+    log("! No spacer page available as blank template; press block skipped");
+    return null;
+  }
+  // Spacer sits on the block page before its chapter opener; +1 converts
+  // block page to proof page (the proof has the cover prepended).
+  const blankProofPage = folios.chapters[spacerChapters[0]] - 1 + 1;
+  try {
+    const out = execSync(
+      `python3 "${path.join(ROOT, "scripts/make-press-block.py")}" ` +
+        `"${PDF_OUT}" "${PRESS_OUT}" ${blankProofPage}`,
+      { encoding: "utf8" }
+    );
+    log(`  Press block: ${out.trim()} -> ${path.basename(PRESS_OUT)}`);
+  } catch (err) {
+    log(`  Press block failed: ${err.message}`);
+    return null;
+  }
+  return PRESS_OUT;
+}
+
+// Stamp TrimBox/BleedBox (3mm bleed) so the press knows where to cut.
+function stampBoxes(pdfPath) {
+  try {
+    execSync(`python3 "${path.join(ROOT, "scripts/set-press-boxes.py")}" "${pdfPath}"`, {
+      stdio: "pipe",
+    });
+    log(`  TrimBox/BleedBox stamped: ${path.basename(pdfPath)}`);
+  } catch (err) {
+    log(`  Box stamping failed for ${pdfPath}: ${err.message}`);
+  }
 }
 
 function writeArtifacts(manifest, assignments, pageCount) {
@@ -452,14 +713,18 @@ Body text is justified with hyphenation enabled (\`hyphens: auto\`, limit 6 3 3)
 - **Footnotes.** Currently sources are consolidated in the back matter rather than at foot of page. A designer's pass typically moves these to chapter ends or page foot.
 - **Acknowledgements.** Placeholder. To be written after contributors confirm.
 
-## What a press file would still need
-- CMYK conversion via Acrobat / Affinity Publisher / Ghostscript with printer-supplied ICC profile
-- 3 mm bleed on all four edges
-- Crop marks and registration marks
-- Embedded ICC profile matching the printer's preferred profile (e.g. ISO Coated v2 or Fogra39)
-- Image masters at 300 dpi at print size (currently 2700px long edge, sufficient for proof but better to source originals at press time)
+## Press readiness (built into this pipeline)
+- Sheet printed at 236 x 306 mm: 3 mm bleed on all edges; TrimBox/BleedBox stamped
+- Chapter-aware verso running heads, native folios, computed contents folios
+- Verso/recto parity enforced (chapter openers on versos via spacer pages)
+- Press block file: cover dropped, padded to a multiple of 8 pages, CMYK master
+- Flat case artwork for the binder (foil + blind deboss annotated)
+
+## What still needs a human
+- Printer's ICC profile confirmation (current CMYK is generic prepress; re-run with the printer's profile if supplied)
+- Image masters at 300 dpi at print size (currently 2700px long edge)
 - En-dashes for ranges (currently "20 to 24m"); a typographic pass before press
-- Cover separately designed (foil + blind deboss specs to be supplied to the binder)
+- Spine width, board colour, foil colour, endpapers: confirm with binder
 
 ## Repeatable
 The proof regenerates by running:
@@ -529,29 +794,72 @@ async function main() {
   ensureDirs();
 
   const assignments = parseAssignments();
+  let manifest;
   if (!assignments) {
-    log("! Cannot continue without image assignments");
-    process.exit(1);
-  }
-
-  const manifest = processImages(assignments);
-  updatePrintImagesManifest(manifest);
-
-  if (!process.env.SKIP_BUILD) {
-    log("Building Next production bundle...");
-    execSync("pnpm build", { cwd: ROOT, stdio: "inherit" });
+    log("! No assignments file; keeping existing images and lib/print-images.ts as-is");
+    manifest = {
+      cover: { filename: "cover.jpg", source: null },
+      frontispiece: { filename: "frontispiece.jpg", source: null },
+      closing: { filename: "closing.jpg", source: null },
+      chapters: Object.fromEntries(
+        CHAPTER_ORDER.map((slug, i) => [
+          slug,
+          { filename: `ch${String(i + 1).padStart(2, "0")}.jpg`, source: null },
+        ])
+      ),
+      supporting: Object.fromEntries(CHAPTER_ORDER.map((slug) => [slug, []])),
+    };
   } else {
-    log("Skipping production build (SKIP_BUILD set)");
+    manifest = processImages(assignments);
+    updatePrintImagesManifest(manifest);
   }
 
-  let serverProc;
-  try {
-    serverProc = await startServer();
-    const pageCount = await generatePdf();
-    writeArtifacts(manifest, assignments, pageCount);
-  } finally {
-    if (serverProc) serverProc.kill("SIGTERM");
+  // Two-pass (or more) print: the first print discovers where chapters
+  // land, which feeds real contents folios and verso/recto parity spacers
+  // back into lib/print-folios.json; subsequent passes verify stability.
+  let pageCount = -1;
+  for (let pass = 1; pass <= 4; pass++) {
+    if (pass === 1 && process.env.SKIP_BUILD) {
+      log("Skipping production build (SKIP_BUILD set)");
+    } else {
+      log(`Building Next production bundle (pass ${pass})...`);
+      execSync("pnpm build", { cwd: ROOT, stdio: "pipe" });
+    }
+
+    let serverProc;
+    try {
+      serverProc = await startServer();
+      await generatePdf();
+    } finally {
+      if (serverProc) serverProc.kill("SIGTERM");
+    }
+
+    const map = parsePageMap(PDF_OUT);
+    pageCount = map.total;
+    const current = readFoliosFile();
+    const desired = computeFolios(map, current.spacers ?? []);
+    if (foliosEqual(current, desired)) {
+      log(`  Page map stable at pass ${pass}: ${map.total} pages`);
+      break;
+    }
+    if (pass === 4) {
+      log("! Page map did not stabilise after 4 passes; keeping last print");
+      break;
+    }
+    log(
+      `  Pass ${pass}: updating folios; spacers [${desired.spacers.join(", ")}], ` +
+        `${map.total} pages`
+    );
+    writeFoliosFile(desired);
   }
+
+  await printFullBleedPages(parsePageMap(PDF_OUT));
+  stampBoxes(PDF_OUT);
+  convertCmyk(PDF_OUT);
+  const pressBlock = makePressBlock();
+  if (pressBlock) convertCmyk(pressBlock);
+  await printCaseArtwork();
+  writeArtifacts(manifest, assignments, pageCount);
 
   log("=== Done ===");
 }

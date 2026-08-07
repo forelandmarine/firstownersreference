@@ -1,0 +1,62 @@
+/* Standalone full-bleed print: one sheet, no margins, no margin boxes.
+   Loaded after print.css so these @page declarations win. */
+@page {
+  size: 236mm 306mm;
+  margin: 0;
+}
+
+@page :left {
+  margin: 0;
+  @top-left { content: none; }
+  @bottom-left { content: none; }
+}
+
+@page :right {
+  margin: 0;
+  @top-right { content: none; }
+  @bottom-right { content: none; }
+}
+
+.print-standalone {
+  width: 236mm;
+  height: 306mm;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Restore true full-bleed geometry over the flow-mode placeholder rules. */
+.print-standalone .cover-page,
+.print-standalone .frontispiece,
+.print-standalone .chapter-opener,
+.print-standalone .closing-image {
+  width: 236mm;
+  height: 306mm;
+  margin: 0;
+  padding: 0;
+  page: auto;
+  page-break-before: auto;
+  page-break-after: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.print-standalone .cover-page__image,
+.print-standalone .frontispiece__image,
+.print-standalone .chapter-opener__image,
+.print-standalone .closing-image img,
+.print-standalone .cover-page__inner,
+.print-standalone .chapter-opener__inner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Content offsets: the originals measured from trim, plus 3mm bleed. */
+.print-standalone .cover-page__inner {
+  padding: 27mm 25mm;
+}
+
+.print-standalone .chapter-opener__inner {
+  padding: 25mm 21mm;
+}

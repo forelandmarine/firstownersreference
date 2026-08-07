@@ -7,16 +7,50 @@ import { getGuestOpinions } from "@/lib/guest-opinions";
 import { printImages } from "@/lib/print-images";
 import { renderChartForPrint } from "@/components/print/print-chart";
 import { buildPrintIndex } from "@/lib/print-index";
+import printFolios from "@/lib/print-folios.json";
+import {
+  FrontispiecePage,
+  ClosingImagePage,
+  ChapterOpener,
+} from "@/components/print/full-bleed-pages";
+
+const folios = printFolios as {
+  chapters: Record<string, number>;
+  refs: Record<string, number>;
+  spacers: string[];
+};
+
+/* Chrome supports named @page masters with margin boxes but not
+   string-set, so the chapter-aware verso running heads are generated
+   here as per-chapter masters, kept in sync with sections.ts. */
+function chapterMastersCss() {
+  return sections
+    .map((s) => {
+      const nn = String(s.number).padStart(2, "0");
+      const title = s.title.replace(/"/g, '\\"');
+      return `
+@page ch${nn}:left {
+  @top-left {
+    content: "Ch ${nn} \\00b7 ${title}";
+    font-family: "DM Sans", "Helvetica Neue", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7a756d;
+    padding-top: 11mm;
+    background: #f5f2ec;
+  }
+}
+.chapter-scope[data-ch="${nn}"] { page: ch${nn}; }`;
+    })
+    .join("\n");
+}
+
+function tocFolio(v: number | undefined) {
+  return v !== undefined ? String(v) : "·";
+}
 
 export const dynamic = "force-static";
-
-const COVER_PATH = `/print-images/print/${printImages.cover.filename}`;
-const FRONTISPIECE_PATH = `/print-images/print/${printImages.frontispiece.filename}`;
-const CLOSING_PATH = `/print-images/print/${printImages.closing.filename}`;
-
-function chapterImagePath(slug: string) {
-  return `/print-images/print/${printImages.chapters[slug]?.filename ?? "ch01.jpg"}`;
-}
 
 function supportingImagePath(slug: string, i: number) {
   const list = printImages.supporting?.[slug] ?? [];
@@ -37,37 +71,22 @@ export default function PrintEdition() {
 
   return (
     <>
-      {/* === COVER === */}
-      <section className="cover-page">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={COVER_PATH}
-          alt={printImages.cover.alt}
-          className="cover-page__image"
-        />
-        <div className="cover-page__inner">
-          <p className="cover-page__edition">1st Edition · 2026</p>
-          <div className="cover-page__title-block">
-            <h1 className="cover-page__wordmark">
-              The First Owner&rsquo;s Reference
-            </h1>
-            <p className="cover-page__strap">
-              An annual editorial publication for first-time superyacht buyers.
-            </p>
-          </div>
-          <p className="cover-page__publisher">Foreland Marine · London</p>
-        </div>
+      <style dangerouslySetInnerHTML={{ __html: chapterMastersCss() }} />
+
+      {/* The cover is not part of the book block: it is printed standalone
+         and prepended by the build script, so the block starts on the
+         half-title recto and Chrome's left/right page alternation matches
+         the bound book. */}
+
+      {/* === HALF-TITLE === */}
+      <section className="half-title">
+        <p className="half-title__wordmark">
+          The First Owner&rsquo;s Reference
+        </p>
       </section>
 
       {/* === FRONTISPIECE === */}
-      <section className="frontispiece">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={FRONTISPIECE_PATH}
-          alt={printImages.frontispiece.alt}
-          className="frontispiece__image"
-        />
-      </section>
+      <FrontispiecePage />
 
       {/* === TITLE PAGE === */}
       <section className="title-page">
@@ -342,7 +361,13 @@ export default function PrintEdition() {
                   {section.standfirst}
                 </p>
               </div>
-              <span className="contents-list__folio" aria-hidden>·</span>
+              <a
+                className="contents-list__folio"
+                href={`#ch-${section.number}`}
+                aria-hidden
+              >
+                {tocFolio(folios.chapters[String(parseInt(section.number, 10))])}
+              </a>
             </li>
           ))}
         </ol>
@@ -357,7 +382,9 @@ export default function PrintEdition() {
                 set as a continuous reference.
               </p>
             </div>
-            <span className="contents-list__folio">·</span>
+            <a className="contents-list__folio" href="#ref-glossary" aria-hidden>
+              {tocFolio(folios.refs["glossary"])}
+            </a>
           </li>
           <li className="contents-list__item">
             <span className="contents-list__num">B</span>
@@ -371,7 +398,9 @@ export default function PrintEdition() {
                 edition.
               </p>
             </div>
-            <span className="contents-list__folio">·</span>
+            <a className="contents-list__folio" href="#ref-index" aria-hidden>
+              {tocFolio(folios.refs["index"])}
+            </a>
           </li>
           <li className="contents-list__item">
             <span className="contents-list__num">C</span>
@@ -382,7 +411,9 @@ export default function PrintEdition() {
                 practitioners, and court citations.
               </p>
             </div>
-            <span className="contents-list__folio">·</span>
+            <a className="contents-list__folio" href="#ref-sources" aria-hidden>
+              {tocFolio(folios.refs["sources"])}
+            </a>
           </li>
           <li className="contents-list__item">
             <span className="contents-list__num">D</span>
@@ -393,7 +424,9 @@ export default function PrintEdition() {
                 publisher&rsquo;s own answers to the independence test.
               </p>
             </div>
-            <span className="contents-list__folio">·</span>
+            <a className="contents-list__folio" href="#ref-colophon" aria-hidden>
+              {tocFolio(folios.refs["colophon"])}
+            </a>
           </li>
         </ol>
       </section>
@@ -452,6 +485,9 @@ export default function PrintEdition() {
       {allEssays.map(({ section, essay, caseStudy, dataSpread, guestOpinions }, i) => (
         <ChapterBlock
           key={section.slug}
+          spacerBefore={folios.spacers.includes(
+            `ch${String(section.number).padStart(2, "0")}`
+          )}
           section={section}
           essay={essay}
           caseStudy={caseStudy}
@@ -462,7 +498,8 @@ export default function PrintEdition() {
       ))}
 
       {/* === GLOSSARY === */}
-      <section className="glossary-section">
+      <section className="glossary-section" id="ref-glossary">
+        <span className="pdf-marker">[[REF-GLOSSARY]]</span>
         <p className="glossary-section__label">A — Reference</p>
         <h2 className="glossary-section__title">Glossary</h2>
         <p className="glossary-section__strap">
@@ -484,7 +521,8 @@ export default function PrintEdition() {
       </section>
 
       {/* === INDEX === */}
-      <section className="index-section glossary-section">
+      <section className="index-section glossary-section" id="ref-index">
+        <span className="pdf-marker">[[REF-INDEX]]</span>
         <p className="glossary-section__label">B — Reference</p>
         <h2 className="glossary-section__title">
           Index <em style={{ fontWeight: 300, fontSize: "0.6em" }}>(working)</em>
@@ -511,7 +549,8 @@ export default function PrintEdition() {
       </section>
 
       {/* === SOURCES === */}
-      <section className="sources-section">
+      <section className="sources-section" id="ref-sources">
+        <span className="pdf-marker">[[REF-SOURCES]]</span>
         <p className="glossary-section__label">C — Reference</p>
         <h2 className="glossary-section__title">Sources</h2>
         <p className="glossary-section__strap">
@@ -550,7 +589,8 @@ export default function PrintEdition() {
       </section>
 
       {/* === COLOPHON === */}
-      <section className="colophon-section">
+      <section className="colophon-section" id="ref-colophon">
+        <span className="pdf-marker">[[REF-COLOPHON]]</span>
         <p className="glossary-section__label">D — Reference</p>
         <h2 className="glossary-section__title" style={{ marginBottom: "10mm" }}>
           Colophon
@@ -705,10 +745,7 @@ export default function PrintEdition() {
       </section>
 
       {/* === CLOSING IMAGE === */}
-      <section className="closing-image">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={CLOSING_PATH} alt={printImages.closing.alt} />
-      </section>
+      <ClosingImagePage />
     </>
   );
 }
@@ -721,6 +758,7 @@ function ChapterBlock({
   dataSpread,
   guestOpinions,
   nextSection,
+  spacerBefore,
 }: {
   section: (typeof sections)[number];
   essay: ReturnType<typeof getLeadEssay>;
@@ -728,6 +766,7 @@ function ChapterBlock({
   dataSpread: ReturnType<typeof getDataSpread>;
   guestOpinions: ReturnType<typeof getGuestOpinions>;
   nextSection: (typeof sections)[number] | null;
+  spacerBefore?: boolean;
 }) {
   const chapterRunning = `Ch ${section.number} · ${section.title}`;
 
@@ -761,49 +800,18 @@ function ChapterBlock({
       typeof p === "object" && p !== null && p.type === "blockquote"
   );
 
+  const chNum = String(section.number).padStart(2, "0");
+
   return (
     <>
+      {spacerBefore && <div className="print-spacer" aria-hidden />}
       {/* === Image-led chapter opener === */}
-      <section className="chapter-opener">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={chapterImagePath(section.slug)}
-          alt={printImages.chapters[section.slug]?.alt ?? `Chapter ${section.number}`}
-          className="chapter-opener__image"
-        />
-        <div className="chapter-opener__inner">
-          <div className="chapter-opener__num-row">
-            <p className="chapter-opener__num-label">Chapter {section.number}</p>
-            <h1 className="chapter-opener__num">{section.number}</h1>
-          </div>
-          <div className="chapter-opener__title-block">
-            <h2 className="chapter-opener__title">{section.title}</h2>
-            <p className="chapter-opener__standfirst">{section.standfirst}</p>
-            <div className="chapter-opener__meta">
-              <div className="chapter-opener__meta-item">
-                <p className="chapter-opener__meta-label">Reading time</p>
-                <p className="chapter-opener__meta-value">
-                  {essay?.readingTime ?? "—"}
-                </p>
-              </div>
-              {section.contributor !== "To be confirmed" && (
-                <div className="chapter-opener__meta-item">
-                  <p className="chapter-opener__meta-label">Contributor</p>
-                  <p className="chapter-opener__meta-value">
-                    {section.contributor}
-                  </p>
-                </div>
-              )}
-              <div className="chapter-opener__meta-item">
-                <p className="chapter-opener__meta-label">Coordinates</p>
-                <p className="chapter-opener__meta-value">
-                  {section.coordinates}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ChapterOpener section={section} readingTime={essay?.readingTime} />
+
+      {/* Post-opener chapter sections share the chNN page master so versos
+         carry the chapter-aware running head. The opener stays outside the
+         scope: wrapping it breaks Chrome's forced-break + full-bleed page. */}
+      <div className="chapter-scope" data-ch={chNum}>
 
       {/* === Lead essay: intro paragraph (drop cap, full-width) followed by two-column body in a single column context === */}
       {essay && (
@@ -1146,6 +1154,7 @@ function ChapterBlock({
           </div>
         </aside>
       )}
+      </div>
     </>
   );
 }

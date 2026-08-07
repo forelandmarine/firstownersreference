@@ -27,23 +27,23 @@
    is consistent across multi-page sections. The body bg is also set so
    any client that fails to fill @page margin area still shows paper. */
 @page {
-  size: 230mm 300mm;
-  margin: 26mm 24mm 26mm 24mm;
+  size: 236mm 306mm;
+  margin: 29mm 27mm 29mm 27mm;
   background: #f5f2ec;
 }
 
 @page :left {
-  margin-left: 24mm;
-  margin-right: 26mm;
+  margin-left: 27mm;
+  margin-right: 29mm;
   background: #f5f2ec;
   @top-left {
-    content: "1st Edition";
+    content: "";
     font-family: "DM Sans", "Helvetica Neue", sans-serif;
     font-size: 7pt;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #7a756d;
-    padding-top: 8mm;
+    padding-top: 11mm;
     background: #f5f2ec;
   }
   @top-right {
@@ -57,7 +57,7 @@
     font-family: "Newsreader", Georgia, serif;
     font-size: 9.5pt;
     color: #7a756d;
-    padding-bottom: 8mm;
+    padding-bottom: 11mm;
     font-variant-numeric: oldstyle-nums tabular-nums;
     background: #f5f2ec;
   }
@@ -70,17 +70,17 @@
 }
 
 @page :right {
-  margin-left: 26mm;
-  margin-right: 24mm;
+  margin-left: 29mm;
+  margin-right: 27mm;
   background: #f5f2ec;
   @top-right {
-    content: "The First Owner\2019s Reference";
+    content: "The First Owner\2019s Reference \00b7 1st Edition";
     font-family: "Newsreader", Georgia, serif;
     font-size: 8pt;
     font-style: italic;
     letter-spacing: 0.04em;
     color: #7a756d;
-    padding-top: 8mm;
+    padding-top: 11mm;
     background: #f5f2ec;
   }
   @top-left {
@@ -94,7 +94,7 @@
     font-family: "Newsreader", Georgia, serif;
     font-size: 9.5pt;
     color: #7a756d;
-    padding-bottom: 8mm;
+    padding-bottom: 11mm;
     font-variant-numeric: oldstyle-nums tabular-nums;
     background: #f5f2ec;
   }
@@ -107,7 +107,7 @@
 }
 
 @page no-folio {
-  margin: 26mm 24mm 26mm 26mm;
+  margin: 29mm 27mm 29mm 29mm;
   background: #f5f2ec;
   @top-left { content: ""; background: #f5f2ec; }
   @top-right { content: ""; background: #f5f2ec; }
@@ -146,21 +146,21 @@ body {
   margin: 0;
   padding: 0;
   background: #f5f2ec;
-  min-height: 100vh;
 }
 
 .print-edition {
   background: #f5f2ec;
-  min-height: 100vh;
 }
 
 /* Section padding is handled per-class below; @page margins handle the
    page edge margin so multi-page sections get consistent margins on
    continuation pages. */
 
-/* Running heads and folios are not rendered in the proof. Press edition
-   sets these in InDesign so chapter-aware running heads and computed
-   folios work correctly; Chrome's headless print does not. */
+/* Running heads and folios render natively: Chrome supports @page
+   margin boxes and counter(page). Chapter-aware verso heads come from
+   per-chapter named masters generated in page.tsx (Chrome has no
+   string-set). Contents folios and recto/verso parity are resolved by
+   the two-pass build via lib/print-folios.json. */
 
 .print-edition {
   font-family: "Newsreader", Georgia, "Times New Roman", serif;
@@ -768,12 +768,13 @@ body {
 }
 
 .contents-list__folio {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "Newsreader", Georgia, serif;
   font-size: 10pt;
-  font-variant-numeric: tabular-nums;
+  font-variant-numeric: oldstyle-nums tabular-nums;
   color: var(--colour-stone);
   text-align: right;
   padding-top: 2pt;
+  text-decoration: none;
 }
 
 /* === Contributors === */
@@ -2284,3 +2285,87 @@ body {
 .no-folio { page: no-folio; }
 .right-page { page-break-before: right; break-before: right; }
 .left-page { page-break-before: left; break-before: left; }
+
+/* ===========================================================
+   PRESS MASTERS — folio suppression per the designer brief and
+   the reference-section running head. Chapter masters (ch01..ch09)
+   are generated in page.tsx from sections.ts so titles stay in sync.
+   =========================================================== */
+.editors-letter,
+.contents-page,
+.contributors-page,
+.colophon-section {
+  page: no-folio;
+}
+
+.glossary-section,
+.index-section,
+.sources-section {
+  page: backref;
+}
+
+@page backref:left {
+  @top-left {
+    content: "Reference";
+    font-family: "DM Sans", "Helvetica Neue", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7a756d;
+    padding-top: 11mm;
+    background: #f5f2ec;
+  }
+}
+
+/* Parity spacer: a deliberately blank page inserted by the two-pass
+   build so chapter openers land on a verso and body copy opens recto. */
+.print-spacer {
+  page: no-folio;
+  break-before: page;
+  break-after: page;
+  height: 40mm;
+}
+
+/* Invisible text markers for the two-pass page-map parser. The marker is
+   absolutely positioned, so every section carrying one must be a
+   containing block. */
+.glossary-section,
+.index-section,
+.sources-section,
+.colophon-section {
+  position: relative;
+}
+
+.pdf-marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2pt;
+  color: transparent;
+  z-index: 0;
+}
+
+/* Flow-mode placeholders. The real full-bleed pages are printed as
+   standalone single-page documents (/print-opener/[key]) and merged
+   over these placeholder pages by the build script; a mid-document
+   full-page flow box would fragment against the root master and show
+   a seam, so the placeholder deliberately stays below the 248mm
+   fragmentainer height. */
+.cover-page,
+.frontispiece,
+.chapter-opener,
+.closing-image {
+  height: 240mm;
+  overflow: hidden;
+}
+
+.cover-page__image,
+.frontispiece__image,
+.chapter-opener__image,
+.closing-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

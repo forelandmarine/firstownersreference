@@ -1,0 +1,201 @@
+/* Flat case artwork. Printed by the build script at the flat size. */
+@page {
+  size: 521mm 338mm;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.case-flat {
+  width: var(--flat-w);
+  height: var(--flat-h);
+  position: relative;
+  background: #d9d4c8; /* turn-in ground, placeholder only */
+  font-family: "DM Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+.case-flat__turnin-note {
+  position: absolute;
+  top: 3mm;
+  left: var(--turn-in);
+  right: var(--turn-in);
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 6.5pt;
+  letter-spacing: 0.04em;
+  color: #4a4a4a;
+}
+
+.case-flat__boards {
+  position: absolute;
+  top: var(--turn-in);
+  left: var(--turn-in);
+  height: var(--board-h);
+  display: flex;
+  align-items: stretch;
+}
+
+.case-board {
+  width: var(--board-w);
+  background: #0f3b5c; /* Colorplan placeholder, colour TBC */
+  position: relative;
+}
+
+.case-board--back {
+  margin-right: var(--joint);
+}
+
+.case-board--front {
+  margin-left: var(--joint);
+}
+
+.case-spine {
+  width: var(--spine-w);
+  background: #0d3452;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14mm 0;
+}
+
+/* Foil and blind elements. Foil renders paper-colour with a hairline
+   keyline so the binder reads it as tooling artwork, not print. */
+.case-foil {
+  color: #f5f2ec;
+}
+
+.case-spine__wordmark {
+  writing-mode: vertical-rl;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 20pt;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.case-spine__edition {
+  writing-mode: vertical-rl;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.case-front__edition {
+  position: absolute;
+  top: 20mm;
+  left: 20mm;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 9pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.case-front__title-block {
+  position: absolute;
+  left: 20mm;
+  right: 20mm;
+  bottom: 96mm;
+}
+
+.case-front__wordmark {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-size: 96pt;
+  line-height: 0.92;
+  letter-spacing: -0.022em;
+  margin: 0 0 10mm 0;
+  max-width: 180mm;
+}
+
+.case-front__strap {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16pt;
+  line-height: 1.4;
+  max-width: 140mm;
+  margin: 0;
+  border-top: 0.5pt solid rgba(245, 242, 236, 0.55);
+  padding-top: 6mm;
+}
+
+.case-front__lighthouse {
+  position: absolute;
+  left: 20mm;
+  bottom: 40mm;
+  width: 18mm;
+  opacity: 0.85;
+}
+
+.case-front__lighthouse img {
+  width: 100%;
+  height: auto;
+}
+
+.case-front__publisher {
+  position: absolute;
+  left: 20mm;
+  bottom: 20mm;
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 8.5pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.case-annotation {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 5.5pt;
+  letter-spacing: 0.18em;
+  color: #f5f2ec;
+  opacity: 0.7;
+  margin: 2mm 0 0 0;
+}
+
+.case-legend {
+  position: absolute;
+  left: 20mm;
+  bottom: 20mm;
+  right: 20mm;
+  color: #f5f2ec;
+  font-size: 7.5pt;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.case-legend__title {
+  font-family: "DM Mono", "SF Mono", monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 2mm 0;
+}
+
+.case-legend p {
+  margin: 0 0 1mm 0;
+}
+
+.case-legend__key {
+  display: inline-block;
+  width: 8mm;
+  height: 3mm;
+  vertical-align: middle;
+  margin-right: 2mm;
+}
+
+.case-legend__key--foil {
+  background: #f5f2ec;
+}
+
+.case-legend__key--blind {
+  background: transparent;
+  border: 0.5pt solid #f5f2ec;
+}
