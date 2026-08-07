@@ -143,7 +143,7 @@ export default function PressPage() {
                   download
                   className="meta-marine"
                 >
-                  Download SVG &darr;
+                  Download SVG
                 </a>
               </div>
               <div className="border border-rule p-8 bg-charcoal flex flex-col items-center justify-center gap-4 min-h-[200px]">
@@ -159,7 +159,7 @@ export default function PressPage() {
                   download
                   className="meta-marine text-paper"
                 >
-                  Download SVG &darr;
+                  Download SVG
                 </a>
               </div>
             </div>

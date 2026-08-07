@@ -186,7 +186,6 @@ export default function HomePage() {
       <section className="bg-charcoal text-paper py-24 lg:py-32">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="meta text-paper/60 mb-6">Tool</p>
             <h2 className="font-serif text-headline leading-tight tracking-tight mb-6">
               Run your own numbers.
             </h2>
@@ -223,7 +222,6 @@ export default function HomePage() {
       <section className="bg-paper py-24 lg:py-32">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <p className="meta mb-6">Print edition</p>
             <h2 className="font-serif text-headline leading-tight tracking-tight mb-6">
               Five hundred copies. Hand numbered.
             </h2>

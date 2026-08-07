@@ -167,7 +167,7 @@ export default function ContributorsPage() {
                         rel="noopener noreferrer"
                         className="link-marine caption"
                       >
-                        LinkedIn &rarr;
+                        LinkedIn
                       </a>
                     )}
                   </div>

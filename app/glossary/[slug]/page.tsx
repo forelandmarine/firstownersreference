@@ -185,9 +185,9 @@ export default async function GlossaryEntryPage(props: {
           <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
             <Link
               href="/glossary"
-              className="meta-marine inline-flex items-center gap-2"
+              className="meta-marine inline-flex items-center"
             >
-              <span aria-hidden>&larr;</span> All terms
+              All terms
             </Link>
           </div>
         </nav>

@@ -706,9 +706,6 @@ export default function RunningCostCalculatorPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/55 to-charcoal/80" />
         </div>
         <div className="relative z-10 max-w-[80rem] mx-auto px-6 lg:px-12 py-24 lg:py-32 text-paper">
-          <p className="meta text-paper/80 mb-6">
-            A tool from The First Owner&rsquo;s Reference
-          </p>
           <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.1] tracking-tight max-w-3xl mb-8">
             What does it actually cost
             <br />

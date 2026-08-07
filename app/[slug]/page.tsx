@@ -164,7 +164,7 @@ export default async function SectionPage(props: {
                   href="#essay"
                   className="inline-flex items-center gap-2 meta-marine"
                 >
-                  Begin the chapter <span aria-hidden>&darr;</span>
+                  Begin the chapter
                 </a>
                 <ShareChapter title={section.title} slug={section.slug} />
               </div>
@@ -783,7 +783,7 @@ export default async function SectionPage(props: {
               {prev ? (
                 <Link href={`/${prev.slug}`} className="group flex flex-col">
                   <span className="meta mb-2">
-                    &larr; Previous, Chapter {prev.number}
+                    Previous, Chapter {prev.number}
                   </span>
                   <span className="font-serif text-xl group-hover:text-marine transition-colors max-w-sm">
                     {prev.title}

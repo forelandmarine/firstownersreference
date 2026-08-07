@@ -46,7 +46,7 @@ export default async function ChecklistPrintPage(props: {
       <div className="screen-only">
         <div className="screen-toolbar">
           <Link href={`/${section.slug}`} className="meta link">
-            &larr; Back to chapter {section.number}
+            Back to chapter {section.number}
           </Link>
           <PrintButton className="meta link-marine">
             Print this checklist

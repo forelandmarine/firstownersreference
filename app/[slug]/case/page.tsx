@@ -102,7 +102,7 @@ export default async function CaseStudyPage(props: {
                 className="group flex flex-col"
               >
                 <span className="meta mb-2">
-                  &larr; Back to chapter {section.number}
+                  Back to chapter {section.number}
                 </span>
                 <span className="font-serif text-xl group-hover:text-marine transition-colors">
                   {section.title}
