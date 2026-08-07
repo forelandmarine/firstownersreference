@@ -837,6 +837,13 @@ export const leadEssays: Record<string, LeadEssay> = {
         text: "The structure should be built around the owner's objectives, rather than the other way around.",
         attribution: "Simon Roberts, Quadrant Group",
       },
+      "A yacht is rarely the principal's only significant asset, and its ownership structure should not be designed as though it were. The vehicle that holds the yacht sits alongside the family's operating companies, property, trusts, and succession arrangements, and the sound version of the decision reads across all of them at once. Residency and tax position are shared inputs; a jurisdiction that suits the yacht in isolation can work against the structure the family already runs elsewhere, or complicate the estate the next generation inherits. It is the point the family-office material makes from the other side: the yacht belongs inside the portfolio frame, not beside it.",
+      "So the yacht's asset management is properly a joined-up affair, planned with the principal's wider wealth rather than bolted on next to it. The jurisdiction question is then answered last rather than first, falling out of those wider circumstances rather than leading them, which is why there is no single right answer to carry from one owner to the next.",
+      {
+        type: "blockquote",
+        text: "For first-time owners, the key is not to ask, “Which jurisdiction is best?” but rather, “Which jurisdiction is best for my circumstances?”",
+        attribution: "Simon Roberts, Quadrant Group",
+      },
       { type: "h2", text: "The closing argument" },
       "The First Owner's Reference exists because trade press is structurally less able to publish what is set out across these chapters. None of this is a moral failing of the people who work in trade press; it is a fact about how the industry funds itself. The publisher of this reference is funded by independent consultancy work rather than advertising, and that single difference is more or less the entire publication. The publisher's own answers to the independence test are on the colophon.",
       "For a reader considering a first acquisition, whether as a newly liquidated principal or as an heir for whom the family yacht has become a new responsibility, the next three months are the most consequential of ownership. The decisions made in that window, about the team built, set the trajectory of the next ten years.",
