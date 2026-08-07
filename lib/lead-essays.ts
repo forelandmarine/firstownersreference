@@ -760,12 +760,12 @@ export const leadEssays: Record<string, LeadEssay> = {
     slug: "09-decision-framework",
     title: "The decision framework",
     standfirst:
-      "Building the team that protects you, in the order that matters. The independence test, applied transparently to every adviser including us.",
-    readingTime: "7 min read",
+      "The ownership structure that comes first. The team that protects you, in the order that matters. The independence test, applied transparently to every adviser including us.",
+    readingTime: "9 min read",
     paragraphs: [
       "The UBS Global Family Office Report 2025 is the most comprehensive survey of how the world's largest private wealth holders allocate capital. Across 80 pages and 317 family offices (average AUM USD 1.1 billion, average family net worth USD 2.7 billion), yachts do not appear. Not in any year, not in any region, not in any sub-allocation. The asset that sits in the harbour outside the principal's office is not in the books the family office prepares for the principal.",
       "Which is not, as one might first read it, an oversight. It is the structural reality of how superyachts are bought, and the reason the discipline of doing so well is harder to learn than the family office's other allocations.",
-      "This chapter is the closing argument: how to build the team that protects you, in what order, how to test any adviser you are considering (including us), and why the moment you are reading this is the moment that matters.",
+      "This chapter is the closing argument: the ownership structure to settle first, how to build the team that protects you and in what order, how to test any adviser you are considering (including us), and why the moment you are reading this is the moment that matters.",
       { type: "h2", text: "The largest wealth transfer in history" },
       "Capgemini's World Wealth Report 2025 (29th edition) finds USD 83.5 trillion of wealth will be inherited by Gen X, millennials, and Gen Z by 2048. 81 percent of next-generation HNWIs intend to switch from their parents' wealth management firm within one to two years of inheritance.",
       "The reader of The First Owner's Reference is therefore typically one of two profiles: a newly liquidated principal sitting on USD 20 to 500 million considering a first yacht acquisition, or an heir whose first action upon inheritance is to evaluate the advisers their parents used. Both share an essential characteristic: they are entering an asset class they have no prior experience of, at a moment when the advisers around them are conflicted by their position.",
@@ -777,7 +777,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       },
       "Family offices are now working to integrate yachts into the portfolio frame, although the tooling is still being built. The structural matter is not really one of technology. It is that the industry selling these assets has limited incentive to make their financial behaviour transparent to a family office applying full fiduciary scrutiny, and tooling can only do so much against that.",
       { type: "h2", text: "The structure comes first" },
-      "Before testing any adviser, the reader has to understand what is being built. The ownership structure is the frame the yacht will sit inside: personal ownership, a company, or something more layered, together with the jurisdiction it occupies and the VAT position that rides on it. It is among the first decisions an owner makes, among the hardest to unwind, and the one most often left too late. We put it to Simon Roberts of Quadrant Group, which has built these structures from the Isle of Man for forty years; his answers, on jurisdiction, VAT, private against commercial use, the annual cost, and the decision hardest to reverse, follow this essay.",
+      "Before testing any adviser, the reader has to understand what is being built. The ownership structure is the frame the yacht will sit inside: personal ownership, a company, or something more layered, together with the jurisdiction it occupies and the VAT position that rides on it. It is among the first decisions an owner makes, among the hardest to unwind, and the one most often left too late; settling it early, and around the owner rather than the transaction's timetable, is among the first things an independent adviser is engaged to ensure. We put it to Simon Roberts of Quadrant Group, which has built these structures from the Isle of Man for forty years; his answers, on jurisdiction, VAT, private against commercial use, the annual cost, and the decision hardest to reverse, are in the interview that closes this chapter.",
       {
         type: "blockquote",
         text: "The structure should be built around the owner's objectives, rather than the other way around.",
@@ -845,13 +845,13 @@ export const leadEssays: Record<string, LeadEssay> = {
         href: "/09a-questions-to-ask-before-you-buy",
         linkText: "Open the one-page version",
       },
+    ],
+    closingNote: [
       { type: "h2", text: "The closing argument" },
       "The First Owner's Reference exists because trade press is structurally less able to publish what is set out across these chapters. None of this is a moral failing of the people who work in trade press; it is a fact about how the industry funds itself. The publisher of this reference is funded by independent consultancy work rather than advertising, and that single difference is more or less the entire publication. The publisher's own answers to the independence test are on the colophon.",
       "For a reader considering a first acquisition, whether as a newly liquidated principal or as an heir for whom the family yacht has become a new responsibility, the next three months are the most consequential of ownership. The decisions made in that window, about the team built, set the trajectory of the next ten years.",
       "The single most important is to engage an adviser whose interests are aligned with the buyer's, before engaging anyone aligned with someone else's. That is the argument. The rest is detail.",
       "There are several such advisers. The publisher of The First Owner's Reference is one of them. The independence test, applied to all of them, is how the right one is chosen.",
-    ],
-    closingNote: [
       { type: "h2", text: "From the editors" },
       "Thank you, dear reader, for arriving at the end of this field guide. We do hope it has been useful. The First Owner’s Reference is written for the reader, not for the trade, therefore yours is the only audience whose response shapes the next edition. If a chapter has been useful, tell us. If a chapter has been wrong, tell us with more force. If a question you had has not been answered, that is the most useful note of all and should arrive in the same email. Disagreement is welcomed; agreement is welcomed; correction is most welcomed of all. Editorial correspondence reaches us at editors@firstownersreference.com and is read by the team personally.",
       "Yours,",

@@ -151,16 +151,16 @@ export const sections: Section[] = [
     slug: "09-decision-framework",
     title: "The decision framework",
     standfirst:
-      "Building your team. The ten questions to ask before signing anything. The independence test, applied transparently.",
+      "The ownership structure to settle first. Building your team, and the ten questions to ask before signing anything. The independence test, applied transparently.",
     coordinates: "51.5114°N 0.1126°W",
     hero: "/images/stock/brass-compass.jpg",
     contributor: "Simon Roberts",
     contributorRole: "Corporate services provider, Quadrant Group",
     contributorLinkedIn: "https://www.linkedin.com/in/simon-roberts-quadrant/",
     seoTitle:
-      "Questions to ask before buying a yacht: the independence test",
+      "Yacht ownership structure, VAT, and the questions to ask before buying",
     seoDescription:
-      "The ten questions to put to anyone proposing to advise on a superyacht acquisition, including the publisher of The First Owner's Reference. The independence test for owner's representatives, lawyers, surveyors, and management companies.",
+      "How to settle the ownership structure, jurisdiction, and VAT position before contracts are exchanged, and the ten questions and independence test to put to anyone proposing to advise on a superyacht acquisition, including the publisher of The First Owner's Reference.",
     datePublished: "2026-05-01",
   },
 ];

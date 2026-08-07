@@ -1139,7 +1139,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "09-decision-framework",
     title: "From considering ownership to signing a contract",
     standfirst:
-      "Building the team in the order that matters. The independence test, applied transparently. The ten questions before signing anything. The scale of the team-building decision.",
+      "The reader profile on the published record. The independence test in six elements. The team, in the order that matters, and what it costs. And the broad ownership models the early conversations resolve into.",
     blocks: [
       { type: "h2", text: "The reader profile, on the published record" },
       {
