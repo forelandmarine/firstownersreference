@@ -72,7 +72,7 @@ export const sections: Section[] = [
     coordinates: "35.8989°N 14.5146°E",
     hero: "/images/stock/bridge-radar.jpg",
     contributor: "Capt. Pavlos Filippakis",
-    contributorRole: "Master Mariner (Class 1), Ice Class Captain",
+    contributorRole: "Master Mariner (Class 1 Unlimited), Ice Class Captain",
     seoTitle: "How to buy a superyacht: the 12 to 24 week acquisition process",
     seoDescription:
       "The yacht acquisition process from shortlist to closing: pre-purchase survey, sea trial, MOA, VAT and flag-state choice, and the disciplines that defeat the most common pitfalls.",
