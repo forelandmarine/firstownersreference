@@ -14,5 +14,5 @@ Any new contributor added after that date needs their own approval first.
 
 Convention:
 - Filename: kebab-case of the name, e.g. `erica-lay.jpg`, `simon-roberts.jpg`.
-- Square crop, at least 400x400 px, centred on the face.
+- Use the photo exactly as supplied. Do not crop, retouch, or otherwise edit.
 - Then in `lib/contributors.ts`: `avatar: "/images/contributors/erica-lay.jpg"`.
