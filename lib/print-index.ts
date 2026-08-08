@@ -191,6 +191,31 @@ function essayContains(slug: string, term: string): boolean {
   return false;
 }
 
+/* Folio locators come from the two-pass page map; falls back to chapter
+   numbers when the map has not been built yet. */
+import printFolios from "@/lib/print-folios.json";
+
+function chapterLocator(sectionNumber: string): string {
+  const folios = (printFolios as { chapters: Record<string, number> })
+    .chapters;
+  const folio = folios?.[String(parseInt(sectionNumber, 10))];
+  return folio !== undefined ? String(folio) : `Ch ${sectionNumber}`;
+}
+
+/* Alphabetise ignoring leading articles so forty entries do not pile up
+   under "The". */
+function sortKey(term: string): string {
+  return term.replace(/^(the|a|an)\s+/i, "").toLowerCase();
+}
+
+/* Sentence-length section headings make unusable index entries. */
+function isIndexableHeading(text: string): boolean {
+  if (text.length > 42) return false;
+  if (/[.!?]$/.test(text.trim())) return false;
+  if (/\b(because|should|cannot|does not)\b/i.test(text)) return false;
+  return true;
+}
+
 export function buildPrintIndex(
   sections: Section[],
   glossaryEntries: GlossaryEntry[]
@@ -207,7 +232,7 @@ export function buildPrintIndex(
   for (const g of glossaryEntries) {
     for (const slug of g.relatedChapters ?? []) {
       const section = sections.find((s) => s.slug === slug);
-      if (section) add(g.term, `Ch ${section.number}`);
+      if (section) add(g.term, chapterLocator(section.number));
     }
   }
 
@@ -215,30 +240,37 @@ export function buildPrintIndex(
   for (const term of NAMED_ENTITIES) {
     for (const section of sections) {
       if (essayContains(section.slug, term)) {
-        add(term, `Ch ${section.number}`);
+        add(term, chapterLocator(section.number));
       }
     }
   }
 
-  // h2 headings from each chapter's lead essay become index entries.
+  // Concise h2 headings from each chapter's lead essay become entries;
+  // sentence-shaped headings are excluded.
   for (const section of sections) {
     const essay = getLeadEssay(section.slug);
     if (!essay) continue;
     for (const para of essay.paragraphs) {
-      if (typeof para === "object" && para.type === "h2") {
-        add(para.text, `Ch ${section.number}`);
+      if (
+        typeof para === "object" &&
+        para.type === "h2" &&
+        isIndexableHeading(para.text)
+      ) {
+        add(para.text, chapterLocator(section.number));
       }
     }
   }
 
   const sorted = Array.from(map.entries()).sort((a, b) =>
-    a[0].localeCompare(b[0], "en", { sensitivity: "base" })
+    sortKey(a[0]).localeCompare(sortKey(b[0]), "en", { sensitivity: "base" })
   );
 
   const groups = new Map<string, IndexEntry[]>();
   for (const [term, refSet] of sorted) {
-    const refs = Array.from(refSet).sort();
-    const first = term[0]?.toUpperCase() ?? "#";
+    const refs = Array.from(refSet).sort(
+      (a, b) => (parseInt(a, 10) || 0) - (parseInt(b, 10) || 0)
+    );
+    const first = sortKey(term)[0]?.toUpperCase() ?? "#";
     const letter = /[A-Z]/.test(first) ? first : "Other";
     if (!groups.has(letter)) groups.set(letter, []);
     groups.get(letter)!.push({ term, refs });

@@ -77,7 +77,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         type: "table",
         caption:
-          "Indicative depreciation curve for a typical hull, drawn from broker-aggregated data. Quality builders (Feadship, Lurssen, Royal Huisman, Vitters, Baltic) hold value much better after year five.",
+          "Indicative depreciation curve for a typical hull, drawn from broker-aggregated data. Quality builders (Feadship, Lürssen, Royal Huisman, Vitters, Baltic) hold value much better after year five.",
         head: ["Year", "Cumulative loss from purchase", "Marginal annual loss"],
         rows: [
           ["1", "10 to 20 percent", "10 to 20 percent"],
@@ -215,7 +215,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         type: "kv",
         caption: "Slot availability is the practical constraint for first-time buyers entering in 2026.",
         rows: [
-          { label: "Lurssen", value: "Booked through mid-2027 at minimum" },
+          { label: "Lürssen", value: "Booked through mid-2027 at minimum" },
           { label: "Feadship", value: "2028 to 2029, Project Solent confirmed for 2027" },
           { label: "Oceanco", value: "Delivered 111 m DreAMBoat in 18 months, Nov 2025 (counter-example of speed)" },
           { label: "Heesen", value: "Speculative-build model since 2023, full backlog through 2025 and beyond" },
@@ -341,7 +341,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         head: ["Function", "How the office handles it", "What it means for a first purchase"],
         rows: [
           ["Typical office size", "Median 5 staff in Switzerland; 61 percent run 1 to 5", "A small expert team, not a department with a yacht specialist"],
-          ["Investment management", "Offered in-house by more than 60 percent", "The office runs the family's money itself"],
+          ["Investment management", "Offered in-house by more than 60 percent", "The office runs the family’s money itself"],
           ["Succession planning and legal counsel", "Outsourced by more than half", "For specialist matters the office already reaches outside"],
           ["Boat and aircraft management", "In-house 25 percent, outsourced 27 percent, not offered 48 percent", "The yacht is the one asset the office is least set up to run"],
         ],
@@ -351,7 +351,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       { type: "chart", chartId: "family-office-yacht-management" },
       {
         type: "note",
-        text: "This is the gap independent representation fills. The office that preserves the family's capital is not built to run a refit, vet a broker, or read a sale-and-purchase agreement against the commission structures set out below. Where it does not build that capacity in-house, it reaches for an outside specialist, exactly as it already does for succession and legal work.",
+        text: "This is the gap independent representation fills. The office that preserves the family’s capital is not built to run a refit, vet a broker, or read a sale-and-purchase agreement against the commission structures set out below. Where it does not build that capacity in-house, it reaches for an outside specialist, exactly as it already does for succession and legal work.",
       },
       { type: "h2", text: "The two parallel commission norms" },
       {
@@ -382,7 +382,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         caption:
           "Independent founder-led houses are now the minority by deal volume. The roll-up is essentially complete.",
         rows: [
-          { label: "Camper & Nicholsons", value: "1782 Group / Lai Sun Development; Fincantieri 15 percent minority since 2015; 80 percent stake sold to Wave Expandary Ltd (Sea Expandary, JD.com's Richard Liu) signed 28 May 2026 at EUR 50m EV (~12x EBITDA), pending regulatory clearance" },
+          { label: "Camper & Nicholsons", value: "1782 Group / Lai Sun Development; Fincantieri 15 percent minority since 2015; 80 percent stake sold to Wave Expandary Ltd (Sea Expandary, JD.com’s Richard Liu) signed 28 May 2026 at EUR 50m EV (~12x EBITDA), pending regulatory clearance" },
           { label: "Burgess", value: "Ancient (PE, founded 2021) acquired strategic stake October 2025" },
           { label: "Fraser", value: "Inside MarineMax (NYSE: HZO) since 2019" },
           { label: "Northrop & Johnson", value: "Inside MarineMax since 2020" },
@@ -732,7 +732,7 @@ export const dataSpreads: Record<string, DataSpread> = {
     slug: "06-refit",
     title: "Refit yard capacity and typical overrun curve, 2026 to 2028",
     standfirst:
-      "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. Capacity at dominant yards is tightening into a sellers' market for the first time in a decade. The numbers to plan against.",
+      "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. Capacity at dominant yards is tightening into a sellers’ market for the first time in a decade. The numbers to plan against.",
     blocks: [
       { type: "h2", text: "Refit cost benchmarks, per metre per year" },
       {
@@ -755,7 +755,7 @@ export const dataSpreads: Record<string, DataSpread> = {
         rows: [
           ["Well-managed at competent yard, experienced rep", "10 to 20 percent", "The achievable target"],
           ["Industry typical", "30 to 50 percent", "What the work actually costs"],
-          ["Poorly-managed", "60 to 100 percent or more", "Dockwalk: 600 percent overrun on a 1967 C&N refit"],
+          ["Poorly-managed", "60 to 100 percent or more", "Dockwalk: sixfold overrun on a 1967 C&N refit"],
         ],
         sourceLine:
           "Industry consensus across trade press and practitioner commentary. Dockwalk documented the extreme case.",
@@ -801,7 +801,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           ["Cantiere Rossini", "Marina di Carrara", "Full-service", "Scaled to superyacht refit over past decade"],
           ["Pendennis Shipyard", "Falmouth, UK", "Full-service", "~18 projects 2024 vs avg 10; strong on sailing"],
           ["Damen Shipyards", "Vlissingen, NL", "Full-service", "Refit alongside new build"],
-          ["Lurssen Refit", "Germany", "Full-service", "Largest yachts"],
+          ["Lürssen Refit", "Germany", "Full-service", "Largest yachts"],
           ["RMK Marine", "Tuzla, Istanbul", "Full-service", "~80 m capacity; strong reputation on cost"],
           ["Bilgin Yachts", "Tuzla, Istanbul", "Full-service", "Builder with refit on own and third-party hulls"],
           ["Rybovich", "West Palm Beach, FL", "Full-service", "US reference; Safe Harbor Marinas owned"],
@@ -894,7 +894,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       },
       {
         label: "Dockwalk",
-        line: "600 percent overrun on a 1967 Camper & Nicholsons refit (extreme case).",
+        line: "Sixfold overrun on a 1967 Camper & Nicholsons refit, USD 1 m budget to USD 6 m actual (extreme case).",
       url: "https://www.dockwalk.com/",
       },
       {
@@ -943,7 +943,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           ["40 to 50 m", "10,000 to 14,000"],
           ["50 to 60 m", "10,000 to 16,000"],
           ["70 to 79 m", "14,000 to 20,000 (up 7 percent year on year)"],
-          ["80 m and above", "16,000 to 23,000"],
+          ["80 to 99 m", "16,000 to 23,000"],
           ["100 to 119 m", "Over 25,000"],
         ],
         sourceLine:
@@ -966,7 +966,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           [
             "P&I (protection and indemnity)",
             "Crew injury, environmental damage, third-party liability, charter guest claims",
-            "Per crew member basis; cover routinely written to EUR 500 m third-party limit",
+            "Per crew member basis; cover routinely written to USD 500 m third-party limit",
             "Shipowners\u2019 Club, Steamship Mutual",
           ],
           [
@@ -1011,7 +1011,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           [
             "AON Marine",
             "Yacht practice inside broader marine and corporate insurance; integrates with family-office risk programmes",
-            "Where the principal's overall risk programme is already with AON",
+            "Where the principal’s overall risk programme is already with AON",
           ],
           [
             "Gallagher Specialty",
@@ -1209,7 +1209,7 @@ export const dataSpreads: Record<string, DataSpread> = {
       {
         type: "table",
         caption:
-          "The early conversations tend to resolve into one of a few broad models. The jurisdiction is the outcome of the planning, not its starting point; every owner's circumstances differ.",
+          "The early conversations tend to resolve into one of a few broad models. The jurisdiction is the outcome of the planning, not its starting point; every owner’s circumstances differ.",
         head: ["Model", "Typical owner", "VAT on purchase", "Key conditions"],
         rows: [
           [
@@ -1234,10 +1234,10 @@ export const dataSpreads: Record<string, DataSpread> = {
             "BVI or Cayman Islands",
             "Varies with circumstances",
             "Depends on use and cruising area",
-            "Established alternatives; suitability depends on the owner's circumstances",
+            "Established alternatives; suitability depends on the owner’s circumstances",
           ],
         ],
-        sourceLine: "The First Owner's Reference, drawing on practitioner guidance. For orientation, not advice.",
+        sourceLine: "The First Owner’s Reference, drawing on practitioner guidance. For orientation, not advice.",
       },
     ],
     sources: [
@@ -1282,7 +1282,7 @@ export const dataSpreads: Record<string, DataSpread> = {
           [
             "Major builders",
             "Royal Huisman, Vitters, Baltic, Perini Navi, Wally, Pendennis, Nautor Swan",
-            "Lurssen, Feadship, Oceanco, Heesen, Sanlorenzo, Azimut Benetti, Codecasa, CRN",
+            "Lürssen, Feadship, Oceanco, Heesen, Sanlorenzo, Azimut Benetti, Codecasa, CRN",
           ],
         ],
         sourceLine:

@@ -204,7 +204,7 @@ export default async function GuestQAPage(props: {
               </div>
               <p className="meta mt-16 pt-6 border-t border-charcoal max-w-prose">
                 Answers given by {opinion.contributor},{" "}
-                {opinion.contributorRole}. Lightly edited for typography and
+                {opinion.contributorRole}. Lightly edited for length and clarity, and
                 approved by the contributor before publication.
               </p>
             </div>

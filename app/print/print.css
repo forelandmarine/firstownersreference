@@ -74,7 +74,7 @@
   margin-right: 27mm;
   background: #f5f2ec;
   @top-right {
-    content: "The First Owner\2019s Reference \00b7 1st Edition";
+    content: "The First Owner\2019s Reference \00b7\0020 1st Edition";
     font-family: "Newsreader", Georgia, serif;
     font-size: 8pt;
     font-style: italic;
@@ -1108,6 +1108,7 @@ body {
 
 .chapter-body__cols h2 + p,
 .chapter-body h2 + p {
+  orphans: 3;
   page-break-before: avoid;
 }
 
@@ -1751,9 +1752,7 @@ body {
 }
 
 .case-section__disclosure::after {
-  content: "■";
-  display: inline-block;
-  margin-left: 6pt;
+  content: "\00a0\25a0";
   font-size: 7pt;
   color: var(--colour-marine);
   vertical-align: 1pt;
@@ -2037,6 +2036,7 @@ body {
   width: 100%;
   height: auto;
   max-height: 100mm;
+  overflow: visible;
 }
 
 .data-spread__chart figure {
@@ -2532,9 +2532,15 @@ body {
 }
 
 .piece-end__mark {
+  display: none;
+}
+
+.piece-end__quote::after {
+  content: "\00a0\00a0\25a0";
   font-size: 7pt;
+  font-style: normal;
   color: var(--colour-marine);
-  margin: 4mm 0 0 0;
+  vertical-align: 2pt;
 }
 
 /* Kicker squares on section labels (quiet nod to trade-press chips). */

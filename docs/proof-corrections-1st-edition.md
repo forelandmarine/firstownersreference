@@ -2,6 +2,39 @@
 
 Instructions for the build agent. Source: full editorial markup of `firstownersreference-1st-edition-proof.pdf` (121 pages, reviewed 8 Aug 2026, six page-by-page passes covering the whole block).
 
+## Build-agent status, 8 Aug 2026 evening
+
+Completed and rebuilt (120pp block, artifacts refreshed):
+A1/A2 remain open (need the true figures from the project file).
+A3 done (folio 87 quote reattributed to Erica Lay; full dedup still F1).
+A4 open (Ella Johnson contributor status needs Jack's confirmation).
+A5 done (colophon PI restated as ITIC GBP 500k standing cover, web and print).
+A6 done ("page 128" removed; now "on the final page").
+A7 improved (leading-article alphabetisation, sentence entries excluded,
+real folio locators from the page map); commission-or-cut decision open.
+A8 done (SVG overflow un-clipped; re-render verified). A9 done (axis to
+900 with round ticks). A10 done ("80 to 99 m", no-60-70-band note).
+A11 done ("who was" inserted). A12 keeps strengthened; re-check on next
+read. A13/A14 done (A14 was an extraction artifact; source was clean).
+A15 done for ch02 (La Ciotat), ch05 (Makkum yard), ch06 (Hamburg);
+remaining coordinate lines still need eyeball verification vs photos.
+A16 done (question reworded; no longer implies Hill Robinson drafting).
+B: all six items remain with counsel/editor.
+C: done: folio 10 eight-figure fix, folio 64/67 sixfold overrun, EU ETS
+phasing clarified in essay (spread was already right), NTS clause cut
+pending Davis confirmation, Kaos/coup sentence split and dated, P&I
+unified to USD, 8-to-20 range unified, matrícula accent, terraforming
+now land reclamation. Everything else in C remains open.
+D1 done (448 apostrophes + 21 double-quote pairs converted; zero
+straight quotes remain in content libs). D2 done. D3 done (marks bound,
+cannot strand). D7 partial (boilerplate unified to "lightly edited for
+length and clarity"; other style decisions open). D8 done (reading
+times computed from actual word counts). D9 done (01.02/01.03, 03.01/
+03.02 renumbered to book order). D4/D5/D6/D10 open.
+Diacritics: Lürssen ×18 and García-Aubert restored.
+E, F, G (beyond A8-A10), H: open, with E1 (credits page) and the E6
+aesthetic decision needing Jack first.
+
 Numbering: printed folio runs one behind the PDF page (PDF p41 carries folio 40). All references below are printed folios unless marked "PDF p" (front matter pages before folio 1 are unfoliated).
 
 Work the sections in order. Sections A and B are blockers, nothing ships until they are clear.

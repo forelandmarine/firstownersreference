@@ -19,9 +19,9 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       slug: "03-how-the-industry-works",
       contributor: "Andrew Roch",
       contributorRole:
-        "Founder and CEO, Yacht Crew Recruitment and Training\nIAMI board; co-architect, Yacht Owner's Representative Program with SYBAss",
+        "Founder and CEO, Yacht Crew Recruitment and Training\nIAMI board; co-architect, Yacht Owner’s Representative Program with SYBAss",
       intro:
-        "Yacht Crew Recruitment and Training operates from Sussex and Palma, combining IAMI/GUEST-accredited leadership and purser training under The Crew Academy with senior-crew placement under The Crew Hunter; its founder, Andrew Roch, sits on the IAMI board and co-architected the Yacht Owner's Representative Program with SYBAss. We put five questions to him on captain authority and the modern command role, the structural position of the yacht management company, the first-time owner's captain hire, the function of the owner's representative and the YORR register, and the question the chain of advisers around a first acquisition rarely asks. His answers are published as given, lightly edited for typography.",
+        "Yacht Crew Recruitment and Training operates from Sussex and Palma, combining IAMI/GUEST-accredited leadership and purser training under The Crew Academy with senior-crew placement under The Crew Hunter; its founder, Andrew Roch, sits on the IAMI board and co-architected the Yacht Owner’s Representative Program with SYBAss. We put five questions to him on captain authority and the modern command role, the structural position of the yacht management company, the first-time owner’s captain hire, the function of the owner’s representative and the YORR register, and the question the chain of advisers around a first acquisition rarely asks. His answers are published as given, lightly edited for length and clarity.",
       questions: [],
     },
     {
@@ -30,7 +30,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "Master Mariner (Class 1 Unlimited, Ice Class)",
       contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
-        "Capt. Filippakis came to large-yacht command from a career in LNG and has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands. We put five questions to him on the captain's loyalty problem: the introduction route, the broker call, the referral-fee question, the disclosure rule, and the first conversation a first-time owner should have with a captain candidate. Answers are given on the record, lightly edited for typography.",
+        "Capt. Filippakis came to large-yacht command from a career in LNG and has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands. We put five questions to him on the captain’s loyalty problem: the introduction route, the broker call, the referral-fee question, the disclosure rule, and the first conversation a first-time owner should have with a captain candidate. Answers are given on the record, lightly edited for length and clarity.",
       questions: [
         {
           question:
@@ -45,26 +45,26 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           question:
             "Tell me about a time a broker called you with a charter request, a yacht acquisition referral, or a supplier introduction. What did the relationship look like before that call, and what was implied by the request?",
           answer: [
-            "I've had both cold calls and acquaintances reaching out. It's a necessary part of a broker's life to source as many leads as possible, and I respect that.",
-            "In the same way, it's a necessary part on the Captain's side to manage that without endangering the Owner's reputation, his own, or his contacts.",
+            "I’ve had both cold calls and acquaintances reaching out. It’s a necessary part of a broker’s life to source as many leads as possible, and I respect that.",
+            "In the same way, it’s a necessary part on the Captain’s side to manage that without endangering the Owner’s reputation, his own, or his contacts.",
             "Many times the requests are harmless — a simple introduction between acquaintances. Sometimes they come with caveats. Politely declining those without damaging the relationship is an art that each Captain has to master.",
           ],
         },
         {
           question:
-            "Have you been offered a referral fee, finder's commission, or any other contingent payment by a broker, yard, supplier, management company, or recruitment agency? Without naming the firm, what was offered, and what did you do?",
+            "Have you been offered a referral fee, finder’s commission, or any other contingent payment by a broker, yard, supplier, management company, or recruitment agency? Without naming the firm, what was offered, and what did you do?",
           answer: [
             "It certainly has happened, and the fees would range widely.",
-            "I've left a very lucrative career on LNG for the privilege of leading remote expeditions. My grandfather was also a Captain, and following Greek tradition, I carry his exact name — which carries a certain weight in how I perceive my reputation in this industry.",
+            "I’ve left a very lucrative career on LNG for the privilege of leading remote expeditions. My grandfather was also a Captain, and following Greek tradition, I carry his exact name — which carries a certain weight in how I perceive my reputation in this industry.",
             "And beyond that, I ask myself a simpler question: if you accept a fee for giving out the work, how can you still audit the quality of the result you are directly responsible for?",
-            "You can't. So for me it's not really a question.",
+            "You can’t. So for me it’s not really a question.",
           ],
         },
         {
           question:
             "The OnboardOnline legal column has stated the disclosure rule plainly: referral fees are legal only if disclosed. Is the disclosure rule observed in practice, or worked around?",
           answer: [
-            "Personally, I've never seen referral fees in a contract, but I also have never been in a situation where referral fees had to be implemented.",
+            "Personally, I’ve never seen referral fees in a contract, but I also have never been in a situation where referral fees had to be implemented.",
           ],
         },
         {
@@ -73,7 +73,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           answer: [
             "I think this is one of the most difficult assessments to make in a single conversation, and the truth is you cannot fully make it — you confirm or refute it over the first year. But there is one question that opens the right door without being adversarial:",
             "“Which brokers and yards do you have the strongest relationships with, and how did those relationships develop?”",
-            "It's a fair question. Any captain operating at this level has them, and a confident captain will answer specifically — he'll name people, say how he came to know them, describe what each is good at.",
+            "It’s a fair question. Any captain operating at this level has them, and a confident captain will answer specifically — he’ll name people, say how he came to know them, describe what each is good at.",
             "The candidate who goes vague, or who claims no strong relationships, is harder to read in a way that matters. Specificity is the tell. A captain who is comfortable being precise about his network is usually comfortable being precise about everything else, too — including what he chooses, and why.",
           ],
         },
@@ -87,17 +87,17 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "Master Mariner (Class 1 Unlimited, Ice Class)",
       contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
-        "We put two questions to Capt. Filippakis on sea-trial discipline: what a competent captain is doing during the trial that a buyer would not see, and the failure modes he has personally found during sea trial that a survey did not catch. Answers are given on the record, lightly edited for typography.",
+        "We put two questions to Capt. Filippakis on sea-trial discipline: what a competent captain is doing during the trial that a buyer would not see, and the failure modes he has personally found during sea trial that a survey did not catch. Answers are given on the record, lightly edited for length and clarity.",
       questions: [
         {
           question:
             "What does a competent captain do during a sea trial that a buyer would not see? What is the captain testing for that the surveyor is not?",
           answer: [
-            "The surveyor tests whether the boat matches the specification. The captain tests whether she handles the way she'll need to handle at three in the morning, in weather, with a tired crew.",
+            "The surveyor tests whether the boat matches the specification. The captain tests whether she handles the way she’ll need to handle at three in the morning, in weather, with a tired crew.",
             "I want to feel how she tracks at different speeds and sea states — does she hold a heading or fight the autopilot? Rapid load changes on the engines, not steady runs at trial RPM. Full astern from cruise. Hard-over to hard-over on the steering at load.",
             "Stabiliser response in real sea, not in port test mode. Bridge ergonomics — can a single OOW reach every alarm and override without leaving the console? What about vibration outside of critical RPM?",
-            "Does the boat actually have an operational system in place, or is it just lying abandoned awaiting sale with the minimum amount of maintenance? You shouldn't start from zero when you purchase an older hull, unless that is priced in.",
-            "The surveyor closes out a checklist. The captain is building a mental model of the boat he's about to be responsible for.",
+            "Does the boat actually have an operational system in place, or is it just lying abandoned awaiting sale with the minimum amount of maintenance? You shouldn’t start from zero when you purchase an older hull, unless that is priced in.",
+            "The surveyor closes out a checklist. The captain is building a mental model of the boat he’s about to be responsible for.",
           ],
         },
         {
@@ -113,7 +113,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "Excessive soot when starting generators required a person to climb on the mast and physically cap the exhausts.",
             "Main engine would require a two-hour starting process to bring the lube oil to temperature from cold condition.",
             "Fire pump had a common DC motor with the lube oil pump and would increase the main engine oil pressure whenever it was put in operation. Fire pump was also providing cooling water to one of the thrusters.",
-            "Both generators together couldn't supply full hotel load with both thrusters running simultaneously.",
+            "Both generators together couldn’t supply full hotel load with both thrusters running simultaneously.",
             "Autopilot directly connected to the steering system, without a separate FU or NFU system. If the single autopilot unit failed (e.g. a blown fuse) you had to revert to emergency steering.",
             "Emergency generators not starting automatically — permitted under grandfather rules, but operationally unacceptable.",
             "Negligible rudder effect when going astern unless at speeds over 2.5 knots.",
@@ -132,7 +132,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "Crew recruitment specialist, EL Crew Co",
       contributorLinkedIn: "https://www.linkedin.com/in/erica-lay-4b0179292/",
       intro:
-        "EL Crew Co operates from Mallorca and places senior and junior crew across the over-24 metre fleet. We put five questions to Erica Lay on the senior captain market, rotation, junior crew dynamics, retention, and the first-time owner's captain hire. Her answers are published as given, lightly edited for typography.",
+        "EL Crew Co operates from Mallorca and places senior and junior crew across the over-24 metre fleet. We put five questions to Erica Lay on the senior captain market, rotation, junior crew dynamics, retention, and the first-time owner’s captain hire. Her answers are published as given, lightly edited for length and clarity.",
       questions: [
         {
           question:
@@ -197,7 +197,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "Master Mariner (Class 1 Unlimited, Ice Class)",
       contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
-        "We put five questions to Capt. Filippakis on captain hire and crew dynamics: what separates a good captain from a competent one, where to push back in interview, the cost of rotation that the salary line does not show, what compounds crew turnover, and the single most consequential operational discipline of year one. Answers are given on the record, lightly edited for typography.",
+        "We put five questions to Capt. Filippakis on captain hire and crew dynamics: what separates a good captain from a competent one, where to push back in interview, the cost of rotation that the salary line does not show, what compounds crew turnover, and the single most consequential operational discipline of year one. Answers are given on the record, lightly edited for length and clarity.",
       questions: [
         {
           question:
@@ -210,7 +210,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           question:
             "The chapter argues the captain to hire is the candidate who pushes back hardest in interview, not the one who agrees easily. Is that your experience? What did you push back on, and how was it received?",
           answer: [
-            "In my case I didn't even have to interview — I was offered the opportunity to manage a very complex refit and the subsequent pole-to-pole voyage on the spot, based on a gut feeling from the Owner.",
+            "In my case I didn’t even have to interview — I was offered the opportunity to manage a very complex refit and the subsequent pole-to-pole voyage on the spot, based on a gut feeling from the Owner.",
             "That said, the one I would push back on is micromanagement. A Captain needs to have the ability to make significant decisions on the fly — having the freedom to do so, within of course the pre-agreed parameters, makes a world of difference in how fast problems are solved in the field.",
             "Realistic manning for the actual operating profile, contingency budgets for remote work, a small raise for a crew member we cannot afford to lose. A Captain has to reduce the operating risk profile of his vessel and fighting for that is part of the job.",
           ],
@@ -219,8 +219,8 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           question:
             "Quay Crew records 63 percent of captains on time-for-time rotation. What changed? What does rotation cost the owner that the salary line does not show?",
           answer: [
-            "I consider rotation a good thing for this industry. While it's not easy to rotate as a Captain — you have to agree to follow a common line of command — having a management team in place that oversees standardisation makes it work.",
-            "The cost the salary line doesn't show is the friction between two operating philosophies. Two captains will have slightly different standards on documentation, on crew discipline, on what gets escalated. Without active management, you get drift, and crew quietly optimise for whichever captain is onboard. That corrodes the operation over time.",
+            "I consider rotation a good thing for this industry. While it’s not easy to rotate as a Captain — you have to agree to follow a common line of command — having a management team in place that oversees standardisation makes it work.",
+            "The cost the salary line doesn’t show is the friction between two operating philosophies. Two captains will have slightly different standards on documentation, on crew discipline, on what gets escalated. Without active management, you get drift, and crew quietly optimise for whichever captain is onboard. That corrodes the operation over time.",
             "However, if it works, especially for dual season or explorer yachts, rotation can be one of the most important factors, if not the most important, for the retention of a Captain.",
           ],
         },
@@ -229,8 +229,8 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "Crew turnover is described as compounding. What turns it on, what turns it off, and what does an owner control versus what they delegate?",
           answer: [
             "Crew turnover is directly related to the culture onboard. The Owner usually controls the appointment of the persons who can make or break that environment (mostly Captain, Chef, Chief Stew). If they create a toxic atmosphere of fear, no respect for safety or standard working conditions, salaries or leave become a second consideration.",
-            "He also controls the crewing budget. While salaries must be according to the industry, small things — investing in a loyal deckhand's training to become an officer, accepting an extended leave on compassionate grounds — act as multipliers, because they are directly related to how the crew view the Owner. And that is also the reason why, in my opinion, any feedback the Owner has for his operation is best to pass through the Captain first, as a means to implement that without damaging the Owner's status.",
-            "Crew also need to know what is expected of them. That is something that is delegated to the management or to the Captain and his team; the more vague an operation is without any formal structure, the easier for crew to feel disappointed. And lastly planning and managing the guests' expectations is another essential aspect that is related to crew turnover, as if the trips are not successful, it strains morale.",
+            "He also controls the crewing budget. While salaries must be according to the industry, small things — investing in a loyal deckhand’s training to become an officer, accepting an extended leave on compassionate grounds — act as multipliers, because they are directly related to how the crew view the Owner. And that is also the reason why, in my opinion, any feedback the Owner has for his operation is best to pass through the Captain first, as a means to implement that without damaging the Owner’s status.",
+            "Crew also need to know what is expected of them. That is something that is delegated to the management or to the Captain and his team; the more vague an operation is without any formal structure, the easier for crew to feel disappointed. And lastly planning and managing the guests’ expectations is another essential aspect that is related to crew turnover, as if the trips are not successful, it strains morale.",
           ],
         },
         {
@@ -250,15 +250,15 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "PIB Marine (formerly Zorab Insurance Services)",
       contributorLinkedIn: "https://www.linkedin.com/in/ollie-davis-43994392/",
       intro:
-        "PIB Marine is the established UK specialist alternative to the multi-line yacht insurance brokers. We put five questions to Ollie Davis on the post-Bayesian market response, the 2022 to 2024 hardening cycle, the USD 500 million P&I limit, owner deductibles negotiable at quote stage, and war risk clauses since 2022. Answers are given on the record, lightly edited for typography.",
+        "PIB Marine is the established UK specialist alternative to the multi-line yacht insurance brokers. We put five questions to Ollie Davis on the post-Bayesian market response, the 2022 to 2024 hardening cycle, the USD 500 million P&I limit, owner deductibles negotiable at quote stage, and war risk clauses since 2022. Answers are given on the record, lightly edited for length and clarity.",
       questions: [
         {
           question:
             "The post-Bayesian market response was selective tightening rather than blanket rate rises. Where exactly did underwriters tighten, and which clauses changed?",
           answer: [
             "From our experience with several large sailing yachts, we have not observed any significant increases in rating. In the case of Bayesian, although the hull is based on a design that has been produced multiple times by Perini, the rig is effectively a one-off within their range, making this hopefully an isolated incident.",
-            "What we have seen, however, is an increase in underwriters' and insurers' requests for Risk Management Surveys. These are now being used to assess how crew procedures, training, and onboard management contribute to the safe day-to-day operation of the yacht. This represents a shift away from the more traditional focus on fire risk and watertight integrity alone.",
-            "The direct underwriters and insurers involved in the tragedy — which we believe to include Travelers and British Marine — may have taken a more conservative view. Historically, one-off incidents of this nature have not had a noticeable impact on the yacht insurance market, compared to incidents affecting a larger number of clients or a particular model of yacht, as seen with the NTS losses and the Oyster Yachts incidents, where keels detached due to delamination at the hull-to-keel joint. Following the Oyster losses, some insurers declined to quote on multiple Oyster models because they could not be confident the problem would not recur.",
+            "What we have seen, however, is an increase in underwriters’ and insurers’ requests for Risk Management Surveys. These are now being used to assess how crew procedures, training, and onboard management contribute to the safe day-to-day operation of the yacht. This represents a shift away from the more traditional focus on fire risk and watertight integrity alone.",
+            "The direct underwriters and insurers involved in the tragedy — which we believe to include Travelers and British Marine — may have taken a more conservative view. Historically, one-off incidents of this nature have not had a noticeable impact on the yacht insurance market, compared to incidents affecting a larger number of clients or a particular model of yacht, as seen with the Oyster Yachts incidents, where keels detached due to delamination at the hull-to-keel joint. Following the Oyster losses, some insurers declined to quote on multiple Oyster models because they could not be confident the problem would not recur.",
             "As the findings from the Bayesian incident continue to be published, if the designer, builder, or naval architect is ultimately found to be at fault, then potentially underwriters and insurers may reassess their appetite for other vessels they have designed or constructed previously.",
           ],
         },
@@ -288,18 +288,18 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           answer: [
             "Recently, we have pushed back on several deductible structures, particularly on yachts aged five years or older. We have seen a trend towards Actual Cash Value clauses for machinery, or increased engine deductibles being added to Hull & Machinery policies, as a way for insurers to mitigate potential risk for older yachts.",
             "Where yachts are well maintained by both crew and owners, supported by detailed maintenance logs, oil sample test results, and documented manufacturer inspections at the prescribed intervals, these measures can often be challenged. In many cases, underwriters are prepared to remove separate machinery deductibles, although this may sometimes result in a modest increase to the overall H&M deductible or the premium.",
-            "Another area where we look to enhance cover, without increasing premium, is the inclusion of a No Claims Discount (NCD) at renewal the following year. Some insurers can offer this upfront but we don't normally advocate this, as it has to be repaid in the event of non-renewal or in the event of a claim. We do find clients are keen to take it out to reduce premiums initially but aren't so happy if they have to repay it.",
-            "We have also seen a growing number of cases where vessels wish to tow tenders over longer passages, beyond their usual coastal cruising areas. Advances in technology — for example, systems from providers such as Yacht Trace — now offer sophisticated tender-towing solutions that enable improved monitoring and make extended towing more acceptable to underwriters. If an insurer's standard towing terms aren't suitable then we will always push back on them and ask if they can be modified.",
+            "Another area where we look to enhance cover, without increasing premium, is the inclusion of a No Claims Discount (NCD) at renewal the following year. Some insurers can offer this upfront but we don’t normally advocate this, as it has to be repaid in the event of non-renewal or in the event of a claim. We do find clients are keen to take it out to reduce premiums initially but aren’t so happy if they have to repay it.",
+            "We have also seen a growing number of cases where vessels wish to tow tenders over longer passages, beyond their usual coastal cruising areas. Advances in technology — for example, systems from providers such as Yacht Trace — now offer sophisticated tender-towing solutions that enable improved monitoring and make extended towing more acceptable to underwriters. If an insurer’s standard towing terms aren’t suitable then we will always push back on them and ask if they can be modified.",
             "Similar to machinery deductibles, if a separate mast, spars, sails and rigging (MSSR) deductible is applied then this can sometimes be negotiated to improve terms for the owner. Many inner deductibles for things like fixtures and fittings, emergency towing, tenders and toys can be negotiated, and with personal effects, maximum limits for single items relating to both owner and crew personal effects may also be adjustable.",
-            "In summary, most deductibles and warranties can usually be reviewed, negotiated, and adjusted to better reflect the vessel's actual risk profile.",
+            "In summary, most deductibles and warranties can usually be reviewed, negotiated, and adjusted to better reflect the vessel’s actual risk profile.",
           ],
         },
         {
           question:
             "War risk clauses since 2022: how should a buyer think about the geographic exclusions and the additional premium structure?",
           answer: [
-            "Ironically, War Risks cover does not provide cover for you while you are in designated War Risk areas, which is something that is often misunderstood. Instead, it is intended to cover the yacht whilst outside of high-risk areas for unexpected damage to your yacht arising from events such as riots, uprisings, or protests. A good example is the damage sustained by MY Kaos in Barcelona while alongside the dock, when the vessel was vandalised, and the failed Turkish coup in 2016. If a vessel were to enter a high-risk area, then we would need to discuss this with insurers and an additional premium would be due.",
-            "The additional premium (AP) structure for cruising within War Risk exclusion zones is not fixed; it depends on several variables, including whether the vessel is a motor yacht or sailing yacht, maximum cruising speed, the vessel's profile and appearance, freeboard height, length of stay in the War Risk area, and captain and crew experience of the areas they are entering. These factors directly influence how the insurer assesses the risk of the yacht transiting or cruising through exclusion zones. It is common that, in addition to an AP being charged, increased deductibles can also apply while the vessel is in these areas. Typically, a 50 percent No Claims Discount on the AP is returned to the client following a successful passage or transit through the affected area.",
+            "Ironically, War Risks cover does not provide cover for you while you are in designated War Risk areas, which is something that is often misunderstood. Instead, it is intended to cover the yacht whilst outside of high-risk areas for unexpected damage to your yacht arising from events such as riots, uprisings, or protests. A good example is the damage sustained by MY Kaos in Barcelona in 2023, when the vessel was vandalised while alongside the dock, and vessels caught up in the failed Turkish coup of 2016. If a vessel were to enter a high-risk area, then we would need to discuss this with insurers and an additional premium would be due.",
+            "The additional premium (AP) structure for cruising within War Risk exclusion zones is not fixed; it depends on several variables, including whether the vessel is a motor yacht or sailing yacht, maximum cruising speed, the vessel’s profile and appearance, freeboard height, length of stay in the War Risk area, and captain and crew experience of the areas they are entering. These factors directly influence how the insurer assesses the risk of the yacht transiting or cruising through exclusion zones. It is common that, in addition to an AP being charged, increased deductibles can also apply while the vessel is in these areas. Typically, a 50 percent No Claims Discount on the AP is returned to the client following a successful passage or transit through the affected area.",
             "When planning a cruise in a high-risk area, insurers will normally require a separate Kidnap & Ransom (K&R) policy to be put in place, and armed guards provided by a separate security company will normally be needed on board. These will be an additional cost for the owner that would need to be factored in. Some insurers are happy to offer recommendations or have partnered with specialist security providers to offer additional support, which would be included within their additional premium.",
             "In light of the recent conflict in the Middle East and, before that, the war in Ukraine, we have seen insurers issue a seven-day notice of cancellation on all H&M and P&I policies in respect of certain cruising areas. This cover can usually be bought back from the insurer if the owner plans on visiting those areas, but this will involve an additional premium.",
           ],
@@ -314,7 +314,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "Captain, 34m Baltic Yachts Performance Sloop",
       contributorLinkedIn: "https://www.linkedin.com/in/ella-johnson-26070634b/",
       intro:
-        "We put four questions to Ella on sail at the top of the market: race week on a performance sloop, what she would specify differently with seven years' operational experience, a passage that stands for the case for sail, and what life onboard takes from a family new to it. Answers are given on the record, lightly edited for typography.",
+        "We put four questions to Ella on sail at the top of the market: race week on a performance sloop, what she would specify differently with seven years’ operational experience, a passage that stands for the case for sail, and what life onboard takes from a family new to it. Answers are given on the record, lightly edited for length and clarity.",
       questions: [
         {
           question:
@@ -327,26 +327,26 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
         },
         {
           question:
-            "Your current boat — a 34 metre Baltic Yachts performance sloop — launched in 2019. What was specified at build that you would still recommend today, and what would you change with the benefit of seven years' operational experience?",
+            "Your current boat — a 34 metre Baltic Yachts performance sloop — launched in 2019. What was specified at build that you would still recommend today, and what would you change with the benefit of seven years’ operational experience?",
           answer: [
-            "She is a beautiful boat — well built, fast, and she looks the same seven years on. That is a testament to both the yard's design and build and the crew over the years who have looked after her.",
-            "Change-wise, it very much depends on how the owners use her. For me, the aft winches and sail trim buttons are the worst part of the boat — only because they're behind the pedestals, so you can't always see what you're trimming.",
+            "She is a beautiful boat — well built, fast, and she looks the same seven years on. That is a testament to both the yard’s design and build and the crew over the years who have looked after her.",
+            "Change-wise, it very much depends on how the owners use her. For me, the aft winches and sail trim buttons are the worst part of the boat — only because they’re behind the pedestals, so you can’t always see what you’re trimming.",
           ],
         },
         {
           question:
             "Take a passage you remember. Where were you, what were the conditions, and what is the moment from it that you would describe to a first-time owner weighing sail against motor?",
           answer: [
-            "We were sailing from Antigua to the Mediterranean. The first three days out of Antigua are warm, the stars are beautiful at night, and we're sailing at 15 knots. As we near the Azores it gets colder, windier, and we have 3 metre waves. That doesn't sound like much, but it feels big out in the ocean.",
-            "We have the mainsail reefed and the J4 out. We're surfing waves doing 20 knots, dolphins jumping out around us. There's a thrill in that which you would never get on a motorboat.",
+            "We were sailing from Antigua to the Mediterranean. The first three days out of Antigua are warm, the stars are beautiful at night, and we’re sailing at 15 knots. As we near the Azores it gets colder, windier, and we have 3 metre waves. That doesn’t sound like much, but it feels big out in the ocean.",
+            "We have the mainsail reefed and the J4 out. We’re surfing waves doing 20 knots, dolphins jumping out around us. There’s a thrill in that which you would never get on a motorboat.",
           ],
         },
         {
           question:
             "A family new to sailing. Which parts of life on board take hold immediately, and which arrive only with time?",
           answer: [
-            "If you've never sailed before, the sea legs take a couple of days to get used to, and as an owner, the lack of closet space could be cause for concern to some.",
-            "The rest comes naturally — and you'll love every minute of it.",
+            "If you’ve never sailed before, the sea legs take a couple of days to get used to, and as an owner, the lack of closet space could be cause for concern to some.",
+            "The rest comes naturally — and you’ll love every minute of it.",
           ],
         },
       ],
@@ -357,7 +357,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "Master Mariner (Class 1 Unlimited, Ice Class)",
       contributorLinkedIn: "https://www.linkedin.com/in/captain-pavlos/",
       intro:
-        "We put three questions to Capt. Filippakis on the explorer and high-latitude angle: how the segment compares operationally with a conventional 50 metre Mediterranean motor programme, what Polar Code-certified operation actually requires of owner, crew, and build, and the honest case versus the romantic mistake for a first-time UHNW buyer attracted to the explorer profile. Answers are given on the record, lightly edited for typography.",
+        "We put three questions to Capt. Filippakis on the explorer and high-latitude angle: how the segment compares operationally with a conventional 50 metre Mediterranean motor programme, what Polar Code-certified operation actually requires of owner, crew, and build, and the honest case versus the romantic mistake for a first-time UHNW buyer attracted to the explorer profile. Answers are given on the record, lightly edited for length and clarity.",
       questions: [
         {
           question:
@@ -366,7 +366,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "Same hull length on paper, nothing else in common.",
             "A 50m Mediterranean motor yacht runs on hospitality logic — marina to marina, full shoreside support, weather windows are convenient rather than critical, spares hours away by road. Aesthetics are usually a very important factor.",
             "An explorer runs on self-sufficiency logic. Operating envelopes measured in weeks at sea. Crews weighted toward operational skills — ice, advanced maintenance, helicopter ops, heavy-weather tender work — rather than service skills. Redundancy and onboard capabilities are what define a true explorer. Things like additional crew cabins to accommodate local guides, more deck space to store the additional capabilities, and custom-built equipment to allow for that additional space without sacrificing guest areas are some of the considerations that go in an explorer build.",
-            "The other difference is that explorer programmes are mission-led. You're running a Northwest Passage transit, an Antarctic season, a Raja Ampat expedition. Different requirements for each mission, that might even require the use of a support vessel. So it's very important to define the requirements early on.",
+            "The other difference is that explorer programmes are mission-led. You’re running a Northwest Passage transit, an Antarctic season, a Raja Ampat expedition. Different requirements for each mission, that might even require the use of a support vessel. So it’s very important to define the requirements early on.",
           ],
         },
         {
@@ -384,10 +384,10 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           question:
             "For a first-time UHNW buyer attracted to the explorer profile, what is the honest case and what is the romantic mistake?",
           answer: [
-            "The honest case is real, and part of it is something the spreadsheets miss — every serious boat builds a story over her lifetime, and an explorer builds the kind of story that lasts. Keel laid at Vlissingen, first ice in Greenland, summer in Svalbard, the season she got stuck somewhere she shouldn't have been and the crew that got her out. That legend becomes the boat's identity, it follows her through every change of ownership, and it's the reason a well-known explorer with a real logbook will always find her next owner. A motor yacht in Antibes has a guest list. An explorer has a history.",
+            "The honest case is real, and part of it is something the spreadsheets miss — every serious boat builds a story over her lifetime, and an explorer builds the kind of story that lasts. Keel laid at Vlissingen, first ice in Greenland, summer in Svalbard, the season she got stuck somewhere she shouldn’t have been and the crew that got her out. That legend becomes the boat’s identity, it follows her through every change of ownership, and it’s the reason a well-known explorer with a real logbook will always find her next owner. A motor yacht in Antibes has a guest list. An explorer has a history.",
             "Beyond the romance, the operational case stands on its own. A genuine explorer gives you a self-sufficient cruising envelope no marina-based boat can match — Antarctica, the high Arctic, Raja Ampat, Patagonia — with helicopter integration on most builds. The buyer pool is small but committed, so well-maintained explorers with a real story hold value reasonably well.",
             "The romantic mistake is buying the boat without buying the programme.",
-            "An explorer parked in Antibes ten months a year is a very expensive way to own a normal motor yacht with a worse layout for entertaining. There is a build premium over a comparable conventional, with operating costs to match — paid for capability you're not using. And worse, she never builds her legend.",
+            "An explorer parked in Antibes ten months a year is a very expensive way to own a normal motor yacht with a worse layout for entertaining. There is a build premium over a comparable conventional, with operating costs to match — paid for capability you’re not using. And worse, she never builds her legend.",
           ],
         },
       ],
@@ -401,16 +401,16 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
         "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
       contributorLinkedIn: "https://www.linkedin.com/in/hein-velema-a4061aa6/",
       intro:
-        "The Superyacht Alliance for Professional Standards administers the Yacht Owner's Representative Register (YORR) and oversees the Yacht Owner Representative Programme (YORP), the cross-industry course for owner's representatives. We put five questions to Hein Velema on the gap YORP was built to close, the curriculum, the verification process, the dual-role conflict, and yard selection beyond the big names. His answers are published as given, lightly edited for typography.",
+        "The Superyacht Alliance for Professional Standards administers the Yacht Owner’s Representative Register (YORR) and oversees the Yacht Owner Representative Programme (YORP), the cross-industry course for owner’s representatives. We put five questions to Hein Velema on the gap YORP was built to close, the curriculum, the verification process, the dual-role conflict, and yard selection beyond the big names. His answers are published as given, lightly edited for length and clarity.",
       questions: [
         {
           question:
             "What was the specific gap that made YORP necessary, and where did the impetus come from?",
           answer: [
-            "The programme came from a need expressed by the shipyards. They reported that some owner's representatives had no clear idea of what their role was, or what the yard expected of them. There are very good and very experienced owner's representatives in the industry, but the role itself did not have a clear definition. People came into the role from family offices, from law firms, from captaincy, and they figured the job out while doing it.",
+            "The programme came from a need expressed by the shipyards. They reported that some owner’s representatives had no clear idea of what their role was, or what the yard expected of them. There are very good and very experienced owner’s representatives in the industry, but the role itself did not have a clear definition. People came into the role from family offices, from law firms, from captaincy, and they figured the job out while doing it.",
             "The failure modes were ordinary. On smaller boats, some representatives did not know that the yacht had to be registered, or that it had to be prepared for operations. Some thought the role was signing off on change orders, or organising. It was not clear.",
-            "The gap had real costs. Unclear roles led to projects running over time and over budget for the yards. They also damaged the owner's perception of the yard, because the representative in between could not communicate clearly who needed to do what. Shipyards prepare their clients to buy a second yacht with them, so a happy owner matters. The owner's representative plays a central part in that perception.",
-            "The first work of the programme was to define the role; before any curriculum was written, we interviewed project managers at the yards, and we interviewed the owner's representatives those yards respected. The role definition came out of those conversations.",
+            "The gap had real costs. Unclear roles led to projects running over time and over budget for the yards. They also damaged the owner’s perception of the yard, because the representative in between could not communicate clearly who needed to do what. Shipyards prepare their clients to buy a second yacht with them, so a happy owner matters. The owner’s representative plays a central part in that perception.",
+            "The first work of the programme was to define the role; before any curriculum was written, we interviewed project managers at the yards, and we interviewed the owner’s representatives those yards respected. The role definition came out of those conversations.",
           ],
         },
         {
@@ -419,7 +419,7 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           answer: [
             "The course is built in four parts.",
             "Understanding the shipyard comes first. To deal with the yard, to negotiate with it, you have to understand what they are doing, where their interests are, where their sensitivities sit. The representative is in between the owner and the yard, and when the yard says no, or becomes difficult, you need to understand where they are coming from. Bringing the two parties together is one of the things the representative is there to do.",
-            "The second course is the representative's own job: responsibilities, the team you need around you, the discipline around progress and change orders, the preparation of the yacht for operations. The role contains something like twelve or thirteen specific tasks, and people often confuse one of them for the whole.",
+            "The second course is the representative’s own job: responsibilities, the team you need around you, the discipline around progress and change orders, the preparation of the yacht for operations. The role contains something like twelve or thirteen specific tasks, and people often confuse one of them for the whole.",
             "Then the legal layer. Big money, big interests, written into contracts. The aim is to avoid conflict; if it arrives, the work is in managing it well.",
             "Last, and the part I would say matters most, is managerial leadership. Communication, negotiation, the skills that take a project to a good end. The technical and legal disciplines of the role can be taught; the leadership and the judgement carry the project.",
           ],
@@ -431,21 +431,21 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "We did not delete all the inflated CVs. We are trying to contribute to clarity.",
             "The CV problem in the industry has a shape. People say: I built that boat. If the boat is anything bigger than an Optimist, nobody builds it on their own. Hundreds of people, sometimes thousands, are involved on a single new build. The honest question is what your part in it was.",
             "On the representative role specifically, people sometimes claim that they represented the owner on a new build when what they did was arrive seven months before delivery to prepare the boat for operations. That is an important part of the job, and we do not underestimate it. It is one of perhaps twelve or thirteen things you need to do. It is not the whole role.",
-            "The register applies several filters. The application form asks for detail: not whether you were involved in a project, but in which parts of the owner's representation you were involved, what you were responsible for, who else was on the owner-side team. Some applicants ask for the documentation, see the form, and do not sign up. That is the first filter.",
-            "The second is the reference. We ask for one, and we call it. Knowing that the reference will be called improves the accuracy of what people put on the form. There have been one or two cases where the reference described a different role than the form did. Some projects are downgraded: this is good experience and you learned from it, but you cannot claim you were the owner's representative on that project, because it was not your responsibility.",
+            "The register applies several filters. The application form asks for detail: not whether you were involved in a project, but in which parts of the owner’s representation you were involved, what you were responsible for, who else was on the owner-side team. Some applicants ask for the documentation, see the form, and do not sign up. That is the first filter.",
+            "The second is the reference. We ask for one, and we call it. Knowing that the reference will be called improves the accuracy of what people put on the form. There have been one or two cases where the reference described a different role than the form did. Some projects are downgraded: this is good experience and you learned from it, but you cannot claim you were the owner’s representative on that project, because it was not your responsibility.",
           ],
         },
         {
           question:
             "The dual-role conflict, where major brokerages run technical departments while continuing to take yard commission. How does the YORR vetting handle that?",
           answer: [
-            "The owner's representative and the broker are two different roles.",
-            "One case the committee dealt with: a course graduate who was also an active broker. He had taken the course in good faith, and there was real value in his doing so. The committee, made up of owner's representatives with one SYBAss member, said it was a conflict of interest. He could not join the register while continuing to broker.",
-            "I want to be careful with how that is read. I have managed brokers. I have trained brokers to sell new build. A broker can bring real added value to a new build project. If a broker has access to a client, that means he has value: it is difficult to get the ear of an owner, and where you have it, you have added value. The role is legitimate; the work is legitimate. It is a different role from the owner's representative role.",
+            "The owner’s representative and the broker are two different roles.",
+            "One case the committee dealt with: a course graduate who was also an active broker. He had taken the course in good faith, and there was real value in his doing so. The committee, made up of owner’s representatives with one SYBAss member, said it was a conflict of interest. He could not join the register while continuing to broker.",
+            "I want to be careful with how that is read. I have managed brokers. I have trained brokers to sell new build. A broker can bring real added value to a new build project. If a broker has access to a client, that means he has value: it is difficult to get the ear of an owner, and where you have it, you have added value. The role is legitimate; the work is legitimate. It is a different role from the owner’s representative role.",
             "The structural piece is the one that creates the friction. In a new build, the broker is often representing the owner in the deal, but the broker is being paid by the shipyard. That is a mismatch. Owners generally know that a broker works on commission. They do not always know how much, or on what.",
             "The code of conduct is more about behaviour than about knowledge. A knowledgeable and experienced representative who takes ten percent commission on the tender is a problem. We do not say it is forbidden. We say if you do it, you have to be completely transparent about it with the owner. In general, the position is that you do not.",
-            "In the future, we may have a separate register for new build brokers. The role exists; it is real work; it warrants the same professionalisation the owner's representative role has been through.",
-            "One line on the broker side. A broker does not own clients. That is not how this industry works. The work is the work, and the relationship is earned. Where that is clear, the broker's role in a new build can be a strong one.",
+            "In the future, we may have a separate register for new build brokers. The role exists; it is real work; it warrants the same professionalisation the owner’s representative role has been through.",
+            "One line on the broker side. A broker does not own clients. That is not how this industry works. The work is the work, and the relationship is earned. Where that is clear, the broker’s role in a new build can be a strong one.",
           ],
         },
         {
@@ -467,13 +467,13 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorRole: "Founder, ULTIMAR",
       contributorLinkedIn: "https://www.linkedin.com/in/philipjackinglis/",
       intro:
-        "Jack Inglis is the founder of ULTIMAR and the practitioner whose 1,200-item delivery snag list anecdote is cited in the chapter above. We put five questions to him on what a snag list actually measures, how warranty looks on a well-managed build versus a poorly-managed one, what a proper construction contract should contain, the moments in a build when the broker's role gives way to the owner's representative's, and the one thing he would tell a first-time UHNW buyer in their first meeting. His answers are published as given, lightly edited for typography.",
+        "Jack Inglis is the founder of ULTIMAR and the practitioner whose 1,200-item delivery snag list anecdote is cited in the chapter above. We put five questions to him on what a snag list actually measures, how warranty looks on a well-managed build versus a poorly-managed one, what a proper construction contract should contain, the moments in a build when the broker’s role gives way to the owner’s representative’s, and the one thing he would tell a first-time UHNW buyer in their first meeting. His answers are published as given, lightly edited for length and clarity.",
       questions: [
         {
           question:
             "Walk us through the 1,200-item snag list project. What were the categories the family office CFO missed, and in what proportion?",
           answer: [
-            "When I handed the snag list to the owner's representative (the CFO) at the time, they saw 1,200 liabilities. I saw something very different. A snag list is not a list of broken things; that is the mistake people make.",
+            "When I handed the snag list to the owner’s representative (the CFO) at the time, they saw 1,200 liabilities. I saw something very different. A snag list is not a list of broken things; that is the mistake people make.",
             "Yes, a lot of it is cosmetic, between interior and exterior. But commissioning, integration, calibrations, flag and class items and bespoke owner items all get counted together, and they are not equal. You can have 300 cosmetic snags and sleep perfectly well, or you can have 15 critical commissioning issues and lose the first season.",
             "So the real issue is never the number. It is understanding the difference between quantity and consequence, and that is what was being missed. It is also important to understand that shipyards work to agreed contractual delivery criteria, and a yacht can still technically be delivered with a substantial snag list. The real objective is not simply reducing the number, but ensuring that the critical items affecting safety, operation and technical conformity are reduced to an acceptable level.",
           ],
@@ -482,14 +482,14 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           question:
             "You have said vessels poorly overseen during construction return to the yard for warranty work faster than they were delivered. What does the warranty period actually look like for a well-managed build versus a poorly-managed one, in real numbers?",
           answer: [
-            "People often misunderstand warranty because they think it is simply a period of time on paper. It isn't. Every yacht will have warranty issues after delivery; that is normal. The real question is whether you are dealing with minor defects and operational bedding in, or whether the owner has effectively taken delivery of an unfinished yacht.",
+            "People often misunderstand warranty because they think it is simply a period of time on paper. It isn’t. Every yacht will have warranty issues after delivery; that is normal. The real question is whether you are dealing with minor defects and operational bedding in, or whether the owner has effectively taken delivery of an unfinished yacht.",
             "A well managed build should allow for structured warranty works: small defects, adjustments, tweaks, and the odd operational issue that can be accounted for after delivery. Inconvenient, yes, but manageable.",
             "A poorly managed build is different. Warranty stops being warranty and starts feeling like an extension of construction, with repeated yard returns, unresolved defects, systems failures, crew frustration, and owners losing valuable use of the yacht. So the real measure is not whether a yacht has a two year warranty; it is how much of that period is spent enjoying the yacht versus fixing it.",
           ],
         },
         {
           question:
-            "The 33-page Hill Robinson contract example for a 77 metre yacht: what should a properly drafted superyacht construction contract actually contain? Where should the document length come from?",
+            "The 33-page construction contract for a 77 metre yacht that you have cited as an example: what should a properly drafted superyacht construction contract actually contain? Where should the document length come from?",
           answer: [
             "People get caught up on the size of a contract, but page count means very little on its own. What matters is whether the contract actually controls risk.",
             "At its core, a proper yacht construction contract should define what is being built, what happens if things change, how quality is measured, what constitutes acceptance, how delays are handled, and where responsibility sits when something goes wrong.",
@@ -498,10 +498,10 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
         },
         {
           question:
-            "You operate independently. What are the specific moments in a build when the broker's technical department, even when capable, is structurally not the right party to lead?",
+            "You operate independently. What are the specific moments in a build when the broker’s technical department, even when capable, is structurally not the right party to lead?",
           answer: [
-            "The best brokers today have to work far harder than people realise. They need commercial knowledge, technical understanding, market intelligence and often a very deep grasp of the realities behind ownership. That is part of being successful in today's market.",
-            "The question is not capability. It is role alignment. A broker's role is to guide, advise and help navigate a transaction, and often far beyond that. But there are moments in a build where the owner needs someone whose role is solely focused on delivery, technical compliance, risk management and long term operational consequence, without any commercial gravity attached to the transaction itself. Between a broker and an owner's representative, they are different disciplines.",
+            "The best brokers today have to work far harder than people realise. They need commercial knowledge, technical understanding, market intelligence and often a very deep grasp of the realities behind ownership. That is part of being successful in today’s market.",
+            "The question is not capability. It is role alignment. A broker’s role is to guide, advise and help navigate a transaction, and often far beyond that. But there are moments in a build where the owner needs someone whose role is solely focused on delivery, technical compliance, risk management and long term operational consequence, without any commercial gravity attached to the transaction itself. Between a broker and an owner’s representative, they are different disciplines.",
             "The best projects usually happen when everyone brings their expertise to the table, with clear roles and alignment around the owner.",
           ],
         },
@@ -525,16 +525,16 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
       contributorLinkedIn:
         "https://www.linkedin.com/in/simon-roberts-quadrant/",
       intro:
-        "Quadrant Group has advised marine clients on ownership structures from the Isle of Man for forty years. It provides the services discussed in this chapter, so the independence test set out in the essay above applies to it as to any firm. We put seven questions to Simon Roberts of Quadrant on the ownership-structure decision, jurisdiction, VAT and importation, private against commercial use, the running cost of the structure, the independence test applied to his own firm, and the decision hardest to reverse. His answers are published as given, lightly edited for typography and house style.",
+        "Quadrant Group has advised marine clients on ownership structures from the Isle of Man for forty years. It provides the services discussed in this chapter, so the independence test set out in the essay above applies to it as to any firm. We put seven questions to Simon Roberts of Quadrant on the ownership-structure decision, jurisdiction, VAT and importation, private against commercial use, the running cost of the structure, the independence test applied to his own firm, and the decision hardest to reverse. His answers are published as given, lightly edited for length and clarity and house style.",
       questions: [
         {
           question:
             "The ownership-structure decision: personal ownership, a company, or a more layered arrangement. For a first-time buyer at 30 to 50 metres, what actually drives that choice, and what do buyers most often get wrong by leaving it too late?",
           answer: [
             "For a first-time buyer, it is completely understandable that their attention is on finding the right yacht, negotiating the purchase and preparing for delivery. The ownership structure is often viewed as an administrative detail that can be dealt with later, whereas in reality it is one of the earliest and most important decisions they will make.",
-            "One of the biggest misconceptions is that the choice is simply between owning the yacht personally or through a company. In practice, the structure should be built around the owner's objectives rather than the other way around.",
+            "One of the biggest misconceptions is that the choice is simply between owning the yacht personally or through a company. In practice, the structure should be built around the owner’s objectives rather than the other way around.",
             "Before considering jurisdictions or legal entities, it is important to understand how the yacht will be owned and used. Will it be purely for private enjoyment, or is charter a possibility, even if not immediately? Where will the yacht primarily operate? Will finance be involved? Will ownership remain with one individual, or is it likely to involve family members, succession planning or multiple beneficial owners? How and where will the yacht be imported, and what will its VAT position be? Each of these questions influences the structure that is ultimately put in place. The biggest mistakes we see are not usually caused by choosing the wrong structure; they are usually caused because the right questions were not asked early enough.",
-            "Once a purchase is underway, decisions often become driven by deadlines rather than careful planning. Opportunities can be lost, unnecessary costs can arise, and changes that would have been relatively straightforward before completion may become far more complex afterwards. Another common assumption is that today's ownership model will remain unchanged. In reality, ownership often evolves. A yacht that begins as a purely private asset may later become available for charter. Family circumstances change, financing may be introduced, or ownership may pass to the next generation. A structure that only works on the day the yacht is purchased may not work nearly as well five years later.",
+            "Once a purchase is underway, decisions often become driven by deadlines rather than careful planning. Opportunities can be lost, unnecessary costs can arise, and changes that would have been relatively straightforward before completion may become far more complex afterwards. Another common assumption is that today’s ownership model will remain unchanged. In reality, ownership often evolves. A yacht that begins as a purely private asset may later become available for charter. Family circumstances change, financing may be introduced, or ownership may pass to the next generation. A structure that only works on the day the yacht is purchased may not work nearly as well five years later.",
             "For that reason, we always encourage owners to think beyond the transaction itself. The objective is not simply to establish an ownership structure that allows the purchase to complete in the quickest time possible. It is to create a framework that supports the way the yacht is likely to be owned, operated and managed throughout its life.",
           ],
           pullQuote:
@@ -545,27 +545,27 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "How does jurisdiction influence an ownership structure, and why is there rarely a one-size-fits-all solution?",
           answer: [
             "When owners first begin looking at ownership structures, it is easy to assume that choosing the right jurisdiction is the starting point. In reality, it should be one of the final decisions rather than the first.",
-            "There is no best jurisdiction, as the jurisdiction should only be suited to the owner's individual circumstances. How the yacht will be used, where it will operate, the owner's residency and tax position, financing arrangements, succession planning and long-term objectives all play a part in determining which jurisdiction is most suitable. Only once those considerations have been properly understood does it become possible to assess where the ownership structure should be established.",
+            "There is no best jurisdiction, as the jurisdiction should only be suited to the owner’s individual circumstances. How the yacht will be used, where it will operate, the owner’s residency and tax position, financing arrangements, succession planning and long-term objectives all play a part in determining which jurisdiction is most suitable. Only once those considerations have been properly understood does it become possible to assess where the ownership structure should be established.",
             "The Isle of Man has long been recognised as one of the leading jurisdictions for superyacht ownership, supported by a mature professional services sector, a stable legal and regulatory framework and decades of experience advising owners, family offices and their advisers. Those qualities make it an excellent choice for many ownership structures, but not for all of them. Realistically, an Isle of Man structure may only be the right fit for around a quarter of purchases, depending on the circumstances.",
-            "Other jurisdictions such as Malta may be more appropriate depending on the circumstances. An owner purchasing a commercially operated yacht, a family with international tax considerations, or an owner with existing corporate structures elsewhere may all arrive at different conclusions. The objective should never be to choose the most familiar jurisdiction, but the one that best supports the owner's particular requirements.",
+            "Other jurisdictions such as Malta may be more appropriate depending on the circumstances. An owner purchasing a commercially operated yacht, a family with international tax considerations, or an owner with existing corporate structures elsewhere may all arrive at different conclusions. The objective should never be to choose the most familiar jurisdiction, but the one that best supports the owner’s particular requirements.",
             "It is also worth remembering that the jurisdiction itself is only one part of the overall picture. The quality of ongoing administration, governance and professional advice will often have a greater influence on the long-term success of the ownership structure than the name of the jurisdiction alone. A well-managed structure in the right jurisdiction is almost always preferable to a poorly managed structure in what may appear to be the perfect location.",
             "For first-time owners, the key is not to ask, “Which jurisdiction is best?” but rather, “Which jurisdiction is best for my circumstances?” Approaching the decision in that way leads to a far more considered outcome and helps ensure the ownership structure continues to support the owner as their needs evolve over time.",
           ],
           pullQuote:
-            "There is no best jurisdiction. It should only be suited to the owner's individual circumstances.",
+            "There is no best jurisdiction. It should only be suited to the owner’s individual circumstances.",
         },
         {
           question:
             "VAT and importation sit on top of the ownership structure. Walk a first-time buyer through where the structure and the VAT position have to be decided together, and the cost of getting the sequence wrong.",
           answer: [
             "For many first-time buyers, VAT and importation can feel like separate technical matters that are dealt with once the purchase has completed. In reality, they should be considered alongside the ownership structure from the very beginning. The ownership structure, VAT position and importation strategy should all be developed together, not as separate decisions.",
-            "The way a yacht will be owned, used and operated has a direct influence on how it should be imported, its VAT status and, ultimately, the ownership framework that supports it. Whether the yacht will remain in private use or operate commercially, where it will primarily operate and cruise, and the owner's longer-term intentions all need to be understood before decisions are made. Looking at one without considering the others can lead to unnecessary complexity, additional cost and missed opportunities.",
+            "The way a yacht will be owned, used and operated has a direct influence on how it should be imported, its VAT status and, ultimately, the ownership framework that supports it. Whether the yacht will remain in private use or operate commercially, where it will primarily operate and cruise, and the owner’s longer-term intentions all need to be understood before decisions are made. Looking at one without considering the others can lead to unnecessary complexity, additional cost and missed opportunities.",
             "One of the most common mistakes is assuming that the ownership structure can be established first and the VAT position addressed later. By that stage, important decisions may already have been made that limit the options available. Restructuring ownership after completion can be both time-consuming and costly, while attempting to revisit the VAT or importation strategy retrospectively is often far more complicated than getting it right from the outset, with the repercussions being VAT liabilities and penalties calculated on the value of the yacht.",
-            "That does not mean every owner requires a complex solution, quite the opposite. Many ownership structures can remain relatively straightforward, provided the right questions are asked before contracts are exchanged. The key is understanding the owner's intended use of the yacht and ensuring the ownership framework, VAT planning and importation strategy are developed together rather than in isolation. Although every owner's circumstances are different, these early conversations typically lead towards one of several broad ownership models.",
+            "That does not mean every owner requires a complex solution, quite the opposite. Many ownership structures can remain relatively straightforward, provided the right questions are asked before contracts are exchanged. The key is understanding the owner’s intended use of the yacht and ensuring the ownership framework, VAT planning and importation strategy are developed together rather than in isolation. Although every owner’s circumstances are different, these early conversations typically lead towards one of several broad ownership models.",
             "For example, a non-EU resident intending to use their yacht exclusively for private enjoyment may find that a non-EU ownership structure operating under Temporary Admission relief provides the most appropriate solution, allowing the yacht to cruise within EU waters without paying VAT on the purchase, provided the relevant conditions are met.",
             "EU-resident owners may decide that establishing a VAT-paid status from the outset better suits their long-term plans for private ownership within Europe. In those circumstances, a Maltese ownership structure may provide an appropriate solution, offering certainty and continuity for owners who intend to keep their yachts within the European market.",
             "Where a yacht is intended to operate as a genuine commercial charter business, a different ownership framework is often required. Commercial structures can allow the recovery of VAT on qualifying costs, but they also introduce additional regulatory, technical and operational responsibilities that should be fully understood before embarking on that route.",
-            "There are, of course, other established jurisdictions available, including the British Virgin Islands and the Cayman Islands, each offering their own advantages depending on the owner's circumstances. The important point is that the jurisdiction should always be the outcome of careful planning rather than the starting point. The earlier these conversations take place, the more options an owner has. The later they happen, the fewer options remain.",
+            "There are, of course, other established jurisdictions available, including the British Virgin Islands and the Cayman Islands, each offering their own advantages depending on the owner’s circumstances. The important point is that the jurisdiction should always be the outcome of careful planning rather than the starting point. The earlier these conversations take place, the more options an owner has. The later they happen, the fewer options remain.",
           ],
         },
         {
@@ -576,9 +576,9 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
             "The answer to that question has a significant influence on the ownership structure, VAT planning, regulatory obligations and the ongoing management of the yacht. Private or commercial use is not simply a registration choice. It is an operating model that influences almost every aspect of ownership.",
             "For owners who intend to use their yacht exclusively for private enjoyment, the ownership framework can often be designed specifically around that objective. For others, charter may form part of the long-term plan, either from the outset or at some point in the future. Those intentions should be discussed early, as they will influence not only the ownership structure but also the VAT position, importation strategy and ongoing compliance requirements.",
             "One of the most common misconceptions is that commercial registration is simply a way of generating income to offset running costs. In reality, chartering a yacht is much closer to operating a business than simply making the yacht available for hire. It brings additional regulatory requirements, tax obligations, operational responsibilities and ongoing administration, all of which need to be considered alongside the commercial opportunities. Bear in mind that under commercial usage, the owner also has to pay for their use of the yacht, including the applicable VAT for their time onboard.",
-            "Equally, a purely private ownership structure should not be viewed as the simpler option without proper consideration. Every owner's circumstances are different, and the most appropriate solution depends on how the yacht will genuinely be owned and operated rather than assumptions about what may appear to be easier or more cost-effective. The decision should not be driven by what the yacht could do. It should be driven by what the owner genuinely intends it to do.",
+            "Equally, a purely private ownership structure should not be viewed as the simpler option without proper consideration. Every owner’s circumstances are different, and the most appropriate solution depends on how the yacht will genuinely be owned and operated rather than assumptions about what may appear to be easier or more cost-effective. The decision should not be driven by what the yacht could do. It should be driven by what the owner genuinely intends it to do.",
             "That said, ownership plans often evolve. A yacht purchased for private use may later become available for charter, while a commercially operated yacht may eventually transition to purely private use. Those possibilities do not necessarily require a more complex ownership structure from the outset, but they should be recognised during the planning process so that flexibility can be built in where appropriate.",
-            "Ultimately, there is no inherently better route. Private and commercial ownership each have advantages, responsibilities and ongoing obligations. The objective is not simply to choose one over the other, but to establish an ownership framework that reflects the owner's current intentions while remaining capable of adapting should those intentions change over time.",
+            "Ultimately, there is no inherently better route. Private and commercial ownership each have advantages, responsibilities and ongoing obligations. The objective is not simply to choose one over the other, but to establish an ownership framework that reflects the owner’s current intentions while remaining capable of adapting should those intentions change over time.",
           ],
           pullQuote:
             "Private or commercial use is not simply a registration choice. It is an operating model that influences almost every aspect of ownership.",
@@ -589,22 +589,22 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           answer: [
             "Once the yacht has been purchased and the ownership structure established, there are ongoing costs associated with maintaining that structure. For first-time owners, these costs can sometimes feel like an administrative overhead rather than part of the ownership experience. In reality, they are an important investment in ensuring the structure continues to operate as intended.",
             "The cost of maintaining an ownership structure should be measured not simply by the fee itself, but by the value of the expertise, governance and continuity it provides. The annual cost will vary depending on factors such as the size of the yacht, the ownership structure, the chosen jurisdiction and whether the yacht is operated privately or commercially. Rather than focusing on finding the lowest fee, owners should seek to understand exactly what services are included and how those services support the safe and compliant operation of the ownership structure.",
-            "A professional corporate services provider is typically responsible for maintaining the ownership vehicle, ensuring statutory and regulatory obligations are met, and coordinating with banks, flag administrations, insurers, lawyers, tax advisers and other professional advisers, while also responding as the owner's circumstances evolve. In many cases, they become the central point through which numerous professional relationships are coordinated throughout the life of the yacht.",
-            "One area that is often overlooked is how fees are structured. Some providers charge on a fixed annual basis, while others bill according to the time spent dealing with the yacht's affairs. Neither approach is inherently right or wrong, but owners should understand how the charging model aligns with their expectations. Many owners value the certainty and predictability that a fixed annual fee can provide for budgeting purposes, while others may prefer an alternative approach depending on the complexity of their affairs. Perhaps the more important question is not “What does it cost?” but “What am I receiving in return?”",
-            "A well-managed ownership structure provides considerably more than annual company administration or statutory filings. It helps separate the owner's personal assets from those of the yacht, providing an important level of legal protection should liabilities arise during ownership. It can also provide an appropriate level of privacy by ensuring the owner's personal details are not unnecessarily associated with the day-to-day ownership of the yacht, while recognising that transparency requirements and international information-sharing obligations continue to apply where appropriate.",
-            "Beyond that, professional administration helps ensure the ownership structure remains compliant as regulations evolve, coordinates the many advisers involved in yacht ownership and provides continuity throughout the life of the asset. Ultimately, the ongoing cost of an ownership structure should not be viewed simply as an administrative expense. It is an investment in protecting the owner's interests legally, financially and operationally, while reducing unnecessary risk and allowing them to enjoy ownership with greater confidence.",
+            "A professional corporate services provider is typically responsible for maintaining the ownership vehicle, ensuring statutory and regulatory obligations are met, and coordinating with banks, flag administrations, insurers, lawyers, tax advisers and other professional advisers, while also responding as the owner’s circumstances evolve. In many cases, they become the central point through which numerous professional relationships are coordinated throughout the life of the yacht.",
+            "One area that is often overlooked is how fees are structured. Some providers charge on a fixed annual basis, while others bill according to the time spent dealing with the yacht’s affairs. Neither approach is inherently right or wrong, but owners should understand how the charging model aligns with their expectations. Many owners value the certainty and predictability that a fixed annual fee can provide for budgeting purposes, while others may prefer an alternative approach depending on the complexity of their affairs. Perhaps the more important question is not “What does it cost?” but “What am I receiving in return?”",
+            "A well-managed ownership structure provides considerably more than annual company administration or statutory filings. It helps separate the owner’s personal assets from those of the yacht, providing an important level of legal protection should liabilities arise during ownership. It can also provide an appropriate level of privacy by ensuring the owner’s personal details are not unnecessarily associated with the day-to-day ownership of the yacht, while recognising that transparency requirements and international information-sharing obligations continue to apply where appropriate.",
+            "Beyond that, professional administration helps ensure the ownership structure remains compliant as regulations evolve, coordinates the many advisers involved in yacht ownership and provides continuity throughout the life of the asset. Ultimately, the ongoing cost of an ownership structure should not be viewed simply as an administrative expense. It is an investment in protecting the owner’s interests legally, financially and operationally, while reducing unnecessary risk and allowing them to enjoy ownership with greater confidence.",
           ],
         },
         {
           question:
-            "The independence test the publication applies. Quadrant provides the ownership-structure services this chapter describes. Where does a corporate services provider's interest align with the owner's, and where should an owner take a second, unconflicted view before deciding?",
+            "The independence test the publication applies. Quadrant provides the ownership-structure services this chapter describes. Where does a corporate services provider’s interest align with the owner’s, and where should an owner take a second, unconflicted view before deciding?",
           answer: [
             "A good corporate services provider should never be the only adviser involved in an ownership decision. The best outcomes are almost always achieved when experienced advisers work together, each contributing within their own area of expertise.",
-            "A corporate services provider's role is to help design, establish and administer an ownership structure that reflects the owner's objectives while ensuring it remains compliant throughout its lifetime. In that respect, the interests of both the owner and the provider are closely aligned. Both want a structure that is robust, practical, well-governed and capable of adapting as circumstances evolve. However, no single adviser can or should provide every answer.",
+            "A corporate services provider’s role is to help design, establish and administer an ownership structure that reflects the owner’s objectives while ensuring it remains compliant throughout its lifetime. In that respect, the interests of both the owner and the provider are closely aligned. Both want a structure that is robust, practical, well-governed and capable of adapting as circumstances evolve. However, no single adviser can or should provide every answer.",
             "Ownership structures often involve legal, tax, regulatory, operational and succession planning considerations that extend beyond the expertise of any one professional adviser. Lawyers should advise on legal matters, tax specialists on taxation, and other advisers on the specific areas in which they are qualified. A corporate services provider should work alongside those professionals, not replace them.",
-            "An owner should be cautious of any adviser whose solution begins before they have fully understood the owner's objectives, or who discourages independent advice.",
+            "An owner should be cautious of any adviser whose solution begins before they have fully understood the owner’s objectives, or who discourages independent advice.",
             "Where significant tax planning is involved, where family wealth or succession planning forms part of the ownership strategy, or where complex cross-border issues arise, obtaining an independent legal or tax opinion is not a sign of distrust. It is simply good governance.",
-            "A reputable corporate services provider should welcome that process and be comfortable working collaboratively with the owner's wider advisory team. Ultimately, the owner's interests are best served when advice is transparent, specialist and collaborative. The objective should never be to find one adviser with all the answers, but to assemble the right team of professionals who can challenge assumptions, provide independent perspectives and arrive at the best long-term solution together.",
+            "A reputable corporate services provider should welcome that process and be comfortable working collaboratively with the owner’s wider advisory team. Ultimately, the owner’s interests are best served when advice is transparent, specialist and collaborative. The objective should never be to find one adviser with all the answers, but to assemble the right team of professionals who can challenge assumptions, provide independent perspectives and arrive at the best long-term solution together.",
           ],
           pullQuote:
             "A good corporate services provider should never be the only adviser involved in an ownership decision.",
@@ -615,9 +615,9 @@ export const guestOpinions: Record<string, GuestOpinion[]> = {
           answer: [
             "The most difficult ownership decisions to reverse are rarely the ones made deliberately. More often, they are the assumptions made at the very beginning of the purchase. The most important structural decision is not choosing a jurisdiction or incorporating a company; it is deciding how the yacht is genuinely intended to be owned, used and operated.",
             "That decision influences almost everything that follows, including the ownership structure, VAT position, importation strategy, regulatory requirements and the ongoing administration of the yacht. If those foundations are based on incorrect assumptions, changing direction later can become both complex and expensive.",
-            "A good example is an owner who initially establishes a commercial ownership structure with the intention of operating the yacht as a charter business, only to decide later that they would prefer to use the yacht exclusively for private enjoyment within European waters. While every owner's circumstances are different, changing from commercial to private status can have significant VAT consequences and, in some cases, trigger substantial VAT liabilities based on the value of the yacht itself. It may also require changes to the ownership framework, regulatory status and operational arrangements that are considerably more difficult and costly to implement after the purchase has completed than they would have been at the outset.",
+            "A good example is an owner who initially establishes a commercial ownership structure with the intention of operating the yacht as a charter business, only to decide later that they would prefer to use the yacht exclusively for private enjoyment within European waters. While every owner’s circumstances are different, changing from commercial to private status can have significant VAT consequences and, in some cases, trigger substantial VAT liabilities based on the value of the yacht itself. It may also require changes to the ownership framework, regulatory status and operational arrangements that are considerably more difficult and costly to implement after the purchase has completed than they would have been at the outset.",
             "That does not mean owners should avoid commercial ownership if it genuinely reflects their intentions. Equally, it does not mean that plans can never change. Ownership structures should be designed with an appropriate degree of flexibility wherever possible. The important point is that the original decision should be based on realistic long-term objectives rather than assumptions about what might happen in the future.",
-            "The best ownership structures are not simply designed to complete the purchase. They are designed to support the owner's objectives throughout the life of the yacht. For that reason, these conversations should begin before contracts are exchanged, not afterwards.",
+            "The best ownership structures are not simply designed to complete the purchase. They are designed to support the owner’s objectives throughout the life of the yacht. For that reason, these conversations should begin before contracts are exchanged, not afterwards.",
             "The earlier an owner defines how they genuinely intend to own, use and operate the yacht, the more options remain available. Once the structure has been implemented and the yacht begins operating, those options become progressively more limited, more costly and, in some cases, impossible to reverse completely. The earlier these decisions are made, the more choice an owner has. The later they are left, the more those choices become consequences.",
           ],
         },
@@ -630,7 +630,7 @@ export function getGuestOpinions(slug: string): GuestOpinion[] {
   return guestOpinions[slug] ?? [];
 }
 
-/* URL slug for a contributor's standalone Q&A page: lower-case,
+/* URL slug for a contributor’s standalone Q&A page: lower-case,
    punctuation stripped, honorifics dropped. */
 export function qaPersonSlug(contributor: string): string {
   return contributor

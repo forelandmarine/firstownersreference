@@ -32,7 +32,7 @@ function chapterMastersCss() {
       return `
 @page ch${nn}:left {
   @top-left {
-    content: "Ch ${nn} \\00b7 ${title}";
+    content: "Ch ${nn} \\00b7\\0020${title}";
     font-family: "DM Sans", "Helvetica Neue", sans-serif;
     font-size: 7pt;
     letter-spacing: 0.14em;
@@ -621,8 +621,8 @@ export default function PrintEdition() {
           GF Smith Colorplan. Smyth-sewn, casebound, head and tail bands in
           marine, single ribbon marker. Foil-stamped wordmark and
           blind-debossed lighthouse mark. Trim 230 by 300 mm. Five hundred
-          copies, hand numbered and signed by the editors in chief on
-          page 128.
+          copies, hand numbered and signed by the editors in chief on the
+          final page.
         </p>
 
         <h2>Photography</h2>
@@ -693,8 +693,9 @@ export default function PrintEdition() {
         </p>
         <p>
           <strong>5. Professional indemnity insurance.</strong> Foreland holds
-          professional indemnity at GBP 5 million per claim, written through
-          a Lloyd&rsquo;s syndicate.
+          professional indemnity cover with ITIC, the marine professional
+          indemnity mutual, at GBP 500,000 per claim. Project-specific excess
+          cover is placed where an engagement requires it.
         </p>
         <p>
           <strong>6. Named principals.</strong> The directors of Foreland are

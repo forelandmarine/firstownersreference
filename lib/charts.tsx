@@ -12,7 +12,7 @@ export const charts: Record<string, () => React.ReactElement> = {
       number="07.01"
       title="Captain monthly pay, by yacht size"
       standfirst="Senior crew pay continues to outpace inflation; junior pay has plateaued."
-      caption="Average monthly pay range, in EUR thousand. Quay Crew records 7 percent year-on-year growth in the 70 to 79 m bracket; 63 percent of captains now on time-for-time rotation."
+      caption="Average monthly pay range, in EUR thousand. Quay Crew records 7 percent year-on-year growth in the 70 to 79 m bracket; 63 percent of captains now on time-for-time rotation. Sources publish no separate 60 to 70 m band."
       source="Quay Crew Superyacht Captain Salary & Leave Report 2025/26."
     >
       <RangeBars
@@ -25,7 +25,7 @@ export const charts: Record<string, () => React.ReactElement> = {
           { label: "40 to 50 m", from: 10, to: 14 },
           { label: "50 to 60 m", from: 10, to: 16 },
           { label: "70 to 79 m", from: 14, to: 20, note: "Up 7 percent year on year" },
-          { label: "80 m and above", from: 16, to: 23 },
+          { label: "80 to 99 m", from: 16, to: 23 },
           { label: "100 to 119 m", from: 25, to: 28 },
         ]}
       />
@@ -36,7 +36,7 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="01.01"
       title="Annual operating cost as a percentage of capex, by size band"
-      standfirst="The 10 percent rule has no traceable origin. The working range is 8 to 22 percent. Mid-points of practitioner working ranges, moderate use intensity."
+      standfirst="The 10 percent rule has no traceable origin. The working range is 8 to 20 percent. Mid-points of practitioner working ranges, moderate use intensity."
       caption="Bands widen by 2 to 4 points for charter operation. Year-1 to year-5 unless noted."
       source="Foreland Marine project archive, cross-referenced against Fraser, Ocean Independence, and YachtBuyer published guidance."
     >
@@ -97,7 +97,7 @@ export const charts: Record<string, () => React.ReactElement> = {
 
   "cost-composition-50m": () => (
     <ChartFrame
-      number="01.03"
+      number="01.02"
       title="Where the money goes on a typical 50 m"
       standfirst="Crew is the largest single line, not fuel. The shape holds across the over-30 m motor segment at moderate use."
       caption="Indicative composition of annual operating cost on a 50 m motor yacht at moderate use."
@@ -121,7 +121,7 @@ export const charts: Record<string, () => React.ReactElement> = {
 
   "depreciation-curve": () => (
     <ChartFrame
-      number="01.04"
+      number="01.03"
       title="Depreciation curve, year 1 to 10"
       standfirst="Cumulative loss from purchase price. Quality builders hold value materially better after year five; the band below is the broker-aggregated typical curve."
       caption="Indicative; broker-aggregated curves are not peer-reviewed. The band shows the range across Yatco, IYC, and Yacht Hunter aggregations."
@@ -260,8 +260,8 @@ export const charts: Record<string, () => React.ReactElement> = {
       source="BOAT International monthly brokerage reports, January to April 2026."
     >
       <ComparisonBars
-        domainMax={850}
-        axisTicks={[0, 200, 400, 600, 800]}
+        domainMax={900}
+        axisTicks={[0, 300, 600, 900]}
         rows={[
           { label: "January 2026", value: 721.6, display: "EUR 721.6 m", emphasis: true },
           { label: "January 2025", value: 582.7, display: "EUR 582.7 m" },
@@ -278,7 +278,7 @@ export const charts: Record<string, () => React.ReactElement> = {
 
   "commission-norms-28m-sale": () => (
     <ChartFrame
-      number="03.01"
+      number="03.02"
       title="Two parallel commission norms, on a EUR 28 m sale"
       standfirst="The same yacht, the same buyer, the same seller — and a EUR 850,000 spread between which scale the brokers apply. The seller does not always know which is being used. The buyer almost never does."
       caption="Commission paid by the seller under each scale. Both structures are routinely described as 'the standard' by the brokers using them."
@@ -310,7 +310,7 @@ export const charts: Record<string, () => React.ReactElement> = {
 
   "family-office-yacht-management": () => (
     <ChartFrame
-      number="03.02"
+      number="03.01"
       title="How family offices handle a yacht"
       standfirst="Only a quarter of Swiss single family offices manage a boat or aircraft in-house. Nearly half do not offer the service at all. The office that runs the family's money is rarely the office that runs the yacht."
       caption="Swiss single family offices, share by how they handle management and maintenance of boats and aircraft. Survey of 82 offices, about 27 percent of the roughly 300 in Switzerland."

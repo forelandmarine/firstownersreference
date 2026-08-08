@@ -25,7 +25,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A formal mandate by which a single broker is appointed by the seller to market the yacht. Other brokers can introduce buyers but only the central agent receives the listing-side commission.",
     longDefinition:
-      "Central agency agreements are time-bounded and exclusive. Sub-agency arrangements split the commission between the central agent and any introducing broker, typically at 50/50 on the seller side. The central agent's incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months.",
+      "Central agency agreements are time-bounded and exclusive. Sub-agency arrangements split the commission between the central agent and any introducing broker, typically at 50/50 on the seller side. The central agent’s incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months.",
     relatedChapters: ["03-how-the-industry-works"],
     relatedTerms: ["brokerage", "dual-agency"],
   },
@@ -73,7 +73,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Maritime Labour Convention 2006. The treaty governing crew working conditions, contracts, hours, and welfare. Applies to most commercially operated superyachts.",
     longDefinition:
-      "MLC 2006 sets minimum standards for seafarers' working and living conditions, including employment agreements, hours of work and rest, accommodation, recreational facilities, food, medical care, and social security. Yachts above 500 GT engaged in international voyages must hold a Maritime Labour Certificate, with a five-year validity and intermediate inspection.",
+      "MLC 2006 sets minimum standards for seafarers’ working and living conditions, including employment agreements, hours of work and rest, accommodation, recreational facilities, food, medical care, and social security. Yachts above 500 GT engaged in international voyages must hold a Maritime Labour Certificate, with a five-year validity and intermediate inspection.",
     source: {
       name: "International Labour Organization",
       url: "https://www.ilo.org/global/standards/maritime-labour-convention/lang--en/index.htm",
@@ -97,11 +97,11 @@ export const glossaryEntries: GlossaryEntry[] = [
   },
   {
     slug: "owners-representative",
-    term: "Owner's representative",
+    term: "Owner’s representative",
     shortDefinition:
       "An independent professional appointed by the buyer to oversee a new build or major refit. Paid by the owner, with no commercial relationship to the yard.",
     longDefinition:
-      "The owner's representative manages the buyer's interests across yard selection, contract drafting, technical specification, build supervision, milestone inspection, snag-listing, and delivery acceptance. The independence test is whether the representative's income is contingent only on the buyer's instructions, with no yard commission, no broker referral, and no contingent-fee arrangement on closing.",
+      "The owner’s representative manages the buyer’s interests across yard selection, contract drafting, technical specification, build supervision, milestone inspection, snag-listing, and delivery acceptance. The independence test is whether the representative’s income is contingent only on the buyer’s instructions, with no yard commission, no broker referral, and no contingent-fee arrangement on closing.",
     relatedChapters: ["05-new-build-versus-brokerage", "06-refit", "09-decision-framework"],
     relatedTerms: ["yorr", "sybass"],
   },
@@ -109,9 +109,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "pre-purchase-survey",
     term: "Pre-purchase survey",
     shortDefinition:
-      "An independent technical inspection commissioned by the buyer before contract. Distinct from the seller's most recent survey and almost always worth the cost.",
+      "An independent technical inspection commissioned by the buyer before contract. Distinct from the seller’s most recent survey and almost always worth the cost.",
     longDefinition:
-      "A pre-purchase survey covers structural, mechanical, electrical, and operational systems, typically over four to seven days afloat plus a haul-out. Cost on a 40 to 50 metre yacht runs USD 25,000 to 60,000 inclusive of paint specialist and class-society inspector. The buyer engages the surveyor directly, and the surveyor's fee is paid by the buyer regardless of whether the deal closes.",
+      "A pre-purchase survey covers structural, mechanical, electrical, and operational systems, typically over four to seven days afloat plus a haul-out. Cost on a 40 to 50 metre yacht runs USD 25,000 to 60,000 inclusive of paint specialist and class-society inspector. The buyer engages the surveyor directly, and the surveyor’s fee is paid by the buyer regardless of whether the deal closes.",
     relatedChapters: ["04-acquisition-process"],
     relatedTerms: ["sea-trial", "moa"],
   },
@@ -121,7 +121,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Major maintenance, modernisation, or rebuild work undertaken at a specialist yard. Typical scopes range from cosmetic refresh to multi-year structural rebuild.",
     longDefinition:
-      "Refit is the umbrella term for periodic capex on a yacht above survey-and-class minimum. Mid-life refits at year five to seven typically cover paint, soft furnishings, and selective system upgrades. Full refits at year ten to fifteen include structural and propulsion work and can run 30 to 60 percent of the yacht's pre-refit market value. Overrun against initial budget runs 30 to 50 percent on the empirical opened-up-vessel pattern.",
+      "Refit is the umbrella term for periodic capex on a yacht above survey-and-class minimum. Mid-life refits at year five to seven typically cover paint, soft furnishings, and selective system upgrades. Full refits at year ten to fifteen include structural and propulsion work and can run 30 to 60 percent of the yacht’s pre-refit market value. Overrun against initial budget runs 30 to 50 percent on the empirical opened-up-vessel pattern.",
     relatedChapters: ["06-refit"],
     relatedTerms: ["spanish-ipr", "owners-representative"],
   },
@@ -141,7 +141,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Superyacht Builders Association. Membership signals an independently audited ability to deliver new builds above 40 metres.",
     longDefinition:
-      "SYBAss membership is granted to yards that demonstrate, through independent audit, the capacity to deliver yachts above 40 metres. Membership covers Northern European custom yards (Feadship, Lurssen, Oceanco, Heesen, Royal Huisman, Vitters, Baltic) and a small number of Italian and Turkish builders. SYBAss founded the Yacht Owners' Register of Representatives jointly with the Superyacht Alliance, IAMI, and GUEST.",
+      "SYBAss membership is granted to yards that demonstrate, through independent audit, the capacity to deliver yachts above 40 metres. Membership covers Northern European custom yards (Feadship, Lürssen, Oceanco, Heesen, Royal Huisman, Vitters, Baltic) and a small number of Italian and Turkish builders. SYBAss founded the Yacht Owners’ Register of Representatives jointly with the Superyacht Alliance, IAMI, and GUEST.",
     source: {
       name: "Superyacht Builders Association",
       url: "https://www.sybass.org/",
@@ -163,9 +163,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "vat-regime",
     term: "VAT regime",
     shortDefinition:
-      "The framework under which value-added tax is paid (or relieved) on a yacht's purchase, importation, and operation. Choices include Spanish IPR, French commercial exemption, Italian leasing, and Maltese.",
+      "The framework under which value-added tax is paid (or relieved) on a yacht’s purchase, importation, and operation. Choices include Spanish IPR, French commercial exemption, Italian leasing, and Maltese.",
     longDefinition:
-      "The applicable VAT regime depends on the yacht's flag state, the owner's residence, the area of operation, and whether the yacht is operated privately or commercially. EU member states harmonised their charter VAT treatment under Council pressure between 2018 and 2020; length-based reductions were withdrawn and replaced with effective-use approaches.",
+      "The applicable VAT regime depends on the yacht’s flag state, the owner’s residence, the area of operation, and whether the yacht is operated privately or commercially. EU member states harmonised their charter VAT treatment under Council pressure between 2018 and 2020; length-based reductions were withdrawn and replaced with effective-use approaches.",
     relatedChapters: ["04-acquisition-process", "06-refit", "07-operations"],
     relatedTerms: ["spanish-ipr", "temporary-admission", "charter-vat"],
   },
@@ -175,7 +175,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A firm engaged by the owner to handle compliance, accounting, crew administration, and operational support. Distinct from a broker. Should be selected independently.",
     longDefinition:
-      "A yacht management company handles the day-to-day operational, regulatory, financial, and crew matters that the owner does not engage with directly. Selection should be made independently of the broker who introduced the yacht, since the management contract is recurring revenue and brokerages have established management arms or referral relationships that may not align with the owner's interest.",
+      "A yacht management company handles the day-to-day operational, regulatory, financial, and crew matters that the owner does not engage with directly. Selection should be made independently of the broker who introduced the yacht, since the management contract is recurring revenue and brokerages have established management arms or referral relationships that may not align with the owner’s interest.",
     relatedChapters: ["07-operations"],
     relatedTerms: ["retrocession", "owners-representative"],
   },
@@ -183,11 +183,11 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "yorr",
     term: "YORR",
     shortDefinition:
-      "Yacht Owner's Representative Register. The cross-industry register on which qualifying owner's representatives are listed; administered by the Superyacht Alliance for Professional Standards and searchable at superyachtalliance.org/register/register-table/.",
+      "Yacht Owner’s Representative Register. The cross-industry register on which qualifying owner’s representatives are listed; administered by the Superyacht Alliance for Professional Standards and searchable at superyachtalliance.org/register/register-table/.",
     longDefinition:
-      "YORR is the cross-industry register of vetted owner's representatives, launched at The Superyacht Forum in Amsterdam in November 2024 by SYBAss, the Superyacht Alliance for Professional Standards, IAMI, and GUEST. Inclusion requires demonstrated independence from yards, brokers, and management companies, the SYBAss-aligned YORP training (practitioners with three or more approved large refit or new build projects can register via Unit 40 alone; all other candidates complete the full 200-hour programme over four courses), a CV audit, and a documented track record on builds above 40 metres. The register is published as a public table at superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal; buyers considering an owner's representative can verify the firm and the principal directly on the register before engagement.",
+      "YORR is the cross-industry register of vetted owner’s representatives, launched at The Superyacht Forum in Amsterdam in November 2024 by SYBAss, the Superyacht Alliance for Professional Standards, IAMI, and GUEST. Inclusion requires demonstrated independence from yards, brokers, and management companies, the SYBAss-aligned YORP training (practitioners with three or more approved large refit or new build projects can register via Unit 40 alone; all other candidates complete the full 200-hour programme over four courses), a CV audit, and a documented track record on builds above 40 metres. The register is published as a public table at superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal; buyers considering an owner’s representative can verify the firm and the principal directly on the register before engagement.",
     source: {
-      name: "Yacht Owner's Representative Register",
+      name: "Yacht Owner’s Representative Register",
       url: "https://superyachtalliance.org/register/register-table/",
     },
     relatedChapters: ["05-new-build-versus-brokerage", "09-decision-framework"],
@@ -197,7 +197,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "vat-paid-status",
     term: "VAT-paid status",
     shortDefinition:
-      "Confirmation that EU VAT has been settled on the yacht's hull, attaching to the asset rather than the flag. A VAT-paid yacht can move freely within the EU customs territory.",
+      "Confirmation that EU VAT has been settled on the yacht’s hull, attaching to the asset rather than the flag. A VAT-paid yacht can move freely within the EU customs territory.",
     longDefinition:
       "EU VAT-paid status attaches to the hull, not the flag. A Maltese-flagged yacht owned by a non-EU SPV is not automatically EU VAT-paid; conversely a Cayman-flagged hull on which import VAT was settled in Italy is EU VAT-paid. Documentary evidence is the importation declaration and VAT receipt. Loss of VAT-paid status can occur on certain ownership changes, modifications, or extended absence from EU waters under specific circumstances.",
     relatedChapters: ["04-acquisition-process", "07-operations", "09-decision-framework"],
@@ -233,7 +233,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A 12 percent registration tax levied by Spain on yachts above 8 metres used for private leisure by Spanish-resident owners. Charter use is exempt under qualifying conditions.",
     longDefinition:
-      "The Impuesto Especial sobre Determinados Medios de Transporte applies at 12 percent of the yacht's value when registered in Spain for private leisure use by a Spanish-resident owner or used in Spanish waters by a Spanish resident for more than 183 days. Yachts engaged in qualifying commercial charter activity, with documented charter contracts and a Spanish charter licence, are exempt. The tax is one of the structural reasons that VAT-paid yachts owned by Spanish residents are commonly held through non-Spanish SPVs operating commercially.",
+      "The Impuesto Especial sobre Determinados Medios de Transporte applies at 12 percent of the yacht’s value when registered in Spain for private leisure use by a Spanish-resident owner or used in Spanish waters by a Spanish resident for more than 183 days. Yachts engaged in qualifying commercial charter activity, with documented charter contracts and a Spanish charter licence, are exempt. The tax is one of the structural reasons that VAT-paid yachts owned by Spanish residents are commonly held through non-Spanish SPVs operating commercially.",
     relatedChapters: ["04-acquisition-process", "07-operations"],
     relatedTerms: ["vat-regime", "vat-paid-status", "charter-vat"],
   },
@@ -243,7 +243,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Value-added tax applied to commercial yacht charters, charged where the charter is enjoyed. Standard EU rates range from 8 to 22 percent depending on jurisdiction and effective use.",
     longDefinition:
-      "EU charter VAT is taxed at the place of enjoyment. The historic length-based reductions (Maltese, Cypriot, Greek lease schemes) were withdrawn between 2018 and 2020 under EU Commission infringement procedures. Effective-use approaches now apply, with pro-rata reductions documented against international-waters time. Italian charters carry 22 percent standard rate; French and Spanish standard rates apply locally. Maltese charters since the 2019 reform follow effective-use rules. Charter VAT is the operator's liability; the published charter rate is typically VAT-exclusive.",
+      "EU charter VAT is taxed at the place of enjoyment. The historic length-based reductions (Maltese, Cypriot, Greek lease schemes) were withdrawn between 2018 and 2020 under EU Commission infringement procedures. Effective-use approaches now apply, with pro-rata reductions documented against international-waters time. Italian charters carry 22 percent standard rate; French and Spanish standard rates apply locally. Maltese charters since the 2019 reform follow effective-use rules. Charter VAT is the operator’s liability; the published charter rate is typically VAT-exclusive.",
     relatedChapters: ["07-operations", "09-decision-framework"],
     relatedTerms: ["vat-regime", "myba", "vat-paid-status"],
   },
@@ -281,7 +281,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Memorandum of Agreement. The binding sale and purchase contract for a yacht. The MYBA form is standard in the Mediterranean and Caribbean; the IYBA form is used in the Americas.",
     longDefinition:
-      "The MOA is signed at offer-acceptance and amended through to closing. Key clauses cover title warranties, inventory, deposit handling and escrow, condition at delivery, deficiencies remediation, governing law and jurisdiction, and the closing protocol. MYBA Memorandum of Agreement (current version 2024) is the dominant form. Independent counsel review at heads of terms is the buyer's structural protection; the form's defaults often favour the seller's broker.",
+      "The MOA is signed at offer-acceptance and amended through to closing. Key clauses cover title warranties, inventory, deposit handling and escrow, condition at delivery, deficiencies remediation, governing law and jurisdiction, and the closing protocol. MYBA Memorandum of Agreement (current version 2024) is the dominant form. Independent counsel review at heads of terms is the buyer’s structural protection; the form’s defaults often favour the seller’s broker.",
     source: {
       name: "MYBA Worldwide Yachting Association",
       url: "https://www.myba-association.com/",
@@ -293,9 +293,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "sea-trial",
     term: "Sea trial",
     shortDefinition:
-      "An on-the-water test of the yacht under representative load, undertaken with the buyer's own captain candidate, surveyor, and chief engineer present.",
+      "An on-the-water test of the yacht under representative load, undertaken with the buyer’s own captain candidate, surveyor, and chief engineer present.",
     longDefinition:
-      "The sea trial is the buyer's last technical inspection before closing. Trial scope covers the failure modes the pre-purchase survey identified, plus stability, vibration, noise, electronics under load, propulsion at full power, and emergency systems. The buyer's own captain candidate (and where relevant chief engineer) should be present alongside the surveyor. Findings can support renegotiation; readiness to walk away if material issues surface is the buyer's structural lever.",
+      "The sea trial is the buyer’s last technical inspection before closing. Trial scope covers the failure modes the pre-purchase survey identified, plus stability, vibration, noise, electronics under load, propulsion at full power, and emergency systems. The buyer’s own captain candidate (and where relevant chief engineer) should be present alongside the surveyor. Findings can support renegotiation; readiness to walk away if material issues surface is the buyer’s structural lever.",
     relatedChapters: ["04-acquisition-process"],
     relatedTerms: ["pre-purchase-survey", "moa"],
   },
@@ -319,7 +319,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Protection and Indemnity. Mutual liability insurance covering crew injury, environmental damage, third-party claims, and charter-guest exposure. Typically written by mutual clubs.",
     longDefinition:
-      "P&I cover is the third-party and crew-liability layer above hull insurance. Yacht-specialist mutuals include Shipowners' Club and Steamship Mutual; commercial insurers including Pantaenius, AON, Gallagher Specialty, and Lloyd's syndicates also write yacht P&I. Standard limits for a 40 to 50 metre yacht run to EUR 500 million third-party. P&I covers MLC repatriation liability for crew, environmental damage including bunker spill, and charter-guest claims; hull insurance covers the asset itself.",
+      "P&I cover is the third-party and crew-liability layer above hull insurance. Yacht-specialist mutuals include Shipowners’ Club and Steamship Mutual; commercial insurers including Pantaenius, AON, Gallagher Specialty, and Lloyd’s syndicates also write yacht P&I. Standard limits for a 40 to 50 metre yacht run to EUR 500 million third-party. P&I covers MLC repatriation liability for crew, environmental damage including bunker spill, and charter-guest claims; hull insurance covers the asset itself.",
     relatedChapters: ["07-operations"],
     relatedTerms: ["hull-insurance", "mlc"],
   },
@@ -329,7 +329,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Insurance on the yacht as a physical asset. Standard premium for a well-maintained 40 to 50 metre yacht is 0.7 to 1.5 percent of insured value per year.",
     longDefinition:
-      "Hull insurance covers physical loss or damage to the yacht and its machinery. Premium is set by insured value, age, claims history, captain track record, navigation limits, and operational profile (private versus charter). Underwriting is typically through Pantaenius, AON Marine, Gallagher Specialty, or Lloyd's specialist syndicates. Builder's risk insurance covers the yacht during refit, with the buyer's interest noted, and should cover transit between subcontractor sites.",
+      "Hull insurance covers physical loss or damage to the yacht and its machinery. Premium is set by insured value, age, claims history, captain track record, navigation limits, and operational profile (private versus charter). Underwriting is typically through Pantaenius, AON Marine, Gallagher Specialty, or Lloyd’s specialist syndicates. Builder’s risk insurance covers the yacht during refit, with the buyer’s interest noted, and should cover transit between subcontractor sites.",
     relatedChapters: ["07-operations"],
     relatedTerms: ["p-and-i"],
   },
@@ -337,7 +337,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "class-society",
     term: "Class society",
     shortDefinition:
-      "A recognised organisation that surveys yachts to defined construction and maintenance standards. The major IACS members are Lloyd's Register, DNV, Bureau Veritas, RINA, ABS, and ClassNK.",
+      "A recognised organisation that surveys yachts to defined construction and maintenance standards. The major IACS members are Lloyd’s Register, DNV, Bureau Veritas, RINA, ABS, and ClassNK.",
     longDefinition:
       "Class societies set construction rules, conduct surveys at construction and through service, and issue and maintain class notations. Class is required for most commercial yachts and increasingly for large private yachts above 500 GT. Common notations on superyachts include LR 100A1 SSC, DNV +1A1 LC Yacht, BV I HULL MACH Yacht, RINA C+ Yacht. Class operates parallel to flag-state inspection; the class society can act as a Recognised Organisation under flag delegation.",
     relatedChapters: ["04-acquisition-process", "06-refit", "07-operations"],
@@ -369,7 +369,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "MCA seafarer medical certificate. Mandatory under STCW for crew working on commercial yachts. Two-year validity; first issue requires UK-approved doctor.",
     longDefinition:
-      "The ENG1 is the UK MCA's seafarer medical fitness certificate, equivalent to standards under STCW Regulation I/9. Crew on Red Ensign-flagged commercial yachts and many other flags require an ENG1 or equivalent. Validity is two years for under-18s, two years for over-18s with the next certificate due at least one month before the previous expires. Examination covers vision, hearing, cardiovascular, respiratory, mental health, and physical capacity.",
+      "The ENG1 is the UK MCA’s seafarer medical fitness certificate, equivalent to standards under STCW Regulation I/9. Crew on Red Ensign-flagged commercial yachts and many other flags require an ENG1 or equivalent. Validity is two years for under-18s, two years for over-18s with the next certificate due at least one month before the previous expires. Examination covers vision, hearing, cardiovascular, respiratory, mental health, and physical capacity.",
     source: {
       name: "UK Maritime and Coastguard Agency",
       url: "https://www.gov.uk/seafarer-medical-certificates",
@@ -407,7 +407,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "EU Emissions Trading System for shipping, in force from 2024 and phased in through 2026. Applies to commercial vessels above 5,000 GT entering EU ports.",
     longDefinition:
-      "EU ETS Maritime extends the EU's carbon market to shipping, in phased application: 40 percent of verified emissions covered in 2024, 70 percent in 2025, 100 percent from 2026. The system covers vessels above 5,000 GT entering EU ports, regardless of flag. Most yachts (including 60 to 80 metre motor) sit below the 5,000 GT threshold. Above 5,000 GT, exposure runs EUR 200,000 to 400,000 per year at current carbon prices on a well-utilised vessel. Compliance requires emissions monitoring and EUA surrender.",
+      "EU ETS Maritime extends the EU’s carbon market to shipping, in phased application: 40 percent of verified emissions covered in 2024, 70 percent in 2025, 100 percent from 2026. The system covers vessels above 5,000 GT entering EU ports, regardless of flag. Most yachts (including 60 to 80 metre motor) sit below the 5,000 GT threshold. Above 5,000 GT, exposure runs EUR 200,000 to 400,000 per year at current carbon prices on a well-utilised vessel. Compliance requires emissions monitoring and EUA surrender.",
     relatedChapters: ["08-motor-versus-sail"],
     relatedTerms: ["marpol", "tier-iii"],
   },
@@ -439,9 +439,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "punch-list",
     term: "Punch list",
     shortDefinition:
-      "The list of outstanding items, defects, or incomplete work identified at a yacht's delivery or refit redelivery, to be completed by the yard before final acceptance.",
+      "The list of outstanding items, defects, or incomplete work identified at a yacht’s delivery or refit redelivery, to be completed by the yard before final acceptance.",
     longDefinition:
-      "The punch list (or snag list) is the buyer's record of items not at acceptance condition at delivery. A diligent owner's representative on a 40 to 50 metre new build will typically generate 800 to 1,500 items by delivery; the published Inglis case at ULTIMAR documented 1,200 items where the family office's own count was 100. Punch-list management with the yard, with a withheld retention against final closure, is the standard discipline; final payment held against punch-list closure is the buyer's lever.",
+      "The punch list (or snag list) is the buyer’s record of items not at acceptance condition at delivery. A diligent owner’s representative on a 40 to 50 metre new build will typically generate 800 to 1,500 items by delivery; the published Inglis case at ULTIMAR documented 1,200 items where the family office’s own count was 100. Punch-list management with the yard, with a withheld retention against final closure, is the standard discipline; final payment held against punch-list closure is the buyer’s lever.",
     relatedChapters: ["05-new-build-versus-brokerage", "06-refit"],
     relatedTerms: ["owners-representative", "moa"],
   },
@@ -451,7 +451,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The payment schedule on a yacht new build, structured against build milestones. Industry-typical loading is 50 to 70 percent of contract value before delivery.",
     longDefinition:
-      "Stage payment loading reflects the yard's working capital requirement against build progress. Industry-typical loading is 50 to 70 percent of contract value paid before delivery, with the balance at delivery and final acceptance. Heavier front-loading is yard-favourable and may signal yard cash-flow pressure. Each stage payment should be backed by a refund guarantee from a tier-one bank with pay-on-demand wording; surety wrappers are weaker. Payment should be tied to verified milestone completion, not calendar dates.",
+      "Stage payment loading reflects the yard’s working capital requirement against build progress. Industry-typical loading is 50 to 70 percent of contract value paid before delivery, with the balance at delivery and final acceptance. Heavier front-loading is yard-favourable and may signal yard cash-flow pressure. Each stage payment should be backed by a refund guarantee from a tier-one bank with pay-on-demand wording; surety wrappers are weaker. Payment should be tied to verified milestone completion, not calendar dates.",
     relatedChapters: ["05-new-build-versus-brokerage"],
     relatedTerms: ["punch-list", "owners-representative"],
   },
@@ -546,7 +546,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The open registry of the Republic of the Marshall Islands, administered by International Registries, Inc. Applies the international conventions without an additional national overlay, at competitive cost.",
     longDefinition:
-      "The RMI flag is administered by International Registries, Inc. from Reston, Virginia through a worldwide office network, which in practice means responsive service across time zones. Its regulatory posture is to apply the international framework (STCW, MLC, the applicable yacht code) without a layer of additional national requirements on top, which keeps crewing flexible and costs below the premium British registries. The Private Yacht Limited Charter provision allows a private yacht of 24 metres or more to charter for up to 84 days per calendar year, the RMI counterpart to Cayman's YET programme.",
+      "The RMI flag is administered by International Registries, Inc. from Reston, Virginia through a worldwide office network, which in practice means responsive service across time zones. Its regulatory posture is to apply the international framework (STCW, MLC, the applicable yacht code) without a layer of additional national requirements on top, which keeps crewing flexible and costs below the premium British registries. The Private Yacht Limited Charter provision allows a private yacht of 24 metres or more to charter for up to 84 days per calendar year, the RMI counterpart to Cayman’s YET programme.",
     source: {
       name: "International Registries, Inc.",
       url: "https://www.register-iri.com/",
@@ -574,7 +574,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The British ship registry at Douglas, a Red Ensign Group Category 1 member. A frequent pairing of flag and owning-company jurisdiction for private superyachts.",
     longDefinition:
-      "The Isle of Man Ship Registry is a Category 1 member of the Red Ensign Group, able to register yachts of unlimited size under the British flag with MCA-equivalent oversight. It is particularly common where the owning structure is also Manx: the island's long-established marine corporate-services sector allows flag, SPV, and administration to sit in one jurisdiction, which simplifies mortgage registration, crew employment, and annual compliance for a private yacht.",
+      "The Isle of Man Ship Registry is a Category 1 member of the Red Ensign Group, able to register yachts of unlimited size under the British flag with MCA-equivalent oversight. It is particularly common where the owning structure is also Manx: the island’s long-established marine corporate-services sector allows flag, SPV, and administration to sit in one jurisdiction, which simplifies mortgage registration, crew employment, and annual compliance for a private yacht.",
     source: {
       name: "Isle of Man Ship Registry",
       url: "https://www.iomshipregistry.com/",
@@ -586,9 +586,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "corporate-services-provider",
     term: "Corporate services provider",
     shortDefinition:
-      "A firm that designs, establishes, and administers a yacht's ownership structure, and coordinates the professional advisers around it across the life of the asset.",
+      "A firm that designs, establishes, and administers a yacht’s ownership structure, and coordinates the professional advisers around it across the life of the asset.",
     longDefinition:
-      "A corporate services provider maintains the ownership vehicle, meets statutory and regulatory obligations, and coordinates the banks, flag administrations, insurers, lawyers, and tax advisers around the yacht, typically becoming the central point through which those relationships are managed. It helps separate the owner's personal assets from the yacht, providing legal protection should liabilities arise, and a degree of privacy consistent with transparency and information-sharing obligations. Fees are charged on a fixed annual basis or by time spent. A provider should work alongside independent legal and tax advisers, not replace them.",
+      "A corporate services provider maintains the ownership vehicle, meets statutory and regulatory obligations, and coordinates the banks, flag administrations, insurers, lawyers, and tax advisers around the yacht, typically becoming the central point through which those relationships are managed. It helps separate the owner’s personal assets from the yacht, providing legal protection should liabilities arise, and a degree of privacy consistent with transparency and information-sharing obligations. Fees are charged on a fixed annual basis or by time spent. A provider should work alongside independent legal and tax advisers, not replace them.",
     relatedChapters: ["09-decision-framework"],
     relatedTerms: ["beneficial-ownership", "spv", "vat-paid-status", "temporary-admission", "isle-of-man-registry", "malta-flag"],
   },

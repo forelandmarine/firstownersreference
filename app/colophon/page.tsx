@@ -97,7 +97,7 @@ export default function ColophonPage() {
               casebound, head and tail bands in marine, single ribbon marker.
               Foil-stamped wordmark and blind-debossed lighthouse mark.
               Trim 230 by 300 mm. Five hundred copies, hand numbered and
-              signed by the editor in chief on page 128.
+              signed by the editors in chief on the final page.
             </p>
 
             <h2>Photography</h2>
@@ -198,8 +198,10 @@ export default function ColophonPage() {
             </p>
             <p>
               <strong>5. Professional indemnity insurance.</strong> Foreland
-              holds professional indemnity at GBP 5 million per claim, written
-              through a Lloyd&rsquo;s syndicate.
+              holds professional indemnity cover with ITIC, the marine
+              professional indemnity mutual, at GBP 500,000 per claim.
+              Project-specific excess cover is placed where an engagement
+              requires it.
             </p>
             <p>
               <strong>6. Named principals.</strong> The directors of Foreland

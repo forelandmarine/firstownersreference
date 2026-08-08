@@ -153,7 +153,7 @@ export const cases: Record<string, CaseStudy> = {
     ],
     paragraphs: [
       "The yacht was a 55 m motor from a respected Northern European yard, 11 years old, with a clean class history and a recent five-year survey. The seller had instructed the listing broker to position the yacht as turnkey and to discourage extensive pre-purchase scoping on the basis that \u201cthe class survey covered everything that mattered.\u201d The asking was EUR 22 m.",
-      "The buyer engaged an independent surveyor on the recommendation of his independent adviser, not on the recommendation of the broker. The surveyor's scope was broader than the seller's recent class survey: 6 days afloat, 2 days haul-out, full mechanical inspection by an independently engaged chief engineer, paint condition assessment, electrical compliance audit, and opening of two compartments the class surveyor had not opened (the forepeak void and a section of the lazarette adjacent to the stabiliser pumps).",
+      "The buyer engaged an independent surveyor on the recommendation of his independent adviser, not on the recommendation of the broker. The surveyor’s scope was broader than the seller’s recent class survey: 6 days afloat, 2 days haul-out, full mechanical inspection by an independently engaged chief engineer, paint condition assessment, electrical compliance audit, and opening of two compartments the class surveyor had not opened (the forepeak void and a section of the lazarette adjacent to the stabiliser pumps).",
       { type: "h2", text: "What the survey found" },
       "The class survey had passed the yacht. The pre-purchase survey did not. Three categories of finding mattered.",
       "First, the forepeak void showed early-stage corrosion in the structural framing, consistent with prolonged moisture from a leaking deck fitting two decks above. The corrosion had not penetrated the primary structural members but the affected secondary framing was within five years of needing replacement. Estimated remediation cost: EUR 350,000 to 500,000.",
@@ -170,7 +170,7 @@ export const cases: Record<string, CaseStudy> = {
         attribution: "Chapter 04, lead essay.",
       },
       { type: "h2", text: "The arithmetic of the survey fee" },
-      "The independent surveyor's fee was EUR 48,000. The independently engaged chief engineer\u2019s fee was EUR 12,000. The lawyer\u2019s fee for the renegotiation alone was approximately EUR 25,000. Total cost of the disciplined survey process: EUR 85,000.",
+      "The independent surveyor’s fee was EUR 48,000. The independently engaged chief engineer\u2019s fee was EUR 12,000. The lawyer\u2019s fee for the renegotiation alone was approximately EUR 25,000. Total cost of the disciplined survey process: EUR 85,000.",
       "The price reduction was EUR 2.1 m. The pre-purchase scoping returned approximately 25 to 1 against its own cost. This is not unusual. It is the case for engaging an independent surveyor in every acquisition where the cost permits, which is every acquisition above approximately EUR 5 m.",
       "What would have happened without the survey: the buyer would have closed at EUR 22 m and absorbed the EUR 2.0 to 2.4 m of remediation across his first three years of ownership. The total cost would have been approximately EUR 2.1 m higher than what he paid. The seller, in that scenario, would have been the beneficiary.",
     ],
@@ -297,7 +297,7 @@ export const cases: Record<string, CaseStudy> = {
       {
         type: "blockquote",
         text: "Do not just hire the best captain on paper. Hire the one who can manage you. A good captain runs the yacht. A great captain manages the entire ecosystem around it, including the owner.",
-        attribution: "Chapter 07, lead essay.",
+        attribution: "Erica Lay, Crew Recruitment Specialist, EL Crew Co",
       },
       { type: "h2", text: "The next decade" },
       "Ten years on, the captain is still on the yacht. The senior crew (chief officer, chief engineer, chief stewardess, chef) have averaged 6.5 years of tenure. Junior crew turnover has run at approximately one-third the industry average. The yacht has had two refits, both delivered within practitioner cost discipline. The captain has, on three occasions across the decade, recommended that the owner not proceed with a particular refit yard, supplier, or charter arrangement. In each case, the recommendation was inconvenient in the moment and proved correct in retrospect.",

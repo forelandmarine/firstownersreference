@@ -160,7 +160,7 @@ export const checklists: Record<string, Checklist> = {
           },
           {
             question:
-              "If new build is also under consideration: slot availability at the relevant yard tier (Lurssen, Feadship, Oceanco, Heesen, Sanlorenzo).",
+              "If new build is also under consideration: slot availability at the relevant yard tier (Lürssen, Feadship, Oceanco, Heesen, Sanlorenzo).",
           },
           {
             question:

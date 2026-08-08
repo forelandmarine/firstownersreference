@@ -37,7 +37,7 @@ export const sections: Section[] = [
     title: "Reading the market in 2026",
     standfirst:
       "Where the order book actually sits, who has capacity, and what that means for a buyer entering this year.",
-    coordinates: "50.7601°N 1.2982°W",
+    coordinates: "43.1697°N 5.6086°E",
     hero: "/images/stock/monaco-fleet.jpg",
     contributor: "To be confirmed",
     contributorRole: "Market intelligence head",
@@ -51,7 +51,7 @@ export const sections: Section[] = [
     slug: "03-how-the-industry-works",
     title: "How the industry actually works",
     standfirst:
-      "Conflicts, commissions, retrocessions, and the captain's role at the centre of it. Said plainly.",
+      "Conflicts, commissions, retrocessions, and the captain’s role at the centre of it. Said plainly.",
     coordinates: "43.5528°N 7.0174°E",
     hero: "/images/stock/cap-cove-tenders.jpg",
     contributor: "Andrew Roch",
@@ -60,7 +60,7 @@ export const sections: Section[] = [
     seoTitle:
       "Yacht broker commissions, retrocessions, and conflicts of interest",
     seoDescription:
-      "The structural conflicts in superyacht acquisition: who pays the broker commission, how dual agency works in practice, what retrocession arrangements look like, and the captain's role at the centre of the structure.",
+      "The structural conflicts in superyacht acquisition: who pays the broker commission, how dual agency works in practice, what retrocession arrangements look like, and the captain’s role at the centre of the structure.",
     datePublished: "2026-05-01",
   },
   {
@@ -84,7 +84,7 @@ export const sections: Section[] = [
     title: "New build versus brokerage",
     standfirst:
       "The 24 to 36 month commitment of a new build, against the immediacy of brokerage. Trade-offs and the cases for each.",
-    coordinates: "53.0040°N 5.6603°E",
+    coordinates: "53.0563°N 5.4051°E",
     hero: "/images/stock/red-hull-launch.jpg",
     heroFocus: "bottom",
     contributor: "Hein Velema",
@@ -92,9 +92,9 @@ export const sections: Section[] = [
       "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
     contributorLinkedIn: "https://www.linkedin.com/in/hein-velema-a4061aa6/",
     seoTitle:
-      "New build vs brokerage superyacht: contract, owner's rep, costs",
+      "New build vs brokerage superyacht: contract, owner’s rep, costs",
     seoDescription:
-      "Yacht new build versus brokerage. Threshold tests, contract drafting at heads of terms, the owner's representative role, and the variation-margin overrun pattern documented across SYBAss yards.",
+      "Yacht new build versus brokerage. Threshold tests, contract drafting at heads of terms, the owner’s representative role, and the variation-margin overrun pattern documented across SYBAss yards.",
     datePublished: "2026-05-01",
   },
   {
@@ -103,7 +103,7 @@ export const sections: Section[] = [
     title: "Refit",
     standfirst:
       "When to refit and when to sell. Yard selection, scope discipline, and the budget overrun pattern that defines the market.",
-    coordinates: "41.3381°N 2.1647°E",
+    coordinates: "53.5403°N 9.9645°E",
     hero: "/images/stock/boatshed-cradles.jpg",
     heroFocus: "bottom",
     contributor: "To be confirmed",
@@ -160,7 +160,7 @@ export const sections: Section[] = [
     seoTitle:
       "Yacht ownership structure, VAT, and the questions to ask before buying",
     seoDescription:
-      "How to settle the ownership structure, jurisdiction, and VAT position before contracts are exchanged, and the ten questions and independence test to put to anyone proposing to advise on a superyacht acquisition, including the publisher of The First Owner's Reference.",
+      "How to settle the ownership structure, jurisdiction, and VAT position before contracts are exchanged, and the ten questions and independence test to put to anyone proposing to advise on a superyacht acquisition, including the publisher of The First Owner’s Reference.",
     datePublished: "2026-05-01",
   },
 ];
