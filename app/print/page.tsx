@@ -6,6 +6,7 @@ import { glossaryEntries } from "@/lib/glossary";
 import { getGuestOpinions } from "@/lib/guest-opinions";
 import { printImages } from "@/lib/print-images";
 import { renderChartForPrint } from "@/components/print/print-chart";
+import { getContributorProfile } from "@/lib/contributors";
 import { buildPrintIndex } from "@/lib/print-index";
 import printFolios from "@/lib/print-folios.json";
 import {
@@ -783,6 +784,8 @@ function ChapterBlock({
   // Identify positions to insert supporting images. Place after every 4th
   // string paragraph in the rest flow.
   const supList = printImages.supporting?.[section.slug] ?? [];
+  const tallImage = printImages.tall?.[section.slug];
+  const caseImage = printImages.cases?.[section.slug];
 
   // Extract chapter h2 section headings to use as the "at a glance" list at
   // the chapter close. These are the structural argument of the chapter and
@@ -829,12 +832,25 @@ function ChapterBlock({
                 if (typeof para === "string") {
                   out.push(<p key={`p-${i}`}>{para}</p>);
                   stringCount++;
-                  // Inject supporting images at column-spanning feature size
-                  // every 5 paragraphs. Reliable column-spanning placement
-                  // avoids the float-wrap edge cases where the adjacent
-                  // column strands empty at section ends.
+                  // Two-thirds-page vertical figure early in the essay, then
+                  // column-measure supporting figures every 4 paragraphs.
+                  if (stringCount === 3 && tallImage) {
+                    out.push(
+                      <figure
+                        key={`tall-${i}`}
+                        className="chapter-body__figure chapter-body__figure--tall"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={`/print-images/print/${tallImage.filename}`}
+                          alt={tallImage.alt}
+                        />
+                      </figure>
+                    );
+                  }
                   if (
-                    stringCount % 5 === 0 &&
+                    stringCount > 3 &&
+                    (stringCount - 3) % 4 === 0 &&
                     supIdx < supList.length
                   ) {
                     const sup = supList[supIdx];
@@ -912,14 +928,32 @@ function ChapterBlock({
           className="guest-opinion"
           data-chapter={chapterRunning}
         >
-          <p className="guest-opinion__label">Guest opinion</p>
-          <h2 className="guest-opinion__title">
-            In conversation with {guestOpinion.contributor}
-          </h2>
-          <p className="guest-opinion__intro">
-            {guestOpinion.contributorRole}.{" "}
-            {guestOpinion.intro}
-          </p>
+          {(() => {
+            const avatar = getContributorProfile(
+              guestOpinion.contributor
+            )?.avatar;
+            return (
+              <div className={avatar ? "guest-opinion__head" : undefined}>
+                {avatar && (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img
+                    src={avatar}
+                    alt={guestOpinion.contributor}
+                    className="guest-opinion__portrait"
+                  />
+                )}
+                <div>
+                  <p className="guest-opinion__label">Guest opinion</p>
+                  <h2 className="guest-opinion__title">
+                    In conversation with {guestOpinion.contributor}
+                  </h2>
+                  <p className="guest-opinion__intro">
+                    {guestOpinion.contributorRole}. {guestOpinion.intro}
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
           <div className="guest-opinion__body">
             {guestOpinion.questions.map((qa, i) => (
               <div key={i} className="guest-opinion__qa">
@@ -931,6 +965,19 @@ function ChapterBlock({
                 </div>
               </div>
             ))}
+            {(() => {
+              const endPull = [...guestOpinion.questions]
+                .reverse()
+                .find((qa) => qa.pullQuote)?.pullQuote;
+              return endPull ? (
+                <div className="piece-end">
+                  <blockquote className="piece-end__quote">{endPull}</blockquote>
+                  <p className="piece-end__mark" aria-hidden>
+                    ■
+                  </p>
+                </div>
+              ) : null;
+            })()}
           </div>
         </section>
       ))}
@@ -944,6 +991,16 @@ function ChapterBlock({
             <p className="data-spread__standfirst">{dataSpread.standfirst}</p>
           </header>
           {dataSpread.blocks.map((block, i) => {
+            // One form per dataset in print: when a chart follows a table
+            // or kv of the same data, the chart is the hero and the table
+            // is dropped (the web edition keeps both).
+            const next = dataSpread.blocks[i + 1];
+            if (
+              (block.type === "table" || block.type === "kv") &&
+              next?.type === "chart"
+            ) {
+              return null;
+            }
             if (block.type === "h2") {
               return <h2 key={i}>{block.text}</h2>;
             }
@@ -1044,28 +1101,54 @@ function ChapterBlock({
           </header>
 
           <div className="case-section__body">
-            {caseStudy.paragraphs.map((p, i) => {
-              if (typeof p === "string") {
-                return <p key={i}>{p}</p>;
-              }
-              if (p.type === "h2") {
-                return <h2 key={i}>{p.text}</h2>;
-              }
-              if (p.type === "blockquote") {
-                return (
-                  <blockquote key={i} className="chapter-body__pull">
-                    {p.text}
-                    {p.attribution && (
-                      <footer>{p.attribution}</footer>
-                    )}
-                  </blockquote>
-                );
-              }
-              return null;
-            })}
+            {(() => {
+              const out: React.ReactNode[] = [];
+              let strings = 0;
+              caseStudy.paragraphs.forEach((p, i) => {
+                if (typeof p === "string") {
+                  out.push(<p key={i}>{p}</p>);
+                  strings++;
+                  if (strings === 4 && caseImage) {
+                    out.push(
+                      <figure key={`case-fig-${i}`} className="case-section__figure">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={`/print-images/print/${caseImage.filename}`}
+                          alt={caseImage.alt}
+                        />
+                      </figure>
+                    );
+                  }
+                  return;
+                }
+                if (p.type === "h2") {
+                  out.push(<h2 key={i}>{p.text}</h2>);
+                  return;
+                }
+                if (p.type === "blockquote") {
+                  out.push(
+                    <blockquote key={i} className="chapter-body__pull">
+                      {p.text}
+                      {p.attribution && <footer>{p.attribution}</footer>}
+                    </blockquote>
+                  );
+                }
+              });
+              return out;
+            })()}
             <p className="case-section__disclosure">
               <strong>Disclosure.</strong> {caseStudy.disclosure}
             </p>
+            {caseStudy.takeaways?.[0] && (
+              <div className="piece-end">
+                <blockquote className="piece-end__quote">
+                  {caseStudy.takeaways[0]}
+                </blockquote>
+                <p className="piece-end__mark" aria-hidden>
+                  ■
+                </p>
+              </div>
+            )}
           </div>
         </section>
       )}

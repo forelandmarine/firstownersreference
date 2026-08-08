@@ -2039,9 +2039,58 @@ body {
   max-height: 100mm;
 }
 
-.data-spread__chart figure > header,
-.data-spread__chart figure > footer {
-  display: none;
+.data-spread__chart figure {
+  margin: 0;
+  break-inside: avoid;
+}
+
+.data-spread__chart figure > header p:first-child {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7.5pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--colour-marine);
+  margin: 0 0 2mm 0;
+}
+
+.data-spread__chart figure > header p:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 2.6mm;
+  height: 2.6mm;
+  background: var(--colour-marine);
+  margin-right: 2.5mm;
+  vertical-align: -0.3mm;
+}
+
+.data-spread__chart figure > header h4 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 400;
+  font-size: 14.5pt;
+  line-height: 18pt;
+  color: var(--colour-ink);
+  margin: 0 0 2mm 0;
+  max-width: 150mm;
+}
+
+.data-spread__chart figure > header p:not(:first-child) {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 9.5pt;
+  line-height: 13pt;
+  color: var(--colour-soft);
+  margin: 0 0 3mm 0;
+  max-width: 140mm;
+}
+
+.data-spread__chart figure > footer p {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 8.5pt;
+  line-height: 12pt;
+  color: var(--colour-stone);
+  margin: 2mm 0 0 0;
+  max-width: 150mm;
 }
 
 .data-spread__chart figure {
@@ -2397,4 +2446,106 @@ body {
 .chapter-body__pull {
   break-after: avoid-page;
   page-break-after: avoid;
+}
+
+/* ===========================================================
+   HEAVY-IMAGERY PASS (TSR discipline: every page anchored)
+   =========================================================== */
+
+/* Two-thirds-page vertical figure: a full column height of image
+   with the text carrying on in the facing column. */
+.chapter-body__figure--tall {
+  break-inside: avoid;
+  margin: 0 0 10pt 0;
+}
+
+.chapter-body__figure--tall img {
+  width: 100%;
+  height: 196mm;
+  object-fit: cover;
+  display: block;
+}
+
+/* Case-study in-flow image, column measure. */
+.case-section__figure {
+  break-inside: avoid;
+  margin: 10pt 0;
+}
+
+.case-section__figure img {
+  width: 100%;
+  height: 62mm;
+  object-fit: cover;
+  display: block;
+}
+
+.chapter-body__figure figcaption,
+.case-section__figure figcaption {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-size: 8.5pt;
+  line-height: 12pt;
+  color: var(--colour-stone);
+  margin-top: 2mm;
+}
+
+/* Contributor portrait beside the Q&A title. */
+.guest-opinion__head {
+  display: grid;
+  grid-template-columns: 26mm 1fr;
+  column-gap: 8mm;
+  align-items: start;
+  margin-bottom: 6mm;
+}
+
+.guest-opinion__portrait {
+  width: 26mm;
+  height: 26mm;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+/* End-of-piece device: a centred display quote (TSR article-end
+   convention). As the final element of the multicol flow it also
+   balances the last page's columns. */
+.piece-end {
+  column-span: all;
+  text-align: center;
+  margin: 8mm 0 0 0;
+  padding-top: 7mm;
+  break-inside: avoid;
+}
+
+.piece-end__quote {
+  border: 0;
+  padding: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 19pt;
+  line-height: 25pt;
+  letter-spacing: -0.005em;
+  color: var(--colour-marine);
+  max-width: 128mm;
+  margin: 0 auto;
+}
+
+.piece-end__mark {
+  font-size: 7pt;
+  color: var(--colour-marine);
+  margin: 4mm 0 0 0;
+}
+
+/* Kicker squares on section labels (quiet nod to trade-press chips). */
+.guest-opinion__label::before,
+.data-spread__label::before,
+.case-section__label::before {
+  content: "";
+  display: inline-block;
+  width: 2.6mm;
+  height: 2.6mm;
+  background: var(--colour-marine);
+  margin-right: 2.5mm;
+  vertical-align: -0.3mm;
 }
