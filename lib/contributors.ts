@@ -46,6 +46,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   },
   "Jack Inglis": {
     name: "Jack Inglis",
+    avatar: "/images/contributors/jack-inglis.jpg",
     bio: "Founder of the owner's-representative practice ULTIMAR, and a captain who came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea. He entered the industry in 2012 as bosun on a 60 metre support vessel, commanded North Sea offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the SYBAss and IAMI Yacht Owner's Representative Program; the 1,200-item delivery snag list cited in the new-build chapter is his.",
   },
 };
