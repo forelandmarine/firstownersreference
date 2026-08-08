@@ -22,7 +22,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   },
   "Capt. Pavlos Filippakis": {
     name: "Capt. Pavlos Filippakis",
-    bio: "A Master Mariner (Class 1 Unlimited, Ice Class) who came to large-yacht command from a career in LNG. He has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands.",
+    bio: "A Master Mariner (Class 1 Unlimited) and ice-class captain who came to large-yacht command from a career in LNG. He has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands.",
   },
   "Hein Velema": {
     name: "Hein Velema",
