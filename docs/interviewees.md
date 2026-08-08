@@ -184,7 +184,7 @@ Working document. Updated as outreach progresses. Approach order at the foot of 
 - **Brief:** Hardening-then-stabilising market.
 
 ### Pavlos Filippakis
-- **Role:** Master Mariner (Class 1 Unlimited), with STCW Polar Code endorsement (ice class).
+- **Role:** Master Mariner (Class 1 Unlimited, Ice Class), with STCW Polar Code endorsement.
 - **Why:** Captain voice for chapters 03 and 07. Chapter 03's "captain's loyalty problem" thesis (broker introductions, retrocession economics, captain career incentives) and chapter 07's captain-hire framework benefit materially from a named master mariner on the record. Polar Code endorsement adds high-latitude operational depth as sidebar support to chapter 04 (cruising-area and flag implications) and chapter 08 (the explorer / expedition third path beyond motor and sail).
 - **Approach:** Warm via Foreland's captain network.
 - **Sections:** 03 (anchor on captain's-vantage industry conflicts), 07 (anchor on captain hire and crew dynamics). Sidebar support to 04 (sea-trial and acquisition discipline) and 08 (explorer / high-latitude angle).
@@ -271,7 +271,7 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Dominique Gruber | 4 | Pending | - | Cold via Megayacht News |
 | Kevin Laverty | 3 | Pending | - | Cold via Hill Robinson |
 | Jo Assael | 7 | Pending | - | Cold via IRI London |
-| Pavlos Filippakis | 3, 4, 7, 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network; Master Mariner (Class 1 Unlimited); on-the-record across loyalty problem (ch 3), sea trial (ch 4), captain hire and crew dynamics (ch 7), explorer and high-latitude angle (ch 8) |
+| Pavlos Filippakis | 3, 4, 7, 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network; Master Mariner (Class 1 Unlimited, Ice Class); on-the-record across loyalty problem (ch 3), sea trial (ch 4), captain hire and crew dynamics (ch 7), explorer and high-latitude angle (ch 8) |
 | Erica Lay | 7 | Confirmed, integrated as Q&A | 2026-05-05 | Sign-off accepted; published |
 | Toby Brand | - | Declined | 2026-05-05 | Replaced on chapter 8 by Ella Johnson |
 | Ella Johnson | 8 | Confirmed, integrated as Q&A | 2026-05-17 | Warm via Foreland captain network / Baltic Yachts; Master of a 34 metre Baltic Yachts performance sloop (boat name redacted); chapter 8 sidebar on sail. Q5 and Q6 declined |

@@ -195,7 +195,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       {
         type: "blockquote",
         text: "If you accept a fee for giving out the work, how can you still audit the quality of the result you are directly responsible for? You can't. So for me it's not really a question.",
-        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited), May 2026",
+        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited, Ice Class), May 2026",
       },
       "Andrew Roch, founder of Yacht Crew Recruitment and Training and a co-architect of the Yacht Owner's Representative Program with SYBAss, sets out the structural extension of the same argument across the management-company tier. Writing in Superyacht News in June 2026, Roch documents the post-1990s shift in which large-yacht management companies migrated from administrative support into operational and financial control, drawing decision-making authority away from the captain on board and into shore-based offices. Responsibility for the vessel remained with the master; the authority that should accompany it did not.",
       {
@@ -246,7 +246,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       {
         type: "blockquote",
         text: "The surveyor tests whether the boat matches the specification. The captain tests whether she handles the way she'll need to handle at three in the morning, in weather, with a tired crew.",
-        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited), May 2026",
+        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited, Ice Class), May 2026",
       },
       "What is being tested: handling, stability, vibration, noise at various engine loads, anchoring and ground tackle, navigation and comms, autopilot and control systems, comfort underway, and any failure mode the survey did not catch. Common failures: vibration at certain RPM bands, poor noise insulation in master cabin underway, unmaintained navigation electronics, stabilisers that work at one heel angle and not another.",
       "If the trial reveals issues, the renegotiation continues. If not, the next step is closing.",
@@ -535,7 +535,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       {
         type: "blockquote",
         text: "A Captain has to reduce the operating risk profile of his vessel, and fighting for that is part of the job.",
-        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited), May 2026",
+        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited, Ice Class), May 2026",
       },
       "The independence question applies. A captain recommended by the broker has a relationship with the broker; the broker benefits if the captain calls with charter requests or future acquisition referrals. A captain hired through a recruitment agency engaged by the owner's independent adviser is free of that relationship.",
       {
@@ -701,7 +701,7 @@ export const leadEssays: Record<string, LeadEssay> = {
       {
         type: "blockquote",
         text: "A motor yacht in Antibes has a guest list. An explorer has a history.",
-        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited), May 2026",
+        attribution: "Capt. Pavlos Filippakis, Master Mariner (Class 1 Unlimited, Ice Class), May 2026",
       },
       "The instinct is not yacht-specific. Knight Frank's Wealth Report 2026 carries the same observation from outside the industry. Erwan Rambourg, Global Head of Consumer & Retail Equity Research at HSBC, frames the broader generational shift as a rejection of repetition rather than of luxury itself — \"Luxury brands became way too expensive and way too repetitive. They lost interest in a broken value proposition.\" Bernhard Bohnenberger of Discover Collection, opening a low-density retreat on Oman's Musandam Peninsula, locates the same instinct in travel:",
       {
