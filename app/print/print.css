@@ -2555,3 +2555,11 @@ body {
   margin-right: 2.5mm;
   vertical-align: -0.3mm;
 }
+
+/* HAZARD (found 8 Aug 2026): the sources section is a Chrome print-
+   fragmentation minefield. Two independent changes each reflowed the
+   whole book from ~120pp to 217pp (content squeezed to ~68% width):
+   (1) an invalid string in a data-spread source `url` field, and
+   (2) adding word-break/overflow-wrap rules to .sources-section.
+   Keep source url fields as valid URLs, do not add text-breaking rules
+   here, and check the page count after ANY change to this region. */

@@ -42,7 +42,7 @@ export const cases: Record<string, CaseStudy> = {
       { type: "h2", text: "The decision to sell, and the second acquisition" },
       "The decision to sell the first yacht was taken at the end of the second season. The yacht went onto the brokerage market and sold within four months at a 28 percent discount to original purchase. The depreciation, EUR 3.1 m, was within the 10 to 20 percent year-one band, accelerated by the rapid sale. The operating loss across two years was approximately EUR 4 m. Plus the depreciation, plus the transaction costs. The total cost of the first 18 months was approximately EUR 8.5 m.",
       "The second acquisition began with a different architecture. He engaged an independent adviser before contacting any broker. The independent adviser briefed him on the acquisition process, the structure of the industry, and the team he would need. The independent adviser ran the search across multiple brokerages, evaluated three shortlist yachts, ran a parallel scan against off-market inventory, and recommended an independent surveyor and a yacht lawyer he had no commercial relationship with.",
-      "The second yacht, a 46 m semi-custom from a higher-tier yard, took eight months to acquire from first conversation to closing. The buyer paid the independent adviser USD 180,000 for the year of work. He paid the lawyer USD 90,000 for the contract negotiation. He paid the surveyor USD 45,000 for a four-day pre-purchase survey. The total team cost was approximately USD 320,000 on a USD 24 m acquisition. He had paid nothing equivalent on the first yacht. He had also paid USD 8.5 m more than he needed to over the two years that followed.",
+      "The second yacht, a 46 m semi-custom from a higher-tier yard, took eight months to acquire from first conversation to closing. The buyer paid the independent adviser USD 180,000 for the year of work. He paid the lawyer USD 90,000 for the contract negotiation. He paid the surveyor USD 45,000 for a four-day pre-purchase survey. The total team cost was approximately USD 320,000 on a USD 24 m acquisition. He had paid nothing equivalent on the first yacht. He had also paid approximately EUR 8.5 m more than the second architecture would have cost him over the first ownership.",
       { type: "h2", text: "Year five, ongoing" },
       "Year five of the second yacht is ongoing. The hold is approaching its five-year mark. The crew has stayed largely intact across four years; the captain is the same one hired through an independent recruitment process at the start. Operating cost has run at 13 to 14 percent of original capex per year, in the moderate-use band the independent adviser had set out from the start.",
       "The buyer is unlikely to sell. He is also unlikely, on this yacht, to be surprised by an invoice. The cost is what he was told it would be. The team is paid by him, directly, at known rates. The independence is structural. The arithmetic of the two acquisitions, taken together, makes the case for the second architecture more clearly than any commentary could.",
@@ -102,7 +102,7 @@ export const cases: Record<string, CaseStudy> = {
     slug: "03-how-the-industry-works",
     title: "The free advice that cost GBP 400,000.",
     standfirst:
-      "The buyer was offered \u201cfree\u201d guidance by a brokerage on the management contract, the paint specialist, the insurance broker, and the recruitment agency. Each introduction carried a referral economics he was not told about. The fee saving on the broker engagement was approximately GBP 25,000. The cost of the structure across year one was approximately GBP 400,000.",
+      "The buyer was offered \u201cfree\u201d guidance by a brokerage on the management contract, the paint specialist, the insurance broker, and the recruitment agency. Each introduction carried a referral economics he was not told about. The fee saving on the broker engagement was approximately GBP 75,000. The cost of the structure across year one was approximately GBP 400,000.",
     meta: [
       { label: "Yacht", value: "38 m semi-custom motor" },
       { label: "Acquisition value", value: "EUR 19 m" },
@@ -149,7 +149,7 @@ export const cases: Record<string, CaseStudy> = {
       { label: "Yacht", value: "55 m motor, year 2014, brokerage" },
       { label: "Original asking", value: "EUR 22 m" },
       { label: "Final closing", value: "EUR 19.9 m" },
-      { label: "Anonymisation", value: "Composite of one Foreland project, 2023" },
+      { label: "Anonymisation", value: "Single Foreland project, 2023" },
     ],
     paragraphs: [
       "The yacht was a 55 m motor from a respected Northern European yard, 11 years old, with a clean class history and a recent five-year survey. The seller had instructed the listing broker to position the yacht as turnkey and to discourage extensive pre-purchase scoping on the basis that \u201cthe class survey covered everything that mattered.\u201d The asking was EUR 22 m.",
@@ -283,7 +283,7 @@ export const cases: Record<string, CaseStudy> = {
       { label: "Yacht", value: "52 m semi-custom motor" },
       { label: "Captain tenure", value: "Year 10, ongoing" },
       { label: "Crew retention", value: "Senior crew average tenure 6.5 years" },
-      { label: "Anonymisation", value: "Composite of one Foreland project, 2014 ongoing" },
+      { label: "Anonymisation", value: "Single Foreland project, 2014 ongoing" },
     ],
     paragraphs: [
       "The owner had taken delivery of a 52 m semi-custom motor yacht 18 months earlier. The first captain, hired through a recruitment agency introduced by the brokerage that sold the yacht, had run the yacht for 14 months before resigning citing \u201cdifferences in operational philosophy.\u201d The hand-over was orderly. The yacht needed a new captain, and the owner had used the first hire as a learning experience.",

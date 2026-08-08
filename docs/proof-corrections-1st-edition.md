@@ -35,6 +35,48 @@ Diacritics: Lürssen ×18 and García-Aubert restored.
 E, F, G (beyond A8-A10), H: open, with E1 (credits page) and the E6
 aesthetic decision needing Jack first.
 
+## Build-agent status, second pass (8 Aug, evening)
+
+Verification round using primary sources:
+- "Stefan Zimmermann Zschocke, CEO of Oyster Yachts": the review flag was
+  WRONG; he is Oyster's CEO from 1 Sep 2025 (BOAT International,
+  Oyster's own announcement). No change; treat as verified.
+- 111m DreAMBoat delivered November 2025: also verified correct
+  (Oceanco Y726, second DreAMBoat for the same owner). The review
+  confused it with the 2019 90m DreAMboat. No change.
+- CIT/IEEPA: essay corrected (CIT ruled May 2025; Supreme Court upheld
+  after November 2025 argument; refunds ordered spring 2026).
+- Burgess/Ancient stake unified to November 2025 (Megayacht News).
+- Wave Expandary / Lai Sun figures spot-verified (EUR 50m EV,
+  EUR 9.135m put/call both confirmed against coverage).
+- Palm Beach show datelines corrected April to March 2026.
+- "CEO Manuel Di Tillio" claim does not exist in the book; he appears
+  correctly as a roundtable participant (he is Amico technical and
+  sales director). No change needed.
+- YORP launch corrected July to June 2023.
+- Red Ensign list: Pitcairn removed, Cayman added.
+- Wolfson Marine and Winterbothams removed from all surveyor lists
+  (research unit and unverifiable name respectively).
+- Retrocession basis annotated (commission-share vs premium-share).
+- ch01 case: USD/EUR 8.5m unified to EUR with consistent period.
+- ch03 case: standfirst fee saving corrected to GBP 75,000 (the body
+  arithmetic supports it).
+- "Composite of one" metas corrected to "Single Foreland project".
+- Glossary brokerage commission qualified (IYBA flat vs MYBA scale).
+- YPI/Quay YoY wording repaired.
+- Capgemini 2024 (ch08 sustainability) vs 2025 (ch09 wealth transfer)
+  appear to be deliberate different editions; left, confirm with editors.
+
+PRODUCTION HAZARD discovered and documented in print.css: the sources
+section sits on a Chrome print-layout tipping point. Three separate
+perturbations (an invalid url string, word-break rules, a display-
+shortening change) each reflowed the book from 120pp to 217pp at ~68%
+width. Sources content and rendering are FROZEN pending a proper fix;
+the folio-117 long-URL truncation is accepted as a known cosmetic
+defect for now. The build script now also refuses to print from a
+build whose font download failed (the other silent 217pp cause).
+
+
 Numbering: printed folio runs one behind the PDF page (PDF p41 carries folio 40). All references below are printed folios unless marked "PDF p" (front matter pages before folio 1 are unfoliated).
 
 Work the sections in order. Sections A and B are blockers, nothing ships until they are clear.

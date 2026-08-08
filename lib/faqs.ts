@@ -87,7 +87,7 @@ export const chapterFaqs: Record<string, FaqItem[]> = {
     {
       question: "Do I need a pre-purchase survey before buying a yacht?",
       answer:
-        "Yes. A pre-purchase survey by an independently engaged surveyor is a non-negotiable acquisition discipline. Cost on a 40 to 50 metre yacht runs USD 25,000 to 60,000 inclusive of paint specialist and class-society inspector, over four to seven days afloat plus haul-out. Recognised firms include Wolfson Marine, Ward & McKenzie, Patton Marine, and Winterbothams. Renegotiation on every material deficiency the survey finds is standard practice. The seller’s most recent survey is not a substitute.",
+        "Yes. A pre-purchase survey by an independently engaged surveyor is a non-negotiable acquisition discipline. Cost on a 40 to 50 metre yacht runs USD 25,000 to 60,000 inclusive of paint specialist and class-society inspector, over four to seven days afloat plus haul-out. Recognised firms include Ward & McKenzie and Patton Marine. Renegotiation on every material deficiency the survey finds is standard practice. The seller’s most recent survey is not a substitute.",
     },
     {
       question: "What is a Memorandum of Agreement on a yacht sale?",

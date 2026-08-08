@@ -13,7 +13,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "brokerage",
     term: "Brokerage",
     shortDefinition:
-      "The sale of an existing yacht through an intermediary. The seller pays the commission, typically 10 percent of the sale price, regardless of which broker introduces the buyer.",
+      "The sale of an existing yacht through an intermediary. The seller pays the commission, 10 percent under the IYBA flat standard or stepped down on larger transactions under the MYBA sliding scale, regardless of which broker introduces the buyer.",
     longDefinition:
       "Brokerage transactions account for the majority of yacht sales above 24 metres. Commission is paid by the seller from the proceeds of sale, so the buyer is not invoiced directly, but the structure means every party introduced by a brokerage is paid only on a closed transaction. The IYBA standard is a flat 10 percent of the sale price; MYBA uses a sliding scale that decreases at higher transaction values.",
     relatedChapters: ["03-how-the-industry-works", "05-new-build-versus-brokerage"],

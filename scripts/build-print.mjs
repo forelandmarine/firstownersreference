@@ -826,6 +826,26 @@ async function main() {
       execSync("pnpm build", { cwd: ROOT, stdio: "pipe" });
     }
 
+    // Guard: next/font downloads can fail silently, baking the Georgia
+    // fallback into the build. A fallback-font book reflows to ~1.8x the
+    // pages; never print from a build without embedded fonts.
+    const cssDir = path.join(ROOT, ".next/static/chunks");
+    const hasEmbeddedFonts = fs
+      .readdirSync(cssDir)
+      .filter((f) => f.endsWith(".css"))
+      .some((f) => {
+        const css = fs.readFileSync(path.join(cssDir, f), "utf8");
+        return (
+          css.includes("font-family:Newsreader") &&
+          /@font-face\{[^}]*Newsreader[^}]*url\(/.test(css)
+        );
+      });
+    if (!hasEmbeddedFonts) {
+      throw new Error(
+        "Build has no embedded Newsreader @font-face (font download failed); refusing to print"
+      );
+    }
+
     let serverProc;
     try {
       serverProc = await startServer();

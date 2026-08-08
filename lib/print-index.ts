@@ -82,10 +82,8 @@ const NAMED_ENTITIES = [
   "Ince",
 
   // Surveyors
-  "Wolfson Marine",
   "Ward & McKenzie",
   "Patton Marine",
-  "Winterbothams",
 
   // Management companies
   "Hill Robinson",
