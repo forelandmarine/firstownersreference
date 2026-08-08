@@ -26,7 +26,8 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   },
   "Hein Velema": {
     name: "Hein Velema",
-    bio: "Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner's Representative Register and the YORP programme. The first president of SYBAss, he has held senior roles at Feadship and Fraser.",
+    avatar: "/images/contributors/hein-velema.jpg",
+    bio: "Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner's Representative Register and the YORP programme, and a partner at the consultancy Marstrat. The first president of SYBAss, he has held senior roles at Feadship and Fraser.",
   },
   "Erica Lay": {
     name: "Erica Lay",
