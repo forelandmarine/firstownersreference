@@ -1085,16 +1085,14 @@ body {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 400;
   font-size: 19pt;
-  line-height: 23pt;
+  line-height: 19pt;
   letter-spacing: -0.005em;
   color: var(--colour-marine);
-  margin: 24pt 0 11pt 0;
+  margin: 18pt 0 8pt 0;
   page-break-after: avoid;
   break-after: avoid-page;
   page-break-inside: avoid;
   break-inside: avoid;
-  column-span: all;
-  max-width: 95%;
 }
 
 /* The paragraph that immediately follows an h2 carries the heading with
@@ -1118,16 +1116,14 @@ body {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 28pt;
-  line-height: 32pt;
+  font-size: 17pt;
+  line-height: 22pt;
   letter-spacing: -0.005em;
   color: var(--colour-marine);
-  margin: 16pt 0;
-  padding: 12pt 0 12pt 14mm;
+  margin: 12pt 0;
+  padding: 8pt 0 8pt 6mm;
   border-left: 2pt solid var(--colour-marine);
   break-inside: avoid;
-  column-span: all;
-  max-width: 165mm;
 }
 
 .chapter-body__pull footer {
@@ -1202,13 +1198,13 @@ body {
 /* Feature image: spans both columns, sits as a visual break between
    sections. Use for the most consequential supporting image per chapter. */
 .chapter-body__figure--feature {
-  column-span: all;
-  margin: 16pt 0;
+  margin: 12pt 0;
+  break-inside: avoid;
 }
 
 .chapter-body__figure--feature img {
   width: 100%;
-  height: 110mm;
+  height: 64mm;
   object-fit: cover;
   display: block;
 }
@@ -1368,11 +1364,13 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 240mm;
-  break-before: page;
+  /* Fits the remainder of a case-tail page when >=195mm is free
+     (absorbing the stub); otherwise takes a fresh page. Unbreakable
+     either way, and the foot pins to the block's base. */
+  min-height: 180mm;
   break-inside: avoid;
   page-break-inside: avoid;
-  margin-top: 0;
+  margin-top: 10mm;
   padding-top: 10mm;
   border-top: 1pt solid var(--colour-marine);
 }
@@ -1711,10 +1709,9 @@ body {
 }
 
 .case-section__body h2 {
-  column-span: all;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 13.5pt;
   line-height: 20pt;
   color: var(--colour-marine);
   margin: 18pt 0 8pt 0;
@@ -1747,10 +1744,9 @@ body {
   font-size: 10pt;
   line-height: 15pt;
   color: var(--colour-stone);
-  margin-top: 14mm;
-  padding-top: 6mm;
+  margin-top: 10mm;
+  padding-top: 5mm;
   border-top: 0.5pt solid var(--colour-rule);
-  column-span: all;
   position: relative;
 }
 
@@ -1767,10 +1763,9 @@ body {
    absorb trailing space on the case page and act as a clear chapter-end
    typographic moment that prefaces the standalone close page following. */
 .case-section__close {
-  margin-top: 14mm;
-  padding-top: 10mm;
+  margin-top: 10mm;
+  padding-top: 7mm;
   border-top: 0.5pt solid var(--colour-rule);
-  column-span: all;
   break-inside: avoid;
 }
 
