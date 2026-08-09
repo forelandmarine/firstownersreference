@@ -10,11 +10,13 @@ One content source feeds both editions. `lib/lead-essays.ts`, `lib/cases.ts`, `l
 
 A local-first editor at `/studio` inside this repo. It runs only under `pnpm dev`; dev-only route handlers read and write the content files on disk, and the route returns 404 in production builds. No auth and no database, because git is already the database and the press build needs the local toolchain (Puppeteer, sips, Ghostscript, pypdf) anyway. A hosted editor would add an auth surface and a sync problem while still being unable to run the print pass on Vercel.
 
-## Step 1, content store migration
+## Step 1, content store migration (completed 10 August 2026)
 
 Move the seven content families from TS literals to JSON files under `content/`, with each existing `lib/*.ts` becoming a thin typed loader (`import data from` plus `satisfies Record<string, T>`), so all existing imports and type checks are untouched. The editor then reads and writes JSON rather than generating TypeScript source, which avoids escape and quote-fidelity bugs entirely: smart quotes live in the strings and survive round-tripping by construction.
 
 Verification gate before anything else proceeds: production build passes, and a text-layer diff (`pdftotext`) of the print PDF before and after migration is identical.
+
+Done: content extracted to `content/*.json` by `scripts/migrate-content-to-json.mts` (generated from the live modules, not transcribed), the seven `lib/*.ts` files are now thin typed loaders, and all three gates passed: deep-equal of every family against the originals at tag `last-known-good-pre-json-migration`, clean production build, and a byte-identical print text layer via `scripts/print-flow.mjs` (single-pass flow print for verification diffs). One deviation from the plan text: JSON imports widen string literals, so the loaders cast (`as`) rather than use `satisfies`; fidelity is held by the extraction method and the diff gates, and schema validation moves to the editor's write path in step 2.
 
 ## Step 2, block editor for both editions
 
