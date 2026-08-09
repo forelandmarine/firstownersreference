@@ -43,13 +43,14 @@ Chapters without explicit placements fall back to the current heuristic, so the 
 
 Honest scope first: print WYSIWYG here is not free pixel positioning. The book is set by Chrome's layout engine, so position on a page is a function of content order, anchors, variants and the CSS rules. The editor manipulates exactly those inputs and then shows the real result.
 
-The pane shows true paginated spreads. A chapter-scoped query parameter is added to `/print` (render one chapter only), the dev server runs a Puppeteer print of that chapter on a debounce after each change (a few seconds), and the resulting PDF renders in the pane via pdf.js. Interactions:
+Decided 10 August 2026: paragraph order is canonical on the web edition. The print pane never reorders body copy; it adjusts formatting and layout only. Any change to paragraph order happens in the shared block editor and flows to both editions.
+
+The pane shows true paginated spreads. A chapter-scoped query parameter is added to `/print` (render one chapter only), the dev server runs a Puppeteer print of that chapter on a debounce after each change (a few seconds), and the resulting PDF renders in the pane via pdf.js. Interactions, all of them print-only data that never touches the web edition:
 
 - drag a figure between paragraphs to re-anchor it, or click it to change variant
-- drag paragraphs to reorder them
+- toggle `printOnly` blocks, and see `webOnly` blocks greyed out of the flow
+- per-block break hints where the paged engine needs steering (force a page or column break before an h2, keep a block with the next one)
 - a folio and parity readout from the existing marker scan, so opener parity problems are visible while editing rather than at press-build time
-
-Because both editions share one source, moving a paragraph in the print pane moves it on the web too. Print-divergent moves are limited to figures (anchors and variants are print-only data) and to `printOnly` and `webOnly` blocks.
 
 ## Step 6, housekeeping
 
@@ -59,9 +60,12 @@ Because both editions share one source, moving a paragraph in the print pane mov
 
 ## Open decisions
 
-1. Paragraph reordering is shared between editions in this plan. If print needs a genuinely different paragraph order from web, the content forks per chapter, which doubles proof-correction effort. Recommendation: keep order shared.
-2. Local-only versus hosted with auth. Recommendation: local-only, for the reasons above. A hosted read-only preview could come later if a second editor ever needs access.
-3. First build scope: lead essays only, or all seven content families. Recommendation: lead essays plus figures first, since that covers the print moves, then the other families.
+Resolved 10 August 2026: paragraph order stays canonical on the web edition; the print pane adjusts formatting and layout only (figure anchors and variants, printOnly blocks, break hints). No print-divergent paragraph order.
+
+Still open:
+
+1. Local-only versus hosted with auth. Recommendation: local-only, for the reasons above. A hosted read-only preview could come later if a second editor ever needs access.
+2. First build scope: lead essays only, or all seven content families. Recommendation: lead essays plus figures first, since that covers the print layout work, then the other families.
 
 ## Rough effort
 
