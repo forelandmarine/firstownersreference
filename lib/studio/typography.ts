@@ -73,9 +73,10 @@ export function lintValue(value: unknown, path: string): LintIssue[] {
     return value.flatMap((v, i) => lintValue(v, `${path}[${i}]`));
   }
   if (value && typeof value === "object") {
+    /* Paths, URLs and identifiers are not prose. */
+    const NON_PROSE = ["src", "href", "hero", "url", "contributorLinkedIn", "chartId"];
     return Object.entries(value).flatMap(([k, v]) =>
-      /* Image paths and URLs are not prose. */
-      k === "src" || k === "href" ? [] : lintValue(v, path ? `${path}.${k}` : k)
+      NON_PROSE.includes(k) ? [] : lintValue(v, path ? `${path}.${k}` : k)
     );
   }
   return [];
