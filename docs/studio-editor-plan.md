@@ -18,13 +18,15 @@ Verification gate before anything else proceeds: production build passes, and a 
 
 Done: content extracted to `content/*.json` by `scripts/migrate-content-to-json.mts` (generated from the live modules, not transcribed), the seven `lib/*.ts` files are now thin typed loaders, and all three gates passed: deep-equal of every family against the originals at tag `last-known-good-pre-json-migration`, clean production build, and a byte-identical print text layer via `scripts/print-flow.mjs` (single-pass flow print for verification diffs). One deviation from the plan text: JSON imports widen string literals, so the loaders cast (`as`) rather than use `satisfies`; fidelity is held by the extraction method and the diff gates, and schema validation moves to the editor's write path in step 2.
 
-## Step 2, block editor for both editions
+## Step 2, block editor for both editions (lead essays live, 11 August 2026)
 
 A custom block editor mapped one-to-one onto the existing union types (paragraph string, h2, blockquote, figure, editorsNote, webOnly, and the data-spread, case, checklist, FAQ and guest-opinion block shapes). No Tiptap or ProseMirror: the block model is small and typed, and a generic rich-text schema would fight it.
 
 Text edits happen inline with contentEditable per block. On input, typed straight quotes and apostrophes convert to smart forms automatically, and em-dashes are rejected, so the style guide is enforced at the keyboard rather than at proof stage. A save-time lint also checks double spaces and range formats.
 
 Blocks can be added, deleted and reordered by drag. Rollout by family: lead essays first, then data spreads, cases, checklists, FAQs, guest Q&As, and a plain form for section metadata.
+
+Status: the editor is live at `/studio` under `next dev` for lead essays (all block types, meta fields, closing notes). The dev-only API at `/studio/api/content` validates every write against the block schema and both routes return 404 in production builds, which was verified against a served production build. Round-trip fidelity was verified: a block move saved and moved back leaves the content file byte-identical to git. Text fields use auto-growing textareas rather than contentEditable (the content is plain strings, so this loses nothing and is far sturdier); quotes smarten as you type with the caret preserved in place; a new em-dash beyond the on-load count blocks saving, and the eight existing em-dashes (pending the en-dash pass) surface as warnings only. Remaining in step 2: the other six families.
 
 ## Step 3, web WYSIWYG
 
