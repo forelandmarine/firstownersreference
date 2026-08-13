@@ -28,6 +28,9 @@
 *.docx
 *.doc
 *.pdf
+*.pages
+*.xlsx
+*.numbers
 
 # debug
 npm-debug.log*

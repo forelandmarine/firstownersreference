@@ -16,11 +16,11 @@
       closing) standalone via /print-opener/[key] and merge them over
       the flow document's placeholder pages (mid-document full-page
       boxes fragment against the root master and show a seam).
-   5. Save the proof to ~/Desktop, stamp TrimBox/BleedBox, convert to
-      CMYK, build the padded press block, and print the case artwork
+   5. Save the proof to print/1st-edition, stamp TrimBox/BleedBox, convert
+      to CMYK, build the padded press block, and print the case artwork
       from /print-case.
-   6. Write the assignment manifest, design notes, and todo list to the
-      desktop alongside the PDF.
+   6. Write the assignment manifest, design notes, and todo list to
+      print/notes.
 
   Run with:
     node scripts/build-print.mjs        (SKIP_BUILD=1 to reuse .next)
@@ -42,12 +42,12 @@ const SOURCE_DIR =
 const OUT_PRINT = path.join(ROOT, "public/print-images/print");
 const OUT_WEB = path.join(ROOT, "public/print-images/web");
 const ASSIGNMENTS_FILE = "/tmp/image-assignments.md";
-const HOME = os.homedir();
-const DESKTOP = path.join(HOME, "Desktop");
-const PDF_OUT = path.join(DESKTOP, "firstownersreference-1st-edition-proof.pdf");
-const NOTES_OUT = path.join(DESKTOP, "firstownersreference-print-notes.md");
-const ASSIGNMENTS_OUT = path.join(DESKTOP, "firstownersreference-print-images.md");
-const TODO_OUT = path.join(DESKTOP, "firstownersreference-print-todo.md");
+const PRINT_DIR = path.join(ROOT, "print/1st-edition");
+const NOTES_DIR = path.join(ROOT, "print/notes");
+const PDF_OUT = path.join(PRINT_DIR, "firstownersreference-1st-edition-proof.pdf");
+const NOTES_OUT = path.join(NOTES_DIR, "firstownersreference-print-notes.md");
+const ASSIGNMENTS_OUT = path.join(NOTES_DIR, "firstownersreference-print-images.md");
+const TODO_OUT = path.join(NOTES_DIR, "firstownersreference-print-todo.md");
 
 const CHAPTER_ORDER = [
   "01-reality-of-ownership",
@@ -69,6 +69,8 @@ function log(msg) {
 function ensureDirs() {
   fs.mkdirSync(OUT_PRINT, { recursive: true });
   fs.mkdirSync(OUT_WEB, { recursive: true });
+  fs.mkdirSync(PRINT_DIR, { recursive: true });
+  fs.mkdirSync(NOTES_DIR, { recursive: true });
 }
 
 function parseAssignments() {
@@ -523,7 +525,7 @@ async function printFullBleedPages(map) {
 
 // Flat case artwork for the binder, printed from /print-case.
 async function printCaseArtwork() {
-  const CASE_OUT = path.join(DESKTOP, "firstownersreference-1st-edition-case.pdf");
+  const CASE_OUT = path.join(PRINT_DIR, "firstownersreference-1st-edition-case.pdf");
   let serverProc;
   try {
     serverProc = await startServer();
