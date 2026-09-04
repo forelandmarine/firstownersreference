@@ -68,7 +68,7 @@ def para(doc, text="", bold=False, italic=False, size=None, colour=None,
     return p
 
 
-TITLE = "Richard Masters, Master Yachts"
+TITLE = "Richard Masters, Director - Master Yachts"
 META = ("Chapter 01, The reality of ownership. Guest Q&A, second draft for approval, "
         "4 September 2026.")
 
@@ -182,8 +182,8 @@ QUERIES = [
     "as a range with your caveats attached. Both are carried in your words, as opinion "
     "from the fleet, rather than as a published figure.",
 
-    "One item remains. Please confirm the byline. We have “Richard Masters, Master "
-    "Yachts” unless you would prefer a title or a different form of the firm name.",
+    "The byline reads “Richard Masters, Director - Master Yachts”. Please tell us if "
+    "you would like it otherwise.",
 ]
 
 FOOTER = (

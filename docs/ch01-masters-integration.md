@@ -71,7 +71,7 @@ Updated in `docs/interviewees.md`. Still to change on sign-off:
 
 ## Open with him
 
-1. Byline: "Richard Masters, Master Yachts" unless he wants a title or a different form of the firm name.
+1. Approval of the byline as set by Jack on 4 September: "Richard Masters, Director - Master Yachts".
 2. Approval of the second draft, dated 4 September 2026, which incorporates all three of his points.
 
 ## Open with Jack
