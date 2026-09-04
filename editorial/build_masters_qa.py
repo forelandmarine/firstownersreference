@@ -146,16 +146,15 @@ QA = [
         None,
     ),
     (
-        "The independence test, applied to your own firm. Master Yachts represents owners "
-        "through new build and manages yachts in operation, both on recurring fees. How "
-        "does the firm align with the owner’s interest against the structural pull of "
-        "recurring revenue, and how is that disclosed at engagement?",
+        "The independence test in this chapter, applied to your own firm. Master Yachts "
+        "represents owners through new build and manages yachts in operation, both on "
+        "recurring fees. How do the two sit together, and how is the fee basis for each "
+        "set and disclosed at engagement?",
         [
-            "We are new build representatives first and operational managers second. The "
-            "operational side is where the rest of these answers come from: 20 years "
-            "managing more than 50 yachts, between 20 and 148 metres. I could not give the "
-            "opinions above without that experience, and few owner’s representatives in "
-            "construction or refit could.",
+            "We are new build representatives first and operational managers second. Most "
+            "of what I have said here comes from the operational side, from looking after "
+            "yachts once they are in service, and I would not want it read as anything "
+            "more than that.",
             "New build representation costs depend on complexity, the size of the team on "
             "site, the duration, and similar factors. It is always a set fee, agreed monthly "
             "or quarterly. Operational management is governed much more by industry norms, "
@@ -186,8 +185,8 @@ QA = [
 QUERIES = [
     "The introduction and question five have been rewritten from your note of 4 September. "
     "The firm is now described as operational manager and new build representative, and "
-    "your point that the opinion rests on the operating experience is carried in your own "
-    "words in the answer to question five. Please check both read as you want them.",
+    "the answer to question five notes that the answers come from the operating side. "
+    "Please check both read as you want them.",
 
     "Warranty travel and crew turnover run in your words, with your caveats attached. The "
     "byline reads “Richard Masters, Director - Master Yachts”. Please tell us if you would "
