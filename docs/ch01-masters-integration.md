@@ -76,5 +76,11 @@ Updated in `docs/interviewees.md`. Still to change on sign-off:
 
 ## Open with Jack
 
-1. Whether "hundreds of thousands" stands in the Q&A unanchored (see 3 above).
-2. Whether the site's chapter 01 role label should read "Operational manager and new build representative" or similar, once Richard confirms the byline.
+1. The site's chapter 01 role label, once Richard approves: "Director, Master Yachts" in the site's role-line form (the docx title carries the hyphenated byline Jack set on 4 September).
+
+## Resolved 4 September, second pass against the style guide and the six Q&As on the site
+
+- "Hundreds of thousands" stays in his answer. The guest-contribution register carries the contributor's own figures published as given (Erica Lay's EUR 1,500 to 4,000 uplift, Filippakis's sea-trial specifics); the five-projects rule governs editorial copy, not a named contributor's signed opinion. It still does not run in the essay body.
+- Introduction rewritten to the site pattern: firm facts, the Quadrant-form disclosure sentence, "We put six questions to...", "His answers are published as given, lightly edited for length and clarity". The editorial line about few owner's representatives being able to write the opinion moved out of the intro and into his own answer to question five, in his words from the 4 September email.
+- Question five premise corrected to the firm as he describes it, so "It is the other way round" is dropped from the answer.
+- House number style applied (12, not twelve). Three pull quotes proposed, one each on questions one, two and six, following the chapter 09 Quadrant entries.

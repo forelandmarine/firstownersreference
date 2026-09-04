@@ -69,22 +69,22 @@ def para(doc, text="", bold=False, italic=False, size=None, colour=None,
 
 
 TITLE = "Richard Masters, Director - Master Yachts"
-META = ("Chapter 01, The reality of ownership. Guest Q&A, second draft for approval, "
+META = ("Chapter 01, The reality of ownership. Guest Q&A, revised draft for approval, "
         "4 September 2026.")
 
 INTRO = (
-    "Master Yachts has acted as operational manager for more than 50 yachts between 20 "
-    "and 148 metres over 20 years, and represents owners through new build on a set fee. "
-    "Richard Masters is clear that the opinion below rests on that operating record. Few "
-    "owner’s representatives in construction or refit could write it without one. The "
-    "firm provides services discussed in this chapter, so the independence test set out "
-    "in the essay above applies to it as to any firm. We put six questions to Richard "
-    "Masters on "
-    "year-one cost reality, the percentage-of-value model, crew, use intensity, his own "
-    "firm’s independence, and what he would put in front of a first-time buyer. Answers "
-    "are given on the record, lightly edited for length and clarity."
+    "Master Yachts has managed yachts in operation for 20 years, more than 50 of them "
+    "between 20 and 148 metres, and represents owners through new build on a set fee "
+    "agreed monthly or quarterly. It provides services discussed in this chapter, so the "
+    "independence test set out in the essay above applies to it as to any firm. We put six "
+    "questions to Richard Masters on the percentage-of-value running cost model, the "
+    "year-one cost surprises that recur, where the crew budget moves, use intensity among "
+    "first-time owners, the independence test applied to his own firm, and the first three "
+    "years as he would put them to a first-time buyer. His answers are published as given, "
+    "lightly edited for length and clarity."
 )
 
+# (question, [answer paragraphs], pull quote or None)
 QA = [
     (
         "Cost reality across the Master Yachts fleet: what percentage of purchase price "
@@ -99,6 +99,8 @@ QA = [
             "requirement, the owner’s standard of presentation, consumable burn rates, and "
             "a good many other contributing factors.",
         ],
+        "A running cost model based on a percentage of the vessel’s value is a fallacy. "
+        "A way to sell. A broker creation.",
     ),
     (
         "The single biggest year-one cost surprise that recurs across the owners you have "
@@ -113,6 +115,8 @@ QA = [
             "build operating in Spain, or a superb Turkish build sitting in a French "
             "shipyard. The figures are staggering and are very often forgotten.",
         ],
+        "Warranty travel costs, which nobody considers at the time, can run to hundreds "
+        "of thousands.",
     ),
     (
         "Crew is documented at 30 to 40 percent of operating cost. From inside fleet "
@@ -126,32 +130,38 @@ QA = [
             "is not a hard fact, but it is a cost surprise that is often left out of a "
             "pre-launch operational budget.",
         ],
+        None,
     ),
     (
         "The widely cited pattern that many first-time owners use their yacht only four to "
-        "eight weeks a year. Does it hold across your fleet, and what do owners with twelve "
+        "eight weeks a year. Does it hold across your fleet, and what do owners with 12 "
         "or more weeks of use a year do differently, in operational and financial terms?",
         [
             "First-time owners are generally younger and have very busy work schedules. "
             "These younger owners are also extremely savvy. They ask questions and they "
             "demand answers.",
-            "Owners able to spend twelve or more weeks aboard are generally experienced and "
+            "Owners able to spend 12 or more weeks aboard are generally experienced and "
             "very aware of the costs of use.",
         ],
+        None,
     ),
     (
-        "The independence test, applied to your own firm. Master Yachts extends from "
-        "management into new build representation, both fee structures recurring. How does "
-        "the firm align with the owner’s interest versus the structural pull of recurring "
-        "revenue, and how is that disclosed at engagement?",
+        "The independence test, applied to your own firm. Master Yachts represents owners "
+        "through new build and manages yachts in operation, both on recurring fees. How "
+        "does the firm align with the owner’s interest against the structural pull of "
+        "recurring revenue, and how is that disclosed at engagement?",
         [
-            "It is the other way round. We are new build representatives first and "
-            "operational managers second.",
+            "We are new build representatives first and operational managers second. The "
+            "operational side is where the rest of these answers come from: 20 years "
+            "managing more than 50 yachts, between 20 and 148 metres. I could not give the "
+            "opinions above without that experience, and few owner’s representatives in "
+            "construction or refit could.",
             "New build representation costs depend on complexity, the size of the team on "
             "site, the duration, and similar factors. It is always a set fee, agreed monthly "
             "or quarterly. Operational management is governed much more by industry norms, "
             "set against a proper risk analysis of the intended use.",
         ],
+        None,
     ),
     (
         "The honest case for ownership versus charter, told from someone who has seen both "
@@ -169,21 +179,19 @@ QA = [
             "suppliers. Year three is reality. By then the style of use is known, the costs "
             "can be well controlled and understood, and there are few surprises.",
         ],
+        "Years one and two are about very sound warranty management. Year three is reality.",
     ),
 ]
 
 QUERIES = [
-    "The introduction has been rewritten from your note of 4 September, so that Master "
-    "Yachts is described as operational manager for more than 50 yachts over 20 years as "
-    "well as new build representative, and so that the opinion is shown to rest on that "
-    "operating experience. Please check it reads as you want it.",
+    "The introduction and question five have been rewritten from your note of 4 September. "
+    "The firm is now described as operational manager and new build representative, and "
+    "your point that the opinion rests on the operating experience is carried in your own "
+    "words in the answer to question five. Please check both read as you want them.",
 
-    "Warranty travel now runs with your relocated-build examples, and crew turnover runs "
-    "as a range with your caveats attached. Both are carried in your words, as opinion "
-    "from the fleet, rather than as a published figure.",
-
-    "The byline reads “Richard Masters, Director - Master Yachts”. Please tell us if "
-    "you would like it otherwise.",
+    "Warranty travel and crew turnover run in your words, with your caveats attached. The "
+    "byline reads “Richard Masters, Director - Master Yachts”. Please tell us if you would "
+    "like either otherwise.",
 ]
 
 FOOTER = (
@@ -204,10 +212,12 @@ def main():
     para(doc, INTRO)
 
     para(doc, "Questions and answers", bold=True, space_before=6)
-    for i, (q, answers) in enumerate(QA, start=1):
+    for i, (q, answers, pull) in enumerate(QA, start=1):
         para(doc, f"{i}. {q}", bold=True, hanging=True)
         for a in answers:
             para(doc, a)
+        if pull:
+            para(doc, "Pull quote: " + pull, italic=True, colour=STONE)
 
     para(doc, "Queries before publication", bold=True, space_before=6)
     for q in QUERIES:
