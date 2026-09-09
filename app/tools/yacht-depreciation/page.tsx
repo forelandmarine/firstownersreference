@@ -48,7 +48,7 @@ const FAQS = [
   {
     question: "Which yacht builders hold their value best?",
     answer:
-      "Feadship, Lürssen, Royal Huisman, Vitters and Baltic Yachts hulls can lose only single-digit percentages annually after year five, against the 6 to 8 percent compounding typical of the broader market. Build quality, the strength of the secondary market for that yard's hulls, and the completeness of the maintenance record are the drivers. The premium paid at build is partly recovered on resale, which is a different proposition from the yacht being an investment.",
+      "At the full-custom end, Feadship, Lürssen, Royal Huisman, Vitters and Baltic Yachts hulls can lose only single-digit percentages annually after year five, against the 6 to 8 percent compounding typical of the broader market. In the semi-custom and series segment the comparable claim is made for the larger Italian yards, with retention of roughly 55 to 65 percent of original value at ten years. The two are different segments rather than competing claims. Build quality, the depth of the secondary market for that yard's hulls, and the completeness of the maintenance record are the drivers. The premium paid at build is partly recovered on resale, which is a different proposition from the yacht being an investment.",
   },
   {
     question: "Is a superyacht a good investment?",
@@ -232,8 +232,10 @@ export default function YachtDepreciationPage() {
               </table>
               <p className="caption mt-6">
                 Broker-aggregated from Yatco, IYC and Yacht Hunter. Feadship,
-                Lürssen, Royal Huisman, Vitters and Baltic Yachts hulls sit in
-                the fourth row.
+                Lürssen, Royal Huisman, Vitters and Baltic Yachts sit in the
+                fourth row at the full-custom end; the larger Italian
+                semi-custom yards are credited with comparable retention in
+                their own segment.
               </p>
             </section>
 
