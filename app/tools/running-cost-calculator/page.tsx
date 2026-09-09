@@ -609,32 +609,32 @@ export default function RunningCostCalculatorPage() {
 
   const faqData = [
     {
-      question: "How much does it cost to run a superyacht per year?",
+      question: "Can I afford to run the yacht I am looking at?",
       answer:
         "Annual running costs run from approximately EUR 600,000 for a 24-metre sailing yacht at light use, to EUR 4 to 5 million for a 50-metre motor yacht at moderate use, to EUR 8 million and above for an 80-metre operating year-round. The main cost categories are crew (30-40% of the total), insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. As a rough guide, expect 12 to 15 percent of purchase price for a new 40 to 50 metre yacht at moderate use, rising to 12 to 20 percent for older or larger vessels and higher again on charter-active programmes. The actual figure depends heavily on vessel type, size, cruising area, age, and use intensity.",
     },
     {
-      question: "What is the 10% rule for yachts?",
+      question: "Is the 10 percent rule a safe budget for a first purchase?",
       answer:
         "The 10% rule is industry shorthand for budgeting roughly 10 percent of the yacht's purchase price each year for running costs. The rule has no traceable origin and is roughly correct only for new, mid-sized, lightly used yachts. Independent practitioner ranges cluster between 8 and 15 percent for the first decade; for yachts over 40 metres, older than seven years, or operating charter, the empirical band runs 12 to 20 percent. The rule is a starting point, not a budget.",
     },
     {
-      question: "What are the biggest costs of owning a superyacht?",
+      question: "What should a first-time buyer budget beyond the purchase price?",
       answer:
         "Crew costs are almost always the largest single expense, typically 30-40% of the annual budget. After crew, the next largest costs are maintenance and repair (including class surveys and periodic refits), insurance (hull, P&I, and crew medical), and marina berths. Fuel costs vary dramatically between sailing and motor yachts. Management fees, regulatory compliance, and a contingency reserve of 8-10% should also be budgeted.",
     },
     {
-      question: "How much does a superyacht crew cost?",
+      question: "How many crew will the yacht need, and what will they cost?",
       answer:
         "Crew costs depend on yacht size and the number of crew required. A 30-metre yacht with 5-7 crew might spend EUR 300,000-450,000 per year on total crew costs. A 50-metre yacht with 12-16 crew could spend EUR 900,000-1,400,000. These figures include salaries, social charges, insurance, travel, training, uniforms, and provisions.",
     },
     {
-      question: "Is it cheaper to run a sailing yacht or a motor yacht?",
+      question: "Will a sailing yacht cost less to run than a motor yacht?",
       answer:
         "Sailing yachts are generally less expensive to run than motor yachts of equivalent size. The main saving is fuel. However, sailing yachts have costs that motor yachts do not, including rig maintenance, sail inventory, and specialist rigging inspections. Overall, a sailing yacht's annual running costs are typically 15-25% lower than a comparable motor yacht.",
     },
     {
-      question: "How much does superyacht insurance cost?",
+      question: "What will insurance cost on a first yacht?",
       answer:
         "Insurance costs depend on the yacht's value, type, age, cruising area, and claims history. Hull and machinery insurance typically costs 0.8-1.5% of the yacht's insured value per year. P&I (Protection and Indemnity) cover adds another 0.3-0.4%. Charter yachts require commercial insurance, which can be 30-40% more expensive than private cover.",
     },
@@ -707,14 +707,14 @@ export default function RunningCostCalculatorPage() {
         </div>
         <div className="relative z-10 max-w-[80rem] mx-auto px-6 lg:px-12 py-24 lg:py-32 text-paper">
           <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.1] tracking-tight max-w-3xl mb-8">
-            What does it actually cost
+            Can you afford the yacht
             <br />
-            to run a superyacht?
+            you are looking at?
           </h1>
           <p className="font-serif text-lg sm:text-xl lg:text-2xl leading-relaxed text-paper/85 max-w-2xl">
-            Ownership is more than the purchase price. The calculator below
-            produces a realistic annual running-cost estimate, broken down by
-            category, against named source assumptions.
+            The purchase price is the smaller decision. The calculator below
+            estimates what the yacht in front of you will cost every year you
+            keep it, category by category, against named source assumptions.
           </p>
         </div>
       </section>
@@ -993,7 +993,7 @@ export default function RunningCostCalculatorPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
           <SectionLabel>Understanding the numbers</SectionLabel>
           <h2 className="font-serif font-light text-headline tracking-tight mb-8 text-charcoal">
-            What actually drives the cost of running a superyacht?
+            What the annual figure is actually made of
           </h2>
 
           <div className="prose-body text-charcoal-soft">
@@ -1073,7 +1073,7 @@ export default function RunningCostCalculatorPage() {
           <details className="group">
             <summary className="flex items-center justify-between gap-6 mb-2">
               <h2 className="font-serif font-light text-headline tracking-tight text-charcoal group-hover:text-marine transition-colors">
-                Common questions about superyacht running costs
+                Questions first-time buyers ask
               </h2>
               <svg
                 className="shrink-0 w-6 h-6 text-stone transition-transform group-open:rotate-180"
@@ -1116,7 +1116,7 @@ export default function RunningCostCalculatorPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
           <SectionLabel>Sources</SectionLabel>
           <h2 className="font-serif font-light text-headline tracking-tight mb-6 text-charcoal">
-            Where do these numbers come from?
+            The sources behind the model
           </h2>
           <p className="prose-body text-charcoal-soft mb-8">
             The cost model behind this calculator is based on published

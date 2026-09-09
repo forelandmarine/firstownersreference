@@ -3,6 +3,9 @@ import data from "../content/cases.json";
 export type CaseStudy = {
   slug: string;
   title: string;
+  /** Result-listing title. The editorial title carries no query language. */
+  seoTitle?: string;
+  seoDescription?: string;
   standfirst: string;
   meta: { label: string; value: string }[];
   paragraphs: (

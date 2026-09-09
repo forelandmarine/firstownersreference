@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "How much does it cost to run a superyacht? | Running cost calculator",
+  title: { absolute: "Can you afford to run a superyacht? Calculator" },
   description:
-    "Annual running costs for a 40-50 metre superyacht run EUR 1.5 to 5 million in 2026, scaling with size, age, and use intensity. Use the interactive calculator to get the breakdown by crew, insurance, maintenance, berths, fuel, management, and compliance against your own size and operating profile.",
+    "Before you commit, model what the yacht will cost every year: crew, insurance, maintenance, berths, fuel, management and compliance.",
   alternates: {
     canonical:
       "https://firstownersreference.com/tools/running-cost-calculator",
   },
   openGraph: {
-    title:
-      "How much does it cost to run a superyacht? | Running cost calculator",
+    title: "Can you afford to run a superyacht?",
+    // The old copy said EUR 1.5 to 5 million for a 40-50 metre, which sat
+    // against Chapter 01's 12 to 15 percent of purchase price and the page's
+    // own FAQ. One publisher, one figure.
     description:
-      "Annual running costs for a 40-50 metre superyacht run EUR 1.5 to 5 million in 2026. A calculator with full breakdown by crew, insurance, maintenance, berths, fuel, management, and compliance.",
+      "A new 40 to 50 metre at moderate use runs 12 to 15 percent of purchase price a year. Model your own, category by category, against named sources.",
   },
 };
 

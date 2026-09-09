@@ -16,9 +16,9 @@ const PUBLISHED = "2026-07-27";
 const QUARTER = "Q3 2026";
 
 export const metadata: Metadata = {
-  title: "Superyacht order book tracker: 2026 numbers, quarterly refresh",
+  title: { absolute: "Superyacht order book tracker: the 2026 numbers" },
   description:
-    "A free reference on the global superyacht order book, 24 metres and above. 1,093 yachts on order or in build in the 2026 edition, hull-type composition, production geography, builder rankings, and top-tier slot availability. Refreshed quarterly. Sources cited.",
+    "The 2026 Global Order Book by yard, country and hull type, with delivery years and the source named for every figure. Refreshed quarterly.",
   alternates: { canonical: URL },
   openGraph: {
     title: "Superyacht order book tracker | The First Owner's Reference",

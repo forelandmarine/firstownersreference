@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/site-footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Colophon: how The First Owner's Reference is made",
+  title: { absolute: "Colophon: how this reference is made" },
   description:
-    "Editorial principles, type, paper, photography, sources, and the names behind The First Owner's Reference. The independence test, applied to the publisher.",
+    "How The First Owner's Reference is researched, sourced, funded and produced, and the independence rules that govern all of it.",
   alternates: {
     canonical: "https://firstownersreference.com/colophon",
   },

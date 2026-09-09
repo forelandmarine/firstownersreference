@@ -85,6 +85,12 @@
       "Top-tier yards are sold out. Lürssen books extend through mid-2027 at minimum, with additional large-build capacity secured by the 2024 to 2025 acquisition of the insolvent Nobiskrug. Feadship slot availability is openly discussed in trade press as extending to 2028 to 2029, Project Solent confirmed for summer 2027. Oceanco delivered the 111m DreAMBoat in 18 months in November 2025, the counter-example of speed at the top. Heesen has run a speculative-build model since 2023 with full backlog through 2025 and beyond. The constraint extends to the mid-tier: Damen Yachting’s Yacht Support range is booked through Q4 2028 / Q1 2029 on certain models, and Sanlorenzo’s order book extends to the same window on the SX, SD, and Steel ranges. On the sailing yacht side, Southern Wind reports its order book extending through 2028 as of May 2026 (Superyacht Investor); Sanlorenzo’s UK and Ireland office reports late-Q1 2026 buyer-meeting volume approximately 10 percent above the same window in 2025.",
       "What this means for a first-time buyer entering in 2026: the major decision is not which yard to commission, but whether to take a brokerage hull now, take a slot at a mid-tier yard with capacity, or wait three to four years for a delivery slot at a top-tier German or Dutch builder. Each path carries a different cost, risk, and time profile, and the three are not interchangeable.",
       {
+        "type": "editorsNote",
+        "text": "The order book tracker on this site holds the 2026 Global Order Book figures by yard, country, and hull type, with the sources named on every line.",
+        "href": "/tools/order-book-tracker",
+        "linkText": "Open the order book tracker"
+      },
+      {
         "type": "blockquote",
         "text": "The number of new buyers is rising sharply. The number of yachts available to be bought is shrinking."
       },
@@ -286,6 +292,12 @@
       "A separate UK-specific jurisdictional risk sits on top of the technical choice. The 60-metre Royal Huisman motoryacht Phi has been detained on the Thames in London since 2022 on a UK Department for Transport direction, issued shortly after the Russian invasion of Ukraine. The owner, Sergei Naumenko, has not been sanctioned by any state and has no proven political influence in Russia; the detention has outlived the Transport Secretary who issued it, multiple governments, and several legal challenges. The UK Supreme Court ruled against Phi’s appeal in summer 2025; the case now sits at the European Court of Human Rights, with a separately-granted British court permission to pursue damages against the UK Treasury for an undisclosed but significant quantum. The narrow point for a buyer weighing a Red Ensign flag for a UK-domiciled hull is that the British executive has acted, and can act, on yachts whose owners do not match the public profile of a sanctioned individual; remedy through the British court system can take years (Capt. Guy Booth, in The Superyacht Report, Q2 2026).",
       "Compliance cost on a 40 metre yacht for tax, structuring, and flag administration runs EUR 50,000 to EUR 150,000 per year, recurring opex that does not appear in the broker’s headline figures.",
       {
+        "type": "editorsNote",
+        "text": "The VAT position moved in 2026. The EC Guidance Note for Pleasure Craft of 30 April and Italian ADM Circular 11/2026 both changed what a non-EU yacht has to do, and the token third-country call is no longer necessary.",
+        "href": "/tools/yacht-vat-2026",
+        "linkText": "Yacht VAT in 2026"
+      },
+      {
         "type": "h2",
         "text": "Closing"
       },
@@ -484,6 +496,12 @@
       "A five-year survey or major refit typically runs 5 to 15 percent of insured hull value, depending on scope. Working ranges per metre per year, derived from a practitioner project archive of more than 30 managed refit projects:",
       "Annual maintenance: EUR 2,000 to 8,000 per metre. Mid-life refit: EUR 10,000 to 30,000 per metre. Major structural refit: EUR 40,000 to 100,000+ per metre.",
       "A 50m yacht with a major structural refit therefore sits in the EUR 2 million to EUR 5 million range, with USD 5 million to 10 million being typical for full-scope projects involving extension, re-engining, or substantial cosmetic and systems renewal.",
+      {
+        "type": "editorsNote",
+        "text": "Refit reserve is an annual line, not a lump sum. The running cost calculator carries it against your own size, type, region, and use intensity.",
+        "href": "/tools/running-cost-calculator",
+        "linkText": "Open the calculator"
+      },
       "Mediterranean berth fees during refit run EUR 400 to 800 per day for a 40 metre hull. Northern Europe berth fees run EUR 600 to 1,200. Mediterranean skilled labour runs EUR 45 to 75 per hour with specialists at EUR 80 to 120. Northern Europe runs 20 to 40 percent more across both labour categories.",
       "These numbers are well-evidenced from project archives but not from published yard rate cards. MB92 and Pendennis do not publish day rates. The numbers in this chapter are within the working ranges that practitioners across the industry would recognise.",
       {
@@ -644,6 +662,12 @@
       "Crew is the largest single line in the operating budget at 30 to 40 percent of total cost. Post-pandemic inflation produced double-digit annual increases at junior levels through 2021 to 2023; junior crew pay has since plateaued, while senior crew pay continues to rise.",
       "Time-for-time rotation, which Quay Crew records at 63 percent of the 70 to 79 metre captain bracket, is no longer a perk on senior-crew programmes; it is the price of entry to the top end of the market. Roles offered without rotation take longer to fill, draw a narrower and less experienced pool, and on Erica Lay’s reading typically replace the hire within 12 to 18 months. Owners trading the rotation provision against headline salary tend to pay both costs.",
       "Crew is a variable cost managed through retention, reputation, and culture. The owner who manages the captain manages the crew; the captain who manages the crew manages the cost.",
+      {
+        "type": "editorsNote",
+        "text": "Captain and crew salary benchmarks for 2026, by position and yacht size, with the recruitment-side sources named.",
+        "href": "/tools/captain-and-crew-salary-2026",
+        "linkText": "Open the salary benchmarks"
+      },
       "The most common cause of turnover, on the recruitment-side view, is inconsistency from the top, whether owner, captain, or management structure. Crew can handle hard work, long hours, and demanding programmes. What they struggle with is unpredictability and a lack of trust in leadership. Yachts that retain crew well share clear, consistent leadership, open communication, and an onboard culture that does not change overnight.",
       {
         "type": "blockquote",

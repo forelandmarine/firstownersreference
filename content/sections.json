@@ -9,8 +9,9 @@
     "contributor": "To be confirmed",
     "contributorRole": "Yacht management head",
     "seoTitle": "Superyacht running costs and the 10 percent rule",
-    "seoDescription": "Annual running costs, the folkloric 10 percent rule, depreciation reality, and the charter delusion. What the first three years of superyacht ownership actually cost. Sourced from Knight Frank, BOAT International, Quay Crew, and aggregated practitioner data.",
-    "datePublished": "2026-05-01"
+    "seoDescription": "Annual running costs, the folkloric 10 percent rule, depreciation and the charter delusion. What the first three years of ownership actually cost.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-08-13"
   },
   {
     "number": "02",
@@ -22,8 +23,9 @@
     "contributor": "To be confirmed",
     "contributorRole": "Market intelligence head",
     "seoTitle": "Superyacht market 2026: order book, wealth growth, supply",
-    "seoDescription": "The 2026 superyacht market: BOAT International Global Order Book at 1,093 yachts, Knight Frank UHNW growth, Italian yard dominance, and what the structural narrowing means for a first-time buyer.",
-    "datePublished": "2026-05-01"
+    "seoDescription": "The 2026 order book, UHNW wealth growth and brokerage supply, read together. What the market is actually telling a first-time buyer this year.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-09-09"
   },
   {
     "number": "03",
@@ -35,9 +37,10 @@
     "contributor": "Andrew Roch",
     "contributorRole": "Founder and CEO, Yacht Crew Recruitment and Training",
     "contributorLinkedIn": "https://www.linkedin.com/in/andrew-roch-293435189/",
-    "seoTitle": "Yacht broker commissions, retrocessions, and conflicts of interest",
-    "seoDescription": "The structural conflicts in superyacht acquisition: who pays the broker commission, how dual agency works in practice, what retrocession arrangements look like, and the captain’s role at the centre of the structure.",
-    "datePublished": "2026-05-01"
+    "seoTitle": "Yacht broker commissions, retrocessions and conflicts",
+    "seoDescription": "Who pays whom in a yacht transaction. Broker commissions, retrocessions, dual agency and the conflicts that are structural rather than personal.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-08-13"
   },
   {
     "number": "04",
@@ -48,9 +51,10 @@
     "hero": "/images/stock/bridge-radar.jpg",
     "contributor": "Capt. Pavlos Filippakis",
     "contributorRole": "Master Mariner (Class 1 Unlimited, Ice Class)",
-    "seoTitle": "How to buy a superyacht: the 12 to 24 week acquisition process",
-    "seoDescription": "The yacht acquisition process from shortlist to closing: pre-purchase survey, sea trial, MOA, VAT and flag-state choice, and the disciplines that defeat the most common pitfalls.",
-    "datePublished": "2026-05-01"
+    "seoTitle": "How to buy a superyacht: the acquisition process",
+    "seoDescription": "Shortlist, pre-purchase survey, sea trial, VAT and flag, then closing. The 12 to 24 week acquisition window and the five most common pitfalls.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-09-09"
   },
   {
     "number": "05",
@@ -63,9 +67,10 @@
     "contributor": "Hein Velema",
     "contributorRole": "Secretary General, Superyacht Alliance for Professional Standards; first president of SYBAss; former Feadship and Fraser",
     "contributorLinkedIn": "https://www.linkedin.com/in/hein-velema-a4061aa6/",
-    "seoTitle": "New build vs brokerage superyacht: contract, owner’s rep, costs",
-    "seoDescription": "Yacht new build versus brokerage. Threshold tests, contract drafting at heads of terms, the owner’s representative role, and the variation-margin overrun pattern documented across SYBAss yards.",
-    "datePublished": "2026-05-01"
+    "seoTitle": "New build vs brokerage: contract, owner’s rep, costs",
+    "seoDescription": "Build or buy. Contract terms, stage payments, the owner's representative, warranty and snag lists, and what each route actually costs in time.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-08-13"
   },
   {
     "number": "06",
@@ -78,8 +83,9 @@
     "contributor": "To be confirmed",
     "contributorRole": "Refit yard CEO",
     "seoTitle": "Superyacht refit cost: when to refit, when to sell",
-    "seoDescription": "Superyacht refit cost, yard selection, scope discipline, and the 30 to 50 percent overrun pattern. The 30 percent of pre-refit value threshold for refit-or-sell. Spanish IPR, French Commercial Exemption, and Maltese leasing.",
-    "datePublished": "2026-05-01"
+    "seoDescription": "When a refit is worth doing and when to sell instead. Cost benchmarks per metre, yard selection, scope discipline and the 30 percent threshold.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-09-09"
   },
   {
     "number": "07",
@@ -91,9 +97,10 @@
     "heroFocus": "top",
     "contributor": "Erica Lay",
     "contributorRole": "Crew recruitment specialist, EL Crew Co",
-    "seoTitle": "Yacht operations: captain salary, crew, insurance, charter economics",
-    "seoDescription": "Yacht operations year one: captain hire discipline, crew structure and salary 2026, MLC and ISM compliance, insurance market, and the charter economics for the median programme. Sources named.",
-    "datePublished": "2026-05-01"
+    "seoTitle": "Yacht operations: captain, crew, insurance and charter",
+    "seoDescription": "The captain hire, crew structure and cost, ISM and MLC compliance, the insurance market after Bayesian, and whether charter earns its keep.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-09-09"
   },
   {
     "number": "08",
@@ -104,9 +111,10 @@
     "hero": "/images/stock/cannes-sail-motor.jpg",
     "contributor": "Ella Johnson",
     "contributorRole": "Captain, 34m Baltic Yachts performance sloop",
-    "seoTitle": "Motor vs sail superyacht: cost, carbon, hybrid drive comparison",
-    "seoDescription": "Motor versus sail versus hybrid drive on a 50 metre yacht. Annual operating cost comparison, EU ETS exposure, HVO availability, and the hybrid third path. Quality sailing builders typically 25 to 40 percent below the equivalent motor programme.",
-    "datePublished": "2026-05-01"
+    "seoTitle": "Motor vs sail superyacht: cost, carbon, hybrid drive",
+    "seoDescription": "Operating cost, crew, carbon, range and resale compared honestly across motor, sail and hybrid drive, for a buyer inclined to default to motor.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-08-13"
   },
   {
     "number": "09",
@@ -118,8 +126,9 @@
     "contributor": "Simon Roberts",
     "contributorRole": "Corporate services provider, Quadrant Group",
     "contributorLinkedIn": "https://www.linkedin.com/in/simon-roberts-quadrant/",
-    "seoTitle": "Yacht ownership structure, VAT, and the questions to ask before buying",
-    "seoDescription": "How to settle the ownership structure, jurisdiction, and VAT position before contracts are exchanged, and the ten questions and independence test to put to anyone proposing to advise on a superyacht acquisition, including the publisher of The First Owner’s Reference.",
-    "datePublished": "2026-05-01"
+    "seoTitle": "Yacht ownership structure, VAT and what to ask first",
+    "seoDescription": "Ownership structure, jurisdiction, VAT and importation, and the ten questions to put to every adviser, including the publisher of this reference.",
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-08-13"
   }
 ]

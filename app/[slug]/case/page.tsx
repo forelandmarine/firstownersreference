@@ -8,7 +8,12 @@ import { ReadingProgress } from "@/components/reading-progress";
 import { BackToTop } from "@/components/back-to-top";
 import { sections, getSection } from "@/lib/sections";
 import { getCase } from "@/lib/cases";
-import { SITE_URL } from "@/lib/jsonld";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  jsonLdString,
+  SITE_URL,
+} from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return sections
@@ -25,12 +30,15 @@ export async function generateMetadata(props: {
   if (!section || !caseStudy) return {};
   const url = `${SITE_URL}/${section.slug}/case`;
   return {
-    title: `${caseStudy.title} | Chapter ${section.number}`,
-    description: caseStudy.standfirst,
+    // The editorial title ("The owner who bought twice.") reads well and is
+    // unfindable. Lead with the query language and drop the chapter segment,
+    // which cost 13 of the ~60 characters a result listing shows.
+    title: { absolute: caseStudy.seoTitle ?? caseStudy.title },
+    description: caseStudy.seoDescription ?? caseStudy.standfirst,
     alternates: { canonical: url },
     openGraph: {
       title: `${caseStudy.title} | Chapter ${section.number}, The First Owner's Reference`,
-      description: caseStudy.standfirst,
+      description: caseStudy.seoDescription ?? caseStudy.standfirst,
       url,
       type: "article",
       publishedTime: section.datePublished,
@@ -38,7 +46,7 @@ export async function generateMetadata(props: {
     twitter: {
       card: "summary_large_image",
       title: caseStudy.title,
-      description: caseStudy.standfirst,
+      description: caseStudy.seoDescription ?? caseStudy.standfirst,
     },
   };
 }
@@ -56,10 +64,39 @@ export default async function CaseStudyPage(props: {
   const prev = sections[index - 1];
   const next = sections[index + 1];
 
+  const url = `${SITE_URL}/${section.slug}/case`;
+
+  // The case pages ran to a thousand words apiece and carried no article
+  // schema, no breadcrumb and no dates.
+  const schema = jsonLdString(
+    articleSchema({
+      url,
+      headline: caseStudy.seoTitle ?? caseStudy.title,
+      description: caseStudy.seoDescription ?? caseStudy.standfirst,
+      datePublished: section.datePublished,
+      dateModified: section.dateModified,
+      author: "both",
+      image: `${SITE_URL}/${section.slug}/opengraph-image`,
+      articleSection: `Chapter ${section.number}`,
+    }),
+    breadcrumbSchema([
+      { name: "1st Edition", url: SITE_URL },
+      {
+        name: `Chapter ${section.number}, ${section.title}`,
+        url: `${SITE_URL}/${section.slug}`,
+      },
+      { name: "Case material", url },
+    ])
+  );
+
   return (
     <>
       <SiteHeader />
       <ReadingProgress />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: schema }}
+      />
 
       <article>
         <header className="bg-paper border-b border-rule pt-16 pb-16">

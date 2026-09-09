@@ -219,6 +219,54 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* The three reference pages below the calculator had no inbound link
+          from anywhere on the site and, unlike the calculator, ranked for
+          nothing. */}
+      <section className="bg-paper py-24 lg:py-32 border-b border-rule">
+        <div className="max-w-[80rem] mx-auto px-6 lg:px-12">
+          <h2 className="font-serif text-headline leading-tight tracking-tight mb-4">
+            Reference pages.
+          </h2>
+          <p className="caption max-w-2xl mb-12 text-base leading-relaxed">
+            Three standing pages kept current between editions, each built on
+            named sources and free to cite.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-rule border border-rule">
+            {[
+              {
+                href: "/tools/yacht-vat-2026",
+                title: "Yacht VAT in 2026",
+                blurb:
+                  "What the EC Guidance Note of 30 April and Italian ADM Circular 11/2026 changed, and what a non-EU yacht now has to do.",
+              },
+              {
+                href: "/tools/captain-and-crew-salary-2026",
+                title: "Captain and crew salaries",
+                blurb:
+                  "Benchmarks by position and yacht size for 2026, with the recruitment-side sources named on every band.",
+              },
+              {
+                href: "/tools/order-book-tracker",
+                title: "Order book tracker",
+                blurb:
+                  "The 2026 Global Order Book by yard, country, and hull type, with delivery years and the source for each figure.",
+              },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group bg-paper p-8 lg:p-10 hover:bg-paper-deep transition-colors"
+              >
+                <p className="font-serif text-2xl leading-tight tracking-tight mb-3 group-hover:text-marine transition-colors">
+                  {item.title}
+                </p>
+                <p className="caption leading-relaxed">{item.blurb}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-paper py-24 lg:py-32">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>

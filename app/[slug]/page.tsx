@@ -41,7 +41,9 @@ export async function generateMetadata(props: {
   if (!section) return {};
   const url = `${SITE_URL}/${section.slug}`;
   return {
-    title: section.seoTitle,
+    // Absolute: the 30-character brand template pushed every chapter title
+    // past what a result listing shows.
+    title: { absolute: section.seoTitle },
     description: section.seoDescription,
     alternates: { canonical: url },
     openGraph: {

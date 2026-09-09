@@ -14,9 +14,9 @@ import {
 const URL = `${SITE_URL}/glossary`;
 
 export const metadata: Metadata = {
-  title: "Yacht industry glossary: definitions for first-time buyers",
+  title: { absolute: "Yacht glossary: 50 terms for first-time buyers" },
   description:
-    "Plain definitions of the terms that recur in superyacht acquisition, refit, and operation. Brokerage, dual agency, MLC, ISM, retrocession, Spanish IPR, owner's representative, and more. Citable. Linked from every chapter.",
+    "Plain definitions of the terms that recur in superyacht acquisition, refit and operation. Fifty entries, each sourced and free to cite.",
   alternates: { canonical: URL },
   openGraph: {
     title: "Yacht industry glossary | The First Owner's Reference",
@@ -68,6 +68,12 @@ export default function GlossaryPage() {
             hasDefinedTerm: sorted.map((e) => ({
               url: `${SITE_URL}/glossary#${e.slug}`,
               name: e.term,
+              // Short definition plus the expanded paragraph where there is
+              // one, so the cited regulatory detail travels with the term.
+              description: e.longDefinition
+                ? `${e.shortDefinition} ${e.longDefinition}`
+                : e.shortDefinition,
+              source: e.source,
             })),
           }),
         ]}
@@ -126,7 +132,10 @@ export default function GlossaryPage() {
                       {entry.longDefinition}
                     </p>
                   )}
-                  {(entry.source || chapters.length > 0 || related.length > 0) && (
+                  {(entry.source ||
+                    entry.furtherReading ||
+                    chapters.length > 0 ||
+                    related.length > 0) && (
                     <div className="mt-5 space-y-2 text-sm">
                       {entry.source && (
                         <p className="caption">
@@ -138,6 +147,19 @@ export default function GlossaryPage() {
                             rel="noopener noreferrer"
                           >
                             {entry.source.name}
+                          </a>
+                        </p>
+                      )}
+                      {entry.furtherReading && (
+                        <p className="caption">
+                          <span className="meta mr-2">Further reading</span>
+                          <a
+                            href={entry.furtherReading.url}
+                            className="link-marine"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {entry.furtherReading.name}
                           </a>
                         </p>
                       )}

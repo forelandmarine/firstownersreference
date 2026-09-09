@@ -15,9 +15,9 @@ const PUBLISHED = "2026-05-04";
 const MODIFIED = "2026-07-27";
 
 export const metadata: Metadata = {
-  title: "Yacht VAT 2026: EU rules, Temporary Admission, post-Brexit position",
+  title: { absolute: "Yacht VAT 2026: EU rules and Temporary Admission" },
   description:
-    "A current reference on yacht VAT in the EU and UK in 2026, updated for the European Commission Guidance Note of 30 April 2026 and Italian ADM Circular 11/2026. EU VAT-paid status, Temporary Admission, Brexit, Spanish IPR, French Commercial Exemption, Italian charter VAT, the reformed Maltese scheme. Sources cited.",
+    "What the EC Guidance Note of 30 April 2026 and Italian ADM Circular 11/2026 changed, Temporary Admission, and the post-Brexit UK position.",
   alternates: { canonical: URL },
   openGraph: {
     title: "Yacht VAT 2026 | The First Owner's Reference",

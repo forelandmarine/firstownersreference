@@ -13,6 +13,9 @@ export type ChecklistGroup = {
 export type Checklist = {
   slug: string;
   title: string;
+  /** Result-listing title. The editorial title carries no query language. */
+  seoTitle?: string;
+  seoDescription?: string;
   standfirst: string;
   intent: string;
   groups: ChecklistGroup[];

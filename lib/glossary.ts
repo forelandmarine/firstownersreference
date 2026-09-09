@@ -4,6 +4,12 @@ export type GlossaryEntry = {
   shortDefinition: string;
   longDefinition?: string;
   source?: { name: string; url: string };
+  /**
+   * One external piece worth reading next. Used where the publication has
+   * deliberately not built a page because the sibling site already ranks for
+   * that query.
+   */
+  furtherReading?: { name: string; url: string };
   relatedChapters?: string[];
   relatedTerms?: string[];
 };
@@ -42,6 +48,10 @@ export const glossaryEntries: GlossaryEntry[] = [
   {
     slug: "flag-state",
     term: "Flag state",
+    furtherReading: {
+      name: "Flag state registration, Foreland Marine",
+      url: "https://www.forelandmarine.com/insights/flag-state-registration-guide-for-yacht-owners",
+    },
     shortDefinition:
       "The country under whose laws a yacht is registered. Common choices for superyachts include Cayman Islands, Marshall Islands, Malta, and the Red Ensign Group jurisdictions.",
     longDefinition:
@@ -529,6 +539,10 @@ export const glossaryEntries: GlossaryEntry[] = [
   {
     slug: "cayman-islands-registry",
     term: "Cayman Islands Registry",
+    furtherReading: {
+      name: "Flag state registration, Foreland Marine",
+      url: "https://www.forelandmarine.com/insights/flag-state-registration-guide-for-yacht-owners",
+    },
     shortDefinition:
       "The Cayman Islands ship registry, a Red Ensign Group Category 1 member able to register yachts of unlimited size. The most common flag at the large end of the superyacht fleet.",
     longDefinition:
@@ -543,6 +557,10 @@ export const glossaryEntries: GlossaryEntry[] = [
   {
     slug: "marshall-islands-registry",
     term: "Marshall Islands Registry",
+    furtherReading: {
+      name: "Flag state registration, Foreland Marine",
+      url: "https://www.forelandmarine.com/insights/flag-state-registration-guide-for-yacht-owners",
+    },
     shortDefinition:
       "The open registry of the Republic of the Marshall Islands, administered by International Registries, Inc. Applies the international conventions without an additional national overlay, at competitive cost.",
     longDefinition:
@@ -557,6 +575,10 @@ export const glossaryEntries: GlossaryEntry[] = [
   {
     slug: "malta-flag",
     term: "Malta flag",
+    furtherReading: {
+      name: "Flag state registration, Foreland Marine",
+      url: "https://www.forelandmarine.com/insights/flag-state-registration-guide-for-yacht-owners",
+    },
     shortDefinition:
       "The ship register of Malta, the largest in Europe by tonnage and the leading EU flag for yachts. Registration under an EU flag changes the charter and VAT position inside the Union.",
     longDefinition:
@@ -571,6 +593,10 @@ export const glossaryEntries: GlossaryEntry[] = [
   {
     slug: "isle-of-man-registry",
     term: "Isle of Man Ship Registry",
+    furtherReading: {
+      name: "Flag state registration, Foreland Marine",
+      url: "https://www.forelandmarine.com/insights/flag-state-registration-guide-for-yacht-owners",
+    },
     shortDefinition:
       "The British ship registry at Douglas, a Red Ensign Group Category 1 member. A frequent pairing of flag and owning-company jurisdiction for private superyachts.",
     longDefinition:

@@ -61,6 +61,22 @@ const TERM_ALIASES: TermAlias[] = [
   { slug: "brokerage", alias: "brokerage" },
   { slug: "refit", alias: "refit" },
 
+  // The four flag-state entries and the three tax entries were in the
+  // glossary but never autolinked, so the cluster had no inbound links from
+  // the chapters that discuss it. Longer forms precede their own prefixes.
+  { slug: "cayman-islands-registry", alias: "Cayman Islands Shipping Registry" },
+  { slug: "cayman-islands-registry", alias: "Cayman Islands Registry" },
+  { slug: "cayman-islands-registry", alias: "Cayman Islands" },
+  { slug: "marshall-islands-registry", alias: "Marshall Islands Registry" },
+  { slug: "marshall-islands-registry", alias: "Marshall Islands" },
+  { slug: "isle-of-man-registry", alias: "Isle of Man Ship Registry" },
+  { slug: "isle-of-man-registry", alias: "Isle of Man" },
+  { slug: "malta-flag", alias: "Malta flag" },
+  { slug: "malta-flag", alias: "Maltese flag" },
+  { slug: "vat-regime", alias: "VAT regime" },
+  { slug: "importation", alias: "importation" },
+  { slug: "corporate-services-provider", alias: "corporate services provider" },
+
   // Acronyms, case-sensitive, word-bounded. "ISM Code" before "ISM".
   { slug: "ism", alias: "ISM Code", caseSensitive: true },
   { slug: "ism", alias: "ISM", caseSensitive: true },

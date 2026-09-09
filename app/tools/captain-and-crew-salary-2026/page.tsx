@@ -14,9 +14,9 @@ const URL = `${SITE_URL}/tools/captain-and-crew-salary-2026`;
 const PUBLISHED = "2026-05-04";
 
 export const metadata: Metadata = {
-  title: "Yacht captain and crew salary 2026 by yacht size",
+  title: { absolute: "Yacht captain and crew salary 2026 by yacht size" },
   description:
-    "Yacht captain salary 2026, plus chief officer, chief engineer, ETO, purser, chef, stew, deckhand, by yacht length band. Sourced from YPI Crew, Quay Crew, MLC. Updated May 2026.",
+    "Salary benchmarks by position and yacht size for 2026, from captain to deckhand, with the recruitment-side source named on every band.",
   alternates: { canonical: URL },
   openGraph: {
     title: "Yacht captain and crew salary 2026 | The First Owner's Reference",

@@ -5,6 +5,13 @@ import { ContributorAvatar } from "@/components/contributor-avatar";
 import { sections } from "@/lib/sections";
 import { guestOpinions } from "@/lib/guest-opinions";
 import { getContributorProfile } from "@/lib/contributors";
+import {
+  breadcrumbSchema,
+  contributorId,
+  contributorPersonSchema,
+  jsonLdString,
+  SITE_URL,
+} from "@/lib/jsonld";
 
 import type { Metadata } from "next";
 
@@ -103,9 +110,45 @@ function buildContributors(): Contributor[] {
 export default function ContributorsPage() {
   const contributors = buildContributors();
 
+  // The named contributors are the publication's hardest signal to replicate
+  // and appeared in no structured data. One Person node each, listed in
+  // reading order, mirroring exactly what the page already shows.
+  const schema = jsonLdString(
+    ...contributors.map((c) => {
+      const profile = getContributorProfile(c.name);
+      return contributorPersonSchema({
+        name: c.name,
+        jobTitle: c.role?.split("\n")[0],
+        description: profile?.bio ?? c.bio,
+        linkedIn: c.linkedin,
+        image: profile?.avatar ?? c.avatar,
+      });
+    }),
+    {
+      "@type": "ItemList",
+      "@id": `${SITE_URL}/contributors#list`,
+      name: "Contributors to the 1st Edition",
+      numberOfItems: contributors.length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: contributors.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@id": contributorId(c.name) },
+      })),
+    },
+    breadcrumbSchema([
+      { name: "1st Edition", url: SITE_URL },
+      { name: "Contributors", url: `${SITE_URL}/contributors` },
+    ])
+  );
+
   return (
     <>
       <SiteHeader />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: schema }}
+      />
 
       <article className="bg-paper">
         <header className="border-b border-rule pt-16 pb-16">

@@ -75,7 +75,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Bring it to the acquisition conversations."
+    "printable": "The page is designed to print onto a single A4. Bring it to the acquisition conversations.",
+    "seoTitle": "Superyacht cost checklist before your first purchase",
+    "seoDescription": "A one-page printable list of what to have in writing before any acquisition conversation: operating projection, depreciation, and reserve."
   },
   "02-reading-the-market": {
     "slug": "02-reading-the-market",
@@ -145,7 +147,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Complete in writing alongside the comparable scan. Hand to the lawyer at heads of terms."
+    "printable": "The page is designed to print onto a single A4. Complete in writing alongside the comparable scan. Hand to the lawyer at heads of terms.",
+    "seoTitle": "Yacht listing checklist: 12 checks before an offer",
+    "seoDescription": "Twelve printable checks drawn from listing-portal data and the Global Order Book, to run on any hull before the first offer goes in."
   },
   "03-how-the-industry-works": {
     "slug": "03-how-the-industry-works",
@@ -211,7 +215,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Require written answers from each counterparty. File with the closing documents."
+    "printable": "The page is designed to print onto a single A4. Require written answers from each counterparty. File with the closing documents.",
+    "seoTitle": "Broker disclosure checklist: what to get in writing",
+    "seoDescription": "The structural questions to put to any party introduced into the acquisition, and the disclosures worth having on paper before you proceed."
   },
   "04-acquisition-process": {
     "slug": "04-acquisition-process",
@@ -295,7 +301,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Tick items in writing as the process progresses. File with the closing documents."
+    "printable": "The page is designed to print onto a single A4. Tick items in writing as the process progresses. File with the closing documents.",
+    "seoTitle": "Yacht acquisition checklist: 15 items in 12 to 24 weeks",
+    "seoDescription": "A printable list across the acquisition window. The contract is set by closing, and most of the work sits in the first ten weeks."
   },
   "05-new-build-versus-brokerage": {
     "slug": "05-new-build-versus-brokerage",
@@ -373,7 +381,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Walk through with specialist shipbuilding counsel before signing the heads of terms."
+    "printable": "The page is designed to print onto a single A4. Walk through with specialist shipbuilding counsel before signing the heads of terms.",
+    "seoTitle": "New build contract checklist before heads of terms",
+    "seoDescription": "Three threshold tests for new build and ten contract points to settle at heads of terms, as specialist counsel walks through them."
   },
   "06-refit": {
     "slug": "06-refit",
@@ -451,7 +461,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Complete with the owner’s representative. Revisit at each milestone."
+    "printable": "The page is designed to print onto a single A4. Complete with the owner’s representative. Revisit at each milestone.",
+    "seoTitle": "Yacht refit checklist: yard, scope and contract",
+    "seoDescription": "A printable list across the four refit disciplines: whether to refit at all, yard selection, scope definition, and on-site discipline."
   },
   "07-operations": {
     "slug": "07-operations",
@@ -531,7 +543,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Complete with the captain and owner’s representative in year one. Revisit annually."
+    "printable": "The page is designed to print onto a single A4. Complete with the captain and owner’s representative in year one. Revisit annually.",
+    "seoTitle": "Yacht operations checklist for the first year of ownership",
+    "seoDescription": "Five decisions that compound across a hold period: captain, management, insurance, charter or private, and the refit reserve."
   },
   "08-motor-versus-sail": {
     "slug": "08-motor-versus-sail",
@@ -612,7 +626,9 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Complete in writing before approaching any broker on the chosen path."
+    "printable": "The page is designed to print onto a single A4. Complete in writing before approaching any broker on the chosen path.",
+    "seoTitle": "Motor versus sailing yacht: the comparison checklist",
+    "seoDescription": "A printable reference for the point of choosing between motor, sailing yacht and hybrid drive, and the variables the comparison turns on."
   },
   "09-decision-framework": {
     "slug": "09-decision-framework",
@@ -693,6 +709,8 @@
         ]
       }
     ],
-    "printable": "The page is designed to print onto a single A4. Use it to open the conversation with each adviser. The publisher’s answers are on the colophon."
+    "printable": "The page is designed to print onto a single A4. Use it to open the conversation with each adviser. The publisher’s answers are on the colophon.",
+    "seoTitle": "Ten questions to ask any superyacht adviser",
+    "seoDescription": "The ten questions designed to be put to anyone proposing to advise on the acquisition, including the publisher of this reference."
   }
 }

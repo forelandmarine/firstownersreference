@@ -4,12 +4,12 @@ import Image from "next/image";
 export function SiteFooter() {
   return (
     <footer className="mt-32 border-t border-rule bg-paper-deep">
-      <div className="max-w-[80rem] mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-[80rem] mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-5 gap-12">
         <div className="md:col-span-2">
           <p className="font-serif text-2xl leading-tight tracking-tight">
             The First Owner&rsquo;s Reference
           </p>
-          <p className="meta mt-3">1st Edition &middot; 2026</p>
+          <p className="meta mt-3">1st Edition, 2026</p>
           <p className="caption mt-6 max-w-md">
             A yachting field manual, published annually. Independent. Contributor-led.
             Written by Foreland Marine. No advertising, ever.
@@ -30,11 +30,6 @@ export function SiteFooter() {
             <li>
               <Link href="/#chapters" className="link">
                 All chapters
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/running-cost-calculator" className="link">
-                Running cost calculator
               </Link>
             </li>
             <li>
@@ -69,6 +64,36 @@ export function SiteFooter() {
             </li>
           </ul>
         </div>
+        <div>
+          <p className="meta mb-4">Tools</p>
+          <ul className="space-y-2 caption">
+            <li>
+              <Link href="/tools/running-cost-calculator" className="link">
+                Running cost calculator
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/yacht-vat-2026" className="link">
+                Yacht VAT in 2026
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/captain-and-crew-salary-2026" className="link">
+                Captain and crew salaries
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/order-book-tracker" className="link">
+                Order book tracker
+              </Link>
+            </li>
+            <li>
+              <Link href="/09a-questions-to-ask-before-you-buy" className="link">
+                Questions to ask before you buy
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="flex justify-between items-end gap-4">
           <div>
             <p className="meta mb-4">Publisher</p>
@@ -99,7 +124,7 @@ export function SiteFooter() {
           <p className="meta">
             &copy; 2026 Foreland Marine Consultancy Limited
           </p>
-          <p className="meta">ISSN pending &middot; Print run 500 &middot; Hand numbered</p>
+          <p className="meta">ISSN pending, print run 500, hand numbered</p>
           <p className="meta">
             Website by{" "}
             <a

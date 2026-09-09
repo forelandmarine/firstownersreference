@@ -50,8 +50,9 @@ export function jackPersonSchema() {
     jobTitle: "Co-editor in Chief, The First Owner's Reference; Director, Foreland Marine",
     worksFor: { "@id": ORG_ID },
     sameAs: [
-      "https://forelandmarine.com",
-      "https://www.linkedin.com/in/jack-macnally/",
+      "https://www.forelandmarine.com",
+      "https://www.forelandmarine.com/#jack-macnally",
+      "https://www.linkedin.com/in/jmacnally/",
     ],
   };
 }
@@ -63,6 +64,43 @@ export function danPersonSchema() {
     name: "Daniel Marks",
     jobTitle: "Co-editor in Chief, The First Owner's Reference",
     worksFor: { "@id": ORG_ID },
+    sameAs: [
+      "https://www.forelandmarine.com",
+      "https://www.forelandmarine.com/#daniel-marks",
+      "https://www.linkedin.com/in/daniel-marks-0a0a4b6b/",
+    ],
+  };
+}
+
+/** Stable @id for a named contributor, so one person is one node sitewide. */
+export function contributorId(name: string) {
+  return `${SITE_URL}#${name
+    .toLowerCase()
+    .replace(/^(capt\.|captain|mr|ms|mrs|dr)\s+/, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")}`;
+}
+
+/**
+ * The named practitioners on the record are the publication's strongest
+ * credibility signal and appeared in no structured data at all: the Q&A
+ * articles listed only the two editors as authors.
+ */
+export function contributorPersonSchema(opts: {
+  name: string;
+  jobTitle?: string;
+  description?: string;
+  linkedIn?: string;
+  image?: string;
+}) {
+  return {
+    "@type": "Person",
+    "@id": contributorId(opts.name),
+    name: opts.name,
+    ...(opts.jobTitle ? { jobTitle: opts.jobTitle } : {}),
+    ...(opts.description ? { description: opts.description } : {}),
+    ...(opts.image ? { image: `${SITE_URL}${opts.image}` } : {}),
+    ...(opts.linkedIn ? { sameAs: [opts.linkedIn] } : {}),
   };
 }
 
@@ -80,6 +118,8 @@ export function articleSchema(opts: {
   wordCount?: number;
   chapterNumber?: string;
   chapterTitle?: string;
+  /** @ids of people the piece is about, e.g. the interviewee on a Q&A. */
+  about?: string[];
 }) {
   const author =
     opts.author === "jack"
@@ -111,6 +151,12 @@ export function articleSchema(opts: {
             "@type": "ImageObject",
             url: opts.image,
           },
+        }
+      : {}),
+    ...(opts.about?.length
+      ? {
+          about: opts.about.map((id) => ({ "@id": id })),
+          mentions: opts.about.map((id) => ({ "@id": id })),
         }
       : {}),
     ...(opts.articleSection ? { articleSection: opts.articleSection } : {}),
@@ -177,7 +223,12 @@ export function definedTermSetSchema(opts: {
   url: string;
   name: string;
   description: string;
-  hasDefinedTerm: { url: string; name: string }[];
+  hasDefinedTerm: {
+    url: string;
+    name: string;
+    description: string;
+    source?: { name: string; url: string };
+  }[];
 }) {
   return {
     "@type": "DefinedTermSet",
@@ -185,10 +236,24 @@ export function definedTermSetSchema(opts: {
     url: opts.url,
     name: opts.name,
     description: opts.description,
+    // The terms carried name and url only. Every definition on the page,
+    // including the regulatory citations, was invisible to structured data.
     hasDefinedTerm: opts.hasDefinedTerm.map((t) => ({
       "@type": "DefinedTerm",
+      "@id": `${t.url.split("#")[0]}#${t.url.split("#")[1] ?? ""}-term`,
       name: t.name,
       url: t.url,
+      description: t.description,
+      inDefinedTermSet: `${opts.url}#termset`,
+      ...(t.source
+        ? {
+            isBasedOn: {
+              "@type": "CreativeWork",
+              name: t.source.name,
+              url: t.source.url,
+            },
+          }
+        : {}),
     })),
     publisher: { "@id": ORG_ID },
   };

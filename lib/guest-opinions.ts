@@ -12,6 +12,14 @@ export type GuestOpinion = {
   contributorRole: string;
   contributorLinkedIn?: string;
   intro?: string;
+  /**
+   * Result-listing description. The intro is a standfirst and runs to 300-600
+   * characters, which a search engine discards and rewrites.
+   */
+  seoDescription?: string;
+  /** The interview's own date, not the chapter's. */
+  datePublished?: string;
+  dateModified?: string;
   questions: GuestOpinionQA[];
 };
 

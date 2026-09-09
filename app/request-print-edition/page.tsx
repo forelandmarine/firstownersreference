@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/site-footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Request a print copy of The First Owner's Reference",
+  title: { absolute: "Request a print copy of the 1st Edition" },
   description:
-    "1st Edition is a limited print run of 500 copies, casebound on Munken Pure stock, hand numbered and signed. Distribution is curated. Write to request a copy.",
+    "The 1st Edition is a hand-numbered print run of 500. Request a copy, sent without charge to owners, advisers and the industry.",
   alternates: {
     canonical: "https://firstownersreference.com/request-print-edition",
   },

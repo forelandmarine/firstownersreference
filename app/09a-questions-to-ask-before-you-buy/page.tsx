@@ -14,9 +14,9 @@ const URL = `${SITE_URL}/09a-questions-to-ask-before-you-buy`;
 const PUBLISHED = "2026-07-28";
 
 export const metadata: Metadata = {
-  title: "Questions to ask before buying a yacht: the ten-question checklist",
+  title: { absolute: "Ten questions to ask before buying a yacht" },
   description:
-    "The ten questions to put to anyone involved in a superyacht purchase before signing anything, who to hire first, and how to test any adviser for independence. A one-page companion to chapter 9 of The First Owner's Reference.",
+    "The ten questions to put to every adviser before a superyacht purchase, including the publisher of this reference. One printable page.",
   alternates: { canonical: URL },
   openGraph: {
     title:

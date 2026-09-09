@@ -16,6 +16,8 @@ import {
 import {
   articleSchema,
   breadcrumbSchema,
+  contributorId,
+  contributorPersonSchema,
   jsonLdString,
   SITE_URL,
 } from "@/lib/jsonld";
@@ -35,12 +37,15 @@ export async function generateMetadata(props: {
   const opinion = getGuestOpinionByPerson(slug, person);
   if (!section || !opinion) return {};
   const url = `${SITE_URL}/${section.slug}/qa/${person}`;
-  const title = `In conversation with ${opinion.contributor} | Chapter ${section.number}`;
+  const title = `${opinion.contributor} on ${section.title.toLowerCase()}`;
   const description =
+    opinion.seoDescription ??
     opinion.intro ??
     `${opinion.contributor}, ${opinion.contributorRole}, in conversation with The First Owner's Reference.`;
   return {
-    title,
+    // No brand suffix: the contributor's name and the topic are worth more in
+    // a result listing than the publication name, which the domain shows.
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -48,7 +53,7 @@ export async function generateMetadata(props: {
       description,
       url,
       type: "article",
-      publishedTime: section.datePublished,
+      publishedTime: opinion.datePublished ?? section.datePublished,
     },
     twitter: {
       card: "summary_large_image",
@@ -74,15 +79,26 @@ export default async function GuestQAPage(props: {
   const profile = getContributorProfile(opinion.contributor);
 
   const schema = jsonLdString(
+    contributorPersonSchema({
+      name: opinion.contributor,
+      jobTitle: opinion.contributorRole?.split("\n")[0],
+      description: profile?.bio,
+      linkedIn: opinion.contributorLinkedIn,
+      image: profile?.avatar,
+    }),
     articleSchema({
       url,
       headline: `In conversation with ${opinion.contributor}`,
       description:
         opinion.intro ??
         `${opinion.contributor}, ${opinion.contributorRole}, in conversation with The First Owner's Reference.`,
-      datePublished: section.datePublished,
-      dateModified: section.dateModified,
+      // The interview's own dates, not the chapter's. Every Q&A previously
+      // reported the chapter's 1 May publication date.
+      datePublished: opinion.datePublished ?? section.datePublished,
+      dateModified:
+        opinion.dateModified ?? opinion.datePublished ?? section.dateModified,
       author: "both",
+      about: [contributorId(opinion.contributor)],
       image: `${SITE_URL}/${section.slug}/opengraph-image`,
       articleSection: `Chapter ${section.number}`,
     }),

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     template: "%s | The First Owner's Reference",
   },
   description:
-    "An independent, contributor-led yachting field manual for first-time superyacht buyers. Cost of ownership, market structure, acquisition, refit, operations, and the questions to ask before signing. Written by Foreland Marine. 1st Edition, 2026.",
+    "An independent, contributor-led field manual for first-time superyacht buyers. Cost of ownership, acquisition, refit, operations, and what to ask.",
   metadataBase: new URL("https://firstownersreference.com"),
   alternates: {
     canonical: "/",
@@ -90,6 +90,15 @@ export default function RootLayout({
       lang="en"
       className={`${newsreader.variable} ${dmSans.variable} ${dmMono.variable} antialiased`}
     >
+      <head>
+        {/* llms.txt is otherwise discoverable only from robots.txt */}
+        <link
+          rel="alternate"
+          type="text/plain"
+          href="https://firstownersreference.com/llms.txt"
+          title="llms.txt"
+        />
+      </head>
       <body className="min-h-screen bg-paper text-charcoal font-serif">
         <JsonLd
           nodes={[
