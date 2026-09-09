@@ -88,6 +88,16 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link href="/tools/yacht-insurance-cost-2026" className="link">
+                Yacht insurance cost
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/yacht-depreciation" className="link">
+                Yacht depreciation
+              </Link>
+            </li>
+            <li>
               <Link href="/09a-questions-to-ask-before-you-buy" className="link">
                 Questions to ask before you buy
               </Link>

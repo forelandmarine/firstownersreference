@@ -231,7 +231,7 @@ export default function HomePage() {
             Three standing pages kept current between editions, each built on
             named sources and free to cite.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-rule border border-rule">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-rule border border-rule">
             {[
               {
                 href: "/tools/yacht-vat-2026",
@@ -250,6 +250,18 @@ export default function HomePage() {
                 title: "Order book tracker",
                 blurb:
                   "The 2026 Global Order Book by yard, country, and hull type, with delivery years and the source for each figure.",
+              },
+              {
+                href: "/tools/yacht-insurance-cost-2026",
+                title: "Yacht insurance cost",
+                blurb:
+                  "Hull and machinery rates, P&I limits, war risk pricing by region, and the four terms worth negotiating at quote stage.",
+              },
+              {
+                href: "/tools/yacht-depreciation",
+                title: "Yacht depreciation",
+                blurb:
+                  "The curve by year, the builders that beat it, and the eight-figure hold cost that rarely reaches a first-time buyer.",
               },
             ].map((item) => (
               <Link

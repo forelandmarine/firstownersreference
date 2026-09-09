@@ -71,6 +71,12 @@ export function GET() {
     `Order book tracker. The 2026 Global Order Book by yard, country and hull type. URL: ${SITE_URL}/tools/order-book-tracker`
   );
   lines.push(
+    `Yacht insurance cost 2026. Hull and machinery rates as a percentage of insured value, P&I limits, war risk pricing by region, and the deductible and warranty terms that are negotiable at quote stage. URL: ${SITE_URL}/tools/yacht-insurance-cost-2026`
+  );
+  lines.push(
+    `Yacht depreciation. The broker-aggregated depreciation curve by year, the builders that beat it, total five-year hold cost, and the charter arithmetic. URL: ${SITE_URL}/tools/yacht-depreciation`
+  );
+  lines.push(
     `Ten questions to ask before you buy. Put to every adviser, including the publisher. URL: ${SITE_URL}/09a-questions-to-ask-before-you-buy`
   );
   lines.push("");

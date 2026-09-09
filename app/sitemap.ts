@@ -21,6 +21,8 @@ const TOOL_DATES: Record<string, string> = {
   "/tools/yacht-vat-2026": "2026-07-27",
   "/tools/captain-and-crew-salary-2026": "2026-05-04",
   "/tools/order-book-tracker": "2026-07-27",
+  "/tools/yacht-insurance-cost-2026": "2026-09-09",
+  "/tools/yacht-depreciation": "2026-09-09",
   "/09a-questions-to-ask-before-you-buy": "2026-07-28",
 };
 
@@ -47,6 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/yacht-vat-2026`, lastModified: d("/tools/yacht-vat-2026"), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/tools/captain-and-crew-salary-2026`, lastModified: d("/tools/captain-and-crew-salary-2026"), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/tools/order-book-tracker`, lastModified: d("/tools/order-book-tracker"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/tools/yacht-insurance-cost-2026`, lastModified: d("/tools/yacht-insurance-cost-2026"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/tools/yacht-depreciation`, lastModified: d("/tools/yacht-depreciation"), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/09a-questions-to-ask-before-you-buy`, lastModified: d("/09a-questions-to-ask-before-you-buy"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/request-print-edition`, lastModified: d("/request-print-edition"), changeFrequency: "monthly", priority: 0.5 },
   ];
