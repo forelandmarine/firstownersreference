@@ -224,3 +224,75 @@ Off-site work is unchanged from the May and July lists and remains the binding c
 3. Whether the nine checklist pages stay as routes or fold into their chapters.
 4. Whether the flag-state comparison is built on the publication, given Foreland already ranks for that query.
 5. Consent from the eight interviewees to a Person node with a LinkedIn sameAs. Narrower than the byline-level consent question in the May plan.
+
+---
+
+# Addendum: work completed, 9 September 2026
+
+Every item on the priority list above was worked. Foreland Marine commit `7074a66`, The First Owner's Reference commit `a2f5c90`.
+
+## Decisions taken
+
+The calculator stays on both domains, differentiated rather than consolidated. Foreland's keeps its position as a budgeting tool for a yacht already owned or about to be operated, and its wording is untouched because it is the version that ranks. The publication's is re-angled as the affordability check a buyer runs before committing: new headline, new section headings, and six new FAQ questions, so the two pages no longer share an H1, an H2 set or a single FAQ question name.
+
+Chapter 01's basis is the house position on running cost: 12 to 15 percent of purchase price for a 40 to 50 metre operated privately at moderate use, and EUR 4 to 6 million a year for a 50 metre new-build motor yacht. The publication's own FAQ already agreed with it; only the calculator's meta description did not, and it now does.
+
+The nine checklist pages stay as routes and were fixed rather than folded into the chapters.
+
+The flag-state comparison was not built on the publication. Foreland's existing article gains a direct Marshall Islands and Cayman section with four FAQs, and the five flag entries in the publication's glossary now point at it.
+
+## Foreland Marine
+
+The /tools title served its brand suffix twice, because the child metadata wrote a suffix the root template already appends. Sixteen titles and twenty meta descriptions were past display length; titles are now set absolute so the rendered string is deterministic, and the fourteen over-length article standfirsts keep their on-page copy while carrying a separate short description for the listing.
+
+Fourteen pages served no og:image at all. Every service, tools and hub page now has a card, rendered through one shared function rather than two 149-line copies of the same markup.
+
+A defect surfaced that was not in the original audit. `generateImageMetadata` on the insights route returned the entire posts array for every slug, so all thirty-three articles advertised the first post's image id and an `og:image:alt` describing a different article than the one being shared. Every article now advertises its own.
+
+The desktop navigation rendered its dropdowns conditionally, so no crawler had ever seen the Yacht Surveys link. The dropdowns are now always in the DOM and hidden with CSS. /tools, which had no inbound link from anywhere, is in the navigation and the footer.
+
+Foreland linked to the publication exactly once, from a page that is noindexed and disallowed. It now carries a sitewide footer link and contextual chapter references on the seventeen articles that overlap a chapter.
+
+/admin and /login answered 200 with no robots directive and a canonical pointing at the homepage. Both are noindex and disallowed, along with the /q/ and /i/ token routes.
+
+The newsletter issue had no H1, no JSON-LD of any kind, and three of its four internal links went to the homepage. It now has heading structure, Article schema nested under a Periodical, and a route back into the site.
+
+llms.txt is referenced from robots.txt and the document head, and its forty-eight non-www URLs now match the canonical host.
+
+The calculator's stated range of EUR 500,000 to 1.5 million for a 30 to 50 metre did not match its own model, which returns EUR 0.93 million at 30 metres and EUR 2.30 million at 50. That is corrected, and a note on the page now reconciles the value-based model against the percentage-of-purchase-price basis, since the two answer different questions and an owner comparing them should know which is in front of them.
+
+One audit finding was wrong. Item 16 claimed the heroes were not prioritised. `priority` is set on all three Foreland hero components and Next emits the image preload correctly; there is simply no `fetchpriority` attribute on the img element, which is Next's implementation choice rather than a defect. The only real gap was a `fill` image without a `sizes` prop on the insights hero, now fixed.
+
+## The First Owner's Reference
+
+The three orphaned tools pages now have a footer column, a homepage section, and a contextual editor's note in the chapter that covers each of them. Seven glossary terms, including all four flag-state entries, were in the glossary but never autolinked and now are. Chapter internal link counts move from 11 to 26 on chapter 01, 15 to 30 on chapter 02, and 19 to 34 on chapter 06, against the 25 to 35 target. The checklist pages go from one internal link to nineteen, through a screen-only navigation block that leaves the printed A4 unchanged.
+
+Forty-seven of forty-eight titles ran past display length, to 106 characters at the worst. All forty-nine built pages are now under sixty-two. The eighteen case and checklist titles were editorial prose carrying no query language and have been rewritten to lead with the search phrase while keeping the editorial headline on the page. Twenty-five descriptions ran over, the Q&A pages to 603 characters; every page now has a purpose-written description between 110 and 160.
+
+Thirty-eight of forty-eight pages served no og:image. Fifteen routes now render cards through one shared function.
+
+All fifty glossary DefinedTerms carried a name and a url and nothing else. Each now carries its full definition, including the regulatory citations, plus the source where one exists.
+
+The eight named interviewees appeared in no structured data anywhere on the site. Each Q&A now carries a Person node with job title, biography, headshot and a LinkedIn sameAs, referenced from the Article as both `about` and `mentions`, and /contributors carries the same nodes in an ItemList. This closes the first of the four open editorial decisions from the May plan: the structured data mirrors exactly what the page already publishes, so no new disclosure is involved.
+
+Case and checklist pages had no Article schema, no breadcrumb and no dates. They have all three, and the checklists additionally carry ItemList over their questions.
+
+Every chapter and Q&A reported both datePublished and dateModified as 2026-05-01, including interviews written months later. The repository's content history only reaches back to the August JSON migration, so the interviews are dated 2026-08-10, the earliest date the repository can evidence them existing. That is not certainly right, but it is much closer than 1 May and it stops the publication claiming a September interview was published in the spring. Correct any you know better in `content/guest-opinions.json`.
+
+The sitemap gave all forty-eight URLs the same build timestamp to the millisecond. It now carries six distinct dates drawn from real content changes.
+
+The publication used a LinkedIn URL for Jack MacNally that does not resolve. Both domains now use the one that does, and the Person nodes cross-reference each other.
+
+llms.txt is added, generated from the chapters, Q&As, tools, FAQs and the full fifty-term glossary, and referenced from robots.txt and the head.
+
+## Measured, no action taken
+
+The 177 KB of web fonts is three variable families plus a separate italic file, one file per face. Weight 700 is declared but unused in the markup; removing it from the arrays saves nothing, because a variable font serves the whole axis from one file regardless. There is no cheap win here. A real reduction means dropping a family, dropping the italic, or dropping DM Mono's second weight for about 8 KB, and none of those is worth a visual change on this design.
+
+## Analytics
+
+Vercel Web Analytics is running on both projects and the dashboard holds the data. The Web Analytics **API** is gated on the Hobby plan, so it returns `not_found` for both projects on every valid query shape and the numbers could not be pulled into this analysis. A top-pages export from either project dashboard would let the traffic side be layered onto the ranking evidence above, which is currently the only performance signal in this document.
+
+## Still outstanding
+
+Everything off-site, which remains the binding constraint on the head terms and which nothing here substitutes for: the Tier 3 legal thought-leadership pitches, Knight Frank, and Spear's. Google Search Console and Bing Webmaster Tools baselines. And a decision from LinkedIn's side: two company pages for Foreland Marine are indexed, `/company/forelandmarine` and `/company/foreland-marine-consulting-ltd`. Both sites now cite the first, which is the one the footer has always linked. The second should be merged or closed, and only you can do that.
