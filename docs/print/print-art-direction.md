@@ -8,31 +8,35 @@ Read with `docs/print/layout-registers.pdf`, which draws every page architecture
 
 ## 1. What the comparison set actually looks like
 
-Four titles were measured rather than described. Two were pulled as PDFs and counted page by page; the other two were read for structure.
+Five titles, all measured from files in hand rather than described. Page counts and word counts are counted page by page; trims are taken from the PDF page geometry or the publisher's own ad specification.
 
 | | Trim | Pages | Relief pages | Median words per text page | Heaviest page | Where relief comes from |
 |---|---|---|---|---|---|---|
 | The First Owner's Reference, Aug proof | 230 × 300 mm | 120 | 15 (12%) | 551 | 1,276 | Chapter openers |
 | The Superyacht Report 222 | 210 × 265 mm | 120 | 30 (25%) | 446 | 879 | Full-page advertising |
 | Knight Frank, The Wealth Report 2025 | 215 × 275 mm | 88 | 10 (11%) | 427 | 1,025 | Number pages, section openers |
-| BOAT International, monthly | ~230 × 300 mm | 200+ | very high | low | — | Advertising and commissioned photography |
-| Portfolio by Savills, annual | large format | — | very high | low | — | Advertising-adjacent property photography |
+| BOAT International, Global Order Book 2026 | 230 × 290 mm | 8 (extract) | 1 | 1,100 | 1,656 | Boxed panels, stat strips, full-bleed openers |
+| Portfolio by Savills, Volume 8 | ≈ 220 × 295 mm | 172 | high | low | — | Image scale, white space, typographic dividers |
 
 A relief page is one carrying fewer than 45 words: an opener, a full-bleed image, a closing device, an advertisement.
 
-Two facts fall out of this.
-
-**The Reference is not set too small or too tight.** Per square millimetre of page all three measured books sit at roughly eight words per thousand square millimetres. The type system is competitive with the trade set as it stands.
+**The Reference is not set too small or too tight.** Per square millimetre of page, the Reference, The Superyacht Report and the Wealth Report all sit at roughly eight words per thousand square millimetres. The type system is competitive with the trade set as it stands.
 
 **The Reference has no rhythm.** Between the chapter 05 opener and the chapter 06 opener a reader crosses fourteen consecutive pages with no relief of any kind. Between 06 and 07 it is sixteen. Between the last chapter close and the colophon it is eighteen. No book in the comparison set asks that of a reader, and the two that avoid it most comfortably avoid it by selling advertising.
 
 The publication has ruled out advertising permanently and that decision is the whole editorial wedge, so it is not up for revision. What follows from it is that every pause in the book has to be manufactured editorially. That is the central design problem of the 1st Edition and everything below is downstream of it.
+
+**Density is not the fault, and the BOAT material proves it.** The Global Order Book feature is BOAT International's data journalism, set at 230 × 290 mm, ten millimetres shorter than the Reference and otherwise directly comparable. It runs a median of 1,100 words per page and peaks at 1,656, which is double the Reference's median and a third above its worst page. It is entirely readable, because every element on those pages is boxed, headed and hierarchied: panel heads in small caps on a rule, reversed callout boxes, sidebars with their own internal columns, tables with ruled heads, figures with captions and source lines.
+
+The Reference's 1,276-word page fails where BOAT's 1,656-word page succeeds, and the difference is not word count. It is that the Reference's heavy pages are two columns of undifferentiated justified text with nothing on them a reader can navigate by. That changes the rule, and the change is set out at 3.4.
 
 ## 2. Which shelf the book is competing on
 
 The comparison set splits cleanly.
 
 BOAT International, Robb Report and Portfolio by Savills are advertising-funded lifestyle titles. Their relief is bought, their photography is commissioned at a budget the Reference will not match in its first edition, and their register is aspirational. Competing with them photographically is not winnable and not worth attempting.
+
+One qualification, and it matters. BOAT International's Global Order Book feature is not lifestyle work. It is dense, structured data journalism in the same trim as the Reference, and it is the single best worked example available of how to build a page that carries a great deal of evidence without exhausting the reader. Take the mechanics of those pages, at 3.11, and leave the colour, the photography budget and the register alone.
 
 The Superyacht Report and the Knight Frank Wealth Report are analytical. Their authority comes from data presentation, sourcing and structure. The Wealth Report in particular is the closest working model: a research publication that is also a designed object, no advertising, an annual, distributed to a curated list rather than sold on a newsstand, and cited by people who never read it cover to cover.
 
@@ -54,11 +58,13 @@ The proof composes page by page and it shows: facing pages routinely carry two i
 
 Chrome balances rather than fills a fragmented multicol, so any element spanning both columns strands a short balanced row above it. Crossheads, pull quotes, images, notes and case furniture are all column measure. Only the drop-cap intro at the top of the flow spans. This is a technical constraint of the build, not a preference, and it is the reason the August galley pass took eight pages out of the block.
 
-### 3.4 Four page ceilings
+### 3.4 The page ceilings, revised
 
-- No page above 850 words. Twenty pages currently break this; the worst carries 1,276.
+The first draft of this document set a hard ceiling of 850 words. The BOAT comparison shows that ceiling is measuring the wrong thing. The rule is structural instead:
+
+- No page above 850 words unless it carries at least two structural elements: a panel, a boxed sidebar, a statistic strip, or a figure with a head on a rule. Twenty pages are currently over 850 and none of them carry anything.
 - No more than four consecutive full-text pages anywhere in the block.
-- One furniture item per page, two per spread.
+- One furniture item per page, two per spread, on ordinary text pages.
 - One pull quote per spread. Folio 29 of the proof carries three.
 
 ### 3.5 Images work at four scales, not two
@@ -87,6 +93,19 @@ Marine `#0f3b5c`, sail `#4a7da9`, charcoal `#1a1a1a`, stone `#7a756d`, paper `#f
 
 En-dashes for ranges, closed up: `20–24 m`, not `20 to 24 m`. This is the single most visible remaining tell that the book was set from web copy, and it runs throughout. Em-dashes never, anywhere, captions included. Oldstyle figures in running text, tabular oldstyle in tables and charts. Yacht names italic. Oxford hyphenation with the exception list for yards, contributors and citations. Widows and orphans at three lines, subheads keep-with-next.
 
+### 3.11 Everything on a heavy page is boxed and headed
+
+This is the lesson of the Global Order Book pages and it is the one rule in this document taken wholesale from a competitor.
+
+Every element on a BOAT data page announces itself: a panel head set in small caps on a rule above the panel, a boxed sidebar with its own internal columns and its own head, a reversed callout in condensed caps, a table with a ruled head row, a figure with a caption and a source line beneath. A reader scanning the page can enter it at any of eight points. The Reference's data pages float two or three elements in a lot of empty paper and its heavy text pages offer no entry point at all.
+
+So, on any page carrying more than 850 words or more than one dataset:
+
+- Panel and figure heads set in Geist Mono 7 pt, letterspaced, on a 0.4 pt rule, in stone.
+- Sidebars sit in a marine 8 per cent panel with 4 mm internal padding, set at column measure.
+- Every figure carries a caption below and a source line below that.
+- No element sits on the page without a head, a caption or a rule tying it to the grid.
+
 ### 3.10 Kill anything that is decorative and wrong
 
 The coordinates line on each chapter opener is a borrowed device and three of the nine are wrong: Portsmouth coordinates under a La Ciotat photograph, Barcelona under Hamburg, Dutch farmland under chapter 05. Either every one is verified against its actual photograph or the line comes out. In a publication whose entire claim is evidentiary accuracy, a decorative coordinate that does not resolve is worse than no coordinate.
@@ -97,17 +116,21 @@ Drawn in `docs/print/layout-registers.pdf`. Every page in the book is one of the
 
 **A, body.** A1 two-column text spread. A2 text page with column furniture. A3 tall figure. A4 half-bleed.
 
-**B, relief.** B1 full-bleed image page. B2 gutter-crossing image spread. B3 number page. B4 quiet page. B5 chapter close.
+**B, relief.** B1 full-bleed image page. B2 gutter-crossing image spread. B3 number page. B4 quiet page. B5 chapter close. B6 statistic strip. B7 typographic divider.
 
 **C, data.** C1 full-measure figure. C2 table page.
 
 **D, set pieces.** D1 chapter opener spread. D2 case study. D3 guest Q&A. D4 checklist and back matter.
 
-Two of these are new and they carry most of the work.
+Four of these are new and they carry most of the work.
 
 **B3, the number page.** Three to five figures set in Newsreader 300 at 96 to 120 pt in marine, each with an italic gloss of no more than fifteen words, on a page shared with a photograph or a short text column. This is the device the Wealth Report leans on hardest and the Reference does not use at all. It is the cheapest relief available in publishing: no photograph, no permission, no commission, only a fact the publication already owns and has already sourced. Nine of these, one per chapter, is nine pages of rhythm at zero acquisition cost.
 
 **B4, the quiet page.** One sentence on an otherwise empty page, attributed, with the chapter numeral watermarked at seven per cent. Four or five in the book, placed where a chapter turns rather than where it ends, because B5 already handles the ending.
+
+**B6, the statistic strip.** A horizontal band at the foot of an otherwise ordinary text page carrying three figures in large type on a marine ground, each with a six-word gloss. BOAT runs two of these inside eight pages and they are the most efficient device in the whole comparison set: they cost a fifth of a page and they break a text page without needing a picture, a permission or a page of their own. Where a chapter cannot afford a full B3 number page, it takes a B6 instead.
+
+**B7, the typographic divider.** A full page of type alone on a tinted ground announcing a section: no image, no body copy, one line set very large. Portfolio by Savills uses one at the hinge between its editorial half and its property catalogue, and a further one at the head of each regional section inside the catalogue. This is what makes back matter feel designed rather than dumped, and the Reference's back matter needs exactly that: a divider each for *Questions to ask*, the glossary, the sources and the index.
 
 The three chapters with no confirmed contributor take a B3 in place of the D3 Q&A. That solves an editorial embarrassment with a design device rather than with a placeholder.
 
@@ -215,6 +238,37 @@ No QR codes. They date a page instantly and the audience does not need them.
 9. **Rebuild, wet proof, run.**
 
 **Do not, at any point,** reintroduce paged.js, wrap a chapter opener inside the chapter-scope div, or touch the sources section. The last of these sits on a Chrome print-layout tipping point that has three times reflowed the block from 120 to 217 pages. Check the block page count after every build; anything far above 120 means either that or a silent font-download failure.
+
+## 9. The reference set
+
+What was examined, so that a later edition can check the working rather than take it on trust. Copies of everything below are in the session working directory; the two that matter most should be kept in the repo or on iCloud.
+
+**Measured in full, page by page**
+
+- *The Superyacht Report* 222, Monaco Yacht Show edition, September 2024. 120 pp, 210 × 265 mm, InDesign 19. Counted for relief pages and word density. Referenced for the portrait cut-in with a full-depth serif pull quote, and for chart sizing.
+- *The Wealth Report 2025*, Knight Frank, 19th edition. 88 pp, 215 × 275 mm, InDesign 20.1. The main structural reference. Specific pages: p40 "Keeping it real" is the source for the B3 number page; p26 "Digital nomad detox" for restarting a section mid-page; p56 "PIRI 100" for the half-bleed; its foot furniture throughout.
+- *Global Order Book 2026*, BOAT International, January 2026 issue extract. 8 pp, 230 × 290 mm, InDesign 20.5, published on the BOAT CDN. The source for rule 3.11 and for the B6 statistic strip. Median 1,100 words per page against the Reference's 551.
+- *The First Owner's Reference*, 8 August 2026 proof. 121 pp with cover, 230 × 300 mm.
+
+**Examined by contact sheet and sampled spreads**
+
+- *Portfolio by Savills*, Volume 8, 2025, designed by Uncommonly. 172 pp, aspect 1:1.34, so roughly 220 × 295 mm. Structurally it is a 70-page magazine bolted to a 95-page property catalogue, hinged on a full-page typographic divider at p71 and sub-divided by region inside the catalogue. Referenced for the B7 divider, for image scale and asymmetry, for the serif body against grotesque display pairing, and for p46, a full service feature carried entirely by illustration.
+
+**Publisher specifications, not design references**
+
+- BOAT International UK ad specification: trim 230 × 290 mm, type area 210 × 270, 3 mm bleed, 6 mm gutter allowance, perfect bound, PDF/X-1a:2001, text to ISO Coated v2 300% (ECI) FOGRA39L, covers to PSO Uncoated FOGRA47L. The Reference should adopt the same colour profiles unless its printer specifies otherwise; they are what the trade actually prints to.
+- BOAT International US ad specification: trim 205 × 275 mm, type area 195 × 255.
+- BOAT International US media kit 2026, for audience composition.
+
+**Deliberately not used**
+
+- The Foreland document design system v2.1. Canonical for Foreland client documents and it should not govern the Reference, because separating the publication's identity from the Foreland brand is already on the roadmap.
+- Robb Report. Studio Last's German redesign is published as a project with no design detail, and no examinable copy was available. Left out of the comparison rather than asserted.
+- Any photographic register from the yacht press, per section 2.
+
+**Still worth acquiring**
+
+A physical copy of *Portfolio by Savills* and one recent *BOAT International*. Screen renders understate stock, ink weight and the behaviour of an uncoated sheet, and those are the three things the printer conversation turns on.
 
 ---
 
