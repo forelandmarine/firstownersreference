@@ -16,7 +16,7 @@ Five titles, all measured from files in hand rather than described. Page counts 
 | The Superyacht Report 222 | 210 × 265 mm | 120 | 30 (25%) | 446 | 879 | Full-page advertising |
 | Knight Frank, The Wealth Report 2025 | 215 × 275 mm | 88 | 10 (11%) | 427 | 1,025 | Number pages, section openers |
 | BOAT International, Global Order Book 2026 | 230 × 290 mm | 8 (extract) | 1 | 1,100 | 1,656 | Boxed panels, stat strips, full-bleed openers |
-| Portfolio by Savills, Volume 8 | ≈ 220 × 295 mm | 172 | high | low | — | Image scale, white space, typographic dividers |
+| Portfolio by Savills, Volume 9 | ≈ 220 × 295 mm | 172 | high | low | — | Image scale, white space, drawn material, typographic dividers |
 
 A relief page is one carrying fewer than 45 words: an opener, a full-bleed image, a closing device, an advertisement.
 
@@ -252,7 +252,10 @@ What was examined, so that a later edition can check the working rather than tak
 
 **Examined by contact sheet and sampled spreads**
 
-- *Portfolio by Savills*, Volume 8, 2025, designed by Uncommonly. 172 pp, aspect 1:1.34, so roughly 220 × 295 mm. Structurally it is a 70-page magazine bolted to a 95-page property catalogue, hinged on a full-page typographic divider at p71 and sub-divided by region inside the catalogue. Referenced for the B7 divider, for image scale and asymmetry, for the serif body against grotesque display pairing, and for p46, a full service feature carried entirely by illustration.
+- *Portfolio by Savills*, Volumes 8 and 9, designed by Uncommonly. 172 pp each, aspect 1:1.34, so roughly 220 × 295 mm. **Volume 9, published 1 September 2026, is the current edition and the one to work from.** Structurally both are a 70-page magazine bolted to a 95-page property catalogue, hinged on a full-page typographic divider and sub-divided by region inside the catalogue. Advertising is negligible: two display advertisers across 172 pages. Referenced for the B7 divider, for image scale and asymmetry, for the serif body against grotesque display pairing, and for the two devices below.
+
+  - **p40, "London decoded".** A scanned period map tinted in the house accent, carrying cut-out photographs in circular frames with italic glosses, and a boxed label panel keyed to the region. Drawn material doing the work of a photograph, in a title that can plainly afford photography. This is the strongest single argument for section 2's position, and the direct analogue for the Reference is an annotated map: refit yard geography, Mediterranean berth capacity, or the shape of a new-build contract chain.
+  - **p56, the city panels.** Square images with the place name overprinted in large display type, cropped and hyphenated to fit the square, a short finding beneath in the accent colour, then a rule. Modular, repeatable, and interleaved with running text rather than given a page. A more flexible relative of the B6 statistic strip, and the right form for the Reference's yard and flag-state comparisons.
 
 **Publisher specifications, not design references**
 
