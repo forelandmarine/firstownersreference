@@ -36,6 +36,20 @@ import os from "node:os";
 import { setTimeout as wait } from "node:timers/promises";
 import puppeteer from "puppeteer";
 
+/* Puppeteer's bundled Chrome is not always present on this machine. Honour
+   CHROME_PATH, then fall back to the system Chrome, then to whatever
+   puppeteer resolves for itself. */
+const CHROME_EXECUTABLE = (() => {
+  const candidates = [
+    process.env.CHROME_PATH,
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  ].filter(Boolean);
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return c;
+  }
+  return undefined;
+})();
+
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const SOURCE_DIR =
   "/Users/jack/Library/Mobile Documents/com~apple~CloudDocs/Foreland Group/Marketing Materials/Stock images";
@@ -274,6 +288,7 @@ async function startServer() {
 async function generatePdf() {
   log("Launching Chrome...");
   const browser = await puppeteer.launch({
+    executablePath: CHROME_EXECUTABLE,
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
     protocolTimeout: 600000,
@@ -443,6 +458,7 @@ async function printFullBleedPages(map) {
   try {
     serverProc = await startServer();
     const browser = await puppeteer.launch({
+    executablePath: CHROME_EXECUTABLE,
       headless: true,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
@@ -486,6 +502,7 @@ async function printFullBleedPages(map) {
   const coverOut = path.join(outDir, "cover.pdf");
   {
     const browser = await puppeteer.launch({
+    executablePath: CHROME_EXECUTABLE,
       headless: true,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
@@ -530,6 +547,7 @@ async function printCaseArtwork() {
   try {
     serverProc = await startServer();
     const browser = await puppeteer.launch({
+    executablePath: CHROME_EXECUTABLE,
       headless: true,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });

@@ -1145,10 +1145,29 @@ body {
   line-height: 16pt;
   color: var(--colour-soft);
   margin: 14pt 0;
-  padding: 10pt 8mm 10pt 8mm;
-  background: rgba(15, 59, 92, 0.06);
+  padding: 4mm;
+  background: rgba(15, 59, 92, 0.08);
   border-left: 1.5pt solid var(--colour-marine);
   break-inside: avoid;
+}
+
+.chapter-body__editors-note-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-style: normal;
+  font-size: 7pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  margin: 0 0 2mm 0;
+  padding-bottom: 1.4mm;
+  border-bottom: 0.4pt solid var(--colour-rule);
+}
+
+.chapter-body__editors-note-text {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  text-indent: 0;
 }
 
 .chapter-body__editors-note a {
@@ -1732,7 +1751,46 @@ body {
 
 /* The paragraph after a data-spread h2 keeps with the heading. */
 .data-spread h2 + p,
-.data-spread h2 + .data-spread__caption {
+.data-spread h2 + /* Rule 3.11: every dataset carries a head on a rule, so a reader can enter
+   a heavy page at any element. Charts get theirs from ChartFrame; tables and
+   key-value blocks get this one. Marker stays marine, the label sits in
+   stone, and the 0.4pt rule ties the block to the grid. */
+.data-spread p.data-spread__fig-label {
+  font-family: "DM Mono", "SF Mono", monospace;
+  font-size: 7pt;
+  line-height: 10pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  margin: 0 0 2.5mm 0;
+  padding-bottom: 1.6mm;
+  max-width: none;
+  border-bottom: 0.4pt solid var(--colour-rule);
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
+.data-spread p.data-spread__fig-label::before {
+  content: "";
+  display: inline-block;
+  width: 2.6mm;
+  height: 2.6mm;
+  background: var(--colour-marine);
+  margin-right: 2.5mm;
+  vertical-align: -0.3mm;
+}
+
+/* Caption now sits below its data, not above it: head, evidence, what the
+   evidence shows, then the source. */
+.data-spread p.data-spread__caption--below {
+  margin: 3.5mm 0 0 0;
+  page-break-before: avoid;
+  break-before: avoid-page;
+  page-break-after: auto;
+  break-after: auto;
+}
+
+.data-spread__caption {
   page-break-before: avoid;
   break-before: avoid-page;
   orphans: 3;
@@ -1963,11 +2021,13 @@ body {
   break-before: avoid-page;
 }
 
+/* break-inside only. A blanket page-break-before: avoid here glued the block
+   to whatever preceded it, and when the block did not fit in the remaining
+   space Chrome resolved the conflict by stranding the figure head alone at
+   the page foot. The h2 + block pairing keeps its own rule above. */
 .data-spread__block {
   page-break-inside: avoid;
   break-inside: avoid;
-  page-break-before: avoid;
-  break-before: avoid-page;
 }
 
 .data-spread__source {
@@ -2046,11 +2106,13 @@ body {
 
 .data-spread__chart figure > header p:first-child {
   font-family: "DM Mono", "SF Mono", monospace;
-  font-size: 7.5pt;
-  letter-spacing: 0.2em;
+  font-size: 7pt;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--colour-marine);
-  margin: 0 0 2mm 0;
+  color: var(--colour-stone);
+  margin: 0 0 2.5mm 0;
+  padding-bottom: 1.6mm;
+  border-bottom: 0.4pt solid var(--colour-rule);
 }
 
 .data-spread__chart figure > header p:first-child::before {

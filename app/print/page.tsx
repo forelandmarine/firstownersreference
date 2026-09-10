@@ -896,7 +896,8 @@ function ChapterBlock({
                 if (para.type === "editorsNote") {
                   out.push(
                     <aside key={`en-${i}`} className="chapter-body__editors-note">
-                      {para.text}
+                      <p className="chapter-body__editors-note-label">Note</p>
+                      <p className="chapter-body__editors-note-text">{para.text}</p>
                     </aside>
                   );
                   continue;
@@ -991,7 +992,26 @@ function ChapterBlock({
             <h2 className="data-spread__title">{dataSpread.title}</h2>
             <p className="data-spread__standfirst">{dataSpread.standfirst}</p>
           </header>
-          {dataSpread.blocks.map((block, i) => {
+          {(() => {
+            /* Rule 3.11: every dataset on the page carries a head on a rule.
+               Charts already get one from ChartFrame; tables and key-value
+               blocks are numbered here in a separate Table series so the
+               existing Figure numbers in lib/charts.tsx are undisturbed.
+               Numbering runs after the one-form-per-dataset drop, so a
+               dropped table does not consume a number. */
+            const chNN = String(section.number).padStart(2, "0");
+            let tableSeq = 0;
+            const tableLabels = dataSpread.blocks.map((block, i) => {
+              const next = dataSpread.blocks[i + 1];
+              const dropped =
+                (block.type === "table" || block.type === "kv") &&
+                next?.type === "chart";
+              if (dropped) return null;
+              if (block.type !== "table" && block.type !== "kv") return null;
+              tableSeq += 1;
+              return `Table ${chNN}.${String(tableSeq).padStart(2, "0")}`;
+            });
+            return dataSpread.blocks.map((block, i) => {
             // One form per dataset in print: when a chart follows a table
             // or kv of the same data, the chart is the hero and the table
             // is dropped (the web edition keeps both).
@@ -1011,9 +1031,7 @@ function ChapterBlock({
             if (block.type === "table") {
               return (
                 <div key={i} className="data-spread__block">
-                  {block.caption && (
-                    <p className="data-spread__caption">{block.caption}</p>
-                  )}
+                  <p className="data-spread__fig-label">{tableLabels[i]}</p>
                   <table className="data-spread__table">
                     <thead>
                       <tr>
@@ -1032,6 +1050,11 @@ function ChapterBlock({
                       ))}
                     </tbody>
                   </table>
+                  {block.caption && (
+                    <p className="data-spread__caption data-spread__caption--below">
+                      {block.caption}
+                    </p>
+                  )}
                   {block.sourceLine && (
                     <p className="data-spread__source">{block.sourceLine}</p>
                   )}
@@ -1041,9 +1064,7 @@ function ChapterBlock({
             if (block.type === "kv") {
               return (
                 <div key={i} className="data-spread__block">
-                  {block.caption && (
-                    <p className="data-spread__caption">{block.caption}</p>
-                  )}
+                  <p className="data-spread__fig-label">{tableLabels[i]}</p>
                   <table className="data-spread__kv">
                     <tbody>
                       {block.rows.map((row, ri) => (
@@ -1059,6 +1080,11 @@ function ChapterBlock({
                       ))}
                     </tbody>
                   </table>
+                  {block.caption && (
+                    <p className="data-spread__caption data-spread__caption--below">
+                      {block.caption}
+                    </p>
+                  )}
                   {block.sourceLine && (
                     <p className="data-spread__source">{block.sourceLine}</p>
                   )}
@@ -1067,9 +1093,10 @@ function ChapterBlock({
             }
             if (block.type === "note") {
               return (
-                <p key={i} className="chapter-body__editors-note">
-                  {block.text}
-                </p>
+                <aside key={i} className="chapter-body__editors-note">
+                  <p className="chapter-body__editors-note-label">Note</p>
+                  <p className="chapter-body__editors-note-text">{block.text}</p>
+                </aside>
               );
             }
             if (block.type === "chart") {
@@ -1080,7 +1107,8 @@ function ChapterBlock({
               );
             }
             return null;
-          })}
+            });
+          })()}
         </section>
       )}
 
