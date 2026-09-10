@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>The First Owner's Reference — Layout registers, 1st Edition</title>
+<style>
+  @page { size: 297mm 210mm; margin: 12mm 14mm 10mm; }
+
+  :root {
+    --paper:  #f5f2ec;
+    --charcoal:#1a1a1a;
+    --soft:   #4a4a4a;
+    --marine: #0f3b5c;
+    --sail:   #4a7da9;
+    --stone:  #7a756d;
+    --rule:   #c8c2b4;
+    --page-w: 54mm;
+    --page-h: 70.43mm;   /* 54 / 230 * 300 */
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--charcoal);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+    line-height: 1.45;
+  }
+
+  .sheet { page-break-after: always; }
+  .sheet:last-child { page-break-after: auto; }
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 20pt;
+    line-height: 1.1;
+    margin: 0 0 2mm;
+    letter-spacing: -0.01em;
+  }
+  .kicker {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 6.5pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin: 0 0 2mm;
+  }
+  .standfirst {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: var(--soft);
+    max-width: 175mm;
+    margin: 0 0 6mm;
+  }
+
+  .titlerule { border: 0; border-top: 0.4pt solid var(--rule); margin: 0 0 4mm; }
+
+  /* ---- register rows ---------------------------------------------- */
+  .row {
+    display: grid;
+    grid-template-columns: 116mm 1fr;
+    gap: 8mm;
+    padding-bottom: 3.5mm;
+    margin-bottom: 3.5mm;
+    border-bottom: 0.4pt solid var(--rule);
+    break-inside: avoid;
+  }
+  .row:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+
+  .notes h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 11.5pt;
+    margin: 0 0 1mm;
+  }
+  .notes .tag {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 6pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--marine);
+    display: block;
+    margin-bottom: 1.5mm;
+  }
+  .notes p { margin: 0 0 1.8mm; }
+  .notes ul { margin: 0 0 1.8mm; padding-left: 3.6mm; }
+  .notes li { margin-bottom: 0.8mm; }
+  .freq {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 6pt;
+    letter-spacing: 0.08em;
+    color: var(--stone);
+    border-top: 0.4pt solid var(--rule);
+    padding-top: 1.2mm;
+    margin-top: 2mm;
+    display: block;
+  }
+
+  /* ---- page diagrams ----------------------------------------------- */
+  .spread { display: flex; gap: 0; align-items: flex-start; }
+  .spread.gap { gap: 3mm; }
+
+  .pg {
+    position: relative;
+    width: var(--page-w);
+    height: var(--page-h);
+    background: #fffdf9;
+    border: 0.4pt solid var(--rule);
+    overflow: hidden;
+    flex: none;
+  }
+  .pg.solo { margin-right: 3mm; }
+
+  /* type area guides: verso has wide inner (right), recto wide inner (left) */
+  .area {
+    position: absolute;
+    top: 7.3%; bottom: 7.3%;
+    border: 0.3pt dashed rgba(122,117,109,.45);
+  }
+  .verso .area { left: 7.8%; right: 9.6%; }
+  .recto .area { left: 9.6%; right: 7.8%; }
+
+  .col { position: absolute; top: 0; bottom: 0; }
+
+  /* text blocks */
+  .tx {
+    position: absolute;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(26,26,26,.42) 0, rgba(26,26,26,.42) 0.28mm,
+      transparent 0.28mm, transparent 0.85mm);
+  }
+  .tx.light {
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(26,26,26,.22) 0, rgba(26,26,26,.22) 0.28mm,
+      transparent 0.28mm, transparent 0.85mm);
+  }
+
+  .img  { position: absolute; background: var(--marine); }
+  .img.mid { background: var(--sail); }
+  .img.tint { background: rgba(15,59,92,.14); }
+
+  .hd { position: absolute; background: var(--marine); height: 1.1mm; }
+  .hd.sm { height: 0.7mm; background: var(--stone); }
+
+  .num {
+    position: absolute;
+    font-family: Georgia, serif;
+    color: var(--marine);
+    line-height: .82;
+    letter-spacing: -0.02em;
+  }
+  .lbl {
+    position: absolute;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 3.4pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+  .quote {
+    position: absolute;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--marine);
+    line-height: 1.25;
+  }
+  .rulel { position: absolute; background: var(--rule); height: 0.3pt; }
+  .rulem { position: absolute; background: var(--marine); }
+
+  .folio {
+    position: absolute;
+    bottom: 3.2%;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 3.2pt;
+    color: var(--stone);
+  }
+  .verso .folio { left: 7.8%; }
+  .recto .folio { right: 7.8%; }
+
+  .run {
+    position: absolute;
+    top: 3.4%;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 3pt;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+  .verso .run { left: 7.8%; }
+  .recto .run { right: 7.8%; font-family: Georgia, serif; font-style: italic; text-transform: none; letter-spacing: 0; }
+
+  .cap {
+    position: absolute;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 3.2pt;
+    color: var(--stone);
+    line-height: 1.3;
+  }
+
+  .gutter { width: 0; border-left: 0.3pt dotted rgba(122,117,109,.6); align-self: stretch; }
+
+    .caption-under {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 5.6pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-top: 1.2mm;
+  }
+
+  table.spec { border-collapse: collapse; width: 100%; font-size: 7.4pt; }
+  table.spec th, table.spec td {
+    text-align: left; padding: 1.1mm 2mm 1.1mm 0;
+    border-bottom: 0.3pt solid var(--rule); vertical-align: top;
+  }
+  table.spec th {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 5.8pt; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--stone); font-weight: 400;
+    border-bottom: 0.6pt solid var(--marine);
+  }
+  table.spec td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .two { column-count: 2; column-gap: 8mm; }
+</style>
+</head>
+<body>
+
+<!-- ============================ SHEET 1 ============================ -->
+<section class="sheet">
+  <p class="kicker">The First Owner's Reference &nbsp;·&nbsp; 1st Edition &nbsp;·&nbsp; Print art direction</p>
+  <h1>Layout registers</h1>
+  <p class="standfirst">Sixteen page architectures for the 1st Edition. Every page in the book is one of these and nothing else.
+  The registers exist to solve one problem: the publication carries no advertising, so the relief that a trade magazine
+  buys from its advertisers has to be made editorially instead.</p>
+  <hr class="titlerule">
+
+  <div class="two" style="font-size:7.6pt; line-height:1.5;">
+    <p><strong>Measured against the comparison set.</strong> The August proof runs 120 pages at 230 × 300 mm.
+    Fifteen of those pages carry fewer than 45 words, which is the working definition of a relief page: an opener,
+    a full-bleed image, a closing device. That is 12 per cent of the block. The Superyacht Report 222 runs the same
+    120 pages at 210 × 265 mm and carries 30 relief pages, 25 per cent, most of them full-page advertising.
+    The Knight Frank Wealth Report 2025 runs 88 pages at 215 × 275 mm with 10 relief pages, 11 per cent, and no
+    advertising at all.</p>
+
+    <p>Per square millimetre of page the three books are typographically identical: roughly eight words per
+    thousand square millimetres. The Reference is not set too small and it is not set too tight. What it lacks is
+    <em>rhythm</em>. Between the chapter 05 opener and the chapter 06 opener the reader crosses fourteen consecutive
+    pages without a single moment of relief; between chapters 06 and 07 it is sixteen; between the last chapter
+    close and the colophon it is eighteen. No book in the comparison set asks that of a reader.</p>
+
+    <p><strong>The rule that follows.</strong> No run of more than four consecutive full-text pages anywhere in the
+    block, and no page above 850 words. Twenty pages currently break the second rule and the worst carries 1,276.</p>
+
+    <p><strong>What this costs and what it buys.</strong> Applying the registers adds roughly 24 pages, taking the
+    block from 120 to 144: eighteen signatures of eight, or nine of sixteen. It also fixes the object. At 120 pages
+    on 120 gsm the spine is about 11 mm, which is thin for a casebound annual at this trim. At 144 pages on
+    150 gsm it is closer to 17 mm, which is a book.</p>
+  </div>
+
+  <table class="spec" style="margin-top:5mm;">
+    <tr><th>Title</th><th>Trim</th><th class="n">Pages</th><th class="n">Relief pages</th><th class="n">Median words per text page</th><th class="n">Heaviest page</th><th>Where relief comes from</th></tr>
+    <tr><td>The First Owner's Reference, Aug proof</td><td>230 × 300 mm</td><td class="n">120</td><td class="n">15 (12%)</td><td class="n">551</td><td class="n">1,276</td><td>Chapter openers only</td></tr>
+    <tr><td>The Superyacht Report 222</td><td>210 × 265 mm</td><td class="n">120</td><td class="n">30 (25%)</td><td class="n">446</td><td class="n">879</td><td>Full-page advertising</td></tr>
+    <tr><td>Knight Frank, The Wealth Report 2025</td><td>215 × 275 mm</td><td class="n">88</td><td class="n">10 (11%)</td><td class="n">427</td><td class="n">1,025</td><td>Number pages, full-bleed section openers</td></tr>
+    <tr><td>The First Owner's Reference, target</td><td>230 × 300 mm</td><td class="n">144</td><td class="n">34 (24%)</td><td class="n">≤ 620</td><td class="n">850</td><td>The sixteen registers below</td></tr>
+  </table>
+</section>
+
+<!-- ============================ SHEET 2 ============================ -->
+<section class="sheet">
+  <p class="kicker">A &nbsp;·&nbsp; Body registers</p>
+  <h1 style="font-size:15pt;">The running text</h1>
+  <hr class="titlerule">
+
+  <!-- A1 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="area"></div>
+          <div class="run">Ch 03 · How the industry works</div>
+          <div class="tx" style="left:7.8%;top:11%;width:39%;height:78%"></div>
+          <div class="tx" style="left:52%;top:11%;width:39%;height:78%"></div>
+          <div class="folio">28</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="run">The First Owner's Reference</div>
+          <div class="hd" style="left:9.6%;top:11%;width:30%"></div>
+          <div class="tx" style="left:9.6%;top:14%;width:39%;height:74.5%"></div>
+          <div class="tx" style="left:53.5%;top:11%;width:39%;height:78%"></div>
+          <div class="folio">29</div>
+        </div>
+      </div>
+      <p class="caption-under">A1 &nbsp; Text spread, two column</p>
+    </div>
+    <div class="notes">
+      <span class="tag">A1 — the default</span>
+      <h3>Text spread, two column</h3>
+      <p>Two columns of 39 per cent measure with a 9 mm gutter, justified, hyphenated on the Oxford dictionary.
+      Body Newsreader 400 at 9.5 / 13 pt. Subheads Newsreader 400 at 13 pt with keep-with-next enforced.</p>
+      <ul>
+        <li>Verso running head is the chapter, Geist Mono 7 pt. Recto is the publication, Newsreader italic 8 pt.</li>
+        <li>Nothing spans both columns. Chrome balances rather than fills a fragmented multicol, so any spanner
+        strands a short row above it.</li>
+        <li>Hard ceiling of 850 words. Above that the page gets a figure, a pull, or a break.</li>
+      </ul>
+      <span class="freq">Frequency: the majority of the block, but never more than four in a row</span>
+    </div>
+  </div>
+
+  <!-- A2 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="area"></div>
+          <div class="run">Ch 03 · How the industry works</div>
+          <div class="tx" style="left:7.8%;top:11%;width:39%;height:34%"></div>
+          <div class="img" style="left:7.8%;top:48%;width:39%;height:26%"></div>
+          <div class="cap" style="left:7.8%;top:74.8%;width:39%">Brokers at the Cannes quay, September 2025. Nobody in this photograph is paid by the buyer.</div>
+          <div class="tx" style="left:7.8%;top:80%;width:39%;height:9%"></div>
+          <div class="tx" style="left:52%;top:11%;width:39%;height:78%"></div>
+          <div class="folio">30</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="run">The First Owner's Reference</div>
+          <div class="tx" style="left:9.6%;top:11%;width:39%;height:30%"></div>
+          <div class="rulem" style="left:9.6%;top:45%;width:0.6mm;height:22%"></div>
+          <div class="quote" style="left:12.5%;top:45.5%;width:35%;font-size:4.4pt">In a new build the broker often represents the owner in the deal, but the broker is being paid by the shipyard.</div>
+          <div class="tx" style="left:9.6%;top:70%;width:39%;height:19%"></div>
+          <div class="tx" style="left:53.5%;top:11%;width:39%;height:78%"></div>
+          <div class="folio">31</div>
+        </div>
+      </div>
+      <p class="caption-under">A2 &nbsp; Text page with column furniture</p>
+    </div>
+    <div class="notes">
+      <span class="tag">A2 — furniture at column measure</span>
+      <h3>Text page with column furniture</h3>
+      <p>Images, pull quotes and editor's notes sit inside a single column. They never span. One furniture item per
+      page, two per spread, and never two of the same kind on facing pages.</p>
+      <ul>
+        <li><strong>Images</strong> at 26 to 34 per cent of page height, always with a caption.</li>
+        <li><strong>Pull quotes</strong> Newsreader 300 italic 18 / 22 pt on a 0.6 mm marine rule. One per spread.
+        The August proof puts three on folio 29 alone; that page is the worst offender in the book.</li>
+        <li>The pull quote must be a claim the reader can disagree with, not a decorative restatement of the
+        sentence beside it.</li>
+      </ul>
+      <span class="freq">Frequency: roughly every third page of running text</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SHEET 3 ============================ -->
+<section class="sheet">
+  <p class="kicker">A &nbsp;·&nbsp; Body registers, continued</p>
+  <h1 style="font-size:15pt;">Images that change scale</h1>
+  <hr class="titlerule">
+
+  <!-- A3 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="area"></div>
+          <div class="run">Ch 06 · Refit</div>
+          <div class="img" style="left:7.8%;top:11%;width:39%;height:52%"></div>
+          <div class="cap" style="left:7.8%;top:63.6%;width:39%">Blohm+Voss dock 11. A yard that will quote a price and a date and hold both.</div>
+          <div class="tx" style="left:7.8%;top:70%;width:39%;height:19%"></div>
+          <div class="tx" style="left:52%;top:11%;width:39%;height:78%"></div>
+          <div class="folio">62</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="img" style="left:0;top:0;width:62%;height:100%"></div>
+          <div class="tx light" style="left:66%;top:14%;width:26%;height:60%"></div>
+          <div class="cap" style="left:66%;top:76%;width:26%">La Ciotat, 4,300-tonne travel lift.</div>
+          <div class="folio">63</div>
+        </div>
+      </div>
+      <p class="caption-under">A3 &nbsp; Tall figure &nbsp;·&nbsp; A4 &nbsp; Half-bleed</p>
+    </div>
+    <div class="notes">
+      <span class="tag">A3 / A4 — scale variety</span>
+      <h3>Tall figure and half-bleed</h3>
+      <p>The proof has exactly two image scales: full-bleed and column-width. Everything in between is missing,
+      which is why the supporting pictures read as drop-ins rather than as art direction.</p>
+      <ul>
+        <li><strong>A3, tall figure.</strong> One column wide, half to two-thirds of page height, sat at the head
+        of the column so the caption falls on the optical centre line.</li>
+        <li><strong>A4, half-bleed.</strong> Image runs off the outer, head and foot trim; text holds the inner
+        column only. Use once per chapter, at the hinge between the argument and the evidence.</li>
+        <li>Half-bleed pages carry no running head. The folio stays.</li>
+      </ul>
+      <span class="freq">Frequency: A3 once per chapter, A4 once per chapter</span>
+    </div>
+  </div>
+
+  <!-- B2 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="img" style="left:0;top:0;width:100%;height:100%"></div>
+          <div class="cap" style="left:7.8%;bottom:4%;width:60%;color:#f5f2ec">Amsterdam, February 2026.</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="img" style="left:0;top:0;width:100%;height:100%"></div>
+        </div>
+      </div>
+      <p class="caption-under">B2 &nbsp; Gutter-crossing spread</p>
+    </div>
+    <div class="notes">
+      <span class="tag">B2 — the one big picture</span>
+      <h3>Gutter-crossing image spread</h3>
+      <p>A single photograph across both pages, no type except a reversed caption in the lower outer corner of the
+      verso. This is the most expensive gesture in the book and the least repeatable: once per chapter at the very
+      most, and only where the picture carries an argument the text cannot.</p>
+      <ul>
+        <li>Nothing important crosses the gutter. Faces, horizons and hulls sit clear of the fold by 12 mm each side.</li>
+        <li>Needs a 5,600 px master. The present library tops out at 2,700 px, which is 291 dpi on a single page and
+        146 dpi across a spread. Every spread image has to be re-sourced or commissioned.</li>
+      </ul>
+      <span class="freq">Frequency: three to four in the book, not nine</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SHEET 4 ============================ -->
+<section class="sheet">
+  <p class="kicker">B &nbsp;·&nbsp; Relief registers</p>
+  <h1 style="font-size:15pt;">Manufacturing the pauses an advertiser would have paid for</h1>
+  <hr class="titlerule">
+
+  <!-- B3 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="area"></div>
+          <div class="lbl" style="left:7.8%;top:9%">The year in numbers</div>
+          <div class="rulem" style="left:7.8%;top:12%;width:84%;height:0.5mm"></div>
+
+          <div class="num" style="left:7.8%;top:16%;font-size:20pt">8.5</div>
+          <div class="lbl" style="left:7.8%;top:26.5%;width:38%;text-transform:none;font-family:Georgia,serif;font-style:italic;font-size:3.6pt;letter-spacing:0">USD billion transacted in 2025, a 70 per cent rise on the year before</div>
+
+          <div class="num" style="left:7.8%;top:36%;font-size:20pt">45</div>
+          <div class="lbl" style="left:7.8%;top:46.5%;width:38%;text-transform:none;font-family:Georgia,serif;font-style:italic;font-size:3.6pt;letter-spacing:0">Per cent of those transactions with a United States buyer</div>
+
+          <div class="num" style="left:7.8%;top:56%;font-size:20pt">0</div>
+          <div class="lbl" style="left:7.8%;top:66.5%;width:38%;text-transform:none;font-family:Georgia,serif;font-style:italic;font-size:3.6pt;letter-spacing:0">Mentions of yachts in the UBS Global Family Office Report 2025</div>
+
+          <div class="img tint" style="left:52%;top:16%;width:39%;height:32%"></div>
+          <div class="tx" style="left:52%;top:52%;width:39%;height:37%"></div>
+          <div class="folio">18</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="quote" style="left:16%;top:40%;width:68%;font-size:6pt;text-align:center">Nobody in the transaction is paid to tell the buyer not to buy.</div>
+          <div class="rulel" style="left:38%;top:56%;width:24%"></div>
+          <div class="lbl" style="left:38%;top:58.5%;width:30%;font-size:3pt">Chapter 03, lead essay</div>
+          <div class="num" style="right:6%;bottom:1%;font-size:26pt;color:rgba(15,59,92,.07)">03</div>
+        </div>
+      </div>
+      <p class="caption-under">B3 &nbsp; Number page &nbsp;·&nbsp; B4 &nbsp; Quiet page</p>
+    </div>
+    <div class="notes">
+      <span class="tag">B3 / B4 — the two new relief pages</span>
+      <h3>Number page and quiet page</h3>
+      <p><strong>B3, the number page.</strong> Three to five figures set in Newsreader 300 at 96 to 120 pt in marine,
+      each with an italic gloss of no more than fifteen words. This is the single device the Wealth Report uses most
+      and the Reference uses not at all, and it is the cheapest relief in publishing: it needs no photograph, no
+      permission and no commission, only a fact the publication already owns.</p>
+      <p><strong>B4, the quiet page.</strong> One sentence, centred on the optical third, attributed, with the
+      chapter numeral watermarked at seven per cent. Used where a chapter turns, not where a chapter ends.</p>
+      <ul>
+        <li>Numbers on B3 must be sourced in the back matter like any other claim.</li>
+        <li>B4 carries no folio and no running head.</li>
+      </ul>
+      <span class="freq">Frequency: B3 once per chapter, B4 four or five in the book</span>
+    </div>
+  </div>
+
+  <!-- B5 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso solo">
+          <div class="area"></div>
+          <div class="lbl" style="left:7.8%;top:9%">At a glance</div>
+          <div class="rulem" style="left:7.8%;top:12%;width:84%;height:0.3mm"></div>
+          <div class="tx" style="left:7.8%;top:15%;width:39%;height:26%"></div>
+          <div class="tx" style="left:52%;top:15%;width:39%;height:26%"></div>
+          <div class="rulel" style="left:7.8%;top:46%;width:84%"></div>
+          <div class="quote" style="left:7.8%;top:50%;width:60%;font-size:4.6pt">A yard that will not give you a liquidity covenant is telling you something.</div>
+          <div class="lbl" style="left:7.8%;top:66%;font-size:3pt">Read next · Chapter 06, Refit</div>
+          <div class="rulel" style="left:7.8%;top:69%;width:84%"></div>
+          <div class="num" style="left:7.8%;bottom:5%;font-size:9pt">§</div>
+          <div class="num" style="right:6%;bottom:1%;font-size:26pt;color:rgba(15,59,92,.07)">05</div>
+        </div>
+      </div>
+      <p class="caption-under">B5 &nbsp; Chapter close (existing, keep)</p>
+    </div>
+    <div class="notes">
+      <span class="tag">B5 — keep as built</span>
+      <h3>Chapter close</h3>
+      <p>The composed full page at the end of each chapter is the strongest piece of design already in the proof and
+      it stays exactly as it is: At a glance, the closing pull, the Read next line, the section mark, the watermarked
+      numeral, foot pinned by auto margin.</p>
+      <ul>
+        <li>Minimum height 240 mm, no forced break, so a short case tail can be absorbed above it.</li>
+        <li>The watermark sits at <code>bottom: 0</code>. A negative offset paints it on the following page.</li>
+      </ul>
+      <span class="freq">Frequency: nine, one per chapter</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SHEET 5 ============================ -->
+<section class="sheet">
+  <p class="kicker">C &nbsp;·&nbsp; Data registers</p>
+  <h1 style="font-size:15pt;">The evidence pages</h1>
+  <hr class="titlerule">
+
+  <!-- C1/C2 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="area"></div>
+          <div class="lbl" style="left:7.8%;top:9%">Data · Chapter 01</div>
+          <div class="hd" style="left:7.8%;top:12.5%;width:60%"></div>
+          <div class="tx light" style="left:7.8%;top:16%;width:84%;height:6%"></div>
+          <div class="img mid" style="left:7.8%;top:26%;width:84%;height:50%"></div>
+          <div class="cap" style="left:7.8%;top:77.5%;width:84%">Figure 01.01 &nbsp; The working range is 8 to 20 per cent. Every practitioner source lands inside it; the 10 per cent rule lands at the bottom edge.</div>
+          <div class="lbl" style="left:7.8%;top:85%;width:84%;font-size:2.8pt">Source: Foreland Marine project archive, cross-referenced against Fraser, Ocean Independence, YachtBuyer</div>
+          <div class="folio">10</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="hd" style="left:9.6%;top:11%;width:50%"></div>
+          <div class="rulem" style="left:9.6%;top:16%;width:82.6%;height:0.5mm"></div>
+          <div class="tx light" style="left:9.6%;top:18%;width:82.6%;height:3%"></div>
+          <div class="rulel" style="left:9.6%;top:23%;width:82.6%"></div>
+          <div class="tx light" style="left:9.6%;top:25%;width:82.6%;height:3%"></div>
+          <div class="rulel" style="left:9.6%;top:30%;width:82.6%"></div>
+          <div class="tx light" style="left:9.6%;top:32%;width:82.6%;height:3%"></div>
+          <div class="rulel" style="left:9.6%;top:37%;width:82.6%"></div>
+          <div class="tx light" style="left:9.6%;top:39%;width:82.6%;height:3%"></div>
+          <div class="rulem" style="left:9.6%;top:44%;width:82.6%;height:0.4mm"></div>
+          <div class="cap" style="left:9.6%;top:46.5%;width:82.6%">Published flag administration scopes. SuperYacht Times registry data.</div>
+          <div class="img tint" style="left:9.6%;top:54%;width:39%;height:30%"></div>
+          <div class="tx" style="left:53.5%;top:54%;width:39%;height:30%"></div>
+          <div class="folio">11</div>
+        </div>
+      </div>
+      <p class="caption-under">C1 &nbsp; Full-measure figure &nbsp;·&nbsp; C2 &nbsp; Table page</p>
+    </div>
+    <div class="notes">
+      <span class="tag">C1 / C2 — charts and tables</span>
+      <h3>The data spread, rebuilt</h3>
+      <p>Across the nine data spreads there are 32 tables and 14 charts. That ratio is backwards for print. A table
+      is a lookup device and the reader of a printed annual is not looking anything up; they are being shown a shape.
+      Convert until charts and tables are near parity.</p>
+      <ul>
+        <li><strong>Charts</strong> print at full type measure and at least 40 per cent of page height. In the
+        proof, figure 01.03 occupies 22 per cent of its page and leaves 45 per cent of the page empty below it.
+        Axis labels currently set around 5 pt; the floor is 7 pt.</li>
+        <li><strong>Tables</strong> keep hairlines at head and foot and a 0.5 mm marine rule under the head row only.
+        No vertical rules, no zebra. Tabular oldstyle figures, decimal-aligned, ranges on en-dashes.</li>
+        <li><strong>Captions carry the finding</strong>, not the restatement. "Figure 01.01: operating cost by size
+        band" tells the reader nothing they cannot see. The caption should say what the chart proves.</li>
+        <li>One form per dataset. If a table is followed by a chart of the same numbers, the print build drops the table.</li>
+      </ul>
+      <span class="freq">Frequency: two to three pages per chapter, opening on a verso</span>
+    </div>
+  </div>
+
+  <!-- D4 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="area"></div>
+          <div class="lbl" style="left:7.8%;top:9%;color:#0f3b5c">Questions to ask &nbsp;·&nbsp; Chapter 04</div>
+          <div class="quote" style="left:7.8%;top:13%;width:62%;font-size:5pt;font-style:normal;color:#1a1a1a">Before you sign the MOA</div>
+          <div class="rulem" style="left:7.8%;top:25%;width:56%;height:0.4mm"></div>
+          <div class="num" style="left:7.8%;top:29%;font-size:5pt">01</div>
+          <div class="tx" style="left:16%;top:29.5%;width:56%;height:5.5%"></div>
+          <div class="num" style="left:7.8%;top:39%;font-size:5pt">02</div>
+          <div class="tx" style="left:16%;top:39.5%;width:56%;height:5.5%"></div>
+          <div class="num" style="left:7.8%;top:49%;font-size:5pt">03</div>
+          <div class="tx" style="left:16%;top:49.5%;width:56%;height:8%"></div>
+          <div class="num" style="left:7.8%;top:61.5%;font-size:5pt">04</div>
+          <div class="tx" style="left:16%;top:62%;width:56%;height:5.5%"></div>
+          <div class="num" style="left:7.8%;top:71.5%;font-size:5pt">05</div>
+          <div class="tx" style="left:16%;top:72%;width:56%;height:5.5%"></div>
+          <div class="folio">126</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="lbl" style="left:9.6%;top:9%">Glossary &nbsp;·&nbsp; C to E</div>
+          <div class="rulel" style="left:9.6%;top:12%;width:82.6%"></div>
+          <div class="tx" style="left:9.6%;top:14%;width:39%;height:75%"></div>
+          <div class="tx" style="left:53.5%;top:14%;width:39%;height:75%"></div>
+          <div class="folio">127</div>
+        </div>
+      </div>
+      <p class="caption-under">D4 &nbsp; Checklist &nbsp;·&nbsp; back matter measure</p>
+    </div>
+    <div class="notes">
+      <span class="tag">D4 — the page that gets used</span>
+      <h3>Checklist and back matter</h3>
+      <p>The checklists are the most practically valuable thing the publication prints and the proof buries them
+      inside the chapters at body measure. In the book they gather into a single section, <em>Questions to ask</em>,
+      set one column at 60 per cent measure, numbered in marine, with 18 pt leading and a rule under the section head.</p>
+      <ul>
+        <li>Ranged left, never justified. A checklist read aloud in a meeting should not have rivers in it.</li>
+        <li>One question per numbered item, no sub-clauses, no more than two lines each.</li>
+        <li>Glossary and sources return to two column at body measure; the index goes to three at 7.5 pt.</li>
+        <li>Every back-matter section opens on a recto.</li>
+      </ul>
+      <span class="freq">Frequency: 24 pages of back matter, opening after chapter 09</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SHEET 6 ============================ -->
+<section class="sheet">
+  <p class="kicker">D &nbsp;·&nbsp; Set pieces</p>
+  <h1 style="font-size:15pt;">The four repeating spreads</h1>
+  <hr class="titlerule">
+
+  <!-- D1 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="img" style="left:0;top:0;width:100%;height:100%"></div>
+          <div class="num" style="left:8%;top:6%;font-size:24pt;color:rgba(245,242,236,.92)">05</div>
+          <div class="lbl" style="left:8%;top:4%;color:rgba(245,242,236,.8);font-size:2.8pt">Chapter 05</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="quote" style="left:9.6%;top:34%;width:70%;font-size:7pt;font-style:normal;color:#1a1a1a">New build versus brokerage</div>
+          <div class="quote" style="left:9.6%;top:50%;width:64%;font-size:4.2pt">Which of the two routes actually suits a first owner, and what each one costs in time, money and control.</div>
+          <div class="rulel" style="left:9.6%;top:70%;width:82.6%"></div>
+          <div class="lbl" style="left:9.6%;top:73%;font-size:2.8pt">Reading time · 9 min</div>
+          <div class="lbl" style="left:45%;top:73%;font-size:2.8pt">Contributor · Jack Inglis, Ultimar</div>
+          <div class="folio">49</div>
+        </div>
+      </div>
+      <p class="caption-under">D1 &nbsp; Chapter opener spread</p>
+    </div>
+    <div class="notes">
+      <span class="tag">D1 — revised opener</span>
+      <h3>Chapter opener spread</h3>
+      <p>The proof already forces every opener onto a verso via spacer pages. The change is that the numeral and the
+      title now separate: the numeral belongs to the image, the title belongs to the type page, and the two read as
+      one composition across the fold rather than as a picture with words on it.</p>
+      <ul>
+        <li>The coordinates line goes, unless every one of the nine is verified against its actual photograph. Three
+        are currently wrong. Portsmouth coordinates under La Ciotat, Barcelona under Hamburg, Dutch farmland under
+        chapter 05. A wrong coordinate is worse than no coordinate in a publication whose whole claim is accuracy.</li>
+        <li>Contributor credit moves to the opener recto, so the guest is announced rather than discovered.</li>
+      </ul>
+      <span class="freq">Frequency: nine</span>
+    </div>
+  </div>
+
+  <!-- D2/D3 -->
+  <div class="row">
+    <div>
+      <div class="spread">
+        <div class="pg verso">
+          <div class="area"></div>
+          <div class="lbl" style="left:7.8%;top:9%;color:#0f3b5c">Case study · 03</div>
+          <div class="quote" style="left:7.8%;top:14%;width:70%;font-size:5.6pt;font-style:normal;color:#1a1a1a">The commission nobody disclosed</div>
+          <div class="quote" style="left:7.8%;top:28%;width:66%;font-size:3.8pt">A 42 m brokerage purchase in which the buyer's adviser was paid by the seller's broker.</div>
+          <div class="rulel" style="left:7.8%;top:40%;width:84%"></div>
+          <div class="lbl" style="left:7.8%;top:42.5%;font-size:2.8pt">42 m · 2019 · EUR 20–25 m</div>
+          <div class="img" style="left:7.8%;top:48%;width:84%;height:38%"></div>
+          <div class="folio">34</div>
+        </div>
+        <div class="gutter"></div>
+        <div class="pg recto">
+          <div class="area"></div>
+          <div class="tx" style="left:9.6%;top:11%;width:39%;height:62%"></div>
+          <div class="tx" style="left:53.5%;top:11%;width:39%;height:62%"></div>
+          <div class="rulel" style="left:9.6%;top:76%;width:82.6%"></div>
+          <div class="lbl" style="left:9.6%;top:78.5%;width:82.6%;font-size:2.8pt">Disclosure · Single Foreland project, anonymised. No party to this transaction is a current client.</div>
+          <div class="quote" style="left:30%;top:86%;width:40%;font-size:3.6pt;text-align:center">■</div>
+          <div class="folio">35</div>
+        </div>
+      </div>
+      <p class="caption-under">D2 &nbsp; Case study opener &nbsp;·&nbsp; D3 pattern follows for guest Q&amp;A</p>
+    </div>
+    <div class="notes">
+      <span class="tag">D2 / D3 / D4 — case, Q&amp;A, checklist</span>
+      <h3>Case study, guest opinion, checklist</h3>
+      <p><strong>D2, case study.</strong> Title block and the case photograph on the verso, body running two column
+      across the recto. The disclosure line is part of the design, not an apology at the foot: it is the thing the
+      trade press cannot print.</p>
+      <p><strong>D3, guest Q&amp;A.</strong> Portrait at 22 mm square on the opener, questions in marine 9.5 pt,
+      answers in charcoal, two column, fragmenting freely. Six of the nine chapters have a contributor. The three
+      without cannot show an empty slot; they take a B3 number page instead.</p>
+      <p><strong>D4, checklist.</strong> Single column at 60 per cent measure, numbered, generous leading, ranged
+      left. This is the page readers photograph and send to their lawyer. Design it to be photographed.</p>
+      <span class="freq">Frequency: nine cases, six Q&amp;As, nine checklists</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SHEET 7 ============================ -->
+<section class="sheet">
+  <p class="kicker">E &nbsp;·&nbsp; Chapter architecture</p>
+  <h1 style="font-size:15pt;">How the registers assemble into a chapter</h1>
+  <p class="standfirst">Sixteen pages, one signature, the same shape every time. The reader learns the shape by
+  chapter two and can then navigate the book without the contents page.</p>
+  <hr class="titlerule">
+
+  <table class="spec">
+    <tr><th class="n">Folio</th><th>Register</th><th>Content</th><th>Why it sits there</th></tr>
+    <tr><td class="n">1 (verso)</td><td>D1</td><td>Full-bleed opener image, chapter numeral reversed</td><td>Relief after the previous chapter close</td></tr>
+    <tr><td class="n">2 (recto)</td><td>D1</td><td>Chapter title, standfirst, reading time, contributor credit</td><td>The promise of the chapter</td></tr>
+    <tr><td class="n">3–6</td><td>A1, A2</td><td>Lead essay, first movement. Tall figure on 4, pull quote on 6</td><td>Four pages is the ceiling before relief</td></tr>
+    <tr><td class="n">7</td><td>B3</td><td>Number page: three figures from the chapter's evidence</td><td>Breaks the essay at its natural hinge</td></tr>
+    <tr><td class="n">8–9</td><td>A4 or B2</td><td>Half-bleed, or the one gutter-crossing picture</td><td>The chapter's single photographic argument</td></tr>
+    <tr><td class="n">10–11</td><td>A1, A2</td><td>Lead essay, second movement</td><td></td></tr>
+    <tr><td class="n">12–13</td><td>C1, C2</td><td>Data spread: chart verso, table recto</td><td>Evidence arrives after the argument, not before</td></tr>
+    <tr><td class="n">14</td><td>D3</td><td>Guest opinion, or B3 where no contributor is confirmed</td><td>An outside voice before the case</td></tr>
+    <tr><td class="n">15</td><td>D2</td><td>Case study</td><td>The argument in one transaction</td></tr>
+    <tr><td class="n">16</td><td>B5</td><td>Chapter close: at a glance, closing pull, read next</td><td>The page a reader stops on</td></tr>
+  </table>
+
+  <div class="two" style="margin-top:5mm;font-size:7.6pt;line-height:1.5;">
+    <p><strong>Where the checklist goes.</strong> The nine checklists currently sit inside the chapters. In print they
+    should gather into a single back-matter section, <em>Questions to ask</em>, immediately before the glossary. On the
+    web they belong in the chapter because a reader arrives at one chapter from search. In the book they belong
+    together because a reader who has finished the book wants the whole apparatus in one place, and because a
+    16-page section of checklists is the part of the object that gets used rather than read.</p>
+
+    <p><strong>Where the sequence is allowed to break.</strong> Chapter 09 is a decision framework, not an argument
+    with evidence; it takes no case study and no data spread, and runs eight pages. Chapters 05 and 07 are the two
+    longest in the manuscript and take twenty-four pages each, which means a second data spread and a second number
+    page rather than longer runs of text.</p>
+
+    <p><strong>Front matter, 10 pages.</strong> Half-title, frontispiece, title, imprint and masthead, editors'
+    letter, contents (two pages), contributors, a full-bleed. <strong>Back matter, 24 pages.</strong> Questions to
+    ask, glossary, sources, index, colophon, closing image, numbered plate.</p>
+
+    <p><strong>The arithmetic.</strong> Nine chapters averaging sixteen pages is 144, plus 34 pages of front and back
+    matter is 178, which overshoots. Holding the block at 144 means the chapter template runs at fourteen pages for
+    six chapters and twenty for the three long ones, with front and back matter compressed to 24. The final call
+    belongs to the copy-fit pass, not to this document; what does not move is the ratio of relief to text.</p>
+  </div>
+</section>
+
+<!-- ============================ SHEET 8 ============================ -->
+<section class="sheet">
+  <p class="kicker">F &nbsp;·&nbsp; Specification</p>
+  <h1 style="font-size:15pt;">Fixed values</h1>
+  <hr class="titlerule">
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10mm;">
+    <div>
+      <table class="spec">
+        <tr><th colspan="2">Page</th></tr>
+        <tr><td>Trim</td><td class="n">230 × 300 mm</td></tr>
+        <tr><td>Sheet with bleed</td><td class="n">236 × 306 mm</td></tr>
+        <tr><td>Head margin</td><td class="n">22 mm</td></tr>
+        <tr><td>Foot margin</td><td class="n">22 mm</td></tr>
+        <tr><td>Outer margin</td><td class="n">18 mm</td></tr>
+        <tr><td>Inner margin</td><td class="n">22 mm</td></tr>
+        <tr><td>Columns</td><td class="n">2 × 80.5 mm, 9 mm gutter</td></tr>
+        <tr><td>Baseline</td><td class="n">13 pt, 20 lines per column</td></tr>
+      </table>
+
+      <table class="spec" style="margin-top:5mm;">
+        <tr><th colspan="3">Type</th></tr>
+        <tr><td>Body</td><td>Newsreader 400</td><td class="n">9.5 / 13 pt</td></tr>
+        <tr><td>Drop cap</td><td>Newsreader 300</td><td class="n">51 pt / 3 lines</td></tr>
+        <tr><td>Subhead</td><td>Newsreader 400</td><td class="n">13 / 16 pt</td></tr>
+        <tr><td>Pull quote</td><td>Newsreader 300 italic</td><td class="n">18 / 22 pt</td></tr>
+        <tr><td>Standfirst</td><td>Newsreader 300 italic</td><td class="n">14 / 19 pt</td></tr>
+        <tr><td>Caption</td><td>Newsreader italic</td><td class="n">7.75 / 10.5 pt</td></tr>
+        <tr><td>Label, folio</td><td>Geist Mono</td><td class="n">7 pt / 8.5 pt</td></tr>
+        <tr><td>Chapter numeral</td><td>Newsreader 300</td><td class="n">220 pt</td></tr>
+        <tr><td>Chapter title</td><td>Newsreader 300</td><td class="n">36 / 38 pt</td></tr>
+        <tr><td>Statistic (B3)</td><td>Newsreader 300</td><td class="n">96 to 120 pt</td></tr>
+        <tr><td>Chart label floor</td><td>Geist Mono</td><td class="n">7 pt</td></tr>
+      </table>
+    </div>
+
+    <div>
+      <table class="spec">
+        <tr><th colspan="3">Colour</th></tr>
+        <tr><td>Marine</td><td class="n">#0f3b5c</td><td>Numerals, rules, chart emphasis, subheads in cases</td></tr>
+        <tr><td>Sail</td><td class="n">#4a7da9</td><td>Second chart series only</td></tr>
+        <tr><td>Charcoal</td><td class="n">#1a1a1a</td><td>Body</td></tr>
+        <tr><td>Stone</td><td class="n">#7a756d</td><td>Metadata, captions, folios</td></tr>
+        <tr><td>Paper</td><td class="n">#f5f2ec</td><td>Ground</td></tr>
+        <tr><td>Rule</td><td class="n">#c8c2b4</td><td>Hairlines</td></tr>
+        <tr><td>Marine 8%</td><td class="n">tint</td><td>Panel grounds, editor's notes. The only tint permitted.</td></tr>
+      </table>
+
+      <table class="spec" style="margin-top:5mm;">
+        <tr><th colspan="2">Production</th></tr>
+        <tr><td>Extent</td><td class="n">144 pp, 18 signatures of 8</td></tr>
+        <tr><td>Text stock</td><td>Munken Pure 150 gsm, uncoated, cream</td></tr>
+        <tr><td>Endpapers</td><td>Colorplan 135 gsm, marine</td></tr>
+        <tr><td>Case</td><td>Colorplan over 3 mm board, foil wordmark, blind-debossed lighthouse</td></tr>
+        <tr><td>Spine</td><td class="n">≈ 17 mm at 144 pp on 150 gsm</td></tr>
+        <tr><td>Colour</td><td>4/4 CMYK, ISO Coated v2 or the printer's own profile</td></tr>
+        <tr><td>Cover spot</td><td>PMS 5395 C for foil only</td></tr>
+        <tr><td>Image masters</td><td class="n">2,800 px single page, 5,600 px spread</td></tr>
+        <tr><td>Run</td><td class="n">500, hand numbered</td></tr>
+      </table>
+
+      <table class="spec" style="margin-top:5mm;">
+        <tr><th colspan="2">Typographic house rules</th></tr>
+        <tr><td>Ranges</td><td>En-dash, closed up. "20–24 m", not "20 to 24 m"</td></tr>
+        <tr><td>Em-dashes</td><td>Never, anywhere, including captions</td></tr>
+        <tr><td>Figures</td><td>Oldstyle in text, tabular oldstyle in tables and charts</td></tr>
+        <tr><td>Yacht names</td><td>Italic</td></tr>
+        <tr><td>Hyphenation</td><td>Oxford, limit 9 / 4 / 4, exception list for yards, people, citations</td></tr>
+        <tr><td>Widows and orphans</td><td>Three lines minimum, subheads keep-with-next</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
