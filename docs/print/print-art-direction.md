@@ -239,6 +239,35 @@ No QR codes. They date a page instantly and the audience does not need them.
 
 **Do not, at any point,** reintroduce paged.js, wrap a chapter opener inside the chapter-scope div, or touch the sources section. The last of these sits on a Chrome print-layout tipping point that has three times reflowed the block from 120 to 217 pages. Check the block page count after every build; anything far above 120 means either that or a silent font-download failure.
 
+## 8a. What changed on 10 September, and why
+
+The reference set Jack named (Portfolio by Savills v9, Forbes Peru, The Superyacht Report 218, Moravia Charter Annual, IYC Horizons 14) is five three-column magazines. The August proof was a two-column, single-serif book. Measured the same way, on the share of pages that are full image, picture-led, balanced and text-led:
+
+| | full img | pic-led | balanced | text-led |
+|---|---|---|---|---|
+| Savills Portfolio v9 | 9% | 33% | 53% | 5% |
+| Forbes Peru | 26% | 13% | 42% | 19% |
+| TSR 218 | 31% | 13% | 30% | 27% |
+| Moravia | 23% | 23% | 49% | 4% |
+| IYC Horizons 14 | 13% | 54% | 29% | 4% |
+| TFOR, August proof | 8% | 0% | 21% | 71% |
+
+Jack approved the three-column move and lifted the photography constraint on 10 September, with stock as the drafting stand-in. The following is now built.
+
+**Grid.** Three columns of 59.3 mm on a 190 mm type area, 6 mm gutters carrying a 0.3 pt hairline rule. Outer margin 16 mm against 24 mm inner, mirrored, as in every title in the set. Body Newsreader 9.25 / 12.75 pt, about 36 characters, the measure Forbes and TSR both run. Drop cap three lines.
+
+**Type.** DM Sans becomes the furniture face: captions, panel copy, table heads, source lines, note panels. Newsreader keeps display and body. DM Mono is retained only for the small letterspaced markers and folios, which stay as the publication's signature.
+
+**Section chip.** A 9 mm marine square carrying a glyph, with a two-line label alongside, opening each editorial section. Taken from TSR 218, where it is the device that lets a reader place any page at a glance.
+
+**Pictures.** The supporting pool went from 4 per chapter to 22, drawn from the stock library by `scripts/expand-print-images.mjs`. Column figures now cycle through four silhouettes at half, portrait and landscape proportions, on a cadence computed from each essay's own length rather than a fixed interval. Cases and guest Q&As, previously the largest block of unbroken text in the book, now carry the same cadence from the back of the chapter pool.
+
+**Plates.** Two full-page bleed plates per chapter, eighteen in all, printed standalone from `/print-opener/plate-<slug>-<n>` and merged over a flow placeholder. This is the same proven mechanism as the chapter openers, and it exists because Chrome fragments a mid-document full-page box against the root master and paints a seam.
+
+**Extent.** 122 pp to 146 pp, press block 152.
+
+**Where it stands.** Full-page images moved from 8 to 18 per cent, which is inside the range of the set. Text-led pages have barely moved, from 71 to 66 per cent, against a set that runs 4 to 27. The essay pages are now right; the remaining text-led pages are the data spreads, the checklists and the back matter, none of which carry a picture at all. That is the next block of work, and it is the difference between a better-organised version of the old book and a book that competes on the shelf.
+
 ## 9. The reference set
 
 What was examined, so that a later edition can check the working rather than take it on trust. Copies of everything below are in the session working directory; the two that matter most should be kept in the repo or on iCloud.

@@ -313,14 +313,21 @@ async function generatePdf() {
   });
 
   log("  Navigating to /print...");
+  /* domcontentloaded, not networkidle0. The book now carries around 220
+     image masters at 2700px and the network never goes idle inside the
+     timeout. The explicit decode wait immediately below is the real
+     guarantee that every picture is painted before the PDF is taken. */
   await page.goto("http://localhost:3939/print", {
-    waitUntil: "networkidle0",
-    timeout: 180000,
+    waitUntil: "domcontentloaded",
+    timeout: 300000,
   });
 
   log("  Waiting for images to fully load...");
   await page.evaluate(async () => {
     const imgs = Array.from(document.images);
+    await Promise.all(
+      imgs.map((img) => (img.decode ? img.decode().catch(() => {}) : null)),
+    );
     await Promise.all(
       imgs.map((img) =>
         img.complete
@@ -364,7 +371,7 @@ function parsePageMap(pdfPath) {
     maxBuffer: 1024 * 1024 * 256,
   }).toString();
   const pages = txt.split("\f");
-  const map = { chapters: {}, refs: {}, singles: {}, total: pages.length };
+  const map = { chapters: {}, refs: {}, singles: {}, plates: {}, total: pages.length };
   if (pages[pages.length - 1].trim() === "") map.total -= 1;
   pages.forEach((t, i) => {
     const pdfPage = i + 1;
@@ -379,6 +386,12 @@ function parsePageMap(pdfPath) {
     for (const m of t.matchAll(/\[\[(FRONTIS|CLOSING)\]\]/g)) {
       const k = m[1].toLowerCase();
       if (!(k in map.singles)) map.singles[k] = pdfPage;
+    }
+    /* Full-page plates, two per chapter, same standalone-and-merge path
+       as the openers. */
+    for (const m of t.matchAll(/\[\[PLATE-([\w-]+)-(\d)\]\]/g)) {
+      const k = `plate-${m[1]}-${m[2]}`;
+      if (!(k in map.plates)) map.plates[k] = pdfPage;
     }
   });
   return map;
@@ -448,6 +461,7 @@ async function printFullBleedPages(map) {
   const keys = {};
   if (map.singles.frontis) keys.frontispiece = map.singles.frontis;
   if (map.singles.closing) keys.closing = map.singles.closing;
+  for (const [k, pg] of Object.entries(map.plates ?? {})) keys[k] = pg;
   for (const [n, pg] of Object.entries(map.chapters)) {
     keys[`ch${String(n).padStart(2, "0")}`] = pg;
   }

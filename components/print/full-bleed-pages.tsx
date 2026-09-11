@@ -56,6 +56,29 @@ export function FrontispiecePage() {
   );
 }
 
+/* A full-page plate: one photograph, full bleed, with a reversed caption in
+   the lower outer corner. Two per chapter, placed at the quarter and three-
+   quarter points of the essay. This is the register that moves the book from
+   text-led to picture-led; the column figures alone cannot do it. */
+export function PlatePage({ slug, index }: { slug: string; index: number }) {
+  const plate = printImages.plates?.[slug]?.[index];
+  if (!plate) return null;
+  return (
+    <section className="plate-page">
+      <span className="pdf-marker">{`[[PLATE-${slug}-${index}]]`}</span>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={`/print-images/print/${plate.filename}`}
+        alt={plate.alt}
+        className="plate-page__image"
+      />
+      {plate.caption && (
+        <p className="plate-page__caption">{plate.caption}</p>
+      )}
+    </section>
+  );
+}
+
 export function ClosingImagePage() {
   return (
     <section className="closing-image">

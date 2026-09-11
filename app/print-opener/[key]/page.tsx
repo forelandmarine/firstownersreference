@@ -13,6 +13,7 @@ import {
   FrontispiecePage,
   ClosingImagePage,
   ChapterOpener,
+  PlatePage,
 } from "@/components/print/full-bleed-pages";
 
 export const dynamic = "force-static";
@@ -21,10 +22,20 @@ const CHAPTER_KEYS = sections.map(
   (s) => `ch${String(s.number).padStart(2, "0")}`
 );
 
+/* Plate keys are plate-<slug>-<index>; two per chapter. */
+const PLATE_KEYS = sections.flatMap((s) => [
+  `plate-${s.slug}-0`,
+  `plate-${s.slug}-1`,
+]);
+
 export function generateStaticParams() {
-  return ["cover", "frontispiece", "closing", ...CHAPTER_KEYS].map((key) => ({
-    key,
-  }));
+  return [
+    "cover",
+    "frontispiece",
+    "closing",
+    ...CHAPTER_KEYS,
+    ...PLATE_KEYS,
+  ].map((key) => ({ key }));
 }
 
 export default async function StandaloneFullBleedPage({
@@ -44,6 +55,11 @@ export default async function StandaloneFullBleedPage({
     )!;
     const essay = getLeadEssay(section.slug);
     body = <ChapterOpener section={section} readingTime={essay?.readingTime} />;
+  } else if (key.startsWith("plate-")) {
+    const rest = key.slice("plate-".length);
+    const idx = Number(rest.slice(-1));
+    const slug = rest.slice(0, -2);
+    body = <PlatePage slug={slug} index={idx} />;
   } else notFound();
 
   return <div className="print-standalone">{body}</div>;

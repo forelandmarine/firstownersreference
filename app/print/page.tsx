@@ -1,3 +1,4 @@
+import React from "react";
 import { sections } from "@/lib/sections";
 import { getLeadEssay } from "@/lib/lead-essays";
 import { getCase } from "@/lib/cases";
@@ -13,6 +14,7 @@ import {
   FrontispiecePage,
   ClosingImagePage,
   ChapterOpener,
+  PlatePage,
 } from "@/components/print/full-bleed-pages";
 
 const folios = printFolios as {
@@ -50,6 +52,12 @@ function chapterMastersCss() {
 function tocFolio(v: number | undefined) {
   return v !== undefined ? String(v) : "·";
 }
+
+/* Column-measure picture shapes, cycled so no two adjacent figures share a
+   silhouette. half = half the column height, feature = 4:5 portrait,
+   wide = 4:3 landscape. Nothing here spans the columns: Chrome balances
+   rather than fills a fragmented multicol, so a spanner strands a row. */
+const FIGURE_CYCLE = ["half", "feature", "half", "wide", "feature", "half"];
 
 export const dynamic = "force-static";
 
@@ -753,6 +761,29 @@ export default function PrintEdition() {
 }
 
 /* === Chapter block === */
+/* Section marker chip. Glyph choices read at 9mm: a paragraph mark for the
+   essay, a bar-chart block for data, a section mark for the case, a quote
+   mark for the guest voice. */
+function SectionChip({
+  glyph,
+  title,
+  sub,
+}: {
+  glyph: string;
+  title: string;
+  sub: string;
+}) {
+  return (
+    <div className="section-chip">
+      <div className="section-chip__mark">{glyph}</div>
+      <p className="section-chip__label">
+        {title}
+        <span>{sub}</span>
+      </p>
+    </div>
+  );
+}
+
 function ChapterBlock({
   section,
   essay,
@@ -785,6 +816,9 @@ function ChapterBlock({
   // Identify positions to insert supporting images. Place after every 4th
   // string paragraph in the rest flow.
   const supList = printImages.supporting?.[section.slug] ?? [];
+  /* The essay consumes the front of the pool; the case and the guest Q&A
+     draw from the back so no picture appears twice in one chapter. */
+  const caseExtras = supList.slice(-6);
   const tallImage = printImages.tall?.[section.slug];
   const caseImage = printImages.cases?.[section.slug];
 
@@ -828,13 +862,46 @@ function ChapterBlock({
               const out: React.ReactNode[] = [];
               let stringCount = 0;
               let supIdx = 0;
+              /* Spread the pictures evenly across however many paragraphs
+                 this essay actually has, rather than firing on a fixed
+                 interval and dumping the remainder at the end. Step of at
+                 least 2 keeps two consecutive figures from colliding in
+                 one column. */
+              const paraCount = restParas.filter(
+                (x) => typeof x === "string",
+              ).length;
+              const figureStep = Math.max(
+                2,
+                Math.floor((paraCount - 3) / Math.max(1, supList.length)),
+              );
+              /* Full-page plates at the quarter and three-quarter points.
+                 They render here as placeholders and are replaced at merge
+                 time by the standalone print. */
+              const plateAt = [
+                Math.round(paraCount * 0.28),
+                Math.round(paraCount * 0.72),
+              ];
               for (let i = 0; i < restParas.length; i++) {
                 const para = restParas[i];
                 if (typeof para === "string") {
                   out.push(<p key={`p-${i}`}>{para}</p>);
                   stringCount++;
-                  // Two-thirds-page vertical figure early in the essay, then
-                  // column-measure supporting figures every 4 paragraphs.
+                  const plateIdx = plateAt.indexOf(stringCount);
+                  if (plateIdx > -1) {
+                    out.push(
+                      <PlatePage
+                        key={`plate-${plateIdx}`}
+                        slug={section.slug}
+                        index={plateIdx}
+                      />,
+                    );
+                  }
+                  // Picture cadence. The August proof injected one figure
+                  // every four paragraphs, which left the book 71 per cent
+                  // text-led against a reference set running 4 to 27. The
+                  // cadence is now every second paragraph, cycling through
+                  // four column-measure shapes so the page never repeats a
+                  // silhouette, with the tall figure opening the essay.
                   if (stringCount === 3 && tallImage) {
                     out.push(
                       <figure
@@ -851,20 +918,22 @@ function ChapterBlock({
                   }
                   if (
                     stringCount > 3 &&
-                    (stringCount - 3) % 4 === 0 &&
+                    (stringCount - 3) % figureStep === 0 &&
                     supIdx < supList.length
                   ) {
                     const sup = supList[supIdx];
+                    const shape = FIGURE_CYCLE[supIdx % FIGURE_CYCLE.length];
                     out.push(
                       <figure
                         key={`sup-${i}`}
-                        className="chapter-body__figure chapter-body__figure--feature"
+                        className={`chapter-body__figure chapter-body__figure--${shape}`}
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={`/print-images/print/${sup.filename}`}
                           alt={sup.alt}
                         />
+                        {sup.caption && <figcaption>{sup.caption}</figcaption>}
                       </figure>
                     );
                     supIdx++;
@@ -903,20 +972,9 @@ function ChapterBlock({
                   continue;
                 }
               }
-              // If supporting images remain unused, append the rest at the end
-              while (supIdx < supList.length) {
-                const sup = supList[supIdx];
-                out.push(
-                  <figure key={`sup-tail-${supIdx}`} className="chapter-body__figure chapter-body__figure--wide">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={`/print-images/print/${sup.filename}`}
-                      alt={sup.alt}
-                    />
-                  </figure>
-                );
-                supIdx++;
-              }
+              /* Deliberately no tail dump. Unused pictures stay unused:
+                 appending the remainder produced a page of orphaned images
+                 with no text beside them. */
               return out;
             })()}
           </div>
@@ -958,14 +1016,34 @@ function ChapterBlock({
           })()}
           <div className="guest-opinion__body">
             {guestOpinion.questions.map((qa, i) => (
-              <div key={i} className="guest-opinion__qa">
-                <p className="guest-opinion__q">{qa.question}</p>
-                <div className="guest-opinion__a">
-                  {qa.answer.map((para, ai) => (
-                    <p key={ai}>{para}</p>
-                  ))}
+              <React.Fragment key={i}>
+                <div className="guest-opinion__qa">
+                  <p className="guest-opinion__q">{qa.question}</p>
+                  <div className="guest-opinion__a">
+                    {qa.answer.map((para, ai) => (
+                      <p key={ai}>{para}</p>
+                    ))}
+                  </div>
                 </div>
-              </div>
+                {/* A picture between every second answer, from the back of
+                    the chapter pool. The Q&As ran as unbroken grey columns
+                    across three or four pages before this. */}
+                {i % 2 === 1 && caseExtras[((i - 1) / 2) % Math.max(1, caseExtras.length)] && (
+                  <figure
+                    className={`chapter-body__figure chapter-body__figure--${
+                      FIGURE_CYCLE[(i + 2) % FIGURE_CYCLE.length]
+                    }`}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`/print-images/print/${
+                        caseExtras[((i - 1) / 2) % Math.max(1, caseExtras.length)].filename
+                      }`}
+                      alt={caseExtras[((i - 1) / 2) % Math.max(1, caseExtras.length)].alt}
+                    />
+                  </figure>
+                )}
+              </React.Fragment>
             ))}
             {(() => {
               const endPull = [...guestOpinion.questions]
@@ -988,7 +1066,11 @@ function ChapterBlock({
       {dataSpread && (
         <section className="data-spread" data-chapter={chapterRunning}>
           <header className="data-spread__opener">
-            <p className="data-spread__label">Data</p>
+            <SectionChip
+              glyph="\u2590\u2588"
+              title="The evidence"
+              sub={`Chapter ${chNum} data`}
+            />
             <h2 className="data-spread__title">{dataSpread.title}</h2>
             <p className="data-spread__standfirst">{dataSpread.standfirst}</p>
           </header>
@@ -1116,7 +1198,11 @@ function ChapterBlock({
       {caseStudy && (
         <section className="case-section" data-chapter={chapterRunning}>
           <header className="case-section__opener">
-            <p className="case-section__label">Case study</p>
+            <SectionChip
+              glyph="\u00a7"
+              title="One transaction"
+              sub={`Chapter ${chNum} case study`}
+            />
             <h2 className="case-section__title">{caseStudy.title}</h2>
             <p className="case-section__standfirst">{caseStudy.standfirst}</p>
             <div className="case-section__meta">
@@ -1137,7 +1223,12 @@ function ChapterBlock({
                 if (typeof p === "string") {
                   out.push(<p key={i}>{p}</p>);
                   strings++;
-                  if (strings === 4 && caseImage) {
+                  /* Same picture cadence as the lead essay. The case pages
+                     were the largest block of text-led pages in the book:
+                     one image across four to six pages. They now draw from
+                     the back of the chapter's supporting pool, which the
+                     essay does not reach. */
+                  if (strings === 3 && caseImage) {
                     out.push(
                       <figure key={`case-fig-${i}`} className="case-section__figure">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -1147,6 +1238,25 @@ function ChapterBlock({
                         />
                       </figure>
                     );
+                  }
+                  if (strings > 3 && (strings - 3) % 2 === 0) {
+                    const pick = caseExtras[(strings - 5) / 2 % Math.max(1, caseExtras.length)];
+                    if (pick) {
+                      out.push(
+                        <figure
+                          key={`case-sup-${i}`}
+                          className={`chapter-body__figure chapter-body__figure--${
+                            FIGURE_CYCLE[strings % FIGURE_CYCLE.length]
+                          }`}
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={`/print-images/print/${pick.filename}`}
+                            alt={pick.alt}
+                          />
+                        </figure>
+                      );
+                    }
                   }
                   return;
                 }

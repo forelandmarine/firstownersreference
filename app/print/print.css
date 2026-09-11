@@ -1,11 +1,18 @@
 /*
   Print stylesheet, magazine register.
-  230 x 300 mm trim. Two-column body. Newsreader serif throughout, DM Sans
-  and DM Mono for metadata and tabular numerals. Marine accent.
+  230 x 300 mm trim. THREE-column body on a 190mm type area, hairline rules
+  in the gutters. Newsreader serif for display and body; DM Sans is the
+  furniture face (captions, panel copy, table heads, chart labels,
+  checklists); DM Mono is retained only for the small letterspaced section
+  markers and folios, which are the publication's signature.
 
-  Body 12.5/17pt. Two columns at 91.5mm with 7mm gutter. Pull quotes and
-  h2 headings span both columns as display breakouts. Drop caps four lines
-  deep. Chapter openers are full-bleed images with title overprinted.
+  Body 9.25/12.75pt on a 59.3mm measure, roughly 36 characters, which is
+  the measure Forbes, The Superyacht Report and Portfolio by Savills all
+  run. Nothing spans the columns except the opening drop-cap paragraph.
+
+  Revised 10 September 2026 to compete on the shelf with Portfolio by
+  Savills, Forbes, The Superyacht Report 218, Moravia and IYC Horizons.
+  See docs/print/print-art-direction.md.
 */
 
 /* === Variables === */
@@ -19,6 +26,15 @@
   --colour-marine: #0f3b5c;
   --colour-marine-deep: #0a2a44;
   --colour-sail: #4a7da9;
+
+  /* Three-column geometry. Type area 190mm inside a 230mm trim. */
+  --type-area: 190mm;
+  --col-gap: 6mm;
+  --col-measure: 59.33mm;
+
+  --font-furniture: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-marker: "DM Mono", "SF Mono", monospace;
+  --font-text: "Newsreader", Georgia, serif;
 }
 
 /* === Page master === */
@@ -28,13 +44,17 @@
    any client that fails to fill @page margin area still shows paper. */
 @page {
   size: 236mm 306mm;
-  margin: 29mm 27mm 29mm 27mm;
+  /* 3mm bleed is inside these numbers: trim margins are head 22, foot 24,
+     inner 24, outer 16. Outer is deliberately tighter than inner, as in
+     every title in the reference set, so the type block sits out towards
+     the trim and the spread carries a wide central channel. */
+  margin: 25mm 19mm 27mm 27mm;
   background: #f5f2ec;
 }
 
 @page :left {
-  margin-left: 27mm;
-  margin-right: 29mm;
+  margin-left: 19mm;
+  margin-right: 27mm;
   background: #f5f2ec;
   @top-left {
     content: "";
@@ -70,8 +90,8 @@
 }
 
 @page :right {
-  margin-left: 29mm;
-  margin-right: 27mm;
+  margin-left: 27mm;
+  margin-right: 19mm;
   background: #f5f2ec;
   @top-right {
     content: "The First Owner\2019s Reference \00b7\0020 1st Edition";
@@ -1028,27 +1048,31 @@ body {
    which produces natural left-to-right reading and avoids stranding col 2
    empty above a column-span element. */
 .chapter-body__cols {
-  column-count: 2;
-  column-gap: 9mm;
+  column-count: 3;
+  column-gap: var(--col-gap);
+  column-rule: 0.3pt solid var(--colour-rule);
   column-fill: auto;
 }
 
+/* The only element permitted to span the columns. It sits at the top of the
+   flow, before fragmentation begins, so it cannot strand a balanced row. */
 .chapter-body__intro-para {
   column-span: all;
-  font-size: 14pt;
-  line-height: 19pt;
+  font-family: var(--font-text);
+  font-size: 13pt;
+  line-height: 18pt;
   text-align: left;
-  margin: 0 0 8mm 0;
-  max-width: 125mm;
+  margin: 0 0 9mm 0;
+  max-width: 132mm;
 }
 
 .chapter-body__intro-para::first-letter {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   float: left;
-  font-size: 70pt;
-  line-height: 0.92;
-  padding: 6pt 8pt 0 0;
+  font-size: 62pt;
+  line-height: 0.9;
+  padding: 5pt 7pt 0 0;
   color: var(--colour-marine);
 }
 
@@ -1057,11 +1081,13 @@ body {
 /* indented (typographic convention).                                         */
 .chapter-body__cols p {
   margin: 0;
-  text-indent: 4mm;
+  font-size: 9.25pt;
+  line-height: 12.75pt;
+  text-indent: 3.4mm;
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
-  hyphenate-limit-chars: 9 4 4;
+  hyphenate-limit-chars: 7 3 3;
   hyphenate-limit-lines: 2;
   orphans: 3;
   widows: 3;
@@ -1139,10 +1165,10 @@ body {
 
 /* Editor's note as tinted sidebar inside body */
 .chapter-body__editors-note {
-  font-family: "Newsreader", Georgia, serif;
-  font-style: italic;
-  font-size: 11pt;
-  line-height: 16pt;
+  font-family: var(--font-furniture);
+  font-style: normal;
+  font-size: 7.8pt;
+  line-height: 11.2pt;
   color: var(--colour-soft);
   margin: 14pt 0;
   padding: 4mm;
@@ -1188,15 +1214,16 @@ body {
 }
 
 .chapter-body__figure figcaption {
-  font-family: "Newsreader", Georgia, serif;
-  font-style: italic;
-  font-size: 9pt;
-  line-height: 13pt;
+  font-family: var(--font-furniture);
+  font-style: normal;
+  font-size: 6.9pt;
+  line-height: 9.4pt;
   color: var(--colour-soft);
-  margin-top: 4pt;
-  padding-top: 3pt;
+  margin-top: 3pt;
+  padding-top: 2.4pt;
   border-top: 0.5pt solid var(--colour-rule);
-  max-width: 92%;
+  max-width: 100%;
+  text-indent: 0;
 }
 
 /* Wide figure spans both columns at a fixed magazine-style height */
@@ -1210,7 +1237,7 @@ body {
 
 .chapter-body__figure--wide img {
   width: 100%;
-  height: 70mm;
+  height: 60mm;          /* landscape, 3:2 on the column measure */
   object-fit: cover;
   display: block;
 }
@@ -1224,7 +1251,22 @@ body {
 
 .chapter-body__figure--feature img {
   width: 100%;
-  height: 64mm;
+  height: 96mm;          /* portrait, 3:4 on the column measure */
+  object-fit: cover;
+  display: block;
+}
+
+/* Half register: half the column height. The workhorse picture size, and
+   the one that moves the book from text-led to picture-led without needing
+   a standalone merged page. */
+.chapter-body__figure--half {
+  margin: 12pt 0;
+  break-inside: avoid;
+}
+
+.chapter-body__figure--half img {
+  width: 100%;
+  height: 132mm;
   object-fit: cover;
   display: block;
 }
@@ -1261,6 +1303,102 @@ body {
   height: 60mm;
   object-fit: cover;
   display: block;
+}
+
+/* ===========================================================
+   FULL-PAGE PLATE
+   In the flow this is a 240mm placeholder that occupies its own page
+   and is overprinted at merge time. Standalone it is a bleed-to-edge
+   photograph. Same mechanism as the chapter openers.
+   =========================================================== */
+
+.plate-page {
+  column-span: all;
+  break-before: page;
+  break-after: page;
+  break-inside: avoid;
+  height: 240mm;
+  position: relative;
+  overflow: hidden;
+}
+
+.plate-page__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.plate-page__caption {
+  position: absolute;
+  left: 0;
+  bottom: 6mm;
+  font-family: var(--font-furniture);
+  font-size: 7pt;
+  line-height: 9.6pt;
+  color: rgba(245, 242, 236, 0.92);
+  max-width: 70mm;
+  margin: 0;
+}
+
+.print-standalone .plate-page {
+  height: 306mm;
+  width: 236mm;
+  break-before: auto;
+  break-after: auto;
+}
+
+.print-standalone .plate-page__caption {
+  left: 19mm;
+  bottom: 22mm;
+}
+
+/* ===========================================================
+   SECTION MARKER CHIP
+   A filled marine square carrying a white glyph, plus a two-line
+   label alongside. Taken from The Superyacht Report 218, where it is
+   the device that lets a reader place any page at a glance. It opens
+   every editorial section: chapter body, data, case, guest opinion.
+   =========================================================== */
+
+.section-chip {
+  display: flex;
+  align-items: flex-start;
+  gap: 3mm;
+  margin: 0 0 7mm 0;
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
+.section-chip__mark {
+  flex: none;
+  width: 9mm;
+  height: 9mm;
+  background: var(--colour-marine);
+  color: #f5f2ec;
+  font-family: var(--font-text);
+  font-size: 12pt;
+  line-height: 9mm;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section-chip__label {
+  font-family: var(--font-furniture);
+  font-weight: 700;
+  font-size: 7.4pt;
+  line-height: 9.2pt;
+  letter-spacing: 0.02em;
+  color: var(--colour-marine);
+  margin: 0;
+  padding-top: 0.6mm;
+  max-width: 44mm;
+}
+
+.section-chip__label span {
+  display: block;
+  font-weight: 400;
+  color: var(--colour-stone);
 }
 
 /* ===========================================================
@@ -1973,8 +2111,9 @@ body {
 }
 
 .data-spread__table thead th {
-  font-family: "DM Mono", "SF Mono", monospace;
-  font-size: 7.5pt;
+  font-family: var(--font-furniture);
+  font-weight: 700;
+  font-size: 6.8pt;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--colour-stone);
@@ -1998,10 +2137,10 @@ body {
 }
 
 .data-spread__caption {
-  font-family: "Newsreader", Georgia, serif;
-  font-style: italic;
-  font-size: 10pt;
-  line-height: 14pt;
+  font-family: var(--font-furniture);
+  font-style: normal;
+  font-size: 7.6pt;
+  line-height: 10.6pt;
   color: var(--colour-soft);
   margin: 0 0 5pt 0;
   max-width: 160mm;
@@ -2031,10 +2170,10 @@ body {
 }
 
 .data-spread__source {
-  font-family: "Newsreader", Georgia, serif;
-  font-style: italic;
-  font-size: 9pt;
-  line-height: 12pt;
+  font-family: var(--font-furniture);
+  font-style: normal;
+  font-size: 6.8pt;
+  line-height: 9.4pt;
   color: var(--colour-stone);
   margin: 3pt 0 14pt 0;
   max-width: 160mm;
