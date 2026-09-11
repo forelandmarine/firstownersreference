@@ -406,46 +406,64 @@ function parsePageMap(pdfPath) {
   return map;
 }
 
-/* Fit pass. Each section starts on a fresh page, so the page before it is
-   the previous section's tail. Measure how much of that page is unused and
-   hand the tail's own section a gain, in millimetres, to absorb: part goes
-   into paragraph spacing (vertical justification, which is what a
-   typesetter does) and part into the section's picture, which grows to
-   take up the slack. Damped at 55 per cent and capped, so the loop settles
-   instead of oscillating. */
-function computeFit(map, pages, previous) {
-  const FULL_WORDS = 550;
-  const PAGE_MM = 254;             // height of the type area
-  const DAMP = 0.55;
-  const CAP = 90;                  // never ask one section to grow by more
+/* Closer pass. A section that ends part-way down a page leaves a ragged
+   foot. The reference titles never leave one: they drop a picture into the
+   lower half of the page and bleed it off the edge, which is why their text
+   pages all stop within a point of each other while ours vary by five.
+
+   CSS cannot size an element to the space left on a page, so the build
+   measures the gap and writes an exact height per section. Each pass adds
+   whatever gap remains to the height already assigned, so the closer grows
+   into the hole over two or three passes and then settles. */
+function measureFill(pdf) {
+  try {
+    const out = execSync(
+      `python3 "${path.join(ROOT, "scripts/measure-fill.py")}" "${pdf}"`,
+      { maxBuffer: 1 << 26 }
+    ).toString();
+    return JSON.parse(out).fill ?? [];
+  } catch {
+    return [];
+  }
+}
+
+function computeClosers(map, fill, previous) {
+  const PAGE_MM = 254;
+  const MIN_GAP = 40;       // below this a short foot reads as a designed pause
+  const MAX_H = 200;
+  const CLEARANCE = 14;   // the closer's own top margin plus a safety line
   const imagePages = new Set([
     ...Object.values(map.chapters),
     ...Object.values(map.plates ?? {}),
     ...Object.values(map.singles ?? {}),
   ]);
-
-  /* Section starts, in page order, so each section's tail is the page
-     before the NEXT section (or before the next chapter opener). */
   const starts = Object.entries(map.sections ?? {}).sort((a, b) => a[1] - b[1]);
-  const fit = {};
+  const out = {};
   for (let i = 0; i < starts.length; i++) {
     const [id, pg] = starts[i];
-    /* Walk back past the plates. A plate sits immediately before each
-       section start, so the raw previous page is nearly always a picture
-       and every section was being skipped. The tail is the last page that
-       actually carries type. */
     let tailPage = (starts[i + 1]?.[1] ?? map.total + 1) - 1;
     while (tailPage > pg && imagePages.has(tailPage)) tailPage -= 1;
     if (tailPage <= pg) continue;
-    const words = (pages[tailPage - 1] ?? "").split(/\s+/).filter(Boolean).length;
-    const fillRatio = Math.min(1, words / FULL_WORDS);
-    const unusedMm = (1 - fillRatio) * PAGE_MM;
-    if (unusedMm < 25) continue;   // a small tail is a designed pause
+    const f = fill[tailPage - 1];
+    if (f == null) continue;
+    const gapMm = (1 - f) * PAGE_MM;       // real ink position, not word count
     const prior = previous?.[id] ?? 0;
-    const gain = Math.min(CAP, Math.round(prior + unusedMm * DAMP));
-    if (gain > 0) fit[id] = gain;
+    /* Three states. No closer and a real hole: size one to the hole. A
+       closer already there and the hole closed: leave it alone, it is
+       working. A closer already there and the hole still open: it did not
+       fit and jumped to its own page, so shrink it to the space that is
+       actually free. Growing it, which is what the first version did, is
+       exactly backwards and walked every closer to the cap. */
+    let next;
+    if (gapMm < MIN_GAP) {
+      if (prior === 0) continue;
+      next = prior;
+    } else {
+      next = Math.round(Math.min(MAX_H, gapMm - CLEARANCE));
+    }
+    if (next >= 30) out[id] = next;
   }
-  return fit;
+  return out;
 }
 
 // The flow document IS the book block (the cover is prepended at merge
@@ -942,7 +960,7 @@ async function main() {
     const map = parsePageMap(PDF_OUT);
     pageCount = map.total;
 
-    /* Fit pass: hand each short-tailed section a gain to absorb. */
+    /* Closer pass: size a bleeding picture to the hole at each section foot. */
     const currentFit = (() => {
       try {
         return JSON.parse(fs.readFileSync(FIT_FILE, "utf8")).fit ?? {};
@@ -950,7 +968,7 @@ async function main() {
         return {};
       }
     })();
-    const desiredFit = computeFit(map, map.pageTexts ?? [], currentFit);
+    const desiredFit = computeClosers(map, measureFill(PDF_OUT), currentFit);
     const fitChanged =
       JSON.stringify(currentFit) !== JSON.stringify(desiredFit);
     if (fitChanged) {
@@ -960,7 +978,7 @@ async function main() {
       );
       const gains = Object.values(desiredFit);
       log(
-        `  Fit: ${gains.length} sections stretched, mean gain ${
+        `  Closers: ${gains.length} sections, mean height ${
           gains.length ? Math.round(gains.reduce((a, b) => a + b, 0) / gains.length) : 0
         }mm`
       );

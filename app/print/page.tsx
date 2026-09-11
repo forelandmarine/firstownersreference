@@ -22,8 +22,7 @@ import {
    unused space on each section's last page and absorbed here as paragraph
    spacing and picture height. Regenerated on every build. */
 const fitMap = (printFit as { fit: Record<string, number> }).fit ?? {};
-const fitStyle = (id: string) =>
-  fitMap[id] ? ({ ["--fit-gain" as string]: `${fitMap[id]}mm` } as React.CSSProperties) : undefined;
+
 
 const folios = printFolios as {
   chapters: Record<string, number>;
@@ -95,7 +94,11 @@ function tocFolio(v: number | undefined) {
    paragraphs. Small column figures were cutting the essay into fragments
    two or three lines deep. Only the two largest shapes survive, so a
    picture reads as a deliberate half-page block. */
-const FIGURE_CYCLE = ["tall", "half", "tall"];
+/* Only the half register now. The full-column figure at 188mm is the last
+   big unbreakable element left in the essay and it strands on its own page
+   when it does not fit. The section closers handle the feet; the in-flow
+   picture no longer has to be large to carry the page. */
+const FIGURE_CYCLE = ["half"];
 
 export const dynamic = "force-static";
 
@@ -799,6 +802,34 @@ export default function PrintEdition() {
 }
 
 /* === Chapter block === */
+/* Fills the ragged foot of a section with a picture that bleeds off the
+   outer and bottom trim edges. Height comes from the build, which measures
+   the hole; CSS cannot size an element to the space left on a page. */
+function SectionCloser({
+  slug,
+  id,
+  pick,
+}: {
+  slug: string;
+  id: string;
+  pick: number;
+}) {
+  const h = fitMap[id];
+  if (!h) return null;
+  const pool = printImages.supporting?.[slug] ?? [];
+  const img = pool[pick % Math.max(1, pool.length)];
+  if (!img) return null;
+  return (
+    <figure
+      className="section-closer"
+      style={{ ["--closer-h" as string]: `${h}mm` } as React.CSSProperties}
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={`/print-images/print/${img.filename}`} alt={img.alt} />
+    </figure>
+  );
+}
+
 /* Section marker chip. Glyph choices read at 9mm: a paragraph mark for the
    essay, a bar-chart block for data, a section mark for the case, a quote
    mark for the guest voice. */
@@ -1083,7 +1114,6 @@ function ChapterBlock({
         <section
           key={gi}
           className="guest-opinion"
-          style={fitStyle(`${section.slug}:guest`)}
           data-chapter={chapterRunning}
         >
           {(() => {
@@ -1157,6 +1187,11 @@ function ChapterBlock({
               ) : null;
             })()}
           </div>
+                  <SectionCloser
+            slug={section.slug}
+            id={`${section.slug}:guest`}
+            pick={7}
+          />
         </section>
       ))}
 
@@ -1168,7 +1203,6 @@ function ChapterBlock({
         <section
           className="data-spread"
           data-chapter={chapterRunning}
-          style={fitStyle(`${section.slug}:data`)}
         >
           <span className="pdf-marker">{`[[SEC-${section.slug}:data]]`}</span>
           <header className="data-spread__opener">
@@ -1342,6 +1376,14 @@ function ChapterBlock({
                 &#9632;
               </p>,
             );
+            nodes.push(
+              <SectionCloser
+                key="data-closer"
+                slug={section.slug}
+                id={`${section.slug}:data`}
+                pick={5}
+              />,
+            );
             return nodes;
           })()}
         </section>
@@ -1355,7 +1397,6 @@ function ChapterBlock({
         <section
           className="case-section"
           data-chapter={chapterRunning}
-          style={fitStyle(`${section.slug}:case`)}
         >
           <span className="pdf-marker">{`[[SEC-${section.slug}:case]]`}</span>
           <header className="case-section__opener">
@@ -1450,6 +1491,11 @@ function ChapterBlock({
               </div>
             )}
           </div>
+                  <SectionCloser
+            slug={section.slug}
+            id={`${section.slug}:case`}
+            pick={6}
+          />
         </section>
       )}
 
