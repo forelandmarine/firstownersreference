@@ -1312,8 +1312,8 @@ body {
    photograph. Same mechanism as the chapter openers.
    =========================================================== */
 
+/* A plain block sibling between two multicol segments, never inside one. */
 .plate-page {
-  column-span: all;
   break-before: page;
   break-after: page;
   break-inside: avoid;
@@ -2231,10 +2231,13 @@ body {
   break-inside: avoid;
 }
 
+/* Charts command the page. At 100mm a figure occupied a fifth of its page
+   and left half of it empty; the reference set runs figures at 40 per cent
+   of page height and up. */
 .data-spread__chart svg {
   width: 100%;
   height: auto;
-  max-height: 100mm;
+  max-height: 155mm;
   overflow: visible;
 }
 

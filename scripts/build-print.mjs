@@ -291,7 +291,10 @@ async function generatePdf() {
     executablePath: CHROME_EXECUTABLE,
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    protocolTimeout: 600000,
+    /* The book is now a 160-page document carrying about 220 pictures.
+       Chrome's print pass is the long pole; give it room rather than
+       failing at the five-minute mark mid-pass. */
+    protocolTimeout: 2400000,
   });
 
   const page = await browser.newPage();
@@ -349,7 +352,7 @@ async function generatePdf() {
     printBackground: true,
     preferCSSPageSize: true,
     displayHeaderFooter: false,
-    timeout: 300000,
+    timeout: 2400000,
   });
   log(`  PDF saved: ${PDF_OUT}`);
 

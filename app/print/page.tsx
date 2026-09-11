@@ -854,12 +854,18 @@ function ChapterBlock({
       {/* === Lead essay: intro paragraph (drop cap, full-width) followed by two-column body in a single column context === */}
       {essay && (
         <section className="chapter-body" data-chapter={chapterRunning}>
-          <div className="chapter-body__cols">
-            {introPara && typeof introPara === "string" && (
-              <p className="chapter-body__intro-para">{introPara}</p>
-            )}
-            {(() => {
+          {(() => {
               const out: React.ReactNode[] = [];
+              /* Segment boundaries: [index into out, plate index]. A plate
+                 is NOT placed inside the multicol. Chrome handles a
+                 column-span element inside a fragmented multicol badly:
+                 it strands a balanced row above it, and with a forced page
+                 break either side the print pass collapses (a 160-page
+                 book took 78 minutes and then timed out). The essay is
+                 split into separate multicol blocks with the plate as a
+                 plain sibling between them, which is both faster and the
+                 rule this document already states. */
+              const breaks: [number, number][] = [];
               let stringCount = 0;
               let supIdx = 0;
               /* Spread the pictures evenly across however many paragraphs
@@ -887,15 +893,7 @@ function ChapterBlock({
                   out.push(<p key={`p-${i}`}>{para}</p>);
                   stringCount++;
                   const plateIdx = plateAt.indexOf(stringCount);
-                  if (plateIdx > -1) {
-                    out.push(
-                      <PlatePage
-                        key={`plate-${plateIdx}`}
-                        slug={section.slug}
-                        index={plateIdx}
-                      />,
-                    );
-                  }
+                  if (plateIdx > -1) breaks.push([out.length, plateIdx]);
                   // Picture cadence. The August proof injected one figure
                   // every four paragraphs, which left the book 71 per cent
                   // text-led against a reference set running 4 to 27. The
@@ -975,9 +973,38 @@ function ChapterBlock({
               /* Deliberately no tail dump. Unused pictures stay unused:
                  appending the remainder produced a page of orphaned images
                  with no text beside them. */
-              return out;
+              const segments: React.ReactNode[] = [];
+              let cursor = 0;
+              breaks.forEach(([at, plateIdx], bi) => {
+                segments.push(
+                  <div className="chapter-body__cols" key={`seg-${bi}`}>
+                    {bi === 0 && introPara && typeof introPara === "string" && (
+                      <p className="chapter-body__intro-para">{introPara}</p>
+                    )}
+                    {out.slice(cursor, at)}
+                  </div>,
+                );
+                segments.push(
+                  <PlatePage
+                    key={`plate-${plateIdx}`}
+                    slug={section.slug}
+                    index={plateIdx}
+                  />,
+                );
+                cursor = at;
+              });
+              segments.push(
+                <div className="chapter-body__cols" key="seg-last">
+                  {breaks.length === 0 &&
+                    introPara &&
+                    typeof introPara === "string" && (
+                      <p className="chapter-body__intro-para">{introPara}</p>
+                    )}
+                  {out.slice(cursor)}
+                </div>,
+              );
+              return segments;
             })()}
-          </div>
         </section>
       )}
 

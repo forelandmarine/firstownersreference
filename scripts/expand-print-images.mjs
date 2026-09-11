@@ -14,7 +14,11 @@
    2. Keeps every image already assigned, so existing curation is not lost.
    3. Deals the unused remainder round-robin across the nine chapters until
       each has TARGET supporting images.
-   4. Resizes anything new into public/print-images/print at 2700px.
+   4. Resizes anything new into public/print-images/print. Column-measure
+      supporting pictures go in at 1100px on the long edge, which is 300dpi
+      at the 59.3mm column; only the full-bleed plates, openers and cover
+      need 2700px. Loading 220 full-size masters on one page pushed a single
+      Chrome print pass past 75 minutes.
    5. Rewrites the supporting block of lib/print-images.ts in place.
 
     node scripts/expand-print-images.mjs [--target 16]
@@ -29,6 +33,10 @@ const SOURCE_DIR =
   "/Users/jack/Library/Mobile Documents/com~apple~CloudDocs/Foreland Group/Marketing Materials/Stock images";
 const OUT_PRINT = path.join(ROOT, "public/print-images/print");
 const MANIFEST = path.join(ROOT, "lib/print-images.ts");
+
+/* 1100px is 300dpi at the 59.3mm column measure plus headroom. Press
+   masters for anything that runs full-bleed are handled separately. */
+const LONG_EDGE = 1100;
 
 const targetArg = process.argv.indexOf("--target");
 const TARGET = targetArg > -1 ? Number(process.argv[targetArg + 1]) : 16;
@@ -103,7 +111,7 @@ for (const [srcName, outName] of added) {
   const dest = path.join(OUT_PRINT, outName);
   if (fs.existsSync(dest)) continue;
   execFileSync("sips", [
-    "-Z", "2700",
+    "-Z", String(LONG_EDGE),
     "-s", "format", "jpeg",
     "-s", "formatOptions", "85",
     path.join(SOURCE_DIR, srcName),
