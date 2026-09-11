@@ -57,7 +57,12 @@ function tocFolio(v: number | undefined) {
    silhouette. half = half the column height, feature = 4:5 portrait,
    wide = 4:3 landscape. Nothing here spans the columns: Chrome balances
    rather than fills a fragmented multicol, so a spanner strands a row. */
-const FIGURE_CYCLE = ["half", "feature", "half", "wide", "feature", "half"];
+/* Forbes, TSR 218 and Savills all follow the same rule on a text page:
+   one picture, large, never two, and never a small one dropped between
+   paragraphs. Small column figures were cutting the essay into fragments
+   two or three lines deep. Only the two largest shapes survive, so a
+   picture reads as a deliberate half-page block. */
+const FIGURE_CYCLE = ["tall", "half", "tall"];
 
 export const dynamic = "force-static";
 
@@ -805,7 +810,21 @@ function ChapterBlock({
 
   // Split paragraphs: first paragraph (string) becomes intro with drop cap;
   // rest go in two-column flow.
-  const paras = essay?.paragraphs ?? [];
+  const rawParas = essay?.paragraphs ?? [];
+  /* A note panel cannot be the last element of the essay. It carries
+     break-inside: avoid, so when it does not fit it jumps to a page of its
+     own, and the plate after it forces a break: one panel alone on an
+     otherwise empty page (folio 11 of the previous proof). */
+  const paras = (() => {
+    const out = [...rawParas];
+    const last = out[out.length - 1];
+    if (last && typeof last !== "string" && last.type === "editorsNote") {
+      out.splice(out.length - 1, 1);
+      const at = Math.max(0, out.length - 2);
+      out.splice(at, 0, last);
+    }
+    return out;
+  })();
   let firstStringIdx = paras.findIndex((p) => typeof p === "string");
   if (firstStringIdx < 0) firstStringIdx = 0;
   const introPara = paras[firstStringIdx];
@@ -820,8 +839,8 @@ function ChapterBlock({
      cut the running text into fragments two or three lines deep and the
      essay became unreadable. Five carry the essay, three the case and the
      guest Q&A, and they do not overlap. */
-  const supList = supPool.slice(0, 5);
-  const caseExtras = supPool.slice(5);
+  const supList = supPool.slice(0, 3);
+  const caseExtras = supPool.slice(3);
   const tallImage = printImages.tall?.[section.slug];
   const caseImage = printImages.cases?.[section.slug];
 

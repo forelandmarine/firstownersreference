@@ -268,6 +268,24 @@ Jack approved the three-column move and lifted the photography constraint on 10 
 
 **Where it stands.** Full-page images moved from 8 to 18 per cent, which is inside the range of the set. Text-led pages have barely moved, from 71 to 66 per cent, against a set that runs 4 to 27. The essay pages are now right; the remaining text-led pages are the data spreads, the checklists and the back matter, none of which carry a picture at all. That is the next block of work, and it is the difference between a better-organised version of the old book and a book that competes on the shelf.
 
+## 8b. How the reference set actually handles paragraph flow
+
+Studied page by page on 11 September, after the three-column proof was rejected as unreadable. The rule is the same in all of them and it is narrower than I had assumed.
+
+**One picture on a text page. Never two.** Forbes folio 29 is the clearest case: a single photograph at the head of the page spanning two of the three columns, caption immediately beneath in small sans, then text running full height in every column below it. Folio 17 carries one boxed sidebar in column two and nothing else. The Superyacht Report 218 folio 59 carries one image at the foot of column one. Portfolio by Savills runs one, occasionally two, and both are large.
+
+**The picture anchors to an edge of the page**, normally the top, and spans more than one column. It is never a column-width block dropped between two paragraphs in the middle of a column.
+
+**Text flows continuously beneath and beside it.** No column is cut into a fragment of two or three lines.
+
+**Every article starts on a fresh page.** None of them runs a new section on from the foot of the previous one.
+
+What the August and 10 September proofs were doing instead: injecting a column-width image at a paragraph boundary every second or fourth paragraph, two or three to a page, at random vertical positions. That is what made the essay unreadable, and no amount of resizing fixes it, because the fault is placement rather than scale.
+
+**What is now built.** Five pictures a chapter, not twenty-two. Only the two largest shapes survive, a full-column figure at 188mm and a half at 150mm, so a picture reads as a deliberate half-page block. Three carry the essay, two the case and the guest Q&A. Two full-page plates per chapter sit at section boundaries. Data spreads, guest opinions and case studies each start on a fresh page.
+
+CSS cannot anchor a float to the top of a page in a fragmented multicol, so the top-of-page placement the reference set uses is not directly reproducible here. The nearest equivalent, and what is built, is to make the in-flow pictures large enough that they read as blocks rather than interruptions, and to move everything else onto plates.
+
 ## 9. The reference set
 
 What was examined, so that a later edition can check the working rather than take it on trust. Copies of everything below are in the session working directory; the two that matter most should be kept in the repo or on iCloud.

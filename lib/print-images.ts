@@ -37,9 +37,6 @@ export const printImages: {
       { filename: "ch01-sup3.jpg", alt: "Guest deck at anchor" },
       { filename: "ch01-sup4.jpg", alt: "Tender cockpit detail" },
       { filename: "40023942-edbc-4252-a8aa-43d36b870752.jpg", alt: "Supporting photograph, chapter 01" },
-      { filename: "aleksandr-skvortsov-ykSc4VaRtBQ-unsplash.jpg", alt: "Supporting photograph, chapter 01" },
-      { filename: "aristos-aristidou-Rj3gpDWNnAQ-unsplash.jpg", alt: "Supporting photograph, chapter 01" },
-      { filename: "brandon-hoogenboom-3ZFbnY2jXlg-unsplash.jpg", alt: "Supporting photograph, chapter 01" },
     ],
     "02-reading-the-market": [
       { filename: "ch02-sup1.jpg", alt: "Chapter 02 supporting" },
@@ -47,9 +44,6 @@ export const printImages: {
       { filename: "ch02-sup3.jpg", alt: "Monaco marina" },
       { filename: "ch02-sup4.jpg", alt: "Harbour at dusk" },
       { filename: "50m-above-bWiocb-XhyA-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
-      { filename: "alexander-mils-l4-oK4lbKQ0-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
-      { filename: "armin-pfarr-lXwXqgIUFTg-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
-      { filename: "bruno-ngarukiye-pgiWBkvA5UA-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
     ],
     "03-how-the-industry-works": [
       { filename: "ch03-sup1.jpg", alt: "Chapter 03 supporting" },
@@ -57,9 +51,6 @@ export const printImages: {
       { filename: "ch03-sup3.jpg", alt: "Brokerage quay" },
       { filename: "ch03-sup4.jpg", alt: "Superyacht in city waters" },
       { filename: "IMG_0263.jpg", alt: "Supporting photograph, chapter 03" },
-      { filename: "alexandros-giannakakis-kGdAphiYwy4-unsplash.jpg", alt: "Supporting photograph, chapter 03" },
-      { filename: "arno-senoner-1q7RE0CXstU-unsplash.jpg", alt: "Supporting photograph, chapter 03" },
-      { filename: "bugra-karacam-937irsSMhug-unsplash.jpg", alt: "Supporting photograph, chapter 03" },
     ],
     "04-acquisition-process": [
       { filename: "ch04-sup1.jpg", alt: "Chapter 04 supporting" },
@@ -67,9 +58,6 @@ export const printImages: {
       { filename: "ch04-sup3.jpg", alt: "Compass binnacle" },
       { filename: "ch04-sup4.jpg", alt: "Helm and instruments" },
       { filename: "IMG_0646.jpg", alt: "Supporting photograph, chapter 04" },
-      { filename: "alexandros-giannakakis-z5lGREDnrCY-unsplash.jpg", alt: "Supporting photograph, chapter 04" },
-      { filename: "arno-senoner-iOmFn_anJvA-unsplash.jpg", alt: "Supporting photograph, chapter 04" },
-      { filename: "c06ec634-4bd8-448a-a8f3-678cb0b5aa6e.jpg", alt: "Supporting photograph, chapter 04" },
     ],
     "05-new-build-versus-brokerage": [
       { filename: "ch05-sup1.jpg", alt: "Chapter 05 supporting" },
@@ -77,9 +65,6 @@ export const printImages: {
       { filename: "ch05-sup3.jpg", alt: "Shipyard pier" },
       { filename: "ch05-sup4.jpg", alt: "Hull planking work" },
       { filename: "IMG_9616.jpg", alt: "Supporting photograph, chapter 05" },
-      { filename: "alexandros-sarakasidis-iXUx8yyE8J0-unsplash.jpg", alt: "Supporting photograph, chapter 05" },
-      { filename: "arno-senoner-loU_6fwdPRc-unsplash.jpg", alt: "Supporting photograph, chapter 05" },
-      { filename: "catrin-ellis-6ZFkJeq_KNY-unsplash.jpg", alt: "Supporting photograph, chapter 05" },
     ],
     "06-refit": [
       { filename: "ch06-sup1.jpg", alt: "Chapter 06 supporting" },
@@ -87,9 +72,6 @@ export const printImages: {
       { filename: "ch06-sup3.jpg", alt: "Yachts under refit cover" },
       { filename: "ch06-sup4.jpg", alt: "Engine room" },
       { filename: "YAW275.ssw_jclass.st_barths_bucket17cb_06172_retouch.jpg", alt: "Supporting photograph, chapter 06" },
-      { filename: "amit-adler-o-GUkfq0tlE-unsplash.jpg", alt: "Supporting photograph, chapter 06" },
-      { filename: "atul-ajit-Lvr-U5Bpdqs-unsplash.jpg", alt: "Supporting photograph, chapter 06" },
-      { filename: "cheyenne-martinez-fxWgrrY9Pb8-unsplash.jpg", alt: "Supporting photograph, chapter 06" },
     ],
     "07-operations": [
       { filename: "ch07-sup1.jpg", alt: "Chapter 07 supporting" },
@@ -97,9 +79,6 @@ export const printImages: {
       { filename: "ch07-sup3.jpg", alt: "Bridge operations" },
       { filename: "ch07-sup4.jpg", alt: "Night passage on the bridge" },
       { filename: "aaron-burden-oHNzEstWRec-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
-      { filename: "andras-joo-5LK8T0pjPZc-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
-      { filename: "ben-elliott-qdrmRHrCmTk-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
-      { filename: "chris-jones-KRTKf7Ogps0-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
     ],
     "08-motor-versus-sail": [
       { filename: "ch08-sup1.jpg", alt: "Chapter 08 supporting" },
@@ -107,9 +86,6 @@ export const printImages: {
       { filename: "ch08-sup3.jpg", alt: "Sailing yacht at sunset" },
       { filename: "ch08-sup4.jpg", alt: "Motor yacht under way" },
       { filename: "adam-bignell-YRXjbaQAJso-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
-      { filename: "andre-tan-4DRfdkajOq8-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
-      { filename: "boris-misevic-ZUlV60gfNJI-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
-      { filename: "christian-lambert-P8O2cZEhUXE-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
     ],
     "09-decision-framework": [
       { filename: "ch09-sup1.jpg", alt: "Chapter 09 supporting" },
@@ -117,9 +93,6 @@ export const printImages: {
       { filename: "ch09-sup3.jpg", alt: "Yacht at anchor in a quiet bay" },
       { filename: "ch09-sup4.jpg", alt: "Yacht in monochrome" },
       { filename: "alberto-bianchini-qLfaGkKqY-E-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
-      { filename: "andrea-zignin-Us8dszDXx28-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
-      { filename: "boris-misevic-q_8cRkqTWNk-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
-      { filename: "christina-victoria-craft-6UfUGat_b9o-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
     ],
   },
   tall: {
