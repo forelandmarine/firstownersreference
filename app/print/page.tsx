@@ -1147,7 +1147,20 @@ function ChapterBlock({
               tableSeq += 1;
               return `Table ${chNN}.${String(tableSeq).padStart(2, "0")}`;
             });
-            return dataSpread.blocks.map((block, i) => {
+            /* Narrow blocks (prose, notes, key-value and two-column
+               tables) run in a two-column flow: a two-column table stretched
+               across the full 190mm measure was leaving a canyon down the
+               middle of the page and was a large part of the trapped space.
+               Wide blocks (charts, tables of three columns or more) stay at
+               full measure and sit between the flows as siblings, because a
+               chart at column measure would drop its labels to about 3.6pt,
+               and because a column-span element inside a fragmented multicol
+               strands a balanced row above it. */
+            const isWide = (b: { type: string; head?: string[] }) =>
+              b.type === "chart" ||
+              (b.type === "table" && (b.head?.length ?? 0) > 2);
+
+            const rendered = dataSpread.blocks.map((block, i) => {
             // One form per dataset in print: when a chart follows a table
             // or kv of the same data, the chart is the hero and the table
             // is dropped (the web edition keeps both).
@@ -1244,6 +1257,35 @@ function ChapterBlock({
             }
             return null;
             });
+
+            /* Group runs of narrow blocks into two-column flows. */
+            const nodes: React.ReactNode[] = [];
+            let bucket: React.ReactNode[] = [];
+            const flush = (key: string) => {
+              if (!bucket.length) return;
+              nodes.push(
+                <div className="data-spread__flow" key={`flow-${key}`}>
+                  {bucket}
+                </div>,
+              );
+              bucket = [];
+            };
+            dataSpread.blocks.forEach((block, i) => {
+              const node = rendered[i];
+              if (node == null) return;
+              if (isWide(block)) {
+                flush(`b${i}`);
+                nodes.push(
+                  <div className="data-spread__wide" key={`wide-${i}`}>
+                    {node}
+                  </div>,
+                );
+              } else {
+                bucket.push(node);
+              }
+            });
+            flush("tail");
+            return nodes;
           })()}
         </section>
       )}

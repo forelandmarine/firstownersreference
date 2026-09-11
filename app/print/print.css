@@ -1083,7 +1083,7 @@ body {
 .chapter-body__cols p {
   margin: 0;
   font-size: 9.75pt;
-  line-height: 13.5pt;
+  line-height: 14pt;
   text-indent: 4mm;
   text-align: justify;
   hyphens: auto;
@@ -1261,7 +1261,7 @@ body {
    the one that moves the book from text-led to picture-led without needing
    a standalone merged page. */
 .chapter-body__figure--half {
-  margin: 12pt 0;
+  margin: 20pt 0;
   break-inside: avoid;
 }
 
@@ -1366,7 +1366,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 3mm;
-  margin: 0 0 7mm 0;
+  margin: 0 0 11mm 0;
   page-break-after: avoid;
   break-after: avoid-page;
 }
@@ -1448,7 +1448,7 @@ body {
   line-height: 19pt;
   color: var(--colour-soft);
   max-width: 150mm;
-  margin: 0 0 7mm 0;
+  margin: 0 0 12mm 0;
 }
 
 .guest-opinion__body {
@@ -1893,10 +1893,72 @@ body {
 
 /* The paragraph after a data-spread h2 keeps with the heading. */
 .data-spread h2 + p,
-.data-spread h2 + /* Rule 3.11: every dataset carries a head on a rule, so a reader can enter
-   a heavy page at any element. Charts get theirs from ChartFrame; tables and
-   key-value blocks get this one. Marker stays marine, the label sits in
-   stone, and the 0.4pt rule ties the block to the grid. */
+.data-spread h2 + .data-spread__caption {
+  page-break-before: avoid;
+  break-before: avoid-page;
+  orphans: 3;
+  widows: 3;
+}
+
+/* Two-column flow for the narrow blocks of a data spread. Charts and wide
+   tables sit outside it at full measure. */
+.data-spread__flow {
+  column-count: 2;
+  column-gap: 7mm;
+  column-rule: 0.3pt solid var(--colour-rule);
+  column-fill: auto;
+  margin: 0 0 9mm 0;
+}
+
+/* table-layout: fixed, or a cell whose min-content width exceeds the 91mm
+   column pushes the whole table out across the page. That is why the
+   two-column tables were still spanning the full measure. */
+.data-spread__flow .data-spread__table,
+.data-spread__flow .data-spread__kv {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 8.4pt;
+  line-height: 11.6pt;
+}
+
+.data-spread__flow .data-spread__table td,
+.data-spread__flow .data-spread__table th,
+.data-spread__flow .data-spread__kv td {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+/* kv value column stops being right-aligned at column measure: a ranged
+   right value against a ranged left label leaves a canyon between them. */
+.data-spread__flow .data-spread__kv-value {
+  text-align: left;
+}
+
+.data-spread__flow .data-spread__kv-label {
+  width: 42%;
+}
+
+.data-spread__flow p,
+.data-spread__flow .data-spread__caption,
+.data-spread__flow .data-spread__source {
+  max-width: none;
+}
+
+.data-spread__flow p {
+  font-size: 9.75pt;
+  line-height: 13.5pt;
+}
+
+.data-spread__flow h2 {
+  font-size: 14pt;
+  line-height: 18pt;
+}
+
+.data-spread__wide {
+  margin: 0 0 11mm 0;
+  break-inside: avoid;
+}
+
 .data-spread p.data-spread__fig-label {
   font-family: "DM Mono", "SF Mono", monospace;
   font-size: 7pt;
@@ -1904,8 +1966,8 @@ body {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--colour-stone);
-  margin: 0 0 2.5mm 0;
-  padding-bottom: 1.6mm;
+  margin: 4mm 0 3.5mm 0;
+  padding-bottom: 2mm;
   max-width: none;
   border-bottom: 0.4pt solid var(--colour-rule);
   page-break-after: avoid;
@@ -1925,7 +1987,7 @@ body {
 /* Caption now sits below its data, not above it: head, evidence, what the
    evidence shows, then the source. */
 .data-spread p.data-spread__caption--below {
-  margin: 3.5mm 0 0 0;
+  margin: 4.5mm 0 0 0;
   page-break-before: avoid;
   break-before: avoid-page;
   page-break-after: auto;
@@ -2082,7 +2144,7 @@ body {
   line-height: 20pt;
   color: var(--colour-soft);
   max-width: 150mm;
-  margin: 0 0 7mm 0;
+  margin: 0 0 12mm 0;
 }
 
 .data-spread h2 {
@@ -2091,7 +2153,7 @@ body {
   font-size: 17pt;
   line-height: 22pt;
   color: var(--colour-marine);
-  margin: 16pt 0 7pt 0;
+  margin: 30pt 0 12pt 0;
   page-break-after: avoid;
   break-after: avoid-page;
   page-break-inside: avoid;
@@ -2136,13 +2198,13 @@ body {
   font-weight: 600;
   text-align: left;
   border-bottom: 0.75pt solid var(--colour-ink);
-  padding: 5pt 7pt 5pt 0;
+  padding: 6pt 7pt 7pt 0;
 }
 
 .data-spread__table tbody td {
   font-family: "Newsreader", Georgia, serif;
   border-bottom: 0.5pt solid var(--colour-rule);
-  padding: 5pt 7pt 5pt 0;
+  padding: 7pt 7pt 7pt 0;
   vertical-align: top;
   font-variant-numeric: tabular-nums;
 }
@@ -2200,7 +2262,7 @@ body {
   font-size: 6.8pt;
   line-height: 9.4pt;
   color: var(--colour-stone);
-  margin: 3pt 0 14pt 0;
+  margin: 2.5mm 0 8mm 0;
   max-width: 160mm;
 }
 
@@ -2687,7 +2749,7 @@ body {
    with the text carrying on in the facing column. */
 .chapter-body__figure--tall {
   break-inside: avoid;
-  margin: 0 0 10pt 0;
+  margin: 0 0 18pt 0;
 }
 
 .chapter-body__figure--tall img {
