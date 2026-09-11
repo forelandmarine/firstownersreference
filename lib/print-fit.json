@@ -1,20 +1,20 @@
 {
  "fit": {
-  "01-reality-of-ownership:data": 143,
+  "01-reality-of-ownership:data": 142,
   "01-reality-of-ownership:case": 200,
-  "02-reading-the-market:data": 143,
+  "02-reading-the-market:data": 142,
   "02-reading-the-market:case": 89,
   "03-how-the-industry-works:data": 124,
-  "03-how-the-industry-works:case": 109,
+  "03-how-the-industry-works:case": 144,
   "04-acquisition-process:data": 110,
   "04-acquisition-process:case": 51,
-  "05-new-build-versus-brokerage:data": 143,
+  "05-new-build-versus-brokerage:data": 142,
   "06-refit:data": 78,
-  "06-refit:case": 183,
-  "07-operations:data": 96,
-  "07-operations:case": 200,
-  "08-motor-versus-sail:data": 76,
-  "08-motor-versus-sail:case": 88,
-  "09-decision-framework:data": 143
+  "06-refit:case": 110,
+  "07-operations:data": 95,
+  "07-operations:case": 70,
+  "08-motor-versus-sail:data": 75,
+  "08-motor-versus-sail:case": 54,
+  "09-decision-framework:data": 142
  }
 }

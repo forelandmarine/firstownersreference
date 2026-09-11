@@ -802,6 +802,33 @@ export default function PrintEdition() {
 }
 
 /* === Chapter block === */
+/* A picture band running the full width of the sheet and off both side
+   trims. Used only where it sits outside a multicol flow: section openers
+   and the chapter close. Inside a fragmented multicol a full-width element
+   strands a short balanced row above it, which is the house rule. */
+function BleedBand({
+  slug,
+  pick,
+  height = 96,
+}: {
+  slug: string;
+  pick: number;
+  height?: number;
+}) {
+  const pool = printImages.supporting?.[slug] ?? [];
+  const img = pool[pick % Math.max(1, pool.length)];
+  if (!img) return null;
+  return (
+    <figure
+      className="bleed-band"
+      style={{ ["--band-h" as string]: `${height}mm` } as React.CSSProperties}
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={`/print-images/print/${img.filename}`} alt={img.alt} />
+    </figure>
+  );
+}
+
 /* Fills the ragged foot of a section with a picture that bleeds off the
    outer and bottom trim edges. Height comes from the build, which measures
    the hole; CSS cannot size an element to the space left on a page. */
@@ -1142,6 +1169,7 @@ function ChapterBlock({
               </div>
             );
           })()}
+          <BleedBand slug={section.slug} pick={4} height={90} />
           <div className="guest-opinion__body">
             {guestOpinion.questions.map((qa, i) => (
               <React.Fragment key={i}>
@@ -1197,6 +1225,7 @@ function ChapterBlock({
 
       {/* Plate three: before the evidence pages. */}
       <PlatePage slug={section.slug} index={2} />
+      <PlatePage slug={section.slug} index={4} />
 
       {/* Data spread */}
       {dataSpread && (
@@ -1415,6 +1444,7 @@ function ChapterBlock({
                 </div>
               ))}
             </div>
+            <BleedBand slug={section.slug} pick={3} height={92} />
           </header>
 
           <div className="case-section__body">
@@ -1506,6 +1536,7 @@ function ChapterBlock({
           the composition as architecture, not decoration. */}
       {/* Plate four: the last picture before the chapter closes. */}
       <PlatePage slug={section.slug} index={3} />
+      <PlatePage slug={section.slug} index={5} />
 
       {nextSection && (
         <aside className="chapter-close" data-chapter={chapterRunning}>
@@ -1518,6 +1549,7 @@ function ChapterBlock({
             </p>
             <h3 className="chapter-close__section-title">{section.title}</h3>
           </div>
+          <BleedBand slug={section.slug} pick={2} height={88} />
           {firstQuote && (
             <blockquote className="chapter-close__quote">
               {firstQuote.text}

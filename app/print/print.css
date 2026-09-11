@@ -1385,10 +1385,33 @@ body {
 /* Closes a section. A short final page then reads as a deliberate ending
    rather than as an abandoned page, which is how the reference titles
    handle the foot of an article. */
-/* Section closer. Sized by the build to the hole it has to fill, and bled
-   off both side trims and the foot. Negative margins deliberately overshoot
-   the sheet: the excess is trimmed, which guarantees a clean bleed on both
-   a verso and a recto without needing to know which one this is. */
+/* Section closer. Sized by the build to the hole it has to fill. Like the
+   band above it is clipped to the page area and does not bleed; it closes
+   the whitespace, which is its job, and bleed comes from plates. */
+/* Full-measure picture band inside a section opener or the chapter close.
+
+   NOTE, and this cost an hour: it does NOT bleed. Chrome clips content to
+   the page area in paged media, so negative margins on an in-flow element
+   buy nothing. That is precisely why this pipeline prints every full-bleed
+   page standalone from /print-opener and merges it with pypdf. The only
+   way to add a bleeding page is to add a plate. The negative margins below
+   are kept because they widen the band to the full measure, not because
+   they reach the trim. */
+.bleed-band {
+  margin: 9mm -30mm 10mm -30mm;
+  height: var(--band-h, 96mm);
+  overflow: hidden;
+  break-inside: avoid;
+  display: block;
+}
+
+.bleed-band img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .section-closer {
   margin: 8mm -30mm -34mm -30mm;
   height: var(--closer-h, 0mm);

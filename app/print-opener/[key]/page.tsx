@@ -23,10 +23,9 @@ const CHAPTER_KEYS = sections.map(
 );
 
 /* Plate keys are plate-<slug>-<index>; two per chapter. */
-const PLATE_KEYS = sections.flatMap((s) => [
-  `plate-${s.slug}-0`,
-  `plate-${s.slug}-1`,
-]);
+const PLATE_KEYS = sections.flatMap((s) =>
+  [0, 1, 2, 3, 4, 5].map((i) => `plate-${s.slug}-${i}`),
+);
 
 export function generateStaticParams() {
   return [
