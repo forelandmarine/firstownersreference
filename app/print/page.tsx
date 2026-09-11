@@ -43,6 +43,31 @@ function chapterMastersCss() {
     padding-top: 11mm;
     background: #f5f2ec;
   }
+  /* Chrome does not cascade margin boxes from @page :left into a named
+     master, so the footer has to be repeated here or it vanishes on every
+     chapter page. */
+  @bottom-left {
+    content: "firstownersreference.com";
+    font-family: "DM Sans", "Helvetica Neue", sans-serif;
+    font-size: 6.5pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7a756d;
+    padding-bottom: 12mm;
+    background: #f5f2ec;
+  }
+}
+@page ch${nn}:right {
+  @bottom-right {
+    content: "1st Edition \\00b7\\0020 2026";
+    font-family: "DM Sans", "Helvetica Neue", sans-serif;
+    font-size: 6.5pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7a756d;
+    padding-bottom: 12mm;
+    background: #f5f2ec;
+  }
 }
 .chapter-scope[data-ch="${nn}"] { page: ch${nn}; }`;
     })
@@ -839,8 +864,13 @@ function ChapterBlock({
      cut the running text into fragments two or three lines deep and the
      essay became unreadable. Five carry the essay, three the case and the
      guest Q&A, and they do not overlap. */
-  const supList = supPool.slice(0, 3);
-  const caseExtras = supPool.slice(3);
+  /* One picture in the running essay, not three. Every in-flow figure
+     carries break-inside: avoid and stands 150 to 188mm tall, so each one
+     that fails to fit jumps and leaves a hole that size. The rest of the
+     chapter's pictures move to full-page plates, which cannot create a
+     hole because they occupy a whole page. */
+  const supList = supPool.slice(0, 1);
+  const caseExtras = supPool.slice(1, 3);
   const tallImage = printImages.tall?.[section.slug];
   const caseImage = printImages.cases?.[section.slug];
 
@@ -1017,6 +1047,11 @@ function ChapterBlock({
                 );
                 cursor = at;
               });
+              out.push(
+                <p key="essay-end" className="section-end-mark">
+                  &#9632;
+                </p>,
+              );
               segments.push(
                 <div className="chapter-body__cols" key="seg-last">
                   {breaks.length === 0 &&
@@ -1115,6 +1150,9 @@ function ChapterBlock({
           </div>
         </section>
       ))}
+
+      {/* Plate three: before the evidence pages. */}
+      <PlatePage slug={section.slug} index={2} />
 
       {/* Data spread */}
       {dataSpread && (
@@ -1285,6 +1323,11 @@ function ChapterBlock({
               }
             });
             flush("tail");
+            nodes.push(
+              <p key="data-end" className="section-end-mark">
+                &#9632;
+              </p>,
+            );
             return nodes;
           })()}
         </section>
@@ -1396,6 +1439,9 @@ function ChapterBlock({
           half is a structural foot with Read next and the at-a-glance list of
           the chapter's section headings. A giant chapter number sits behind
           the composition as architecture, not decoration. */}
+      {/* Plate four: the last picture before the chapter closes. */}
+      <PlatePage slug={section.slug} index={3} />
+
       {nextSection && (
         <aside className="chapter-close" data-chapter={chapterRunning}>
           <div className="chapter-close__big-num" aria-hidden>

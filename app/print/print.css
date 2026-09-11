@@ -56,6 +56,16 @@
 @page :left {
   margin-left: 19mm;
   margin-right: 27mm;
+  @bottom-left {
+    content: "firstownersreference.com";
+    font-family: "DM Sans", "Helvetica Neue", sans-serif;
+    font-size: 6.5pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7a756d;
+    padding-bottom: 12mm;
+    background: #f5f2ec;
+  }
   background: #f5f2ec;
   @top-left {
     content: "";
@@ -93,6 +103,16 @@
 @page :right {
   margin-left: 27mm;
   margin-right: 19mm;
+  @bottom-right {
+    content: "1st Edition \00b7\0020 2026";
+    font-family: "DM Sans", "Helvetica Neue", sans-serif;
+    font-size: 6.5pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7a756d;
+    padding-bottom: 12mm;
+    background: #f5f2ec;
+  }
   background: #f5f2ec;
   @top-right {
     content: "The First Owner\2019s Reference \00b7\0020 1st Edition";
@@ -1362,6 +1382,19 @@ body {
    every editorial section: chapter body, data, case, guest opinion.
    =========================================================== */
 
+/* Closes a section. A short final page then reads as a deliberate ending
+   rather than as an abandoned page, which is how the reference titles
+   handle the foot of an article. */
+.section-end-mark {
+  font-size: 6pt;
+  line-height: 1;
+  color: var(--colour-marine);
+  text-align: center;
+  margin: 8mm 0 0 0;
+  text-indent: 0;
+  break-inside: avoid;
+}
+
 .section-chip {
   display: flex;
   align-items: flex-start;
@@ -1902,11 +1935,17 @@ body {
 
 /* Two-column flow for the narrow blocks of a data spread. Charts and wide
    tables sit outside it at full measure. */
+/* balance, not auto. The house rule against balancing is about the long
+   chapter-body flow, where Chrome balances every page fragment thin. These
+   flows are short blocks sitting between full-measure charts and wide
+   tables, and they rarely cross a page, so balancing is what makes the two
+   columns read as two columns instead of one full column beside an empty
+   one. */
 .data-spread__flow {
   column-count: 2;
   column-gap: 7mm;
   column-rule: 0.3pt solid var(--colour-rule);
-  column-fill: auto;
+  column-fill: balance;
   margin: 0 0 9mm 0;
 }
 

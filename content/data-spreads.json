@@ -19,34 +19,34 @@
         ],
         "rows": [
           [
-            "30 to 40 m, year 1 to 5",
-            "8 to 10 percent",
-            "10 to 13 percent",
-            "13 to 15 percent"
+            "30–40 m, year 1–5",
+            "8–10 percent",
+            "10–13 percent",
+            "13–15 percent"
           ],
           [
-            "40 to 50 m, year 1 to 5",
-            "10 to 12 percent",
-            "12 to 15 percent",
-            "15 to 18 percent"
+            "40–50 m, year 1–5",
+            "10–12 percent",
+            "12–15 percent",
+            "15–18 percent"
           ],
           [
-            "50 to 60 m, year 1 to 5",
-            "11 to 13 percent",
-            "13 to 16 percent",
-            "16 to 19 percent"
+            "50–60 m, year 1–5",
+            "11–13 percent",
+            "13–16 percent",
+            "16–19 percent"
           ],
           [
-            "40 to 50 m, year 6 to 10",
-            "12 to 14 percent",
-            "14 to 17 percent",
-            "17 to 20 percent"
+            "40–50 m, year 6–10",
+            "12–14 percent",
+            "14–17 percent",
+            "17–20 percent"
           ],
           [
             "Above 60 m, all years",
-            "13 to 16 percent",
-            "16 to 19 percent",
-            "19 to 22 percent"
+            "13–16 percent",
+            "16–19 percent",
+            "19–22 percent"
           ]
         ],
         "sourceLine": "Foreland Marine project archive, cross-referenced against Fraser, Ocean Independence, and YachtBuyer published guidance."
@@ -65,36 +65,36 @@
         "rows": [
           {
             "label": "Crew salaries and benefits",
-            "value": "30 to 40 percent"
+            "value": "30–40 percent"
           },
           {
             "label": "Maintenance and repair",
-            "value": "14 to 18 percent"
+            "value": "14–18 percent"
           },
           {
             "label": "Insurance",
-            "value": "10 to 14 percent"
+            "value": "10–14 percent"
           },
           {
             "label": "Berths and marina fees",
-            "value": "8 to 12 percent"
+            "value": "8–12 percent"
           },
           {
             "label": "Fuel",
-            "value": "8 to 12 percent",
+            "value": "8–12 percent",
             "note": "Higher on charter-active hulls"
           },
           {
             "label": "Management fees",
-            "value": "3 to 5 percent"
+            "value": "3–5 percent"
           },
           {
             "label": "Class and flag compliance",
-            "value": "2 to 3 percent"
+            "value": "2–3 percent"
           },
           {
             "label": "Provisioning, comms, owner travel, contingency",
-            "value": "10 to 15 percent"
+            "value": "10–15 percent"
           }
         ],
         "sourceLine": "YPI Crew 2026 salary guide, Quay Crew 2025 captain survey, Pantaenius market commentary, MYBA standard cost categories."
@@ -118,33 +118,33 @@
         "rows": [
           [
             "1",
-            "10 to 20 percent",
-            "10 to 20 percent"
+            "10–20 percent",
+            "10–20 percent"
           ],
           [
             "2",
-            "16 to 28 percent",
-            "6 to 8 percent"
+            "16–28 percent",
+            "6–8 percent"
           ],
           [
             "3",
-            "22 to 35 percent",
-            "6 to 8 percent"
+            "22–35 percent",
+            "6–8 percent"
           ],
           [
             "5",
-            "33 to 48 percent",
-            "5 to 7 percent"
+            "33–48 percent",
+            "5–7 percent"
           ],
           [
             "7",
-            "40 to 55 percent",
-            "3 to 5 percent"
+            "40–55 percent",
+            "3–5 percent"
           ],
           [
             "10",
-            "48 to 62 percent",
-            "2 to 4 percent"
+            "48–62 percent",
+            "2–4 percent"
           ]
         ],
         "sourceLine": "Yatco, IYC, Yacht Hunter broker-aggregated curves. No peer-reviewed academic study exists."
@@ -393,7 +393,7 @@
           },
           {
             "label": "Feadship",
-            "value": "2028 to 2029, Project Solent confirmed for 2027"
+            "value": "2028–2029, Project Solent confirmed for 2027"
           },
           {
             "label": "Oceanco",
@@ -611,7 +611,7 @@
         "rows": [
           [
             "Typical office size",
-            "Median 5 staff in Switzerland; 61 percent run 1 to 5",
+            "Median 5 staff in Switzerland; 61 percent run 1–5",
             "A small expert team, not a department with a yacht specialist"
           ],
           [
@@ -665,8 +665,8 @@
           ],
           [
             "Buyer-broker share, typical",
-            "4 to 5 percent of gross, paid out of the seller-side pool",
-            "EUR 1,120,000 to 1,400,000"
+            "4–5 percent of gross, paid out of the seller-side pool",
+            "EUR 1,120,000–1,400,000"
           ]
         ],
         "sourceLine": "IYBA standard practice; MYBA Memorandum of Agreement; published industry self-criticism (Cromwell Littlejohn, Northrop & Johnson, Palm Beach Boat Show)."
@@ -716,28 +716,28 @@
         "head": [
           "Service",
           "Typical scope",
-          "5 to 10 percent retrocession"
+          "5–10 percent retrocession"
         ],
         "rows": [
           [
             "Repaint",
             "EUR 4 m",
-            "EUR 200,000 to 400,000"
+            "EUR 200,000–400,000"
           ],
           [
             "Annual management contract, year one",
             "EUR 5 m",
-            "EUR 250,000 to 500,000"
+            "EUR 250,000–500,000"
           ],
           [
             "Charter management commission share",
             "EUR 2 m of charter revenue",
-            "EUR 100,000 to 200,000"
+            "EUR 100,000–200,000"
           ],
           [
             "Insurance broker introduction",
             "EUR 250 k premium",
-            "EUR 3,750 to 25,000 a year, depending on whether the referral is set against commission or premium"
+            "EUR 3,750–25,000 a year, depending on whether the referral is set against commission or premium"
           ]
         ],
         "sourceLine": "Practitioner working ranges; OnboardOnline legal column on disclosure rules. Particular firms are not named in this chapter because the practice is industry-wide."
@@ -876,7 +876,7 @@
           ],
           [
             "Maltese leasing scheme",
-            "Effective VAT 5.4 to 6.12 percent on yachts above 24 m",
+            "Effective VAT 5.4–6.12 percent on yachts above 24 m",
             "Maltese leasing structure; specific payment profile; substance requirements"
           ],
           [
@@ -928,19 +928,19 @@
         "rows": [
           [
             "Tax compliance and structuring",
-            "EUR 25,000 to 70,000"
+            "EUR 25,000–70,000"
           ],
           [
             "Flag administration and class society fees",
-            "EUR 15,000 to 40,000"
+            "EUR 15,000–40,000"
           ],
           [
             "Owning company maintenance",
-            "EUR 10,000 to 40,000"
+            "EUR 10,000–40,000"
           ],
           [
             "Total",
-            "EUR 50,000 to 150,000"
+            "EUR 50,000–150,000"
           ]
         ],
         "sourceLine": "Foreland Marine project archive; published yacht law firm fee guidance."
@@ -955,11 +955,11 @@
         "rows": [
           {
             "label": "Duration",
-            "value": "4 to 7 days afloat plus haul-out"
+            "value": "4–7 days afloat plus haul-out"
           },
           {
             "label": "Total cost",
-            "value": "USD 25,000 to 60,000"
+            "value": "USD 25,000–60,000"
           },
           {
             "label": "Lead surveyor",
@@ -1035,17 +1035,17 @@
         "rows": [
           [
             "Brokerage",
-            "6 to 12 weeks",
+            "6–12 weeks",
             "10 percent deposit, 90 percent at closing"
           ],
           [
             "Semi-custom new build",
-            "24 to 36 months",
-            "20 to 30 percent at signature, 50 to 70 percent across build, balance at delivery"
+            "24–36 months",
+            "20–30 percent at signature, 50–70 percent across build, balance at delivery"
           ],
           [
             "Fully custom new build",
-            "36 to 60 months",
+            "36–60 months",
             "Front-loaded variants common; refund guarantee credit quality material"
           ]
         ],
@@ -1117,11 +1117,11 @@
         "rows": [
           {
             "label": "At entry",
-            "value": "30 to 50 percent premium over comparable brokerage hull"
+            "value": "30–50 percent premium over comparable brokerage hull"
           },
           {
             "label": "At delivery, 24 to 36 months later",
-            "value": "15 to 25 percent premium"
+            "value": "15–25 percent premium"
           },
           {
             "label": "Five years later",
@@ -1149,7 +1149,7 @@
         "rows": [
           [
             "Stage payment loading",
-            "50 to 70 percent before delivery",
+            "50–70 percent before delivery",
             "Watson Farley & Williams"
           ],
           [
@@ -1159,7 +1159,7 @@
           ],
           [
             "Liquidated damages cap",
-            "1 percent of contract value per week, capped at 5 to 10 percent",
+            "1 percent of contract value per week, capped at 5–10 percent",
             "Hill Dickinson; Triple Point Technology v PTT [2021] UKSC 29"
           ],
           [
@@ -1210,7 +1210,7 @@
         "rows": [
           {
             "label": "Independent firm, percentage",
-            "value": "1 to 3 percent of build cost"
+            "value": "1–3 percent of build cost"
           },
           {
             "label": "Independent firm, fixed fee",
@@ -1306,17 +1306,17 @@
         "rows": [
           [
             "Annual maintenance",
-            "2,000 to 8,000",
-            "EUR 100,000 to 400,000"
+            "2,000–8,000",
+            "EUR 100,000–400,000"
           ],
           [
             "Mid-life refit",
-            "10,000 to 30,000",
-            "EUR 500,000 to 1.5 m"
+            "10,000–30,000",
+            "EUR 500,000–1.5 m"
           ],
           [
             "Major structural refit",
-            "40,000 to 100,000+",
+            "40,000–100,000+",
             "EUR 2 m to 5 m+"
           ]
         ],
@@ -1341,17 +1341,17 @@
         "rows": [
           [
             "Well-managed at competent yard, experienced rep",
-            "10 to 20 percent",
+            "10–20 percent",
             "The achievable target"
           ],
           [
             "Industry typical",
-            "30 to 50 percent",
+            "30–50 percent",
             "What the work actually costs"
           ],
           [
             "Poorly-managed",
-            "60 to 100 percent or more",
+            "60–100 percent or more",
             "Dockwalk: sixfold overrun on a 1967 C&N refit"
           ]
         ],
@@ -1428,7 +1428,7 @@
             "Monaco Marine",
             "Saint Mandrier, Beaulieu, Antibes, La Ciotat",
             "Full-service",
-            "Multi-site French; strong on 30 to 60 m"
+            "Multi-site French; strong on 30–60 m"
           ],
           [
             "IMS Shipyard",
@@ -1440,7 +1440,7 @@
             "Lusben",
             "Viareggio / Livorno",
             "Full-service",
-            "Italian reference; 210 m drydock; 2,400 t syncrolift (2024 to 2025)"
+            "Italian reference; 210 m drydock; 2,400 t syncrolift (2024–2025)"
           ],
           [
             "Amico & Co",
@@ -1512,7 +1512,7 @@
             "Roscioli Yachting Center",
             "Dania Beach, FL",
             "Full-service",
-            "Mid-tier; strong on 30 to 50 m"
+            "Mid-tier; strong on 30–50 m"
           ],
           [
             "Merrill-Stevens Dry Dock",
@@ -1569,12 +1569,12 @@
           [
             "Paint dry film thickness (DFT)",
             "Awlgrip / Alexseal manufacturer data sheets",
-            "Topcoat 75 to 125 microns per coat; system 200 to 450 microns"
+            "Topcoat 75–125 microns per coat; system 200–450 microns"
           ],
           [
             "Paint application conditions",
             "Manufacturer data sheets, controlled atmosphere",
-            "18 to 29°C ambient; RH below 80 percent; surface 3°C above dew point"
+            "18–29°C ambient; RH below 80 percent; surface 3°C above dew point"
           ],
           [
             "Drying and recoat windows",
@@ -1589,7 +1589,7 @@
           [
             "Noise levels, master cabin underway",
             "ISO 6954; IMO MSC.337(91)",
-            "45 to 50 dB(A) at design cruising speed"
+            "45–50 dB(A) at design cruising speed"
           ],
           [
             "Whole-body vibration, occupied spaces",
@@ -1599,7 +1599,7 @@
           [
             "HVAC duct velocity in occupied spaces",
             "ISO 7547; Heinen & Hopman, Westmar, Drews Marine data sheets",
-            "Below 2.5 to 3.0 m/s; agreed air change rates"
+            "Below 2.5–3.0 m/s; agreed air change rates"
           ],
           [
             "Stabiliser noise and isolation",
@@ -1609,7 +1609,7 @@
           [
             "Substrate preparation, steel",
             "ISO 8501-1 cleanliness; manufacturer profile guidance",
-            "Sa 2.5 cleanliness; 50 to 75 micron surface profile"
+            "Sa 2.5 cleanliness; 50–75 micron surface profile"
           ]
         ],
         "sourceLine": "Awlgrip / Alexseal published technical data sheets; ISO standards (6954:2000, 20283-5, 2631, 7547, 8501-1); IMO MSC.337(91) noise code; engine and equipment manufacturer technical data."
@@ -1681,31 +1681,31 @@
         ],
         "rows": [
           [
-            "20 to 24 m",
+            "20–24 m",
             "Around 6,000"
           ],
           [
-            "30 to 40 m",
-            "8,000 to 12,000"
+            "30–40 m",
+            "8,000–12,000"
           ],
           [
-            "40 to 50 m",
-            "10,000 to 14,000"
+            "40–50 m",
+            "10,000–14,000"
           ],
           [
-            "50 to 60 m",
-            "10,000 to 16,000"
+            "50–60 m",
+            "10,000–16,000"
           ],
           [
-            "70 to 79 m",
-            "14,000 to 20,000 (up 7 percent year on year)"
+            "70–79 m",
+            "14,000–20,000 (up 7 percent year on year)"
           ],
           [
-            "80 to 99 m",
-            "16,000 to 23,000"
+            "80–99 m",
+            "16,000–23,000"
           ],
           [
-            "100 to 119 m",
+            "100–119 m",
             "Over 25,000"
           ]
         ],
@@ -1732,7 +1732,7 @@
           [
             "Hull and machinery",
             "Loss or damage to the yacht itself; agreed value rebuild basis is the disciplined structure",
-            "0.7 to 1.5 percent of insured value (40 to 50 m well-maintained); 2 to 5 percent for smaller yachts and hurricane-exposed regions",
+            "0.7–1.5 percent of insured value (40–50 m well-maintained); 2–5 percent for smaller yachts and hurricane-exposed regions",
             "Lloyd’s syndicates (CNA Hardy, Beazley, Brit, AIG, Liberty, Tokio Marine HCC, MS Amlin); AXA, Allianz, Generali"
           ],
           [
@@ -1744,7 +1744,7 @@
           [
             "War risk",
             "Per-voyage cover for transit through war-risk regions",
-            "0.05 to 2 percent of hull value per voyage, region-dependent",
+            "0.05–2 percent of hull value per voyage, region-dependent",
             "Lloyd’s war risk syndicates"
           ],
           [
@@ -1822,8 +1822,8 @@
         ],
         "rows": [
           [
-            "2022 to 2023",
-            "Up 50 to 70 percent (London market)",
+            "2022–2023",
+            "Up 50–70 percent (London market)",
             "AIG cited; broad hardening"
           ],
           [
@@ -1833,7 +1833,7 @@
           ],
           [
             "Q4 2025",
-            "Down 4 to 7.5 percent for clean fleets",
+            "Down 4–7.5 percent for clean fleets",
             "Gallagher Specialty"
           ],
           [
@@ -1842,13 +1842,13 @@
             "Pantaenius: “more impact expected than landed”"
           ],
           [
-            "Typical hull rate, 40 to 50 m well-maintained",
-            "0.7 to 1.5 percent of insured value",
+            "Typical hull rate, 40–50 m well-maintained",
+            "0.7–1.5 percent of insured value",
             "Mediterranean / Northern Europe"
           ],
           [
             "Smaller yachts and hurricane-exposed regions",
-            "2 to 5 percent",
+            "2–5 percent",
             ""
           ]
         ],
@@ -1885,14 +1885,14 @@
             "Standard",
             "Elevated",
             "1 percent+",
-            "0.65 to 0.80 percent"
+            "0.65–0.80 percent"
           ],
           [
             "Ukrainian deep-water ports",
             "Standard",
             "Elevated",
             "1 percent+",
-            "0.45 to 0.55 percent"
+            "0.45–0.55 percent"
           ]
         ],
         "sourceLine": "Lloyd’s war risk circular updates; Marsh, Gallagher published commentary."
@@ -1913,25 +1913,25 @@
         "rows": [
           [
             "48 m motor",
-            "EUR 250 to 310 k",
+            "EUR 250–310 k",
             "7",
             "Break-even"
           ],
           [
             "47 m sail",
-            "EUR 110 to 125 k",
+            "EUR 110–125 k",
             "9",
             "EUR 444 k loss"
           ],
           [
             "85 m motor",
-            "EUR 850 to 950 k",
+            "EUR 850–950 k",
             "8",
             "EUR 430 k loss"
           ],
           [
             "60 m, owner-optimised",
-            "EUR 220 to 260 k",
+            "EUR 220–260 k",
             "12",
             "Up to EUR 2 m net positive"
           ]
@@ -2143,23 +2143,23 @@
         "rows": [
           {
             "label": "Independent adviser, year one",
-            "value": "USD 80,000 to 250,000"
+            "value": "USD 80,000–250,000"
           },
           {
             "label": "Yacht lawyer, acquisition only",
-            "value": "USD 50,000 to 200,000"
+            "value": "USD 50,000–200,000"
           },
           {
             "label": "Pre-purchase survey",
-            "value": "USD 25,000 to 60,000"
+            "value": "USD 25,000–60,000"
           },
           {
             "label": "Captain hire process",
-            "value": "USD 5,000 to 25,000 (recruitment fees)"
+            "value": "USD 5,000–25,000 (recruitment fees)"
           },
           {
             "label": "Management company onboarding, year one",
-            "value": "USD 30,000 to 80,000"
+            "value": "USD 30,000–80,000"
           },
           {
             "label": "Insurance broker fee structure",
@@ -2167,7 +2167,7 @@
           },
           {
             "label": "Total team cost, year one",
-            "value": "USD 200,000 to 600,000"
+            "value": "USD 200,000–600,000"
           }
         ],
         "sourceLine": "Foreland Marine practitioner working ranges."
@@ -2288,33 +2288,33 @@
         "rows": [
           [
             "Fuel",
-            "EUR 200 to 350 k",
-            "EUR 60 to 120 k"
+            "EUR 200–350 k",
+            "EUR 60–120 k"
           ],
           [
-            "Crew (12 to 16 motor / 9 to 12 sail)",
-            "EUR 1.6 to 2.2 m",
-            "EUR 1.2 to 1.7 m"
+            "Crew (12–16 motor / 9–12 sail)",
+            "EUR 1.6–2.2 m",
+            "EUR 1.2–1.7 m"
           ],
           [
             "Maintenance and repair",
-            "EUR 600 to 900 k",
-            "EUR 500 to 800 k (plus rigging / sail wardrobe)"
+            "EUR 600–900 k",
+            "EUR 500–800 k (plus rigging / sail wardrobe)"
           ],
           [
             "Insurance",
-            "EUR 350 to 550 k",
-            "EUR 280 to 450 k"
+            "EUR 350–550 k",
+            "EUR 280–450 k"
           ],
           [
             "Berths and marina fees",
-            "EUR 280 to 420 k",
-            "EUR 280 to 420 k"
+            "EUR 280–420 k",
+            "EUR 280–420 k"
           ],
           [
             "Total annual operating cost",
-            "EUR 3.0 to 4.5 m",
-            "EUR 2.3 to 3.5 m"
+            "EUR 3.0–4.5 m",
+            "EUR 2.3–3.5 m"
           ]
         ],
         "sourceLine": "Foreland Marine project archive; YPI Crew 2026 salary guide; aggregated published practitioner ranges."
@@ -2338,13 +2338,13 @@
         "rows": [
           [
             "New build entry price",
-            "EUR 12 to 22 m",
-            "EUR 18 to 30 m"
+            "EUR 12–22 m",
+            "EUR 18–30 m"
           ],
           [
             "Depreciation after year 5",
             "Single-digit % annually",
-            "5 to 8% annually"
+            "5–8% annually"
           ]
         ],
         "sourceLine": "Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves."
@@ -2364,12 +2364,12 @@
         "rows": [
           [
             "60 m motor",
-            "700 to 1,200 GT",
+            "700–1,200 GT",
             "Below threshold"
           ],
           [
             "80 m motor",
-            "2,000 to 2,800 GT",
+            "2,000–2,800 GT",
             "Below threshold"
           ],
           [
@@ -2380,17 +2380,17 @@
           [
             "110 m+ motor",
             "Above 5,000 GT",
-            "Inside, EUR 200 to 400 k per year on current carbon prices"
+            "Inside, EUR 200–400 k per year on current carbon prices"
           ],
           [
             "50 m sail",
-            "300 to 600 GT",
+            "300–600 GT",
             "Below threshold"
           ],
           [
             "Annual carbon footprint, 50 m sail vs 50 m motor",
             "Comparable use",
-            "Sail roughly 60 to 70 percent below motor"
+            "Sail roughly 60–70 percent below motor"
           ]
         ],
         "sourceLine": "EU Commission FAQ on EU ETS for maritime transport; Royal Huisman published sustainability commentary; IMO 2023 GHG Strategy (MEPC 80)."
