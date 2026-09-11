@@ -1,14 +1,15 @@
 /*
   Print stylesheet, magazine register.
-  230 x 300 mm trim. THREE-column body on a 190mm type area, hairline rules
-  in the gutters. Newsreader serif for display and body; DM Sans is the
+  230 x 300 mm trim. TWO-column body on a 190mm type area, hairline rule in
+  the gutter. Three columns was tried on 10 September and reverted: at
+  59mm the measure was too tight to read and the picture cadence chopped
+  the text into unreadable fragments. Newsreader serif for display and body; DM Sans is the
   furniture face (captions, panel copy, table heads, chart labels,
   checklists); DM Mono is retained only for the small letterspaced section
   markers and folios, which are the publication's signature.
 
-  Body 9.25/12.75pt on a 59.3mm measure, roughly 36 characters, which is
-  the measure Forbes, The Superyacht Report and Portfolio by Savills all
-  run. Nothing spans the columns except the opening drop-cap paragraph.
+  Body 9.75/13.5pt on a 92mm measure, roughly 60 characters. Nothing spans
+  the columns except the opening drop-cap paragraph.
 
   Revised 10 September 2026 to compete on the shelf with Portfolio by
   Savills, Forbes, The Superyacht Report 218, Moravia and IYC Horizons.
@@ -29,8 +30,8 @@
 
   /* Three-column geometry. Type area 190mm inside a 230mm trim. */
   --type-area: 190mm;
-  --col-gap: 6mm;
-  --col-measure: 59.33mm;
+  --col-gap: 7mm;
+  --col-measure: 91.5mm;
 
   --font-furniture: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   --font-marker: "DM Mono", "SF Mono", monospace;
@@ -1048,7 +1049,7 @@ body {
    which produces natural left-to-right reading and avoids stranding col 2
    empty above a column-span element. */
 .chapter-body__cols {
-  column-count: 3;
+  column-count: 2;
   column-gap: var(--col-gap);
   column-rule: 0.3pt solid var(--colour-rule);
   column-fill: auto;
@@ -1059,20 +1060,20 @@ body {
 .chapter-body__intro-para {
   column-span: all;
   font-family: var(--font-text);
-  font-size: 13pt;
-  line-height: 18pt;
+  font-size: 14pt;
+  line-height: 19pt;
   text-align: left;
-  margin: 0 0 9mm 0;
-  max-width: 132mm;
+  margin: 0 0 8mm 0;
+  max-width: 150mm;
 }
 
 .chapter-body__intro-para::first-letter {
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   float: left;
-  font-size: 62pt;
-  line-height: 0.9;
-  padding: 5pt 7pt 0 0;
+  font-size: 70pt;
+  line-height: 0.92;
+  padding: 6pt 8pt 0 0;
   color: var(--colour-marine);
 }
 
@@ -1081,13 +1082,13 @@ body {
 /* indented (typographic convention).                                         */
 .chapter-body__cols p {
   margin: 0;
-  font-size: 9.25pt;
-  line-height: 12.75pt;
-  text-indent: 3.4mm;
+  font-size: 9.75pt;
+  line-height: 13.5pt;
+  text-indent: 4mm;
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
-  hyphenate-limit-chars: 7 3 3;
+  hyphenate-limit-chars: 8 4 3;
   hyphenate-limit-lines: 2;
   orphans: 3;
   widows: 3;
@@ -1216,8 +1217,8 @@ body {
 .chapter-body__figure figcaption {
   font-family: var(--font-furniture);
   font-style: normal;
-  font-size: 6.9pt;
-  line-height: 9.4pt;
+  font-size: 7.4pt;
+  line-height: 10pt;
   color: var(--colour-soft);
   margin-top: 3pt;
   padding-top: 2.4pt;
@@ -1237,7 +1238,7 @@ body {
 
 .chapter-body__figure--wide img {
   width: 100%;
-  height: 60mm;          /* landscape, 3:2 on the column measure */
+  height: 62mm;          /* landscape, 3:2 on the 91.5mm column */
   object-fit: cover;
   display: block;
 }
@@ -1251,7 +1252,7 @@ body {
 
 .chapter-body__figure--feature img {
   width: 100%;
-  height: 96mm;          /* portrait, 3:4 on the column measure */
+  height: 112mm;         /* portrait, 4:5 on the 91.5mm column */
   object-fit: cover;
   display: block;
 }
@@ -1266,7 +1267,7 @@ body {
 
 .chapter-body__figure--half img {
   width: 100%;
-  height: 132mm;
+  height: 150mm;
   object-fit: cover;
   display: block;
 }
@@ -1407,8 +1408,8 @@ body {
 
 .guest-opinion {
   /* Flows continuously after the chapter body — no recto break. */
-  margin-top: 18mm;
-  padding-top: 10mm;
+  margin-top: 10mm;
+  padding-top: 6mm;
   border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running "Guest opinion";
 }
@@ -1490,8 +1491,8 @@ body {
    =========================================================== */
 
 .case-section {
-  margin-top: 18mm;
-  padding-top: 10mm;
+  margin-top: 10mm;
+  padding-top: 6mm;
   border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running "Case study";
 }
@@ -2032,8 +2033,8 @@ body {
    =========================================================== */
 
 .data-spread {
-  margin-top: 18mm;
-  padding-top: 10mm;
+  margin-top: 10mm;
+  padding-top: 6mm;
   border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running attr(data-chapter);
 }
@@ -2101,13 +2102,24 @@ body {
   line-height: 17pt;
 }
 
+/* Tables break across pages rather than jumping whole. A 20-row table that
+   will not split leaves most of the page it came from blank, which was the
+   single biggest source of trapped space in the block. */
 .data-spread__table {
   width: 100%;
   border-collapse: collapse;
   margin: 8pt 0 12pt 0;
-  break-inside: avoid;
+  break-inside: auto;
   font-size: 10pt;
   line-height: 14pt;
+}
+
+.data-spread__table thead {
+  display: table-header-group;   /* repeat the head on each page */
+}
+
+.data-spread__table tbody tr {
+  break-inside: avoid;           /* rows stay whole, tables do not */
 }
 
 .data-spread__table thead th {
@@ -2165,8 +2177,17 @@ body {
    space Chrome resolved the conflict by stranding the figure head alone at
    the page foot. The h2 + block pairing keeps its own rule above. */
 .data-spread__block {
-  page-break-inside: avoid;
+  break-inside: auto;
+}
+
+/* A chart cannot split, so it keeps its own guard. */
+.data-spread__chart {
   break-inside: avoid;
+}
+
+.data-spread__caption--below + .data-spread__source,
+.data-spread__source {
+  break-before: avoid;
 }
 
 .data-spread__source {
@@ -2185,8 +2206,10 @@ body {
   margin: 8pt 0 12pt 0;
   font-size: 10pt;
   line-height: 14pt;
-  break-inside: avoid;
+  break-inside: auto;
 }
+
+.data-spread__kv tr { break-inside: avoid; }
 
 .data-spread__kv tr {
   border-bottom: 0.5pt solid var(--colour-rule);

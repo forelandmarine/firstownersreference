@@ -114,26 +114,11 @@ export function ChapterOpener({
         <div className="chapter-opener__title-block">
           <h2 className="chapter-opener__title">{section.title}</h2>
           <p className="chapter-opener__standfirst">{section.standfirst}</p>
-          <div className="chapter-opener__meta">
-            <div className="chapter-opener__meta-item">
-              <p className="chapter-opener__meta-label">Reading time</p>
-              <p className="chapter-opener__meta-value">{readingTime ?? "—"}</p>
-            </div>
-            {section.contributor !== "To be confirmed" && (
-              <div className="chapter-opener__meta-item">
-                <p className="chapter-opener__meta-label">Contributor</p>
-                <p className="chapter-opener__meta-value">
-                  {section.contributor}
-                </p>
-              </div>
-            )}
-            <div className="chapter-opener__meta-item">
-              <p className="chapter-opener__meta-label">Coordinates</p>
-              <p className="chapter-opener__meta-value">
-                {section.coordinates}
-              </p>
-            </div>
-          </div>
+          {/* The rule-plus-labels block that used to sit here (reading time,
+              contributor, coordinates) is removed. Reading time is a web
+              device with no meaning on paper, and three of the nine
+              coordinate lines did not resolve to the photograph above
+              them. The title and standfirst carry the opener alone. */}
         </div>
       </div>
     </section>

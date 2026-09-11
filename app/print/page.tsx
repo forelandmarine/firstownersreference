@@ -815,10 +815,13 @@ function ChapterBlock({
 
   // Identify positions to insert supporting images. Place after every 4th
   // string paragraph in the rest flow.
-  const supList = printImages.supporting?.[section.slug] ?? [];
-  /* The essay consumes the front of the pool; the case and the guest Q&A
-     draw from the back so no picture appears twice in one chapter. */
-  const caseExtras = supList.slice(-6);
+  const supPool = printImages.supporting?.[section.slug] ?? [];
+  /* Eight pictures per chapter, not twenty-two. At twenty-two the cadence
+     cut the running text into fragments two or three lines deep and the
+     essay became unreadable. Five carry the essay, three the case and the
+     guest Q&A, and they do not overlap. */
+  const supList = supPool.slice(0, 5);
+  const caseExtras = supPool.slice(5);
   const tallImage = printImages.tall?.[section.slug];
   const caseImage = printImages.cases?.[section.slug];
 
@@ -883,10 +886,12 @@ function ChapterBlock({
               /* Full-page plates at the quarter and three-quarter points.
                  They render here as placeholders and are replaced at merge
                  time by the standalone print. */
-              const plateAt = [
-                Math.round(paraCount * 0.28),
-                Math.round(paraCount * 0.72),
-              ];
+              /* No mid-essay plates. Splitting the essay into separate
+                 multicol blocks gave every segment its own ragged tail:
+                 three part-empty pages per chapter, column two blank. The
+                 plates now sit at section boundaries instead, where the
+                 break is natural and costs nothing. */
+              const plateAt: number[] = [];
               for (let i = 0; i < restParas.length; i++) {
                 const para = restParas[i];
                 if (typeof para === "string") {
@@ -1007,6 +1012,9 @@ function ChapterBlock({
             })()}
         </section>
       )}
+
+      {/* Plate one: the breath between the argument and the evidence. */}
+      <PlatePage slug={section.slug} index={0} />
 
       {/* Guest opinions */}
       {guestOpinions.filter((g) => g.questions.length > 0).map((guestOpinion, gi) => (
@@ -1220,6 +1228,9 @@ function ChapterBlock({
           })()}
         </section>
       )}
+
+      {/* Plate two: between the outside voice and the transaction. */}
+      <PlatePage slug={section.slug} index={1} />
 
       {/* Case study */}
       {caseStudy && (

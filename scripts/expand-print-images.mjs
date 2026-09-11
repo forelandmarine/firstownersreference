@@ -86,6 +86,13 @@ console.log(
   `${pool.length} unclaimed images in the library; target ${TARGET} per chapter`,
 );
 
+/* Trim first. The script used to only ever add, so lowering the target did
+   nothing. Keeping the head of each list preserves whatever curation order
+   is already there. */
+for (const ch of CHAPTERS) {
+  if (existing[ch].length > TARGET) existing[ch] = existing[ch].slice(0, TARGET);
+}
+
 /* Deal round-robin so adjacent chapters do not get visually adjacent stock. */
 let pi = 0;
 const added = [];
