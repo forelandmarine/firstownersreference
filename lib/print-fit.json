@@ -1,0 +1,20 @@
+{
+ "fit": {
+  "01-reality-of-ownership:data": 90,
+  "01-reality-of-ownership:case": 90,
+  "02-reading-the-market:data": 90,
+  "02-reading-the-market:case": 90,
+  "03-how-the-industry-works:data": 90,
+  "03-how-the-industry-works:case": 90,
+  "04-acquisition-process:data": 90,
+  "04-acquisition-process:case": 90,
+  "05-new-build-versus-brokerage:data": 90,
+  "06-refit:data": 90,
+  "06-refit:case": 90,
+  "07-operations:data": 90,
+  "07-operations:case": 90,
+  "08-motor-versus-sail:data": 90,
+  "08-motor-versus-sail:case": 90,
+  "09-decision-framework:data": 90
+ }
+}

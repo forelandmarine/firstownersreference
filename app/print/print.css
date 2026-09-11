@@ -1385,6 +1385,42 @@ body {
 /* Closes a section. A short final page then reads as a deliberate ending
    rather than as an abandoned page, which is how the reference titles
    handle the foot of an article. */
+/* Vertical justification. The build measures the unused space on a
+   section's last page and sets --fit-gain; it is spent here on paragraph
+   spacing and on the section's picture, which grows to take up the slack.
+   This is the copy-fit a typesetter does by hand, and it is why the
+   reference titles have no ragged page feet. Capped so a stretched page
+   still reads as the same book: 2.2mm of extra space between paragraphs
+   and 60mm of extra picture height are the limits. */
+.data-spread,
+.case-section,
+.guest-opinion,
+.chapter-body {
+  --fit-gain: 0mm;
+  --fit-para: min(2.2mm, calc(var(--fit-gain) / 14));
+  --fit-pic: min(60mm, calc(var(--fit-gain) * 0.55));
+}
+
+.case-section__body p,
+.guest-opinion__a p {
+  margin-bottom: var(--fit-para);
+}
+
+.data-spread__flow p,
+.data-spread__flow .data-spread__caption {
+  margin-bottom: calc(11pt + var(--fit-para));
+}
+
+.case-section__figure img,
+.guest-opinion .chapter-body__figure--half img,
+.case-section .chapter-body__figure--half img {
+  height: calc(150mm + var(--fit-pic));
+}
+
+.data-spread__wide {
+  margin-bottom: calc(11mm + var(--fit-para));
+}
+
 .section-end-mark {
   font-size: 6pt;
   line-height: 1;
@@ -2737,6 +2773,17 @@ body {
   font-size: 2pt;
   color: transparent;
   z-index: 0;
+}
+
+/* An absolutely positioned marker needs a positioned ancestor or it escapes
+   to the page box, which is why all eighteen section markers landed on the
+   frontispiece. height:0 with overflow:hidden is not the fix either: Chrome
+   then drops the text and pdftotext finds nothing. The sections are given
+   position: relative instead. */
+.data-spread,
+.case-section,
+.guest-opinion {
+  position: relative;
 }
 
 /* Flow-mode placeholders. The real full-bleed pages are printed as

@@ -10,12 +10,20 @@ import { renderChartForPrint } from "@/components/print/print-chart";
 import { getContributorProfile } from "@/lib/contributors";
 import { buildPrintIndex } from "@/lib/print-index";
 import printFolios from "@/lib/print-folios.json";
+import printFit from "@/lib/print-fit.json";
 import {
   FrontispiecePage,
   ClosingImagePage,
   ChapterOpener,
   PlatePage,
 } from "@/components/print/full-bleed-pages";
+
+/* Per-section fit gains in millimetres, measured by the build from the
+   unused space on each section's last page and absorbed here as paragraph
+   spacing and picture height. Regenerated on every build. */
+const fitMap = (printFit as { fit: Record<string, number> }).fit ?? {};
+const fitStyle = (id: string) =>
+  fitMap[id] ? ({ ["--fit-gain" as string]: `${fitMap[id]}mm` } as React.CSSProperties) : undefined;
 
 const folios = printFolios as {
   chapters: Record<string, number>;
@@ -1075,6 +1083,7 @@ function ChapterBlock({
         <section
           key={gi}
           className="guest-opinion"
+          style={fitStyle(`${section.slug}:guest`)}
           data-chapter={chapterRunning}
         >
           {(() => {
@@ -1156,7 +1165,12 @@ function ChapterBlock({
 
       {/* Data spread */}
       {dataSpread && (
-        <section className="data-spread" data-chapter={chapterRunning}>
+        <section
+          className="data-spread"
+          data-chapter={chapterRunning}
+          style={fitStyle(`${section.slug}:data`)}
+        >
+          <span className="pdf-marker">{`[[SEC-${section.slug}:data]]`}</span>
           <header className="data-spread__opener">
             <SectionChip
               glyph="\u2590\u2588"
@@ -1338,7 +1352,12 @@ function ChapterBlock({
 
       {/* Case study */}
       {caseStudy && (
-        <section className="case-section" data-chapter={chapterRunning}>
+        <section
+          className="case-section"
+          data-chapter={chapterRunning}
+          style={fitStyle(`${section.slug}:case`)}
+        >
+          <span className="pdf-marker">{`[[SEC-${section.slug}:case]]`}</span>
           <header className="case-section__opener">
             <SectionChip
               glyph="\u00a7"

@@ -365,6 +365,7 @@ async function generatePdf() {
 /* === Two-pass page map ===================================== */
 
 const FOLIOS_FILE = path.join(ROOT, "lib/print-folios.json");
+const FIT_FILE = path.join(ROOT, "lib/print-fit.json");
 
 // Parse the printed PDF's text layer for the invisible [[CH..]] and
 // [[REF-..]] markers so the build knows which sheet each chapter and
@@ -374,7 +375,7 @@ function parsePageMap(pdfPath) {
     maxBuffer: 1024 * 1024 * 256,
   }).toString();
   const pages = txt.split("\f");
-  const map = { chapters: {}, refs: {}, singles: {}, plates: {}, total: pages.length };
+  const map = { chapters: {}, refs: {}, singles: {}, plates: {}, sections: {}, total: pages.length };
   if (pages[pages.length - 1].trim() === "") map.total -= 1;
   pages.forEach((t, i) => {
     const pdfPage = i + 1;
@@ -392,12 +393,59 @@ function parsePageMap(pdfPath) {
     }
     /* Full-page plates, two per chapter, same standalone-and-merge path
        as the openers. */
+    /* Section start markers, for the run-on pass. */
+    for (const m of t.matchAll(/\[\[SEC-([\w-]+:[a-z]+)\]\]/g)) {
+      if (!(m[1] in map.sections)) map.sections[m[1]] = pdfPage;
+    }
     for (const m of t.matchAll(/\[\[PLATE-([\w-]+)-(\d)\]\]/g)) {
       const k = `plate-${m[1]}-${m[2]}`;
       if (!(k in map.plates)) map.plates[k] = pdfPage;
     }
   });
+  map.pageTexts = pages;
   return map;
+}
+
+/* Fit pass. Each section starts on a fresh page, so the page before it is
+   the previous section's tail. Measure how much of that page is unused and
+   hand the tail's own section a gain, in millimetres, to absorb: part goes
+   into paragraph spacing (vertical justification, which is what a
+   typesetter does) and part into the section's picture, which grows to
+   take up the slack. Damped at 55 per cent and capped, so the loop settles
+   instead of oscillating. */
+function computeFit(map, pages, previous) {
+  const FULL_WORDS = 550;
+  const PAGE_MM = 254;             // height of the type area
+  const DAMP = 0.55;
+  const CAP = 90;                  // never ask one section to grow by more
+  const imagePages = new Set([
+    ...Object.values(map.chapters),
+    ...Object.values(map.plates ?? {}),
+    ...Object.values(map.singles ?? {}),
+  ]);
+
+  /* Section starts, in page order, so each section's tail is the page
+     before the NEXT section (or before the next chapter opener). */
+  const starts = Object.entries(map.sections ?? {}).sort((a, b) => a[1] - b[1]);
+  const fit = {};
+  for (let i = 0; i < starts.length; i++) {
+    const [id, pg] = starts[i];
+    /* Walk back past the plates. A plate sits immediately before each
+       section start, so the raw previous page is nearly always a picture
+       and every section was being skipped. The tail is the last page that
+       actually carries type. */
+    let tailPage = (starts[i + 1]?.[1] ?? map.total + 1) - 1;
+    while (tailPage > pg && imagePages.has(tailPage)) tailPage -= 1;
+    if (tailPage <= pg) continue;
+    const words = (pages[tailPage - 1] ?? "").split(/\s+/).filter(Boolean).length;
+    const fillRatio = Math.min(1, words / FULL_WORDS);
+    const unusedMm = (1 - fillRatio) * PAGE_MM;
+    if (unusedMm < 25) continue;   // a small tail is a designed pause
+    const prior = previous?.[id] ?? 0;
+    const gain = Math.min(CAP, Math.round(prior + unusedMm * DAMP));
+    if (gain > 0) fit[id] = gain;
+  }
+  return fit;
 }
 
 // The flow document IS the book block (the cover is prepended at merge
@@ -855,7 +903,7 @@ async function main() {
   // land, which feeds real contents folios and verso/recto parity spacers
   // back into lib/print-folios.json; subsequent passes verify stability.
   let pageCount = -1;
-  for (let pass = 1; pass <= 4; pass++) {
+  for (let pass = 1; pass <= 6; pass++) {
     if (pass === 1 && process.env.SKIP_BUILD) {
       log("Skipping production build (SKIP_BUILD set)");
     } else {
@@ -893,13 +941,38 @@ async function main() {
 
     const map = parsePageMap(PDF_OUT);
     pageCount = map.total;
+
+    /* Fit pass: hand each short-tailed section a gain to absorb. */
+    const currentFit = (() => {
+      try {
+        return JSON.parse(fs.readFileSync(FIT_FILE, "utf8")).fit ?? {};
+      } catch {
+        return {};
+      }
+    })();
+    const desiredFit = computeFit(map, map.pageTexts ?? [], currentFit);
+    const fitChanged =
+      JSON.stringify(currentFit) !== JSON.stringify(desiredFit);
+    if (fitChanged) {
+      fs.writeFileSync(
+        FIT_FILE,
+        JSON.stringify({ fit: desiredFit }, null, 1) + "\n"
+      );
+      const gains = Object.values(desiredFit);
+      log(
+        `  Fit: ${gains.length} sections stretched, mean gain ${
+          gains.length ? Math.round(gains.reduce((a, b) => a + b, 0) / gains.length) : 0
+        }mm`
+      );
+    }
+
     const current = readFoliosFile();
     const desired = computeFolios(map, current.spacers ?? []);
-    if (foliosEqual(current, desired)) {
+    if (foliosEqual(current, desired) && !fitChanged) {
       log(`  Page map stable at pass ${pass}: ${map.total} pages`);
       break;
     }
-    if (pass === 4) {
+    if (pass === 6) {
       log("! Page map did not stabilise after 4 passes; keeping last print");
       break;
     }
