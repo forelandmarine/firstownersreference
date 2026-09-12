@@ -54,28 +54,6 @@ function chapterMastersCss() {
   /* Chrome does not cascade margin boxes from @page :left into a named
      master, so the footer has to be repeated here or it vanishes on every
      chapter page. */
-  @bottom-left {
-    content: "firstownersreference.com";
-    font-family: "DM Sans", "Helvetica Neue", sans-serif;
-    font-size: 6.5pt;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #7a756d;
-    padding-bottom: 12mm;
-    background: #f5f2ec;
-  }
-}
-@page ch${nn}:right {
-  @bottom-right {
-    content: "1st Edition \\00b7\\0020 2026";
-    font-family: "DM Sans", "Helvetica Neue", sans-serif;
-    font-size: 6.5pt;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #7a756d;
-    padding-bottom: 12mm;
-    background: #f5f2ec;
-  }
 }
 .chapter-scope[data-ch="${nn}"] { page: ch${nn}; }`;
     })
@@ -207,7 +185,7 @@ export default function PrintEdition() {
             Limited. All rights reserved. No advertising, ever.
           </p>
           <p>
-            Set in Newsreader by Production Type, DM Sans and DM Mono by
+            Set in Newsreader by Production Type and DM Sans by
             Indian Type Foundry. Printed on Munken Pure 120gsm uncoated
             text stock with GF Smith Colorplan cover boards. Smyth-sewn,
             casebound. Trim 230 by 300 mm. Five hundred copies, hand
@@ -661,7 +639,7 @@ export default function PrintEdition() {
         <p>
           Body and display type set in <strong>Newsreader</strong> by
           Production Type. Sans and metadata in <strong>DM Sans</strong>{" "}
-          and <strong>DM Mono</strong> by Indian Type Foundry. All
+          by Indian Type Foundry. All
           families are open source and self-hosted on the web edition.
         </p>
 
@@ -858,28 +836,6 @@ function SectionCloser({
   );
 }
 
-/* Section marker chip. Glyph choices read at 9mm: a paragraph mark for the
-   essay, a bar-chart block for data, a section mark for the case, a quote
-   mark for the guest voice. */
-function SectionChip({
-  glyph,
-  title,
-  sub,
-}: {
-  glyph: string;
-  title: string;
-  sub: string;
-}) {
-  return (
-    <div className="section-chip">
-      <div className="section-chip__mark">{glyph}</div>
-      <p className="section-chip__label">
-        {title}
-        <span>{sub}</span>
-      </p>
-    </div>
-  );
-}
 
 function ChapterBlock({
   section,
@@ -1143,11 +1099,6 @@ function ChapterBlock({
                 );
                 cursor = at;
               });
-              out.push(
-                <p key="essay-end" className="section-end-mark">
-                  &#9632;
-                </p>,
-              );
               segments.push(
                 <div className="chapter-body__cols" key="seg-last">
                   {breaks.length === 0 &&
@@ -1274,11 +1225,6 @@ function ChapterBlock({
         >
           <span className="pdf-marker">{`[[SEC-${section.slug}:data]]`}</span>
           <header className="data-spread__opener">
-            <SectionChip
-              glyph="\u2590\u2588"
-              title="The evidence"
-              sub={`Chapter ${chNum} data`}
-            />
             <h2 className="data-spread__title">{dataSpread.title}</h2>
             <p className="data-spread__standfirst">{dataSpread.standfirst}</p>
           </header>
@@ -1448,11 +1394,6 @@ function ChapterBlock({
             });
             flush("tail");
             nodes.push(
-              <p key="data-end" className="section-end-mark">
-                &#9632;
-              </p>,
-            );
-            nodes.push(
               <SectionCloser
                 key="data-closer"
                 slug={section.slug}
@@ -1476,11 +1417,6 @@ function ChapterBlock({
         >
           <span className="pdf-marker">{`[[SEC-${section.slug}:case]]`}</span>
           <header className="case-section__opener">
-            <SectionChip
-              glyph="\u00a7"
-              title="One transaction"
-              sub={`Chapter ${chNum} case study`}
-            />
             <h2 className="case-section__title">{caseStudy.title}</h2>
             <p className="case-section__standfirst">{caseStudy.standfirst}</p>
             <div className="case-section__meta">

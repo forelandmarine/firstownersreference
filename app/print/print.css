@@ -4,9 +4,11 @@
   the gutter. Three columns was tried on 10 September and reverted: at
   59mm the measure was too tight to read and the picture cadence chopped
   the text into unreadable fragments. Newsreader serif for display and body; DM Sans is the
-  furniture face (captions, panel copy, table heads, chart labels,
-  checklists); DM Mono is retained only for the small letterspaced section
-  markers and folios, which are the publication's signature.
+  furniture face: captions, panel copy, table heads, chart labels,
+  checklists, running heads and folios. DM Mono was retired on 12 September
+  in a subtractive pass: a text page was carrying three typefaces, nine
+  sizes, four colours and fifteen devices, against five devices and one
+  typeface on the comparable page of The Superyacht Report 218.
 
   Body 9.75/13.5pt on a 92mm measure, roughly 60 characters. Nothing spans
   the columns except the opening drop-cap paragraph.
@@ -34,7 +36,7 @@
   --col-measure: 91.5mm;
 
   --font-furniture: "DM Sans", "Helvetica Neue", Arial, sans-serif;
-  --font-marker: "DM Mono", "SF Mono", monospace;
+  --font-marker: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   --font-text: "Newsreader", Georgia, serif;
 }
 
@@ -56,16 +58,6 @@
 @page :left {
   margin-left: 19mm;
   margin-right: 27mm;
-  @bottom-left {
-    content: "firstownersreference.com";
-    font-family: "DM Sans", "Helvetica Neue", sans-serif;
-    font-size: 6.5pt;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #7a756d;
-    padding-bottom: 12mm;
-    background: #f5f2ec;
-  }
   background: #f5f2ec;
   @top-left {
     content: "";
@@ -103,16 +95,6 @@
 @page :right {
   margin-left: 27mm;
   margin-right: 19mm;
-  @bottom-right {
-    content: "1st Edition \00b7\0020 2026";
-    font-family: "DM Sans", "Helvetica Neue", sans-serif;
-    font-size: 6.5pt;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #7a756d;
-    padding-bottom: 12mm;
-    background: #f5f2ec;
-  }
   background: #f5f2ec;
   @top-right {
     content: "The First Owner\2019s Reference \00b7\0020 1st Edition";
@@ -276,7 +258,7 @@ body {
 }
 
 .cover-page__edition {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -319,7 +301,7 @@ body {
 }
 
 .cover-page__publisher {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8.5pt;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -378,7 +360,7 @@ body {
 }
 
 .title-page__edition {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8.5pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -415,7 +397,7 @@ body {
 }
 
 .title-page__frame-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7.5pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -442,7 +424,7 @@ body {
 }
 
 .title-page__foot-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -464,7 +446,7 @@ body {
 }
 
 .title-page__sections-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -490,7 +472,7 @@ body {
 }
 
 .title-page__sections-num {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 10pt;
   color: var(--colour-marine);
   font-variant-numeric: tabular-nums;
@@ -515,7 +497,7 @@ body {
 }
 
 .imprint__label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -564,7 +546,7 @@ body {
 }
 
 .imprint__masthead-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7pt;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -597,7 +579,7 @@ body {
 }
 
 .imprint__note-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7pt;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -627,7 +609,7 @@ body {
 }
 
 .editors-letter__label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -685,7 +667,7 @@ body {
 }
 
 .editors-letter__keys-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -711,7 +693,7 @@ body {
 }
 
 .editors-letter__keys-list li span {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 16pt;
   color: var(--colour-marine);
   font-variant-numeric: tabular-nums;
@@ -740,7 +722,7 @@ body {
 }
 
 .contents-page__label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -774,7 +756,7 @@ body {
 }
 
 .contents-list__num {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 10pt;
   letter-spacing: 0.06em;
   color: var(--colour-marine);
@@ -827,7 +809,7 @@ body {
 }
 
 .contributors-page__label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -866,7 +848,7 @@ body {
 }
 
 .contributor-entry__chapter {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7.5pt;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -971,7 +953,7 @@ body {
 }
 
 .chapter-opener__num-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1035,7 +1017,7 @@ body {
 }
 
 .chapter-opener__meta-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1182,7 +1164,7 @@ body {
 }
 
 .chapter-body__pull footer {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-size: 8pt;
   letter-spacing: 0.15em;
@@ -1199,22 +1181,19 @@ body {
   line-height: 11.2pt;
   color: var(--colour-soft);
   margin: 14pt 0;
-  padding: 4mm;
-  background: rgba(15, 59, 92, 0.08);
-  border-left: 1.5pt solid var(--colour-marine);
+  padding: 0 0 0 5mm;
+  border-left: 0.75pt solid var(--colour-marine);
   break-inside: avoid;
 }
 
 .chapter-body__editors-note-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-size: 7pt;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--colour-stone);
-  margin: 0 0 2mm 0;
-  padding-bottom: 1.4mm;
-  border-bottom: 0.4pt solid var(--colour-rule);
+  display: none;
 }
 
 .chapter-body__editors-note-text {
@@ -1434,29 +1413,18 @@ body {
   bottom: 22mm;
 }
 
-/* ===========================================================
-   SECTION MARKER CHIP
-   A filled marine square carrying a white glyph, plus a two-line
-   label alongside. Taken from The Superyacht Report 218, where it is
-   the device that lets a reader place any page at a glance. It opens
-   every editorial section: chapter body, data, case, guest opinion.
-   =========================================================== */
+/* Full-measure picture band in a section opener or the chapter close.
 
-/* Closes a section. A short final page then reads as a deliberate ending
-   rather than as an abandoned page, which is how the reference titles
-   handle the foot of an article. */
-/* Section closer. Sized by the build to the hole it has to fill. Like the
-   band above it is clipped to the page area and does not bleed; it closes
-   the whitespace, which is its job, and bleed comes from plates. */
-/* Full-measure picture band inside a section opener or the chapter close.
+   It does NOT bleed. Chrome clips content to the page area in paged media,
+   so negative margins on an in-flow element buy nothing; that is why every
+   full-bleed page in this book is printed standalone and merged. The
+   negative margins are kept because they widen the band to the full
+   measure, not because they reach the trim.
 
-   NOTE, and this cost an hour: it does NOT bleed. Chrome clips content to
-   the page area in paged media, so negative margins on an in-flow element
-   buy nothing. That is precisely why this pipeline prints every full-bleed
-   page standalone from /print-opener and merges it with pypdf. The only
-   way to add a bleeding page is to add a plate. The negative margins below
-   are kept because they widen the band to the full measure, not because
-   they reach the trim. */
+   Restored 12 September: the subtractive pass removed this rule by
+   accident, with a regex written to delete the end-mark rule above it. The
+   band images then had no height constraint, rendered at natural size, and
+   put 45 pages on the block. */
 .bleed-band {
   margin: 9mm -30mm 10mm -30mm;
   height: var(--band-h, 96mm);
@@ -1491,6 +1459,21 @@ body {
 
 /* Heading plus a short opening paragraph, held in one box. break-inside is
    the only break control Chrome applies reliably inside a multicol. */
+/* Slack at the top: measured, attempted, and scaled back.
+
+   The reference set does put more of its white paper at the top than we do,
+   and holds the foot: TSR 218 starts its ink at 7.6% of the page with a
+   spread of 5.5 and ends at 91.1 ±3.7, where this book was 5.8 ±1.5 at the
+   top and 92.3 ±4.1 at the foot. The difference in the MEAN, though, is
+   under two per cent of the page. The variance comes from a handful of
+   feature openers, not from every page.
+
+   Implemented first as 62mm of padding on the head of every section. That
+   was a misreading of one page: it added 52 pages to the block and took the
+   foot from 92.3 ±4.1 to 71.3 ±21.5. Reverted. If revisited it belongs on
+   the opening page of a set piece only, at nearer 25mm, and it should be
+   measured the same way. */
+
 /* Deliberately NOT implemented: forcing a measured stranded heading onto
    the next column with break-before: column. It was built and reverted.
    Pushing one heading over shortens that column, shifts everything after
@@ -1526,46 +1509,6 @@ body {
   page-break-before: avoid;
 }
 
-.section-chip {
-  display: flex;
-  align-items: flex-start;
-  gap: 3mm;
-  margin: 0 0 11mm 0;
-  page-break-after: avoid;
-  break-after: avoid;
-}
-
-.section-chip__mark {
-  flex: none;
-  width: 9mm;
-  height: 9mm;
-  background: var(--colour-marine);
-  color: #f5f2ec;
-  font-family: var(--font-text);
-  font-size: 12pt;
-  line-height: 9mm;
-  text-align: center;
-  font-weight: 400;
-}
-
-.section-chip__label {
-  font-family: var(--font-furniture);
-  font-weight: 700;
-  font-size: 7.4pt;
-  line-height: 9.2pt;
-  letter-spacing: 0.02em;
-  color: var(--colour-marine);
-  margin: 0;
-  padding-top: 0.6mm;
-  max-width: 44mm;
-}
-
-.section-chip__label span {
-  display: block;
-  font-weight: 400;
-  color: var(--colour-stone);
-}
-
 /* ===========================================================
    GUEST OPINION (interview format, set as feature article)
    =========================================================== */
@@ -1575,7 +1518,6 @@ body {
      as bleed: the running head said one thing and the content another. */
   break-before: page;
   margin-top: 0;
-  padding-top: 0;
   border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running "Guest opinion";
 }
@@ -1583,7 +1525,7 @@ body {
 .guest-opinion__label {
   page-break-after: avoid;
   break-after: avoid;
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1659,7 +1601,6 @@ body {
 .case-section {
   break-before: page;
   margin-top: 0;
-  padding-top: 0;
   border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running "Case study";
 }
@@ -1732,7 +1673,7 @@ body {
 }
 
 .chapter-close__method-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7.5pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1772,7 +1713,7 @@ body {
 }
 
 .chapter-close__end-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1786,7 +1727,7 @@ body {
 }
 
 .chapter-close__glance-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1844,7 +1785,7 @@ body {
 
 .chapter-close__quote footer {
   margin-top: 10mm;
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1885,7 +1826,7 @@ body {
 }
 
 .chapter-close__label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1941,7 +1882,7 @@ body {
 .case-section__label {
   page-break-after: avoid;
   break-after: avoid;
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1990,7 +1931,7 @@ body {
 }
 
 .case-section__meta-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -2135,29 +2076,20 @@ body {
 }
 
 .data-spread p.data-spread__fig-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7pt;
   line-height: 10pt;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--colour-stone);
   margin: 4mm 0 3.5mm 0;
-  padding-bottom: 2mm;
+  padding-bottom: 0;
   max-width: none;
-  border-bottom: 0.4pt solid var(--colour-rule);
   page-break-after: avoid;
   break-after: avoid;
 }
 
-.data-spread p.data-spread__fig-label::before {
-  content: "";
-  display: inline-block;
-  width: 2.6mm;
-  height: 2.6mm;
-  background: var(--colour-marine);
-  margin-right: 2.5mm;
-  vertical-align: -0.3mm;
-}
+
 
 /* Caption now sits below its data, not above it: head, evidence, what the
    evidence shows, then the source. */
@@ -2206,7 +2138,7 @@ body {
 }
 
 .case-section__close-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -2228,7 +2160,7 @@ body {
 
 .case-section__close-quote footer {
   margin-top: 6mm;
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -2252,7 +2184,7 @@ body {
 }
 
 .case-section__method-label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7.5pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -2275,7 +2207,6 @@ body {
 .data-spread {
   break-before: page;
   margin-top: 0;
-  padding-top: 0;
   border-top: 1.25pt solid var(--colour-marine);
   string-set: chapter-running attr(data-chapter);
 }
@@ -2290,7 +2221,7 @@ body {
 .data-spread__label {
   page-break-after: avoid;
   break-after: avoid;
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 9pt;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -2513,7 +2444,7 @@ body {
 }
 
 .data-spread__chart figure > header p:first-child {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 7pt;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -2575,7 +2506,7 @@ body {
 }
 
 .data-spread__sources h3 {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -2614,7 +2545,7 @@ body {
 }
 
 .glossary-section__label {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -2692,7 +2623,7 @@ body {
 }
 
 .index-list__letter {
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -2707,7 +2638,7 @@ body {
 .index-list__entry-folio {
   color: var(--colour-stone);
   font-variant-numeric: tabular-nums;
-  font-family: "DM Mono", "SF Mono", monospace;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 8pt;
 }
 
