@@ -8,6 +8,7 @@
 */
 import { sections } from "@/lib/sections";
 import { printImages } from "@/lib/print-images";
+import { getLeadEssay } from "@/lib/lead-essays";
 
 export const COVER_PATH = `/print-images/print/${printImages.cover.filename}`;
 export const FRONTISPIECE_PATH = `/print-images/print/${printImages.frontispiece.filename}`;
@@ -60,11 +61,30 @@ export function FrontispiecePage() {
    the lower outer corner. Two per chapter, placed at the quarter and three-
    quarter points of the essay. This is the register that moves the book from
    text-led to picture-led; the column figures alone cannot do it. */
+/* Plates at these indices carry a pull quote reversed over the picture.
+   This is the picture-led register: the page is a photograph and it also
+   carries type, which is how Portfolio by Savills reaches 33 per cent
+   picture-led pages and Forbes 13. A plate that is only a photograph
+   counts as a full-page image instead. */
+const QUOTE_PLATES = [1, 4];
+
+function platePullQuote(slug: string, index: number) {
+  const paras = getLeadEssay(slug)?.paragraphs ?? [];
+  const quotes = paras.filter(
+    (p): p is { type: "blockquote"; text: string; attribution?: string } =>
+      typeof p !== "string" && p.type === "blockquote",
+  );
+  if (!quotes.length) return null;
+  const nth = QUOTE_PLATES.indexOf(index);
+  return quotes[nth % quotes.length] ?? quotes[0];
+}
+
 export function PlatePage({ slug, index }: { slug: string; index: number }) {
   const plate = printImages.plates?.[slug]?.[index];
   if (!plate) return null;
+  const quote = QUOTE_PLATES.includes(index) ? platePullQuote(slug, index) : null;
   return (
-    <section className="plate-page">
+    <section className={`plate-page${quote ? " plate-page--quote" : ""}`}>
       <span className="pdf-marker">{`[[PLATE-${slug}-${index}]]`}</span>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -72,7 +92,15 @@ export function PlatePage({ slug, index }: { slug: string; index: number }) {
         alt={plate.alt}
         className="plate-page__image"
       />
-      {plate.caption && (
+      {quote && (
+        <div className="plate-page__quote">
+          <blockquote>{quote.text}</blockquote>
+          <p className="plate-page__quote-attr">
+            {quote.attribution ?? "The First Owner\u2019s Reference"}
+          </p>
+        </div>
+      )}
+      {plate.caption && !quote && (
         <p className="plate-page__caption">{plate.caption}</p>
       )}
     </section>

@@ -1350,6 +1350,59 @@ body {
   display: block;
 }
 
+/* Picture-led plate: photograph above, pull quote below on a solid ground.
+
+   A gradient scrim was tried first and abandoned. The plates are dealt
+   automatically from the stock library, so the picture under the type is
+   unknown: reversed type landed on pale water and open sky and could not
+   be read. A paper band is legible over any photograph, and it is the
+   device The Superyacht Report uses for the same reason. */
+.plate-page--quote .plate-page__image {
+  height: 62%;
+}
+
+.plate-page__quote {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 62%;
+  background: var(--colour-paper);
+  padding: 16mm 26mm 0 26mm;
+  z-index: 2;
+}
+
+.plate-page__quote blockquote {
+  font-family: var(--font-text);
+  font-weight: 300;
+  font-size: 23pt;
+  line-height: 29pt;
+  color: var(--colour-marine);
+  margin: 0 0 8mm 0;
+  max-width: 150mm;
+  text-indent: 0;
+}
+
+.plate-page__quote-attr {
+  font-family: var(--font-furniture);
+  font-size: 7pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--colour-stone);
+  margin: 0;
+  padding-top: 4mm;
+  border-top: 0.4pt solid var(--colour-rule);
+  max-width: 96mm;
+}
+
+.print-standalone .plate-page--quote .plate-page__image {
+  height: 62%;
+}
+
+.print-standalone .plate-page__quote {
+  padding: 18mm 30mm 0 30mm;
+}
+
 .plate-page__caption {
   position: absolute;
   left: 0;
