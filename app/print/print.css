@@ -1072,7 +1072,11 @@ body {
   column-count: 2;
   column-gap: var(--col-gap);
   column-rule: 0.3pt solid var(--colour-rule);
-  column-fill: auto;
+  /* balance, not auto. With auto, Chrome fills column one to full height
+     before starting column two, so the last fragment of every section left
+     column two entirely empty. That was the single largest source of both
+     the empty-column and the short-page defects. */
+  column-fill: balance;
 }
 
 /* The only element permitted to span the columns. It sits at the top of the
@@ -1137,7 +1141,10 @@ body {
   color: var(--colour-marine);
   margin: 18pt 0 8pt 0;
   page-break-after: avoid;
-  break-after: avoid-page;
+  /* avoid, not avoid-page. avoid-page prevents a page break but not a
+     column break, so a heading with a single-line paragraph under it
+     stranded at the foot of column one. */
+  break-after: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
 }
@@ -1150,7 +1157,7 @@ body {
 .chapter-body__cols h2 + .chapter-body__pull,
 .chapter-body h2 + .chapter-body__pull {
   page-break-before: avoid;
-  break-before: avoid-page;
+  break-before: avoid;
 }
 
 .chapter-body__cols h2 + p,
@@ -1466,6 +1473,8 @@ body {
 }
 
 .section-closer {
+  break-before: avoid;
+  page-break-before: avoid;
   margin: 8mm -30mm -34mm -30mm;
   height: var(--closer-h, 0mm);
   overflow: hidden;
@@ -1496,7 +1505,7 @@ body {
   gap: 3mm;
   margin: 0 0 11mm 0;
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
 }
 
 .section-chip__mark {
@@ -1546,7 +1555,7 @@ body {
 
 .guest-opinion__label {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "DM Mono", "SF Mono", monospace;
   font-size: 9pt;
   letter-spacing: 0.2em;
@@ -1557,7 +1566,7 @@ body {
 
 .guest-opinion__title {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   font-size: 36pt;
@@ -1569,7 +1578,7 @@ body {
 
 .guest-opinion__intro {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
   font-size: 14pt;
@@ -1582,7 +1591,7 @@ body {
 .guest-opinion__body {
   column-count: 2;
   column-gap: 9mm;
-  column-fill: auto;
+  column-fill: balance;
 }
 
 .guest-opinion__qa {
@@ -1718,6 +1727,8 @@ body {
 }
 
 .chapter-close__section-title {
+  break-after: avoid;
+  page-break-after: avoid;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   font-size: 44pt;
@@ -1889,7 +1900,7 @@ body {
   page-break-inside: avoid;
   break-inside: avoid;
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
 }
 
 /* The first body paragraph after the case opener keeps with the opener so
@@ -1897,12 +1908,12 @@ body {
    body content. */
 .case-section__opener + .case-section__body {
   page-break-before: avoid;
-  break-before: avoid-page;
+  break-before: avoid;
 }
 
 .case-section__label {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "DM Mono", "SF Mono", monospace;
   font-size: 9pt;
   letter-spacing: 0.2em;
@@ -1923,7 +1934,7 @@ body {
 
 .case-section__standfirst {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
   font-size: 16pt;
@@ -1935,7 +1946,7 @@ body {
 
 .case-section__meta {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4mm 12mm;
@@ -2006,7 +2017,10 @@ body {
   color: var(--colour-marine);
   margin: 18pt 0 8pt 0;
   page-break-after: avoid;
-  break-after: avoid-page;
+  /* avoid, not avoid-page. avoid-page prevents a page break but not a
+     column break, so a heading with a single-line paragraph under it
+     stranded at the foot of column one. */
+  break-after: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
 }
@@ -2014,7 +2028,7 @@ body {
 /* The paragraph after a case-section h2 keeps with the heading. */
 .case-section__body h2 + p {
   page-break-before: avoid;
-  break-before: avoid-page;
+  break-before: avoid;
   orphans: 3;
   widows: 3;
 }
@@ -2023,7 +2037,7 @@ body {
 .data-spread h2 + p,
 .data-spread h2 + .data-spread__caption {
   page-break-before: avoid;
-  break-before: avoid-page;
+  break-before: avoid;
   orphans: 3;
   widows: 3;
 }
@@ -2105,7 +2119,7 @@ body {
   max-width: none;
   border-bottom: 0.4pt solid var(--colour-rule);
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
 }
 
 .data-spread p.data-spread__fig-label::before {
@@ -2123,14 +2137,14 @@ body {
 .data-spread p.data-spread__caption--below {
   margin: 4.5mm 0 0 0;
   page-break-before: avoid;
-  break-before: avoid-page;
+  break-before: avoid;
   page-break-after: auto;
   break-after: auto;
 }
 
 .data-spread__caption {
   page-break-before: avoid;
-  break-before: avoid-page;
+  break-before: avoid;
   orphans: 3;
   widows: 3;
 }
@@ -2243,12 +2257,12 @@ body {
   page-break-inside: avoid;
   break-inside: avoid;
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
 }
 
 .data-spread__label {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "DM Mono", "SF Mono", monospace;
   font-size: 9pt;
   letter-spacing: 0.2em;
@@ -2259,7 +2273,7 @@ body {
 
 .data-spread__title {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 300;
   font-size: 36pt;
@@ -2271,7 +2285,7 @@ body {
 
 .data-spread__standfirst {
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   font-family: "Newsreader", Georgia, serif;
   font-style: italic;
   font-size: 14pt;
@@ -2289,7 +2303,7 @@ body {
   color: var(--colour-marine);
   margin: 30pt 0 12pt 0;
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
   padding-top: 8pt;
@@ -2357,7 +2371,7 @@ body {
   margin: 0 0 5pt 0;
   max-width: 160mm;
   page-break-after: avoid;
-  break-after: avoid-page;
+  break-after: avoid;
 }
 
 /* Tables and charts that follow a data-spread heading keep with the heading
@@ -2366,10 +2380,12 @@ body {
    block internally so the heading + caption + table or chart move as one. */
 .data-spread h2 + .data-spread__block,
 .data-spread h2 + .data-spread__chart,
+.data-spread h2 + .data-spread__wide,
 .data-spread h2 + .data-spread__caption,
+.data-spread__flow + .data-spread__wide,
 .data-spread__caption + .data-spread__block {
   page-break-before: avoid;
-  break-before: avoid-page;
+  break-before: avoid;
 }
 
 /* break-inside only. A blanket page-break-before: avoid here glued the block
@@ -2600,7 +2616,7 @@ body {
 .glossary-list {
   column-count: 2;
   column-gap: 8mm;
-  column-fill: auto;
+  column-fill: balance;
   font-size: 10pt;
   line-height: 14pt;
 }
@@ -2841,7 +2857,8 @@ body {
    position: relative instead. */
 .data-spread,
 .case-section,
-.guest-opinion {
+.guest-opinion,
+.chapter-body {
   position: relative;
 }
 
@@ -2882,7 +2899,7 @@ body {
 /* A pull quote binds to the paragraph after it so a chapter tail page
    never opens with a stranded quote. */
 .chapter-body__pull {
-  break-after: avoid-page;
+  break-after: avoid;
   page-break-after: avoid;
 }
 

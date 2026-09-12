@@ -972,6 +972,7 @@ function ChapterBlock({
       {/* === Lead essay: intro paragraph (drop cap, full-width) followed by two-column body in a single column context === */}
       {essay && (
         <section className="chapter-body" data-chapter={chapterRunning}>
+          <span className="pdf-marker">{`[[SEC-${section.slug}:body]]`}</span>
           {(() => {
               const out: React.ReactNode[] = [];
               /* Segment boundaries: [index into out, plate index]. A plate
@@ -1127,6 +1128,14 @@ function ChapterBlock({
                     )}
                   {out.slice(cursor)}
                 </div>,
+              );
+              segments.push(
+                <SectionCloser
+                  key="body-closer"
+                  slug={section.slug}
+                  id={`${section.slug}:body`}
+                  pick={8}
+                />,
               );
               return segments;
             })()}
@@ -1389,9 +1398,17 @@ function ChapterBlock({
               const node = rendered[i];
               if (node == null) return;
               if (isWide(block)) {
+                /* A heading that would be the last thing in the narrow flow
+                   belongs to the chart that follows it. Left where it was,
+                   it sat in one container and the chart in its sibling, so
+                   no selector could hold them together and the heading was
+                   left floating on its own page. */
+                const trailingHead =
+                  dataSpread.blocks[i - 1]?.type === "h2" ? bucket.pop() : null;
                 flush(`b${i}`);
                 nodes.push(
                   <div className="data-spread__wide" key={`wide-${i}`}>
+                    {trailingHead}
                     {node}
                   </div>,
                 );

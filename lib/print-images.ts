@@ -41,6 +41,7 @@ export const printImages: {
       { filename: "aristos-aristidou-Rj3gpDWNnAQ-unsplash.jpg", alt: "Supporting photograph, chapter 01" },
       { filename: "brandon-hoogenboom-3ZFbnY2jXlg-unsplash.jpg", alt: "Supporting photograph, chapter 01" },
       { filename: "clem-onojeghuo-2ig6PO_LKTo-unsplash.jpg", alt: "Supporting photograph, chapter 01" },
+      { filename: "dmitrii-e-sWCmHYAWUvc-unsplash.jpg", alt: "Supporting photograph, chapter 01" },
     ],
     "02-reading-the-market": [
       { filename: "ch02-sup1.jpg", alt: "Chapter 02 supporting" },
@@ -52,6 +53,7 @@ export const printImages: {
       { filename: "armin-pfarr-lXwXqgIUFTg-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
       { filename: "bruno-ngarukiye-pgiWBkvA5UA-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
       { filename: "craig-cameron-J7wc9brCLBs-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
+      { filename: "dorin-seremet-TaBBR57-KO4-unsplash.jpg", alt: "Supporting photograph, chapter 02" },
     ],
     "03-how-the-industry-works": [
       { filename: "ch03-sup1.jpg", alt: "Chapter 03 supporting" },
@@ -63,6 +65,7 @@ export const printImages: {
       { filename: "arno-senoner-1q7RE0CXstU-unsplash.jpg", alt: "Supporting photograph, chapter 03" },
       { filename: "bugra-karacam-937irsSMhug-unsplash.jpg", alt: "Supporting photograph, chapter 03" },
       { filename: "curated-lifestyle-xb7EPBgbgLA-unsplash.jpg", alt: "Supporting photograph, chapter 03" },
+      { filename: "e2aa6ba5-abc9-43d3-b69d-b299a1d43938.jpg", alt: "Supporting photograph, chapter 03" },
     ],
     "04-acquisition-process": [
       { filename: "ch04-sup1.jpg", alt: "Chapter 04 supporting" },
@@ -74,6 +77,7 @@ export const printImages: {
       { filename: "arno-senoner-iOmFn_anJvA-unsplash.jpg", alt: "Supporting photograph, chapter 04" },
       { filename: "c06ec634-4bd8-448a-a8f3-678cb0b5aa6e.jpg", alt: "Supporting photograph, chapter 04" },
       { filename: "danilo-capece-Mn5vLHPLTuw-unsplash.jpg", alt: "Supporting photograph, chapter 04" },
+      { filename: "egor-myznik--9CtCCFQJyM-unsplash.jpg", alt: "Supporting photograph, chapter 04" },
     ],
     "05-new-build-versus-brokerage": [
       { filename: "ch05-sup1.jpg", alt: "Chapter 05 supporting" },
@@ -85,6 +89,7 @@ export const printImages: {
       { filename: "arno-senoner-loU_6fwdPRc-unsplash.jpg", alt: "Supporting photograph, chapter 05" },
       { filename: "catrin-ellis-6ZFkJeq_KNY-unsplash.jpg", alt: "Supporting photograph, chapter 05" },
       { filename: "davide-baraldi-Uib7XdG5s50-unsplash.jpg", alt: "Supporting photograph, chapter 05" },
+      { filename: "elin-tabitha-GYsPG2JjcmY-unsplash.jpg", alt: "Supporting photograph, chapter 05" },
     ],
     "06-refit": [
       { filename: "ch06-sup1.jpg", alt: "Chapter 06 supporting" },
@@ -96,6 +101,7 @@ export const printImages: {
       { filename: "atul-ajit-Lvr-U5Bpdqs-unsplash.jpg", alt: "Supporting photograph, chapter 06" },
       { filename: "cheyenne-martinez-fxWgrrY9Pb8-unsplash.jpg", alt: "Supporting photograph, chapter 06" },
       { filename: "dawid-tkocz-uMC90Hs4iRw-unsplash.jpg", alt: "Supporting photograph, chapter 06" },
+      { filename: "elisa-amadori-x697Tj0MQ80-unsplash.jpg", alt: "Supporting photograph, chapter 06" },
     ],
     "07-operations": [
       { filename: "ch07-sup1.jpg", alt: "Chapter 07 supporting" },
@@ -107,6 +113,7 @@ export const printImages: {
       { filename: "ben-elliott-qdrmRHrCmTk-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
       { filename: "chris-jones-KRTKf7Ogps0-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
       { filename: "deco-fernandes-S19oQp2-Imw-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
+      { filename: "erik-seth-snoX2DPdVE0-unsplash.jpg", alt: "Supporting photograph, chapter 07" },
     ],
     "08-motor-versus-sail": [
       { filename: "ch08-sup1.jpg", alt: "Chapter 08 supporting" },
@@ -118,6 +125,7 @@ export const printImages: {
       { filename: "boris-misevic-ZUlV60gfNJI-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
       { filename: "christian-lambert-P8O2cZEhUXE-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
       { filename: "dima-pima-Vc9SsoEZfGw-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
+      { filename: "erin-doering-S4q7EkDPUBU-unsplash.jpg", alt: "Supporting photograph, chapter 08" },
     ],
     "09-decision-framework": [
       { filename: "ch09-sup1.jpg", alt: "Chapter 09 supporting" },
@@ -129,6 +137,7 @@ export const printImages: {
       { filename: "boris-misevic-q_8cRkqTWNk-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
       { filename: "christina-victoria-craft-6UfUGat_b9o-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
       { filename: "dmitrii-e-1qnR6rP7W20-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
+      { filename: "farnaz-kohankhaki-RuZyXuTcxjU-unsplash.jpg", alt: "Supporting photograph, chapter 09" },
     ],
   },
   tall: {
