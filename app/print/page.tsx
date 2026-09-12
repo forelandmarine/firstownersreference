@@ -34,7 +34,7 @@ const folios = printFolios as {
 /* Chrome supports named @page masters with margin boxes but not
    string-set, so the chapter-aware verso running heads are generated
    here as per-chapter masters, kept in sync with sections.ts. */
-function chapterMastersCss() {
+export function chapterMastersCss() {
   return sections
     .map((s) => {
       const nn = String(s.number).padStart(2, "0");
@@ -837,7 +837,7 @@ function SectionCloser({
 }
 
 
-function ChapterBlock({
+export function ChapterBlock({
   section,
   essay,
   caseStudy,

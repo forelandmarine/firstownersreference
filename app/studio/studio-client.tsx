@@ -8,6 +8,7 @@
 */
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { PrintPane } from "./print-pane";
 import type { LeadEssay } from "@/lib/lead-essays";
 import type { Section } from "@/lib/sections";
 import type { CaseStudy } from "@/lib/cases";
@@ -40,6 +41,10 @@ type Store = {
 
 type FamilyKey = keyof Store;
 
+/* The Print tab is not a content family: it edits nothing and saves
+   nothing, it shows the chapter as Chrome will print it. */
+type TabKey = FamilyKey | "print";
+
 const FAMILIES: FamilyKey[] = [
   "sections",
   "lead-essays",
@@ -50,7 +55,7 @@ const FAMILIES: FamilyKey[] = [
   "guest-opinions",
 ];
 
-const TABS: { key: FamilyKey; label: string }[] = [
+const TABS: { key: TabKey; label: string }[] = [
   { key: "lead-essays", label: "Essay" },
   { key: "data-spreads", label: "Data" },
   { key: "cases", label: "Case" },
@@ -58,12 +63,15 @@ const TABS: { key: FamilyKey; label: string }[] = [
   { key: "faqs", label: "FAQs" },
   { key: "guest-opinions", label: "Q&As" },
   { key: "sections", label: "Meta" },
+  { key: "print", label: "Print" },
 ];
 
 export default function StudioClient() {
   const [store, setStore] = useState<Store | null>(null);
   const [slug, setSlug] = useState<string | null>(null);
-  const [tab, setTab] = useState<FamilyKey>("lead-essays");
+  const [tab, setTab] = useState<TabKey>("lead-essays");
+  /* Bumped on every successful save so the print pane re-prints. */
+  const [revision, setRevision] = useState(0);
   const [dirty, setDirty] = useState<FamilyKey[]>([]);
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState<Date | null>(null);
@@ -146,6 +154,7 @@ export default function StudioClient() {
     if (messages.length > 0) setSaveError(messages.join(" · "));
     if (failed.length === 0) {
       setSavedAt(new Date());
+      setRevision((r) => r + 1);   // re-print the pane against saved content
       setEmDashBaseline(countEmDashes(store));
     }
     setSaving(false);
@@ -268,7 +277,7 @@ export default function StudioClient() {
                 }`}
               >
                 {t.label}
-                {dirty.includes(t.key) && (
+                {t.key !== "print" && dirty.includes(t.key) && (
                   <span className="ml-1.5 inline-block h-1.5 w-1.5 rounded-full bg-sail align-middle" />
                 )}
               </button>
@@ -313,8 +322,19 @@ export default function StudioClient() {
           </div>
         )}
 
+        {tab === "print" && slug && (
+          <div className="flex-1 min-h-0 h-[calc(100vh-9rem)]">
+            <PrintPane
+              chapter={slug.slice(0, 2)}
+              revision={revision}
+              dirty={dirty.length > 0}
+            />
+          </div>
+        )}
+
         {/* Family editor */}
         <div
+          hidden={tab === "print"}
           className={`mx-auto px-6 py-10 ${
             tab === "data-spreads" ? "max-w-4xl" : "max-w-2xl"
           }`}
