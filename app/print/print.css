@@ -1459,6 +1459,27 @@ body {
 
 /* Heading plus a short opening paragraph, held in one box. break-inside is
    the only break control Chrome applies reliably inside a multicol. */
+/* Slack at the top: tried twice, abandoned, and here is why.
+
+   The reference set does hold more white paper above the text than we do
+   and hold the foot steady: TSR 218 is 7.6 ±5.5 at the top and 91.1 ±3.7
+   at the foot; this book is 5.8 ±1.3 and 92.3 ±4.1.
+
+   Attempt one put 62mm on every section head, which was over-reading one
+   page: +52 pages, foot to 71.3 ±23.3. Attempt two was scoped correctly,
+   25mm on the three set pieces only, closer map reset to rule out feedback,
+   closers converging cleanly at 121mm on three consecutive passes. It still
+   failed: the top did not move at all (5.8 ±1.2 to 5.8 ±1.3) and the foot
+   went to 72.8 ±17.8, with short pages 66 to 69 and stranded headings 15
+   to 18.
+
+   The conclusion is structural, not a tuning problem. Space added at the
+   top of a page is paid for at the foot of that page, one for one, because
+   nothing in an automatic flow absorbs the displacement. TSR can afford its
+   top margin because a person removes copy to pay for it. We cannot buy it
+   with CSS. If it is wanted, it is bought editorially, by cutting the
+   sections that would carry it. Do not attempt a third time without that. */
+
 /* Slack at the top: measured, attempted, and scaled back.
 
    The reference set does put more of its white paper at the top than we do,

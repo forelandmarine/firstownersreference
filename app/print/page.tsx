@@ -1215,7 +1215,6 @@ function ChapterBlock({
 
       {/* Plate three: before the evidence pages. */}
       <PlatePage slug={section.slug} index={2} />
-      <PlatePage slug={section.slug} index={4} />
 
       {/* Data spread */}
       {dataSpread && (
@@ -1519,7 +1518,6 @@ function ChapterBlock({
           the composition as architecture, not decoration. */}
       {/* Plate four: the last picture before the chapter closes. */}
       <PlatePage slug={section.slug} index={3} />
-      <PlatePage slug={section.slug} index={5} />
 
       {nextSection && (
         <aside className="chapter-close" data-chapter={chapterRunning}>
