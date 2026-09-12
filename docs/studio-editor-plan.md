@@ -74,3 +74,86 @@ Still open:
 ## Rough effort
 
 Step 1 is one session including the verification gate. Steps 2 and 3 are two to three sessions. Steps 4 and 5 are the largest piece, roughly three to four sessions. Step 6 is small.
+
+---
+
+# Revision, 12 September 2026: the print editor
+
+Written after a long layout session that changed the register set, added three build-time feedback loops, and established a set of constraints the editor must not let anyone violate. Steps 1 and 2 are built. This revises steps 4 and 5 and adds two things the August plan did not anticipate: a QA panel and a copy-fit tool.
+
+## What changed under the plan
+
+The print edition is no longer the book the August plan described. It is two columns of 91.5mm, eight devices rather than fifteen, Newsreader and DM Sans with DM Mono retired, and it carries four kinds of picture: in-flow figures, full-page plates, picture-led quote plates, and section closers sized by the build.
+
+Three loops now run inside `build-print.mjs` and write files the editor must treat as build-owned, never hand-edited:
+
+| file | written by | holds |
+|---|---|---|
+| `lib/print-folios.json` | two-pass marker scan | real contents folios, parity spacers |
+| `lib/print-fit.json` | `measure-fill.py` | per-section closer heights in mm |
+| `lib/print-images.ts` | `expand-print-images.mjs` | the picture manifest |
+
+## The constraint list the editor must enforce
+
+Every one of these was learned the hard way this session and each is a rule the editor should make unbreakable, because a person moving blocks by eye will otherwise rediscover them one at a time.
+
+1. **Nothing spans the columns mid-flow.** Chrome balances rather than fills a fragmented multicol, so a spanner strands a short row above it. The only exception is the drop-cap opening paragraph, which sits before fragmentation begins.
+2. **In-flow elements cannot bleed.** Chrome clips content to the page area in paged media. Negative margins buy nothing. The only way to put ink off the trim is a plate, printed standalone from `/print-opener` and merged. The editor must not offer "bleed this image" on an in-flow figure.
+3. **Chrome does not honour `break-after: avoid` inside a multicol.** A heading will land at a column foot whatever the CSS says. The editor can offer a break hint but must not promise it works.
+4. **Top-of-page space costs foot space one for one.** Tried twice, at 62mm and at 25mm correctly scoped. Nothing in an automatic flow absorbs the displacement. If a designed top margin is wanted it is paid for editorially, by cutting the section that carries it.
+5. **The sources section is frozen.** Three separate perturbations there each reflowed the block from 120 to 217 pages.
+6. **Check the block page count after every build.** Anything far from the expected count means a silent font-download failure or a sources reflow.
+
+## Step 5 revised: the print pane
+
+The August decision holds and is now better evidenced: this is not free pixel positioning, and it should not pretend to be. Position on a page is a function of content order, anchors, variants and the CSS. The editor manipulates those and shows the real result.
+
+**Preview.** An iframe of `/print?chapter=NN` at page scale, not a re-implementation of pagination. What Chrome shows in the iframe is what Chrome prints, so the preview is correct by construction and costs about two seconds to refresh rather than the ten minutes a full press build takes. Folios, closers and merged plates come from the last full build and are shown as they stand, flagged as stale when content has changed since.
+
+**Direct manipulation, scoped to what the model supports.**
+
+- Click a figure: change register (tall, half, wide), re-anchor it between paragraphs, swap the image from the library, or delete it.
+- Click a plate: swap the picture, convert between a plain plate and a picture-led quote plate, choose which pull quote it carries.
+- Click a closer: accept the measured height, override it, or suppress it.
+- Drag to reorder sections within a chapter, and chapters within the book.
+- Per-block break hints, offered with an honest label that Chrome may ignore them in a multicol.
+
+**Copy editing** stays as built in step 2, because auto-growing textareas with quote smartening and the em-dash guard are sturdier than contentEditable and the content is plain strings.
+
+## Step 7, new: the QA panel
+
+`scripts/audit-layout.py` and `scripts/audit-headings.py` already find empty columns, short pages and stranded headings, and both are now trustworthy after three rounds of false positives. They become a panel in the editor: run, list defects by page, click to jump the preview to that page. The book ships when the panel is clear or every remaining item has been looked at and accepted.
+
+This matters more than the drag-and-drop. Most of what went wrong this session was invisible until measured, and measuring it by hand took a page-by-page read.
+
+## Step 8, new: the copy-fit tool
+
+This is the highest-value feature in the whole editor and it is the one InDesign does not give you.
+
+Roughly thirty sections end part-way down a page. The fix is editorial: cut or add a few lines so the section lands. The tool shows, for the selected section: where its last page currently ends, how many words to remove for the section to close on the previous page, and how many to add for it to fill the current one. Then it lets the editor make that cut in place and see the page reflow.
+
+The same panel lists the thirteen headings currently stranded at a column foot, each with the number of words that would move it.
+
+## Hosting: the August recommendation revisited
+
+August said local-only, because the press build needs Puppeteer, sips, Ghostscript, poppler and pypdf, none of which run on Vercel serverless, and a hosted editor would add auth and sync for no gain.
+
+The request is now explicitly for something online. Three options:
+
+1. **Local-first, as built.** `pnpm dev`, open localhost. Zero new infrastructure. Requires the machine with the toolchain.
+2. **Hosted editor, local press build.** The editor deploys to Vercel and persists content by committing to the repo through the GitHub API. The press build still runs locally. Editing from anywhere; press output from one machine.
+3. **Hosted editor, press build in CI.** As above, plus a GitHub Actions workflow that runs the full press build on an Ubuntu runner, where Chrome, Ghostscript, poppler and python are all available, and publishes the proof, press block, CMYK master and audit report as artefacts. Fully online end to end.
+
+Recommendation: build for 1 and 2 at once, since they are the same application differing only in the persistence adapter, then add 3, which is mostly a workflow file. Option 3 also gets the press build off the laptop, and it takes ten minutes.
+
+## Sequence
+
+1. Print pane with live preview and page navigation. Same in every hosting option.
+2. Explicit placement model (step 4 of the August plan): figures gain `{ anchor, variant }`, with the counting heuristic as the fallback so the book keeps building throughout.
+3. Figure and plate manipulation.
+4. QA panel.
+5. Copy-fit tool.
+6. Section and chapter reordering.
+7. Hosting: GitHub persistence adapter, then the CI press build.
+
+Items 1 to 3 are the editor Jack asked for. Items 4 and 5 are what will actually get the book to press.
