@@ -3,7 +3,7 @@
 Generated automatically by the build script. Open the PDF first, then read these notes alongside.
 
 ## Page count
-214 pages.
+212 pages.
 
 ## Trim and margins
 - Trim: 230 × 300 mm

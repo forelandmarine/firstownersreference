@@ -24,6 +24,7 @@ import {
 const fitMap = (printFit as { fit: Record<string, number> }).fit ?? {};
 
 
+
 const folios = printFolios as {
   chapters: Record<string, number>;
   refs: Record<string, number>;
@@ -1008,7 +1009,9 @@ function ChapterBlock({
                  plates now sit at section boundaries instead, where the
                  break is natural and costs nothing. */
               const plateAt: number[] = [];
+              let skipNext = -1;
               for (let i = 0; i < restParas.length; i++) {
+                if (i === skipNext) continue;
                 const para = restParas[i];
                 if (typeof para === "string") {
                   out.push(<p key={`p-${i}`}>{para}</p>);
@@ -1060,7 +1063,33 @@ function ChapterBlock({
                   continue;
                 }
                 if (para.type === "h2") {
-                  out.push(<h2 key={`h2-${i}`}>{para.text}</h2>);
+                  /* Chrome honours break-inside: avoid inside a multicol but
+                     not break-after: avoid, which is why headings kept
+                     landing as the last thing in a column with the rule set.
+                     Bind the heading to its opening paragraph in one
+                     unbreakable box, but only when that paragraph is short:
+                     binding a long one would move a whole page of type and
+                     trade a stranded heading for a bigger hole. */
+                  const follow = restParas[i + 1];
+                  const shortFollow =
+                    typeof follow === "string" && follow.split(/\s+/).length <= 45;
+                  if (shortFollow) {
+                    out.push(
+                      <div className="keep-with-next" key={`h2k-${i}`}>
+                        <h2>{para.text}</h2>
+                        <p>{follow as string}</p>
+                      </div>,
+                    );
+                    skipNext = i + 1;
+                    continue;
+                  }
+                  out.push(
+                    <h2
+                      key={`h2-${i}`}
+                    >
+                      {para.text}
+                    </h2>,
+                  );
                   continue;
                 }
                 if (para.type === "blockquote") {
@@ -1152,6 +1181,7 @@ function ChapterBlock({
           className="guest-opinion"
           data-chapter={chapterRunning}
         >
+          <span className="pdf-marker">{`[[SEC-${section.slug}:guest]]`}</span>
           {(() => {
             const avatar = getContributorProfile(
               guestOpinion.contributor

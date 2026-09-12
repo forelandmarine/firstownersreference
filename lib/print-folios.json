@@ -7,18 +7,17 @@
     "5": 86,
     "6": 112,
     "7": 132,
-    "8": 162,
-    "9": 186
+    "8": 160,
+    "9": 184
   },
   "refs": {
-    "glossary": 207,
-    "index": 209,
-    "sources": 211,
-    "colophon": 213
+    "glossary": 205,
+    "index": 207,
+    "sources": 209,
+    "colophon": 211
   },
   "spacers": [
     "ch06",
-    "ch08",
     "ch09"
   ]
 }

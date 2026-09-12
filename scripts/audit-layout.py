@@ -58,6 +58,10 @@ def main() -> None:
         subprocess.run(["pdftoppm", "-r", str(args.dpi), "-png", args.pdf,
                         os.path.join(tmp, "p")], check=True, capture_output=True)
         files = sorted(glob.glob(os.path.join(tmp, "p*.png")))
+        page_texts = subprocess.run(
+            ["pdftotext", args.pdf, "-"], capture_output=True, text=True
+        ).stdout.split("\f")
+        page_texts += [""] * (len(files) + 2)
         defects = []
 
         for idx, f in enumerate(files):
@@ -91,11 +95,26 @@ def main() -> None:
                 last.append(nz[-1] / band_h if len(nz) else 0.0)
                 msub = marine[top:bot, int(w * x0):int(w * x1)]
                 mrows = msub.mean(axis=1)
-                # A heading is a WIDE run of marine ink. The end mark, the
-                # section chip and the figure-label square are all marine
-                # too, and at a 2 per cent threshold they were being counted
-                # as headings stranded at the column foot.
-                heads.append(np.where(mrows > 0.14)[0])
+                # A heading is marine ink that is also TEXT: a run of a few
+                # rows, moderately covered. Two earlier thresholds both
+                # failed. At 2 per cent the end mark and the figure-label
+                # square counted as headings. At 14 per cent with no upper
+                # bound, blue water in a photograph and the marine bars of
+                # a chart counted as headings, which is what produced the
+                # fifteen reports that turned out on inspection to be sound
+                # pages. Text never covers more than about half a column
+                # solidly, and a heading is at most three or four lines.
+                line_px = max(2, int(band_h * 0.018))
+                cand = (mrows > 0.14) & (mrows < 0.55)
+                runs, start = [], None
+                for i, on in enumerate(cand):
+                    if on and start is None:
+                        start = i
+                    elif not on and start is not None:
+                        if i - start <= line_px * 4:
+                            runs.append(i - 1)
+                        start = None
+                heads.append(np.array(runs, dtype=int))
 
             total_ink = sum(p.sum() for p in prof)
             if total_ink < 1.0:
@@ -125,8 +144,13 @@ def main() -> None:
                 defects.append((page, "lone-picture", round(pic * 100)))
 
             # --- short page ---------------------------------------------
+            # The chapter close is a composed full page with a pinned foot
+            # and deliberate breath above it, not a flow that ran out. It is
+            # excluded by its text, not by appearance: the first attempt used
+            # marine ink plus a dark footer as the test, which describes half
+            # the book and would have suppressed real defects.
             deepest = max(last)
-            if deepest < 0.78:
+            if deepest < 0.78 and "CLOSES" not in page_texts[page - 1].upper():
                 defects.append((page, "short-page", round(deepest * 100)))
 
     counts = {}

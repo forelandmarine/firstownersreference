@@ -1489,6 +1489,29 @@ body {
   display: block;
 }
 
+/* Heading plus a short opening paragraph, held in one box. break-inside is
+   the only break control Chrome applies reliably inside a multicol. */
+/* Deliberately NOT implemented: forcing a measured stranded heading onto
+   the next column with break-before: column. It was built and reverted.
+   Pushing one heading over shortens that column, shifts everything after
+   it, and strands a different heading: the count went 13 to 14 and the
+   list changed every pass, so the build stopped being deterministic. At
+   13 of 187 headings, seven per cent, this is a copy-fit problem and not
+   a CSS one. */
+
+.keep-with-next {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.keep-with-next h2 {
+  margin-top: 0;
+}
+
+.chapter-body__cols .keep-with-next {
+  margin: 18pt 0 0 0;
+}
+
 .section-end-mark {
   font-size: 6pt;
   line-height: 1;
@@ -1497,6 +1520,10 @@ body {
   margin: 8mm 0 0 0;
   text-indent: 0;
   break-inside: avoid;
+  /* It marks the end of what precedes it, so it cannot start a page. Six
+     pages in the block carried this 6pt square and nothing else. */
+  break-before: avoid;
+  page-break-before: avoid;
 }
 
 .section-chip {
