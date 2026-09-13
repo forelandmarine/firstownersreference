@@ -1,0 +1,405 @@
+<title>Forward to 2027</title>
+<meta name="description" content="Pre-print study for The First Owner's Reference: what is wrong today, what changes in 2027, and the decisions before press.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#f5f2ec; --paper-2:#ebe6dc; --ink:#1a1a1a; --ink-2:#3b3a37; --stone:#6f6a62;
+  --rule:#d9d2c5; --marine:#0f3b5c; --marine-soft:#dfe6ea;
+  --wrong:#8e3424; --wrong-soft:#f1e0da; --stale:#7a5c12; --stale-soft:#efe6cf;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --sans:"DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#13171b; --paper-2:#1b2127; --ink:#ebe7df; --ink-2:#c9c4ba; --stone:#9d978c;
+    --rule:#2d343b; --marine:#8db8d8; --marine-soft:#1c2a35;
+    --wrong:#e39a86; --wrong-soft:#3a2420; --stale:#d9b865; --stale-soft:#33291a;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#13171b; --paper-2:#1b2127; --ink:#ebe7df; --ink-2:#c9c4ba; --stone:#9d978c;
+  --rule:#2d343b; --marine:#8db8d8; --marine-soft:#1c2a35;
+  --wrong:#e39a86; --wrong-soft:#3a2420; --stale:#d9b865; --stale-soft:#33291a;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55;padding-inline:20px;padding-block:0 96px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:200px minmax(0,1fr);gap:56px}
+@media (max-width:900px){.wrap{grid-template-columns:1fr;gap:0}.rail{display:none}}
+.rail{position:sticky;top:32px;align-self:start;padding-top:56px;font-family:var(--sans);font-size:13px}
+.rail p{margin:0 0 10px;color:var(--stone);text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:600}
+.rail a{display:block;color:var(--ink-2);text-decoration:none;padding:5px 0;border-left:2px solid transparent;padding-left:10px;margin-left:-12px}
+.rail a:hover,.rail a:focus-visible{color:var(--marine);border-left-color:var(--marine);outline:none}
+main{min-width:0}
+a{color:var(--marine)}
+:focus-visible{outline:2px solid var(--marine);outline-offset:2px}
+
+header.mast{padding-top:56px;padding-bottom:36px;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:6px 22px}
+h1{font-weight:500;font-size:clamp(40px,6vw,64px);line-height:1.02;letter-spacing:-.015em;margin:0 0 20px;text-wrap:balance}
+h1 em{font-style:italic;color:var(--marine)}
+.lede{font-size:21px;line-height:1.5;color:var(--ink-2);max-width:62ch;margin:0}
+.stamp{display:inline-flex;gap:10px;align-items:baseline;margin-top:26px;font-family:var(--mono);font-size:13px;color:var(--ink-2);border:1px solid var(--rule);padding:7px 12px;border-radius:2px}
+.stamp b{font-weight:500;color:var(--marine)}
+
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-bottom:1px solid var(--rule)}
+@media (max-width:640px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fact{padding:22px 18px 22px 0}
+.fact + .fact{padding-left:18px;border-left:1px solid var(--rule)}
+@media (max-width:640px){.fact:nth-child(3){border-left:0;padding-left:0}}
+.fact .n{font-family:var(--serif);font-size:34px;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.fact .l{font-family:var(--sans);font-size:13px;color:var(--stone);margin-top:8px;line-height:1.35}
+
+section{padding-top:64px}
+h2{font-size:32px;font-weight:500;line-height:1.15;margin:0 0 8px;letter-spacing:-.01em;text-wrap:balance}
+.sub{font-family:var(--sans);font-size:15px;color:var(--stone);margin:0 0 28px;max-width:66ch;line-height:1.5}
+h3{font-family:var(--sans);font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--ink-2);margin:36px 0 12px}
+p.body{max-width:66ch;margin:0 0 16px}
+
+.decisions{list-style:none;margin:0;padding:0;counter-reset:d;display:grid;gap:0}
+.decisions li{counter-increment:d;display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 16px;padding:22px 0;border-top:1px solid var(--rule)}
+.decisions li::before{content:counter(d);font-family:var(--serif);font-size:30px;line-height:1;color:var(--marine);font-weight:500}
+.decisions h4{font-size:21px;font-weight:600;margin:0 0 6px;line-height:1.3}
+.decisions p{margin:0;max-width:64ch;color:var(--ink-2)}
+.rec{display:block;margin-top:10px;font-family:var(--sans);font-size:15px;color:var(--ink);background:var(--marine-soft);padding:10px 14px;border-radius:2px;max-width:64ch}
+.rec span{font-weight:600;color:var(--marine);margin-right:6px}
+
+.rules{margin:0;padding:0 0 0 22px;max-width:66ch}
+.rules li{margin-bottom:10px;padding-left:4px}
+
+.filter{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 20px;font-family:var(--sans)}
+.filter button{font:500 13px/1 var(--sans);color:var(--ink-2);background:transparent;border:1px solid var(--rule);padding:8px 11px;border-radius:2px;cursor:pointer;font-variant-numeric:tabular-nums}
+.filter button:hover{border-color:var(--marine);color:var(--marine)}
+.filter button[aria-pressed="true"]{background:var(--marine);border-color:var(--marine);color:var(--paper)}
+
+.chap{border-top:2px solid var(--ink);padding-top:14px;margin-top:34px}
+.chap:first-of-type{margin-top:0}
+.chap-head{display:flex;gap:14px;align-items:baseline;margin-bottom:6px}
+.chap-num{font-family:var(--mono);font-size:14px;color:var(--marine)}
+.chap-name{font-size:22px;font-weight:500;margin:0}
+.items{list-style:none;margin:0;padding:0}
+.items li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;padding:14px 0;border-bottom:1px solid var(--rule);font-size:17px}
+.items li .what{max-width:70ch}
+.items li .where{grid-column:1/-1;font-family:var(--mono);font-size:12.5px;color:var(--stone)}
+.tag{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:2px;white-space:nowrap;align-self:start}
+.t-wrong{color:var(--wrong);background:var(--wrong-soft)}
+.t-moved{color:var(--stale);background:var(--stale-soft)}
+.t-source{color:var(--ink-2);border:1px solid var(--rule)}
+.items b{font-weight:600}
+
+.cal{list-style:none;margin:0;padding:0;position:relative}
+.cal li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:0 24px;padding:14px 0;border-top:1px solid var(--rule)}
+@media (max-width:560px){.cal li{grid-template-columns:1fr}.cal .d{margin-bottom:4px}}
+.cal .d{font-family:var(--mono);font-size:14px;color:var(--marine);font-variant-numeric:tabular-nums;padding-top:2px}
+.cal .e{max-width:66ch;font-size:17px}
+.cal .chips{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:11.5px;color:var(--stone);border:1px solid var(--rule);padding:1px 6px;border-radius:2px}
+.cal li.year{border-top:2px solid var(--ink);padding-top:20px}
+.cal li.year .d{font-family:var(--serif);font-size:26px;color:var(--ink);font-weight:500}
+.cal li.key .e{font-weight:600}
+.cal li.key .d::after{content:"";display:inline-block;width:6px;height:6px;background:var(--marine);border-radius:50%;margin-left:8px;vertical-align:middle}
+
+.backdrop{margin-top:28px;background:var(--paper-2);padding:20px 22px;border-radius:2px;max-width:74ch}
+.backdrop h4{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 8px;color:var(--ink-2)}
+.backdrop p{margin:0;font-size:16.5px;color:var(--ink-2)}
+
+.adds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+@media (max-width:760px){.adds{grid-template-columns:1fr}}
+.add{padding:16px 0;border-top:1px solid var(--rule)}
+.add .chap-num{display:block;margin-bottom:4px}
+.add p{margin:0;font-size:16.5px;color:var(--ink-2)}
+
+.seq{list-style:none;margin:0;padding:0;counter-reset:s}
+.seq li{counter-increment:s;display:grid;grid-template-columns:36px minmax(0,1fr);padding:12px 0;border-top:1px solid var(--rule);max-width:74ch}
+.seq li::before{content:counter(s);font-family:var(--mono);color:var(--marine);font-size:14px;padding-top:3px}
+
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+@media (max-width:760px){.two{grid-template-columns:1fr;gap:0}}
+.plain{margin:0;padding-left:20px}
+.plain li{margin-bottom:9px;font-size:16.5px;color:var(--ink-2)}
+
+.caveat{margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:14px;color:var(--stone);max-width:74ch;line-height:1.55}
+.caveat code,.mono{font-family:var(--mono);font-size:.92em}
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="Contents">
+    <p>Contents</p>
+    <a href="#decisions">Decisions first</a>
+    <a href="#rules">House rules</a>
+    <a href="#wrong">Wrong today</a>
+    <a href="#calendar">The 2027 calendar</a>
+    <a href="#adds">Additions by chapter</a>
+    <a href="#site">Site and print</a>
+    <a href="#counsel">Questions for counsel</a>
+    <a href="#sequence">Sequence</a>
+  </nav>
+
+  <main>
+    <header class="mast">
+      <p class="kicker"><span>The First Owner’s Reference</span><span>Pre-print study</span><span>For the editors</span></p>
+      <h1>Forward to <em>2027</em></h1>
+      <p class="lede">The 1st Edition was written through 2026 as a 2026 book. Print has moved past Monaco, so its first readers will hold it from late 2026 and through most of 2027. Every dated line in the book and on the site has been checked for two things: whether it is still right, and whether it will still be right for a 2027 reader.</p>
+      <div class="stamp"><span>Position at</span><b>13 September 2026</b></div>
+    </header>
+
+    <div class="facts" role="list">
+      <div class="fact" role="listitem"><div class="n">457</div><div class="l">dated sentences indexed across the content files</div></div>
+      <div class="fact" role="listitem"><div class="n">9</div><div class="l">chapters read in full against current sources</div></div>
+      <div class="fact" role="listitem"><div class="n">~25</div><div class="l">places the edition year is set in site and print</div></div>
+      <div class="fact" role="listitem"><div class="n">10 Jul 2027</div><div class="l">the largest gap: EU AML rules for yacht sales</div></div>
+    </div>
+
+    <section id="decisions">
+      <h2>Decisions first</h2>
+      <p class="sub">These five decide how much of the rest applies. Each carries a recommendation.</p>
+      <ol class="decisions">
+        <li><div><h4>Press close date</h4>
+          <p>Six things resolve between October and December 2026: the Camper &amp; Nicholsons long stop (30 September), the Italian Sea Group signing (about 26 October), P&amp;I increases for the February renewal, the IMO Net-Zero vote (4 December), the BOAT Global Order Book 2027 (December), and the MarineMax and Denison closings.</p>
+          <span class="rec"><span>Recommend</span>Close copy mid-December, print January 2027. The book then carries outcomes, not pending events. Proofs can serve at the Superyacht Forum in November.</span></div></li>
+        <li><div><h4>Edition year</h4>
+          <p>The imprint already promises “next edition September 2027”. A book badged 2026 reads as last year’s by March.</p>
+          <span class="rec"><span>Recommend</span>“1st Edition, 2027”, one book-wide position date in the imprint, copyright 2027 if printed in January. The next becomes the 2028 edition. Settle before the ISSN application.</span></div></li>
+        <li><div><h4>The 2026 Iran war in print</h4>
+          <p>Found independently by two research passes. It touches ch02 macro, ch07 war risk and cruising grounds, and the ch07 insurance outlook.</p>
+          <span class="rec"><span>Recommend</span>A dated, factual backdrop line in each place. No commentary.</span></div></li>
+        <li><div><h4>Paid data</h4>
+          <p>H1 2026 brokerage, the 2026 US share and updated APAC and Russian ownership figures sit behind BOATPro or SuperYacht Times State of Yachting 2026.</p>
+          <span class="rec"><span>Recommend</span>License BOATPro for the close window, or print what is free and say so on the page.</span></div></li>
+        <li><div><h4>Tool URLs carrying 2026</h4>
+          <p>Salary, VAT and insurance pages. Search equity is small: the salary page has 452 impressions and no clicks; the other two do not appear in Search Console. Searchers do type the year (“global order book 2026”).</p>
+          <span class="rec"><span>Recommend</span>Yearless slugs with permanent redirects. The year lives in the title and H1, so each annual update changes a title, not a URL.</span></div></li>
+      </ol>
+    </section>
+
+    <section id="rules">
+      <h2>House rules for the pass</h2>
+      <p class="sub">So the book does not date again within six months of press.</p>
+      <ol class="rules">
+        <li>Every figure that moves carries a “Position at” date. One date for the whole book, set at copy close.</li>
+        <li>Yard build slots are lead time from contract, never calendar years. “Three to five years from contract”, not “a 2030 Lürssen”.</li>
+        <li>No relative time words in essays or data spreads: recent, currently, this year, now, over the past five years. Name the year.</li>
+        <li>Guest Q&amp;As stay as given. Where events have moved, a dated editors’ note sits beneath.</li>
+        <li>Unsettled law prints as an open point for counsel, not a forecast.</li>
+        <li>Sources are named by edition, so a later edition cannot silently falsify the text.</li>
+      </ol>
+    </section>
+
+    <section id="wrong">
+      <h2>Wrong today</h2>
+      <p class="sub">These stand whatever the edition year, so fix them in one pass before the forward work. <span class="tag t-wrong">Error</span> means the text was wrong when written or is contradicted by the book itself. <span class="tag t-moved">Moved</span> means events have overtaken it. <span class="tag t-source">No source</span> means it fails the pricing rule.</p>
+
+      <div class="filter" role="group" aria-label="Filter by chapter">
+        <button type="button" id="f-all" data-f="all" aria-pressed="true">All chapters</button>
+        <button type="button" id="f-01" data-f="01">01</button>
+        <button type="button" id="f-02" data-f="02">02</button>
+        <button type="button" id="f-03" data-f="03">03</button>
+        <button type="button" id="f-04" data-f="04">04</button>
+        <button type="button" id="f-05" data-f="05">05</button>
+        <button type="button" id="f-06" data-f="06">06</button>
+        <button type="button" id="f-07" data-f="07">07</button>
+        <button type="button" id="f-08" data-f="08">08</button>
+        <button type="button" id="f-09" data-f="09">09</button>
+      </div>
+
+      <div class="chap" data-ch="01 07">
+        <div class="chap-head"><span class="chap-num">01 + 07</span><h3 class="chap-name">Ownership, operations, cost tools</h3></div>
+        <ul class="items">
+          <li><span class="what">Quay Crew misquoted in about six places. The 7 percent rise in the 70 to 79 m bracket is against the 2023 survey, not year on year. The 63 percent on rotation is all 367 captains, not that bracket.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 01 p9, 07 p13; data-spreads 07; faqs 07[0]; salary tool; Lay question</span></li>
+          <li><span class="what">Captain bands credited to YPI 2026 do not match YPI 2026 (30 to 40 m EUR 6,000 to 9,000; 40 to 50 m EUR 8,500 to 12,500; 60 to 80 m EUR 14,000 to 18,000).</span><span class="tag t-wrong">Error</span><span class="where">data-spreads 07 blocks[1]; salary tool ROLES</span></li>
+          <li><span class="what">Greece: non-EU flags over 35 m may charter under the e-Charter Permission since February 2024, up to 28 days a year.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 07 p59</span></li>
+          <li><span class="what">Spain: the charter licence is replaced by an Affidavit of Responsibility. Matriculation tax is 12 percent, not 4 (the glossary already says 12).</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 07 p58</span></li>
+          <li><span class="what">Cayman applies the REG Yacht Code, July 2024 edition. The calculator still cites the MCA LY3 code, replaced in 2019.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 07 p63; calculator sources</span></li>
+          <li><span class="what">P&amp;I limit written as <b>EUR</b> 500 million. It is USD.</span><span class="tag t-wrong">Error</span><span class="where">faqs 07[2]; checklists 07 groups[2]</span></li>
+          <li><span class="what">50 m crew cost: EUR 1.5 to 2.4 million in the salary tool against EUR 900,000 to 1.4 million in the calculator. Calculator converts at EUR/USD 1.09 against about 1.16.</span><span class="tag t-wrong">Error</span><span class="where">salary tool; running-cost calculator</span></li>
+          <li><span class="what">Mediterranean diesel EUR 1.30 to 1.80 per litre; compliance EUR 80,000 to 200,000 on a 40 m; calculator P&amp;I and charter uplift percentages; Gallagher Q4 2025 “4 to 7.5 percent”.</span><span class="tag t-source">No source</span><span class="where">lead-essays 01 p11, 07 p23, 07 p26; calculator FAQ</span></li>
+        </ul>
+      </div>
+
+      <div class="chap" data-ch="02">
+        <div class="chap-head"><span class="chap-num">02</span><h3 class="chap-name">Reading the market</h3></div>
+        <ul class="items">
+          <li><span class="what">Tariff paragraph describes an ended regime. The Supreme Court struck down the IEEPA tariffs on 20 February 2026; a 10 percent Section 122 surcharge ran to 24 July; a Section 301 regime and the EU-US 15 percent ceiling apply since.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 02 p23</span></li>
+          <li><span class="what">Macro paragraph cites the IMF October 2025 outlook as “moderating”. July 2026 update: 3.0 percent growth in 2026, 3.4 in 2027, inflation 4.7 percent.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 02 p24</span></li>
+          <li><span class="what">Order book 2025 column should read 40.0 m and 507 GT on BOAT’s own figures, so up 0.8 m and up 8.7 percent.</span><span class="tag t-wrong">Error</span><span class="where">data-spreads 02; order-book tracker headline table</span></li>
+          <li><span class="what">DreAMBoat was delivered 45 months after contract, about 18 months faster than a conventional build. Not “in 18 months”.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 02 p10; faqs 02[1]; tracker</span></li>
+          <li><span class="what">Asking prices “softened around 7 percent from 2023 peaks”; the Denison days-on-market series (URL dead); “BOAT EUR 7.5 bn over 30 m” (Edmiston publishes EUR 7.1 bn).</span><span class="tag t-source">No source</span><span class="where">lead-essays 02 p15, p17, p19; cases 02</span></li>
+        </ul>
+      </div>
+
+      <div class="chap" data-ch="03">
+        <div class="chap-head"><span class="chap-num">03</span><h3 class="chap-name">How the industry actually works</h3></div>
+        <ul class="items">
+          <li><span class="what">Ya Mon is presented as dismissed. It has been revived in amended form and is open (Eleventh Circuit, 10 June 2026).</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 03 p8; data-spreads 03 blocks[13]</span></li>
+          <li><span class="what">MarineMax agreed on 10 August 2026 to be bought by Safe Harbor Marinas, owned by Blackstone Infrastructure, for USD 1.5 bn. Fraser and Northrop &amp; Johnson go with it.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 03 p15; ownership table</span></li>
+          <li><span class="what">OneWater agreed on 9 September 2026 to sell a majority of Denison to OceanWorld Group.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 03 p15; ownership table</span></li>
+          <li><span class="what">C&amp;N conflict called “structural and permanent” while control changes hands. Stake 80 or 81.4 percent: settle from the Lai Sun agreement. “The roll-up is essentially complete” after four ownership changes in ten months.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 03 p12, p13, p16; data-spreads 03 blocks[9]</span></li>
+        </ul>
+      </div>
+
+      <div class="chap" data-ch="04 09">
+        <div class="chap-head"><span class="chap-num">04 + 09</span><h3 class="chap-name">Acquisition, ownership structure, VAT page, glossary</h3></div>
+        <ul class="items">
+          <li><span class="what">Malta leasing “5.4 to 6.12 percent over 24 metres” in four places. Replaced by actual-use guidelines on 12 March 2020; the Commission closed its case on 30 October 2020.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 04 p23, 06 p67, 07 p64; data-spreads 04</span></li>
+          <li><span class="what">“Italian leasing largely curtailed”. Italy has used an effective-use test since 1 November 2020 and leasing remains available.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 04 p23, 07 p57; data-spreads 04 “rarely advisable in 2026”</span></li>
+          <li><span class="what">Glossary Temporary Admission still requires a third-country stamp to reset. The April 2026 EC note sets no minimum time outside; Italy accepts proof of reaching international waters. Add the 10-year statutory total.</span><span class="tag t-moved">Moved</span><span class="where">lib/glossary.ts temporary-admission</span></li>
+          <li><span class="what">VAT page post-Brexit section ties EU status to flag and dates the UK and EU split “post-2024”. It was 1 January 2021.</span><span class="tag t-wrong">Error</span><span class="where">app/tools/yacht-vat-2026 FAQ 6, section 4</span></li>
+          <li><span class="what">Glossary gives US bonus depreciation a 2029 end date. It is permanent (IRS Notice 2026-11), as ch07 already says.</span><span class="tag t-wrong">Error</span><span class="where">lib/glossary.ts obbba</span></li>
+          <li><span class="what">French Commercial Exemption “six conditions”, five listed. Phi is 58.5 m, not 60. Red Ensign Category 2 cap given two ways. YORR name and date in the ch09 FAQ disagree with ch05.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 04 p23, p27; faqs 04[3], 09[1]</span></li>
+        </ul>
+      </div>
+
+      <div class="chap" data-ch="05">
+        <div class="chap-head"><span class="chap-num">05</span><h3 class="chap-name">New build versus brokerage</h3></div>
+        <ul class="items">
+          <li><span class="what">Two FAQs say the register was founded in June 2023 and name it wrongly. The Yacht Owner’s Representative Register launched November 2024; June 2023 was the YORP announcement, first course July 2023.</span><span class="tag t-wrong">Error</span><span class="where">faqs 05[1], 05[3]; lead-essays 05 p48</span></li>
+          <li><span class="what">YORR threshold is projects over 30 m, not 40.</span><span class="tag t-wrong">Error</span><span class="where">faqs 05[4]</span></li>
+          <li><span class="what">“Present order-book expansion” contradicts ch02’s second year of contraction. Standfirst “24 to 36 months” conflicts with 36 to 60 for custom builds. Project Solent: Cecil Wright “is acting”, not “acted”.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 05 p9, p63; sections 05 standfirst</span></li>
+          <li><span class="what">Italian Sea Group stops at April 2026. Protective measures partly revoked 10 June; court procedure 1 July with about EUR 400 m debt; binding offers 15 October, signing about 26 October.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 05 p13</span></li>
+        </ul>
+      </div>
+
+      <div class="chap" data-ch="06">
+        <div class="chap-head"><span class="chap-num">06</span><h3 class="chap-name">Refit</h3></div>
+        <ul class="items">
+          <li><span class="what">Rybovich’s owner Safe Harbor belongs to Blackstone Infrastructure since 30 April 2025, not Sun Communities.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 06 p49</span></li>
+          <li><span class="what">Amico &amp; Co is part of Amico Marine (May 2026), CEO Bruno Guglielmini. MB92 sites are Barcelona, La Ciotat, Vallauris Golfe-Juan and Neom.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 06 p27, p34</span></li>
+          <li><span class="what">FAQ puts Amico (Genoa) in Northern Europe and Lürssen refit in Bremen. It is Hamburg.</span><span class="tag t-wrong">Error</span><span class="where">faqs 06[2]</span></li>
+          <li><span class="what">“In 2026, a sellers’ market for the first time in a decade.”</span><span class="tag t-source">No source</span><span class="where">lead-essays 06 p1; data-spreads 06 standfirst</span></li>
+        </ul>
+      </div>
+
+      <div class="chap" data-ch="08">
+        <div class="chap-head"><span class="chap-num">08</span><h3 class="chap-name">Motor versus sail</h3></div>
+        <ul class="items">
+          <li><span class="what">EU ETS applies to ships of 5,000 GT and above carrying passengers or cargo <b>for commercial purposes</b>. A private yacht is outside at any size. Charter yachts of 12 passengers or fewer are unsettled.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 08 p13; data-spreads 08 blocks[8]; faqs 08[2]; checklists 08</span></li>
+          <li><span class="what">ETS cost EUR 200,000 to 400,000 sits on a 90 m in the essay and 110 m plus in the table. FAQ says 100 percent coverage starts 2026; coverage has applied since 2024, and what rose is the share surrendered.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 08 p13; data-spreads 08; faqs 08[2]</span></li>
+          <li><span class="what">Sail is about 6 percent of the order book (69 of 1,093), not 12.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 08 p2; data-spreads 08 rows[0]</span></li>
+          <li><span class="what">Methanol and hydrogen “at concept and pilot stage”. Already in delivered or launched hulls: Sanlorenzo 2024, Feadship Breakthrough, Lürssen 114 m launched 2025.</span><span class="tag t-moved">Moved</span><span class="where">lead-essays 08 p17</span></li>
+          <li><span class="what">Captain Arctic has two rigid solar sails, 36 passengers, delivery late 2026 (confirm with Pelorus). Crew counts, the seven-year cost formula and the 580 kWh battery each appear two ways.</span><span class="tag t-wrong">Error</span><span class="where">lead-essays 08 p6, p23, p24; faqs 08[0], 08[1]</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="calendar">
+      <h2>The 2027 calendar</h2>
+      <p class="sub">What a first-time owner reading in 2027 meets, in order. The late-2026 entries resolve before a winter close. Marked dates are the ones the book must carry.</p>
+      <ol class="cal">
+        <li class="year"><span class="d">2026</span><span class="e"></span></li>
+        <li><span class="d">30 Sep</span><span class="e">Long stop on the sale of Camper &amp; Nicholsons to Wave Expandary.<span class="chips"><span class="chip">03</span></span></span></li>
+        <li><span class="d">15 Oct</span><span class="e">Binding offers for The Italian Sea Group; signing about 26 October.<span class="chips"><span class="chip">05</span></span></span></li>
+        <li><span class="d">Nov to Dec</span><span class="e">P&amp;I clubs announce general increases for the 20 February renewal. Gallagher forecasts 2.5 to 5 percent.<span class="chips"><span class="chip">07</span></span></span></li>
+        <li class="key"><span class="d">4 Dec</span><span class="e">IMO resumed session votes on the Net-Zero Framework. Earliest entry into force 2028; reach to yachts unsettled.<span class="chips"><span class="chip">08</span></span></span></li>
+        <li class="key"><span class="d">Dec</span><span class="e">BOAT International Global Order Book 2027 edition, on pattern. BOAT already forecasts a settle at 950 to 1,000 yachts.<span class="chips"><span class="chip">02</span><span class="chip">05</span><span class="chip">08</span></span></span></li>
+        <li><span class="d">By year end</span><span class="e">MarineMax sale to Safe Harbor and Denison majority sale to OceanWorld expected to close.<span class="chips"><span class="chip">03</span></span></span></li>
+        <li class="year"><span class="d">2027</span><span class="e"></span></li>
+        <li class="key"><span class="d">1 Jan</span><span class="e">NOx Tier III applies to ships contracted from this date for the North-East Atlantic ECA. A 2027 new build for Atlantic Europe should expect it.<span class="chips"><span class="chip">05</span><span class="chip">08</span></span></span></li>
+        <li><span class="d">1 Jan</span><span class="e">Existing pleasure yachts of 300 GT and above meet the Polar Code navigation chapters at the first survey after this date. France’s pleasure-craft tax moves to a kW basis (confirm final text).<span class="chips"><span class="chip">04</span><span class="chip">08</span></span></span></li>
+        <li><span class="d">Q1</span><span class="e">YPI Crew 2027 salary guide, on pattern.<span class="chips"><span class="chip">07</span></span></span></li>
+        <li><span class="d">20 Feb</span><span class="e">P&amp;I renewal.<span class="chips"><span class="chip">07</span></span></span></li>
+        <li><span class="d">1 Mar</span><span class="e">0.10 percent sulphur in the Norwegian Sea and Canadian Arctic ECAs.<span class="chips"><span class="chip">08</span></span></span></li>
+        <li><span class="d">17 to 21 Mar</span><span class="e">St Barths Bucket, new four-race format.<span class="chips"><span class="chip">08</span></span></span></li>
+        <li><span class="d">Mar to Apr</span><span class="e">Knight Frank Wealth Report 2027; Edmiston, Denison and Fraser annual reviews.<span class="chips"><span class="chip">02</span></span></span></li>
+        <li><span class="d">H1</span><span class="e">EU ETS review negotiated. The proposal adds some ships of 400 to 5,000 GT from 2031; yachts not named.<span class="chips"><span class="chip">08</span></span></span></li>
+        <li><span class="d">22 May</span><span class="e">Louis Vuitton Cup opens in Naples; America’s Cup Match from 10 July.<span class="chips"><span class="chip">08</span></span></span></li>
+        <li><span class="d">Jun</span><span class="e">Capgemini World Wealth Report, UBS Global Family Office Report, Altrata World Ultra Wealth Report.<span class="chips"><span class="chip">02</span><span class="chip">09</span></span></span></li>
+        <li class="key"><span class="d">30 Jun</span><span class="e">YORR transitional route closes. Experienced representatives must have completed Unit 40.<span class="chips"><span class="chip">05</span></span></span></li>
+        <li class="key"><span class="d">10 Jul</span><span class="e">EU Anti-Money Laundering Regulation applies. Sales of watercraft of EUR 7.5 million and above for private use are reported to the FIU. A non-EU company or trust buying such a yacht from a trader files its beneficial owners first. Cash above EUR 10,000 is prohibited.<span class="chips"><span class="chip">03</span><span class="chip">04</span><span class="chip">09</span></span></span></li>
+        <li class="key"><span class="d">1 Sep</span><span class="e">North-East Atlantic ECA enters into force: UK, Ireland, Atlantic France, Spain and Portugal, Iceland, Faroes, Greenland.<span class="chips"><span class="chip">01</span><span class="chip">08</span></span></span></li>
+        <li><span class="d">Sep</span><span class="e">Monaco Yacht Show.<span class="chips"><span class="chip">02</span></span></span></li>
+        <li><span class="d">30 Sep</span><span class="e">First full EU ETS surrender at 100 percent. First DAC8 exchange of crypto-asset data.<span class="chips"><span class="chip">08</span><span class="chip">09</span></span></span></li>
+        <li class="key"><span class="d">23 Dec</span><span class="e">MLC 2006 amendments of 2025 in force: shore leave, repatriation costs, violence and harassment on board.<span class="chips"><span class="chip">07</span></span></span></li>
+        <li><span class="d">31 Dec</span><span class="e">Put and call on Lai Sun’s remaining 20 percent of C&amp;N become exercisable. Cybutryne antifouling applied in 2022 must be removed or sealed.<span class="chips"><span class="chip">03</span><span class="chip">06</span></span></span></li>
+        <li><span class="d">Date not set</span><span class="e">ETIAS launch for visa-exempt crew, with at least six months’ grace.<span class="chips"><span class="chip">07</span></span></span></li>
+        <li class="year"><span class="d">2028</span><span class="e"></span></li>
+        <li><span class="d">1 Jan</span><span class="e">AMLA direct supervision of the largest obliged entities begins.<span class="chips"><span class="chip">09</span></span></span></li>
+        <li><span class="d">1 Sep</span><span class="e">0.10 percent sulphur in the North-East Atlantic ECA.<span class="chips"><span class="chip">08</span></span></span></li>
+      </ol>
+
+      <div class="backdrop">
+        <h4>Backdrop without a single date</h4>
+        <p>The 2026 Iran war and its effect on war risk: in July 2026 merchant shipping paid 7.5 to 10 percent of hull value for Hormuz, about 0.5 percent for Bab al-Mandeb, and above 1 percent in the Black Sea. US bonus depreciation is now permanent. The new-build pipeline is thinning: Northrop &amp; Johnson counts 301 scheduled deliveries for 2027 and 121 for 2028 at 1 July 2026 (a floor), H1 2026 contracts fell to 142 from 177, and Ferretti took no superyacht orders in H1 while Sanlorenzo’s intake rose 18 percent.</p>
+      </div>
+    </section>
+
+    <section id="adds">
+      <h2>Additions by chapter</h2>
+      <p class="sub">New material a 2027 reader needs. Draft wording for most of it is in the chapter reports in <span class="mono">docs/2027-study/</span>.</p>
+      <div class="adds">
+        <div class="add"><span class="chap-num">01</span><p>Name 2025 as the latest full year of published data in the opening. Settle a sourced fuel price basis or drop the per-litre figure.</p></div>
+        <div class="add"><span class="chap-num">02</span><p>Retitle “Reading the market” and rebuild in five parts: what moves the market, the signals and when each report lands, one boxed position snapshot, what is scheduled for 2027 and 2028, three implications without fixed years. Chart 02.02 becomes a multi-year series with BOAT’s forecast band.</p></div>
+        <div class="add"><span class="chap-num">03</span><p>The AML Regulation as supervision of who the buyer is and where the money comes from, not of how the broker is paid. Sea Expandary’s purchase of the OceanWalker yard as the clearest vertical integration. Checklist line on changes of control.</p></div>
+        <div class="add"><span class="chap-num">04</span><p>A “What applies in 2027” box: the EC Guidance Note and ADM Circular 11/2026 as working guidance, the 10-year Temporary Admission total, the July 2027 filings. Separate Temporary Admission from inward processing.</p></div>
+        <div class="add"><span class="chap-num">05</span><p>YORR transitional route closing 30 June 2027. RMK’s Yalova yard at full capacity from 2027, builds to 150 m, no delivery record yet at that size. Italian Sea Group outcome at close.</p></div>
+        <div class="add"><span class="chap-num">06</span><p>Refit scope lines on cybutryne removal, biofouling plans and Tier III on replacement engines. MB92’s EUR 40 million Barcelona programme 2026 to 2028. The Palumbo network. Cost ranges labelled as 2025 to 2026 project values.</p></div>
+        <div class="add"><span class="chap-num">07</span><p>MLC 2025 amendments. EES live since April 2026, ETIAS due 2027. The MCA Yacht Unlimited certificate. Insurance as a 2027 renewal outlook. War risk as a dated snapshot. Bayesian as an open question naming no one. A 2027 note from Ollie Davis.</p></div>
+        <div class="add"><span class="chap-num">08</span><p>A section on emission control areas and Tier III. IMO Net-Zero as unsettled for yachts. FuelEU Maritime. Norway’s zero-emission fjords. A Polar Code note beside the Filippakis Q&amp;A. The 2027 racing calendar with Naples.</p></div>
+        <div class="add"><span class="chap-num">09</span><p>Editors’ note beneath the Quadrant interview on the 2027 filings. Independence test element 6 reworded around register filing. UK residence-based regime since April 2025. EU list status under the ownership table. UBS 2026 also omits yachts.</p></div>
+      </div>
+    </section>
+
+    <section id="site">
+      <h2>Site and print</h2>
+      <div class="two">
+        <ul class="plain">
+          <li>Edition year set in about 25 places: title page, imprint, editors’ letter signature, homepage, layout metadata, OG images, seven tools eyebrows, colophon, press page, request-print page, the llms.txt citation format.</li>
+          <li>Imprint lines that cannot print: “External pass scheduled August 2026”, “named in the second edition”, “The 1st Edition is in production”, placeholder acknowledgements.</li>
+          <li>Schema dates, the tracker quarter, dataset coverage, FAQ questions carrying “in 2026”.</li>
+        </ul>
+        <ul class="plain">
+          <li>Change the VAT page, glossary, homepage card, llms.txt and footer in one commit, so the site never carries two positions.</li>
+          <li>The sources section is a Chrome reflow tipping point, 120pp to 217pp. New source entries need valid <span class="mono">url</span> fields; check the block page count after each batch.</li>
+          <li>Plan one fit pass after the content pass, not one per chapter.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="counsel">
+      <h2>Questions for counsel</h2>
+      <p class="sub">Print these as open points unless answered before close.</p>
+      <ul class="plain">
+        <li>Whether a broker acting as agent is a “trader” under the AML Regulation, and which Member State register receives a non-EU buyer’s filing.</li>
+        <li>EU ETS and charter yachts certified for 12 passengers or fewer.</li>
+        <li>Whether Member States other than Italy accept proof of reaching international waters to end a Temporary Admission period.</li>
+        <li>The US tariff line for EU, UK and Turkish hulls at close (customs counsel).</li>
+        <li>French Commercial Exemption conditions, the Spanish refit procedure, and the Monaco 90-day claim disputed in The Superyacht Report on 16 June 2026.</li>
+        <li>Tier III for recreational yachts in the new ECAs and on replacement engines (class society).</li>
+        <li>US bonus depreciation for yachts used mainly outside the United States.</li>
+      </ul>
+    </section>
+
+    <section id="sequence">
+      <h2>Sequence</h2>
+      <ol class="seq">
+        <li>Editors settle the press close date and edition year.</li>
+        <li>Corrections pass on everything under “Wrong today”. No dependency on the 2027 decisions.</li>
+        <li>Structural pass: ch02 rebuild, relative-time sweep, slot rule, position stamps, edition strings.</li>
+        <li>Additions by chapter, with counsel and contributor questions sent at the same time.</li>
+        <li>Late refresh at close: Global Order Book 2027, P&amp;I increases, IMO vote, Italian Sea Group, C&amp;N, MarineMax, Denison, war risk, exchange rate.</li>
+        <li>Site: tool slugs and redirects, schema dates, llms.txt.</li>
+        <li>Print rebuild with page-count checks and one fit pass.</li>
+      </ol>
+    </section>
+
+    <p class="caveat">Method: 457 dated sentences indexed, then five research passes read the chapters in full against current sources. Their search budget ran out before every lead closed; anything marked unverified in the chapter reports must not print as settled. Several facts rest on one secondary source and need a primary check first: the ECB rate rise of 10 September 2026, the BOATPro H1 2026 brokerage total, the Captain Arctic sail count, the ETIAS timetable and the MGN 681 container date. Full reports with every source URL are in <code>docs/2027-study/</code> in the firstownersreference repo.</p>
+  </main>
+</div>
+
+<script>
+(function(){
+  var buttons = document.querySelectorAll('.filter button');
+  var chaps = document.querySelectorAll('#wrong .chap');
+  buttons.forEach(function(b){
+    b.addEventListener('click', function(){
+      var f = b.getAttribute('data-f');
+      buttons.forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      chaps.forEach(function(c){
+        var list = c.getAttribute('data-ch').split(' ');
+        c.hidden = !(f === 'all' || list.indexOf(f) !== -1);
+      });
+    });
+  });
+})();
+</script>
