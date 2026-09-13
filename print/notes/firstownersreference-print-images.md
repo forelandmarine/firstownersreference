@@ -1,6 +1,6 @@
 # The First Owner's Reference, 1st Edition print proof
 # Image assignments
-# Generated 2026-09-12
+# Generated 2026-09-13
 
 ## Cover
 - File: `PLACEHOLDER` → `cover.jpg`
