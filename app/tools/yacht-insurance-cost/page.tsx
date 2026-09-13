@@ -10,7 +10,7 @@ import {
   SITE_URL,
 } from "@/lib/jsonld";
 
-const URL = `${SITE_URL}/tools/yacht-insurance-cost-2026`;
+const URL = `${SITE_URL}/tools/yacht-insurance-cost`;
 const PUBLISHED = "2026-09-09";
 
 export const metadata: Metadata = {

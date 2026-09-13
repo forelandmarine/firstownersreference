@@ -28,7 +28,7 @@ export function CoverPage() {
         className="cover-page__image"
       />
       <div className="cover-page__inner">
-        <p className="cover-page__edition">1st Edition · 2026</p>
+        <p className="cover-page__edition">1st Edition · 2027</p>
         <div className="cover-page__title-block">
           <h1 className="cover-page__wordmark">
             The First Owner&rsquo;s Reference

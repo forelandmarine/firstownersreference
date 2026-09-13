@@ -294,7 +294,7 @@
       {
         "type": "editorsNote",
         "text": "The VAT position moved in 2026. The EC Guidance Note for Pleasure Craft of 30 April and Italian ADM Circular 11/2026 both changed what a non-EU yacht has to do, and the token third-country call is no longer necessary.",
-        "href": "/tools/yacht-vat-2026",
+        "href": "/tools/yacht-vat",
         "linkText": "Yacht VAT in 2026"
       },
       {
@@ -665,7 +665,7 @@
       {
         "type": "editorsNote",
         "text": "Captain and crew salary benchmarks for 2026, by position and yacht size, with the recruitment-side sources named.",
-        "href": "/tools/captain-and-crew-salary-2026",
+        "href": "/tools/captain-and-crew-salary",
         "linkText": "Open the salary benchmarks"
       },
       "The most common cause of turnover, on the recruitment-side view, is inconsistency from the top, whether owner, captain, or management structure. Crew can handle hard work, long hours, and demanding programmes. What they struggle with is unpredictability and a lack of trust in leadership. Yachts that retain crew well share clear, consistent leadership, open communication, and an onboard culture that does not change overnight.",

@@ -9,7 +9,7 @@ export function SiteFooter() {
           <p className="font-serif text-2xl leading-tight tracking-tight">
             The First Owner&rsquo;s Reference
           </p>
-          <p className="meta mt-3">1st Edition, 2026</p>
+          <p className="meta mt-3">1st Edition, 2027</p>
           <p className="caption mt-6 max-w-md">
             A yachting field manual, published annually. Independent. Contributor-led.
             Written by Foreland Marine. No advertising, ever.
@@ -73,12 +73,12 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link href="/tools/yacht-vat-2026" className="link">
+              <Link href="/tools/yacht-vat" className="link">
                 Yacht VAT in 2026
               </Link>
             </li>
             <li>
-              <Link href="/tools/captain-and-crew-salary-2026" className="link">
+              <Link href="/tools/captain-and-crew-salary" className="link">
                 Captain and crew salaries
               </Link>
             </li>
@@ -88,7 +88,7 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link href="/tools/yacht-insurance-cost-2026" className="link">
+              <Link href="/tools/yacht-insurance-cost" className="link">
                 Yacht insurance cost
               </Link>
             </li>

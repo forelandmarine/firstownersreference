@@ -73,12 +73,12 @@ export default function CaseArtwork() {
           <p className="case-spine__wordmark case-foil">
             The First Owner&rsquo;s Reference
           </p>
-          <p className="case-spine__edition case-foil">1st Edition · 2026</p>
+          <p className="case-spine__edition case-foil">1st Edition · 2027</p>
         </div>
 
         {/* Front board */}
         <div className="case-board case-board--front">
-          <p className="case-front__edition case-foil">1st Edition · 2026</p>
+          <p className="case-front__edition case-foil">1st Edition · 2027</p>
           <div className="case-front__title-block">
             <h1 className="case-front__wordmark case-foil">
               The First Owner&rsquo;s Reference

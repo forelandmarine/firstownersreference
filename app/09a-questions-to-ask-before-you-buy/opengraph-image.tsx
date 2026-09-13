@@ -6,7 +6,7 @@ export const alt = "Ten questions, The First Owner's Reference";
 
 export default async function Image() {
   return renderOgCard({
-    eyebrow: "1st Edition 2026",
+    eyebrow: "1st Edition 2027",
     eyebrowRight: "One printable page",
     title: "Ten questions to ask before you buy",
     standfirst: "Put to every adviser on the acquisition, including the publisher of this reference.",

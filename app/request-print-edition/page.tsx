@@ -65,7 +65,7 @@ export default function PrintRequestPage() {
               <p>
                 Tell us briefly who you are and why a copy would be useful.
                 We read every request and reply personally. If we run out, we
-                will say so. Edition Two ships in September 2027.
+                will say so. Edition Two is the 2028 edition.
               </p>
               <p>
                 A digital edition with the full content of the print is also

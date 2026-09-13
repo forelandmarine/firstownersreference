@@ -6,7 +6,7 @@ export const alt = "Press, The First Owner's Reference";
 
 export default async function Image() {
   return renderOgCard({
-    eyebrow: "Press, 1st Edition 2026",
+    eyebrow: "Press, 1st Edition 2027",
     eyebrowRight: "Masthead and assets",
     title: "For editors and journalists",
     standfirst: "Masthead, publication details, brand assets and contact.",

@@ -746,7 +746,7 @@ export default async function SectionPage(props: {
                   <p className="meta mb-2">Short form</p>
                   <p className="font-serif text-base text-charcoal leading-relaxed">
                     &ldquo;{section.title},&rdquo; The First
-                    Owner&rsquo;s Reference, 1st Edition, 2026.
+                    Owner&rsquo;s Reference, 1st Edition, 2027.
                   </p>
                 </div>
                 <div>
@@ -754,7 +754,7 @@ export default async function SectionPage(props: {
                   <p className="font-serif text-base text-charcoal leading-relaxed">
                     Foreland Marine, &ldquo;{section.title},&rdquo;
                     in The First Owner&rsquo;s Reference, 1st Edition
-                    (2026), Chapter {section.number},
+                    (2027), Chapter {section.number},
                     https://firstownersreference.com/{section.slug}.
                   </p>
                 </div>

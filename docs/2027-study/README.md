@@ -199,3 +199,15 @@ Backdrop that does not reduce to a date: the 2026 Iran war and its effect on war
 5. Late refresh at close: Global Order Book 2027, P&I increases, IMO vote, Italian Sea Group, C&N, MarineMax, Denison, war risk snapshot, exchange rate.
 6. Site: tool slugs and redirects, schema dates, llms.txt.
 7. Print rebuild with page-count checks and one fit pass.
+
+---
+
+## 9. Decisions taken, 13 September 2026
+
+Settled by Jack after reading this study.
+
+- **Press close and print.** Print in January 2027. Copy closes in mid-December 2026, so the late-2026 events in section 4 go in as outcomes.
+- **Edition year.** 2027 edition: "1st Edition, 2027" on site and in print, © 2027.
+- **Data.** Free data only, no BOATPro or SuperYacht Times licence. Figures behind those paywalls stay out unless published free elsewhere, and the page says the book uses published free sources.
+- **Tool URLs.** Year dropped. `/tools/yacht-vat`, `/tools/captain-and-crew-salary` and `/tools/yacht-insurance-cost`, with permanent redirects from the 2026 slugs. Titles keep a year and change when the data does.
+- **Still open.** How to treat the 2026 Iran war in print (the recommendation is a dated, factual line in ch02, ch07 war risk and ch07 insurance). The month of the 2028 edition.

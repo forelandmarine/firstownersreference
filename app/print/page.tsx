@@ -119,7 +119,7 @@ export default function PrintEdition() {
 
       {/* === TITLE PAGE === */}
       <section className="title-page">
-        <p className="title-page__edition">1st Edition · 2026</p>
+        <p className="title-page__edition">1st Edition · 2027</p>
         <h1 className="title-page__title">
           The First Owner&rsquo;s Reference
         </h1>
@@ -152,7 +152,7 @@ export default function PrintEdition() {
           </div>
           <div>
             <p className="title-page__foot-label">Edition</p>
-            <p className="title-page__foot-value">First, September 2026</p>
+            <p className="title-page__foot-value">First, January 2027</p>
           </div>
         </div>
 
@@ -175,13 +175,13 @@ export default function PrintEdition() {
       <section className="imprint">
         <p className="imprint__label">Imprint &amp; Masthead</p>
         <h2 className="imprint__title">
-          The First Owner&rsquo;s Reference, 1st Edition, 2026.
+          The First Owner&rsquo;s Reference, 1st Edition, 2027.
         </h2>
 
         <div className="imprint__cols">
           <p>
             Published by Foreland Marine Consultancy Limited, 7 Bell Yard,
-            London WC2A 2JR. ISSN pending. © 2026 Foreland Marine Consultancy
+            London WC2A 2JR. ISSN pending. © 2027 Foreland Marine Consultancy
             Limited. All rights reserved. No advertising, ever.
           </p>
           <p>
@@ -270,7 +270,7 @@ export default function PrintEdition() {
               Reader correspondence reaches the editors directly at
               editors@firstownersreference.com. Errata, contributor
               recommendations, and disagreements are read in full and
-              acknowledged. The next edition is scheduled for September 2027,
+              acknowledged. The next edition is the 2028 edition,
               with a quarterly update published online between editions at
               firstownersreference.com.
             </p>
@@ -331,7 +331,7 @@ export default function PrintEdition() {
           <p className="editors-letter__signature">
             Jack MacNally and Daniel Marks
             <br />
-            Co-editors in Chief, London, September 2026
+            Co-editors in Chief, London, January 2027
           </p>
         </div>
 
@@ -765,7 +765,7 @@ export default function PrintEdition() {
 
         <h2>Reading the second edition</h2>
         <p>
-          The second edition is scheduled for September 2027. It will carry
+          The second edition is the 2028 edition. It will carry
           named contributors against every chapter, a fully indexed back
           matter set by a professional indexer, commissioned photography
           throughout, and the acknowledgements written in full. The

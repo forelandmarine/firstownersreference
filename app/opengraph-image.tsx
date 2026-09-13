@@ -32,7 +32,7 @@ export default function Image() {
             color: "#0f3b5c",
           }}
         >
-          <div style={{ display: "flex" }}>1st Edition · 2026</div>
+          <div style={{ display: "flex" }}>1st Edition · 2027</div>
           <div style={{ display: "flex", color: "#7a756d" }}>
             firstownersreference.com
           </div>

@@ -61,7 +61,7 @@ export default function PressPage() {
 
         <section className="max-w-[80rem] mx-auto px-6 lg:px-12 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-3 space-y-2">
-            <p className="meta sticky top-32">1st Edition &middot; 2026</p>
+            <p className="meta sticky top-32">1st Edition &middot; 2027</p>
           </div>
           <div className="lg:col-span-9 prose-body max-w-prose">
             <h2>About the publication</h2>
@@ -70,8 +70,8 @@ export default function PressPage() {
               publication on the structural, financial, and operational
               dimensions of first-time superyacht acquisition. Published
               by Foreland Marine, an independent superyacht consultancy
-              headquartered in London. 1st Edition releases September
-              2026, in print and at firstownersreference.com.
+              headquartered in London. 1st Edition releases January
+              2027, in print and at firstownersreference.com.
             </p>
             <p>
               The publication is funded by the publisher and accepts no
@@ -226,12 +226,12 @@ export default function PressPage() {
             </p>
             <p>
               <em>Short form.</em> The First Owner&rsquo;s Reference,
-              1st Edition, 2026.
+              1st Edition, 2027.
             </p>
             <p>
               <em>Full form.</em> [Author], &ldquo;[Chapter or piece
               title],&rdquo; The First Owner&rsquo;s Reference, 1st
-              Edition, 2026, published by Foreland Marine,{" "}
+              Edition, 2027, published by Foreland Marine,{" "}
               <Link href="/" className="link-marine">
                 firstownersreference.com
               </Link>
@@ -247,7 +247,7 @@ export default function PressPage() {
               500 hand-numbered copies. Smyth-sewn, casebound. Munken
               Pure 120gsm uncoated text stock, GF Smith Colorplan cover
               boards. Trim 230 by 300 mm. ISSN pending. Released
-              September 2026. Print copies are available to first-time
+              January 2027. Print copies are available to first-time
               superyacht buyers and named industry contacts on request
               via the{" "}
               <Link href="/request-print-edition" className="link-marine">

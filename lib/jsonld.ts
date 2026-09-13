@@ -129,7 +129,7 @@ export function articleSchema(opts: {
         : [{ "@id": JACK_ID }, { "@id": DAN_ID }];
 
   const suggestedCitation = opts.chapterTitle
-    ? `Foreland Marine, "${opts.chapterTitle}," in The First Owner's Reference, 1st Edition (2026)${opts.chapterNumber ? `, Chapter ${opts.chapterNumber}` : ""}, ${opts.url}.`
+    ? `Foreland Marine, "${opts.chapterTitle}," in The First Owner's Reference, 1st Edition (2027)${opts.chapterNumber ? `, Chapter ${opts.chapterNumber}` : ""}, ${opts.url}.`
     : undefined;
 
   return {

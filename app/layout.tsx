@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The First Owner's Reference",
     description:
-      "An independent, contributor-led yachting field manual for first-time superyacht buyers. 1st Edition, 2026.",
+      "An independent, contributor-led yachting field manual for first-time superyacht buyers. 1st Edition, 2027.",
     type: "website",
     locale: "en_GB",
     siteName: "The First Owner's Reference",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The First Owner's Reference",
     description:
-      "An independent yachting field manual for first-time superyacht buyers. 1st Edition, 2026.",
+      "An independent yachting field manual for first-time superyacht buyers. 1st Edition, 2027.",
   },
   robots: {
     index: true,

@@ -19,7 +19,7 @@ export function GET() {
   lines.push("# The First Owner's Reference");
   lines.push("");
   lines.push(
-    "> An independent, contributor-led yachting field manual for first-time superyacht buyers. Published annually by Foreland Marine Consultancy Ltd. 1st Edition, 2026. No advertising, no sponsorship, no brokerage or shipyard affiliation, no affiliate links."
+    "> An independent, contributor-led yachting field manual for first-time superyacht buyers. Published annually by Foreland Marine Consultancy Ltd. 1st Edition, 2027. No advertising, no sponsorship, no brokerage or shipyard affiliation, no affiliate links."
   );
   lines.push("");
 
@@ -62,16 +62,16 @@ export function GET() {
     `Running cost calculator. Annual operating cost modelled against size, type, region and use intensity, across nine cost categories. URL: ${SITE_URL}/tools/running-cost-calculator`
   );
   lines.push(
-    `Yacht VAT in 2026. The EC Guidance Note for Pleasure Craft of 30 April 2026, Italian ADM Circular 11/2026, Temporary Admission, and the post-Brexit UK position. URL: ${SITE_URL}/tools/yacht-vat-2026`
+    `Yacht VAT in 2026. The EC Guidance Note for Pleasure Craft of 30 April 2026, Italian ADM Circular 11/2026, Temporary Admission, and the post-Brexit UK position. URL: ${SITE_URL}/tools/yacht-vat`
   );
   lines.push(
-    `Captain and crew salaries 2026. Benchmarks by position and yacht size, sourced from the recruitment side. URL: ${SITE_URL}/tools/captain-and-crew-salary-2026`
+    `Captain and crew salaries 2026. Benchmarks by position and yacht size, sourced from the recruitment side. URL: ${SITE_URL}/tools/captain-and-crew-salary`
   );
   lines.push(
     `Order book tracker. The 2026 Global Order Book by yard, country and hull type. URL: ${SITE_URL}/tools/order-book-tracker`
   );
   lines.push(
-    `Yacht insurance cost 2026. Hull and machinery rates as a percentage of insured value, P&I limits, war risk pricing by region, and the deductible and warranty terms that are negotiable at quote stage. URL: ${SITE_URL}/tools/yacht-insurance-cost-2026`
+    `Yacht insurance cost 2026. Hull and machinery rates as a percentage of insured value, P&I limits, war risk pricing by region, and the deductible and warranty terms that are negotiable at quote stage. URL: ${SITE_URL}/tools/yacht-insurance-cost`
   );
   lines.push(
     `Yacht depreciation. The broker-aggregated depreciation curve by year, the builders that beat it, total five-year hold cost, and the charter arithmetic. URL: ${SITE_URL}/tools/yacht-depreciation`
@@ -108,7 +108,7 @@ export function GET() {
   lines.push("## Terms of citation");
   lines.push("");
   lines.push(
-    "Quotation and citation are welcome with attribution to The First Owner's Reference, 1st Edition (2026), naming the chapter and URL. Figures are dated and sourced on the page; cite the underlying source alongside this publication where the figure originates elsewhere."
+    "Quotation and citation are welcome with attribution to The First Owner's Reference, 1st Edition (2027), naming the chapter and URL. Figures are dated and sourced on the page; cite the underlying source alongside this publication where the figure originates elsewhere."
   );
   lines.push("");
 

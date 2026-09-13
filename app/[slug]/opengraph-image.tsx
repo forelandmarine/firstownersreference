@@ -15,8 +15,8 @@ export default async function Image({
 
   return renderOgCard({
     eyebrow: section
-      ? `Chapter ${section.number}, 1st Edition 2026`
-      : "1st Edition 2026",
+      ? `Chapter ${section.number}, 1st Edition 2027`
+      : "1st Edition 2027",
     eyebrowRight: section?.coordinates,
     title: section?.title ?? "The First Owner's Reference",
     standfirst: section?.standfirst,

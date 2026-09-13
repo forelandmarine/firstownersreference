@@ -48,7 +48,7 @@ export default function ColophonPage() {
 
         <section className="max-w-[80rem] mx-auto px-6 lg:px-12 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-3 space-y-2">
-            <p className="meta sticky top-32">1st Edition &middot; 2026</p>
+            <p className="meta sticky top-32">1st Edition &middot; 2027</p>
           </div>
           <div className="lg:col-span-9 prose-body max-w-prose">
             <h2>Editorial principles</h2>
@@ -212,7 +212,7 @@ export default function ColophonPage() {
 
             <h2>Citation</h2>
             <p>
-              The First Owner&rsquo;s Reference, 1st Edition, 2026. Published
+              The First Owner&rsquo;s Reference, 1st Edition, 2027. Published
               by Foreland Marine, London. ISSN pending. Citation suggested as
               author Foreland Marine, year 2026, title of essay or chapter,
               published in The First Owner&rsquo;s Reference 1st Edition, URL.

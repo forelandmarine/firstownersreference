@@ -63,7 +63,7 @@ export default function HomePage() {
               className="meta mt-8"
               style={{ color: "var(--color-paper)" }}
             >
-              1st Edition &middot; September 2026
+              1st Edition &middot; January 2027
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function HomePage() {
               </p>
               <p className="font-serif italic text-base leading-relaxed text-stone max-w-2xl pt-6 mt-2 border-t border-rule">
                 N.B. The First Owner&rsquo;s Reference is still being
-                written and contributed to, ahead of publication Q4 2026.
+                written and contributed to, ahead of publication in January 2027.
               </p>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function HomePage() {
             <h2 className="font-serif text-headline leading-tight tracking-tight">
               Chapters
             </h2>
-            <p className="meta">1st Edition, 2026</p>
+            <p className="meta">1st Edition, 2027</p>
           </div>
           <p className="font-serif italic text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl mb-16">
             Each chapter pairs a lead essay with a data spread, a guest
@@ -234,13 +234,13 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-rule border border-rule">
             {[
               {
-                href: "/tools/yacht-vat-2026",
+                href: "/tools/yacht-vat",
                 title: "Yacht VAT in 2026",
                 blurb:
                   "What the EC Guidance Note of 30 April and Italian ADM Circular 11/2026 changed, and what a non-EU yacht now has to do.",
               },
               {
-                href: "/tools/captain-and-crew-salary-2026",
+                href: "/tools/captain-and-crew-salary",
                 title: "Captain and crew salaries",
                 blurb:
                   "Benchmarks by position and yacht size for 2026, with the recruitment-side sources named on every band.",
@@ -252,7 +252,7 @@ export default function HomePage() {
                   "The 2026 Global Order Book by yard, country, and hull type, with delivery years and the source for each figure.",
               },
               {
-                href: "/tools/yacht-insurance-cost-2026",
+                href: "/tools/yacht-insurance-cost",
                 title: "Yacht insurance cost",
                 blurb:
                   "Hull and machinery rates, P&I limits, war risk pricing by region, and the four terms worth negotiating at quote stage.",

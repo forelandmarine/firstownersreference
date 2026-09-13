@@ -152,7 +152,7 @@ export default async function ChecklistPrintPage(props: {
 
         <footer className="sheet-footer">
           <p>
-            firstownersreference.com, 1st Edition 2026, {section.title}
+            firstownersreference.com, 1st Edition 2027, {section.title}
           </p>
         </footer>
       </article>
