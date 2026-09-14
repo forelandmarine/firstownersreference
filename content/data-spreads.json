@@ -176,7 +176,7 @@
       },
       {
         "label": "Quay Crew Superyacht Captain Salary & Leave Report 2025/26",
-        "line": "367 captains surveyed; 7 percent year-on-year pay rise in the 70 to 79 m bracket; 63 percent on time-for-time rotation; 62 percent admit to working during rotational leave.",
+        "line": "367 captains surveyed; 7 percent pay rise in the 70 to 79 m bracket against the 2023 survey; 63 percent of all captains surveyed on time-for-time rotation; 62 percent admit to working during rotational leave.",
         "url": "https://quaygroup.com/blog/superyacht-captain-salary-leave-report-2025-26/"
       },
       {
@@ -315,15 +315,15 @@
           ],
           [
             "Average length",
-            "39.6 m",
+            "40.0 m",
             "40.8 m",
-            "Up 1.2 m"
+            "Up 0.8 m"
           ],
           [
             "Average tonnage",
-            "529 GT",
+            "507 GT",
             "551 GT",
-            "Up 22 GT"
+            "Up 44 GT"
           ],
           [
             "Italy share, by units",
@@ -385,11 +385,11 @@
       },
       {
         "type": "kv",
-        "caption": "Slot availability is the practical constraint for first-time buyers entering in 2026.",
+        "caption": "Slot availability is the practical constraint for a first-time buyer. Positions as published by September 2026.",
         "rows": [
           {
             "label": "Lürssen",
-            "value": "Booked through mid-2027 at minimum"
+            "value": "Large-yacht capacity committed several years ahead; enlarged by the Nobiskrug yard at Rendsburg in 2025"
           },
           {
             "label": "Feadship",
@@ -397,11 +397,11 @@
           },
           {
             "label": "Oceanco",
-            "value": "Delivered 111 m DreAMBoat in 18 months, Nov 2025 (counter-example of speed)"
+            "value": "Delivered 111 m DreAMBoat Nov 2025, 45 months from contract and about 18 months faster than a typical custom build (counter-example of speed)"
           },
           {
             "label": "Heesen",
-            "value": "Speculative-build model since 2023, full backlog through 2025 and beyond"
+            "value": "Speculative-build model; hulls in build for delivery 2026 to 2028"
           },
           {
             "label": "Damen Yachting",
@@ -417,7 +417,7 @@
           },
           {
             "label": "Southern Wind",
-            "value": "Order book extending through 2028 as of May 2026 (Superyacht Investor)"
+            "value": "Next available build slot 2028, as reported May 2026 (Superyacht Investor)"
           },
           {
             "label": "Sanlorenzo UK and Ireland, late-Q1 2026 read",
@@ -435,43 +435,23 @@
         "caption": "Brokerage market 2025, by published source.",
         "rows": [
           {
-            "label": "Total transaction value (BOAT International)",
-            "value": "EUR 7.5 bn"
+            "label": "Total transaction value, yachts over 30 m (Edmiston)",
+            "value": "EUR 7.1 bn across 363 yachts"
           },
           {
-            "label": "Edmiston house transactions, 2025 market review",
-            "value": "Above EUR 2.6 bn; more 40 m+ yachts sold than any other brokerage; more EUR 20 m+ yachts than any competitor"
+            "label": "Edmiston, 2025 market review",
+            "value": "More 40 m+ and more EUR 20 m+ yachts sold than any other brokerage (Edmiston’s own figures)"
           },
           {
-            "label": "Denison, 79 ft and above",
-            "value": "470 yachts"
-          },
-          {
-            "label": "Above EUR 40 m asking",
+            "label": "Priced above EUR 40 m",
             "value": "7 percent of volume, 52 percent of value"
-          },
-          {
-            "label": "Median days on market (Denison)",
-            "value": "277 (lowest in five-year series)"
-          },
-          {
-            "label": "Listings that did not sell, average DOM",
-            "value": "573 days"
-          },
-          {
-            "label": "Average price reductions per listing, Q1 2024 to Q1 2025",
-            "value": "1.36 down to 0.76"
-          },
-          {
-            "label": "Average reduction rate, Q1 2024 to Q1 2025",
-            "value": "Minus 12.6 to minus 8.97 percent"
           }
         ],
-        "sourceLine": "BOAT International, Edmiston Annual Review, Denison Yachting market report."
+        "sourceLine": "Edmiston 2025 market review (26 February 2026)."
       },
       {
         "type": "note",
-        "text": "The Edmiston 30 m+ count of 363 and the Denison broader count of 470 are not comparable. The 30 m+ figure is the relevant one for the readership of The First Owner’s Reference."
+        "text": "The Edmiston count covers yachts over 30 m, the band relevant to readers of The First Owner’s Reference. Broader counts reaching down to 24 m are not comparable with it."
       },
       {
         "type": "h2",
@@ -571,18 +551,13 @@
         "url": "https://www.edmiston.com/2025-luxury-superyacht-brokerage-market-review/"
       },
       {
-        "label": "Denison Yachting market report",
-        "line": "Days-on-market and price-reduction discipline; 470 yachts in broader 79 ft and above count.",
-        "url": "https://www.denisonyachting.com/superyacht-market-report/"
-      },
-      {
         "label": "SuperYacht Times iQ data",
         "line": "Russian ownership share movement, 2022 to 2023; Asia-Pacific fleet growth.",
         "url": "https://www.superyachttimes.com/iq"
       },
       {
         "label": "Superyacht Investor, May 2026",
-        "line": "Rob Hodgetts, “Palma finds groove in search for sailing’s new generation.” Southern Wind order book through 2028; SW108 Kalantis owner demographic; Sanlorenzo buyer-meeting volume.",
+        "line": "Rob Hodgetts, “Palma finds groove in search for sailing’s new generation.” Southern Wind next available build slot 2028; SW108 Kalantis owner demographic; Sanlorenzo buyer-meeting volume.",
         "url": "https://www.superyachtinvestor.com/opinion/palma-finds-groove-in-search-for-sailings-new-generation/"
       }
     ]
@@ -681,7 +656,7 @@
       },
       {
         "type": "kv",
-        "caption": "Independent founder-led houses are now the minority by deal volume. The roll-up is essentially complete.",
+        "caption": "Burgess, Camper & Nicholsons, Fraser, Northrop & Johnson and Denison all changed ownership, or agreed to, between November 2025 and September 2026. Consolidation is continuing. Position at September 2026.",
         "rows": [
           {
             "label": "Camper & Nicholsons",
@@ -693,15 +668,15 @@
           },
           {
             "label": "Fraser",
-            "value": "Inside MarineMax (NYSE: HZO) since 2019"
+            "value": "Inside MarineMax since 2019; MarineMax agreed in August 2026 to be sold to Safe Harbor Marinas (Blackstone Infrastructure), completion expected end 2026"
           },
           {
             "label": "Northrop & Johnson",
-            "value": "Inside MarineMax since 2020"
+            "value": "Inside MarineMax since 2020; subject to the same pending sale to Safe Harbor Marinas"
           },
           {
             "label": "Denison Yachting",
-            "value": "Sold to OneWater Marine (NASDAQ: ONEW) April 2022; merged into OneWater Yacht Group September 2025"
+            "value": "Sold to OneWater Marine (NASDAQ: ONEW) April 2022; majority interest agreed for sale to OceanWorld Group September 2026, OneWater keeping a minority"
           }
         ],
         "sourceLine": "Public filings; trade press coverage; corporate communications."
@@ -748,7 +723,7 @@
       },
       {
         "type": "kv",
-        "caption": "There is no financial regulator anywhere in the major jurisdictions that supervises yacht brokerage conduct.",
+        "caption": "There is no financial regulator anywhere in the major jurisdictions that supervises yacht brokerage conduct. EU anti-money-laundering rules reach yacht sales from July 2027, but they govern the buyer’s identity and funds, not broker conduct.",
         "rows": [
           {
             "label": "UK Financial Conduct Authority",
@@ -772,7 +747,7 @@
           },
           {
             "label": "Ya Mon Expeditions LLC v. IYBA et al.",
-            "value": "Dismissed January 2025 on procedural grounds; pleadings on file"
+            "value": "Dismissal of January 2025 vacated; Eleventh Circuit affirmed denial of arbitration, 10 June 2026; proceedings resumed in district court"
           }
         ],
         "sourceLine": "Public filings; FCA / MCA scope statements."
@@ -806,8 +781,8 @@
       },
       {
         "label": "Ya Mon Expeditions LLC v. IYBA et al.",
-        "line": "US District Court for Southern District of Florida; dismissed January 2025 by Judge K. Michael Moore on procedural grounds.",
-        "url": "https://tradeonlytoday.com/industry-news/judge-dismisses-ya-mon-case/"
+        "line": "US District Court for the Southern District of Florida, No. 1:24-cv-20805 (Judge K. Michael Moore); Eleventh Circuit No. 25-10140, opinion 10 June 2026.",
+        "url": "https://law.justia.com/cases/federal/appellate-courts/ca11/25-10140/25-10140-2026-06-10.html"
       }
     ]
   },
@@ -876,13 +851,13 @@
           ],
           [
             "Maltese leasing scheme",
-            "Effective VAT 5.4–6.12 percent on yachts above 24 m",
-            "Maltese leasing structure; specific payment profile; substance requirements"
+            "VAT follows documented use inside and outside EU waters",
+            "Guidelines of 12 March 2020; use evidenced by logs, AIS or GPS data; lease to a non-taxable lessee"
           ],
           [
             "Italian leasing",
-            "Largely curtailed by EU infringement proceedings",
-            "Rarely advisable in 2026"
+            "Effective-use test since 1 November 2020",
+            "User declares actual use in EU waters; evidence required"
           ]
         ],
         "sourceLine": "Hill Dickinson, Watson Farley & Williams, Ince, Stephenson Harwood, Reed Smith published commentary."
@@ -1288,8 +1263,8 @@
   },
   "06-refit": {
     "slug": "06-refit",
-    "title": "Refit yard capacity and typical overrun curve, 2026 to 2028",
-    "standfirst": "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. Capacity at dominant yards is tightening into a sellers’ market for the first time in a decade. The numbers to plan against.",
+    "title": "Refit yard capacity and typical overrun curve, 2027 to 2029",
+    "standfirst": "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. Capacity at dominant yards is tightening. The numbers to plan against.",
     "blocks": [
       {
         "type": "h2",
@@ -1674,7 +1649,7 @@
       },
       {
         "type": "table",
-        "caption": "Captain pay rises with size. Quay Crew records 7 percent year-on-year growth in the 70 to 79 m bracket; 63 percent of captains are now on time-for-time rotation.",
+        "caption": "Captain pay rises with size. Quay Crew records 7 percent growth in the 70 to 79 m bracket since its 2023 survey; 63 percent of captains surveyed are on time-for-time rotation.",
         "head": [
           "Yacht size",
           "Captain pay (EUR per month)"
@@ -1698,7 +1673,7 @@
           ],
           [
             "70–79 m",
-            "14,000–20,000 (up 7 percent year on year)"
+            "14,000–20,000 (up 7 percent on 2023)"
           ],
           [
             "80–99 m",
@@ -1802,7 +1777,7 @@
           ],
           [
             "Specialist alternatives",
-            "Norton & Co, J&H Marsh, AXA Marine, YachtSure, Northstar, and a small number of yacht-only houses",
+            "Smaller yacht-specialist brokers and single-jurisdiction houses",
             "Relationship-based selection; underwriting markets similar to the larger brokers"
           ]
         ],
@@ -2035,11 +2010,11 @@
             "value": "81 percent"
           },
           {
-            "label": "Yacht references in UBS Global Family Office Report 2025",
+            "label": "Yacht references in UBS Global Family Office Reports 2025 and 2026",
             "value": "Zero, across 80 pages and 317 family offices"
           }
         ],
-        "sourceLine": "Knight Frank Wealth Report 2026; Capgemini World Wealth Report 2025; UBS Global Family Office Report 2025."
+        "sourceLine": "Knight Frank Wealth Report 2026; Capgemini World Wealth Report 2025; UBS Global Family Office Reports 2025 and 2026."
       },
       {
         "type": "h2",
@@ -2257,8 +2232,8 @@
         "rows": [
           [
             "Order book 2026 share",
-            "~12%",
-            "~88%"
+            "69 of 1,093 (about 6%)",
+            "837 motor and 101 explorer of 1,093"
           ],
           [
             "Active over-30 m fleet share",
@@ -2355,7 +2330,7 @@
       },
       {
         "type": "table",
-        "caption": "EU Emissions Trading System Maritime extension, in force from 1 January 2024, applies to ships of and above 5,000 gross tonnage calling at EEA ports. Compliance is phased: 40 percent of 2024 emissions paid in 2025, 70 percent of 2025 emissions paid in 2026, 100 percent from 2027. Methane and nitrous oxide added from 2026.",
+        "caption": "EU Emissions Trading System Maritime extension, in force from 1 January 2024, applies to ships of and above 5,000 gross tonnage carrying passengers or cargo for commercial purposes to or from EEA ports; a yacht in private use is outside it at any size. Compliance is phased: 40 percent of 2024 emissions paid in 2025, 70 percent of 2025 emissions paid in 2026, 100 percent of 2026 emissions onward, first due 30 September 2027. Methane and nitrous oxide added from 2026.",
         "head": [
           "Yacht profile",
           "Typical GT",
@@ -2375,12 +2350,12 @@
           [
             "90 m motor",
             "Around 5,000 GT",
-            "Borderline; some inside"
+            "Inside only if 5,000 GT or more and on commercial charter"
           ],
           [
             "110 m+ motor",
             "Above 5,000 GT",
-            "Inside, EUR 200–400 k per year on current carbon prices"
+            "Inside only if on commercial charter; private use is outside"
           ],
           [
             "50 m sail",
@@ -2425,11 +2400,6 @@
         "label": "Royal Huisman published sustainability commentary",
         "line": "Sail vs motor carbon footprint comparison; HVO and methanol-ready new builds.",
         "url": "https://www.royalhuisman.com/sustainability"
-      },
-      {
-        "label": "Denison Yachting market report 2025",
-        "line": "Days-on-market series across motor and sail brokerage.",
-        "url": "https://www.denisonyachting.com/superyacht-market-report/"
       },
       {
         "label": "Superyacht Investor, May 2026",

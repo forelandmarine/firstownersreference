@@ -40,7 +40,7 @@ const FAQS = [
   {
     question: "How many superyachts are on order in 2026?",
     answer:
-      "The 2026 BOAT International Global Order Book records 1,093 yachts of 24 metres and above on order or in build, down from 1,138 in the 2025 edition and the second consecutive annual decline by unit count. Average length has risen to 40.8 metres and average tonnage to 551 GT, both the highest ever recorded. The order book is contracting in units while growing in size per yacht.",
+      "The 2026 BOAT International Global Order Book records 1,093 yachts of 24 metres and above on order or in build, down from 1,138 in the 2025 edition and the second consecutive annual decline by unit count. Average length has risen to 40.8 metres and average tonnage to 551 GT, up from 40.0 metres and 507 GT in the 2025 edition. The order book is contracting in units while growing in size per yacht.",
   },
   {
     question: "Which country builds the most superyachts?",
@@ -55,7 +55,7 @@ const FAQS = [
   {
     question: "How long is the wait for a new build slot at a top-tier yard?",
     answer:
-      "At the top tier, current published positions run: Lurssen booked through mid-2027 at minimum; Feadship quoting 2028 to 2029; Damen Yachting booked through Q4 2028 or Q1 2029 on certain Yacht Support models; Sanlorenzo extending to Q4 2028 or Q1 2029 on its SX, SD, and Steel ranges. Heesen operates a speculative-build model, which can shorten the wait where a hull in build matches the requirement. Slot availability, not price, is the practical constraint for a buyer entering in 2026.",
+      "At the top tier, positions published in 2026 run: Lürssen large-yacht capacity committed several years ahead; Feadship quoting 2028 to 2029; Damen Yachting booked through Q4 2028 or Q1 2029 on certain Yacht Support models; Sanlorenzo extending to Q4 2028 or Q1 2029 on its SX, SD, and Steel ranges. Heesen operates a speculative-build model, which can shorten the wait where a hull in build matches the requirement. Slot availability, not price, is the practical constraint for a buyer entering in 2027.",
   },
 ];
 
@@ -212,15 +212,15 @@ export default function OrderBookTrackerPage() {
                       </tr>
                       <tr className="border-b border-rule">
                         <td className="py-2 pr-4">Average length</td>
-                        <td className="py-2 pr-4">39.6 m</td>
+                        <td className="py-2 pr-4">40.0 m</td>
                         <td className="py-2 pr-4">40.8 m</td>
-                        <td className="py-2">Up 1.2 m</td>
+                        <td className="py-2">Up 0.8 m</td>
                       </tr>
                       <tr className="border-b border-rule">
                         <td className="py-2 pr-4">Average tonnage</td>
-                        <td className="py-2 pr-4">529 GT</td>
+                        <td className="py-2 pr-4">507 GT</td>
                         <td className="py-2 pr-4">551 GT</td>
-                        <td className="py-2">Up 22 GT</td>
+                        <td className="py-2">Up 44 GT</td>
                       </tr>
                       <tr className="border-b border-rule">
                         <td className="py-2 pr-4">Italy share, by units</td>
@@ -322,16 +322,16 @@ export default function OrderBookTrackerPage() {
               </h2>
               <div className="prose-body text-charcoal max-w-prose space-y-4">
                 <p>
-                  For a buyer entering in 2026, the practical constraint is
+                  For a buyer entering in 2027, the practical constraint is
                   not price but the delivery slot. Current published
-                  positions: Lurssen is booked through mid-2027 at minimum.
+                  positions: Lürssen&rsquo;s large-yacht capacity is committed several years ahead.
                   Feadship is quoting 2028 to 2029. Damen Yachting's Yacht
                   Support range is booked through Q4 2028 or Q1 2029 on
                   certain models, and Sanlorenzo's SX, SD, and Steel ranges
-                  extend to the same horizon. Heesen has operated a
-                  speculative-build model since 2023, which can shorten the
+                  extend to the same horizon. Heesen operates a
+                  speculative-build model, which can shorten the
                   wait where a hull already in build matches the requirement.
-                  Oceanco's delivery of the 111-metre DreAMBoat in 18 months
+                  Oceanco's delivery of the 111-metre DreAMBoat in November 2025, about 18 months faster than a conventional custom build,
                   stands as the counter-example of what compressed timelines
                   look like when a yard clears the path.
                 </p>

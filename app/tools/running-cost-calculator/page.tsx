@@ -96,7 +96,7 @@ function lerp(a: number, b: number, t: number) {
 
 const currencyRates: Record<Currency, number> = {
   EUR: 1,
-  USD: 1.09,
+  USD: 1.16,
   GBP: 0.86,
 };
 
@@ -390,7 +390,7 @@ function calculateCosts(
       { label: "Radio licensing", amount: radioLicensing },
       { label: "ISM / SMS compliance", amount: ismCompliance },
       ...(isCharter
-        ? [{ label: "Yacht code (LY3/PYC)", amount: yachtCode }]
+        ? [{ label: "Yacht code (REG Yacht Code/PYC)", amount: yachtCode }]
         : []),
     ],
     contingency: [],
@@ -796,7 +796,7 @@ export default function RunningCostCalculatorPage() {
                 {useType === "charter" && (
                   <p className="caption pt-1">
                     Charter yachts require commercial insurance, larger crews,
-                    LY3/PYC compliance, and dedicated charter management.
+                    REG Yacht Code/PYC compliance, and dedicated charter management.
                   </p>
                 )}
               </div>
@@ -1102,7 +1102,7 @@ export default function RunningCostCalculatorPage() {
               ))}
             </div>
             <p className="meta mt-10">
-              Last updated 2026. Figures based on current market data and
+              Last updated September 2026. Figures based on current market data and
               Foreland Marine operational experience.
             </p>
           </details>
@@ -1154,10 +1154,10 @@ export default function RunningCostCalculatorPage() {
                 href: "https://www.superyachtnews.com/reports/thesuperyachtreport",
               },
               {
-                title: "MCA Large Yacht Code (LY3)",
+                title: "Red Ensign Group Yacht Code (July 2024 edition)",
                 detail:
                   "Commercial compliance survey costs, manning requirements, and flag-state fee schedules.",
-                href: "https://www.gov.uk/government/collections/large-commercial-yacht-code",
+                href: "https://www.redensigngroup.org/latest/news/revised-red-ensign-group-yacht-code-published/",
               },
               {
                 title: "Foreland Marine operational data",

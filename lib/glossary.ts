@@ -55,7 +55,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The country under whose laws a yacht is registered. Common choices for superyachts include Cayman Islands, Marshall Islands, Malta, and the Red Ensign Group jurisdictions.",
     longDefinition:
-      "The flag state determines the safety, manning, and operational rules a yacht must comply with, the access to commercial charter regimes, and the tax-and-substance treatment of the owning entity. Cayman, Marshall Islands, and Malta carry roughly 84-day commercial charter allowances under their respective YET, PYLC, and lease regimes. Selection depends on four things in combination: compliance, charter intent, financing, and owner residence.",
+      "The flag state determines the safety, manning, and operational rules a yacht must comply with, the access to commercial charter regimes, and the tax-and-substance treatment of the owning entity. Cayman and the Marshall Islands allow limited commercial charter of privately registered yachts, roughly 84 days a year under their YET and PYLC regimes; Malta’s leasing arrangement is a VAT mechanism, not a charter allowance. Selection depends on four things in combination: compliance, charter intent, financing, and owner residence.",
     source: {
       name: "Red Ensign Group",
       url: "https://www.redensigngroup.org/",
@@ -219,7 +219,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The customs procedure under which a yacht enters EU customs territory and Union customs status is granted, typically with VAT and any duty paid at the point of entry.",
     longDefinition:
-      "Importation is the customs act by which a non-EU yacht obtains Union goods status. It involves payment of VAT on the customs value of the yacht, plus any applicable duty. Once imported, the yacht can move freely within the EU customs territory without further customs formalities, subject to retention of VAT-paid status. The importing entity must be EU-established for standard importation; non-EU buyers route through an EU representative or via Spanish IPR or French Commercial Exemption to defer the VAT trigger.",
+      "Importation is the customs act by which a non-EU yacht obtains Union goods status. It involves payment of VAT on the customs value of the yacht, plus any applicable duty. Once imported, the yacht can move freely within the EU customs territory without further customs formalities, subject to retention of VAT-paid status. A non-EU person importing a yacht normally acts through an indirect customs representative established in the EU (European Commission Guidance Note for Pleasure Craft, 30 April 2026).",
     relatedChapters: ["04-acquisition-process", "06-refit", "09-decision-framework"],
     relatedTerms: ["vat-paid-status", "spanish-ipr", "temporary-admission"],
   },
@@ -229,7 +229,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "An EU customs regime under which a non-EU registered yacht with non-EU established owner and users can cruise EU waters for up to 18 months at a stretch without paying VAT or duty.",
     longDefinition:
-      "Temporary Admission (TA) permits a non-EU yacht to enter EU customs territory for a maximum of 18 months in any one period, with an aggregate cap of up to 10 years cumulative. The yacht must be non-EU registered, non-EU owned, and used by non-EU established persons; commercial charter from EU ports under TA is prohibited. Sale of a yacht under TA inside the EU triggers VAT and duty. TA resets when the yacht leaves EU waters and obtains a third-country customs stamp.",
+      "Temporary Admission (TA) lets a yacht registered outside the EU, used by a person established outside the EU, stay in the EU customs territory for up to 18 months per period without paying import duty or VAT. There is no minimum time outside the EU before a new period starts, but total time under TA may not exceed 10 years (Article 251(4) Union Customs Code). Commercial charter from EU ports under TA is prohibited, and a sale inside the EU triggers VAT and duty. Italy’s customs agency accepts proof of reaching international waters, such as AIS data, log entries or foreign bunker receipts, to end a period; practice in other Member States may differ (European Commission Guidance Note for Pleasure Craft, 30 April 2026; ADM Circular 11/2026).",
     source: {
       name: "European Commission Taxation and Customs Union",
       url: "https://taxation-customs.ec.europa.eu/document/download/fa095d6b-45dd-4c7a-94c7-bad21d0473a9_en",
@@ -485,7 +485,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "United States One Big Beautiful Bill Act provision allowing up to 100 percent first-year depreciation on yachts placed in commercial service between 2025 and 2029.",
     longDefinition:
-      "The One Big Beautiful Bill Act of 2025 (in force January 2025) restored 100 percent bonus depreciation on qualifying business assets including yachts placed in commercial service between 20 January 2025 and 21 December 2029. Conditions, drawn from US tax-law business-use principles, require greater than 50 percent charter use and greater than 50 percent US-waters time, with contemporaneous documentation. Identified by Stewart Campbell of BOAT International as the largest single driver of the 2025 surge that took global yacht transactions to USD 8.5 billion. Pre-transaction US yacht-tax counsel review essential.",
+      "The One Big Beautiful Bill Act of 2025 made 100 percent bonus depreciation permanent for qualifying business property acquired after 19 January 2025, as IRS Notice 2026-11 confirms. For a yacht the relief depends on genuine business use, usually a documented charter operation, with contemporaneous records; the treatment of yachts used mainly outside the United States is a point for US tax counsel. Identified by Stewart Campbell of BOAT International as the largest single driver of the 2025 surge that took global yacht transactions to USD 8.5 billion. Pre-transaction US yacht-tax counsel review essential.",
     relatedChapters: ["02-reading-the-market"],
     relatedTerms: ["obbba"],
   },

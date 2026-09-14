@@ -45,17 +45,17 @@ const FAQS = [
   {
     question: "How does Temporary Admission work for non-EU yachts?",
     answer:
-      "A non-EU registered yacht with non-EU established owner and non-EU established users may cruise EU waters for up to 18 months at a stretch under Temporary Admission, with cumulative use normally capped at 10 years. Commercial charter from EU ports under TA is prohibited. Sale of a yacht under TA inside the EU triggers VAT and duty. The procedure discharges on exit from EU territorial waters; a fresh period runs from the next entry.",
+      "A non-EU registered yacht with non-EU established owner and non-EU established users may cruise EU waters for up to 18 months at a stretch under Temporary Admission, with total time under the procedure limited by law to 10 years. Commercial charter from EU ports under TA is prohibited. Sale of a yacht under TA inside the EU triggers VAT and duty. The procedure discharges on exit from EU territorial waters; a fresh period runs from the next entry.",
   },
   {
     question: "What did the EU's April 2026 guidance on pleasure craft change?",
     answer:
-      "The European Commission Guidance Note for Pleasure Craft (30 April 2026) changes interpretation, not law. It confirms that 'VAT-paid yacht' has no legal standing and the operative concept is Union goods status; that yachts inside EU customs territory are presumed Union goods, with proof requested only on specific doubt; that flag, registration, and owner nationality do not determine VAT status; and that Temporary Admission runs 18 months per stay, normally capped at 10 years cumulative. Italian ADM Circular 11/2026 applies the same reading at national level.",
+      "The European Commission Guidance Note for Pleasure Craft (30 April 2026) changes interpretation, not law. It confirms that 'VAT-paid yacht' is not a term used in customs law and the operative concept is Union goods status; that yachts inside EU customs territory are presumed Union goods, with proof requested only on specific doubt; that flag, registration, and owner nationality do not determine VAT status; and that Temporary Admission runs 18 months per stay, with a total of 10 years set by Article 251(4) of the Union Customs Code. Italian ADM Circular 11/2026 applies the same reading at national level.",
   },
   {
     question: "Does a yacht need to visit a non-EU port to reset Temporary Admission?",
     answer:
-      "No. Under the 2026 guidance and Italian ADM Circular 11/2026, Temporary Admission discharges when the yacht exits EU territorial waters; reaching international waters is sufficient, evidenced by AIS data, logbook entries, or bunker receipts, without a third-country port call. A new 18-month period runs from the next entry, and no minimum time outside the EU is required between periods. The traditional token call at a non-EU port for a customs stamp remains valid evidence but is no longer necessary.",
+      "No. Under the 2026 guidance and Italian ADM Circular 11/2026, Temporary Admission discharges when the yacht exits EU territorial waters; reaching international waters is sufficient, evidenced by AIS data, logbook entries, or bunker receipts, without a third-country port call. A new 18-month period runs from the next entry, and no minimum time outside the EU is required between periods. The traditional token call at a non-EU port for a customs stamp remains valid evidence. The international-waters point is the Italian customs position; other Member States may ask for more, so confirm local practice before relying on it.",
   },
   {
     question: "What was the Maltese yacht VAT lease scheme and is it still valid?",
@@ -65,7 +65,7 @@ const FAQS = [
   {
     question: "Has Brexit changed the VAT position for UK-flag yachts?",
     answer:
-      "Yes. From 1 January 2021, UK-flag yachts cruising EU waters lost EU Temporary Admission unless owner and users are non-EU established. UK yachts that were EU VAT-paid before Brexit lost that EU status on becoming non-Union goods; they retain UK VAT-paid status only. The Returned Goods Relief regime allowed re-import to the UK without UK VAT for yachts returning within three years of Brexit, subject to specific conditions. Post-2024 the UK and EU operate as separate customs territories with no automatic mutual recognition of VAT status.",
+      "Yes. Since 1 January 2021 the United Kingdom and the EU have been separate customs territories, with no automatic mutual recognition of VAT status. A yacht registered in the UK and used by a person established outside the EU, including a UK resident, can cruise EU waters under Temporary Admission on the same terms as any other non-EU yacht: 18 months per period and 10 years in total. Whether a particular yacht kept or lost EU Union status at the end of the transition period depends on where it was at that date and on the evidence held, not on its flag. Returned Goods Relief allowed re-import without VAT within three years, subject to conditions. Owners of a yacht that moved between the UK and EU around 2020 should confirm its status with counsel.",
   },
   {
     question: "What is Spanish Inward Processing Relief for yachts?",
@@ -285,9 +285,9 @@ export default function YachtVat2026Page() {
                   >
                     European Commission Guidance Note for Pleasure Craft
                   </a>{" "}
-                  (DG TAXUD, finalised 30 April 2026, published 11 May 2026)
+                  (DG TAXUD, dated 30 April 2026)
                   confirms that &ldquo;VAT-paid yacht&rdquo; is an industry
-                  term with no standing in EU customs law; the operative
+                  term not used in EU customs law; the operative
                   concept is Union goods status, exactly as section 1 of this
                   page has it. It states that a yacht inside EU customs
                   territory benefits from a presumption of Union status, and
@@ -299,8 +299,8 @@ export default function YachtVat2026Page() {
                   departure from the customs territory and recoverable within
                   three years under Returned Goods Relief for the same yacht,
                   in the same condition, with the same owner; and that
-                  cumulative Temporary Admission use should normally not
-                  exceed ten years.
+                  total Temporary Admission use may not exceed ten years
+                  (Article 251(4) of the Union Customs Code).
                 </p>
                 <p>
                   Italian ADM Circular No. 11/2026 (15 May 2026) is the
@@ -311,7 +311,7 @@ export default function YachtVat2026Page() {
                   on Form 71-01 fixes the entry date, and without one the
                   burden of proving entry and exit dates sits with the owner.
                   Discharge requires only proof of reaching international
-                  waters. During a shipyard-held Inward Processing procedure
+                  waters, a position other Member States have not all adopted. During a shipyard-held Inward Processing procedure
                   for repair work, time does not count against the 18-month
                   TA clock. A commercial yacht cannot charter under private
                   TA; it must exit EU waters and re-enter presenting the
@@ -337,15 +337,16 @@ export default function YachtVat2026Page() {
               </h2>
               <div className="prose-body text-charcoal max-w-prose space-y-4">
                 <p>
-                  From 1 January 2021, UK-flagged yachts that were EU VAT-paid
-                  before Brexit lost EU Union goods status on the United
-                  Kingdom's exit from the EU customs territory. UK VAT-paid
-                  status was retained where applicable; Returned Goods Relief
-                  on re-import to the UK was available within a three-year
-                  window post-Brexit.
+                  On 1 January 2021 the United Kingdom left the EU customs
+                  territory. Whether a yacht that was EU VAT-paid before then
+                  kept or lost Union goods status turned on where it was at
+                  the end of the transition period and on the evidence held,
+                  not on its flag. UK VAT-paid status was retained where
+                  applicable, and Returned Goods Relief on re-import was
+                  available within three years.
                 </p>
                 <p>
-                  Post-2024, the UK and EU operate as separate customs
+                  Since then the UK and EU have operated as separate customs
                   territories with no automatic mutual recognition of VAT
                   status. UK-resident owners cruising EU waters typically rely
                   on Temporary Admission, on the same terms as any other non-EU

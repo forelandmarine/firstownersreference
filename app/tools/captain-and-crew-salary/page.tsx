@@ -37,7 +37,7 @@ const FAQS = [
   {
     question: "What does a 50m yacht captain earn in 2026?",
     answer:
-      "Per the YPI Crew 2026 salary guide, a captain on a 50 metre yacht earns EUR 10,000 to 16,000 per month (EUR 120,000 to 192,000 per year). The range reflects experience, flag, charter activity, and rotation arrangement. Quay Crew's 2025 captain survey records a 7 percent year-on-year increase across the 70 to 79 metre bracket and confirms 63 percent of captains are now on time-for-time rotation. Senior officers are the bottleneck of the industry; their pay continues to rise where junior crew has plateaued.",
+      "Per the YPI Crew 2026 salary guide, a captain on a 50 metre yacht earns EUR 10,000 to 16,000 per month (EUR 120,000 to 192,000 per year). The range reflects experience, flag, charter activity, and rotation arrangement. Quay Crew's 2025/26 captain survey records a 7 percent increase across the 70 to 79 metre bracket since its 2023 survey, and 63 percent of captains surveyed on time-for-time rotation. Senior officers are the bottleneck of the industry; their pay continues to rise where junior crew has plateaued.",
   },
   {
     question: "How many crew does a 50m yacht need?",
@@ -52,12 +52,12 @@ const FAQS = [
   {
     question: "What is time-for-time rotation in yacht crew?",
     answer:
-      "Time-for-time (or 1:1) rotation is the arrangement under which a crew member works for a defined period (typically two months) and is off for an equivalent period. It requires hiring a rotation counterpart for the same role. Quay Crew's 2025 captain survey records 63 percent of captains on rotation, up materially from 2020. Rotation has become standard for senior crew on yachts above 50 metres. The economic effect is roughly two crew salaries for the equivalent of one full-time post.",
+      "Time-for-time (or 1:1) rotation is the arrangement under which a crew member works for a defined period (typically two months) and is off for an equivalent period. It requires hiring a rotation counterpart for the same role. Quay Crew's 2025/26 captain survey records 63 percent of the captains it surveyed on rotation. Rotation has become standard for senior crew on yachts above 50 metres. The economic effect is roughly two crew salaries for the equivalent of one full-time post.",
   },
   {
     question: "Are yacht crew salaries rising in 2026?",
     answer:
-      "Senior crew salaries are rising; junior crew salaries have plateaued. Quay Crew records a 7 percent year-on-year increase in captain pay in the 70 to 79 metre bracket. The structural cause is the bottleneck at senior level: experienced captains, chief engineers, and chief officers are scarce relative to the order book delivering through 2027 to 2029. Junior deck and interior crew are increasingly trained to a baseline standard that is widely available.",
+      "Senior crew salaries are rising; junior crew salaries have plateaued. Quay Crew records a 7 percent increase in captain pay in the 70 to 79 metre bracket since its 2023 survey. The structural cause is the bottleneck at senior level: experienced captains, chief engineers, and chief officers are scarce relative to the order book delivering through 2027 to 2029. Junior deck and interior crew are increasingly trained to a baseline standard that is widely available.",
   },
 ];
 
@@ -275,10 +275,10 @@ export default function CaptainSalaryPage() {
               </p>
               <p>
                 Senior officers (captain, chief engineer, chief officer) are
-                the bottleneck of the 2026 industry. Quay Crew records a 7
-                percent year-on-year rise in captain pay in the 70 to 79 metre
-                band, and 63 percent of captains are now on time-for-time
-                rotation. Junior crew pay has plateaued.
+                the bottleneck of the industry. Quay Crew records a 7 percent
+                rise in captain pay in the 70 to 79 metre band since its 2023
+                survey, and 63 percent of the captains it surveyed are on
+                time-for-time rotation. Junior crew pay has plateaued.
               </p>
             </div>
 

@@ -211,3 +211,33 @@ Settled by Jack after reading this study.
 - **Data.** Free data only, no BOATPro or SuperYacht Times licence. Figures behind those paywalls stay out unless published free elsewhere, and the page says the book uses published free sources.
 - **Tool URLs.** Year dropped. `/tools/yacht-vat`, `/tools/captain-and-crew-salary` and `/tools/yacht-insurance-cost`, with permanent redirects from the 2026 slugs. Titles keep a year and change when the data does.
 - **Still open.** How to treat the 2026 Iran war in print (the recommendation is a dated, factual line in ch02, ch07 war risk and ch07 insurance). The month of the 2028 edition.
+
+---
+
+## 10. Progress, 14 September 2026
+
+### Corrected in the content, glossary and tools today
+
+About 180 exact-match edits, each sourced in the chapter reports or in the fact checks of 14 September (`checks-1.md`, `checks-2.md` in the session scratchpad, summarised here).
+
+- **01 and 07.** Quay Crew wording (a rise against the 2023 survey; 63 percent of all captains) in the essays, data spread, FAQ, salary tool and the Lay question premise. Spain (affidavit regime, 12 percent tax), Greece (e-Charter Permission), Cayman on the REG Yacht Code and the Marshall Islands Yacht Code 2026, Malta and Italy on effective use, French exemption conditions no longer counted as six, P&I limit in USD, MLC amendments of 2022 and 2025 added, frontier markets dated, calculator EUR/USD 1.16 and REG Yacht Code citation, insurer list cut to verifiable wording.
+- **02.** Title "Reading the market", standfirst and SEO lines, order book 2025 column (40.0 m, 507 GT), "highest ever" removed, DreAMBoat 45 months from contract, slots as lead time, Heesen and Southern Wind restated, BOAT EUR 7.5 bn replaced by Edmiston EUR 7.1 bn across 363 yachts, unsourced Denison series and the 7 percent claim removed and rewritten as method, year-bound phrases moved to 2027.
+- **03.** MarineMax sale to Safe Harbor (Blackstone), Denison majority sale to OceanWorld, ownership table caption, C&N "permanent" removed, AML Regulation from 10 July 2027 added to the regulation paragraph and table caption, Ya Mon restated as vacated, appeal decided 10 June 2026, resumed.
+- **04 and 09.** Malta, Italy and French exemption lines, VAT callout moved to 2027 with the AML filings, Red Ensign Category 2 limits, Phi (58.5 m, detained 28 March 2022, Supreme Court 29 July 2025, ECHR stated as intended, damages claim removed), UBS Global Family Office Report 2026 also omits yachts. Glossary: Temporary Admission, OBBBA, flag state, importation. VAT page: statutory 10-year limit, Guidance Note date, Brexit section rewritten, international-waters point marked as the Italian position.
+- **05.** YORR name, dates and 30 m threshold, transitional route closing 30 June 2027, YORP June and July 2023, Solent tense, standfirst two to five years, Italian Sea Group through the August 2026 sale process, relative time words removed.
+- **06.** Sellers' market claim removed, headings undated, refit planning years, MB92 sites and Barcelona works, Amico Marine and CEO, Rybovich ownership, refit FAQ yard list, Olesinski award claim cut.
+- **08.** EU ETS scope as a commercial-purpose test in essay, caption, table, FAQ and checklist, unsourced cost band removed, IMO Net-Zero Framework and emission control areas added, methanol and fuel cells in delivered hulls, HVO pricing and Obsidian wording, sail share 69 of 1,093, Captain Arctic (two sails, 36 passengers, delivery late 2026), 580 kWh battery claim removed from FAQ and checklist, seven-year formula, Zimmermann sentence, standfirst undated.
+
+### Still open
+
+For the editors:
+- Chapter 02 tariffs (p23) and macro (p24) paragraphs: need the Iran war decision; the tariff rewrite also wants customs counsel.
+- Chapter 07 war risk tables and text, and the insurance outlook: same decision; ask Ollie Davis for a 2027 renewal note.
+- Captain pay bands against YPI 2026 (ch07 data spread, salary tool) and the 50 m crew cost conflict (salary tool EUR 1.5 to 2.4 m against calculator EUR 900,000 to 1.4 m).
+- Independence test element 6 (register filing rather than public disclosure).
+- Imprint placeholders and the month of the 2028 edition.
+- Olesinski refit figures (30 to 50 percent saving, 12 to 18 months): source article not found; keep only if The Superyacht Report piece is confirmed.
+- 80 m and 90 m GT rows in the ch08 ETS table, unverified.
+- Crew counts in ch08 (essay against table).
+
+For counsel: the six legal-read items in `docs/proof-corrections-1st-edition.md` section B, plus Bayesian wording, the Monaco 90-day claim, the Spanish refit procedure, ETS for charter yachts of 12 passengers or fewer, and the AML Regulation "trader" question.
