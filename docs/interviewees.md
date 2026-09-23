@@ -166,6 +166,13 @@ Working document. Updated as outreach progresses. Approach order at the foot of 
 - **Why:** Author of "Shipbuilding Contracts: Better Terms for Shipowners."
 - **Sections:** 05.
 
+### Benjamin Maltby
+- **Firm:** Keystone Law (Partner). Barrister, called 2000; formerly Ince & Co and MatrixLloyd.
+- **Why:** Construction, purchase and sale, finance, tax, insurance, employment across owners, finance providers, yards and suppliers. Legal spine for the chapter 05 contract section (yard templates, refund guarantees, title during construction, contracting party, change orders, LD cap, warranty), with two bridge questions into chapter 04 (MYBA MOA; VAT, flag and structure as one decision).
+- **Sections:** 05 lead legal Q&A, 04 support.
+- **Approach:** Warm. Already in correspondence with Jack and Dan on the Tipner refit shipyard opportunity (Aug 2026, LinkedIn then email, call 7 Aug). That relationship must be disclosed alongside the standard commercial disclosure (Keystone sells the legal services the chapter discusses).
+- **Questions doc:** `editorial/contributor-docs/Benjamin Maltby - Chapter 05.docx` (built 23 Sep 2026 by `editorial/build_maltby_questions.py`).
+
 ## Tier 6: surveyors and technical specialists
 
 ### A senior partner at Wolfson Marine, Ward & McKenzie, or Patton Marine
@@ -278,6 +285,7 @@ The first three names on the list (Velema, Hooning, Inglis) are the ones that, i
 | Richard Masters | 2 | Declined | 2026-09-10 | Declined to comment for personal reasons after answering (26 Aug) and reviewing a second Q&A draft (4 Sep). Nothing of his was ever published or committed to content/. Chapter 1 has no contributor; "Yacht management head" label reverts to open. Do not reuse his answers or email material in the essay. |
 | Sam Forbes | 7 | To approach | - | Captain of 33 metre Nautor Swan; moved from chapter 1 lead to chapter 8 sidebar alongside Ella Johnson; boat name redacted |
 | Martin Redmayne | 8 | Accepted, answers outstanding | 2026-08-25 | Invited 6 Aug with the chapter 2 questions doc; accepted 7 Aug ("let me digest the questions"); nudged 25 Aug, no reply as of 10 Sep. Next: second nudge, or raise in person at MYS (RAG breakfast 23 Sep) |
+| Benjamin Maltby | 5 | Questions drafted, not yet sent | 2026-09-23 | Warm via Tipner shipyard correspondence (Aug 2026); chapter 05 legal Q&A with two chapter 04 bridge questions; disclose the Tipner relationship on publication |
 | (others) | - | Pending | - | Per approach order |
 
 Update this table as outreach progresses.
