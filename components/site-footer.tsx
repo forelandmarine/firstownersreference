@@ -119,6 +119,14 @@ export function SiteFooter() {
             >
               forelandmarine.com
             </a>
+            <a
+              href="https://www.watermansagency.com"
+              className="link-marine caption mt-2 block w-fit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watermans, UK yacht agents
+            </a>
           </div>
           <Image
             src="/brand/foreland-lighthouse-charcoal.svg"
