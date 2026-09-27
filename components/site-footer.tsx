@@ -33,11 +33,6 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link href="/contributors" className="link">
-                Contributors
-              </Link>
-            </li>
-            <li>
               <Link href="/glossary" className="link">
                 Glossary
               </Link>
@@ -50,16 +45,6 @@ export function SiteFooter() {
             <li>
               <Link href="/request-print-edition" className="link">
                 Request print copy
-              </Link>
-            </li>
-            <li>
-              <Link href="/colophon" className="link">
-                Colophon
-              </Link>
-            </li>
-            <li>
-              <Link href="/press" className="link">
-                Press
               </Link>
             </li>
           </ul>
@@ -104,43 +89,69 @@ export function SiteFooter() {
             </li>
           </ul>
         </div>
-        <div className="flex justify-between items-end gap-4">
-          <div>
-            <p className="meta mb-4">Publisher</p>
-            <p className="caption mb-2">Published by Foreland Marine.</p>
-            <p className="caption mb-6">
-              An independent superyacht consultancy headquartered in London.
-            </p>
-            <a
-              href="https://forelandmarine.com"
-              className="link-marine caption"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              forelandmarine.com
-            </a>
-            <a
-              href="https://www.watermansagency.com"
-              className="link-marine caption mt-2 block w-fit"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Watermans, UK yacht agents
-            </a>
+        <div>
+          <p className="meta mb-4">About</p>
+          <ul className="space-y-2 caption">
+            <li>
+              <Link href="/contributors" className="link">
+                Contributors
+              </Link>
+            </li>
+            <li>
+              <Link href="/colophon" className="link">
+                Colophon
+              </Link>
+            </li>
+            <li>
+              <Link href="/press" className="link">
+                Press
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-rule">
+        <div className="max-w-[80rem] mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/brand/foreland-lighthouse-charcoal.svg"
+              alt=""
+              width={28}
+              height={28}
+              className="opacity-50 shrink-0"
+            />
+            <p className="meta">Part of the Foreland Group</p>
           </div>
-          <Image
-            src="/brand/foreland-lighthouse-charcoal.svg"
-            alt="Foreland Marine lighthouse"
-            width={42}
-            height={42}
-            className="opacity-40 shrink-0"
-          />
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 caption">
+            <li>
+              <a
+                href="https://www.forelandmarine.com"
+                className="link-marine"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Foreland Marine Consultancy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.watermansagency.com"
+                className="link-marine"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watermans, UK yacht agents
+              </a>
+            </li>
+            <li>The First Owner&rsquo;s Reference</li>
+          </ul>
         </div>
       </div>
       <div className="border-t border-rule">
         <div className="max-w-[80rem] mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between gap-4">
-          <p className="meta">
-            &copy; 2026 Foreland Marine Consultancy Limited
+          <p className="meta max-w-2xl">
+            The First Owner&rsquo;s Reference is published by Foreland Marine Consultancy Ltd,
+            registered in England, number 15785851.
           </p>
           <p className="meta">ISSN pending, print run 500, hand numbered</p>
           <p className="meta">
