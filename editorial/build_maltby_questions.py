@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Benjamin Maltby Chapter 05 question set in TFOR contributor-doc format.
+"""Build the Benjamin Maltby question set (chapter 06 lead, chapter 05 support) in TFOR contributor-doc format.
 
 Matches the layout of the existing question docs (Hugo Morgan-Harris - Chapter 04.docx):
 Letter page, 1in margins, Georgia 11pt Normal, bold 14pt title, italic 10pt stone metadata,
@@ -13,55 +13,75 @@ from docx.oxml import OxmlElement
 
 STONE = "7A756D"
 OUT = ("/Users/jack/firstownersreference/editorial/contributor-docs/"
-       "Benjamin Maltby - Chapter 05.docx")
+       "Benjamin Maltby - Chapter 06.docx")
 
 TITLE = "Benjamin Maltby, Keystone Law"
 META = (
-    "Chapter 05, New build versus brokerage. Partner, Keystone Law; barrister, called in 2000, "
-    "formerly at Ince & Co and MatrixLloyd; advises on superyacht construction, purchase and sale, "
-    "finance, and operational matters including tax, insurance and employment. Instructed on a fee "
-    "basis by the party he acts for, which across the practice has included owners, finance "
-    "providers, yards and suppliers; not paid contingent on any transaction closing."
+    "Chapter 06, Refit, lead guest Q&A, with three supporting questions for chapter 05, New build "
+    "versus brokerage. Partner, Keystone Law; barrister, called in 2000, formerly at Ince & Co and "
+    "MatrixLloyd; advises on superyacht construction, refit, purchase and sale, finance, and "
+    "operational matters including tax, insurance and employment. Instructed on a fee basis by the "
+    "party he acts for, which across the practice has included owners, finance providers, yards and "
+    "suppliers; not paid contingent on any transaction closing."
 )
 
-QUESTIONS = [
-    "The European yards that matter do not contract on SAJ or NEWBUILDCON. They contract on "
-    "in-house templates drafted by their own counsel, with English law and London arbitration "
-    "attached. When a first-time buyer’s team receives that first draft, where does the balance "
-    "of risk sit, and which clauses do you open first?",
+SECTIONS = [
+    ("Chapter 06, Refit", [
+        "A refit contract governs work on an asset the owner already owns, carried out inside a yard "
+        "the owner does not control. What makes it structurally different from a new build contract, "
+        "and which clauses do you open first when the yard’s standard terms arrive?",
 
-    "Refund guarantees are meant to secure the stage payments a buyer pays forward. Nobiskrug in "
-    "2024 and Italian Sea Group in 2026 have shown what happens when a yard’s financial condition "
-    "changes mid-build. In practice, how much protection does a refund guarantee give, what "
-    "separates a reliable one from a weak one, and what should be agreed at heads of terms about "
-    "a distressed-yard scenario before it arises?",
+        "The chapter argues that “to superyacht standard” is a clause that has not been written, and "
+        "that a specification should cite the manufacturer’s data sheet or the ISO standard instead. "
+        "In a dispute, what does that citation actually give the owner, and how far can a contract go "
+        "in making finish and workmanship measurable?",
 
-    "Title during construction. Some yards retain title until delivery; others pass it "
-    "progressively as stages are paid. For an owner who has paid 60 percent of the contract price "
-    "forward, what does each position mean if the yard fails, and what security would you want in "
-    "place alongside it?",
+        "Refit projects routinely run 30 to 50 percent over quoted scope, largely because the scope "
+        "is priced on imperfect information before the vessel is opened up. How should the contract "
+        "handle emergent work, variations and milestone payments so the overrun is contained rather "
+        "than simply invoiced?",
 
-    "The contracting party. Winch Design v Le Souef (2025) turned on whether the individual or "
-    "his special purpose vehicle was the party to the contract. What does a buyer need in place, "
-    "and by when, for an ownership structure to hold in a dispute rather than only on paper?",
+        "Under the service-yard model at STP Palma or Lauderdale Marine Center, the owner contracts "
+        "the trades directly through the project manager. Where does liability sit when one trade’s "
+        "work interacts with another’s and something fails, and what should the owner’s set of "
+        "contracts look like?",
 
-    "Change-order procedure, the liquidated damages cap and warranty length are the points where "
-    "the chapter says inexperience gets priced at signature. Which of these do owners most "
-    "consistently give away, and what does a well-negotiated position on it look like?",
+        "During works the relevant cover is builder’s risk, taken out by the yard with the owner’s "
+        "interest noted. What should the owner verify about that policy and the yard’s own liability "
+        "terms before the yacht is hauled, and where does the gap between the two most often fall on "
+        "the owner?",
 
-    "On the brokerage side, the MYBA MOA is signed at heads of terms with a 10 percent deposit, "
-    "often under time pressure. What do first-time buyers most often misunderstand about what the "
-    "MOA commits them to, and at what point should their lawyer be in the room?",
+        "Spanish Inward Processing Relief suspends 21 percent VAT on a refit for a non-EU flagged "
+        "yacht. Which conditions most often trip an owner up, and what is the exposure if the "
+        "procedure is not followed correctly?",
 
-    "The chapter treats VAT regime, flag and ownership structure as one decision with three "
-    "parts, to be settled before contracts are exchanged. From your practice, what happens when "
-    "that decision is left until after closing, and what does unpicking it cost?",
+        "When a refit falls into dispute, the yacht is usually still in the yard. What rights does "
+        "the yard have over the vessel, how is release against security normally arranged, and what "
+        "should have been agreed at the outset so the owner is not finding out under pressure?",
+    ]),
+    ("Chapter 05, New build versus brokerage", [
+        "The European yards that matter do not contract on SAJ or NEWBUILDCON. They contract on "
+        "in-house templates drafted by their own counsel, with English law and London arbitration "
+        "attached. When a first-time buyer’s team receives that first draft, where does the balance "
+        "of risk sit, and which clauses do you open first?",
+
+        "Refund guarantees are meant to secure the stage payments a buyer pays forward. Nobiskrug in "
+        "2024 and Italian Sea Group in 2026 have shown what happens when a yard’s financial condition "
+        "changes mid-build. In practice, how much protection does a refund guarantee give, what "
+        "separates a reliable one from a weak one, and what should be agreed at heads of terms about "
+        "a distressed-yard scenario before it arises?",
+
+        "Title during construction. Some yards retain title until delivery; others pass it "
+        "progressively as stages are paid. For an owner who has paid 60 percent of the contract price "
+        "forward, what does each position mean if the yard fails, and what security would you want in "
+        "place alongside it?",
+    ]),
 ]
 
 CLOSE = (
-    "Seven suggested questions, offered as a starting point. Please reshape any of them, and add "
-    "an angle we have not asked. With thanks, Jack MacNally, on behalf of The First Owner’s "
-    "Reference, September 2026."
+    "Ten suggested questions, seven for the refit chapter and three for new build, offered as a "
+    "starting point. Please reshape any of them, and add an angle we have not asked. With thanks, "
+    "Jack MacNally, on behalf of The First Owner’s Reference, September 2026."
 )
 
 
@@ -119,11 +139,18 @@ def main():
     r.font.size = Pt(10)
     r.font.color.rgb = RGBColor.from_string(STONE)
 
-    for i, q in enumerate(QUESTIONS, 1):
-        p = para(doc, 10, hanging=True)
-        n = p.add_run(f"{i}.  ")
-        n.bold = True
-        p.add_run(q)
+    n = 0
+    for heading, questions in SECTIONS:
+        p = para(doc, 6)
+        p.paragraph_format.space_before = Pt(6)
+        h = p.add_run(heading)
+        h.bold = True
+        for q in questions:
+            n += 1
+            p = para(doc, 10, hanging=True)
+            num = p.add_run(f"{n}.  ")
+            num.bold = True
+            p.add_run(q)
 
     p = para(doc, 10)
     r = p.add_run(CLOSE)
