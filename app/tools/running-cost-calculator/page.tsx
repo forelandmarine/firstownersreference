@@ -668,14 +668,15 @@ export default function RunningCostCalculatorPage() {
         </div>
         <div className="relative z-10 max-w-[80rem] mx-auto px-6 lg:px-12 py-24 lg:py-32 text-paper">
           <h1 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.1] tracking-tight max-w-3xl mb-8">
-            Can you afford the yacht
+            What will the yacht cost
             <br />
-            you are looking at?
+            you each year?
           </h1>
           <p className="font-serif text-lg sm:text-xl lg:text-2xl leading-relaxed text-paper/85 max-w-2xl">
-            The purchase price is the smaller decision. The calculator below
-            estimates what the yacht in front of you will cost every year you
-            keep it, category by category, against named source assumptions.
+            Crew, insurance, maintenance, berths, fuel, management and
+            compliance continue for as long as you own the yacht. The
+            calculator below estimates each of them for the yacht you are
+            considering, using the sources listed at the foot of the page.
           </p>
         </div>
       </section>
