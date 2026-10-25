@@ -194,7 +194,7 @@ Assumption: print goes to press between October and December 2026. "Before/after
 | Edmiston annual brokerage market review | 2025 review | 2025 review, 26 Feb 2026 | 2026 review. Pattern: late February 2027 | **After** |
 | Denison superyacht market report | "market report" (Q1 2024 to Q1 2025 figures) | 2025 boating market report, 3 Mar 2026 (no DOM figures for 80 ft+); cited URL dead | Pattern: March 2027 | **After** |
 | Fraser, The Global Superyacht Market | Fraser quotes only | 2026 edition, about 1 Apr 2026 (press coverage) | 2027. Pattern: March to April 2027 | **After** |
-| Northrop & Johnson quarterly Superyacht Market Report | not used | Q2 2026, 16 Jul 2026 | Q3 2026. Pattern: mid-October 2026. Q4 or year: January 2027 | Q3: **before**. Year: after |
+| Northrop & Johnson quarterly Superyacht Market Report | not used | Q3 2026, 15 Oct 2026 (logged 25 Oct, section 4.3) | Q4 or full year 2026. Pattern: January 2027 | Year: after a mid-December close |
 | IMF World Economic Outlook | October 2025 | July 2026 Update (8 Jul 2026); April 2026 WEO (14 Apr 2026) | October 2026 WEO (pattern: mid-October, Annual Meetings; date not confirmed in this study) | **Before** |
 | US Federal Reserve FOMC | not cited | 29 Jul 2026 hold, 3.50 to 3.75 percent | 16 Sep 2026; further 2026 meetings on the published FOMC calendar | Before |
 | ECB | not cited | 10 Sep 2026 hike, deposit rate 2.50 percent | Next meeting per ECB calendar (October 2026) | Before |
@@ -257,6 +257,20 @@ Assumption: print goes to press between October and December 2026. "Before/after
   - 2,157 for sale (17 percent of fleet), worth USD 18.8 bn, at 1 July 2026.
   - 661 new listings, average age 16 years; 1,117 price reductions (up 5.9 percent).
   - Describes "recalibration rather than contraction" and says the rest of 2026 will "remain active but selective".
+- **Northrop & Johnson, Q3 2026 Superyacht Market Report (15 October 2026; 24 m+, January to September 2026 against the same nine months of 2025):**
+  - Brokerage sold 472 (477 in 2025, down 1.0 percent); value USD 5.2 bn (USD 5.46 bn, down 4.7 percent). Motor USD 5.02 bn (down 4 percent), sail USD 178 m (down 13 percent).
+  - Q3 alone 126 sold, against 160 in Q2 (down 21.3 percent). Average last asking price of Q3 sales USD 12.4 m (USD 9.9 m in Q2).
+  - Average days on market of Q3 sales 445, against 542 in Q2. This is for yachts that sold, not the whole listed fleet.
+  - New central-agency listings 1,400 (1,327, up 5.5 percent); 390 in Q3, average asking about USD 12.5 m, average length 35.6 m.
+  - Price reductions 1,949 (1,818, up 7.2 percent); 449 in Q3, average cut about USD 1.5 m, median 386 days on market before the cut. 101 reductions in two weeks across late August and early September. One yacht can be reduced more than once, and a reduction is not a final sale discount.
+  - By age: 5 to 9 years 103 sales, 4 years or less 94, together about 42 percent of brokerage sales. Yachts aged 25 to 29 years averaged a 31.1 percent price reduction.
+  - By size: 40 to 50 m brokerage sales rose to 63 (49); the other bands were down, figures not given in the report text.
+  - For sale at 1 October 2026: 2,197 (17.2 percent of a 12,775-yacht fleet), worth USD 19.5 bn, average asking USD 9.7 m, average build year 2008. By band: 24 to 30 m 1,005 at average USD 3.9 m; 30 to 40 m 744 at USD 6.6 m; 40 to 50 m 289 at about USD 15.6 m.
+  - New-build sales 216 (266), called provisional. Nine-month series: 2021 372, 2022 397, 2023 310, 2024 286, 2025 266. About 51 percent speculative, 36 percent custom. By band: 24 to 30 m 91 (112); 30 to 40 m 63 (71); 40 to 50 m 28 (51); 50 to 60 m 16 (12); 60 to 80 m 6 (12); 80 m+ 10 (10).
+  - Charter bookings up 18.5 percent; booked days up 17.4 percent; 1,670 yachts booked (1,641).
+  - No in-build count or delivery schedule in this edition; the Q2 figures (936 in build, 301 deliveries in 2027) remain the latest N&J series.
+  - Secondary coverage: Superyacht Guide, "Q3 2026 Report: 472 Superyachts Sold in Nine Months" (Stephen Yardley, 20 October 2026), citing N&J's captains' briefing "The Q3 Market: What Captains Need to Know" (19 October 2026). Cite the N&J report, not the coverage.
+  - Fit with ch02 para 17 (days on market): the 445-day and 386-day figures are the latest published days-on-market numbers for 24 m+, dated Q3 2026. They are averages and medians across all bands, so they do not give the size-band median the essay asks buyers to read against. Fit with para 19 (brokerage values): a flat count and lower value after a record 2025 supports "recalibration rather than contraction" (N&J Q2) but is a 24 m+ count and not comparable with Edmiston's 30 m+ figure.
 - **SuperYacht Times, State of Yachting 2026 (27 May 2026, via a LinkedIn summary):**
   - Fleet over 6,200 yachts above 30 m.
   - "more than EUR 1 billion in price reductions across the used yacht market in 2025".
@@ -319,6 +333,8 @@ Order book, deliveries, yards
 - BOAT International, Global Order Book 2025 PDF: https://cdn.boatinternational.com/files/2024/12/8ec72830-b163-11ef-a6c6-491cb76a0430-GOB_2025_upload.pdf
 - BOAT International, 2026 Global Order Book Live, 11 December event: https://www.boatinternational.com/boat-pro/news/global-order-book-live-2026
 - Northrop & Johnson, Q2 2026 Superyacht Market Report (16 July 2026): https://www.northropandjohnson.com/navigator-news/brokerage-new-build/q2-2026-superyacht-market-report
+- Northrop & Johnson, Q3 2026 Superyacht Market Report (15 October 2026): https://www.northropandjohnson.com/navigator-news/brokerage-new-build/q3-2026-superyacht-market-report
+- Superyacht Guide, Q3 2026 Report: 472 Superyachts Sold in Nine Months (20 October 2026): https://superyachtguide.com/news/northrop-johnson-q3-2026-472-preowned-yacht-sales/
 - Monaco Yacht Show, 2026 superyacht list: https://www.monacoyachtshow.com/en/2026-superyacht-list
 - Acquera Yachting, Monaco Yacht Show 2026: A Market in Transition (5 August 2026): https://www.acquerayachting.com/monaco-yacht-show-2026-a-market-in-transition/
 - YATCO, 2026 Global Yacht Market Landscape (11 December 2025): https://blog.yatco.com/2026-global-yacht-market-landscape/
