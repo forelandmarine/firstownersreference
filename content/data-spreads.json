@@ -517,6 +517,73 @@
       {
         "type": "note",
         "text": "June was carried largely by the EUR 325 m sale of the 100 m Feadship Moonrise. Average sale price rose year on year, from EUR 12.5 m to EUR 15.7 m in March, the clearest sign of value concentrating in the largest hulls while the mid-size range thins. This tracks the second consecutive contraction in order-book unit count shown above."
+      },
+      {
+        "type": "h2",
+        "text": "Brokerage 2026, January to September"
+      },
+      {
+        "type": "kv",
+        "caption": "The 24 m-plus brokerage market, first nine months of 2026 against the same months of 2025. Position at 1 October 2026.",
+        "rows": [
+          {
+            "label": "Yachts sold",
+            "value": "472, against 477",
+            "note": "Down 1.0 percent"
+          },
+          {
+            "label": "Sales value",
+            "value": "USD 5.2 bn, against USD 5.46 bn",
+            "note": "Down 4.7 percent"
+          },
+          {
+            "label": "Yachts sold, third quarter",
+            "value": "126, against 160 in the second quarter"
+          },
+          {
+            "label": "Average days on market, third-quarter sales",
+            "value": "445, against 542 in the second quarter",
+            "note": "Yachts that sold only, not the whole listed fleet"
+          },
+          {
+            "label": "New central-agency listings",
+            "value": "1,400, against 1,327",
+            "note": "Up 5.5 percent"
+          },
+          {
+            "label": "Asking-price reductions",
+            "value": "1,949, against 1,818",
+            "note": "Up 7.2 percent; one yacht can be reduced more than once"
+          },
+          {
+            "label": "Median days on market before a third-quarter reduction",
+            "value": "386"
+          },
+          {
+            "label": "Sales of yachts aged nine years or less",
+            "value": "197, about 42 percent of sales"
+          },
+          {
+            "label": "Average reduction, yachts aged 25 to 29 years",
+            "value": "31.1 percent",
+            "note": "The heaviest of any age band"
+          },
+          {
+            "label": "Yachts for sale at 1 October 2026",
+            "value": "2,197, asking USD 19.5 bn in total",
+            "note": "17.2 percent of a fleet of about 12,775"
+          },
+          {
+            "label": "New-build sales, 24 m and above",
+            "value": "216, against 266",
+            "note": "Provisional; 397 in the same months of 2022"
+          }
+        ],
+        "sourceLine": "Northrop & Johnson, Q3 2026 Superyacht Market Report (15 October 2026)."
+      },
+      {
+        "type": "note",
+        "text": "Northrop & Johnson and BOAT International count from different datasets, so the nine-month figures above and the monthly table before them are not one series. A reduction in asking price is not a final sale discount."
       }
     ],
     "sources": [
@@ -524,6 +591,11 @@
         "label": "BOAT International monthly brokerage reports, H1 2026",
         "line": "Free monthly write-ups, January to June 2026, on the 24 m-plus market. The consolidated H1 report is a paid BOATPro product and is not reproduced here; figures above are drawn only from the public monthly articles.",
         "url": "https://www.boatinternational.com/boat-pro/superyacht-insight"
+      },
+      {
+        "label": "Northrop & Johnson, Q3 2026 Superyacht Market Report",
+        "line": "Published 15 October 2026. Brokerage, new-build and charter figures for yachts of 24 m and above, January to September 2026 against the same months of 2025; fleet and for-sale counts at 1 October 2026. The 2026 new-build count is provisional.",
+        "url": "https://www.northropandjohnson.com/navigator-news/brokerage-new-build/q3-2026-superyacht-market-report"
       },
       {
         "label": "The Swiss Single Family Office Landscape 2026",
