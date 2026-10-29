@@ -164,6 +164,30 @@ function bySize(length: number, values: number[]) {
   return values[values.length - 1];
 }
 
+// Retained value by age, on the TFOR depreciation curve: 20 percent off in
+// year one, then 8 percent a year compounding, which leaves 57 percent at
+// year 5 (the published range is 50 to 60). The curve flattens to 4 percent
+// a year after that.
+function retainedValue(years: number) {
+  if (years === 0) return 1;
+  if (years <= 5) return 0.8 * 0.92 ** (years - 1);
+  return 0.8 * 0.92 ** 4 * 0.96 ** (years - 5);
+}
+
+// Average over the years each band covers; "older" is taken as 16 to 25 years.
+const ageBandYears: Record<AgeBand, [number, number]> = {
+  new: [0, 4],
+  established: [5, 15],
+  older: [16, 25],
+};
+
+function bandValue(age: AgeBand) {
+  const [from, to] = ageBandYears[age];
+  let sum = 0;
+  for (let y = from; y <= to; y++) sum += retainedValue(y);
+  return sum / (to - from + 1);
+}
+
 function calculateCosts(
   length: number,
   yachtType: YachtType,
@@ -181,7 +205,7 @@ function calculateCosts(
   const isSail = yachtType === "sailing";
   const charterAdj = (base: number, mult: number) => base * (isCharter ? mult : 1.0);
   const ageMaint = age === "new" ? 0.8 : age === "older" ? 1.35 : 1.0;
-  const ageValue = age === "new" ? 1.0 : age === "older" ? 0.55 : 0.75;
+  const ageValue = bandValue(age);
   const ageRate = age === "new" ? 0.9 : age === "older" ? 1.3 : 1.0;
 
   // --- Crew ---
