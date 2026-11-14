@@ -19,47 +19,47 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Andrew Roch": {
     name: "Andrew Roch",
     avatar: "/images/contributors/andrew-roch.jpg",
-    bio: "Founder and CEO of Yacht Crew Recruitment and Training, which pairs IAMI/GUEST-accredited leadership and purser training under The Crew Academy with senior-crew placement under The Crew Hunter. He sits on the IAMI board and co-designed the Yacht Owner Representative Programme with SYBAss.",
+    bio: "Andrew Roch is the founder and CEO of Yacht Crew Recruitment and Training, which runs IAMI/GUEST-accredited leadership and purser training under The Crew Academy and senior-crew placement under The Crew Hunter. He sits on the IAMI board and co-designed the Yacht Owner Representative Programme with SYBAss.",
   },
   "Capt. Pavlos Filippakis": {
     name: "Capt. Pavlos Filippakis",
     avatar: "/images/contributors/pavlos-filippakis.jpg",
-    bio: "A Master Mariner (Class 1 Unlimited) and ice-class captain who came to large-yacht command from a career in LNG. He has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands.",
+    bio: "Capt. Pavlos Filippakis is a Master Mariner (Class 1 Unlimited) and ice-class captain who came to large-yacht command from a career in LNG. He has led a complex refit and a subsequent pole-to-pole voyage on the owner-operated yacht he now commands.",
   },
   "Hein Velema": {
     name: "Hein Velema",
     avatar: "/images/contributors/hein-velema.jpg",
-    bio: "Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner's Representative Register and the YORP programme, and a partner at the consultancy Marstrat. He was the first president of SYBAss, a director of Feadship, and CEO of Fraser Yachts.",
+    bio: "Hein Velema is Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner’s Representative Register and oversees the Yacht Owner Representative Programme, and a partner at the consultancy Marstrat. He was the first president of SYBAss, a director of Feadship, and CEO of Fraser Yachts.",
   },
   "Erica Lay": {
     name: "Erica Lay",
     avatar: "/images/contributors/erica-lay.jpg",
-    bio: "Crew recruitment specialist and founder of EL Crew Co, placing senior and junior crew across the over-24-metre fleet from Mallorca.",
+    bio: "Erica Lay is a crew recruitment specialist and the founder of EL Crew Co, which places senior and junior crew across the over-24 metre fleet from Mallorca.",
   },
   "Ella Johnson": {
     name: "Ella Johnson",
     avatar: "/images/contributors/ella-johnson.jpg",
-    bio: "Captain of a 34-metre Baltic Yachts performance sloop, with seven years' operational experience at the top of the sailing market.",
+    bio: "Ella Johnson is captain of a 34 metre Baltic Yachts performance sloop and has seven years’ operational experience at the top of the sailing market.",
   },
   "Simon Roberts": {
     name: "Simon Roberts",
     avatar: "/images/contributors/simon-roberts.jpg",
-    bio: "A corporate services provider at Quadrant Group, which has advised marine clients on yacht ownership structures from the Isle of Man for forty years.",
+    bio: "Simon Roberts is a corporate services provider at Quadrant Group, which has advised marine clients on yacht ownership structures from the Isle of Man for forty years.",
   },
   "Ollie Davis": {
     name: "Ollie Davis",
     avatar: "/images/contributors/ollie-davis.jpg",
-    bio: "A yacht insurance specialist at PIB Marine, formerly Zorab Insurance Services.",
+    bio: "Ollie Davis is a yacht insurance specialist at PIB Marine, formerly Zorab Insurance Services.",
   },
   "Jack Inglis": {
     name: "Jack Inglis",
     avatar: "/images/contributors/jack-inglis.jpg",
-    bio: "Founder of the owner's-representative practice ULTIMAR, and a captain who came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea. He entered the industry in 2012 as bosun on a 60 metre support vessel, commanded North Sea offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the Yacht Owner Representative Programme; the 1,200-item delivery snag list cited in the new-build chapter is his.",
+    bio: "Jack Inglis is the founder of ULTIMAR, an owner’s representative practice. He came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea, and joined the industry in 2012 as bosun on a 60 metre support vessel. He has since commanded offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the Yacht Owner Representative Programme. The 1,200-item delivery snag list cited in the new-build chapter is his.",
   },
   "Benjamin Maltby": {
     name: "Benjamin Maltby",
     avatar: "/images/contributors/benjamin-maltby.jpg",
-    bio: "A partner at Keystone Law, General Secretary of The Owners Club, and a barrister, formerly of Ince & Co, who advises owners, yards and finance providers on superyacht construction, refit, purchase and sale, finance, and operational matters including tax, insurance and employment.",
+    bio: "Benjamin Maltby is a partner at Keystone Law, General Secretary of The Owners Club, and a barrister, formerly of Ince & Co. He advises owners, yards and finance providers on superyacht construction, refit, purchase and sale, finance, and operational matters including tax, insurance and employment.",
   },
 };
 

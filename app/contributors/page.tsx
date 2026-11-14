@@ -18,14 +18,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contributors",
   description:
-    "Named external contributors to the 1st Edition of The First Owner's Reference. Each transparent on commercial relationships.",
+    "Named external contributors to the 1st Edition of The First Owner's Reference. Each states any commercial interest in the subject.",
   alternates: {
     canonical: "https://firstownersreference.com/contributors",
   },
   openGraph: {
     title: "Contributors | The First Owner's Reference",
     description:
-      "Named external contributors to the 1st Edition. Each transparent on commercial relationships.",
+      "Named external contributors to the 1st Edition. Each states any commercial interest in the subject.",
     url: "https://firstownersreference.com/contributors",
     type: "website",
   },
@@ -161,14 +161,14 @@ export default function ContributorsPage() {
               <span>Contributors</span>
             </div>
             <h1 className="font-serif font-light text-headline lg:text-display leading-[1.05] tracking-tight max-w-3xl">
-              Confirmed contributors. Each transparent on commercial relationships.
+              Contributors to the 1st Edition.
             </h1>
             <p className="font-serif italic text-xl lg:text-2xl text-charcoal-soft mt-8 max-w-2xl">
-              The First Owner&rsquo;s Reference is collaborative by design. Each chapter is
-              anchored by a named external contributor with deep first-hand
-              knowledge of the topic, with additional voices on the record where
-              their experience adds material the anchor cannot. Outreach is
-              ongoing for the remaining slots; this page is updated as
+              Each chapter of The First Owner&rsquo;s Reference has a named
+              external contributor with first-hand knowledge of the subject.
+              Other practitioners contribute where their experience covers
+              ground the lead contributor does not. Each states any commercial
+              interest in the subject. This page is updated as further
               contributors confirm.
             </p>
           </div>

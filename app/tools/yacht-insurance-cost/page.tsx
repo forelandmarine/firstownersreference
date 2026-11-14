@@ -347,8 +347,8 @@ export default function YachtInsurancePage() {
                 <Link href="/07-operations/qa/ollie-davis" className="link-marine">
                   Ollie Davis of PIB Marine
                 </Link>{" "}
-                answers five questions on the post-Bayesian market on the
-                record. The{" "}
+                answers five questions on the insurance market since the
+                loss of Bayesian. The{" "}
                 <Link href="/tools/running-cost-calculator" className="link-marine">
                   running cost calculator
                 </Link>{" "}
