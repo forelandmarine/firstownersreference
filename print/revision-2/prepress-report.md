@@ -8,10 +8,10 @@ State of the press files on 14 November 2026 and what remains before the book ca
 |---|---|---|
 | Trim | 208 × 280 mm portrait | Confirm the sheet and imposition for this trim |
 | Bleed | 3 mm all edges; TrimBox, BleedBox and ArtBox stamped on every page | Some printers ask for 5 mm on casebound work |
-| Type area | 172 × 238 mm; head 20, foot 22, inner 22, outer 14 mm (trim) | Gutter loss for Smyth-sewn casebinding at about 184 pp is normally 3–5 mm. 22 mm inner is safe; the binder should confirm |
+| Type area | 172 × 238 mm; head 20, foot 22, inner 22, outer 14 mm (trim) | Gutter loss for Smyth-sewn casebinding at 184 pp is normally 3–5 mm. 22 mm inner is safe; the binder should confirm |
 | Safe area | Nothing but full-bleed pictures within 6 mm of the trim | Confirm |
-| Extent | 182-page block; press block padded to 184 with two blank pages (23 sections of eight) | Signature size (8, 16 or 32) decides the padding. At 16-page sections the block would pad to 192 |
-| Blank pages | Four blank pages inserted so every chapter opener falls on a left-hand page (before ch01, ch02, ch05, ch07), plus the two pad pages at the end | Confirm the printer wants padding pages inside the PDF rather than added at imposition |
+| Extent | 184-page block, no padding needed (23 sections of eight) | Signature size (8, 16 or 32) decides the padding. At 16-page sections the block would pad to 192 |
+| Blank pages | Six blank pages inserted so every chapter opener falls on a left-hand page (before ch01, ch02, ch03, ch05, ch06 and ch09) | Confirm blank pages carry no folio or running head |
 
 ## Fonts
 

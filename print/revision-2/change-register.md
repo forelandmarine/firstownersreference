@@ -1,6 +1,6 @@
 # Change register, second layout revision
 
-Against the design agent brief of 14 November 2026. "Before" pages are PDF pages of the 208-page proof the brief was written against (230 × 300 mm, commit c9d8191, cover = p. 1). "After" pages are PDF pages of the revised proof (208 × 280 mm, 183 pages with cover), `print/1st-edition/firstownersreference-1st-edition-proof.pdf`. Representative spreads are in `comparisons/`.
+Against the design agent brief of 14 November 2026. "Before" pages are PDF pages of the 208-page proof the brief was written against (230 × 300 mm, commit c9d8191, cover = p. 1). "After" pages are PDF pages of the revised proof (208 × 280 mm, 185 pages with cover), `print/1st-edition/firstownersreference-1st-edition-proof.pdf`. Representative spreads are in `comparisons/`.
 
 No copy, figure, chart value, table, reference or disclosure was changed in this pass. The last column says whether the change needs editorial approval.
 
@@ -10,7 +10,7 @@ No copy, figure, chart value, table, reference or disclosure was changed in this
 |---|---|---|---|---|
 | Whole book | Trim 230 × 300 mm in the brief; 208 × 280 mm confirmed by Jack on 14 November | Built at 208 × 280 mm, 3 mm bleed, type area 172 × 238 mm, inner margin 22 mm, outer 14 mm | Whole book | Decided |
 | Whole book | Proofs from May to November printed at about 70 per cent: one unbreakable URL in the sources was wider than the page and Chrome shrank every page to fit | Sources cited by domain only; the build now refuses to print if anything is wider than the type area | Whole book | Decided |
-| Whole book | 208 pp | 182-page block, 183 with cover, press block padded to 184 (23 sections of eight). Every page of content retained, including all data sections and the index | Whole book | None |
+| Whole book | 208 pp | 184-page block, 185 with cover; the press block is 184 pages, 23 sections of eight, with no padding. Every page of content retained, including all data sections and the index | Whole book | None |
 
 ## Composition and rhythm (brief section 3)
 
@@ -19,7 +19,7 @@ No copy, figure, chart value, table, reference or disclosure was changed in this
 | All text pages | Paragraphs could not break across columns, so any paragraph longer than the space left jumped whole and left the foot of the column empty | Paragraphs flow across columns and pages, with two-line widows and orphans | All | None |
 | All chapters | Four full-page photographs inside every chapter, which clumped into runs of two and three | None inside chapters; the nine chapter openers are unchanged | All | None |
 | Essays | Small photographs dropped between paragraphs at a fixed cadence | One picture across both columns per essay, placed before a crosshead and sized by the build to the space left on its page | All essays | None |
-| 25–26, 39–40, 67–68, 113–114 | A picture at the foot of each case jumped onto a page of its own and forced a blank page before the next opener | No picture after the case. The chapter card closes the chapter | 26, 38, 52, 66 | None |
+| 25–26, 39–40, 67–68, 113–114 | A picture at the foot of each case jumped onto a page of its own and forced a blank page before the next opener | No picture after the case. The chapter card closes the chapter, followed by a blank page only where the next opener needs it | End of each chapter | None |
 | Chapter ends | Two mostly empty close pages per chapter (a picture page and an at-a-glance page) | One card at the foot of the case: sections in the chapter, about the cases, read next. The copy is unchanged | End of each chapter | None |
 | 21–24 | Data pages each carried one chart and were otherwise empty | Charts held to 92 mm, method notes set in two columns under the chart, chart headings bound to their charts. Two charts now share a page where they fit | 19–22 | None |
 | 23 | A four-row table split, leaving one row on the next page | Tables of eight rows or fewer are kept whole; longer tables break between rows with the head repeated | 21 | None |
@@ -53,9 +53,9 @@ No copy, figure, chart value, table, reference or disclosure was changed in this
 
 | Before | Issue | Adjustment | After | Approval |
 |---|---|---|---|---|
-| 44 | Chapter 03 opened out of sequence with the other chapters | Every opener now falls on a left-hand page with the essay opening on the facing right-hand page; the build verifies parity and inserts a blank page where needed (four in the book: before ch01, ch02, ch05 and ch07) | 15, 27, 39, 53, 67, 93, 113, 137, 153 | None |
+| 44 | Chapter 03 opened out of sequence with the other chapters | Every opener now falls on a left-hand page with the essay opening on the facing right-hand page; the build verifies parity and inserts a blank page where needed (six in the book: before ch01, ch02, ch03, ch05, ch06 and ch09) | 15, 27, 39, 53, 67, 93, 113, 137, 155 | None |
 | Openers | "Chapter 05" label above the 05 numeral | Removed; numeral, title and standfirst unchanged | All openers | Decided |
-| Build | Page numbering never settled: picture fitting and opener spacers kept moving each other | Pictures are fitted on the first three passes and then held; the page map now settles at pass 4 | — | None |
+| Build | Page numbering never settled: picture fitting and opener spacers kept moving each other | Pictures are fitted on the first three passes and then held; the chapter spacers and contents folios now settle by pass 4 (a few foot-picture heights still adjust by a millimetre or two after that, which moves no page) | — | None |
 
 ## Front matter and navigation (brief section 9)
 
