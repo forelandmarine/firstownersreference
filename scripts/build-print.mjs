@@ -346,6 +346,36 @@ async function generatePdf() {
   // small settle time
   await wait(2000);
 
+  /* Scale guard. Chrome lays the book out at the type-area width and, if
+     anything is wider, shrinks every page to fit. From May to November 2026
+     one unbreakable URL in the sources section did exactly that and the book
+     printed at 70 per cent. Measure at the type-area width (190mm = 718 CSS
+     px) and refuse to print if anything outside an SVG reaches past it. */
+  await page.setViewport({ width: 718, height: 1157, deviceScaleFactor: 1 });
+  const overflow = await page.evaluate(() => {
+    const W = document.documentElement.clientWidth;
+    const bad = [];
+    for (const e of document.querySelectorAll(".print-edition *")) {
+      if (e.closest("svg")) continue;
+      const r = e.getBoundingClientRect();
+      if (r.width > 0 && r.right > W + 1) {
+        const pr = e.parentElement?.getBoundingClientRect();
+        if (!pr || pr.right <= W + 1) {
+          bad.push(`${e.tagName.toLowerCase()}.${String(e.className).split(" ")[0]} ` +
+            `${Math.round(r.right)}px: ${(e.textContent || "").trim().slice(0, 60)}`);
+        }
+      }
+    }
+    return { scrollW: document.documentElement.scrollWidth, W, bad: bad.slice(0, 10) };
+  });
+  await page.setViewport({ width: 893, height: 1157, deviceScaleFactor: 1 });
+  if (overflow.bad.length || overflow.scrollW > overflow.W + 1) {
+    throw new Error(
+      `Layout is ${overflow.scrollW}px wide against a ${overflow.W}px type area; ` +
+        `Chrome would shrink the whole book. Overflowing:\n  ${overflow.bad.join("\n  ")}`
+    );
+  }
+
   log("  Generating PDF via Chrome native print (236 x 306 mm sheet)...");
   await page.pdf({
     path: PDF_OUT,
@@ -462,6 +492,84 @@ function computeClosers(map, fill, previous) {
       next = Math.round(Math.min(MAX_H, gapMm - CLEARANCE));
     }
     if (next >= 30) out[id] = next;
+  }
+  return out;
+}
+
+/* Head-picture pass (docs/print/layout-specification.md section 5). Each
+   essay carries head pictures that span both columns from inside the flow,
+   placed before a crosshead. A picture lands well in one of three ways: at
+   the head of a page; part-way down with a real block of text above it;
+   or filling the foot of a page exactly. The build reads where each one
+   landed from its [[HEAD-slug-k]] marker and corrects it on the next pass:
+
+   - a stub of text above it (under 35mm): move it to the next crosshead;
+   - at the head of a page, leaving a hole on the page before: shrink it to
+     fit that hole, or move it on if the hole is too small for a picture;
+   - a sliver of text below it (under 30mm): grow it to the foot.
+
+   Values persist in lib/print-fit.json as "<slug>:headK:shift" and
+   "<slug>:headK:h"; h of 0 drops the picture. */
+function findHeads(pdf) {
+  const xml = execSync(`pdftotext -bbox "${pdf}" -`, {
+    maxBuffer: 1024 * 1024 * 512,
+  }).toString();
+  const out = {};
+  xml.split("<page ").slice(1).forEach((pg, i) => {
+    const H = parseFloat(pg.match(/height="([\d.]+)"/)[1]);
+    for (const m of pg.matchAll(
+      /yMin="([\d.]+)" xMax="[\d.]+" yMax="[\d.]+">\[\[HEAD-([\w-]+)-(\d)\]\]</g,
+    )) {
+      out[`${m[2]}:head${m[3]}`] = { page: i + 1, yMm: (parseFloat(m[1]) / H) * 306 };
+    }
+  });
+  return out;
+}
+
+function computeHeads(heads, fill, map, previous) {
+  const TOP = 25;          // sheet head margin, mm
+  const PAGE_MM = 254;     // type-area depth
+  const CHROME = 14;       // picture margins and caption
+  const DEFAULT_H = 100;
+  const MAX_SHIFT = 4;
+  const imagePages = new Set([
+    ...Object.values(map.chapters),
+    ...Object.values(map.plates ?? {}),
+    ...Object.values(map.singles ?? {}),
+  ]);
+  const out = {};
+  // Carry forward dropped pictures, which leave no marker to measure.
+  for (const [k, v] of Object.entries(previous ?? {})) {
+    if (/:head\d:/.test(k)) out[k] = v;
+  }
+  for (const [key, { page, yMm }] of Object.entries(heads)) {
+    let shift = previous?.[`${key}:shift`] ?? 0;
+    let h = previous?.[`${key}:h`] ?? DEFAULT_H;
+    const stub = yMm - TOP - 3;
+    const moveOn = () => {
+      shift += 1;
+      h = shift > MAX_SHIFT ? 0 : DEFAULT_H;
+    };
+    if (stub > 3 && stub < 35) {
+      moveOn();
+    } else if (stub <= 3) {
+      const before = page - 1;
+      const f = fill[before - 1];
+      if (!imagePages.has(before) && f != null && f < 0.8) {
+        const hole = (1 - f) * PAGE_MM;
+        if (hole - CHROME >= 55) h = Math.round(Math.min(120, hole - CHROME));
+        else moveOn();
+      }
+    } else {
+      const below = PAGE_MM - stub - (h + CHROME);
+      if (below > -1 && below < 30) {
+        h = Math.round(Math.min(130, PAGE_MM - stub - CHROME));
+      }
+    }
+    delete out[`${key}:shift`];
+    delete out[`${key}:h`];
+    if (shift) out[`${key}:shift`] = shift;
+    if (h !== DEFAULT_H) out[`${key}:h`] = h;
   }
   return out;
 }
@@ -921,12 +1029,22 @@ async function main() {
   // land, which feeds real contents folios and verso/recto parity spacers
   // back into lib/print-folios.json; subsequent passes verify stability.
   let pageCount = -1;
-  for (let pass = 1; pass <= 6; pass++) {
+  for (let pass = 1; pass <= 8; pass++) {
     if (pass === 1 && process.env.SKIP_BUILD) {
       log("Skipping production build (SKIP_BUILD set)");
     } else {
       log(`Building Next production bundle (pass ${pass})...`);
-      execSync("pnpm build", { cwd: ROOT, stdio: "pipe" });
+      /* next/font fetches Google Fonts at build time and the fetch fails
+         now and then; one failure used to end a 15-minute run. */
+      for (let attempt = 1; ; attempt++) {
+        try {
+          execSync("pnpm build", { cwd: ROOT, stdio: "pipe" });
+          break;
+        } catch (err) {
+          if (attempt >= 3) throw err;
+          log(`  pnpm build failed (attempt ${attempt}); retrying`);
+        }
+      }
     }
 
     // Guard: next/font downloads can fail silently, baking the Georgia
@@ -968,7 +1086,11 @@ async function main() {
         return {};
       }
     })();
-    const desiredFit = computeClosers(map, measureFill(PDF_OUT), currentFit);
+    const fill = measureFill(PDF_OUT);
+    const desiredFit = {
+      ...computeClosers(map, fill, currentFit),
+      ...computeHeads(findHeads(PDF_OUT), fill, map, currentFit),
+    };
     const fitChanged =
       JSON.stringify(currentFit) !== JSON.stringify(desiredFit);
     if (fitChanged) {
@@ -976,7 +1098,11 @@ async function main() {
         FIT_FILE,
         JSON.stringify({ fit: desiredFit }, null, 1) + "\n"
       );
-      const gains = Object.values(desiredFit);
+      const gains = Object.entries(desiredFit)
+        .filter(([k]) => !k.includes(":head"))
+        .map(([, v]) => v);
+      const heads = Object.keys(desiredFit).filter((k) => k.includes(":head"));
+      log(`  Head pictures adjusted: ${heads.length / 1 || 0} values`);
       log(
         `  Closers: ${gains.length} sections, mean height ${
           gains.length ? Math.round(gains.reduce((a, b) => a + b, 0) / gains.length) : 0
@@ -990,8 +1116,8 @@ async function main() {
       log(`  Page map stable at pass ${pass}: ${map.total} pages`);
       break;
     }
-    if (pass === 6) {
-      log("! Page map did not stabilise after 4 passes; keeping last print");
+    if (pass === 8) {
+      log("! Page map did not stabilise after 8 passes; keeping last print");
       break;
     }
     log(

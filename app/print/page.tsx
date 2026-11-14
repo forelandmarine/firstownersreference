@@ -1,3 +1,4 @@
+import { domainOf, domainsOnly } from "@/lib/print-domain";
 import React from "react";
 import { sections } from "@/lib/sections";
 import { getLeadEssay } from "@/lib/lead-essays";
@@ -5,7 +6,8 @@ import { getCase } from "@/lib/cases";
 import { getDataSpread } from "@/lib/data-spreads";
 import { glossaryEntries } from "@/lib/glossary";
 import { getGuestOpinions } from "@/lib/guest-opinions";
-import { printImages } from "@/lib/print-images";
+import { printImages, type PrintImage } from "@/lib/print-images";
+import { makePicker, type Picker } from "@/lib/print-picker";
 import { renderChartForPrint } from "@/components/print/print-chart";
 import { getContributorProfile } from "@/lib/contributors";
 import { buildPrintIndex } from "@/lib/print-index";
@@ -49,7 +51,7 @@ export function chapterMastersCss() {
     text-transform: uppercase;
     color: #7a756d;
     padding-top: 11mm;
-    background: #f5f2ec;
+    background: #ffffff;
   }
   /* Chrome does not cascade margin boxes from @page :left into a named
      master, so the footer has to be repeated here or it vanishes on every
@@ -79,6 +81,14 @@ function tocFolio(v: number | undefined) {
    picture no longer has to be large to carry the page. */
 const FIGURE_CYCLE = ["half"];
 
+/* Head pictures in the lead essay: two a chapter, each placed before one of
+   the essay's crossheads and spanning both columns, as fly GDN places one
+   large picture per page. The build moves each one to a crosshead where it
+   lands well and sizes it to the space left (see headFit in
+   scripts/build-print.mjs); these are the starting values. */
+const HEADS_PER_ESSAY = 2;
+const HEAD_DEFAULT_MM = 100;
+
 export const dynamic = "force-static";
 
 function supportingImagePath(slug: string, i: number) {
@@ -97,6 +107,7 @@ export default function PrintEdition() {
   }));
 
   const indexEntries = buildPrintIndex(sections, glossaryEntries);
+  const pick = makePicker();
 
   return (
     <>
@@ -523,6 +534,7 @@ export default function PrintEdition() {
           dataSpread={dataSpread}
           guestOpinions={guestOpinions}
           nextSection={allEssays[i + 1]?.section ?? null}
+          pick={pick}
         />
       ))}
 
@@ -596,12 +608,12 @@ export default function PrintEdition() {
               <ul>
                 {dataSpread.sources.map((src, i) => (
                   <li key={i}>
-                    <strong>{src.label}.</strong> {src.line}
+                    <strong>{src.label}.</strong> {domainsOnly(src.line)}
                     {src.url ? (
                       <>
                         {" "}
                         <span style={{ fontFamily: "var(--font-mono), monospace", fontSize: "7.5pt" }}>
-                          {src.url}
+                          {domainOf(src.url)}
                         </span>
                       </>
                     ) : null}
@@ -785,21 +797,20 @@ export default function PrintEdition() {
 }
 
 /* === Chapter block === */
-/* A picture band running the full width of the sheet and off both side
-   trims. Used only where it sits outside a multicol flow: section openers
-   and the chapter close. Inside a fragmented multicol a full-width element
-   strands a short balanced row above it, which is the house rule. */
+/* A picture across the full type area at the head of a section opener.
+   It used to bleed off both side trims, but anything laid out wider than
+   the type area makes Chrome shrink the whole book to fit (it was printing
+   at 70 per cent), so only standalone-merged pages may bleed now. */
 function BleedBand({
   slug,
   pick,
   height = 96,
 }: {
   slug: string;
-  pick: number;
+  pick: Picker;
   height?: number;
 }) {
-  const pool = printImages.supporting?.[slug] ?? [];
-  const img = pool[pick % Math.max(1, pool.length)];
+  const img = pick(slug);
   if (!img) return null;
   return (
     <figure
@@ -822,12 +833,11 @@ function SectionCloser({
 }: {
   slug: string;
   id: string;
-  pick: number;
+  pick: Picker;
 }) {
   const h = fitMap[id];
   if (!h) return null;
-  const pool = printImages.supporting?.[slug] ?? [];
-  const img = pool[pick % Math.max(1, pool.length)];
+  const img = pick(slug);
   if (!img) return null;
   return (
     <figure
@@ -849,6 +859,7 @@ export function ChapterBlock({
   guestOpinions,
   nextSection,
   spacerBefore,
+  pick,
 }: {
   section: (typeof sections)[number];
   essay: ReturnType<typeof getLeadEssay>;
@@ -857,6 +868,7 @@ export function ChapterBlock({
   guestOpinions: ReturnType<typeof getGuestOpinions>;
   nextSection: (typeof sections)[number] | null;
   spacerBefore?: boolean;
+  pick: Picker;
 }) {
   const chapterRunning = `Ch ${section.number}\u2003${section.title}`;
 
@@ -884,22 +896,29 @@ export function ChapterBlock({
     .filter((_, i) => i !== firstStringIdx)
     .concat(essay?.closingNote ?? []);
 
-  // Identify positions to insert supporting images. Place after every 4th
-  // string paragraph in the rest flow.
-  const supPool = printImages.supporting?.[section.slug] ?? [];
-  /* Eight pictures per chapter, not twenty-two. At twenty-two the cadence
-     cut the running text into fragments two or three lines deep and the
-     essay became unreadable. Five carry the essay, three the case and the
-     guest Q&A, and they do not overlap. */
-  /* One picture in the running essay, not three. Every in-flow figure
-     carries break-inside: avoid and stands 150 to 188mm tall, so each one
-     that fails to fit jumps and leaves a hole that size. The rest of the
-     chapter's pictures move to full-page plates, which cannot create a
-     hole because they occupy a whole page. */
-  const supList = supPool.slice(0, 1);
-  const caseExtras = supPool.slice(1, 3);
-  const tallImage = printImages.tall?.[section.slug];
-  const caseImage = printImages.cases?.[section.slug];
+  /* Head pictures for the essay. Candidate anchors are the essay's
+     crossheads; the k-th picture starts at an evenly spaced crosshead and
+     the build may move it later (shift) or resize it (h), recorded in
+     lib/print-fit.json as "<slug>:headK:shift" and "<slug>:headK:h". A
+     height of 0 means the build found no crosshead where it lands well,
+     and the picture is left out. */
+  const h2Positions = restParas
+    .map((p, i) => (typeof p === "object" && p !== null && p.type === "h2" ? i : -1))
+    .filter((i) => i > 0);
+  const headAt = new Map<number, { k: number; h: number }>();
+  for (let k = 1; k <= HEADS_PER_ESSAY && h2Positions.length > 0; k++) {
+    const base = Math.floor((k * h2Positions.length) / (HEADS_PER_ESSAY + 1));
+    const shift = fitMap[`${section.slug}:head${k}:shift`] ?? 0;
+    const idx = Math.min(h2Positions.length - 1, base + shift);
+    const h = fitMap[`${section.slug}:head${k}:h`] ?? HEAD_DEFAULT_MM;
+    if (h > 0 && !headAt.has(h2Positions[idx])) {
+      headAt.set(h2Positions[idx], { k, h });
+    }
+  }
+  const headPictures = new Map<number, PrintImage | null>();
+  for (const [at] of [...headAt.entries()].sort((a, b) => a[0] - b[0])) {
+    headPictures.set(at, pick(section.slug));
+  }
 
   // Extract chapter h2 section headings to use as the "at a glance" list at
   // the chapter close. These are the structural argument of the chapter and
@@ -910,12 +929,6 @@ export function ChapterBlock({
     )
     .map((p) => p.text);
 
-  // Pull the first blockquote in the essay for use as the chapter-close
-  // pull quote. Falls back to the chapter standfirst if no quote exists.
-  const firstQuote = paras.find(
-    (p): p is { type: "blockquote"; text: string; attribution?: string } =>
-      typeof p === "object" && p !== null && p.type === "blockquote"
-  );
 
   const chNum = String(section.number).padStart(2, "0");
 
@@ -945,82 +958,40 @@ export function ChapterBlock({
                  split into separate multicol blocks with the plate as a
                  plain sibling between them, which is both faster and the
                  rule this document already states. */
+              /* No plates inside the essay: a full page inside a fragmented
+                 multicol paints a seam. Plates sit between sections. */
               const breaks: [number, number][] = [];
-              let stringCount = 0;
-              let supIdx = 0;
-              /* Spread the pictures evenly across however many paragraphs
-                 this essay actually has, rather than firing on a fixed
-                 interval and dumping the remainder at the end. Step of at
-                 least 2 keeps two consecutive figures from colliding in
-                 one column. */
-              const paraCount = restParas.filter(
-                (x) => typeof x === "string",
-              ).length;
-              const figureStep = Math.max(
-                2,
-                Math.floor((paraCount - 3) / Math.max(1, supList.length)),
-              );
-              /* Full-page plates at the quarter and three-quarter points.
-                 They render here as placeholders and are replaced at merge
-                 time by the standalone print. */
-              /* No mid-essay plates. Splitting the essay into separate
-                 multicol blocks gave every segment its own ragged tail:
-                 three part-empty pages per chapter, column two blank. The
-                 plates now sit at section boundaries instead, where the
-                 break is natural and costs nothing. */
-              const plateAt: number[] = [];
               let skipNext = -1;
               for (let i = 0; i < restParas.length; i++) {
                 if (i === skipNext) continue;
                 const para = restParas[i];
                 if (typeof para === "string") {
                   out.push(<p key={`p-${i}`}>{para}</p>);
-                  stringCount++;
-                  const plateIdx = plateAt.indexOf(stringCount);
-                  if (plateIdx > -1) breaks.push([out.length, plateIdx]);
-                  // Picture cadence. The August proof injected one figure
-                  // every four paragraphs, which left the book 71 per cent
-                  // text-led against a reference set running 4 to 27. The
-                  // cadence is now every second paragraph, cycling through
-                  // four column-measure shapes so the page never repeats a
-                  // silhouette, with the tall figure opening the essay.
-                  if (stringCount === 3 && tallImage) {
-                    out.push(
-                      <figure
-                        key={`tall-${i}`}
-                        className="chapter-body__figure chapter-body__figure--tall"
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={`/print-images/print/${tallImage.filename}`}
-                          alt={tallImage.alt}
-                        />
-                      </figure>
-                    );
-                  }
-                  if (
-                    stringCount > 3 &&
-                    (stringCount - 3) % figureStep === 0 &&
-                    supIdx < supList.length
-                  ) {
-                    const sup = supList[supIdx];
-                    const shape = FIGURE_CYCLE[supIdx % FIGURE_CYCLE.length];
-                    out.push(
-                      <figure
-                        key={`sup-${i}`}
-                        className={`chapter-body__figure chapter-body__figure--${shape}`}
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={`/print-images/print/${sup.filename}`}
-                          alt={sup.alt}
-                        />
-                        {sup.caption && <figcaption>{sup.caption}</figcaption>}
-                      </figure>
-                    );
-                    supIdx++;
-                  }
                   continue;
+                }
+                const head = headAt.get(i);
+                const headImg = head ? headPictures.get(i) : null;
+                if (head && headImg) {
+                  /* Spans both columns from inside the flow. Chrome balances
+                     the text above it into two short columns, which is the
+                     fly GDN text-then-picture page; the build keeps that
+                     block from being a stub and sizes the picture to the
+                     space left so it never jumps and leaves a hole. */
+                  out.push(
+                    <figure
+                      key={`head-${i}`}
+                      className="head-pic"
+                      style={{ ["--head-h" as string]: `${head.h}mm` } as React.CSSProperties}
+                    >
+                      <span className="pdf-marker">{`[[HEAD-${section.slug}-${head.k}]]`}</span>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={`/print-images/print/${headImg.filename}`}
+                        alt={headImg.alt}
+                      />
+                      {headImg.caption && <figcaption>{headImg.caption}</figcaption>}
+                    </figure>,
+                  );
                 }
                 if (para.type === "h2") {
                   /* Chrome honours break-inside: avoid inside a multicol but
@@ -1118,7 +1089,7 @@ export function ChapterBlock({
                   key="body-closer"
                   slug={section.slug}
                   id={`${section.slug}:body`}
-                  pick={8}
+                  pick={pick}
                 />,
               );
               return segments;
@@ -1137,6 +1108,7 @@ export function ChapterBlock({
           data-chapter={chapterRunning}
         >
           <span className="pdf-marker">{`[[SEC-${section.slug}:guest]]`}</span>
+          <BleedBand slug={section.slug} pick={pick} height={88} />
           {(() => {
             const avatar = getContributorProfile(
               guestOpinion.contributor
@@ -1163,7 +1135,6 @@ export function ChapterBlock({
               </div>
             );
           })()}
-          <BleedBand slug={section.slug} pick={4} height={90} />
           <div className="guest-opinion__body">
             {guestOpinion.questions.map((qa, i) => (
               <React.Fragment key={i}>
@@ -1175,24 +1146,6 @@ export function ChapterBlock({
                     ))}
                   </div>
                 </div>
-                {/* A picture between every second answer, from the back of
-                    the chapter pool. The Q&As ran as unbroken grey columns
-                    across three or four pages before this. */}
-                {i % 2 === 1 && caseExtras[((i - 1) / 2) % Math.max(1, caseExtras.length)] && (
-                  <figure
-                    className={`chapter-body__figure chapter-body__figure--${
-                      FIGURE_CYCLE[(i + 2) % FIGURE_CYCLE.length]
-                    }`}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={`/print-images/print/${
-                        caseExtras[((i - 1) / 2) % Math.max(1, caseExtras.length)].filename
-                      }`}
-                      alt={caseExtras[((i - 1) / 2) % Math.max(1, caseExtras.length)].alt}
-                    />
-                  </figure>
-                )}
               </React.Fragment>
             ))}
             {(() => {
@@ -1212,13 +1165,11 @@ export function ChapterBlock({
                   <SectionCloser
             slug={section.slug}
             id={`${section.slug}:guest`}
-            pick={7}
+            pick={pick}
           />
         </section>
       ))}
 
-      {/* Plate three: before the evidence pages. */}
-      <PlatePage slug={section.slug} index={2} />
 
       {/* Data spread */}
       {dataSpread && (
@@ -1278,7 +1229,7 @@ export function ChapterBlock({
               return <h2 key={i}>{block.text}</h2>;
             }
             if (block.type === "paragraph") {
-              return <p key={i}>{block.text}</p>;
+              return <p key={i}>{domainsOnly(block.text)}</p>;
             }
             if (block.type === "table") {
               return (
@@ -1304,11 +1255,11 @@ export function ChapterBlock({
                   </table>
                   {block.caption && (
                     <p className="data-spread__caption data-spread__caption--below">
-                      {block.caption}
+                      {domainsOnly(block.caption)}
                     </p>
                   )}
                   {block.sourceLine && (
-                    <p className="data-spread__source">{block.sourceLine}</p>
+                    <p className="data-spread__source">{domainsOnly(block.sourceLine)}</p>
                   )}
                 </div>
               );
@@ -1334,11 +1285,11 @@ export function ChapterBlock({
                   </table>
                   {block.caption && (
                     <p className="data-spread__caption data-spread__caption--below">
-                      {block.caption}
+                      {domainsOnly(block.caption)}
                     </p>
                   )}
                   {block.sourceLine && (
-                    <p className="data-spread__source">{block.sourceLine}</p>
+                    <p className="data-spread__source">{domainsOnly(block.sourceLine)}</p>
                   )}
                 </div>
               );
@@ -1347,7 +1298,7 @@ export function ChapterBlock({
               return (
                 <aside key={i} className="chapter-body__editors-note">
                   <p className="chapter-body__editors-note-label">Note</p>
-                  <p className="chapter-body__editors-note-text">{block.text}</p>
+                  <p className="chapter-body__editors-note-text">{domainsOnly(block.text)}</p>
                 </aside>
               );
             }
@@ -1401,7 +1352,7 @@ export function ChapterBlock({
                 key="data-closer"
                 slug={section.slug}
                 id={`${section.slug}:data`}
-                pick={5}
+                pick={pick}
               />,
             );
             return nodes;
@@ -1430,52 +1381,19 @@ export function ChapterBlock({
                 </div>
               ))}
             </div>
-            <BleedBand slug={section.slug} pick={3} height={92} />
+            <BleedBand slug={section.slug} pick={pick} height={92} />
           </header>
 
           <div className="case-section__body">
             {(() => {
               const out: React.ReactNode[] = [];
-              let strings = 0;
               caseStudy.paragraphs.forEach((p, i) => {
                 if (typeof p === "string") {
                   out.push(<p key={i}>{p}</p>);
-                  strings++;
-                  /* Same picture cadence as the lead essay. The case pages
-                     were the largest block of text-led pages in the book:
-                     one image across four to six pages. They now draw from
-                     the back of the chapter's supporting pool, which the
-                     essay does not reach. */
-                  if (strings === 3 && caseImage) {
-                    out.push(
-                      <figure key={`case-fig-${i}`} className="case-section__figure">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={`/print-images/print/${caseImage.filename}`}
-                          alt={caseImage.alt}
-                        />
-                      </figure>
-                    );
-                  }
-                  if (strings > 3 && (strings - 3) % 2 === 0) {
-                    const pick = caseExtras[(strings - 5) / 2 % Math.max(1, caseExtras.length)];
-                    if (pick) {
-                      out.push(
-                        <figure
-                          key={`case-sup-${i}`}
-                          className={`chapter-body__figure chapter-body__figure--${
-                            FIGURE_CYCLE[strings % FIGURE_CYCLE.length]
-                          }`}
-                        >
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={`/print-images/print/${pick.filename}`}
-                            alt={pick.alt}
-                          />
-                        </figure>
-                      );
-                    }
-                  }
+                  /* No pictures inside the case text. The case opens on a
+                     picture across the head of the page and its foot is
+                     filled by the closer; anything dropped between its
+                     paragraphs jumped and left a hole. */
                   return;
                 }
                 if (p.type === "h2") {
@@ -1507,104 +1425,58 @@ export function ChapterBlock({
               </div>
             )}
           </div>
-                  <SectionCloser
+                  {/* Chapter close (specification section 8, register R7): one card at
+              the foot of the last page, always in the same place, as fly GDN
+              ends every article with the same box. It replaces a closer page and
+              an at-a-glance page that together left two mostly empty pages per
+              chapter. It sits inside the case section, ahead of the closer, so the
+              closer picture fills whatever space the card leaves. */}
+          {nextSection && (
+            <aside className="chapter-card" data-chapter={chapterRunning}>
+              <div className="chapter-card__col">
+                <h3 className="chapter-card__head">In this chapter</h3>
+                <ol className="chapter-card__list">
+                  {sectionHeadings.map((h, i) => (
+                    <li key={i}>{h}</li>
+                  ))}
+                </ol>
+              </div>
+              <div className="chapter-card__col">
+                <h3 className="chapter-card__head">About the cases</h3>
+                <p className="chapter-card__text">
+                  Cases are drawn from the Foreland Marine project archive, from a
+                  single engagement or a composite of closely analogous
+                  engagements where anonymity demanded it. Adjusted figures
+                  preserve the structural pattern of cost, decision, and outcome.
+                  Cases sit alongside the chapter&rsquo;s data spread, not in
+                  place of it. The arithmetic is the load-bearing argument.
+                  Apply the test in chapter nine to your own
+                  situation before drawing any conclusion from the case.
+                </p>
+                <p className="chapter-card__text">
+                  Practitioners who recognise the pattern or who disagree with
+                  the reading are welcome at editors@firstownersreference.com.
+                  Disagreement is read in full and reflected in the next edition
+                  where it holds up.
+                </p>
+              </div>
+              <div className="chapter-card__col chapter-card__col--next">
+                <h3 className="chapter-card__head">Read next</h3>
+                <p className="chapter-card__next-num">Chapter {nextSection.number}</p>
+                <p className="chapter-card__next-title">{nextSection.title}</p>
+                <p className="chapter-card__text">{nextSection.standfirst}</p>
+              </div>
+            </aside>
+          )}
+          <SectionCloser
             slug={section.slug}
             id={`${section.slug}:case`}
-            pick={6}
+            pick={pick}
           />
         </section>
       )}
 
-      {/* Chapter close: a full-page typographic moment that ends the chapter.
-          Top half is a large pull quote echoing the chapter argument. Bottom
-          half is a structural foot with Read next and the at-a-glance list of
-          the chapter's section headings. A giant chapter number sits behind
-          the composition as architecture, not decoration. */}
-      {/* Plate four: the last picture before the chapter closes. */}
-      <PlatePage slug={section.slug} index={3} />
 
-      {nextSection && (
-        <aside className="chapter-close" data-chapter={chapterRunning}>
-          <div className="chapter-close__big-num" aria-hidden>
-            {String(section.number).padStart(2, "0")}
-          </div>
-          <div className="chapter-close__head">
-            <p className="chapter-close__end-label">
-              Chapter {String(section.number).padStart(2, "0")} closes
-            </p>
-            <h3 className="chapter-close__section-title">{section.title}</h3>
-          </div>
-          <BleedBand slug={section.slug} pick={2} height={88} />
-          {firstQuote && (
-            <blockquote className="chapter-close__quote">
-              {firstQuote.text}
-              <footer>
-                {firstQuote.attribution ?? `Chapter ${String(section.number).padStart(2, "0")}\u2003${section.title}`}
-              </footer>
-            </blockquote>
-          )}
-          <div className="chapter-close__bottom">
-          <div className="chapter-close__method">
-            <div className="chapter-close__method-block">
-              <p className="chapter-close__method-label">Case provenance</p>
-              <p className="chapter-close__method-body">
-                Cases are drawn from the Foreland Marine project archive,
-                from a single engagement or a composite of closely analogous
-                engagements where anonymity demanded it. Adjusted figures
-                preserve the structural pattern of cost, decision, and
-                outcome.
-              </p>
-            </div>
-            <div className="chapter-close__method-block">
-              <p className="chapter-close__method-label">How to read</p>
-              <p className="chapter-close__method-body">
-                Cases sit alongside the chapter&rsquo;s data spread, not in
-                place of it. The arithmetic is the load-bearing argument.
-                Apply the test in chapter nine to your own situation before
-                drawing any conclusion from the case.
-              </p>
-            </div>
-            <div className="chapter-close__method-block">
-              <p className="chapter-close__method-label">Correspondence</p>
-              <p className="chapter-close__method-body">
-                Practitioners who recognise the pattern or who disagree with
-                the reading are welcome at editors@firstownersreference.com.
-                Disagreement is read in full and reflected in the next
-                edition where it holds up.
-              </p>
-            </div>
-          </div>
-
-          <div className="chapter-close__foot">
-            <div className="chapter-close__foot-col chapter-close__foot-col--next">
-              <p className="chapter-close__label">Read next</p>
-              <p className="chapter-close__num">
-                Chapter {nextSection.number}
-              </p>
-              <h3 className="chapter-close__title">{nextSection.title}</h3>
-              <p className="chapter-close__standfirst">
-                {nextSection.standfirst}
-              </p>
-            </div>
-            {sectionHeadings.length > 0 && (
-              <div className="chapter-close__foot-col chapter-close__foot-col--glance">
-                <p className="chapter-close__glance-label">
-                  Chapter {section.number} at a glance
-                </p>
-                <ol className="chapter-close__glance-list">
-                  {sectionHeadings.map((h, i) => (
-                    <li key={i}>
-                      <span>{String(i + 1).padStart(2, "0")}</span>
-                      <p>{h}</p>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            )}
-          </div>
-          </div>
-        </aside>
-      )}
       </div>
     </>
   );

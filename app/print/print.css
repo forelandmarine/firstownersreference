@@ -52,13 +52,13 @@
      every title in the reference set, so the type block sits out towards
      the trim and the spread carries a wide central channel. */
   margin: 25mm 19mm 27mm 27mm;
-  background: #f5f2ec;
+  background: #ffffff;
 }
 
 @page :left {
   margin-left: 19mm;
   margin-right: 27mm;
-  background: #f5f2ec;
+  background: #ffffff;
   @top-left {
     content: "";
     font-family: "DM Sans", "Helvetica Neue", sans-serif;
@@ -67,13 +67,13 @@
     text-transform: uppercase;
     color: #7a756d;
     padding-top: 11mm;
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @top-right {
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @top-center {
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @bottom-left {
     content: counter(page);
@@ -82,20 +82,20 @@
     color: #7a756d;
     padding-bottom: 11mm;
     font-variant-numeric: oldstyle-nums tabular-nums;
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @bottom-right {
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @bottom-center {
-    background: #f5f2ec;
+    background: #ffffff;
   }
 }
 
 @page :right {
   margin-left: 27mm;
   margin-right: 19mm;
-  background: #f5f2ec;
+  background: #ffffff;
   @top-right {
     content: "The First Owner\2019s Reference \00b7\0020 1st Edition";
     font-family: "Newsreader", Georgia, serif;
@@ -104,13 +104,13 @@
     letter-spacing: 0.04em;
     color: #7a756d;
     padding-top: 11mm;
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @top-left {
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @top-center {
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @bottom-right {
     content: counter(page);
@@ -119,38 +119,38 @@
     color: #7a756d;
     padding-bottom: 11mm;
     font-variant-numeric: oldstyle-nums tabular-nums;
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @bottom-left {
-    background: #f5f2ec;
+    background: #ffffff;
   }
   @bottom-center {
-    background: #f5f2ec;
+    background: #ffffff;
   }
 }
 
 @page no-folio {
   margin: 29mm 27mm 29mm 29mm;
-  background: #f5f2ec;
-  @top-left { content: ""; background: #f5f2ec; }
-  @top-right { content: ""; background: #f5f2ec; }
-  @top-center { background: #f5f2ec; }
-  @bottom-left { content: ""; background: #f5f2ec; }
-  @bottom-right { content: ""; background: #f5f2ec; }
-  @bottom-center { background: #f5f2ec; }
+  background: #ffffff;
+  @top-left { content: ""; background: #ffffff; }
+  @top-right { content: ""; background: #ffffff; }
+  @top-center { background: #ffffff; }
+  @bottom-left { content: ""; background: #ffffff; }
+  @bottom-right { content: ""; background: #ffffff; }
+  @bottom-center { background: #ffffff; }
 }
 
 @page bleed {
   margin: 0;
-  background: #f5f2ec;
+  background: #ffffff;
 }
 
 @page :blank {
-  background: #f5f2ec;
-  @top-left { content: ""; background: #f5f2ec; }
-  @top-right { content: ""; background: #f5f2ec; }
-  @bottom-left { content: ""; background: #f5f2ec; }
-  @bottom-right { content: ""; background: #f5f2ec; }
+  background: #ffffff;
+  @top-left { content: ""; background: #ffffff; }
+  @top-right { content: ""; background: #ffffff; }
+  @bottom-left { content: ""; background: #ffffff; }
+  @bottom-right { content: ""; background: #ffffff; }
 }
 
 @page cover {
@@ -162,17 +162,17 @@
 html {
   margin: 0;
   padding: 0;
-  background: #f5f2ec;
+  background: #ffffff;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #f5f2ec;
+  background: #ffffff;
 }
 
 .print-edition {
-  background: #f5f2ec;
+  background: #ffffff;
 }
 
 /* Section padding is handled per-class below; @page margins handle the
@@ -1353,7 +1353,7 @@ body {
   right: 0;
   bottom: 0;
   top: 62%;
-  background: var(--colour-paper);
+  background: #ffffff;
   padding: 16mm 26mm 0 26mm;
   z-index: 2;
 }
@@ -2797,7 +2797,7 @@ body {
     text-transform: uppercase;
     color: #7a756d;
     padding-top: 11mm;
-    background: #f5f2ec;
+    background: #ffffff;
   }
 }
 
@@ -2997,3 +2997,199 @@ body {
    (2) adding word-break/overflow-wrap rules to .sources-section.
    Keep source url fields as valid URLs, do not add text-breaking rules
    here, and check the page count after ANY change to this region. */
+
+/* ===========================================================
+   FLY GDN LAYER, 14 November 2026
+   docs/print/layout-specification.md. Later than everything above and
+   overrides it where they meet. Two aims: print at true scale, and take
+   out the white space between and around paragraphs.
+   =========================================================== */
+
+/* -- True scale. Nothing in the flow may lay out wider than the 190mm type
+   area: one element past it and Chrome shrinks every page to fit (the
+   book printed at 70 per cent from May to November). Only the standalone
+   merged pages bleed. scripts/build-print.mjs refuses to print if
+   anything overflows. */
+.bleed-band {
+  margin: 0 0 7mm 0;
+}
+.section-closer {
+  margin: 6mm 0 0 0;
+}
+
+/* -- Paragraphs may split across columns and pages. Every paragraph was
+   unbreakable inside its column (break-inside: avoid-column), so any
+   paragraph longer than the space left jumped whole and left the foot of
+   the column empty. That was most of the white space between paragraphs. */
+.chapter-body__cols p,
+.case-section__body p,
+.guest-opinion__a p,
+.data-spread__flow p {
+  break-inside: auto;
+  orphans: 2;
+  widows: 2;
+}
+
+/* Guest answers set as body text, not at 11.5pt. They were the largest
+   type in the running text and the longest grey runs in the book. */
+.guest-opinion__a p {
+  font-size: 9.75pt;
+  line-height: 14pt;
+}
+.guest-opinion__qa {
+  margin-bottom: 4mm;
+}
+.guest-opinion__q {
+  font-size: 11pt;
+  line-height: 14.5pt;
+  margin: 0 0 3pt 0;
+}
+
+/* Wide tables may break between rows; only charts are held whole. A table
+   that could not split jumped to the next page and left half a page. */
+.data-spread__wide {
+  break-inside: auto;
+  margin-bottom: 7mm;
+}
+.data-spread__wide:has(.data-spread__chart) {
+  break-inside: avoid;
+}
+.data-spread__table tr,
+.data-spread__kv tr {
+  break-inside: avoid;
+}
+.data-spread__table thead {
+  display: table-header-group;
+}
+.data-spread__flow {
+  margin-bottom: 6mm;
+}
+
+/* -- Crossheads: the magazine's small bold sans capitals, in place of
+   19pt serif headings with 18pt above them. */
+.chapter-body__cols h2,
+.chapter-body h2,
+.case-section__body h2,
+.data-spread__flow h2 {
+  font-family: var(--font-furniture);
+  font-weight: 700;
+  font-size: 8pt;
+  line-height: 11pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--colour-ink);
+  margin: 10pt 0 3pt 0;
+}
+
+/* -- Standfirsts: the medium sans voice under every set-piece title. */
+.case-section__standfirst,
+.data-spread__standfirst,
+.guest-opinion__intro {
+  font-family: var(--font-furniture);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11pt;
+  line-height: 15.5pt;
+  color: var(--colour-ink);
+}
+
+/* -- Set-piece titles: Newsreader at display size, sentence case. */
+.case-section__title,
+.data-spread__title,
+.guest-opinion__title {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 34pt;
+  line-height: 36pt;
+  letter-spacing: -0.01em;
+  color: var(--colour-ink);
+}
+
+/* Case opener: centred title and standfirst above the picture, the
+   Wilno and Matera pattern. */
+.case-section__title,
+.case-section__standfirst {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150mm;
+}
+
+/* No labels above headings. */
+.guest-opinion__label {
+  display: none;
+}
+
+/* -- Head pictures in the essay: one large picture across both columns,
+   sized by the build to the space left on its page. */
+.head-pic {
+  /* Positioned, so its [[HEAD-…]] marker reports the picture's own top
+     and not the section's. */
+  position: relative;
+  column-span: all;
+  margin: 3mm 0 5mm 0;
+  break-inside: avoid;
+}
+.head-pic img {
+  width: 100%;
+  height: var(--head-h, 100mm);
+  object-fit: cover;
+  display: block;
+}
+.head-pic figcaption {
+  font-family: var(--font-furniture);
+  font-size: 7pt;
+  line-height: 9.5pt;
+  color: var(--colour-soft);
+  margin-top: 2mm;
+}
+
+/* -- Chapter card: the closing box, always at the foot of the chapter. */
+.chapter-card {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  column-gap: 7mm;
+  margin-top: 8mm;
+  padding-top: 4mm;
+  border-top: 0.75pt solid var(--colour-marine);
+  break-inside: avoid;
+  break-before: avoid;
+}
+.chapter-card__head {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 11pt;
+  line-height: 14pt;
+  color: var(--colour-marine);
+  margin: 0 0 2mm 0;
+}
+.chapter-card__list {
+  margin: 0;
+  padding-left: 4.5mm;
+  font-family: var(--font-furniture);
+  font-size: 7.5pt;
+  line-height: 10.5pt;
+  color: var(--colour-ink);
+}
+.chapter-card__text {
+  font-family: var(--font-furniture);
+  font-size: 7.5pt;
+  line-height: 10.5pt;
+  color: var(--colour-soft);
+  margin: 0 0 2mm 0;
+}
+.chapter-card__next-num {
+  font-family: var(--font-furniture);
+  font-size: 7.5pt;
+  line-height: 10pt;
+  color: var(--colour-stone);
+  margin: 0;
+}
+.chapter-card__next-title {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 16pt;
+  line-height: 18pt;
+  color: var(--colour-ink);
+  margin: 0 0 2mm 0;
+}

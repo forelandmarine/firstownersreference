@@ -22,6 +22,7 @@ import { getCase } from "@/lib/cases";
 import { getDataSpread } from "@/lib/data-spreads";
 import { getGuestOpinions } from "@/lib/guest-opinions";
 import { ChapterBlock, chapterMastersCss } from "../../print/page";
+import { makePicker } from "@/lib/print-picker";
 
 export const dynamic = "force-dynamic";
 
@@ -50,6 +51,7 @@ export default async function PrintChapterPreview({
         dataSpread={getDataSpread(section.slug)}
         guestOpinions={getGuestOpinions(section.slug)}
         nextSection={sections[index + 1] ?? null}
+        pick={makePicker()}
       />
     </>
   );
