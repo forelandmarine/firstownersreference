@@ -362,15 +362,15 @@ export const charts: Record<string, () => React.ReactElement> = {
   "refit-cost-per-metre": () => (
     <ChartFrame
       number="06.01"
-      title="Refit cost per metre per year, by scope"
+      title="Refit cost per metre, by scope"
       standfirst="Practitioner working ranges across more than 30 managed projects. Yard rate cards (MB92, Pendennis) are not published."
-      caption="EUR per metre per year. On a 50 m yacht the major-structural band is approximately EUR 2 m to 5 m."
+      caption="Annual maintenance is EUR per metre a year; the mid-life and major structural figures are EUR per metre for the project. On a 50m yacht a major structural refit is approximately EUR 2 m to 5 m."
       source="Foreland Marine project archive; practitioner working knowledge."
     >
       <RangeBars
         domainMax={100}
         unit=" k"
-        unitLabel="EUR thousand per metre per year"
+        unitLabel="EUR thousand per metre"
         axisTicks={[0, 20, 40, 60, 80, 100]}
         rows={[
           { label: "Annual maintenance", from: 2, to: 8 },
@@ -385,9 +385,9 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="07.02"
       title="Hull insurance rate movement, 2022 to 2026"
-      standfirst="The hardened market that opened in 2022 stabilised in H1 2024. Bayesian sinking, August 2024, prompted selective tightening rather than blanket rate rises."
-      caption="Indicative hull rate trajectory, well-maintained 40 to 50 m yacht. Vertical reference marks the Bayesian event."
-      source="AIG, Gallagher Specialty published commentary; Pantaenius market notes."
+      standfirst="Rates rose through 2022 and 2023 and had largely stopped rising by the first half of 2024. The Bayesian sinking in August 2024 prompted selective tightening rather than blanket rate rises. For 2026, PIB Marine expects hull rates to be flat or to rise marginally with inflation."
+      caption="Indicative hull rate trajectory, well-maintained 40 to 50m yacht. Vertical reference marks the Bayesian event."
+      source="AIG, Gallagher Specialty published commentary; Pantaenius market notes; Ollie Davis, PIB Marine, interviewed for chapter 7."
     >
       <LineChart
         xDomain={[2022, 2026]}
@@ -407,8 +407,8 @@ export const charts: Record<string, () => React.ReactElement> = {
               { x: 2022, y: 0.7 },
               { x: 2023, y: 1.15 },
               { x: 2024, y: 1.25 },
-              { x: 2025, y: 1.15 },
-              { x: 2026, y: 1.05 },
+              { x: 2025, y: 1.2 },
+              { x: 2026, y: 1.2 },
             ],
           },
         ]}
