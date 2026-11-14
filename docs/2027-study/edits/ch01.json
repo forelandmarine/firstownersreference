@@ -1,0 +1,202 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "In 2025 the global market for yachts above 24 metres turned over USD 8.5 billion, a 70 percent rise on the year before and eclipsed in the past decade only by the post-Covid surge of 2021.",
+    "new": "In 2025 the total value of yacht sales above 24 metres reached USD 8.5 billion (Knight Frank Wealth Report 2026), a 70 percent rise on the year before and second in the past decade only to the post-Covid surge of 2021.",
+    "kind": "fact",
+    "reason": "C1: name the measure (total sales value, Knight Frank) so it does not read against ch02 15 (Edmiston brokerage over 30m)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The cost categories compound in an unintuitive way: crew, not fuel, is the dominant line.",
+    "new": "The cost categories do not rank the way most buyers expect. Crew, not fuel, is the dominant line.",
+    "kind": "line",
+    "reason": "Keeps the reviewer's short sentence as the point of the paragraph, now that the pull quote repeating it is cut."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "runs EUR 130,000 to 250,000 per year on fuel alone; a 50m displacement yacht runs past EUR 250,000.",
+    "new": "runs EUR 130,000 to 250,000 per year on fuel alone. A 50m motor yacht on the same hours burns EUR 200,000 to 350,000, the figure chapter 8 compares with a sailing yacht of the same length.",
+    "kind": "fact",
+    "reason": "C13: align the 50m fuel figure with ch08 5 (same 400-hour basis)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "What 4 to 8 weeks of annual use buys is a fixed cost structure that runs whether the yacht is used or not. Ocean Independence’s owner-usage data places typical use at 4 to 8 weeks; committed users reach 12 to 16.",
+    "new": "Ocean Independence’s owner-usage data places typical use at 4 to 8 weeks a year; committed users reach 12 to 16. What those weeks buy is a fixed cost that runs whether the yacht is used or not.",
+    "kind": "line",
+    "reason": "Source first, then the point; removes the repeated '4 to 8 weeks'."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Superyacht Report OpEx Survey, Q2 2026 — captain-led, drawn from the 28 to 83 metre fleet — corroborates the working ranges from a separate base. 62 percent of yachts in that band report annual operating budgets above EUR / USD 2 million; 31 percent sit in the 4 to 6 million band, 8 percent above 6 million. Owners are aboard an average of 17 weeks per year on private programmes; the vessel, the crew, and the cost structure run for all 52. Up to 24 weeks of the annual calendar can sit in yard for maintenance or refit, a chunk of cost broker-quoted operating figures typically do not capture.",
+    "new": "The Superyacht Report OpEx Survey, Q2 2026, answered by captains in the 28 to 83 metre fleet, corroborates the working ranges from a separate base. 62 percent of yachts in that band report annual operating budgets above EUR / USD 2 million; 31 percent sit in the 4 to 6 million band, and 8 percent above 6 million. On private programmes in that sample, owners are aboard an average of 17 weeks a year, while the yacht, the crew and the costs run for all 52. The difference from the 4 to 8 weeks above lies in the samples: one is a brokerage house’s figure for typical owners, the other a captain-reported survey of larger yachts in active private use. Up to 24 weeks of the year can be spent in yard for maintenance or refit, and an operating estimate should say whether that time is included.",
+    "kind": "fact",
+    "reason": "C2: name the sample behind each usage figure; removes em dashes; replaces fairness flag 1 (broker-quoted figures) with a concrete instruction."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "01-reality-of-ownership",
+      "startsWith": "Crew, not fuel, is the dominant line."
+    },
+    "kind": "structure",
+    "reason": "Unattributed pull quote repeating para 8 (F section 5); the sentence is kept in para 8."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "then a further 6 to 8 percent annually compounding through years two to five. By year five a typical hull has lost 40 to 50 percent of its original value, after which the curve flattens.",
+    "new": "then a further 6 to 8 percent a year, compounding, through years two to five. On those rates a typical hull has lost about 30 to 43 percent of its purchase price by year five, after which the curve flattens.",
+    "kind": "fact",
+    "reason": "C3: year-five loss recalculated from the stated rates (working in report)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "all published curves are broker-aggregated and self-reported, which is itself a finding.",
+    "new": "all published curves are broker-aggregated and self-reported, and should be read as indicative.",
+    "kind": "line",
+    "reason": "Removes the repeated 'itself a finding' formula (also ch05 68)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The yacht is not an investment. It is a depreciating asset whose depreciation is roughly the same magnitude as the annual operating cost in the early years. A USD 30 million yacht held for five years at moderate use will typically have lost USD 12 to 15 million in value and consumed another USD 15 to 22 million in opex. An eight-figure hold cost over the period is the realistic frame.",
+    "new": "A yacht is not an investment. In the first year it typically loses about as much value as it costs to run. A USD 30 million yacht held for five years at moderate use will typically have lost USD 9 to 13 million in value and consumed another USD 15 to 22 million in operating cost.",
+    "kind": "fact",
+    "reason": "C3 follow-through: USD 30m x 30 to 43 percent = USD 9 to 13m; drops the closing 'realistic frame' line and the 'not X, it is Y' turn."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Brokers consistently advise first-time owners that charter can offset ownership cost; for the median yacht, the arithmetic does not bear that out.",
+    "new": "Charter is often presented to first-time owners as a way to offset the cost of ownership. For the median yacht, the published arithmetic does not bear that out.",
+    "kind": "line",
+    "reason": "Fairness flag 2: the generalisation about all brokers was unsourced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "generated EUR 1,592,000 in net income against EUR 1,575,000 in running cost. Effectively break-even, before the owner’s own usage.",
+    "new": "generated EUR 1,592,000 in net income against EUR 1,575,000 in running cost: effectively break-even, before the owner’s own use.",
+    "kind": "line",
+    "reason": "Joins a fragment to its sentence."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Charter does not pay for ownership for the median operator, although it can pay for a small minority of disciplined programmes. The first yacht is rarely the one for which those conditions are already in place.",
+    "new": "Charter can pay for a small minority of well-run programmes. A first yacht rarely has those conditions in place from the start.",
+    "kind": "repetition",
+    "reason": "The first clause restated para 22."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The ownership case, honestly stated",
+    "new": "The case for ownership",
+    "kind": "line",
+    "reason": "'Honestly' heading device (F section 5)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "It argues against ownership undertaken on the assumption that the cost is what the broker said it was. Taken with full visibility of the financial reality, the right ownership decision is one of the great purchases a person can make.",
+    "new": "It argues against buying on the strength of a quoted budget that nobody has tested. Made with the full cost in view, the right ownership decision is one of the great purchases a person can make.",
+    "kind": "line",
+    "reason": "Removes a pre-echo of the ch03 broker argument; plainer wording."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Repeated, predictable, family-led use of a known asset, specified, crewed, and operated to the owner’s preferences. The case for ownership is operational rather than financial.",
+    "new": "What the owner gets is repeated, predictable, family-led use of a known yacht, specified, crewed and operated to his or her own preferences. The case for ownership is operational rather than financial.",
+    "kind": "line",
+    "reason": "Turns a fragment into a sentence."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "01-reality-of-ownership",
+      "startsWith": "Ownership makes sense when the owner intends to use the yacht"
+    },
+    "new": "The book’s own case files show what that looks like in practice. In the chapter 1 case, the owner’s second yacht, a 46m semi-custom, was bought with a team he paid directly at known rates, about USD 320,000 on a USD 24 million acquisition. In year five the captain hired through an independent recruitment process at the start is still aboard, the crew has stayed largely intact, and operating cost has run at 13 to 14 percent of original capex a year, inside the band set out before he bought.",
+    "kind": "structure",
+    "reason": "Positive case from the ch01 case (paras 12, 15 to 16) and ch07 case (paras 10, 12). (ch07 case sentences held pending the case-date decision)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "01-reality-of-ownership",
+      "startsWith": "The book’s own case files show what that looks like in pract"
+    },
+    "new": "Continuity of that kind depends on the owner as well as the crew. Asked what most often drives turnover, Erica Lay, founder and director of EL Crew Co, answered “Inconsistency from the top”, which she says “can come from the owner, the captain, or the management structure”. In her words: “Crew can handle hard work. They can handle long hours and demanding programmes. What they struggle with is unpredictability and a lack of trust in leadership.” Ella Johnson, captain of a 34m Baltic Yachts performance sloop, says the yacht “looks the same seven years on”, and credits “both the yard’s design and build and the crew over the years who have looked after her.”",
+    "kind": "structure",
+    "reason": "Owner's part in crew continuity, quoting the Lay and Johnson Q&As exactly, with attribution."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "01-reality-of-ownership",
+      "startsWith": "Continuity of that kind depends on the owner as well as the "
+    },
+    "new": "Ownership also costs time. In the chapter 9 case, the adviser estimated that a 49m yacht would take 40 to 60 days a year of the owner’s direct attention, through season planning, refit scheduling, supplier conversations and crew matters, on top of 80 to 120 days of family use. That buyer decided he did not want the commitment and did not proceed. For an owner who does want it, those days are part of the price, and they belong in the plan alongside the money.",
+    "kind": "structure",
+    "reason": "The owner's time commitment, from the ch09 case para 15 to 16; meets the standfirst's promise of 'in time'."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ask whether your intended use pattern fits. The running cost calculator on this site runs your own numbers against the Mediterranean Yacht Brokers Association (MYBA), Pantaenius, Quay Crew, IGY, and aggregated practitioner data, with source assumptions on every line. The answer should be sobering.",
+    "new": "Ask whether your intended use pattern fits. The running cost calculator on this site tests your own numbers against data from the Mediterranean Yacht Brokers Association (MYBA), Pantaenius, Quay Crew, IGY and aggregated practitioner sources.",
+    "kind": "repetition",
+    "reason": "Combines the two calculator mentions (the editor's note keeps 'source assumptions on every line'); drops the closer."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The remaining chapters cover market structure, how the industry works,",
+    "new": "The remaining chapters cover the market, how the industry works,",
+    "kind": "line",
+    "reason": "Concrete word for 'market structure'."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Years two to five show a further 6 to 8 percent annually, compounding. By year five a typical hull has lost 40 to 50 percent of its original value.",
+    "new": "Years two to five show a further 6 to 8 percent a year, compounding. On those rates a typical hull has lost about 30 to 43 percent of its original value by year five.",
+    "kind": "fact",
+    "reason": "C3: matches corrected essay para 16."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "all published curves are broker-aggregated and self-reported, which is itself a finding.",
+    "new": "all published curves are broker-aggregated and self-reported, so the figures are indicative.",
+    "kind": "line",
+    "reason": "Removes the repeated formula, as in the essay."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "For the median yacht in the median programme, the arithmetic does not bear out the broker line.",
+    "new": "For the median yacht in the median programme, the published arithmetic does not bear out the claim that charter pays for ownership.",
+    "kind": "line",
+    "reason": "Fairness: 'the broker line' generalised about brokers."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Ocean Independence’s owner-usage data places typical use at 4 to 8 weeks per year. Committed users reach 12 to 16 weeks. Above that, charter operation is the only economically rational frame, and even charter does not solve the depreciation and fixed-cost problem on its own.",
+    "new": "Ocean Independence’s owner-usage data places typical use at 4 to 8 weeks per year, with committed users reaching 12 to 16 weeks. The Superyacht Report’s OpEx Survey (Q2 2026), answered by captains of 28 to 83 metre yachts, records owners aboard an average of 17 weeks a year on private programmes; the difference reflects the samples. This publication treats 12 weeks of intended use as the point at which ownership starts to make sense.",
+    "kind": "fact",
+    "reason": "C2: both usage figures with their samples; the old 'above that, charter is the only rational frame' sentence contradicted the essay's 12-week threshold."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Charter economics are unpacked in the chapter 7 spread.",
+    "new": "Charter economics, with BOAT International’s case studies, are set out in the chapter essay.",
+    "kind": "repetition",
+    "reason": "ch01 is the single home for charter economics."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"value\": \"Semi-custom motor, 42 m\"",
+    "new": "\"value\": \"Semi-custom motor, 42 m, then 46 m\"",
+    "kind": "fact",
+    "reason": "The case covers two yachts; meta named only the first."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The team is paid by him, directly, at known rates. The independence is structural. The arithmetic of the two acquisitions, taken together, makes the case for the second architecture more clearly than any commentary could.",
+    "new": "The team is paid by him, directly, at known rates.",
+    "kind": "line",
+    "reason": "Cuts an abstraction and a closing declaration; the figures above make the point."
+  }
+]
