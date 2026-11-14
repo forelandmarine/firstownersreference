@@ -379,8 +379,8 @@
   },
   "07-operations": {
     "slug": "07-operations",
-    "title": "The captain hire that defined the next decade.",
-    "standfirst": "Two captain interviews, two days apart, on the same yacht. One candidate agreed with everything. The other pushed back on the owner’s itinerary, the maintenance schedule, and the budget. The owner hired the second. Ten years later, the same captain is still on the yacht, the operating cost has run within budget every year, and the crew turnover has been a fraction of the industry average.",
+    "title": "The captain who pushed back.",
+    "standfirst": "Two captain interviews, two days apart, on the same yacht. One candidate agreed with everything. The other pushed back on the owner’s itinerary, the maintenance schedule, and the budget. The owner hired the second. Two years later, the same captain is still on the yacht, and operating cost has run within budget in both seasons.",
     "meta": [
       {
         "label": "Yacht",
@@ -388,15 +388,15 @@
       },
       {
         "label": "Captain tenure",
-        "value": "More than ten years, ongoing"
+        "value": "Two years, ongoing"
       },
       {
-        "label": "Crew retention",
-        "value": "Senior crew average tenure 6.5 years"
+        "label": "Seasons since the hire",
+        "value": "Two"
       },
       {
         "label": "Anonymisation",
-        "value": "Single Foreland project, 2014 ongoing"
+        "value": "Single Foreland project, 2024 ongoing"
       }
     ],
     "paragraphs": [
@@ -418,26 +418,20 @@
       },
       {
         "type": "h2",
-        "text": "The next decade"
+        "text": "Two seasons on"
       },
-      "Ten years on, the captain is still on the yacht. The senior crew (chief officer, chief engineer, chief stewardess, chef) have averaged 6.5 years of tenure. Junior crew turnover has run at approximately one-third the industry average. The yacht has had two refits, both delivered within practitioner cost discipline. The captain has, on three occasions across the decade, recommended that the owner not proceed with a particular refit yard, supplier, or charter arrangement. In each case, the recommendation was inconvenient in the moment and proved correct in retrospect.",
-      "The captain has also, on two occasions, recommended that the owner sell the yacht. Both recommendations were made on the basis that the owner’s actual use pattern had drifted from the use pattern the yacht was specified for. The owner did not act on either recommendation. He noted both, in conversation with his independent adviser, as evidence that he had hired the right captain.",
-      "The cumulative cost saving across ten years from the captain’s discipline (refit cost discipline, crew retention, supplier negotiation) is difficult to quantify precisely. A conservative estimate, applied across a 30 to 40 percent crew cost line, modest savings on refit overrun versus practitioner average, and the avoidance of two specific decisions the captain pushed back on, is approximately EUR 4 to 6 m across the decade. The captain’s pay across the same period was approximately EUR 1.6 m. The arithmetic of the hire is not subtle.",
-      {
-        "type": "h2",
-        "text": "The first captain, in retrospect"
-      },
-      "The first captain, who left after 14 months, has run two further yachts since. Both have had above-average crew turnover. Both have had operating cost growth above their size band’s practitioner norm. The captain is, by every public-record indicator, a competent professional. He is not the captain to hire on the discipline-test. The owner’s first hire had been a credential check. The owner’s second hire had been a discipline check.",
-      "The independent adviser’s view, in conversation, is that the captain hire is the most consequential operational decision an owner makes, that most first-time owners do not realise this until the second hire, and that the cost of getting it wrong on the first yacht is approximately one full year of operating cost wasted. The cost of getting it right on the second hire is approximately one year of independent recruitment process. The arithmetic, again, is not subtle."
+      "Two years on, the captain is still on the yacht. The senior crew he assembled in his first months, the chief officer, chief engineer, chief stewardess and chef, are still aboard. Operating cost has run within the budget agreed at his appointment in both seasons. He has pushed back on yard and supplier proposals where the owner’s budget or programme was at risk, which is the behaviour the interview predicted.",
+      "It is too early to put a figure on what the hire has saved. The lines where it will show are crew retention and budget control, and crew alone is 30 to 40 percent of annual operating cost (chapter 1).",
+      "The owner’s first hire had been a credential check; the second was a test of judgement. The independent adviser’s view, in conversation, is that the captain hire is the most consequential operational decision an owner makes, and that getting it wrong on the first yacht can cost up to a full year of operating cost."
     ],
     "takeaways": [
       "Hire the captain who pushes back hardest. The discomfort in interview is the signal that the captain is doing the job in interview that they will do operationally.",
       "Independent recruitment, not broker-introduced or seller-introduced, is the structural condition for the captain hire. The captain’s relationships with their introducer outlast the introduction.",
       "Senior crew tenure of 5 to 8 years is the operational signature of a well-run yacht. Below 2 years average is the signature of a captain or owner the crew is choosing to leave.",
-      "The arithmetic of the hire compounds across the decade. The captain’s annual pay is small against the operational cost the captain controls."
+      "The captain’s annual pay is small against the operating cost the captain controls."
     ],
-    "disclosure": "Single Foreland Marine project, 2014 ongoing. Identifying details adjusted; the captain hire pattern, the operating outcomes, and the decade-long arithmetic are accurate to the original project.",
-    "seoTitle": "Hiring a superyacht captain: two interviews, one decade",
+    "disclosure": "Single Foreland Marine project, 2024 ongoing. Identifying details adjusted; the captain hire pattern and the operating outcomes to date are accurate to the original project.",
+    "seoTitle": "Hiring a superyacht captain: two interviews, two years on",
     "seoDescription": "Two candidates on the same yacht, two days apart. One agreed with everything. The other pushed back, and got the job."
   },
   "08-motor-versus-sail": {
