@@ -525,7 +525,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The date in a refit or build after which the scope is fixed and every change is priced, programmed, and approved as a variation.",
     longDefinition:
-      "Set in advance and known to everyone, including the owner. Changes after the freeze remain possible, but each carries its own price and effect on programme. The Refit Advisory Group names scope creep as the owner’s biggest single pain point in refit, and the freeze date as the discipline that contains it.",
+      "Set in advance and known to everyone, including the owner. Changes after the freeze remain possible, but each carries its own price and effect on programme. The Refit Advisory Group (of which the publisher, Foreland Marine, is a member) names scope creep as the owner’s biggest single pain point in refit, and the freeze date as the discipline that contains it.",
     relatedChapters: ["06-refit"],
     relatedTerms: ["refit", "long-lead-item"],
   },
@@ -545,7 +545,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A refit contract with an agreed target price, under which savings and overruns are shared between owner and yard on an agreed formula.",
     longDefinition:
-      "The third contract type alongside fixed price, which works only when the scope is fully defined, and cost plus, which leaves the overrun with the owner. Target cost needs a mature scope. Where it fits, the Refit Advisory Group finds it changes yard behaviour more than any amount of supervision.",
+      "The third contract type alongside fixed price, which works only when the scope is fully defined, and cost plus, which leaves the overrun with the owner. Target cost needs a mature scope. Where it fits, the Refit Advisory Group (of which the publisher, Foreland Marine, is a member) finds it changes yard behaviour more than any amount of supervision.",
     relatedChapters: ["06-refit"],
     relatedTerms: ["provisional-sum", "design-freeze"],
   },
