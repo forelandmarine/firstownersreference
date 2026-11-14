@@ -1,0 +1,506 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "The decision is framed in trade press as a matter of taste. It is a matter of risk profile, capital commitment timing, and the quality of the buyer’s representation.",
+    "new": "The choice between building and buying turns on three things: how much risk the buyer carries, when the capital is committed, and the quality of the buyer’s representation.",
+    "kind": "line",
+    "reason": "Removes the 'framed as taste. It is a matter of' opening shared with ch08; 'risk profile' made concrete"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The two paths, honestly described",
+    "new": "The two paths",
+    "kind": "line",
+    "reason": "'Honestly' heading implies other treatments are dishonest (structural read s5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The risk profile is read once, at survey, and accepted.",
+    "new": "The risk is assessed once, at survey, and accepted.",
+    "kind": "line",
+    "reason": "'Risk profile' made concrete"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Capital is committed in stage payments: typically 20 to 30 percent at signature, 50 to 70 across the build, balance at delivery.",
+    "new": "Capital is committed in stage payments: typically 20 to 30 percent at signature, further instalments against build milestones, and a balance at delivery. Most of the price is paid before the yacht is delivered (see the first contract point below).",
+    "kind": "fact",
+    "reason": "C8: 20-30 plus 50-70 put 70 to 100 percent before delivery, against 50-70 in para 26; one figure now, stated in para 26"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Over a five-year hold the gap closes further; quality builders (Feadship, Lürssen, Royal Huisman, Vitters) hold value much better than brokerage acquisitions of comparable size.",
+    "new": "Over a five-year hold the gap closes further, and yachts from builders such as Feadship, Lürssen, Royal Huisman and Vitters hold their value better than most of the market.",
+    "kind": "fact",
+    "reason": "Comparison of new builds with 'brokerage acquisitions' did not work: a brokerage hull can be from the same builders (structural read, ch05 3)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Inglis’s broader framing of the pattern:",
+    "new": "Inglis’s summary of the pattern:",
+    "kind": "line",
+    "reason": "'Framing' replaced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Buyers holding enforceable guarantees or registered title generally kept their boat or their money. Buyers holding neither queued with the other creditors.",
+    "new": "Buyers holding enforceable guarantees or registered title generally kept their boat or their money; buyers holding neither queued with the other creditors. In the TISG proceedings of 2026, set out below, a court suspended the guarantees as well, at least provisionally.",
+    "kind": "fact",
+    "reason": "C24: the general statement now sits with the Florence order of 6 July that froze guarantee calls and payouts"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "And a position is taken in advance, with counsel, on what to do if mid-build distress produces an equity-injection or accelerated-payment proposal, so the decision is reached before pressure rather than under it. The contract can carry that position:",
+    "new": "And the buyer decides in advance, with counsel, what to do if mid-build distress produces an equity-injection or accelerated-payment proposal, so the decision is made before the pressure arrives. The contract can record that decision:",
+    "kind": "line",
+    "reason": "'Position' (nine uses in chapter) made concrete; 'rather than' pair removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The third pattern is distinct from yard financial distress: yard pricing below what the build can credibly be done for. Some yards make offers that are simply too low. A yacht’s build cost is a combination of direct cost and overhead, and the overhead is not money the yard wastes on itself; it is what produces a quality boat. Profit margins on top-tier construction are not large to begin with. A buyer who has done diligence on one yard will already have a sense of what those margins are. When another yard quotes fifteen percent below for a comparable build at similar margins, the arithmetic does not work, and the broker explaining why it does is rarely the buyer’s friend on that point. The alarm bell should ring.",
+    "new": "The third pattern is distinct from yard financial distress: a price below what the build can credibly be done for. Hein Velema, the first president of SYBAss, puts this test first when assessing a yard (see his interview in this chapter). A yacht’s build cost is direct cost plus overhead, and the overhead is not money the yard wastes on itself; it is what produces a quality boat. Margins on top-tier construction are thin to begin with, and a buyer who has done diligence on one yard will know roughly what they are. When another yard quotes fifteen percent below for a comparable build at similar margins, the arithmetic does not work, even if, as Velema notes, brokers sometimes describe such a quote as a great deal.",
+    "kind": "repetition",
+    "reason": "Paragraph paraphrased Velema's Q&A without attribution; now attributed. Fairness flag 12 replaced by his own observation; closer 'The alarm bell should ring' (his phrase) cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "The new build contract is where inexperience gets priced. Th"
+    },
+    "kind": "structure",
+    "reason": "Unattributed pull quote restating the contract section (structural read s5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A new build contract is the most consequential document a yacht buyer signs. It governs USD 30 to 200 million of capital across two to five years, and structures every variation, every dispute, every interpretation question in the period during which the yard holds the cards.",
+    "new": "A new build contract governs USD 30 to 200 million of capital across two to five years. It settles every variation, dispute and question of interpretation in the period during which the yard holds the cards.",
+    "kind": "line",
+    "reason": "'Most consequential' kept for the captain only (structural read s5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The buyer who does not retain specialist shipbuilding counsel before signing is being asked to negotiate a bespoke document drafted entirely by the yard’s lawyers, against standard forms the buyer’s representative has likely never seen.",
+    "new": "A buyer who signs without specialist shipbuilding counsel is negotiating a bespoke document drafted entirely by the yard’s lawyers, with no standard form to measure it against.",
+    "kind": "line",
+    "reason": "Second half said the representative had not seen standard forms the yards do not use; clarified"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "1. Stage payment loading. Shipbuilding industry typical: 50 to 70 percent of contract value paid before delivery (Watson Farley & Williams). Aggressive front-loading suggests the yard is short of cash to start the build. On yard-standard contracts the milestone that releases each instalment is often self-certified: the yard states the stage is complete and invoices, and nothing requires an independent surveyor to have looked. On a EUR 12 million build paid in five stages over 30 months, the owner’s exposure just before launch is around EUR 9 million, held against a contract and a record of payments (MacNally).",
+    "new": "1. Stage payment loading. Shipbuilding industry typical: 50 to 70 percent of contract value paid before delivery (Watson Farley & Williams). In custom yacht work the share can be higher, as much as 90 percent on some projects (MacNally, citing Port Royal Group). Aggressive front-loading suggests the yard is short of cash to start the build. On yard-standard contracts the milestone that releases each instalment is often self-certified: the yard states the stage is complete and invoices, and nothing requires an independent surveyor to have looked. On a EUR 12 million build paid in five stages over 30 months, the owner’s exposure just before launch is around EUR 9 million, three quarters of the price, held against a contract and a record of payments (MacNally).",
+    "kind": "fact",
+    "reason": "C8: the EUR 12m example (75 percent before launch) exceeded the 50-70 range; custom-yacht loading added from the TSR 230 article"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Yards routinely write looser clauses; weak reps accept them.",
+    "new": "Yard drafts are often looser, and an inexperienced representative may accept them.",
+    "kind": "line",
+    "reason": "Unsourced absolute softened; 'reps' made formal"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Most inexperienced reps do not negotiate it.",
+    "new": "The buyer has to ask.",
+    "kind": "line",
+    "reason": "Unsourced generalisation replaced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Inexperienced reps sometimes accept",
+    "new": "Inexperienced representatives sometimes accept",
+    "kind": "line",
+    "reason": "'Reps' made formal"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A single afternoon’s competent legal review at heads-of-terms saves more than the owner’s representative fee for the entire project. It is consistently not done.",
+    "new": "Specialist review of the yard’s draft at heads of terms costs a small fraction of the sums these clauses govern. In the case in this chapter, a change-order clause without unit rates let the yard take about EUR 5.2 million in variation margin on a EUR 95 million contract, more than the fee range given below for an independent representative across a whole build.",
+    "kind": "fact",
+    "reason": "Unquantified claim against para 68 fees now quantified from the chapter case; 'consistently not done' (fairness flag 13) cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "Kevin Laverty of Hill Robinson, writing in BOAT Internationa"
+    },
+    "kind": "structure",
+    "reason": "Laverty paragraph moved next to the Inglis page-count quote (structural read, ch05 37)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "A new build contract governs USD 30 to 200 million of capita"
+    },
+    "new": "Kevin Laverty of Hill Robinson, writing in BOAT International, has identified the relative thinness of yacht-construction contracts as drafted. One widely cited example is a 33-page contract for a 77 metre yacht, against the multi-volume documentation typical of oil and gas projects of comparable cost.",
+    "kind": "structure",
+    "reason": "Laverty on thin contracts now precedes Inglis's 'page count means very little'"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The owner’s representative is the strategic role on the buyer’s side of a yacht acquisition, build, or refit. Paid by and accountable to the owner, the representative carries the project at principal level: scope, contract, budget, programme, and the relationship with the yard above the day-to-day. The role is not the same as a project manager, a broker, a yacht manager, or a captain. Each of those is part of the team the representative builds.",
+    "new": "Chapter 3 defines the owner’s representative, whom this book also calls the independent adviser: paid by and accountable to the owner, and carrying the project at principal level. On a new build that means scope, contract, budget, programme, and the relationship with the yard above the day-to-day. Project managers, brokers, yacht managers and captains are part of the team the representative builds.",
+    "kind": "repetition",
+    "reason": "Author decision 2: the role is defined in ch03; this paragraph applies it to new build"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The work runs across four phases, each with its own discipline.",
+    "new": "The work runs across four phases.",
+    "kind": "line",
+    "reason": "'Discipline' as catch-all removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The representative leads the buyer’s position in heads-of-terms drafting",
+    "new": "The representative leads for the buyer in heads-of-terms drafting",
+    "kind": "line",
+    "reason": "'Position' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "snag-list discipline",
+    "new": "snag-list control",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The representative brings deep industry experience to the role. The path typically runs from a senior operational career, often as a yacht captain or chief engineer, where the representative has already managed budgets, contracts, crew, refits, and the technical workstreams from the operating side of the yacht. That breadth is the qualification.",
+    "new": "Representatives typically come to the role from a senior operational career, often as a yacht captain or chief engineer, where they have already managed budgets, contracts, crew, refits and the technical workstreams from the operating side of the yacht.",
+    "kind": "line",
+    "reason": "Opening assertion and closing one-liner cut; the qualification stated once"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "SYBAss founded YORP because the gap was structural",
+    "new": "Why the yards founded YORP",
+    "kind": "line",
+    "reason": "'Structural' reduced; plain heading"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The four courses move from the shipyard outwards. They begin with the yard: how it actually builds boats, where its money comes from, what its commitments to other owners on the order book mean for a representative trying to negotiate inside it. You cannot usefully negotiate with what you do not understand. The representative’s own job follows: team structure, change-order discipline, the dozen or so specific tasks the role contains, and the preparation-for-operations work at the back end of the build so often mistaken for the whole role. Then the legal layer, aimed not at producing lawyers but at producing representatives who know what their lawyer needs from them, and when. Last is what the rest cannot teach: communication, negotiation, the judgement that takes a difficult project through its rough middle and out the other side.",
+    "new": "The four courses run from the shipyard outwards: how the yard builds and is financed, the representative’s own tasks, the legal layer, and the leadership that carries a difficult project to delivery. The register adds a check on what applicants claim: a detailed application form, a reference that is called, and projects reclassified where the two disagree. Velema, now Secretary General of the Alliance, describes the curriculum and the vetting in his own words in the interview in this chapter.",
+    "kind": "repetition",
+    "reason": "Paras 49 to 52 paraphrased the Velema Q&A at length; reduced to the facts and a pointer"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "The register’s filter exists because of a recognisable CV pr"
+    },
+    "kind": "repetition",
+    "reason": "Duplicates Velema Q&A (CV problem)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "On anything bigger than an Optimist, nobody builds a boat on"
+    },
+    "kind": "repetition",
+    "reason": "Blockquote repeats Velema Q&A answer on the same page"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "The register’s application form is built to demand that leve"
+    },
+    "kind": "repetition",
+    "reason": "Duplicates Velema Q&A (application form, reference)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The institutional movement is the story: SYBAss member yards",
+    "new": "SYBAss member yards",
+    "kind": "line",
+    "reason": "Signposting opener cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "They do not stand up an industry register without a problem they want fixed.",
+    "new": "According to Velema, the programme began because those yards reported that some owner’s representatives had no clear idea of what the role was or what the yard expected of them.",
+    "kind": "fact",
+    "reason": "Inference replaced with the attributed reason from the Velema Q&A"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " A top-tier SYBAss member publicly hosting the unit is the clearest available evidence that the institutional movement is endorsed on both sides of the table.",
+    "new": "",
+    "kind": "line",
+    "reason": "Closing restatement cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "Practitioners working independently in the role have backed "
+    },
+    "kind": "repetition",
+    "reason": "Inglis paraphrase; the separation of roles is covered in ch03 and the Inglis Q&A"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "Between a broker and an owner’s representative, they are dif"
+    },
+    "kind": "repetition",
+    "reason": "Blockquote repeats the Inglis Q&A answer on the same page"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "The Superyacht Alliance’s view of professionalisation extend"
+    },
+    "kind": "line",
+    "reason": "Signposting lead-in"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The independent owner’s representative market is undersized, and conflicted by the way the surrounding industry is paid. Genuinely independent firms, paid only by the owner, with no broker commission and no yard affiliation, are a small group. They include A2B Marine Projects, ULTIMAR, Divergent Yachting, Mariner Technical Services, Praxis Marine, Occam, and Foreland Marine, the publishers of this reference.",
+    "new": "Chapter 3 sets out how the people around a yacht transaction are paid, and the written-disclosure standard this book applies. A new build adds one payer to that picture: the yard, which may pay commission to the firm advising the buyer. Firms working as owner’s representatives paid only by the owner, with no broker commission and no yard affiliation, are a small group. They include A2B Marine Projects, ULTIMAR, Divergent Yachting, Mariner Technical Services, Praxis Marine, Occam, and Foreland Marine, the publisher of this reference.",
+    "kind": "repetition",
+    "reason": "One-sentence pointer to ch03; 'conflicted by the way the industry is paid' re-argument cut; what is specific to new build stated"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The code of conduct that runs alongside the register is about behaviour rather than knowledge. An example commonly cited as falling foul of it is the ten-percent commission on the tender. It is not an absolute prohibition: a representative who takes that commission can still register, provided the arrangement and the amount have been disclosed to the owner in writing in advance. In practice, almost no one does.",
+    "new": "The code of conduct that runs alongside the register is about behaviour rather than knowledge. An example commonly cited is the ten-percent commission on the tender. It is not an absolute prohibition: a representative who takes that commission can still register, provided the arrangement and the amount have been disclosed to the owner in writing in advance. That meets the written-disclosure standard set out in chapter 3. The Alliance’s general position, in Velema’s words, “is that you do not”.",
+    "kind": "fact",
+    "reason": "Applies the ch03 standard; unsourced 'almost no one does' (fairness flag 14) replaced by Velema's stated position"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Brokerage houses with new build arms include Edmiston, Burgess, Y.CO, Ocean Independence, Camper & Nicholsons, Fraser, Cecil Wright, and Moran. Burgess Technical Services markets itself as offering “independent, objective oversight” while Burgess is one of the largest brokerages globally. Cecil Wright topped the Spear’s 2025 Yacht Advisers ranking and is acting as owner’s representative on the 83m Feadship Project Solent, due for delivery in summer 2027; Cecil Wright is a broker. The dual-role conflict looks the same at every scale.",
+    "new": "Brokerage houses with new build arms include Edmiston, Burgess, Y.CO, Ocean Independence, Camper & Nicholsons, Fraser, Cecil Wright, and Moran. Burgess Technical Services describes its work as “independent, objective oversight”; Burgess is also one of the largest brokerages. Cecil Wright, a brokerage, topped the Spear’s 2025 Yacht Advisers ranking and is acting as owner’s representative on the 83m Feadship Project Solent, due for delivery in summer 2027.",
+    "kind": "fact",
+    "reason": "Facts kept; closing generalisation (fairness flag 15) cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Technical departments at the major brokerage houses are described as project management; in practice they are the on-call relationship that keeps the brokerage close enough to be the first call on the next transaction. The technical department is the mechanism for staying in the room.",
+    "new": "Where a brokerage’s technical department acts for the buyer on a build, the same group may have introduced the yard and may be paid commission by it. That is the new-build form of the dual role. The buyer should ask, in writing, whether any part of the group will be paid by the yard or its suppliers on the project, how much, and on what.",
+    "kind": "fact",
+    "reason": "Characterisation of technical departments (fairness flag 16) replaced by the dual role and the written question"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "05-new-build-versus-brokerage",
+      "startsWith": "For the largest houses the transaction volume supports the s"
+    },
+    "kind": "fact",
+    "reason": "Unsourced claim about brokerage economics"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The naval-architect conflict mirrors the broker conflict: the design firm has a continuing commercial relationship with the yard.",
+    "new": "A design firm in that role may also have a continuing commercial relationship with the yard, and the same written disclosure applies.",
+    "kind": "fact",
+    "reason": "Absolute claim about named firms (fairness flag 17) qualified; disclosure standard applied"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Fees at the major firms (Edmiston, Burgess, Cecil Wright, Y.CO, Moran, Hill Robinson) are not published. Independents rarely publish percentages either. Anecdotal practitioner range for genuine independents is 1 to 3 percent of build cost, or fixed fees of EUR 1 to 3 million over a 36-month build on a EUR 100 million project. Brokers acting as owner’s representatives are typically paid via yard commission of around 5 percent, so the dual-role firms make more from the buyer’s side without disclosing it. The lack of published fee structures across the entire market is itself a finding.",
+    "new": "Fees at the major firms (Edmiston, Burgess, Cecil Wright, Y.CO, Moran, Hill Robinson) are not published, and independents rarely publish percentages either. The anecdotal practitioner range for independent firms is 1 to 3 percent of build cost, or fixed fees of EUR 1 to 3 million over a 36-month build on a EUR 100 million project. Brokers acting as owner’s representatives are typically paid through yard commission of around 5 percent, about EUR 5 million on the same project. Owners, in Velema’s words, “do not always know how much, or on what”. Under the standard in chapter 3, the buyer should have the figure and its source in writing before engaging the firm.",
+    "kind": "fact",
+    "reason": "'Make more without disclosing it' (fairness flag 18) replaced by Velema's attributed observation and the disclosure standard; 'itself a finding' formula cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " Yards do not refuse to be asked for these; they quietly hope they will not be asked.",
+    "new": "",
+    "kind": "fact",
+    "reason": "Fairness flag 19: unsupported claim about yards' intentions"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the yard’s first quote rarely optimises for the owner’s operating profile.",
+    "new": "the yard’s first quote may not have optimised for the owner’s intended use.",
+    "kind": "line",
+    "reason": "Unsourced absolute softened; 'profile' replaced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Comfort-class failure at delivery is one of the most expensive defects in the warranty period; the cause is almost always not running the analysis early enough",
+    "new": "Missing the comfort-class targets at delivery is one of the most expensive defects in the warranty period; the usual cause is that the analysis was not run early enough",
+    "kind": "line",
+    "reason": "'Failure' removed (author decision 5 applied in spirit); 'almost always' unsourced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Yacht paint is a six- to nine-figure line item on a 50 to 80m hull.",
+    "new": "Yacht paint is a six- or seven-figure line item on a 50 to 80m hull.",
+    "kind": "fact",
+    "reason": "Nine figures (EUR 100m+) exceeds the build cost of most 50 to 80m hulls; author to confirm"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Paint disputes are the most common single category of post-delivery warranty argument; independent paint oversight is the cheapest way to avoid them.",
+    "new": "Paint is a frequent subject of post-delivery warranty disputes, and independent paint oversight is a cheap way to avoid them.",
+    "kind": "fact",
+    "reason": "Fairness flag 20: unsourced superlative qualified"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " The discipline is in commissioning the team early enough to be heard.",
+    "new": "",
+    "kind": "line",
+    "reason": "Closing line cut; para 81 makes the point"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "can you commit to the team-building discipline that new build requires?",
+    "new": "can you commit to building the team that new build requires?",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "If those three threshold tests are positive, new build at a SYBAss member yard is one of the great purchases a UHNW principal can make. Without those conditions, it tends to be one of the more expensive ways to acquire a yacht. The case in this chapter is for the conditions, not against the path.",
+    "new": "If all three answers are yes, new build at a SYBAss member yard gives the buyer a yacht specified for its use, from a builder whose work holds its value. Without those conditions, it tends to be one of the more expensive ways to acquire a yacht. The case in this chapter is for the conditions, not against the path.",
+    "kind": "repetition",
+    "reason": "'One of the great purchases' formula is kept in ch01 25; replaced here"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "or about 8 percent of the variation margin paid by the owner.",
+    "new": "equal to about 90 percent of the variation margin paid by the owner.",
+    "kind": "fact",
+    "reason": "C26: 4.75 / 5.2 = 0.91, not 8 percent"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The change order clause is the most consequential piece of new-build contract drafting.",
+    "new": "The change order clause is among the most expensive new-build clauses to get wrong.",
+    "kind": "line",
+    "reason": "'Most consequential' reduced"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Dual-role brokerage representation is not free. It is paid by the yard, aligned with the yard’s margin, and not incentivised to negotiate clauses that constrain that margin.",
+    "new": "Dual-role representation paid by yard commission is not free. In this case the commission was never set out in writing, and it was paid from the same margin the change order clause protected.",
+    "kind": "fact",
+    "reason": "Author decision 1: takeaway tied to this case's facts and the disclosure standard, not a rule for all dual-role firms"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The afternoon’s legal review at signature saves more than the representative fee for the entire project.",
+    "new": "In this case the unconstrained clause cost about EUR 5.2 m in variation margin, more than an independent representative’s fee for the whole build.",
+    "kind": "fact",
+    "reason": "Quantified from the case (1 to 3 percent of EUR 95 m is EUR 0.95 to 2.85 m)"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Stage payment loading above 70 percent before delivery sits outside the industry-typical range.",
+    "new": "Custom yacht schedules can load more, up to 90 percent on some projects. The higher the loading, the more the refund guarantee and independent milestone checks have to carry.",
+    "kind": "fact",
+    "reason": "C8: aligned with essay para 26 and the data-spread schedule (90 percent before delivery)"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Owner’s representative paid only by the buyer, with no yard commission and no broker commission.",
+    "new": "Owner’s representative paid by the buyer, with any commission from the yard, a broker or a supplier disclosed in writing, with its amount and payer, before engagement.",
+    "kind": "fact",
+    "reason": "Author decision 1: written-disclosure standard"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The independence test is whether the representative’s income is contingent only on the buyer’s instructions, with no yard commission, no broker referral, and no contingent-fee arrangement on closing.",
+    "new": "The representative should be paid by the buyer, and any yard commission, broker referral or fee contingent on closing should be disclosed to the buyer in writing, with its amount and payer, before engagement.",
+    "kind": "fact",
+    "reason": "Author decision 1: written-disclosure standard"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Stage payment loading above 70 percent before delivery sits outside the industry-typical range. Refund guarantee credit quality is the buyer’s structural protection: tier-one bank pay-on-demand is the discipline; surety wrappers are weaker.",
+    "new": "Custom yacht schedules can load more, up to 90 percent on some projects. Refund guarantee credit quality is the buyer’s main protection: a tier-one bank pay-on-demand guarantee is the standard to ask for; surety wrappers are weaker.",
+    "kind": "fact",
+    "reason": "C8 aligned with essay; 'structural' and 'discipline' reduced"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "because owner-side representation quality was structurally inadequate at the world’s top yards;",
+    "new": "because the yards reported that some owner’s representatives had no clear idea of what the role required;",
+    "kind": "fact",
+    "reason": "Attributed reason from the Velema Q&A replaces an unsupported generalisation"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The structural problem is that brokers, yards, and management companies have established relationships with each other; the unconflicted independent representative is the structural counterweight.",
+    "new": "Brokers, yards and management companies also have established relationships with each other, so the buyer benefits from one adviser who is paid by the buyer and discloses any other payment in writing.",
+    "kind": "line",
+    "reason": "'Structural' x3 removed; disclosure standard applied"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "milestones whose definition is the most consequential drafting work in the contract.",
+    "new": "milestones whose definition is among the most important drafting work in the contract.",
+    "kind": "line",
+    "reason": "'Most consequential' reduced"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "50–70 percent across build, balance at delivery",
+    "new": "milestone instalments across build, balance at delivery",
+    "kind": "fact",
+    "reason": "C8: 20-30 plus 50-70 summed to 70-100 percent before delivery"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Industry-typical 50 to 70 percent paid before delivery. Aggressive front-loading",
+    "new": "This working schedule has 70 percent paid by launch and 90 percent before delivery, at the heavy end of custom practice. Aggressive front-loading",
+    "kind": "fact",
+    "reason": "C8: caption contradicted its own table (EUR 90 m cumulative before delivery)"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Quality builders hold value much better than mid-tier brokerage acquisitions.",
+    "new": "Yachts from the strongest builders hold their value better than most of the market.",
+    "kind": "fact",
+    "reason": "Aligned with essay para 3"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "A single afternoon’s competent legal review at heads-of-terms saves more than the owner’s representative fee for the entire project.",
+    "new": "Specialist review at heads of terms costs a small fraction of the sums these clauses govern.",
+    "kind": "fact",
+    "reason": "Aligned with essay para 36"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "typically paid by yard commission of around 5 percent without disclosure to the buyer.",
+    "new": "typically paid by yard commission of around 5 percent, which the buyer should see disclosed in writing.",
+    "kind": "fact",
+    "reason": "Author decision 1; unsourced 'without disclosure' generalisation removed"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Typically yard commission of around 5 percent (undisclosed to buyer)",
+    "new": "Typically yard commission of around 5 percent, to be disclosed in writing",
+    "kind": "fact",
+    "reason": "Author decision 1"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Continuing yard relationship; carries an ongoing conflict",
+    "new": "May have a continuing yard relationship, to be disclosed in writing",
+    "kind": "fact",
+    "reason": "Fairness flag 17 qualified; disclosure standard"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": " The lack of published fees across the entire owner’s representative market is itself a finding.",
+    "new": "",
+    "kind": "line",
+    "reason": "'Itself a finding' formula removed (also removed from ch01)"
+  }
+]

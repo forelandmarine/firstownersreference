@@ -900,7 +900,7 @@
       },
       {
         "type": "h2",
-        "text": "Three legitimate alternatives"
+        "text": "Legitimate alternatives"
       },
       {
         "type": "table",
@@ -918,8 +918,8 @@
           ],
           [
             "Spanish Inward Processing Relief",
-            "21 percent suspended on refit works for non-EU flagged yachts",
-            "18 months admission window (extendable to 24); customs-site shipyard; bonded works; re-export"
+            "21 percent VAT on refit works exempt for non-EU yachts; time under the procedure does not count against temporary admission",
+            "Authorisation before works begin; customs-site shipyard; bonded works; procedure followed through to departure from the EU"
           ],
           [
             "Maltese leasing scheme",
@@ -967,7 +967,7 @@
       },
       {
         "type": "table",
-        "caption": "Tax compliance, structuring, and flag administration. Recurring opex that does not appear in broker-quoted operating budgets.",
+        "caption": "Tax compliance, structuring, the owning company, and flag and class fees. Flag and class fees are also inside the chapter 7 operating compliance figure; count them once.",
         "head": [
           "Category",
           "Annual cost"
@@ -998,7 +998,7 @@
       },
       {
         "type": "kv",
-        "caption": "On a 40 m yacht. The single most consequential piece of due diligence in the entire acquisition.",
+        "caption": "On a 40 m yacht. The buyer’s main piece of technical due diligence in the acquisition.",
         "rows": [
           {
             "label": "Duration",

@@ -1,0 +1,285 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "From shortlist to closing in 12 to 24 weeks, with five decision points where most consequential errors are made.",
+    "new": "From shortlist to closing in 12 to 24 weeks, with five decision points where most of the costly errors are made.",
+    "kind": "line",
+    "reason": "Drop 'most consequential' (reserved for ch07 2)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Once the decision to buy is made and the adviser team is in place, the acquisition is a 12 to 24 week sequence with a small number of decision points where most consequential errors are made.",
+    "new": "Once the decision to buy is made and the adviser team is in place, a brokerage acquisition takes 12 to 24 weeks and turns on five decisions: the shortlist, the scope of the pre-purchase survey, the sea trial, the VAT and flag position, and the terms of the contract at closing.",
+    "kind": "fact",
+    "reason": "C19: the standfirst promises five decision points; name them, matching the five sections."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "It is also where they extract budget, intended use, decision timeline, and family involvement that will shape every subsequent recommendation.",
+    "new": "It is also where they learn the buyer’s budget, intended use, timeline and family involvement, which shape every later recommendation.",
+    "kind": "line",
+    "reason": "Fairness flag 9: 'extract' imputes motive; state what happens."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Two disciplines protect the shortlist. First, do not disclose budget to anyone paid contingent on a sale closing. Disclose use case, size band, and propulsion preference; let the broker fit yachts to the use case. The budget conversation belongs with the independent adviser. Second, walk yachts with the independent adviser alongside the broker; the independent adviser is looking for things the broker is not paid to find.",
+    "new": "Two habits protect the shortlist. First, keep the budget figure with the independent adviser. Brokers on both sides of a sale are usually paid from the seller’s commission, which rises with the price (chapter 3). Written disclosure tells the buyer how a broker is paid, but a budget figure shared with the broker can still become the floor of the negotiation. Give the broker the use case, size band and propulsion preference, and let them fit yachts to it. Second, walk yachts with the independent adviser alongside the broker; the adviser is looking for things the broker is not paid to find.",
+    "kind": "fact",
+    "reason": "Align with the ch03 written-disclosure standard; keep the advice and give the reason, which disclosure does not remove."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A buyer who has signed an MOA in the closing hour of a boat show has typically signed under the seller’s discipline, not their own.",
+    "new": "A buyer who signs an MOA in the closing hour of a boat show has signed on the seller’s timetable rather than their own.",
+    "kind": "line",
+    "reason": "Remove unsourced 'typically' and the 'discipline' abstraction."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The pre-purchase survey is the single most consequential piece of due diligence in the acquisition, and the one most commonly compromised by a buyer in a rush, in love with the yacht, or relying on the seller’s most recent class survey.",
+    "new": "The pre-purchase survey is the buyer’s main piece of technical due diligence, and the one most easily compromised by a buyer in a rush, in love with the yacht, or relying on the seller’s most recent class survey.",
+    "kind": "line",
+    "reason": "'Most consequential' removed; 'most commonly' was an unsourced frequency claim."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The independence test applies: treat a broker-recommended surveyor as unverified until the test has been applied.",
+    "new": "A surveyor the broker suggests may be entirely sound. Ask in writing whether they have worked for the broker or the seller, and instruct and pay them directly.",
+    "kind": "fact",
+    "reason": "Apply the disclosure standard concretely; the surveyor stays buyer-paid, as in ch09 question 8."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The disciplined response is to renegotiate; every deficiency the survey did not catch is one the buyer will discover and pay for after closing.",
+    "new": "The usual response is to renegotiate, because any deficiency the survey finds and the price does not reflect is one the buyer pays for after closing.",
+    "kind": "fact",
+    "reason": "Logic error: renegotiation concerns deficiencies the survey did catch."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "04-acquisition-process",
+      "startsWith": "The survey is the moment at which the asymmetry between buye"
+    },
+    "kind": "repetition",
+    "reason": "Unattributed pull quote that repeats para 12 and duplicates the case blockquote; the case keeps it."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Two procedural choices shape the cost of ownership over the next decade and are commonly made under time pressure at closing without proper analysis.",
+    "new": "The VAT regime and the flag shape the cost of ownership for the next decade, and both can end up being settled in a hurry at closing.",
+    "kind": "line",
+    "reason": "Name the two choices; remove the unsourced 'commonly ... without proper analysis'."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Simon Roberts of Quadrant Group sets out that sequencing, and how early it has to happen, in chapter nine.",
+    "new": "Simon Roberts of Quadrant Group sets out that sequencing, and how early it has to happen, in chapter 9, where the yacht lawyer and structuring adviser are the second hire, before any contract is reviewed.",
+    "kind": "repetition",
+    "reason": "Point to the ch09 hiring order (step 2); numeral style."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "On a EUR 4 million yacht the bill is EUR 800,000 to EUR 880,000. Three legitimate alternatives reduce or eliminate this.",
+    "new": "On a EUR 4 million yacht the bill is EUR 800,000 to EUR 880,000. Three legitimate routes can reduce or remove VAT on the yacht itself, and a fourth applies to refit works.",
+    "kind": "fact",
+    "reason": "C9: Spanish IPR is not an alternative to purchase VAT; the essay listed four routes as three."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The French Commercial Exemption (FCE) eliminates VAT entirely if its conditions are met (commercial registration, full-time crew, length above 15 metres, more than 70 percent of voyages exiting French waters, less than 50 percent static charters). Spanish Inward Processing Relief suspends 21 percent VAT on refit works for non-EU flagged yachts within an 18-month admission window. Maltese leasing no longer uses a length-based table: under guidelines of 12 March 2020, VAT on the lease follows documented use inside and outside EU waters, and the European Commission closed its infringement case that October. Italy moved to a comparable effective-use test from 1 November 2020, and leasing remains available where use can be evidenced.",
+    "new": "The French Commercial Exemption (FCE) eliminates VAT entirely if its conditions are met (commercial registration, full-time crew, length above 15 metres, more than 70 percent of voyages exiting French waters, less than 50 percent static charters). Maltese leasing no longer uses a length-based table: under guidelines of 12 March 2020, VAT on the lease follows documented use inside and outside EU waters, and the European Commission closed its infringement case that October. Italy moved to a comparable effective-use test from 1 November 2020, and leasing remains available where use can be evidenced. The fourth route, Spanish inward processing, concerns refit rather than purchase. A non-EU yacht refitted at a customs-site shipyard, with authorisation in place before the works begin, is exempt from the 21 percent VAT on the works, provided the procedure is followed through to the yacht’s departure from the EU. Time under inward processing does not count against the 18-month temporary admission period. Chapter 6 sets out how it works and where compliance rests.",
+    "kind": "fact",
+    "reason": "C9: IPR exempts the works and its time does not count against temporary admission (ch06 70 to 71, glossary 'spanish-ipr'); ch04 is the single home for the regimes."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Each option carries compliance burden. None should be selected on the broker’s preference. Hill Dickinson, Watson Farley & Williams, Ince, Stephenson Harwood, and Reed Smith all publish on the comparative analysis. Your independent adviser engages one of those firms; not the broker’s preferred counsel.",
+    "new": "Each option carries a compliance burden, and the choice should rest on the buyer’s own legal advice rather than on the broker’s preference. Hill Dickinson, Watson Farley & Williams, Ince, Stephenson Harwood and Reed Smith all publish comparative analysis. The buyer engages counsel directly, usually on the independent adviser’s introduction, with any relationship between the firm and the broker or seller disclosed in writing.",
+    "kind": "fact",
+    "reason": "Align with ch09 step 2 and the written-disclosure standard; remove the semicolon fragment."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Major options are Cayman Islands, Marshall Islands, Malta, and the Red Ensign Group jurisdictions (UK, Isle of Man, Bermuda, Gibraltar, BVI, Cayman, Jersey, Guernsey, and others).",
+    "new": "Major options are the Cayman Islands, the Marshall Islands, Malta, and the other Red Ensign Group registers (UK, Isle of Man, Bermuda, Gibraltar, BVI, Jersey, Guernsey, and others), of which Cayman is itself one.",
+    "kind": "fact",
+    "reason": "C31: Cayman was listed twice."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "does not permit charter or change the yacht's VAT position.",
+    "new": "does not permit charter or change the yacht’s VAT position.",
+    "kind": "line",
+    "reason": "Curly apostrophe, house style."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A separate UK-specific jurisdictional risk sits on top of the technical choice. The 58.5-metre Royal Huisman motor yacht Phi has been detained in London since 28 March 2022 under a direction from the UK Secretary of State for Transport, issued shortly after the Russian invasion of Ukraine. Her beneficial owner has not been designated under UK sanctions; the detention has outlived the Transport Secretary who issued it, multiple governments, and several legal challenges. The UK Supreme Court dismissed the owning company’s appeal on 29 July 2025, and the owner’s team has said it intends to take the case to the European Court of Human Rights. The narrow point for a buyer weighing a Red Ensign flag for a UK-domiciled hull is that the British executive has acted, and can act, on yachts whose owners do not match the public profile of a sanctioned individual; remedy through the British court system can take years (Capt. Guy Booth, in The Superyacht Report, Q2 2026).",
+    "new": "The flag does not settle every jurisdictional risk. The 58.5-metre Royal Huisman motor yacht Phi, which flew the Maltese flag, has been detained in London since 28 March 2022 under a direction from the UK Secretary of State for Transport, issued shortly after the Russian invasion of Ukraine. Her beneficial owner has not been designated under UK sanctions; the detention rests on his connection with Russia, and it has outlived the Transport Secretary who issued it, several governments and several legal challenges. The UK Supreme Court dismissed the owning company’s appeal on 29 July 2025, and the owner’s team has said it intends to take the case to the European Court of Human Rights. The point for a buyer is narrow: a state can detain a yacht in its waters whose owner is not personally sanctioned, whatever flag she flies, and a challenge through the courts can take years (Capt. Guy Booth, in The Superyacht Report, Q2 2026).",
+    "kind": "fact",
+    "reason": "Phi was Malta-flagged, so the lesson is not about choosing a Red Ensign flag; the basis of detention named. Kept in ch04 (jurisdiction risk at purchase)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "04-acquisition-process",
+      "startsWith": "On 21 May 2026 the Court of Justice of the European Union he"
+    },
+    "kind": "structure",
+    "reason": "Sailing Yacht A trust ruling concerns the holding structure; moved to ch09 'The structure comes first'."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Compliance cost on a 40 metre yacht for tax, structuring, and flag administration runs EUR 50,000 to EUR 150,000 per year, recurring opex that does not appear in the broker’s headline figures.",
+    "new": "On a 40 metre yacht, tax compliance, structuring and the upkeep of the owning company run about EUR 35,000 to 110,000 a year, and flag administration and class society fees about EUR 15,000 to 40,000 more, EUR 50,000 to 150,000 in all. Flag and class fees also sit inside the operating compliance cost in chapter 7, which adds ISM, MLC and the management company’s compliance work, so they should be counted once. These costs recur every year and are not part of the purchase price.",
+    "kind": "fact",
+    "reason": "C12: name what the figure covers (components from the ch04 data spread) and the overlap with ch07 23."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "From 10 July 2027, EU anti-money-laundering rules require traders to identify the buyer and its beneficial owners, and to report sales of watercraft for non-commercial use at EUR 7.5 million and above to the national financial intelligence unit. Switzerland opened a federal register of beneficial owners on 1 October 2026. It is not public, but a Swiss company, or a foreign holding company whose decisions are in practice taken in Switzerland, must file the natural persons who control it, with changes reported within a month. From the same date, Swiss lawyers, fiduciaries and multi-family offices that set up or fund a company abroad for a client carry anti-money-laundering due diligence, including questions on the source of funds where the risk warrants it.",
+    "new": "From 10 July 2027 the EU Anti-Money Laundering Regulation requires traders in high-value watercraft to carry out customer due diligence on the buyer and its beneficial owners, and to report every sale of a watercraft for non-commercial use at EUR 7.5 million or more to the national financial intelligence unit (chapter 3). Two 2026 developments that bear on the holding structure, the EU court’s ruling on trusts in the Sailing Yacht A case and Switzerland’s register of beneficial owners, are noted in chapter 9.",
+    "kind": "structure",
+    "reason": "C27: AMLR wording aligned with ch03 9; Swiss register moved to ch09 with a one-line pointer."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "In rough order of frequency:",
+    "new": "Five common pitfalls:",
+    "kind": "fact",
+    "reason": "Frequency ordering had no source; dropped rather than attributed (editor)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "1. The seller-recommended surveyor. The broker introduces a surveyor whose work they know.",
+    "new": "1. The broker-introduced surveyor. The broker suggests a surveyor whose work they know.",
+    "kind": "fact",
+    "reason": "C29: heading said seller-recommended, text says broker."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Closing acceleration is almost always the seller’s interest; three weeks of additional due diligence costs nothing and saves significantly.",
+    "new": "An early close suits the seller and the parties paid on completion; the buyer carries whatever was not checked. Three further weeks of due diligence cost little against what they can find.",
+    "kind": "fact",
+    "reason": "Fairness flag 10: qualify to the evidence; 'costs nothing' was untrue."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The broker’s preferred structure is the one their preferred lawyer has the relationship to deliver, which may not be right for your use pattern. The VAT decision is worth a separate legal opinion.",
+    "new": "A structure the broker recommends may be the one the broker’s usual lawyer handles, and it may not suit your use pattern. The VAT decision is worth a separate written opinion from counsel the buyer engages directly.",
+    "kind": "fact",
+    "reason": "Fairness flag 11: state as a possibility, not a rule."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " A 3 to 5 day handover with both captains and the chief engineer present surfaces issues that a paper specification does not. Skipping it is the most expensive false economy in the acquisition.",
+    "new": " A 3 to 5 day handover with both captains and the chief engineer present surfaces issues that a paper specification does not.",
+    "kind": "line",
+    "reason": "Unsourced superlative closer."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A buyer who avoids these five will not have bought a perfect yacht; they will have bought one whose flaws they understand. That is the right standard for a first acquisition.",
+    "new": "A buyer who avoids these five will not have bought a perfect yacht, but will have bought one whose flaws they understand.",
+    "kind": "line",
+    "reason": "Chapter-end closer cut (structural read ch04 42)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "09-decision-framework",
+      "startsWith": "For first-time owners, the key is not to ask, “Which jurisdi"
+    },
+    "new": {
+      "type": "editorsNote",
+      "text": "Two developments in 2026 bear on how the holding structure is built. On 21 May 2026 the Court of Justice of the European Union held, in joined Cases C-428/24 and C-476/24 concerning Sailing Yacht A, that assets held in a trust can be treated under EU sanctions law as owned or controlled by a sanctioned beneficiary, and that terms in the trust deed do not of themselves prevent a freeze. The case has returned to the Italian courts and the yacht remains seized. A trust above the yacht’s holding company is a succession arrangement; it does not place the yacht beyond measures aimed at the person who benefits from it. Separately, Switzerland opened a federal register of beneficial owners on 1 October 2026. It is not public, but a Swiss company, or a foreign holding company whose decisions are in practice taken in Switzerland, must file the natural persons who control it, with changes reported within a month. From the same date, Swiss lawyers, fiduciaries and multi-family offices that set up or fund a company abroad for a client carry anti-money-laundering due diligence, including questions on the source of funds where the risk warrants it."
+    },
+    "kind": "structure",
+    "reason": "Relocated from ch04 29 and 31 to the end of 'The structure comes first', after the Roberts quote."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "spend it negotiating.\",\n        \"attribution\": \"Chapter 04, lead essay.\"",
+    "new": "spend it negotiating.\"",
+    "kind": "repetition",
+    "reason": "The essay pull quote is deleted, so the attribution to the lead essay no longer holds; the case keeps the line."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "An independent surveyor at EUR 25 to 60 k on a 40 to 60 m yacht",
+    "new": "An independent surveyor at USD 25 to 60 k on a 40 to 60 m yacht",
+    "kind": "fact",
+    "reason": "C31: survey fee currency matches the essay, checklist and data spread."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Budget shared only with the independent adviser, not with parties paid contingent on a sale.",
+    "new": "Budget figure kept with the independent adviser; brokers briefed on use case, size band and propulsion.",
+    "kind": "fact",
+    "reason": "Align with the corrected para 3."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Budget conversations are with the adviser. Broker conversations are shaped by use case.",
+    "new": "Brokers are usually paid from the seller’s commission, which rises with the price. Disclosure tells you how they are paid; it does not change that.",
+    "kind": "fact",
+    "reason": "Give the reason, consistent with the disclosure standard."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Projected annual compliance cost (EUR 50 to 150 k on a 40 m yacht) included in the operating budget.",
+    "new": "Projected annual tax, structuring and flag cost (EUR 50 to 150 k on a 40 m yacht) included in the budget, with flag and class fees counted once against the chapter 7 operating figure.",
+    "kind": "fact",
+    "reason": "C12."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Closing acceleration is the seller’s interest, not the buyer’s.",
+    "new": "An early close suits the seller and the parties paid on completion; the buyer carries what was not checked.",
+    "kind": "fact",
+    "reason": "Fairness flag 10."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Closing acceleration is the seller’s interest, not the buyer’s; three weeks of additional due diligence costs nothing and tends to surface issues that save significantly.",
+    "new": "An early close suits the seller and the parties paid on completion, while the buyer carries whatever was not checked; three further weeks of due diligence cost little and often surface issues worth more than the delay.",
+    "kind": "fact",
+    "reason": "Fairness flag 10; 'costs nothing' was untrue."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"text\": \"Three legitimate alternatives\"",
+    "new": "\"text\": \"Legitimate alternatives\"",
+    "kind": "fact",
+    "reason": "The table has four rows, one of which applies to refit."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "21 percent suspended on refit works for non-EU flagged yachts",
+    "new": "21 percent VAT on refit works exempt for non-EU yachts; time under the procedure does not count against temporary admission",
+    "kind": "fact",
+    "reason": "C9, aligned with ch06 70 and the glossary."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "18 months admission window (extendable to 24); customs-site shipyard; bonded works; re-export",
+    "new": "Authorisation before works begin; customs-site shipyard; bonded works; procedure followed through to departure from the EU",
+    "kind": "fact",
+    "reason": "C9: the 18-month window belongs to temporary admission; 'extendable to 24' has no source in the book."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Tax compliance, structuring, and flag administration. Recurring opex that does not appear in broker-quoted operating budgets.",
+    "new": "Tax compliance, structuring, the owning company, and flag and class fees. Flag and class fees are also inside the chapter 7 operating compliance figure; count them once.",
+    "kind": "fact",
+    "reason": "C12."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The single most consequential piece of due diligence in the entire acquisition.",
+    "new": "The buyer’s main piece of technical due diligence in the acquisition.",
+    "kind": "line",
+    "reason": "Match para 9."
+  }
+]

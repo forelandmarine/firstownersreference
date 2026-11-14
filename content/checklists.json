@@ -232,8 +232,8 @@
             "question": "A shortlist drawn from at least two brokerages, plus an independent off-market scan."
           },
           {
-            "question": "Budget shared only with the independent adviser, not with parties paid contingent on a sale.",
-            "detail": "Budget conversations are with the adviser. Broker conversations are shaped by use case."
+            "question": "Budget figure kept with the independent adviser; brokers briefed on use case, size band and propulsion.",
+            "detail": "Brokers are usually paid from the seller’s commission, which rises with the price. Disclosure tells you how they are paid; it does not change that."
           },
           {
             "question": "Shortlisted yachts walked in the company of the independent adviser as well as the broker."
@@ -281,7 +281,7 @@
             "question": "Flag-state choice analysed against owner residence, cruising area, charter intent, financing, and family-office structuring."
           },
           {
-            "question": "Projected annual compliance cost (EUR 50 to 150 k on a 40 m yacht) included in the operating budget."
+            "question": "Projected annual tax, structuring and flag cost (EUR 50 to 150 k on a 40 m yacht) included in the budget, with flag and class fees counted once against the chapter 7 operating figure."
           }
         ]
       },
@@ -296,7 +296,7 @@
           },
           {
             "question": "A closing schedule resistant to acceleration.",
-            "detail": "Closing acceleration is the seller’s interest, not the buyer’s."
+            "detail": "An early close suits the seller and the parties paid on completion; the buyer carries what was not checked."
           }
         ]
       }
