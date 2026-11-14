@@ -411,7 +411,7 @@
         "heading": "Refit or sell",
         "items": [
           {
-            "question": "Projected refit cost as a percentage of pre-refit market value, compared with the cost of selling and buying a replacement.",
+            "question": "Projected refit cost, as a percentage of pre-refit market value, compared with the cost of selling and buying a replacement.",
             "detail": "Above 30 percent, consider selling."
           },
           {
@@ -519,7 +519,7 @@
     "slug": "07-operations",
     "title": "Five operating decisions, in year one.",
     "standfirst": "Five decisions whose effects last for as long as the yacht is owned. The list below is what to set up in year one and revisit annually.",
-    "intent": "The captain hire affects the other four decisions for as long as the yacht is owned. The items below are what to set up in year one.",
+    "intent": "The captain hire also affects how the other four decisions work out, for as long as the yacht is owned. The items below are what to set up in year one.",
     "groups": [
       {
         "heading": "Captain hire",

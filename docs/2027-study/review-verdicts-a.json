@@ -1,0 +1,1820 @@
+[
+  {
+    "row": 2,
+    "status": "Approved",
+    "note": "SEO line plain and matches heading."
+  },
+  {
+    "row": 5,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 6,
+    "status": "Approved",
+    "note": "Joins; \"to remember\" clarifies."
+  },
+  {
+    "row": 7,
+    "status": "Approved",
+    "note": "Arithmetic claim unchanged; reads well."
+  },
+  {
+    "row": 8,
+    "status": "Approved",
+    "note": "Softened appropriately; meaning kept."
+  },
+  {
+    "row": 9,
+    "status": "Approved",
+    "note": "Heading matches cost breakdown below."
+  },
+  {
+    "row": 11,
+    "status": "Approved",
+    "note": "Plain; meaning kept."
+  },
+  {
+    "row": 12,
+    "status": "Approved",
+    "note": "\"Most of the cost\" is a correct qualification (fuel is variable); per-week inference follows."
+  },
+  {
+    "row": 13,
+    "status": "Approved",
+    "note": "Joins; figures intact."
+  },
+  {
+    "row": 14,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 15,
+    "status": "Revised",
+    "note": "\"Most value is lost in the early years\" is wrong against the figures that follow (30 to 50 percent by year five); now says the loss is fastest early.",
+    "new": "Broker-published figures agree that yachts lose value fastest in their early years, but differ on how much."
+  },
+  {
+    "row": 16,
+    "status": "Approved",
+    "note": "Same comparison as original, plainer."
+  },
+  {
+    "row": 17,
+    "status": "Approved",
+    "note": "Reads correctly with next sentence."
+  },
+  {
+    "row": 18,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 19,
+    "status": "Approved",
+    "note": "Accurate description of the four studies."
+  },
+  {
+    "row": 20,
+    "status": "Approved",
+    "note": "Meaning kept; Precedence figures intact."
+  },
+  {
+    "row": 21,
+    "status": "Revised",
+    "note": "The Hill Robinson case is a design study, not a trading programme; \"assumes\" keeps that distinction.",
+    "new": "as the Hill Robinson model assumes"
+  },
+  {
+    "row": 23,
+    "status": "Approved",
+    "note": "Plain closer; meaning kept."
+  },
+  {
+    "row": 24,
+    "status": "Revised",
+    "note": "\"The owner\" now followed the generic owner of the previous paragraph; \"In it\" ties it to the case.",
+    "new": "practice. In it, the owner’s second yacht"
+  },
+  {
+    "row": 25,
+    "status": "Approved",
+    "note": "Joins."
+  },
+  {
+    "row": 26,
+    "status": "Revised",
+    "note": "Avoids \"Test ... tests\" in consecutive sentences.",
+    "new": "Compare your intended use with these figures."
+  },
+  {
+    "row": 27,
+    "status": "Approved",
+    "note": "Matches case content."
+  },
+  {
+    "row": 28,
+    "status": "Approved",
+    "note": "Disclosure line clear."
+  },
+  {
+    "row": 30,
+    "status": "Approved",
+    "note": "Joins with next sentence."
+  },
+  {
+    "row": 32,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 33,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 34,
+    "status": "Approved",
+    "note": "Same warranty fact."
+  },
+  {
+    "row": 35,
+    "status": "Approved",
+    "note": "Joins with following lawyer anecdote."
+  },
+  {
+    "row": 36,
+    "status": "Revised",
+    "note": "Referent is the management company (singular) now the sentence names it as subject.",
+    "new": "brokerage that had introduced it"
+  },
+  {
+    "row": 37,
+    "status": "Approved",
+    "note": "Joins."
+  },
+  {
+    "row": 40,
+    "status": "Approved",
+    "note": "Off-market scan rendered plainly; joins."
+  },
+  {
+    "row": 41,
+    "status": "Approved",
+    "note": "Joins; nothing lost of substance."
+  },
+  {
+    "row": 42,
+    "status": "Approved",
+    "note": "Joins."
+  },
+  {
+    "row": 43,
+    "status": "Approved",
+    "note": "Matches case."
+  },
+  {
+    "row": 46,
+    "status": "Approved",
+    "note": "Three roles match the case; figures unchanged."
+  },
+  {
+    "row": 47,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 48,
+    "status": "Approved",
+    "note": "Heading matches table."
+  },
+  {
+    "row": 49,
+    "status": "Revised",
+    "note": "\"In most ... does not cover it\" misdescribes the 48m case, which broke even; states what the four cases show.",
+    "new": "In three of the four, charter income at best matches running cost; the profitable exception, a design study, assumes"
+  },
+  {
+    "row": 50,
+    "status": "Approved",
+    "note": "Plain title."
+  },
+  {
+    "row": 51,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 52,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 53,
+    "status": "Approved",
+    "note": "Correct explanation of the original."
+  },
+  {
+    "row": 54,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 55,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 56,
+    "status": "Approved",
+    "note": "Joins."
+  },
+  {
+    "row": 58,
+    "status": "Approved",
+    "note": "Clearer."
+  },
+  {
+    "row": 59,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 60,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 61,
+    "status": "Approved",
+    "note": "Arithmetic claim unchanged."
+  },
+  {
+    "row": 62,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 63,
+    "status": "Approved",
+    "note": "Same meaning; matches essay."
+  },
+  {
+    "row": 65,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 67,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 68,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 69,
+    "status": "Approved",
+    "note": "Correct inference from figures."
+  },
+  {
+    "row": 70,
+    "status": "Approved",
+    "note": "Softened, still attributed."
+  },
+  {
+    "row": 71,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 72,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 73,
+    "status": "Approved",
+    "note": "Figures intact."
+  },
+  {
+    "row": 74,
+    "status": "Approved",
+    "note": "Correct; 52 percent of order book."
+  },
+  {
+    "row": 76,
+    "status": "Approved",
+    "note": "Flourish cut; fact kept."
+  },
+  {
+    "row": 77,
+    "status": "Approved",
+    "note": "Accurate gloss of speculative build."
+  },
+  {
+    "row": 78,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 79,
+    "status": "Approved",
+    "note": "Reordered; facts and attribution intact."
+  },
+  {
+    "row": 80,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 81,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 82,
+    "status": "Approved",
+    "note": "Clear; figures intact."
+  },
+  {
+    "row": 83,
+    "status": "Approved",
+    "note": "Heading matches the four claims below."
+  },
+  {
+    "row": 85,
+    "status": "Approved",
+    "note": "Joins with preceding \"Four claims\" paragraph."
+  },
+  {
+    "row": 86,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 87,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 88,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 89,
+    "status": "Approved",
+    "note": "Joins with \"They also include\"."
+  },
+  {
+    "row": 90,
+    "status": "Approved",
+    "note": "Agreement fixed correctly."
+  },
+  {
+    "row": 91,
+    "status": "Approved",
+    "note": "Attributions intact; hedged correctly."
+  },
+  {
+    "row": 92,
+    "status": "Approved",
+    "note": "Same claims, plainer."
+  },
+  {
+    "row": 105,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 106,
+    "status": "Approved",
+    "note": "Reads correctly; facts intact."
+  },
+  {
+    "row": 107,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 108,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 110,
+    "status": "Approved",
+    "note": "\"Ceiling\" matches case text."
+  },
+  {
+    "row": 111,
+    "status": "Approved",
+    "note": "Correctly hedged with \"can\"."
+  },
+  {
+    "row": 113,
+    "status": "Approved",
+    "note": "162,191 / 5 / 365 = 88.9; correct."
+  },
+  {
+    "row": 114,
+    "status": "Approved",
+    "note": "Heading matches SFO text."
+  },
+  {
+    "row": 115,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 118,
+    "status": "Approved",
+    "note": "Correct for Germany row (18 units, 4,400 GT avg)."
+  },
+  {
+    "row": 119,
+    "status": "Revised",
+    "note": "\"As published by September 2026.\" was a fragment with no subject.",
+    "new": "Slot dates as published by September 2026."
+  },
+  {
+    "row": 120,
+    "status": "Approved",
+    "note": "Flourish cut."
+  },
+  {
+    "row": 121,
+    "status": "Approved",
+    "note": "Plain label."
+  },
+  {
+    "row": 122,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 124,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 125,
+    "status": "Approved",
+    "note": "Plain title."
+  },
+  {
+    "row": 126,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 127,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 128,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 129,
+    "status": "Approved",
+    "note": "Hedged (\"how far\")."
+  },
+  {
+    "row": 130,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 131,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 132,
+    "status": "Approved",
+    "note": "Clear; \"may\" kept."
+  },
+  {
+    "row": 133,
+    "status": "Approved",
+    "note": "Heading matches items."
+  },
+  {
+    "row": 135,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 136,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 137,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 138,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 139,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 140,
+    "status": "Approved",
+    "note": "Plain title."
+  },
+  {
+    "row": 141,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 142,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 143,
+    "status": "Approved",
+    "note": "Plain title."
+  },
+  {
+    "row": 144,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 145,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 146,
+    "status": "Approved",
+    "note": "Consistent with heading."
+  },
+  {
+    "row": 147,
+    "status": "Approved",
+    "note": "Attributed as opinion; clear."
+  },
+  {
+    "row": 148,
+    "status": "Revised",
+    "note": "New wording duplicated the next sentence (\"Signing the standard form means ... already agreed\"); the next sentence carries the advance consent.",
+    "new": "contains a dual-agency clause."
+  },
+  {
+    "row": 149,
+    "status": "Approved",
+    "note": "Joins."
+  },
+  {
+    "row": 150,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 152,
+    "status": "Approved",
+    "note": "Accurate lead-in for the examples."
+  },
+  {
+    "row": 153,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 154,
+    "status": "Approved",
+    "note": "Explains \"free advice\" correctly."
+  },
+  {
+    "row": 155,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 156,
+    "status": "Revised",
+    "note": "\"Rarely disclosed\" is a new unsupported frequency claim; \"not always\" keeps the sense of \"open secret\".",
+    "new": "widely known in the trade but not always disclosed"
+  },
+  {
+    "row": 157,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 158,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 159,
+    "status": "Approved",
+    "note": "Plain; meaning kept."
+  },
+  {
+    "row": 160,
+    "status": "Approved",
+    "note": "\"Usually\" is a fair qualification."
+  },
+  {
+    "row": 161,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 162,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 163,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 164,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 166,
+    "status": "Approved",
+    "note": "Joins with Roch paragraph above."
+  },
+  {
+    "row": 168,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 169,
+    "status": "Revised",
+    "note": "\"Runs the project\" sat awkwardly with the next sentence saying the role is not a project manager.",
+    "new": "The adviser acts for the owner across the project:"
+  },
+  {
+    "row": 171,
+    "status": "Approved",
+    "note": "Figures intact; clear."
+  },
+  {
+    "row": 172,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 173,
+    "status": "Approved",
+    "note": "Equivalent to \"industry-standard pattern\"."
+  },
+  {
+    "row": 174,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 175,
+    "status": "Approved",
+    "note": "Grammar fixed."
+  },
+  {
+    "row": 176,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 177,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 178,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 179,
+    "status": "Approved",
+    "note": "Figures sum correctly."
+  },
+  {
+    "row": 180,
+    "status": "Flag",
+    "note": "Legal review: \"None was illegal\" sits beside the ch03 essay (OnboardOnline) statement that referral fees are legal only if disclosed, while this case’s fees were undisclosed. Confirm the jurisdiction and whether the claim of legality stands; if not, cut \"illegal or\" so the sentence reads \"None was unusual in the industry\"."
+  },
+  {
+    "row": 181,
+    "status": "Approved",
+    "note": "Same meaning, plain."
+  },
+  {
+    "row": 182,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 183,
+    "status": "Approved",
+    "note": "Reads correctly."
+  },
+  {
+    "row": 185,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 188,
+    "status": "Approved",
+    "note": "Correctly hedged."
+  },
+  {
+    "row": 190,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 191,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 192,
+    "status": "Approved",
+    "note": "Hedged (\"can\")."
+  },
+  {
+    "row": 193,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 194,
+    "status": "Approved",
+    "note": "Consistent."
+  },
+  {
+    "row": 195,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 196,
+    "status": "Approved",
+    "note": "Heading matches content."
+  },
+  {
+    "row": 197,
+    "status": "Approved",
+    "note": "Heading matches content."
+  },
+  {
+    "row": 198,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 200,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 201,
+    "status": "Approved",
+    "note": "Explains who pays."
+  },
+  {
+    "row": 202,
+    "status": "Approved",
+    "note": "Consistent."
+  },
+  {
+    "row": 203,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 204,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 206,
+    "status": "Approved",
+    "note": "Heading matches items."
+  },
+  {
+    "row": 209,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 210,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 212,
+    "status": "Approved",
+    "note": "Question intro only; answers untouched."
+  },
+  {
+    "row": 213,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 215,
+    "status": "Approved",
+    "note": "Joins."
+  },
+  {
+    "row": 216,
+    "status": "Approved",
+    "note": "Accurate."
+  },
+  {
+    "row": 218,
+    "status": "Revised",
+    "note": "Qualified the generalisation (Christie sold two off a show) and tied it to the boat show of the preceding quote.",
+    "new": "Most sales are agreed later, in the weeks after the show,"
+  },
+  {
+    "row": 219,
+    "status": "Revised",
+    "note": "\"Often\" hardened the original \"can end up being\"; original modality restored.",
+    "new": "and both can end up being settled in a hurry at closing"
+  },
+  {
+    "row": 220,
+    "status": "Approved",
+    "note": "Plain; joins."
+  },
+  {
+    "row": 221,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 222,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 223,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 224,
+    "status": "Approved",
+    "note": "Attributed argument; plain."
+  },
+  {
+    "row": 225,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 226,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 227,
+    "status": "Approved",
+    "note": "Plain; attributed."
+  },
+  {
+    "row": 228,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 229,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 230,
+    "status": "Approved",
+    "note": "Grammar fixed; facts intact."
+  },
+  {
+    "row": 231,
+    "status": "Approved",
+    "note": "Supported by chapter; reads well."
+  },
+  {
+    "row": 232,
+    "status": "Approved",
+    "note": "Lead-in redundant with heading; deletion fine."
+  },
+  {
+    "row": 233,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 234,
+    "status": "Approved",
+    "note": "Clear."
+  },
+  {
+    "row": 235,
+    "status": "Approved",
+    "note": "Closing maxim cut; nothing lost."
+  },
+  {
+    "row": 236,
+    "status": "Approved",
+    "note": "Consistent with heading."
+  },
+  {
+    "row": 237,
+    "status": "Approved",
+    "note": "Matches case (seller chose price reduction; buyer did remediation)."
+  },
+  {
+    "row": 239,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 240,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 241,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 243,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 244,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 245,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 246,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 247,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 250,
+    "status": "Approved",
+    "note": "Accurate."
+  },
+  {
+    "row": 252,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 253,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 254,
+    "status": "Approved",
+    "note": "Figure matches case."
+  },
+  {
+    "row": 255,
+    "status": "Approved",
+    "note": "Checklist has 15 items."
+  },
+  {
+    "row": 256,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 257,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 258,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 259,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 260,
+    "status": "Approved",
+    "note": "Matches source lines (tax authorities, law firms)."
+  },
+  {
+    "row": 261,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 262,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 263,
+    "status": "Approved",
+    "note": "Current caption reads correctly."
+  },
+  {
+    "row": 264,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 265,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 266,
+    "status": "Approved",
+    "note": "Plain; accurate."
+  },
+  {
+    "row": 267,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 268,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 269,
+    "status": "Approved",
+    "note": "Superseded by author's rewrite"
+  },
+  {
+    "row": 270,
+    "status": "Approved",
+    "note": "Superseded by author's rewrite"
+  },
+  {
+    "row": 271,
+    "status": "Approved",
+    "note": "Superseded by author's rewrite"
+  },
+  {
+    "row": 272,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 274,
+    "status": "Approved",
+    "note": "Matches the Winch Design ruling."
+  },
+  {
+    "row": 275,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 276,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 278,
+    "status": "Approved",
+    "note": "Supported by the Oyster, Christensen and Perini examples that follow."
+  },
+  {
+    "row": 279,
+    "status": "Approved",
+    "note": "Qualified correctly."
+  },
+  {
+    "row": 280,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 281,
+    "status": "Approved",
+    "note": "Plain; matches dates below."
+  },
+  {
+    "row": 282,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 283,
+    "status": "Approved",
+    "note": "Plain; consistent with item 2."
+  },
+  {
+    "row": 284,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 285,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 286,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 287,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 288,
+    "status": "Approved",
+    "note": "Plain; reasoning attributed to the rule."
+  },
+  {
+    "row": 289,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 290,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 291,
+    "status": "Approved",
+    "note": "Plain; Laverty example follows."
+  },
+  {
+    "row": 292,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 293,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 294,
+    "status": "Approved",
+    "note": "Softened slightly; fine."
+  },
+  {
+    "row": 295,
+    "status": "Revised",
+    "note": "\"Nothing more\" hardened the claim and ignores a refund guarantee where one exists (item 2).",
+    "new": "backed by the contract and the payment record"
+  },
+  {
+    "row": 296,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 297,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 298,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 299,
+    "status": "Revised",
+    "note": "\"At senior level\" is vague; next sentence already says \"above the day-to-day\".",
+    "new": "and responsible for the project as a whole"
+  },
+  {
+    "row": 300,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 301,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 302,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 303,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 304,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 305,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 306,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 307,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 308,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 309,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 310,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 311,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 312,
+    "status": "Approved",
+    "note": "Same claim as original."
+  },
+  {
+    "row": 313,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 314,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 315,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 316,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 317,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 318,
+    "status": "Approved",
+    "note": "Matches case (yard engineering estimate, EUR 1.4 m)."
+  },
+  {
+    "row": 320,
+    "status": "Revised",
+    "note": "\"Such arrangements are common\" lost the original point (true only in a narrow sense) and added a bare generalisation.",
+    "new": "in the industry, which was true as far as it went."
+  },
+  {
+    "row": 321,
+    "status": "Approved",
+    "note": "Plain; supported by case."
+  },
+  {
+    "row": 323,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 325,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 326,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 327,
+    "status": "Revised",
+    "note": "EUR 5.2 m is total variation margin; the case itself says the calculation does not show how much was avoidable, so the clause is not credited with all of it.",
+    "new": "the change-order clause had left the yard free to set its own margin on about EUR 13 m of variations"
+  },
+  {
+    "row": 329,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 330,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 331,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 332,
+    "status": "Approved",
+    "note": "Comparison only; figures correct."
+  },
+  {
+    "row": 333,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 334,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 335,
+    "status": "Approved",
+    "note": "Consistent with FAQ and essay."
+  },
+  {
+    "row": 336,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 337,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 339,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 340,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 341,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 342,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 343,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 344,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 345,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 346,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 347,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 348,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 349,
+    "status": "Approved",
+    "note": "Question only; answer untouched."
+  },
+  {
+    "row": 350,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 351,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 352,
+    "status": "Approved",
+    "note": "Supported by chapter."
+  },
+  {
+    "row": 354,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 355,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 356,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 357,
+    "status": "Approved",
+    "note": "Same claim, plainer."
+  },
+  {
+    "row": 358,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 359,
+    "status": "Approved",
+    "note": "Attribution kept."
+  },
+  {
+    "row": 360,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 361,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 362,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 363,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 364,
+    "status": "Revised",
+    "note": "\"The same advisers\" could read as the same people; the next sentence means the seller’s own lawyer and adviser.",
+    "new": "The seller needs the same kind of advisers as the buyer."
+  },
+  {
+    "row": 365,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 366,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 367,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 368,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 369,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 370,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 371,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 372,
+    "status": "Approved",
+    "note": "Plain; attributed."
+  },
+  {
+    "row": 373,
+    "status": "Approved",
+    "note": "Supported by this chapter’s case (final cost double the quote)."
+  },
+  {
+    "row": 374,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 375,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 376,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 377,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 378,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 379,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 380,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 381,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 382,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 383,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 384,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 385,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 387,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 389,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 390,
+    "status": "Approved",
+    "note": "Plain; consistent with ch04."
+  },
+  {
+    "row": 391,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 392,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 393,
+    "status": "Approved",
+    "note": "Matches case."
+  },
+  {
+    "row": 396,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 397,
+    "status": "Approved",
+    "note": "Heading covers engine and paint findings."
+  },
+  {
+    "row": 398,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 399,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 400,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 401,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 402,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 403,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 405,
+    "status": "Approved",
+    "note": "Heading matches section."
+  },
+  {
+    "row": 406,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 407,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 408,
+    "status": "Approved",
+    "note": "Arithmetic shown; correct."
+  },
+  {
+    "row": 410,
+    "status": "Approved",
+    "note": "Plain; comparison sound."
+  },
+  {
+    "row": 411,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 412,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 413,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 414,
+    "status": "Approved",
+    "note": "Plain heading."
+  },
+  {
+    "row": 415,
+    "status": "Approved",
+    "note": "Current text (\"Most items limit overrun\") reads correctly."
+  },
+  {
+    "row": 416,
+    "status": "Revised",
+    "note": "Commas make the cost, not the percentage, the thing compared with the cost of selling.",
+    "new": "Projected refit cost, as a percentage of pre-refit market value, compared with"
+  },
+  {
+    "row": 417,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 418,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 419,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 420,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 421,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 422,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 423,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 424,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 425,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 426,
+    "status": "Approved",
+    "note": "Plain."
+  },
+  {
+    "row": 427,
+    "status": "Approved",
+    "note": "Question only."
+  },
+  {
+    "row": 428,
+    "status": "Approved",
+    "note": "Question only."
+  }
+]

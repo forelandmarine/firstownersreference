@@ -1,0 +1,128 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "Broker-published figures agree that most value is lost in the early years, but differ on how much.",
+    "new": "Broker-published figures agree that yachts lose value fastest in their early years, but differ on how much.",
+    "kind": "line",
+    "reason": "Row 15: \"Most value is lost in the early years\" is wrong against the figures that follow (30 to 50 percent by year five); now says the loss is fastest early."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "as in the Hill Robinson model",
+    "new": "as the Hill Robinson model assumes",
+    "kind": "line",
+    "reason": "Row 21: The Hill Robinson case is a design study, not a trading programme; \"assumes\" keeps that distinction."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "practice. The owner’s second yacht",
+    "new": "practice. In it, the owner’s second yacht",
+    "kind": "line",
+    "reason": "Row 24: \"The owner\" now followed the generic owner of the previous paragraph; \"In it\" ties it to the case."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Test your intended use against these figures.",
+    "new": "Compare your intended use with these figures.",
+    "kind": "line",
+    "reason": "Row 26: Avoids \"Test ... tests\" in consecutive sentences."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "brokerage that had introduced them",
+    "new": "brokerage that had introduced it",
+    "kind": "line",
+    "reason": "Row 36: Referent is the management company (singular) now the sentence names it as subject."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "In most, charter income offsets part of the cost of ownership but does not cover it; the profitable exception assumes",
+    "new": "In three of the four, charter income at best matches running cost; the profitable exception, a design study, assumes",
+    "kind": "line",
+    "reason": "Row 49: \"In most ... does not cover it\" misdescribes the 48m case, which broke even; states what the four cases show."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "As published by September 2026.",
+    "new": "Slot dates as published by September 2026.",
+    "kind": "line",
+    "reason": "Row 119: \"As published by September 2026.\" was a fragment with no subject."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "contains a dual-agency clause under which both parties consent to dual agency in advance.",
+    "new": "contains a dual-agency clause.",
+    "kind": "line",
+    "reason": "Row 148: New wording duplicated the next sentence (\"Signing the standard form means ... already agreed\"); the next sentence carries the advance consent."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "widely known in the trade but rarely disclosed",
+    "new": "widely known in the trade but not always disclosed",
+    "kind": "line",
+    "reason": "Row 156: \"Rarely disclosed\" is a new unsupported frequency claim; \"not always\" keeps the sense of \"open secret\"."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The adviser runs the project for the owner:",
+    "new": "The adviser acts for the owner across the project:",
+    "kind": "line",
+    "reason": "Row 169: \"Runs the project\" sat awkwardly with the next sentence saying the role is not a project manager."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Sales are agreed later, in the weeks after the viewing,",
+    "new": "Most sales are agreed later, in the weeks after the show,",
+    "kind": "line",
+    "reason": "Row 218: Qualified the generalisation (Christie sold two off a show) and tied it to the boat show of the preceding quote."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and both are often settled in a hurry at closing",
+    "new": "and both can end up being settled in a hurry at closing",
+    "kind": "line",
+    "reason": "Row 219: \"Often\" hardened the original \"can end up being\"; original modality restored."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "secured by nothing more than the contract and the payment record",
+    "new": "backed by the contract and the payment record",
+    "kind": "line",
+    "reason": "Row 295: \"Nothing more\" hardened the claim and ignores a refund guarantee where one exists (item 2)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and responsible for the project at senior level",
+    "new": "and responsible for the project as a whole",
+    "kind": "line",
+    "reason": "Row 299: \"At senior level\" is vague; next sentence already says \"above the day-to-day\"."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "in the industry. Such arrangements are common.",
+    "new": "in the industry, which was true as far as it went.",
+    "kind": "line",
+    "reason": "Row 320: \"Such arrangements are common\" lost the original point (true only in a narrow sense) and added a bare generalisation."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "the change-order clause had allowed the yard about EUR 5.2 m in margin across the build",
+    "new": "the change-order clause had left the yard free to set its own margin on about EUR 13 m of variations",
+    "kind": "line",
+    "reason": "Row 327: EUR 5.2 m is total variation margin; the case itself says the calculation does not show how much was avoidable, so the clause is not credited with all of it."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The seller needs the same advisers as the buyer.",
+    "new": "The seller needs the same kind of advisers as the buyer.",
+    "kind": "line",
+    "reason": "Row 364: \"The same advisers\" could read as the same people; the next sentence means the seller’s own lawyer and adviser."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Projected refit cost as a percentage of pre-refit market value, compared with",
+    "new": "Projected refit cost, as a percentage of pre-refit market value, compared with",
+    "kind": "line",
+    "reason": "Row 416: Commas make the cost, not the percentage, the thing compared with the cost of selling."
+  }
+]

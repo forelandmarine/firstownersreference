@@ -609,7 +609,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The annual census of yachts above 24 metres in build or on order, published by BOAT International. The 2026 edition records 1,093 yachts.",
     longDefinition:
-      "The BOAT International Global Order Book is the industry reference for new build pipeline. Compiled annually from yard data, it records yachts above 24 metres in build or on order at the time of the count. The 2026 edition (1,093 yachts, down from 1,138 in 2025) marks the second consecutive annual decline by unit count. Average length on the order book has risen to 40.8 metres and 551 GT, the highest ever recorded. Italy is the largest building country, with 568 units, 52 percent of the global order book.",
+      "The BOAT International Global Order Book is the industry reference for new build pipeline. Compiled annually from yard data, it records yachts above 24 metres in build or on order at the time of the count. The 2026 edition (1,093 yachts, down from 1,138 in 2025) marks the second consecutive annual decline by unit count. Average length on the order book has risen to 40.8 metres and 551 GT, the highest ever recorded. Italy is the largest yacht-building country, with 568 units, 52 percent of the global order book.",
     source: {
       name: "BOAT International",
       url: "https://www.boatinternational.com/boat-pro/global-order-book/global-order-book-2026-report",

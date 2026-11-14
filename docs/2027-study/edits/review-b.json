@@ -1,0 +1,156 @@
+[
+ {
+  "file": "content/lead-essays.json",
+  "old": "affect cost and running for as long as the owner keeps the yacht.",
+  "new": "affect what the yacht costs and how it runs for as long as the owner keeps it.",
+  "kind": "line",
+  "reason": "Row 429: \"Cost and running\" is not idiomatic; matches the wording of paragraph 0 (\"how the yacht runs and what it costs\")."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the difference in crew turnover, maintenance cost and budget control is much larger.",
+  "new": "the cost of the differences in crew turnover, maintenance and budget control is much larger.",
+  "kind": "line",
+  "reason": "Row 433: The sentence compared a difference in pay with a difference in turnover; compare like with like (cost against cost)."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Deep service capability, strong loss-management track record, insures only yachts, and drafts its policy wordings carefully.",
+  "new": "It has deep service capability and a strong loss-management track record, insures only yachts, and drafts its policy wordings carefully.",
+  "kind": "line",
+  "reason": "Row 454: The revised list mixed noun phrases and verbs without a subject; give the sentence a subject and parallel verbs."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The adviser’s advice was that the captain hire",
+  "new": "The adviser’s view was that the captain hire",
+  "kind": "line",
+  "reason": "Row 482: \"Adviser’s advice\" is a doubled word."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "If it shows, it will be in crew retention and budget control,",
+  "new": "Any saving will show in crew retention and budget control,",
+  "kind": "line",
+  "reason": "Row 487: \"If it shows\" has an unclear referent after \"what the hire has saved\"."
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The captain hire affects the other four decisions for as long as the yacht is owned.",
+  "new": "The captain hire also affects how the other four decisions work out, for as long as the yacht is owned.",
+  "kind": "line",
+  "reason": "Row 495: As revised, the duration attached to the wrong verb (the hire affects the decisions for as long as ...); matches the FAQ wording (row 505)."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The leading sailing yacht builders (Royal Huisman, Vitters, Baltic, Nautor Swan, Wally) Sailing yachts account for a relatively small share of new-build deliveries. The discussion below",
+  "new": "The leading sailing yacht builders are Royal Huisman, Vitters, Baltic, Nautor Swan and Wally. The discussion below",
+  "kind": "line",
+  "reason": "Row 521: Paragraph is broken: the editor's replacement for row 523 left the builders' sentence without a verb, and its new sentence repeats the 6 percent point made two sentences earlier. Complete the builders' sentence and drop the repetition; the editor's value-retention pointer is kept."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "It drives commercial shipping’s change of fuels, which affects yachts",
+  "new": "It shapes commercial shipping’s move to new fuels, which affects yachts",
+  "kind": "line",
+  "reason": "Row 535: \"Change of fuels\" is unnatural; \"drives\" overstated the original \"shapes\"."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "and at anchor the yachts are nearly as quiet as a sailing yacht.",
+  "new": "and at anchor they are closer to a sailing yacht in noise than to a conventional motor yacht.",
+  "kind": "line",
+  "reason": "Row 544: \"Nearly as quiet as a sailing yacht\" hardened the original comparison (closer to sail than to conventional motor); restore it."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The furthest application of wind and solar power is Captain Arctic,",
+  "new": "At the wind and solar end of the range is Captain Arctic,",
+  "kind": "line",
+  "reason": "Row 547: \"Furthest application\" is awkward and a new superlative; keep the original sense (the end of the range) without \"sits\"."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "but she shows that the technology behind concepts such as AERA already works in service",
+  "new": "but she shows how far the technology behind concepts such as AERA has advanced",
+  "kind": "fact",
+  "reason": "Row 548: \"Already works in service\" is a new claim the text does not support (she is cited as an illustration); restore the original, weaker claim."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "with hybrid between the other two on cost and carbon.",
+  "new": "with hybrid between the other two on running cost and carbon emissions.",
+  "kind": "line",
+  "reason": "Row 549: \"Cost\" could be read as build price, on which hybrid is not between the two; the case and FAQ support running cost and emissions."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "For most buyers, three questions decide the choice.",
+  "new": "Three questions tend to decide the choice for an individual buyer.",
+  "kind": "line",
+  "reason": "Row 575: \"For most buyers ... decide\" hardened the original \"tend to decide it\"; restore the qualification."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "and family use had settled at seven to nine weeks a year",
+  "new": "and family use had steadied at seven to nine weeks a year",
+  "kind": "line",
+  "reason": "Row 580: \"Settled\" twice in one sentence."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "and the owner has not had to defend the yacht’s emissions against the foundation’s published figures.",
+  "new": "and the foundation’s public stance on carbon has remained defensible.",
+  "kind": "fact",
+  "reason": "Row 591: The revision added an event (the owner has not had to defend the yacht) not in the original or the files; restore the original claim in plain words."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The owner says he would have chosen the hybrid if his cruising calendar had been less flexible. It was not the right yacht for him, but hybrid drive is now a practical third option, and a buyer who compares only motor and sail leaves it out.",
+  "new": "Had his cruising calendar been less flexible, the owner would have chosen the hybrid. It was not the right yacht for him, but hybrid drive is now a practical third option, and a buyer comparing motor and sail should consider it too.",
+  "kind": "line",
+  "reason": "Row 592: \"The owner says\" attributes speech to a composite owner; the closing clause was a tautology."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The company that holds the yacht exists alongside the family’s operating companies, property, trusts and succession arrangements, and a sound decision takes account of all of them. The owner’s residence and tax status affect all of them;",
+  "new": "The vehicle that holds the yacht exists alongside the family’s operating companies, property, trusts and succession arrangements, and a sound decision takes account of all of them. The owner’s residence and tax status affect each of them;",
+  "kind": "line",
+  "reason": "Row 624: Paragraph 5 defines the vehicle as personal ownership, a company or something more layered, so \"company\" narrowed it; also removes the repeated \"all of them\"."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "If not, the firm may be unable to pay for its own mistakes.",
+  "new": "If no, the firm may be unable to compensate the buyer for its mistakes.",
+  "kind": "line",
+  "reason": "Row 628: The other five elements use \"If no\"; and PI insurance pays the client, so say whom the firm could not compensate."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "who ran the search, supported the negotiation and assembled the team,",
+  "new": "who ran the search and assembled the team,",
+  "kind": "fact",
+  "reason": "Row 649: No negotiation is described in the case (the price was judged fair); remove the added duty."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The surveyor, who had surveyed the preferred yacht,",
+  "new": "The surveyor, who had carried out the pre-purchase survey,",
+  "kind": "line",
+  "reason": "Row 651: \"Surveyor, who had surveyed\" is a doubled word."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "the natural refit yard would be there, and walked him",
+  "new": "the natural refit yard would be in the same region, and walked him",
+  "kind": "line",
+  "reason": "Row 655: \"There ... there\" in one sentence."
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Italy is the largest building country, with 568 units,",
+  "new": "Italy is the largest yacht-building country, with 568 units,",
+  "kind": "line",
+  "reason": "Row 704: \"Building country\" is ambiguous."
+ }
+]

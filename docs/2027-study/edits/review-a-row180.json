@@ -1,0 +1,9 @@
+[
+  {
+    "file": "content/cases.json",
+    "old": "None was illegal or unusual in the industry, and none",
+    "new": "None was unusual in the industry, and none",
+    "kind": "fact",
+    "reason": "Row 180: the ch03 essay cites OnboardOnline that referral fees are legal only if disclosed; these were not disclosed, so 'illegal' cannot be ruled out."
+  }
+]

@@ -1,0 +1,1319 @@
+[
+ {
+  "row": 429,
+  "status": "Revised",
+  "note": "\"Cost and running\" is not idiomatic; matches the wording of paragraph 0 (\"how the yacht runs and what it costs\").",
+  "new": "Four other first-year decisions, on management, insurance, charter and the refit reserve, affect what the yacht costs and how it runs for as long as the owner keeps it."
+ },
+ {
+  "row": 430,
+  "status": "Approved",
+  "note": "Deleted opening sentence; paragraph now opens on the seven-year figure and reads correctly."
+ },
+ {
+  "row": 431,
+  "status": "Approved",
+  "note": "Closer now states duration; consistent with standfirst and checklist."
+ },
+ {
+  "row": 432,
+  "status": "Approved",
+  "note": "List mirrors the preceding sentence; reads correctly."
+ },
+ {
+  "row": 433,
+  "status": "Revised",
+  "note": "The sentence compared a difference in pay with a difference in turnover; compare like with like (cost against cost).",
+  "new": "The difference in pay between a good captain and a competent average one is small against the yacht’s operating budget; the cost of the differences in crew turnover, maintenance and budget control is much larger."
+ },
+ {
+  "row": 434,
+  "status": "Approved",
+  "note": "Supported by Lay’s uplift figures in the same paragraph."
+ },
+ {
+  "row": 436,
+  "status": "Approved",
+  "note": "Paragraph is about who pays the captain’s introducer; heading-style question now named."
+ },
+ {
+  "row": 437,
+  "status": "Approved",
+  "note": "Plain; no loss of meaning."
+ },
+ {
+  "row": 438,
+  "status": "Approved",
+  "note": "Plain; no loss of meaning."
+ },
+ {
+  "row": 439,
+  "status": "Approved",
+  "note": "Attribution kept."
+ },
+ {
+  "row": 440,
+  "status": "Approved",
+  "note": "Says what the management team does; attribution kept."
+ },
+ {
+  "row": 441,
+  "status": "Approved",
+  "note": "Attribution to Lay kept; meaning unchanged."
+ },
+ {
+  "row": 442,
+  "status": "Approved",
+  "note": "\"Usually\" softens rather than hardens the original."
+ },
+ {
+  "row": 443,
+  "status": "Approved",
+  "note": "Matches ch07 case wording (row 483)."
+ },
+ {
+  "row": 444,
+  "status": "Approved",
+  "note": "Matches ch01 case wording."
+ },
+ {
+  "row": 445,
+  "status": "Approved",
+  "note": "\"Ten-year cost plan\" matches paragraph 71 (row 480)."
+ },
+ {
+  "row": 446,
+  "status": "Approved",
+  "note": "Plain; meaning unchanged."
+ },
+ {
+  "row": 447,
+  "status": "Approved",
+  "note": "Referents clear; meaning unchanged."
+ },
+ {
+  "row": 448,
+  "status": "Approved",
+  "note": "Checked against Davis’s answer in guest-opinions.json (2018 hurricanes, premium \"stockpile\"); accurate."
+ },
+ {
+  "row": 449,
+  "status": "Approved",
+  "note": "Supported by the Davis blockquote that follows on Risk Management Surveys."
+ },
+ {
+  "row": 450,
+  "status": "Approved",
+  "note": "Plain; conditional kept."
+ },
+ {
+  "row": 451,
+  "status": "Approved",
+  "note": "Conditional kept; meaning unchanged."
+ },
+ {
+  "row": 452,
+  "status": "Approved",
+  "note": "Heading says what follows."
+ },
+ {
+  "row": 453,
+  "status": "Approved",
+  "note": "Instruction now a sentence."
+ },
+ {
+  "row": 454,
+  "status": "Revised",
+  "note": "The revised list mixed noun phrases and verbs without a subject; give the sentence a subject and parallel verbs.",
+  "new": "It has deep service capability and a strong loss-management track record, insures only yachts, and drafts its policy wordings carefully."
+ },
+ {
+  "row": 455,
+  "status": "Approved",
+  "note": "Plain; meaning unchanged."
+ },
+ {
+  "row": 456,
+  "status": "Approved",
+  "note": "Reads correctly."
+ },
+ {
+  "row": 457,
+  "status": "Approved",
+  "note": "\"Usually\" matches original \"mostly\"."
+ },
+ {
+  "row": 458,
+  "status": "Approved",
+  "note": "Section is four policy terms plus the underwriters box; heading fits."
+ },
+ {
+  "row": 459,
+  "status": "Approved",
+  "note": "Reads correctly; introduces the four terms."
+ },
+ {
+  "row": 460,
+  "status": "Approved",
+  "note": "Plain; meaning unchanged."
+ },
+ {
+  "row": 461,
+  "status": "Approved",
+  "note": "Says how the brokers differ; modest claim."
+ },
+ {
+  "row": 462,
+  "status": "Approved",
+  "note": "Plain; meaning unchanged."
+ },
+ {
+  "row": 463,
+  "status": "Approved",
+  "note": "Heading says what follows."
+ },
+ {
+  "row": 464,
+  "status": "Approved",
+  "note": "Plain; meaning unchanged."
+ },
+ {
+  "row": 466,
+  "status": "Approved",
+  "note": "Reads correctly."
+ },
+ {
+  "row": 467,
+  "status": "Approved",
+  "note": "Lien enforced by arrest on entering US jurisdiction; matches cited counsel’s article."
+ },
+ {
+  "row": 468,
+  "status": "Approved",
+  "note": "Consistent with ch01 and the FAQ (row 506)."
+ },
+ {
+  "row": 469,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 470,
+  "status": "Approved",
+  "note": "Paper/practice antithesis removed; meaning kept."
+ },
+ {
+  "row": 471,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 472,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 473,
+  "status": "Approved",
+  "note": "Reads correctly with the three entries that follow."
+ },
+ {
+  "row": 474,
+  "status": "Approved",
+  "note": "Removes a contradiction with the marina point in the same paragraph."
+ },
+ {
+  "row": 475,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 476,
+  "status": "Approved",
+  "note": "Fragment fixed; five-year horizon kept."
+ },
+ {
+  "row": 477,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 478,
+  "status": "Approved",
+  "note": "Plain; rule unchanged."
+ },
+ {
+  "row": 479,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 480,
+  "status": "Approved",
+  "note": "Matches row 445."
+ },
+ {
+  "row": 481,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 482,
+  "status": "Revised",
+  "note": "\"Adviser’s advice\" is a doubled word.",
+  "new": "The adviser’s view was that the captain hire was the most consequential decision the owner would make on the yacht, and that the time to do it carefully was now."
+ },
+ {
+  "row": 483,
+  "status": "Approved",
+  "note": "Matches essay wording (row 443)."
+ },
+ {
+  "row": 486,
+  "status": "Approved",
+  "note": "Reads correctly."
+ },
+ {
+  "row": 487,
+  "status": "Revised",
+  "note": "\"If it shows\" has an unclear referent after \"what the hire has saved\".",
+  "new": "Any saving will show in crew retention and budget control, and crew alone is 30 to 40 percent of annual operating cost (chapter 1)."
+ },
+ {
+  "row": 488,
+  "status": "Approved",
+  "note": "Says what happened; referents clear."
+ },
+ {
+  "row": 490,
+  "status": "Approved",
+  "note": "\"Often\" softens the original universal."
+ },
+ {
+  "row": 492,
+  "status": "Approved",
+  "note": "One case is not a pattern; reads correctly."
+ },
+ {
+  "row": 493,
+  "status": "Approved",
+  "note": "Plain title."
+ },
+ {
+  "row": 494,
+  "status": "Approved",
+  "note": "Consistent with ch07 standfirst."
+ },
+ {
+  "row": 495,
+  "status": "Revised",
+  "note": "As revised, the duration attached to the wrong verb (the hire affects the decisions for as long as ...); matches the FAQ wording (row 505).",
+  "new": "The captain hire also affects how the other four decisions work out, for as long as the yacht is owned."
+ },
+ {
+  "row": 497,
+  "status": "Approved",
+  "note": "Names the payments."
+ },
+ {
+  "row": 498,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 499,
+  "status": "Approved",
+  "note": "Range and condition kept."
+ },
+ {
+  "row": 500,
+  "status": "Approved",
+  "note": "Consistent with essay paragraph 58 and FAQ."
+ },
+ {
+  "row": 501,
+  "status": "Approved",
+  "note": "Consistent with essay row 468."
+ },
+ {
+  "row": 502,
+  "status": "Approved",
+  "note": "Consistent with ch06 and glossary (refits routinely run 30 to 50 percent over quote)."
+ },
+ {
+  "row": 503,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 504,
+  "status": "Approved",
+  "note": "Reads correctly."
+ },
+ {
+  "row": 505,
+  "status": "Approved",
+  "note": "Rule softened from \"usually\" to \"often\"; consistent with essay."
+ },
+ {
+  "row": 506,
+  "status": "Approved",
+  "note": "Consistent with essay row 468."
+ },
+ {
+  "row": 507,
+  "status": "Approved",
+  "note": "Matches checklist row 500."
+ },
+ {
+  "row": 508,
+  "status": "Approved",
+  "note": "Says what the yields depend on."
+ },
+ {
+  "row": 509,
+  "status": "Approved",
+  "note": "Matches essay heading (row 452)."
+ },
+ {
+  "row": 510,
+  "status": "Approved",
+  "note": "Plain; meaning unchanged."
+ },
+ {
+  "row": 511,
+  "status": "Approved",
+  "note": "Plain; meaning unchanged."
+ },
+ {
+  "row": 512,
+  "status": "Approved",
+  "note": "Matches essay row 455."
+ },
+ {
+  "row": 513,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 514,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 515,
+  "status": "Approved",
+  "note": "Editorial question; plain."
+ },
+ {
+  "row": 516,
+  "status": "Approved",
+  "note": "Editorial question; plain."
+ },
+ {
+  "row": 518,
+  "status": "Approved",
+  "note": "Intro matches the question (row 519)."
+ },
+ {
+  "row": 519,
+  "status": "Approved",
+  "note": "Matches Filippakis’s answer."
+ },
+ {
+  "row": 520,
+  "status": "Approved",
+  "note": "Matches paragraph 0 of the essay."
+ },
+ {
+  "row": 521,
+  "status": "Revised",
+  "note": "Paragraph is broken: the editor's replacement for row 523 left the builders' sentence without a verb, and its new sentence repeats the 6 percent point made two sentences earlier. Complete the builders' sentence and drop the repetition; the editor's value-retention pointer is kept.",
+  "new": "Sailing yachts are a small part of the market. BOAT International’s 2026 Global Order Book records 69 sailing yachts among the 1,093 on order, about 6 percent of units; Camper & Nicholsons and SuperYacht Times brokerage data puts sailing yachts at around 18 percent of the active over-30m fleet. The leading sailing yacht builders are Royal Huisman, Vitters, Baltic, Nautor Swan and Wally. The discussion below considers whether particular types retain their value well."
+ },
+ {
+  "row": 522,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 524,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 525,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 526,
+  "status": "Approved",
+  "note": "Says how the costs differ; consistent with checklist and FAQ."
+ },
+ {
+  "row": 527,
+  "status": "Approved",
+  "note": "Within a few years is consistent with 10 to 15 year rigging life."
+ },
+ {
+  "row": 528,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 529,
+  "status": "Approved",
+  "note": "Says what the costs are disproportionate to."
+ },
+ {
+  "row": 530,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 531,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 532,
+  "status": "Approved",
+  "note": "Plain; uncertainty kept."
+ },
+ {
+  "row": 533,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 534,
+  "status": "Approved",
+  "note": "Referent (engines and generators) clear."
+ },
+ {
+  "row": 535,
+  "status": "Revised",
+  "note": "\"Change of fuels\" is unnatural; \"drives\" overstated the original \"shapes\".",
+  "new": "It shapes commercial shipping’s move to new fuels, which affects yachts through the availability and price of fuel."
+ },
+ {
+  "row": 536,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 537,
+  "status": "Approved",
+  "note": "Reads correctly after the emission control areas paragraph."
+ },
+ {
+  "row": 538,
+  "status": "Approved",
+  "note": "Accurate account of the biogenic saving."
+ },
+ {
+  "row": 539,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 540,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 541,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 542,
+  "status": "Approved",
+  "note": "Reads correctly."
+ },
+ {
+  "row": 543,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 544,
+  "status": "Revised",
+  "note": "\"Nearly as quiet as a sailing yacht\" hardened the original comparison (closer to sail than to conventional motor); restore it.",
+  "new": "Owners report substantial annual fuel savings, and at anchor they are closer to a sailing yacht in noise than to a conventional motor yacht."
+ },
+ {
+  "row": 545,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 546,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 547,
+  "status": "Revised",
+  "note": "\"Furthest application\" is awkward and a new superlative; keep the original sense (the end of the range) without \"sits\".",
+  "new": "At the wind and solar end of the range is Captain Arctic, a 70 metre polar expedition ship ..."
+ },
+ {
+  "row": 548,
+  "status": "Revised",
+  "note": "\"Already works in service\" is a new claim the text does not support (she is cited as an illustration); restore the original, weaker claim.",
+  "new": "She is a passenger ship rather than a yacht, but she shows how far the technology behind concepts such as AERA has advanced (Gayle Patterson, ...)."
+ },
+ {
+  "row": 549,
+  "status": "Revised",
+  "note": "\"Cost\" could be read as build price, on which hybrid is not between the two; the case and FAQ support running cost and emissions.",
+  "new": "The buyer now has three options, with hybrid between the other two on running cost and carbon emissions."
+ },
+ {
+  "row": 550,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 551,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 552,
+  "status": "Approved",
+  "note": "Antithesis removed; claim unchanged."
+ },
+ {
+  "row": 553,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 554,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 555,
+  "status": "Approved",
+  "note": "Plain; caution kept."
+ },
+ {
+  "row": 556,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 557,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 558,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 559,
+  "status": "Approved",
+  "note": "Fragment fixed."
+ },
+ {
+  "row": 560,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 561,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 562,
+  "status": "Approved",
+  "note": "Closer restated the examples; removal leaves the paragraph complete."
+ },
+ {
+  "row": 563,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 564,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 566,
+  "status": "Approved",
+  "note": "Matches the Bourgoignie quote that follows."
+ },
+ {
+  "row": 567,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 568,
+  "status": "Approved",
+  "note": "Matches the Zimmermann Zschocke quote that follows."
+ },
+ {
+  "row": 570,
+  "status": "Approved",
+  "note": "Heading says what follows."
+ },
+ {
+  "row": 571,
+  "status": "Approved",
+  "note": "Slogan close removed; claim no stronger than the original."
+ },
+ {
+  "row": 572,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 573,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 574,
+  "status": "Approved",
+  "note": "Heading says what follows."
+ },
+ {
+  "row": 575,
+  "status": "Revised",
+  "note": "\"For most buyers ... decide\" hardened the original \"tend to decide it\"; restore the qualification.",
+  "new": "Three questions tend to decide the choice for an individual buyer."
+ },
+ {
+  "row": 576,
+  "status": "Approved",
+  "note": "Owners no longer \"on sides\"; meaning kept."
+ },
+ {
+  "row": 577,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 578,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 580,
+  "status": "Revised",
+  "note": "\"Settled\" twice in one sentence.",
+  "new": "The crew had settled, and family use had steadied at seven to nine weeks a year, mostly Western Mediterranean."
+ },
+ {
+  "row": 581,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 582,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 583,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 585,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 586,
+  "status": "Approved",
+  "note": "Plain; figures kept."
+ },
+ {
+  "row": 588,
+  "status": "Approved",
+  "note": "Reads correctly."
+ },
+ {
+  "row": 589,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 590,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 591,
+  "status": "Revised",
+  "note": "The revision added an event (the owner has not had to defend the yacht) not in the original or the files; restore the original claim in plain words.",
+  "new": "Carbon emissions from fuel have stayed within the modelled range, 60 to 65 percent below the motor yacht’s, and the foundation’s public stance on carbon has remained defensible."
+ },
+ {
+  "row": 592,
+  "status": "Revised",
+  "note": "\"The owner says\" attributes speech to a composite owner; the closing clause was a tautology.",
+  "new": "Had his cruising calendar been less flexible, the owner would have chosen the hybrid. It was not the right yacht for him, but hybrid drive is now a practical third option, and a buyer comparing motor and sail should consider it too."
+ },
+ {
+  "row": 593,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 594,
+  "status": "Approved",
+  "note": "Says what to budget for."
+ },
+ {
+  "row": 595,
+  "status": "Approved",
+  "note": "Consistent with case paragraph 7 modelled figures."
+ },
+ {
+  "row": 597,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 598,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 599,
+  "status": "Approved",
+  "note": "Matches essay row 571."
+ },
+ {
+  "row": 600,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 601,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 602,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 603,
+  "status": "Approved",
+  "note": "Matches essay row 526."
+ },
+ {
+  "row": 604,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 605,
+  "status": "Approved",
+  "note": "Consistent with case modelling."
+ },
+ {
+  "row": 606,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 607,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 608,
+  "status": "Approved",
+  "note": "Matches essay row 526."
+ },
+ {
+  "row": 609,
+  "status": "Approved",
+  "note": "Consistent with case modelling."
+ },
+ {
+  "row": 610,
+  "status": "Approved",
+  "note": "Says which way the counts are skewed."
+ },
+ {
+  "row": 611,
+  "status": "Approved",
+  "note": "Table gives EUR 12–22 m against 18–30 m (27 to 33 percent less at the ends); caption holds."
+ },
+ {
+  "row": 612,
+  "status": "Approved",
+  "note": "Editorial intro; plain."
+ },
+ {
+  "row": 613,
+  "status": "Approved",
+  "note": "Editorial question; plain."
+ },
+ {
+  "row": 614,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 615,
+  "status": "Approved",
+  "note": "Slogan fragments replaced; content matches chapter."
+ },
+ {
+  "row": 616,
+  "status": "Approved",
+  "note": "Consistent with home page wording (app/page.tsx, \"funded by the yards and brokers whose interests it covers\")."
+ },
+ {
+  "row": 618,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 619,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 620,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 621,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 622,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 623,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 624,
+  "status": "Revised",
+  "note": "Paragraph 5 defines the vehicle as personal ownership, a company or something more layered, so \"company\" narrowed it; also removes the repeated \"all of them\".",
+  "new": "The vehicle that holds the yacht exists alongside the family’s operating companies, property, trusts and succession arrangements, and a sound decision takes account of all of them. The owner’s residence and tax status affect each of them; ..."
+ },
+ {
+  "row": 625,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 626,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 627,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 628,
+  "status": "Revised",
+  "note": "The other five elements use \"If no\"; and PI insurance pays the client, so say whom the firm could not compensate.",
+  "new": "If no, the firm may be unable to compensate the buyer for its mistakes."
+ },
+ {
+  "row": 629,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 630,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 631,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 632,
+  "status": "Approved",
+  "note": "Plain heading item."
+ },
+ {
+  "row": 633,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 634,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 637,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 638,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 639,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 640,
+  "status": "Approved",
+  "note": "Attribution kept."
+ },
+ {
+  "row": 641,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 642,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 643,
+  "status": "Approved",
+  "note": "Reads correctly; insurance broker passed with disclosure."
+ },
+ {
+  "row": 644,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 645,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 646,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 647,
+  "status": "Approved",
+  "note": "Names people, duties and payment."
+ },
+ {
+  "row": 648,
+  "status": "Approved",
+  "note": "Heading says what follows."
+ },
+ {
+  "row": 649,
+  "status": "Revised",
+  "note": "No negotiation is described in the case (the price was judged fair); remove the added duty.",
+  "new": "The independent adviser, who ran the search and assembled the team, was paid by the buyer directly, on a fixed fee. Pass."
+ },
+ {
+  "row": 650,
+  "status": "Approved",
+  "note": "Matches paragraph 1."
+ },
+ {
+  "row": 651,
+  "status": "Revised",
+  "note": "\"Surveyor, who had surveyed\" is a doubled word.",
+  "new": "The surveyor, who had carried out the pre-purchase survey, was paid by the buyer directly. Pass."
+ },
+ {
+  "row": 652,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 653,
+  "status": "Approved",
+  "note": "Generic management duties consistent with ch07; no invented event."
+ },
+ {
+  "row": 654,
+  "status": "Approved",
+  "note": "Plain; disclosure kept."
+ },
+ {
+  "row": 655,
+  "status": "Revised",
+  "note": "\"There ... there\" in one sentence.",
+  "new": "The adviser noted that, as the buyer meant to cruise mainly in the Western Mediterranean, the natural refit yard would be in the same region, and walked him through the ownership of the main operators there, ..."
+ },
+ {
+  "row": 656,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 657,
+  "status": "Approved",
+  "note": "Reads correctly."
+ },
+ {
+  "row": 658,
+  "status": "Approved",
+  "note": "Heading matches the time question that follows."
+ },
+ {
+  "row": 661,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 662,
+  "status": "Approved",
+  "note": "Closer removed; arithmetic intact."
+ },
+ {
+  "row": 663,
+  "status": "Approved",
+  "note": "Short dramatic sentences removed; claim unchanged."
+ },
+ {
+  "row": 664,
+  "status": "Approved",
+  "note": "Plain; claim confined to this case."
+ },
+ {
+  "row": 665,
+  "status": "Approved",
+  "note": "Figures checked against paragraphs 19 and 20 (USD 195,000; USD 42 to 53 m)."
+ },
+ {
+  "row": 666,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 667,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 668,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 669,
+  "status": "Approved",
+  "note": "Matches the case."
+ },
+ {
+  "row": 670,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 671,
+  "status": "Approved",
+  "note": "Heading fits the three items."
+ },
+ {
+  "row": 672,
+  "status": "Approved",
+  "note": "Change is in ch09 checklist groups.3 (\"The final question\"), not ch03 as the CSV slug says; heading fits the single item."
+ },
+ {
+  "row": 674,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 675,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 677,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 678,
+  "status": "Approved",
+  "note": "Matches the readers block that follows."
+ },
+ {
+  "row": 679,
+  "status": "Approved",
+  "note": "Plain heading."
+ },
+ {
+  "row": 680,
+  "status": "Approved",
+  "note": "Matches essay row 642."
+ },
+ {
+  "row": 681,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 682,
+  "status": "Approved",
+  "note": "\"Usually\" matches original \"tend to\"."
+ },
+ {
+  "row": 683,
+  "status": "Approved",
+  "note": "Editorial question; plain."
+ },
+ {
+  "row": 684,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 685,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 686,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 687,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 688,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 689,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 690,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 691,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 692,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 693,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 697,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 698,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 699,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 700,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 701,
+  "status": "Approved",
+  "note": "Plain; meaning kept."
+ },
+ {
+  "row": 702,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 703,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 704,
+  "status": "Revised",
+  "note": "\"Building country\" is ambiguous.",
+  "new": "Italy is the largest yacht-building country, with 568 units, 52 percent of the global order book."
+ },
+ {
+  "row": 705,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 706,
+  "status": "Approved",
+  "note": "Plain."
+ },
+ {
+  "row": 708,
+  "status": "Approved",
+  "note": "JSX intact; reads correctly."
+ },
+ {
+  "row": 709,
+  "status": "Approved",
+  "note": "JSX intact."
+ },
+ {
+  "row": 711,
+  "status": "Approved",
+  "note": "JSX intact; reads correctly."
+ },
+ {
+  "row": 712,
+  "status": "Approved",
+  "note": "JSX intact."
+ },
+ {
+  "row": 713,
+  "status": "Approved",
+  "note": "JSX intact."
+ },
+ {
+  "row": 714,
+  "status": "Approved",
+  "note": "JSX intact; reads correctly."
+ }
+]
