@@ -56,6 +56,11 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
     avatar: "/images/contributors/jack-inglis.jpg",
     bio: "Founder of the owner's-representative practice ULTIMAR, and a captain who came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea. He entered the industry in 2012 as bosun on a 60 metre support vessel, commanded North Sea offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the SYBAss and IAMI Yacht Owner's Representative Program; the 1,200-item delivery snag list cited in the new-build chapter is his.",
   },
+  "Benjamin Maltby": {
+    name: "Benjamin Maltby",
+    avatar: "/images/contributors/benjamin-maltby.jpg",
+    bio: "A partner at Keystone Law and a barrister, formerly of Ince & Co, who advises owners, yards and finance providers on superyacht construction, refit, purchase and sale, finance, and operational matters including tax, insurance and employment.",
+  },
 };
 
 export function getContributorProfile(
