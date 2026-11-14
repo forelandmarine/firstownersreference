@@ -520,6 +520,66 @@ export const glossaryEntries: GlossaryEntry[] = [
     relatedTerms: ["refit", "lmaa"],
   },
   {
+    slug: "design-freeze",
+    term: "Design freeze",
+    shortDefinition:
+      "The date in a refit or build after which the scope is fixed and every change is priced, programmed, and approved as a variation.",
+    longDefinition:
+      "Set in advance and known to everyone, including the owner. Changes after the freeze remain possible, but each carries its own price and effect on programme. The Refit Advisory Group names scope creep as the owner’s biggest single pain point in refit, and the freeze date as the discipline that contains it.",
+    relatedChapters: ["06-refit"],
+    relatedTerms: ["refit", "long-lead-item"],
+  },
+  {
+    slug: "provisional-sum",
+    term: "Provisional sum",
+    shortDefinition:
+      "A placeholder in a quote for work that cannot yet be priced. An estimate, not a price.",
+    longDefinition:
+      "Provisional sums are where a refit quote and the final account most often part company. A disciplined quote separates fixed-price work, provisional sums, and day-rate work and labels each, so the owner can see how much of the figure is actually committed.",
+    relatedChapters: ["06-refit"],
+    relatedTerms: ["refit", "target-cost"],
+  },
+  {
+    slug: "target-cost",
+    term: "Target cost contract",
+    shortDefinition:
+      "A refit contract with an agreed target price, under which savings and overruns are shared between owner and yard on an agreed formula.",
+    longDefinition:
+      "The third contract type alongside fixed price, which works only when the scope is fully defined, and cost plus, which leaves the overrun with the owner. Target cost needs a mature scope. Where it fits, the Refit Advisory Group finds it changes yard behaviour more than any amount of supervision.",
+    relatedChapters: ["06-refit"],
+    relatedTerms: ["provisional-sum", "design-freeze"],
+  },
+  {
+    slug: "redelivery",
+    term: "Redelivery",
+    shortDefinition:
+      "The formal handover of a yacht back to the owner at the end of a refit. Not the same as the work being finished.",
+    longDefinition:
+      "What counts as finished belongs in the contract from the start: snag close-out, sea trial acceptance criteria, retention and its release, warranty, as-built drawings, spares, crew familiarisation, class and flag paperwork, and the final account. Negotiated at the end, these items are settled when the owner’s leverage is lowest.",
+    relatedChapters: ["06-refit"],
+    relatedTerms: ["punch-list", "retention"],
+  },
+  {
+    slug: "retention",
+    term: "Retention",
+    shortDefinition:
+      "Part of the contract price held back by the owner until the snag list is closed.",
+    longDefinition:
+      "The retention amount and the conditions for its release are agreed in the contract, not at redelivery. It is the owner’s main remaining leverage once the yacht has left the yard.",
+    relatedChapters: ["06-refit", "05-new-build-versus-brokerage"],
+    relatedTerms: ["redelivery", "punch-list"],
+  },
+  {
+    slug: "long-lead-item",
+    term: "Long-lead item",
+    shortDefinition:
+      "Equipment or material with a long manufacturing or approval time, such as engines, switchboards, glass, teak, joinery, rigging, or anything needing class approval.",
+    longDefinition:
+      "In a refit the critical path usually runs through procurement rather than labour, so long-lead decisions often have to be taken before the yard is selected. Each item needs a decide-by date in the plan.",
+    relatedChapters: ["06-refit"],
+    relatedTerms: ["design-freeze"],
+  },
+  {
     slug: "obbba",
     term: "OBBBA bonus depreciation",
     shortDefinition:

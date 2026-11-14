@@ -421,12 +421,19 @@
           },
           {
             "question": "The alternative arithmetic (sale, reacquisition of comparable hull, depreciation, transaction cost, crew continuity loss) tested against the refit case."
+          },
+          {
+            "question": "A ten-year cost profile, with annual maintenance, planned refit, regulatory works, and owner upgrades kept as four separate budgets.",
+            "detail": "Shows the years where major items fall due together. Costs outside the yard invoice (accommodation, travel, storage, security) included."
           }
         ]
       },
       {
         "heading": "Yard selection",
         "items": [
+          {
+            "question": "The yard’s physical envelope checked first: travel lift capacity and beam, shed and door size, air draft, approach depth."
+          },
           {
             "question": "A yard appropriate for the scope (paint, structural, mechanical, interior) and tonnage."
           },
@@ -463,6 +470,15 @@
             "detail": "Each variation states its cause, price, and effect on programme and on the other trades. The owner keeps the right to decline it, take a second opinion, or have the work done later or elsewhere."
           },
           {
+            "question": "A design freeze date set and known to everyone, with every later change priced, programmed, and approved as a variation."
+          },
+          {
+            "question": "Work sorted into mandatory, recommended, and the owner’s call, with reasons, and a Deferred Items Register kept for what is not done."
+          },
+          {
+            "question": "Long-lead items listed with decide-by dates, and the contract type (fixed price, cost plus, target cost) matched to how well the scope is defined."
+          },
+          {
             "question": "A contingency reserve of 15 to 25 percent included in the budget.",
             "detail": "This is the empirical opened-up-vessel pattern."
           }
@@ -487,6 +503,9 @@
         "heading": "Site presence and reporting",
         "items": [
           {
+            "question": "A condition record of time-stamped photographs and video before yard entry, and a recorded captain handover in the first fortnight."
+          },
+          {
             "question": "Owner’s representative on site at least one day per week, with photographic snag list and quantified variance against budget."
           },
           {
@@ -495,7 +514,11 @@
           },
           {
             "question": "Builder’s risk wording read in full before haul-out: owner co-insured with a waiver of subrogation, a sum insured covering the whole vessel, and cover afloat, on the hard, during lifts and tests, and in transit between subcontractor sites.",
-            "detail": "A noted interest alone gives the owner much less. Confirm in writing with the owner’s broker what the hull and machinery policy still covers while the yacht is in the yard."
+            "detail": "A noted interest alone gives the owner much less. Confirm in writing with the owner’s broker what the hull and machinery policy still covers while the yacht is in the yard. Hot-work conditions confirmed alongside the yard’s liability."
+          },
+          {
+            "question": "Redelivery defined in the contract: snag close-out, sea trial acceptance criteria, retention, warranty, as-built drawings, spares, crew familiarisation, class and flag papers, final account.",
+            "detail": "Redelivery is not completion."
           }
         ]
       }
