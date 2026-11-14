@@ -54,7 +54,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Jack Inglis": {
     name: "Jack Inglis",
     avatar: "/images/contributors/jack-inglis.jpg",
-    bio: "Jack Inglis is the founder of ULTIMAR, an owner’s representative practice. He came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea, and joined the industry in 2012 as bosun on a 60 metre support vessel. He has since commanded offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the Yacht Owner Representative Programme. The 1,200-item delivery snag list cited in the new-build chapter is his.",
+    bio: "Jack Inglis is the founder of ULTIMAR, an owner’s representative practice. He came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea, and joined the industry in 2012 as bosun on a 60 metre support vessel. He has since commanded offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the Yacht Owner Representative Programme, and ULTIMAR is SYBAss accredited.",
   },
   "Benjamin Maltby": {
     name: "Benjamin Maltby",
