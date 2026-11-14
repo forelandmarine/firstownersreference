@@ -41,7 +41,7 @@ export async function generateMetadata(props: {
   const description =
     opinion.seoDescription ??
     opinion.intro ??
-    `${opinion.contributor}, ${opinion.contributorRole}, in conversation with The First Owner's Reference.`;
+    `${opinion.contributor}, ${opinion.contributorRole.replace(/\n/g, "; ")}, in conversation with The First Owner's Reference.`;
   return {
     // No brand suffix: the contributor's name and the topic are worth more in
     // a result listing than the publication name, which the domain shows.
@@ -91,7 +91,7 @@ export default async function GuestQAPage(props: {
       headline: `In conversation with ${opinion.contributor}`,
       description:
         opinion.intro ??
-        `${opinion.contributor}, ${opinion.contributorRole}, in conversation with The First Owner's Reference.`,
+        `${opinion.contributor}, ${opinion.contributorRole.replace(/\n/g, "; ")}, in conversation with The First Owner's Reference.`,
       // The interview's own dates, not the chapter's. Every Q&A previously
       // reported the chapter's 1 May publication date.
       datePublished: opinion.datePublished ?? section.datePublished,
@@ -220,7 +220,7 @@ export default async function GuestQAPage(props: {
               </div>
               <p className="meta mt-16 pt-6 border-t border-charcoal max-w-prose">
                 Answers given by {opinion.contributor},{" "}
-                {opinion.contributorRole}. Lightly edited for length and clarity, and
+                {opinion.contributorRole.replace(/\n/g, "; ")}. Lightly edited for length and clarity, and
                 approved by the contributor before publication.
               </p>
             </div>

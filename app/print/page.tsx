@@ -1153,7 +1153,7 @@ export function ChapterBlock({
                     In conversation with {guestOpinion.contributor}
                   </h2>
                   <p className="guest-opinion__intro">
-                    {guestOpinion.contributorRole}. {guestOpinion.intro}
+                    {guestOpinion.contributorRole.replace(/\n/g, "; ")}. {guestOpinion.intro}
                   </p>
                 </div>
               </div>
