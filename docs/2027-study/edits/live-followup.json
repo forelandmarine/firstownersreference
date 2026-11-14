@@ -1,0 +1,16 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "UK goods carry a flat 10 percent (USTR notice of action, 23 July 2026). Yachts over 24 metres carry an MFN duty of 1.5 percent (US tariff headings 8903.23 for sail and 8903.33 for motor), so a yacht built in the EU now pays 10 percent in all.",
+    "new": "UK goods carry an additional 10 percent on top of the MFN duty (USTR notice of action, 23 July 2026). Yachts over 24 metres carry an MFN duty of 1.5 percent (US tariff headings 8903.23 for sail and 8903.33 for motor), so a yacht built in the EU now pays 10 percent in all and one built in the UK 11.5 percent, subject to classification and any product exemption.",
+    "kind": "fact",
+    "reason": "LIVE-06: the UK Section 301 rate is not net of MFN (USTR 23 July 2026; Holland & Knight, Greenberg Traurig summaries)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The advice had not been free. The brokerage was paid for it by the suppliers it had introduced, and the buyer paid those suppliers.",
+    "new": "The brokerage was paid by the suppliers it had introduced, and those payments were not disclosed to the buyer. The case does not show how much of them, if any, was passed on in the suppliers’ prices.",
+    "kind": "fact",
+    "reason": "LIVE-05: no supplier pricing evidence for pass-through to the owner."
+  }
+]
