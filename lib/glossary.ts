@@ -480,6 +480,46 @@ export const glossaryEntries: GlossaryEntry[] = [
     relatedTerms: ["moa"],
   },
   {
+    slug: "refund-guarantee",
+    term: "Refund guarantee",
+    shortDefinition:
+      "A guarantee from a bank or insurer to repay a new build buyer’s stage payments if the yard does not deliver and the buyer terminates under the contract.",
+    longDefinition:
+      "The guarantee is a separate contract between the guarantor and the buyer, and the guarantor’s obligation is independent of any dispute between buyer and yard, which is what protects the buyer against yard insolvency. It covers only the sums paid, not lost use, financing costs, or owner-supplied items, and it responds only to a valid termination and a correctly presented demand. Benjamin Maltby of Keystone Law puts the test simply: a guarantee is worth only as much as the guarantor. A reliable one is issued by a bank of high credit standing independent of the yard and its group, is payable on demand, covers all instalments with interest, and stays valid until delivery plus a margin.",
+    relatedChapters: ["05-new-build-versus-brokerage"],
+    relatedTerms: ["stage-payments", "title-during-construction"],
+  },
+  {
+    slug: "title-during-construction",
+    term: "Title during construction",
+    shortDefinition:
+      "Who owns an unfinished new build and its materials before delivery: the yard, under retention of title, or the buyer, under progressive transfer as stages are paid.",
+    longDefinition:
+      "If the yard keeps title and becomes insolvent, the unfinished vessel is part of the yard’s estate and the buyer is an unsecured creditor, with the refund guarantee as the main recourse. Progressive transfer is stronger on paper than in practice: materials may be unmarked or mixed with others, the insolvency law of the yard’s country may not recognise the transfer, and the insolvency officeholder may refuse to release the vessel. Benjamin Maltby of Keystone Law recommends that the contract require the hull and materials to be marked and kept separately, inspection rights, insurance with the buyer named, a right of entry and removal on default, and a local-law opinion on whether the transfer will be recognised.",
+    relatedChapters: ["05-new-build-versus-brokerage"],
+    relatedTerms: ["refund-guarantee", "stage-payments"],
+  },
+  {
+    slug: "builders-risk",
+    term: "Builder’s risk insurance",
+    shortDefinition:
+      "Insurance on the vessel, materials, and equipment against physical loss or damage during a refit or new build, usually placed by the yard.",
+    longDefinition:
+      "The owner is normally noted as an interested party on the yard’s policy, which, as Benjamin Maltby of Keystone Law points out, gives much less than being a named insured: the owner may have no direct right to claim, no right to see the full policy, and no protection if the yard breaches a policy condition. Before the yacht is hauled the owner obtains the full wording, seeks co-insured status with a waiver of subrogation, and checks that the sum insured covers the whole vessel and that cover runs afloat, on the hard, during lifts and tests, and in transit. The owner’s own hull and machinery policy usually suspends or limits cover while the yacht is in the yard.",
+    relatedChapters: ["06-refit", "07-operations"],
+    relatedTerms: ["hull-insurance", "refit"],
+  },
+  {
+    slug: "possessory-lien",
+    term: "Possessory lien",
+    shortDefinition:
+      "A repairer’s right under English law to keep a yacht it has worked on until it is paid for that work.",
+    longDefinition:
+      "In a refit dispute the yard usually still has the yacht, and the possessory lien gives it strong leverage. Yard contracts often add a contractual lien extended to all sums owed, including disputed amounts and sums under other contracts. A lien is not title, and the yard cannot generally sell without a court process, but lost time is costly, especially in charter season. Release is normally against security: the disputed sum paid into escrow or a solicitor’s client account, or a bank guarantee. Benjamin Maltby of Keystone Law advises settling these terms at the outset, because an owner who first sees them under pressure has already lost most of the bargaining power.",
+    relatedChapters: ["06-refit"],
+    relatedTerms: ["refit", "lmaa"],
+  },
+  {
     slug: "obbba",
     term: "OBBBA bonus depreciation",
     shortDefinition:
