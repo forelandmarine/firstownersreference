@@ -478,6 +478,118 @@
       "datePublished": "2026-08-10",
       "dateModified": "2026-08-10",
       "seoDescription": "The founder of ULTIMAR on what a delivery snag list actually measures, warranty on a well-managed build, and what a construction contract needs."
+    },
+    {
+      "slug": "05-new-build-versus-brokerage",
+      "contributor": "Benjamin Maltby",
+      "contributorRole": "Partner, Keystone Law\nBarrister; superyacht construction, refit, sale and purchase, and finance",
+      "intro": "Benjamin Maltby, a partner at Keystone Law, leads the legal conversation in chapter 06. Keystone provides the legal services this chapter discusses, and separately he has been in discussion with the publisher, Foreland Marine, on a refit shipyard project. We put three further questions to him on the new build contract: the yard’s in-house template, the refund guarantee when a yard’s finances change mid-build, and title during construction. His answers are published as given, lightly edited for typography. They are not legal or tax advice.",
+      "questions": [
+        {
+          "question": "The major European yards do not contract on the maritime industry standard SAJ or NEWBUILDCON terms. They all have in-house templates drafted by their own counsel, often with English law and London arbitration attached. When a first-time buyer’s team receives that first draft, where does the balance of risk sit, and which clauses do you open first?",
+          "answer": [
+            "Major European yards use their own templates. These are drafted by the yard’s counsel for the yard’s benefit. English law and London arbitration are often chosen, as English law is predictable. Arbitration awards can be easier to enforce than court judgments. Further, arbitration is private while court proceedings are public and can attract considerable media attention.",
+            "A first draft is likely to place most risk on the buyer. It usually offers wide rights for the yard to change the specification and the delivery date. It offers narrow rights for the buyer to reject the vessel or terminate. It typically allows liquidated damages for delay only at low rates and capped at a modest total. It can limit liability for defects to a short warranty period.",
+            "Negotiation is usually possible on major points, but yards expect to hold their position on the core structure, and buyers do better by selecting a few essential changes than by redrafting everything."
+          ]
+        },
+        {
+          "question": "Refund guarantees are meant to secure the stage payments a buyer pays forward. Nobiskrug in 2024 and Italian Sea Group in 2026 have shown what happens when a yard’s financial condition changes mid-build. In practice, how much protection does a refund guarantee give, what separates a reliable one from a weak one, and what should be agreed at heads of terms about a distressed-yard scenario before it arises?",
+          "answer": [
+            "A refund guarantee is a promise from a bank or insurer to repay the buyer’s stage payments if the yard fails to deliver and the buyer terminates under the contract. It is a separate contract between the guarantor and the buyer, and the guarantor’s obligation is independent of any dispute between buyer and yard. It protects the buyer against the yard’s insolvency in a way that a claim against the yard cannot, because an insolvent yard cannot pay.",
+            "The protection has limits. The guarantee covers only the sums actually paid, not the buyer’s wider losses, such as lost use, financing costs and expenditure on owner-supplied items. It responds only if its conditions are met. These usually include a valid termination under the contract, a written demand within a time limit, and presentation of specified documents. A guarantor may delay or contest the claim if the demand is defective. A guarantee is worth only as much as the guarantor, so the credit quality of the issuer matters.",
+            "A reliable guarantee has several features. It is issued by a bank of high credit standing, preferably one that is independent of the yard and its group. It is on-demand, which means the guarantor pays on a written demand without investigating the dispute. It covers all instalments, with interest. It has a long enough validity period, usually running until delivery plus a margin.",
+            "The buyer should secure a right to obtain information on the yard’s financial condition at set intervals, and a right to suspend payments if specific warning signs appear, such as missed supplier payments, a rating downgrade, a covenant breach or a shareholder change. The buyer should also agree step-in rights, allowing the buyer to take over the unfinished hull, materials and design files and complete the vessel elsewhere. These points are far easier to agree before the contract is signed than after the first problem appears."
+          ],
+          "pullQuote": "A guarantee is worth only as much as the guarantor, so the credit quality of the issuer matters."
+        },
+        {
+          "question": "Title during construction. Some yards retain title until delivery; others pass it progressively as stages are paid. For an owner who has paid 60 percent of the contract price forward, what does each position mean if the yard fails, and what security would you want in place alongside it?",
+          "answer": [
+            "Title decides who owns the unfinished vessel and materials if the yard fails. Under a retention of title model, the yard owns the vessel until delivery, and the buyer holds only a contractual right to receive it. Under a progressive transfer model, title passes to the buyer as each stage is paid or as materials are identified and incorporated.",
+            "For a buyer who has paid 60 percent of the price, the two positions differ sharply. If the yard keeps title and becomes insolvent, the unfinished vessel is part of the yard’s estate. The buyer is an unsecured creditor, and the buyer’s money is in the hull, which the insolvency officeholder controls and may sell to repay all creditors. The buyer’s main recourse is the refund guarantee. The buyer has no right to remove the vessel.",
+            "If title has passed progressively, the buyer owns the hull and materials paid for, at least in principle. The buyer may then argue that these assets are outside the insolvency estate, and may seek to take them or have them completed by another yard. This position is stronger on paper than in practice. Title may be hard to prove because materials are not marked, are mixed with others or are held by suppliers who retain their own title. The insolvency law of the yard’s country may not respect the transfer. The buyer may lack physical access to the site, and the officeholder may refuse to release the vessel, relying on a lien or on the need to preserve the estate. Court action to recover assets takes time, and a half-built vessel loses value.",
+            "Security should therefore accompany either model. The refund guarantee should cover all payments, including the 60 percent paid. If title has passed progressively, the contract should require the yard to mark and identify the vessel and materials, to keep them separately where possible, to give the buyer inspection rights, and to insure them with the buyer named as insured. The contract should include a clear statement that the yard holds the assets for the buyer and a right of entry and removal on insolvency or default. The buyer should obtain a local-law opinion on whether the transfer of title will be recognised in the yard’s jurisdiction."
+          ],
+          "pullQuote": "If the yard keeps title and becomes insolvent, the unfinished vessel is part of the yard’s estate. The buyer is an unsecured creditor."
+        }
+      ],
+      "datePublished": "2026-11-14",
+      "dateModified": "2026-11-14",
+      "seoDescription": "Benjamin Maltby of Keystone Law on yard contract templates, refund guarantees when a yard is in distress, and title during construction."
+    }
+  ],
+  "06-refit": [
+    {
+      "slug": "06-refit",
+      "contributor": "Benjamin Maltby",
+      "contributorRole": "Partner, Keystone Law\nBarrister; superyacht construction, refit, sale and purchase, and finance",
+      "intro": "Benjamin Maltby is a partner at Keystone Law and a barrister, formerly of Ince & Co, who advises owners, yards and finance providers on superyacht construction, refit, purchase and sale, finance, and operational matters including tax, insurance and employment. Keystone provides the legal services this chapter discusses, and separately he has been in discussion with the publisher, Foreland Marine, on a refit shipyard project. We put seven questions to him on the refit contract against the build contract, the enforceability of “superyacht standard”, emergent work and variations, liability in the service-yard model, builder’s risk insurance, Spanish inward processing, and the yard’s rights over the yacht in a dispute. His answers are published as given, lightly edited for typography. They are not legal or tax advice.",
+      "questions": [
+        {
+          "question": "A refit contract governs work on an asset, carried out inside a yard the owner does not control. What makes it structurally different from a new build contract, and which clauses do you open first when the yard’s standard terms arrive?",
+          "answer": [
+            "These contracts are, of course, fundamentally different. A new build has a defined end product, a specification and a delivery date: the yard is responsible for the timeline. By contrast, the nature, duration and scope of the final refit can change once panels come off. How such changes are managed is central to the refit contract. It’s a process of controlled evolution.",
+            "I always start with the end of the contract: which law and jurisdiction applies. It should be English law and LMAA arbitration. Then I look at the scope and specification clauses which show what’s priced. The variations and emergent work clause shows how extra cost is approved and capped. The liability and indemnity clause shows what the yard excludes, usually consequential loss, loss of charter income and damage to existing systems.",
+            "Any standard form agreement is an opening position, not the yard’s final word."
+          ]
+        },
+        {
+          "question": "The chapter argues that “to superyacht standard” is a clause that is not enforceable, and that a specification should cite the manufacturer’s data sheet or the ISO standard instead. In a dispute, what does that citation actually give the owner, and how far can a contract go in making finish and workmanship measurable?",
+          "answer": [
+            "“To superyacht standard” has no agreed meaning. No regulator, class society or trade body defines it. A court would treat it as too vague to enforce, or would fall back on an implied term that work is done with reasonable skill and care. That implied term is a low bar and depends on expert opinion about what a competent yard would do.",
+            "By contrast, a citation to a manufacturer’s data sheet, an ISO standard, or a class rule gives the owner something external and fixed. Both sides can read it. An expert can test the work against it. Take paint, for example: thickness and gloss can be objectively measured.",
+            "It’d also be helpful to name an independent surveyor to examine compliance at set stages. Reference samples and mock-ups can be useful."
+          ],
+          "pullQuote": "“To superyacht standard” has no agreed meaning. No regulator, class society or trade body defines it."
+        },
+        {
+          "question": "Refit projects routinely run 30 to 50 percent over quoted scope, largely because the scope is priced on imperfect information before the vessel is opened up. How should the contract handle emergent work, variations and milestone payments so the overrun is contained rather than simply invoiced?",
+          "answer": [
+            "An overrun of 30 to 50 percent is partly a pricing problem and partly a contract problem. The quote rests on what could be seen before the vessel was opened. The contract should assume that hidden defects will appear and set rules for them at the outset.",
+            "It should separate fixed-price work from provisional sums and day-rate work, and label each in the quote. It should require a pre-works survey, with the yard’s findings recorded, so that conditions found later can be compared with a baseline.",
+            "The yard should have no right to carry out additional work, or to charge for it, without a written variation order signed by a named person for the owner. Each variation request should set out the cause, the proposed work, the price, the effect on programme and the effect on other trades. The owner needs the right to decline, to get a second opinion and to have the work done later or elsewhere where practicable."
+          ]
+        },
+        {
+          "question": "Under the service-yard model at STP Palma or Lauderdale Marine Center, the owner contracts the trades directly. Where does liability sit when one trade’s work interacts with another’s and something fails, and what should the owner’s set of contracts look like?",
+          "answer": [
+            "In a service yard, the yard provides the berth, the lift, the utilities and the site rules. It does not manage or guarantee the work. The owner, or the owner’s project manager acting as agent, contracts directly with each trade: engineers, painters, joiners, electricians, and others. Each trade is liable only for its own contract and its own work.",
+            "This creates a gap. When one trade’s work interacts with another’s and something fails, each trade can point at the other. A new pump installed by one contractor may overheat a cable installed by another. An electrician may blame the engine installer’s mounting. The owner bears the burden of proving which trade caused the loss, which often requires expert evidence and time, and may find that neither trade has caused it alone.",
+            "Nobody holds overall responsibility for coordination unless the owner has appointed someone and given them that duty in writing. The owner’s contracts should therefore be consistent and structured as a set. Each should use the same governing law and dispute forum."
+          ]
+        },
+        {
+          "question": "During works the relevant cover is builder’s risk, taken out by the yard with the owner’s interest noted. What should the owner verify about that policy and the yard’s own liability terms before the yacht is hauled, and where does the gap between the two most often fall on the owner?",
+          "answer": [
+            "Builder’s risk insurance covers physical loss or damage to the vessel and to materials and equipment during the works. It is usually arranged by the yard under its own policy, with the owner noted as an interested party. A noted interest gives the owner much less than being a named insured. The owner may have no direct right to claim, no right to see the full policy, and no protection if the yard breaches a policy condition.",
+            "Before the yacht is hauled, the owner should obtain the full policy wording and not only a certificate. The owner should check who the insured parties are and whether the owner is a co-insured with a waiver of subrogation, so that the insurer cannot pursue the owner after paying a claim. The sum insured should reflect the value of the whole vessel, not only the value of the works. The cover should include the yacht in the water, on the hard, during lifts, during tests and in transit.",
+            "Exclusions need attention: faulty workmanship, defective design, wear and tear, pre-existing damage, and delay. Deductibles should be understood, together with who bears them. Fire, storm, theft and loss of materials stored off-site must be covered.",
+            "The owner’s own hull and machinery policy usually suspends or limits cover while the yacht is in a yard, so the owner should speak to the broker before the works begin and confirm in writing what remains in force."
+          ],
+          "pullQuote": "A noted interest gives the owner much less than being a named insured."
+        },
+        {
+          "question": "Spanish Inward Processing Relief suspends 21 percent VAT on a refit for a non-EU flagged yacht. Which conditions most often trip an owner up, and what is the exposure if the procedure is not followed correctly?",
+          "answer": [
+            "Spain is an EU member, so goods and services supplied there normally attract Spanish VAT at 21 percent. As I understand it, and I’m not a Spanish lawyer, for a yacht under a non-EU flag the refit can proceed with VAT suspended under the customs procedure known as Inward Processing. The yacht is treated as non-Union goods that are temporarily in the EU for repair or modification and will leave afterwards.",
+            "The relief is not automatic. Authorisation must be in place before the works begin, and it must be sought through the yard or an agent with the correct customs status, not afterwards. The owner is often told that the yard “handles the VAT”, but responsibility for compliance rests with the owner as the person in whose name the procedure runs.",
+            "If the procedure is not followed correctly, the customs authority can treat the yacht as released for free circulation. VAT at 21 percent becomes payable on the value of the works and may extend to the yacht itself, together with interest and penalties, and potentially a customs offence."
+          ]
+        },
+        {
+          "question": "When a refit falls into dispute, the yacht is usually still in the yard. What rights does the yard have over the vessel, how is release against security normally arranged, and what should have been agreed at the outset so the owner is not finding out under pressure?",
+          "answer": [
+            "When a dispute arises, the yacht is typically still in the yard, and that gives the yard strong leverage. The yard has physical possession. Under English law, a repairer usually has an automatic “possessory lien” over the yacht on which it has done work, and the right to retain the item until paid for that work. The yard’s contract often adds a contractual lien, extended to cover all sums owed, including disputed ones and amounts under other contracts.",
+            "A lien is not a title to the yacht, and a yard cannot generally sell without a court process, but practical leverage is considerable, and time lost is costly, especially during a charter season. Release is normally arranged against security. The owner pays the disputed sum into escrow or a solicitor’s client account, or provides a bank guarantee.",
+            "Upfront advice is vital: an owner who sees these terms for the first time under pressure has already lost most of the bargaining power."
+          ],
+          "pullQuote": "An owner who sees these terms for the first time under pressure has already lost most of the bargaining power."
+        }
+      ],
+      "datePublished": "2026-11-14",
+      "dateModified": "2026-11-14",
+      "seoDescription": "Benjamin Maltby of Keystone Law on refit contracts, “superyacht standard”, variations, builder’s risk, Spanish inward processing and yard liens."
     }
   ],
   "09-decision-framework": [
