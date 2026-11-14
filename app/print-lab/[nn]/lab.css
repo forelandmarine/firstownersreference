@@ -1,0 +1,36 @@
+/* Layout spike only. See page.tsx. */
+
+/* Side-column grid: the outer margin grows by 40mm (a 34mm side column
+   plus its 6mm gap), mirrored, so the two text columns sit towards the
+   spine and the outer column stays white. Named page so it can mirror. */
+@page labside:left {
+  margin-left: 59mm;
+}
+@page labside:right {
+  margin-right: 59mm;
+}
+.lab--side { page: labside; }
+
+/* Head picture. Option A: starts a page, outside any multicol.
+   Option B: spans inside the one flow. Both fill the text width. */
+.lab-head {
+  margin: 0 0 7mm 0;
+  break-inside: avoid;
+}
+.lab-head img {
+  width: 100%;
+  height: 92mm;
+  object-fit: cover;
+  display: block;
+}
+.lab-head figcaption {
+  font-family: var(--font-furniture);
+  font-size: 7pt;
+  line-height: 9.5pt;
+  color: var(--colour-soft);
+  margin-top: 2.5mm;
+}
+.lab-head--a { break-before: page; }
+.lab-head--b { column-span: all; margin-top: 4mm; }
+
+.lab-seg + .lab-seg { margin-top: 0; }
