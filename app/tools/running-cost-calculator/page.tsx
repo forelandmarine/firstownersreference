@@ -984,7 +984,7 @@ export default function RunningCostCalculatorPage() {
                   href="https://forelandmarine.com/contact"
                   external
                 >
-                  Speak with Foreland Marine
+                  Email Us
                 </ButtonPrimary>
               </div>
             </div>
