@@ -331,7 +331,7 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="04.01"
       title="VAT on a EUR 4 m yacht purchase, default jurisdictions"
-      standfirst="Three legitimate alternatives reduce or eliminate this exposure: French Commercial Exemption, Spanish Inward Processing Relief, Maltese leasing scheme."
+      standfirst="The French Commercial Exemption and leasing in Malta or Italy can reduce or remove this on purchase. Spanish inward processing is separate: it covers VAT on refit works, not on the yacht."
       caption="On a EUR 4 m yacht purchased in the listed jurisdiction, default VAT bill at sale."
       source="National tax authority published rates; Hill Dickinson, Watson Farley & Williams comparative analysis."
     >
