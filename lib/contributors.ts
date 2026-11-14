@@ -44,7 +44,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Simon Roberts": {
     name: "Simon Roberts",
     avatar: "/images/contributors/simon-roberts.jpg",
-    bio: "Simon Roberts is a corporate services provider at Quadrant Group, which has advised marine clients on yacht ownership structures from the Isle of Man for forty years.",
+    bio: "Simon Roberts is managing director of Quadrant Group, a management-owned corporate services provider in the Isle of Man that structures and administers yacht ownership through the Isle of Man, Malta, Jersey, the Cayman Islands and the Marshall Islands, and provides crew management. He has worked in shipping and yacht management for more than 20 years, including extended periods in Eastern Europe, South Africa and the Philippines, and has set up two large yacht crew management companies. From 2010 to 2021 he was with Dominion Marine Group, latterly as director and head of yachting services across its Isle of Man, Jersey, Malta and Monaco offices. He is a qualified QMS lead auditor and ISM auditor, and holds diplomas in crew management (Lloyd’s Maritime accredited) and superyacht management (MTA).",
   },
   "Ollie Davis": {
     name: "Ollie Davis",
