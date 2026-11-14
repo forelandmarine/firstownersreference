@@ -163,9 +163,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "spanish-ipr",
     term: "Spanish IPR",
     shortDefinition:
-      "Inward Processing Relief. A customs regime allowing non-EU yachts to undergo refit work in Spain without paying import VAT, provided they are subsequently re-exported.",
+      "Inward Processing Relief. A customs procedure under which a non-EU yacht is refitted in Spain with the VAT on the works exempt, provided the procedure is followed and the yacht leaves the EU.",
     longDefinition:
-      "Spanish IPR (Inward Processing Relief) is the EU customs regime under which a non-EU-flagged yacht can enter Spain for refit work without triggering EU VAT or import duty, provided the yacht is re-exported on completion. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. Equivalent regimes exist in France (Commercial Exemption) and Italy.",
+      "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht’s departure from the EU. It is separate from temporary admission, which covers the yacht’s use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules.",
     relatedChapters: ["06-refit"],
     relatedTerms: ["temporary-admission", "vat-paid-status"],
   },

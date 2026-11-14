@@ -336,7 +336,12 @@
             "detail": "Stage payment loading above 70 percent before delivery sits outside the industry-typical range."
           },
           {
-            "question": "Refund guarantee credit quality (tier-one bank pay-on-demand vs surety wrapper)."
+            "question": "Refund guarantee from a bank of high credit standing, independent of the yard and its group, payable on demand, covering all instalments with interest, and valid to delivery plus a margin.",
+            "detail": "It repays only sums paid, not lost use, financing costs, or owner-supplied items, and only against a valid termination and a correctly presented demand."
+          },
+          {
+            "question": "Rights to the yard’s financial information at set intervals, to suspend payments on named warning signs, and to step in and complete the vessel elsewhere.",
+            "detail": "Warning signs include missed supplier payments, a rating downgrade, a covenant breach, or a shareholder change. Step-in covers the unfinished hull, materials, and design files."
           },
           {
             "question": "Liquidated damages cap defined and at a level that reflects the project.",
@@ -359,7 +364,8 @@
             "question": "Cancellation thresholds (150 days post-delivery / 180 days total) understood and within the project’s tolerance."
           },
           {
-            "question": "Title position during construction clarified (yard-retained until delivery, or progressive transfer)."
+            "question": "Title position during construction clarified (yard-retained until delivery, or progressive transfer).",
+            "detail": "Where title passes progressively: hull and materials marked and kept separately, inspection rights, insurance with the buyer named, a right of entry and removal on default, and a local-law opinion that the transfer will be recognised. Where the yard keeps title, the refund guarantee is the main protection."
           },
           {
             "question": "Dispute forum on English law plus LMAA arbitration, the practitioner default."
@@ -417,6 +423,10 @@
           },
           {
             "question": "Selection on track record, alignment, and project manager experience, rather than cheapest quote."
+          },
+          {
+            "question": "Under the service-yard model, one person appointed in writing to coordinate the trades, with every trade contract on the same governing law and dispute forum.",
+            "detail": "Each trade is liable only for its own work. Without a coordinator, the owner carries the burden of proving which trade caused a failure."
           }
         ]
       },
@@ -428,6 +438,13 @@
           },
           {
             "question": "Owner’s representative review and edit of the scope, line by line."
+          },
+          {
+            "question": "A pre-works survey with the yard’s findings recorded, as the baseline against which emergent work is judged."
+          },
+          {
+            "question": "No additional work carried out or charged without a written variation order signed by a named person for the owner.",
+            "detail": "Each variation states its cause, price, and effect on programme and on the other trades. The owner keeps the right to decline it, take a second opinion, or have the work done later or elsewhere."
           },
           {
             "question": "A contingency reserve of 15 to 25 percent included in the budget.",
@@ -443,6 +460,10 @@
           },
           {
             "question": "A final payment held against snag list closure, after redelivery, to incentivise warranty discipline."
+          },
+          {
+            "question": "The yard’s lien and the terms for releasing the yacht against security (escrow or bank guarantee) agreed before the yacht is hauled.",
+            "detail": "Under English law a repairer can usually hold the yacht until paid, and yard terms often extend that to disputed sums. These terms are negotiated at the outset, not in a dispute."
           }
         ]
       },
@@ -453,10 +474,12 @@
             "question": "Owner’s representative on site at least one day per week, with photographic snag list and quantified variance against budget."
           },
           {
-            "question": "VAT structure (Spanish IPR if applicable, French Commercial Exemption, Maltese leasing) analysed and selected by independent counsel."
+            "question": "VAT structure (Spanish IPR if applicable, French Commercial Exemption, Maltese leasing) analysed and selected by independent counsel.",
+            "detail": "Under Spanish IPR, authorisation must be in place before the works begin, and compliance rests with the owner, not the yard."
           },
           {
-            "question": "Builder’s risk insurance verified, with the buyer’s interest noted and the policy covering transit between subcontractor sites."
+            "question": "Builder’s risk wording read in full before haul-out: owner co-insured with a waiver of subrogation, a sum insured covering the whole vessel, and cover afloat, on the hard, during lifts and tests, and in transit between subcontractor sites.",
+            "detail": "A noted interest alone gives the owner much less. Confirm in writing with the owner’s broker what the hull and machinery policy still covers while the yacht is in the yard."
           }
         ]
       }

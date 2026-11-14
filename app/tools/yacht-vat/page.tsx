@@ -70,7 +70,7 @@ const FAQS = [
   {
     question: "What is Spanish Inward Processing Relief for yachts?",
     answer:
-      "Spanish IPR is the EU customs regime under which a non-EU-flagged yacht can enter Spain for refit work without triggering EU VAT or import duty, provided the yacht is re-exported on completion. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca, and equivalents exist in France (Commercial Exemption) and Italy. Independent counsel selects the VAT structure for the specific refit scope.",
+      "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht's departure from the EU. It is separate from temporary admission, which covers the yacht's use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel selects the VAT structure for the specific refit scope.",
   },
   {
     question: "What is the VAT on yacht charters in Italy in 2026?",
@@ -367,10 +367,15 @@ export default function YachtVat2026Page() {
                       Spanish Inward Processing Relief
                     </Link>
                   </strong>{" "}
-                  allows a non-EU yacht to enter Spain for refit work without
-                  triggering EU VAT or import duty, provided the yacht is
-                  re-exported on completion. Used heavily at MB92 Barcelona,
-                  STP Palma, and Astilleros de Mallorca.
+                  is the customs procedure under which a non-EU yacht is
+                  refitted in Spain with the 21 percent VAT on the works
+                  exempt, provided the procedure is followed through to the
+                  yacht's departure from the EU. It is separate from Temporary
+                  Admission, which does not cover a structural refit.
+                  Authorisation must be in place before the works begin, and
+                  compliance rests with the owner rather than the yard. Used
+                  heavily at MB92 Barcelona, STP Palma, and Astilleros de
+                  Mallorca.
                 </p>
                 <p>
                   <strong>French Commercial Exemption</strong> exempts

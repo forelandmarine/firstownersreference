@@ -112,7 +112,7 @@
     },
     {
       "question": "What is Spanish Inward Processing Relief for yachts?",
-      "answer": "Spanish IPR (Inward Processing Relief) is the EU customs regime under which a non-EU-flagged yacht can enter Spain for refit work without triggering EU VAT or import duty, provided the yacht is re-exported on completion. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. Equivalent regimes exist in France (Commercial Exemption) and Italy. Independent counsel should select the VAT structure for the specific refit scope. Builder’s risk insurance with the buyer’s interest noted should cover transit between subcontractor sites."
+      "answer": "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht’s departure from the EU. It is separate from temporary admission, which covers the yacht’s use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel should select the VAT structure for the specific refit scope."
     }
   ],
   "07-operations": [
@@ -126,7 +126,7 @@
     },
     {
       "question": "What insurance does a superyacht need?",
-      "answer": "Hull insurance at 0.7 to 1.5 percent of insured value for a well-maintained 40 to 50 metre yacht. P&I cover for crew injury, environmental liability, third-party, and charter guest claims at USD 500 million third-party limit through Shipowners’ Club or Steamship Mutual. Competitive quotes from at least three of Pantaenius, AON Marine, and Gallagher Specialty before binding. Builder’s risk insurance during refit, with the buyer’s interest noted and policy covering transit between subcontractor sites."
+      "answer": "Hull insurance at 0.7 to 1.5 percent of insured value for a well-maintained 40 to 50 metre yacht. P&I cover for crew injury, environmental liability, third-party, and charter guest claims at USD 500 million third-party limit through Shipowners’ Club or Steamship Mutual. Competitive quotes from at least three of Pantaenius, AON Marine, and Gallagher Specialty before binding. Builder’s risk insurance during refit, with the owner co-insured under a waiver of subrogation rather than only noted, a sum insured covering the whole vessel, and cover in transit between subcontractor sites; the owner’s own hull policy usually suspends or limits cover while the yacht is in the yard."
     },
     {
       "question": "Should I operate my yacht as a charter yacht?",

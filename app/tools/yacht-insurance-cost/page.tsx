@@ -96,7 +96,7 @@ const LINES = [
   {
     line: "Builder's risk",
     basis: "Duration of refit or new build",
-    rate: "Normally placed by the yard with the owner's interest noted; verify named-insured status and cover for transit between subcontractor sites",
+    rate: "Normally placed by the yard with the owner's interest noted, which gives the owner much less than co-insured status; read the full wording, seek co-insured status with a waiver of subrogation and a whole-vessel sum insured, and confirm cover for transit between subcontractor sites. The owner's own hull policy usually suspends or limits cover in the yard",
   },
   {
     line: "Charter operation uplift",
