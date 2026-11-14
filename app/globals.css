@@ -272,11 +272,13 @@ summary::-webkit-details-marker {
 }
 
 .checklist-print .sheet-group {
-  break-inside: avoid;
+  /* Groups may run across the column break; items and headings stay whole. */
+  break-inside: auto;
   margin-bottom: 5mm;
 }
 
 .checklist-print .sheet-group-heading {
+  break-after: avoid;
   font-family: var(--font-sans);
   font-weight: 500;
   text-transform: uppercase;
@@ -380,6 +382,11 @@ summary::-webkit-details-marker {
 @media print {
   /* Print rules scoped to the checklist tool only. The /print magazine
      route uses its own stylesheet and must not be forced to white. */
+  /* Named page so the /print magazine route keeps its own @page rules. */
+  @page checklist {
+    size: A4;
+    margin: 0;
+  }
   .checklist-print {
     background: #fff !important;
     min-height: 0;
@@ -397,5 +404,6 @@ summary::-webkit-details-marker {
     margin: 0;
     box-shadow: none;
     page-break-after: avoid;
+    page: checklist;
   }
 }

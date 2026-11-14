@@ -420,11 +420,11 @@
             "question": "Strategic fit of the post-refit yacht against the actual continued use case, on paper."
           },
           {
-            "question": "The alternative arithmetic (sale, reacquisition of comparable hull, depreciation, transaction cost, crew continuity loss) tested against the refit case."
+            "question": "The sale-and-replace arithmetic (depreciation, transaction cost, crew continuity) tested against the refit case."
           },
           {
-            "question": "A ten-year cost profile, with annual maintenance, planned refit, regulatory works, and owner upgrades kept as four separate budgets.",
-            "detail": "Shows the years where major items fall due together. Costs outside the yard invoice (accommodation, travel, storage, security) included."
+            "question": "A ten-year cost profile with four budgets kept apart: maintenance, planned refit, regulatory works, owner upgrades.",
+            "detail": "Costs outside the yard invoice included."
           }
         ]
       },
@@ -432,20 +432,16 @@
         "heading": "Yard selection",
         "items": [
           {
-            "question": "The yard’s physical envelope checked first: travel lift capacity and beam, shed and door size, air draft, approach depth."
+            "question": "The yard’s physical envelope checked first: lift capacity and beam, shed, air draft, approach depth."
           },
           {
-            "question": "A yard appropriate for the scope (paint, structural, mechanical, interior) and tonnage."
+            "question": "A yard suited to the scope and tonnage, chosen on track record and project team rather than cheapest quote."
           },
           {
-            "question": "Yard slot booked 12 to 18 months ahead of the work itself, in line with current top-yard lead times."
+            "question": "Yard slot booked 12 to 18 months ahead of the work."
           },
           {
-            "question": "Selection on track record, alignment, and project manager experience, rather than cheapest quote."
-          },
-          {
-            "question": "Under the service-yard model, one person appointed in writing to coordinate the trades, with every trade contract on the same governing law and dispute forum.",
-            "detail": "Each trade is liable only for its own work. Without a coordinator, the owner carries the burden of proving which trade caused a failure."
+            "question": "At a service yard, one person appointed in writing to coordinate the trades, with every trade contract on the same law and forum."
           }
         ]
       },
@@ -453,72 +449,58 @@
         "heading": "Scope discipline",
         "items": [
           {
-            "question": "Scope defined in writing, with specific deliverables, materials, and finishes, before the contract is signed."
+            "question": "Scope defined in writing (deliverables, materials, finishes) and reviewed line by line by the owner’s representative."
           },
           {
-            "question": "Owner’s representative review and edit of the scope, line by line."
+            "question": "A pre-works survey recorded as the baseline for emergent work, with critical areas opened first."
           },
           {
-            "question": "A naval architect’s tonnage calculation in the scope before it is signed, where any work adds enclosed volume.",
-            "detail": "On a 499 GT yacht, an increase of more than 1 percent triggers remeasurement and can bring the 500 GT commercial package."
+            "question": "Work sorted into mandatory, recommended, and the owner’s call, with a Deferred Items Register for what is not done."
           },
           {
-            "question": "A pre-works survey with the yard’s findings recorded, as the baseline against which emergent work is judged."
+            "question": "A design freeze date, after which every change is a priced variation signed by a named person for the owner."
           },
           {
-            "question": "No additional work carried out or charged without a written variation order signed by a named person for the owner.",
-            "detail": "Each variation states its cause, price, and effect on programme and on the other trades. The owner keeps the right to decline it, take a second opinion, or have the work done later or elsewhere."
+            "question": "Long-lead items given decide-by dates, and the contract type (fixed price, cost plus, target cost) matched to the scope."
           },
           {
-            "question": "A design freeze date set and known to everyone, with every later change priced, programmed, and approved as a variation."
+            "question": "A naval architect’s tonnage calculation in the scope wherever the work adds enclosed volume.",
+            "detail": "Over 1 percent on a 499 GT yacht triggers remeasurement."
           },
           {
-            "question": "Work sorted into mandatory, recommended, and the owner’s call, with reasons, and a Deferred Items Register kept for what is not done."
-          },
-          {
-            "question": "Long-lead items listed with decide-by dates, and the contract type (fixed price, cost plus, target cost) matched to how well the scope is defined."
-          },
-          {
-            "question": "A contingency reserve of 15 to 25 percent included in the budget.",
-            "detail": "This is the empirical opened-up-vessel pattern."
+            "question": "A contingency reserve of 15 to 25 percent in the budget."
           }
         ]
       },
       {
-        "heading": "Milestone payments",
+        "heading": "Payments and security",
         "items": [
           {
-            "question": "Payments tied to defined deliverables (paint cells complete, engine reinstall complete, sea trials passed) rather than calendar dates."
+            "question": "Payments tied to defined deliverables rather than calendar dates, with a retention held against snag close-out."
           },
           {
-            "question": "A final payment held against snag list closure, after redelivery, to incentivise warranty discipline."
+            "question": "The yard’s lien and the terms for release against security (escrow or bank guarantee) agreed before haul-out."
           },
           {
-            "question": "The yard’s lien and the terms for releasing the yacht against security (escrow or bank guarantee) agreed before the yacht is hauled.",
-            "detail": "Under English law a repairer can usually hold the yacht until paid, and yard terms often extend that to disputed sums. These terms are negotiated at the outset, not in a dispute."
+            "question": "Redelivery defined in the contract: snags, sea trial criteria, warranty, as-built drawings, spares, class papers, final account."
+          },
+          {
+            "question": "VAT structure selected by independent counsel, with any Spanish IPR authorisation in place before works begin."
           }
         ]
       },
       {
-        "heading": "Site presence and reporting",
+        "heading": "Site presence and insurance",
         "items": [
           {
-            "question": "A condition record of time-stamped photographs and video before yard entry, and a recorded captain handover in the first fortnight."
+            "question": "A dated photo and video condition record before yard entry, and a recorded captain handover in the first fortnight."
           },
           {
-            "question": "Owner’s representative on site at least one day per week, with photographic snag list and quantified variance against budget."
+            "question": "Owner’s representative on site at least weekly, with photographic snag list and variance against budget."
           },
           {
-            "question": "VAT structure (Spanish IPR if applicable, French Commercial Exemption, Maltese leasing) analysed and selected by independent counsel.",
-            "detail": "Under Spanish IPR, authorisation must be in place before the works begin, and compliance rests with the owner, not the yard."
-          },
-          {
-            "question": "Builder’s risk wording read in full before haul-out: owner co-insured with a waiver of subrogation, a sum insured covering the whole vessel, and cover afloat, on the hard, during lifts and tests, and in transit between subcontractor sites.",
-            "detail": "A noted interest alone gives the owner much less. Confirm in writing with the owner’s broker what the hull and machinery policy still covers while the yacht is in the yard. Hot-work conditions confirmed alongside the yard’s liability."
-          },
-          {
-            "question": "Redelivery defined in the contract: snag close-out, sea trial acceptance criteria, retention, warranty, as-built drawings, spares, crew familiarisation, class and flag papers, final account.",
-            "detail": "Redelivery is not completion."
+            "question": "Builder’s risk wording read in full: owner co-insured with a waiver of subrogation, whole-vessel sum insured, hot work and transit covered.",
+            "detail": "Confirm in writing what the owner’s hull policy still covers in the yard."
           }
         ]
       }
