@@ -59,7 +59,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Benjamin Maltby": {
     name: "Benjamin Maltby",
     avatar: "/images/contributors/benjamin-maltby.jpg",
-    bio: "A partner at Keystone Law and a barrister, formerly of Ince & Co, who advises owners, yards and finance providers on superyacht construction, refit, purchase and sale, finance, and operational matters including tax, insurance and employment.",
+    bio: "A partner at Keystone Law, General Secretary of The Owners Club, and a barrister, formerly of Ince & Co, who advises owners, yards and finance providers on superyacht construction, refit, purchase and sale, finance, and operational matters including tax, insurance and employment.",
   },
 };
 
