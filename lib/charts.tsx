@@ -280,7 +280,7 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="03.02"
       title="Two parallel commission norms, on a EUR 28 m sale"
-      standfirst="The same yacht, the same buyer, the same seller — and a EUR 850,000 spread between which scale the brokers apply. The seller does not always know which is being used. The buyer almost never does."
+      standfirst="The same yacht, the same buyer and the same seller, with a EUR 1.1 million difference depending on which scale the brokers apply. The seller does not always know which is being used. The buyer almost never does."
       caption="Commission paid by the seller under each scale. Both structures are routinely described as 'the standard' by the brokers using them."
       source="IYBA standard practice; MYBA Memorandum of Agreement; practitioner commentary by Cromwell Littlejohn (Northrop & Johnson)."
     >
@@ -288,20 +288,20 @@ export const charts: Record<string, () => React.ReactElement> = {
         domainMax={3000}
         rows={[
           {
-            label: "IYBA / US norm — flat 10 percent",
+            label: "IYBA / US norm, flat 10 percent",
             value: 2800,
             display: "EUR 2,800,000",
             emphasis: true,
           },
           {
             label: "MYBA sliding scale",
-            value: 1950,
-            display: "EUR 1,950,000",
+            value: 1700,
+            display: "EUR 1,700,000",
           },
           {
-            label: "Buyer-broker share (mid)",
-            value: 1260,
-            display: "EUR 1,120,000 to 1,400,000",
+            label: "Buyer-broker share, about half",
+            value: 1125,
+            display: "EUR 850,000 to 1,400,000",
           },
         ]}
       />

@@ -1,0 +1,233 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "The superyacht market is one of the few luxury sectors in which the buyer routinely pays for the seller’s adviser. This is the chapter nobody publishes a magazine about.",
+    "new": "In most superyacht purchases, the broker guiding the buyer is paid out of the seller’s commission, and the suppliers that broker introduces may pay the broker again. Neither payment appears on the buyer’s invoices.",
+    "kind": "fact",
+    "reason": "C5: standfirst said the buyer pays the seller's adviser while para 4 says the seller pays; restated to match paras 4, 18 and 19; drops unsupported 'nobody publishes' line (fairness flag 3)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "is that the structure of the market places most of the people around the acquisition on the other side of the table.",
+    "new": "is who was paying the people around the acquisition.",
+    "kind": "line",
+    "reason": "Fairness flag 4: 'most of the people ... on the other side' generalised beyond the evidence; the paragraph's own examples make the point"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "This is not bad practice so much as the shape of the market.",
+    "new": "This follows from how the market pays its people more than from the conduct of any one broker.",
+    "kind": "line",
+    "reason": "Sets one register for the chapter (how the market is paid), replacing the 'not X so much as Y' shape"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A typical brokerage sale of a 40-metre yacht for EUR 28 million moves between EUR 1.4 million and EUR 2.8 million in commissions, depending on which of two parallel norms is applied.",
+    "new": "A brokerage sale of a 40-metre yacht for EUR 28 million carries between about EUR 1.7 million and EUR 2.8 million in commission, depending on which of two parallel norms is applied.",
+    "kind": "fact",
+    "reason": "C4: the MYBA scale on EUR 28 million gives EUR 1.7 million (1.0 + 0.5 + 0.2), not EUR 1.4 million; working in report"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The US norm, aligned with the International Yacht Brokers Association (IYBA), is a flat 10 percent of gross sale price, paid by the seller. On a USD 50 million sale, that is USD 5 million. The Mediterranean Yacht Brokers Association (MYBA) sliding scale is 10 percent on the first USD 10 million, 5 percent on the second, 2.5 percent above. On a USD 50 million sale, that is USD 2.25 million. The seller does not always know which is being applied. The buyer almost never knows. The 4 to 5 percent of gross sale price typically captured by the buyer’s broker, paid out of the seller’s commission pool, is the same arithmetic from either base.",
+    "new": "The US norm, associated with the International Yacht Brokers Association (IYBA), is a flat 10 percent of gross sale price, paid by the seller. On a USD 50 million sale, that is USD 5 million. The Mediterranean Yacht Brokers Association (MYBA) sliding scale is 10 percent on the first USD 10 million, 5 percent on the second, 2.5 percent above. On a USD 50 million sale, that is USD 2.25 million; with the bands applied in euros, the EUR 28 million sale above carries EUR 1.7 million. The seller does not always know which is being applied. The buyer is rarely told. The buyer’s broker is paid out of the seller’s commission, typically half of it or a little less. On the US base that is 4 to 5 percent of the gross sale price. On the MYBA scale it is smaller: about EUR 850,000, or 3 percent, on the EUR 28 million sale.",
+    "kind": "fact",
+    "reason": "C4: 4 to 5 percent cannot come 'from either base' when the whole MYBA commission on USD 50 million is 4.5 percent; shares stated per base, working in report"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The standard form normalises a fiduciary impossibility.",
+    "new": "A broker bound by those carve-outs cannot act fully for either side, and the standard form makes that the starting position of the transaction.",
+    "kind": "line",
+    "reason": "Fairness flag 5: replaces the label with what the clause does"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The litigation does establish that the practice is sufficiently common and sufficiently questioned to reach federal court.",
+    "new": "The litigation shows that the practice is questioned seriously enough to reach federal court.",
+    "kind": "fact",
+    "reason": "A pleading cannot establish how common a practice is; claim limited to what the case shows"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "There is no financial regulator in any major jurisdiction that supervises yacht brokerage conduct.",
+    "new": "Beyond state rules of this kind in the United States, no major jurisdiction has a financial regulator that supervises yacht brokerage conduct.",
+    "kind": "fact",
+    "reason": "Fairness flag 6: the sentence contradicted the California and Florida rules cited in the same paragraph"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Disclosure of the relationship is not consistently made when C&N markets a Fincantieri-built yacht; the conflict is structural, and lasts as long as the shareholding does.",
+    "new": "A buyer offered a Fincantieri-built yacht through C&N can ask, in writing, whether the shareholding has been disclosed. The conflict lasts as long as the shareholding does.",
+    "kind": "fact",
+    "reason": "Unsourced allegation about a named firm's disclosure practice removed; flagged for the author to restore if a source is held"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "If Fincantieri’s holding survives, the structural conflict the chapter named is compounded rather than resolved.",
+    "new": "If Fincantieri’s holding survives, the conflict described above is compounded.",
+    "kind": "line",
+    "reason": "Cuts 'structural' and the 'rather than' shape"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " The EUR 50 million enterprise value, at roughly twelve times EBITDA, is itself a useful segment comparable for the yacht-services valuations buyers do not typically see.",
+    "new": "",
+    "kind": "line",
+    "reason": "Structural read ch03 14: aside, figures already given in para 13"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "both brokerages would then sit in the same group as a global marina operator.",
+    "new": "both brokerages would then sit in the same group as a global marina operator that also owns the Rybovich refit yard in West Palm Beach (chapter 6).",
+    "kind": "structure",
+    "reason": "Structural read ch03 15: applies the chapter's argument to refit using ch06 54 (Safe Harbor owns Rybovich)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Independent founder-led houses are now the minority by deal volume. PE owners require EBITDA growth, which incentivises cross-selling more services per yacht, capturing recurring management and refit spend, and consolidating commission pools, with the result that the “free advice” model is more profitable under PE ownership rather than less.",
+    "new": "Several of the largest brokerage names have taken outside capital since 2019. Private equity owners look for EBITDA growth, which rewards selling more services per yacht, capturing recurring management and refit spend, and consolidating commission pools. On that reading, the “free advice” model becomes more valuable to such owners, not less.",
+    "kind": "fact",
+    "reason": "Fairness flag 7: unsourced deal-volume claim replaced with what para 15 shows; PE effect marked as interpretation"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The numbers are not small. They also do not appear on any invoice to the owner,",
+    "new": "Neither appears on any invoice to the owner,",
+    "kind": "line",
+    "reason": "Closing one-line declaration cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Particular firms are not named here because the practice is industry-wide. When the buyer’s adviser earns more because the buyer spends more with counterparties the adviser has steered them toward, the adviser’s incentives are not aligned with the buyer’s. That arrangement is the default of the superyacht industry.",
+    "new": "Retrocessions are widely acknowledged in the trade, but they are paid privately and the published record does not show which firms take them, so no firm is named in this section. When the buyer’s adviser earns more because the buyer spends more with counterparties the adviser has steered them toward, the adviser’s interests and the buyer’s pull apart. Disclosed in writing, that payment is something the buyer can weigh. Undisclosed, it is a cost the buyer carries without knowing whose interest it served.",
+    "kind": "fact",
+    "reason": "Fairness flag 8: firms are named elsewhere in the chapter, and 'the default of the industry' went beyond the evidence; restated against paras 18 and 21 and the disclosure standard"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "An experienced broker, well-aligned and well-led, noticeably reduces",
+    "new": "An experienced broker, well led and open about how they are paid, noticeably reduces",
+    "kind": "line",
+    "reason": "Replaces 'well-aligned' with the concrete condition"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "None of the structural critique above applies to that work. The critique applies to the undisclosed incentives that travel alongside the commission, and to the role ambiguity that asks one firm to answer to both sides of the same transaction. Disclosure and clearly named roles solve most of it; their absence is what the chapter has documented.",
+    "new": "The critique above is not aimed at that work. It is aimed at incentives that travel undisclosed alongside the commission, and at the role ambiguity that asks one firm to answer to both sides of the same transaction. The standard this book applies is written disclosure. A party paid on completion, or by commission, can be engaged, provided the payment, its amount or rate, and who makes it are set out to the buyer in writing in advance, and the party’s role in the transaction is named. The buyer can then weigh the advice against the payment. The independence test in chapter 9 is built on the same rule.",
+    "kind": "structure",
+    "reason": "Author decision 1: states the written-disclosure standard once, here, as the home for the whole book (C6)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "03-how-the-industry-works",
+      "startsWith": "Held to that frame, the broker the buyer wants is the one pa"
+    },
+    "kind": "repetition",
+    "reason": "Structural read ch03: para 28 restates the Cecil-Wright quote in 27"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The captain is the most consequential hire an owner makes, and often the first. They are involved in",
+    "new": "The captain is one of the most important hires an owner makes. Many owners make it early; chapter 9 sets out why the independent adviser, the lawyer and the surveyor should come first. The captain is involved in",
+    "kind": "fact",
+    "reason": "C7: 'often the first' contradicted the ch09 hiring order; 'most consequential' kept for ch07 2 only"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "sets out the structural extension of the same argument across the management-company tier.",
+    "new": "applies the same argument to the management-company tier.",
+    "kind": "line",
+    "reason": "Abstraction reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " The structural critique he traces across the management-company tier is the same critique the chapter has traced across the broker tier: authority and accountability have come apart, and the owner sits at the end of the chain.",
+    "new": "",
+    "kind": "repetition",
+    "reason": "Structural read ch03: 34 restates 32 to 33"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A useful framework for the interview: the captain who pushes back, asks hard questions about intended use, and is sceptical of the timeline is the one to keep talking to. Easy agreement in the first three meetings is pleasant in the room and not necessarily the strongest indicator of the right hire.",
+    "new": "In interview, the candidate who pushes back, asks hard questions about intended use, and is sceptical of the timeline is the one to keep talking to; chapter 7 covers the hire in full. Capt. Filippakis, interviewed for this chapter, suggests one question that opens the subject of a captain’s network without making it adversarial: which brokers and yards the candidate knows best, and how those relationships began.",
+    "kind": "repetition",
+    "reason": "Structural read ch03 35: the interview test lives in ch07 5; points forward and uses the chapter's own Q&A"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The questions are: contingent earnings; equity or referral relationships;",
+    "new": "The questions are: contingent earnings, and whether they are disclosed in writing; equity or referral relationships;",
+    "kind": "fact",
+    "reason": "Author decision 1: element 1 framed as disclosed in writing"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "03-how-the-industry-works",
+      "startsWith": "Several firms describe themselves as independent. The word d"
+    },
+    "new": "The independent adviser is the person the buyer engages first, pays directly, and relies on to act for the buyer across an acquisition, a new build or a refit. This book uses “independent adviser” and “owner’s representative” for the same role. The adviser carries the project at principal level: scope, budget, programme, the contract, and the relationships with brokers, yards and suppliers. The role is not that of a broker, a project manager, a yacht manager or a captain; each of those is part of the team the adviser helps the buyer build. Chapter 5 describes the work on a new build, and chapter 9 sets out how to test and hire the adviser.",
+    "kind": "structure",
+    "reason": "Author decision 2: defines the role once, before first reliance in para 39, adapted from ch05 39"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The honest version of the conversation",
+    "new": "Before the first broker",
+    "kind": "line",
+    "reason": "'Honest' heading implies other treatments are dishonest; plain heading"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "For a reader in advance of a first acquisition, the practical version is this. Engage an independent adviser before any broker.",
+    "new": "Engage an independent adviser before any broker.",
+    "kind": "line",
+    "reason": "Signposting cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "03-how-the-industry-works",
+      "startsWith": "The industry will absorb capital regardless of how many advi"
+    },
+    "kind": "line",
+    "reason": "Structural read ch03 40: 'The question is whether' closer; para 39 ends the chapter"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The structural consequence is that every party introduced through a brokerage is paid contingent on a closed transaction, which shapes incentives. The buyer’s structural counterweight is an independent adviser whose income is not contingent on closing.",
+    "new": "The consequence is that the broker guiding the buyer is paid only if the sale closes, and paid by the other side. The buyer can ask for that payment, and any referral fees from suppliers the broker introduces, to be disclosed in writing, and can engage an independent adviser whose income does not depend on the sale closing.",
+    "kind": "fact",
+    "reason": "Not every introduced party is paid on closing (management, paint and insurance are paid by the owner and pay referrals); aligned with the disclosure standard"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "EUR 1.4 to 2.8 million in commission moves on a EUR 28 m deal",
+    "new": "EUR 1.7 to 2.8 million in commission moves on a EUR 28 m deal",
+    "kind": "fact",
+    "reason": "C4: MYBA scale on EUR 28 million is EUR 1.7 million"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "EUR 1,950,000",
+    "new": "EUR 1,700,000",
+    "kind": "fact",
+    "reason": "C4: 10% x 10m + 5% x 10m + 2.5% x 8m = EUR 1.7 million; 1.95 million applied 2.5 percent to 18m"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "4–5 percent of gross, paid out of the seller-side pool",
+    "new": "Paid out of the seller-side pool, typically half of it or a little less: 4–5 percent of gross on the IYBA base, about 3 percent on the MYBA scale",
+    "kind": "fact",
+    "reason": "C4: 4 to 5 percent of gross exceeds two-thirds of the MYBA pool on this sale"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "EUR 1,120,000–1,400,000",
+    "new": "About EUR 850,000 (MYBA) to EUR 1,120,000–1,400,000 (IYBA)",
+    "kind": "fact",
+    "reason": "C4: buyer-broker share stated per base"
+  }
+]

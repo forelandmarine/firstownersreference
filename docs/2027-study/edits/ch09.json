@@ -1,0 +1,317 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "The UBS Global Family Office Report 2025 is the most comprehensive survey of how the world’s largest private wealth holders allocate capital. Across 80 pages and 317 family offices (average AUM USD 1.1 billion, average family net worth USD 2.7 billion), yachts do not appear. Not in any year, not in any region, not in any sub-allocation. The 2026 edition, covering 307 family offices, does not mention them either.",
+    "new": "The UBS Global Family Office Report 2025 is among the most comprehensive surveys of how the world’s largest private wealth holders allocate capital. Across 80 pages and 317 family offices (average AUM USD 1.1 billion, average family net worth USD 2.7 billion), yachts do not appear in any region or sub-allocation, and the 2026 edition, covering 307 family offices, does not mention them either.",
+    "kind": "line",
+    "reason": "Triple-negative fragment folded in; superlative softened"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Which is not, as one might first read it, an oversight. It is the structural reality of how superyachts are bought, and the reason the discipline of doing so well is harder to learn than the family office’s other allocations.",
+    "new": "Many of the buyers described in chapter 2, principals who have recently sold a business and heirs reviewing the advisers their parents used, reach this market through a family office. The Knight Frank Family Office Survey 2026, drawn from more than 40 family offices in London, New York, Dubai, Singapore and Hong Kong, names superyachts for the first time, among the assets family offices now want to track in one place:",
+    "kind": "repetition",
+    "reason": "C23 and repetition: replaces 'not an oversight, it is the structural reality' with a one-sentence pointer to ch02 5 and the Knight Frank lead-in from para 6"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "09-decision-framework",
+      "startsWith": "This chapter is the closing argument: the ownership structur"
+    },
+    "kind": "structure",
+    "reason": "Signposting cut; removes the unkept 'moment that matters' promise (the closing note carries the close)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "09-decision-framework",
+      "startsWith": "The largest wealth transfer in history"
+    },
+    "kind": "repetition",
+    "reason": "h2 object (match on text): heading for the Capgemini run, which repeats ch02 5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "09-decision-framework",
+      "startsWith": "Capgemini’s World Wealth Report 2025 (29th edition) finds US"
+    },
+    "kind": "repetition",
+    "reason": "Repeats ch02 5 almost word for word; pointer now in para 1"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "09-decision-framework",
+      "startsWith": "The reader of The First Owner’s Reference is therefore typic"
+    },
+    "kind": "repetition",
+    "reason": "Repeats ch02 5; removes the USD 20 to 500 million band that conflicts with ch02 3 (C22) and fairness flag 28"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "09-decision-framework",
+      "startsWith": "The Knight Frank Family Office Survey 2026 (drawn from more "
+    },
+    "kind": "repetition",
+    "reason": "Merged into para 1, which now introduces the Knight Frank quote"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Family offices are now working to integrate yachts into the portfolio frame, although the tooling is still being built. The structural matter is not really one of technology. It is that the industry selling these assets has limited incentive to make their financial behaviour transparent to a family office applying full fiduciary scrutiny, and tooling can only do so much against that.",
+    "new": "Family offices are working to bring yachts into the same reporting as their other assets, although the tooling is still being built. Better tooling will not show how the advisers around a purchase are paid; chapter 3 sets that out. What the buyer can do is settle the structure first, test every adviser, and hire the team in the right order.",
+    "kind": "repetition",
+    "reason": "Cuts the re-argument of ch03 (fairness flag 29, 'not X, it is Y') to a pointer and states the chapter's job"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The ownership structure is the frame the yacht will sit inside:",
+    "new": "The ownership structure is the vehicle that holds the yacht:",
+    "kind": "line",
+    "reason": "'frame' abstraction"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " It is the point the family-office material makes from the other side: the yacht belongs inside the portfolio frame, not beside it.",
+    "new": "",
+    "kind": "repetition",
+    "reason": "Restated in para 13's first sentence"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "So the yacht’s asset management is properly a joined-up affair, planned with the principal’s wider wealth rather than bolted on next to it. The jurisdiction question is then answered last rather than first, falling out of those wider circumstances rather than leading them, which is why there is no single right answer to carry from one owner to the next.",
+    "new": "The yacht is therefore planned with the principal’s wider wealth, as the family-office material above suggests, not bolted on beside it. The jurisdiction is chosen last, once those wider circumstances are known, which is why there is no single right answer to carry from one owner to the next.",
+    "kind": "line",
+    "reason": "Three 'rather than' in two sentences reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Several firms describe themselves as independent. The word does meaningful work in some cases and is decorative in others. The independence test has six elements.",
+    "new": "The independence test has six elements, and chapter 3 explains why it is needed.",
+    "kind": "repetition",
+    "reason": "First two sentences repeat ch03 37 verbatim"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "1. Does the firm earn anything contingent on a transaction closing? If yes, they are not independent of the deal. Brokers, charter brokers, management companies that receive yard referral fees, and design firms taking commission on builder selection all fail this test. They may still provide value, but not independence.",
+    "new": "1. Does the firm earn anything contingent on a transaction closing, and if so, has it disclosed in writing what it is paid and by whom? Brokers, charter brokers, management companies that receive yard referral fees, and design firms taking commission on builder selection all earn in this way. That does not rule them out. Disclosed in advance and in writing, the payment is something the buyer can weigh against the advice; undisclosed, it fails this element.",
+    "kind": "fact",
+    "reason": "Author decision 1 and C6: removes the automatic 'fail' and applies the written-disclosure standard set in ch03 25"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "If no, the structure can hide commissions.",
+    "new": "If no, the fee arrangement can hide commissions.",
+    "kind": "line",
+    "reason": "'structure' abstraction"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "These six questions apply to anyone proposing to advise, and serve as the rough framework for due diligence on a wealth manager, a lawyer, a surveyor, or a captain candidate. The principles are fiduciary alignment applied to an industry that has long avoided them; they are not yacht-specific.",
+    "new": "The same six questions serve as a first check on a wealth manager, a lawyer, a surveyor or a captain candidate. They are ordinary fiduciary principles, not yacht-specific ones, applied to a market in which much of the advice is paid for by someone other than the buyer.",
+    "kind": "fact",
+    "reason": "Fairness flag 29: 'an industry that has long avoided them' replaced with what ch03 shows"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Where the independence test asks whether a firm is aligned with the buyer, the suitability test asks whether the firm is the right fit for this engagement. A firm can pass the independence test and still be the wrong choice for a given project. Six elements.",
+    "new": "Where the independence test asks whose interests a firm serves, the suitability test asks whether it is the right firm for this engagement. A firm can pass the independence test and still be the wrong choice for a given project. The suitability test also has six elements.",
+    "kind": "line",
+    "reason": "'aligned' abstraction; fragment"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "will either spend the budget on travel or fail the discipline.",
+    "new": "will either spend the budget on travel or miss the site visits the build needs.",
+    "kind": "line",
+    "reason": "'discipline' made concrete"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "5. Discipline test. Has the firm",
+    "new": "5. Willingness to decline. Has the firm",
+    "kind": "line",
+    "reason": "'Discipline' catch-all (structural read section 5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "has not been tested. The willingness to walk is the truest signal of fiduciary alignment.",
+    "new": "has not been tested. The willingness to walk is the clearest evidence of whose interest a firm serves.",
+    "kind": "line",
+    "reason": "'fiduciary alignment' abstraction; keeps the short sentence"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " Suitability is project-specific.",
+    "new": "",
+    "kind": "line",
+    "reason": "Restating closer"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "09-decision-framework",
+      "startsWith": "The willingness to walk is the truest signal of fiduciary al"
+    },
+    "kind": "repetition",
+    "reason": "Blockquote object (match on text): unattributed, repeats para 30"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The order in which the buyer hires the team determines the quality of every subsequent decision. Most first-time buyers hire in the wrong order. The right order:",
+    "new": "The order in which the buyer hires the team shapes every later decision, because each adviser hired early has a say in who is hired next. A buyer who starts with a broker will often be introduced to the lawyer, the surveyor and the captain by that broker, as chapter 3 describes. The order this book recommends:",
+    "kind": "fact",
+    "reason": "Fairness flag 30: unsourced 'most first-time buyers' replaced with the mechanism from ch03 0"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "1. Independent adviser. Engaged before any broker, any captain, any management company. The independent adviser’s role is to scope",
+    "new": "1. Independent adviser (the owner’s representative, on a new build or refit; chapter 3 defines the role). Engaged before any broker, any captain, any management company. The adviser’s role is to scope",
+    "kind": "structure",
+    "reason": "Author decision 2: one role; gives the new-build step its name"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "2. Yacht lawyer. Specialist shipbuilding",
+    "new": "2. Yacht lawyer and structuring adviser. Specialist shipbuilding",
+    "kind": "fact",
+    "reason": "C7: para 10 says structure comes first but the hiring order had no structuring adviser"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Engaged before any contract is reviewed. The independent adviser will introduce candidates without conflict.",
+    "new": "Engaged before any contract is reviewed. The ownership structure, jurisdiction and VAT position are settled at this stage, with the corporate services provider or tax adviser who will run the structure, as set out above. The independent adviser will introduce candidates and disclose any relationship with them.",
+    "kind": "fact",
+    "reason": "C7: structuring adviser placed in the order; 'without conflict' replaced with the disclosure standard"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "6. Insurance broker. Engaged once flag state and operating profile are determined. Pantaenius, AON, Gallagher all quote competitively.",
+    "new": "6. Insurance broker. Engaged once flag state and operating profile are determined. Insurance brokers are usually paid by commission embedded in the premium; the rate, and any referral fee paid onward, should be disclosed in writing, which meets the first element of the independence test. Pantaenius, AON, Gallagher all quote competitively.",
+    "kind": "fact",
+    "reason": "C6 and ch09 43: reconciles the commission-paid broker with test element 1 (matches ch09 case para 9)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Total team cost on a USD 30 to 50 million acquisition runs USD 200,000 to 600,000 across the first year, a rounding error on a transaction of that size. Owners who economise here save tenths of a percentage point and lose multiples in the asset itself.",
+    "new": "Total team cost on a USD 30 to 50 million acquisition runs USD 200,000 to 600,000 across the first year, between about 0.4 and 2 percent of the price.",
+    "kind": "fact",
+    "reason": "Arithmetic: 200k/50m = 0.4 percent, 600k/30m = 2 percent, so 'tenths of a percentage point' and 'rounding error' did not hold at the upper end; unsupported maxim cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "09-decision-framework",
+      "startsWith": "The right order is independent adviser, then lawyer, then su"
+    },
+    "kind": "repetition",
+    "reason": "Blockquote object (match on text): unattributed, restates 36 to 43; 'most do this in reverse' unsourced (fairness flag 30)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "9. If I am building, is my owner’s representative paid solely by me, with no contingent fee, no yard commission, and no referral relationship?",
+    "new": "9. If I am building, is my owner’s representative paid by me, and has any contingent fee, yard commission or referral relationship been disclosed to me in writing?",
+    "kind": "fact",
+    "reason": "Author decision 1: question 9 applies the written-disclosure standard (consistent with ch05 62 on YORR)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A buyer who can answer all ten questions clearly, with documentary evidence, is exceptionally well-protected. The buyer who cannot is, by industry default, operating in the structure described across the earlier chapters. That is information rather than judgment.",
+    "new": "A buyer who can answer all ten clearly, with documents to show for it, is well protected. A question the buyer cannot answer is the next one to put, in writing, to the party concerned.",
+    "kind": "fact",
+    "reason": "Fairness flag 31 and closing declaration replaced with a usable instruction"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "whether as a newly liquidated principal or as an heir for whom the family yacht has become a new responsibility, the next three months are the most consequential of ownership. The decisions made in that window, about the team built, set the trajectory of the next ten years.",
+    "new": "whether as a principal who has recently sold a business or as an heir for whom the family yacht has become a new responsibility, the months before the first contract matter most. The ownership structure, the team and the order in which it is hired are settled in that window, and each is harder and more costly to change once a contract is signed.",
+    "kind": "structure",
+    "reason": "Closing note keeps the 'why now' close using paras 10 and 36 and the Roberts interview; unsourced 'three months' and 'ten years' removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The single most important decision is to engage an adviser whose interests are aligned with the buyer’s, before engaging anyone aligned with someone else’s.",
+    "new": "The single most important decision is to engage an adviser who works for the buyer and is paid by the buyer, before engaging anyone paid by someone else.",
+    "kind": "line",
+    "reason": "'aligned' made concrete"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Then the buyer ran the team architecture against the independence test, found that the structure he was being asked to operate inside did not pass it, and walked away from the acquisition.",
+    "new": "Then the buyer had the proposed team tested against the independence test, which it passed, asked one further question about his own time, and walked away from the acquisition.",
+    "kind": "fact",
+    "reason": "Standfirst contradicted the case body: the team passed (para 12) and the decision 'was not driven by the team architecture' (para 15)"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "and that the dominant operator in that segment had a corporate ownership history the buyer might want to consider against his independence test. The adviser walked him through the corporate history.",
+    "new": "and walked him through the ownership of the main operators there, so that he could apply his independence test to whichever yard he later used.",
+    "kind": "fact",
+    "reason": "Fairness flag 32: insinuation without a stated concern about an operator identifiable from ch06 32"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The buyer is, on the published record of the family office sector, an unusual case.",
+    "new": "The buyer is an unusual case.",
+    "kind": "fact",
+    "reason": "No published record is cited for the claim"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "If I am building, is my owner’s representative paid solely by me, with no contingent fee, no yard commission, and no referral relationship?",
+    "new": "If I am building, is my owner’s representative paid by me, and has any contingent fee, yard commission or referral relationship been disclosed to me in writing?",
+    "kind": "fact",
+    "reason": "Matches essay question 9 under the written-disclosure standard"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Is the owner’s representative paid solely by the owner with no contingent fee.",
+    "new": "Is the owner’s representative paid by the owner, with any contingent fee, yard commission or referral relationship disclosed in writing.",
+    "kind": "fact",
+    "reason": "Matches essay question 9"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The structural test is independence from yards, brokers, and management companies, with income paid only by the owner and not contingent on a closed transaction.",
+    "new": "The test is independence from yards, brokers, and management companies: income paid by the owner, and any commission or payment contingent on a closed transaction disclosed to the owner in writing in advance.",
+    "kind": "fact",
+    "reason": "Author decision 1"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Earn anything contingent on transaction closing?",
+    "new": "Earn anything contingent on transaction closing, not disclosed in writing?",
+    "kind": "fact",
+    "reason": "Author decision 1: Pass/Fail columns now match element 1"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The order in which the buyer hires the team determines the quality of every subsequent decision. Most first-time buyers hire in the wrong order.",
+    "new": "The order in which the buyer hires the team shapes every later decision, because each adviser hired early has a say in who is hired next.",
+    "kind": "fact",
+    "reason": "Matches essay para 36; fairness flag 30"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Specialist shipbuilding and yacht counsel; Hill Dickinson",
+    "new": "Specialist shipbuilding and yacht counsel, with the structuring adviser who settles ownership structure, jurisdiction and VAT; Hill Dickinson",
+    "kind": "fact",
+    "reason": "C7: matches essay step 2"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Once flag and operating profile determined; Pantaenius, AON, Gallagher",
+    "new": "Once flag and operating profile determined; commission disclosed in writing; Pantaenius, AON, Gallagher",
+    "kind": "fact",
+    "reason": "Matches essay step 6"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "On a transaction of this size, this is a rounding error. Owners who economise on it save tenths of a percentage point to lose multiples of a percentage point in the asset itself.",
+    "new": "Between about 0.4 and 2 percent of the price in year one.",
+    "kind": "fact",
+    "reason": "Arithmetic as essay para 44"
+  }
+]

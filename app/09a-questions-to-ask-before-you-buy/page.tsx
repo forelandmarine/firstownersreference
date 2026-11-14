@@ -44,12 +44,12 @@ const FAQS = [
   {
     question: "Who should I hire first when buying a superyacht?",
     answer:
-      "An independent adviser, engaged before any broker, captain, or management company. Then, in order: specialist yacht counsel before any contract is reviewed; an independent surveyor once a shortlist exists; the captain candidate through routes independent of the broker; the yacht management company once the acquisition decision is taken; and the insurance broker once flag and operating profile are set. Total team cost on a USD 30 to 50 million acquisition runs USD 200,000 to 600,000 in the first year. Most first-time buyers hire in the reverse order.",
+      "An independent adviser, engaged before any broker, captain, or management company. Then, in order: specialist yacht counsel, with the structuring adviser, before any contract is reviewed; an independent surveyor once a shortlist exists; the captain candidate through routes independent of the broker; the yacht management company once the acquisition decision is taken; and the insurance broker once flag and operating profile are set. Total team cost on a USD 30 to 50 million acquisition runs USD 200,000 to 600,000 in the first year.",
   },
   {
     question: "How can I tell if a yacht adviser is independent?",
     answer:
-      "Six tests: no income contingent on a transaction closing; no equity, employment, or referral relationship with any yard, broker, supplier, management company, or charter operation; a published counterparty list for the past three years; fees quoted transparently in writing in advance; professional indemnity insurance at a level appropriate to the transaction; and named, traceable, accountable principals. A firm can fail these tests and still provide value, but it should not be relied on for independence.",
+      "Six tests: any income contingent on a transaction closing disclosed in writing, with the amount and who pays it; no equity, employment, or referral relationship with any yard, broker, supplier, management company, or charter operation; a published counterparty list for the past three years; fees quoted transparently in writing in advance; professional indemnity insurance at a level appropriate to the transaction; and named, traceable, accountable principals. A firm that cannot meet them may still provide value, but it should not be relied on for independent advice.",
   },
   {
     question: "Is a free yacht advisory service really free?",
@@ -59,7 +59,7 @@ const FAQS = [
   {
     question: "What is the walk-away test for a yacht adviser?",
     answer:
-      "Ask whether the party would walk away from a deal that did not benefit the buyer. A party paid only by the buyer, with no contingent fee, can afford to advise against proceeding; a party paid on closing cannot. Firms able to point to engagements they declined or terminated, because the right advice was not to proceed, have been tested. The willingness to walk is the truest signal of alignment with the buyer.",
+      "Ask whether the party would walk away from a deal that did not benefit the buyer. A party paid only by the buyer can afford to advise against proceeding; a party paid on closing has a reason not to, which is why that payment should be disclosed in writing. Firms able to point to engagements they declined or terminated, because the right advice was not to proceed, have been tested. The willingness to walk is the truest signal of alignment with the buyer.",
   },
 ];
 
@@ -72,7 +72,7 @@ const TEN_QUESTIONS = [
   "Has every party I am working with disclosed their commercial relationships in writing, including referral fees, retrocessions, and equity holdings in counterparties?",
   "Is my legal counsel independent of the broker, the yard, and the management company, and is their fee paid by me directly?",
   "Is my surveyor independent of the seller and of the broker, and is their fee paid by me directly?",
-  "If I am building, is my owner’s representative paid solely by me, with no contingent fee, no yard commission, and no referral relationship?",
+  "If I am building, is my owner’s representative paid by me, and has any contingent fee, yard commission or referral relationship been disclosed to me in writing?",
   "If I asked any of these parties to walk away from a deal that would not benefit me, would they?",
 ];
 

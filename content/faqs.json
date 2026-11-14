@@ -42,7 +42,7 @@
   "03-how-the-industry-works": [
     {
       "question": "Who pays the yacht broker commission?",
-      "answer": "On a brokerage transaction, the seller pays the commission from the sale proceeds, regardless of which broker introduces the buyer. The buyer is not invoiced. The IYBA standard is a flat 10 percent of the sale price; MYBA uses a sliding scale. The structural consequence is that every party introduced through a brokerage is paid contingent on a closed transaction, which shapes incentives. The buyer’s structural counterweight is an independent adviser whose income is not contingent on closing."
+      "answer": "On a brokerage transaction, the seller pays the commission from the sale proceeds, regardless of which broker introduces the buyer. The buyer is not invoiced. The IYBA standard is a flat 10 percent of the sale price; MYBA uses a sliding scale. The consequence is that the broker guiding the buyer is paid only if the sale closes, and paid by the other side. The buyer can ask for that payment, and any referral fees from suppliers the broker introduces, to be disclosed in writing, and can engage an independent adviser whose income does not depend on the sale closing."
     },
     {
       "question": "What is dual agency in a yacht transaction?",
@@ -150,11 +150,11 @@
   "09-decision-framework": [
     {
       "question": "What questions should I ask before buying a yacht?",
-      "answer": "The ten questions in chapter nine of The First Owner’s Reference are the structural test. Who introduced the yacht and who pays them. Who recommended the lawyer, the surveyor, the management company, and who pays them. Has any party offered services at no cost, and who is paying them. Has every party disclosed their commercial relationships in writing including referral fees, retrocessions, and equity holdings. Is legal counsel independent of the broker, the yard, and the management company. Is the surveyor independent of the seller and broker. Is the owner’s representative paid solely by the owner with no contingent fee."
+      "answer": "The ten questions in chapter nine of The First Owner’s Reference are the structural test. Who introduced the yacht and who pays them. Who recommended the lawyer, the surveyor, the management company, and who pays them. Has any party offered services at no cost, and who is paying them. Has every party disclosed their commercial relationships in writing including referral fees, retrocessions, and equity holdings. Is legal counsel independent of the broker, the yard, and the management company. Is the surveyor independent of the seller and broker. Is the owner’s representative paid by the owner, with any contingent fee, yard commission or referral relationship disclosed in writing."
     },
     {
       "question": "How do I find an independent yacht owner’s representative?",
-      "answer": "The structural test is independence from yards, brokers, and management companies, with income paid only by the owner and not contingent on a closed transaction. Genuinely independent firms include Foreland Marine, A2B Marine Projects, ULTIMAR, Divergent Yachting, Mariner Technical Services, JMS Yachting, ABL Yachts, KRM Yacht, Saor Alba, and Occam Naval Architecture and Project Management. The Yacht Owner’s Representative Register, launched in November 2024 and administered by the Superyacht Alliance for Professional Standards, is the cross-industry vetting register."
+      "answer": "The test is independence from yards, brokers, and management companies: income paid by the owner, and any commission or payment contingent on a closed transaction disclosed to the owner in writing in advance. Genuinely independent firms include Foreland Marine, A2B Marine Projects, ULTIMAR, Divergent Yachting, Mariner Technical Services, JMS Yachting, ABL Yachts, KRM Yacht, Saor Alba, and Occam Naval Architecture and Project Management. The Yacht Owner’s Representative Register, launched in November 2024 and administered by the Superyacht Alliance for Professional Standards, is the cross-industry vetting register."
     },
     {
       "question": "How do I know if a yacht adviser is conflicted?",

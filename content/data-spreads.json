@@ -637,7 +637,7 @@
   "03-how-the-industry-works": {
     "slug": "03-how-the-industry-works",
     "title": "Where the money goes in a typical brokerage transaction",
-    "standfirst": "Most first-time buyers reach this market through a family office, yet only a quarter of single family offices handle a yacht in-house. The buyer arrives under-advised, into a sale structure where EUR 1.4 to 2.8 million in commission moves on a EUR 28 m deal and the buyer almost never knows which norm applied. The structure, said plainly.",
+    "standfirst": "Most first-time buyers reach this market through a family office, yet only a quarter of single family offices handle a yacht in-house. The buyer arrives under-advised, into a sale structure where EUR 1.7 to 2.8 million in commission moves on a EUR 28 m deal and the buyer almost never knows which norm applied. The structure, said plainly.",
     "blocks": [
       {
         "type": "h2",
@@ -708,12 +708,12 @@
           [
             "MYBA sliding scale",
             "10 percent on first EUR 10 m, 5 percent on second EUR 10 m, 2.5 percent above",
-            "EUR 1,950,000"
+            "EUR 1,700,000"
           ],
           [
             "Buyer-broker share, typical",
-            "4–5 percent of gross, paid out of the seller-side pool",
-            "EUR 1,120,000–1,400,000"
+            "Paid out of the seller-side pool, typically half of it or a little less: 4–5 percent of gross on the IYBA base, about 3 percent on the MYBA scale",
+            "About EUR 850,000 (MYBA) to EUR 1,120,000–1,400,000 (IYBA)"
           ]
         ],
         "sourceLine": "IYBA standard practice; MYBA Memorandum of Agreement; published industry self-criticism (Cromwell Littlejohn, Northrop & Johnson, Palm Beach Boat Show)."
@@ -2102,7 +2102,7 @@
         ],
         "rows": [
           [
-            "Earn anything contingent on transaction closing?",
+            "Earn anything contingent on transaction closing, not disclosed in writing?",
             "No",
             "Yes"
           ],
@@ -2140,7 +2140,7 @@
       },
       {
         "type": "table",
-        "caption": "The order in which the buyer hires the team determines the quality of every subsequent decision. Most first-time buyers hire in the wrong order.",
+        "caption": "The order in which the buyer hires the team shapes every later decision, because each adviser hired early has a say in who is hired next.",
         "head": [
           "Order",
           "Role",
@@ -2155,7 +2155,7 @@
           [
             "2",
             "Yacht lawyer",
-            "Specialist shipbuilding and yacht counsel; Hill Dickinson, WFW, Ince, Stephenson Harwood, Reed Smith, HFW, Norton Rose Fulbright"
+            "Specialist shipbuilding and yacht counsel, with the structuring adviser who settles ownership structure, jurisdiction and VAT; Hill Dickinson, WFW, Ince, Stephenson Harwood, Reed Smith, HFW, Norton Rose Fulbright"
           ],
           [
             "3",
@@ -2175,7 +2175,7 @@
           [
             "6",
             "Insurance broker",
-            "Once flag and operating profile determined; Pantaenius, AON, Gallagher"
+            "Once flag and operating profile determined; commission disclosed in writing; Pantaenius, AON, Gallagher"
           ]
         ],
         "sourceLine": "Foreland Marine practitioner framework."
@@ -2186,7 +2186,7 @@
       },
       {
         "type": "kv",
-        "caption": "On a transaction of this size, this is a rounding error. Owners who economise on it save tenths of a percentage point to lose multiples of a percentage point in the asset itself.",
+        "caption": "Between about 0.4 and 2 percent of the price in year one.",
         "rows": [
           {
             "label": "Independent adviser, year one",
