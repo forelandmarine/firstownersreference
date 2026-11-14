@@ -336,8 +336,16 @@
             "detail": "Stage payment loading above 70 percent before delivery sits outside the industry-typical range."
           },
           {
+            "question": "No stage payment released without independent verification of the milestone behind it.",
+            "detail": "Yard-standard milestones are often self-certified by the yard."
+          },
+          {
             "question": "Refund guarantee from a bank of high credit standing, independent of the yard and its group, payable on demand, covering all instalments with interest, and valid to delivery plus a margin.",
             "detail": "It repays only sums paid, not lost use, financing costs, or owner-supplied items, and only against a valid termination and a correctly presented demand."
+          },
+          {
+            "question": "Refund guarantee expiry diarised against the contract’s long-stop date, and the guarantor’s written consent obtained for every material variation.",
+            "detail": "Builds run late and change orders run into the hundreds. A lapsed or voided guarantee surfaces only when it is called."
           },
           {
             "question": "Rights to the yard’s financial information at set intervals, to suspend payments on named warning signs, and to step in and complete the vessel elsewhere.",
@@ -366,6 +374,10 @@
           {
             "question": "Title position during construction clarified (yard-retained until delivery, or progressive transfer).",
             "detail": "Where title passes progressively: hull and materials marked and kept separately, inspection rights, insurance with the buyer named, a right of entry and removal on default, and a local-law opinion that the transfer will be recognised. Where the yard keeps title, the refund guarantee is the main protection."
+          },
+          {
+            "question": "Title or security registered in the form the build country recognises.",
+            "detail": "Title follows the law of the build country, whatever the contract says. In Italy, that means transcription in the register of vessels under construction."
           },
           {
             "question": "Dispute forum on English law plus LMAA arbitration, the practitioner default."
@@ -438,6 +450,10 @@
           },
           {
             "question": "Owner’s representative review and edit of the scope, line by line."
+          },
+          {
+            "question": "A naval architect’s tonnage calculation in the scope before it is signed, where any work adds enclosed volume.",
+            "detail": "On a 499 GT yacht, an increase of more than 1 percent triggers remeasurement and can bring the 500 GT commercial package."
           },
           {
             "question": "A pre-works survey with the yard’s findings recorded, as the baseline against which emergent work is judged."
