@@ -103,7 +103,7 @@ export default function HomePage() {
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
                 Written and edited by industry experts. Independently
-                funded. Carries no advertising, ever.
+                funded. This reference carries no advertising, ever.
               </p>
               <p className="font-serif italic text-base leading-relaxed text-stone max-w-2xl pt-6 mt-2 border-t border-rule">
                 N.B. The First Owner&rsquo;s Reference is still being
