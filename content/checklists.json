@@ -1,9 +1,9 @@
 {
   "01-reality-of-ownership": {
     "slug": "01-reality-of-ownership",
-    "title": "The cost picture, on paper.",
+    "title": "The costs, on paper.",
     "standfirst": "A one-page reference to keep alongside any acquisition conversation. The items below are what to have in writing before signing.",
-    "intent": "Put the cost picture on paper before the first acquisition conversation. The numbers do not need to be perfect. They need to be written down.",
+    "intent": "Write down the expected costs before the first acquisition conversation. The numbers do not need to be perfect, but they need to be in writing.",
     "groups": [
       {
         "heading": "The numbers",
@@ -27,7 +27,7 @@
         ]
       },
       {
-        "heading": "The use case",
+        "heading": "Intended use",
         "items": [
           {
             "question": "An estimate of the number of weeks per year the yacht will be used.",
@@ -35,7 +35,7 @@
           },
           {
             "question": "An intended hold horizon of seven years or more.",
-            "detail": "Shorter holds amplify the depreciation curve."
+            "detail": "Over a shorter hold, the steep early years of depreciation make up a larger share of the total cost."
           },
           {
             "question": "The use case tested against the buyer’s calendar, household, and family availability for the next five years.",
@@ -44,18 +44,18 @@
         ]
       },
       {
-        "heading": "The charter question",
+        "heading": "Charter",
         "items": [
           {
             "question": "If charter has been proposed as an offset to ownership cost, a worked case based on yacht size, weekly rate, and weeks.",
             "detail": "BOAT International publishes case studies of charter income against running cost."
           },
           {
-            "question": "A position, in advance, on whether the prime-season weeks (mid-July to mid-August in the Med, December to early January in the Caribbean) are available for charter.",
-            "detail": "Charter income from prime-season weeks is what published case-study yields rest on."
+            "question": "A decision, made in advance, on whether the prime-season weeks (mid-July to mid-August in the Med, December to early January in the Caribbean) are available for charter.",
+            "detail": "The published case-study yields depend on charter income from those weeks."
           },
           {
-            "question": "The charter projection pressure-tested against the published case studies for break-even, loss, and exception cases."
+            "question": "The charter projection checked against the published case studies, including those that broke even or made a loss, and the exception."
           }
         ]
       },
@@ -67,7 +67,7 @@
             "detail": "Parties paid contingent on a sale do not raise this."
           },
           {
-            "question": "A maximum hold cost across years one to three that the buyer is comfortable absorbing, written down."
+            "question": "A maximum total cost of ownership across years one to three that the buyer is comfortable absorbing, written down."
           },
           {
             "question": "An option to delay the acquisition by six months if any of the items above remain uncertain."
@@ -81,12 +81,12 @@
   },
   "02-reading-the-market": {
     "slug": "02-reading-the-market",
-    "title": "Reading any hull, before any offer.",
+    "title": "Checking a listing before making an offer.",
     "standfirst": "Twelve items to keep alongside any shortlist conversation. The items below are drawn from the data published on listing portals and in the BOAT International Global Order Book.",
     "intent": "Days-on-market and price-reduction history are public on the listing portals. The items below are what to look at before the first broker conversation.",
     "groups": [
       {
-        "heading": "The hull, on the published record",
+        "heading": "The yacht’s published record",
         "items": [
           {
             "question": "Days-on-market, from the listing’s original entry, on the broker portal.",
@@ -102,29 +102,29 @@
         ]
       },
       {
-        "heading": "The supply context",
+        "heading": "Supply",
         "items": [
           {
-            "question": "The hull’s position in the wider supply picture, against the BOAT International Global Order Book and the over-30 m brokerage inventory."
+            "question": "How many comparable yachts are for sale or on order, from the brokerage listings for yachts over 30 m and the BOAT International Global Order Book."
           },
           {
             "question": "If new build is also under consideration: slot availability at the relevant yard tier (Lürssen, Feadship, Oceanco, Heesen, Sanlorenzo)."
           },
           {
-            "question": "An understanding of the US-capital dynamic in the relevant size band, given the One Big Beautiful Bill Act 100 percent depreciation provision.",
+            "question": "How far US buying, encouraged by the 100 percent depreciation allowance in the One Big Beautiful Bill Act, is affecting prices in the relevant size band.",
             "detail": "It varies by segment rather than across the whole market. The independent adviser can speak to it for the specific hull."
           }
         ]
       },
       {
-        "heading": "The broker’s framing",
+        "heading": "What the broker says",
         "items": [
           {
-            "question": "Negotiation framings (“about to offer”, “about to move”, “tightening”) noted as not, on their own, market evidence."
+            "question": "Broker phrases such as “about to offer”, “about to move” and “tightening” noted as claims to be checked, not market evidence."
           },
           {
             "question": "A note, in writing, of any introductions the broker is offering (surveyor, lawyer, captain, management company), and the relationships behind them.",
-            "detail": "Introductions made by a brokerage may carry referral economics. The disclosure is asked for, not always volunteered."
+            "detail": "Firms introduced by a brokerage may pay it referral fees. The disclosure is asked for, not always volunteered."
           },
           {
             "question": "The comparable scan, in writing, with named comparables and the reasoning behind each."
@@ -132,17 +132,17 @@
         ]
       },
       {
-        "heading": "The discipline",
+        "heading": "Setting a limit",
         "items": [
           {
-            "question": "A hold price, agreed in advance and in writing, below which the buyer is comfortable walking away."
+            "question": "A ceiling price, agreed in advance and in writing, above which the buyer will walk away."
           },
           {
             "question": "The comparable scan run independently of the listing broker, through the buyer’s own adviser."
           },
           {
             "question": "Two further candidates on the shortlist, in case this hull does not close.",
-            "detail": "Single-candidate searches concentrate negotiation pressure on the buyer; multi-candidate searches do the opposite."
+            "detail": "A buyer with only one candidate is under more pressure to accept the seller’s terms; a buyer with alternatives can walk away."
           }
         ]
       }
@@ -154,21 +154,21 @@
   "03-how-the-industry-works": {
     "slug": "03-how-the-industry-works",
     "title": "Disclosures worth having in writing.",
-    "standfirst": "A reference list of the structural questions to ask of any party introduced into the acquisition.",
-    "intent": "When a brokerage offers buyer support without an explicit fee, the work is paid for somewhere in the structure. The items below are where to ask.",
+    "standfirst": "Questions to ask any party introduced into the acquisition about who pays them and who owns them.",
+    "intent": "When a brokerage offers buyer support without a fee, the work is still paid for, by the seller’s commission or by referral fees from suppliers. The items below set out what to ask.",
     "groups": [
       {
         "heading": "The brokerage",
         "items": [
           {
-            "question": "The commission structure being applied (IYBA flat 10 percent, MYBA sliding scale), and the resulting fee."
+            "question": "The commission scale being applied (IYBA flat 10 percent, MYBA sliding scale), and the resulting fee."
           },
           {
             "question": "Any dual agency on the transaction, documented in writing beyond the standard form clause."
           },
           {
             "question": "The brokerage’s ownership structure (PE-backed, public-parent, founder-led, yard-tied).",
-            "detail": "Each ownership pattern carries different incentives."
+            "detail": "Each kind of owner gives the brokerage different incentives."
           }
         ]
       },
@@ -183,8 +183,8 @@
             "detail": "Referral fees are legal only if disclosed (OnboardOnline legal column)."
           },
           {
-            "question": "If disclosure is declined, a parallel adviser whose only role is to scan for and document the relationships.",
-            "detail": "Independent advisers document referral relationships as part of their standard scope."
+            "question": "If disclosure is declined, an independent adviser engaged to identify and document the relationships.",
+            "detail": "This can be part of an independent adviser’s scope."
           }
         ]
       },
@@ -203,27 +203,27 @@
         ]
       },
       {
-        "heading": "The structural test",
+        "heading": "Who acts for the buyer",
         "items": [
           {
             "question": "An understanding of which parties in the transaction would walk away from a deal that did not benefit the buyer.",
-            "detail": "The independent adviser, paid only by the buyer, is the party for whom this is structurally true."
+            "detail": "An independent adviser paid only by the buyer has no financial reason to want the deal to close."
           },
           {
-            "question": "At least one party in the transaction whose income is contingent only on the quality of advice given, not on the deal closing."
+            "question": "At least one party in the transaction whose income does not depend on the deal closing."
           }
         ]
       }
     ],
     "printable": "The page is designed to print onto a single A4. Require written answers from each counterparty. File with the closing documents.",
     "seoTitle": "Broker disclosure checklist: what to get in writing",
-    "seoDescription": "The structural questions to put to any party introduced into the acquisition, and the disclosures worth having on paper before you proceed."
+    "seoDescription": "The questions to put to any party introduced into the acquisition, and the disclosures worth having on paper before you proceed."
   },
   "04-acquisition-process": {
     "slug": "04-acquisition-process",
-    "title": "The acquisition discipline, in fifteen items.",
-    "standfirst": "A reference list across the 12 to 24 week acquisition window. Most of the work is upstream of closing.",
-    "intent": "The contract is set by closing. Most of the work falls in the first ten weeks. The items below are what to complete in that window.",
+    "title": "Fifteen items to complete before closing.",
+    "standfirst": "A reference list across the 12 to 24 week acquisition window. Most of the work comes well before closing.",
+    "intent": "The contract terms are fixed at closing, and most of the work that determines them is done in the first ten weeks. Complete the items below in that period.",
     "groups": [
       {
         "heading": "Shortlist",
@@ -295,7 +295,7 @@
             "question": "A 3 to 5 day technical handover with the seller’s captain, the buyer’s captain, and the chief engineer."
           },
           {
-            "question": "A closing schedule resistant to acceleration.",
+            "question": "A closing date the buyer will not bring forward under pressure.",
             "detail": "An early close suits the seller and the parties paid on completion; the buyer carries what was not checked."
           }
         ]
@@ -303,7 +303,7 @@
     ],
     "printable": "The page is designed to print onto a single A4. Tick items in writing as the process progresses. File with the closing documents.",
     "seoTitle": "Yacht acquisition checklist: 15 items in 12 to 24 weeks",
-    "seoDescription": "A printable list across the acquisition window. The contract is set by closing, and most of the work sits in the first ten weeks."
+    "seoDescription": "A printable list across the acquisition window. The contract is fixed at closing, and most of the work is done in the first ten weeks."
   },
   "05-new-build-versus-brokerage": {
     "slug": "05-new-build-versus-brokerage",
@@ -319,10 +319,10 @@
             "detail": "Below seven years, the new build cost premium does not amortise."
           },
           {
-            "question": "An intended use pattern specific to the yacht (size, layout, propulsion, range, operational profile)."
+            "question": "A use that no brokerage yacht meets, in size, layout, propulsion, range or operation."
           },
           {
-            "question": "Commitment to four disciplines: independent owner’s representative engaged before contract, specialist shipbuilding counsel, technical due diligence on the yard’s order book and financial condition, and willingness to push back on the yard’s first-draft contract."
+            "question": "Commitment to four things: independent owner’s representative engaged before contract, specialist shipbuilding counsel, technical due diligence on the yard’s order book and financial condition, and willingness to push back on the yard’s first-draft contract."
           }
         ]
       },
@@ -331,7 +331,7 @@
         "items": [
           {
             "question": "Stage payment loading reviewed: commercial shipbuilding puts 40 percent or more before delivery; custom yacht contracts often well over half.",
-            "detail": "The higher the loading, the more the refund guarantee and independent milestone checks have to carry."
+            "detail": "The more is paid before delivery, the more depends on the refund guarantee and on independent checks of each milestone."
           },
           {
             "question": "No stage payment released without independent verification of the milestone behind it.",
@@ -343,7 +343,7 @@
           },
           {
             "question": "Refund guarantee expiry diarised against the contract’s long-stop date, and the guarantor’s written consent obtained for every material variation.",
-            "detail": "Builds run late and change orders run into the hundreds. A lapsed or voided guarantee surfaces only when it is called."
+            "detail": "Builds run late and variations are frequent. A guarantee that has lapsed or been voided is usually discovered only when the buyer calls it."
           },
           {
             "question": "Rights to the yard’s financial information at set intervals, to suspend payments on named warning signs, and to step in and complete the vessel elsewhere.",
@@ -370,7 +370,7 @@
             "question": "Cancellation thresholds (150 days post-delivery / 180 days total) understood and within the project’s tolerance."
           },
           {
-            "question": "Title position during construction clarified (yard-retained until delivery, or progressive transfer).",
+            "question": "Title during construction agreed (yard-retained until delivery, or progressive transfer).",
             "detail": "Where title passes progressively: hull and materials marked and kept separately, inspection rights, insurance with the buyer named, a right of entry and removal on default, and a local-law opinion that the transfer will be recognised. Where the yard keeps title, the refund guarantee is the main protection."
           },
           {
@@ -405,17 +405,17 @@
     "slug": "06-refit",
     "title": "What to settle before the refit contract, or the sale.",
     "standfirst": "For the refit, and for the sale if that is the better course.",
-    "intent": "The 30 percent threshold below is a practitioner rule of thumb, not a market rule. Most items contain overrun; the last group prepares a sale.",
+    "intent": "The 30 percent threshold is a practitioner rule of thumb. Most items limit overrun; the last group prepares for a sale.",
     "groups": [
       {
         "heading": "Refit or sell",
         "items": [
           {
-            "question": "Projected refit cost as a percentage of pre-refit market value, and the sale-and-replace arithmetic tested against it.",
+            "question": "Projected refit cost as a percentage of pre-refit market value, compared with the cost of selling and buying a replacement.",
             "detail": "Above 30 percent, consider selling."
           },
           {
-            "question": "A ten-year cost profile with four budgets kept apart: maintenance, planned refit, regulatory works, owner upgrades."
+            "question": "A ten-year cost forecast with four budgets kept apart: maintenance, planned refit, regulatory works, owner upgrades."
           }
         ]
       },
@@ -423,7 +423,7 @@
         "heading": "Yard selection",
         "items": [
           {
-            "question": "The yard’s physical envelope checked first: lift capacity and beam, shed, air draft, approach depth."
+            "question": "The yard’s physical limits checked first: lift capacity and beam, shed, air draft, approach depth."
           },
           {
             "question": "Yard chosen for this scope and tonnage on track record and project team, not cheapest quote."
@@ -455,7 +455,7 @@
             "question": "Long-lead items given decide-by dates, and the contract type (fixed price, cost plus, target cost) matched to the scope."
           },
           {
-            "question": "A naval architect’s tonnage calculation wherever the work adds enclosed volume (over 1 percent on 499 GT triggers remeasurement)."
+            "question": "A naval architect’s tonnage check where work adds enclosed volume (over 1 percent on 499 GT triggers remeasurement)."
           },
           {
             "question": "A contingency of 10 to 25 percent, by how far the hull has been opened before."
@@ -517,9 +517,9 @@
   },
   "07-operations": {
     "slug": "07-operations",
-    "title": "The operational pillars, in year one.",
-    "standfirst": "Five decisions that compound across a hold period. The list below is what to set up in year one and revisit annually.",
-    "intent": "The captain hire compounds with the other four decisions across the hold period. The items below are what to set up in year one.",
+    "title": "Five operating decisions, in year one.",
+    "standfirst": "Five decisions whose effects last for as long as the yacht is owned. The list below is what to set up in year one and revisit annually.",
+    "intent": "The captain hire affects the other four decisions for as long as the yacht is owned. The items below are what to set up in year one.",
     "groups": [
       {
         "heading": "Captain hire",
@@ -528,7 +528,7 @@
             "question": "At least five captain candidates, all sourced through routes outside the broker’s relationship."
           },
           {
-            "question": "The candidate hired having pushed back on itinerary, maintenance, budget, and crew during interview."
+            "question": "Evidence from interview that the candidate will question the owner’s plans on itinerary, maintenance, budget and crew where needed."
           },
           {
             "question": "Disclosure of the captain’s prior commercial relationships with brokers, yards, suppliers, or management companies that might continue into employment."
@@ -542,10 +542,10 @@
             "question": "Management company introduced by the independent adviser, not by the broker."
           },
           {
-            "question": "Written disclosure of any referral economics from suppliers (paint, refit yards, insurance, recruitment)."
+            "question": "Written disclosure of any referral fees or commissions from suppliers (paint, refit yards, insurance, recruitment)."
           },
           {
-            "question": "Contract structured to protect the buyer’s interests in flag-state interactions, ISM and MLC compliance where they apply, and audits."
+            "question": "Contract terms that protect the buyer’s interests in flag-state interactions, ISM and MLC compliance where they apply, and audits."
           }
         ]
       },
@@ -556,7 +556,7 @@
             "question": "Competitive quotes from at least three brokers with over-30 m yacht experience (the chapter names Howden, Pantaenius, AON Marine, Gallagher Specialty, Marsh and PIB Marine), each with its commission disclosed in writing."
           },
           {
-            "question": "Hull insurance at the practitioner band of 0.7 to 1.5 percent of insured value (well-maintained 40 to 50 m), with explanations for any deviation."
+            "question": "Hull premium within the practitioner range of 0.7 to 1.5 percent of insured value (well-maintained 40 to 50 m), with a reason given for any figure outside it."
           },
           {
             "question": "P&I cover (crew injury, environmental, third-party, charter guest claims) at USD 500 m third-party limit through Shipowners’ Club or Steamship Mutual."
@@ -568,13 +568,13 @@
         "items": [
           {
             "question": "Private operation across years one to three, with a decision in year four whether to introduce charter.",
-            "detail": "Year four is the practitioner threshold for converting a private-operated yacht to charter; the data of actual use is then in hand."
+            "detail": "Practitioners usually wait until year four before converting a privately operated yacht to charter, by which time the owner has three years of actual use to go on."
           },
           {
             "question": "If charter is being considered from year one, a worked case based on yacht size, weekly rate, and weeks against the BOAT International published cases (chapter 1)."
           },
           {
-            "question": "A clear position on releasing prime-season weeks, given that charter does not pay for ownership for the median operator."
+            "question": "A clear decision on whether to release prime-season weeks, given that charter income does not cover the cost of ownership for the median operator."
           }
         ]
       },
@@ -585,7 +585,7 @@
             "question": "A refit reserve from year one, sized at 5 to 15 percent of insured hull value across the five-year cycle."
           },
           {
-            "question": "The reserve tested against the industry 30 to 50 percent overrun pattern."
+            "question": "The reserve checked against the 30 to 50 percent by which refits commonly overrun their quotes."
           },
           {
             "question": "An annual capex plan revisited with the captain and owner’s representative present."
@@ -595,24 +595,24 @@
     ],
     "printable": "The page is designed to print onto a single A4. Complete with the captain and owner’s representative in year one. Revisit annually.",
     "seoTitle": "Yacht operations checklist for the first year of ownership",
-    "seoDescription": "Five decisions that compound across a hold period: captain, management, insurance, charter or private, and the refit reserve."
+    "seoDescription": "Five first-year decisions: captain, management, insurance, charter or private, and the refit reserve."
   },
   "08-motor-versus-sail": {
     "slug": "08-motor-versus-sail",
     "title": "Running the comparison, before defaulting to motor.",
     "standfirst": "A reference for the buyer at the point of choosing between motor, sailing yacht, and hybrid drive.",
-    "intent": "First-time buyers commonly default to motor. The items below are the variables on which the comparison turns.",
+    "intent": "First-time buyers commonly default to motor. The items below are what the comparison depends on.",
     "groups": [
       {
         "heading": "The threshold tests",
         "items": [
           {
-            "question": "An honest read of the cruising calendar. Are the buyer’s seasons fixed-date and inflexible, or is there room for weather-window planning of 36 to 60 hours on transatlantics?",
-            "detail": "Fixed-schedule cruising tilts toward motor or hybrid. A flexible season opens the sailing yacht and hybrid options."
+            "question": "A realistic view of the cruising calendar. Are the buyer’s seasons fixed-date and inflexible, or is there room to wait 36 to 60 hours for suitable weather before a transatlantic crossing?",
+            "detail": "Fixed-schedule cruising favours motor or hybrid. A flexible season opens the sailing yacht and hybrid options."
           },
           {
-            "question": "A position on the carbon question, set against the principal’s family office, foundation, or public profile.",
-            "detail": "Sailing yachts and hybrid programmes carry a lower carbon position than conventional motor yachts."
+            "question": "A view on how much the yacht’s carbon emissions matter, given the principal’s family office, foundation or public role.",
+            "detail": "Sailing yachts and hybrid yachts emit less carbon than conventional motor yachts."
           },
           {
             "question": "The seven-year arithmetic, run on paper, across capex, opex, depreciation, and residual.",
@@ -630,7 +630,7 @@
             "question": "Crew complement and pay, sailing yacht against motor. 9 to 12 crew on a 50 m sailing yacht, 12 to 16 on a comparable motor."
           },
           {
-            "question": "Maintenance shape: rigging and sail wardrobe reserves on the sailing yacht set against engine wear and stabiliser systems on the motor. Net annual maintenance is broadly comparable; the cost shape differs."
+            "question": "Maintenance: rigging and sail wardrobe reserves on the sailing yacht set against engine wear and stabiliser systems on the motor. Net annual maintenance is broadly comparable, but more of the sailing yacht’s comes as large sums at long intervals."
           },
           {
             "question": "Total annual operating cost. Sailing yacht typically 70 to 85 percent of the motor figure on equivalent length and use."
@@ -653,11 +653,11 @@
         ]
       },
       {
-        "heading": "The hybrid third path",
+        "heading": "Hybrid drive",
         "items": [
           {
             "question": "Whether hybrid drive (Heesen FDHF, Sanlorenzo SX, and equivalent programmes) has been priced into the comparison alongside motor and sailing yacht.",
-            "detail": "Hybrid drive sits between motor and sailing on cost and carbon profile."
+            "detail": "Hybrid drive costs less to run and emits less carbon than a conventional motor yacht, but more than a sailing yacht."
           },
           {
             "question": "Battery hotel-load capability on the relevant new build candidates, with the capacity in kWh and the hours of silent running it supports."
@@ -671,20 +671,20 @@
             "question": "A written summary of the comparison, signed off by the buyer and the independent adviser before any broker engagement on the chosen path."
           },
           {
-            "question": "Acceptance, on paper, of the residual case for whichever path is chosen."
+            "question": "Written acceptance of the expected resale value of whichever type of yacht is chosen."
           }
         ]
       }
     ],
     "printable": "The page is designed to print onto a single A4. Complete in writing before approaching any broker on the chosen path.",
     "seoTitle": "Motor versus sailing yacht: the comparison checklist",
-    "seoDescription": "A printable reference for the point of choosing between motor, sailing yacht and hybrid drive, and the variables the comparison turns on."
+    "seoDescription": "A printable reference for the point of choosing between motor, sailing yacht and hybrid drive, and what the comparison depends on."
   },
   "09-decision-framework": {
     "slug": "09-decision-framework",
     "title": "The ten questions, applied to every adviser.",
     "standfirst": "The ten questions are designed to be put to anyone proposing to advise on the acquisition, including the publisher of The First Owner’s Reference. The publisher’s own answers are on the colophon.",
-    "intent": "The questions below test whether any adviser is structurally aligned with the buyer. They are designed to be put to people, not to be answered alone.",
+    "intent": "The questions below test whether an adviser’s interests match the buyer’s, by establishing who pays them. They are designed to be put to people, not to be answered alone.",
     "groups": [
       {
         "heading": "The introductions",
@@ -715,7 +715,7 @@
         ]
       },
       {
-        "heading": "The structural alignment",
+        "heading": "Independence of the professionals",
         "items": [
           {
             "question": "Is my legal counsel independent of the broker, the yard, and the management company, and is their fee paid by me directly?"
@@ -729,16 +729,16 @@
         ]
       },
       {
-        "heading": "The structural test",
+        "heading": "The final question",
         "items": [
           {
             "question": "If I asked any of these parties to walk away from a deal that would not benefit me, would they?",
-            "detail": "If the answer is no for any party, the relationship is not structurally aligned with the buyer."
+            "detail": "If the answer is no for any party, its interest in the deal closing may outweigh the buyer’s."
           }
         ]
       },
       {
-        "heading": "Before the structure: settle these first",
+        "heading": "Before setting up the ownership structure",
         "items": [
           {
             "question": "Will the yacht be for private enjoyment only, or is charter a possibility, even if not immediately?"

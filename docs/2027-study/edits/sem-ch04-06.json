@@ -1,0 +1,1518 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "a brokerage acquisition takes 12 to 24 weeks and turns on five decisions:",
+    "new": "a brokerage acquisition takes 12 to 24 weeks and involves five main decisions:",
+    "kind": "line",
+    "reason": "A purchase does not \"turn on\" decisions; it involves them."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The visit phase is where brokers add genuine value: they have walked the inventory and know what is rough and what is tight. It is also where they learn",
+    "new": "Brokers add most value during the viewings: they have been aboard many of the yachts for sale and know which are in poor condition and which are well kept. During the viewings they also learn",
+    "kind": "line",
+    "reason": "\"Rough and tight\" leaves the meaning to the reader; \"X is where Y\" construction."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Two habits protect the shortlist.",
+    "new": "Two habits protect the buyer at this stage.",
+    "kind": "line",
+    "reason": "A shortlist is not what is protected; the buyer is."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A shortlist drawn entirely from a single broker’s central-agency book is narrow by definition. The independent adviser can run a parallel scan against the entire market.",
+    "new": "A shortlist drawn entirely from one broker’s central-agency listings covers only the yachts that broker has been appointed to sell. The independent adviser can search the wider market at the same time.",
+    "kind": "line",
+    "reason": "\"Narrow by definition\" and \"parallel scan\" replaced with what each means."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Boat shows are part of the visit phase, not the closing phase, and brokers say so on the record.",
+    "new": "Boat shows are for viewing yachts rather than for agreeing sales, and brokers say so publicly.",
+    "kind": "line",
+    "reason": "Phase labels and \"on the record\" replaced with plain statement."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The closing happens offline, in the weeks after the visit,",
+    "new": "Sales are agreed later, in the weeks after the viewing,",
+    "kind": "line",
+    "reason": "\"Offline\" is not the meaning; the point is timing."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The VAT regime and the flag shape the cost of ownership for the next decade, and both can end up being settled in a hurry at closing.",
+    "new": "The VAT regime and the flag affect the cost of ownership for years, and both are often settled in a hurry at closing.",
+    "kind": "line",
+    "reason": "\"Shape\" and \"can end up being\" replaced with plain verbs."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "They are also not separate from each other. The VAT regime, the flag, and the ownership structure the yacht sits inside are one decision with three parts, and settling them together",
+    "new": "The VAT regime, the flag and the company that owns the yacht depend on one another, and settling them together",
+    "kind": "line",
+    "reason": "A yacht does not sit inside a structure; \"one decision with three parts\" is a slogan. Says what is meant: the three are interdependent."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "when the exposure can be a liability calculated on the value of the yacht. Simon Roberts of Quadrant Group sets out that sequencing,",
+    "new": "when the exposure can be a tax liability calculated on the value of the yacht. Simon Roberts of Quadrant Group sets out the order in which they are settled,",
+    "kind": "line",
+    "reason": "Names the liability; \"that sequencing\" made concrete."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Chapter 6 sets out how it works and where compliance rests.",
+    "new": "Chapter 6 sets out how it works and who is responsible for compliance.",
+    "kind": "line",
+    "reason": "Compliance does not rest anywhere; a person is responsible."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and the family office’s broader structuring preferences. Cayman and Marshall Islands dominate",
+    "new": "and how the family office prefers to hold its assets. Cayman and Marshall Islands dominate",
+    "kind": "line",
+    "reason": "\"Broader structuring preferences\" made concrete."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the dynamic competition between national yacht codes is what allows new technology to reach delivery ahead of IMO timelines. The recently formed Yacht Safety and Environmental Consortium (YSEC), under the International Association of Classification Societies (IACS), is the likely vehicle for cross-flag standardisation of base rules without erasing competitive variation",
+    "new": "competition between national yacht codes lets new technology reach delivery sooner than IMO timelines would allow. The recently formed Yacht Safety and Environmental Consortium (YSEC), under the International Association of Classification Societies (IACS), is the likely body to standardise base rules across flags while leaving room for national differences",
+    "kind": "line",
+    "reason": "\"Dynamic\", \"is what allows\", \"vehicle\", \"erasing competitive variation\" replaced with plain wording of the same attributed claim."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and designers build to the line:",
+    "new": "and designers work to stay below it:",
+    "kind": "line",
+    "reason": "Plain statement of the practice."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Inside that envelope, MLC accommodation minimums and Tier III exhaust after-treatment keep taking volume;",
+    "new": "Within that limit, MLC accommodation minimums and Tier III exhaust after-treatment take up more of the volume;",
+    "kind": "line",
+    "reason": "\"Envelope\" metaphor replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "argues in The Superyacht Report (issue 230, September 2026) that the requirements anchored at 500 GT do real safety work, and that the defensible complaint is narrower:",
+    "new": "argues in The Superyacht Report (issue 230, September 2026) that the requirements that apply from 500 GT bring real safety benefits, and that the fair criticism is narrower:",
+    "kind": "line",
+    "reason": "Requirements are not anchored; they apply from a threshold."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "should read any design near 499 GT, and any later refit, against that line.",
+    "new": "should check any design near 499 GT, and any later refit, against that limit.",
+    "kind": "line",
+    "reason": "\"Read against that line\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Flag and class fees also sit inside the operating compliance cost in chapter 7,",
+    "new": "Flag and class fees are also included in the operating compliance cost in chapter 7,",
+    "kind": "line",
+    "reason": "Fees do not sit; they are included."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Closing itself is procedurally straightforward. MYBA MOA signed at heads-of-terms with deposit (typically 10 percent), closing 30 to 60 days later with balance, transfer of title, delivery, and a brief acceptance period",
+    "new": "Closing itself is procedurally straightforward. The MYBA MOA is signed at heads of terms with a deposit (typically 10 percent), and closing follows 30 to 60 days later with payment of the balance, transfer of title, delivery, and a brief acceptance period",
+    "kind": "line",
+    "reason": "Note-form fragment made a sentence."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The errors are upstream, not at closing. By closing, the buyer has either negotiated the right contract or has not. The right contract has",
+    "new": "The costly mistakes are made before closing, in the survey and in the negotiation of the contract, whose terms are fixed by the closing date. A sound contract has",
+    "kind": "line",
+    "reason": "\"Upstream, not at closing\" contrast and either/or line replaced with the stages concerned."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "04-acquisition-process",
+      "startsWith": "Five common pitfalls:"
+    },
+    "kind": "line",
+    "reason": "Restates the heading immediately above."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Another buyer is interested, the marina slot is being lost, prices are about to move.",
+    "new": "The buyer is told that another party is interested, the berth will be lost, or prices are about to rise.",
+    "kind": "line",
+    "reason": "Says that these are claims made to the buyer, and what \"move\" means."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and it may not suit your use pattern.",
+    "new": "and it may not suit the way you will use the yacht.",
+    "kind": "line",
+    "reason": "\"Use pattern\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "04-acquisition-process",
+      "startsWith": "A buyer who avoids these five will not have bought a perfect yac"
+    },
+    "kind": "line",
+    "reason": "Aphoristic closer that adds nothing to the list."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the sea trial, the VAT and flag position, and the terms",
+    "new": "the sea trial, the VAT regime and flag, and the terms",
+    "kind": "line",
+    "reason": "\"Position\" removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The renegotiation that followed reduced the price by EUR 2.1 m and produced a contract that allocated the structural work correctly.",
+    "new": "The renegotiation that followed reduced the price by EUR 2.1 m, and the buyer took on the remediation that the reduction paid for.",
+    "kind": "line",
+    "reason": "\"Allocated the structural work correctly\" did not say who did what."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "from a respected Northern European yard, 11 years old,",
+    "new": "from a respected Northern European yard, nine years old,",
+    "kind": "fact",
+    "reason": "Built 2014, sold 2023: nine years (brief known fix)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The seller had instructed the listing broker to position the yacht as turnkey",
+    "new": "The seller had instructed the listing broker to market the yacht as turnkey",
+    "kind": "line",
+    "reason": "\"Position\" replaced with the action."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The asking was EUR 22 m.",
+    "new": "The asking price was EUR 22 m.",
+    "kind": "line",
+    "reason": "Natural English."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The class survey had passed the yacht. The pre-purchase survey did not. Three categories of finding mattered.",
+    "new": "The class survey had passed the yacht. The pre-purchase survey found problems the class survey had not recorded, of which three mattered most.",
+    "kind": "line",
+    "reason": "A pre-purchase survey does not pass or fail a yacht; contrast replaced with what it found."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The modification had been documented but the documentation showed that the original engine room ventilation had been compromised. The yacht’s ventilation had been operating at approximately 80 percent of design capacity for six years.",
+    "new": "The modification had been documented, and the documents showed that it had reduced the engine room ventilation. The ventilation had been running at approximately 80 percent of design capacity since 2019.",
+    "kind": "fact",
+    "reason": "\"Compromised\" made exact; \"six years\" is inconsistent with a 2019 modification and a 2023 sale (four years), so the period is stated by date."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Plus a longer list of smaller findings",
+    "new": "There was also a longer list of smaller findings",
+    "kind": "line",
+    "reason": "Fragment made a sentence."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Total estimated remediation across the buyer’s ten-year hold horizon: EUR 2.0 to 2.4 m.",
+    "new": "Total estimated remediation over the ten years the buyer planned to own the yacht: EUR 2.0 to 2.4 m.",
+    "kind": "line",
+    "reason": "\"Hold horizon\" made plain."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The buyer’s lawyer drafted the survey-driven price renegotiation. The position was straightforward:",
+    "new": "The buyer’s lawyer drafted the request for a price reduction based on the survey. The argument was straightforward:",
+    "kind": "line",
+    "reason": "\"Survey-driven\" and \"position\" replaced."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"The arithmetic of the survey fee\"",
+    "new": "\"text\": \"The cost of the survey against the price reduction\"",
+    "kind": "line",
+    "reason": "Heading says what the section contains."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Total cost of the disciplined survey process: EUR 85,000.",
+    "new": "Total cost of the survey, the engineer’s inspection and the renegotiation: EUR 85,000.",
+    "kind": "line",
+    "reason": "\"Disciplined survey process\" replaced by its parts."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The price reduction was EUR 2.1 m. The pre-purchase scoping returned approximately 25 to 1 against its own cost. This is not unusual. It is the case for engaging an independent surveyor in every acquisition where the cost permits, which is every acquisition above approximately EUR 5 m.",
+    "new": "The price reduction was EUR 2.1 m, about 25 times the EUR 85,000 the survey process cost. The reduction was not a profit: the buyer still spent EUR 2.0 to 2.4 m on remediation, which it roughly covered. Against closing at the asking price without the survey, the buyer was about EUR 2.0 m better off (EUR 2.1 m less EUR 85,000). On any acquisition above about EUR 5 m, the cost of an independent survey is small against what it can find.",
+    "kind": "fact",
+    "reason": "Separates the price reduction from the net saving after remediation and survey cost; removes the unsupported \"This is not unusual\" and the slogan."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The total cost would have been approximately EUR 2.1 m higher than what he paid. The seller, in that scenario, would have been the beneficiary.",
+    "new": "He would have paid about EUR 2.0 m more in total than he did, after allowing for the EUR 85,000 the survey process cost. That sum would have stayed with the seller.",
+    "kind": "fact",
+    "reason": "Net figure, consistent with the arithmetic above."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"Class surveys are not buyer-side surveys. They certify the yacht for class. They do not protect the buyer.\"",
+    "new": "\"Class surveys are not buyer-side surveys. They confirm that the yacht meets class requirements; they are not designed to protect a buyer.\"",
+    "kind": "line",
+    "reason": "Three-beat ending made one plain sentence."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "returns a multiple of the fee on the typical buyer’s acquisition.",
+    "new": "can return many times its fee, as it did here, though not every survey finds as much.",
+    "kind": "line",
+    "reason": "One case does not establish a typical return."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Modify the survey scope to reflect the buyer’s use case, not the seller’s reassurance.",
+    "new": "Set the survey scope by the buyer’s intended use, not by the seller’s assurances.",
+    "kind": "line",
+    "reason": "Plain wording."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"Survey-driven renegotiation is the disciplined response to material findings.",
+    "new": "\"Material findings justify renegotiating the price.",
+    "kind": "line",
+    "reason": "\"Disciplined response\" replaced."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "opened two compartments it had not, and the price moved.",
+    "new": "opened two compartments it had not, and the price came down by EUR 2.1 m.",
+    "kind": "line",
+    "reason": "Says how the price moved."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"title\": \"The acquisition discipline, in fifteen items.\"",
+    "new": "\"title\": \"Fifteen items to complete before closing.\"",
+    "kind": "line",
+    "reason": "\"Discipline\" replaced; title says what the list is."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Most of the work is upstream of closing.",
+    "new": "Most of the work comes well before closing.",
+    "kind": "line",
+    "reason": "\"Upstream\" replaced."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The contract is set by closing. Most of the work falls in the first ten weeks. The items below are what to complete in that window.",
+    "new": "The contract terms are fixed at closing, and most of the work that determines them is done in the first ten weeks. Complete the items below in that period.",
+    "kind": "line",
+    "reason": "Three clipped sentences made one connected statement."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"question\": \"A closing schedule resistant to acceleration.\"",
+    "new": "\"question\": \"A closing date the buyer will not bring forward under pressure.\"",
+    "kind": "line",
+    "reason": "Abstract phrasing made concrete."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The contract is set by closing, and most of the work sits in the first ten weeks.",
+    "new": "The contract is fixed at closing, and most of the work is done in the first ten weeks.",
+    "kind": "line",
+    "reason": "\"Sits\" replaced."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Two procedural choices that shape a decade of ownership cost, often made under time pressure at closing without proper analysis. The legitimate options on the published record.",
+    "new": "Two choices that affect the cost of ownership for years, often made in a hurry at closing without proper analysis. The lawful options, as published by tax authorities and law firms.",
+    "kind": "line",
+    "reason": "\"Shape a decade of ownership cost\" and \"on the published record\" made plain."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"caption\": \"Each option has compliance burden. None should be selected",
+    "new": "\"caption\": \"Each option carries compliance obligations. None should be selected",
+    "kind": "line",
+    "reason": "Grammar."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"text\": \"Flag state, dominant choices for 30 m+\"",
+    "new": "\"text\": \"Flag state, the most used registers for yachts over 30 m\"",
+    "kind": "line",
+    "reason": "Plain heading."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "financing requirements, and the family office’s broader structuring preferences.\",",
+    "new": "financing requirements, and how the family office prefers to hold its assets.\",",
+    "kind": "line",
+    "reason": "Matches essay wording."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The right work is done in the first ten weeks:",
+    "new": "Most of the work is done in the first ten weeks:",
+    "kind": "line",
+    "reason": "\"The right work\" is vague emphasis."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "is a non-negotiable acquisition discipline.",
+    "new": "is essential to any acquisition.",
+    "kind": "line",
+    "reason": "\"Non-negotiable acquisition discipline\" replaced."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "The two to five year commitment of a new build, against the immediacy of brokerage. Trade-offs and the cases for each.",
+    "new": "A new build commits the buyer for two to five years; a brokerage purchase completes in weeks. The costs, risks and contract terms of each route.",
+    "kind": "line",
+    "reason": "\"Immediacy\" and \"trade-offs\" made concrete."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "warranty and snag lists, and what each route actually costs in time.",
+    "new": "warranty and snag lists, and how long each route takes.",
+    "kind": "line",
+    "reason": "\"Actually\" removed; plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The choice between building and buying turns on three things:",
+    "new": "The choice between building and buying depends on three things:",
+    "kind": "line",
+    "reason": "\"Turns on\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "capital is concentrated at closing;",
+    "new": "most of the price is paid at closing;",
+    "kind": "line",
+    "reason": "\"Capital is concentrated\" replaced with the payment."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "wear and tear, and accumulated maintenance debt. The risk is assessed once, at survey, and accepted.",
+    "new": "wear and tear, and any maintenance that has been deferred. The buyer assesses the risk once, at survey, and accepts what remains.",
+    "kind": "line",
+    "reason": "\"Maintenance debt\" made plain; passive made active."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "as the brokerage hull depreciates and the new build hits the market.",
+    "new": "as the brokerage hull loses value during the build period.",
+    "kind": "line",
+    "reason": "\"Hits the market\" did not explain the narrowing."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"Where new build risk concentrates\"",
+    "new": "\"text\": \"The main risks in a new build\"",
+    "kind": "line",
+    "reason": "Risk does not concentrate; heading says what follows."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The published case record concentrates new build risk in three patterns: governance on the buyer side, yard financial condition during the build, and yard pricing too low to be credible. All three are addressable with the right representation team and contract structure.",
+    "new": "Published cases point to three main risks in a new build: weak oversight on the buyer’s side, the yard’s finances during the build, and a yard price too low to be credible. The right representation and contract terms reduce all three.",
+    "kind": "line",
+    "reason": "A record does not concentrate risk; \"patterns\", \"governance\" and \"addressable\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The lesson for first-time buyers: contracting personally, or with SPV structuring that does not survive litigation, leaves the principal directly exposed. The fix is set at heads-of-terms by counsel, not after the dispute.",
+    "new": "For a first-time buyer, the point is that a contract signed personally, or through a company a court may not accept as the contracting party, leaves the principal personally liable. Counsel should settle which entity signs at heads of terms, before any dispute arises.",
+    "kind": "line",
+    "reason": "\"SPV structuring that does not survive litigation\" and \"the fix is set\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "where the owner deputised a family-office CFO with no maritime expertise as owner’s representative.",
+    "new": "where the owner appointed the family office’s CFO, who had no maritime expertise, as owner’s representative.",
+    "kind": "line",
+    "reason": "Natural English."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Inglis’s summary of the pattern:",
+    "new": "Inglis’s summary:",
+    "kind": "line",
+    "reason": "\"Pattern\" from one case."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The yard-side pattern, less covered in trade press, has recurred through the 2020s: a yard runs into financial difficulty mid-build, and the owner is presented with a choice that is not really a choice. Inject additional capital, sometimes as equity in the restructured business, or face the yacht stalling, the supplier chain freezing, and the work-in-progress becoming an asset of the insolvency.",
+    "new": "The risk on the yard side, less covered in the trade press, has recurred through the 2020s: a yard runs into financial difficulty mid-build, and the owner is asked to inject more capital, sometimes as equity in the restructured business, or accept that the build will stop, suppliers will stop work, and the unfinished yacht will become an asset of the insolvency.",
+    "kind": "line",
+    "reason": "\"A choice that is not really a choice\" and \"supplier chain freezing\" replaced with the events."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Outcomes for buyers turned on structure more than on merit.",
+    "new": "What buyers recovered depended more on the security they held and on how each insolvency was resolved than on the strength of their claims.",
+    "kind": "line",
+    "reason": "Brief example. \"Structure\" and \"merit\" named: security held and how the insolvency was resolved (the examples that follow show exactly these)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Nobiskrug, the German builder of Sailing Yacht A, is the clearest example.",
+    "new": "Nobiskrug, the German builder of Sailing Yacht A, is the clearest recent example of an insolvency with hulls in build.",
+    "kind": "line",
+    "reason": "Example of what was undefined."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Owners with hulls in the yard at insolvency faced direct exposure:",
+    "new": "Owners with hulls in the yard at insolvency were directly affected:",
+    "kind": "line",
+    "reason": "\"Faced direct exposure\" plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "NCA refit) extended the logic into procedural protection.",
+    "new": "NCA refit) went further, with court protection for the yard against its buyers.",
+    "kind": "line",
+    "reason": "\"Extended the logic into procedural protection\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "from the buyer’s perspective a court-mandated commitment to a counterparty whose financial condition had changed since signature.",
+    "new": "in effect, buyers were held by court order to contracts with a yard whose finances had changed since signature.",
+    "kind": "line",
+    "reason": "Abstract phrase made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "those stage payments become creditor positions in someone else’s insolvency. Refund guarantees protect a portion of the exposure in principle; in practice, particularly under non-tier-one bank wrappers, they are less reliable than the contract suggests.",
+    "new": "those stage payments become claims in the yard’s insolvency. Refund guarantees are meant to protect part of those payments; in practice, particularly when issued by banks below the first tier or by surety companies, they are less reliable than the contract suggests.",
+    "kind": "line",
+    "reason": "\"Creditor positions in someone else’s insolvency\" and \"wrappers\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the timing of insolvency proceedings rarely lines up with the guarantee window.",
+    "new": "insolvency proceedings rarely fall within the period the guarantee covers.",
+    "kind": "line",
+    "reason": "\"Lines up with the window\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Three workstreams the buyer’s team handles in advance. Yard financial due diligence at heads of terms: recent published accounts, parent structure, order-book composition, and litigation history form part of standard pre-contract assessment. Refund guarantee credit quality carries the same weight as any other contract term. And the buyer decides",
+    "new": "The buyer’s team does three things before signing. It checks the yard’s finances at heads of terms: recent published accounts, the parent group, the order book and litigation history. It treats the credit quality of the refund guarantee as seriously as any other contract term. And the buyer decides",
+    "kind": "line",
+    "reason": "\"Workstreams\" and fragmentary list made sentences."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The third pattern is distinct from yard financial distress:",
+    "new": "The third risk is different from a yard’s financial difficulty:",
+    "kind": "line",
+    "reason": "\"Pattern\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "New yards arrived in the market with very deep capital in the early 2000s,",
+    "new": "New yards with large financial backing entered the market in the early 2000s,",
+    "kind": "line",
+    "reason": "Natural English."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "came directly out of that period. Once a yard has delivered, it knows what the boats actually cost.",
+    "new": "came directly out of that period, on the reasoning that a yard which has delivered hulls knows what its boats cost to build.",
+    "kind": "line",
+    "reason": "Closer turned into the stated reason for the rule."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The contract is where it happens\"",
+    "new": "\"text\": \"Negotiating the construction contract\"",
+    "kind": "line",
+    "reason": "Brief example. Heading says what the section contains."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A new build contract governs USD 30 to 200 million of capital across two to five years. It settles every variation, dispute and question of interpretation in the period during which the yard holds the cards.",
+    "new": "A new build contract covers USD 30 to 200 million across two to five years. Its terms decide every variation, dispute and question of interpretation during the build, while the yard holds the buyer’s money and the unfinished yacht.",
+    "kind": "line",
+    "reason": "\"Holds the cards\" replaced with what the yard holds."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "describes the relative thinness of yacht-construction contracts as drafted.",
+    "new": "notes how short yacht construction contracts are.",
+    "kind": "line",
+    "reason": "Plain wording."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "But the European yards that matter (Lürssen,",
+    "new": "But the leading European yards (Lürssen,",
+    "kind": "line",
+    "reason": "\"That matter\" is a judgement without a measure."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "drafted by their counsel, with English law and London arbitration grafted on.",
+    "new": "drafted by their counsel, usually under English law with London arbitration.",
+    "kind": "line",
+    "reason": "\"Grafted on\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ten specific points an inexperienced representative gives away at signature:",
+    "new": "Ten points an inexperienced representative commonly concedes at signature:",
+    "kind": "line",
+    "reason": "Plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "three quarters of the price, held against a contract and a record of payments (MacNally).",
+    "new": "three quarters of the price, secured by nothing more than the contract and the payment record (MacNally).",
+    "kind": "line",
+    "reason": "\"Held against\" did not say what it meant."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Tier-one bank pay-on-demand guarantees are materially better than surety wrappers.",
+    "new": "Pay-on-demand guarantees from tier-one banks are materially better than guarantees from surety companies.",
+    "kind": "line",
+    "reason": "\"Wrappers\" jargon replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Bespoke yacht contracts replicate but with negotiable thresholds.",
+    "new": "Bespoke yacht contracts use similar thresholds, which can be negotiated.",
+    "kind": "line",
+    "reason": "Missing object; plain sentence."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "9. Title position during construction.",
+    "new": "9. Title during construction.",
+    "kind": "line",
+    "reason": "\"Position\" removed."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "paid by and accountable to the owner, and carrying the project at principal level.",
+    "new": "paid by and accountable to the owner, and responsible for the project at senior level.",
+    "kind": "line",
+    "reason": "\"Carrying at principal level\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "sets the budget envelope, identifies the candidate yards or hulls, and runs the comparison against the owner’s actual use case. The strongest cost saving in any project is made here,",
+    "new": "sets the budget, identifies the candidate yards or hulls, and compares them against how the owner intends to use the yacht. The largest savings in any project are made here,",
+    "kind": "line",
+    "reason": "\"Envelope\", \"use case\" and \"strongest saving\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "are the points where inexperienced representation is most exposed.",
+    "new": "are the points an inexperienced representative is most likely to concede.",
+    "kind": "line",
+    "reason": "Representation is not exposed; the representative concedes."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "prosecutes warranty claims, and produces a delivery record that holds up in any subsequent insurance, sale, or refit conversation.",
+    "new": "pursues warranty claims, and produces a delivery record that will stand up in any later insurance claim, sale or refit.",
+    "kind": "line",
+    "reason": "\"Conversation\" replaced with the events."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The four courses run from the shipyard outwards: how the yard builds and is financed, the representative’s own tasks, the legal layer, and the leadership that carries a difficult project to delivery.",
+    "new": "The four courses cover, in order, how the yard builds and is financed, the representative’s own tasks, the law, and leading a difficult project through to delivery.",
+    "kind": "line",
+    "reason": "\"From the shipyard outwards\", \"legal layer\" and leadership \"carrying\" a project replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The yard side has begun hosting the programme directly.",
+    "new": "Yards have begun hosting the programme directly.",
+    "kind": "line",
+    "reason": "Plain subject."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "to deliver Unit 40, framing the visit on its own corporate channel as evidence that",
+    "new": "to deliver Unit 40, and described the visit on its own corporate channel as showing that",
+    "kind": "line",
+    "reason": "\"Framing\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The specialist disciplines around the lead role determine how much of the yard’s first-draft position the owner is able to test.",
+    "new": "The specialists around the representative determine how much of the yard’s first draft the owner can test and challenge.",
+    "kind": "line",
+    "reason": "\"Disciplines around the lead role\" and \"position\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Maritime counsel from a specialist shipbuilding firm leads the legal workstream.",
+    "new": "Counsel from a specialist shipbuilding firm leads the legal work.",
+    "kind": "line",
+    "reason": "\"Workstream\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Missing the comfort-class targets at delivery is one of the most expensive defects in the warranty period;",
+    "new": "A yacht that misses its comfort-class targets at delivery has one of the most expensive defects to correct in the warranty period;",
+    "kind": "line",
+    "reason": "Missing a target is not itself a defect."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The two scopes are normally bid as a paired engagement.",
+    "new": "The modelling and the sea trial measurements are normally quoted as one engagement.",
+    "kind": "line",
+    "reason": "Names the two scopes."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Paint surveyors are their own discipline.",
+    "new": "Paint surveying is a separate specialism.",
+    "kind": "line",
+    "reason": "Natural English."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Class society consulting validates the path to certification at Lloyd’s Register, DNV, ABS, or RINA, including any yard-proposed innovations that may interact with the regulatory pathway.",
+    "new": "Class consultants check that the design can be certified by Lloyd’s Register, DNV, ABS or RINA, including any new features the yard proposes that may affect certification.",
+    "kind": "line",
+    "reason": "\"Path\", \"pathway\" and \"interact\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "against a build cost the yard’s first-draft contract typically allows to drift by 5 to 15 percent.",
+    "new": "against a build cost that typically rises by 5 to 15 percent under the yard’s first-draft contract.",
+    "kind": "line",
+    "reason": "\"Drift\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Second, is your intended use pattern genuinely specific to the yacht (size, layout, propulsion, range, operational profile)?",
+    "new": "Second, do you need something a brokerage yacht cannot provide, in size, layout, propulsion, range or the way the yacht will be operated?",
+    "kind": "line",
+    "reason": "\"Use pattern\" and \"operational profile\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "can deliver 80 percent of your use case, brokerage.",
+    "new": "can meet 80 percent of your intended use, buy brokerage.",
+    "kind": "line",
+    "reason": "Fragment and \"use case\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Custom is for the residual 20 percent that genuinely matters.",
+    "new": "Building is justified only if the remaining 20 percent matters to you.",
+    "kind": "line",
+    "reason": "Slogan made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "If commitment to all four is not in place, brokerage tends to be the calmer path.",
+    "new": "Without commitment to all four, brokerage is usually the lower-risk choice.",
+    "kind": "line",
+    "reason": "\"Calmer path\" undefined."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "it tends to be one of the more expensive ways to acquire a yacht. The case in this chapter is for the conditions, not against the path.",
+    "new": "it tends to be one of the more expensive ways to acquire a yacht.",
+    "kind": "line",
+    "reason": "\"Not X but Y\" closer removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The change was technically straightforward. The contract’s change order procedure was not. The variation cost EUR 1.4 m above the engineering estimate, because the contract had been signed without a defined unit-rate framework.",
+    "new": "The change was technically straightforward, but the contract set no unit rates for variations and gave the owner no right to obtain other quotes. The yard charged EUR 1.4 m above its own engineering estimate.",
+    "kind": "line",
+    "reason": "Brief example. \"Unit-rate framework\" replaced with the missing terms; contrast removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The owner had committed to a 62 m fully custom new build",
+    "new": "This account combines two project files. The owner had committed to a 62 m fully custom new build",
+    "kind": "line",
+    "reason": "Composite made explicit in the text, as the brief requires."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The owner had been told, in passing, that this was “the industry-standard structure.” It was, in a narrow sense.",
+    "new": "The owner had been told that this was the usual arrangement in the industry. Such arrangements are common.",
+    "kind": "line",
+    "reason": "Composite: quoted remark made reported speech; \"in a narrow sense\" was coy."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The owner, on the dual-role representative’s advice, accepted the change order. The representative’s framing was that “changes at this stage of the build always carry a premium” and that “fighting on this issue would damage the relationship with the yard.” Both framings were accurate in a narrow sense. They were also incomplete.",
+    "new": "The owner, on the dual-role representative’s advice, accepted the change order. The representative advised that changes at this stage of a build always carry a premium, and that disputing the price would damage the relationship with the yard. Both points had some truth, but neither mentioned that the size of the premium followed from the contract terms.",
+    "kind": "line",
+    "reason": "Composite: quotes made reported speech; \"framing\" and the two-beat close replaced with the missing point."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The reason for the premium was not the engineering. It was the absence of a defined change order procedure in the contract. A specialist shipbuilding lawyer would have negotiated unit rates, third-party quote rights, and a variation pricing framework at heads of terms. The owner did not have that framework. He had a general clause that said the yard would charge what it considered reasonable.",
+    "new": "The EUR 1.2 m of engineering, materials and labour would have been payable under any contract. The EUR 1.4 m margin was a different matter. A specialist shipbuilding lawyer would have negotiated pre-agreed unit rates and the right to obtain third-party quotes above a threshold at heads of terms, so that the yard’s price could be checked against the rates and against other bidders. Some margin would still have been payable, but the yard could not have set it alone. The owner had instead a general clause under which the yard would charge what it considered reasonable.",
+    "kind": "line",
+    "reason": "Brief item: identifies which part of the cost different terms would have avoided (part of the margin, not the underlying cost)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"The pattern, repeated\"",
+    "new": "\"text\": \"The other variations\"",
+    "kind": "line",
+    "reason": "Heading says what follows."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "the owner had paid approximately EUR 5.2 m in variation margin that a properly drafted contract would have constrained.",
+    "new": "the owner had paid approximately EUR 5.2 m in margin on variations (40 percent of EUR 13 m). The other EUR 7.8 m, the engineering and materials, would have been paid under any contract. Some margin is payable under any terms; unit rates and quote rights would have limited how much.",
+    "kind": "fact",
+    "reason": "Shows the arithmetic and which costs the terms would have affected."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "From the owner’s perspective, he had “saved” a representative fee, because the representative was free.",
+    "new": "As the owner saw it, the representative had cost him nothing.",
+    "kind": "line",
+    "reason": "Plain."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The adviser ran the snag list discipline, the sea trial,",
+    "new": "The adviser ran the snag list, the sea trial,",
+    "kind": "line",
+    "reason": "\"Discipline\" removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The adviser’s view, in private conversation with the owner during the acceptance period, was that the contract’s change order framework had cost the owner several million euros across the build, and that the dual-role representative had not been incentivised to negotiate it differently.",
+    "new": "The adviser’s assessment was that the change-order clause had allowed the yard about EUR 5.2 m in margin across the build, and that a representative paid by yard commission had had no financial reason to negotiate it differently.",
+    "kind": "line",
+    "reason": "Composite: invented private-conversation setting removed; \"framework\" and \"several million\" made exact."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The owner’s second build, four years later, was contracted",
+    "new": "The owner’s second build was contracted",
+    "kind": "fact",
+    "reason": "Brief known fix: four years after 2022 to 2024 is after 2026."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Variation margin across that build was within practitioner industry norms. The contract worked because it had been drafted to.",
+    "new": "Variation margin across that build was within the range practitioners regard as normal.",
+    "kind": "line",
+    "reason": "Tautological closer removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Without defined unit rates and third-party quote rights, the buyer pays the yard’s discretion.",
+    "new": "Without defined unit rates and third-party quote rights, the yard sets the price of each variation.",
+    "kind": "line",
+    "reason": "One cannot pay a discretion."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "and it was paid from the same margin the change order clause protected.",
+    "new": "and it was paid out of the yard’s margin, which the loose change-order clause allowed to grow.",
+    "kind": "line",
+    "reason": "\"Margin the clause protected\" was unclear."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "is the cheapest form of structural insurance available against the variation-margin pattern.",
+    "new": "costs EUR 1 to 3 m, less than the EUR 5.2 m paid in variation margin in this case.",
+    "kind": "line",
+    "reason": "\"Structural insurance against the pattern\" replaced with the comparison."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "What the variation actually cost, and why.",
+    "new": "What the variation cost, and why.",
+    "kind": "line",
+    "reason": "\"Actually\" removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "On a EUR 95 m contract that delivered at EUR 108 m,",
+    "new": "On a EUR 95 m contract that finished at EUR 108 m,",
+    "kind": "line",
+    "reason": "A contract does not deliver at a price."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"question\": \"An intended use pattern specific to the yacht (size, layout, propulsion, range, operational profile).\"",
+    "new": "\"question\": \"A use that no brokerage yacht meets, in size, layout, propulsion, range or operation.\"",
+    "kind": "line",
+    "reason": "Matches the essay."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"question\": \"Commitment to four disciplines:",
+    "new": "\"question\": \"Commitment to four things:",
+    "kind": "line",
+    "reason": "\"Disciplines\" replaced."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The higher the loading, the more the refund guarantee and independent milestone checks have to carry.",
+    "new": "The more is paid before delivery, the more depends on the refund guarantee and on independent checks of each milestone.",
+    "kind": "line",
+    "reason": "\"Loading\" and \"carry\" made literal."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Builds run late and change orders run into the hundreds. A lapsed or voided guarantee surfaces only when it is called.",
+    "new": "Builds run late and variations are frequent. A guarantee that has lapsed or been voided is usually discovered only when the buyer calls it.",
+    "kind": "line",
+    "reason": "\"Run into the hundreds\" is unsupported (the case has 31); \"surfaces\" replaced."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"question\": \"Title position during construction clarified",
+    "new": "\"question\": \"Title during construction agreed",
+    "kind": "line",
+    "reason": "\"Position\" removed."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Brokerage concentrates capital at closing. New build distributes it across two to five years against milestones whose definition is among the most important drafting work in the contract. The cashflow shape of each path.",
+    "new": "In a brokerage purchase most of the price is paid at closing. In a new build it is paid over two to five years against milestones, and defining those milestones is among the most important drafting work in the contract. The tables show when the money is paid on each route.",
+    "kind": "line",
+    "reason": "\"Concentrates capital\" and \"cashflow shape\" replaced."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Capital commitment shape differs more than the headline numbers do.",
+    "new": "The timing of payments differs more than the totals do.",
+    "kind": "line",
+    "reason": "\"Shape\" replaced."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Front-loaded variants common; refund guarantee credit quality material\"",
+    "new": "\"Payments often weighted towards the start; the refund guarantee’s credit quality matters\"",
+    "kind": "line",
+    "reason": "Note-form made readable."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"text\": \"Ten contract points where inexperience gets priced\"",
+    "new": "\"text\": \"Ten contract points to settle at heads of terms\"",
+    "kind": "line",
+    "reason": "Brief example; heading says what the table contains."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Stage payment shape\"",
+    "new": "\"Payment schedule\"",
+    "kind": "line",
+    "reason": "\"Shape\" replaced."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "an intended use pattern materially specific to the yacht, and commitment to four disciplines",
+    "new": "a use that no brokerage yacht meets, and commitment to four things",
+    "kind": "line",
+    "reason": "Matches the essay."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "If a brokerage hull within the search window delivers most of the use case, custom is for the residual that does not match.",
+    "new": "If a brokerage yacht meets most of the intended use, building is justified only if the rest matters to the buyer.",
+    "kind": "line",
+    "reason": "Plain wording."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "custom yacht schedules routinely load well over half,",
+    "new": "custom yacht schedules routinely require well over half before delivery,",
+    "kind": "line",
+    "reason": "\"Load\" replaced."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "\"question\": \"Why is owner-side representation quality a market problem?\"",
+    "new": "\"question\": \"Why does the quality of owner’s representation matter?\"",
+    "kind": "line",
+    "reason": "Question as a reader would ask it."
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "where does the balance of risk sit, and which clauses do you open first?",
+    "new": "which side carries most of the risk, and which clauses do you open first?",
+    "kind": "line",
+    "reason": "\"Sit\" replaced."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "Yard selection, scope, and the overrun pattern that runs through refit budgets.",
+    "new": "Yard selection, scope, and why refit budgets so often overrun.",
+    "kind": "line",
+    "reason": "\"Pattern that runs through\" replaced."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "Cost benchmarks per metre, yard selection, scope discipline and the 30 percent threshold.",
+    "new": "Cost benchmarks per metre, yard selection, scope control and the 30 percent threshold.",
+    "kind": "line",
+    "reason": "\"Discipline\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Where ownership cost concentrates, where the yacht’s condition is renewed, and where the relationship between owner and yard is most often tested. The chapter also covers",
+    "new": "Refits are among the largest costs of owning a yacht, and the point at which the relationship between owner and yard is most often tested. The chapter also covers",
+    "kind": "line",
+    "reason": "Brief example (\"where ownership cost concentrates\"); triple \"where\" removed."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A yacht’s life is divided into refit cycles. Every five years a class survey forces structural and systems work; every ten years the cosmetic and major-systems condition demands substantive overhaul. Refit is where ownership cost concentrates, where the yacht’s condition is renewed, and where the relationship between owner, yard and project manager is most often tested.",
+    "new": "Yachts are refitted in cycles. Every five years a class survey requires structural and systems work, and about every ten years the finishes and major systems need substantial overhaul. Refits account for a large share of the cost of ownership, and they are where the relationship between owner, yard and project manager is most often tested.",
+    "kind": "line",
+    "reason": "Brief example (\"where ownership cost concentrates\"); \"condition demands\" replaced; triple close cut to two plain claims."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The result is tightening lead times at the dominant yards.",
+    "new": "The result is longer lead times at the busiest yards.",
+    "kind": "line",
+    "reason": "\"Tightening\" lead times means longer; said directly."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the alternative is sale and reacquisition. The arithmetic depends on three variables: strategic fit with the owner’s continued use case,",
+    "new": "the alternative is to sell and buy another yacht. The arithmetic depends on three things: how well the yacht suits the owner’s continuing use,",
+    "kind": "line",
+    "reason": "\"Strategic fit\" and \"reacquisition\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and the yacht is not strategically irreplaceable for the use case, sale is usually the better decision. Below 30 percent, refit normally is, although the threshold is rough and the calculation is bespoke.",
+    "new": "and another yacht could serve the owner’s use as well, sale is usually the better decision. Below 30 percent, refit normally is, although the threshold is rough and the calculation differs for every yacht.",
+    "kind": "line",
+    "reason": "\"Strategically irreplaceable\" and \"bespoke\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The owner who refits the wrong side of that threshold takes on a project whose total cost runs well above the post-refit yacht’s market value. The owner who sells a strategically-fit yacht on the basis that “the refit was looking expensive” will spend more on the replacement and lose crew continuity that takes years to rebuild.",
+    "new": "An owner who refits above that threshold will usually have spent more, in the yacht’s value plus the refit, than the yacht is worth afterwards. An owner who sells a yacht that suits their use because the refit looked expensive will usually spend more on a replacement, and lose an established crew that can take years to rebuild.",
+    "kind": "line",
+    "reason": "\"Total cost of a project\" was ambiguous; \"strategically-fit\" and \"crew continuity\" made plain; \"will\" softened to \"usually\" since this is a rule of thumb."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "a rebuild that extends, reconfigures, or repositions a hull as a step-change in capacity rather than a maintenance cycle.",
+    "new": "a rebuild that lengthens or reconfigures a hull to give it substantially more space and capability, rather than a maintenance refit.",
+    "kind": "line",
+    "reason": "\"Repositions\" and \"step-change in capacity\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The conversation typically begins with the captain, who knows both the asset and the owner well enough to know when to raise it (Justin Olesinski, in The Superyacht Report, Q2 2026).",
+    "new": "In Justin Olesinski’s experience the idea usually comes from the captain, who knows both the yacht and the owner well enough to judge when to raise it (The Superyacht Report, Q2 2026).",
+    "kind": "line",
+    "reason": "Attributes the generalisation about captains to its source."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Selling is the other answer to the refit question, and it needs the same preparation.",
+    "new": "Selling is the alternative to a refit, and it needs the same preparation.",
+    "kind": "line",
+    "reason": "\"Other answer to the question\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "a seller who supplies it closes that gap.",
+    "new": "a seller who supplies it removes that uncertainty for the buyer.",
+    "kind": "line",
+    "reason": "\"Closes that gap\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Price governs time on market.",
+    "new": "The asking price largely determines how long a yacht takes to sell.",
+    "kind": "line",
+    "reason": "Slogan made a sentence."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A buyer’s adviser reads a listing’s time on market and its price cuts against them,",
+    "new": "A buyer’s adviser compares a listing’s time on market and its price cuts with these figures,",
+    "kind": "line",
+    "reason": "\"Reads against\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The seller’s team follows the same rule as the buyer’s.",
+    "new": "The seller needs the same advisers as the buyer.",
+    "kind": "line",
+    "reason": "\"Same rule\" undefined."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "sit at the top of that band and above it, typically USD 5 million to 10 million.",
+    "new": "fall at the top of that range or above it, typically USD 5 million to 10 million.",
+    "kind": "line",
+    "reason": "\"Sit\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "sets the refit inside the yacht’s whole cost cycle in its Owner’s Refit & Lifecycle Guide",
+    "new": "treats the refit as part of the yacht’s lifetime costs in its Owner’s Refit & Lifecycle Guide",
+    "kind": "line",
+    "reason": "\"Sets inside the cost cycle\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and a ten-year cost profile drawn at purchase shows the clusters an annual average hides; giving every critical system a known end-of-support date turns obsolescence into a scheduled line item rather than a failure.",
+    "new": "and a ten-year cost forecast made at purchase shows the years in which large costs fall together, which an annual average hides. Giving every critical system a known end-of-support date lets its replacement be budgeted in advance rather than forced by a breakdown.",
+    "kind": "line",
+    "reason": "\"Profile\", \"clusters\" and \"line item rather than a failure\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Refit reserve is an annual line, not a lump sum. The running cost calculator carries it against your own size, type, region, and use intensity.",
+    "new": "Budget the refit reserve as a yearly amount rather than a lump sum. The running cost calculator estimates it for your yacht’s size, type, region and use.",
+    "kind": "line",
+    "reason": "\"Carries it against\" replaced; contrast softened."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The 30 to 50 percent overrun pattern\"",
+    "new": "\"text\": \"Refit overruns of 30 to 50 percent\"",
+    "kind": "line",
+    "reason": "\"Pattern\" removed."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The first part is budgeted for; the second is contained.",
+    "new": "The first part needs a contingency budget; the second needs contract terms and management that limit it.",
+    "kind": "line",
+    "reason": "Balanced closer made explicit."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A reserve on that scale covers a well-managed refit, which typically lands within 10 to 20 percent of the quote,",
+    "new": "A reserve on that scale covers a well-managed refit, which typically finishes within 10 to 20 percent of the quote,",
+    "kind": "line",
+    "reason": "\"Lands\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "puts the containment in the contract. It should assume",
+    "new": "says the contract should limit the overrun. It should assume",
+    "kind": "line",
+    "reason": "\"Puts the containment\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "typically lands within 10 to 20 percent of the original quote, and a poorly managed one at the extremes.",
+    "new": "typically finishes within 10 to 20 percent of the original quote, and a poorly managed one can run well beyond 50 percent.",
+    "kind": "line",
+    "reason": "\"At the extremes\" undefined; data spread gives 60 to 100 percent or more."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The overrun is also measured in time.",
+    "new": "Overruns also cost time.",
+    "kind": "line",
+    "reason": "Plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Two yard models shape everything that follows.",
+    "new": "Refit yards work on one of two models, and the choice affects most of what follows.",
+    "kind": "line",
+    "reason": "\"Shape everything\" overstated."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The same metre of dock is billed very differently between the two.",
+    "new": "They charge differently: a full-service yard bills for the whole project, while at a service yard the facility and each trade bill separately.",
+    "kind": "line",
+    "reason": "Brief example. Says how billing differs."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "carry the integration risk and price for it. Service yards (STP, LMC, Marina Port Vell, sections of Astilleros de Mallorca) shift integration responsibility to the owner-side team",
+    "new": "take responsibility for coordinating the trades and charge for it. Service yards (STP, LMC, Marina Port Vell, sections of Astilleros de Mallorca) leave that coordination to the owner’s team",
+    "kind": "line",
+    "reason": "\"Integration risk/responsibility\" made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Most large-yacht refits land at a few dozen yards in those regions.",
+    "new": "Most large-yacht refits are carried out at a few dozen yards in those regions.",
+    "kind": "line",
+    "reason": "\"Land\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ownership has moved recently:",
+    "new": "Several yards have changed ownership recently:",
+    "kind": "line",
+    "reason": "\"Ownership has moved\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"Spanish IPR and the VAT economics of refit\"",
+    "new": "\"text\": \"Spanish IPR and VAT on refit work\"",
+    "kind": "line",
+    "reason": "\"Economics\" removed."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"What “superyacht standard” should actually mean\"",
+    "new": "\"text\": \"What “superyacht standard” should mean\"",
+    "kind": "line",
+    "reason": "\"Actually\" removed."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "“Superyacht standard” is the phrase the trade routinely deploys to describe finishes, tolerances, and workmanship that are, in practice, vaguely defined and easily disputed. The contract that says the work will be carried out “to superyacht standard” is a contract that has not been written.",
+    "new": "“Superyacht standard” is the phrase the trade routinely uses for finishes, tolerances and workmanship that are, in practice, vaguely defined and easily disputed. A contract that requires work “to superyacht standard” leaves the standard undefined.",
+    "kind": "line",
+    "reason": "Aphorism replaced with the plain point."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Controlled-atmosphere spray cells are the only consistent route;",
+    "new": "Controlled-atmosphere spray cells are the only reliable way to meet these conditions;",
+    "kind": "line",
+    "reason": "\"Route\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "apply to crew areas; owner cabins are held tighter.",
+    "new": "apply to crew areas; owner cabins are usually specified to lower limits.",
+    "kind": "line",
+    "reason": "\"Held tighter\" made literal."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Veem TDS set the operational envelope and noise limits",
+    "new": "Veem TDS set the operating limits and noise limits",
+    "kind": "line",
+    "reason": "\"Envelope\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The phrase “superyacht standard” does not appear, because it cannot be enforced.",
+    "new": "The phrase “superyacht standard” does not appear, because it is unlikely to be enforceable as written.",
+    "kind": "line",
+    "reason": "Matches Maltby, who says a court would treat it as too vague or fall back on an implied term."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A specification that cites Awlgrip TDS revision X or ISO 6954:2000 gives buyer, surveyor, and arbitrator something to measure against; it reduces dispute, accelerates sign-off, supports warranty claims, and produces a delivery record that holds up in any subsequent insurance, sale, or refit conversation.",
+    "new": "A specification that cites a named Awlgrip TDS revision or ISO 6954:2000 gives buyer, surveyor and arbitrator something to measure against. It reduces disputes, speeds sign-off, supports warranty claims, and produces a delivery record that will stand up in any later insurance claim, sale or refit.",
+    "kind": "line",
+    "reason": "\"Revision X\" placeholder and \"conversation\" replaced."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The vague clause is the source of the overrun.",
+    "new": "Vague scope is the main source of the avoidable part of the overrun.",
+    "kind": "line",
+    "reason": "Consistent with the essay’s own split of overruns into hidden work and uncontrolled change."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The scope includes the tonnage.",
+    "new": "The scope should also cover gross tonnage.",
+    "kind": "line",
+    "reason": "Literal meaning."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "a refit that crosses 500 GT brings the commercial package the hull was engineered to avoid.",
+    "new": "a refit that takes the yacht to 500 GT or more brings in the SOLAS, ISM, ISPS and manning requirements the hull was designed to avoid (chapter 4).",
+    "kind": "line",
+    "reason": "\"Commercial package\" named, as listed in chapter 4."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "because redelivery is not completion.",
+    "new": "because the yacht leaving the yard does not mean the project is complete.",
+    "kind": "line",
+    "reason": "Aphorism made plain."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the representative is the strategic role at the contract, budget, and yard-relationship level, paid by and accountable to the owner; the project manager is the tactical role, on site daily,",
+    "new": "the representative deals with the contract, the budget and the relationship with the yard’s management, and is paid by and accountable to the owner; the project manager is on site daily,",
+    "kind": "line",
+    "reason": "\"Strategic role\" and \"tactical role\" replaced by what each person does."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "In this chapter’s case, an adviser engaged late in the project for EUR 95,000 recovered about EUR 410,000 under the yard’s warranty.",
+    "new": "In this chapter’s case, an adviser engaged late in the project for EUR 95,000 pursued warranty claims against the yard worth about EUR 410,000.",
+    "kind": "line",
+    "reason": "Consistent with the case wording."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The yard opened the engine room. The work that emerged was real. The cost that emerged was double the original quote, because the contract had no defined scope discipline and no milestone payment structure.",
+    "new": "Once the yacht was opened up the yard found work that genuinely needed doing, and the final cost was double the original quote. The four main findings added EUR 1.37 m; the rest of the increase built up under a loosely defined scope, payments tied to calendar dates, and reporting that did not track cost against budget.",
+    "kind": "fact",
+    "reason": "Brief item. \"No milestone payment structure\" contradicted the case (payments were tied to dates); cost increase split into hidden work and uncontrolled growth."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The yacht was 12 years old, approaching its second five-year survey, with the cosmetic and major systems condition demanding a substantive overhaul.",
+    "new": "This account combines two project files. The yacht was 12 years old, approaching its second five-year survey, and its finishes and major systems needed substantial overhaul.",
+    "kind": "line",
+    "reason": "Composite stated in the text; \"condition demanding\" replaced."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The brokerage was paid no separate fee for the refit oversight; the support was “part of the relationship.”",
+    "new": "The brokerage was paid no separate fee for the refit oversight, which it treated as part of its relationship with the owner.",
+    "kind": "line",
+    "reason": "Composite: quoted remark made reported speech."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"What the engine room found\"",
+    "new": "\"text\": \"What the yard found once work began\"",
+    "kind": "line",
+    "reason": "Brief example; findings came from the engine room, switchboards, paint and HVAC, not the engine room alone."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "had developed a cracked end cap, the failure mode of which had not been visible from the engine’s service history.",
+    "new": "had developed a cracked end cap, a defect that had not been visible from the engine’s service history.",
+    "kind": "line",
+    "reason": "Plain."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "the underlying primer beneath the topsides had failed in two locations,",
+    "new": "the primer beneath the topsides had broken down in two locations,",
+    "kind": "line",
+    "reason": "Tautology (\"underlying ... beneath\") removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Each finding was real. Each fit the standard pattern of refit discovery. None could have been quoted for in the original visual inspection. The yard’s communication on each finding was technically competent and commercially aligned with the yard.",
+    "new": "Each finding was genuine, of a kind commonly found once a yacht is opened up, and none could have been priced from the original visual inspection. The yard reported each one competently, and priced each on terms that suited the yard.",
+    "kind": "line",
+    "reason": "Repetitive three-beat cadence; \"commercially aligned\" made plain."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"The structural problem\"",
+    "new": "\"text\": \"How the project was overseen\"",
+    "kind": "line",
+    "reason": "\"Structural\" here meant oversight, not structure."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The representative’s reporting was framed largely in narrative form (“paint cell complete,” “engine work ongoing”) without",
+    "new": "The representative’s reports were largely descriptive, noting for example that a paint cell was complete or that engine work was continuing, without",
+    "kind": "line",
+    "reason": "Composite: quoted reports paraphrased; \"framed\" removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The yacht delivered at EUR 6.4 m,",
+    "new": "The project finished at EUR 6.4 m,",
+    "kind": "line",
+    "reason": "A yacht does not deliver at a price."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The 100 percent overrun is at the high end of practitioner experience, but not unique. It follows when scope is loosely specified, milestone payments are tied to the calendar rather than to deliverables, and oversight is provided free by a party the owner does not pay.",
+    "new": "An overrun of 100 percent is at the high end of practitioner experience, but not unique. Of the EUR 3.2 m increase, the four findings above account for EUR 1.37 m. The rest built up with the scope loosely specified, payments tied to the calendar rather than to completed work, and oversight provided free by a party the owner did not pay.",
+    "kind": "fact",
+    "reason": "One case turned into a general causal rule; arithmetic now shown."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"The recovery\"",
+    "new": "\"text\": \"Bringing in an independent adviser\"",
+    "kind": "line",
+    "reason": "Heading says what the section contains."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The adviser ran the snag list discipline, the technical handover,",
+    "new": "The adviser ran the snag list, the technical handover,",
+    "kind": "line",
+    "reason": "\"Discipline\" removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "were prosecuted to closure with the yard within the warranty period.",
+    "new": "were pursued with the yard and settled within the warranty period.",
+    "kind": "line",
+    "reason": "Plain."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The warranty recovery alone returned approximately 4 to 1 against the fee.",
+    "new": "The warranty recovery alone was about four times the fee (EUR 410,000 against EUR 95,000).",
+    "kind": "line",
+    "reason": "Ratio shown with its figures."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "identified three weaknesses: scope specification at contract, the milestone payment structure, and the representation. The owner’s next refit, four years later at a different yard, was contracted with each of those addressed. That project landed within 14 percent of original quote.",
+    "new": "identified three weaknesses: the loosely specified scope, payments tied to dates rather than completed work, and oversight by the broker that had sold the yacht. The owner’s next refit, at a different yard, was contracted with each of those addressed, and finished within 14 percent of the original quote.",
+    "kind": "fact",
+    "reason": "Brief known fix: \"four years later\" removed. Weaknesses named."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "paid 4 to 8 percent of project value, is the cheapest insurance against the doubling pattern.",
+    "new": "paid 4 to 8 percent of project value (EUR 200,000 to 400,000), costs a fraction of an overrun on the scale of this one.",
+    "kind": "line",
+    "reason": "\"Cheapest insurance against the pattern\" replaced with the comparison."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The yard opened the engine room, the emergent work was real, and the budget went.",
+    "new": "The yard found genuine additional work, and the final cost was double the quote.",
+    "kind": "line",
+    "reason": "Dramatic closer replaced."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Four weeks later, the paint cells found that",
+    "new": "Four weeks later, the paint team found that",
+    "kind": "line",
+    "reason": "Paint cells are spaces; the team found the defect."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "but not the full 30 to 50 percent pattern.",
+    "new": "but not the full 30 to 50 percent overrun.",
+    "kind": "line",
+    "reason": "\"Pattern\" replaced."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"text\": \"The overrun pattern\"",
+    "new": "\"text\": \"Typical overruns\"",
+    "kind": "line",
+    "reason": "\"Pattern\" replaced."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Most items contain overrun; the last group prepares a sale.",
+    "new": "Most items are there to limit overrun; the last group prepares for a sale.",
+    "kind": "line",
+    "reason": "\"Items contain overrun\" literal sense wrong."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "and the sale-and-replace arithmetic tested against it.",
+    "new": "compared with the cost of selling and buying a replacement.",
+    "kind": "line",
+    "reason": "Plain."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"question\": \"A ten-year cost profile with four budgets",
+    "new": "\"question\": \"A ten-year cost forecast with four budgets",
+    "kind": "line",
+    "reason": "\"Profile\" replaced."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The yard’s physical envelope checked first:",
+    "new": "The yard’s physical limits checked first:",
+    "kind": "line",
+    "reason": "\"Envelope\" replaced."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"title\": \"Refit yard capacity and typical overrun curve, 2027 to 2029\"",
+    "new": "\"title\": \"Refit costs, overruns and yard capacity, 2027 to 2029\"",
+    "kind": "line",
+    "reason": "There is no curve; title lists the contents."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Capacity at the main yards is tightening. The figures below are the ones to plan against.",
+    "new": "Lead times at the main yards are lengthening. The figures below are for planning.",
+    "kind": "line",
+    "reason": "\"Tightening\" made literal."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The right model depends on representation strength and project scope.",
+    "new": "The right model depends on how experienced the owner’s team is and on the project scope.",
+    "kind": "line",
+    "reason": "\"Representation strength\" made plain."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Cost shape\"",
+    "new": "\"How costs are billed\"",
+    "kind": "line",
+    "reason": "\"Shape\" replaced."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Single contract; integration risk priced in\"",
+    "new": "\"Single contract; the price includes coordinating the trades\"",
+    "kind": "line",
+    "reason": "\"Integration risk\" made plain."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Owners with lighter representation; complex multi-trade scope\"",
+    "new": "\"Owners with a smaller owner-side team; complex multi-trade scope\"",
+    "kind": "line",
+    "reason": "\"Lighter representation\" made plain."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Disciplined refit specifications cite the manufacturer data sheet and the relevant ISO standard. The phrase “superyacht standard” does not appear in a contract that has been written.",
+    "new": "Well-drafted refit specifications cite the manufacturer data sheet and the relevant ISO standard. The phrase “superyacht standard” does not appear in them.",
+    "kind": "line",
+    "reason": "\"Disciplined\" and the aphorism replaced."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The calculation is bespoke: strategic fit of the post-refit yacht against the actual continued use case must be tested on paper, alongside the alternative arithmetic of sale, reacquisition of comparable hull, depreciation, transaction cost, and crew continuity loss.",
+    "new": "The calculation differs for every yacht. Set out on paper how well the refitted yacht will suit the owner’s continuing use, alongside the cost of selling and buying a comparable yacht: depreciation, transaction costs, and the loss of an established crew.",
+    "kind": "line",
+    "reason": "Abstract phrasing made plain."
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "What makes it structurally different from a new build contract,",
+    "new": "How does it differ in substance from a new build contract,",
+    "kind": "line",
+    "reason": "\"Structurally\" replaced."
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "Where does liability sit when one trade’s work interacts",
+    "new": "Who is liable when one trade’s work interacts",
+    "kind": "line",
+    "reason": "\"Sit\" replaced."
+  }
+]

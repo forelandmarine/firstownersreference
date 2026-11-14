@@ -1,0 +1,2004 @@
+[
+ {
+  "file": "content/lead-essays.json",
+  "old": "settle whether the yacht is a pleasure or a source of friction. The other four decisions of year one compound across the hold.",
+  "new": "determine whether owning the yacht is a pleasure or a source of friction. Four other first-year decisions, on management, insurance, charter and the refit reserve, affect cost and running for as long as the owner keeps the yacht.",
+  "reason": "Decisions do not compound; say what they affect and name the four.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The operation of a yacht runs from delivery to sale. Over a typical seven-year hold,",
+  "new": "Over a typical seven-year hold,",
+  "reason": "Opening sentence says nothing the reader does not know.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Each decision compounds across the hold.",
+  "new": "The effects of each of the five decisions last for as long as the owner keeps the yacht.",
+  "reason": "\"Compounds\" has no defined meaning here.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A poor one produces the reverse, and the cost shows in turnover, maintenance and surprises.",
+  "new": "A poor one produces high crew turnover, rising maintenance costs and unwelcome surprises.",
+  "reason": "Repeats the previous list as a closer.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The pay differential between a good captain and a competent average one is small; the operational differential is large.",
+  "new": "The difference in pay between a good captain and a competent average one is small against the yacht’s operating budget; the difference in crew turnover, maintenance cost and budget control is much larger.",
+  "reason": "\"Operational differential\" left undefined; state the measures and the comparison base.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "is rare, and it is where the pressure on cost sits.",
+  "new": "is rare, and captains who have it command the largest premiums.",
+  "reason": "Pressure does not sit; say what it means for pay.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The test this chapter proposes is to hire the candidate who pushes back hardest. The captain who asks about actual use pattern, family, tolerance for transit days and refit reserve budget is showing",
+  "new": "One useful sign in interview is whether a candidate is willing to question the owner’s plans. A captain who asks how the yacht will actually be used, about the family, about the owner’s tolerance for transit days and about the refit reserve is showing",
+  "reason": "Universal rule becomes a valuable quality.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The independence question applies here as well.",
+  "new": "The question of who pays whom applies to the captain as well.",
+  "reason": "\"The X question\" construction; name the question.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Variance sits mainly in the interior team; deck and engineering numbers move little within a given length.",
+  "new": "Most of the variation is in the interior team; deck and engineering numbers change little at a given length.",
+  "reason": "Variance does not sit; numbers do not move.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Above 50 metres the structure expands to 12 to 20 crew,",
+  "new": "Above 50 metres the crew grows to 12 to 20,",
+  "reason": "\"Structure\" stands in for the crew.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "On her reading, roles without rotation",
+  "new": "In her experience, roles without rotation",
+  "reason": "\"Reading\" for experience.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A management team that oversees standardisation, he says, is what makes it work.",
+  "new": "He says rotation works when a management team keeps both captains to the same standards.",
+  "reason": "\"X is what makes it work\" construction; say what the team does.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Lay’s view is that the real cost of crew lies in turnover, retraining and disruption rather than in junior pay, so retention is where the owner can most affect it.",
+  "new": "Lay’s view is that the larger crew costs come from turnover, retraining and disruption rather than from junior pay, so the owner can do most to control crew cost by retaining crew.",
+  "reason": "\"Real cost\"; cost does not lie anywhere; \"retention is where\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Season planning is where owner and captain first test each other.",
+  "new": "Season planning is usually the first occasion on which owner and captain test each other’s judgement.",
+  "reason": "\"X is where Y\" construction.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the owner’s use pattern, the family’s actual behaviour on board and the budget envelope.",
+  "new": "how the owner meant to use the yacht, how the family actually behaved on board and the budget.",
+  "reason": "\"Budget envelope\" is jargon.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "inside the moderate-use band his adviser set out before he bought.",
+  "new": "within the range for moderate use that his adviser had set out before he bought.",
+  "reason": "Plainer; matches the ch01 case wording.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The refit reserve and the cost profile described at the end of this chapter belong in the same annual cycle.",
+  "new": "The refit reserve and the ten-year cost plan described at the end of this chapter belong in the same annual review.",
+  "reason": "\"Cost profile\" and \"cycle\" for a plan and a review.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Where they apply, both frameworks are binding and audited.",
+  "new": "Where they apply, both are mandatory and audited.",
+  "reason": "\"Frameworks\" adds nothing.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "and the broker and the underwriting behind it determine, at claim time, whether the owner is made whole.",
+  "new": "and the broker and the underwriters it places the cover with determine, when a claim is made, whether the owner is paid in full.",
+  "reason": "Underwriting is an activity; name the underwriters.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Insurers built a premium stockpile against the risk that a repeat of the 2018 hurricane damage would land on a larger exposed fleet.",
+  "new": "Insurers raised premiums to build reserves in case damage on the scale of the 2018 hurricanes struck the larger number of yachts then in the region.",
+  "reason": "Damage does not land; \"premium stockpile\" is Davis’s word in quotes, not ours.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Where the market has responded, it has done so through surveys rather than rates.",
+  "new": "Insurers have responded by asking for more risk management surveys rather than by raising rates.",
+  "reason": "\"Where X, it has\" construction; say who did what.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The contingent risk is whether published findings from the Bayesian investigation ultimately attribute fault",
+  "new": "A further risk is that the published findings of the Bayesian investigation may attribute fault",
+  "reason": "\"Contingent risk\" is undefined jargon.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "If Bayesian’s findings land on builder or designer responsibility, underwriter appetite for other vessels of the same provenance may be reassessed before any segment-wide rate signal moves.",
+  "new": "If the findings place responsibility on the builder or designer, underwriters may reconsider insuring other yachts from the same builder or designer without any general change in rates.",
+  "reason": "Findings do not land; signals do not move.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The brokers, by relevance to the over-30m segment",
+  "new": "Insurance brokers for yachts over 30m",
+  "reason": "Heading says what follows.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "For the owner, the practical step is at least three quotes from brokers",
+  "new": "In practice, the owner should obtain at least three quotes from brokers",
+  "reason": "Make the instruction a sentence.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "yacht-only frame, disciplined coverage drafting. Relationships are weighted toward European underwriters; owners with heavy US East Coast use can sometimes access tighter US rates elsewhere.",
+  "new": "insures only yachts, and drafts its policy wordings carefully. Its underwriting relationships are mainly European; owners who spend much of the year on the US East Coast can sometimes obtain lower US rates elsewhere.",
+  "reason": "\"Frame\", \"disciplined\", \"weighted\", \"tighter rates\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Capital and reach for the largest hulls (above 100m) where bespoke structuring is required; yacht-specialist service depth varies.",
+  "new": "It has the capacity for the largest yachts (above 100m), where cover has to be arranged individually; the depth of yacht-specialist service varies.",
+  "reason": "\"Bespoke structuring\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "depth closer to Pantaenius than to the global brokers.",
+  "new": "its yacht expertise is closer to Pantaenius’s than to the global brokers’.",
+  "reason": "\"Depth\" of what is not said.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Selection here is mostly relationship-based; underwriting markets accessed are similar to the larger brokers.",
+  "new": "Owners usually choose them through personal relationships; they place cover with much the same underwriters as the larger brokers.",
+  "reason": "Nominal phrasing; say who does what.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The underwriting that sits behind the broker",
+  "new": "Policy terms to check",
+  "reason": "Heading says what the section contains (four policy terms).",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The broker accesses the underwriters; the underwriting pays at claim time. Four points matter most.",
+  "new": "The broker places the cover; the underwriters pay any claim on the terms of the policy. Four terms matter most.",
+  "reason": "Underwriting is an activity and does not pay.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Third, review the policy annually for coverage drift.",
+  "new": "Third, review the policy every year to check that the cover still matches how the yacht is used.",
+  "reason": "\"Coverage drift\" undefined.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The broker who reviews proactively at renewal is meaningfully different from the broker who re-quotes the prior year.",
+  "new": "A broker who reviews the cover at renewal gives the owner more protection than one who simply re-quotes the previous year’s terms.",
+  "reason": "\"Meaningfully different\" does not say how.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "and the broker should push back rather than accept templates.",
+  "new": "and the broker should challenge the insurer’s standard terms rather than accept them.",
+  "reason": "\"Templates\" for standard terms.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Who carries the capacity",
+  "new": "The underwriters",
+  "reason": "Heading says what follows.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Lloyd’s syndicates underwrite the majority of large-yacht hull capacity",
+  "new": "Lloyd’s syndicates write most large-yacht hull insurance",
+  "reason": "\"Capacity\" for the insurance itself.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The difference at claim time can run to eight figures, as the rebuild-cost example above shows.",
+  "new": "Getting the agreed value and its basis wrong can leave the owner eight figures short in a total loss, as the rebuild-cost example above shows, and a specialist broker is more likely to get them right.",
+  "reason": "The rebuild example shows the effect of the basis of value, not of broker type; state the link.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Cover for sexual misconduct claims is a newer question.",
+  "new": "Cover for sexual misconduct claims has recently become an issue for owners.",
+  "reason": "\"Question\" construction.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "travels with the vessel and is exposed the first time the vessel enters a US port;",
+  "new": "stays with the vessel and can be enforced the first time the vessel enters a US port;",
+  "reason": "A lien is not \"exposed\"; it is enforced.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The economics, as covered in chapter 1, are unfavourable for the median operation; most charter yachts subsidise rather than recover ownership cost.",
+  "new": "As chapter 1 shows, charter income does not cover the cost of ownership for the median operation; on most charter yachts it pays for part of it.",
+  "reason": "\"Economics\" for income against cost; \"subsidise\" inverted.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The VAT regimes that interact with charter,",
+  "new": "The VAT regimes that apply to charter,",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The provision is generous on paper and audited tightly in practice. The arrangements are set with US tax counsel before contract, and the charter operation has to be real. The two-part Marine Money / BOAT International Monaco forum coverage in September 2025 contains the published numerics from US private bankers and yard counsel.",
+  "new": "The relief is generous, and claims are examined closely on audit. The arrangements are set with US tax counsel before contract, and the charter business has to be genuine. The two-part coverage of the Marine Money / BOAT International Monaco forum in September 2025 publishes figures from US private bankers and yard lawyers.",
+  "reason": "Paper/practice antithesis; \"numerics\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The default is private operation for three years,",
+  "new": "The usual course is private operation for three years,",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Emerging cruising frontiers",
+  "new": "New cruising areas",
+  "reason": "Plain heading.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Three frontier markets sit outside the conventional regime list. None was operationally ready for first-time owners in September 2026; each is worth tracking on a five-to-ten year planning horizon.",
+  "new": "Three new cruising areas are not covered by the charter regimes above. None was ready for a first-time owner’s programme in September 2026; each is worth watching over the next five to ten years.",
+  "reason": "Markets do not sit outside a list.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The watch item is regulatory, not technical.",
+  "new": "The development to watch for is a change in the charter law.",
+  "reason": "The paragraph names both law and marinas as obstacles, so \"not technical\" contradicts it.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Some of the region’s strongest sailing weather and reefs sit on a coastline that did not previously accommodate foreign hulls. Build delays are widely reported; programmes are running ahead of facilities at this writing.",
+  "new": "The coast has some of the region’s best sailing weather and reefs, and did not previously receive foreign yachts. Construction delays are widely reported, and at the time of writing yachts are arriving before the facilities are finished.",
+  "reason": "Weather does not sit; \"programmes running ahead of facilities\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The opportunity is real; the regulatory unwind is slow. A credible third Asia-Pacific destination alongside the established Southeast Asian routes on a five-year horizon.",
+  "new": "The opportunity is genuine, but the rules are being relaxed slowly. Over five years Japan could become a third Asia-Pacific cruising destination alongside the established Southeast Asian routes.",
+  "reason": "Antithesis and a verbless fragment.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "In rough order of consequence:",
+  "new": "In rough order of importance:",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Commit to interviewing five candidates minimum, all sourced through routes outside the broker’s relationship.",
+  "new": "Interview at least five candidates, none of them introduced through the broker.",
+  "reason": "Plainer.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "(chapter 3). The management company is the long-running operational partner.",
+  "new": "(chapter 3). The management company will work for the owner for years.",
+  "reason": "\"Long-running operational partner\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "a ten-year cost profile drawn at purchase,",
+  "new": "a ten-year cost plan drawn up at purchase,",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "and the owner had used the first hire as a learning experience.",
+  "new": "and the owner had learned from the first hire.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The adviser’s framing was that the captain hire was the most consequential decision",
+  "new": "The adviser’s advice was that the captain hire was the most consequential decision",
+  "reason": "\"Framing\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "noting that compressing it would create downstream cost. He asked detailed questions about the owner’s use pattern, the family’s actual on-board behaviour, and the budget envelope.",
+  "new": "noting that compressing it would add cost later. He asked detailed questions about how the owner meant to use the yacht, how the family actually behaved on board, and the budget.",
+  "reason": "\"Downstream cost\"; \"use pattern\"; \"budget envelope\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The adviser’s framing: the captain who pushes back in interview is the captain who will push back when it matters operationally. The captain who agrees easily is the captain who will agree easily to charter weeks the owner had not planned to release, to refit yards the management company prefers, to crew the broker has introduced.",
+  "new": "The adviser’s reasoning was that a captain willing to disagree in interview was more likely to disagree later, when it mattered, and that a captain who agreed easily might also agree easily to charter weeks the owner had not planned to release, to refit yards the management company preferred, and to crew the broker had introduced.",
+  "reason": "Slogan cadence stated as a law; now the adviser’s reasoning about likelihood.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The decision was uncomfortable in the moment. The reasoning, on the adviser’s framing, was that the discomfort was the signal.",
+  "new": "The decision was uncomfortable at the time, because the owner was choosing the candidate who had disagreed with him.",
+  "reason": "\"The discomfort was the signal\" is an aphorism.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "which is the behaviour the interview predicted.",
+  "new": "as he had done in interview.",
+  "reason": "An interview does not predict.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The lines where it will show are crew retention and budget control,",
+  "new": "If it shows, it will be in crew retention and budget control,",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The owner’s first hire had been a credential check; the second was a test of judgement.",
+  "new": "The owner had chosen the first captain mainly on credentials; he chose the second for his judgement.",
+  "reason": "Antithesis; say what happened.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Hire the captain who pushes back hardest. The discomfort in interview is the signal that the captain is doing the job in interview that they will do operationally.",
+  "new": "A captain who questions the owner’s plans in interview is showing a quality worth having: a willingness to say what the owner may not want to hear about itinerary, maintenance and budget. Weigh it alongside credentials and references.",
+  "reason": "Universal rule and tautology.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Independent recruitment, not broker-introduced or seller-introduced, is the structural condition for the captain hire. The captain’s relationships with their introducer outlast the introduction.",
+  "new": "Recruit the captain independently, not through the broker or the seller. A captain often keeps a working relationship with whoever introduced them.",
+  "reason": "\"Structural condition\"; aphoristic close.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Senior crew tenure of 5 to 8 years is the operational signature of a well-run yacht. Below 2 years average is the signature of a captain or owner the crew is choosing to leave.",
+  "new": "Senior crew staying 5 to 8 years is usually a sign of a well-run yacht. An average stay below 2 years usually means the crew are leaving because of the captain or the owner.",
+  "reason": "\"Signature\" twice; unqualified generalisation.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "the captain hire pattern and the operating outcomes to date",
+  "new": "the account of the captain hire and the operating outcomes to date",
+  "reason": "One event is not a pattern.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The operational pillars, in year one.",
+  "new": "Five operating decisions, in year one.",
+  "reason": "\"Pillars\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Five decisions that compound across a hold period. The list below",
+  "new": "Five decisions whose effects last for as long as the yacht is owned. The list below",
+  "reason": "\"Compound\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The captain hire compounds with the other four decisions across the hold period.",
+  "new": "The captain hire affects the other four decisions for as long as the yacht is owned.",
+  "reason": "\"Compounds\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The candidate hired having pushed back on itinerary, maintenance, budget, and crew during interview.",
+  "new": "Evidence from interview that the candidate will question the owner’s plans on itinerary, maintenance, budget and crew where needed.",
+  "reason": "Rule becomes a quality to look for.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Written disclosure of any referral economics from suppliers",
+  "new": "Written disclosure of any referral fees or commissions from suppliers",
+  "reason": "\"Economics\" for fees.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Contract structured to protect the buyer’s interests in flag-state interactions,",
+  "new": "Contract terms that protect the buyer’s interests in flag-state interactions,",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Hull insurance at the practitioner band of 0.7 to 1.5 percent of insured value (well-maintained 40 to 50 m), with explanations for any deviation.",
+  "new": "Hull premium within the practitioner range of 0.7 to 1.5 percent of insured value (well-maintained 40 to 50 m), with a reason given for any figure outside it.",
+  "reason": "Insurance is not \"at a band\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Year four is the practitioner threshold for converting a private-operated yacht to charter; the data of actual use is then in hand.",
+  "new": "Practitioners usually wait until year four before converting a privately operated yacht to charter, by which time the owner has three years of actual use to go on.",
+  "reason": "\"Threshold\"; \"data in hand\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "A clear position on releasing prime-season weeks, given that charter does not pay for ownership for the median operator.",
+  "new": "A clear decision on whether to release prime-season weeks, given that charter income does not cover the cost of ownership for the median operator.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The reserve tested against the industry 30 to 50 percent overrun pattern.",
+  "new": "The reserve checked against the 30 to 50 percent by which refits commonly overrun their quotes.",
+  "reason": "\"Overrun pattern\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Five decisions that compound across a hold period: captain,",
+  "new": "Five first-year decisions: captain,",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "A captain on an 80 metre runs EUR 16,000 to 23,000.",
+  "new": "A captain on an 80 metre yacht earns EUR 16,000 to 23,000.",
+  "reason": "A captain does not run a figure.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "The captain hire compounds with the other operational decisions across the hold period; the candidate who pushed back on itinerary, maintenance, budget, and crew during interview is usually the stronger hire.",
+  "new": "The captain hire also affects the other operating decisions; a candidate who questions the owner’s plans on itinerary, maintenance, budget and crew in interview is often the stronger hire.",
+  "reason": "\"Compounds\"; rule softened.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "Most charter operations subsidise rather than recover ownership cost. The first-time owner",
+  "new": "For most charter operations, charter income covers part of the cost of ownership, not all of it. The first-time owner",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "Year four is the practitioner threshold for converting a private-operated yacht to charter; the data of actual use is then in hand. If charter",
+  "new": "Practitioners usually wait until year four before converting a privately operated yacht to charter, by which time the owner has three years of actual use to go on. If charter",
+  "reason": "Semantic pass, tests 3,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "A position on releasing prime-season weeks (mid-July to mid-August in the Mediterranean) is what the published case-study yields rest on.",
+  "new": "The yields in the published case studies depend on releasing prime-season weeks (mid-July to mid-August in the Mediterranean), so the owner needs to decide early whether to release them.",
+  "reason": "Yields do not rest on a position.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "The major brokers, by relevance to over-30 m",
+  "new": "Insurance brokers for yachts over 30 m",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Sophisticated structures, complex programmes (multiple hulls, charter, aviation overlap)",
+  "new": "Complex programmes (several yachts, charter, aviation insured alongside)",
+  "reason": "Semantic pass, tests 3,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Hamburg-founded 1899; reference European yacht-only broker;",
+  "new": "Founded in Hamburg in 1899; long-established European broker insuring only yachts;",
+  "reason": "Semantic pass, tests 3,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "bespoke structuring for the largest hulls",
+  "new": "cover arranged individually for the largest yachts",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "the owner’s broker confirms the structure",
+  "new": "the owner’s broker confirms the terms",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Recruitment-side reading on senior-captain salary premiums",
+  "new": "Recruitment-side view of senior-captain salary premiums",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "what drove it, where has it landed, and what do you expect through 2026?",
+  "new": "what drove it, where does it stand now, and what do you expect through 2026?",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "What sits behind that figure, and how often is it seriously tested?",
+  "new": "What is the basis for that figure, and how often is it seriously tested?",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "The chapter argues the captain to hire is the candidate who pushes back hardest in interview, not the one who agrees easily. Is that your experience?",
+  "new": "The chapter treats a candidate’s willingness to push back in interview as a valuable quality in a captain. Is that your experience?",
+  "reason": "Keeps the question accurate to the revised essay; the answer still fits.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "and the operational discipline that matters most in the first year.",
+  "new": "and the operating practice that matters most in the first year.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "the single most consequential operational discipline of year one,",
+  "new": "the single most important operating practice in year one,",
+  "reason": "Answer (\"Document everything\") is a practice.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "and resale market, and hybrid drive now sits between them. The comparison is worth running before a first-time buyer defaults to motor.",
+  "new": "and resale market, and hybrid drive now offers a third option between the two. A first-time buyer should compare them before choosing motor by default.",
+  "reason": "Hybrid does not sit.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The market is asymmetric. BOAT International’s",
+  "new": "Sailing yachts are a small part of the market. BOAT International’s",
+  "reason": "\"Asymmetric\" says nothing exact.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "brokerage data places sailing yachts at",
+  "new": "brokerage data puts sailing yachts at",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "sit in a smaller category by units and a larger one by hold value.",
+  "new": "deliver few yachts by number, but those yachts tend to hold their value well (see below).",
+  "reason": "\"Larger category by hold value\" has no defined measure.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A 50 metre sailing yacht runs meaningfully less than",
+  "new": "A 50 metre sailing yacht costs noticeably less to run than",
+  "reason": "Semantic pass, tests 1,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Variance on both sits mainly in the interior team. Sail-handling specialism on deck adds modest cost; the engine room runs lighter.",
+  "new": "On both, most of the variation is in the interior team. Sail-handling skills on deck add modest cost; the engineering team is smaller.",
+  "reason": "Variance does not sit.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "so net annual maintenance is broadly comparable; the cost shape differs.",
+  "new": "so net annual maintenance is broadly comparable, although on a sailing yacht more of it comes as large sums at long intervals, for sails and rigging.",
+  "reason": "\"Cost shape\" undefined; say how the costs differ.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "that a sailing yacht be bought on its position in these cycles, not only on its condition: a well-presented yacht with rigging in its ninth year has a large known cost arriving shortly. Unstepping the mast is a project inside the project,",
+  "new": "that a sailing yacht be valued on where it stands in these replacement cycles as well as on its condition: a well-presented yacht with rigging in its ninth year faces a large, known cost within a few years. Unstepping the mast is a separate project within the refit,",
+  "reason": "\"Position in cycles\"; costs do not arrive.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "hold preferred slots for significant sailing yachts during regatta windows.",
+  "new": "reserve berths for large sailing yachts during regattas.",
+  "reason": "Semantic pass, tests 2,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The differential narrows in the 24 to 40m band and widens above 60m where motor fuel and crew cost grow disproportionately.",
+  "new": "The gap is smaller in the 24 to 40m band and larger above 60m, where a motor yacht’s fuel and crew costs rise faster than its length.",
+  "reason": "\"Disproportionately\" to what is not said.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Three regulatory and market shifts have changed the carbon conversation since 2020.",
+  "new": "Three developments since 2020 affect how yachts’ carbon emissions are regulated and priced.",
+  "reason": "\"Carbon conversation\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A yacht in private use sits outside the system at any size.",
+  "new": "A yacht in private use is outside the system at any size.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "and published guidance does not settle the position of charter yachts certified for 12 passengers or fewer.",
+  "new": "and published guidance does not say whether charter yachts certified for 12 passengers or fewer are covered.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the proposal does not name yachts, and negotiation runs into 2027.",
+  "new": "the proposal does not name yachts, and negotiations will continue into 2027.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the practical taxation effect remains on CO2.",
+  "new": "the cost under the system still comes from their CO2.",
+  "reason": "Semantic pass, tests 2,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The strategy shapes the commercial shipping fuel transition that reaches yachting through fuel availability and cost.",
+  "new": "It drives commercial shipping’s change of fuels, which affects yachts through the availability and price of fuel.",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Closer to hand are the IMO emission control areas.",
+  "new": "The IMO emission control areas have a more immediate effect.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The nearest practical answer is hydrotreated vegetable oil.",
+  "new": "The most practical step available now is hydrotreated vegetable oil.",
+  "reason": "Semantic pass, tests 5.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the saving lies in where the carbon came from.",
+  "new": "the saving comes from making the fuel from waste and plant material rather than fossil oil.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "For owners wanting a defensible carbon position without rebuilding the engine room, HVO is the easiest move available.",
+  "new": "For owners who want to cut the yacht’s carbon emissions without rebuilding the engine room, HVO is the simplest option.",
+  "reason": "\"Defensible carbon position\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "a growing number of principals want the carbon question answered in advance.",
+  "new": "a growing number of principals want to know a yacht’s carbon emissions before they buy it.",
+  "reason": "\"The carbon question\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Hybrid and electric drive, the third path",
+  "new": "Hybrid and electric drive",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Hybrid propulsion has moved from concept to delivery and changes the motor-versus-sail decision.",
+  "new": "Hybrid propulsion is now in delivered yachts, which adds a third option to the choice between motor and sail.",
+  "reason": "Semantic pass, tests 4.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "is the deepest commercial deployment of parallel diesel-electric propulsion in production yachts.",
+  "new": "is the most extensive use of parallel diesel-electric propulsion in production yachts.",
+  "reason": "Semantic pass, tests 2,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Owners report meaningful annual fuel reductions; the operational character is closer to a sailing yacht’s silence at anchor than to conventional motor.",
+  "new": "Owners report substantial annual fuel savings, and at anchor the yachts are nearly as quiet as a sailing yacht.",
+  "reason": "\"Operational character\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Royal Huisman has taken the deeper-engineering route.",
+  "new": "Royal Huisman has gone further in engineering terms.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "layers wind-assisted propulsion,",
+  "new": "combines wind-assisted propulsion,",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "At the wind-and-solar end sits Captain Arctic,",
+  "new": "The furthest application of wind and solar power is Captain Arctic,",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "but she shows how far the technology behind concepts such as AERA has reached",
+  "new": "but she shows that the technology behind concepts such as AERA already works in service",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The decision now has three options, with hybrid between the other two.",
+  "new": "The buyer now has three options, with hybrid between the other two on cost and carbon.",
+  "reason": "Between on what measure.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "BoatPro’s 2026 order-book engine breakdown shows the scale.",
+  "new": "BoatPro’s 2026 analysis of engines in the order book shows how far this has gone.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "diesel-electric is in a similar trajectory,",
+  "new": "diesel-electric is rising in the same way,",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The direction is clear; the share is still small. A new-build buyer asking the hybrid question in 2027 is still asking it earlier than most of the order book, not late.",
+  "new": "Hybrid orders are rising, but their share is still small. A new-build buyer who asks about hybrid drive in 2027 is still ahead of most buyers in the order book.",
+  "reason": "Punchy antithesis; \"the hybrid question\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A fourth pattern is the multihull.",
+  "new": "A fourth option is the multihull.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the yard frames the multihull as",
+  "new": "the yard describes the multihull as",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The category is too small to characterise residual behaviour reliably,",
+  "new": "There are too few large catamarans to say reliably how well they hold their value,",
+  "reason": "Semantic pass, tests 3,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The refit side differs too.",
+  "new": "Refits differ too.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A fifth, separate from the propulsion debate, is the explorer: SeaXplorer, Damen Yacht Support, and the high-latitude end of the Northern European order book, where the cost shape is determined by self-sufficiency rather than hospitality.",
+  "new": "A fifth, separate from the question of propulsion, is the explorer: SeaXplorer, Damen Yacht Support, and the high-latitude end of the Northern European order book, whose costs are driven by the need to operate self-sufficiently for weeks at a time rather than by guest service.",
+  "reason": "\"Cost shape\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "racing pedigree is among the strongest supports of residual value.",
+  "new": "a racing record does more than most things to support resale value.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Provenance, regatta access, and the closed class support residuals well above comparable cruising sailing yachts; a hold-forever asset for the families who own them.",
+  "new": "Their history, their access to the regattas and the small, closed class keep resale values well above those of comparable cruising sailing yachts, and the families who own them tend to keep them indefinitely.",
+  "reason": "Fragment; \"hold-forever asset\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "trade actively with strong residuals at the top.",
+  "new": "change hands often, and the best of them keep their value well.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Two 2025 reference points illustrate segment health.",
+  "new": "Two events in 2025 suggest that demand at the top of the sailing market is healthy.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "estimated above USD 30 million. Committed capital and leading design houses are building modern sailing yachts at the top of the market.",
+  "new": "estimated above USD 30 million.",
+  "reason": "Closer restates the two examples.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "added further evidence of segment differentiation.",
+  "new": "showed further differences within the sailing market.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "while the 35 to 45 metre band sits noticeably softer",
+  "new": "while demand in the 35 to 45 metre band is noticeably weaker",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the average ownership age across the three Southern Wind hulls at Palma sits in the late 40s. The age curve at the buyer end of the sailing yacht market is moving down.",
+  "new": "the average age of the owners of the three Southern Wind yachts at Palma is in the late 40s. These are small samples, but they suggest that some sailing yacht buyers are younger than before.",
+  "reason": "One buyer and three owners do not establish a curve.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "added the broker-side counterweight on the same coverage:",
+  "new": "gave a more cautious broker’s view in the same report:",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Broker commentary describes the sailing segment as healthier than the headline unit-share suggests, and harder to transact; both can be true.",
+  "new": "Brokers describe the sailing market as healthier than its small share of units suggests, and sailing yachts as harder to sell. Both can be true.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "located the buyer-side instinct behind the sail demand at the top of the segment:",
+  "new": "described what draws some wealthy buyers to sail:",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "is the operational expression of the purpose Zimmermann Zschocke describes: authenticity, adventure or community. The retention thesis the segment uses sits on top of it: the buyer who completes one rally tends to commission the next, larger boat.",
+  "new": "is one example of the purpose Zimmermann Zschocke describes: authenticity, adventure or community. Builders in this part of the market count on it to keep their owners: an owner who completes one rally tends to order a larger yacht next.",
+  "reason": "\"Retention thesis sits on top of it\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Where the case for sail does not hold",
+  "new": "When a sailing yacht is the wrong choice",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "and itineraries that bend to the wind. An owner who needs to cross the Atlantic on a fixed schedule with no flexibility on the weather window is not a sailing-yacht owner. An owner comfortable with a 36 to 60 hour weather window for a transatlantic is.",
+  "new": "and itineraries that change with the weather. An owner who needs to cross the Atlantic on a fixed schedule, with no flexibility on departure, should not buy a sailing yacht. An owner comfortable waiting 36 to 60 hours for the right weather before a transatlantic crossing can.",
+  "reason": "Itineraries do not bend; slogan close.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Sailing yachts are heavier on the body and on time.",
+  "new": "Sailing yachts are more physically demanding and take more time.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "fewer slot opportunities,",
+  "new": "fewer build slots,",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Three threshold tests",
+  "new": "Three questions for the buyer",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Three questions tend to decide it for any specific buyer.",
+  "new": "For most buyers, three questions decide the choice.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "First, what does the cruising calendar look like? An owner whose programme depends on fixed-date passages with no weather contingency is on the motor or hybrid side. An owner with a season of cruising flexibility is on the sailing-yacht side, or has a real choice across all three.",
+  "new": "First, how fixed is the cruising calendar? An owner whose programme depends on fixed-date passages with no allowance for weather is better served by a motor or hybrid yacht. An owner with flexibility in the season can consider a sailing yacht, or choose freely among all three.",
+  "reason": "Owners are not on sides.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Second, how exposed is the buyer to the carbon question? A principal whose family office, foundation, or public profile pulls at the carbon line will sit closer to the sailing yacht or hybrid side. A principal for whom carbon is not a board-level conversation will weight the cruising-calendar question more heavily.",
+  "new": "Second, how much do the yacht’s carbon emissions matter to the buyer? A principal whose family office, foundation or public role makes emissions a concern will lean towards a sailing yacht or a hybrid. A principal for whom emissions are not a concern will give more weight to the cruising calendar.",
+  "reason": "\"Carbon question\", \"pulls at the carbon line\", \"sit closer\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "the comparison, run in writing at the point of considering a successor hull, decided it. Year three on the sailing yacht is ongoing. The numbers and the use pattern have moved as the comparison suggested they would.",
+  "new": "a written comparison, made when he began looking for a successor, decided it. He is now in his third year on the sailing yacht, and running costs and family use have changed as the comparison suggested they would.",
+  "reason": "Numbers and patterns do not move.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The owner had been on a 48 m motor yacht for five years when the conversation about a successor began.",
+  "new": "This account combines two project files. The owner had been on a 48 m motor yacht for five years when the conversation about a successor began.",
+  "reason": "Composite must read as a composite.",
+  "kind": "structure"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The five years of operation had taught him the things first-time owners learn. The crew settled. The cruising pattern stabilised at seven to nine weeks of family use a year,",
+  "new": "The crew had settled, and family use had settled at seven to nine weeks a year,",
+  "reason": "Empty generalisation and fragment cadence.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "slightly larger and a degree younger.",
+  "new": "slightly larger and a little newer.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "What the comparison turned up",
+  "new": "What the comparison showed",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The differential traced to fuel, crew count, and the smaller engine room load;",
+  "new": "The difference came from fuel, a smaller crew and a smaller engine room;",
+  "reason": "Semantic pass, tests 3,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Net annual cost: 75 to 80 percent of the motor figure. The adviser was clear that the figures were practitioner-aggregated rather than precise; the order of magnitude held.",
+  "new": "The sailing yacht would therefore cost about three quarters as much a year as the motor yacht (between 71 and 82 percent at the ends of the ranges). The adviser was clear that the figures were practitioner ranges rather than precise forecasts, but that the difference was larger than the uncertainty in them.",
+  "reason": "State the comparison numerically; the gap is about a quarter, not an order of magnitude.",
+  "kind": "fact"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The owner’s use had been held down partly by calendar availability and partly by the cost of running a motor yacht at the upper end of moderate use. A lower cost per week loosened the second constraint.",
+  "new": "The owner’s use had been held down partly by the time the family had free and partly by the cost of running a motor yacht at the upper end of moderate use. A lower cost per week reduced the second of these limits.",
+  "reason": "Semantic pass, tests 2,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The third was a carbon footprint sketch. The owner sat on the board of a foundation his family ran, and the foundation had begun publishing its own carbon position. Switching to a sailing yacht produced a roughly 60 to 65 percent annual carbon reduction on the fuel projections and aggregated practitioner numbers.",
+  "new": "The third was a rough estimate of carbon emissions. The owner sat on the board of a foundation his family ran, and the foundation had begun publishing its own carbon emissions. On the fuel projections and practitioner figures, switching to a sailing yacht would cut the yacht’s annual carbon emissions from fuel by roughly 60 to 65 percent.",
+  "reason": "\"Carbon position\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The hybrid figures sat between motor and sailing yacht on both cost and carbon. The owner held the hybrid option open through the search.",
+  "new": "That is about EUR 0.4 million a year more than the sailing yacht and about EUR 0.5 million less than the motor yacht, on the mid-points of the ranges, and the hybrid’s modelled carbon emissions were also between the two. The owner kept the hybrid option open throughout the search.",
+  "reason": "State the numbers rather than \"sat between\".",
+  "kind": "fact"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The owner hired him because of the pushback.",
+  "new": "The owner hired him because he had raised these points.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The annual operating cost has run at EUR 3.0 to 3.2 million, on the model.",
+  "new": "The annual operating cost has been EUR 3.0 to 3.2 million, as the model predicted.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The owner’s own view was that the second one fitted his actual life better than the first one had.",
+  "new": "The owner’s view is that the sailing yacht suits the way his family lives better than the motor yacht did.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The carbon position has held within the modelled band. The foundation’s public position has remained defensible.",
+  "new": "Carbon emissions from fuel have stayed within the modelled range, 60 to 65 percent below the motor yacht’s, and the owner has not had to defend the yacht’s emissions against the foundation’s published figures.",
+  "reason": "State the measure instead of \"held within the band\"; \"defensible\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The hybrid option, set aside at acquisition, remains the option the owner would have taken if his cruising calendar had been less flexible. Hybrid was not the right answer for him, but it is now a real third path, and a buyer who considers only two is leaving an option out.",
+  "new": "The owner says he would have chosen the hybrid if his cruising calendar had been less flexible. It was not the right yacht for him, but hybrid drive is now a practical third option, and a buyer who compares only motor and sail leaves it out.",
+  "reason": "Semantic pass, tests 5,6.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "the projections, the cruising calendar, and the carbon position are set out in writing.",
+  "new": "the cost projections, the cruising calendar and the carbon emissions are set out in writing.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "budget for new specialism rather than expect it.",
+  "new": "budget for hiring sailing specialists rather than expecting the existing crew to adapt.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Hybrid drive is no longer a footnote. Heesen FDHF, Sanlorenzo SX, and equivalent programmes sit between motor and sail on cost and carbon, which suits owners with fixed cruising schedules.",
+  "new": "Hybrid drive is now a practical option. Heesen FDHF, Sanlorenzo SX and similar programmes cost less to run and emit less carbon than a conventional motor yacht, though more than a sailing yacht, and suit owners with fixed cruising schedules.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Captain selection at the transition is the single most consequential decision. Hire the candidate who pushes back on the calendar, the crew, and the management company.",
+  "new": "Choosing the captain is the most important decision at the transition. A candidate willing to question the owner’s assumptions about the calendar, the crew and the management company is worth taking seriously.",
+  "reason": "Universal rule.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "the operating cost trajectory and the cruising-calendar shift are accurate to the original projects.",
+  "new": "the operating costs and the change in the cruising calendar are accurate to the original projects.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The items below are the variables on which the comparison turns.",
+  "new": "The items below are what the comparison depends on.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "An honest read of the cruising calendar. Are the buyer’s seasons fixed-date and inflexible, or is there room for weather-window planning of 36 to 60 hours on transatlantics?",
+  "new": "A realistic view of the cruising calendar. Are the buyer’s seasons fixed-date and inflexible, or is there room to wait 36 to 60 hours for suitable weather before a transatlantic crossing?",
+  "reason": "Matches the essay.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Fixed-schedule cruising tilts toward motor or hybrid.",
+  "new": "Fixed-schedule cruising favours motor or hybrid.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "A position on the carbon question, set against the principal’s family office, foundation, or public profile.",
+  "new": "A view on how much the yacht’s carbon emissions matter, given the principal’s family office, foundation or public role.",
+  "reason": "\"The carbon question\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Sailing yachts and hybrid programmes carry a lower carbon position than conventional motor yachts.",
+  "new": "Sailing yachts and hybrid yachts emit less carbon than conventional motor yachts.",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Maintenance shape: rigging and sail wardrobe reserves on the sailing yacht set against engine wear and stabiliser systems on the motor. Net annual maintenance is broadly comparable; the cost shape differs.",
+  "new": "Maintenance: rigging and sail wardrobe reserves on the sailing yacht set against engine wear and stabiliser systems on the motor. Net annual maintenance is broadly comparable, but more of the sailing yacht’s comes as large sums at long intervals.",
+  "reason": "\"Cost shape\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The hybrid third path",
+  "new": "Hybrid drive",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Hybrid drive sits between motor and sailing on cost and carbon profile.",
+  "new": "Hybrid drive costs less to run and emits less carbon than a conventional motor yacht, but more than a sailing yacht.",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Acceptance, on paper, of the residual case for whichever path is chosen.",
+  "new": "Written acceptance of the expected resale value of whichever type of yacht is chosen.",
+  "reason": "Semantic pass, tests 3,4.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "and the variables the comparison turns on.",
+  "new": "and what the comparison depends on.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "The cost shape differs but net annual maintenance is broadly comparable.",
+  "new": "Net annual maintenance is broadly comparable, although more of the sailing yacht’s comes as large sums at long intervals, for sails and rigging.",
+  "reason": "Semantic pass, tests 3,4.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "Hybrid drive sits between motor and sailing on cost and carbon profile.",
+  "new": "A hybrid costs less to run and emits less carbon than a conventional motor yacht, but more than a sailing yacht.",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Sail is a smaller share by every published count. Skewed by Italian volume yards (motor-dominant) and the strong American 30 to 50 m motor market.",
+  "new": "Sailing yachts are a smaller share on every published count. The motor share is raised by the Italian volume yards, which build mainly motor yachts, and by the strong American market for 30 to 50 m motor yachts.",
+  "reason": "Fragment; skewed which way.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Capital differential at entry sits 20 to 35 percent in favour of sail. Depreciation curves favour quality sail hulls after year five.",
+  "new": "A new sailing yacht costs 20 to 35 percent less to build. Quality sailing yachts tend to lose value more slowly after year five.",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "and when the explorer profile suits a first-time buyer and when it does not.",
+  "new": "and when an explorer yacht suits a first-time buyer and when it does not.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "For a first-time UHNW buyer attracted to the explorer profile,",
+  "new": "For a first-time UHNW buyer attracted to an explorer yacht,",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/sections.json",
+  "old": "The ownership structure to settle first. Building your team, and the ten questions to ask before signing anything. The independence test, applied transparently.",
+  "new": "Settling the ownership structure first, hiring the team in the right order, and the ten questions to ask before signing anything. The independence test is applied to every adviser, including the publisher.",
+  "reason": "Semantic pass, tests 3,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The ownership structure that comes first. The team that protects you, in the order that matters. The independence test, applied transparently to every adviser including us.",
+  "new": "Why the ownership structure is settled first, the order in which to hire the buyer’s advisers, and the independence test, applied to every adviser including the publisher.",
+  "reason": "Three slogan fragments.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "because trade press is structurally less able to publish",
+  "new": "because the trade press, funded by the yards and brokers it covers, is less able to publish",
+  "reason": "Say what \"structurally\" means.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "but it does show that yachts sit outside the allocation framework the industry uses to describe family-office wealth.",
+  "new": "but it does show that the categories the survey uses to describe family-office wealth do not include yachts.",
+  "reason": "Semantic pass, tests 2,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "although the tooling is still being built. Better tooling will not show",
+  "new": "although the software to do it is still being developed. Better software will not show",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "settle the structure first,",
+  "new": "settle the ownership structure first,",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The structure comes first",
+  "new": "Settling the ownership structure first",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Before testing any adviser, the reader has to understand what is being built.",
+  "new": "Before testing any adviser, the buyer needs to know what the advisers will be setting up.",
+  "reason": "Semantic pass, tests 1.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "together with the jurisdiction it occupies and the VAT position that rides on it.",
+  "new": "together with the jurisdiction in which it is established and the VAT treatment that follows from it.",
+  "reason": "\"Occupies\", \"rides on it\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "which has built these structures from the Isle of Man",
+  "new": "which has set up these structures from the Isle of Man",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The vehicle that holds the yacht sits alongside the family’s operating companies, property, trusts, and succession arrangements, and the sound version of the decision reads across all of them at once. Residency and tax position are shared inputs; a jurisdiction that suits the yacht in isolation can work against the structure the family already runs elsewhere,",
+  "new": "The company that holds the yacht exists alongside the family’s operating companies, property, trusts and succession arrangements, and a sound decision takes account of all of them. The owner’s residence and tax status affect all of them; a jurisdiction that suits the yacht in isolation can conflict with the arrangements the family already has elsewhere,",
+  "reason": "\"Reads across\", \"shared inputs\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Two developments in 2026 bear on how the holding structure is built.",
+  "new": "Two developments in 2026 affect how the yacht’s holding structure is set up.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "the independence claim becomes assertion rather than evidence.",
+  "new": "the firm’s claim to be independent cannot be checked.",
+  "reason": "Semantic pass, tests 5.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Hourly without a cap, or percentage without a clear scope, has the latitude to extract value the buyer cannot price.",
+  "new": "Hourly fees without a cap, or a percentage fee without a clear scope, allow charges the buyer cannot estimate in advance.",
+  "reason": "Semantic pass, tests 1,3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "If no, the firm cannot afford to be wrong on the buyer’s behalf.",
+  "new": "If not, the firm may be unable to pay for its own mistakes.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "is not insured against the actual scale.",
+  "new": "is not insured at the scale of the project.",
+  "reason": "Semantic pass, tests 4.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "fail the most basic accountability test.",
+  "new": "cannot be held to account.",
+  "reason": "Semantic pass, tests 5.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "and the same regime (new build, refit,",
+  "new": "and the same type of project (new build, refit,",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "2. Team breadth against the project’s actual needs.",
+  "new": "2. Specialists to match the project.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "is more expensive and slower than one who carries the disciplines.",
+  "new": "is more expensive and slower than one who has the specialists.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "or where the proposed structure failed independence or suitability review?",
+  "new": "or where the proposed arrangements did not pass the independence or suitability tests?",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The willingness to walk is the clearest evidence of whose interest a firm serves.",
+  "new": "A firm that has turned down fees for that reason has given good evidence of whose interest it serves.",
+  "reason": "Aphorism.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "including at least one engagement that did not land cleanly? The reference list of triumphs is universal. The reference list that includes a project where things ran hot, and what the firm did about it, is the test. A firm that cannot produce one has either not been busy long enough, or has not been honest about what busy means.",
+  "new": "including at least one engagement that did not go smoothly? Every firm can name successful projects. A list that includes a project that went wrong, and explains what the firm did about it, tells the buyer more. A firm that cannot offer one has either not been working long enough or is not being candid.",
+  "reason": "\"Land cleanly\", \"ran hot\", wordplay close.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A firm that passes both is the firm to engage. A separate filter is the",
+  "new": "Engage a firm that passes both. A separate check is the",
+  "reason": "Semantic pass, tests 5.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "offers both tests for application to itself alongside any other firm a reader is considering.",
+  "new": "invites readers to apply both tests to it, as to any other firm they are considering.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "On a new build, the security position between signature and delivery has no natural owner.",
+  "new": "On a new build, no one is naturally responsible for the buyer’s security between signature and delivery.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "responsibility for the file, in the banking sense, sits with no one.",
+  "new": "no one is responsible for the file, in the banking sense.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Independent of the broker. The management company is the long-running operational partner.",
+  "new": "Independent of the broker. The relationship usually lasts for years.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Engaged once flag state and operating profile are determined.",
+  "new": "Engaged once the flag state and the yacht’s intended use are decided.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Then the buyer had the proposed team tested against the independence test, which it passed, asked one further question about his own time, and walked away from the acquisition.",
+  "new": "Then the buyer had his adviser set out how each member of the proposed team would be paid, and every one passed the independence test. He asked one further question, about his own time, and walked away from the acquisition.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "and the search had run cleanly for six months.",
+  "new": "and the search had gone smoothly for six months.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "with a clean survey and a fair-market position relative to comparable inventory.",
+  "new": "with a clean survey, priced in line with comparable yachts for sale.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "had run the team-build conversation",
+  "new": "had assembled the team",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Then the buyer asked the adviser to walk him through the team architecture across the next decade. Who would be paid by him directly. Who would be paid contingent on a deal closing. Who would carry referral or retrocession economics that he would be paying for indirectly.",
+  "new": "Then the buyer asked the adviser to set out who would advise and work for him over the next decade, what each would be responsible for, and how each would be paid: who by him directly, who only if a deal closed, and who would receive referral fees or retrocessions that he would be paying for indirectly.",
+  "reason": "\"Team architecture\"; name people, duties and payment.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The architecture, written out",
+  "new": "The team, and how each member was paid",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The independent adviser was paid by the buyer directly, on a fixed fee. Pass.",
+  "new": "The independent adviser, who ran the search, supported the negotiation and assembled the team, was paid by the buyer directly, on a fixed fee. Pass.",
+  "reason": "Name responsibilities as the brief asks.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The lawyer was paid by the buyer directly, on a fixed fee. Pass.",
+  "new": "The lawyer, who reviewed the purchase contract, was paid by the buyer directly, on a fixed fee. Pass.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The surveyor was paid by the buyer directly. Pass.",
+  "new": "The surveyor, who had surveyed the preferred yacht, was paid by the buyer directly. Pass.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The captain candidate, hired through an independent recruitment agency engaged by the adviser, was paid by the buyer directly. Pass.",
+  "new": "The captain candidate, who would run the yacht and lead the crew, had been found through an independent recruitment agency engaged by the adviser and would be paid by the buyer directly. Pass.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "the listing broker, would be paid by the buyer directly. Pass.",
+  "new": "the listing broker, would handle compliance, crew administration and accounts, and would be paid by the buyer directly. Pass.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The insurance broker, selected by the adviser from a panel of three, would carry a brokerage commission embedded in the premium. Standard practice. Disclosed to the buyer in writing. Acceptable, on the adviser’s framing. Pass with disclosure.",
+  "new": "The insurance broker, selected by the adviser from a panel of three to place the hull and P&I cover, would be paid by a commission included in the premium. This is standard practice; it was disclosed to the buyer in writing, and the adviser judged it acceptable. Pass with disclosure.",
+  "reason": "Semantic pass, tests 3,6.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "noted that for the buyer’s preferred cruising profile, the natural refit yard would be in the Western Mediterranean, and",
+  "new": "noted that, as the buyer meant to cruise mainly in the Western Mediterranean, the natural refit yard would be there, and",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "and that the cleanest option (based on the six-element independence test applied to the management company itself) was a smaller firm the adviser could recommend.",
+  "new": "and that the firm that best met the six-element independence test was a smaller one the adviser could recommend.",
+  "reason": "\"Cleanest\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "By the end of the conversation, the buyer had a clean architecture. Every fee was disclosed. Every party was paid by him directly or with full disclosure. The team passed the independence test, applied transparently.",
+  "new": "By the end of the conversation, the buyer knew who would work for him, what each would do and how each would be paid. Every fee was disclosed, and every party was either paid by him directly or had disclosed its other payments in writing. The team passed the independence test.",
+  "reason": "Semantic pass, tests 3,6.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "What he saw, that the architecture did not solve",
+  "new": "The question the fee review did not answer",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The adviser was honest. The yacht would absorb approximately 40 to 60 days a year of the buyer’s direct attention through season planning, refit scheduling, supplier conversations, and crew matters. The yacht would absorb approximately 80 to 120 days a year of the buyer’s direct family use. The yacht would absorb a meaningful proportion of household conversation, scheduling, and travel logistics. The yacht would, on the adviser’s honest framing, become a centre of gravity in the buyer’s life.",
+  "new": "The adviser estimated that the yacht would take about 40 to 60 days a year of the buyer’s direct attention, through season planning, refit scheduling, supplier conversations and crew matters, on top of about 80 to 120 days a year of family use. It would also take a large share of household conversation, scheduling and travel arrangements. In the adviser’s view, it would become a centre of gravity in the buyer’s life.",
+  "reason": "Four-fold repetition; \"honest framing\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "He returned three days later and informed the adviser that he had decided not to proceed with the acquisition. The decision was not driven by the team architecture, which was clean. It was driven by the recognition, prompted by the conversation, that he did not want a centre of gravity in his life that he had not chosen for non-yacht reasons.",
+  "new": "He returned three days later and told the adviser that he had decided not to proceed. His reason was not the team, which had passed every test. The conversation had made him realise that he did not want the yacht to become a centre of gravity in his life.",
+  "reason": "\"Not chosen for non-yacht reasons\" is unclear; not X but Y.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The arithmetic, post-decision",
+  "new": "The cost of the decision",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "On those ranges the decade costs him approximately USD 24 to 41 m less than ownership would have, and the purchase price stays outside an asset class he had been ready, at week 25, to enter.",
+  "new": "On those ranges the decade costs him approximately USD 24 to 41 m less than ownership would have.",
+  "reason": "Closing clause restates the previous sentence.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The buyer is an unusual case. Most buyers do not walk. He did. The First Owner’s Reference exists because the conversation that prompted the decision is not the conversation the trade press tends to publish. It is, however, available. To this buyer, on this engagement, it was. The reader of this chapter is invited to have the equivalent conversation, with whichever adviser they consider, before signing.",
+  "new": "The buyer is an unusual case; most buyers who reach this stage go ahead. The conversation that prompted his decision is not one the trade press tends to publish, but any buyer can have it. Readers are invited to have the same conversation with whichever adviser they are considering, before signing.",
+  "reason": "Short dramatic sentences.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The independence test, applied to the team architecture, is not the only test. The opportunity-cost test (“what else might my decade absorb?”) is the test that produces the rarest outcome.",
+  "new": "The independence test, applied to every adviser and to how each is paid, is not the only test. The buyer should also ask how much of the next ten years the yacht will take, and what else that time could be used for. That question rarely leads a buyer to withdraw, but it did here.",
+  "reason": "Semantic pass, tests 3,5.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Walking away is the disciplined response when the buyer’s honest answer to the use-case question is unconvincing. The cost of the search is small against the cost of the wrong decade.",
+  "new": "Walking away is the sensible response when the buyer’s honest answer about how he will use the yacht is unconvincing. The cost of the search, about USD 195,000 here, is small against a decade of ownership costing USD 42 to 53 m.",
+  "reason": "Replace slogan with the case’s figures.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "For some buyers this is the right architecture.",
+  "new": "For some buyers that is the better choice.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "An adviser who can structure the team architecture and ask the opportunity-cost question is the adviser who is paid for judgment, not for closing the deal.",
+  "new": "An adviser whose fee does not depend on the purchase going ahead can set out how the whole team is paid and also ask whether the buyer should buy at all.",
+  "reason": "Semantic pass, tests 3,5.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The decision pattern, the search cost, and the alternative-architecture arithmetic are accurate",
+  "new": "The sequence of the decision, the search cost and the cost comparison with chartering are accurate",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Then the buyer ran the decision framework properly.",
+  "new": "Then the buyer asked how much of his time the yacht would take.",
+  "reason": "Semantic pass, tests 3,4.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The questions below test whether any adviser is structurally aligned with the buyer.",
+  "new": "The questions below test whether an adviser’s interests match the buyer’s, by establishing who pays them.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The structural alignment",
+  "new": "Independence of the professionals",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "The structural test",
+  "new": "The final question",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "If the answer is no for any party, the relationship is not structurally aligned with the buyer.",
+  "new": "If the answer is no for any party, its interest in the deal closing may outweigh the buyer’s.",
+  "reason": "Semantic pass, tests 3,7.",
+  "kind": "line"
+ },
+ {
+  "file": "content/checklists.json",
+  "old": "Before the structure: settle these first",
+  "new": "Before setting up the ownership structure",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "are the structural test.",
+  "new": "set out what to ask.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "If a party in the transaction would walk away from a deal that did not benefit the buyer, they are structurally aligned. If they would not, the relationship is not aligned. The independent adviser, paid only by the buyer, is the party for whom this is structurally true.",
+  "new": "A useful test is whether a party would walk away from a deal that did not benefit the buyer. An adviser paid only by the buyer, with nothing that depends on the deal closing, has no financial reason not to.",
+  "reason": "\"Structurally aligned\" three times; absolute claim.",
+  "kind": "line"
+ },
+ {
+  "file": "content/faqs.json",
+  "old": "The real question is how the owner intends to use the yacht.",
+  "new": "It depends on how the owner intends to use the yacht.",
+  "reason": "\"The real question\".",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "The reader profile on the published record. The independence test in six elements. The team, in the order that matters, and what it costs. And the broad ownership models the early conversations resolve into.",
+  "new": "Published figures on the two main kinds of reader, the six elements of the independence test, the order in which to hire the team and what it costs, and the broad ownership models that early planning usually leads to.",
+  "reason": "Semantic pass, tests 6,8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "The reader profile, on the published record",
+  "new": "The readers, in published figures",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Once flag and operating profile determined;",
+  "new": "Once the flag and intended use are decided;",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Foreland Marine practitioner framework.",
+  "new": "Foreland Marine practitioner recommendation.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "The early conversations tend to resolve into one of a few broad models.",
+  "new": "Early planning usually leads to one of a few broad models.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "what actually drives that choice,",
+  "new": "what determines that choice,",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "VAT and importation sit on top of the ownership structure.",
+  "new": "VAT and importation depend on the ownership structure.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "content/guest-opinions.json",
+  "old": "and what is that fee actually buying them?",
+  "new": "and what does that fee pay for?",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Refit is the umbrella term for periodic capex on a yacht above survey-and-class minimum.",
+  "new": "Refit covers periodic capital work on a yacht beyond what survey and class require.",
+  "reason": "Semantic pass, tests 4,8.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "referral relationships that may not align with the owner’s interest.",
+  "new": "referral relationships that may conflict with the owner’s interest.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Independent counsel review at heads of terms is the buyer’s structural protection;",
+  "new": "Review by independent counsel at heads of terms is the buyer’s main protection;",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Trial scope covers the failure modes the pre-purchase survey identified,",
+  "new": "The trial covers the faults the pre-purchase survey identified,",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "readiness to walk away if material issues surface is the buyer’s structural lever.",
+  "new": "the buyer’s readiness to walk away if serious faults appear is the main source of leverage.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "The tax is one of the structural reasons that",
+  "new": "The tax is one reason why",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "is the standard discipline;",
+  "new": "is standard practice;",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "and the freeze date as the discipline that contains it.",
+  "new": "and a fixed freeze date as the way to control it.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Provisional sums are where a refit quote and the final account most often part company. A disciplined quote",
+  "new": "Provisional sums are the most common reason a refit’s final account differs from the quote. A well-prepared quote",
+  "reason": "\"X is where Y\".",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "clean transferability, and the structural framework for charter VAT routing.",
+  "new": "simple transfer by share sale, and a vehicle through which charter VAT can be handled.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Single-yacht SPV is the practitioner-default ownership structure.",
+  "new": "A single-yacht SPV is the ownership structure most practitioners recommend by default.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Its regulatory posture is to apply",
+  "new": "Its approach is to apply",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "a fuller EU regulatory and substance environment for the owning entity.",
+  "new": "fuller EU regulation and stronger substance requirements for the owning company.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "allows flag, SPV, and administration to sit in one jurisdiction,",
+  "new": "allows flag, SPV and administration to be in one jurisdiction,",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Most yachts (including 60 to 80 metre motor) sit below the 5,000 GT threshold.",
+  "new": "Most yachts (including 60 to 80 metre motor yachts) are below the 5,000 GT threshold.",
+  "reason": "Semantic pass, tests 2.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Stage payment loading reflects the yard’s working capital requirement against build progress.",
+  "new": "How much is paid in the early stages reflects how much working capital the yard needs as the build progresses.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "and operational profile (private versus charter).",
+  "new": "and use (private or charter).",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "which is an operational consideration for owner privacy.",
+  "new": "which matters for owner privacy.",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "Italy is dominant production geography at 568 units,",
+  "new": "Italy is the largest building country, with 568 units,",
+  "reason": "Semantic pass, tests 3,8.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "The framework under which value-added tax is paid",
+  "new": "The rules under which value-added tax is paid",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "YET frameworks exist under",
+  "new": "YET schemes exist under",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "                An annual editorial publication on the structural,\n                financial, and operational dimensions of first-time\n                superyacht acquisition, or rather, how to buy a boat.",
+  "new": "                An annual publication on the ownership arrangements,\n                costs and running of a first superyacht, or rather,\n                how to buy a boat.",
+  "reason": "\"Structural dimensions\".",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "refit; operations; motor vs.&nbsp;sail; and team to",
+  "new": "refit; operations; motor vs.&nbsp;sail; and the team to",
+  "reason": "Semantic pass, tests 8.",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "whose interests it covers. That structure is not a moral",
+  "new": "whose interests it covers. That arrangement is not a moral",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "                The independence is structural rather than stylistic.\n",
+  "new": "                Its independence comes from how it is funded, not from its tone.\n",
+  "reason": "Antithesis; say what \"structural\" means.",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "                like to do so with full visibility of cost, time, and the\n                structure of the conversations ahead.",
+  "new": "                like to do so with a clear view of the cost, the time\n                involved, and who will advise them and how each is paid.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "The publication is structured in numbered chapters.",
+  "new": "The publication is set out in numbered chapters.",
+  "reason": "Semantic pass, tests 3.",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "                hold alongside the conversations that matter.",
+  "new": "                keep at hand in conversations with brokers, yards and advisers.",
+  "reason": "Semantic pass, tests 4.",
+  "kind": "line"
+ },
+ {
+  "file": "app/page.tsx",
+  "old": "and the eight-figure hold cost that rarely reaches a first-time buyer.",
+  "new": "and the eight-figure cost of ownership a first-time buyer is rarely shown.",
+  "reason": "Costs do not reach buyers.",
+  "kind": "line"
+ }
+]

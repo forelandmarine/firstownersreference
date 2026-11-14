@@ -84,14 +84,14 @@ export default function HomePage() {
             </div>
             <div className="lg:col-span-9 space-y-6">
               <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal max-w-2xl">
-                An annual editorial publication on the structural,
-                financial, and operational dimensions of first-time
-                superyacht acquisition, or rather, how to buy a boat.
+                An annual publication on the ownership arrangements,
+                costs and running of a first superyacht, or rather,
+                how to buy a boat.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
                 Nine chapters: cost of ownership; market structure; how
                 the industry works; acquisition; new build and brokerage;
-                refit; operations; motor vs.&nbsp;sail; and team to
+                refit; operations; motor vs.&nbsp;sail; and the team to
                 assemble before signing.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
@@ -149,26 +149,26 @@ export default function HomePage() {
             <div className="prose-body max-w-prose text-charcoal-soft">
               <p>
                 The superyacht trade press is funded by the yards and brokers
-                whose interests it covers. That structure is not a moral
+                whose interests it covers. That arrangement is not a moral
                 failing; it is simply how the publications fund themselves.
                 The First Owner’s Reference is funded differently and written differently.
-                The independence is structural rather than stylistic.
+                Its independence comes from how it is funded, not from its tone.
               </p>
               <p>
                 It is written for the reader who has recently exited a business
                 or come into liquidity, has the means to buy a yacht, and would
-                like to do so with full visibility of cost, time, and the
-                structure of the conversations ahead. It is published once a
+                like to do so with a clear view of the cost, the time
+                involved, and who will advise them and how each is paid. It is published once a
                 year, in print and online, by an independent consultancy that
                 holds no yard affiliations and takes no broker commissions.
               </p>
               <p>
-                The publication is structured in numbered chapters. Each carries
+                The publication is set out in numbered chapters. Each carries
                 a lead essay, a data spread, an anonymised case and a one-page
                 checklist, and most carry a guest opinion from a named
                 contributor. The
                 aim is a calm, evidence-led reference a first-time owner can
-                hold alongside the conversations that matter.
+                keep at hand in conversations with brokers, yards and advisers.
               </p>
               <p>
                 Read in any order. Run your own numbers through the calculator.
@@ -262,7 +262,7 @@ export default function HomePage() {
                 href: "/tools/yacht-depreciation",
                 title: "Yacht depreciation",
                 blurb:
-                  "The curve by year, the builders that beat it, and the eight-figure hold cost that rarely reaches a first-time buyer.",
+                  "The curve by year, the builders that beat it, and the eight-figure cost of ownership a first-time buyer is rarely shown.",
               },
             ].map((item) => (
               <Link

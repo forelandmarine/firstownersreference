@@ -1,0 +1,2150 @@
+[
+  {
+    "file": "content/sections.json",
+    "old": "What the first three years of yacht ownership actually look like, in time and in money.\"",
+    "new": "What the first three years of yacht ownership cost, in time and in money.\"",
+    "kind": "line",
+    "reason": "'actually look like' replaced by what the chapter gives: the cost",
+    "chapter": "01",
+    "loc": "sections 01 standfirst",
+    "tests": "3"
+  },
+  {
+    "file": "content/sections.json",
+    "old": "Annual running costs, the folkloric 10 percent rule, depreciation and the charter delusion. What the first three years of ownership actually cost.",
+    "new": "Annual running costs, the 10 percent rule, depreciation and whether charter income covers the cost. What the first three years of ownership cost.",
+    "kind": "line",
+    "reason": "Plain description in place of 'the charter delusion' (author preference)",
+    "chapter": "01",
+    "loc": "sections 01 seoDescription",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "What the first three years of yacht ownership actually look like, in time and in money. The folkloric numbers do not survive contact with the data.",
+    "new": "What the first three years of yacht ownership cost, in time and in money, and how the commonly quoted figures compare with the published data.",
+    "kind": "line",
+    "reason": "Cliché closer replaced by what the chapter does",
+    "chapter": "01",
+    "loc": "ch01 essay standfirst",
+    "tests": "2, 5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The market grew largely on US demand and a change in the tax code; the demand structure underneath did not.",
+    "new": "Most of the rise came from US buyers completing purchases early to use a tax allowance, which does not on its own show a wider or lasting increase in demand.",
+    "kind": "line",
+    "reason": "'demand structure underneath did not' had no literal meaning; says what is meant",
+    "chapter": "01",
+    "loc": "ch01 para 1 (USD 8.5 billion)",
+    "tests": "1, 3, 5",
+    "argument": "Interprets an unclear sentence: the claim is now explicit that a tax-driven rush to close does not by itself show wider or lasting demand. Author to confirm this is the intended meaning."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The folklore of the 10 percent rule\"",
+    "new": "\"text\": \"The 10 percent rule of thumb\"",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "01",
+    "loc": "ch01 h2",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "roughly correct for new, mid-sized, lightly used yachts, and because it is easy.",
+    "new": "roughly correct for new, mid-sized, lightly used yachts, and because it is easy to remember.",
+    "kind": "line",
+    "reason": "'easy' completed",
+    "chapter": "01",
+    "loc": "ch01 para 'The industry shorthand'",
+    "tests": "4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "As the asset depreciates, the percentage rises mechanically: running cost is a function of size and complexity, not residual value.",
+    "new": "As the yacht loses value, the percentage rises as a matter of arithmetic, because running cost depends on size and complexity, not on what the yacht is worth.",
+    "kind": "line",
+    "reason": "'rises mechanically' / 'function of' made literal",
+    "chapter": "01",
+    "loc": "ch01 para 'YachtBuyer calls'",
+    "tests": "2, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Do not let any party paid contingent on a deal closing tell you otherwise.",
+    "new": "Treat a lower figure with caution if it comes from someone whose fee depends on the deal closing.",
+    "kind": "line",
+    "reason": "Slogan replaced by plain advice consistent with the disclosure standard",
+    "chapter": "01",
+    "loc": "ch01 para 'Budget 12 to 15 percent'",
+    "tests": "5, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"What you actually buy\"",
+    "new": "\"text\": \"Where the money goes\"",
+    "kind": "line",
+    "reason": "Heading says what the section contains (cost categories)",
+    "chapter": "01",
+    "loc": "ch01 h2",
+    "tests": "1, 5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The cost categories do not rank the way most buyers expect. Crew, not fuel, is the dominant line.",
+    "new": "Crew, not fuel, is the largest single cost.",
+    "kind": "line",
+    "reason": "Unsupported claim about what most buyers expect removed; 'dominant line' made plain",
+    "chapter": "01",
+    "loc": "ch01 para 'The cost categories'",
+    "tests": "5, 7",
+    "argument": "Drops the unsupported generalisation that most buyers expect a different ranking."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "owner travel, and the lines that simply happen.",
+    "new": "owner travel, and miscellaneous costs that are hard to budget for in advance.",
+    "kind": "line",
+    "reason": "'lines that simply happen' had no literal meaning",
+    "chapter": "01",
+    "loc": "ch01 para 'Maintenance and repair'",
+    "tests": "1, 5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "What those weeks buy is a fixed cost that runs whether the yacht is used or not.",
+    "new": "Most of the cost is fixed and runs whether the yacht is used or not, so the fewer the weeks of use, the higher the cost of each one.",
+    "kind": "line",
+    "reason": "Weeks do not 'buy' a fixed cost; states the actual point",
+    "chapter": "01",
+    "loc": "ch01 para 'Practitioner estimates place'",
+    "tests": "1, 7"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "corroborates the working ranges from a separate base. 62 percent of yachts in that band report annual operating budgets above EUR / USD 2 million; 31 percent sit in the 4 to 6 million band,",
+    "new": "supports the working ranges from a separate sample. 62 percent of yachts in that band report annual operating budgets above EUR / USD 2 million; 31 percent report 4 to 6 million,",
+    "kind": "line",
+    "reason": "'sit in the band' and 'base' made plain",
+    "chapter": "01",
+    "loc": "ch01 para 'The Superyacht Report OpEx'",
+    "tests": "2, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The depreciation reality\"",
+    "new": "\"text\": \"Depreciation\"",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "01",
+    "loc": "ch01 h2",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Broker-published figures agree on the shape of the curve more than on its numbers.",
+    "new": "Broker-published figures agree that most value is lost in the early years, but differ on how much.",
+    "kind": "line",
+    "reason": "'shape of the curve' named",
+    "chapter": "01",
+    "loc": "ch01 para 'Broker-published figures agree'",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Quality builders hold value much better.",
+    "new": "Yachts from the builders with the strongest reputations lose value much more slowly.",
+    "kind": "line",
+    "reason": "'Quality builders hold value' made literal",
+    "chapter": "01",
+    "loc": "ch01 para 'Quality builders'",
+    "tests": "2, 4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A yacht is not an investment. In the first year",
+    "new": "A yacht should not be bought as an investment. In the first year",
+    "kind": "line",
+    "reason": "Maxim turned into advice",
+    "chapter": "01",
+    "loc": "ch01 para 'A yacht is not an investment'",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The charter delusion\"",
+    "new": "\"text\": \"Does charter income cover the cost?\"",
+    "kind": "line",
+    "reason": "Author preference: plain question in place of provocative heading",
+    "chapter": "01",
+    "loc": "ch01 h2",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "(April 2025) are the cleanest public evidence.",
+    "new": "(April 2025) are the most detailed public evidence.",
+    "kind": "line",
+    "reason": "'cleanest' undefined",
+    "chapter": "01",
+    "loc": "ch01 para 'BOAT International’s published case studies'",
+    "tests": "4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Most charter operations subsidise rather than recover ownership cost. The growth of the global charter market (Precedence Research: USD 8.39 billion in 2024, forecast USD 16.92 billion by 2033) is driven by charter demand, not by owners profiting from it.",
+    "new": "In most charter programmes, income offsets part of the cost of ownership but does not cover it. The global charter market is growing (Precedence Research: USD 8.39 billion in 2024, forecast USD 16.92 billion by 2033), but a growing market does not mean that the owners supplying it make a profit.",
+    "kind": "line",
+    "reason": "'subsidise rather than recover' was inverted; growth sentence restated as the logical point",
+    "chapter": "01",
+    "loc": "ch01 para 'Most charter operations'",
+    "tests": "1, 5, 7"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Charter can pay for a small minority of well-run programmes. A first yacht rarely has those conditions in place from the start.",
+    "new": "Charter can cover the cost of ownership in a small minority of programmes, where weekly rates are high, charter weeks are many and the peak-season weeks are given to charter, as in the Hill Robinson model. A first yacht rarely has all of these in place from the start.",
+    "kind": "line",
+    "reason": "'those conditions' named, from the evidence in the preceding paragraph",
+    "chapter": "01",
+    "loc": "ch01 para 'Charter can pay'",
+    "tests": "4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "None of this argues against ownership. It argues against buying on the strength of a quoted budget that nobody has tested. Made with the full cost in view, the right ownership decision is one of the great purchases a person can make. Taken on folkloric numbers and contingent advice, it is among the more costly errors an ultra-high-net-worth (UHNW) buyer can make.",
+    "new": "None of this is an argument against ownership, only against buying on a quoted budget that nobody has tested. Made with the full cost in view, ownership can be one of the most rewarding purchases a person makes. Made on rule-of-thumb figures and on advice from people paid only if the sale closes, it can be one of the more expensive mistakes an ultra-high-net-worth (UHNW) buyer makes.",
+    "kind": "line",
+    "reason": "'Not X. It is Y' and superlative pair toned down; 'contingent advice' named",
+    "chapter": "01",
+    "loc": "ch01 para 'None of this argues'",
+    "tests": "5, 6, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The case for ownership is operational rather than financial.",
+    "new": "The case for ownership rests on use, not on financial return.",
+    "kind": "line",
+    "reason": "'operational' named",
+    "chapter": "01",
+    "loc": "ch01 para 'Ownership makes sense'",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The book’s own case files show what that looks like in practice. In the chapter 1 case, the owner’s second yacht",
+    "new": "The case study for this chapter shows what that looks like in practice. The owner’s second yacht",
+    "kind": "line",
+    "reason": "Simpler reference to the case",
+    "chapter": "01",
+    "loc": "ch01 para 'The book’s own case files'",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "inside the band set out before he bought.",
+    "new": "within the range his adviser set out before he bought.",
+    "kind": "line",
+    "reason": "'inside the band' made plain; names who set it",
+    "chapter": "01",
+    "loc": "ch01 para 'The book’s own case files'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ask whether your intended use pattern fits.",
+    "new": "Test your intended use against these figures.",
+    "kind": "line",
+    "reason": "'fits' what was undefined",
+    "chapter": "01",
+    "loc": "ch01 para 'Ask whether your intended use'",
+    "tests": "1, 4"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The second yacht was a better acquisition because the first one had already taught him what he was actually buying.",
+    "new": "The second yacht was a better acquisition because the first had shown him what ownership costs and who was being paid by whom.",
+    "kind": "line",
+    "reason": "'what he was actually buying' named",
+    "chapter": "01",
+    "loc": "ch01 case standfirst",
+    "tests": "4"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The structural pattern, the cost outcomes, and the team architecture are accurate to the original projects.",
+    "new": "The cost outcomes, and the way each advisory team was engaged and paid, are accurate to the original projects.",
+    "kind": "line",
+    "reason": "'structural pattern' and 'team architecture' named",
+    "chapter": "01",
+    "loc": "ch01 case disclosure",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The exit produced a liquidity event in the low nine figures.",
+    "new": "The sale left him with cash in the low nine figures.",
+    "kind": "line",
+    "reason": "Jargon made plain",
+    "chapter": "01",
+    "loc": "ch01 case para 1",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The fees were not on the buyer’s invoices because the fees were on the seller’s side.",
+    "new": "The brokerage’s fees did not appear on the buyer’s invoices because the seller paid them.",
+    "kind": "line",
+    "reason": "Says who paid",
+    "chapter": "01",
+    "loc": "ch01 case para 2",
+    "tests": "1"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "and that referral economics flowed back through each of those engagements.",
+    "new": "and that the brokerage could earn referral fees from each of those engagements.",
+    "kind": "line",
+    "reason": "'referral economics flowed back' named",
+    "chapter": "01",
+    "loc": "ch01 case para 2",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The first year ran ten weeks of family use across the Western Mediterranean.",
+    "new": "In the first year the family used the yacht for ten weeks in the Western Mediterranean.",
+    "kind": "line",
+    "reason": "A year does not 'run' use",
+    "chapter": "01",
+    "loc": "ch01 case 'Year one'",
+    "tests": "1"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The shipyard period after the first season produced a EUR 280,000 invoice",
+    "new": "The yard period after the first season brought a EUR 280,000 invoice",
+    "kind": "line",
+    "reason": "Line",
+    "chapter": "01",
+    "loc": "ch01 case 'Year one'",
+    "tests": "8"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "They were not, because the warranty had been negotiated to twelve months from delivery in the standard contract, not from first season completion.",
+    "new": "They were not, because the contract, on standard terms, ran the warranty for twelve months from delivery, not from the end of the first season.",
+    "kind": "line",
+    "reason": "Clarifies the warranty term",
+    "chapter": "01",
+    "loc": "ch01 case 'Year one'",
+    "tests": "8"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Eight weeks of use in year two. The buyer had begun to suspect that the structure he had inherited was not aligned with him.",
+    "new": "The family used the yacht for eight weeks in year two. By then the buyer had begun to suspect that the people he had taken on with the first purchase were not working for him.",
+    "kind": "line",
+    "reason": "'structure ... not aligned' named; fragment made a sentence",
+    "chapter": "01",
+    "loc": "ch01 case 'The second season'",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The review found a EUR 200,000 annual referral flow from the management company to the brokerage",
+    "new": "The review found that the management company paid EUR 200,000 a year in referral fees to the brokerage",
+    "kind": "line",
+    "reason": "'referral flow' named",
+    "chapter": "01",
+    "loc": "ch01 case 'The second season'",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The review found similar referral economics on the insurance arrangement,",
+    "new": "The review found similar referral payments on the insurance arrangement,",
+    "kind": "line",
+    "reason": "'economics' named",
+    "chapter": "01",
+    "loc": "ch01 case 'The second season'",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "None of this was illegal. None of it was outside industry practice. Most of it was, by the industry’s own definition, normal.",
+    "new": "None of this was illegal, and none of it was unusual by the standards of the industry.",
+    "kind": "line",
+    "reason": "Three-part close was a tautology",
+    "chapter": "01",
+    "loc": "ch01 case 'None of this was illegal'",
+    "tests": "5, 6"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The yacht went onto the brokerage market and sold within four months at a 28 percent discount to original purchase. The depreciation, EUR 3.1 m, was well above the 10 to 20 percent first-year band, because the sale came quickly and on the market’s terms.",
+    "new": "The yacht went onto the brokerage market and sold within four months for EUR 3.1 m less than he had paid, a loss of 28 percent. Broker-published figures put the loss in the first year of ownership at 10 to 20 percent; selling quickly, at the price the market offered, cost him more.",
+    "kind": "fact",
+    "reason": "Brief's known fix: the 28 percent comparison put plainly (EUR 3.1 m / 0.28 = EUR 11.1 m, consistent with the EUR 11 m hull)",
+    "chapter": "01",
+    "loc": "ch01 case 'The decision to sell'",
+    "tests": "4, 8"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The second acquisition began with a different architecture. He engaged an independent adviser before contacting any broker. The independent adviser briefed him on the acquisition process, the structure of the industry, and the team he would need. The independent adviser ran the search across multiple brokerages, evaluated three shortlist yachts, ran a parallel scan against off-market inventory,",
+    "new": "The second acquisition was organised differently from the start. He engaged an independent adviser before contacting any broker. The adviser briefed him on the acquisition process, on who in the industry is paid by whom, and on the team he would need. The adviser ran the search across several brokerages, evaluated three shortlisted yachts, checked yachts for sale privately but not listed,",
+    "kind": "line",
+    "reason": "'architecture', 'structure of the industry', 'parallel scan against off-market inventory' named",
+    "chapter": "01",
+    "loc": "ch01 case 'The decision to sell'",
+    "tests": "3, 8"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Year five of the second yacht is ongoing. The hold is approaching its five-year mark. The crew has stayed largely intact across four years;",
+    "new": "The buyer is now in his fifth year with the second yacht. The crew has stayed largely intact across four years;",
+    "kind": "line",
+    "reason": "Tautology removed",
+    "chapter": "01",
+    "loc": "ch01 case 'Year five, ongoing'",
+    "tests": "5"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "in the moderate-use band the independent adviser had set out from the start.",
+    "new": "within the range for moderate use that the adviser had set out at the start.",
+    "kind": "line",
+    "reason": "'in the band' made plain",
+    "chapter": "01",
+    "loc": "ch01 case 'Year five, ongoing'",
+    "tests": "2"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The cost is what he was told it would be. The team is paid by him, directly, at known rates.",
+    "new": "The costs have matched the budget he was given, and he pays the team directly at known rates.",
+    "kind": "line",
+    "reason": "Cadence of short closers",
+    "chapter": "01",
+    "loc": "ch01 case 'The buyer is unlikely'",
+    "tests": "6"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Engage an independent adviser before engaging any broker. The team you build determines the cost of ownership more than the yacht you choose.",
+    "new": "Engage an independent adviser before engaging any broker. In this case the choice of advisers made more difference to cost than the choice of yacht.",
+    "kind": "line",
+    "reason": "Universal maxim limited to what the case shows",
+    "chapter": "01",
+    "loc": "ch01 case takeaways",
+    "tests": "5, 7",
+    "argument": "Narrows a general claim (team determines cost more than yacht) to this case, which is all the evidence supports."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Referral economics from management, paint, insurance, and crew agencies into the introducing broker are routine. They are not on your invoice. Ask explicitly.",
+    "new": "Referral payments from management companies, paint contractors, insurers and crew agencies to the introducing broker are routine. They do not appear on your invoice, so ask about them explicitly.",
+    "kind": "line",
+    "reason": "'referral economics' named",
+    "chapter": "01",
+    "loc": "ch01 case takeaways",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The cost of a properly built team on a USD 30 m acquisition is USD 200 to 400 k in year one. The cost of the wrong team is several percent of the capital.",
+    "new": "An independent adviser, lawyer and surveyor on a USD 30 m acquisition cost about USD 200 to 400 k in year one. The wrong team can cost several percent of the purchase price.",
+    "kind": "line",
+    "reason": "'properly built team' named; 'is' qualified to 'can'",
+    "chapter": "01",
+    "loc": "ch01 case takeaways",
+    "tests": "3, 4"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The working range is 8 to 20 percent; size, age, use intensity, and charter activity set the position.",
+    "new": "The working range is 8 to 20 percent; where a yacht falls within it depends on size, age, use and charter activity.",
+    "kind": "line",
+    "reason": "'set the position' made plain",
+    "chapter": "01",
+    "loc": "ch01 data spread standfirst",
+    "tests": "2"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"text\": \"The cost-of-ownership band\"",
+    "new": "\"text\": \"Operating cost by size and use\"",
+    "kind": "line",
+    "reason": "Heading says what the table shows",
+    "chapter": "01",
+    "loc": "ch01 data spread h2",
+    "tests": "3"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Most charter operations subsidise rather than recover ownership cost; the profitable exception depends on disciplined operation and releasing the prime weeks.",
+    "new": "In most, charter income offsets part of the cost of ownership but does not cover it; the profitable exception assumes premium rates and the peak-season weeks given to charter.",
+    "kind": "line",
+    "reason": "Same fix as essay; 'disciplined operation' replaced by the model's stated assumptions",
+    "chapter": "01",
+    "loc": "ch01 data spread charter caption",
+    "tests": "1, 3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"title\": \"The cost picture, on paper.\"",
+    "new": "\"title\": \"The costs, on paper.\"",
+    "kind": "line",
+    "reason": "Plain",
+    "chapter": "01",
+    "loc": "ch01 checklist title",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Put the cost picture on paper before the first acquisition conversation. The numbers do not need to be perfect. They need to be written down.",
+    "new": "Write down the expected costs before the first acquisition conversation. The numbers do not need to be perfect, but they need to be in writing.",
+    "kind": "line",
+    "reason": "'cost picture' named; short-sentence cadence",
+    "chapter": "01",
+    "loc": "ch01 checklist intent",
+    "tests": "3, 6"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"heading\": \"The use case\"",
+    "new": "\"heading\": \"Intended use\"",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "01",
+    "loc": "ch01 checklist heading",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Shorter holds amplify the depreciation curve.",
+    "new": "Over a shorter hold, the steep early years of depreciation make up a larger share of the total cost.",
+    "kind": "line",
+    "reason": "'amplify the curve' made literal",
+    "chapter": "01",
+    "loc": "ch01 checklist hold item",
+    "tests": "2"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"heading\": \"The charter question\"",
+    "new": "\"heading\": \"Charter\"",
+    "kind": "line",
+    "reason": "'The X question' construction",
+    "chapter": "01",
+    "loc": "ch01 checklist heading",
+    "tests": "5"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A position, in advance, on whether the prime-season weeks",
+    "new": "A decision, made in advance, on whether the prime-season weeks",
+    "kind": "line",
+    "reason": "'position' named",
+    "chapter": "01",
+    "loc": "ch01 checklist charter item",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Charter income from prime-season weeks is what published case-study yields rest on.",
+    "new": "The published case-study yields depend on charter income from those weeks.",
+    "kind": "line",
+    "reason": "'rest on' simplified",
+    "chapter": "01",
+    "loc": "ch01 checklist charter item detail",
+    "tests": "2"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The charter projection pressure-tested against the published case studies for break-even, loss, and exception cases.",
+    "new": "The charter projection checked against the published case studies, including those that broke even or made a loss, and the exception.",
+    "kind": "line",
+    "reason": "Plain wording",
+    "chapter": "01",
+    "loc": "ch01 checklist charter item",
+    "tests": "8"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A maximum hold cost across years one to three that the buyer is comfortable absorbing, written down.",
+    "new": "A maximum total cost of ownership across years one to three that the buyer is comfortable absorbing, written down.",
+    "kind": "line",
+    "reason": "'hold cost' defined",
+    "chapter": "01",
+    "loc": "ch01 checklist decision item",
+    "tests": "4"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "operated privately at moderate use typically lands at 12 to 15 percent of purchase price",
+    "new": "operated privately at moderate use is typically 12 to 15 percent of purchase price",
+    "kind": "line",
+    "reason": "'lands at' made plain",
+    "chapter": "01",
+    "loc": "ch01 FAQ running cost",
+    "tests": "2"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The running cost calculator on this site sizes the picture against MYBA, Pantaenius, and Quay Crew published data.",
+    "new": "The running cost calculator on this site tests a buyer’s own figures against MYBA, Pantaenius, and Quay Crew published data.",
+    "kind": "line",
+    "reason": "'sizes the picture' named",
+    "chapter": "01",
+    "loc": "ch01 FAQ running cost",
+    "tests": "3"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "As the asset depreciates the percentage rises mechanically, since running cost is a function of size and complexity, not residual value.",
+    "new": "As the yacht loses value the percentage rises as a matter of arithmetic, since running cost depends on size and complexity, not on what the yacht is worth.",
+    "kind": "line",
+    "reason": "As essay",
+    "chapter": "01",
+    "loc": "ch01 FAQ 10 percent rule",
+    "tests": "2"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The honest budgetary figure is 12 to 15 percent",
+    "new": "A sound budget figure is 12 to 15 percent",
+    "kind": "line",
+    "reason": "'honest' implies the other figures are dishonest",
+    "chapter": "01",
+    "loc": "ch01 FAQ 10 percent rule",
+    "tests": "5"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "given to charter. Most charter operations subsidise rather than recover ownership cost.",
+    "new": "given to charter. In most charter programmes, income offsets part of the cost of ownership but does not cover it.",
+    "kind": "line",
+    "reason": "As essay",
+    "chapter": "01",
+    "loc": "ch01 FAQ charter",
+    "tests": "1"
+  },
+  {
+    "file": "content/sections.json",
+    "old": "Where the order book actually sits, who has capacity, and what that means for a buyer entering the market in 2027.",
+    "new": "The global order book, available shipyard capacity and what buyers can expect in 2027.",
+    "kind": "line",
+    "reason": "Reviewer's example; an order book does not sit anywhere",
+    "chapter": "02",
+    "loc": "sections 02 standfirst",
+    "tests": "1, 2"
+  },
+  {
+    "file": "content/sections.json",
+    "old": "The order book, UHNW wealth growth and brokerage supply, read together. What the market is telling a first-time buyer going into 2027.",
+    "new": "The order book, UHNW wealth growth and brokerage supply, and what they mean for a first-time buyer going into 2027.",
+    "kind": "line",
+    "reason": "A market does not 'tell'; 'read together' removed",
+    "chapter": "02",
+    "loc": "sections 02 seoDescription",
+    "tests": "1, 2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Two facts about the market going into 2027 are seldom stated alongside one another.",
+    "new": "Two facts about the market going into 2027 are worth setting side by side.",
+    "kind": "line",
+    "reason": "Unsupported claim about what others seldom state",
+    "chapter": "02",
+    "loc": "ch02 para 'Two facts about the market'",
+    "tests": "5, 7",
+    "argument": "Drops the unsupported claim that the two facts are seldom stated together."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Trade press often describes the moment as a boom.",
+    "new": "Trade press often describes the current market as a boom.",
+    "kind": "line",
+    "reason": "Line",
+    "chapter": "02",
+    "loc": "ch02 para 'Trade press often describes'",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The wealth side\"",
+    "new": "\"text\": \"Growth in private wealth\"",
+    "kind": "line",
+    "reason": "Heading says what the section contains",
+    "chapter": "02",
+    "loc": "ch02 h2",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "up from 33 percent in 2021; the concentration is still intensifying.",
+    "new": "up from 33 percent in 2021, so the US share is still growing.",
+    "kind": "line",
+    "reason": "'concentration intensifying' made plain",
+    "chapter": "02",
+    "loc": "ch02 para '41 percent of new UHNWIs'",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "BOAT International identifies the rise of Indian wealth as one of the industry’s next big demand engines and reports that wealthy Indian entrepreneurs are translating it into yacht ownership primarily in the Mediterranean,",
+    "new": "BOAT International identifies Indian wealth as a likely source of new demand for the industry and reports that wealthy Indian entrepreneurs are buying yachts to keep mainly in the Mediterranean,",
+    "kind": "line",
+    "reason": "'demand engines', 'translating it into ownership' made literal",
+    "chapter": "02",
+    "loc": "ch02 para '41 percent of new UHNWIs'",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Many readers of The First Owner’s Reference will therefore be one of two kinds of buyer:",
+    "new": "Many readers of The First Owner’s Reference will be one of two kinds of buyer:",
+    "kind": "line",
+    "reason": "'therefore' did not follow: business sales are not in the evidence above",
+    "chapter": "02",
+    "loc": "ch02 para 'The Capgemini World Wealth Report'",
+    "tests": "7"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The yacht side\"",
+    "new": "\"text\": \"The order book and yard capacity\"",
+    "kind": "line",
+    "reason": "Heading says what the section contains",
+    "chapter": "02",
+    "loc": "ch02 h2",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Explorer has consolidated as the second-largest single category at roughly nine percent",
+    "new": "Explorer yachts are the second-largest single category, at roughly nine percent",
+    "kind": "line",
+    "reason": "'consolidated' implied a trend the figures do not show",
+    "chapter": "02",
+    "loc": "ch02 para 'The breakdown by hull type'",
+    "tests": "7"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Italy now dominates production: 568 units, 52 percent of the order book.",
+    "new": "Italy builds more yachts than any other country: 568 units, 52 percent of the order book.",
+    "kind": "line",
+    "reason": "'dominates production' stated as the measure",
+    "chapter": "02",
+    "loc": "ch02 para 'Italy now dominates'",
+    "tests": "4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "(78,651 GT across just 18, output concentrated at the very top).",
+    "new": "(78,651 GT across just 18 yachts, an average of about 4,400 GT each).",
+    "kind": "fact",
+    "reason": "'concentrated at the very top' replaced by the arithmetic (78,651 / 18 = 4,370)",
+    "chapter": "02",
+    "loc": "ch02 para 'Italy now dominates'",
+    "tests": "2, 4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "about 18 months faster than a conventional custom build of that size: the counter-example of speed at the top.",
+    "new": "about 18 months faster than a conventional custom build of that size.",
+    "kind": "line",
+    "reason": "Flourish removed",
+    "chapter": "02",
+    "loc": "ch02 para 'Top-tier yards are sold out'",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Heesen runs a speculative-build model, with hulls in build",
+    "new": "Heesen builds some yachts speculatively, before a buyer is found, with hulls in build",
+    "kind": "line",
+    "reason": "'model' named",
+    "chapter": "02",
+    "loc": "ch02 para 'Top-tier yards are sold out'",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The constraint extends to the mid-tier:",
+    "new": "Capacity is also limited at mid-tier yards:",
+    "kind": "line",
+    "reason": "Plain",
+    "chapter": "02",
+    "loc": "ch02 para 'Top-tier yards are sold out'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Sanlorenzo’s order book extends to the same window on the SX, SD, and Steel ranges. On the sailing yacht side, Southern Wind reported in May 2026 that its next available build slot is in 2028 (Superyacht Investor); Sanlorenzo’s UK and Ireland office reports late-Q1 2026 buyer-meeting volume approximately 10 percent above the same window in 2025.",
+    "new": "Sanlorenzo’s order book runs to the same period on the SX, SD, and Steel ranges. Sanlorenzo’s UK and Ireland office reported meeting about 10 percent more buyers in late Q1 2026 than in the same weeks of 2025. Among sailing yacht builders, Southern Wind reported in May 2026 that its next available build slot is in 2028 (Superyacht Investor).",
+    "kind": "line",
+    "reason": "Sanlorenzo item moved out of the sailing-yacht sentence; 'window', 'volume' made plain",
+    "chapter": "02",
+    "loc": "ch02 para 'Top-tier yards are sold out'",
+    "tests": "2, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "a buyer should read any listing’s time on market and price-reduction history against the most recent published median",
+    "new": "a buyer should compare any listing’s time on market and history of price cuts with the most recent published median",
+    "kind": "line",
+    "reason": "'read against' made literal",
+    "chapter": "02",
+    "loc": "ch02 para 'Days on market is the clearest'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "suggest a market dividing on price:",
+    "new": "suggest that the market is dividing on price:",
+    "kind": "line",
+    "reason": "Line",
+    "chapter": "02",
+    "loc": "ch02 para 'Days on market is the clearest'",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "a normalised year would typically produce around 50 brokerage transactions above 30 metres for the house, with January 2026 alone running at twelve yachts in twelve days",
+    "new": "in a normal year the house would expect around 50 brokerage sales of yachts above 30 metres, while in January 2026 it recorded twelve sales in twelve days",
+    "kind": "line",
+    "reason": "'normalised year ... running at' made plain",
+    "chapter": "02",
+    "loc": "ch02 para 'Anders Kurtén'",
+    "tests": "2, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The geographic shift\"",
+    "new": "\"text\": \"Where buyers come from\"",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "02",
+    "loc": "ch02 h2",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Three claims about geographic shift recur in trade press. The data supports the first, partly supports the second and does not support the third.",
+    "new": "Four claims about where buyers come from recur in trade press: that the United States dominates, that the European market has collapsed, that Asian buyers have retreated and that Russian ownership has collapsed. The data supports the first, partly supports the second and does not support the last two.",
+    "kind": "fact",
+    "reason": "The section tests four claims, not three",
+    "chapter": "02",
+    "loc": "ch02 para 'Three claims about geographic shift'",
+    "tests": "7",
+    "argument": "Corrects the count: the section goes on to test four claims (US, Europe, Asia, Russia)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "United States dominance is supported.",
+    "new": "The first claim, US dominance, is supported.",
+    "kind": "line",
+    "reason": "Ties the paragraph to the list above",
+    "chapter": "02",
+    "loc": "ch02 para 'United States dominance is supported'",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The tariff side of the same trade environment has changed three times since April 2025.",
+    "new": "US import tariffs on yachts have changed three times since April 2025.",
+    "kind": "line",
+    "reason": "'tariff side of the same trade environment' named",
+    "chapter": "02",
+    "loc": "ch02 para 'The tariff side'",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The claim of an Asian retreat is not supported by fleet data.",
+    "new": "The claim that Asian buyers are retreating is not supported by fleet data.",
+    "kind": "line",
+    "reason": "Says who is said to retreat",
+    "chapter": "02",
+    "loc": "ch02 para 'The claim of an Asian retreat'",
+    "tests": "1"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Russian ownership share moving from 9.1 percent",
+    "new": "Russian ownership share falling from 9.1 percent",
+    "kind": "line",
+    "reason": "'moving' made literal",
+    "chapter": "02",
+    "loc": "ch02 para 'The claim of a Russian collapse'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "First, the wealth pool is increasingly American:",
+    "new": "First, a growing share of potential buyers are American:",
+    "kind": "line",
+    "reason": "'wealth pool' made plain",
+    "chapter": "02",
+    "loc": "ch02 para 'First, the wealth pool'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "It also includes a growing number of heirs,",
+    "new": "They also include a growing number of heirs,",
+    "kind": "line",
+    "reason": "Agreement with the new subject",
+    "chapter": "02",
+    "loc": "ch02 para 'First, the wealth pool'",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The demographic shift is now visible on the show floor: Southern Wind reports the new owner of the SW108 Kalantis is in his 30s, with average ownership age across three Southern Wind hulls at Palma May 2026 in the late 40s (Superyacht Investor). VistaJet’s Q1 2026 data corroborates from the aviation side:",
+    "new": "There are signs of younger buyers: Southern Wind reports that the new owner of the SW108 Kalantis is in his 30s, and that the average age of the owners of three Southern Wind yachts at Palma in May 2026 was in the late 40s (Superyacht Investor). VistaJet’s Q1 2026 figures for private aviation point the same way:",
+    "kind": "line",
+    "reason": "'visible on the show floor' and 'corroborates from the aviation side' made plain",
+    "chapter": "02",
+    "loc": "ch02 para 'First, the wealth pool'",
+    "tests": "2, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Second, supply is concentrated at Italian volume yards (Azimut Benetti, Sanlorenzo) for unit count and Northern European custom yards (Lürssen, Feadship, Oceanco) for prestige and value retention. The prestige tier is sold out for several years.",
+    "new": "Second, most yachts by number are built at Italian volume yards (Azimut Benetti, Sanlorenzo), while the yachts that command the highest prices and hold their value best come from Northern European custom yards (Lürssen, Feadship, Oceanco). Those yards are booked for several years.",
+    "kind": "line",
+    "reason": "'supply concentrated ... for prestige' made literal",
+    "chapter": "02",
+    "loc": "ch02 para 'Second, supply is concentrated'",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Two buyers competed for the same 52 m brokerage hull. One read the days-on-market signal and held the price. The other accepted the broker’s account of urgency and paid up to 11 percent above the market read.",
+    "new": "This illustration sets two 2025 transactions on one 52 m brokerage yacht. One buyer had an adviser and kept to a ceiling price set in advance. The other accepted the listing broker’s account of urgency and paid 5 to 11 percent more than the adviser’s estimate of fair value.",
+    "kind": "structure",
+    "reason": "Composite presented as an illustration (brief); 'market read' and 'held the price' defined",
+    "chapter": "02",
+    "loc": "ch02 case standfirst",
+    "tests": "2, 4",
+    "argument": "No longer claims that two buyers competed for the same yacht; the case is presented as two files set on one yacht for comparison."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Closed at EUR 27.8 m, 5 to 11 percent above the market read",
+    "new": "Closed at EUR 27.8 m, 5 to 11 percent above the adviser’s estimate of fair value",
+    "kind": "line",
+    "reason": "'market read' defined (27.8 / 26.5 = 1.049; 27.8 / 25 = 1.112)",
+    "chapter": "02",
+    "loc": "ch02 case meta",
+    "tests": "4"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Composite, two transactions, 2025. Quoted remarks are representative of the files, not verbatim",
+    "new": "Composite of two 2025 transactions, set on one yacht for comparison. Quoted remarks are representative of the files, not verbatim",
+    "kind": "structure",
+    "reason": "Composite reads as composite",
+    "chapter": "02",
+    "loc": "ch02 case meta",
+    "tests": "7"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Reading days-on-market before making a yacht offer",
+    "new": "Checking days on market before a yacht offer",
+    "kind": "line",
+    "reason": "'Reading' a figure",
+    "chapter": "02",
+    "loc": "ch02 case seoTitle",
+    "tests": "2"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Two buyers, one 52 metre brokerage hull. One read the days-on-market signal and held price; the other took the broker's framing of urgency.",
+    "new": "Two 2025 transactions set on one 52 metre brokerage yacht. One buyer checked the listing record and kept to a ceiling price; the other accepted the broker's account of urgency.",
+    "kind": "line",
+    "reason": "As standfirst",
+    "chapter": "02",
+    "loc": "ch02 case seoDescription",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Identifying details adjusted; figures held within their original ranges.",
+    "new": "The two transactions are set here on one yacht so that they can be compared. Identifying details adjusted; figures kept within their original ranges.",
+    "kind": "structure",
+    "reason": "Discloses the illustrative device",
+    "chapter": "02",
+    "loc": "ch02 case disclosure",
+    "tests": "7"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Two buyers, both first-time, both within a three-month window in 2025, looked at the same 52 m motor yacht on the brokerage market. The yacht had been listed at EUR 32 m fourteen months earlier, reduced to EUR 28 m at the time of the buyers’ interest, and had passed through three price reductions in that window.",
+    "new": "This case combines two 2025 transactions involving first-time buyers. So that the two can be compared, both are set here on the same yacht: a 52 m motor yacht on the brokerage market, listed at EUR 32 m fourteen months earlier and reduced three times since, to EUR 28 m.",
+    "kind": "structure",
+    "reason": "Composite must not be presented as two buyers looking at one yacht in the same window",
+    "chapter": "02",
+    "loc": "ch02 case para 1",
+    "tests": "7",
+    "argument": "Removes the constructed event (two buyers on one yacht in one three-month window)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The adviser pulled the listing’s history from public broker portals, ran a comparable scan against three other 50 to 55 m hulls of similar age and yard, and identified the days-on-market position relative to the most recent published median for the size band. The comparable scan suggested fair market was EUR 25 to 26.5 m. The 14-month days-on-market position confirmed the market was not absorbing this hull at its asking. The adviser recommended an opening offer at EUR 24.5 m with hold discipline at EUR 26.5 m.",
+    "new": "The adviser took the listing’s history from public broker portals, compared three other 50 to 55 m yachts of similar age and yard, and checked the yacht’s time on the market against the most recent published median for its size band. The comparison suggested a fair price of EUR 25 to 26.5 m. Fourteen months on the market and three price cuts showed that no buyer had been found at the earlier asking prices. The adviser recommended an opening offer of EUR 24.5 m and a ceiling of EUR 26.5 m.",
+    "kind": "line",
+    "reason": "'days-on-market position', 'market not absorbing', 'hold discipline' made literal",
+    "chapter": "02",
+    "loc": "ch02 case para 2",
+    "tests": "2, 3, 4"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The listing broker introduced him to the yacht, walked him through the inventory, and described the yacht as “about to move.” The broker mentioned, in conversation, that another buyer was “close to an offer” and that pricing in this segment was “moving in our favour.” Both statements were true in a narrow sense and misleading in a wider one. The other buyer was Buyer A, whose adviser had already concluded the yacht was over-priced. Pricing in the segment had softened from peak brokerage levels.",
+    "new": "The listing broker introduced him to the yacht and told him that it was likely to sell soon, that another buyer was close to an offer and that prices in the segment were rising. The yacht’s record did not support that account: it had been cut three times in fourteen months, and prices in the segment had eased from their peak.",
+    "kind": "structure",
+    "reason": "Invented link (the other buyer was Buyer A) and quoted dialogue removed; per brief on composites",
+    "chapter": "02",
+    "loc": "ch02 case para 3",
+    "tests": "5, 7",
+    "argument": "Removes the constructed detail that the 'other buyer' was Buyer A; the broker's statements are now judged against the listing record instead."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"The negotiation\"",
+    "new": "\"text\": \"Negotiation\"",
+    "kind": "line",
+    "reason": "Two separate negotiations now",
+    "chapter": "02",
+    "loc": "ch02 case h2",
+    "tests": "7"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Buyer A held at EUR 25.5 m, then at EUR 26.5 m. The seller was not willing to come below EUR 27.5 m within the negotiation window the buyer had set. Buyer A withdrew, on the adviser’s recommendation. The adviser noted that the seller’s asking discipline was inconsistent with the published days-on-market signal, and that walking away was the disciplined response.",
+    "new": "Buyer A raised the offer to EUR 25.5 m, then to EUR 26.5 m. The seller would not go below EUR 27.5 m within the time the buyer had allowed, and Buyer A withdrew on the adviser’s recommendation. The adviser’s view was that the seller’s price did not reflect the yacht’s record on the market, and that the buyer should not go above the ceiling agreed in advance.",
+    "kind": "line",
+    "reason": "'held at' (an increase), 'asking discipline', 'disciplined response' made plain",
+    "chapter": "02",
+    "loc": "ch02 case para 'Buyer A opened'",
+    "tests": "2, 3, 5"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Buyer B opened, six weeks later, at EUR 28 m, the asking. The broker recommended a small reduction request and a quick close to “secure the slot.” Buyer B closed at EUR 27.8 m. The broker collected approximately EUR 1.7 m in commission from the seller-side pool on the MYBA scale, of which a buyer-broker share of around EUR 850,000 was paid to a broker who had not represented Buyer B in any meaningful sense.",
+    "new": "Buyer B offered the asking price of EUR 28 m. The broker suggested asking for a small reduction and closing quickly, and Buyer B closed at EUR 27.8 m. On the MYBA scale the commission at that price is about EUR 1.7 m, paid by the seller. The buyer-side share, around EUR 850,000, went to a broker who had not acted for Buyer B in any practical sense.",
+    "kind": "structure",
+    "reason": "Constructed sequence ('six weeks later') and quoted dialogue removed; 'seller-side pool' named. MYBA at EUR 27.8 m: 1.0 + 0.5 + 7.8 x 0.025 = 1.695",
+    "chapter": "02",
+    "loc": "ch02 case para 'Buyer B opened'",
+    "tests": "2, 7"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"Twelve months later\"",
+    "new": "\"text\": \"Afterwards\"",
+    "kind": "line",
+    "reason": "Timeline across two files is not a single twelve-month span",
+    "chapter": "02",
+    "loc": "ch02 case h2",
+    "tests": "7"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Buyer A bought a different 50 m hull at EUR 25.2 m, four months after walking away from the first transaction. The yacht had different layout, similar cruising profile, comparable build quality from a different mid-tier yard.",
+    "new": "Four months after withdrawing, Buyer A bought a different 50 m yacht for EUR 25.2 m. It had a different layout but suited the same kind of cruising, and its build quality, from a different mid-tier yard, was comparable.",
+    "kind": "line",
+    "reason": "Fragment sentence and 'cruising profile' made plain",
+    "chapter": "02",
+    "loc": "ch02 case para 'Buyer A bought'",
+    "tests": "3, 8"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"text\": \"The mechanism\"",
+    "new": "\"text\": \"Why the outcomes differed\"",
+    "kind": "line",
+    "reason": "Heading says what the section contains",
+    "chapter": "02",
+    "loc": "ch02 case h2",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "an adviser whose only job was to read the market on the buyer’s behalf.",
+    "new": "an adviser whose only job was to judge the price on the buyer’s behalf.",
+    "kind": "line",
+    "reason": "'read the market' made literal",
+    "chapter": "02",
+    "loc": "ch02 case para 'Buyer A had access'",
+    "tests": "2"
+  },
+  {
+    "file": "content/cases.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "The price difference came from representation."
+    },
+    "kind": "structure",
+    "reason": "Restates the previous paragraph",
+    "chapter": "02",
+    "loc": "ch02 case last paragraph",
+    "tests": "5, 6",
+    "oldText": "The price difference came from representation. Both buyers had the same information; only Buyer A had someone whose job was to read it on their behalf.",
+    "newText": "(deleted)"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "A buyer with a hold price agreed in advance can walk away.",
+    "new": "A buyer with a ceiling price agreed in advance can walk away.",
+    "kind": "line",
+    "reason": "'hold price' defined",
+    "chapter": "02",
+    "loc": "ch02 case takeaways",
+    "tests": "4"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The independent adviser’s value on a single transaction can exceed their year’s fee through pricing discipline alone.",
+    "new": "On a single transaction, advice on price alone can save more than an adviser’s annual fee.",
+    "kind": "line",
+    "reason": "'pricing discipline' named",
+    "chapter": "02",
+    "loc": "ch02 case takeaways",
+    "tests": "3"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Wealth creation has accelerated; order-book unit count has contracted for the second consecutive year; top-tier yards are sold out. The supply-side picture to hold in mind before any broker conversation.",
+    "new": "The number of UHNWIs has grown by nearly 30 percent in five years; the order book has contracted by unit count for the second consecutive year; top-tier yards are sold out. The figures on supply to know before any broker conversation.",
+    "kind": "line",
+    "reason": "Five-year growth figures show growth, not acceleration",
+    "chapter": "02",
+    "loc": "ch02 data spread standfirst",
+    "tests": "7, 2",
+    "argument": "'Wealth creation has accelerated' is not shown by the figures; replaced by the measured five-year growth."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "89 individuals per day, every day, for five years",
+    "new": "Equivalent to 89 a day for five years",
+    "kind": "line",
+    "reason": "Emphasis",
+    "chapter": "02",
+    "loc": "ch02 data spread row note",
+    "tests": "5"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "What the wealth actually looks like, up close",
+    "new": "How much of that wealth is available to spend",
+    "kind": "line",
+    "reason": "Heading says what the section shows",
+    "chapter": "02",
+    "loc": "ch02 data spread h2",
+    "tests": "3, 5"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "and the office managing the rest runs it preservation-first, not spending-first.",
+    "new": "and the office managing the rest puts preserving capital ahead of spending it.",
+    "kind": "line",
+    "reason": "Coined compounds made plain",
+    "chapter": "02",
+    "loc": "ch02 data spread SFO text",
+    "tests": "8"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The buyer behind a first purchase, measured. Swiss single family offices,",
+    "new": "Wealth, liquidity and objectives of Swiss single family offices,",
+    "kind": "line",
+    "reason": "Swiss SFOs are not shown to be the buyers behind first purchases",
+    "chapter": "02",
+    "loc": "ch02 data spread SFO caption",
+    "tests": "7",
+    "argument": "Removes the implied claim that Swiss single family offices are the buyers behind first purchases."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The discretionary capital behind a first yacht is therefore smaller, and more conservatively managed, than a wealth-report headline suggests. The record brokerage totals later in this spread and the preservation-first capital above are two halves of the same market.",
+    "new": "On this evidence, the capital available for a first yacht may be smaller, and more conservatively managed, than a headline net-worth figure suggests.",
+    "kind": "line",
+    "reason": "Swiss SFO survey does not establish a general rule; flourish closer removed",
+    "chapter": "02",
+    "loc": "ch02 data spread SFO text",
+    "tests": "5, 7",
+    "argument": "Conclusion qualified ('may be'); the closing 'two halves of the same market' sentence removed."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Concentrated at the very top, smallest unit count",
+    "new": "Fewest units, largest average size",
+    "kind": "line",
+    "reason": "'concentrated at the very top' made literal",
+    "chapter": "02",
+    "loc": "ch02 data spread country row",
+    "tests": "2"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Positions as published by September 2026.",
+    "new": "As published by September 2026.",
+    "kind": "line",
+    "reason": "'Positions'",
+    "chapter": "02",
+    "loc": "ch02 data spread slot caption",
+    "tests": "3"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "about 18 months faster than a typical custom build (counter-example of speed)",
+    "new": "about 18 months faster than a typical custom build",
+    "kind": "line",
+    "reason": "As essay",
+    "chapter": "02",
+    "loc": "ch02 data spread Oceanco row",
+    "tests": "5"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Sanlorenzo UK and Ireland, late-Q1 2026 read",
+    "new": "Sanlorenzo UK and Ireland, late Q1 2026",
+    "kind": "line",
+    "reason": "'read'",
+    "chapter": "02",
+    "loc": "ch02 data spread Sanlorenzo label",
+    "tests": "2"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The pattern of 2025 held: value concentrated at the top, and the mid-size range softened.",
+    "new": "As in 2025, a few large sales accounted for much of the value, and mid-size sales were weaker.",
+    "kind": "line",
+    "reason": "'pattern held', 'value concentrated' made literal",
+    "chapter": "02",
+    "loc": "ch02 data spread H1 text",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "the clearest sign of value concentrating in the largest hulls while the mid-size range thins. This tracks the second consecutive contraction in order-book unit count shown above.",
+    "new": "which suggests that a growing share of the value is in the largest yachts.",
+    "kind": "line",
+    "reason": "Brokerage prices and the new-build order book are separate markets; the link was asserted, not shown",
+    "chapter": "02",
+    "loc": "ch02 data spread June text",
+    "tests": "4, 7",
+    "argument": "Removes the claim that rising brokerage averages 'track' the order-book contraction, and softens 'clearest sign' to 'suggests'."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Position at 1 October 2026.",
+    "new": "Figures as at 1 October 2026.",
+    "kind": "line",
+    "reason": "'Position'",
+    "chapter": "02",
+    "loc": "ch02 data spread Q3 caption",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Reading any hull, before any offer.",
+    "new": "Checking a listing before making an offer.",
+    "kind": "line",
+    "reason": "Plain title",
+    "chapter": "02",
+    "loc": "ch02 checklist title",
+    "tests": "2"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The hull, on the published record",
+    "new": "The yacht’s published record",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "02",
+    "loc": "ch02 checklist heading",
+    "tests": "8"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"heading\": \"The supply context\"",
+    "new": "\"heading\": \"Supply\"",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "02",
+    "loc": "ch02 checklist heading",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The hull’s position in the wider supply picture, against the BOAT International Global Order Book and the over-30 m brokerage inventory.",
+    "new": "How many comparable yachts are for sale or on order, from the brokerage listings for yachts over 30 m and the BOAT International Global Order Book.",
+    "kind": "line",
+    "reason": "'position in the supply picture' named",
+    "chapter": "02",
+    "loc": "ch02 checklist supply item",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "An understanding of the US-capital dynamic in the relevant size band, given the One Big Beautiful Bill Act 100 percent depreciation provision.",
+    "new": "How far US buying, encouraged by the 100 percent depreciation allowance in the One Big Beautiful Bill Act, is affecting prices in the relevant size band.",
+    "kind": "line",
+    "reason": "'US-capital dynamic' named",
+    "chapter": "02",
+    "loc": "ch02 checklist supply item",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The broker’s framing",
+    "new": "What the broker says",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "02",
+    "loc": "ch02 checklist heading",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Negotiation framings (“about to offer”, “about to move”, “tightening”) noted as not, on their own, market evidence.",
+    "new": "Broker phrases such as “about to offer”, “about to move” and “tightening” noted as claims to be checked, not market evidence.",
+    "kind": "line",
+    "reason": "'framings' named",
+    "chapter": "02",
+    "loc": "ch02 checklist broker item",
+    "tests": "3, 8"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Introductions made by a brokerage may carry referral economics.",
+    "new": "Firms introduced by a brokerage may pay it referral fees.",
+    "kind": "line",
+    "reason": "'referral economics' named",
+    "chapter": "02",
+    "loc": "ch02 checklist broker item detail",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"heading\": \"The discipline\"",
+    "new": "\"heading\": \"Setting a limit\"",
+    "kind": "line",
+    "reason": "'discipline' named",
+    "chapter": "02",
+    "loc": "ch02 checklist heading",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A hold price, agreed in advance and in writing, below which the buyer is comfortable walking away.",
+    "new": "A ceiling price, agreed in advance and in writing, above which the buyer will walk away.",
+    "kind": "fact",
+    "reason": "Logic inverted: a buyer walks away when the price is above the limit, not below it",
+    "chapter": "02",
+    "loc": "ch02 checklist limit item",
+    "tests": "7",
+    "argument": "Corrects the direction of the limit (above, not below)."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Single-candidate searches concentrate negotiation pressure on the buyer; multi-candidate searches do the opposite.",
+    "new": "A buyer with only one candidate is under more pressure to accept the seller’s terms; a buyer with alternatives can walk away.",
+    "kind": "line",
+    "reason": "'concentrate pressure' made literal",
+    "chapter": "02",
+    "loc": "ch02 checklist limit item",
+    "tests": "2"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Italy is now the dominant production geography at 568 units, 52 percent of the global order book by units.",
+    "new": "Italy now builds more yachts than any other country: 568 units, 52 percent of the global order book by units.",
+    "kind": "line",
+    "reason": "'production geography' named",
+    "chapter": "02",
+    "loc": "ch02 FAQ market size",
+    "tests": "3"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The Knight Frank Wealth Report 2026 places 41 percent of new UHNWIs created in the United States",
+    "new": "The Knight Frank Wealth Report 2026 records that 41 percent of new UHNWIs were created in the United States",
+    "kind": "line",
+    "reason": "Ungrammatical 'places ... created'",
+    "chapter": "02",
+    "loc": "ch02 FAQ US",
+    "tests": "1, 8"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Knight Frank picks up BOAT International’s data:",
+    "new": "Knight Frank also cites BOAT International data:",
+    "kind": "line",
+    "reason": "Line",
+    "chapter": "02",
+    "loc": "ch02 FAQ US",
+    "tests": "8"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Many readers of The First Owner’s Reference will therefore be a principal",
+    "new": "Many readers of The First Owner’s Reference will be a principal",
+    "kind": "line",
+    "reason": "As essay",
+    "chapter": "02",
+    "loc": "ch02 FAQ wealth",
+    "tests": "7"
+  },
+  {
+    "file": "content/sections.json",
+    "old": "\"title\": \"How the industry actually works\"",
+    "new": "\"title\": \"How the industry works\"",
+    "kind": "line",
+    "reason": "'actually' implies a hidden truth; chapter title (also in lead-essays)",
+    "chapter": "03",
+    "loc": "sections 03 title",
+    "tests": "5"
+  },
+  {
+    "file": "content/sections.json",
+    "old": "Who pays the broker, the referral fees that travel with introductions, the written-disclosure standard, and where the captain sits among them.",
+    "new": "Who pays the broker, the referral fees paid on introductions, the written-disclosure standard, and the captain’s role.",
+    "kind": "line",
+    "reason": "'travel with', 'sits among' made literal",
+    "chapter": "03",
+    "loc": "sections 03 standfirst",
+    "tests": "2"
+  },
+  {
+    "file": "content/sections.json",
+    "old": "and the conflicts that are structural rather than personal.",
+    "new": "and the conflicts of interest that arise from how the market pays its people.",
+    "kind": "line",
+    "reason": "'structural rather than personal' named",
+    "chapter": "03",
+    "loc": "sections 03 seoDescription",
+    "tests": "3, 5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"title\": \"How the industry actually works\"",
+    "new": "\"title\": \"How the industry works\"",
+    "kind": "line",
+    "reason": "As sections.json",
+    "chapter": "03",
+    "loc": "ch03 title",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The questions that would have raised this are not in the standard first-time buyer’s kit.",
+    "new": "First-time buyers are rarely told to ask the questions that would have brought this out.",
+    "kind": "line",
+    "reason": "'standard kit' made literal",
+    "chapter": "03",
+    "loc": "ch03 para 'The first thing a new owner'",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The two parallel commission norms\"",
+    "new": "\"text\": \"Two commission scales\"",
+    "kind": "line",
+    "reason": "Plain heading",
+    "chapter": "03",
+    "loc": "ch03 h2",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "depending on which of two parallel norms is applied.",
+    "new": "depending on which of two commission scales is applied.",
+    "kind": "line",
+    "reason": "Plain",
+    "chapter": "03",
+    "loc": "ch03 para 'A brokerage sale of a 40-metre'",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The system, on his published reading, can reward opacity.",
+    "new": "On his account, the system can reward brokers for not publishing their rates.",
+    "kind": "line",
+    "reason": "'reward opacity' made specific to the point made",
+    "chapter": "03",
+    "loc": "ch03 para 'Practitioner commentary'",
+    "tests": "2, 4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "contains a dual-agency clause that constitutes pre-emptive consent.",
+    "new": "contains a dual-agency clause under which both parties consent to dual agency in advance.",
+    "kind": "line",
+    "reason": "Plain",
+    "chapter": "03",
+    "loc": "ch03 para 'The IYBA Purchase and Sale'",
+    "tests": "8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and the standard form makes that the starting position of the transaction.",
+    "new": "and under the standard form that is the default.",
+    "kind": "line",
+    "reason": "'starting position' made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'The IYBA Purchase and Sale'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "For several years, then, C&N had on its capitalisation table an Italian shipbuilder that builds yachts C&N sells.",
+    "new": "For several years, then, an Italian shipbuilder whose yachts C&N sells held shares in C&N.",
+    "kind": "line",
+    "reason": "'on its capitalisation table' made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'For several years, then'",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The disclosure question the Fincantieri arrangement raised returns in the same form, against a larger and more recent counterparty: is the buyer told when C&N markets a Sea Expandary hull?",
+    "new": "The Fincantieri shareholding raised a disclosure question that now applies to the new owner: is the buyer told when C&N markets a yacht built within the Sea Expandary group?",
+    "kind": "line",
+    "reason": "'returns ... against a counterparty' made plain; 'larger' unsupported (Fincantieri is the larger group)",
+    "chapter": "03",
+    "loc": "ch03 para 'C&N’s new controlling shareholder'",
+    "tests": "2, 7",
+    "argument": "Drops the description of Sea Expandary as 'larger'; Fincantieri is the larger company, so the comparison was unsupported."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Fincantieri example is the cleanest, but not the only one.",
+    "new": "Other brokerages have also changed ownership.",
+    "kind": "line",
+    "reason": "'the cleanest' example of what was undefined; the examples that follow are of outside ownership, not builder ownership",
+    "chapter": "03",
+    "loc": "ch03 para 'The Fincantieri example'",
+    "tests": "4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "both brokerages would then sit in the same group as a global marina operator",
+    "new": "both brokerages would then belong to the same group as a global marina operator",
+    "kind": "line",
+    "reason": "'sit in' made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'The Fincantieri example'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and consolidating commission pools. On that reading, the “free advice” model becomes more valuable to such owners, not less.",
+    "new": "and combining the commission income of several brokerages. On that reasoning, advice that is free to the buyer, and paid for by commissions and referral fees, becomes more valuable to such owners, not less.",
+    "kind": "line",
+    "reason": "'commission pools', 'free advice model' named",
+    "chapter": "03",
+    "loc": "ch03 para 'Several of the largest'",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"Retrocession economics\"",
+    "new": "\"text\": \"Referral fees and retrocessions\"",
+    "kind": "line",
+    "reason": "'economics' named",
+    "chapter": "03",
+    "loc": "ch03 h2",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "to the introducing broker are an open secret.",
+    "new": "to the introducing broker are widely known in the trade but rarely disclosed.",
+    "kind": "line",
+    "reason": "Cliché made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'Referral fees from yacht-management'",
+    "tests": "5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and the retrocessions flow inside the supplier’s books.",
+    "new": "and the suppliers pay the retrocessions to the broker separately.",
+    "kind": "line",
+    "reason": "'flow inside the supplier's books' made literal",
+    "chapter": "03",
+    "loc": "ch03 para 'On a EUR 4 million repaint'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The same observation appears in Hein Velema’s published comment on new build broker arrangements, May 2026:",
+    "new": "Hein Velema made a similar point about new build broker arrangements in a published comment in May 2026:",
+    "kind": "line",
+    "reason": "The quotation is a related point, not the same observation",
+    "chapter": "03",
+    "loc": "ch03 para 'The same observation appears'",
+    "tests": "7"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "noticeably reduces execution risk on a transaction the buyer would not otherwise close cleanly. They walk inventory the buyer has not had the time to walk, read paint and machinery and pricing patterns from the inside,",
+    "new": "makes it noticeably more likely that a transaction closes without problems. They view yachts for sale that the buyer has not had time to see, judge the condition of paint and machinery and whether prices are realistic from first-hand experience,",
+    "kind": "line",
+    "reason": "'execution risk', 'walk inventory', 'read ... patterns from the inside' made literal",
+    "chapter": "03",
+    "loc": "ch03 para 'An experienced broker'",
+    "tests": "2, 3, 8"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Owners are by construction hard to reach; the broker who carries that relationship has earned it.",
+    "new": "Owners are hard to reach, and a broker who has an owner’s confidence has usually earned it.",
+    "kind": "line",
+    "reason": "'carries that relationship' made plain; 'by construction' removed",
+    "chapter": "03",
+    "loc": "ch03 para 'An experienced broker'",
+    "tests": "2, 5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "It is aimed at incentives that travel undisclosed alongside the commission, and at the role ambiguity that asks one firm to answer to both sides of the same transaction.",
+    "new": "It is aimed at payments made alongside the commission that are not disclosed, and at arrangements in which one firm answers to both sides of the same transaction.",
+    "kind": "line",
+    "reason": "'incentives that travel', 'role ambiguity' named",
+    "chapter": "03",
+    "loc": "ch03 para 'The critique above'",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "located the broker’s value precisely:",
+    "new": "described where the broker adds value:",
+    "kind": "line",
+    "reason": "'located precisely'",
+    "chapter": "03",
+    "loc": "ch03 para 'Chris Cecil-Wright'",
+    "tests": "2, 4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The captain’s role in the structure\"",
+    "new": "\"text\": \"The captain’s role\"",
+    "kind": "line",
+    "reason": "'structure' undefined",
+    "chapter": "03",
+    "loc": "ch03 h2",
+    "tests": "3"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the owner is well served by mapping the captain’s wider professional background before the appointment rather than discovering it later.",
+    "new": "the owner is well served by finding out about the captain’s professional relationships before the appointment rather than later.",
+    "kind": "line",
+    "reason": "'mapping' made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'The captain is one of'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Roch documents the post-1990s shift in which large-yacht management companies migrated from administrative support into operational and financial control, drawing decision-making authority away from the captain on board and into shore-based offices. Responsibility for the vessel remained with the master; the authority that should accompany it did not.",
+    "new": "Roch describes how, since the 1990s, large-yacht management companies have moved from administrative support into operational and financial control, taking decisions away from the captain on board to shore-based offices. On his account, responsibility for the vessel stayed with the master, but the authority to match it did not.",
+    "kind": "line",
+    "reason": "'documents ... migrated' made plain; closing assertion attributed to Roch",
+    "chapter": "03",
+    "loc": "ch03 para 'Andrew Roch, founder'",
+    "tests": "2, 8",
+    "argument": "The final sentence was stated as the book's own finding; it is now attributed to Roch, whose argument it is."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "On Roch’s reading the cost of that hollowing-out shows up first in psychological safety on board,",
+    "new": "On Roch’s account, the first cost of that loss of authority is to psychological safety on board,",
+    "kind": "line",
+    "reason": "'reading', 'hollowing-out shows up' made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'On Roch’s reading'",
+    "tests": "2"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "In interview, the candidate who pushes back, asks hard questions about intended use, and is sceptical of the timeline is the one to keep talking to;",
+    "new": "In interview, a candidate who pushes back, asks hard questions about intended use and is sceptical of the timeline is usually worth keeping in the conversation;",
+    "kind": "line",
+    "reason": "Universal rule qualified (reviewer's point on the captain who challenges the owner)",
+    "chapter": "03",
+    "loc": "ch03 para 'In interview, the candidate'",
+    "tests": "5, 7",
+    "argument": "Softens a universal rule ('the one to keep talking to') to 'usually worth keeping in the conversation'."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The word does meaningful work in some cases and is decorative in others.",
+    "new": "In some cases the word describes how the firm is paid and owned; in others it means little.",
+    "kind": "line",
+    "reason": "'does meaningful work' named",
+    "chapter": "03",
+    "loc": "ch03 para 'Several firms describe'",
+    "tests": "4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The adviser carries the project at principal level: scope, budget, programme,",
+    "new": "The adviser runs the project for the owner: scope, budget, programme,",
+    "kind": "line",
+    "reason": "'carries ... at principal level' made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'The independent adviser is the person'",
+    "tests": "2, 4"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "It is the cheapest insurance available. A party who objects to this arrangement has told you something useful about themselves.",
+    "new": "The fees are small against the sums at stake. If a party objects to this arrangement, ask why.",
+    "kind": "line",
+    "reason": "Slogan and aphoristic closer made plain",
+    "chapter": "03",
+    "loc": "ch03 para 'Engage an independent adviser before'",
+    "tests": "5, 6",
+    "argument": "'The cheapest insurance available' is unprovable; replaced by the narrower claim that the fees are small relative to the sums at stake (the ch01 case: USD 320,000 on USD 24 m)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Each introduction carried referral economics he was not told about. The fee saving on the broker engagement was approximately GBP 75,000. The cost of the structure across year one was approximately GBP 320,000.",
+    "new": "Each firm introduced paid the brokerage a referral fee or retrocession he was not told about. He saved approximately GBP 75,000 in advisory fees. The payments to the brokerage in year one came to approximately GBP 320,000.",
+    "kind": "line",
+    "reason": "'referral economics', 'cost of the structure' named",
+    "chapter": "03",
+    "loc": "ch03 case standfirst",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Where the money actually came from, and what it cost the buyer.",
+    "new": "Who was paying whom, and what it cost the buyer.",
+    "kind": "line",
+    "reason": "'actually'",
+    "chapter": "03",
+    "loc": "ch03 case seoDescription",
+    "tests": "2"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "the referral economics described are an industry-standard pattern, not an attribution of any particular firm’s practice.",
+    "new": "the referral payments described are common in the industry and are not attributed to any particular firm.",
+    "kind": "line",
+    "reason": "'economics', 'pattern' named",
+    "chapter": "03",
+    "loc": "ch03 case disclosure",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The phrasing was familiar. It is industry-standard.",
+    "new": "The wording is common across the industry.",
+    "kind": "line",
+    "reason": "Two short closers merged",
+    "chapter": "03",
+    "loc": "ch03 case para 1",
+    "tests": "6"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "an insurance broker, and a senior crew.",
+    "new": "an insurance broker, and senior crew.",
+    "kind": "line",
+    "reason": "Grammar",
+    "chapter": "03",
+    "loc": "ch03 case 'The introductions'",
+    "tests": "8"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The buyer was told, accurately, that this was a market-rate structure.",
+    "new": "The buyer was told, accurately, that the management fee was at market rate.",
+    "kind": "line",
+    "reason": "'market-rate structure' named",
+    "chapter": "03",
+    "loc": "ch03 case 'The management company'",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "10 percent of the year-one budget and paid from the management company’s side,",
+    "new": "10 percent of the year-one budget and paid by the management company,",
+    "kind": "line",
+    "reason": "Says who paid",
+    "chapter": "03",
+    "loc": "ch03 case 'The management company'",
+    "tests": "2"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "A referral fee of around 10 percent flowed back to the brokerage.",
+    "new": "The agency paid the brokerage a referral fee of around 10 percent of that fee.",
+    "kind": "line",
+    "reason": "'flowed back' made literal",
+    "chapter": "03",
+    "loc": "ch03 case 'The recruitment agency'",
+    "tests": "2"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Across year one alone, the referral and retrocession economics flowing from his counterparties to the introducing brokerage were approximately GBP 320,000:",
+    "new": "Across year one alone, the referral fees and retrocessions paid by his suppliers to the introducing brokerage came to approximately GBP 320,000:",
+    "kind": "line",
+    "reason": "'economics flowing' named",
+    "chapter": "03",
+    "loc": "ch03 case 'The arithmetic'",
+    "tests": "2, 3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "None were illegal. None were outside industry practice. None were on the buyer’s invoices, because the buyer was not the entity invoiced.",
+    "new": "None was illegal or unusual in the industry, and none appeared on the buyer’s invoices, because the payments passed between the suppliers and the brokerage.",
+    "kind": "line",
+    "reason": "Three-part cadence; 'not the entity invoiced' made literal",
+    "chapter": "03",
+    "loc": "ch03 case 'The arithmetic'",
+    "tests": "5, 6"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "It had been priced into the structure of the suppliers around him.",
+    "new": "Its cost was carried in the prices of the suppliers the brokerage had introduced.",
+    "kind": "line",
+    "reason": "'priced into the structure' named",
+    "chapter": "03",
+    "loc": "ch03 case 'The advice had not been free'",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "and had received advice that was, in each instance, the brokerage’s commercial preference rather than a market scan independent of those preferences.",
+    "new": "and in each case had been steered to the brokerage’s commercial partners rather than given an independent comparison of the market.",
+    "kind": "line",
+    "reason": "'commercial preference', 'market scan' made plain",
+    "chapter": "03",
+    "loc": "ch03 case 'The advice had not been free'",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "identified the referral structure. The buyer was not, in the end, particularly outraged. He understood the structure. He had simply not known about it.",
+    "new": "found the referral payments. The buyer was not, in the end, particularly outraged. He understood the arrangement once it was explained; he had simply not been told about it.",
+    "kind": "line",
+    "reason": "'structure' named",
+    "chapter": "03",
+    "loc": "ch03 case 'What changed in year two'",
+    "tests": "3, 6"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The buyer concluded that the structure he had been working in had cost him about GBP 240,000 a year while it was in place, and about GBP 320,000 in year one with the repaint. He held the yacht for another four years. The arithmetic compounded.",
+    "new": "The buyer concluded that the original arrangements had cost him about GBP 240,000 a year while they were in place, and about GBP 320,000 in year one with the repaint. He kept the yacht on the renegotiated terms.",
+    "kind": "fact",
+    "reason": "'structure' named; 'compounded' was wrong (savings accumulate, not compound); 'another four years' runs past 2026 for files dated 2024, as in the brief's ch05/ch06 fix",
+    "chapter": "03",
+    "loc": "ch03 case 'Year two operating cost'",
+    "tests": "3, 5, 7",
+    "argument": "Removes 'held the yacht for another four years' (impossible for 2024 files: year two is 2025 or 2026) and 'the arithmetic compounded'."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "ask explicitly about referral and retrocession economics on every counterparty they introduce.",
+    "new": "ask explicitly whether each firm they introduce pays them a referral fee or retrocession, and how much.",
+    "kind": "line",
+    "reason": "'economics' named",
+    "chapter": "03",
+    "loc": "ch03 case takeaways",
+    "tests": "3"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Management, paint, insurance, and recruitment all carry referral structures back to the introducing broker. Not on your invoice does not mean not in your cost base.",
+    "new": "In this case the management company, the paint contractor, the insurance broker and the recruitment agency all paid the introducing brokerage. A payment that is not on your invoice can still be part of your costs.",
+    "kind": "line",
+    "reason": "Generalisation limited to the case; slogan made plain",
+    "chapter": "03",
+    "loc": "ch03 case takeaways",
+    "tests": "3, 5, 7",
+    "argument": "Narrows 'all carry referral structures' (a claim about every firm in four trades) to what this case shows."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "on a EUR 19 m acquisition is the cheapest form of structural insurance available.",
+    "new": "on a EUR 19 m acquisition is a fraction of the year-one referral payments in this case.",
+    "kind": "line",
+    "reason": "Slogan replaced by the comparison the case supports (USD 80 to 120 k against GBP 320,000)",
+    "chapter": "03",
+    "loc": "ch03 case takeaways",
+    "tests": "3, 5",
+    "argument": "'Cheapest form of structural insurance available' replaced by the case-specific comparison."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "with full disclosure of the original referral economics, is among the largest cost reductions open to a first-year owner.",
+    "new": "with full disclosure of the original referral payments, can be one of the largest cost reductions open to a first-year owner.",
+    "kind": "line",
+    "reason": "'economics' named; claim qualified",
+    "chapter": "03",
+    "loc": "ch03 case takeaways",
+    "tests": "3, 7"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "yet only a quarter of Swiss single family offices handle a yacht in-house. The buyer arrives under-advised, into a sale structure where EUR 1.7 to 2.8 million in commission moves on a EUR 28 m deal and the buyer almost never knows which norm applied.",
+    "new": "yet only a quarter of Swiss single family offices manage a boat or aircraft in-house. Such a buyer may come to a sale without specialist advice, on a EUR 28 m deal that carries EUR 1.7 to 2.8 million in commission, and is rarely told which commission scale applies.",
+    "kind": "fact",
+    "reason": "Survey measure is boat or aircraft management; 'arrives under-advised' generalised from one survey; 'moves' made literal",
+    "chapter": "03",
+    "loc": "ch03 data spread standfirst",
+    "tests": "2, 3, 7",
+    "argument": "Qualifies 'the buyer arrives under-advised' to 'may come ... without specialist advice', and 'almost never knows' to 'is rarely told' (matching the essay)."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "and the yacht sits outside its competence.",
+    "new": "and running a yacht is outside its expertise.",
+    "kind": "line",
+    "reason": "'sits outside' made literal",
+    "chapter": "03",
+    "loc": "ch03 data spread text",
+    "tests": "2"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "What the office that stands behind a first-time buyer actually does, and does not do.",
+    "new": "What a Swiss single family office does in-house, and what it does not.",
+    "kind": "line",
+    "reason": "Survey is of Swiss SFOs, not of first-time buyers' offices",
+    "chapter": "03",
+    "loc": "ch03 data spread caption",
+    "tests": "3, 7"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "This is the gap independent representation fills. The office that preserves the family’s capital is not built to run a refit, vet a broker, or read a sale-and-purchase agreement against the commission structures set out below. Where it does not build that capacity in-house, it reaches for an outside specialist, exactly as it already does for succession and legal work.",
+    "new": "An independent adviser can fill this gap. An office set up to preserve the family’s capital is not equipped to run a refit, vet a broker, or check a sale-and-purchase agreement against the commission scales set out below. Where it does not have that expertise in-house, it can engage an outside specialist, as it already does for succession and legal work.",
+    "kind": "line",
+    "reason": "'X is the gap Y fills', 'reaches for' made plain",
+    "chapter": "03",
+    "loc": "ch03 data spread text",
+    "tests": "2, 5, 8"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"text\": \"The two parallel commission norms\"",
+    "new": "\"text\": \"Two commission scales\"",
+    "kind": "line",
+    "reason": "As essay",
+    "chapter": "03",
+    "loc": "ch03 data spread h2",
+    "tests": "8"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Both structures are presented as “the standard” by the brokers using them.",
+    "new": "Both scales are presented as “the standard” by the brokers using them.",
+    "kind": "line",
+    "reason": "'structures'",
+    "chapter": "03",
+    "loc": "ch03 data spread commission caption",
+    "tests": "3"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Paid out of the seller-side pool, typically half of it",
+    "new": "Paid out of the seller’s commission, typically half of it",
+    "kind": "line",
+    "reason": "'pool' named",
+    "chapter": "03",
+    "loc": "ch03 data spread commission row",
+    "tests": "2"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Brokerage ownership concentration",
+    "new": "Recent changes in brokerage ownership",
+    "kind": "line",
+    "reason": "Heading says what the table lists",
+    "chapter": "03",
+    "loc": "ch03 data spread h2",
+    "tests": "4"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Retrocession economy, indicative magnitudes",
+    "new": "Referral fees and retrocessions, indicative amounts",
+    "kind": "line",
+    "reason": "'economy' named",
+    "chapter": "03",
+    "loc": "ch03 data spread h2",
+    "tests": "3"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Referral fees from supplier counterparties to the introducing broker are not on the broker’s invoice to the owner because the broker is not invoicing the owner.",
+    "new": "Referral fees paid by suppliers to the introducing broker do not appear on any invoice to the owner, because the broker does not invoice the owner.",
+    "kind": "line",
+    "reason": "Near-tautology made plain",
+    "chapter": "03",
+    "loc": "ch03 data spread retrocession caption",
+    "tests": "5, 8"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Particular firms are not named in this chapter because the practice is industry-wide.",
+    "new": "Particular firms are not named because the published record does not show which firms take them.",
+    "kind": "line",
+    "reason": "Matches the reason given in the essay",
+    "chapter": "03",
+    "loc": "ch03 data spread retrocession source",
+    "tests": "7",
+    "argument": "Replaces the claim that the practice is industry-wide with the essay's reason for not naming firms."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A reference list of the structural questions to ask of any party introduced into the acquisition.",
+    "new": "Questions to ask any party introduced into the acquisition about who pays them and who owns them.",
+    "kind": "line",
+    "reason": "'structural questions' named",
+    "chapter": "03",
+    "loc": "ch03 checklist standfirst",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "When a brokerage offers buyer support without an explicit fee, the work is paid for somewhere in the structure. The items below are where to ask.",
+    "new": "When a brokerage offers buyer support without a fee, the work is still paid for, by the seller’s commission or by referral fees from suppliers. The items below set out what to ask.",
+    "kind": "line",
+    "reason": "'somewhere in the structure' named",
+    "chapter": "03",
+    "loc": "ch03 checklist intent",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The commission structure being applied (IYBA flat 10 percent, MYBA sliding scale),",
+    "new": "The commission scale being applied (IYBA flat 10 percent, MYBA sliding scale),",
+    "kind": "line",
+    "reason": "Consistent term",
+    "chapter": "03",
+    "loc": "ch03 checklist item",
+    "tests": "8"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Each ownership pattern carries different incentives.",
+    "new": "Each kind of owner gives the brokerage different incentives.",
+    "kind": "line",
+    "reason": "'ownership pattern' named",
+    "chapter": "03",
+    "loc": "ch03 checklist item detail",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "a parallel adviser whose only role is to scan for and document the relationships.",
+    "new": "an independent adviser engaged to identify and document the relationships.",
+    "kind": "line",
+    "reason": "Plain",
+    "chapter": "03",
+    "loc": "ch03 checklist item",
+    "tests": "8"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Independent advisers document referral relationships as part of their standard scope.",
+    "new": "This can be part of an independent adviser’s scope.",
+    "kind": "line",
+    "reason": "Generalisation about all advisers",
+    "chapter": "03",
+    "loc": "ch03 checklist item detail",
+    "tests": "7",
+    "argument": "No longer claims that all independent advisers do this as standard."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"heading\": \"The structural test\",\n        \"items\": [\n          {\n            \"question\": \"An understanding of which parties",
+    "new": "\"heading\": \"Who acts for the buyer\",\n        \"items\": [\n          {\n            \"question\": \"An understanding of which parties",
+    "kind": "line",
+    "reason": "'structural test' named",
+    "chapter": "03",
+    "loc": "ch03 checklist heading",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The independent adviser, paid only by the buyer, is the party for whom this is structurally true.",
+    "new": "An independent adviser paid only by the buyer has no financial reason to want the deal to close.",
+    "kind": "line",
+    "reason": "'structurally true' named",
+    "chapter": "03",
+    "loc": "ch03 checklist test detail",
+    "tests": "3"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "At least one party in the transaction whose income is contingent only on the quality of advice given, not on the deal closing.",
+    "new": "At least one party in the transaction whose income does not depend on the deal closing.",
+    "kind": "line",
+    "reason": "Fees are not contingent on the quality of advice; false precision",
+    "chapter": "03",
+    "loc": "ch03 checklist test item",
+    "tests": "4"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The structural questions to put to any party introduced into the acquisition,",
+    "new": "The questions to put to any party introduced into the acquisition,",
+    "kind": "line",
+    "reason": "'structural'",
+    "chapter": "03",
+    "loc": "ch03 checklist seoDescription",
+    "tests": "3"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "A retrocession is a commission rebate paid quietly between counterparties,",
+    "new": "A retrocession is a commission rebate paid privately between counterparties,",
+    "kind": "line",
+    "reason": "Line",
+    "chapter": "03",
+    "loc": "ch03 FAQ retrocession",
+    "tests": "8"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Captains who agree easily are pleasant in interview; the disciplined candidate asks the difficult questions.",
+    "new": "A candidate who agrees with everything is easy to interview; one who asks difficult questions about the owner’s plans is often the better hire.",
+    "kind": "line",
+    "reason": "'disciplined candidate' named; aphorism made plain; qualified",
+    "chapter": "03",
+    "loc": "ch03 FAQ captain",
+    "tests": "3, 5",
+    "argument": "Qualified to 'often the better hire' (was a universal statement)."
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "We put five questions to him on the captain’s loyalty problem:",
+    "new": "We put five questions to him on conflicts of loyalty in the captain’s role:",
+    "kind": "line",
+    "reason": "'loyalty problem' named",
+    "chapter": "03",
+    "loc": "ch03 Filippakis intro",
+    "tests": "3"
+  }
+]
