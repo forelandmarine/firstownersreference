@@ -49,7 +49,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Ollie Davis": {
     name: "Ollie Davis",
     avatar: "/images/contributors/ollie-davis.jpg",
-    bio: "Ollie Davis is a client advisor at PIB Marine, formerly Zorab Insurance Services, which he joined in 2025. He brings almost ten years of operational and navigational experience on large motor yachts, from deckhand to tender captain and bosun, to his insurance advice.",
+    bio: "Ollie Davis is a client advisor at PIB Marine, formerly Zorab Insurance Services, which he joined in 2025. He brings almost ten years of operational and navigational experience on large motor yachts to his insurance advice.",
   },
   "Jack Inglis": {
     name: "Jack Inglis",
