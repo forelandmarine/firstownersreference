@@ -10,8 +10,8 @@ State of the press files on 14 November 2026 and what remains before the book ca
 | Bleed | 3 mm all edges; TrimBox, BleedBox and ArtBox stamped on every page | Some printers ask for 5 mm on casebound work |
 | Type area | 172 × 238 mm; head 20, foot 22, inner 22, outer 14 mm (trim) | Gutter loss for Smyth-sewn casebinding at 184 pp is normally 3–5 mm. 22 mm inner is safe; the binder should confirm |
 | Safe area | Nothing but full-bleed pictures within 6 mm of the trim | Confirm |
-| Extent | 184-page block, no padding needed (23 sections of eight) | Signature size (8, 16 or 32) decides the padding. At 16-page sections the block would pad to 192 |
-| Blank pages | Six blank pages inserted so every chapter opener falls on a left-hand page (before ch01, ch02, ch03, ch05, ch06 and ch09) | Confirm blank pages carry no folio or running head |
+| Extent | 180-page block; press block padded to 184 with four blank pages (23 sections of eight) | Signature size (8, 16 or 32) decides the padding. At 16-page sections the block would pad to 192 |
+| Blank pages | Six blank pages inserted so every chapter opener falls on a left-hand page (before ch02, ch03, ch05, ch06, ch08 and ch09) | Confirm blank pages carry no folio or running head |
 
 ## Fonts
 
@@ -58,7 +58,7 @@ The case artwork route (`/print-case`) still draws the 230 × 300 mm boards. It 
 
 ## Physical proofs (brief section 10)
 
-Print on the specified uncoated stock: chapter opener (p. 67, chapter 05), a dense essay spread (pp. 69–70), a data spread (pp. 19–20), and a photographic page (an opener verso). These are for the type size at 9.25 pt, the chart label floor at 7 pt and the marine on uncoated stock. They need a person and the printer.
+Print on the specified uncoated stock: chapter opener (p. 61, chapter 05), a dense essay spread (pp. 63–64), a data spread (pp. 13–14), and a photographic page (an opener verso). These are for the type size at 9.25 pt, the chart label floor at 7 pt and the marine on uncoated stock. They need a person and the printer.
 
 ## Build notes
 
