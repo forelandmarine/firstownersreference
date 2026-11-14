@@ -2,15 +2,19 @@
 
 ## Overview
 
-The First Owner's Reference is an annual publication for people buying a yacht over 24 metres for the first time. It is published by Foreland Marine Consultancy, an independent superyacht consultancy in London that acts for owners only and takes no commission from yards, brokers or suppliers.
+Jack's rewrite, 14 Nov 2026. LinkedIn overviews are plain text, so the title is not italicised and the website is not a link.
 
-The book has nine chapters: the reality of ownership, reading the market, how the industry works, the acquisition process, new build versus brokerage, refit, operations, motor versus sail, and the decision framework. Each chapter has a lead essay, case material, a checklist and contributions from named practitioners, among them captains, lawyers and industry specialists. Contributors write voluntarily, and each piece carries a disclosure of any commercial relationship.
+The First Owner's Reference is an annual publication written for those considering the purchase of their first yacht over 24 metres. It is published by Foreland Marine Consultancy, an independent London-based superyacht consultancy that works exclusively for owners and accepts no commissions from brokers, shipyards or suppliers.
 
-Figures are given only where a published source or aggregated project data supports them, and every source is named. The publication carries no advertising or sponsorship, has no brokerage or shipyard affiliation, and uses no affiliate links.
+The book is arranged in nine chapters, covering the realities of ownership, the yacht market, the structure of the industry, acquisition, new build versus brokerage, refit, operations, motor versus sail, and the decisions that bring these considerations together.
 
-The web edition is free to read at firstownersreference.com, with reference pages on running costs, yacht VAT, crew salaries, insurance, depreciation and the new-build order book. A numbered print edition can be requested through the website.
+Each chapter combines a lead essay with practical case material, checklists and contributions from experienced practitioners, including captains, lawyers and other industry specialists. All contributions are voluntary, with any commercial relationships disclosed alongside the author's work. Financial figures and market data are included only where supported by published sources or aggregated project data, with sources identified throughout.
 
-The co-editors in chief are Jack MacNally and Daniel Marks. Correspondence is welcome at editors@firstownersreference.com.
+The publication is independently edited and carries no advertising, sponsorship or affiliate links. It has no commercial affiliation with any brokerage or shipyard.
+
+The web edition is freely available at firstownersreference.com, alongside reference material covering running costs, yacht VAT, crew salaries, insurance, depreciation and the new-build order book. A numbered print edition is also available by request through the website.
+
+The co-editors-in-chief are Jack MacNally and Daniel Marks. Editorial correspondence and enquiries are welcome at editors@firstownersreference.com.
 
 ## Specialties
 
@@ -18,4 +22,4 @@ Superyacht ownership, Yacht acquisition, New build, Brokerage, Refit, Yacht oper
 
 ## Other fields
 
-Founded 2026. Location 7 Bell Yard, London WC2A 2JR. Button: Visit website, https://firstownersreference.com. Cover: docs/linkedin/cover.png.
+Founded 2026. Location 7 Bell Yard, London WC2A 2JR. Button: Visit website, https://firstownersreference.com. Cover: docs/linkedin/cover-1x.png (uploaded; rendered at 1128x191, the size LinkedIn serves). cover.png is the 4x render.
