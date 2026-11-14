@@ -124,8 +124,8 @@ export const charts: Record<string, () => React.ReactElement> = {
       number="01.03"
       title="Depreciation curve, year 1 to 10"
       standfirst="Cumulative loss from purchase price. Quality builders hold value materially better after year five; the band below is the broker-aggregated typical curve."
-      caption="Indicative; broker-aggregated curves are not peer-reviewed. The band shows the range across Yatco, IYC, and Yacht Hunter aggregations."
-      source="Yatco, IYC, Yacht Hunter broker-aggregated curves."
+      caption="Indicative; broker-published rates are not peer-reviewed. The band spans Yatco's and IYC's published rates at years one and five; other points are interpolated or extended."
+      source="Yatco and IYC published depreciation rates (October 2025)."
     >
       <LineChart
         xDomain={[1, 10]}
@@ -137,9 +137,9 @@ export const charts: Record<string, () => React.ReactElement> = {
         band={{
           values: [
             { x: 1, yLow: 10, yHigh: 20 },
-            { x: 2, yLow: 16, yHigh: 28 },
-            { x: 3, yLow: 22, yHigh: 35 },
-            { x: 5, yLow: 33, yHigh: 48 },
+            { x: 2, yLow: 15, yHigh: 28 },
+            { x: 3, yLow: 20, yHigh: 35 },
+            { x: 5, yLow: 30, yHigh: 50 },
             { x: 7, yLow: 40, yHigh: 55 },
             { x: 10, yLow: 48, yHigh: 62 },
           ],
@@ -281,7 +281,7 @@ export const charts: Record<string, () => React.ReactElement> = {
       number="03.02"
       title="Two parallel commission norms, on a EUR 28 m sale"
       standfirst="The same yacht, the same buyer and the same seller, with a EUR 1.1 million difference depending on which scale the brokers apply. The seller does not always know which is being used. The buyer almost never does."
-      caption="Commission paid by the seller under each scale. Both structures are routinely described as 'the standard' by the brokers using them."
+      caption="Commission paid by the seller under each scale, with the MYBA bands (published in US dollars) applied in euros. Both structures are routinely described as 'the standard' by the brokers using them."
       source="IYBA standard practice; MYBA Memorandum of Agreement; practitioner commentary by Cromwell Littlejohn (Northrop & Johnson)."
     >
       <ComparisonBars
@@ -387,7 +387,7 @@ export const charts: Record<string, () => React.ReactElement> = {
       title="Hull insurance rate movement, 2022 to 2026"
       standfirst="Rates rose through 2022 and 2023 and had largely stopped rising by the first half of 2024. The Bayesian sinking in August 2024 prompted selective tightening rather than blanket rate rises. For 2026, PIB Marine expects hull rates to be flat or to rise marginally with inflation."
       caption="Indicative hull rate trajectory, well-maintained 40 to 50m yacht. Vertical reference marks the Bayesian event."
-      source="AIG, Gallagher Specialty published commentary; Pantaenius market notes; Ollie Davis, PIB Marine, interviewed for chapter 7."
+      source="Pantaenius market notes; Ollie Davis, PIB Marine, interviewed for chapter 7. Plotted values are indicative, not a published index."
     >
       <LineChart
         xDomain={[2022, 2026]}
@@ -432,8 +432,8 @@ export const charts: Record<string, () => React.ReactElement> = {
         rows={[
           { label: "60 m motor", from: 700, to: 1200 },
           { label: "80 m motor", from: 2000, to: 2800 },
-          { label: "90 m motor", from: 4500, to: 5500, note: "Borderline" },
-          { label: "110 m+ motor", from: 5500, to: 6000, note: "Inside, EUR 200 to 400 k per year" },
+          { label: "90 m motor", from: 2900, to: 3500, note: "Below threshold" },
+          { label: "110 m+ motor", from: 4900, to: 6000, note: "Inside, EUR 200 to 400 k per year" },
           { label: "50 m sail", from: 300, to: 600 },
         ]}
       />

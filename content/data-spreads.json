@@ -123,18 +123,18 @@
           ],
           [
             "2",
-            "16–28 percent",
-            "6–8 percent"
+            "15–28 percent",
+            "5–8 percent"
           ],
           [
             "3",
-            "22–35 percent",
-            "6–8 percent"
+            "20–35 percent",
+            "5–8 percent"
           ],
           [
             "5",
-            "33–48 percent",
-            "5–7 percent"
+            "30–50 percent",
+            "5–8 percent"
           ],
           [
             "7",
@@ -147,7 +147,7 @@
             "2–4 percent"
           ]
         ],
-        "sourceLine": "Yatco, IYC, Yacht Hunter broker-aggregated curves. No peer-reviewed academic study exists."
+        "sourceLine": "Yatco and IYC published rates (October 2025); years 2, 3, 7 and 10 interpolated or extended from them for illustration. Yacht Hunter rejects fixed schedules. No peer-reviewed academic study exists."
       },
       {
         "type": "chart",
@@ -190,24 +190,24 @@
             "EUR 430 k loss"
           ],
           [
-            "60 m, owner-optimised",
-            "EUR 220–260 k",
+            "60 m concept (Hill Robinson), not a trading yacht",
+            "EUR 500–650 k",
             "12",
-            "Up to EUR 2 m net positive"
+            "Net revenue target EUR 2 m"
           ]
         ],
-        "sourceLine": "BOAT International published case studies."
+        "sourceLine": "BOAT International, “Profit or passion? What it really costs to run a charter yacht”, Kate Lardy, 8 April 2025."
       }
     ],
     "sources": [
       {
         "label": "BOAT International, Global Order Book and case studies",
-        "line": "Stewart Campbell, MD, on the One Big Beautiful Bill Act as the principal driver of the 2025 transaction surge.",
+        "line": "Stewart Campbell, MD, quoted in Knight Frank’s Wealth Report 2026 on the 2025 rebound; case studies by Kate Lardy, April 2025.",
         "url": "https://www.boatinternational.com/boat-pro/superyacht-insight/global-order-book-2026"
       },
       {
         "label": "Knight Frank Wealth Report 2026",
-        "line": "USD 8.5 bn 2025 transactions, 70 percent year on year rise, US 45 to 50 percent of transactions.",
+        "line": "USD 8.5 bn estimated 2025 sales of yachts over 24 m, on asking prices (BOAT International data), 70 percent year on year rise, US 45 to 50 percent of transactions.",
         "url": "https://www.knightfrank.com/wealthreport"
       },
       {
@@ -749,7 +749,7 @@
           ],
           [
             "MYBA sliding scale",
-            "10 percent on first EUR 10 m, 5 percent on second EUR 10 m, 2.5 percent above",
+            "10 percent on the first 10 m, 5 percent on the second 10 m, 2.5 percent above (bands published in USD, applied here in EUR)",
             "EUR 1,700,000"
           ],
           [
@@ -774,7 +774,7 @@
         "rows": [
           {
             "label": "Camper & Nicholsons",
-            "value": "1782 Group / Lai Sun Development; Fincantieri 15 percent minority since 2015; 80 percent stake sold to Wave Expandary Ltd (Sea Expandary, JD.com’s Richard Liu), signed 28 May 2026 at EUR 50m EV (~12x EBITDA); Benjamin Bensahel succeeded Paolo Casani as CEO in October 2026; Fincantieri holding after the sale not disclosed"
+            "value": "Lai Sun Development (98.27 percent before the sale; Fincantieri held a stake from 2015, 50 percent from 2017); initial 80 percent interest sold to Wave Expandary Ltd (Sea Expandary, JD.com’s Richard Liu), signed 28 May 2026 on a EUR 50m valuation (~12x EBITDA); Benjamin Bensahel succeeded Paolo Casani as CEO in October 2026"
           },
           {
             "label": "Burgess",
@@ -814,8 +814,8 @@
             "EUR 200,000–400,000"
           ],
           [
-            "Annual management contract, year one",
-            "EUR 5 m",
+            "Management, year one",
+            "EUR 5 m operating budget run by the manager",
             "EUR 250,000–500,000"
           ],
           [
@@ -956,7 +956,7 @@
           [
             "French Commercial Exemption",
             "VAT eliminated on purchase",
-            "Commercial registration; full-time crew; over 15 m; over 70 percent of voyages exit French waters; under 50 percent static charter"
+            "Commercial registration; full-time crew; over 15 m; at least 70 percent of voyages leave French territorial waters (previous calendar year); quay charters under half of charter contracts"
           ],
           [
             "Spanish Inward Processing Relief",
@@ -1221,7 +1221,7 @@
             "value": "Quality new build ahead on residual value"
           }
         ],
-        "sourceLine": "Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves."
+        "sourceLine": "Foreland Marine project archive; Yatco and IYC published depreciation rates."
       },
       {
         "type": "h2",
@@ -1985,8 +1985,8 @@
         "rows": [
           [
             "2022–2023",
-            "Up 50–70 percent (London market)",
-            "AIG cited; broad hardening"
+            "Rising; broad hardening",
+            "Ollie Davis, PIB Marine. AIG’s 50–70 percent London figure (BOAT International, 2019) relates to the 2018–19 hardening"
           ],
           [
             "H1 2024",
@@ -1999,9 +1999,9 @@
             "Pantaenius: “I think everyone thought it was going to have more of an impact than it did”"
           ],
           [
-            "Q4 2025",
-            "Down 4–7.5 percent for clean fleets",
-            "Gallagher Specialty"
+            "2025",
+            "Softening",
+            "Published broker reductions relate to commercial hull and machinery, not yachts"
           ],
           [
             "2026",
@@ -2019,7 +2019,7 @@
             ""
           ]
         ],
-        "sourceLine": "AIG, Gallagher Specialty published commentary; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026)."
+        "sourceLine": "AIG (Sean Blue, BOAT International, November 2019); Gallagher Specialty hull and machinery updates; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026)."
       },
       {
         "type": "chart",
@@ -2185,7 +2185,7 @@
       },
       {
         "label": "Gallagher Specialty",
-        "line": "Published broker commentary on hull rate movement, 2022 to 2025.",
+        "line": "Hull and machinery market updates; commercial shipping, not yacht-specific.",
         "url": "https://www.ajg.com/uk/services-and-industries/marine/"
       },
       {
@@ -2199,9 +2199,9 @@
         "url": "https://www.lloyds.com/"
       },
       {
-        "label": "AIG",
-        "line": "On the record on 50 to 70 percent rate increases across 2022 to 2023.",
-        "url": "https://www.aig.com/"
+        "label": "AIG (Sean Blue), BOAT International, November 2019",
+        "line": "Increases of 50 to 70 percent in the London market, in the 2018 to 2019 hardening.",
+        "url": "https://www.boatinternational.com/yachts/editorial-features/superyacht-insurance-why-premiums-are-on-the-rise--42091"
       },
       {
         "label": "Ollie Davis (PIB Marine, formerly Zorab Insurance Services)",
@@ -2564,7 +2564,7 @@
             "Baseline"
           ]
         ],
-        "sourceLine": "Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves."
+        "sourceLine": "Foreland Marine project archive; Yatco and IYC published depreciation rates."
       },
       {
         "type": "h2",
@@ -2591,13 +2591,13 @@
           ],
           [
             "90 m motor",
-            "Around 5,000 GT",
-            "Inside only if 5,000 GT or more and on commercial charter"
+            "About 2,900–3,500 GT",
+            "Below threshold"
           ],
           [
             "110 m+ motor",
-            "Above 5,000 GT",
-            "Inside only if on commercial charter; private use is outside"
+            "About 5,000 GT and above",
+            "Inside only if 5,000 GT or more and on commercial charter; private use is outside"
           ],
           [
             "50 m sail",

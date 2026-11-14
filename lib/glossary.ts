@@ -585,7 +585,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "United States One Big Beautiful Bill Act provision allowing up to 100 percent first-year depreciation on yachts placed in commercial service between 2025 and 2029.",
     longDefinition:
-      "The One Big Beautiful Bill Act of 2025 made 100 percent bonus depreciation permanent for qualifying business property acquired after 19 January 2025, as IRS Notice 2026-11 confirms. For a yacht the relief depends on genuine business use, usually a documented charter operation, with contemporaneous records; the treatment of yachts used mainly outside the United States is a point for US tax counsel. Identified by Stewart Campbell of BOAT International as the largest single driver of the 2025 surge that took global yacht transactions to USD 8.5 billion. Pre-transaction US yacht-tax counsel review essential.",
+      "The One Big Beautiful Bill Act of 2025 made 100 percent bonus depreciation permanent for qualifying business property acquired after 19 January 2025, as IRS Notice 2026-11 confirms. For a yacht the relief depends on genuine business use, usually a documented charter operation, with contemporaneous records; the treatment of yachts used mainly outside the United States is a point for US tax counsel. Cited in Knight Frank’s Wealth Report 2026, alongside US demand, as a reason buyers rushed to close deals in 2025, when estimated sales of yachts over 24 metres reached USD 8.5 billion. Pre-transaction US yacht-tax counsel review essential.",
     relatedChapters: ["02-reading-the-market"],
     relatedTerms: ["obbba"],
   },
@@ -595,7 +595,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The annual reference report on global UHNW wealth, published by Knight Frank Research. The 2026 edition includes a yacht-market spread sourced from BOAT International.",
     longDefinition:
-      "The Knight Frank Wealth Report is published annually in early March. The Wealth Sizing Model uses HM Revenue and Customs UHNW data plus Capgemini, BOAT International, and proprietary research to size the global UHNW population (USD 30m+ wealth). The 2026 edition (20th anniversary) places the population at 713,626, up 162,191 over five years, with 41 percent of new UHNWIs created in the United States. The yacht spread (sourced from BOAT International) records USD 8.5 billion 2025 transactions, 70 percent year-on-year rise.",
+      "The Knight Frank Wealth Report is published annually in early March. The Wealth Sizing Model uses HM Revenue and Customs UHNW data plus Capgemini, BOAT International, and proprietary research to size the global UHNW population (USD 30m+ wealth). The 2026 edition (20th anniversary) places the population at 713,626, up 162,191 over five years, with 41 percent of new UHNWIs created in the United States. The yacht spread (sourced from BOAT International) estimates 2025 sales of yachts over 24 metres at USD 8.5 billion on asking prices, a 70 percent year-on-year rise.",
     source: {
       name: "Knight Frank Wealth Report",
       url: "https://www.knightfrank.com/research/reports/wealthreport",

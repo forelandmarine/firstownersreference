@@ -1,0 +1,457 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "Since 24 July most imports have carried Section 301 duties of 10 or 12.5 percent, with a ceiling on the combined duty for goods from the European Union.",
+    "new": "Since 24 July Section 301 duties of 10 or 12.5 percent have applied to goods from 60 economies. For goods from the European Union the Section 301 duty tops the ordinary (MFN) duty up to a combined 10 percent, and nothing is added where the MFN duty is already 10 percent or more; UK goods carry a flat 10 percent (USTR notice of action, 23 July 2026).",
+    "kind": "fact",
+    "reason": "USTR final action FRN (Dockets USTR-2026-0265/0266): EU combined MFN plus 301 ceiling is 10 percent, not 12.5"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "European share of brokerage value fell to 52 percent in 2024 from 60 percent. Western Mediterranean transactions more than doubled year on year in Q1 2025, from 11 to 27.",
+    "new": "Europe’s share of sales transactions fell to 52 percent in the first half of 2025, from 60 percent a year earlier (IYC mid-year report, July 2025). Western Mediterranean sales more than doubled, from 11 in the first quarter of 2024 to 27 in the first quarter of 2025 (Denison Yacht Sales, Q1 2025 market report).",
+    "kind": "fact",
+    "reason": "Sources found: IYC (share of transactions, H1 2025 vs H1 2024, not value in 2024); Denison Q1 2025"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Asia-Pacific operating fleet over 30m grew from 372 in 2022 to 530 in 2024, roughly 20 percent annually. Asia-Pacific national ownership stands at 343.",
+    "new": "SuperYacht Times counts the active Asia-Pacific fleet over 30m at 445 in 2023, 530 in 2024 and 586 in 2025, of which 350 were owned by Asian nationals (Asia-Pacific Superyacht Report 2026, as summarised by ICOMIA).",
+    "kind": "fact",
+    "reason": "372 (2022) and 343 traced only to a garbled secondary page; replaced with SuperYacht Times series via ICOMIA"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "through mid-February 2026, 58 sales had generated US$647 million, up 34.6 percent year on year.",
+    "new": "through mid-February 2026, 58 sales had generated US$647 million, up 34.6 percent year on year (BOAT International data, in the same report).",
+    "kind": "fact",
+    "reason": "Source located: Knight Frank Wealth Report 2026 p.70, citing BOAT International data"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Other published totals measure different things, including Knight Frank’s USD 8.5 billion for all yacht sales in 2025 cited in chapter 1.",
+    "new": "Other published totals measure different things, including the USD 8.5 billion cited in chapter 1, BOAT International’s estimate of 2025 sales of yachts over 24 metres based on asking prices (Knight Frank Wealth Report 2026).",
+    "kind": "fact",
+    "reason": "Knight Frank chart is 'annual estimated sales of 24m+ boats, based on asking prices', source BOAT International; not 'all yacht sales'"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Knight Frank’s Wealth Report 2026 records USD 8.5 billion of yacht sales in 2025, a 70 percent rise on the prior year.",
+    "new": "Knight Frank’s Wealth Report 2026, using BOAT International data, estimates 2025 sales of yachts over 24 metres at USD 8.5 billion on asking prices, a 70 percent rise on the prior year.",
+    "kind": "fact",
+    "reason": "Match the source's measure"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "In 2025 the total value of yacht sales above 24 metres reached USD 8.5 billion (Knight Frank Wealth Report 2026), a 70 percent rise on the year before and second in the past decade only to the post-Covid surge of 2021. BOAT International identifies the largest single driver as the 100 percent depreciation provision in the United States’ One Big Beautiful Bill Act.",
+    "new": "In 2025 the estimated value of sales of yachts over 24 metres reached USD 8.5 billion, a 70 percent rise on the year before and exceeded in the past decade only by the post-Covid peak of 2021. The estimate is BOAT International’s, based on asking prices, as published in Knight Frank’s Wealth Report 2026. Knight Frank names US demand as the biggest catalyst, with US buyers rushing to close before the year end once the One Big Beautiful Bill Act reintroduced a 100 percent depreciation bonus.",
+    "kind": "fact",
+    "reason": "Knight Frank WR 2026 p.70: 24m+ estimated sales on asking prices, BOAT International data; biggest catalyst stated as US demand, OBBBA as context"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Mediterranean diesel at EUR 1.30 to 1.80 per litre)",
+    "new": "diesel assumed at EUR 1.30 to 1.80 per litre, a working range: marina prices, duty-free supply to commercially registered yachts and 2026 price movements all vary)",
+    "kind": "fact",
+    "reason": "No authoritative per-litre marine diesel source found; qualified as working assumption"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ocean Independence’s owner-usage data places typical use at 4 to 8 weeks a year; committed users reach 12 to 16.",
+    "new": "Practitioner estimates place typical use at 4 to 8 weeks a year; committed users reach 12 to 16.",
+    "kind": "fact",
+    "reason": "No Ocean Independence source found online; attribution removed, figure kept as practitioner estimate"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "one is a brokerage house’s figure for typical owners, the other",
+    "new": "one is a practitioner estimate for typical owners, the other",
+    "kind": "fact",
+    "reason": "Follows removal of Ocean Independence attribution"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Ocean Independence’s owner-usage data places typical use at 4 to 8 weeks per year, with committed users reaching 12 to 16 weeks.",
+    "new": "Practitioner estimates place typical use at 4 to 8 weeks per year, with committed users reaching 12 to 16 weeks.",
+    "kind": "fact",
+    "reason": "No Ocean Independence source found"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "BOAT International’s published case studies are the cleanest public evidence.",
+    "new": "BOAT International’s published case studies (April 2025) are the cleanest public evidence.",
+    "kind": "fact",
+    "reason": "Kate Lardy, 'Profit or passion?', BOAT International, 8 April 2025"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The exception is the owner-optimised 60m at 12 weeks generating up to EUR 2 million net positive, which requires disciplined operation, premium rates, and giving up the prime weeks.",
+    "new": "The exception is a 60m concept, Hill Robinson’s “Perfect Charter Yacht” launched at the 2024 Monaco Yacht Show, modelled at 12 charter weeks for a net revenue target of EUR 2 million. It is a design study rather than a trading yacht, and its figures assume premium rates and high-season weeks given to charter.",
+    "kind": "fact",
+    "reason": "BOAT case study 4 is a Hill Robinson concept, not an operating yacht"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The standard depreciation curve, drawn from broker-aggregated data at Yatco, IYC, and Yacht Hunter, runs roughly as follows: 10 to 20 percent off the purchase price in year one, then a further 6 to 8 percent a year, compounding, through years two to five. On those rates a typical hull has lost about 30 to 43 percent of its purchase price by year five, after which the curve flattens.",
+    "new": "Broker-published figures agree on the shape of the curve more than on its numbers. Yatco puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 percent by year five. IYC puts the first-year correction at 10 to 20 percent, with most yachts “reaching 40-50% of their original price in five years”, read here as a five-year loss of 40 to 50 percent. Together they put the typical loss at year five at about 30 to 50 percent of the purchase price, after which the curve flattens. Yacht Hunter’s Chris Mortimer rejects fixed schedules altogether: value, he argues, follows condition, market and comparable sales.",
+    "kind": "fact",
+    "reason": "Sources checked: Yatco 10-15% then ~5%/yr; IYC 10-20% then 40-50% at five years; Yacht Hunter rejects schedules. Compounding 6-8% not in any source"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"5\",\n            \"33–48 percent\",\n            \"5–7 percent\"",
+    "new": "\"5\",\n            \"30–50 percent\",\n            \"5–8 percent\"",
+    "kind": "fact",
+    "reason": "Align year-five row with Yatco/IYC and essay"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"2\",\n            \"16–28 percent\",\n            \"6–8 percent\"",
+    "new": "\"2\",\n            \"15–28 percent\",\n            \"5–8 percent\"",
+    "kind": "fact",
+    "reason": "Interpolated between sourced year 1 and year 5"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"3\",\n            \"22–35 percent\",\n            \"6–8 percent\"",
+    "new": "\"3\",\n            \"20–35 percent\",\n            \"5–8 percent\"",
+    "kind": "fact",
+    "reason": "Interpolated between sourced year 1 and year 5"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"sourceLine\": \"Yatco, IYC, Yacht Hunter broker-aggregated curves. No peer-reviewed academic study exists.\"",
+    "new": "\"sourceLine\": \"Yatco and IYC published rates (October 2025); years 2, 3, 7 and 10 interpolated or extended from them for illustration. Yacht Hunter rejects fixed schedules. No peer-reviewed academic study exists.\"",
+    "kind": "fact",
+    "reason": "Name what the sources actually provide"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"value\": \"Quality new build ahead on residual value\"\n          }\n        ],\n        \"sourceLine\": \"Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves.\"",
+    "new": "\"value\": \"Quality new build ahead on residual value\"\n          }\n        ],\n        \"sourceLine\": \"Foreland Marine project archive; Yatco and IYC published depreciation rates.\"",
+    "kind": "fact",
+    "reason": "Yacht Hunter publishes no curve"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Baseline\"\n          ]\n        ],\n        \"sourceLine\": \"Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves.\"",
+    "new": "\"Baseline\"\n          ]\n        ],\n        \"sourceLine\": \"Foreland Marine project archive; Yatco and IYC published depreciation rates.\"",
+    "kind": "fact",
+    "reason": "Yacht Hunter publishes no curve"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "caption=\"Indicative; broker-aggregated curves are not peer-reviewed. The band shows the range across Yatco, IYC, and Yacht Hunter aggregations.\"\n      source=\"Yatco, IYC, Yacht Hunter broker-aggregated curves.\"",
+    "new": "caption=\"Indicative; broker-published rates are not peer-reviewed. The band spans Yatco's and IYC's published rates at years one and five; other points are interpolated or extended.\"\n      source=\"Yatco and IYC published depreciation rates (October 2025).\"",
+    "kind": "fact",
+    "reason": "Chart sources match what the sources provide"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "{ x: 2, yLow: 16, yHigh: 28 },\n            { x: 3, yLow: 22, yHigh: 35 },\n            { x: 5, yLow: 33, yHigh: 48 },",
+    "new": "{ x: 2, yLow: 15, yHigh: 28 },\n            { x: 3, yLow: 20, yHigh: 35 },\n            { x: 5, yLow: 30, yHigh: 50 },",
+    "kind": "fact",
+    "reason": "Align band with table and essay (30 to 50 percent at year five)"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"60 m, owner-optimised\",\n            \"EUR 220–260 k\",\n            \"12\",\n            \"Up to EUR 2 m net positive\"",
+    "new": "\"60 m concept (Hill Robinson), not a trading yacht\",\n            \"EUR 500–650 k\",\n            \"12\",\n            \"Net revenue target EUR 2 m\"",
+    "kind": "fact",
+    "reason": "BOAT case study 4: Hill Robinson concept, weekly rates EUR 500,000 to 650,000 as printed"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"sourceLine\": \"BOAT International published case studies.\"",
+    "new": "\"sourceLine\": \"BOAT International, “Profit or passion? What it really costs to run a charter yacht”, Kate Lardy, 8 April 2025.\"",
+    "kind": "fact",
+    "reason": "Date and title of the case studies"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Only one of the four made a clear profit, a 60m at 12 weeks, and that depended on premium rates and on releasing the prime weeks.",
+    "new": "Only one of the four showed a clear profit, a 60m concept modelled at 12 weeks rather than a trading yacht, and that depended on premium rates and on releasing the prime weeks.",
+    "kind": "fact",
+    "reason": "60m case is a Hill Robinson concept"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The successful exception is the disciplined owner-optimised programme willing to release prime-season weeks.",
+    "new": "The one clearly profitable case is a 60 metre concept modelled by Hill Robinson for charter, not a trading yacht, and it assumes premium rates and prime-season weeks given to charter.",
+    "kind": "fact",
+    "reason": "60m case is a concept"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"line\": \"Stewart Campbell, MD, on the One Big Beautiful Bill Act as the principal driver of the 2025 transaction surge.\"",
+    "new": "\"line\": \"Stewart Campbell, MD, quoted in Knight Frank’s Wealth Report 2026 on the 2025 rebound; case studies by Kate Lardy, April 2025.\"",
+    "kind": "fact",
+    "reason": "Knight Frank names US demand as the biggest catalyst; Campbell is quoted on pricing and the US share"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"line\": \"USD 8.5 bn 2025 transactions, 70 percent year on year rise, US 45 to 50 percent of transactions.\"",
+    "new": "\"line\": \"USD 8.5 bn estimated 2025 sales of yachts over 24 m, on asking prices (BOAT International data), 70 percent year on year rise, US 45 to 50 percent of transactions.\"",
+    "kind": "fact",
+    "reason": "Match the measure"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Identified by Stewart Campbell of BOAT International as the largest single driver of the 2025 surge that took global yacht transactions to USD 8.5 billion.",
+    "new": "Cited in Knight Frank’s Wealth Report 2026, alongside US demand, as a reason buyers rushed to close deals in 2025, when estimated sales of yachts over 24 metres reached USD 8.5 billion.",
+    "kind": "fact",
+    "reason": "Knight Frank text, not Campbell, names US demand as the biggest catalyst"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "The yacht spread (sourced from BOAT International) records USD 8.5 billion 2025 transactions, 70 percent year-on-year rise.",
+    "new": "The yacht spread (sourced from BOAT International) estimates 2025 sales of yachts over 24 metres at USD 8.5 billion on asking prices, a 70 percent year-on-year rise.",
+    "kind": "fact",
+    "reason": "Match the measure"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Mediterranean Yacht Brokers Association (MYBA) sliding scale is 10 percent on the first USD 10 million, 5 percent on the second, 2.5 percent above. On a USD 50 million sale, that is USD 2.25 million; with the bands applied in euros, the EUR 28 million sale above carries EUR 1.7 million.",
+    "new": "The Mediterranean Yacht Brokers Association (MYBA) sliding scale is 10 percent on the first 10 million, 5 percent on the second, 2.5 percent above; published descriptions give the bands in US dollars. On a USD 50 million sale, that is USD 2.25 million. Applied in euros, the bands give EUR 1.7 million on the EUR 28 million sale above, and the commission agreement should state the currency of the bands.",
+    "kind": "fact",
+    "reason": "Published sources (SuperyachtNews 2017, US Marshals auction memo) state MYBA bands in USD; no euro-denominated MYBA scale found"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"10 percent on first EUR 10 m, 5 percent on second EUR 10 m, 2.5 percent above\"",
+    "new": "\"10 percent on the first 10 m, 5 percent on the second 10 m, 2.5 percent above (bands published in USD, applied here in EUR)\"",
+    "kind": "fact",
+    "reason": "Consistent with essay"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "caption=\"Commission paid by the seller under each scale. Both structures are routinely described as 'the standard' by the brokers using them.\"",
+    "new": "caption=\"Commission paid by the seller under each scale, with the MYBA bands (published in US dollars) applied in euros. Both structures are routinely described as 'the standard' by the brokers using them.\"",
+    "kind": "fact",
+    "reason": "Consistent with essay"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "In May 2015, the Italian state-controlled shipbuilder Fincantieri acquired a 15 percent minority stake via a capital increase, with Coliseum Services remaining the majority shareholder. Lai Sun Development Company Limited, the Hong Kong-listed conglomerate, subsequently acquired majority control through the 1782 Group structure.",
+    "new": "In May 2015, the Italian state-controlled shipbuilder Fincantieri acquired a minority stake via a capital increase, with Coliseum Services remaining the majority shareholder. Lai Sun Development Company Limited, the Hong Kong-listed conglomerate, bought 50 percent in October 2016, and in February 2017 Fincantieri raised its holding to the other 50 percent as the 1782 Group left the shareholding. By May 2026 a Lai Sun subsidiary held 98.27 percent of Camper & Nicholsons International S.A. (Lai Sun’s announcement to the Hong Kong Stock Exchange, 28 May 2026).",
+    "kind": "fact",
+    "reason": "SuperyachtNews 6 Feb 2017 (Fincantieri to 50%, Lai Sun 50% since Oct 2016); HKEX joint announcement 28 May 2026 shows Lai Sun group at 98.27%"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "C&N therefore has, on its capitalisation table, an Italian shipbuilder that builds yachts C&N then sells. A buyer offered a Fincantieri-built yacht through C&N can ask, in writing, whether the shareholding has been disclosed. The conflict lasts as long as the shareholding does.",
+    "new": "For several years, then, C&N had on its capitalisation table an Italian shipbuilder that builds yachts C&N sells. A conflict of that kind lasts as long as the shareholding does, and a buyer offered a yacht through any brokerage can ask, in writing, whether a builder holds shares in it.",
+    "kind": "fact",
+    "reason": "Fincantieri no longer appears in the 2026 shareholding; assertion recast as the buyer's question"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "On 28 May 2026, Lai Sun signed to sell an initial 80 percent of C&N International to Wave Expandary Limited at an enterprise value of EUR 50 million.",
+    "new": "On 28 May 2026, Lai Sun signed to sell an initial 80 percent interest in C&N International to Wave Expandary Limited, for EUR 40 million on a valuation of EUR 50 million for the whole company.",
+    "kind": "fact",
+    "reason": "HKEX announcement: initial sale of an 80% interest in the Target (via 81.4% of Ample Beyond Ltd, which owns 98.27%); valuation EUR 50m for 100% of the Target, not stated as EV; not 80% of a 50% stake"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Put and call options govern the remaining 20 percent from 31 December 2027, each estimated at EUR 9.135 million.",
+    "new": "Put and call options govern the remaining interest from 31 December 2027, each estimated at EUR 9.135 million.",
+    "kind": "fact",
+    "reason": "Options cover 18.27 percent of valuation (18.6 percent of the holding company's shares)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " Whether Fincantieri’s 15 percent survives the transaction has not been disclosed.",
+    "new": " The announcement shows no Fincantieri holding: before the sale, the Lai Sun group held 98.27 percent of C&N International.",
+    "kind": "fact",
+    "reason": "HKEX shareholding chart"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "If Fincantieri’s holding survives, the conflict described above is compounded. Either way, C&N’s new controlling shareholder operates",
+    "new": "C&N’s new controlling shareholder operates",
+    "kind": "fact",
+    "reason": "Fincantieri holding no longer present"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"1782 Group / Lai Sun Development; Fincantieri 15 percent minority since 2015; 80 percent stake sold to Wave Expandary Ltd (Sea Expandary, JD.com’s Richard Liu), signed 28 May 2026 at EUR 50m EV (~12x EBITDA); Benjamin Bensahel succeeded Paolo Casani as CEO in October 2026; Fincantieri holding after the sale not disclosed\"",
+    "new": "\"Lai Sun Development (98.27 percent before the sale; Fincantieri held a stake from 2015, 50 percent from 2017); initial 80 percent interest sold to Wave Expandary Ltd (Sea Expandary, JD.com’s Richard Liu), signed 28 May 2026 on a EUR 50m valuation (~12x EBITDA); Benjamin Bensahel succeeded Paolo Casani as CEO in October 2026\"",
+    "kind": "fact",
+    "reason": "HKEX announcement 28 May 2026"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "On a EUR 5 million annual management contract, a 10 percent introductory retrocession is EUR 500,000 in year one.",
+    "new": "On a yacht whose management company runs an annual operating budget of EUR 5 million, a 10 percent introductory retrocession calculated on that budget is EUR 500,000 in year one.",
+    "kind": "fact",
+    "reason": "Make clear EUR 5m is the managed operating budget, not the management fee"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Annual management contract, year one\",\n            \"EUR 5 m\",",
+    "new": "\"Management, year one\",\n            \"EUR 5 m operating budget run by the manager\",",
+    "kind": "fact",
+    "reason": "Consistent with essay"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "more than 70 percent of voyages exiting French waters, less than 50 percent static charters)",
+    "new": "at least 70 percent of voyages in the previous calendar year leaving French territorial waters, and charters at the quay fewer than half of all charter contracts)",
+    "kind": "fact",
+    "reason": "BOFiP BOI-TVA-CHAMP-30-30-30-10 (in force from 24/02/2021): 70% test is trips leaving French territorial waters, measured on prior year; at-sea activity presumed main where quay rentals are under half of rental contracts"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "over 70 percent of voyages exit French waters; under 50 percent static charter",
+    "new": "at least 70 percent of voyages leave French territorial waters (previous calendar year); quay charters under half of charter contracts",
+    "kind": "fact",
+    "reason": "BOFiP wording"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "has been detained in London since 28 March 2022 under a direction from the UK Secretary of State for Transport, issued shortly after the Russian invasion of Ukraine.",
+    "new": "has been detained in London under a direction made by the UK Secretary of State for Transport on the evening of 28 March 2022 and delivered to her master the next morning, shortly after the Russian invasion of Ukraine.",
+    "kind": "fact",
+    "reason": "Dalston Projects v SST [2025] UKSC 30 para 63: direction made evening 28 March, delivered 29 March 2022"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Kevin Laverty of Hill Robinson, writing in BOAT International, has identified the relative thinness of yacht-construction contracts as drafted. One widely cited example is a 33-page contract for a 77 metre yacht, against the multi-volume documentation typical of oil and gas projects of comparable cost.",
+    "new": "Kevin Laverty of Hill Robinson, in a BOAT International feature sponsored by his firm (September 2025), describes the relative thinness of yacht-construction contracts as drafted. Coming from oil and gas, where a project of comparable cost is documented in several ring binders, he found a 33-page contract governing the build of a 77 metre yacht.",
+    "kind": "fact",
+    "reason": "Source: BOAT International sponsored content for Hill Robinson, Hannah Rankine, 22 Sep 2025; the example is Laverty's own"
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "The 33-page construction contract for a 77 metre yacht that you have cited as an example:",
+    "new": "The 33-page construction contract for a 77 metre yacht, often cited as an example:",
+    "kind": "fact",
+    "reason": "Inglis's Superyacht Investor piece (20 Oct 2025) does not cite it; the example is Laverty's"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Superyacht Group’s 2025 expert roundtable (Manuel Di Tillio at Amico & Co, Gianni Paladino at Lusben, Txema Rubio at MB92) discussed Mediterranean capacity in detail; it is paywalled. Public figures point the same way: the fleet is up 38.7 percent over the past decade, against modest growth in refit capacity.",
+    "new": "BOAT International’s February 2026 expert roundtable (Manuel Di Tillio at Amico & Co, Gianni Paladino at Lusben, Txema Rubio at MB92) discussed Mediterranean capacity in detail; it is paywalled. Its published introduction cites BOATPro data showing the global fleet up 38.7 percent within the past decade, and describes refit capacity as tightening.",
+    "kind": "fact",
+    "reason": "38.7% is BOATPro via BOAT International roundtable, 9 Feb 2026 (Gemma Harris); roundtable was BOAT's, not The Superyacht Group's"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The market hardened from 2022. AIG cited rate increases of 50 to 70 percent across 2022 and 2023 in the London market, after sustained Lloyd’s yacht underwriting losses through the mid-2010s.",
+    "new": "The market first hardened after sustained Lloyd’s yacht underwriting losses through the mid-2010s: in 2019 Sean Blue, AIG’s global head of watercraft, spoke of increases of 50 to 70 percent in the London market (BOAT International, November 2019). Rates rose again from 2022.",
+    "kind": "fact",
+    "reason": "AIG 50-70% is from BOAT International, 6 Nov 2019, on the 2018-19 hardening, not 2022-23"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The market has since softened: by Q4 2025, Gallagher Specialty reported reductions of 4 to 7.5 percent for fleets with good loss records.",
+    "new": "The market has since softened, though the rate reductions brokers published for 2025, Gallagher Specialty’s among them, describe commercial shipping hull and machinery rather than yachts.",
+    "kind": "fact",
+    "reason": "Gallagher Specialty marine updates are commercial H&M; 4-7.5% figure not found and not yacht-specific"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "typically run to EUR 80,000 to 200,000 a year.",
+    "new": "typically run to EUR 80,000 to 200,000 a year on practitioner working ranges.",
+    "kind": "fact",
+    "reason": "No published source; labelled as practitioner range (size and use already stated)"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"2022–2023\",\n            \"Up 50–70 percent (London market)\",\n            \"AIG cited; broad hardening\"",
+    "new": "\"2022–2023\",\n            \"Rising; broad hardening\",\n            \"Ollie Davis, PIB Marine. AIG’s 50–70 percent London figure (BOAT International, 2019) relates to the 2018–19 hardening\"",
+    "kind": "fact",
+    "reason": "AIG figure misdated"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Q4 2025\",\n            \"Down 4–7.5 percent for clean fleets\",\n            \"Gallagher Specialty\"",
+    "new": "\"2025\",\n            \"Softening\",\n            \"Published broker reductions relate to commercial hull and machinery, not yachts\"",
+    "kind": "fact",
+    "reason": "Gallagher figure not yacht-specific"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"sourceLine\": \"AIG, Gallagher Specialty published commentary; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026).\"",
+    "new": "\"sourceLine\": \"AIG (Sean Blue, BOAT International, November 2019); Gallagher Specialty hull and machinery updates; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026).\"",
+    "kind": "fact",
+    "reason": "Precise attribution"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"label\": \"AIG\",\n        \"line\": \"On the record on 50 to 70 percent rate increases across 2022 to 2023.\",\n        \"url\": \"https://www.aig.com/\"",
+    "new": "\"label\": \"AIG (Sean Blue), BOAT International, November 2019\",\n        \"line\": \"Increases of 50 to 70 percent in the London market, in the 2018 to 2019 hardening.\",\n        \"url\": \"https://www.boatinternational.com/yachts/editorial-features/superyacht-insurance-why-premiums-are-on-the-rise--42091\"",
+    "kind": "fact",
+    "reason": "Primary source of the AIG figure"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"line\": \"Published broker commentary on hull rate movement, 2022 to 2025.\"",
+    "new": "\"line\": \"Hull and machinery market updates; commercial shipping, not yacht-specific.\"",
+    "kind": "fact",
+    "reason": "Scope of Gallagher figures"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "source=\"AIG, Gallagher Specialty published commentary; Pantaenius market notes; Ollie Davis, PIB Marine, interviewed for chapter 7.\"",
+    "new": "source=\"Pantaenius market notes; Ollie Davis, PIB Marine, interviewed for chapter 7. Plotted values are indicative, not a published index.\"",
+    "kind": "fact",
+    "reason": "AIG figure predates the plotted period; Gallagher figures are commercial hull"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"90 m motor\",\n            \"Around 5,000 GT\",\n            \"Inside only if 5,000 GT or more and on commercial charter\"",
+    "new": "\"90 m motor\",\n            \"About 2,900–3,500 GT\",\n            \"Below threshold\"",
+    "kind": "fact",
+    "reason": "BOAT International directory: Shodan 90m 2,950 GT, Norn 90m 3,491 GT, Dar 90m 2,926 GT"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"110 m+ motor\",\n            \"Above 5,000 GT\",\n            \"Inside only if on commercial charter; private use is outside\"",
+    "new": "\"110 m+ motor\",\n            \"About 5,000 GT and above\",\n            \"Inside only if 5,000 GT or more and on commercial charter; private use is outside\"",
+    "kind": "fact",
+    "reason": "Oceanco Y722 111m just under 5,000 GT; Lürssen Boardwalk 116m 5,350 GT"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "{ label: \"90 m motor\", from: 4500, to: 5500, note: \"Borderline\" },\n          { label: \"110 m+ motor\", from: 5500, to: 6000,",
+    "new": "{ label: \"90 m motor\", from: 2900, to: 3500, note: \"Below threshold\" },\n          { label: \"110 m+ motor\", from: 4900, to: 6000,",
+    "kind": "fact",
+    "reason": "Typical GT for 90m and 110m+ motor yachts"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Fuel. A 50m motor yacht running 400 hours a year under way burns EUR 200,000 to 350,000 of diesel, about 110,000 to 270,000 litres at the EUR 1.30 to 1.80 a litre used in chapter 1.",
+    "new": "Fuel. A 50m motor yacht running 400 hours a year under way burns EUR 200,000 to 350,000 of diesel, about 110,000 to 270,000 litres at the EUR 1.30 to 1.80 a litre assumed in chapter 1. The archive range does not separate generator fuel at anchor and in port, which should be budgeted as its own line.",
+    "kind": "fact",
+    "reason": "Basis does not state whether generator fuel is included; qualified"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Crew. A 50m sailing yacht operates with 9 to 12 crew against 12 to 16 on a comparable motor.",
+    "new": "Crew. On the archive figures, a 50m sailing yacht operates with 9 to 12 crew against 12 to 16 on a comparable motor in private use. Published guides suggest leaner minimums: YachtBuyer gives 8 to 12 for the 40 to 50m band, and 9 for a lean 50m crew.",
+    "kind": "fact",
+    "reason": "YachtBuyer crew cost guide (updated 27 Oct 2026); counts kept consistent across essay, spread, checklist, FAQ and qualified"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "A 50 metre motor yacht typically carries 12 to 16 crew. A 50 metre sailing yacht carries 9 to 12.",
+    "new": "On practitioner figures, a 50 metre motor yacht in private use typically carries 12 to 16 crew and a 50 metre sailing yacht 9 to 12. Published guides give leaner minimums: YachtBuyer suggests 8 to 12 across the 40 to 50 metre band.",
+    "kind": "fact",
+    "reason": "Qualify against published crew-size source"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Offshore-capable yachts (typically 18 to 30m) for which racing pedigree adds 10 to 25 percent premium on resale over a comparable cruising hull (broker-aggregated data).",
+    "new": "Offshore-capable yachts (typically 18 to 30m) for which a racing record can support resale value against a comparable cruising hull, though no published sales data put a figure on the premium.",
+    "kind": "fact",
+    "reason": "No source found for 10 to 25 percent; figure cut"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The hybrid figures sat between motor and sailing yacht on cost and roughly 35 to 45 percent below motor on carbon.",
+    "new": "The hybrid figures sat between motor and sailing yacht on both cost and carbon.",
+    "kind": "fact",
+    "reason": "No source for 35 to 45 percent; published Heesen hybrid data imply smaller fuel savings in cruise; figure cut"
+  }
+]
