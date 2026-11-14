@@ -414,7 +414,7 @@
         "items": [
           {
             "question": "Projected refit cost as a percentage of the yacht’s pre-refit market value.",
-            "detail": "Above 30 percent, sale is the standard alternative. Below, refit is the standard path."
+            "detail": "A practitioner rule of thumb. Above 30 percent, consider selling. Below, refit is the usual path."
           },
           {
             "question": "Strategic fit of the post-refit yacht against the actual continued use case, on paper."
