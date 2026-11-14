@@ -1065,7 +1065,7 @@
   "05-new-build-versus-brokerage": {
     "slug": "05-new-build-versus-brokerage",
     "title": "Cashflow and milestone payments, year by year",
-    "standfirst": "Brokerage concentrates capital at closing. New build distributes it across two to five years against milestones whose definition is the most consequential drafting work in the contract. The cashflow shape of each path.",
+    "standfirst": "Brokerage concentrates capital at closing. New build distributes it across two to five years against milestones whose definition is among the most important drafting work in the contract. The cashflow shape of each path.",
     "blocks": [
       {
         "type": "h2",
@@ -1088,7 +1088,7 @@
           [
             "Semi-custom new build",
             "24–36 months",
-            "20–30 percent at signature, 50–70 percent across build, balance at delivery"
+            "20–30 percent at signature, milestone instalments across build, balance at delivery"
           ],
           [
             "Fully custom new build",
@@ -1104,7 +1104,7 @@
       },
       {
         "type": "table",
-        "caption": "Industry-typical 50 to 70 percent paid before delivery. Aggressive front-loading suggests the yard is short of cash to start the build.",
+        "caption": "This working schedule has 70 percent paid by launch and 90 percent before delivery, at the heavy end of custom practice. Aggressive front-loading suggests the yard is short of cash to start the build.",
         "head": [
           "Milestone",
           "Typical share",
@@ -1160,7 +1160,7 @@
       },
       {
         "type": "kv",
-        "caption": "The premium narrows over the hold. Quality builders hold value much better than mid-tier brokerage acquisitions.",
+        "caption": "The premium narrows over the hold. Yachts from the strongest builders hold their value better than most of the market.",
         "rows": [
           {
             "label": "At entry",
@@ -1187,7 +1187,7 @@
       },
       {
         "type": "table",
-        "caption": "A single afternoon’s competent legal review at heads-of-terms saves more than the owner’s representative fee for the entire project.",
+        "caption": "Specialist review at heads of terms costs a small fraction of the sums these clauses govern.",
         "head": [
           "Point",
           "Typical position",
@@ -1253,7 +1253,7 @@
       },
       {
         "type": "kv",
-        "caption": "On a EUR 100 m, 36-month new build. Brokers acting as owner’s representatives are typically paid by yard commission of around 5 percent without disclosure to the buyer.",
+        "caption": "On a EUR 100 m, 36-month new build. Brokers acting as owner’s representatives are typically paid by yard commission of around 5 percent, which the buyer should see disclosed in writing.",
         "rows": [
           {
             "label": "Independent firm, percentage",
@@ -1265,14 +1265,14 @@
           },
           {
             "label": "Broker acting as owner’s representative",
-            "value": "Typically yard commission of around 5 percent (undisclosed to buyer)"
+            "value": "Typically yard commission of around 5 percent, to be disclosed in writing"
           },
           {
             "label": "Naval architect acting as owner’s representative",
-            "value": "Continuing yard relationship; carries an ongoing conflict"
+            "value": "May have a continuing yard relationship, to be disclosed in writing"
           }
         ],
-        "sourceLine": "Practitioner anecdotal range. Major firms (Edmiston, Burgess, Cecil Wright, Y.CO, Moran, Hill Robinson) do not publish fee structures. The lack of published fees across the entire owner’s representative market is itself a finding."
+        "sourceLine": "Practitioner anecdotal range. Major firms (Edmiston, Burgess, Cecil Wright, Y.CO, Moran, Hill Robinson) do not publish fee structures."
       }
     ],
     "sources": [
