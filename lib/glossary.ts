@@ -67,9 +67,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "ism",
     term: "ISM Code",
     shortDefinition:
-      "International Safety Management Code. The mandatory framework under which yachts above 500 gross tonnes operate. Compliance is documented in a Safety Management System.",
+      "International Safety Management Code. Mandatory for yachts of 500 gross tonnage and above engaged in trade; a private yacht may adopt it voluntarily. Compliance is documented in a Safety Management System.",
     longDefinition:
-      "The ISM Code, adopted by the IMO in 1993, requires a documented safety management system covering vessel and shore-based operations. For yachts above 500 GT engaged in international voyages, ISM compliance is verified by the flag state or its recognised organisation, with periodic audits and a Document of Compliance held by the company.",
+      "The ISM Code, adopted by the IMO in 1993, requires a documented safety management system covering vessel and shore-based operations. For commercially operated yachts of 500 GT and above on international voyages, ISM compliance is verified by the flag state or its recognised organisation, with periodic audits and a Document of Compliance held by the company. A privately used yacht is outside the mandatory regime whatever its size, though owners can adopt the Code voluntarily and some flags, including Malta, offer voluntary certification.",
     source: {
       name: "International Maritime Organization",
       url: "https://www.imo.org/en/OurWork/HumanElement/Pages/ISMCode.aspx",

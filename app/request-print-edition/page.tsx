@@ -76,83 +76,31 @@ export default function PrintRequestPage() {
           </div>
 
           <div className="lg:col-span-7 lg:border-l lg:border-rule lg:pl-12">
-            <p className="caption mb-8 border border-rule bg-paper-deep px-4 py-3">
-              Wireframe form. The production version will route to an editorial
-              inbox at the publication. Until then, write to{" "}
-              <a
-                href="mailto:editors@firstownersreference.com"
-                className="link-marine"
-              >
-                editors@firstownersreference.com
-              </a>
-              .
-            </p>
-            <form className="space-y-8" aria-disabled="true">
-              <FormField id="print-name" label="Name" required>
-                <input
-                  id="print-name"
-                  type="text"
-                  name="name"
-                  disabled
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
-                />
-              </FormField>
-              <FormField id="print-role" label="Role and organisation" required>
-                <input
-                  id="print-role"
-                  type="text"
-                  name="role"
-                  disabled
-                  placeholder="e.g. Family office principal, Acme Capital"
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
-                />
-              </FormField>
-              <FormField id="print-email" label="Email" required>
-                <input
-                  id="print-email"
-                  type="email"
-                  name="email"
-                  disabled
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
-                />
-              </FormField>
-              <FormField id="print-address" label="Postal address" required>
-                <textarea
-                  id="print-address"
-                  name="address"
-                  disabled
-                  rows={4}
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
-                />
-              </FormField>
-              <FormField
-                id="print-why"
-                label="Why The First Owner’s Reference is useful to you"
-                required
-              >
-                <textarea
-                  id="print-why"
-                  name="why"
-                  disabled
-                  rows={5}
-                  placeholder="A few sentences. We read every request."
-                  className="w-full bg-paper-deep border border-rule px-4 py-3 font-serif text-lg focus:outline-none focus:border-marine disabled:cursor-not-allowed disabled:opacity-60"
-                />
-              </FormField>
-              <p className="caption text-charcoal-soft">
+            <div className="prose-body max-w-prose text-charcoal-soft space-y-6">
+              <p>
+                Requests are handled by email. Write to{" "}
+                <a
+                  href="mailto:editors@firstownersreference.com?subject=Print%20edition%20request"
+                  className="link-marine"
+                >
+                  editors@firstownersreference.com
+                </a>{" "}
+                with your name, your role and organisation, a postal address,
+                and a few sentences on why a copy would be useful to you.
+              </p>
+              <p className="caption">
                 Your details are used solely to send the print copy and to
                 reply to your request. They are not shared, sold, or used for
                 marketing. You may ask us to delete them at any time by writing
-                to the editorial address above.
+                to the same address.
               </p>
-              <button
-                type="submit"
-                disabled
-                className="border border-charcoal bg-charcoal text-paper px-8 py-4 meta hover:bg-marine hover:border-marine transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              <a
+                href="mailto:editors@firstownersreference.com?subject=Print%20edition%20request"
+                className="inline-block border border-charcoal bg-charcoal text-paper px-8 py-4 meta hover:bg-marine hover:border-marine transition-colors"
               >
-                Submit request
-              </button>
-            </form>
+                Email Us
+              </a>
+            </div>
           </div>
         </section>
       </article>
@@ -162,24 +110,3 @@ export default function PrintRequestPage() {
   );
 }
 
-function FormField({
-  id,
-  label,
-  required,
-  children,
-}: {
-  id: string;
-  label: string;
-  required?: boolean;
-  children: React.ReactNode;
-}) {
-  return (
-    <div>
-      <label htmlFor={id} className="meta block mb-3">
-        {label}
-        {required && <span className="text-marine ml-1">*</span>}
-      </label>
-      {children}
-    </div>
-  );
-}

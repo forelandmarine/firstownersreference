@@ -126,10 +126,10 @@ export default function HomePage() {
             <p className="meta">1st Edition, 2027</p>
           </div>
           <p className="font-serif italic text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl mb-16">
-            Each chapter pairs a lead essay with a data spread, a guest
-            opinion from a named contributor, an anonymised case, and a
-            one-page checklist to print for meeting notes and further
-            reference.
+            Each chapter pairs a lead essay with a data spread, an
+            anonymised case and a one-page checklist to print for meeting
+            notes and further reference. Most chapters also carry a guest
+            opinion from a named contributor.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-10 gap-y-12 sm:gap-y-16">
             {sections.map((section) => (
@@ -164,8 +164,9 @@ export default function HomePage() {
               </p>
               <p>
                 The publication is structured in numbered chapters. Each carries
-                a lead essay, a data spread, a guest opinion from a named
-                contributor, an anonymised case, and a one-page checklist. The
+                a lead essay, a data spread, an anonymised case and a one-page
+                checklist, and most carry a guest opinion from a named
+                contributor. The
                 aim is a calm, evidence-led reference a first-time owner can
                 hold alongside the conversations that matter.
               </p>
@@ -228,7 +229,7 @@ export default function HomePage() {
             Reference pages.
           </h2>
           <p className="caption max-w-2xl mb-12 text-base leading-relaxed">
-            Three standing pages kept current between editions, each built on
+            Five standing pages kept current between editions, each built on
             named sources and free to cite.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-rule border border-rule">

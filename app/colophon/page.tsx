@@ -166,7 +166,7 @@ export default function ColophonPage() {
               has a commercial interest in being engaged by readers. This is
               disclosed openly. The six-element independence test that runs
               through The First Owner’s Reference applies to the publisher as it does to
-              every other adviser. Its answers are set out below.
+              every other adviser. Its answers on earnings, relationships, counterparties, fees and principals are set out below.
             </p>
             <p>
               <strong>1. Earnings contingent on closing.</strong> Foreland Marine
@@ -197,14 +197,7 @@ export default function ColophonPage() {
               commissions.
             </p>
             <p>
-              <strong>5. Professional indemnity insurance.</strong> Foreland
-              holds professional indemnity cover with ITIC, the marine
-              professional indemnity mutual, at GBP 500,000 per claim.
-              Project-specific excess cover is placed where an engagement
-              requires it.
-            </p>
-            <p>
-              <strong>6. Named principals.</strong> The directors of Foreland
+              <strong>5. Named principals.</strong> The directors of Foreland
               are Jack MacNally and Daniel Marks. Both listed at Companies
               House. Registered with the Yacht Owners&rsquo; Representative
               Register (YORR). Resident in London.
@@ -214,7 +207,7 @@ export default function ColophonPage() {
             <p>
               The First Owner&rsquo;s Reference, 1st Edition, 2027. Published
               by Foreland Marine, London. ISSN pending. Citation suggested as
-              author Foreland Marine, year 2026, title of essay or chapter,
+              author Foreland Marine, year 2027, title of essay or chapter,
               published in The First Owner&rsquo;s Reference 1st Edition, URL.
             </p>
           </div>
