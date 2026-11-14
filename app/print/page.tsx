@@ -119,7 +119,7 @@ export default function PrintEdition() {
 
       {/* === TITLE PAGE === */}
       <section className="title-page">
-        <p className="title-page__edition">1st Edition · 2027</p>
+        <p className="title-page__edition">1st Edition, 2027</p>
         <h1 className="title-page__title">
           The First Owner&rsquo;s Reference
         </h1>
@@ -486,7 +486,7 @@ export default function PrintEdition() {
                 }`}
               >
                 <p className="contributor-entry__chapter">
-                  Chapter {s.number} · {s.title}
+                  Chapter {s.number}&emsp;{s.title}
                 </p>
                 <h3 className="contributor-entry__name">
                   {confirmed ? s.contributor : "To be confirmed"}
@@ -590,7 +590,7 @@ export default function PrintEdition() {
         {allEssays.map(({ section, dataSpread }) => (
           <div key={section.slug}>
             <h2>
-              Chapter {section.number} · {section.title}
+              Chapter {section.number}&emsp;{section.title}
             </h2>
             {dataSpread?.sources.length ? (
               <ul>
@@ -854,7 +854,7 @@ export function ChapterBlock({
   nextSection: (typeof sections)[number] | null;
   spacerBefore?: boolean;
 }) {
-  const chapterRunning = `Ch ${section.number} · ${section.title}`;
+  const chapterRunning = `Ch ${section.number}\u2003${section.title}`;
 
   // Split paragraphs: first paragraph (string) becomes intro with drop cap;
   // rest go in two-column flow.
@@ -1535,7 +1535,7 @@ export function ChapterBlock({
             <blockquote className="chapter-close__quote">
               {firstQuote.text}
               <footer>
-                {firstQuote.attribution ?? `Chapter ${String(section.number).padStart(2, "0")} · ${section.title}`}
+                {firstQuote.attribution ?? `Chapter ${String(section.number).padStart(2, "0")}\u2003${section.title}`}
               </footer>
             </blockquote>
           )}

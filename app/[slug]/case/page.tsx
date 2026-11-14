@@ -113,7 +113,7 @@ export default async function CaseStudyPage(props: {
               <span>Case material</span>
             </nav>
             <p className="meta-marine mb-6">
-              Chapter {section.number} &middot; Case material
+              Chapter {section.number}&emsp;Case material
             </p>
             <h1 className="font-serif font-light text-headline lg:text-[3rem] leading-[1.05] tracking-tight text-charcoal mb-8 max-w-3xl">
               {caseStudy.title}

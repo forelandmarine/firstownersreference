@@ -61,7 +61,7 @@ export default function PressPage() {
 
         <section className="max-w-[80rem] mx-auto px-6 lg:px-12 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-3 space-y-2">
-            <p className="meta sticky top-32">1st Edition &middot; 2027</p>
+            <p className="meta sticky top-32">1st Edition, 2027</p>
           </div>
           <div className="lg:col-span-9 prose-body max-w-prose">
             <h2>About the publication</h2>
@@ -212,7 +212,7 @@ export default function PressPage() {
                       {c.name}
                     </p>
                     <p className="meta">
-                      {c.hex.toUpperCase()} &middot; {c.role}
+                      {c.hex.toUpperCase()}&emsp;{c.role}
                     </p>
                   </div>
                 </div>

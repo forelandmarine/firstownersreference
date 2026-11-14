@@ -32,7 +32,7 @@ export default function Image() {
             color: "#0f3b5c",
           }}
         >
-          <div style={{ display: "flex" }}>1st Edition · 2027</div>
+          <div style={{ display: "flex" }}>1st Edition, 2027</div>
           <div style={{ display: "flex", color: "#7a756d" }}>
             firstownersreference.com
           </div>
@@ -83,7 +83,7 @@ export default function Image() {
           <div style={{ display: "flex" }}>
             Published by Foreland Marine
           </div>
-          <div style={{ display: "flex" }}>Independent · No advertising</div>
+          <div style={{ display: "flex" }}>Independent, no advertising</div>
         </div>
       </div>
     ),

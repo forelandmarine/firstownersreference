@@ -136,7 +136,7 @@ export default async function GuestQAPage(props: {
               <span>Guest opinion</span>
             </nav>
             <p className="meta-marine mb-6">
-              Chapter {section.number} &middot; Guest opinion
+              Chapter {section.number}&emsp;Guest opinion
             </p>
             <h1 className="font-serif font-light text-headline lg:text-[3rem] leading-[1.05] tracking-tight text-charcoal mb-8 max-w-3xl">
               In conversation with {opinion.contributor}

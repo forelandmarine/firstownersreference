@@ -1043,19 +1043,19 @@ export default function RunningCostCalculatorPage() {
             {[
               {
                 href: "/01-reality-of-ownership",
-                label: "Chapter 01 \u00b7 The reality of ownership",
+                label: "Chapter 01\u2003The reality of ownership",
               },
               {
                 href: "/06-refit",
-                label: "Chapter 06 \u00b7 Refit",
+                label: "Chapter 06\u2003Refit",
               },
               {
                 href: "/07-operations",
-                label: "Chapter 07 \u00b7 Operations",
+                label: "Chapter 07\u2003Operations",
               },
               {
                 href: "/04-acquisition-process",
-                label: "Chapter 04 \u00b7 The acquisition process",
+                label: "Chapter 04\u2003The acquisition process",
               },
             ].map((link) => (
               <Link

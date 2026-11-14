@@ -103,7 +103,7 @@ export default function GlossaryPage() {
         <section className="max-w-[80rem] mx-auto px-6 lg:px-12 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-3">
             <p className="meta sticky top-32">
-              {sorted.length} terms &middot; A to Z
+              {sorted.length} terms, A to Z
             </p>
           </div>
           <div className="lg:col-span-9 space-y-12">

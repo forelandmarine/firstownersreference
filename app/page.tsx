@@ -63,7 +63,7 @@ export default function HomePage() {
               className="meta mt-8"
               style={{ color: "var(--color-paper)" }}
             >
-              1st Edition &middot; January 2027
+              1st Edition, January 2027
             </p>
           </div>
         </div>

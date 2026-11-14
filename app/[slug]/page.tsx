@@ -445,7 +445,7 @@ export default async function SectionPage(props: {
                 <div className="lg:col-span-3">
                   <div className="lg:sticky lg:top-32 space-y-3">
                     <p className="meta-marine">
-                      Chapter {section.number} &middot; Guest opinion
+                      Chapter {section.number}&emsp;Guest opinion
                     </p>
                     <ContributorAvatar
                       name={guestOpinion.contributor}
@@ -534,7 +534,7 @@ export default async function SectionPage(props: {
               <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
                 <div className="lg:col-span-8 lg:col-start-3">
                   <p className="meta-marine mb-4">
-                    Chapter {section.number} &middot; Data spread
+                    Chapter {section.number}&emsp;Data spread
                   </p>
                   <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
                     {dataSpread.title}
@@ -564,7 +564,7 @@ export default async function SectionPage(props: {
                 className="group block border-t border-charcoal pt-10 transition-colors hover:border-marine"
               >
                 <p className="meta-marine mb-6">
-                  Chapter {section.number} &middot; Case material
+                  Chapter {section.number}&emsp;Case material
                 </p>
                 <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl group-hover:text-marine transition-colors">
                   {caseStudy.title}
@@ -589,7 +589,7 @@ export default async function SectionPage(props: {
               <header className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
                 <div className="lg:col-span-8 lg:col-start-3">
                   <p className="meta-marine mb-4">
-                    Chapter {section.number} &middot; Checklist
+                    Chapter {section.number}&emsp;Checklist
                   </p>
                   <h2 className="font-serif font-light text-headline lg:text-[2.75rem] leading-[1.1] tracking-tight text-charcoal mb-8 max-w-3xl">
                     {checklist.title}
