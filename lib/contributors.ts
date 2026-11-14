@@ -19,7 +19,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Andrew Roch": {
     name: "Andrew Roch",
     avatar: "/images/contributors/andrew-roch.jpg",
-    bio: "Andrew Roch is the founder and CEO of Yacht Crew Recruitment and Training, a group based in Palma and Sussex that covers the crew career from IAMI/GUEST-accredited leadership and purser training under The Crew Academy to senior-crew placement under The Crew Hunter. He grew up around yachts, sits on the IAMI board, and co-designed the Yacht Owner Representative Programme with SYBAss. He writes regularly for SuperyachtNews on crew leadership and the captain’s role.",
+    bio: "Andrew Roch is the founder and CEO of Yacht Crew Recruitment and Training, a group based in Palma and Sussex that covers the crew career from IAMI/GUEST-accredited leadership and purser training under The Crew Academy to senior-crew placement under The Crew Hunter. He grew up around yachts, sits on the IAMI board as director of the IAMI GUEST programme, and co-designed the Yacht Owner Representative Programme with SYBAss. He writes regularly for SuperyachtNews on crew leadership and the captain’s role.",
   },
   "Capt. Pavlos Filippakis": {
     name: "Capt. Pavlos Filippakis",
@@ -39,7 +39,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Ella Johnson": {
     name: "Ella Johnson",
     avatar: "/images/contributors/ella-johnson.jpg",
-    bio: "Ella Johnson is captain of a 34 metre Baltic Yachts performance sloop. She has made four Atlantic crossings and sailed more than 30,000 nautical miles on large and smaller sailing yachts, racing and on charter, and previously captained a 70 foot sailing yacht for three years. Alongside command she has added engineering to her skills and is developing her project management.",
+    bio: "Ella Johnson is captain of a 34 metre Baltic Yachts performance sloop. She has made four Atlantic crossings and sailed more than 30,000 nautical miles on large and smaller sailing yachts, racing and on charter, and previously captained a 70 foot sailing yacht for three years. She also has working engineering knowledge and is developing her project management skills.",
   },
   "Simon Roberts": {
     name: "Simon Roberts",
