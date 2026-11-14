@@ -1,0 +1,944 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "A USD 30 million yacht held for five years at moderate use will typically have lost USD 9 to 13 million in value",
+    "new": "A USD 30 million yacht held for five years at moderate use will typically have lost USD 9 to 15 million in value",
+    "kind": "fact",
+    "reason": "Research pass set year-five loss at 30 to 50 percent; 30 to 50 percent of USD 30 m is USD 9 to 15 m, not 9 to 13 m."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Chapter 1 gives the general curve: about 30 to 43 percent lost by year five,",
+    "new": "Chapter 1 gives the general curve: about 30 to 50 percent lost by year five,",
+    "kind": "fact",
+    "reason": "Align with ch01 corrected depreciation (Yatco/IYC, 30 to 50 percent by year five)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Lloyd’s yacht line ran loss ratios above 100 percent for several consecutive years (2015: roughly GBP 150 million premium against GBP 210 million claims), and only around 5 percent of yacht premium written returned a profit between 2011 and 2017.",
+    "new": "The Lloyd’s yacht line ran loss ratios above 100 percent for several consecutive years: in 2015 it collected about GBP 150 million of premium and paid about GBP 210 million of claims, a loss ratio of 140 percent (SuperyachtNews, August 2018), and in 2017 it incurred GBP 232.8 million of losses against about GBP 150.1 million of premium (The Insurer, as reported by BOAT International, November 2019).",
+    "kind": "fact",
+    "reason": "2015 figure sourced to SuperyachtNews 10 Aug 2018; 2017 figure added from the BOAT International piece already cited; '5 percent profitable 2011 to 2017' found only in an unlocatable secondary source and cut."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The market is becoming harder to buy correctly, not easier.",
+    "new": "Slots at the established yards are scarce, and the published brokerage figures now show which yachts are priced to sell.",
+    "kind": "line",
+    "reason": "Standfirst restated from the corrected essay (E0, E15) without the 'not X' formula."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "Conflicts, commissions, retrocessions, and the captain’s role at the centre of it. Said plainly.",
+    "new": "Who pays the broker, the referral fees that travel with introductions, the written-disclosure standard, and where the captain sits among them.",
+    "kind": "line",
+    "reason": "Standfirst now names the written-disclosure standard the chapter sets; 'Said plainly' dropped."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "The captain hire, the crew structure, the compliance reality, the insurance market, and the charter economics that almost never work.",
+    "new": "The captain hire, the crew, compliance, the insurance market, and whether charter pays, which for most yachts it does not.",
+    "kind": "fact",
+    "reason": "Matches the essay and ch01 (most charter yachts subsidise; one of four published cases profitable) rather than 'almost never'."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "The structural decision few first-time buyers spend enough time on. Operating cost, environmental footprint, racing pedigree, and the case for sail.",
+    "new": "Operating cost, crew, carbon, resale and hybrid drive, compared at the same length before a first-time buyer defaults to motor.",
+    "kind": "line",
+    "reason": "Unsupported generalisation removed; standfirst now lists what the corrected chapter covers, including hybrid."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "Operating cost, crew, carbon, range and resale compared honestly across motor, sail and hybrid drive, for a buyer inclined to default to motor.",
+    "new": "Operating cost, crew, carbon, range and resale compared across motor, sail and hybrid drive, for a buyer inclined to default to motor.",
+    "kind": "line",
+    "reason": "'Honestly' implies other treatments are dishonest (structural read s.5)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Buyer B’s yacht was offered for charter in the second season, generated",
+    "new": "Buyer B’s yacht was offered for charter in its first season under his ownership, generated",
+    "kind": "fact",
+    "reason": "Timeline: a 2025 purchase relisted in early 2026 cannot have had a second charter season first."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The free advice that cost GBP 400,000.",
+    "new": "The free advice that cost GBP 320,000.",
+    "kind": "fact",
+    "reason": "Case items re-totalled (working in sweep report)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Each introduction carried a referral economics he was not told about. The fee saving on the broker engagement was approximately GBP 75,000. The cost of the structure across year one was approximately GBP 400,000.",
+    "new": "Each introduction carried referral economics he was not told about. The fee saving on the broker engagement was approximately GBP 75,000. The cost of the structure across year one was approximately GBP 320,000.",
+    "kind": "fact",
+    "reason": "Grammar; total aligned with the itemised figures."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The management company was a recognised industry firm, on a EUR 5.2 m annual contract. The buyer was told, accurately, that this was a market-rate structure. He was not told that the brokerage held a referral relationship with the management company. The introductory referral on the contract, paid from the management company’s side, was approximately GBP 250,000 in year one.",
+    "new": "The management company was a recognised industry firm, contracted to run an annual operating budget of EUR 2.8 m. The buyer was told, accurately, that this was a market-rate structure. He was not told that the brokerage held a referral relationship with the management company. The introductory referral, 10 percent of the year-one budget and paid from the management company’s side, was EUR 280,000, approximately GBP 240,000.",
+    "kind": "fact",
+    "reason": "EUR 5.2 m was neither a plausible fee nor a plausible budget for a EUR 19 m 38 m yacht (27 percent of value against ch01's 12 to 15 percent); now a managed budget of 14.7 percent of value, with the 10 percent referral basis from ch03 para 19."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "A 5 percent retrocession back to the brokerage on this job was approximately EUR 90,000. The buyer paid the paint contractor in full; the GBP 80,000 of the EUR 90,000 sterling-equivalent did not appear on the buyer’s invoices.",
+    "new": "A 5 percent retrocession back to the brokerage on this job was approximately EUR 90,000, about GBP 76,000. The buyer paid the paint contractor in full, and none of the retrocession appeared on the buyer’s invoices.",
+    "kind": "line",
+    "reason": "Unclear currency sentence (structural read C26) restated."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Across year one alone, the referral and retrocession economics flowing from his counterparties to the introducing brokerage were approximately GBP 400,000.",
+    "new": "Across year one alone, the referral and retrocession economics flowing from his counterparties to the introducing brokerage were approximately GBP 320,000: about GBP 240,000 on the management contract, GBP 76,000 on the repaint, and about GBP 3,000 each on the insurance and recruitment referrals.",
+    "kind": "fact",
+    "reason": "Total now equals the items (working in report)."
+  },
+  {
+    "file": "content/cases.json",
+    "deleteParagraph": {
+      "slug": "03-how-the-industry-works",
+      "startsWith": "Free advice is the most expensive advice in this industry. T"
+    },
+    "kind": "repetition",
+    "reason": "Pull quote attributed to 'Chapter 03, lead essay' does not appear in the corrected essay; removed."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Year two operating cost, including the same suppliers but on directly negotiated terms with full disclosure, was approximately GBP 270,000 lower than year one. The buyer concluded that the structure he had been working in had cost him, conservatively, GBP 250 to 400 k per year while it was in place.",
+    "new": "Year two operating cost, with the same suppliers on directly negotiated terms and full disclosure, and leaving the one-off repaint aside, was approximately GBP 240,000 lower than year one. The buyer concluded that the structure he had been working in had cost him about GBP 240,000 a year while it was in place, and about GBP 320,000 in year one with the repaint.",
+    "kind": "fact",
+    "reason": "Recurring cost aligned with the recurring referral items."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Renegotiating supplier relationships at year two, with full disclosure of the original referral economics, is the single most consequential cost-reduction step available to a first-year owner.",
+    "new": "Renegotiating supplier relationships at year two, with full disclosure of the original referral economics, is among the largest cost reductions open to a first-year owner.",
+    "kind": "line",
+    "reason": "'Most consequential' reserved for the captain hire (structural read s.5)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Free broker advice: the case that cost GBP 400,000",
+    "new": "Free broker advice: the case that cost GBP 320,000",
+    "kind": "fact",
+    "reason": "SEO title aligned with corrected total."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The seller’s broker had described the engines as “good for the next class period.” Class period was four years.",
+    "new": "The seller’s broker had described the engines as “good for the next class period.” The next class renewal was five years away.",
+    "kind": "fact",
+    "reason": "The case's own five-year class survey cycle (para 0) contradicted 'four years'."
+  },
+  {
+    "file": "content/cases.json",
+    "deleteParagraph": {
+      "slug": "04-acquisition-process",
+      "startsWith": "The survey is the moment at which the asymmetry between buyer"
+    },
+    "kind": "repetition",
+    "reason": "Unattributed pull quote; the essay passage it repeated was cut in the ch04 pass."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "the buyer would have closed at EUR 22 m and absorbed the EUR 2.0 to 2.4 m of remediation across his first three years of ownership.",
+    "new": "the buyer would have closed at EUR 22 m and absorbed the EUR 2.0 to 2.4 m of remediation in the years that followed.",
+    "kind": "fact",
+    "reason": "Para 7 spreads the remediation over the hold, not three years."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Without a defined procedure with pre-agreed unit rates and third-party quote rights, the owner is open to being forced",
+    "new": "The owner is open to being forced",
+    "kind": "fact",
+    "reason": "Blockquote trimmed to the words the ch05 essay presents as Gibbons's quotation; the opening clause is the essay's paraphrase."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Practitioner contingency reserves of 15 to 25 percent are sized for what opened-up vessels typically need.",
+    "new": "Practitioner contingency reserves of 10 to 25 percent, set by how far the hull has been opened before, cover hidden work; they do not cover a doubling.",
+    "kind": "fact",
+    "reason": "Aligned with ch06 essay bands (10 to 15, 15 to 20, 20 to 25)."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Across a decade of not-owning, on the practitioner average, the buyer would have spent approximately USD 30 to 45 m on a 49 m yacht acquisition, operating cost, and depreciation. He chose to deploy that capital into a property programme, a venture investment portfolio, and a charter relationship that gives him 30 to 40 days a year on similar-grade yachts without owning any of them. The total cost of his alternative architecture, across the decade, is approximately USD 12 to 18 m. The arithmetic is approximately USD 15 to 25 m of capital not committed to the asset class he had been ready, at week 25, to enter.",
+    "new": "On the book’s figures, owning the 49 m yacht for a decade would have cost approximately USD 42 to 53 m. Operating cost at 12 to 15 percent a year on a price of about USD 25 m (EUR 22.5 m) comes to USD 30 to 38 m over ten years, and the chapter 1 curve puts the loss of value by year ten at 48 to 62 percent, a further USD 12 to 15.5 m. He chose instead a charter relationship that gives him 30 to 40 days a year on similar-grade yachts without owning any of them, at approximately USD 12 to 18 m across the decade, and put the capital the yacht would have tied up into a property programme and a venture investment portfolio. On those ranges the decade costs him approximately USD 24 to 41 m less than ownership would have, and the purchase price stays outside an asset class he had been ready, at week 25, to enter.",
+    "kind": "fact",
+    "reason": "Decade arithmetic rebuilt from ch01 cost and depreciation bands with working shown; old figures double-counted the purchase and mixed investment with cost."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Depreciation curves are published in broker-aggregated series (Yatco, IYC, Yacht Hunter).",
+    "new": "Yatco and IYC publish broker-aggregated rates; Yacht Hunter argues against fixed schedules.",
+    "kind": "fact",
+    "reason": "Yacht Hunter publishes no curve (research pass)."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The yacht will absorb 40 to 60 days a year of owner attention.",
+    "new": "Chapter 9’s case puts owner attention on a 49 m yacht at 40 to 60 days a year.",
+    "kind": "fact",
+    "reason": "The figure is one adviser's estimate in the ch09 case, not a general rule."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The contract is set by closing. The acquisition window is the first ten weeks.",
+    "new": "The contract is set by closing. Most of the work falls in the first ten weeks.",
+    "kind": "fact",
+    "reason": "The acquisition window is 12 to 24 weeks (essay para 0); ten weeks is where the work concentrates."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Contract structured to protect the buyer’s interests in flag-state interactions, ISM and MLC compliance, and audit cycles.",
+    "new": "Contract structured to protect the buyer’s interests in flag-state interactions, ISM and MLC compliance where they apply, and audits.",
+    "kind": "fact",
+    "reason": "ISM is mandatory only at 500 GT and above in trade; MLC applies to commercial operation (ch07 para 25). Same length."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The reserve tested against the empirical 30 to 50 percent overrun pattern.",
+    "new": "The reserve tested against the industry 30 to 50 percent overrun pattern.",
+    "kind": "fact",
+    "reason": "ch06 now describes the pattern as industry consensus, not measured data."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "HVO is a drop-in diesel replacement at 85 to 90 percent lifecycle CO2 reduction; bunker availability is strongest in the Mediterranean.",
+    "new": "HVO is a drop-in diesel replacement with lifecycle emissions up to about 90 percent lower, by feedstock; supply is strongest in the Mediterranean.",
+    "kind": "fact",
+    "reason": "Aligned with ch08 para 15 ('up to about 90 percent ... depending on the feedstock')."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Year one typically sees 10 to 20 percent decline from purchase price. Years two to five show a further 6 to 8 percent a year, compounding. On those rates a typical hull has lost about 30 to 43 percent of its original value by year five.",
+    "new": "Broker-published figures put the first-year loss at 10 to 15 percent (Yatco) or 10 to 20 percent (IYC), followed by about 5 percent a year on Yatco’s figures. Together they put the typical loss by year five at about 30 to 50 percent of the purchase price.",
+    "kind": "fact",
+    "reason": "Aligned with corrected ch01 para 15 (Yatco/IYC, October 2025)."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Stewart Campbell, Managing Director of BOAT International, identifies the 100 percent depreciation provision in the United States’ One Big Beautiful Bill Act as the largest single driver of the 2025 surge.",
+    "new": "Knight Frank’s Wealth Report 2026 names US demand as the biggest catalyst of the 2025 rise, with US buyers rushing to close before the year end once the One Big Beautiful Bill Act reintroduced a 100 percent depreciation bonus.",
+    "kind": "fact",
+    "reason": "Research pass: the 'biggest catalyst' attribution is Knight Frank's, not Campbell's."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "US buyers account for up to 50 percent of all yacht transactions and yachts over 70 metres rose 60 percent year on year.",
+    "new": "US buyers account for 45 to 50 percent of yacht transactions, and sales of yachts over 70 metres rose 60 percent year on year.",
+    "kind": "fact",
+    "reason": "Matches ch02 paras 17 and 21."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "It is permitted in most jurisdictions provided it is disclosed. The standard MYBA and IYBA agreements include a dual-agency clause that the buyer signs with the central agent. Disclosure beyond that boilerplate, including any retrocession arrangements with introducing parties, is typically not volunteered. Asking is the discipline. Buyers who want clean alignment engage a buyer-side adviser whose only role is the buyer’s interest.",
+    "new": "California requires explicit dual-agency disclosure, and Florida’s transactional-brokerage rules dilute full agency duties by default. The IYBA Purchase and Sale Agreement contains a dual-agency clause that amounts to pre-emptive consent. Disclosure beyond that clause, including any retrocession arrangements with introducing parties, is not always volunteered. The book’s standard is written disclosure of the role and the payment; a buyer who wants an adviser acting only for them engages an independent adviser (owner’s representative).",
+    "kind": "fact",
+    "reason": "ch03 paras 7 and 9 name only the IYBA clause and the California/Florida rules; disclosure standard applied."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Retrocessions are legal in most jurisdictions provided they are disclosed. The structural problem is that disclosure is typically not volunteered. The OnboardOnline legal column has stated the position plainly.",
+    "new": "OnboardOnline’s legal column states that referral fees are legal only if disclosed, must be reflected in the closing statement to seller and buyer, and that undisclosed payments to a captain are potentially criminal. No equivalent rule compels a brokerage to disclose retrocessions on ongoing services.",
+    "kind": "fact",
+    "reason": "'Legal in most jurisdictions' unsourced; restated from ch03 para 18."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The acquisition window for a brokerage hull is typically 12 to 24 weeks from offer to closing.",
+    "new": "The acquisition window for a brokerage hull is typically 12 to 24 weeks from shortlist to closing.",
+    "kind": "fact",
+    "reason": "Matches ch04 standfirst and para 0."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Stephenson Harwood, HFW, Hill Dickinson, Watson Farley, Reed Smith are recognised firms.",
+    "new": "Hill Dickinson, Watson Farley & Williams, Ince, Stephenson Harwood and Reed Smith are recognised firms.",
+    "kind": "fact",
+    "reason": "Aligned with the ch04 essay list (para 23)."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Cayman Islands carries the highest reputational weight, REG Category 1 with MCA-equivalent oversight.",
+    "new": "Cayman Islands is a Red Ensign Group Category 1 register with MCA-equivalent oversight.",
+    "kind": "fact",
+    "reason": "Unsourced superlative removed."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "the deficiency snag list at delivery ran to 1,200 items against the 100 the family office reported.",
+    "new": "the delivery snag list exceeded 1,200 items against the family office’s reported figure of around 100.",
+    "kind": "fact",
+    "reason": "Matches ch05 para 7."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Refit cost runs from 10 to 60 percent of pre-refit market value depending on scope. Mid-life refits at year five to seven typically cover paint, soft furnishings, and selective system upgrades. Full refits at year ten to fifteen include structural and propulsion work and can run 30 to 60 percent of pre-refit value.",
+    "new": "A five-year survey or major refit typically runs 5 to 15 percent of insured hull value, depending on scope. On the publisher’s project archive a mid-life refit runs EUR 10,000 to 30,000 per metre and a major structural refit EUR 40,000 to 100,000 or more per metre, so EUR 2 to 5 million on a 50 metre yacht. Annual maintenance runs EUR 2,000 to 8,000 per metre a year.",
+    "kind": "fact",
+    "reason": "Unsourced 10 to 60 percent range replaced with the essay's figures (ch06 paras 17 to 19)."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel should select",
+    "new": "MB92, Astilleros de Mallorca and several smaller Spanish yards are equipped for it. France and Italy treat refit VAT under different rules. Independent counsel should select",
+    "kind": "fact",
+    "reason": "Aligned with ch06 para 45; STP's customs-site status is not stated in the essay."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Genuinely independent firms include Foreland Marine, A2B Marine Projects, ULTIMAR, Divergent Yachting, Mariner Technical Services, JMS Yachting, ABL Yachts, KRM Yacht, Saor Alba, and Occam Naval Architecture and Project Management.",
+    "new": "Firms working as owner’s representatives paid only by the owner include A2B Marine Projects, ULTIMAR, Divergent Yachting, Mariner Technical Services, JMS Yachting, ABL Yachts, KRM Yacht, Saor Alba, Occam Naval Architecture and Project Management, and Foreland Marine, the publisher of this reference.",
+    "kind": "line",
+    "reason": "Matches ch05 para 53 wording; publisher listed last and identified (house rule on self-reference)."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Brokerages with new build arms (Edmiston, Burgess, Y.CO, Ocean Independence, Camper & Nicholsons, Fraser, Cecil Wright, Moran), yacht management firms extending into new build, and naval architects acting as owner’s representatives all carry structural conflicts. Disclosure of the conflict is required; the buyer’s response is to weight the advice accordingly.",
+    "new": "Brokerages with new build arms (Edmiston, Burgess, Y.CO, Ocean Independence, Camper & Nicholsons, Fraser, Cecil Wright, Moran), yacht management firms extending into new build, and naval architects acting as owner’s representatives can carry conflicts: the same group may have introduced the yard and may be paid by it. The book’s standard is written disclosure of any such payment, its amount and who makes it; the buyer then weighs the advice against it.",
+    "kind": "fact",
+    "reason": "Absolute 'all carry structural conflicts' qualified to ch05 para 57; disclosure standard."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The record brokerage totals above and the preserve-first capital below are the two halves of the same market.",
+    "new": "The record brokerage totals later in this spread and the preservation-first capital above are two halves of the same market.",
+    "kind": "line",
+    "reason": "The note sits after the family-office data and before the brokerage totals."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Most first-time buyers reach this market through a family office, yet only a quarter of single family offices handle a yacht in-house.",
+    "new": "Many first-time buyers reach this market through a family office, yet only a quarter of Swiss single family offices handle a yacht in-house.",
+    "kind": "fact",
+    "reason": "ch09 para 1 says 'many'; the survey covers Swiss offices only."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Most first-time buyers reach this market through a family office. But the family office is a lean investment shop,",
+    "new": "Many first-time buyers reach this market through a family office. The typical Swiss single family office is a lean investment shop,",
+    "kind": "fact",
+    "reason": "As above."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": " The structure, said plainly.\",",
+    "new": "\",",
+    "kind": "line",
+    "reason": "Closing declaration cut."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Referral fees from supplier counterparties to the introducing broker are not on the broker’s invoice to the owner because the broker is not invoicing the owner. The numbers are not small.",
+    "new": "Referral fees from supplier counterparties to the introducing broker are not on the broker’s invoice to the owner because the broker is not invoicing the owner.",
+    "kind": "line",
+    "reason": "Closing declaration cut."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "There is no financial regulator anywhere in the major jurisdictions that supervises yacht brokerage conduct.",
+    "new": "Beyond state rules such as California’s and Florida’s, no major jurisdiction has a financial regulator that supervises yacht brokerage conduct.",
+    "kind": "fact",
+    "reason": "Matches ch03 para 9, which cites the state rules in the same table."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "On the record: the system actively rewards opacity.",
+    "new": "Practitioner commentary attributed to him at industry events: the system can reward opacity. Northrop & Johnson states a commitment to full transparency.",
+    "kind": "fact",
+    "reason": "ch03 para 5 presents this as attributed practitioner opinion, not an on-record quotation."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Stage payment loading\",\n            \"50–70 percent before delivery\",\n            \"Watson Farley & Williams\"",
+    "new": "\"Stage payment loading\",\n            \"40 percent or more before delivery in commercial shipbuilding; in custom yacht work well over half, up to 90 percent\",\n            \"Watson Farley & Williams; MacNally, citing Port Royal Group\"",
+    "kind": "fact",
+    "reason": "ch05 para 26 corrected figure (WFW, per TSR 230)."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Yard published statements; Superyacht Group 2025 expert roundtable (paywalled); BOAT International coverage; practitioner working knowledge.",
+    "new": "Yard published statements; BOAT International expert roundtable, February 2026 (paywalled); BOAT International coverage; practitioner working knowledge.",
+    "kind": "fact",
+    "reason": "Research pass: the roundtable is BOAT International's (Gemma Harris, 9 Feb 2026), not The Superyacht Group's."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"label\": \"Superyacht Group 2025 expert roundtable\",\n        \"line\": \"Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben), Txema Rubio (MB92). Paywalled.\",\n        \"url\": \"https://www.thesuperyachtgroup.com/\"",
+    "new": "\"label\": \"BOAT International expert roundtable, February 2026\",\n        \"line\": \"Gemma Harris, with Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben) and Txema Rubio (MB92). Paywalled; the published introduction cites BOATPro data on fleet growth of 38.7 percent over the past decade.\",\n        \"url\": \"https://www.boatinternational.com/boat-pro/superyacht-insight/expert-roundtable-superyacht-refit-state-of-the-market\"",
+    "kind": "fact",
+    "reason": "Source corrected to the BOAT International roundtable cited in the ch06 essay (research pass item 7)."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Rates hardened from 2022 after sustained Lloyd’s yacht underwriting losses (GBP 232.8 m of losses against GBP 150.1 m of premium in 2017; 75 percent of 69 yacht-writing syndicates unprofitable), peaked in 2024 and have since softened.",
+    "new": "Rates first hardened in 2018 and 2019 after sustained Lloyd’s yacht underwriting losses (about GBP 210 m of claims against GBP 150 m of premium in 2015; GBP 232.8 m of losses against GBP 150.1 m of premium in 2017, when 75 percent of 69 yacht-writing syndicates were unprofitable). They rose again from 2022, peaked in 2024 and have since softened.",
+    "kind": "fact",
+    "reason": "The 2017 losses preceded the 2018 to 2019 hardening, not 2022 (ch07 para 31); 2015 figure sourced to SuperyachtNews, Aug 2018."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Ollie Davis, PIB Marine (May 2026).\"\n      },\n      {\n        \"type\": \"chart\",\n        \"chartId\": \"hull-rate-movement\"\n      },",
+    "new": "Ollie Davis, PIB Marine (May 2026); SuperyachtNews (August 2018) on 2015 Lloyd’s yacht results.\"\n      },",
+    "kind": "fact",
+    "reason": "Hull-rate chart removed: its plotted values (0.7 to 1.25 percent) have no published basis; the table above carries the cycle from named sources."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Regulated under federal law (Coast Guard and the Jones Act). Foreign-flagged yachts cannot embark and disembark passengers between US ports under standard charter,",
+    "new": "Regulated under federal law (Coast Guard and the Passenger Vessel Services Act, part of the US cabotage rules often grouped with the Jones Act). Foreign-flagged yachts cannot carry passengers between US ports under standard charter,",
+    "kind": "fact",
+    "reason": "The passenger restriction is the Passenger Vessel Services Act (46 U.S.C. 55103); the Jones Act governs cargo."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Royal Huisman, Vitters, Baltic, Perini Navi, Wally, Pendennis, Nautor Swan\"",
+    "new": "\"Royal Huisman, Vitters, Baltic, Wally, Pendennis, Nautor Swan\"",
+    "kind": "fact",
+    "reason": "ch08 para 1 no longer lists Perini Navi (in TISG restructuring, ch05 para 13)."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Indicative annual operating cost, 50 m at moderate use (8 to 10 weeks family use). Practitioner working ranges; motor figure on Mediterranean operation, 400 cruising hours.",
+    "new": "Indicative annual operating cost, 50 m at moderate use (8 to 10 weeks family use). Practitioner working ranges; motor figure on Mediterranean operation, 400 cruising hours. The five lines shown exclude management fees, compliance, provisioning and contingency, which chapter 1 puts at roughly 15 to 25 percent of the full budget; crew is therefore about half of the lines shown and 30 to 40 percent of the whole.",
+    "kind": "fact",
+    "reason": "Without the note the table implied crew at about half of total cost, against 30 to 40 percent in ch01."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Total annual operating cost\"",
+    "new": "\"Total of the lines shown\"",
+    "kind": "fact",
+    "reason": "Row is the sum of the five lines, not the full budget."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Sustainability identified as a top-three concern for next-generation HNWIs.",
+    "new": "Sustainability identified as a major concern for next-generation HNWIs.",
+    "kind": "fact",
+    "reason": "Aligned with ch08 para 17 wording; 'top-three' unverified."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "More wealth has been created in fewer hands than at any point in recorded economic history. The reader of The First Owner’s Reference is one of two profiles.",
+    "new": "Many readers of The First Owner’s Reference are one of two kinds of buyer: a principal who has recently sold a business, or an heir. The figures behind both.",
+    "kind": "fact",
+    "reason": "Unsourced superlative removed; matches ch02 para 5 and ch09 para 1."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Zero, across 80 pages and 317 family offices\"",
+    "new": "\"None (2025: 80 pages, 317 family offices; 2026: 307 family offices)\"",
+    "kind": "fact",
+    "reason": "ch09 para 0 gives 307 offices for the 2026 edition."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "First reference to superyachts in the family office portfolio architecture.",
+    "new": "Family Office Survey 2026 (more than 40 offices) names superyachts for the first time, among the assets family offices want to track in one place.",
+    "kind": "fact",
+    "reason": "Matches ch09 para 1; 'portfolio architecture' overstated the survey."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Sub-agency arrangements split the commission between the central agent and any introducing broker, typically at 50/50 on the seller side.",
+    "new": "Sub-agency arrangements pay any introducing broker out of the seller’s commission, typically half of it or a little less.",
+    "kind": "fact",
+    "reason": "Matches ch03 para 4 and ch06 para 11."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "\"When a single brokerage represents both buyer and seller in a transaction. The conflict of interest is structural and may not always be disclosed in writing.\"",
+    "new": "\"When a single brokerage represents both buyer and seller in a transaction. The book’s standard is written disclosure of the role and of the payment.\"",
+    "kind": "fact",
+    "reason": "Disclosure standard (ch03 para 25)."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Dual agency is permitted in most yacht-broking jurisdictions provided it is disclosed. The standard MYBA and IYBA agreements include a dual-agency clause that the buyer signs with the central agent. Disclosure beyond that boilerplate, including any retrocession arrangements with introducing parties, is typically not volunteered.",
+    "new": "California requires explicit dual-agency disclosure, and Florida’s transactional-brokerage rules dilute full agency duties by default. The IYBA Purchase and Sale Agreement contains a dual-agency clause that amounts to pre-emptive consent, with carve-outs that stop the broker acting fully for either side. Disclosure beyond that clause, including any retrocession arrangements with introducing parties, is not always volunteered.",
+    "kind": "fact",
+    "reason": "ch03 paras 7 and 9 name the IYBA clause only."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "\"An independent professional appointed by the buyer to oversee a new build or major refit. Paid by the owner, with no commercial relationship to the yard.\"",
+    "new": "\"The adviser the owner engages first and pays directly to act for the owner across an acquisition, new build or refit. This book uses “owner’s representative” and “independent adviser” for the same role.\"",
+    "kind": "fact",
+    "reason": "Defines the role as ch03 para 37 does; the terms are interchangeable (author decision 2)."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "The independence test is whether the representative’s income is contingent only on the buyer’s instructions, with no yard commission, no broker referral, and no contingent-fee arrangement on closing.",
+    "new": "The book’s standard is written disclosure: any yard commission, broker referral or fee contingent on closing is disclosed to the owner in writing, with its amount and payer, before engagement (chapter 3). On a major project the representative works at principal level and appoints a project manager for day-to-day site work.",
+    "kind": "fact",
+    "reason": "Replaces the strict no-commission test with the written-disclosure standard (author decision 1)."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Refit is the umbrella term for periodic capex on a yacht above survey-and-class minimum. Mid-life refits at year five to seven typically cover paint, soft furnishings, and selective system upgrades. Full refits at year ten to fifteen include structural and propulsion work and can run 30 to 60 percent of the yacht’s pre-refit market value. Overrun against initial budget runs 30 to 50 percent on the empirical opened-up-vessel pattern.",
+    "new": "Refit is the umbrella term for periodic capex on a yacht above survey-and-class minimum. A five-year survey or major refit typically runs 5 to 15 percent of insured hull value; on the publisher’s project archive a mid-life refit runs EUR 10,000 to 30,000 per metre and a major structural refit EUR 40,000 to 100,000 or more per metre. Industry consensus is that refits routinely run 30 to 50 percent over the original quote, partly from work that could not be seen at quote and partly from changes loose specification lets through. A practitioner rule of thumb treats refit cost above 30 percent of pre-refit market value as the point to consider selling.",
+    "kind": "fact",
+    "reason": "Aligned with ch06 paras 4 and 17 to 28."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Retrocession arrangements are legal in most jurisdictions provided they are disclosed. The structural problem is that disclosure is typically not volunteered. The OnboardOnline legal column has stated the position plainly: retrocession is permitted only where the recipient discloses it to the principal whose interests they represent.",
+    "new": "OnboardOnline’s legal column states that referral fees are legal only if disclosed, must be reflected in the closing statement to seller and buyer, and that undisclosed payments to a captain are potentially criminal. No equivalent rule compels a brokerage to disclose retrocessions on ongoing services to its yacht-owning client, so the buyer asks each introduced party for written disclosure (chapter 3).",
+    "kind": "fact",
+    "reason": "Restated from ch03 para 18."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "\"Superyacht Builders Association. Membership signals an independently audited ability to deliver new builds above 40 metres.\"",
+    "new": "\"Superyacht Builders Association. A yard becomes eligible once it has delivered three yachts over 40 metres.\"",
+    "kind": "fact",
+    "reason": "ch05 para 17 gives the three-hull eligibility rule; 'independent audit' unsourced."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "SYBAss membership is granted to yards that demonstrate, through independent audit, the capacity to deliver yachts above 40 metres. Membership covers Northern European custom yards (Feadship, Lürssen, Oceanco, Heesen, Royal Huisman, Vitters, Baltic) and a small number of Italian and Turkish builders. SYBAss founded the Yacht Owners’ Register of Representatives jointly with the Superyacht Alliance, IAMI, and GUEST.",
+    "new": "Member yards (Lürssen, Feadship, Oceanco, Heesen, Royal Huisman, Vitters, Baltic, Abeking & Rasmussen, Codecasa, CRN, Benetti, Sanlorenzo) collectively build roughly two thirds of yachts over 40 metres. SYBAss announced the Yacht Owner Representative Programme (YORP) with IAMI and GUEST in June 2023; the Yacht Owner’s Representative Register (YORR) followed in November 2024, administered by the Superyacht Alliance for Professional Standards.",
+    "kind": "fact",
+    "reason": "Member list and YORP/YORR history aligned with ch05 paras 47 and 49; register name corrected."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules.\",",
+    "new": "MB92, Astilleros de Mallorca and several smaller Spanish yards are equipped for it. France and Italy treat refit VAT under different rules.\",",
+    "kind": "fact",
+    "reason": "Aligned with ch06 para 45."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Choices include Spanish IPR, French commercial exemption, Italian leasing, and Maltese.",
+    "new": "Routes include the French Commercial Exemption and Maltese and Italian leasing on purchase and use, and Spanish inward processing on refit works.",
+    "kind": "fact",
+    "reason": "Spanish IPR covers refit works, not purchase (ch04 para 22)."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "EU member states harmonised their charter VAT treatment under Council pressure between 2018 and 2020; length-based reductions were withdrawn and replaced with effective-use approaches.",
+    "new": "Under European Commission infringement procedures opened in 2018, length-based reductions were withdrawn and replaced with effective-use approaches: Malta under guidelines of 12 March 2020, Italy from 1 November 2020 (chapter 4).",
+    "kind": "fact",
+    "reason": "Commission infringement, not Council; dates from ch04 para 22."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Inclusion requires demonstrated independence from yards, brokers, and management companies, the SYBAss-aligned YORP training (practitioners with three or more approved large refit or new build projects can register via Unit 40 alone; all other candidates complete the full 200-hour programme over four courses), a CV audit, and a documented track record on builds above 40 metres.",
+    "new": "Inclusion requires the YORP training (practitioners with verified projects can register via Unit 40 alone until 30 June 2027; other candidates complete the four courses, more than 200 hours in all), a CV audit, and endorsement of a code of conduct under which any commission, such as one on the tender, is disclosed to the owner in writing in advance.",
+    "kind": "fact",
+    "reason": "Aligned with ch05 paras 47 and 55: disclosed commission is permitted; transitional route closes 30 June 2027."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "the published Inglis case at ULTIMAR documented 1,200 items where the family office’s own count was 100.",
+    "new": "the published Inglis case at ULTIMAR documented more than 1,200 items where the family office’s reported count was around 100.",
+    "kind": "fact",
+    "reason": "Matches ch05 para 7."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Industry-typical loading is 50 to 70 percent of contract value before delivery.\",",
+    "new": "Commercial shipbuilding puts 40 percent or more of the price before delivery; custom yacht work routinely well over half.\",",
+    "kind": "fact",
+    "reason": "ch05 para 26 corrected figure."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Industry-typical loading is 50 to 70 percent of contract value paid before delivery, with the balance at delivery and final acceptance.",
+    "new": "Commercial shipbuilding lawyers put the share paid before delivery at 40 percent or more (Watson Farley & Williams); in custom yacht work it is routinely well over half, and on some projects as much as 90 percent (chapter 5). The balance is paid at delivery and final acceptance.",
+    "kind": "fact",
+    "reason": "ch05 para 26 corrected figure."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "allowing up to 100 percent first-year depreciation on yachts placed in commercial service between 2025 and 2029.",
+    "new": "allowing 100 percent first-year bonus depreciation on qualifying business yachts acquired on or after 20 January 2025, made permanent by the Act.",
+    "kind": "fact",
+    "reason": "Contradicted its own long definition and ch07 para 56 (permanent, acquired on or after 20 January 2025)."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "standfirst=\"Senior crew pay continues to outpace inflation; junior pay has plateaued.\"",
+    "new": "standfirst=\"Senior crew pay continues to rise; junior pay has plateaued.\"",
+    "kind": "fact",
+    "reason": "\"Outpace inflation\" unsourced; ch07 para 12 says senior pay continues to rise."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "caption=\"Average monthly pay range, in EUR thousand. Quay Crew records 7 percent year-on-year growth in the 70 to 79 m bracket; 63 percent of captains now on time-for-time rotation. Sources publish no separate 60 to 70 m band.\"",
+    "new": "caption=\"Average monthly pay range, in EUR thousand. Quay Crew records 7 percent growth in the 70 to 79 m bracket since its 2023 survey; 63 percent of captains surveyed are on time-for-time rotation. Sources publish no separate 60 to 70 m band.\"",
+    "kind": "fact",
+    "reason": "The 7 percent is against the 2023 survey, not year on year (ch07 para 3)."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "source=\"Quay Crew Superyacht Captain Salary & Leave Report 2025/26.\"\n    >\n      <RangeBars\n        domainMax={28}",
+    "new": "source=\"YPI Crew 2026 salary guide; Quay Crew Superyacht Captain Salary & Leave Report 2025/26.\"\n    >\n      <RangeBars\n        domainMax={28}",
+    "kind": "fact",
+    "reason": "50 to 60 m and 80 to 99 m bands are YPI Crew figures."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "note: \"Up 7 percent year on year\"",
+    "new": "note: \"Up 7 percent on 2023\"",
+    "kind": "fact",
+    "reason": "As above."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "standfirst=\"Cumulative loss from purchase price. Quality builders hold value materially better after year five; the band below is the broker-aggregated typical curve.\"",
+    "new": "standfirst=\"Cumulative loss from purchase price, typical hull. Quality builders hold value materially better after year five, but no published curve separates them, so only the typical band is plotted.\"",
+    "kind": "fact",
+    "reason": "The quality-builder series had no source (research pass); removed."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "          {\n            name: \"Quality builder\",\n            emphasis: true,\n            values: [\n              { x: 1, y: 10 },\n              { x: 2, y: 14 },\n              { x: 3, y: 18 },\n              { x: 5, y: 26 },\n              { x: 7, y: 30 },\n              { x: 10, y: 36 },\n            ],\n          },\n",
+    "new": "",
+    "kind": "fact",
+    "reason": "Unsourced quality-builder series removed."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "standfirst=\"The United States accounts for an increasing share. The structural narrowing of supply against an expanding demand pool is the supply story behind the 2025 brokerage record.\"",
+    "new": "standfirst=\"The United States accounts for an increasing share: 33 percent in 2021, 35 percent in 2026 and a forecast 41 percent by 2031.\"",
+    "kind": "fact",
+    "reason": "ch02 no longer argues narrowing supply as the driver of the 2025 record; Knight Frank names US demand and the depreciation bonus."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "  \"hull-rate-movement\": () => (\n    <ChartFrame\n      number=\"07.02\"\n      title=\"Hull insurance rate movement, 2022 to 2026\"\n      standfirst=\"Rates rose through 2022 and 2023 and had largely stopped rising by the first half of 2024. The Bayesian sinking in August 2024 prompted selective tightening rather than blanket rate rises. For 2026, PIB Marine expects hull rates to be flat or to rise marginally with inflation.\"\n      caption=\"Indicative hull rate trajectory, well-maintained 40 to 50m yacht. Vertical reference marks the Bayesian event.\"\n      source=\"Pantaenius market notes; Ollie Davis, PIB Marine, interviewed for chapter 7. Plotted values are indicative, not a published index.\"\n    >\n      <LineChart\n        xDomain={[2022, 2026]}\n        yDomain={[0, 2]}\n        xTicks={[2022, 2023, 2024, 2025, 2026]}\n        yTicks={[0, 0.5, 1, 1.5, 2]}\n        yUnit=\"%\"\n        yUnitLabel=\"hull rate, percent of insured value\"\n        annotations={[\n          { x: 2024.6, label: \"Bayesian sinking\", align: \"above\" },\n        ]}\n        series={[\n          {\n            name: \"Hull rate, well-maintained 40 to 50 m\",\n            emphasis: true,\n            values: [\n              { x: 2022, y: 0.7 },\n              { x: 2023, y: 1.15 },\n              { x: 2024, y: 1.25 },\n              { x: 2025, y: 1.2 },\n              { x: 2026, y: 1.2 },\n            ],\n          },\n        ]}\n      />\n    </ChartFrame>\n  ),\n\n",
+    "new": "",
+    "kind": "fact",
+    "reason": "Hull-rate chart removed: plotted values (0.7 to 1.25 percent, a 79 percent rise 2022 to 2024) have no published basis; the ch07 spread table carries the cycle from named sources."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "caption=\"Indicative cost split, EUR million per year, moderate use (8 to 10 weeks family use). Fuel modelled at Mediterranean rates, 400 cruising hours.\"",
+    "new": "caption=\"Indicative cost split, EUR million per year, moderate use (8 to 10 weeks family use). Fuel modelled at Mediterranean rates, 400 cruising hours. Totals are the five lines shown; management, compliance, provisioning and contingency are excluded.\"",
+    "kind": "fact",
+    "reason": "Totals are not the full budget; avoids implying crew at half of all cost (ch01: 30 to 40 percent)."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "total: \"EUR 3.7 m total\"",
+    "new": "total: \"EUR 3.7 m, lines shown\"",
+    "kind": "fact",
+    "reason": "As above."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "total: \"EUR 2.9 m total\"",
+    "new": "total: \"EUR 2.9 m, lines shown\"",
+    "kind": "fact",
+    "reason": "As above."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "name: \"Typical hull\",",
+    "new": "name: \"Typical hull\",\n            emphasis: true,",
+    "kind": "line",
+    "reason": "Sole remaining series takes the emphasis styling."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "to EUR 2.3 to 2.8 million for a 50-metre motor yacht at moderate use, to EUR 7 to 8 million for an 80-metre running two seasons a year. The main cost categories are crew (40 to 50 percent of the total),",
+    "new": "to EUR 2.3 to 2.8 million for a 50-metre motor yacht at moderate use in this calculator's model, to EUR 7 to 8 million for an 80-metre running two seasons a year. The model is calibrated against Christie Yachts' published budgets; a new-build 50-metre yacht priced in the tens of millions runs higher on the percentage bands in chapter 1. The main cost categories are crew (30 to 40 percent of the total),",
+    "kind": "fact",
+    "reason": "Crew share aligned with ch01 para 9; the model figure qualified against ch01 para 4 (EUR 5 m on a EUR 50 m build)."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "Crew costs are almost always the largest single expense, typically 40 to 50 percent of the annual budget.",
+    "new": "Crew costs are almost always the largest single expense, typically 30 to 40 percent of the annual budget.",
+    "kind": "fact",
+    "reason": "ch01 para 9."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "Management fees, regulatory compliance, and a contingency reserve of 8-10% should also be budgeted.",
+    "new": "Management fees, regulatory compliance, and a contingency reserve of 6 to 10 percent should also be budgeted.",
+    "kind": "fact",
+    "reason": "ch01 para 10."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "A 50-metre yacht with 11 to 13 crew could spend EUR 1.1 to 1.4 million, more on a dual-season programme with rotational crew.",
+    "new": "A 50-metre yacht with 11 to 13 crew, as this calculator models it, could spend EUR 1.1 to 1.4 million, more on a dual-season programme with rotational crew. Chapter 8 puts a 50-metre motor yacht in private use at 12 to 16 crew, and the salary benchmarks page puts 14 crew at EUR 1.5 to 2.4 million all in.",
+    "kind": "fact",
+    "reason": "Reconciles the model with ch08 para 5 and the crew salary page."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "Overall, a sailing yacht's annual running costs are typically 15-25% lower than a comparable motor yacht.",
+    "new": "Overall, a sailing yacht's annual running costs are typically 15 to 30 percent lower than a comparable motor yacht.",
+    "kind": "fact",
+    "reason": "ch08 para 8: 70 to 85 percent of the motor figure."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "Hull and machinery cover typically costs 0.5 to 1 percent of the yacht's insured value per year, at the upper end for older yachts and wider cruising grounds.",
+    "new": "Hull and machinery cover on a well-maintained 40 to 50 metre yacht typically costs 0.7 to 1.5 percent of insured value per year; smaller yachts and those in hurricane-exposed regions pay 2 to 5 percent.",
+    "kind": "fact",
+    "reason": "ch07 para 31."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "const hullRate = isSail ? 0.005 : 0.006;",
+    "new": "const hullRate = isSail ? 0.007 : 0.008; // low end of the 0.7 to 1.5 percent band (chapter 7)",
+    "kind": "fact",
+    "reason": "Model hull rate sat below the book's published band; set at its lower end. Adds roughly EUR 40,000 to 70,000 a year at 50 m."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "// Retained value by age, on the TFOR depreciation curve: 20 percent off in\n// year one, then 8 percent a year compounding, which leaves 57 percent at\n// year 5 (the published range is 50 to 60).",
+    "new": "// Retained value by age: 20 percent off in year one, then 8 percent a year\n// compounding, which leaves 57 percent at year 5, inside the 50 to 70 percent\n// retained that chapter 1 gives (30 to 50 percent lost).",
+    "kind": "line",
+    "reason": "Code comment aligned with corrected ch01 curve; values unchanged."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "annual budget. A 40 m motor yacht might carry a crew of seven\n              or eight,",
+    "new": "annual budget. A 40 m motor yacht might carry a crew of eight\n              or nine,",
+    "kind": "fact",
+    "reason": "ch07 para 10: 8 to 14 on 40 to 50 m."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "\"10 to 20 percent in year one, then 6 to 8 percent compounding. What a hull is worth at five years, and which builders beat the curve.\"",
+    "new": "\"10 to 20 percent in year one, then about 5 percent a year. What a hull is worth at five years, and which builders beat the curve.\"",
+    "kind": "fact",
+    "reason": "Yatco/IYC rates per ch01 para 15."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Roughly 10 to 20 percent comes off the purchase price in year one, followed by a further 6 to 8 percent annually compounding through years two to five. By year five a typical hull has lost 40 to 50 percent of its original value, after which the curve flattens. These figures are broker-aggregated from Yatco, IYC and Yacht Hunter.",
+    "new": "Yatco puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 percent by year five. IYC puts the first-year correction at 10 to 20 percent, with most yachts reaching 40 to 50 percent of their original price in five years, read here as a five-year loss of 40 to 50 percent. Together they put the typical loss by year five at about 30 to 50 percent, after which the curve flattens. Yacht Hunter's Chris Mortimer rejects fixed schedules: value, he argues, follows condition, market and comparable sales.",
+    "kind": "fact",
+    "reason": "ch01 para 15."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Typically 50 to 60 percent of its original purchase price, on the standard broker-aggregated curve. A USD 30 million yacht held five years at moderate use will normally have lost USD 12 to 15 million in value",
+    "new": "Typically 50 to 70 percent of its original purchase price, on the broker-published rates. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 15 million in value",
+    "kind": "fact",
+    "reason": "30 to 50 percent loss by year five."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "against the 6 to 8 percent compounding typical of the broader market. In the semi-custom and series segment the comparable claim is made for the larger Italian yards, with retention of roughly 55 to 65 percent of original value at ten years. The two are different segments rather than competing claims.",
+    "new": "against the roughly 5 to 8 percent a year typical of the broader market in years two to five. In the semi-custom and series segment similar claims are made for the larger Italian yards, but no published curve quantifies them.",
+    "kind": "fact",
+    "reason": "Old rate superseded; unsourced 55 to 65 percent retention figure cut."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "The exception is an owner-optimised 60 metre at 12 weeks generating up to EUR 2 million net, which requires disciplined operation, premium rates and giving up the prime weeks.",
+    "new": "The exception is a 60 metre concept, Hill Robinson's “Perfect Charter Yacht”, modelled at 12 charter weeks for a net revenue target of EUR 2 million; it is a design study rather than a trading yacht, and assumes premium rates and prime-season weeks given to charter.",
+    "kind": "fact",
+    "reason": "Research pass: the 60 m case is a Hill Robinson concept (ch01 para 20)."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Yatco, IYC and Yacht Hunter are the usual sources.",
+    "new": "Yatco and IYC publish rates; Yacht Hunter argues that fixed schedules mislead and that value follows condition, market and comparable sales.",
+    "kind": "fact",
+    "reason": "Yacht Hunter publishes no curve."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "{ year: \"Years 2 to 5\", loss: \"6 to 8 percent annually, compounding\", cumulative: \"40 to 50 percent by year 5\" },",
+    "new": "{ year: \"Years 2 to 5\", loss: \"About 5 to 8 percent a year (Yatco: about 5)\", cumulative: \"30 to 50 percent by year 5\" },",
+    "kind": "fact",
+    "reason": "ch01 table and essay."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "\"Annual and cumulative depreciation on yachts above 24 metres, by year of ownership, with the builder exceptions. Broker-aggregated from Yatco, IYC and Yacht Hunter. No independent dataset exists.\"",
+    "new": "\"Annual and cumulative depreciation on yachts above 24 metres, by year of ownership, with the builder exceptions. Broker-published rates from Yatco and IYC (October 2025). No independent dataset exists.\"",
+    "kind": "fact",
+    "reason": "Sources aligned."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "<li>Yatco, IYC and Yacht Hunter, broker-aggregated</li>",
+    "new": "<li>Yatco and IYC, broker-published rates (October 2025)</li>",
+    "kind": "fact",
+    "reason": "Sources aligned."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Broker-aggregated from Yatco, IYC and Yacht Hunter. Feadship,",
+    "new": "Broker-published rates from Yatco and IYC. Feadship,",
+    "kind": "fact",
+    "reason": "Sources aligned."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "typically have lost USD 12 to 15 million in value and consumed",
+    "new": "typically have lost USD 9 to 15 million in value and consumed",
+    "kind": "fact",
+    "reason": "30 to 50 percent of USD 30 m."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Brokers consistently advise first-time owners that charter can\n                offset ownership cost.",
+    "new": "Charter is often presented to first-time owners as a way to\n                offset ownership cost.",
+    "kind": "fact",
+    "reason": "Generalisation about brokers replaced with ch01 para 19 wording (fairness flag 2)."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "The exception is real but narrow: an owner-optimised 60 metre at\n                12 weeks can generate up to EUR 2 million net, on disciplined\n                operation, premium rates, and a willingness to give up the prime\n                weeks. Those conditions are rarely in place on a first yacht.",
+    "new": "The exception is a 60 metre concept, Hill Robinson&rsquo;s\n                &ldquo;Perfect Charter Yacht&rdquo;, modelled at 12 charter weeks\n                for a net revenue target of EUR 2 million. It is a design study\n                rather than a trading yacht, and it assumes premium rates and\n                prime-season weeks given to charter.",
+    "kind": "fact",
+    "reason": "Research pass: concept, not a trading yacht."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "Rates hardened sharply in 2022, with AIG citing 50 to 70 percent increases, after the Lloyd's yacht line ran loss ratios above 100 percent for several consecutive years. Rates stabilised by the first half of 2024. By the fourth quarter of 2025 Gallagher Specialty reported softening of 4 to 7.5 percent for fleets with good loss records. 2026 reads as stable:",
+    "new": "Rates first hardened in 2018 and 2019, when AIG spoke of 50 to 70 percent increases in the London market, after the Lloyd's yacht line ran loss ratios above 100 percent for several consecutive years, and rose again from 2022. Increases had largely stopped by the first half of 2024 and the market has since softened, though the reductions brokers published for 2025 describe commercial shipping hull and machinery rather than yachts. 2026 reads as stable:",
+    "kind": "fact",
+    "reason": "AIG figure dated 2019; Gallagher 4 to 7.5 percent not a yacht measure (ch07 para 31, research pass)."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "{ \"@type\": \"CreativeWork\", name: \"Gallagher Specialty market reporting, Q4 2025\", url: \"https://www.ajg.com\" },",
+    "new": "{ \"@type\": \"CreativeWork\", name: \"BOAT International, Superyacht insurance: why premiums are on the rise (November 2019)\", url: \"https://www.boatinternational.com/yachts/editorial-features/superyacht-insurance-why-premiums-are-on-the-rise--42091\" },",
+    "kind": "fact",
+    "reason": "Source the page now relies on."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "<li>Gallagher Specialty market reporting, Q4 2025</li>",
+    "new": "<li>SuperyachtNews, August 2018, on Lloyd&rsquo;s yacht results</li>",
+    "kind": "fact",
+    "reason": "Sources aligned."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "<li>AIG rate commentary, 2022</li>\n                <li>Lloyd&rsquo;s marine portfolio reporting</li>",
+    "new": "<li>AIG (Sean Blue), BOAT International, November 2019</li>",
+    "kind": "fact",
+    "reason": "AIG comment dated 2019; Lloyd's figures now sourced to the two articles."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "Insurance is the most consequential operational decision after\n                the captain hire and tends to be taken with the least attention.",
+    "new": "After the captain, insurance is the operating decision with the\n                most money at stake.",
+    "kind": "line",
+    "reason": "Matches ch07 para 30; \"most consequential\" reserved for the captain."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "The hardened market of 2022, with AIG citing 50 to 70 percent\n                rate increases, followed sustained Lloyd&rsquo;s marine\n                underwriting losses through the mid-2010s. The yacht line ran\n                loss ratios above 100 percent for several consecutive years, and\n                only around 5 percent of yacht premium written between 2011 and\n                2017 returned a profit. Yacht is widely identified as the\n                worst-performing segment in the Lloyd&rsquo;s marine portfolio.",
+    "new": "The market first hardened after sustained Lloyd&rsquo;s yacht\n                underwriting losses through the mid-2010s. In 2015 the Lloyd&rsquo;s\n                yacht market collected about GBP 150 million of premium and paid\n                about GBP 210 million of claims, a loss ratio of 140 percent\n                (SuperyachtNews), and in 2017 it incurred GBP 232.8 million of\n                losses against about GBP 150.1 million of premium (The Insurer).\n                In 2019 AIG spoke of increases of 50 to 70 percent in the London\n                market. Rates rose again from 2022.",
+    "kind": "fact",
+    "reason": "Dates corrected; unsourced \"5 percent profitable\" and \"worst-performing segment\" cut; 2015 and 2017 figures sourced."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "Rates stabilised by the first half of 2024. By the fourth\n                quarter of 2025 Gallagher Specialty reported softening of 4 to\n                7.5 percent for fleets with good loss records, and 2026 reads as\n                stable.",
+    "new": "Increases had largely stopped by the first half of 2024, and the\n                market has since softened; the reductions brokers published for\n                2025 describe commercial shipping hull and machinery rather than\n                yachts. 2026 reads as stable.",
+    "kind": "fact",
+    "reason": "ch07 para 31."
+  },
+  {
+    "file": "app/tools/yacht-insurance-cost/page.tsx",
+    "old": "Howden and Pantaenius are the two largest brokers in the\n                segment; AON Marine, Gallagher Specialty and Marsh are the other\n                substantial players, and PIB Insurance Brokers is the\n                established UK specialist alternative.",
+    "new": "Howden and Pantaenius are among the largest brokers in the\n                segment; AON Marine, Gallagher Specialty and Marsh also place\n                substantial large-yacht business, and PIB Marine (formerly Zorab\n                Insurance Services) is a UK yacht specialist. Ask each to\n                disclose its commission in writing.",
+    "kind": "fact",
+    "reason": "ch07 para 37 wording and the disclosure standard."
+  },
+  {
+    "file": "app/tools/yacht-vat/page.tsx",
+    "old": "Malta reformed the guidelines in February 2019 to base reductions on actual use outside EU waters rather than length-based presumption.",
+    "new": "Malta issued revised guidelines on 12 March 2020, basing reductions on actual use outside EU waters rather than a length-based presumption.",
+    "kind": "fact",
+    "reason": "Revised guidelines dated 12 March 2020 (ch04 para 22; KPMG Malta, Ganado)."
+  },
+  {
+    "file": "app/tools/yacht-vat/page.tsx",
+    "old": "Malta reformed the guidelines in February 2019 to base\n                  reductions on actual use outside EU waters rather than\n                  length-based presumption.",
+    "new": "Malta issued revised guidelines on 12 March 2020, basing\n                  reductions on actual use outside EU waters rather than a\n                  length-based presumption.",
+    "kind": "fact",
+    "reason": "As above."
+  },
+  {
+    "file": "app/tools/yacht-vat/page.tsx",
+    "old": "Maltese charters since the 2019 reform",
+    "new": "Maltese charters since the 2020 guidelines",
+    "kind": "fact",
+    "reason": "As above."
+  },
+  {
+    "file": "app/tools/yacht-vat/page.tsx",
+    "old": "The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel selects",
+    "new": "MB92, Astilleros de Mallorca and several smaller Spanish yards are equipped for it. France and Italy treat refit VAT under different rules. Independent counsel selects",
+    "kind": "fact",
+    "reason": "ch06 para 45."
+  },
+  {
+    "file": "app/tools/yacht-vat/page.tsx",
+    "old": "Used\n                  heavily at MB92 Barcelona, STP Palma, and Astilleros de\n                  Mallorca.",
+    "new": "MB92,\n                  Astilleros de Mallorca and several smaller Spanish yards are\n                  equipped for it.",
+    "kind": "fact",
+    "reason": "ch06 para 45."
+  },
+  {
+    "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+    "old": "                  A buyer who can answer all ten clearly, with documentary\n                  evidence, is exceptionally well-protected. The buyer who\n                  cannot is, by industry default, operating inside the\n                  structure described in{\" \"}\n                  <Link href=\"/03-how-the-industry-works\" className=\"link-marine\">\n                    chapter 3\n                  </Link>\n                  . That is information rather than judgment.",
+    "new": "                  A buyer who can answer all ten clearly, with documents to\n                  show for it, is well protected. A question the buyer cannot\n                  answer is the next one to put, in writing, to the party\n                  concerned.",
+    "kind": "line",
+    "reason": "Aligned with the corrected ch09 para 52; generalisation (fairness flag 31) removed."
+  },
+  {
+    "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+    "old": "USD 200,000 to 600,000 across the first year, a rounding\n                  error against the transaction. Owners who economise here\n                  save tenths of a percentage point and lose multiples in the\n                  asset itself. The{\" \"}",
+    "new": "USD 200,000 to 600,000 across the first year, between about\n                  0.4 and 2 percent of the price. The{\" \"}",
+    "kind": "fact",
+    "reason": "ch09 para 39 gives 0.4 to 2 percent, which is not a rounding error; maxim cut."
+  },
+  {
+    "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+    "old": "Six elements, applied to any adviser: no income contingent\n                  on a closed transaction; no equity,",
+    "new": "Six elements, applied to any adviser: any income contingent\n                  on a closed transaction disclosed in writing, with its amount\n                  and who pays it; no equity,",
+    "kind": "fact",
+    "reason": "Written-disclosure standard for element 1 (author decision 1; ch09 para 13)."
+  },
+  {
+    "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+    "old": "Yacht Owners&rsquo; Register of Representatives",
+    "new": "Yacht Owner&rsquo;s Representative Register",
+    "kind": "fact",
+    "reason": "Register name as published (ch05 para 45)."
+  },
+  {
+    "file": "app/colophon/page.tsx",
+    "old": "Registered with the Yacht Owners&rsquo; Representative\n",
+    "new": "Registered with the Yacht Owner&rsquo;s Representative\n",
+    "kind": "fact",
+    "reason": "Register name as published."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/opengraph-image.tsx",
+    "old": "10 to 20 percent in year one, then 6 to 8 percent compounding.",
+    "new": "10 to 20 percent in year one, then about 5 percent a year.",
+    "kind": "fact",
+    "reason": "Share card aligned with ch01 para 15 (Yatco/IYC)."
+  },
+  {
+    "file": "app/glossary/opengraph-image.tsx",
+    "old": "flag state and forty-four more.",
+    "new": "flag state and fifty-four more.",
+    "kind": "fact",
+    "reason": "Glossary holds 60 entries: six named plus 54."
+  }
+]

@@ -16,7 +16,7 @@ const PUBLISHED = "2026-09-09";
 export const metadata: Metadata = {
   title: { absolute: "Yacht depreciation: the curve, by year and by builder" },
   description:
-    "10 to 20 percent in year one, then 6 to 8 percent compounding. What a hull is worth at five years, and which builders beat the curve.",
+    "10 to 20 percent in year one, then about 5 percent a year. What a hull is worth at five years, and which builders beat the curve.",
   alternates: { canonical: URL },
   openGraph: {
     title: "Yacht depreciation | The First Owner's Reference",
@@ -38,17 +38,17 @@ const FAQS = [
   {
     question: "How much does a yacht depreciate per year?",
     answer:
-      "Roughly 10 to 20 percent comes off the purchase price in year one, followed by a further 6 to 8 percent annually compounding through years two to five. By year five a typical hull has lost 40 to 50 percent of its original value, after which the curve flattens. These figures are broker-aggregated from Yatco, IYC and Yacht Hunter. There is no peer-reviewed academic study of yacht depreciation; every published curve is broker-aggregated and self-reported, which is itself worth knowing before relying on one.",
+      "Yatco puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 percent by year five. IYC puts the first-year correction at 10 to 20 percent, with most yachts reaching 40 to 50 percent of their original price in five years, read here as a five-year loss of 40 to 50 percent. Together they put the typical loss by year five at about 30 to 50 percent, after which the curve flattens. Yacht Hunter's Chris Mortimer rejects fixed schedules: value, he argues, follows condition, market and comparable sales. There is no peer-reviewed academic study of yacht depreciation; every published curve is broker-aggregated and self-reported, which is itself worth knowing before relying on one.",
   },
   {
     question: "What is a yacht worth after five years?",
     answer:
-      "Typically 50 to 60 percent of its original purchase price, on the standard broker-aggregated curve. A USD 30 million yacht held five years at moderate use will normally have lost USD 12 to 15 million in value and consumed a further USD 15 to 22 million in operating cost. An eight-figure total hold cost over that period is the realistic frame, and it is not the frame in which the purchase is usually discussed.",
+      "Typically 50 to 70 percent of its original purchase price, on the broker-published rates. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 15 million in value and consumed a further USD 15 to 22 million in operating cost. An eight-figure total hold cost over that period is the realistic frame, and it is not the frame in which the purchase is usually discussed.",
   },
   {
     question: "Which yacht builders hold their value best?",
     answer:
-      "At the full-custom end, Feadship, Lürssen, Royal Huisman, Vitters and Baltic Yachts hulls can lose only single-digit percentages annually after year five, against the 6 to 8 percent compounding typical of the broader market. In the semi-custom and series segment the comparable claim is made for the larger Italian yards, with retention of roughly 55 to 65 percent of original value at ten years. The two are different segments rather than competing claims. Build quality, the depth of the secondary market for that yard's hulls, and the completeness of the maintenance record are the drivers. The premium paid at build is partly recovered on resale, which is a different proposition from the yacht being an investment.",
+      "At the full-custom end, Feadship, Lürssen, Royal Huisman, Vitters and Baltic Yachts hulls can lose only single-digit percentages annually after year five, against the roughly 5 to 8 percent a year typical of the broader market in years two to five. In the semi-custom and series segment similar claims are made for the larger Italian yards, but no published curve quantifies them. Build quality, the depth of the secondary market for that yard's hulls, and the completeness of the maintenance record are the drivers. The premium paid at build is partly recovered on resale, which is a different proposition from the yacht being an investment.",
   },
   {
     question: "Is a superyacht a good investment?",
@@ -58,7 +58,7 @@ const FAQS = [
   {
     question: "Does chartering offset yacht depreciation and running costs?",
     answer:
-      "For the median yacht, no. BOAT International's published case studies are the cleanest public evidence: a 48 metre motor yacht at EUR 250,000 to 310,000 a week across 7 charter weeks generated EUR 1,592,000 net against EUR 1,575,000 of running cost, effectively break-even before the owner's own usage. A 47 metre sailing yacht at 9 weeks lost EUR 444,000 and an 85 metre motor at 8 weeks lost EUR 430,000. The exception is an owner-optimised 60 metre at 12 weeks generating up to EUR 2 million net, which requires disciplined operation, premium rates and giving up the prime weeks. Most charter operations subsidise ownership cost rather than recovering it.",
+      "For the median yacht, no. BOAT International's published case studies are the cleanest public evidence: a 48 metre motor yacht at EUR 250,000 to 310,000 a week across 7 charter weeks generated EUR 1,592,000 net against EUR 1,575,000 of running cost, effectively break-even before the owner's own usage. A 47 metre sailing yacht at 9 weeks lost EUR 444,000 and an 85 metre motor at 8 weeks lost EUR 430,000. The exception is a 60 metre concept, Hill Robinson's “Perfect Charter Yacht”, modelled at 12 charter weeks for a net revenue target of EUR 2 million; it is a design study rather than a trading yacht, and assumes premium rates and prime-season weeks given to charter. Most charter operations subsidise ownership cost rather than recovering it.",
   },
   {
     question: "Why does the 10 percent rule get worse as a yacht ages?",
@@ -68,13 +68,13 @@ const FAQS = [
   {
     question: "Where do published yacht depreciation figures come from?",
     answer:
-      "Brokerage listings and reported transactions, aggregated by the listing platforms themselves. Yatco, IYC and Yacht Hunter are the usual sources. There is no independent or peer-reviewed dataset, no regulator collecting the numbers, and no obligation on any party to report a transaction accurately. Asking prices are public and closing prices generally are not. Any depreciation figure, including the ones on this page, should be read as a broker-aggregated working range rather than a measurement.",
+      "Brokerage listings and reported transactions, aggregated by the listing platforms themselves. Yatco and IYC publish rates; Yacht Hunter argues that fixed schedules mislead and that value follows condition, market and comparable sales. There is no independent or peer-reviewed dataset, no regulator collecting the numbers, and no obligation on any party to report a transaction accurately. Asking prices are public and closing prices generally are not. Any depreciation figure, including the ones on this page, should be read as a broker-aggregated working range rather than a measurement.",
   },
 ];
 
 const CURVE = [
   { year: "Year 1", loss: "10 to 20 percent", cumulative: "10 to 20 percent" },
-  { year: "Years 2 to 5", loss: "6 to 8 percent annually, compounding", cumulative: "40 to 50 percent by year 5" },
+  { year: "Years 2 to 5", loss: "About 5 to 8 percent a year (Yatco: about 5)", cumulative: "30 to 50 percent by year 5" },
   { year: "Year 5 onward", loss: "Curve flattens", cumulative: "Slower decline, condition-led" },
   { year: "Quality builders, after year 5", loss: "Single-digit percentages annually", cumulative: "Materially better than the market curve" },
 ];
@@ -86,7 +86,7 @@ function datasetSchema() {
     url: URL,
     name: "Yacht depreciation curve by year, 2026",
     description:
-      "Annual and cumulative depreciation on yachts above 24 metres, by year of ownership, with the builder exceptions. Broker-aggregated from Yatco, IYC and Yacht Hunter. No independent dataset exists.",
+      "Annual and cumulative depreciation on yachts above 24 metres, by year of ownership, with the builder exceptions. Broker-published rates from Yatco and IYC (October 2025). No independent dataset exists.",
     creator: { "@id": `${SITE_URL}#publisher` },
     publisher: { "@id": `${SITE_URL}#publisher` },
     license: "https://creativecommons.org/licenses/by/4.0/",
@@ -168,7 +168,7 @@ export default function YachtDepreciationPage() {
             <div className="lg:sticky lg:top-32 space-y-4">
               <p className="meta">Sources</p>
               <ul className="caption space-y-3">
-                <li>Yatco, IYC and Yacht Hunter, broker-aggregated</li>
+                <li>Yatco and IYC, broker-published rates (October 2025)</li>
                 <li>BOAT International charter case studies</li>
                 <li>YachtBuyer on the 10 percent rule</li>
                 <li>
@@ -231,7 +231,7 @@ export default function YachtDepreciationPage() {
                 </tbody>
               </table>
               <p className="caption mt-6">
-                Broker-aggregated from Yatco, IYC and Yacht Hunter. Feadship,
+                Broker-published rates from Yatco and IYC. Feadship,
                 Lürssen, Royal Huisman, Vitters and Baltic Yachts sit in the
                 fourth row at the full-custom end; the larger Italian
                 semi-custom yards are credited with comparable retention in
@@ -245,7 +245,7 @@ export default function YachtDepreciationPage() {
               </h2>
               <p>
                 A USD 30 million yacht held for five years at moderate use will
-                typically have lost USD 12 to 15 million in value and consumed
+                typically have lost USD 9 to 15 million in value and consumed
                 another USD 15 to 22 million in operating cost. That is an
                 eight-figure hold cost over the period, and it is the number
                 against which the decision should be taken rather than the
@@ -268,7 +268,7 @@ export default function YachtDepreciationPage() {
                 Charter does not fix it
               </h2>
               <p>
-                Brokers consistently advise first-time owners that charter can
+                Charter is often presented to first-time owners as a way to
                 offset ownership cost. For the median yacht the arithmetic does
                 not bear that out. BOAT International&rsquo;s published case
                 studies show a 48 metre motor yacht at 7 charter weeks
@@ -278,10 +278,11 @@ export default function YachtDepreciationPage() {
                 metre motor at 8 weeks lost EUR 430,000.
               </p>
               <p>
-                The exception is real but narrow: an owner-optimised 60 metre at
-                12 weeks can generate up to EUR 2 million net, on disciplined
-                operation, premium rates, and a willingness to give up the prime
-                weeks. Those conditions are rarely in place on a first yacht.
+                The exception is a 60 metre concept, Hill Robinson&rsquo;s
+                &ldquo;Perfect Charter Yacht&rdquo;, modelled at 12 charter weeks
+                for a net revenue target of EUR 2 million. It is a design study
+                rather than a trading yacht, and it assumes premium rates and
+                prime-season weeks given to charter.
               </p>
             </section>
 

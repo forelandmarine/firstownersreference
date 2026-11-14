@@ -11,9 +11,9 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="07.01"
       title="Captain monthly pay, by yacht size"
-      standfirst="Senior crew pay continues to outpace inflation; junior pay has plateaued."
-      caption="Average monthly pay range, in EUR thousand. Quay Crew records 7 percent year-on-year growth in the 70 to 79 m bracket; 63 percent of captains now on time-for-time rotation. Sources publish no separate 60 to 70 m band."
-      source="Quay Crew Superyacht Captain Salary & Leave Report 2025/26."
+      standfirst="Senior crew pay continues to rise; junior pay has plateaued."
+      caption="Average monthly pay range, in EUR thousand. Quay Crew records 7 percent growth in the 70 to 79 m bracket since its 2023 survey; 63 percent of captains surveyed are on time-for-time rotation. Sources publish no separate 60 to 70 m band."
+      source="YPI Crew 2026 salary guide; Quay Crew Superyacht Captain Salary & Leave Report 2025/26."
     >
       <RangeBars
         domainMax={28}
@@ -24,7 +24,7 @@ export const charts: Record<string, () => React.ReactElement> = {
           { label: "30 to 40 m", from: 8, to: 12 },
           { label: "40 to 50 m", from: 10, to: 14 },
           { label: "50 to 60 m", from: 10, to: 16 },
-          { label: "70 to 79 m", from: 14, to: 20, note: "Up 7 percent year on year" },
+          { label: "70 to 79 m", from: 14, to: 20, note: "Up 7 percent on 2023" },
           { label: "80 to 99 m", from: 16, to: 23 },
           { label: "100 to 119 m", from: 25, to: 28 },
         ]}
@@ -61,7 +61,7 @@ export const charts: Record<string, () => React.ReactElement> = {
       number="08.01"
       title="Annual operating cost on a 50 metre, motor against sail"
       standfirst="A 50 metre sailing yacht typically runs 70 to 85 percent of the comparable motor cost. Crew, fuel, and insurance are the lines that move."
-      caption="Indicative cost split, EUR million per year, moderate use (8 to 10 weeks family use). Fuel modelled at Mediterranean rates, 400 cruising hours."
+      caption="Indicative cost split, EUR million per year, moderate use (8 to 10 weeks family use). Fuel modelled at Mediterranean rates, 400 cruising hours. Totals are the five lines shown; management, compliance, provisioning and contingency are excluded."
       source="Foreland Marine project archive; YPI Crew 2026 salary guide; aggregated published practitioner ranges."
     >
       <PairedStackedBars
@@ -70,7 +70,7 @@ export const charts: Record<string, () => React.ReactElement> = {
         groups={[
           {
             label: "50 m motor",
-            total: "EUR 3.7 m total",
+            total: "EUR 3.7 m, lines shown",
             segments: [
               { label: "Crew", value: 1.9 },
               { label: "Maintenance", value: 0.75 },
@@ -81,7 +81,7 @@ export const charts: Record<string, () => React.ReactElement> = {
           },
           {
             label: "50 m sail",
-            total: "EUR 2.9 m total",
+            total: "EUR 2.9 m, lines shown",
             segments: [
               { label: "Crew", value: 1.45 },
               { label: "Maintenance", value: 0.65 },
@@ -123,7 +123,7 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="01.03"
       title="Depreciation curve, year 1 to 10"
-      standfirst="Cumulative loss from purchase price. Quality builders hold value materially better after year five; the band below is the broker-aggregated typical curve."
+      standfirst="Cumulative loss from purchase price, typical hull. Quality builders hold value materially better after year five, but no published curve separates them, so only the typical band is plotted."
       caption="Indicative; broker-published rates are not peer-reviewed. The band spans Yatco's and IYC's published rates at years one and five; other points are interpolated or extended."
       source="Yatco and IYC published depreciation rates (October 2025)."
     >
@@ -147,6 +147,7 @@ export const charts: Record<string, () => React.ReactElement> = {
         series={[
           {
             name: "Typical hull",
+            emphasis: true,
             values: [
               { x: 1, y: 15 },
               { x: 2, y: 22 },
@@ -154,18 +155,6 @@ export const charts: Record<string, () => React.ReactElement> = {
               { x: 5, y: 40 },
               { x: 7, y: 47 },
               { x: 10, y: 55 },
-            ],
-          },
-          {
-            name: "Quality builder",
-            emphasis: true,
-            values: [
-              { x: 1, y: 10 },
-              { x: 2, y: 14 },
-              { x: 3, y: 18 },
-              { x: 5, y: 26 },
-              { x: 7, y: 30 },
-              { x: 10, y: 36 },
             ],
           },
         ]}
@@ -177,7 +166,7 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="02.01"
       title="UHNWI population, 2021 to 2031, by region share"
-      standfirst="The United States accounts for an increasing share. The structural narrowing of supply against an expanding demand pool is the supply story behind the 2025 brokerage record."
+      standfirst="The United States accounts for an increasing share: 33 percent in 2021, 35 percent in 2026 and a forecast 41 percent by 2031."
       caption="UHNWI defined as net wealth above USD 30 m. Regional shares of the global UHNWI population. 2031 figure is the Knight Frank forecast."
       source="Knight Frank Wealth Sizing Model, 2026 Wealth Report."
     >
@@ -376,41 +365,6 @@ export const charts: Record<string, () => React.ReactElement> = {
           { label: "Annual maintenance", from: 2, to: 8 },
           { label: "Mid-life refit", from: 10, to: 30 },
           { label: "Major structural refit", from: 40, to: 100 },
-        ]}
-      />
-    </ChartFrame>
-  ),
-
-  "hull-rate-movement": () => (
-    <ChartFrame
-      number="07.02"
-      title="Hull insurance rate movement, 2022 to 2026"
-      standfirst="Rates rose through 2022 and 2023 and had largely stopped rising by the first half of 2024. The Bayesian sinking in August 2024 prompted selective tightening rather than blanket rate rises. For 2026, PIB Marine expects hull rates to be flat or to rise marginally with inflation."
-      caption="Indicative hull rate trajectory, well-maintained 40 to 50m yacht. Vertical reference marks the Bayesian event."
-      source="Pantaenius market notes; Ollie Davis, PIB Marine, interviewed for chapter 7. Plotted values are indicative, not a published index."
-    >
-      <LineChart
-        xDomain={[2022, 2026]}
-        yDomain={[0, 2]}
-        xTicks={[2022, 2023, 2024, 2025, 2026]}
-        yTicks={[0, 0.5, 1, 1.5, 2]}
-        yUnit="%"
-        yUnitLabel="hull rate, percent of insured value"
-        annotations={[
-          { x: 2024.6, label: "Bayesian sinking", align: "above" },
-        ]}
-        series={[
-          {
-            name: "Hull rate, well-maintained 40 to 50 m",
-            emphasis: true,
-            values: [
-              { x: 2022, y: 0.7 },
-              { x: 2023, y: 1.15 },
-              { x: 2024, y: 1.25 },
-              { x: 2025, y: 1.2 },
-              { x: 2026, y: 1.2 },
-            ],
-          },
         ]}
       />
     </ChartFrame>

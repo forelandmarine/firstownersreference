@@ -60,7 +60,7 @@ const FAQS = [
   {
     question: "What was the Maltese yacht VAT lease scheme and is it still valid?",
     answer:
-      "The original Maltese scheme (effective rates as low as 5.4 percent on long-term leases of yachts above 24 metres, on the assumption that 70 percent of use was outside EU territorial waters) drew an EU Commission infringement procedure in March 2018. Malta reformed the guidelines in February 2019 to base reductions on actual use outside EU waters rather than length-based presumption. The Commission closed the Malta infringement on 30 October 2020. The scheme was reformed, not withdrawn; effective-use approaches now apply.",
+      "The original Maltese scheme (effective rates as low as 5.4 percent on long-term leases of yachts above 24 metres, on the assumption that 70 percent of use was outside EU territorial waters) drew an EU Commission infringement procedure in March 2018. Malta issued revised guidelines on 12 March 2020, basing reductions on actual use outside EU waters rather than a length-based presumption. The Commission closed the Malta infringement on 30 October 2020. The scheme was reformed, not withdrawn; effective-use approaches now apply.",
   },
   {
     question: "Has Brexit changed the VAT position for UK-flag yachts?",
@@ -70,7 +70,7 @@ const FAQS = [
   {
     question: "What is Spanish Inward Processing Relief for yachts?",
     answer:
-      "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht's departure from the EU. It is separate from temporary admission, which covers the yacht's use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel selects the VAT structure for the specific refit scope.",
+      "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht's departure from the EU. It is separate from temporary admission, which covers the yacht's use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. MB92, Astilleros de Mallorca and several smaller Spanish yards are equipped for it. France and Italy treat refit VAT under different rules. Independent counsel selects the VAT structure for the specific refit scope.",
   },
   {
     question: "What is the VAT on yacht charters in Italy in 2026?",
@@ -373,9 +373,9 @@ export default function YachtVat2026Page() {
                   yacht's departure from the EU. It is separate from Temporary
                   Admission, which does not cover a structural refit.
                   Authorisation must be in place before the works begin, and
-                  compliance rests with the owner rather than the yard. Used
-                  heavily at MB92 Barcelona, STP Palma, and Astilleros de
-                  Mallorca.
+                  compliance rests with the owner rather than the yard. MB92,
+                  Astilleros de Mallorca and several smaller Spanish yards are
+                  equipped for it.
                 </p>
                 <p>
                   <strong>French Commercial Exemption</strong> exempts
@@ -410,7 +410,7 @@ export default function YachtVat2026Page() {
                   From 2025, the Italian VAT representative must post a
                   guarantee bond from EUR 30,000 to EUR 2 million depending on
                   number of clients represented. French and Spanish standard
-                  rates apply locally. Maltese charters since the 2019 reform
+                  rates apply locally. Maltese charters since the 2020 guidelines
                   follow effective-use rules.
                 </p>
               </div>
@@ -427,8 +427,8 @@ export default function YachtVat2026Page() {
                   percent, on the assumption that 70 percent of use was outside
                   EU territorial waters. In March 2018 the EU Commission opened
                   infringement procedures against Cyprus, Greece, and Malta.
-                  Malta reformed the guidelines in February 2019 to base
-                  reductions on actual use outside EU waters rather than
+                  Malta issued revised guidelines on 12 March 2020, basing
+                  reductions on actual use outside EU waters rather than a
                   length-based presumption. The Commission closed the Malta
                   infringement on 30 October 2020.
                 </p>

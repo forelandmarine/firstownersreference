@@ -164,9 +164,9 @@ function bySize(length: number, values: number[]) {
   return values[values.length - 1];
 }
 
-// Retained value by age, on the TFOR depreciation curve: 20 percent off in
-// year one, then 8 percent a year compounding, which leaves 57 percent at
-// year 5 (the published range is 50 to 60). The curve flattens to 4 percent
+// Retained value by age: 20 percent off in year one, then 8 percent a year
+// compounding, which leaves 57 percent at year 5, inside the 50 to 70 percent
+// retained that chapter 1 gives (30 to 50 percent lost). The curve flattens to 4 percent
 // a year after that.
 function retainedValue(years: number) {
   if (years === 0) return 1;
@@ -244,7 +244,7 @@ function calculateCosts(
     south_pacific: 1.15, global: 1.25,
   };
   const areaMult = areaInsuranceMult[area];
-  const hullRate = isSail ? 0.005 : 0.006;
+  const hullRate = isSail ? 0.007 : 0.008; // low end of the 0.7 to 1.5 percent band (chapter 7)
   const hull = value * hullRate * ageRate * areaMult * (isDual ? 1.15 : 1.0); // wider cruising range
   const pandi = (4_000 + gt * 14) * areaMult * (isDual ? 1.1 : 1.0); // P&I priced on tonnage, not value
   const crewMedical = crewCount * 1_800;
@@ -596,7 +596,7 @@ export default function RunningCostCalculatorPage() {
     {
       question: "Can I afford to run the yacht I am looking at?",
       answer:
-        "Annual running costs run from approximately EUR 600,000 for a 24-metre sailing yacht at light use, to EUR 2.3 to 2.8 million for a 50-metre motor yacht at moderate use, to EUR 7 to 8 million for an 80-metre running two seasons a year. The main cost categories are crew (40 to 50 percent of the total), insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. As a rough guide, expect 12 to 15 percent of purchase price for a new 40 to 50 metre yacht at moderate use, rising to 12 to 20 percent for older or larger vessels and higher again on charter-active programmes. The actual figure depends heavily on vessel type, size, cruising area, age, and use intensity.",
+        "Annual running costs run from approximately EUR 600,000 for a 24-metre sailing yacht at light use, to EUR 2.3 to 2.8 million for a 50-metre motor yacht at moderate use in this calculator's model, to EUR 7 to 8 million for an 80-metre running two seasons a year. The model is calibrated against Christie Yachts' published budgets; a new-build 50-metre yacht priced in the tens of millions runs higher on the percentage bands in chapter 1. The main cost categories are crew (30 to 40 percent of the total), insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. As a rough guide, expect 12 to 15 percent of purchase price for a new 40 to 50 metre yacht at moderate use, rising to 12 to 20 percent for older or larger vessels and higher again on charter-active programmes. The actual figure depends heavily on vessel type, size, cruising area, age, and use intensity.",
     },
     {
       question: "Is the 10 percent rule a safe budget for a first purchase?",
@@ -606,22 +606,22 @@ export default function RunningCostCalculatorPage() {
     {
       question: "What should a first-time buyer budget beyond the purchase price?",
       answer:
-        "Crew costs are almost always the largest single expense, typically 40 to 50 percent of the annual budget. After crew, the next largest costs are maintenance and repair (including class surveys and periodic refits), insurance (hull, P&I, and crew medical), and marina berths. Fuel costs vary dramatically between sailing and motor yachts. Management fees, regulatory compliance, and a contingency reserve of 8-10% should also be budgeted.",
+        "Crew costs are almost always the largest single expense, typically 30 to 40 percent of the annual budget. After crew, the next largest costs are maintenance and repair (including class surveys and periodic refits), insurance (hull, P&I, and crew medical), and marina berths. Fuel costs vary dramatically between sailing and motor yachts. Management fees, regulatory compliance, and a contingency reserve of 6 to 10 percent should also be budgeted.",
     },
     {
       question: "How many crew will the yacht need, and what will they cost?",
       answer:
-        "Crew costs depend on yacht size and the number of crew required. A 30-metre yacht with 5-7 crew might spend EUR 300,000-450,000 per year on total crew costs. A 50-metre yacht with 11 to 13 crew could spend EUR 1.1 to 1.4 million, more on a dual-season programme with rotational crew. These figures include salaries, social charges, insurance, travel, training, uniforms, and provisions.",
+        "Crew costs depend on yacht size and the number of crew required. A 30-metre yacht with 5-7 crew might spend EUR 300,000-450,000 per year on total crew costs. A 50-metre yacht with 11 to 13 crew, as this calculator models it, could spend EUR 1.1 to 1.4 million, more on a dual-season programme with rotational crew. Chapter 8 puts a 50-metre motor yacht in private use at 12 to 16 crew, and the salary benchmarks page puts 14 crew at EUR 1.5 to 2.4 million all in. These figures include salaries, social charges, insurance, travel, training, uniforms, and provisions.",
     },
     {
       question: "Will a sailing yacht cost less to run than a motor yacht?",
       answer:
-        "Sailing yachts are generally less expensive to run than motor yachts of equivalent size. The main saving is fuel. However, sailing yachts have costs that motor yachts do not, including rig maintenance, sail inventory, and specialist rigging inspections. Overall, a sailing yacht's annual running costs are typically 15-25% lower than a comparable motor yacht.",
+        "Sailing yachts are generally less expensive to run than motor yachts of equivalent size. The main saving is fuel. However, sailing yachts have costs that motor yachts do not, including rig maintenance, sail inventory, and specialist rigging inspections. Overall, a sailing yacht's annual running costs are typically 15 to 30 percent lower than a comparable motor yacht.",
     },
     {
       question: "What will insurance cost on a first yacht?",
       answer:
-        "Insurance costs depend on the yacht's value, type, age, cruising area, and claims history. Hull and machinery cover typically costs 0.5 to 1 percent of the yacht's insured value per year, at the upper end for older yachts and wider cruising grounds. P&I (Protection and Indemnity) cover is priced on tonnage, crew numbers and trading area rather than on value. Charter yachts require commercial insurance, which can be 30-40% more expensive than private cover.",
+        "Insurance costs depend on the yacht's value, type, age, cruising area, and claims history. Hull and machinery cover on a well-maintained 40 to 50 metre yacht typically costs 0.7 to 1.5 percent of insured value per year; smaller yachts and those in hurricane-exposed regions pay 2 to 5 percent. P&I (Protection and Indemnity) cover is priced on tonnage, crew numbers and trading area rather than on value. Charter yachts require commercial insurance, which can be 30-40% more expensive than private cover.",
     },
   ];
 
@@ -1005,8 +1005,8 @@ export default function RunningCostCalculatorPage() {
           <div className="prose-body text-charcoal-soft">
             <p>
               Crew is almost always the single largest line item in your
-              annual budget. A 40 m motor yacht might carry a crew of seven
-              or eight, each with salary, insurance, travel, and training
+              annual budget. A 40 m motor yacht might carry a crew of eight
+              or nine, each with salary, insurance, travel, and training
               costs. As the yacht grows, crew numbers increase and so do the
               qualifications required. A captain on a 60 m vessel commands a
               very different salary to one on a 24 m sailing yacht.

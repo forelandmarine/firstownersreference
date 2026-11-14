@@ -332,7 +332,7 @@
       },
       {
         "type": "note",
-        "text": "The discretionary capital behind a first yacht is therefore smaller, and more conservatively managed, than a wealth-report headline suggests. The record brokerage totals above and the preserve-first capital below are the two halves of the same market."
+        "text": "The discretionary capital behind a first yacht is therefore smaller, and more conservatively managed, than a wealth-report headline suggests. The record brokerage totals later in this spread and the preservation-first capital above are two halves of the same market."
       },
       {
         "type": "h2",
@@ -679,7 +679,7 @@
   "03-how-the-industry-works": {
     "slug": "03-how-the-industry-works",
     "title": "Where the money goes in a typical brokerage transaction",
-    "standfirst": "Most first-time buyers reach this market through a family office, yet only a quarter of single family offices handle a yacht in-house. The buyer arrives under-advised, into a sale structure where EUR 1.7 to 2.8 million in commission moves on a EUR 28 m deal and the buyer almost never knows which norm applied. The structure, said plainly.",
+    "standfirst": "Many first-time buyers reach this market through a family office, yet only a quarter of Swiss single family offices handle a yacht in-house. The buyer arrives under-advised, into a sale structure where EUR 1.7 to 2.8 million in commission moves on a EUR 28 m deal and the buyer almost never knows which norm applied.",
     "blocks": [
       {
         "type": "h2",
@@ -687,7 +687,7 @@
       },
       {
         "type": "note",
-        "text": "Most first-time buyers reach this market through a family office. But the family office is a lean investment shop, median five people, and the yacht sits outside its competence. Only a quarter of Swiss single family offices manage a boat or aircraft in-house, and nearly half do not offer the service at all."
+        "text": "Many first-time buyers reach this market through a family office. The typical Swiss single family office is a lean investment shop, median five people, and the yacht sits outside its competence. Only a quarter of Swiss single family offices manage a boat or aircraft in-house, and nearly half do not offer the service at all."
       },
       {
         "type": "table",
@@ -801,7 +801,7 @@
       },
       {
         "type": "table",
-        "caption": "Referral fees from supplier counterparties to the introducing broker are not on the broker’s invoice to the owner because the broker is not invoicing the owner. The numbers are not small.",
+        "caption": "Referral fees from supplier counterparties to the introducing broker are not on the broker’s invoice to the owner because the broker is not invoicing the owner.",
         "head": [
           "Service",
           "Typical scope",
@@ -837,7 +837,7 @@
       },
       {
         "type": "kv",
-        "caption": "There is no financial regulator anywhere in the major jurisdictions that supervises yacht brokerage conduct. EU anti-money-laundering rules reach yacht sales from July 2027, but they govern the buyer’s identity and funds, not broker conduct.",
+        "caption": "Beyond state rules such as California’s and Florida’s, no major jurisdiction has a financial regulator that supervises yacht brokerage conduct. EU anti-money-laundering rules reach yacht sales from July 2027, but they govern the buyer’s identity and funds, not broker conduct.",
         "rows": [
           {
             "label": "UK Financial Conduct Authority",
@@ -885,7 +885,7 @@
       },
       {
         "label": "Cromwell Littlejohn (Northrop & Johnson), Palm Beach Boat Show",
-        "line": "On the record: the system actively rewards opacity.",
+        "line": "Practitioner commentary attributed to him at industry events: the system can reward opacity. Northrop & Johnson states a commitment to full transparency.",
         "url": "https://www.northropandjohnson.com/"
       },
       {
@@ -1238,8 +1238,8 @@
         "rows": [
           [
             "Stage payment loading",
-            "50–70 percent before delivery",
-            "Watson Farley & Williams"
+            "40 percent or more before delivery in commercial shipbuilding; in custom yacht work well over half, up to 90 percent",
+            "Watson Farley & Williams; MacNally, citing Port Royal Group"
           ],
           [
             "Refund guarantee credit",
@@ -1708,7 +1708,7 @@
             "Strong on sportfish and motor yachts under 40 m"
           ]
         ],
-        "sourceLine": "Yard published statements; Superyacht Group 2025 expert roundtable (paywalled); BOAT International coverage; practitioner working knowledge."
+        "sourceLine": "Yard published statements; BOAT International expert roundtable, February 2026 (paywalled); BOAT International coverage; practitioner working knowledge."
       },
       {
         "type": "h2",
@@ -1784,9 +1784,9 @@
         "url": "https://www.forelandmarine.com"
       },
       {
-        "label": "Superyacht Group 2025 expert roundtable",
-        "line": "Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben), Txema Rubio (MB92). Paywalled.",
-        "url": "https://www.thesuperyachtgroup.com/"
+        "label": "BOAT International expert roundtable, February 2026",
+        "line": "Gemma Harris, with Manuel Di Tillio (Amico & Co), Gianni Paladino (Lusben) and Txema Rubio (MB92). Paywalled; the published introduction cites BOATPro data on fleet growth of 38.7 percent over the past decade.",
+        "url": "https://www.boatinternational.com/boat-pro/superyacht-insight/expert-roundtable-superyacht-refit-state-of-the-market"
       },
       {
         "label": "Dockwalk",
@@ -1976,7 +1976,7 @@
       },
       {
         "type": "table",
-        "caption": "Rates hardened from 2022 after sustained Lloyd’s yacht underwriting losses (GBP 232.8 m of losses against GBP 150.1 m of premium in 2017; 75 percent of 69 yacht-writing syndicates unprofitable), peaked in 2024 and have since softened.",
+        "caption": "Rates first hardened in 2018 and 2019 after sustained Lloyd’s yacht underwriting losses (about GBP 210 m of claims against GBP 150 m of premium in 2015; GBP 232.8 m of losses against GBP 150.1 m of premium in 2017, when 75 percent of 69 yacht-writing syndicates were unprofitable). They rose again from 2022, peaked in 2024 and have since softened.",
         "head": [
           "Period",
           "Hull rate movement",
@@ -2019,11 +2019,7 @@
             ""
           ]
         ],
-        "sourceLine": "AIG (Sean Blue, BOAT International, November 2019); Gallagher Specialty hull and machinery updates; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026)."
-      },
-      {
-        "type": "chart",
-        "chartId": "hull-rate-movement"
+        "sourceLine": "AIG (Sean Blue, BOAT International, November 2019); Gallagher Specialty hull and machinery updates; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026); SuperyachtNews (August 2018) on 2015 Lloyd’s yacht results."
       },
       {
         "type": "h2",
@@ -2145,7 +2141,7 @@
           },
           {
             "label": "United States",
-            "value": "Regulated under federal law (Coast Guard and the Jones Act). Foreign-flagged yachts cannot embark and disembark passengers between US ports under standard charter, which severely restricts non-US-flagged commercial operation in US waters.",
+            "value": "Regulated under federal law (Coast Guard and the Passenger Vessel Services Act, part of the US cabotage rules often grouped with the Jones Act). Foreign-flagged yachts cannot carry passengers between US ports under standard charter, which severely restricts non-US-flagged commercial operation in US waters.",
             "note": "The US tax treatment of a charter business is in the chapter essay."
           }
         ],
@@ -2220,7 +2216,7 @@
       },
       {
         "type": "kv",
-        "caption": "More wealth has been created in fewer hands than at any point in recorded economic history. The reader of The First Owner’s Reference is one of two profiles.",
+        "caption": "Many readers of The First Owner’s Reference are one of two kinds of buyer: a principal who has recently sold a business, or an heir. The figures behind both.",
         "rows": [
           {
             "label": "Global UHNWIs (above USD 30 m), 2026",
@@ -2248,7 +2244,7 @@
           },
           {
             "label": "Yacht references in UBS Global Family Office Reports 2025 and 2026",
-            "value": "Zero, across 80 pages and 317 family offices"
+            "value": "None (2025: 80 pages, 317 family offices; 2026: 307 family offices)"
           }
         ],
         "sourceLine": "Knight Frank Wealth Report 2026; Capgemini World Wealth Report 2025; UBS Global Family Office Reports 2025 and 2026."
@@ -2439,7 +2435,7 @@
       },
       {
         "label": "Knight Frank Wealth Report 2026 / Family Office Survey 2026",
-        "line": "First reference to superyachts in the family office portfolio architecture.",
+        "line": "Family Office Survey 2026 (more than 40 offices) names superyachts for the first time, among the assets family offices want to track in one place.",
         "url": "https://www.knightfrank.com/wealthreport"
       },
       {
@@ -2479,7 +2475,7 @@
           ],
           [
             "Major builders",
-            "Royal Huisman, Vitters, Baltic, Perini Navi, Wally, Pendennis, Nautor Swan",
+            "Royal Huisman, Vitters, Baltic, Wally, Pendennis, Nautor Swan",
             "Lürssen, Feadship, Oceanco, Heesen, Sanlorenzo, Azimut Benetti, Codecasa, CRN"
           ]
         ],
@@ -2491,7 +2487,7 @@
       },
       {
         "type": "table",
-        "caption": "Indicative annual operating cost, 50 m at moderate use (8 to 10 weeks family use). Practitioner working ranges; motor figure on Mediterranean operation, 400 cruising hours.",
+        "caption": "Indicative annual operating cost, 50 m at moderate use (8 to 10 weeks family use). Practitioner working ranges; motor figure on Mediterranean operation, 400 cruising hours. The five lines shown exclude management fees, compliance, provisioning and contingency, which chapter 1 puts at roughly 15 to 25 percent of the full budget; crew is therefore about half of the lines shown and 30 to 40 percent of the whole.",
         "head": [
           "Cost line",
           "50 m motor",
@@ -2524,7 +2520,7 @@
             "EUR 280–420 k"
           ],
           [
-            "Total annual operating cost",
+            "Total of the lines shown",
             "EUR 3.0–4.5 m",
             "EUR 2.3–3.5 m"
           ]
@@ -2635,7 +2631,7 @@
       },
       {
         "label": "Capgemini World Wealth Report 2024",
-        "line": "Sustainability identified as a top-three concern for next-generation HNWIs.",
+        "line": "Sustainability identified as a major concern for next-generation HNWIs.",
         "url": "https://www.capgemini.com/insights/research-library/world-wealth-report"
       },
       {

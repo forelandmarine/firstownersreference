@@ -199,7 +199,7 @@ export default function ColophonPage() {
             <p>
               <strong>5. Named principals.</strong> The directors of Foreland
               are Jack MacNally and Daniel Marks. Both listed at Companies
-              House. Registered with the Yacht Owners&rsquo; Representative
+              House. Registered with the Yacht Owner&rsquo;s Representative
               Register (YORR). Resident in London.
             </p>
 

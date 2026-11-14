@@ -9,6 +9,6 @@ export default async function Image() {
     eyebrow: "Tools, 1st Edition 2027",
     eyebrowRight: "Broker-aggregated",
     title: "Yacht depreciation",
-    standfirst: "10 to 20 percent in year one, then 6 to 8 percent compounding. What a hull is worth at five years, and which builders beat the curve.",
+    standfirst: "10 to 20 percent in year one, then about 5 percent a year. What a hull is worth at five years, and which builders beat the curve.",
   });
 }

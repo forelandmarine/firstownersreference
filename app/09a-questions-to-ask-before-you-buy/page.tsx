@@ -183,14 +183,10 @@ export default function QuestionsToAskPage() {
                   ))}
                 </ol>
                 <p>
-                  A buyer who can answer all ten clearly, with documentary
-                  evidence, is exceptionally well-protected. The buyer who
-                  cannot is, by industry default, operating inside the
-                  structure described in{" "}
-                  <Link href="/03-how-the-industry-works" className="link-marine">
-                    chapter 3
-                  </Link>
-                  . That is information rather than judgment.
+                  A buyer who can answer all ten clearly, with documents to
+                  show for it, is well protected. A question the buyer cannot
+                  answer is the next one to put, in writing, to the party
+                  concerned.
                 </p>
               </div>
             </section>
@@ -291,10 +287,8 @@ export default function QuestionsToAskPage() {
                 </ol>
                 <p>
                   Total team cost on a USD 30 to 50 million acquisition runs
-                  USD 200,000 to 600,000 across the first year, a rounding
-                  error against the transaction. Owners who economise here
-                  save tenths of a percentage point and lose multiples in the
-                  asset itself. The{" "}
+                  USD 200,000 to 600,000 across the first year, between about
+                  0.4 and 2 percent of the price. The{" "}
                   <Link href="/04-acquisition-process" className="link-marine">
                     acquisition process in chapter 4
                   </Link>{" "}
@@ -309,8 +303,9 @@ export default function QuestionsToAskPage() {
               </h2>
               <div className="prose-body text-charcoal max-w-prose space-y-4">
                 <p>
-                  Six elements, applied to any adviser: no income contingent
-                  on a closed transaction; no equity, employment, or referral
+                  Six elements, applied to any adviser: any income contingent
+                  on a closed transaction disclosed in writing, with its amount
+                  and who pays it; no equity, employment, or referral
                   relationship with yards, brokers, suppliers, or management
                   companies; a published counterparty list; fees quoted in
                   writing in advance; professional indemnity insurance at
@@ -324,7 +319,7 @@ export default function QuestionsToAskPage() {
                   </Link>
                   , the{" "}
                   <Link href="/glossary#yorr" className="link-marine">
-                    Yacht Owners&rsquo; Register of Representatives
+                    Yacht Owner&rsquo;s Representative Register
                   </Link>{" "}
                   is the cross-industry vetting filter to apply alongside the
                   test.

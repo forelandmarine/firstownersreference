@@ -43,7 +43,7 @@ const FAQS = [
   {
     question: "What is a typical hull and machinery rate for a superyacht in 2026?",
     answer:
-      "0.7 to 1.5 percent of insured value for a well-maintained 40 to 50 metre yacht. Rates hardened sharply in 2022, with AIG citing 50 to 70 percent increases, after the Lloyd's yacht line ran loss ratios above 100 percent for several consecutive years. Rates stabilised by the first half of 2024. By the fourth quarter of 2025 Gallagher Specialty reported softening of 4 to 7.5 percent for fleets with good loss records. 2026 reads as stable: hull and machinery flat or rising with inflation, and P&I clubs continuing routine 5 percent general increases.",
+      "0.7 to 1.5 percent of insured value for a well-maintained 40 to 50 metre yacht. Rates first hardened in 2018 and 2019, when AIG spoke of 50 to 70 percent increases in the London market, after the Lloyd's yacht line ran loss ratios above 100 percent for several consecutive years, and rose again from 2022. Increases had largely stopped by the first half of 2024 and the market has since softened, though the reductions brokers published for 2025 describe commercial shipping hull and machinery rather than yachts. 2026 reads as stable: hull and machinery flat or rising with inflation, and P&I clubs continuing routine 5 percent general increases.",
   },
   {
     question: "Should a yacht be insured on agreed value or actual cash value?",
@@ -126,7 +126,7 @@ function datasetSchema() {
       "War risk premium as percentage of hull value per voyage",
     ],
     isBasedOn: [
-      { "@type": "CreativeWork", name: "Gallagher Specialty market reporting, Q4 2025", url: "https://www.ajg.com" },
+      { "@type": "CreativeWork", name: "BOAT International, Superyacht insurance: why premiums are on the rise (November 2019)", url: "https://www.boatinternational.com/yachts/editorial-features/superyacht-insurance-why-premiums-are-on-the-rise--42091" },
       { "@type": "CreativeWork", name: "PIB Marine, on the record", url: "https://www.pib-insurance.com" },
       { "@type": "CreativeWork", name: "Pantaenius, on the record", url: "https://www.pantaenius.com" },
     ],
@@ -195,11 +195,10 @@ export default function YachtInsurancePage() {
             <div className="lg:sticky lg:top-32 space-y-4">
               <p className="meta">Sources</p>
               <ul className="caption space-y-3">
-                <li>Gallagher Specialty market reporting, Q4 2025</li>
+                <li>SuperyachtNews, August 2018, on Lloyd&rsquo;s yacht results</li>
                 <li>Ollie Davis, PIB Marine, on the record</li>
                 <li>Michelle van der Merwe, Pantaenius, on the record</li>
-                <li>AIG rate commentary, 2022</li>
-                <li>Lloyd&rsquo;s marine portfolio reporting</li>
+                <li>AIG (Sean Blue), BOAT International, November 2019</li>
                 <li>
                   Adria Notari and Ryan Melogy in{" "}
                   <span className="italic">The Superyacht Report</span>, Q2 2026
@@ -219,8 +218,8 @@ export default function YachtInsurancePage() {
           <div className="lg:col-span-8 lg:col-start-4 space-y-12">
             <div className="prose-body text-charcoal max-w-prose space-y-5">
               <p>
-                Insurance is the most consequential operational decision after
-                the captain hire and tends to be taken with the least attention.
+                After the captain, insurance is the operating decision with the
+                most money at stake.
                 The hull policy alone covers an asset typically worth EUR 10
                 million to EUR 200 million, and the broker and the underwriting
                 structure behind them determine, at claim time, whether the
@@ -266,19 +265,20 @@ export default function YachtInsurancePage() {
                 Where the market sits
               </h2>
               <p>
-                The hardened market of 2022, with AIG citing 50 to 70 percent
-                rate increases, followed sustained Lloyd&rsquo;s marine
-                underwriting losses through the mid-2010s. The yacht line ran
-                loss ratios above 100 percent for several consecutive years, and
-                only around 5 percent of yacht premium written between 2011 and
-                2017 returned a profit. Yacht is widely identified as the
-                worst-performing segment in the Lloyd&rsquo;s marine portfolio.
+                The market first hardened after sustained Lloyd&rsquo;s yacht
+                underwriting losses through the mid-2010s. In 2015 the Lloyd&rsquo;s
+                yacht market collected about GBP 150 million of premium and paid
+                about GBP 210 million of claims, a loss ratio of 140 percent
+                (SuperyachtNews), and in 2017 it incurred GBP 232.8 million of
+                losses against about GBP 150.1 million of premium (The Insurer).
+                In 2019 AIG spoke of increases of 50 to 70 percent in the London
+                market. Rates rose again from 2022.
               </p>
               <p>
-                Rates stabilised by the first half of 2024. By the fourth
-                quarter of 2025 Gallagher Specialty reported softening of 4 to
-                7.5 percent for fleets with good loss records, and 2026 reads as
-                stable. The softening creates one trap for buyers: a yacht
+                Increases had largely stopped by the first half of 2024, and the
+                market has since softened; the reductions brokers published for
+                2025 describe commercial shipping hull and machinery rather than
+                yachts. 2026 reads as stable. The softening creates one trap for buyers: a yacht
                 remarketed by different brokers three or more years running can
                 find underwriters declining to quote at all, because the file
                 looks shopped.
@@ -304,10 +304,11 @@ export default function YachtInsurancePage() {
               </p>
               <p>
                 Take three quotes from firms with genuine over-30 metre depth.
-                Howden and Pantaenius are the two largest brokers in the
-                segment; AON Marine, Gallagher Specialty and Marsh are the other
-                substantial players, and PIB Insurance Brokers is the
-                established UK specialist alternative. The point is the
+                Howden and Pantaenius are among the largest brokers in the
+                segment; AON Marine, Gallagher Specialty and Marsh also place
+                substantial large-yacht business, and PIB Marine (formerly Zorab
+                Insurance Services) is a UK yacht specialist. Ask each to
+                disclose its commission in writing. The point is the
                 discipline of three quotes rather than any particular name.
               </p>
               <p>

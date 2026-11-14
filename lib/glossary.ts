@@ -31,7 +31,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A formal mandate by which a single broker is appointed by the seller to market the yacht. Other brokers can introduce buyers but only the central agent receives the listing-side commission.",
     longDefinition:
-      "Central agency agreements are time-bounded and exclusive. Sub-agency arrangements split the commission between the central agent and any introducing broker, typically at 50/50 on the seller side. The central agent’s incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months. For the seller, Clyde & Co’s Guide to Superyacht Law names three terms to check: the minimum marketing activity, the commission payable after the agreement ends, and the governing law.",
+      "Central agency agreements are time-bounded and exclusive. Sub-agency arrangements pay any introducing broker out of the seller’s commission, typically half of it or a little less. The central agent’s incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months. For the seller, Clyde & Co’s Guide to Superyacht Law names three terms to check: the minimum marketing activity, the commission payable after the agreement ends, and the governing law.",
     relatedChapters: ["03-how-the-industry-works", "06-refit"],
     relatedTerms: ["brokerage", "dual-agency"],
   },
@@ -39,9 +39,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "dual-agency",
     term: "Dual agency",
     shortDefinition:
-      "When a single brokerage represents both buyer and seller in a transaction. The conflict of interest is structural and may not always be disclosed in writing.",
+      "When a single brokerage represents both buyer and seller in a transaction. The book’s standard is written disclosure of the role and of the payment.",
     longDefinition:
-      "Dual agency is permitted in most yacht-broking jurisdictions provided it is disclosed. The standard MYBA and IYBA agreements include a dual-agency clause that the buyer signs with the central agent. Disclosure beyond that boilerplate, including any retrocession arrangements with introducing parties, is typically not volunteered.",
+      "California requires explicit dual-agency disclosure, and Florida’s transactional-brokerage rules dilute full agency duties by default. The IYBA Purchase and Sale Agreement contains a dual-agency clause that amounts to pre-emptive consent, with carve-outs that stop the broker acting fully for either side. Disclosure beyond that clause, including any retrocession arrangements with introducing parties, is not always volunteered.",
     relatedChapters: ["03-how-the-industry-works", "04-acquisition-process"],
     relatedTerms: ["brokerage", "central-agency", "retrocession"],
   },
@@ -109,9 +109,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "owners-representative",
     term: "Owner’s representative",
     shortDefinition:
-      "An independent professional appointed by the buyer to oversee a new build or major refit. Paid by the owner, with no commercial relationship to the yard.",
+      "The adviser the owner engages first and pays directly to act for the owner across an acquisition, new build or refit. This book uses “owner’s representative” and “independent adviser” for the same role.",
     longDefinition:
-      "The owner’s representative manages the buyer’s interests across yard selection, contract drafting, technical specification, build supervision, milestone inspection, snag-listing, and delivery acceptance. The independence test is whether the representative’s income is contingent only on the buyer’s instructions, with no yard commission, no broker referral, and no contingent-fee arrangement on closing.",
+      "The owner’s representative manages the buyer’s interests across yard selection, contract drafting, technical specification, build supervision, milestone inspection, snag-listing, and delivery acceptance. The book’s standard is written disclosure: any yard commission, broker referral or fee contingent on closing is disclosed to the owner in writing, with its amount and payer, before engagement (chapter 3). On a major project the representative works at principal level and appoints a project manager for day-to-day site work.",
     relatedChapters: ["05-new-build-versus-brokerage", "06-refit", "09-decision-framework"],
     relatedTerms: ["yorr", "sybass"],
   },
@@ -131,7 +131,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Major maintenance, modernisation, or rebuild work undertaken at a specialist yard. Typical scopes range from cosmetic refresh to multi-year structural rebuild.",
     longDefinition:
-      "Refit is the umbrella term for periodic capex on a yacht above survey-and-class minimum. Mid-life refits at year five to seven typically cover paint, soft furnishings, and selective system upgrades. Full refits at year ten to fifteen include structural and propulsion work and can run 30 to 60 percent of the yacht’s pre-refit market value. Overrun against initial budget runs 30 to 50 percent on the empirical opened-up-vessel pattern.",
+      "Refit is the umbrella term for periodic capex on a yacht above survey-and-class minimum. A five-year survey or major refit typically runs 5 to 15 percent of insured hull value; on the publisher’s project archive a mid-life refit runs EUR 10,000 to 30,000 per metre and a major structural refit EUR 40,000 to 100,000 or more per metre. Industry consensus is that refits routinely run 30 to 50 percent over the original quote, partly from work that could not be seen at quote and partly from changes loose specification lets through. A practitioner rule of thumb treats refit cost above 30 percent of pre-refit market value as the point to consider selling.",
     relatedChapters: ["06-refit"],
     relatedTerms: ["spanish-ipr", "owners-representative"],
   },
@@ -141,7 +141,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A commission rebate paid quietly between counterparties, often from a yard or supplier back to a referring broker, captain, or management company. Frequently undisclosed.",
     longDefinition:
-      "Retrocession arrangements are legal in most jurisdictions provided they are disclosed. The structural problem is that disclosure is typically not volunteered. The OnboardOnline legal column has stated the position plainly: retrocession is permitted only where the recipient discloses it to the principal whose interests they represent.",
+      "OnboardOnline’s legal column states that referral fees are legal only if disclosed, must be reflected in the closing statement to seller and buyer, and that undisclosed payments to a captain are potentially criminal. No equivalent rule compels a brokerage to disclose retrocessions on ongoing services to its yacht-owning client, so the buyer asks each introduced party for written disclosure (chapter 3).",
     relatedChapters: ["03-how-the-industry-works"],
     relatedTerms: ["dual-agency", "brokerage"],
   },
@@ -149,9 +149,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "sybass",
     term: "SYBAss",
     shortDefinition:
-      "Superyacht Builders Association. Membership signals an independently audited ability to deliver new builds above 40 metres.",
+      "Superyacht Builders Association. A yard becomes eligible once it has delivered three yachts over 40 metres.",
     longDefinition:
-      "SYBAss membership is granted to yards that demonstrate, through independent audit, the capacity to deliver yachts above 40 metres. Membership covers Northern European custom yards (Feadship, Lürssen, Oceanco, Heesen, Royal Huisman, Vitters, Baltic) and a small number of Italian and Turkish builders. SYBAss founded the Yacht Owners’ Register of Representatives jointly with the Superyacht Alliance, IAMI, and GUEST.",
+      "Member yards (Lürssen, Feadship, Oceanco, Heesen, Royal Huisman, Vitters, Baltic, Abeking & Rasmussen, Codecasa, CRN, Benetti, Sanlorenzo) collectively build roughly two thirds of yachts over 40 metres. SYBAss announced the Yacht Owner Representative Programme (YORP) with IAMI and GUEST in June 2023; the Yacht Owner’s Representative Register (YORR) followed in November 2024, administered by the Superyacht Alliance for Professional Standards.",
     source: {
       name: "Superyacht Builders Association",
       url: "https://www.sybass.org/",
@@ -165,7 +165,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Inward Processing Relief. A customs procedure under which a non-EU yacht is refitted in Spain with the VAT on the works exempt, provided the procedure is followed and the yacht leaves the EU.",
     longDefinition:
-      "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht’s departure from the EU. It is separate from temporary admission, which covers the yacht’s use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules.",
+      "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht’s departure from the EU. It is separate from temporary admission, which covers the yacht’s use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. MB92, Astilleros de Mallorca and several smaller Spanish yards are equipped for it. France and Italy treat refit VAT under different rules.",
     relatedChapters: ["06-refit"],
     relatedTerms: ["temporary-admission", "vat-paid-status"],
   },
@@ -173,9 +173,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "vat-regime",
     term: "VAT regime",
     shortDefinition:
-      "The framework under which value-added tax is paid (or relieved) on a yacht’s purchase, importation, and operation. Choices include Spanish IPR, French commercial exemption, Italian leasing, and Maltese.",
+      "The framework under which value-added tax is paid (or relieved) on a yacht’s purchase, importation, and operation. Routes include the French Commercial Exemption and Maltese and Italian leasing on purchase and use, and Spanish inward processing on refit works.",
     longDefinition:
-      "The applicable VAT regime depends on the yacht’s flag state, the owner’s residence, the area of operation, and whether the yacht is operated privately or commercially. EU member states harmonised their charter VAT treatment under Council pressure between 2018 and 2020; length-based reductions were withdrawn and replaced with effective-use approaches.",
+      "The applicable VAT regime depends on the yacht’s flag state, the owner’s residence, the area of operation, and whether the yacht is operated privately or commercially. Under European Commission infringement procedures opened in 2018, length-based reductions were withdrawn and replaced with effective-use approaches: Malta under guidelines of 12 March 2020, Italy from 1 November 2020 (chapter 4).",
     relatedChapters: ["04-acquisition-process", "06-refit", "07-operations"],
     relatedTerms: ["spanish-ipr", "temporary-admission", "charter-vat"],
   },
@@ -195,7 +195,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Yacht Owner’s Representative Register. The cross-industry register on which qualifying owner’s representatives are listed; administered by the Superyacht Alliance for Professional Standards and searchable at superyachtalliance.org/register/register-table/.",
     longDefinition:
-      "YORR is the cross-industry register of vetted owner’s representatives, launched at The Superyacht Forum in Amsterdam in November 2024 by SYBAss, the Superyacht Alliance for Professional Standards, IAMI, and GUEST. Inclusion requires demonstrated independence from yards, brokers, and management companies, the SYBAss-aligned YORP training (practitioners with three or more approved large refit or new build projects can register via Unit 40 alone; all other candidates complete the full 200-hour programme over four courses), a CV audit, and a documented track record on builds above 40 metres. The register is published as a public table at superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal; buyers considering an owner’s representative can verify the firm and the principal directly on the register before engagement.",
+      "YORR is the cross-industry register of vetted owner’s representatives, launched at The Superyacht Forum in Amsterdam in November 2024 by SYBAss, the Superyacht Alliance for Professional Standards, IAMI, and GUEST. Inclusion requires the YORP training (practitioners with verified projects can register via Unit 40 alone until 30 June 2027; other candidates complete the four courses, more than 200 hours in all), a CV audit, and endorsement of a code of conduct under which any commission, such as one on the tender, is disclosed to the owner in writing in advance. The register is published as a public table at superyachtalliance.org/register/register-table/ and is searchable by firm and by named principal; buyers considering an owner’s representative can verify the firm and the principal directly on the register before engagement.",
     source: {
       name: "Yacht Owner’s Representative Register",
       url: "https://superyachtalliance.org/register/register-table/",
@@ -451,7 +451,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "The list of outstanding items, defects, or incomplete work identified at a yacht’s delivery or refit redelivery, to be completed by the yard before final acceptance.",
     longDefinition:
-      "The punch list (or snag list) is the buyer’s record of items not at acceptance condition at delivery. A diligent owner’s representative on a 40 to 50 metre new build will typically generate 800 to 1,500 items by delivery; the published Inglis case at ULTIMAR documented 1,200 items where the family office’s own count was 100. Punch-list management with the yard, with a withheld retention against final closure, is the standard discipline; final payment held against punch-list closure is the buyer’s lever.",
+      "The punch list (or snag list) is the buyer’s record of items not at acceptance condition at delivery. A diligent owner’s representative on a 40 to 50 metre new build will typically generate 800 to 1,500 items by delivery; the published Inglis case at ULTIMAR documented more than 1,200 items where the family office’s reported count was around 100. Punch-list management with the yard, with a withheld retention against final closure, is the standard discipline; final payment held against punch-list closure is the buyer’s lever.",
     relatedChapters: ["05-new-build-versus-brokerage", "06-refit"],
     relatedTerms: ["owners-representative", "moa"],
   },
@@ -459,9 +459,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "stage-payments",
     term: "Stage payments",
     shortDefinition:
-      "The payment schedule on a yacht new build, structured against build milestones. Industry-typical loading is 50 to 70 percent of contract value before delivery.",
+      "The payment schedule on a yacht new build, structured against build milestones. Commercial shipbuilding puts 40 percent or more of the price before delivery; custom yacht work routinely well over half.",
     longDefinition:
-      "Stage payment loading reflects the yard’s working capital requirement against build progress. Industry-typical loading is 50 to 70 percent of contract value paid before delivery, with the balance at delivery and final acceptance. Heavier front-loading is yard-favourable and may signal yard cash-flow pressure. Each stage payment should be backed by a refund guarantee from a tier-one bank with pay-on-demand wording; surety wrappers are weaker. Payment should be tied to verified milestone completion, not calendar dates.",
+      "Stage payment loading reflects the yard’s working capital requirement against build progress. Commercial shipbuilding lawyers put the share paid before delivery at 40 percent or more (Watson Farley & Williams); in custom yacht work it is routinely well over half, and on some projects as much as 90 percent (chapter 5). The balance is paid at delivery and final acceptance. Heavier front-loading is yard-favourable and may signal yard cash-flow pressure. Each stage payment should be backed by a refund guarantee from a tier-one bank with pay-on-demand wording; surety wrappers are weaker. Payment should be tied to verified milestone completion, not calendar dates.",
     relatedChapters: ["05-new-build-versus-brokerage"],
     relatedTerms: ["punch-list", "owners-representative"],
   },
@@ -583,7 +583,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "obbba",
     term: "OBBBA bonus depreciation",
     shortDefinition:
-      "United States One Big Beautiful Bill Act provision allowing up to 100 percent first-year depreciation on yachts placed in commercial service between 2025 and 2029.",
+      "United States One Big Beautiful Bill Act provision allowing 100 percent first-year bonus depreciation on qualifying business yachts acquired on or after 20 January 2025, made permanent by the Act.",
     longDefinition:
       "The One Big Beautiful Bill Act of 2025 made 100 percent bonus depreciation permanent for qualifying business property acquired after 19 January 2025, as IRS Notice 2026-11 confirms. For a yacht the relief depends on genuine business use, usually a documented charter operation, with contemporaneous records; the treatment of yachts used mainly outside the United States is a point for US tax counsel. Cited in Knight Frank’s Wealth Report 2026, alongside US demand, as a reason buyers rushed to close deals in 2025, when estimated sales of yachts over 24 metres reached USD 8.5 billion. Pre-transaction US yacht-tax counsel review essential.",
     relatedChapters: ["02-reading-the-market"],

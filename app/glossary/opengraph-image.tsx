@@ -9,6 +9,6 @@ export default async function Image() {
     eyebrow: "Glossary, 1st Edition 2027",
     eyebrowRight: "50 terms",
     title: "The terms, defined plainly",
-    standfirst: "Brokerage, retrocession, temporary admission, ISM, MLC, flag state and forty-four more. Sourced and free to cite.",
+    standfirst: "Brokerage, retrocession, temporary admission, ISM, MLC, flag state and fifty-four more. Sourced and free to cite.",
   });
 }

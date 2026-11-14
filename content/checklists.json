@@ -22,7 +22,7 @@
           },
           {
             "question": "A depreciation projection across the intended hold period, against broker-aggregated data.",
-            "detail": "Depreciation curves are published in broker-aggregated series (Yatco, IYC, Yacht Hunter)."
+            "detail": "Yatco and IYC publish broker-aggregated rates; Yacht Hunter argues against fixed schedules."
           }
         ]
       },
@@ -39,7 +39,7 @@
           },
           {
             "question": "The use case tested against the buyer’s calendar, household, and family availability for the next five years.",
-            "detail": "The yacht will absorb 40 to 60 days a year of owner attention."
+            "detail": "Chapter 9’s case puts owner attention on a 49 m yacht at 40 to 60 days a year."
           }
         ]
       },
@@ -223,7 +223,7 @@
     "slug": "04-acquisition-process",
     "title": "The acquisition discipline, in fifteen items.",
     "standfirst": "A reference list across the 12 to 24 week acquisition window. Most of the work is upstream of closing.",
-    "intent": "The contract is set by closing. The acquisition window is the first ten weeks. The items below are what to complete in that window.",
+    "intent": "The contract is set by closing. Most of the work falls in the first ten weeks. The items below are what to complete in that window.",
     "groups": [
       {
         "heading": "Shortlist",
@@ -545,7 +545,7 @@
             "question": "Written disclosure of any referral economics from suppliers (paint, refit yards, insurance, recruitment)."
           },
           {
-            "question": "Contract structured to protect the buyer’s interests in flag-state interactions, ISM and MLC compliance, and audit cycles."
+            "question": "Contract structured to protect the buyer’s interests in flag-state interactions, ISM and MLC compliance where they apply, and audits."
           }
         ]
       },
@@ -585,7 +585,7 @@
             "question": "A refit reserve from year one, sized at 5 to 15 percent of insured hull value across the five-year cycle."
           },
           {
-            "question": "The reserve tested against the empirical 30 to 50 percent overrun pattern."
+            "question": "The reserve tested against the industry 30 to 50 percent overrun pattern."
           },
           {
             "question": "An annual capex plan revisited with the captain and owner’s representative present."
@@ -645,7 +645,7 @@
             "detail": "Confirm the yacht’s GT, commercial or private status and passenger certification with the flag and the yacht lawyer. A July 2026 Commission proposal to extend the system below 5,000 GT does not name yachts."
           },
           {
-            "question": "HVO availability at the buyer’s home cruising port. HVO is a drop-in diesel replacement at 85 to 90 percent lifecycle CO2 reduction; bunker availability is strongest in the Mediterranean."
+            "question": "HVO availability at the buyer’s home cruising port. HVO is a drop-in diesel replacement with lifecycle emissions up to about 90 percent lower, by feedstock; supply is strongest in the Mediterranean."
           },
           {
             "question": "If new build, the emission control areas the yacht will cruise and the NOx Tier III dates that apply there, whether the engine maker approves HVO, and any methanol-ready or fuel-cell specification. Available from the larger Northern European yards on request."
