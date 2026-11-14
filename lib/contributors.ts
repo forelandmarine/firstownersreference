@@ -39,7 +39,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Ella Johnson": {
     name: "Ella Johnson",
     avatar: "/images/contributors/ella-johnson.jpg",
-    bio: "Ella Johnson is captain of a 34 metre Baltic Yachts performance sloop. She has made four Atlantic crossings and sailed more than 30,000 nautical miles on large and smaller sailing yachts, racing and on charter, and previously captained a 70 foot sailing yacht for three years. She also has working engineering knowledge and is developing her project management skills.",
+    bio: "Ella Johnson is captain of a 34 metre Baltic Yachts performance sloop. She has made four Atlantic crossings and sailed more than 30,000 nautical miles on large and smaller sailing yachts, racing and on charter, and previously captained a 70 foot sailing yacht for three years.",
   },
   "Simon Roberts": {
     name: "Simon Roberts",
