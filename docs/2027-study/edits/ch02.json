@@ -1,0 +1,391 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "More wealth has been created in fewer hands than at any point in recorded economic history. The order book contracted for the second consecutive year.",
+    "new": "The number of people worth more than USD 30 million has grown by nearly 30 percent in five years. The order book contracted for the second consecutive year.",
+    "kind": "fact",
+    "reason": "Unsourced superlative replaced with the Knight Frank figure from para 3 (551,435 to 713,626 is a 29.4 percent rise)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "More wealth has been created in fewer hands than at any point in recorded economic history, while the order book for yachts above 24 metres contracted for the second consecutive year.",
+    "new": "The number of people worth more than USD 30 million has grown by nearly 30 percent in five years (Knight Frank), while the order book for yachts above 24 metres contracted for the second consecutive year.",
+    "kind": "fact",
+    "reason": "Same superlative, unsourced; replaced with the attributed Knight Frank growth figure"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Trade press often characterises the moment as a boom. It is a narrowing of new-build capacity against expanding demand: price discipline at the top, scarcity at the established yards, and a sharp split between well-priced inventory that moves and over-priced inventory that rots.",
+    "new": "Trade press often describes the moment as a boom. The figures below describe something narrower: fewer new-build contracts against a growing number of potential buyers, scarce slots at the established yards, and a brokerage market in which well-priced yachts sell and over-priced ones wait.",
+    "kind": "line",
+    "reason": "Removes 'It is X' turn and the first of three 'rots'; keeps today's order-book correction"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Capgemini World Wealth Report 2025 adds the second frame:",
+    "new": "The Capgemini World Wealth Report 2025 adds the inheritance figures:",
+    "kind": "line",
+    "reason": "'Frame' made concrete"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The reader of The First Owner’s Reference is therefore likely to be one of two profiles: a newly liquidated principal, or an heir whose first action is to fire the adviser their parents used.",
+    "new": "Many readers of The First Owner’s Reference will therefore be one of two kinds of buyer: a principal who has recently sold a business, or an heir reviewing the advisers their parents used.",
+    "kind": "repetition",
+    "reason": "C22: matches the ch09 pointer wording; 'fire' overstates the Capgemini 'intend to switch' finding"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "unit count peaked in the 2023 to 2024 window and has eased. The trade-press claim of a peak is true only by length and tonnage.",
+    "new": "unit count peaked in the 2023 to 2024 window and has eased, so a claim that the order book is at a peak holds only for length and tonnage.",
+    "kind": "line",
+    "reason": "Clarifies which measure is at a peak"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "at roughly nine percent of the order book, an undercovered shift in the order-book composition.",
+    "new": "at roughly nine percent of the order book (101 of 1,093).",
+    "kind": "line",
+    "reason": "Unsupported claim about coverage cut; working shown"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "What this means for a first-time buyer entering in 2027: the major decision is not which yard to commission, but whether to take a brokerage hull now, take a slot at a mid-tier yard with capacity, or wait three to four years for a delivery slot at a top-tier German or Dutch builder. Each path carries a different cost, risk, and time profile, and the three are not interchangeable.",
+    "new": "For a first-time buyer entering in 2027, the main decision comes before the choice of yard: whether to take a brokerage yacht now, take a slot at a mid-tier yard with capacity, or wait three to four years for a delivery slot at a top-tier German or Dutch builder. Each path carries a different cost, risk and timescale, and chapter 5 compares them.",
+    "kind": "structure",
+    "reason": "Removes 'not X but Y'; adds the forward pointer to ch05 recommended in F"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "The number of potential buyers is rising sharply. The number"
+    },
+    "kind": "structure",
+    "reason": "Unattributed pull quote repeating para 0 word for word"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The brokerage market in 2025 was the strongest year on record by value. Edmiston’s 2025 review records EUR 7.1 billion across 363 sales of yachts over 30 metres, up 15 percent on 2024. Yachts priced above EUR 40 million were 7 percent of sales by volume and 52 percent of value.",
+    "new": "By Edmiston’s measure, brokerage sales of yachts over 30 metres, 2025 was the strongest year on record. Its 2025 review records more than EUR 7.1 billion across 363 sales, 15 percent more sales than in 2024. Yachts asking more than EUR 40 million were 7 percent of sales by number and 52 percent of value. Other published totals measure different things, including Knight Frank’s USD 8.5 billion for all yacht sales in 2025 cited in chapter 1.",
+    "kind": "fact",
+    "reason": "C1: names the measure; the 15 percent rise is in the number of sales, not value (Edmiston review); 'asking' per source"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "Broader counts that reach down to 24 metres also appear in t"
+    },
+    "kind": "repetition",
+    "reason": "Para 20 already says the 24m count is not comparable; '30m+ is the one that matters' sits badly with a 24 to 60m readership"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Pricing discipline is the defining feature of 2025. Days on market is the clearest published test of it:",
+    "new": "Days on market is the clearest published test of whether a yacht is priced to sell:",
+    "kind": "line",
+    "reason": "Unsupported 'defining feature' claim cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and yachts cut in the third quarter had waited a median of 386 days first.",
+    "new": "and yachts cut in the third quarter had been on the market for a median of 386 days.",
+    "kind": "fact",
+    "reason": "Source gives median time on market of yachts receiving reductions, not time before the cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The market is splitting in two: well-priced hulls move, over-priced ones sit. Buyers entering in 2027 should expect serious inventory to move quickly.",
+    "new": "Shorter selling times alongside more frequent price cuts suggest a market dividing on price: yachts priced close to what buyers will pay sell, and the rest wait and are cut.",
+    "kind": "fact",
+    "reason": "C20/F: 'expect serious inventory to move quickly' does not follow from a 445-day average and lower nine-month value; reads the two figures together instead"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "gave a transparent benchmark in early 2026",
+    "new": "gave a benchmark in early 2026",
+    "kind": "line",
+    "reason": "Evaluative adjective cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The cadence is consistent with the days-on-market trend: serious buyers and serious sellers are clearing, while the gap between asking and inside-price has narrowed.",
+    "new": "The pace is consistent with the shorter selling times above.",
+    "kind": "fact",
+    "reason": "Narrowing asking-to-sale gap is unsourced (flagged); 'inside-price' jargon"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " The very top and the value-driven middle are diverging.",
+    "new": "",
+    "kind": "line",
+    "reason": "Closing declaration that restates the paragraph"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Three claims about geographic shift recur in trade press; only one is fully supported by the data.",
+    "new": "Three claims about geographic shift recur in trade press. The data supports the first, partly supports the second and does not support the third.",
+    "kind": "line",
+    "reason": "Sets up 23, 26 and 27 plainly; Russia (28) is a separate point"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The tariff side of the same trade environment is the counterweight. BoatPro’s tariff brief, drawn from The Washington Post and Forbes, documents the 5 April 2025 executive order under the International Emergency Economic Powers Act which raised effective US tariff rates on imported yachts: China 20 to 40 percent, Turkey 10 to 25, Taiwan 10 to 20, Italy 2.2 to 15, Germany 1.4 to 15, France 1.2 to 15, Netherlands 0.7 to 15, UK 0.97 to 10. In May 2025 the US Court of International Trade ruled the President did not have authority to impose these tariffs under IEEPA, a ruling upheld on appeal and, after argument in November 2025, by the Supreme Court; by spring 2026 the trade court had ordered nationwide refunds. For a US-based first-time new-build buyer, the headline price from a Northern European yard now carries roughly fifteen percentage points of tariff exposure that was not in the contract eighteen months earlier; some buyers are responding by acquiring duty-paid hulls from US dealer inventory rather than ordering direct.",
+    "new": "The tariff side of the same trade environment has changed three times since April 2025. BoatPro’s tariff brief, drawn from The Washington Post and Forbes, documents the April 2025 tariffs imposed under the International Emergency Economic Powers Act (IEEPA), which raised effective US tariff rates on imported yachts: China 20 to 40 percent, Turkey 10 to 25, Taiwan 10 to 20, Italy 2.2 to 15, Germany 1.4 to 15, France 1.2 to 15, Netherlands 0.7 to 15, UK 0.97 to 10. On 20 February 2026 the Supreme Court held that IEEPA does not authorise tariffs, and on 4 March the Court of International Trade ordered the duties refunded to all importers of record. A temporary 10 percent tariff under Section 122 of the Trade Act of 1974 applied from 24 February to 24 July 2026. Since 24 July most imports have carried Section 301 duties of 10 or 12.5 percent, with a ceiling on the combined duty for goods from the European Union. A US buyer ordering from a European yard should confirm the rate that applies at contract and delivery, and the contract should say who bears any change. In 2025 some buyers responded by acquiring duty-paid hulls from US dealer inventory rather than ordering direct.",
+    "kind": "fact",
+    "reason": "C21: the IEEPA rates and the 'fifteen percentage points' no longer apply; dated sequence and current Section 301 regime from law-firm sources (report)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "The macro backdrop is moderating. The IMF’s October 2025 Wor"
+    },
+    "kind": "structure",
+    "reason": "Generic IMF paragraph with dated projections; its tariff link no longer holds (F recommendation)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "European collapse is only partly supported.",
+    "new": "The claim of a European collapse is partly supported.",
+    "kind": "line",
+    "reason": "Plain statement of the claim"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Western Mediterranean transactions doubled year on year in Q1 2025, from 11 to 27.",
+    "new": "Western Mediterranean transactions more than doubled year on year in Q1 2025, from 11 to 27.",
+    "kind": "fact",
+    "reason": "11 to 27 is a 145 percent rise"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Asian retreat is wrong.",
+    "new": "The claim of an Asian retreat is not supported by fleet data.",
+    "kind": "line",
+    "reason": "Overstated framing; states what the data shows"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The framing reflects new-build order patterns, not fleet growth.",
+    "new": "The claim appears to rest on new-build orders rather than the operating fleet.",
+    "kind": "line",
+    "reason": "Softened; interpretation marked as such"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Russia is a similar misframe. SuperYacht Times iQ data shows Russian ownership share moving from 9.1 percent in 2022 to 8.1 percent in 2023, a decline rather than a collapse; ownership through proxies and structures has largely survived the sanctions environment.",
+    "new": "The claim of a Russian collapse is also overstated. SuperYacht Times iQ data shows Russian ownership share moving from 9.1 percent in 2022 to 8.1 percent in 2023, a decline rather than a collapse.",
+    "kind": "fact",
+    "reason": "'Misframe' cut; unsourced claim that proxy ownership has 'largely survived' sanctions removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"Reading the signals correctly\"",
+    "new": "\"text\": \"What this means for a buyer\"",
+    "kind": "line",
+    "reason": "Heading implied other readings are wrong; plain heading replaces signpost para 30"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "Three implications for a first-time buyer reading the market"
+    },
+    "kind": "structure",
+    "reason": "Signposting (F)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "First, the wealth pool is overwhelmingly American, increasingly self-made, and includes a growing proportion of next-generation inheritors less loyal to incumbent advisers than any prior generation.",
+    "new": "First, the wealth pool is increasingly American: 41 percent of new UHNWIs were created in the United States, and the US share is forecast to reach 41 percent by 2031. It also includes a growing number of heirs, 81 percent of whom intend to change wealth manager within two years of inheriting.",
+    "kind": "fact",
+    "reason": "C20: 'overwhelmingly American' and 'increasingly self-made' overstate paras 4 and 5; restated from their figures"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The first-time buyer profile is younger than trade press has so far been reporting.",
+    "new": "These are small samples, but they point to first-time buyers younger than is often assumed.",
+    "kind": "fact",
+    "reason": "Generalisation from one owner and three hulls qualified"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " The realistic choice is between a top-tier custom build several years from contract, a semi-custom or speculative hull available sooner, or a brokerage yacht available now.",
+    "new": "",
+    "kind": "repetition",
+    "reason": "Restates para 11"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Third, the brokerage market has discipline that did not exist in 2023. Well-priced inventory moves in months; over-priced inventory rots for a year and a half. Days-on-market and price-reduction history are public; this is the most legible the brokerage market has been in a decade.",
+    "new": "Third, the information a buyer needs to judge an asking price is published. Listing portals show each yacht’s time on market and its price cuts, and Northrop & Johnson’s quarterly figures give a benchmark to read them against. A yacht listed well beyond the average for yachts that sold, with a record of cuts, is evidence that its asking price is above what buyers will pay.",
+    "kind": "repetition",
+    "reason": "Third 'rots'; 'moves in months' conflicts with the 445-day average; 'discipline that did not exist in 2023' and 'most legible in a decade' unsourced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "The pattern underneath the demographics is mobility. Rupert "
+    },
+    "kind": "structure",
+    "reason": "Trim 34 to 40: London property mobility does not inform the yacht market read"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "A modern superyacht now functions as a six-star hotel equipp"
+    },
+    "kind": "structure",
+    "reason": "Trim 34 to 40: brochure-register quote; at most one quote kept (Maass)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The motive question sits underneath the data, and rarely surfaces in market commentary. Robb Maass of Alley, Maass, Rogers & Lindsay, on the published record in March 2026:",
+    "new": "The figures in this chapter describe price and supply, not motive. Robb Maass of Alley, Maass, Rogers & Lindsay, speaking on a panel in March 2026:",
+    "kind": "line",
+    "reason": "Unsupported generalisation about commentary cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "John Leonida of Wordley Partnership added the macro compleme"
+    },
+    "kind": "structure",
+    "reason": "Trim 34 to 40: one quote kept"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "What we need is economic and political certainty. That’s not"
+    },
+    "kind": "structure",
+    "reason": "Trim 34 to 40: one quote kept"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The market is buying anyway. The buyer who reads the moment correctly is the one who understands that the data is now legible enough to disagree with their broker, the certainty is not coming, and the decision is psychological as well as financial.",
+    "new": "Whatever the motive, the price paid can be tested against the published record: the yacht’s time on market and price cuts, recent comparable sales and, for new build, the yard’s actual delivery slot. That record is now detailed enough for a buyer and their adviser to question a broker’s view of price on the evidence.",
+    "kind": "structure",
+    "reason": "Closing declaration replaced with what the buyer can do; Leonida reference removed with his quote"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Knight Frank’s Wealth Report 2026 records USD 8.5 billion of yacht transactions in 2025, a 70 percent rise on the prior year.",
+    "new": "Knight Frank’s Wealth Report 2026 records USD 8.5 billion of yacht sales in 2025, a 70 percent rise on the prior year. Edmiston’s 2025 review, which counts brokerage sales of yachts over 30 metres only, records more than EUR 7.1 billion. The two figures measure different things.",
+    "kind": "fact",
+    "reason": "C1: names the two measures side by side"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The reader of The First Owner’s Reference is therefore typically a newly liquidated principal, or an heir whose first action is to fire the parents’ adviser.",
+    "new": "Many readers of The First Owner’s Reference will therefore be a principal who has recently sold a business, or an heir reviewing the advisers their parents used.",
+    "kind": "repetition",
+    "reason": "C22: same wording as ch02 5 and the ch09 pointer"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"value\": \"EUR 7.1 bn across 363 yachts\"",
+    "new": "\"value\": \"More than EUR 7.1 bn across 363 yachts\",\n            \"note\": \"Number of sales up 15 percent on 2024\"",
+    "kind": "fact",
+    "reason": "Matches Edmiston wording ('exceeded'); records the 15 percent as a count rise"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"label\": \"Priced above EUR 40 m\"",
+    "new": "\"label\": \"Asking above EUR 40 m\"",
+    "kind": "fact",
+    "reason": "Source says 'asking'"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The Edmiston count covers yachts over 30 m, the band relevant to readers of The First Owner’s Reference. Broader counts reaching down to 24 m are not comparable with it.",
+    "new": "The Edmiston count covers yachts over 30 m. Broader counts reaching down to 24 m, including the Northrop & Johnson figures below, are not comparable with it.",
+    "kind": "line",
+    "reason": "Readership is 24 to 60m; points to the comparable-count issue once"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The deal that closed because someone read the market correctly.",
+    "new": "The buyer who walked away, and the buyer who closed.",
+    "kind": "line",
+    "reason": "Old title described the deal that closed as the one where the market was read correctly; it was the reverse"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The other took the broker’s framing of urgency and overpaid by 11 percent.",
+    "new": "The other accepted the broker’s account of urgency and paid up to 11 percent above the market read.",
+    "kind": "fact",
+    "reason": "EUR 27.8m is 5 to 11 percent above the adviser's EUR 25 to 26.5m read"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "\"value\": \"Closed at EUR 27.8 m, 11 percent above market read\"",
+    "new": "\"value\": \"Closed at EUR 27.8 m, 5 to 11 percent above the market read\"",
+    "kind": "fact",
+    "reason": "27.8/26.5 = 1.049; 27.8/25 = 1.112"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The broker collected approximately EUR 1.4 m in commission from the seller-side pool, of which a buyer-broker share of around EUR 600,000 was paid to a broker who had not represented Buyer B in any meaningful sense.",
+    "new": "The broker collected approximately EUR 1.7 m in commission from the seller-side pool on the MYBA scale, of which a buyer-broker share of around EUR 850,000 was paid to a broker who had not represented Buyer B in any meaningful sense.",
+    "kind": "fact",
+    "reason": "C4: MYBA on EUR 27.8m = 1.0 + 0.5 + 0.195 = EUR 1.695m; buyer-broker about half (ch03 4). Author to confirm against the file"
+  },
+  {
+    "file": "content/cases.json",
+    "old": " The trade press did not report this as a market event. The pattern is common.",
+    "new": "",
+    "kind": "line",
+    "reason": "Unsourced generalisation and aside cut"
+  },
+  {
+    "file": "content/cases.json",
+    "deleteParagraph": {
+      "slug": "02-reading-the-market",
+      "startsWith": "Well-priced inventory moves in months. Over-priced inventory"
+    },
+    "kind": "repetition",
+    "reason": "Attributed to the lead essay but not in it; repeated para 33 ('rots') a third time"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Buyer B had engaged a broker whose job was to close the transaction.",
+    "new": "Buyer B dealt only with the listing broker, whose job was to close the transaction for the seller.",
+    "kind": "fact",
+    "reason": "Buyer B did not engage the broker (para 2: the listing broker introduced him)"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The 11 percent price differential was not a market efficiency problem. It was a buyer-representation problem. The market was reading correctly. One buyer read it. One did not.",
+    "new": "The price difference came from representation. Both buyers had the same information; only Buyer A had someone whose job was to read it on their behalf.",
+    "kind": "line",
+    "reason": "Run of short declaratives and 'not X. It was Y' reduced"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Ignore the broker’s urgency framing; read the data.",
+    "new": "Read the data before acting on a broker’s account of urgency.",
+    "kind": "line",
+    "reason": "Plainer"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "An over-priced hull rotting on the market for 14 months is signalling that the seller’s asking discipline is wrong. Disciplined buyers walk away.",
+    "new": "A hull on the market for 14 months with three price cuts is evidence that the asking price is above what buyers will pay. A buyer with a hold price agreed in advance can walk away.",
+    "kind": "line",
+    "reason": "Fourth 'rotting' cut; matches the checklist's hold price"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Brokers who frame other buyers as “about to offer” are quoting their incentive, not yours.",
+    "new": "A broker’s report that another buyer is “about to offer” is not market evidence on its own; ask what it rests on.",
+    "kind": "line",
+    "reason": "Fairness: generalisation about brokers; aligned with the checklist item"
+  }
+]

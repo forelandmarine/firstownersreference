@@ -68,8 +68,8 @@
   },
   "02-reading-the-market": {
     "slug": "02-reading-the-market",
-    "title": "The deal that closed because someone read the market correctly.",
-    "standfirst": "Two buyers competed for the same 52 m brokerage hull. One read the days-on-market signal and held the price. The other took the broker’s framing of urgency and overpaid by 11 percent.",
+    "title": "The buyer who walked away, and the buyer who closed.",
+    "standfirst": "Two buyers competed for the same 52 m brokerage hull. One read the days-on-market signal and held the price. The other accepted the broker’s account of urgency and paid up to 11 percent above the market read.",
     "meta": [
       {
         "label": "Yacht type",
@@ -85,7 +85,7 @@
       },
       {
         "label": "Outcome, buyer B",
-        "value": "Closed at EUR 27.8 m, 11 percent above market read"
+        "value": "Closed at EUR 27.8 m, 5 to 11 percent above the market read"
       },
       {
         "label": "Anonymisation",
@@ -101,30 +101,25 @@
         "text": "The negotiation"
       },
       "Buyer A opened at EUR 24.5 m. The seller countered at EUR 27.5 m. Buyer A held at EUR 25.5 m, then at EUR 26.5 m. The seller was not willing to come below EUR 27.5 m within the negotiation window the buyer had set. Buyer A withdrew, on the adviser’s recommendation. The adviser noted that the seller’s asking discipline was inconsistent with the published days-on-market signal, and that walking away was the disciplined response.",
-      "Buyer B opened, six weeks later, at EUR 28 m, the asking. The broker recommended a small reduction request and a quick close to “secure the slot.” Buyer B closed at EUR 27.8 m. The broker collected approximately EUR 1.4 m in commission from the seller-side pool, of which a buyer-broker share of around EUR 600,000 was paid to a broker who had not represented Buyer B in any meaningful sense.",
+      "Buyer B opened, six weeks later, at EUR 28 m, the asking. The broker recommended a small reduction request and a quick close to “secure the slot.” Buyer B closed at EUR 27.8 m. The broker collected approximately EUR 1.7 m in commission from the seller-side pool on the MYBA scale, of which a buyer-broker share of around EUR 850,000 was paid to a broker who had not represented Buyer B in any meaningful sense.",
       {
         "type": "h2",
         "text": "Twelve months later"
       },
       "Buyer A bought a different 50 m hull at EUR 25.2 m, four months after walking away from the first transaction. The yacht had different layout, similar cruising profile, comparable build quality from a different mid-tier yard.",
-      "Buyer B’s yacht was offered for charter in the second season, generated EUR 750,000 in net charter revenue against EUR 2.1 m in operating cost, and was relisted in early 2026 at EUR 24.5 m. The trade press did not report this as a market event. The pattern is common.",
-      {
-        "type": "blockquote",
-        "text": "Well-priced inventory moves in months. Over-priced inventory rots for a year and a half. The buyer who pays close attention to days-on-market and price-reduction history will find that this is the most legible the brokerage market has been in a decade.",
-        "attribution": "Chapter 02, lead essay."
-      },
+      "Buyer B’s yacht was offered for charter in the second season, generated EUR 750,000 in net charter revenue against EUR 2.1 m in operating cost, and was relisted in early 2026 at EUR 24.5 m.",
       {
         "type": "h2",
         "text": "The mechanism"
       },
-      "Buyer A had access to the same data Buyer B did. Both buyers could have pulled the listing’s history from broker portals. Both could have run a comparable scan. The difference was that Buyer A had engaged an adviser whose only job was to read the market on the buyer’s behalf. Buyer B had engaged a broker whose job was to close the transaction.",
-      "The 11 percent price differential was not a market efficiency problem. It was a buyer-representation problem. The market was reading correctly. One buyer read it. One did not."
+      "Buyer A had access to the same data Buyer B did. Both buyers could have pulled the listing’s history from broker portals. Both could have run a comparable scan. The difference was that Buyer A had engaged an adviser whose only job was to read the market on the buyer’s behalf. Buyer B dealt only with the listing broker, whose job was to close the transaction for the seller.",
+      "The price difference came from representation. Both buyers had the same information; only Buyer A had someone whose job was to read it on their behalf."
     ],
     "takeaways": [
-      "Days-on-market and price-reduction history are public on listing portals. Ignore the broker’s urgency framing; read the data.",
-      "An over-priced hull rotting on the market for 14 months is signalling that the seller’s asking discipline is wrong. Disciplined buyers walk away.",
+      "Days-on-market and price-reduction history are public on listing portals. Read the data before acting on a broker’s account of urgency.",
+      "A hull on the market for 14 months with three price cuts is evidence that the asking price is above what buyers will pay. A buyer with a hold price agreed in advance can walk away.",
       "The independent adviser’s value on a single transaction can exceed their year’s fee through pricing discipline alone.",
-      "Brokers who frame other buyers as “about to offer” are quoting their incentive, not yours."
+      "A broker’s report that another buyer is “about to offer” is not market evidence on its own; ask what it rests on."
     ],
     "disclosure": "Composite of two 2025 transactions on which Foreland Marine acted, one as adviser to the buyer who walked, the other where Foreland was approached after closing. Identifying details adjusted; figures held within their original ranges.",
     "seoTitle": "Reading days-on-market before making a yacht offer",

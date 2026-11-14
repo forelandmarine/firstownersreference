@@ -477,14 +477,15 @@
         "rows": [
           {
             "label": "Total transaction value, yachts over 30 m (Edmiston)",
-            "value": "EUR 7.1 bn across 363 yachts"
+            "value": "More than EUR 7.1 bn across 363 yachts",
+            "note": "Number of sales up 15 percent on 2024"
           },
           {
             "label": "Edmiston, 2025 market review",
             "value": "More 40 m+ and more EUR 20 m+ yachts sold than any other brokerage (Edmiston’s own figures)"
           },
           {
-            "label": "Priced above EUR 40 m",
+            "label": "Asking above EUR 40 m",
             "value": "7 percent of volume, 52 percent of value"
           }
         ],
@@ -492,7 +493,7 @@
       },
       {
         "type": "note",
-        "text": "The Edmiston count covers yachts over 30 m, the band relevant to readers of The First Owner’s Reference. Broader counts reaching down to 24 m are not comparable with it."
+        "text": "The Edmiston count covers yachts over 30 m. Broader counts reaching down to 24 m, including the Northrop & Johnson figures below, are not comparable with it."
       },
       {
         "type": "h2",
