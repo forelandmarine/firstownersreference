@@ -1,7 +1,7 @@
 /* Standalone full-bleed print: one sheet, no margins, no margin boxes.
    Loaded after print.css so these @page declarations win. */
 @page {
-  size: 236mm 306mm;
+  size: 214mm 286mm;
   margin: 0;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .print-standalone {
-  width: 236mm;
-  height: 306mm;
+  width: 214mm;
+  height: 286mm;
   position: relative;
   overflow: hidden;
 }
@@ -29,8 +29,8 @@
 .print-standalone .frontispiece,
 .print-standalone .chapter-opener,
 .print-standalone .closing-image {
-  width: 236mm;
-  height: 306mm;
+  width: 214mm;
+  height: 286mm;
   margin: 0;
   padding: 0;
   page: auto;

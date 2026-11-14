@@ -35,8 +35,9 @@ export function makePicker(): Picker {
   };
 }
 
-/* Two full-page plates a chapter, down from four: one after the essay, one
-   (with its pull quote) before the case. Four clumped into runs of two and
-   three full pages. */
-export const PLATES_PER_CHAPTER = 2;
+/* No full-page plates inside the chapters (14 November 2026): the book has
+   to come down to 150-160 pages at 208 x 280mm. The nine chapter openers
+   stay. Raise this to restore one (after the essay) or two (also before the
+   case, with its pull quote). */
+export const PLATES_PER_CHAPTER = 0;
 

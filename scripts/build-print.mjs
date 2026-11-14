@@ -349,9 +349,9 @@ async function generatePdf() {
   /* Scale guard. Chrome lays the book out at the type-area width and, if
      anything is wider, shrinks every page to fit. From May to November 2026
      one unbreakable URL in the sources section did exactly that and the book
-     printed at 70 per cent. Measure at the type-area width (190mm = 718 CSS
+     printed at 70 per cent. Measure at the type-area width (172mm = 650 CSS
      px) and refuse to print if anything outside an SVG reaches past it. */
-  await page.setViewport({ width: 718, height: 1157, deviceScaleFactor: 1 });
+  await page.setViewport({ width: 650, height: 1157, deviceScaleFactor: 1 });
   const overflow = await page.evaluate(() => {
     const W = document.documentElement.clientWidth;
     const bad = [];
@@ -376,7 +376,7 @@ async function generatePdf() {
     );
   }
 
-  log("  Generating PDF via Chrome native print (236 x 306 mm sheet)...");
+  log("  Generating PDF via Chrome native print (214 x 286 mm sheet)...");
   await page.pdf({
     path: PDF_OUT,
     printBackground: true,
@@ -458,7 +458,7 @@ function measureFill(pdf) {
 }
 
 function computeClosers(map, fill, previous) {
-  const PAGE_MM = 254;
+  const PAGE_MM = 238;
   const MIN_GAP = 40;       // below this a short foot reads as a designed pause
   const MAX_H = 200;
   const CLEARANCE = 14;   // the closer's own top margin plus a safety line
@@ -520,15 +520,15 @@ function findHeads(pdf) {
     for (const m of pg.matchAll(
       /yMin="([\d.]+)" xMax="[\d.]+" yMax="[\d.]+">\[\[HEAD-([\w-]+)-(\d)\]\]</g,
     )) {
-      out[`${m[2]}:head${m[3]}`] = { page: i + 1, yMm: (parseFloat(m[1]) / H) * 306 };
+      out[`${m[2]}:head${m[3]}`] = { page: i + 1, yMm: (parseFloat(m[1]) / H) * 286 };
     }
   });
   return out;
 }
 
 function computeHeads(heads, fill, map, previous) {
-  const TOP = 25;          // sheet head margin, mm
-  const PAGE_MM = 254;     // type-area depth
+  const TOP = 23;          // sheet head margin, mm
+  const PAGE_MM = 238;     // type-area depth
   const CHROME = 14;       // picture margins and caption
   const DEFAULT_H = 100;
   const MAX_SHIFT = 4;

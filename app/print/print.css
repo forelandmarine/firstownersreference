@@ -31,7 +31,7 @@
   --colour-sail: #4a7da9;
 
   /* Three-column geometry. Type area 190mm inside a 230mm trim. */
-  --type-area: 190mm;
+  --type-area: 172mm;
   --col-gap: 7mm;
   --col-measure: 91.5mm;
 
@@ -46,18 +46,19 @@
    is consistent across multi-page sections. The body bg is also set so
    any client that fails to fill @page margin area still shows paper. */
 @page {
-  size: 236mm 306mm;
-  /* 3mm bleed is inside these numbers: trim margins are head 22, foot 24,
-     inner 24, outer 16. Outer is deliberately tighter than inner, as in
+  size: 214mm 286mm;
+  /* 208 x 280mm trim from 14 November 2026 (was 230 x 300). 3mm bleed is
+     inside these numbers: trim margins are head 20, foot 22, inner 22,
+     outer 14, giving a 172 x 238mm type area. Outer is deliberately tighter than inner, as in
      every title in the reference set, so the type block sits out towards
      the trim and the spread carries a wide central channel. */
-  margin: 25mm 19mm 27mm 27mm;
+  margin: 23mm 17mm 25mm 25mm;
   background: #ffffff;
 }
 
 @page :left {
-  margin-left: 19mm;
-  margin-right: 27mm;
+  margin-left: 17mm;
+  margin-right: 25mm;
   background: #ffffff;
   @top-left {
     content: "";
@@ -93,8 +94,8 @@
 }
 
 @page :right {
-  margin-left: 27mm;
-  margin-right: 19mm;
+  margin-left: 25mm;
+  margin-right: 17mm;
   background: #ffffff;
   @top-right {
     content: "The First Owner\2019s Reference \00b7\0020 1st Edition";
@@ -1324,7 +1325,7 @@ body {
   break-before: page;
   break-after: page;
   break-inside: avoid;
-  height: 240mm;
+  height: 228mm;
   position: relative;
   overflow: hidden;
 }
@@ -1402,8 +1403,8 @@ body {
 }
 
 .print-standalone .plate-page {
-  height: 306mm;
-  width: 236mm;
+  height: 286mm;
+  width: 214mm;
   break-before: auto;
   break-after: auto;
 }
@@ -2851,7 +2852,7 @@ body {
 .frontispiece,
 .chapter-opener,
 .closing-image {
-  height: 240mm;
+  height: 228mm;
   overflow: hidden;
 }
 

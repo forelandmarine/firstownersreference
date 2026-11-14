@@ -22,8 +22,8 @@ DPI = 24  # enough to locate the last inked line, cheap enough to run each pass
 
 # Type area as a fraction of the sheet, matching @page in print.css:
 # 236 x 306mm sheet, 25mm head and 27mm foot.
-TOP = 25 / 306
-BOT = 1 - 27 / 306
+TOP = 23 / 286
+BOT = 1 - 25 / 286
 
 
 def main() -> None:

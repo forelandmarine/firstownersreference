@@ -7,10 +7,9 @@ import { getDataSpread } from "@/lib/data-spreads";
 import { glossaryEntries } from "@/lib/glossary";
 import { getGuestOpinions } from "@/lib/guest-opinions";
 import { printImages, type PrintImage } from "@/lib/print-images";
-import { makePicker, type Picker } from "@/lib/print-picker";
+import { makePicker, PLATES_PER_CHAPTER, type Picker } from "@/lib/print-picker";
 import { renderChartForPrint } from "@/components/print/print-chart";
 import { getContributorProfile } from "@/lib/contributors";
-import { buildPrintIndex } from "@/lib/print-index";
 import printFolios from "@/lib/print-folios.json";
 import printFit from "@/lib/print-fit.json";
 import {
@@ -86,7 +85,7 @@ const FIGURE_CYCLE = ["half"];
    large picture per page. The build moves each one to a crosshead where it
    lands well and sizes it to the space left (see headFit in
    scripts/build-print.mjs); these are the starting values. */
-const HEADS_PER_ESSAY = 2;
+const HEADS_PER_ESSAY = 1;
 const HEAD_DEFAULT_MM = 100;
 
 export const dynamic = "force-static";
@@ -106,7 +105,6 @@ export default function PrintEdition() {
     guestOpinions: getGuestOpinions(s.slug),
   }));
 
-  const indexEntries = buildPrintIndex(sections, glossaryEntries);
   const pick = makePicker();
 
   return (
@@ -199,7 +197,7 @@ export default function PrintEdition() {
             Set in Newsreader by Production Type and DM Sans by
             Indian Type Foundry. Printed on Munken Pure 120gsm uncoated
             text stock with GF Smith Colorplan cover boards. Smyth-sewn,
-            casebound. Trim 230 by 300 mm. Five hundred copies, hand
+            casebound. Trim 208 by 280 mm. Five hundred copies, hand
             numbered.
           </p>
           <p>
@@ -429,22 +427,6 @@ export default function PrintEdition() {
           <li className="contents-list__item">
             <span className="contents-list__num">B</span>
             <div className="contents-list__main">
-              <h3 className="contents-list__title">
-                Index <em>(working)</em>
-              </h3>
-              <p className="contents-list__standfirst">
-                Auto-generated from chapter section headings, glossary terms,
-                and named entities. To be re-set by an indexer for the press
-                edition.
-              </p>
-            </div>
-            <a className="contents-list__folio" href="#ref-index" aria-hidden>
-              {tocFolio(folios.refs["index"])}
-            </a>
-          </li>
-          <li className="contents-list__item">
-            <span className="contents-list__num">C</span>
-            <div className="contents-list__main">
               <h3 className="contents-list__title">Sources</h3>
               <p className="contents-list__standfirst">
                 Consolidated bibliography by chapter, with named publications,
@@ -456,7 +438,7 @@ export default function PrintEdition() {
             </a>
           </li>
           <li className="contents-list__item">
-            <span className="contents-list__num">D</span>
+            <span className="contents-list__num">C</span>
             <div className="contents-list__main">
               <h3 className="contents-list__title">Colophon</h3>
               <p className="contents-list__standfirst">
@@ -561,38 +543,14 @@ export default function PrintEdition() {
         </dl>
       </section>
 
-      {/* === INDEX === */}
-      <section className="index-section glossary-section" id="ref-index">
-        <span className="pdf-marker">[[REF-INDEX]]</span>
-        <p className="glossary-section__label">B — Reference</p>
-        <h2 className="glossary-section__title">
-          Index <em style={{ fontWeight: 300, fontSize: "0.6em" }}>(working)</em>
-        </h2>
-        <p className="glossary-section__strap">
-          Auto-generated from chapter section headings, glossary terms, and
-          named entities. The press edition will be re-set by an indexer.
-        </p>
-        <div className="index-list">
-          {indexEntries.map((group) => (
-            <div key={group.letter} className="index-list__group">
-              <p className="index-list__letter">{group.letter}</p>
-              {group.entries.map((entry) => (
-                <p key={entry.term} className="index-list__entry">
-                  {entry.term}{" "}
-                  <span className="index-list__entry-folio">
-                    {entry.refs.join(", ")}
-                  </span>
-                </p>
-              ))}
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* No printed index (14 November 2026): the auto-index could not
+          print and the 152-page target has no room for one. The web
+          edition has search. */}
 
       {/* === SOURCES === */}
       <section className="sources-section" id="ref-sources">
         <span className="pdf-marker">[[REF-SOURCES]]</span>
-        <p className="glossary-section__label">C — Reference</p>
+        <p className="glossary-section__label">B — Reference</p>
         <h2 className="glossary-section__title">Sources</h2>
         <p className="glossary-section__strap">
           Consolidated bibliography by chapter. Named publications,
@@ -632,7 +590,7 @@ export default function PrintEdition() {
       {/* === COLOPHON === */}
       <section className="colophon-section" id="ref-colophon">
         <span className="pdf-marker">[[REF-COLOPHON]]</span>
-        <p className="glossary-section__label">D — Reference</p>
+        <p className="glossary-section__label">C — Reference</p>
         <h2 className="glossary-section__title" style={{ marginBottom: "10mm" }}>
           Colophon
         </h2>
@@ -667,7 +625,7 @@ export default function PrintEdition() {
           Set on Munken Pure 120gsm uncoated text stock with cover boards in
           GF Smith Colorplan. Smyth-sewn, casebound, head and tail bands in
           marine, single ribbon marker. Foil-stamped wordmark and
-          blind-debossed lighthouse mark. Trim 230 by 300 mm. Five hundred
+          blind-debossed lighthouse mark. Trim 208 by 280 mm. Five hundred
           copies, hand numbered and signed by the editors in chief on the
           final page.
         </p>
@@ -1098,7 +1056,7 @@ export function ChapterBlock({
       )}
 
       {/* Plate one: the breath between the argument and the evidence. */}
-      <PlatePage slug={section.slug} index={0} />
+      {PLATES_PER_CHAPTER > 0 && <PlatePage slug={section.slug} index={0} />}
 
       {/* Guest opinions */}
       {guestOpinions.filter((g) => g.questions.length > 0).map((guestOpinion, gi) => (
@@ -1361,7 +1319,7 @@ export function ChapterBlock({
       )}
 
       {/* Plate two: between the outside voice and the transaction. */}
-      <PlatePage slug={section.slug} index={1} />
+      {PLATES_PER_CHAPTER > 1 && <PlatePage slug={section.slug} index={1} />}
 
       {/* Case study */}
       {caseStudy && (
