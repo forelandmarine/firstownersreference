@@ -459,7 +459,7 @@ function measureFill(pdf) {
 
 function computeClosers(map, fill, previous) {
   const PAGE_MM = 238;
-  const MIN_GAP = 40;       // below this a short foot reads as a designed pause
+  const MIN_GAP = 80;       // option C: no foot picture in a smaller gap
   const MAX_H = 200;
   const CLEARANCE = 14;   // the closer's own top margin plus a safety line
   const imagePages = new Set([
@@ -1089,7 +1089,14 @@ async function main() {
     const fill = measureFill(PDF_OUT);
     const desiredFit = {
       ...computeClosers(map, fill, currentFit),
-      ...computeHeads(findHeads(PDF_OUT), fill, map, currentFit),
+      /* Head pictures are fitted on the first three passes, then held, so
+         the folio spacers can settle: moving a picture and moving an
+         opener chased each other for eight passes without converging. */
+      ...(pass <= 3
+        ? computeHeads(findHeads(PDF_OUT), fill, map, currentFit)
+        : Object.fromEntries(
+            Object.entries(currentFit).filter(([k]) => /:head\d:/.test(k)),
+          )),
     };
     const fitChanged =
       JSON.stringify(currentFit) !== JSON.stringify(desiredFit);

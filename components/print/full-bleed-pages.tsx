@@ -136,7 +136,6 @@ export function ChapterOpener({
       />
       <div className="chapter-opener__inner">
         <div className="chapter-opener__num-row">
-          <p className="chapter-opener__num-label">Chapter {section.number}</p>
           <h1 className="chapter-opener__num">{section.number}</h1>
         </div>
         <div className="chapter-opener__title-block">

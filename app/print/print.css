@@ -3194,3 +3194,240 @@ body {
   color: var(--colour-ink);
   margin: 0 0 2mm 0;
 }
+
+/* -- Body 9.25pt (approved 14 November 2026, option B), one size for all
+   running text. Case studies had no size of their own and inherited the
+   12.5pt page default, which is why five cases took forty pages. */
+.chapter-body__cols p,
+.case-section__body p,
+.guest-opinion__a p,
+.data-spread__flow p {
+  font-size: 9.25pt;
+  line-height: 13.25pt;
+}
+.case-section__body .chapter-body__pull,
+.chapter-body__cols .chapter-body__pull {
+  font-size: 15pt;
+  line-height: 19pt;
+}
+
+/* -- Smaller opening pictures for interviews and cases (option C). */
+.guest-opinion .bleed-band,
+.case-section .bleed-band {
+  height: 60mm;
+}
+
+/* -- Data spreads: the section that sends the rest to the web edition. */
+.data-spread__more {
+  font-family: var(--font-furniture);
+  font-size: 7.5pt;
+  line-height: 10.5pt;
+  color: var(--colour-soft);
+  margin: 4mm 0 0 0;
+  padding-top: 2mm;
+  border-top: 0.5pt solid var(--colour-rule);
+}
+
+/* -- No eyebrows (14 November 2026). The elements that carried labels above
+   headings are removed from the markup; these two remaining paragraph
+   heads set as plain sentence-case headings, not spaced capitals. */
+.imprint__note-label,
+.editors-letter__keys-label {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 11pt;
+  line-height: 14pt;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--colour-ink);
+}
+.case-section__facts {
+  font-family: var(--font-furniture);
+  font-size: 8pt;
+  line-height: 12pt;
+  color: var(--colour-soft);
+  text-align: center;
+  max-width: 150mm;
+  margin: 3mm auto 5mm auto;
+}
+.case-section__facts-label {
+  font-weight: 700;
+  color: var(--colour-ink);
+}
+/* The "Figure 01.01" label over every chart title. Print only; the web
+   edition keeps it. */
+.data-spread__chart figure > header > p.meta:first-child {
+  display: none;
+}
+
+/* -- Data pages (design brief section 5). A chart whose title repeated the
+   spread title prints without it; the empty heading takes no space. */
+.data-spread__chart figure > header h4:empty {
+  display: none;
+}
+/* Charts sized to share a page: 155mm let one chart take a page and leave
+   the rest empty. */
+.data-spread__chart svg {
+  max-height: 92mm;
+}
+/* Chart notes set as a two-column note block under the chart, so the
+   method reads as a footnote to the figure rather than a second text. */
+.data-spread__chart figure > footer {
+  column-count: 2;
+  column-gap: 6mm;
+  max-width: none;
+  margin-top: 2mm;
+}
+.data-spread__chart figure > footer p {
+  max-width: none;
+}
+/* Tailwind's space-y-6 and space-y-3 from the web frame put 6mm and 3mm
+   between header, chart and notes. Tighter in print. */
+.data-spread__chart figure > * + * {
+  margin-top: 3mm !important;
+}
+.data-spread__chart figure > header > * + * {
+  margin-top: 1.5mm !important;
+}
+.data-spread__chart {
+  margin: 4pt 0 10pt 0;
+}
+
+/* ===========================================================
+   TYPOGRAPHY PASS (design brief sections 4 and 7, 14 November 2026)
+   =========================================================== */
+
+/* Set-piece openers: the marine rule at the head of each case and
+   interview sat 0mm above the title (brief p. 26). 9mm of air under it. */
+.case-section,
+.guest-opinion {
+  padding-top: 9mm;
+}
+
+/* Titles break into balanced lines: "The spec change in month / 18." */
+.case-section__title,
+.guest-opinion__title,
+.data-spread__title,
+.chapter-card__next-title,
+.chapter-opener__title {
+  text-wrap: balance;
+}
+.case-section__standfirst,
+.guest-opinion__intro,
+.data-spread__standfirst {
+  text-wrap: pretty;
+}
+
+/* Running text. text-wrap: pretty lets Chrome avoid a one-word last line
+   and rebalances the paragraph's final lines; the hyphenation limits stop
+   ladders and short fragments in the 82mm column; two-line widows and
+   orphans everywhere. */
+.chapter-body__cols p,
+.case-section__body p,
+.guest-opinion__a p,
+.data-spread__flow p {
+  text-wrap: pretty;
+  hyphenate-limit-chars: 7 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-zone: 8%;
+  word-spacing: -0.01em;
+}
+
+/* One paragraph rhythm for every running-text family: 4mm indent, no
+   space between paragraphs, flush after a heading, pull quote or figure. */
+.case-section__body p,
+.guest-opinion__a p,
+.chapter-body__cols p {
+  text-indent: 4mm;
+  margin: 0;
+}
+.case-section__body h2 + p,
+.case-section__body .chapter-body__pull + p,
+.chapter-body__cols .head-pic + h2 + p,
+.guest-opinion__a p:first-child {
+  text-indent: 0;
+}
+
+/* Crossheads: one space above (a full line) and a third of a line below,
+   in every family, and never the last thing in a column. */
+.chapter-body__cols h2,
+.case-section__body h2,
+.data-spread__flow h2 {
+  margin: 13.25pt 0 4pt 0;
+  break-after: avoid;
+}
+
+/* Pull quotes: one treatment in essays and cases. */
+.chapter-body__pull {
+  margin: 10pt 0 10pt 0;
+  padding: 2pt 0 2pt 5mm;
+  border-left-width: 1.5pt;
+}
+
+/* Interview questions: DM Sans medium in marine, distinct from the answer
+   text, on a line of space. */
+.guest-opinion__q {
+  font-family: var(--font-furniture);
+  font-weight: 600;
+  font-size: 9pt;
+  line-height: 12.5pt;
+  color: var(--colour-marine);
+  margin: 0 0 2pt 0;
+}
+.guest-opinion__qa + .guest-opinion__qa {
+  margin-top: 4mm;
+}
+
+/* Captions, sources and chart labels: one legible floor. The source lines
+   were 6.8pt italic capitals; they are now 7pt roman in sentence case. */
+.data-spread__source,
+.data-spread__chart figure > footer p.meta {
+  font-size: 7pt;
+  line-height: 9.5pt;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--colour-stone);
+}
+.data-spread__caption,
+.data-spread__chart figure > footer p.caption,
+.head-pic figcaption,
+.bleed-band figcaption {
+  font-size: 7.5pt;
+  line-height: 10pt;
+}
+
+/* Chart labels: every chart is drawn on a 760-unit viewBox and prints at
+   172mm, so one unit is 0.226mm and a 10-unit label printed at 6.4pt.
+   Print floor is 7pt (11 units). Raised here for print only; the web
+   charts are untouched. */
+.data-spread__chart svg text[font-size="10"],
+.data-spread__chart svg text[font-size="10.5"] {
+  font-size: 11px;
+}
+/* A section heading bound to its chart (inside .data-spread__wide) sets as
+   the same small crosshead as in the running text. */
+.data-spread__wide > h2 {
+  font-family: var(--font-furniture);
+  font-weight: 700;
+  font-size: 8pt;
+  line-height: 11pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--colour-ink);
+  margin: 6mm 0 3pt 0;
+}
+.data-spread__block--whole,
+.data-spread__wide:has(.data-spread__block--whole) {
+  break-inside: avoid;
+}
+/* Subtitle under a front-matter heading (the line that used to be the
+   heading when its label sat above it). */
+.page-subtitle {
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  font-size: 11pt;
+  line-height: 15pt;
+  color: var(--colour-soft);
+  margin: 1mm 0 6mm 0;
+}

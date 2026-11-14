@@ -10,6 +10,7 @@ import { printImages, type PrintImage } from "@/lib/print-images";
 import { makePicker, PLATES_PER_CHAPTER, type Picker } from "@/lib/print-picker";
 import { renderChartForPrint } from "@/components/print/print-chart";
 import { getContributorProfile } from "@/lib/contributors";
+import { buildPrintIndex } from "@/lib/print-index";
 import printFolios from "@/lib/print-folios.json";
 import printFit from "@/lib/print-fit.json";
 import {
@@ -105,6 +106,7 @@ export default function PrintEdition() {
     guestOpinions: getGuestOpinions(s.slug),
   }));
 
+  const indexEntries = buildPrintIndex(sections, glossaryEntries);
   const pick = makePicker();
 
   return (
@@ -139,7 +141,6 @@ export default function PrintEdition() {
         </p>
 
         <div className="title-page__frame">
-          <p className="title-page__frame-label">The publisher&rsquo;s frame</p>
           <p className="title-page__frame-body">
             The publication is funded by an independent superyacht consultancy
             that holds no yard affiliations and takes no broker commissions.
@@ -166,7 +167,6 @@ export default function PrintEdition() {
         </div>
 
         <div className="title-page__sections">
-          <p className="title-page__sections-label">In this edition</p>
           <ol className="title-page__sections-list">
             {sections.map((s) => (
               <li key={s.slug}>
@@ -182,7 +182,6 @@ export default function PrintEdition() {
 
       {/* === IMPRINT === */}
       <section className="imprint">
-        <p className="imprint__label">Imprint &amp; Masthead</p>
         <h2 className="imprint__title">
           The First Owner&rsquo;s Reference, 1st Edition, 2027.
         </h2>
@@ -289,7 +288,6 @@ export default function PrintEdition() {
 
       {/* === EDITORS' LETTER === */}
       <section className="editors-letter">
-        <p className="editors-letter__label">From the editors</p>
         <h2 className="editors-letter__title">
           A reference written from the other side of the table.
         </h2>
@@ -386,8 +384,8 @@ export default function PrintEdition() {
 
       {/* === CONTENTS === */}
       <section className="contents-page">
-        <p className="contents-page__label">Contents</p>
-        <h2 className="contents-page__title">Nine chapters.</h2>
+        <h2 className="contents-page__title">Contents</h2>
+        <p className="page-subtitle">Nine chapters.</p>
 
         <ol className="contents-list">
           {sections.map((section) => (
@@ -427,6 +425,22 @@ export default function PrintEdition() {
           <li className="contents-list__item">
             <span className="contents-list__num">B</span>
             <div className="contents-list__main">
+              <h3 className="contents-list__title">
+                Index <em>(working)</em>
+              </h3>
+              <p className="contents-list__standfirst">
+                Auto-generated from chapter section headings, glossary terms,
+                and named entities. To be re-set by an indexer for the press
+                edition.
+              </p>
+            </div>
+            <a className="contents-list__folio" href="#ref-index" aria-hidden>
+              {tocFolio(folios.refs["index"])}
+            </a>
+          </li>
+          <li className="contents-list__item">
+            <span className="contents-list__num">C</span>
+            <div className="contents-list__main">
               <h3 className="contents-list__title">Sources</h3>
               <p className="contents-list__standfirst">
                 Consolidated bibliography by chapter, with named publications,
@@ -438,7 +452,7 @@ export default function PrintEdition() {
             </a>
           </li>
           <li className="contents-list__item">
-            <span className="contents-list__num">C</span>
+            <span className="contents-list__num">D</span>
             <div className="contents-list__main">
               <h3 className="contents-list__title">Colophon</h3>
               <p className="contents-list__standfirst">
@@ -455,10 +469,10 @@ export default function PrintEdition() {
 
       {/* === CONTRIBUTORS === */}
       <section className="contributors-page">
-        <p className="contributors-page__label">Contributors</p>
         <h2 className="contributors-page__title">
-          Voluntary, named, and disclosed.
+          Contributors
         </h2>
+        <p className="page-subtitle">Voluntary, named, and disclosed.</p>
         <p className="contributors-page__strap">
           Each chapter is anchored by a named external contributor with deep
           first-hand knowledge of the topic. No contributor is paid by The
@@ -523,7 +537,6 @@ export default function PrintEdition() {
       {/* === GLOSSARY === */}
       <section className="glossary-section" id="ref-glossary">
         <span className="pdf-marker">[[REF-GLOSSARY]]</span>
-        <p className="glossary-section__label">A — Reference</p>
         <h2 className="glossary-section__title">Glossary</h2>
         <p className="glossary-section__strap">
           Terms used across the chapters, set as a continuous reference. Cross-
@@ -543,14 +556,36 @@ export default function PrintEdition() {
         </dl>
       </section>
 
-      {/* No printed index (14 November 2026): the auto-index could not
-          print and the 152-page target has no room for one. The web
-          edition has search. */}
+      {/* === INDEX === */}
+      <section className="index-section glossary-section" id="ref-index">
+        <span className="pdf-marker">[[REF-INDEX]]</span>
+        <h2 className="glossary-section__title">
+          Index <em style={{ fontWeight: 300, fontSize: "0.6em" }}>(working)</em>
+        </h2>
+        <p className="glossary-section__strap">
+          Auto-generated from chapter section headings, glossary terms, and
+          named entities. The press edition will be re-set by an indexer.
+        </p>
+        <div className="index-list">
+          {indexEntries.map((group) => (
+            <div key={group.letter} className="index-list__group">
+              <p className="index-list__letter">{group.letter}</p>
+              {group.entries.map((entry) => (
+                <p key={entry.term} className="index-list__entry">
+                  {entry.term}{" "}
+                  <span className="index-list__entry-folio">
+                    {entry.refs.join(", ")}
+                  </span>
+                </p>
+              ))}
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* === SOURCES === */}
       <section className="sources-section" id="ref-sources">
         <span className="pdf-marker">[[REF-SOURCES]]</span>
-        <p className="glossary-section__label">B — Reference</p>
         <h2 className="glossary-section__title">Sources</h2>
         <p className="glossary-section__strap">
           Consolidated bibliography by chapter. Named publications,
@@ -590,7 +625,6 @@ export default function PrintEdition() {
       {/* === COLOPHON === */}
       <section className="colophon-section" id="ref-colophon">
         <span className="pdf-marker">[[REF-COLOPHON]]</span>
-        <p className="glossary-section__label">C — Reference</p>
         <h2 className="glossary-section__title" style={{ marginBottom: "10mm" }}>
           Colophon
         </h2>
@@ -1002,7 +1036,6 @@ export function ChapterBlock({
                 if (para.type === "editorsNote") {
                   out.push(
                     <aside key={`en-${i}`} className="chapter-body__editors-note">
-                      <p className="chapter-body__editors-note-label">Note</p>
                       <p className="chapter-body__editors-note-text">{para.text}</p>
                     </aside>
                   );
@@ -1066,7 +1099,7 @@ export function ChapterBlock({
           data-chapter={chapterRunning}
         >
           <span className="pdf-marker">{`[[SEC-${section.slug}:guest]]`}</span>
-          <BleedBand slug={section.slug} pick={pick} height={88} />
+          <BleedBand slug={section.slug} pick={pick} height={60} />
           {(() => {
             const avatar = getContributorProfile(
               guestOpinion.contributor
@@ -1082,7 +1115,6 @@ export function ChapterBlock({
                   />
                 )}
                 <div>
-                  <p className="guest-opinion__label">Guest opinion</p>
                   <h2 className="guest-opinion__title">
                     In conversation with {guestOpinion.contributor}
                   </h2>
@@ -1141,6 +1173,10 @@ export function ChapterBlock({
             <p className="data-spread__standfirst">{dataSpread.standfirst}</p>
           </header>
           {(() => {
+            /* Every data section prints (content lock, design brief of
+               14 November 2026). */
+            const blocks = dataSpread.blocks;
+
             /* Rule 3.11: every dataset on the page carries a head on a rule.
                Charts already get one from ChartFrame; tables and key-value
                blocks are numbered here in a separate Table series so the
@@ -1149,8 +1185,8 @@ export function ChapterBlock({
                dropped table does not consume a number. */
             const chNN = String(section.number).padStart(2, "0");
             let tableSeq = 0;
-            const tableLabels = dataSpread.blocks.map((block, i) => {
-              const next = dataSpread.blocks[i + 1];
+            const tableLabels = blocks.map((block, i) => {
+              const next = blocks[i + 1];
               const dropped =
                 (block.type === "table" || block.type === "kv") &&
                 next?.type === "chart";
@@ -1172,11 +1208,11 @@ export function ChapterBlock({
               b.type === "chart" ||
               (b.type === "table" && (b.head?.length ?? 0) > 2);
 
-            const rendered = dataSpread.blocks.map((block, i) => {
+            const rendered = blocks.map((block, i) => {
             // One form per dataset in print: when a chart follows a table
             // or kv of the same data, the chart is the hero and the table
             // is dropped (the web edition keeps both).
-            const next = dataSpread.blocks[i + 1];
+            const next = blocks[i + 1];
             if (
               (block.type === "table" || block.type === "kv") &&
               next?.type === "chart"
@@ -1190,9 +1226,14 @@ export function ChapterBlock({
               return <p key={i}>{domainsOnly(block.text)}</p>;
             }
             if (block.type === "table") {
+              /* Short tables are kept whole: split, they strand a row or
+                 two on the next page. Long tables still break between rows. */
+              const short = block.rows.length <= 8;
               return (
-                <div key={i} className="data-spread__block">
-                  <p className="data-spread__fig-label">{tableLabels[i]}</p>
+                <div
+                  key={i}
+                  className={`data-spread__block${short ? " data-spread__block--whole" : ""}`}
+                >
                   <table className="data-spread__table">
                     <thead>
                       <tr>
@@ -1225,7 +1266,6 @@ export function ChapterBlock({
             if (block.type === "kv") {
               return (
                 <div key={i} className="data-spread__block">
-                  <p className="data-spread__fig-label">{tableLabels[i]}</p>
                   <table className="data-spread__kv">
                     <tbody>
                       {block.rows.map((row, ri) => (
@@ -1255,7 +1295,6 @@ export function ChapterBlock({
             if (block.type === "note") {
               return (
                 <aside key={i} className="chapter-body__editors-note">
-                  <p className="chapter-body__editors-note-label">Note</p>
                   <p className="chapter-body__editors-note-text">{domainsOnly(block.text)}</p>
                 </aside>
               );
@@ -1263,7 +1302,17 @@ export function ChapterBlock({
             if (block.type === "chart") {
               return (
                 <div key={i} className="data-spread__chart">
-                  {renderChartForPrint(block.chartId)}
+                  {renderChartForPrint(block.chartId, {
+                    omitIfSame: [
+                      dataSpread.title,
+                      dataSpread.standfirst,
+                      // the section heading just above the chart
+                      (blocks
+                        .slice(0, i)
+                        .reverse()
+                        .find((x) => x.type === "h2") as { text?: string } | undefined)?.text,
+                    ],
+                  })}
                 </div>
               );
             }
@@ -1273,7 +1322,13 @@ export function ChapterBlock({
             /* Group runs of narrow blocks into two-column flows. */
             const nodes: React.ReactNode[] = [];
             let bucket: React.ReactNode[] = [];
+            /* Type of the last block that actually rendered into the bucket.
+               The block before a chart is often a table the print drops (one
+               form per dataset), so looking at blocks[i - 1] missed the
+               heading and left it alone in a two-column box above the chart. */
+            let lastType: string | null = null;
             const flush = (key: string) => {
+              lastType = null;
               if (!bucket.length) return;
               nodes.push(
                 <div className="data-spread__flow" key={`flow-${key}`}>
@@ -1282,7 +1337,7 @@ export function ChapterBlock({
               );
               bucket = [];
             };
-            dataSpread.blocks.forEach((block, i) => {
+            blocks.forEach((block, i) => {
               const node = rendered[i];
               if (node == null) return;
               if (isWide(block)) {
@@ -1291,8 +1346,7 @@ export function ChapterBlock({
                    it sat in one container and the chart in its sibling, so
                    no selector could hold them together and the heading was
                    left floating on its own page. */
-                const trailingHead =
-                  dataSpread.blocks[i - 1]?.type === "h2" ? bucket.pop() : null;
+                const trailingHead = lastType === "h2" ? bucket.pop() : null;
                 flush(`b${i}`);
                 nodes.push(
                   <div className="data-spread__wide" key={`wide-${i}`}>
@@ -1302,6 +1356,7 @@ export function ChapterBlock({
                 );
               } else {
                 bucket.push(node);
+                lastType = block.type;
               }
             });
             flush("tail");
@@ -1331,15 +1386,18 @@ export function ChapterBlock({
           <header className="case-section__opener">
             <h2 className="case-section__title">{caseStudy.title}</h2>
             <p className="case-section__standfirst">{caseStudy.standfirst}</p>
-            <div className="case-section__meta">
+            {/* The case facts as one run-in line, not a panel of spaced
+                capital labels each sitting over its value. */}
+            <p className="case-section__facts">
               {caseStudy.meta.map((m, i) => (
-                <div key={i} className="case-section__meta-item">
-                  <p className="case-section__meta-label">{m.label}</p>
-                  <p className="case-section__meta-value">{m.value}</p>
-                </div>
+                <React.Fragment key={i}>
+                  {i > 0 && "\u2003"}
+                  <span className="case-section__facts-label">{m.label}</span>{" "}
+                  {m.value}
+                </React.Fragment>
               ))}
-            </div>
-            <BleedBand slug={section.slug} pick={pick} height={92} />
+            </p>
+            <BleedBand slug={section.slug} pick={pick} height={60} />
           </header>
 
           <div className="case-section__body">
@@ -1426,11 +1484,10 @@ export function ChapterBlock({
               </div>
             </aside>
           )}
-          <SectionCloser
-            slug={section.slug}
-            id={`${section.slug}:case`}
-            pick={pick}
-          />
+          {/* No foot picture after the case: the chapter card ends the
+              chapter. A case closer that did not fit jumped to a page of its
+              own and forced a blank page before the next opener (design
+              brief section 6, "treatment of deliberately blank pages"). */}
         </section>
       )}
 
