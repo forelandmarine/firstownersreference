@@ -1,0 +1,142 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "Hein Velema, the first president of SYBAss, puts this test first",
+    "new": "Hein Velema, founding president of SYBAss, puts this test first",
+    "kind": "fact",
+    "reason": "Velema's own published bios (Marstrat; Worth Avenue Yachts 2015) say 'founding president'; Sail-World (Sept 2007) lists Michael Breman as president at the first formal general assembly, so 'first president' is not safe."
+  },
+  {
+    "file": "content/sections.json",
+    "old": "first president of SYBAss; former Director, Feadship",
+    "new": "founding president of SYBAss; former Director, Feadship",
+    "kind": "fact",
+    "reason": "As above; consistent with the essay and his published bios."
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "First president of SYBAss; former Director, Feadship",
+    "new": "Founding president of SYBAss; former Director, Feadship",
+    "kind": "fact",
+    "reason": "contributorRole only; as above."
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "He was the first president of SYBAss, a director of Feadship, and CEO of Fraser Yachts.",
+    "new": "He was the founding president of SYBAss, a director of Feadship, and CEO of Fraser Yachts.",
+    "kind": "fact",
+    "reason": "Intro only; as above."
+  },
+  {
+    "file": "lib/contributors.ts",
+    "old": "He was also the first president of SYBAss.",
+    "new": "He was also the founding president of SYBAss.",
+    "kind": "fact",
+    "reason": "As above."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "On 1 July the group filed for a court-supervised procedure with reported debts of around EUR 400 million.",
+    "new": "On 1 July the group filed for a court-supervised procedure. Its disclosures put overdue liabilities at EUR 266.8 million at 31 May, and its first monthly report to the court showed negative equity of EUR 392.3 million at 30 June.",
+    "kind": "fact",
+    "reason": "'Debts of around EUR 400 million' appears in no source; replaced with the two disclosed figures, each with its measure and date (Pressmare 1 Jul 2026; Milano Finanza 5 Aug 2026)."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "In August the group opened a sale process to investors, with binding offers due on 15 October 2026.",
+    "new": "In August the group opened a sale process to investors, with binding offers due on 15 October 2026. On 2 November 2026, after comparing five binding offers, the board chose Sri Group Global’s offer of EUR 220 million for the whole business as the basis of the plan it filed with the Court of Florence. The offer remained subject to the court’s authorisation and to a further round of bidding.",
+    "kind": "fact",
+    "reason": "Chronology: outcome of the sale process, from the TISG board statement of 2 November 2026 (Teleborsa) and Forbes Italia, 3 November 2026."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the Eleventh Circuit affirmed that refusal on 10 June 2026, and the case has since resumed in the district court.",
+    "new": "the Eleventh Circuit affirmed that refusal on 10 June 2026, and in July 2026 the plaintiffs filed a second amended complaint in the district court.",
+    "kind": "fact",
+    "reason": "Replaces the unconfirmed 'has since resumed' with the dated, reported step (MLex, 21 July 2026)."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Eleventh Circuit affirmed denial of arbitration, 10 June 2026; proceedings resumed in district court",
+    "new": "Eleventh Circuit affirmed denial of arbitration, 10 June 2026; second amended complaint filed in district court, July 2026",
+    "kind": "fact",
+    "reason": "Same correction in the ch03 data spread."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "In August 2026 MarineMax agreed to be sold to Safe Harbor Marinas, owned by Blackstone Infrastructure, for USD 1.5 billion, with completion expected by the end of 2026;",
+    "new": "In August 2026 MarineMax agreed to be sold to Safe Harbor Marinas, owned by Blackstone Infrastructure, for USD 1.5 billion. Its shareholders approved the sale on 11 November 2026, the required regulatory clearances had been obtained, and completion was expected by the end of 2026;",
+    "kind": "fact",
+    "reason": "Status at 14 Nov 2026: MarineMax 8-K of 3 Nov (regulatory clearances; closing not before 7 Dec) and 8-K of 12 Nov (vote approved). Not yet closed; recheck at print."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and in September 2026 OneWater agreed to sell a majority interest to OceanWorld Group while keeping a minority investment.",
+    "new": "and in September 2026 OneWater sold a majority interest to OceanWorld Group while keeping a minority investment.",
+    "kind": "fact",
+    "reason": "Completed: Denison (13 Oct 2026) and BOAT International (14 Oct 2026) report the completed partnership, OceanWorld majority shareholder from September."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "MarineMax agreed in August 2026 to be sold to Safe Harbor Marinas (Blackstone Infrastructure), completion expected end 2026",
+    "new": "MarineMax agreed in August 2026 to be sold to Safe Harbor Marinas (Blackstone Infrastructure); approved by MarineMax shareholders 11 November 2026, completion expected end 2026",
+    "kind": "fact",
+    "reason": "Same status update in the ch03 data spread."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "majority interest agreed for sale to OceanWorld Group September 2026, OneWater keeping a minority",
+    "new": "majority interest sold to OceanWorld Group September 2026, OneWater keeping a minority",
+    "kind": "fact",
+    "reason": "Completed, as above."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Mariner Technical Services, JMS Yachting, ABL Yachts, KRM Yacht, Saor Alba, Occam Naval Architecture",
+    "new": "Mariner Technical Services, Occam Naval Architecture",
+    "kind": "fact",
+    "reason": "Aligned with ch05 para 55. KRM Yacht is a Tuzla refit yard; JMS Yachting is a yacht management company; ABL's page lists owner's representation among survey services but says nothing about being paid only by the owner; no published material found for Saor Alba. None supports 'paid only by the owner'."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "will typically have lost USD 9 to 18 million in value and consumed another USD 15 to 22 million in operating cost.",
+    "new": "will typically have lost USD 9 to 18 million in value and consumed another USD 18 to 22 million in operating cost, at the chapter’s 12 to 15 percent a year.",
+    "kind": "fact",
+    "reason": "Arithmetic: 30 x 12% x 5 = 18; 30 x 15% x 5 = 22.5. The old lower bound (15) was 10 percent a year, below the chapter's own band."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "consumed a further USD 15 to 22 million in operating cost.",
+    "new": "consumed a further USD 18 to 22 million in operating cost.",
+    "kind": "fact",
+    "reason": "Same arithmetic as ch01 (FAQ)."
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "another USD 15 to 22 million in operating cost. That is an",
+    "new": "another USD 18 to 22 million in operating cost. That is an",
+    "kind": "fact",
+    "reason": "Same arithmetic as ch01 (page body)."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "A 30-metre yacht with 5-7 crew might spend EUR 300,000-450,000 per year on total crew costs.",
+    "new": "In this calculator's model, a 30-metre motor yacht with 5 crew spends about EUR 390,000 to 530,000 a year on total crew costs, from light use on one season to heavy use on two; base salaries are about EUR 280,000 of that.",
+    "kind": "fact",
+    "reason": "Matches the model as coded (30 m motor, private, Western Med): 5 crew x EUR 56,000 = 280,000 base; crew line 389,950 (light, single) to 527,979 (heavy, dual)."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "YPI Crew 2026 salary guide, Quay Crew 2025 captain survey, Pantaenius market commentary, MYBA standard cost categories.",
+    "new": "Practitioner working allocation. The published sources supply inputs, not these shares: crew pay from the YPI Crew 2026 salary guide and the Quay Crew 2025/26 captain survey, insurance market commentary from Pantaenius, and cost categories following MYBA practice.",
+    "kind": "fact",
+    "reason": "Attribution: none of the four sources publishes percentage shares of operating cost; the line now says what each contributes."
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "source=\"YPI Crew 2026 salary guide; Quay Crew 2025/26 captain survey; Pantaenius market commentary; MYBA standard cost categories.\"",
+    "new": "source=\"Practitioner working allocation. The published sources supply inputs, not these shares: crew pay from the YPI Crew 2026 salary guide and the Quay Crew 2025/26 captain survey, insurance market commentary from Pantaenius, and cost categories following MYBA practice.\"",
+    "kind": "fact",
+    "reason": "Same source line on the cost-composition chart."
+  }
+]

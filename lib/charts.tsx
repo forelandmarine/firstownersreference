@@ -101,7 +101,7 @@ export const charts: Record<string, () => React.ReactElement> = {
       title="Where the money goes on a typical 50 m"
       standfirst="Crew is the largest single line, not fuel. The shape holds across the over-30 m motor segment at moderate use."
       caption="Indicative composition of annual operating cost on a 50 m motor yacht at moderate use."
-      source="YPI Crew 2026 salary guide; Quay Crew 2025/26 captain survey; Pantaenius market commentary; MYBA standard cost categories."
+      source="Practitioner working allocation. The published sources supply inputs, not these shares: crew pay from the YPI Crew 2026 salary guide and the Quay Crew 2025/26 captain survey, insurance market commentary from Pantaenius, and cost categories following MYBA practice."
     >
       <CompositionBar
         unit="%"

@@ -43,7 +43,7 @@ const FAQS = [
   {
     question: "What is a yacht worth after five years?",
     answer:
-      "Typically 40 to 70 percent of its original purchase price, on the broker-published figures: about 65 to 70 percent on Yatco's 5 percent a year, 50 to 60 percent on Yatco's depreciation guide and 40 to 50 percent on IYC's. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 18 million in value and consumed a further USD 15 to 22 million in operating cost. An eight-figure total hold cost over that period is the realistic frame, and it is not the frame in which the purchase is usually discussed.",
+      "Typically 40 to 70 percent of its original purchase price, on the broker-published figures: about 65 to 70 percent on Yatco's 5 percent a year, 50 to 60 percent on Yatco's depreciation guide and 40 to 50 percent on IYC's. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 18 million in value and consumed a further USD 18 to 22 million in operating cost. An eight-figure total hold cost over that period is the realistic frame, and it is not the frame in which the purchase is usually discussed.",
   },
   {
     question: "Which yacht builders hold their value best?",
@@ -248,7 +248,7 @@ export default function YachtDepreciationPage() {
               <p>
                 A USD 30 million yacht held for five years at moderate use will
                 typically have lost USD 9 to 18 million in value and consumed
-                another USD 15 to 22 million in operating cost. That is an
+                another USD 18 to 22 million in operating cost. That is an
                 eight-figure hold cost over the period, and it is the number
                 against which the decision should be taken rather than the
                 purchase price.

@@ -29,7 +29,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Hein Velema": {
     name: "Hein Velema",
     avatar: "/images/contributors/hein-velema.jpg",
-    bio: "Hein Velema is Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner’s Representative Register and oversees the Yacht Owner Representative Programme, and a partner at the consultancy Marstrat. He spent eleven years at Feadship, latterly as a director, before joining Fraser Yachts in 2007 and serving as its CEO from 2009. He was also the first president of SYBAss.",
+    bio: "Hein Velema is Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner’s Representative Register and oversees the Yacht Owner Representative Programme, and a partner at the consultancy Marstrat. He spent eleven years at Feadship, latterly as a director, before joining Fraser Yachts in 2007 and serving as its CEO from 2009. He was also the founding president of SYBAss.",
   },
   "Erica Lay": {
     name: "Erica Lay",
