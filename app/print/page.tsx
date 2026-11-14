@@ -670,10 +670,6 @@ export default function PrintEdition() {
         <h2>Editorial board</h2>
         <p>
           <strong>Co-editors in Chief:</strong> Jack MacNally and Daniel Marks.
-          <br />
-          Editor: To be appointed. Art director: To be appointed. Picture
-          editor: To be appointed. Researcher and fact checker: To be
-          appointed.
         </p>
 
         <h2>Publisher</h2>
@@ -690,8 +686,9 @@ export default function PrintEdition() {
           consultancy and has a commercial interest in being engaged by
           readers. This is disclosed openly. The six-element independence
           test that runs through The First Owner&rsquo;s Reference applies to
-          the publisher as it does to every other adviser. Its answers are
-          set out below.
+          the publisher as it does to every other adviser. Its answers on
+          earnings, relationships, counterparties, fees and principals are set
+          out below.
         </p>
         <p>
           <strong>1. Earnings contingent on closing.</strong> Foreland Marine
@@ -708,10 +705,10 @@ export default function PrintEdition() {
           counterparty in the yacht industry.
         </p>
         <p>
-          <strong>3. Counterparty list.</strong> Foreland publishes a complete
+          <strong>3. Counterparty list.</strong> Foreland keeps a complete
           list of yards, brokers, lawyers, surveyors, and management companies
-          engaged by clients of the firm in the past three years, available
-          on request.
+          engaged by clients of the firm in the past three years, and provides
+          it to readers on request under standard confidentiality terms.
         </p>
         <p>
           <strong>4. Fee transparency.</strong> Fees are quoted in writing
@@ -720,13 +717,7 @@ export default function PrintEdition() {
           commissions.
         </p>
         <p>
-          <strong>5. Professional indemnity insurance.</strong> Foreland holds
-          professional indemnity cover with ITIC, the marine professional
-          indemnity mutual, at GBP 500,000 per claim. Project-specific excess
-          cover is placed where an engagement requires it.
-        </p>
-        <p>
-          <strong>6. Named principals.</strong> The directors of Foreland are
+          <strong>5. Named principals.</strong> The directors of Foreland are
           Jack MacNally and Daniel Marks. Both listed at Companies House.
           Registered with the Yacht Owner&rsquo;s Representative Register.
           Resident in London.

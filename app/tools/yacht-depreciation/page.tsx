@@ -38,17 +38,17 @@ const FAQS = [
   {
     question: "How much does a yacht depreciate per year?",
     answer:
-      "Yatco puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 percent by year five. IYC puts the first-year correction at 10 to 20 percent, with most yachts reaching 40 to 50 percent of their original price in five years, read here as a five-year loss of 40 to 50 percent. Together they put the typical loss by year five at about 30 to 50 percent, after which the curve flattens. Yacht Hunter's Chris Mortimer rejects fixed schedules: value, he argues, follows condition, market and comparable sales. There is no peer-reviewed academic study of yacht depreciation; every published curve is broker-aggregated and self-reported, which is itself worth knowing before relying on one.",
+      "Yatco's market article (October 2025) puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 to 35 percent by year five; its depreciation guide (June 2025) gives 40 to 50 percent lost by year five. IYC (October 2025) puts the first-year correction at 10 to 20 percent, with most yachts keeping 40 to 50 percent of their original price after five years, a loss of 50 to 60 percent. On these figures the loss by year five is about 30 to 60 percent, and both brokers say losses slow after that. Yacht Hunter's Chris Mortimer rejects fixed schedules: value, he argues, follows condition, market and comparable sales. There is no peer-reviewed academic study of yacht depreciation; every published curve is broker-aggregated and self-reported, which is itself worth knowing before relying on one.",
   },
   {
     question: "What is a yacht worth after five years?",
     answer:
-      "Typically 50 to 70 percent of its original purchase price, on the broker-published rates. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 15 million in value and consumed a further USD 15 to 22 million in operating cost. An eight-figure total hold cost over that period is the realistic frame, and it is not the frame in which the purchase is usually discussed.",
+      "Typically 40 to 70 percent of its original purchase price, on the broker-published figures: about 65 to 70 percent on Yatco's 5 percent a year, 50 to 60 percent on Yatco's depreciation guide and 40 to 50 percent on IYC's. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 18 million in value and consumed a further USD 15 to 22 million in operating cost. An eight-figure total hold cost over that period is the realistic frame, and it is not the frame in which the purchase is usually discussed.",
   },
   {
     question: "Which yacht builders hold their value best?",
     answer:
-      "At the full-custom end, Feadship, Lürssen, Royal Huisman, Vitters and Baltic Yachts hulls can lose only single-digit percentages annually after year five, against the roughly 5 to 8 percent a year typical of the broader market in years two to five. In the semi-custom and series segment similar claims are made for the larger Italian yards, but no published curve quantifies them. Build quality, the depth of the secondary market for that yard's hulls, and the completeness of the maintenance record are the drivers. The premium paid at build is partly recovered on resale, which is a different proposition from the yacht being an investment.",
+      "At the full-custom end, Feadship, Lürssen, Royal Huisman, Vitters and Baltic Yachts hulls can lose only single-digit percentages annually after year five, against the roughly 5 to 10 percent of purchase price a year that the published figures imply for the broader market in years two to five. In the semi-custom and series segment similar claims are made for the larger Italian yards, but no published curve quantifies them. Build quality, the depth of the secondary market for that yard's hulls, and the completeness of the maintenance record are the drivers. The premium paid at build is partly recovered on resale, which is a different proposition from the yacht being an investment.",
   },
   {
     question: "Is a superyacht a good investment?",
@@ -74,8 +74,8 @@ const FAQS = [
 
 const CURVE = [
   { year: "Year 1", loss: "10 to 20 percent", cumulative: "10 to 20 percent" },
-  { year: "Years 2 to 5", loss: "About 5 to 8 percent a year (Yatco: about 5)", cumulative: "30 to 50 percent by year 5" },
-  { year: "Year 5 onward", loss: "Curve flattens", cumulative: "Slower decline, condition-led" },
+  { year: "Years 2 to 5", loss: "About 5 to 10 percent of purchase price a year (Yatco: about 5)", cumulative: "30 to 60 percent lost by year 5 (Yatco 30 to 50, IYC 50 to 60)" },
+  { year: "Year 5 onward", loss: "Slower; no published rate", cumulative: "Slower decline, condition-led" },
   { year: "Quality builders, after year 5", loss: "Single-digit percentages annually", cumulative: "Materially better than the market curve" },
 ];
 
@@ -100,7 +100,9 @@ function datasetSchema() {
       "Total hold cost over five years",
     ],
     isBasedOn: [
-      { "@type": "CreativeWork", name: "Yatco brokerage data", url: "https://www.yatco.com" },
+      { "@type": "CreativeWork", name: "Yatco, yacht depreciation guide", url: "https://blog.yatco.com/yacht-depreciation/" },
+      { "@type": "CreativeWork", name: "Yatco, luxury yacht market", url: "https://blog.yatco.com/luxury-yacht-market/" },
+      { "@type": "CreativeWork", name: "IYC, yacht depreciation", url: "https://iyc.com/blog/yacht-depreciation/" },
       { "@type": "CreativeWork", name: "BOAT International charter case studies", url: "https://www.boatinternational.com" },
     ],
     keywords: [
@@ -231,7 +233,7 @@ export default function YachtDepreciationPage() {
                 </tbody>
               </table>
               <p className="caption mt-6">
-                Broker-published rates from Yatco and IYC. Feadship,
+                Broker-published figures from Yatco (June and October 2025) and IYC (October 2025); IYC states value kept rather than value lost. Feadship,
                 Lürssen, Royal Huisman, Vitters and Baltic Yachts sit in the
                 fourth row at the full-custom end; the larger Italian
                 semi-custom yards are credited with comparable retention in
@@ -245,7 +247,7 @@ export default function YachtDepreciationPage() {
               </h2>
               <p>
                 A USD 30 million yacht held for five years at moderate use will
-                typically have lost USD 9 to 15 million in value and consumed
+                typically have lost USD 9 to 18 million in value and consumed
                 another USD 15 to 22 million in operating cost. That is an
                 eight-figure hold cost over the period, and it is the number
                 against which the decision should be taken rather than the

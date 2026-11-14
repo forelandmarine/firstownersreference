@@ -44,7 +44,7 @@ export default function PrintRequestPage() {
               Request a print copy.
             </h1>
             <p className="font-serif italic text-xl lg:text-2xl text-charcoal-soft mt-8 max-w-2xl">
-              Five hundred copies. Hand numbered. Signed by the editor on the
+              Five hundred copies. Hand numbered. Signed by the editors in chief on the
               final page. Sent without charge to a curated list of readers.
             </p>
           </div>
@@ -54,9 +54,8 @@ export default function PrintRequestPage() {
           <div className="lg:col-span-5">
             <div className="prose-body text-charcoal-soft">
               <p>
-                We do not sell copies. The print edition exists as an
-                editorial artefact and as a relationship object. We send
-                copies to readers for whom The First Owner’s Reference is genuinely useful:
+                We do not sell copies. We send them without charge to
+                readers for whom The First Owner’s Reference is genuinely useful:
                 first-time buyers approaching an acquisition, family office
                 principals, wealth managers, and members of a small number of
                 clubs and learned societies whose members we expect to have

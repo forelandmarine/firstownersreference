@@ -49,7 +49,7 @@ const FAQS = [
   {
     question: "How can I tell if a yacht adviser is independent?",
     answer:
-      "Six tests: any income contingent on a transaction closing disclosed in writing, with the amount and who pays it; no equity, employment, or referral relationship with any yard, broker, supplier, management company, or charter operation; a published counterparty list for the past three years; fees quoted transparently in writing in advance; professional indemnity insurance at a level appropriate to the transaction; and named, traceable, accountable principals. A firm that cannot meet them may still provide value, but it should not be relied on for independent advice.",
+      "Six tests: any income contingent on a transaction closing disclosed in writing, with the amount and who pays it; no equity, employment, or referral relationship with any yard, broker, supplier, management company, or charter operation; a counterparty list for the past three years, published or provided on request; fees quoted transparently in writing in advance; professional indemnity insurance at a level appropriate to the transaction; and named, traceable, accountable principals. A firm that cannot meet them may still provide value, but it should not be relied on for independent advice.",
   },
   {
     question: "Is a free yacht advisory service really free?",
@@ -307,9 +307,9 @@ export default function QuestionsToAskPage() {
                   on a closed transaction disclosed in writing, with its amount
                   and who pays it; no equity, employment, or referral
                   relationship with yards, brokers, suppliers, or management
-                  companies; a published counterparty list; fees quoted in
+                  companies; a counterparty list, published or on request; fees quoted in
                   writing in advance; professional indemnity insurance at
-                  transaction scale; and named, accountable principals. For
+                  a level appropriate to the engagement; and named, accountable principals. For
                   an{" "}
                   <Link
                     href="/glossary#owners-representative"

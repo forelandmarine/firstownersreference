@@ -1,0 +1,275 @@
+[
+ {
+  "file": "content/cases.json",
+  "old": "approaching its second five-year survey",
+  "new": "approaching a class renewal survey",
+  "kind": "fact",
+  "reason": "FOR-033: at 12 years the second five-yearly renewal would normally have fallen at about year 10; wording now correct without the case file."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "Five claims under the yard’s warranty, totalling approximately EUR 410,000, were pursued with the yard and settled within the warranty period.",
+  "new": "Five claims under the yard’s warranty, with a combined value of approximately EUR 410,000, were pursued with the yard and settled within the warranty period. This account gives the value of the claims; it does not separate cash received from remedial work done by the yard.",
+  "kind": "fact",
+  "reason": "FOR-035: settlement value is not necessarily cash recovered; state what the figure is."
+ },
+ {
+  "file": "content/cases.json",
+  "old": "The warranty recovery alone was about four times the fee (EUR 410,000 against EUR 95,000).",
+  "new": "The settled claims alone were worth about four times the fee (EUR 410,000 against EUR 95,000).",
+  "kind": "fact",
+  "reason": "FOR-035: fee comparison uses the same description as the claims figure."
+ },
+ {
+  "file": "content/sections.json",
+  "old": "the insurance market, and whether charter pays, which for most yachts it does not.",
+  "new": "the insurance market, and how far charter income offsets the cost of ownership.",
+  "kind": "line",
+  "reason": "FOR-036: standfirst ended on a dangling qualification; the chapter's finding (charter offsets part of the cost, rarely all) is kept in the body."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A good captain runs a quiet, professional yacht with low crew turnover, predictable maintenance costs, and few unpleasant surprises. A poor one produces high crew turnover, rising maintenance costs and unwelcome surprises.",
+  "new": "A captain’s leadership shows in crew retention, maintenance and budget control. Where crew turnover is high or maintenance costs keep rising, the captain is among the first things to examine, although the owner’s expectations, the yacht’s age and how hard she is used can produce the same results.",
+  "kind": "fact",
+  "reason": "FOR-037: universal causal attribution to the captain replaced with a qualified statement."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A 50 metre sailing yacht costs noticeably less to run than a 50 metre motor yacht of comparable build quality. The two are seldom costed side by side for a buyer. Practitioner ranges, from a Foreland archive of managed projects:",
+  "new": "On practitioner ranges from a Foreland archive of managed projects, a 50 metre sailing yacht costs less to run than a 50 metre motor yacht of comparable build quality. Actual costs depend on crew numbers, how the yacht is used, her machinery, and where she stands in the rig and sail replacement cycles. The two are seldom costed side by side for a buyer; the archive ranges are set out below.",
+  "kind": "fact",
+  "reason": "FOR-044: ties the comparison to the archive estimates and names what drives actual cost."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Total operating cost. A 50m sailing yacht at moderate use typically runs",
+  "new": "Total operating cost. On the archive figures, a 50m sailing yacht at moderate use typically runs",
+  "kind": "fact",
+  "reason": "FOR-044: modelled figure attributed to its source."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "In force from 1 January 2024, it applies to ships of 5,000 GT and above that carry passengers or cargo for commercial purposes to or from EEA ports. Compliance is phased by emissions year: 40 percent of 2024 emissions (surrendered in 2025), 70 percent of 2025 emissions, and 100 percent of 2026 emissions onward, first due by 30 September 2027.",
+  "new": "In force from 1 January 2024, it applies to cargo and passenger ships of 5,000 GT and above on voyages carrying passengers or cargo for commercial purposes to, from or between EEA ports, whatever their flag; offshore ships of that size are added from 2027. Allowances are surrendered by 30 September of the year after the emissions: those surrendered in 2025 covered 40 percent of 2024 emissions, those surrendered in 2026 cover 70 percent of 2025 emissions, and from 2027 they cover 100 percent of emissions for 2026 onward.",
+  "kind": "fact",
+  "reason": "FOR-040/042: scope per Commission FAQ and Guidance Document 1; phase-in stated by emissions year and surrender year."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "Very few yachts reach the threshold in any case (a 60m motor yacht is typically 700 to 1,200 GT).",
+  "new": "The exemptions listed in the EU monitoring rules (warships, naval auxiliaries, fishing vessels, ships not propelled by mechanical means and government ships in non-commercial use) do not mention yachts, so the test for a yacht is both its tonnage and whether it carries passengers for commercial purposes. Very few yachts reach 5,000 GT (a 60m motor yacht is typically 700 to 1,200 GT), and sail is no guide: Sailing Yacht A, 143 metres, is about 12,600 GT.",
+  "kind": "fact",
+  "reason": "FOR-040/041: tonnage alone does not decide coverage; a sailing yacht can exceed 5,000 GT (Nobiskrug press release, 3 Feb 2017)."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "For owners who want to cut the yacht’s carbon emissions without rebuilding the engine room, HVO is the simplest option.",
+  "new": "For owners who want to cut the yacht’s lifecycle carbon emissions without rebuilding the engine room, HVO is the simplest option, although the saving does not show in a calculation of CO2 from fuel burned aboard, such as the one later in this section.",
+  "kind": "fact",
+  "reason": "FOR-043: separates the lifecycle saving from the onboard combustion calculation used in the next paragraphs."
+ },
+ {
+  "file": "lib/charts.tsx",
+  "old": "standfirst=\"The EU ETS extension from 1 January 2024 applies to ships of and above 5,000 GT. Compliance phased 40 percent in 2025, 70 percent in 2026, 100 percent from 2027.\"",
+  "new": "standfirst=\"Since 1 January 2024 the EU ETS has applied to cargo and passenger ships of 5,000 GT and above carrying passengers or cargo for commercial purposes. Allowances cover 40 percent of 2024 emissions, 70 percent of 2025 emissions and 100 percent from 2026, each surrendered by 30 September of the following year.\"",
+  "kind": "fact",
+  "reason": "FOR-040/042: scope and phase-in by emissions year."
+ },
+ {
+  "file": "lib/charts.tsx",
+  "old": "caption=\"Most yachts sit below the threshold. Very large motor yachts now sit inside it. Sail yachts at every size band sit below.\"",
+  "new": "caption=\"Most yachts are well below 5,000 GT. Tonnage is only half the test: a yacht in private use is outside the system at any size, and one of 5,000 GT or more is inside only when it carries passengers for commercial purposes. Large sailing yachts can exceed 5,000 GT; Sailing Yacht A is about 12,600 GT.\"",
+  "kind": "fact",
+  "reason": "FOR-040/041: removes the false claim that all sailing yachts are below 5,000 GT and the implication that tonnage alone decides coverage."
+ },
+ {
+  "file": "lib/charts.tsx",
+  "old": "note: \"Inside, EUR 200 to 400 k per year\"",
+  "new": "note: \"Inside only on commercial charter\"",
+  "kind": "fact",
+  "reason": "FOR-040: a 5,000 GT yacht in private use is outside the system."
+ },
+ {
+  "file": "lib/charts.tsx",
+  "old": "source=\"EU Commission FAQ on EU ETS for maritime transport; practitioner working ranges for tonnage.\"",
+  "new": "source=\"EU Commission FAQ on EU ETS for maritime transport; Nobiskrug (Sailing Yacht A); practitioner working ranges for tonnage.\"",
+  "kind": "fact",
+  "reason": "FOR-041: source for the Sailing Yacht A tonnage."
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Compliance is phased: 40 percent of 2024 emissions paid in 2025, 70 percent of 2025 emissions paid in 2026, 100 percent of 2026 emissions onward, first due 30 September 2027.",
+  "new": "Offshore ships of that size are added from 2027. Allowances cover 40 percent of 2024 emissions (surrendered in 2025), 70 percent of 2025 emissions (surrendered in 2026) and 100 percent of emissions for 2026 onward, first due 30 September 2027. A sailing rig is no guide to tonnage: Sailing Yacht A is about 12,600 GT.",
+  "kind": "fact",
+  "reason": "FOR-040/041/042: offshore scope, phase-in wording, sailing-yacht tonnage."
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "compliance phased 40 / 70 / 100 percent across 2025 to 2027.",
+  "new": "allowances for 40, 70 and 100 percent of 2024, 2025 and 2026 emissions, surrendered in 2025, 2026 and 2027.",
+  "kind": "fact",
+  "reason": "FOR-042: emissions year and surrender year distinguished."
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "in phased application: 40 percent of verified emissions covered in 2024, 70 percent in 2025, 100 percent from 2026.",
+  "new": "in phased application: allowances cover 40 percent of verified 2024 emissions, 70 percent of 2025 emissions and 100 percent from 2026 onward, each surrendered by 30 September of the following year.",
+  "kind": "fact",
+  "reason": "FOR-042: phase-in by emissions year and surrender year."
+ },
+ {
+  "file": "lib/glossary.ts",
+  "old": "regardless of flag; a yacht in private use is outside it at any size. Most yachts",
+  "new": "regardless of flag; offshore ships of that size are added from 2027. A yacht in private use is outside it at any size. Most yachts",
+  "kind": "fact",
+  "reason": "FOR-040: offshore ships from 2027."
+ },
+ {
+  "file": "app/tools/yacht-vat/page.tsx",
+  "old": "From 2026 the system covers 100 percent of intra-EU emissions and 50 percent of voyages from a non-EU port, applied to commercial vessels above 5,000 GT entering EU ports. Most yachts including 60 to 80 metre motor sit below the 5,000 GT threshold. Above 5,000 GT (110 metre plus motor) the cost runs EUR 200,000 to 400,000 per year at current carbon prices on a well-utilised vessel.",
+  "new": "It applies to ships of 5,000 GT and above carrying passengers or cargo for commercial purposes, whatever their flag: all emissions on voyages between EEA ports and in them, and half of those on voyages into or out of the EEA. Allowances must cover 100 percent of emissions from 2026. A yacht in private use is outside the system at any size, and most yachts, including 60 to 80 metre motor yachts, are well below 5,000 GT. For the few yachts of 5,000 GT or more on commercial charter, the cost can run to EUR 200,000 to 400,000 a year at current carbon prices on a well-utilised vessel.",
+  "kind": "fact",
+  "reason": "FOR-040: scope is tonnage plus commercial carriage of passengers or cargo; private use outside."
+ },
+ {
+  "file": "app/tools/yacht-vat/page.tsx",
+  "old": "in phases: 40 percent of\n                  verified emissions covered in 2024, 70 percent in 2025, 100\n                  percent from 2026.",
+  "new": "in phases: allowances cover 40\n                  percent of 2024 emissions, 70 percent of 2025 emissions and\n                  100 percent from 2026, each surrendered by 30 September of\n                  the following year.",
+  "kind": "fact",
+  "reason": "FOR-042: emissions year and surrender year distinguished."
+ },
+ {
+  "file": "app/tools/yacht-vat/page.tsx",
+  "old": "Applied to commercial vessels above 5,000 GT entering EU\n                  ports, regardless of flag. Most yachts including 60 to 80\n                  metre motor sit below the 5,000 GT threshold. Above 5,000 GT\n                  (110 metre plus motor) the cost runs EUR 200,000 to 400,000\n                  per year at current carbon prices.",
+  "new": "It applies to ships of 5,000 GT and above carrying\n                  passengers or cargo for commercial purposes, regardless of\n                  flag. A yacht in private use is outside it at any size. Most\n                  yachts, including 60 to 80 metre motor yachts, are well below\n                  5,000 GT; for the few above it on commercial charter, the\n                  cost can run to EUR 200,000 to 400,000 a year at current\n                  carbon prices.",
+  "kind": "fact",
+  "reason": "FOR-040: scope is tonnage plus commercial carriage; private use outside."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The ownership structure is the vehicle that holds the yacht: personal ownership, a company, or something more layered, together with the jurisdiction in which it is established and the VAT treatment that follows from it. It is among the first decisions an owner makes, among the hardest to unwind, and the one most often left too late; settling it early, and around the owner rather than the transaction’s timetable, is among the first things an independent adviser is engaged to ensure.",
+  "new": "The ownership structure is the legal arrangement under which the yacht is owned: by the owner personally, through a company, or through something more layered, together with the jurisdiction in which it is established and the VAT treatment that follows from it. The right choice depends on the owner’s residence, intended use, financing, succession plans and tax position. It should be settled before the purchase contract is agreed, around the owner rather than the transaction’s timetable, because changing it after completion can have legal, tax and administrative consequences. It is often left too late, and seeing that it is settled in time is among the first things an independent adviser is engaged to do.",
+  "kind": "line",
+  "reason": "FOR-045/046: a person owning a yacht directly is not a 'vehicle'; the decision order stated as a plain sequence with its consequence."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "The vehicle that holds the yacht exists alongside",
+  "new": "Whatever arrangement owns the yacht exists alongside",
+  "kind": "line",
+  "reason": "FOR-045: same correction in the following paragraph."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "3. Does the firm publish a complete counterparty list for the past three years, with the nature of each relationship?",
+  "new": "3. Will the firm provide a complete counterparty list for the past three years, with the nature of each relationship, either published or in writing on request?",
+  "kind": "fact",
+  "reason": "FOR-047: test reconciled with the written-disclosure standard and with the publisher's practice on the colophon (list provided on request)."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "published counterparty list; transparent fees",
+  "new": "counterparty list, published or on request; transparent fees",
+  "kind": "fact",
+  "reason": "FOR-047: ch03 summary of the test kept consistent with ch09."
+ },
+ {
+  "file": "content/data-spreads.json",
+  "old": "Publish a complete list of every counterparty worked with in the past three years, with relationship?",
+  "new": "Provide a complete list of every counterparty worked with in the past three years, with relationship, published or on request?",
+  "kind": "fact",
+  "reason": "FOR-047: consistent with ch09 test."
+ },
+ {
+  "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+  "old": "a published counterparty list for the past three years;",
+  "new": "a counterparty list for the past three years, published or provided on request;",
+  "kind": "fact",
+  "reason": "FOR-047: consistent with ch09 test."
+ },
+ {
+  "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+  "old": "companies; a published counterparty list; fees quoted in",
+  "new": "companies; a counterparty list, published or on request; fees quoted in",
+  "kind": "fact",
+  "reason": "FOR-047: consistent with ch09 test."
+ },
+ {
+  "file": "app/colophon/page.tsx",
+  "old": "Foreland publishes a\n              complete list of yards, brokers, lawyers, surveyors, and\n              management companies engaged by clients of the firm in the past\n              three years, available on request. The list is provided to\n              readers under standard confidentiality terms.",
+  "new": "Foreland keeps a\n              complete list of yards, brokers, lawyers, surveyors, and\n              management companies engaged by clients of the firm in the past\n              three years, and provides it to readers on request under\n              standard confidentiality terms.",
+  "kind": "fact",
+  "reason": "FOR-047: the colophon said 'publishes' and 'on request' at once; now states the practice, which meets the ch09 test as reworded."
+ },
+ {
+  "file": "app/print/page.tsx",
+  "old": "Foreland publishes a complete\n          list of yards, brokers, lawyers, surveyors, and management companies\n          engaged by clients of the firm in the past three years, available\n          on request.",
+  "new": "Foreland keeps a complete\n          list of yards, brokers, lawyers, surveyors, and management companies\n          engaged by clients of the firm in the past three years, and provides\n          it to readers on request under standard confidentiality terms.",
+  "kind": "fact",
+  "reason": "FOR-047: print colophon matches web colophon."
+ },
+ {
+  "file": "content/lead-essays.json",
+  "old": "A USD 50 million build with an adviser carrying GBP 1 million PI is not insured at the scale of the project.",
+  "new": "The appropriate limit depends on the service, the contract and the risk, not only on the price of the yacht; on a large build the buyer should ask what limit applies to this engagement and whether project-specific cover will be placed for it.",
+  "kind": "fact",
+  "reason": "FOR-048: removes the implication that a fixed threshold governs every contract; explains how limits are set."
+ },
+ {
+  "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+  "old": "professional indemnity insurance at\n                  transaction scale;",
+  "new": "professional indemnity insurance at\n                  a level appropriate to the engagement;",
+  "kind": "fact",
+  "reason": "FOR-048: 'transaction scale' implied a fixed link to yacht price."
+ },
+ {
+  "file": "app/print/page.tsx",
+  "old": "        <p>\n          <strong>5. Professional indemnity insurance.</strong> Foreland holds\n          professional indemnity cover with ITIC, the marine professional\n          indemnity mutual, at GBP 500,000 per claim. Project-specific excess\n          cover is placed where an engagement requires it.\n        </p>\n",
+  "new": "",
+  "kind": "fact",
+  "reason": "FOR-048: print colophon brought into line with the web colophon, from which the author removed the insurance item."
+ },
+ {
+  "file": "app/print/page.tsx",
+  "old": "<strong>6. Named principals.</strong>",
+  "new": "<strong>5. Named principals.</strong>",
+  "kind": "fact",
+  "reason": "FOR-048: renumbered after removal of the insurance item, as on the web colophon."
+ },
+ {
+  "file": "app/print/page.tsx",
+  "old": "the publisher as it does to every other adviser. Its answers are\n          set out below.",
+  "new": "the publisher as it does to every other adviser. Its answers on\n          earnings, relationships, counterparties, fees and principals are set\n          out below.",
+  "kind": "fact",
+  "reason": "FOR-048: matches web colophon wording."
+ },
+ {
+  "file": "app/request-print-edition/page.tsx",
+  "old": "Signed by the editor on the",
+  "new": "Signed by the editors in chief on the",
+  "kind": "fact",
+  "reason": "FOR-053: matches the colophon (signed by the editors in chief on the final page)."
+ },
+ {
+  "file": "app/request-print-edition/page.tsx",
+  "old": "We do not sell copies. The print edition exists as an\n                editorial artefact and as a relationship object. We send\n                copies to readers",
+  "new": "We do not sell copies. We send them without charge to\n                readers",
+  "kind": "line",
+  "reason": "FOR-054: 'relationship object' removed."
+ },
+ {
+  "file": "app/colophon/page.tsx",
+  "old": "              Co-editors in Chief: Jack MacNally and Daniel Marks.\n              <br />\n              Editor: To be appointed.\n              <br />\n              Art director: To be appointed.\n              <br />\n              Picture editor: To be appointed.\n              <br />\n              Researcher and fact checker: To be appointed.",
+  "new": "              Co-editors in Chief: Jack MacNally and Daniel Marks.",
+  "kind": "fact",
+  "reason": "FOR-055: future-tense placeholders removed; the colophon lists only the people in post. Author to name any fact checker or proofreader before print."
+ },
+ {
+  "file": "app/print/page.tsx",
+  "old": "          <strong>Co-editors in Chief:</strong> Jack MacNally and Daniel Marks.\n          <br />\n          Editor: To be appointed. Art director: To be appointed. Picture\n          editor: To be appointed. Researcher and fact checker: To be\n          appointed.",
+  "new": "          <strong>Co-editors in Chief:</strong> Jack MacNally and Daniel Marks.",
+  "kind": "fact",
+  "reason": "FOR-055: same in the print colophon."
+ }
+]

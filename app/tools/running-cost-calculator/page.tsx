@@ -165,8 +165,8 @@ function bySize(length: number, values: number[]) {
 }
 
 // Retained value by age: 20 percent off in year one, then 8 percent a year
-// compounding, which leaves 57 percent at year 5, inside the 50 to 70 percent
-// retained that chapter 1 gives (30 to 50 percent lost). The curve flattens to 4 percent
+// compounding, which leaves 57 percent at year 5, inside the 40 to 70 percent
+// retained that chapter 1 gives (30 to 60 percent lost). The curve flattens to 4 percent
 // a year after that.
 function retainedValue(years: number) {
   if (years === 0) return 1;

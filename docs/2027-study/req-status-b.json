@@ -1,0 +1,156 @@
+[
+ {
+  "id": "FOR-033",
+  "status": "Done",
+  "note": "cases.json 06-refit para 1: 'approaching its second five-year survey' changed to 'approaching a class renewal survey', which is correct whatever the class cycle. 'Previous five-year survey' in para 2 left (generic).",
+  "sources": []
+ },
+ {
+  "id": "FOR-034",
+  "status": "Already fixed",
+  "note": "cases.json 06-refit standfirst and para 'The final account...' already separate EUR 1.37m identified from EUR 1.83m not itemised and say the balance cannot be attributed to contract terms or project controls on these figures. Retained.",
+  "sources": []
+ },
+ {
+  "id": "FOR-035",
+  "status": "Done (qualified)",
+  "note": "cases.json 06-refit: EUR 410,000 now described as the combined value of five settled claims, with a sentence that the account does not separate cash received from remedial work; fee comparison now 'The settled claims alone were worth about four times the fee'. ch06 essay wording ('warranty claims ... worth about EUR 410,000') already consistent. Author may replace with the cash/remedial split from the files if wanted.",
+  "sources": []
+ },
+ {
+  "id": "FOR-036",
+  "status": "Done",
+  "note": "sections.json 07 standfirst now: 'The captain hire, the crew, compliance, the insurance market, and how far charter income offsets the cost of ownership.' Single source feeds home card, chapter page, OG image and llms.txt.",
+  "sources": []
+ },
+ {
+  "id": "FOR-037",
+  "status": "Done",
+  "note": "lead-essays 07 para 'The captain is the most consequential hire...': good/poor captain causation replaced by a qualified statement naming owner expectations, yacht age and use as alternative causes.",
+  "sources": []
+ },
+ {
+  "id": "FOR-038",
+  "status": "Already fixed",
+  "note": "lead-essays 07: Erica Lay's reference quotation sits whole in one paragraph and matches her answer in guest-opinions.json verbatim; no paragraph break or joined speaker.",
+  "sources": []
+ },
+ {
+  "id": "FOR-039",
+  "status": "Already fixed",
+  "note": "lead-essays 08 para 1 now reads 'The leading sailing yacht builders are Royal Huisman, Vitters, Baltic, Nautor Swan and Wally. The discussion below considers...'; the broken join is gone.",
+  "sources": []
+ },
+ {
+  "id": "FOR-040",
+  "status": "Done",
+  "note": "Scope per Commission FAQ (updated 24 Nov 2025) and Guidance Document 1 s.2.2.2: cargo and passenger ships >=5,000 GT on voyages carrying passengers or cargo for commercial purposes, any flag; offshore ships >=5,000 GT from 2027; MRV exemptions list does not include yachts. Essay 08 Carbon para, chart 08.02 standfirst/caption/110m note, data-spread caption, glossary eu-ets, and yacht-vat tool (FAQ and section) now state that tonnage and commercial carriage together decide coverage and private use is outside at any size. Neither the FAQ nor GD1 mentions yachts; the existing sentence that guidance does not settle 12-passenger charter yachts is kept.",
+  "sources": [
+   "https://climate.ec.europa.eu/areas-action/transport-decarbonisation/reducing-emissions-shipping-sector/faq-maritime-transport-eu-emissions-trading-system-ets_en",
+   "https://climate.ec.europa.eu/document/download/31875b4f-39b9-4cde-a4e2-fbb8f65ee703_en?filename=policy_transport_shipping_gd1_maritime_en.pdf",
+   "https://eur-lex.europa.eu/eli/reg/2023/957"
+  ]
+ },
+ {
+  "id": "FOR-041",
+  "status": "Done",
+  "note": "Chart 08.02 caption 'Sail yachts at every size band sit below' removed. Builder figure: Nobiskrug press release 3 Feb 2017, Sailing Yacht A 143 m, about 12,600 GT; cited in essay, chart caption and source line, and data-spread caption.",
+  "sources": [
+   "https://www.germannaval.com/fileadmin/user_upload/gnyk/news-press/NOBISKRUG_Press_Release_SY_A_20170203_EN.pdf"
+  ]
+ },
+ {
+  "id": "FOR-042",
+  "status": "Done",
+  "note": "Commission FAQ: surrender by 30 Sept of following year; 40% of 2024 emissions (2025), 70% of 2025 (2026), 100% from 2027 surrender. Essay, chart standfirst (which gave surrender years only), data-spread source line, glossary (which said 'covered in 2024') and yacht-vat section now name both emissions year and surrender year. FAQ answer in faqs.json already used emissions years correctly; left.",
+  "sources": [
+   "https://climate.ec.europa.eu/areas-action/transport-decarbonisation/reducing-emissions-shipping-sector/faq-maritime-transport-eu-emissions-trading-system-ets_en"
+  ]
+ },
+ {
+  "id": "FOR-043",
+  "status": "Done",
+  "note": "Essay 08 HVO paragraph already said exhaust CO2 is much the same as diesel and the saving is lifecycle; closing sentence now says 'lifecycle carbon emissions' and that the saving does not show in the onboard-fuel CO2 calculation later in the section (which already states it covers fuel burned aboard only). 'Up to about 90 percent' lifecycle figure kept: within Neste's published range (up to 75 or 95 percent depending on method and feedstock) and already qualified by feedstock and accounting rules.",
+  "sources": [
+   "https://neste.com/en-us/products-and-innovation/neste-my-renewable-diesel"
+  ]
+ },
+ {
+  "id": "FOR-044",
+  "status": "Done",
+  "note": "Essay 08 operating-cost lead-in now ties the comparison to the Foreland archive practitioner ranges and names crew numbers, use, machinery and rig/sail cycles as drivers; 'Total operating cost' paragraph now 'On the archive figures'. Ranges unchanged.",
+  "sources": []
+ },
+ {
+  "id": "FOR-045",
+  "status": "Done",
+  "note": "Essay 09 'Settling the ownership structure first': 'the vehicle that holds the yacht' replaced by 'the legal arrangement under which the yacht is owned: by the owner personally, through a company, or ...', plus the factors (residence, use, financing, succession, tax); following paragraph 'The vehicle that holds the yacht' changed to 'Whatever arrangement owns the yacht'.",
+  "sources": []
+ },
+ {
+  "id": "FOR-046",
+  "status": "Done",
+  "note": "Same paragraph: comparative chain replaced with: settle before the purchase contract is agreed, because changing it after completion can have legal, tax and administrative consequences; often left too late; adviser engaged to see it settled in time. Quadrant interview pointer unchanged.",
+  "sources": []
+ },
+ {
+  "id": "FOR-047",
+  "status": "Done",
+  "note": "Applied the author's written-disclosure standard. Test element 3 now asks for a complete counterparty list 'either published or in writing on request' (essay 09 Q3, ch03 summary of the test, ch09 data-spread row, 09a page FAQ and body). Colophon (web and print) said 'publishes ... available on request'; now 'keeps a complete list ... and provides it to readers on request under standard confidentiality terms'. Author to confirm this is the intended standard.",
+  "sources": []
+ },
+ {
+  "id": "FOR-048",
+  "status": "Done",
+  "note": "Web colophon has no PI item (author removed it). Essay 09 Q5 example 'USD 50 million build with GBP 1 million PI is not insured at the scale of the project' replaced by: limit depends on service, contract and risk, ask what limit applies to this engagement and whether project-specific cover will be placed. 09a page 'at transaction scale' changed to 'at a level appropriate to the engagement'. Print colophon (app/print/page.tsx) still carried the ITIC GBP 500,000 item 5: removed and item 6 renumbered 5, intro aligned with web colophon.",
+  "sources": []
+ },
+ {
+  "id": "FOR-049",
+  "status": "Already fixed",
+  "note": "app/page.tsx: 'Five standing pages kept current between editions', five cards listed.",
+  "sources": []
+ },
+ {
+  "id": "FOR-050",
+  "status": "Already fixed",
+  "note": "app/colophon/page.tsx shows '1st Edition, 2027' and citation 'The First Owner’s Reference, 1st Edition, 2027 ... year 2027'. No '1st Edition, 2026' anywhere in app/, components/ or lib/.",
+  "sources": []
+ },
+ {
+  "id": "FOR-051",
+  "status": "Already fixed",
+  "note": "Footer is components/site-footer.tsx, which reads '1st Edition, 2027' (also mobile-nav).",
+  "sources": []
+ },
+ {
+  "id": "FOR-052",
+  "status": "Already fixed",
+  "note": "app/request-print-edition/page.tsx has no form or 'Wireframe' note; it gives email instructions to editors@firstownersreference.com and an 'Email Us' mailto button.",
+  "sources": []
+ },
+ {
+  "id": "FOR-053",
+  "status": "Done",
+  "note": "Print-request standfirst 'Signed by the editor' changed to 'Signed by the editors in chief', matching the colophon ('signed by the editors in chief on the final page'; co-editors Jack MacNally and Daniel Marks).",
+  "sources": []
+ },
+ {
+  "id": "FOR-054",
+  "status": "Done",
+  "note": "Print-request page: 'The print edition exists as an editorial artefact and as a relationship object. We send copies to readers' replaced by 'We send them without charge to readers'.",
+  "sources": []
+ },
+ {
+  "id": "FOR-055",
+  "status": "Done (qualified)",
+  "note": "Colophon (web and print) listed Editor, Art director, Picture editor and Researcher and fact checker as 'To be appointed'; placeholders removed so the board lists only the co-editors in chief. No names invented. Author question: before print sign-off, is anyone to be named as fact checker or proofreader (and editor, art director, picture editor)? Note the print imprint masthead (app/print/page.tsx) still carries dated production notes ('Picture editor engaged June 2026', 'External pass scheduled August 2026', 'Editorial board: To be confirmed') for the author to settle.",
+  "sources": []
+ },
+ {
+  "id": "FOR-056",
+  "status": "Already fixed",
+  "note": "ch02 standfirst in content/sections.json is 'The global order book, available shipyard capacity and what buyers can expect in 2027.' The home card (components/section-card.tsx), chapter page, OG image and llms.txt all read sections.json; 'actually sits' occurs nowhere in app/, components/, lib/, content/ or public/. seoDescription is consistent.",
+  "sources": []
+ }
+]

@@ -109,45 +109,34 @@
       },
       {
         "type": "table",
-        "caption": "Indicative depreciation curve for a typical hull, drawn from broker-aggregated data. Quality builders (Feadship, Lürssen, Royal Huisman, Vitters, Baltic) hold value much better after year five.",
+        "caption": "Published five-year figures, by source. Each broker defines its figure differently, so they are shown separately. Quality builders (Feadship, Lürssen, Royal Huisman, Vitters, Baltic) hold value much better after year five.",
         "head": [
-          "Year",
-          "Cumulative loss from purchase",
-          "Marginal annual loss"
+          "Source",
+          "Year 1",
+          "Year 3",
+          "Year 5"
         ],
         "rows": [
           [
-            "1",
-            "10–20 percent",
-            "10–20 percent"
+            "Yatco, market article (October 2025): 10 to 15 percent, then about 5 percent a year",
+            "10–15 percent lost",
+            "About 20–25 percent lost",
+            "About 30–35 percent lost"
           ],
           [
-            "2",
-            "15–28 percent",
-            "5–8 percent"
+            "Yatco, depreciation guide (June 2025): cumulative loss",
+            "10–20 percent lost",
+            "30–40 percent lost",
+            "40–50 percent lost"
           ],
           [
-            "3",
-            "20–35 percent",
-            "5–8 percent"
-          ],
-          [
-            "5",
-            "30–50 percent",
-            "5–8 percent"
-          ],
-          [
-            "7",
-            "40–55 percent",
-            "3–5 percent"
-          ],
-          [
-            "10",
-            "48–62 percent",
-            "2–4 percent"
+            "IYC (October 2025): value kept after five years",
+            "10–20 percent lost",
+            "Not given",
+            "40–50 percent of price kept, so 50–60 percent lost"
           ]
         ],
-        "sourceLine": "Yatco and IYC published rates (October 2025); years 2, 3, 7 and 10 interpolated or extended from them for illustration. Yacht Hunter rejects fixed schedules. No peer-reviewed academic study exists."
+        "sourceLine": "Yatco, blog.yatco.com/luxury-yacht-market (30 October 2025) and blog.yatco.com/yacht-depreciation (27 June 2025); IYC, iyc.com/blog/yacht-depreciation (24 October 2025). Yatco’s 5 percent a year is counted here as 5 percent of the purchase price each year. Neither broker gives a figure after year five. Yacht Hunter rejects fixed schedules. No peer-reviewed academic study exists."
       },
       {
         "type": "chart",
@@ -679,7 +668,7 @@
   "03-how-the-industry-works": {
     "slug": "03-how-the-industry-works",
     "title": "Where the money goes in a typical brokerage transaction",
-    "standfirst": "Many first-time buyers reach this market through a family office, yet only a quarter of Swiss single family offices manage a boat or aircraft in-house. Such a buyer may come to a sale without specialist advice, on a EUR 28 m deal that carries EUR 1.7 to 2.8 million in commission, and is rarely told which commission scale applies.",
+    "standfirst": "Many first-time buyers reach this market through a family office, yet only a quarter of Swiss single family offices manage a boat or aircraft in-house. Such a buyer may come to a sale without specialist advice, on a EUR 28 m deal that carries EUR 1.7 to 2.8 million in commission, and should ask in writing which commission scale applies.",
     "blocks": [
       {
         "type": "h2",
@@ -1125,7 +1114,7 @@
           [
             "Brokerage",
             "6–12 weeks",
-            "10 percent deposit, 90 percent at closing"
+            "Deposit on signing (commonly 10 percent), balance at closing"
           ],
           [
             "Semi-custom new build",
@@ -1202,23 +1191,23 @@
       },
       {
         "type": "kv",
-        "caption": "The premium narrows over the hold. Yachts from the strongest builders hold their value better than most of the market.",
+        "caption": "Indicative. There is no fixed relationship between the two values once the new build is delivered: the comparison depends on the dates, the yachts and whether purchase prices or resale values are compared.",
         "rows": [
           {
-            "label": "At entry",
-            "value": "30–50 percent premium over comparable brokerage hull"
+            "label": "At contract",
+            "value": "New build commonly 30–50 percent above the price of a comparable brokerage yacht; varies with age, specification and builder"
           },
           {
-            "label": "At delivery, 24 to 36 months later",
-            "value": "15–25 percent premium"
+            "label": "During the build, 24 to 60 months",
+            "value": "The brokerage yacht keeps losing value, which on its own widens the gap"
           },
           {
-            "label": "Five years later",
-            "value": "Often comparable; quality builders ahead"
+            "label": "After delivery",
+            "value": "The new build starts its own first-year loss of 10–20 percent (chapter 1)"
           },
           {
-            "label": "Ten years later",
-            "value": "Quality new build ahead on residual value"
+            "label": "Over a five-year hold",
+            "value": "Maintenance, depreciation and resale value decide the comparison; yachts from the strongest builders hold value better"
           }
         ],
         "sourceLine": "Foreland Marine project archive; Yatco and IYC published depreciation rates."
@@ -2273,7 +2262,7 @@
             "Yes"
           ],
           [
-            "Publish a complete list of every counterparty worked with in the past three years, with relationship?",
+            "Provide a complete list of every counterparty worked with in the past three years, with relationship, published or on request?",
             "Yes",
             "No"
           ],
@@ -2552,7 +2541,7 @@
           [
             "Depreciation after year 5",
             "Better retention than motor at quality builders (broker-aggregated)",
-            "Typical hull 3–5% a year to year 7 (chapter 1 curve)"
+            "No published rate after year five; brokers say losses slow (chapter 1)"
           ],
           [
             "Seven-year total cost (capex plus opex minus residual)",
@@ -2568,7 +2557,7 @@
       },
       {
         "type": "table",
-        "caption": "EU Emissions Trading System Maritime extension, in force from 1 January 2024, applies to ships of and above 5,000 gross tonnage carrying passengers or cargo for commercial purposes to or from EEA ports; a yacht in private use is outside it at any size. Compliance is phased: 40 percent of 2024 emissions paid in 2025, 70 percent of 2025 emissions paid in 2026, 100 percent of 2026 emissions onward, first due 30 September 2027. Methane and nitrous oxide added from 2026.",
+        "caption": "EU Emissions Trading System Maritime extension, in force from 1 January 2024, applies to ships of and above 5,000 gross tonnage carrying passengers or cargo for commercial purposes to or from EEA ports; a yacht in private use is outside it at any size. Offshore ships of that size are added from 2027. Allowances cover 40 percent of 2024 emissions (surrendered in 2025), 70 percent of 2025 emissions (surrendered in 2026) and 100 percent of emissions for 2026 onward, first due 30 September 2027. A sailing rig is no guide to tonnage: Sailing Yacht A is about 12,600 GT. Methane and nitrous oxide added from 2026.",
         "head": [
           "Yacht profile",
           "Typical GT",
@@ -2621,7 +2610,7 @@
       },
       {
         "label": "EU Commission FAQ, EU ETS for maritime transport",
-        "line": "Carbon market extension to maritime, in force from 1 January 2024; compliance phased 40 / 70 / 100 percent across 2025 to 2027.",
+        "line": "Carbon market extension to maritime, in force from 1 January 2024; allowances for 40, 70 and 100 percent of 2024, 2025 and 2026 emissions, surrendered in 2025, 2026 and 2027.",
         "url": "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-shipping-sector/faq-maritime-transport-eu-emissions-trading-system-ets_en"
       },
       {

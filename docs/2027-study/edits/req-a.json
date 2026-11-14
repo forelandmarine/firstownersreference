@@ -1,0 +1,346 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "Yatco puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 percent by year five. IYC puts the first-year correction at 10 to 20 percent, with most yachts “reaching 40-50% of their original price in five years”, read here as a five-year loss of 40 to 50 percent. Together they put the typical loss at year five at about 30 to 50 percent of the purchase price, after which the curve flattens.",
+    "new": "Yatco publishes two sets of figures. A market article of October 2025 puts the first-year loss at 10 to 15 percent and then about 5 percent a year, which comes to about 30 to 35 percent by year five; its depreciation guide of June 2025 gives a cumulative loss of 30 to 40 percent by year three and 40 to 50 percent by year five. IYC (October 2025) puts the first-year correction at 10 to 20 percent, with most yachts “reaching 40-50% of their original price in five years”: they keep 40 to 50 percent of their value, a loss of 50 to 60 percent. On these figures a yacht loses between about 30 and 60 percent of its purchase price in its first five years. Both brokers say the losses slow after that, and neither gives a figure.",
+    "kind": "fact",
+    "reason": "IYC's figure is value retained, not loss; Yatco and IYC figures now stated separately with their own definitions",
+    "row": "FOR-001"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "will typically have lost USD 9 to 15 million in value",
+    "new": "will typically have lost USD 9 to 18 million in value",
+    "kind": "fact",
+    "reason": "30 to 60 percent of USD 30 million, following the corrected five-year range",
+    "row": "FOR-001"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"caption\": \"Indicative depreciation curve for a typical hull, drawn from broker-aggregated data. Quality builders (Feadship, Lürssen, Royal Huisman, Vitters, Baltic) hold value much better after year five.\",\n        \"head\": [\n          \"Year\",\n          \"Cumulative loss from purchase\",\n          \"Marginal annual loss\"\n        ],\n        \"rows\": [\n          [\n            \"1\",\n            \"10–20 percent\",\n            \"10–20 percent\"\n          ],\n          [\n            \"2\",\n            \"15–28 percent\",\n            \"5–8 percent\"\n          ],\n          [\n            \"3\",\n            \"20–35 percent\",\n            \"5–8 percent\"\n          ],\n          [\n            \"5\",\n            \"30–50 percent\",\n            \"5–8 percent\"\n          ],\n          [\n            \"7\",\n            \"40–55 percent\",\n            \"3–5 percent\"\n          ],\n          [\n            \"10\",\n            \"48–62 percent\",\n            \"2–4 percent\"\n          ]\n        ],\n        \"sourceLine\": \"Yatco and IYC published rates (October 2025); years 2, 3, 7 and 10 interpolated or extended from them for illustration. Yacht Hunter rejects fixed schedules. No peer-reviewed academic study exists.\"",
+    "new": "\"caption\": \"Published five-year figures, by source. Each broker defines its figure differently, so they are shown separately. Quality builders (Feadship, Lürssen, Royal Huisman, Vitters, Baltic) hold value much better after year five.\",\n        \"head\": [\n          \"Source\",\n          \"Year 1\",\n          \"Year 3\",\n          \"Year 5\"\n        ],\n        \"rows\": [\n          [\n            \"Yatco, market article (October 2025): 10 to 15 percent, then about 5 percent a year\",\n            \"10–15 percent lost\",\n            \"About 20–25 percent lost\",\n            \"About 30–35 percent lost\"\n          ],\n          [\n            \"Yatco, depreciation guide (June 2025): cumulative loss\",\n            \"10–20 percent lost\",\n            \"30–40 percent lost\",\n            \"40–50 percent lost\"\n          ],\n          [\n            \"IYC (October 2025): value kept after five years\",\n            \"10–20 percent lost\",\n            \"Not given\",\n            \"40–50 percent of price kept, so 50–60 percent lost\"\n          ]\n        ],\n        \"sourceLine\": \"Yatco, blog.yatco.com/luxury-yacht-market (30 October 2025) and blog.yatco.com/yacht-depreciation (27 June 2025); IYC, iyc.com/blog/yacht-depreciation (24 October 2025). Yatco’s 5 percent a year is counted here as 5 percent of the purchase price each year. Neither broker gives a figure after year five. Yacht Hunter rejects fixed schedules. No peer-reviewed academic study exists.\"",
+    "kind": "fact",
+    "reason": "Table rebuilt by source; years 7 and 10 removed because no source gives them; derivation stated",
+    "row": "FOR-002"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "title=\"Depreciation curve, year 1 to 10\"\n      standfirst=\"Cumulative loss from purchase price, typical hull. Quality builders hold value materially better after year five, but no published curve separates them, so only the typical band is plotted.\"\n      caption=\"Indicative; broker-published rates are not peer-reviewed. The band spans Yatco's and IYC's published rates at years one and five; other points are interpolated or extended.\"\n      source=\"Yatco and IYC published depreciation rates (October 2025).\"\n    >\n      <LineChart\n        xDomain={[1, 10]}\n        yDomain={[0, 70]}\n        xTicks={[1, 2, 3, 5, 7, 10]}\n        yTicks={[0, 20, 40, 60]}\n        yUnit=\"%\"\n        yUnitLabel=\"cumulative loss from purchase, percent\"\n        band={{\n          values: [\n            { x: 1, yLow: 10, yHigh: 20 },\n            { x: 2, yLow: 15, yHigh: 28 },\n            { x: 3, yLow: 20, yHigh: 35 },\n            { x: 5, yLow: 30, yHigh: 50 },\n            { x: 7, yLow: 40, yHigh: 55 },\n            { x: 10, yLow: 48, yHigh: 62 },\n          ],\n        }}\n        series={[\n          {\n            name: \"Typical hull\",\n            emphasis: true,\n            values: [\n              { x: 1, y: 15 },\n              { x: 2, y: 22 },\n              { x: 3, y: 28 },\n              { x: 5, y: 40 },\n              { x: 7, y: 47 },\n              { x: 10, y: 55 },\n            ],\n          },\n        ]}\n      />\n    ",
+    "new": "title=\"Depreciation, year 1 to 5, by source\"\n      standfirst=\"Cumulative loss from purchase price on the three published broker figures. Quality builders hold value materially better after year five, but no published curve separates them.\"\n      caption=\"Indicative; broker-published figures are not peer-reviewed. Points are the midpoints of each published range: Yatco's market article (10 to 15 percent in year one, then about 5 percent of the purchase price a year), Yatco's depreciation guide (30 to 40 percent by year three, 40 to 50 by year five) and IYC (40 to 50 percent of price kept at year five, so 50 to 60 percent lost). The IYC line between years one and five is a straight interpolation. The shaded band runs from the lowest to the highest published figure. Neither broker gives a figure after year five.\"\n      source=\"Yatco (27 June and 30 October 2025) and IYC (24 October 2025) published depreciation figures.\"\n    >\n      <LineChart\n        xDomain={[1, 5]}\n        yDomain={[0, 70]}\n        xTicks={[1, 2, 3, 4, 5]}\n        yTicks={[0, 20, 40, 60]}\n        yUnit=\"%\"\n        yUnitLabel=\"cumulative loss from purchase, percent\"\n        band={{\n          values: [\n            { x: 1, yLow: 10, yHigh: 20 },\n            { x: 3, yLow: 20, yHigh: 40 },\n            { x: 5, yLow: 30, yHigh: 60 },\n          ],\n        }}\n        series={[\n          {\n            name: \"IYC\",\n            values: [\n              { x: 1, y: 15 },\n              { x: 5, y: 55 },\n            ],\n            dashed: true,\n          },\n          {\n            name: \"Yatco guide\",\n            values: [\n              { x: 1, y: 15 },\n              { x: 3, y: 35 },\n              { x: 5, y: 45 },\n            ],\n          },\n          {\n            name: \"Yatco, 5% a year\",\n            values: [\n              { x: 1, y: 12.5 },\n              { x: 2, y: 17.5 },\n              { x: 3, y: 22.5 },\n              { x: 4, y: 27.5 },\n              { x: 5, y: 32.5 },\n            ],\n          },\n        ]}\n      />\n    ",
+    "kind": "fact",
+    "reason": "Chart redrawn as three source lines to year 5; unsourced years 7 and 10 and the synthetic 'typical hull' line removed",
+    "row": "FOR-002"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Broker-published figures put the first-year loss at 10 to 15 percent (Yatco) or 10 to 20 percent (IYC), followed by about 5 percent a year on Yatco’s figures. Together they put the typical loss by year five at about 30 to 50 percent of the purchase price. The curve flattens after year five.",
+    "new": "Broker-published figures put the first-year loss at 10 to 20 percent. By year five, Yatco gives a loss of about 30 to 35 percent in one article (10 to 15 percent in year one, then about 5 percent a year) and 40 to 50 percent in its depreciation guide, while IYC says most yachts keep 40 to 50 percent of their original price, a loss of 50 to 60 percent. The range at year five is therefore about 30 to 60 percent of the purchase price. Both brokers say losses slow after year five.",
+    "kind": "fact",
+    "reason": "Synchronised with corrected essay; each figure attributed to its source",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Yatco puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 percent by year five. IYC puts the first-year correction at 10 to 20 percent, with most yachts reaching 40 to 50 percent of their original price in five years, read here as a five-year loss of 40 to 50 percent. Together they put the typical loss by year five at about 30 to 50 percent, after which the curve flattens.",
+    "new": "Yatco's market article (October 2025) puts the first-year loss at 10 to 15 percent, then about 5 percent a year, about 30 to 35 percent by year five; its depreciation guide (June 2025) gives 40 to 50 percent lost by year five. IYC (October 2025) puts the first-year correction at 10 to 20 percent, with most yachts keeping 40 to 50 percent of their original price after five years, a loss of 50 to 60 percent. On these figures the loss by year five is about 30 to 60 percent, and both brokers say losses slow after that.",
+    "kind": "fact",
+    "reason": "Tool page FAQ synchronised",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Typically 50 to 70 percent of its original purchase price, on the broker-published rates. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 15 million",
+    "new": "Typically 40 to 70 percent of its original purchase price, on the broker-published figures: about 65 to 70 percent on Yatco's 5 percent a year, 50 to 60 percent on Yatco's depreciation guide and 40 to 50 percent on IYC's. A USD 30 million yacht held five years at moderate use will normally have lost USD 9 to 18 million",
+    "kind": "fact",
+    "reason": "Retained-value range corrected to match sources",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "against the roughly 5 to 8 percent a year typical of the broader market in years two to five.",
+    "new": "against the roughly 5 to 10 percent of purchase price a year that the published figures imply for the broader market in years two to five.",
+    "kind": "fact",
+    "reason": "Yatco 5 percent a year to IYC's implied 10 percent a year",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "{ year: \"Years 2 to 5\", loss: \"About 5 to 8 percent a year (Yatco: about 5)\", cumulative: \"30 to 50 percent by year 5\" },",
+    "new": "{ year: \"Years 2 to 5\", loss: \"About 5 to 10 percent of purchase price a year (Yatco: about 5)\", cumulative: \"30 to 60 percent lost by year 5 (Yatco 30 to 50, IYC 50 to 60)\" },",
+    "kind": "fact",
+    "reason": "Tool curve table synchronised",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "{ year: \"Year 5 onward\", loss: \"Curve flattens\", cumulative: \"Slower decline, condition-led\" },",
+    "new": "{ year: \"Year 5 onward\", loss: \"Slower; no published rate\", cumulative: \"Slower decline, condition-led\" },",
+    "kind": "fact",
+    "reason": "No source gives a rate after year five",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "Broker-published rates from Yatco and IYC. Feadship,",
+    "new": "Broker-published figures from Yatco (June and October 2025) and IYC (October 2025); IYC states value kept rather than value lost. Feadship,",
+    "kind": "fact",
+    "reason": "Definitions and dates named",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "typically have lost USD 9 to 15 million in value and consumed",
+    "new": "typically have lost USD 9 to 18 million in value and consumed",
+    "kind": "fact",
+    "reason": "30 to 60 percent of USD 30 million",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/yacht-depreciation/page.tsx",
+    "old": "{ \"@type\": \"CreativeWork\", name: \"Yatco brokerage data\", url: \"https://www.yatco.com\" },",
+    "new": "{ \"@type\": \"CreativeWork\", name: \"Yatco, yacht depreciation guide\", url: \"https://blog.yatco.com/yacht-depreciation/\" },\n      { \"@type\": \"CreativeWork\", name: \"Yatco, luxury yacht market\", url: \"https://blog.yatco.com/luxury-yacht-market/\" },\n      { \"@type\": \"CreativeWork\", name: \"IYC, yacht depreciation\", url: \"https://iyc.com/blog/yacht-depreciation/\" },",
+    "kind": "fact",
+    "reason": "Dataset schema names the actual sources",
+    "row": "FOR-003"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Chapter 1 gives the general curve: about 30 to 50 percent lost by year five,",
+    "new": "Chapter 1 gives the published broker figures: about 30 to 60 percent lost by year five,",
+    "kind": "fact",
+    "reason": "Cross-reference to ch01 synchronised",
+    "row": "FOR-003"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Typical hull 3–5% a year to year 7 (chapter 1 curve)",
+    "new": "No published rate after year five; brokers say losses slow (chapter 1)",
+    "kind": "fact",
+    "reason": "The year-7 rate came from the removed extension of the ch01 curve",
+    "row": "FOR-003"
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "// compounding, which leaves 57 percent at year 5, inside the 50 to 70 percent\n// retained that chapter 1 gives (30 to 50 percent lost).",
+    "new": "// compounding, which leaves 57 percent at year 5, inside the 40 to 70 percent\n// retained that chapter 1 gives (30 to 60 percent lost).",
+    "kind": "fact",
+    "reason": "Code comment synchronised; model unchanged",
+    "row": "FOR-003"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Most of the rise came from US buyers completing purchases early to use a tax allowance, which does not on its own show a wider or lasting increase in demand.",
+    "new": "On Knight Frank’s account much of the rise came from US buyers completing purchases early to use a tax allowance, which does not on its own show a wider or lasting increase in demand.",
+    "kind": "fact",
+    "reason": "'Most' is not quantified by the source; attributed and softened to Knight Frank's 'biggest catalyst'",
+    "row": "FOR-004"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The number of potential buyers is rising sharply; the number of new yachts being contracted is falling,",
+    "new": "The number of people wealthy enough to buy a large yacht is rising, although the figures do not show how many of them enter the market; the number of new yachts being contracted is falling,",
+    "kind": "fact",
+    "reason": "UHNWI growth is not a count of yacht buyers",
+    "row": "FOR-009"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "UK goods carry a flat 10 percent (USTR notice of action, 23 July 2026).",
+    "new": "UK goods carry a flat 10 percent (USTR notice of action, 23 July 2026). Yachts over 24 metres carry an MFN duty of 1.5 percent (US tariff headings 8903.23 for sail and 8903.33 for motor), so a yacht built in the EU now pays 10 percent in all.",
+    "kind": "fact",
+    "reason": "States the rate that applies to an EU-built yacht",
+    "row": "FOR-013"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "None was unusual in the industry, and none appeared on the buyer’s invoices, because the payments passed between the suppliers and the brokerage.",
+    "new": "None appeared on the buyer’s invoices, because the payments passed between the suppliers and the brokerage.",
+    "kind": "fact",
+    "reason": "Prevalence claim not supported by the case",
+    "row": "FOR-020"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Its cost was carried in the prices of the suppliers the brokerage had introduced. The buyer had paid for the advice at a multiple of what an independent adviser would have charged,",
+    "new": "The brokerage was paid for it by the suppliers it had introduced, and the buyer paid those suppliers. The payments to the brokerage came to a multiple of what an independent adviser would have charged,",
+    "kind": "fact",
+    "reason": "A supplier's payment to the broker does not by itself show a matching overcharge",
+    "row": "FOR-018"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The buyer concluded that the original arrangements had cost him about GBP 240,000 a year while they were in place,",
+    "new": "A year-on-year comparison also reflects any change in use, scope or supplier prices. The buyer attributed the difference to the original arrangements, and concluded that they had cost him about GBP 240,000 a year while they were in place,",
+    "kind": "fact",
+    "reason": "The saving is the buyer's attribution, not a like-for-like reconciliation",
+    "row": "FOR-019"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "No specific firms are named; the referral payments described are common in the industry and are not attributed to any particular firm.",
+    "new": "No specific firms are named, and the referral payments described are not attributed to any particular firm.",
+    "kind": "fact",
+    "reason": "Prevalence claim removed from disclosure",
+    "row": "FOR-020"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "standfirst=\"The same yacht, the same buyer and the same seller, with a EUR 1.1 million difference depending on which scale the brokers apply. The seller does not always know which is being used. The buyer almost never does.\"",
+    "new": "standfirst=\"The same yacht, the same buyer and the same seller, with a EUR 1.1 million difference depending on which scale the brokers apply. The buyer can ask in writing which scale applies and how each broker is paid.\"",
+    "kind": "fact",
+    "reason": "Prevalence claim replaced by the action the buyer can take",
+    "row": "FOR-022"
+  },
+  {
+    "file": "lib/charts.tsx",
+    "old": "caption=\"Commission paid by the seller under each scale, with the MYBA bands (published in US dollars) applied in euros.",
+    "new": "caption=\"A worked example, not a transaction: commission paid by the seller under each scale, with the MYBA bands (published in US dollars) applied in euros.",
+    "kind": "fact",
+    "reason": "Labels the EUR 28 m example as hypothetical",
+    "row": "FOR-021"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The seller does not always know which is being applied. The buyer is rarely told.",
+    "new": "The seller does not always know which is being applied. The buyer should ask for written disclosure of which scale applies and how each broker is paid, including any share of the seller’s commission.",
+    "kind": "fact",
+    "reason": "Unsupported prevalence claim replaced by the request to make",
+    "row": "FOR-022"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "and is rarely told which commission scale applies.",
+    "new": "and should ask in writing which commission scale applies.",
+    "kind": "fact",
+    "reason": "Unsupported prevalence claim",
+    "row": "FOR-022"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "a brokerage acquisition takes 12 to 24 weeks and involves five main decisions:",
+    "new": "a brokerage acquisition takes 12 to 24 weeks from shortlisting to closing, of which the stretch from accepted offer to closing is usually six to twelve weeks (chapter 5). It involves five main decisions:",
+    "kind": "fact",
+    "reason": "Defines the start and end of both periods so ch04 and ch05 agree",
+    "row": "FOR-023"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The MYBA MOA is signed at heads of terms with a deposit (typically 10 percent), and closing follows 30 to 60 days later with payment of the balance, transfer of title, delivery, and a brief acceptance period (24 to 72 hours) during which the buyer can reject for material non-compliance with specification.",
+    "new": "Under the MYBA Memorandum of Agreement (MOA), the buyer pays a deposit to a stakeholder on signing, commonly 10 percent, although the 2021 edition leaves the amount to be agreed. The sea trial and condition survey follow, and the buyer must give written notice of acceptance or rejection within the periods the MOA sets; after the sea trial the buyer can reject only for defects of the kind the form defines, and a buyer who gives no notice in time is treated as having accepted. Closing typically follows 30 to 60 days after signing, with payment of the balance, transfer of title and delivery at the same time. The deposit, the notice periods and the grounds for rejection are negotiated, so each should be read in the MOA actually signed.",
+    "kind": "fact",
+    "reason": "Acceptance under the MYBA MOA comes after survey and before completion, not after delivery; 2021 E-MOA deposit is agreed",
+    "row": "FOR-024"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"10 percent deposit, 90 percent at closing\"",
+    "new": "\"Deposit on signing (commonly 10 percent), balance at closing\"",
+    "kind": "fact",
+    "reason": "2021 MYBA E-MOA leaves the deposit to be agreed",
+    "row": "FOR-024"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Value-added tax (VAT) regime. The default is full VAT on purchase: 20 percent in France, 21 percent in Spain, 22 percent in Italy. On a EUR 4 million yacht the bill is EUR 800,000 to EUR 880,000.",
+    "new": "Value-added tax (VAT) regime. Whether VAT is due on a purchase depends on where and how the yacht is supplied or imported, whether VAT has already been paid on it, and how it will be used. A yacht sold by a VAT-registered business in the EU, or imported into the EU for private use, attracts VAT at the standard rate of the country concerned, for example 20 percent in France, 21 percent in Spain and 22 percent in Italy; on a EUR 4 million yacht that is EUR 800,000 to EUR 880,000. A private sale of a yacht on which EU VAT has already been paid does not normally attract VAT again.",
+    "kind": "fact",
+    "reason": "Standard rates apply to taxable supplies and imports, not to every purchase",
+    "row": "FOR-025"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "an independently-engaged surveyor",
+    "new": "an independently engaged surveyor",
+    "kind": "line",
+    "reason": "No hyphen after -ly adverb",
+    "row": "FOR-026"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"caption\": \"The premium narrows over the hold. Yachts from the strongest builders hold their value better than most of the market.\",\n        \"rows\": [\n          {\n            \"label\": \"At entry\",\n            \"value\": \"30–50 percent premium over comparable brokerage hull\"\n          },\n          {\n            \"label\": \"At delivery, 24 to 36 months later\",\n            \"value\": \"15–25 percent premium\"\n          },\n          {\n            \"label\": \"Five years later\",\n            \"value\": \"Often comparable; quality builders ahead\"\n          },\n          {\n            \"label\": \"Ten years later\",\n            \"value\": \"Quality new build ahead on residual value\"\n          }\n        ],\n        ",
+    "new": "\"caption\": \"Indicative. There is no fixed relationship between the two values once the new build is delivered: the comparison depends on the dates, the yachts and whether purchase prices or resale values are compared.\",\n        \"rows\": [\n          {\n            \"label\": \"At contract\",\n            \"value\": \"New build commonly 30–50 percent above the price of a comparable brokerage yacht; varies with age, specification and builder\"\n          },\n          {\n            \"label\": \"During the build, 24 to 60 months\",\n            \"value\": \"The brokerage yacht keeps losing value, which on its own widens the gap\"\n          },\n          {\n            \"label\": \"After delivery\",\n            \"value\": \"The new build starts its own first-year loss of 10–20 percent (chapter 1)\"\n          },\n          {\n            \"label\": \"Over a five-year hold\",\n            \"value\": \"Maintenance, depreciation and resale value decide the comparison; yachts from the strongest builders hold value better\"\n          }\n        ],\n        ",
+    "kind": "fact",
+    "reason": "Removed the unsupported narrowing trajectory (15-25 percent at delivery, parity at five years, ahead at ten); aligned with the author's ch05 opening",
+    "row": "FOR-029"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The yard’s margin on the change order was therefore approximately EUR 1.4 m, or about 117 percent on the underlying cost.",
+    "new": "The quote therefore exceeded the estimated direct cost by approximately EUR 1.4 m, about 117 percent of that cost. Not all of that difference is profit: it also covers whatever overhead, contingency, financing and risk the yard priced in.",
+    "kind": "fact",
+    "reason": "Quote minus estimated direct cost is not the same as margin",
+    "row": "FOR-030"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The EUR 1.4 m yard margin raised a separate contractual question.",
+    "new": "The EUR 1.4 m above the estimate raised a separate contractual question.",
+    "kind": "fact",
+    "reason": "As above",
+    "row": "FOR-030"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Approximately 60 percent of those costs were the underlying engineering and materials. Approximately 40 percent was yard margin on the variations.",
+    "new": "Approximately 60 percent of that sum was the estimated engineering, materials and labour cost. The other 40 percent was charged above those estimates.",
+    "kind": "fact",
+    "reason": "Same margin-versus-direct-cost distinction",
+    "row": "FOR-031"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "the owner had paid approximately EUR 5.2 m in margin on EUR 13 m of variations, equivalent to 40 percent. Defined pricing rules and quotation rights might have limited that margin,",
+    "new": "the owner had paid approximately EUR 5.2 m above estimated direct cost on EUR 13 m of variations, equivalent to 40 percent. Defined pricing rules and quotation rights might have limited that amount,",
+    "kind": "fact",
+    "reason": "As above",
+    "row": "FOR-031"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "equal to about 90 percent of the variation margin paid by the owner.",
+    "new": "equal to about 90 percent of that amount.",
+    "kind": "fact",
+    "reason": "As above",
+    "row": "FOR-031"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "had left the yard free to set its own margin on about EUR 13 m of variations,",
+    "new": "had left the yard free to set its own price on about EUR 13 m of variations,",
+    "kind": "fact",
+    "reason": "As above",
+    "row": "FOR-031"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Variation margin across that build was within the range practitioners regard as normal.",
+    "new": "Variation pricing across that build was within the range practitioners regard as normal.",
+    "kind": "fact",
+    "reason": "As above",
+    "row": "FOR-031"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "In this case the unconstrained clause cost about EUR 5.2 m in variation margin, more than",
+    "new": "In this case the unconstrained clause let the yard charge about EUR 5.2 m above estimated direct cost on variations, more than",
+    "kind": "fact",
+    "reason": "As above",
+    "row": "FOR-031"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "less than the EUR 5.2 m paid in variation margin in this case.",
+    "new": "less than the EUR 5.2 m paid above estimated direct cost on variations in this case.",
+    "kind": "fact",
+    "reason": "As above",
+    "row": "FOR-031"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "let the yard take about EUR 5.2 million in variation margin on a EUR 95 million contract,",
+    "new": "let the yard charge about EUR 5.2 million above its estimated direct cost on variations to a EUR 95 million contract,",
+    "kind": "fact",
+    "reason": "Essay reference to the case aligned",
+    "row": "FOR-031"
+  }
+]

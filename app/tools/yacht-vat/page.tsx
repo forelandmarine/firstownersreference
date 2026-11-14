@@ -80,7 +80,7 @@ const FAQS = [
   {
     question: "How does the EU ETS affect yacht owners in 2026?",
     answer:
-      "EU ETS Maritime extends the EU's emissions trading system to shipping. From 2026 the system covers 100 percent of intra-EU emissions and 50 percent of voyages from a non-EU port, applied to commercial vessels above 5,000 GT entering EU ports. Most yachts including 60 to 80 metre motor sit below the 5,000 GT threshold. Above 5,000 GT (110 metre plus motor) the cost runs EUR 200,000 to 400,000 per year at current carbon prices on a well-utilised vessel.",
+      "EU ETS Maritime extends the EU's emissions trading system to shipping. It applies to ships of 5,000 GT and above carrying passengers or cargo for commercial purposes, whatever their flag: all emissions on voyages between EEA ports and in them, and half of those on voyages into or out of the EEA. Allowances must cover 100 percent of emissions from 2026. A yacht in private use is outside the system at any size, and most yachts, including 60 to 80 metre motor yachts, are well below 5,000 GT. For the few yachts of 5,000 GT or more on commercial charter, the cost can run to EUR 200,000 to 400,000 a year at current carbon prices on a well-utilised vessel.",
   },
 ];
 
@@ -449,16 +449,19 @@ export default function YachtVat2026Page() {
                 <p>
                   Although not strictly a VAT regime, EU ETS Maritime sits
                   alongside it in any 2026 yacht-tax review. The system extends
-                  the EU's carbon market to shipping in phases: 40 percent of
-                  verified emissions covered in 2024, 70 percent in 2025, 100
-                  percent from 2026.
+                  the EU's carbon market to shipping in phases: allowances cover 40
+                  percent of 2024 emissions, 70 percent of 2025 emissions and
+                  100 percent from 2026, each surrendered by 30 September of
+                  the following year.
                 </p>
                 <p>
-                  Applied to commercial vessels above 5,000 GT entering EU
-                  ports, regardless of flag. Most yachts including 60 to 80
-                  metre motor sit below the 5,000 GT threshold. Above 5,000 GT
-                  (110 metre plus motor) the cost runs EUR 200,000 to 400,000
-                  per year at current carbon prices.
+                  It applies to ships of 5,000 GT and above carrying
+                  passengers or cargo for commercial purposes, regardless of
+                  flag. A yacht in private use is outside it at any size. Most
+                  yachts, including 60 to 80 metre motor yachts, are well below
+                  5,000 GT; for the few above it on commercial charter, the
+                  cost can run to EUR 200,000 to 400,000 a year at current
+                  carbon prices.
                 </p>
               </div>
             </section>

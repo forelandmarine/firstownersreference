@@ -122,39 +122,50 @@ export const charts: Record<string, () => React.ReactElement> = {
   "depreciation-curve": () => (
     <ChartFrame
       number="01.03"
-      title="Depreciation curve, year 1 to 10"
-      standfirst="Cumulative loss from purchase price, typical hull. Quality builders hold value materially better after year five, but no published curve separates them, so only the typical band is plotted."
-      caption="Indicative; broker-published rates are not peer-reviewed. The band spans Yatco's and IYC's published rates at years one and five; other points are interpolated or extended."
-      source="Yatco and IYC published depreciation rates (October 2025)."
+      title="Depreciation, year 1 to 5, by source"
+      standfirst="Cumulative loss from purchase price on the three published broker figures. Quality builders hold value materially better after year five, but no published curve separates them."
+      caption="Indicative; broker-published figures are not peer-reviewed. Points are the midpoints of each published range: Yatco's market article (10 to 15 percent in year one, then about 5 percent of the purchase price a year), Yatco's depreciation guide (30 to 40 percent by year three, 40 to 50 by year five) and IYC (40 to 50 percent of price kept at year five, so 50 to 60 percent lost). The IYC line between years one and five is a straight interpolation. The shaded band runs from the lowest to the highest published figure. Neither broker gives a figure after year five."
+      source="Yatco (27 June and 30 October 2025) and IYC (24 October 2025) published depreciation figures."
     >
       <LineChart
-        xDomain={[1, 10]}
+        xDomain={[1, 5]}
         yDomain={[0, 70]}
-        xTicks={[1, 2, 3, 5, 7, 10]}
+        xTicks={[1, 2, 3, 4, 5]}
         yTicks={[0, 20, 40, 60]}
         yUnit="%"
         yUnitLabel="cumulative loss from purchase, percent"
         band={{
           values: [
             { x: 1, yLow: 10, yHigh: 20 },
-            { x: 2, yLow: 15, yHigh: 28 },
-            { x: 3, yLow: 20, yHigh: 35 },
-            { x: 5, yLow: 30, yHigh: 50 },
-            { x: 7, yLow: 40, yHigh: 55 },
-            { x: 10, yLow: 48, yHigh: 62 },
+            { x: 3, yLow: 20, yHigh: 40 },
+            { x: 5, yLow: 30, yHigh: 60 },
           ],
         }}
         series={[
           {
-            name: "Typical hull",
-            emphasis: true,
+            name: "IYC",
             values: [
               { x: 1, y: 15 },
-              { x: 2, y: 22 },
-              { x: 3, y: 28 },
-              { x: 5, y: 40 },
-              { x: 7, y: 47 },
-              { x: 10, y: 55 },
+              { x: 5, y: 55 },
+            ],
+            dashed: true,
+          },
+          {
+            name: "Yatco guide",
+            values: [
+              { x: 1, y: 15 },
+              { x: 3, y: 35 },
+              { x: 5, y: 45 },
+            ],
+          },
+          {
+            name: "Yatco, 5% a year",
+            values: [
+              { x: 1, y: 12.5 },
+              { x: 2, y: 17.5 },
+              { x: 3, y: 22.5 },
+              { x: 4, y: 27.5 },
+              { x: 5, y: 32.5 },
             ],
           },
         ]}
@@ -269,8 +280,8 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="03.02"
       title="Two parallel commission norms, on a EUR 28 m sale"
-      standfirst="The same yacht, the same buyer and the same seller, with a EUR 1.1 million difference depending on which scale the brokers apply. The seller does not always know which is being used. The buyer almost never does."
-      caption="Commission paid by the seller under each scale, with the MYBA bands (published in US dollars) applied in euros. Both structures are routinely described as 'the standard' by the brokers using them."
+      standfirst="The same yacht, the same buyer and the same seller, with a EUR 1.1 million difference depending on which scale the brokers apply. The buyer can ask in writing which scale applies and how each broker is paid."
+      caption="A worked example, not a transaction: commission paid by the seller under each scale, with the MYBA bands (published in US dollars) applied in euros. Both structures are routinely described as 'the standard' by the brokers using them."
       source="IYBA standard practice; MYBA Memorandum of Agreement; practitioner commentary by Cromwell Littlejohn (Northrop & Johnson)."
     >
       <ComparisonBars
@@ -374,9 +385,9 @@ export const charts: Record<string, () => React.ReactElement> = {
     <ChartFrame
       number="08.02"
       title="EU ETS Maritime exposure, by yacht profile"
-      standfirst="The EU ETS extension from 1 January 2024 applies to ships of and above 5,000 GT. Compliance phased 40 percent in 2025, 70 percent in 2026, 100 percent from 2027."
-      caption="Most yachts sit below the threshold. Very large motor yachts now sit inside it. Sail yachts at every size band sit below."
-      source="EU Commission FAQ on EU ETS for maritime transport; practitioner working ranges for tonnage."
+      standfirst="Since 1 January 2024 the EU ETS has applied to cargo and passenger ships of 5,000 GT and above carrying passengers or cargo for commercial purposes. Allowances cover 40 percent of 2024 emissions, 70 percent of 2025 emissions and 100 percent from 2026, each surrendered by 30 September of the following year."
+      caption="Most yachts are well below 5,000 GT. Tonnage is only half the test: a yacht in private use is outside the system at any size, and one of 5,000 GT or more is inside only when it carries passengers for commercial purposes. Large sailing yachts can exceed 5,000 GT; Sailing Yacht A is about 12,600 GT."
+      source="EU Commission FAQ on EU ETS for maritime transport; Nobiskrug (Sailing Yacht A); practitioner working ranges for tonnage."
     >
       <RangeBars
         domainMax={6000}
@@ -387,7 +398,7 @@ export const charts: Record<string, () => React.ReactElement> = {
           { label: "60 m motor", from: 700, to: 1200 },
           { label: "80 m motor", from: 2000, to: 2800 },
           { label: "90 m motor", from: 2900, to: 3500, note: "Below threshold" },
-          { label: "110 m+ motor", from: 4900, to: 6000, note: "Inside, EUR 200 to 400 k per year" },
+          { label: "110 m+ motor", from: 4900, to: 6000, note: "Inside only on commercial charter" },
           { label: "50 m sail", from: 300, to: 600 },
         ]}
       />

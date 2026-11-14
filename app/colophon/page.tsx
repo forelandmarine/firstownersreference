@@ -132,14 +132,6 @@ export default function ColophonPage() {
             <h2>Editorial board</h2>
             <p>
               Co-editors in Chief: Jack MacNally and Daniel Marks.
-              <br />
-              Editor: To be appointed.
-              <br />
-              Art director: To be appointed.
-              <br />
-              Picture editor: To be appointed.
-              <br />
-              Researcher and fact checker: To be appointed.
             </p>
             <p>
               Editorial correspondence:{" "}
@@ -184,11 +176,11 @@ export default function ColophonPage() {
               industry.
             </p>
             <p>
-              <strong>3. Counterparty list.</strong> Foreland publishes a
+              <strong>3. Counterparty list.</strong> Foreland keeps a
               complete list of yards, brokers, lawyers, surveyors, and
               management companies engaged by clients of the firm in the past
-              three years, available on request. The list is provided to
-              readers under standard confidentiality terms.
+              three years, and provides it to readers on request under
+              standard confidentiality terms.
             </p>
             <p>
               <strong>4. Fee transparency.</strong> Fees are quoted in writing
