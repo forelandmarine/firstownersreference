@@ -512,15 +512,9 @@ export default async function SectionPage(props: {
                         </ul>
                         <Link
                           href={`/${section.slug}/qa/${qaPersonSlug(guestOpinion.contributor)}`}
-                          className="inline-flex items-baseline gap-3 group"
+                          className="font-serif text-xl text-charcoal underline decoration-1 underline-offset-4 hover:text-marine transition-colors"
                         >
-                          <span className="font-serif text-xl text-charcoal group-hover:text-marine transition-colors">
-                            Read the conversation
-                          </span>
-                          <span className="meta-marine">
-                            {guestOpinion.questions.length} questions on the
-                            record
-                          </span>
+                          Read the conversation
                         </Link>
                       </div>
                     );
