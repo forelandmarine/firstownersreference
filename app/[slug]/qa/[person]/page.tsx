@@ -220,8 +220,11 @@ export default async function GuestQAPage(props: {
               </div>
               <p className="meta mt-16 pt-6 border-t border-charcoal max-w-prose">
                 Answers given by {opinion.contributor},{" "}
-                {opinion.contributorRole.replace(/\n/g, "; ")}. Lightly edited for length and clarity, and
-                approved by the contributor before publication.
+                {opinion.contributorRole.replace(/\n/g, "; ")}. Lightly edited for{" "}
+                {opinion.intro?.includes("edited for typography")
+                  ? "typography"
+                  : "length and clarity"}
+                , and approved by the contributor before publication.
               </p>
             </div>
           </div>
