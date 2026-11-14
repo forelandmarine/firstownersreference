@@ -1,0 +1,455 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "The chapter most first-time buyers skim. Sailing yacht and motor yacht are not two flavours of the same product; they are different operating regimes with different cost shapes, different carbon profiles, and different markets behind them.",
+    "new": "Sailing yachts and motor yachts of the same length differ in operating cost, crew, carbon and resale market, and hybrid drive now sits between them. The comparison is worth running before a first-time buyer defaults to motor.",
+    "kind": "line",
+    "reason": "Standfirst: removes unsupported 'most buyers skim' and the 'not X; they are Y' move (F section 5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The choice between sailing and motor is often presented as a question of taste. The framing is convenient for those selling either, and not the most useful for a buyer planning a decade of ownership.",
+    "new": "The choice between sail and motor is often presented as a question of taste. For a buyer planning a decade of ownership, the two also differ in operating cost, carbon, the cruising they suit and the value they keep, and hybrid drive now offers a third option.",
+    "kind": "line",
+    "reason": "Fairness flag 26 ('convenient for those selling either'); absorbs the useful content of the signpost paragraph 1"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "08-motor-versus-sail",
+      "startsWith": "The honest comparison runs across operating cost, carbon prof"
+    },
+    "kind": "structure",
+    "reason": "Signpost paragraph cut (F ch08 rec. 1); 'honest' framing removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The serious sailing yacht builders (Royal Huisman, Vitters, Baltic, Perini Navi, Wally)",
+    "new": "The leading sailing yacht builders (Royal Huisman, Vitters, Baltic, Nautor Swan, Wally)",
+    "kind": "fact",
+    "reason": "C25: Perini Navi went through insolvency in 2021 and the 2026 TISG restructuring (ch05 11, 13); Nautor Swan matches para 50's list"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The differential rarely surfaces in broker conversations because brokers handle the two segments separately. Practitioner ranges",
+    "new": "The two are seldom costed side by side for a buyer. Practitioner ranges",
+    "kind": "line",
+    "reason": "Fairness flag 27: unsupported claim about brokers' desks removed; the point stands without it"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Fuel. A 50m motor yacht running 400 hours/year burns EUR 200,000 to 350,000 in diesel. A 50m sailing yacht operated primarily under sail burns EUR 60,000 to 120,000.",
+    "new": "Fuel. A 50m motor yacht running 400 hours a year under way burns EUR 200,000 to 350,000 of diesel, about 110,000 to 270,000 litres at the EUR 1.30 to 1.80 a litre used in chapter 1. A 50m sailing yacht operated mainly under sail burns EUR 60,000 to 120,000, about 33,000 to 92,000 litres.",
+    "kind": "fact",
+    "reason": "States the basis (hours, price, volume) the carbon working in para 18 depends on; price as ch01 11"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Crew. A 50m sailing yacht operates with 6 to 9 crew against 9 to 14 on a comparable motor.",
+    "new": "Crew. A 50m sailing yacht operates with 9 to 12 crew against 12 to 16 on a comparable motor.",
+    "kind": "fact",
+    "reason": "Crew counts aligned with the ch08 data spread (whose crew cost rests on them), checklist and FAQ"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Refit Advisory Group, an independent, not-for-profit group of owner’s representatives, captains, technical and project managers, surveyors, and yard professionals, of which Foreland Marine, the publisher of this reference, is a member, advises in the Owner’s Toolkit",
+    "new": "The Refit Advisory Group (chapter 6), of which Foreland Marine, the publisher of this reference, is a member, advises in the Owner’s Toolkit",
+    "kind": "repetition",
+    "reason": "RAG description given in full in ch06 11; shortened to its name as in ch07 81. Guide attribution unchanged"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"The carbon profile, with the relevant nuance\"",
+    "new": "\"text\": \"Carbon and regulation\"",
+    "kind": "line",
+    "reason": "Plain heading"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "EU ETS Maritime is the most consequential, and narrower than often described.",
+    "new": "EU ETS Maritime is the best known, and it reaches fewer yachts than is often assumed.",
+    "kind": "line",
+    "reason": "'Most consequential' reserved for the captain (F section 5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The methane line added from 2026 matters most for",
+    "new": "The addition of methane and nitrous oxide to the system from 2026 matters most for",
+    "kind": "line",
+    "reason": "Names what was added, as in the data spread caption"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and NOx Tier III engines for ships contracted from 1 January 2027.",
+    "new": "and NOx Tier III engines for ships constructed from 1 January 2027, a date set by contract, keel-laying or delivery.",
+    "kind": "fact",
+    "reason": "MEPC.407(84): Tier III in the NE Atlantic ECA applies to ships 'constructed' on or after 1 Jan 2027, defined by contract, keel or delivery date"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The most consequential near-term answer is hydrotreated vegetable oil. HVO is a paraffinic diesel made from waste fats and vegetable oils, a true drop-in replacement for marine gas oil: existing engines, fuel systems, and tanks accept it without modification. Lifecycle CO2 is 85 to 90 percent below fossil diesel; cetane above 70 gives cleaner combustion and a small power benefit.",
+    "new": "The nearest practical answer is hydrotreated vegetable oil. HVO is a paraffinic diesel made from waste fats and vegetable oils and a drop-in replacement for marine gas oil: engines approved for paraffinic fuel run on it, usually without change to fuel systems or tanks, and the engine maker’s approval should be confirmed. Made from waste feedstocks, its lifecycle greenhouse gas emissions are up to about 90 percent below fossil diesel, depending on the feedstock and the accounting rules used. The CO2 from the exhaust is much the same as diesel’s; the saving lies in where the carbon came from. A cetane number above 70 gives cleaner combustion.",
+    "kind": "fact",
+    "reason": "Neste gives 75 to 90 percent (up to 95) depending on method; scope stated (lifecycle, not exhaust); 'small power benefit' unsupported (HVO has lower energy per litre); engine approval caveat as in the checklist"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and Lürssen launched a 114 metre methanol fuel-cell yacht in 2025.",
+    "new": "and Lürssen launched a 114 metre methanol fuel-cell yacht in 2025 and delivered her in 2026.",
+    "kind": "fact",
+    "reason": "Updated: Project Cosmos delivered as Nausicaä, BOAT International 25 May 2026"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Capgemini’s 2024 World Wealth Report identifies sustainability as a major concern for next-generation HNWIs. A yacht is conspicuous in a way a family office’s liquid portfolio is not; a growing number of principals want the carbon question answered in advance. A serious 50m sailing yacht programme runs 60 to 70 percent below the comparable motor programme on annual carbon footprint (Royal Huisman published data plus aggregated practitioner numbers). The gap is large, and durable.",
+    "new": "Capgemini’s 2024 World Wealth Report identifies sustainability as a major concern for next-generation HNWIs. A yacht is conspicuous in a way a family office’s liquid portfolio is not, and a growing number of principals want the carbon question answered in advance. On the fuel figures above, a 50m sailing yacht emits about two thirds less CO2 a year than the comparable motor yacht. At about 2.75 kg of CO2 per litre of marine diesel burned (the IMO factor of 3.206 tonnes of CO2 per tonne of fuel), the motor yacht’s 110,000 to 270,000 litres give roughly 300 to 740 tonnes a year and the sailing yacht’s 33,000 to 92,000 litres roughly 90 to 250 tonnes. The comparison covers fuel burned aboard only. It leaves out the production of the fuel, the build, refits, sails and travel to and from the yacht, and it assumes the sailing yacht is sailed rather than motored.",
+    "kind": "fact",
+    "reason": "Carbon basis stated (fuel, factor, scope) with working; Royal Huisman source not found on its sustainability page; closing declaration cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "08-motor-versus-sail",
+      "startsWith": "Sailing yachts are not zero-carbon. They are structurally cleane"
+    },
+    "kind": "structure",
+    "reason": "Unattributed pull quote restating para 18, with 'not X. They are Y' (F section 5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Hybrid propulsion has moved from concept to delivery and reshapes the motor-versus-sailing decision in ways the trade press has not fully caught up with.",
+    "new": "Hybrid propulsion has moved from concept to delivery and changes the motor-versus-sail decision.",
+    "kind": "line",
+    "reason": "Unsupported claim about trade press removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "a hydrogen fuel cell for up to 72 hours of zero-emission operation,",
+    "new": "a hydrogen fuel cell for up to 72 hours of zero-emission operation at anchor,",
+    "kind": "fact",
+    "reason": "Royal Huisman/yacht.de: the 72 hours is fuel-cell operation at anchor"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A third reference point sits at the wind-and-solar end of the spectrum. Captain Arctic, a 70 metre polar expedition ship for 36 passengers built for the French operator Selar at Chantier Naval de l’Ocean Indien in Mauritius, floated out in August 2026 for delivery late in the year and is chartered through Pelorus Yachting. She carries two rigid aluminium sails faced with around 1,860 square metres of photovoltaic panels, electric propulsion that doubles as hydro-generation under sail, and Bureau Veritas certification of a 90 percent CO2 reduction against comparable vessels. The cruising programme is Norway, Svalbard, and Greenland; the captain is Sophie Galvagnon, with seventeen years in the Arctic as captain and ice pilot. The ship does not occupy the same operational envelope as a conventional motor yacht of the same length; it sits at the new edge of the hybrid path, closer in profile to Royal Huisman’s AERA concept than to the Heesen FDHF programme (Gayle Patterson, Pelorus Yachting, in The Superyacht Report, Q2 2026).",
+    "new": "At the wind-and-solar end sits Captain Arctic, a 70 metre polar expedition ship for 36 passengers built in Mauritius for the French operator Selar, with solar-panelled rigid sails and electric propulsion that doubles as hydro-generation under sail. She is a passenger ship rather than a yacht, but she shows how far the technology behind concepts such as AERA has reached (Gayle Patterson, Pelorus Yachting, in The Superyacht Report, Q2 2026).",
+    "kind": "structure",
+    "reason": "F ch08 rec.: Captain Arctic is a passenger ship; reduced from 166 to 64 words. Sail count and BV 90 percent claim dropped (trade reports give five wing masts; BV figure not found)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The decision is no longer two-way; it is three-way with hybrid sitting between.",
+    "new": "The decision now has three options, with hybrid between the other two.",
+    "kind": "line",
+    "reason": "Plainer; removes 'no longer X; it is Y'"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "BoatPro’s 2026 order-book engine breakdown shows the magnitude side of the same story.",
+    "new": "BoatPro’s 2026 order-book engine breakdown shows the scale.",
+    "kind": "line",
+    "reason": "Cadence"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The category is too small to characterise residual behaviour reliably, and the structural argument that the multihull is the natural compromise between the two propulsions sits in early evidence and warrants tracking.",
+    "new": "The category is too small to characterise residual behaviour reliably, and the argument that the multihull is the natural compromise between the two rests on early evidence.",
+    "kind": "line",
+    "reason": "'Structural' and 'warrants tracking' removed; RAG citation in the paragraph unchanged"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "08-motor-versus-sail",
+      "startsWith": "The instinct is not yacht-specific. Knight Frank’s Wealth Rep"
+    },
+    "kind": "structure",
+    "reason": "F section 7 step 6: para 30 cut (sources outside the sector; contains an em dash); Filippakis at 29 makes the point"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "08-motor-versus-sail",
+      "startsWith": "Affluent travellers have grown weary of interchangeable five-s"
+    },
+    "kind": "structure",
+    "reason": "F section 7 step 6: para 31 cut (Bohnenberger blockquote, outside the sector)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "08-motor-versus-sail",
+      "startsWith": "What that frame says about the explorer programme: it is a ya"
+    },
+    "kind": "structure",
+    "reason": "F section 7 step 6: para 32 cut (closing aphorism resting on 30 and 31)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"caption\": \"Velsheda, J Class original. Racing pedigree defines residual value at the top of the sailing yacht world more than any other single factor.\"",
+    "new": "\"caption\": \"Velsheda, a J Class original, built in 1933.\"",
+    "kind": "line",
+    "reason": "Caption maxim repeated para 35 and was unsourced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Racing pedigree is underweighted in trade-press coverage of the segment and does more to support residual values at the top than any other single factor. Three circuits matter.",
+    "new": "At the top of the sailing market, racing pedigree is among the strongest supports of residual value. Three circuits matter.",
+    "kind": "line",
+    "reason": "Unsourced superlative and trade-press claim qualified"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "designed by Malcolm McKeon Yacht Design (also responsible for the 83m Feadship Project Solent, on which Cecil Wright is acting as owner’s representative for summer 2027 delivery). Tom Cruise commissioned a Swan 108 in February 2025,",
+    "new": "designed by Malcolm McKeon Yacht Design. Tom Cruise was reported in 2025 to have ordered a Swan 108,",
+    "kind": "repetition",
+    "reason": "Project Solent parenthesis cut (F; repeats ch02 10 and ch05). Nautor Swan does not confirm clients; the February 2025 order rests on press reports"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Committed capital and significant design houses are building modern sailing yachts at the top in numbers the order book does not yet show.",
+    "new": "Committed capital and leading design houses are building modern sailing yachts at the top of the market.",
+    "kind": "line",
+    "reason": "Unsupported claim about the order book removed; the 6 percent order-book share in para 2 stands"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Baltic Yachts presented Canova (43m, asking EUR 29.8 million, the owner’s fifth Baltic yacht) and Liara (34m, the Baltic 112).",
+    "new": "Baltic Yachts presented Canova (43m, asking EUR 29.8 million, the owner’s fifth Baltic yacht).",
+    "kind": "line",
+    "reason": "Contributor privacy: a named 34m Baltic beside the Johnson Q&A could identify her yacht"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"text\": \"Bang for buck, on a 35 metre\"",
+    "new": "\"text\": \"Seven-year cost on a 35 metre\"",
+    "kind": "line",
+    "reason": "Plain heading that names the section's measure"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "For a buyer in the 24 to 40 metre band, a sailing yacht typically delivers more cruising days per pound or euro than a motor yacht of comparable build quality.",
+    "new": "For a buyer in the 24 to 40 metre band, a sailing yacht typically costs less to build and to run than a motor yacht of comparable build quality, so each week aboard costs less.",
+    "kind": "fact",
+    "reason": "C14: cost is largely fixed whatever the use (ch01 12); the saving lowers cost per week rather than buying days"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Capital differential 20 to 35 percent in favour of the sailing yacht. Annual operating cost runs 70 to 85 percent of the motor figure. A EUR 1.5 million annual operating budget delivers 16 to 20 weeks of family use on a 35m sailing yacht against 12 to 14 weeks on the equivalent motor.",
+    "new": "The sailing yacht typically costs 20 to 35 percent less to build. Annual operating cost runs 70 to 85 percent of the motor figure. Most of that cost is fixed whatever the use (chapter 1), so the saving does not of itself buy more weeks aboard. It lowers the cost of each week: a motor yacht with a EUR 1.5 million budget used for 12 weeks costs about EUR 125,000 a week, and a sailing yacht at the same use costs EUR 1.05 to 1.28 million a year, or about EUR 88,000 to 106,000 a week.",
+    "kind": "fact",
+    "reason": "C14 fixed with working: 1.5m/12 = 125k; 1.5m x 0.70 to 0.85 = 1.05 to 1.275m; /12 = 87.5k to 106k"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Depreciation. Quality sailing yachts hold value much better than comparable motor yachts in the 30 to 50m band (broker-aggregated data). Top sailing builders (Royal Huisman, Vitters, Baltic, Nautor Swan) show single-digit annual depreciation after year five, against 5 to 8 percent for top motor builders. Across a seven-year hold a 35m sailing programme runs 25 to 40 percent below the equivalent motor on total cost (capex plus opex minus residual). Brokers do not present this comparison because the two segments are sold by different desks.",
+    "new": "Depreciation. Broker-aggregated data suggests that quality sailing yachts in the 30 to 50m band hold value better than comparable motor yachts. Chapter 1 gives the general curve: about 30 to 43 percent lost by year five, with the best builders on both sides (Feadship, Lürssen, Royal Huisman, Vitters, Baltic) losing single-digit percentages a year after that. Across a seven-year hold, on the capital and operating figures above, a 35m sailing programme runs about a fifth to a third below the equivalent motor on total cost (capex plus opex minus residual) if both lose value at the same rate, and 25 to 40 percent below if the sailing yacht keeps about ten percentage points more of its value.",
+    "kind": "fact",
+    "reason": "C3: 5 to 8 percent is itself single-digit and above ch01's curve; figure per ch01 17. Seven-year range recomputed (working in report). Fairness flag 27 sentence cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A buyer who wants a 35 metre sailing yacht in 2027 has a shorter list of credible options than a buyer looking for a 35 metre motor yacht. The market is healthy; it is small.",
+    "new": "A buyer who wants a 35 metre sailing yacht in 2027 has a shorter list of credible options than a buyer looking for a 35 metre motor yacht.",
+    "kind": "line",
+    "reason": "Closing declaration cut (F section 5)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "sail-handling expertise on the deck team, weather routing discipline, and itineraries",
+    "new": "sail-handling expertise on the deck team, careful weather routing, and itineraries",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Most first-time buyers default to motor without doing the comparison; some of them are right to, others are not.",
+    "new": "Many first-time buyers default to motor without doing the comparison; some of them are right to, others are not.",
+    "kind": "line",
+    "reason": "Generalisation qualified (matches checklist intent 'commonly')"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "08-motor-versus-sail",
+      "startsWith": "The chapter does not arbitrate between motor and sail. It ask"
+    },
+    "kind": "structure",
+    "reason": "Closing summary restating the chapter; third 'the chapter does not' with the case (F ch08 rec. 61)"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The owner had not intended a switch; the comparison, run honestly at the point of considering a successor hull, decided it.",
+    "new": "The owner had not intended a switch; the comparison, run in writing at the point of considering a successor hull, decided it.",
+    "kind": "line",
+    "reason": "'Honestly' framing removed"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The second was a cruising-calendar comparison. On the same EUR 3.9 million annual envelope, the sailing yacht modelled at 14 to 16 weeks of family use rather than seven to nine. The owner’s actual constraint had been calendar availability rather than weeks-on-paper, and the adviser pointed out that the constraint had been driven partly by the cost discipline of running a motor yacht at the upper end of moderate use. A lower running cost loosened that constraint.",
+    "new": "The second was a cruising-calendar comparison. Most of the cost on either yacht was fixed whatever the use, so the adviser did not present the saving as buying weeks. He set out the cost of each week aboard: EUR 430,000 to 600,000 on the motor at seven to nine weeks, against about EUR 190,000 to 230,000 if the family used the sailing yacht for 14 to 16 weeks at its modelled EUR 3.0 to 3.2 million. The owner’s use had been held down partly by calendar availability and partly by the cost of running a motor yacht at the upper end of moderate use. A lower cost per week loosened the second constraint.",
+    "kind": "fact",
+    "reason": "C14 in the case: 3.9 to 4.2m / 9 to 7 weeks = 433k to 600k; 3.0 to 3.2m / 16 to 14 weeks = 188k to 229k. Matches year three (13 to 15 weeks at 3.0 to 3.2m)"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "on aggregated practitioner numbers and Royal Huisman published commentary.",
+    "new": "on the fuel projections and aggregated practitioner numbers.",
+    "kind": "fact",
+    "reason": "Royal Huisman's published sustainability material gives no sail-versus-motor figure; basis aligned with essay para 18"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The acquisition ran on the same architecture as the chapter on the team to assemble suggests:",
+    "new": "The acquisition followed the sequence chapter 9 sets out:",
+    "kind": "line",
+    "reason": "'Architecture' removed; direct pointer"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The owner hired him on the basis of the pushback, not despite it.",
+    "new": "The owner hired him because of the pushback.",
+    "kind": "line",
+    "reason": "'Not X' construction removed"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The chapter does not arbitrate between the two regimes; the owner’s honest framing was that the second one fitted his actual life better than the first one had.",
+    "new": "The owner’s own view was that the second one fitted his actual life better than the first one had.",
+    "kind": "line",
+    "reason": "Third 'the chapter does not' removed (F ch08 rec. 61); 'honest' framing removed"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The point about hybrid is not that it is the right answer for him; it is that it is now a real third path, and a buyer who does not consider all three is leaving an option on the table.",
+    "new": "Hybrid was not the right answer for him, but it is now a real third path, and a buyer who considers only two is leaving an option out.",
+    "kind": "line",
+    "reason": "'Not X; it is Y' construction reduced"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The motor versus sailing yacht comparison runs honestly only when the projections, the cruising calendar, and the carbon position are walked through in writing. Most successor decisions skip this step.",
+    "new": "The motor versus sailing yacht comparison is complete only when the projections, the cruising calendar, and the carbon position are set out in writing.",
+    "kind": "line",
+    "reason": "'Honestly' removed; unsupported generalisation cut"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Heesen FDHF, Sanlorenzo SX, and equivalent programmes thread the cost and carbon needle for owners with fixed cruising schedules.",
+    "new": "Heesen FDHF, Sanlorenzo SX, and equivalent programmes sit between motor and sail on cost and carbon, which suits owners with fixed cruising schedules.",
+    "kind": "line",
+    "reason": "Plain statement"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "What the honest comparison showed at the point of decision.",
+    "new": "What the comparison showed at the point of decision.",
+    "kind": "line",
+    "reason": "'Honest' framing removed"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Sailing yacht builders (Royal Huisman, Vitters, Baltic, Perini Navi) typically come in 25 to 40 percent below the equivalent motor programme on total seven-year cost.",
+    "new": "On the chapter’s 35 m figures, a quality sailing yacht comes in about a fifth to a third below the equivalent motor programme on total seven-year cost, and 25 to 40 percent below where it holds its value better.",
+    "kind": "fact",
+    "reason": "C25 (Perini Navi removed) and C3 (seven-year figure restated on its basis, as essay para 50)"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "On a 50 metre yacht at 400 cruising hours per year, the sailing yacht runs EUR 60,000 to 120,000 on annual fuel against EUR 200,000 to 350,000 for the equivalent motor yacht.",
+    "new": "On a 50 metre yacht, a motor yacht at 400 cruising hours a year burns EUR 200,000 to 350,000 of fuel; a sailing yacht of the same length operated mainly under sail burns EUR 60,000 to 120,000.",
+    "kind": "fact",
+    "reason": "The 400 hours is the motor yacht's basis, as in essay para 5"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Quality sailing yacht builders such as Royal Huisman, Vitters, Baltic, and Perini Navi typically come in 25 to 40 percent below the equivalent motor programme on total seven-year cost (capex plus opex minus residual).",
+    "new": "On the chapter’s 35 metre figures, a quality sailing yacht comes in about a fifth to a third below the equivalent motor programme on total seven-year cost (capex plus opex minus residual), and 25 to 40 percent below where it holds its value better.",
+    "kind": "fact",
+    "reason": "C25 and C3, as checklist and essay para 50"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "HVO (hydrotreated vegetable oil) is a drop-in diesel replacement with a lifecycle CO2 reduction of up to 90 percent where certified waste-derived supply is available.",
+    "new": "HVO (hydrotreated vegetable oil) is a drop-in diesel replacement with a lifecycle greenhouse gas reduction of up to about 90 percent where certified waste-derived supply is available; exhaust CO2 is much the same as diesel’s.",
+    "kind": "fact",
+    "reason": "Scope of the HVO figure stated (lifecycle, not exhaust)"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Trade press treats the choice as taste; the data treats it as structural. Market share, operating cost, environmental footprint, and the racing market that supports value retention at the top of the segment.",
+    "new": "The figures behind the chapter: market share, operating cost on a 50 m, capital and depreciation on a 35 m, and carbon and EU ETS exposure.",
+    "kind": "line",
+    "reason": "Standfirst matched to the spread's actual contents; 'structural' framing removed"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "[\n            \"Depreciation after year 5\",\n            \"Single-digit % annually\",\n            \"5–8% annually\"\n          ]",
+    "new": "[\n            \"Depreciation after year 5\",\n            \"Better retention than motor at quality builders (broker-aggregated)\",\n            \"Typical hull 3–5% a year to year 7 (chapter 1 curve)\"\n          ],\n          [\n            \"Seven-year total cost (capex plus opex minus residual)\",\n            \"About 17–33% below motor at equal depreciation; 25–40% below if sail keeps 10 points more value\",\n            \"Baseline\"\n          ]",
+    "kind": "fact",
+    "reason": "C3: '5 to 8 percent' contradicted ch01's curve and 'single-digit'; seven-year basis added as in essay para 50"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Annual carbon footprint, 50 m sail vs 50 m motor\",\n            \"Comparable use\",\n            \"Sail roughly 60–70 percent below motor\"",
+    "new": "\"Annual CO2 from fuel burned aboard, 50 m sail vs 50 m motor\",\n            \"Comparable use\",\n            \"Sail about two thirds below motor (roughly 90–250 t against 300–740 t)\"",
+    "kind": "fact",
+    "reason": "Carbon row given its scope and figures (essay para 18 working)"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"sourceLine\": \"EU Commission FAQ on EU ETS for maritime transport; Royal Huisman published sustainability commentary; IMO 2023 GHG Strategy (MEPC 80).\"",
+    "new": "\"sourceLine\": \"EU Commission FAQ on EU ETS for maritime transport; IMO carbon factor for marine gas oil (3.206 t CO2 per tonne of fuel) applied to the chapter’s fuel figures; IMO 2023 GHG Strategy (MEPC 80).\"",
+    "kind": "fact",
+    "reason": "Royal Huisman page does not contain a sail-versus-motor figure; actual basis named"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"line\": \"Sail vs motor carbon footprint comparison; HVO and methanol-ready new builds.\"",
+    "new": "\"line\": \"The yard’s sustainability programme, including the AERA hybrid concept.\"",
+    "kind": "fact",
+    "reason": "The cited page carries neither a sail/motor comparison nor HVO or methanol content"
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "what she would specify differently after the yacht’s seven years in operation,",
+    "new": "what she would specify differently with hindsight,",
+    "kind": "line",
+    "reason": "Contributor privacy: removes the yacht's age from the editorial intro"
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "Your current boat — a 34 metre Baltic Yachts performance sloop — launched in 2019. What was specified at build that you would still recommend today, and what would you change with the benefit of seven years’ operational experience?",
+    "new": "Your current boat is a 34 metre Baltic Yachts performance sloop. What was specified at build that you would still recommend today, and what would you change with the benefit of her years in operation?",
+    "kind": "line",
+    "reason": "Contributor privacy: launch year with model identifies the yacht; em dashes removed from editorial text"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Yachts above 5,000 GT entering EU ports are now within EU ETS Maritime; below 5,000 GT, the cost is not yet direct.",
+    "new": "EU ETS Maritime, a separate EU system, reaches only yachts of 5,000 GT and above in commercial service; a privately used yacht is outside it at any size.",
+    "kind": "fact",
+    "reason": "Private yachts are outside EU ETS at any size (essay para 13)"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Applies to commercial vessels above 5,000 GT entering EU ports.",
+    "new": "Applies to ships of 5,000 GT and above carrying passengers or cargo for commercial purposes to or from EEA ports.",
+    "kind": "fact",
+    "reason": "Scope as in essay para 13 and the Commission FAQ"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "The system covers vessels above 5,000 GT entering EU ports, regardless of flag. Most yachts (including 60 to 80 metre motor) sit below the 5,000 GT threshold. Above 5,000 GT, exposure runs EUR 200,000 to 400,000 per year at current carbon prices on a well-utilised vessel.",
+    "new": "The system covers ships of 5,000 GT and above carrying passengers or cargo for commercial purposes to or from EEA ports, regardless of flag; a yacht in private use is outside it at any size. Most yachts (including 60 to 80 metre motor) sit below the 5,000 GT threshold. The cost for a yacht inside the system depends on its verified emissions on EEA voyages (all of a voyage within the EEA, half of one into or out of it) and the carbon price.",
+    "kind": "fact",
+    "reason": "Commercial-use condition added; unsourced EUR 200,000 to 400,000 replaced by the basis on which cost is set"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Tier III applies to marine diesel engines on vessels constructed after 1 January 2016 operating in NOx Emission Control Areas (the North American ECA, the US Caribbean ECA, the Baltic Sea NECA, and the North Sea NECA). The standard requires roughly 75 percent reduction in NOx emissions versus Tier I,",
+    "new": "Tier III applies to marine diesel engines operating in NOx Emission Control Areas, by date of construction: from 1 January 2016 in the North American and US Caribbean ECAs, from 1 January 2021 in the Baltic and North Sea, and from 1 January 2027 in the North-East Atlantic ECA. Yachts of 24 m or more and under 500 GT built before 1 January 2021 are exempt. The standard requires about an 80 percent reduction in NOx emissions versus Tier I,",
+    "kind": "fact",
+    "reason": "Baltic/North Sea NECA dates are 2021, not 2016; yacht exemption (MEPC.251(66)); NE Atlantic ECA (MEPC.407(84)); Tier III 3.4 vs Tier I 17 g/kWh = 80 percent"
+  }
+]

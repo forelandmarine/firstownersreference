@@ -407,7 +407,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "International Convention for the Prevention of Pollution from Ships. Annex VI covers air pollution including SOx, NOx, particulate matter, and CO2 from yachts.",
     longDefinition:
-      "MARPOL Annex VI sets emission limits for sulphur, nitrogen oxides, particulate matter, and CO2 from ships. The 2020 global sulphur cap reduced fuel sulphur content to 0.5 percent (0.1 percent in Emission Control Areas). NOx Tier III applies to engines on vessels constructed after 1 January 2016 operating in NOx ECAs. Yachts above 5,000 GT entering EU ports are now within EU ETS Maritime; below 5,000 GT, the cost is not yet direct.",
+      "MARPOL Annex VI sets emission limits for sulphur, nitrogen oxides, particulate matter, and CO2 from ships. The 2020 global sulphur cap reduced fuel sulphur content to 0.5 percent (0.1 percent in Emission Control Areas). NOx Tier III applies to engines on vessels constructed after 1 January 2016 operating in NOx ECAs. EU ETS Maritime, a separate EU system, reaches only yachts of 5,000 GT and above in commercial service; a privately used yacht is outside it at any size.",
     relatedChapters: ["07-operations", "08-motor-versus-sail"],
     relatedTerms: ["eu-ets", "tier-iii"],
   },
@@ -415,9 +415,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "eu-ets",
     term: "EU ETS Maritime",
     shortDefinition:
-      "EU Emissions Trading System for shipping, in force from 2024 and phased in through 2026. Applies to commercial vessels above 5,000 GT entering EU ports.",
+      "EU Emissions Trading System for shipping, in force from 2024 and phased in through 2026. Applies to ships of 5,000 GT and above carrying passengers or cargo for commercial purposes to or from EEA ports.",
     longDefinition:
-      "EU ETS Maritime extends the EU’s carbon market to shipping, in phased application: 40 percent of verified emissions covered in 2024, 70 percent in 2025, 100 percent from 2026. The system covers vessels above 5,000 GT entering EU ports, regardless of flag. Most yachts (including 60 to 80 metre motor) sit below the 5,000 GT threshold. Above 5,000 GT, exposure runs EUR 200,000 to 400,000 per year at current carbon prices on a well-utilised vessel. Compliance requires emissions monitoring and EUA surrender.",
+      "EU ETS Maritime extends the EU’s carbon market to shipping, in phased application: 40 percent of verified emissions covered in 2024, 70 percent in 2025, 100 percent from 2026. The system covers ships of 5,000 GT and above carrying passengers or cargo for commercial purposes to or from EEA ports, regardless of flag; a yacht in private use is outside it at any size. Most yachts (including 60 to 80 metre motor) sit below the 5,000 GT threshold. The cost for a yacht inside the system depends on its verified emissions on EEA voyages (all of a voyage within the EEA, half of one into or out of it) and the carbon price. Compliance requires emissions monitoring and EUA surrender.",
     relatedChapters: ["08-motor-versus-sail"],
     relatedTerms: ["marpol", "tier-iii"],
   },
@@ -427,7 +427,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "MARPOL Annex VI NOx emission standard for engines installed on vessels constructed after 1 January 2016 operating in designated NOx Emission Control Areas.",
     longDefinition:
-      "Tier III applies to marine diesel engines on vessels constructed after 1 January 2016 operating in NOx Emission Control Areas (the North American ECA, the US Caribbean ECA, the Baltic Sea NECA, and the North Sea NECA). The standard requires roughly 75 percent reduction in NOx emissions versus Tier I, achieved through SCR (selective catalytic reduction) or EGR (exhaust gas recirculation). New build superyachts crossing into NECAs must specify Tier III propulsion at design.",
+      "Tier III applies to marine diesel engines operating in NOx Emission Control Areas, by date of construction: from 1 January 2016 in the North American and US Caribbean ECAs, from 1 January 2021 in the Baltic and North Sea, and from 1 January 2027 in the North-East Atlantic ECA. Yachts of 24 m or more and under 500 GT built before 1 January 2021 are exempt. The standard requires about an 80 percent reduction in NOx emissions versus Tier I, achieved through SCR (selective catalytic reduction) or EGR (exhaust gas recirculation). New build superyachts crossing into NECAs must specify Tier III propulsion at design.",
     relatedChapters: ["08-motor-versus-sail"],
     relatedTerms: ["marpol", "eu-ets"],
   },

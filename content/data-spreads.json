@@ -2452,7 +2452,7 @@
   "08-motor-versus-sail": {
     "slug": "08-motor-versus-sail",
     "title": "Motor versus sail, by the numbers",
-    "standfirst": "Trade press treats the choice as taste; the data treats it as structural. Market share, operating cost, environmental footprint, and the racing market that supports value retention at the top of the segment.",
+    "standfirst": "The figures behind the chapter: market share, operating cost on a 50 m, capital and depreciation on a 35 m, and carbon and EU ETS exposure.",
     "blocks": [
       {
         "type": "h2",
@@ -2555,8 +2555,13 @@
           ],
           [
             "Depreciation after year 5",
-            "Single-digit % annually",
-            "5–8% annually"
+            "Better retention than motor at quality builders (broker-aggregated)",
+            "Typical hull 3–5% a year to year 7 (chapter 1 curve)"
+          ],
+          [
+            "Seven-year total cost (capex plus opex minus residual)",
+            "About 17–33% below motor at equal depreciation; 25–40% below if sail keeps 10 points more value",
+            "Baseline"
           ]
         ],
         "sourceLine": "Foreland Marine project archive; Yatco, IYC, Yacht Hunter aggregated curves."
@@ -2600,12 +2605,12 @@
             "Below threshold"
           ],
           [
-            "Annual carbon footprint, 50 m sail vs 50 m motor",
+            "Annual CO2 from fuel burned aboard, 50 m sail vs 50 m motor",
             "Comparable use",
-            "Sail roughly 60–70 percent below motor"
+            "Sail about two thirds below motor (roughly 90–250 t against 300–740 t)"
           ]
         ],
-        "sourceLine": "EU Commission FAQ on EU ETS for maritime transport; Royal Huisman published sustainability commentary; IMO 2023 GHG Strategy (MEPC 80)."
+        "sourceLine": "EU Commission FAQ on EU ETS for maritime transport; IMO carbon factor for marine gas oil (3.206 t CO2 per tonne of fuel) applied to the chapter’s fuel figures; IMO 2023 GHG Strategy (MEPC 80)."
       },
       {
         "type": "chart",
@@ -2635,7 +2640,7 @@
       },
       {
         "label": "Royal Huisman published sustainability commentary",
-        "line": "Sail vs motor carbon footprint comparison; HVO and methanol-ready new builds.",
+        "line": "The yard’s sustainability programme, including the AERA hybrid concept.",
         "url": "https://www.royalhuisman.com/sustainability"
       },
       {
