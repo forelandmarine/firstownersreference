@@ -19,7 +19,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Andrew Roch": {
     name: "Andrew Roch",
     avatar: "/images/contributors/andrew-roch.jpg",
-    bio: "Founder and CEO of Yacht Crew Recruitment and Training, which pairs IAMI/GUEST-accredited leadership and purser training under The Crew Academy with senior-crew placement under The Crew Hunter. He sits on the IAMI board and co-architected the Yacht Owner's Representative Program with SYBAss.",
+    bio: "Founder and CEO of Yacht Crew Recruitment and Training, which pairs IAMI/GUEST-accredited leadership and purser training under The Crew Academy with senior-crew placement under The Crew Hunter. He sits on the IAMI board and co-designed the Yacht Owner Representative Programme with SYBAss.",
   },
   "Capt. Pavlos Filippakis": {
     name: "Capt. Pavlos Filippakis",
@@ -29,7 +29,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Hein Velema": {
     name: "Hein Velema",
     avatar: "/images/contributors/hein-velema.jpg",
-    bio: "Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner's Representative Register and the YORP programme, and a partner at the consultancy Marstrat. The first president of SYBAss, he has held senior roles at Feadship and Fraser.",
+    bio: "Secretary General of the Superyacht Alliance for Professional Standards, which administers the Yacht Owner's Representative Register and the YORP programme, and a partner at the consultancy Marstrat. He was the first president of SYBAss, a director of Feadship, and CEO of Fraser Yachts.",
   },
   "Erica Lay": {
     name: "Erica Lay",
@@ -49,12 +49,12 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Ollie Davis": {
     name: "Ollie Davis",
     avatar: "/images/contributors/ollie-davis.jpg",
-    bio: "A yacht insurance specialist at PIB Marine (formerly Zorab Insurance Services), the established UK specialist alternative to the multi-line yacht insurance brokers.",
+    bio: "A yacht insurance specialist at PIB Marine, formerly Zorab Insurance Services.",
   },
   "Jack Inglis": {
     name: "Jack Inglis",
     avatar: "/images/contributors/jack-inglis.jpg",
-    bio: "Founder of the owner's-representative practice ULTIMAR, and a captain who came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea. He entered the industry in 2012 as bosun on a 60 metre support vessel, commanded North Sea offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the SYBAss and IAMI Yacht Owner's Representative Program; the 1,200-item delivery snag list cited in the new-build chapter is his.",
+    bio: "Founder of the owner's-representative practice ULTIMAR, and a captain who came to yachting from the Merchant Navy, working commercial vessels from the Antarctic to the Norwegian Sea. He entered the industry in 2012 as bosun on a 60 metre support vessel, commanded North Sea offshore and private yachts through new builds and refits, and founded ULTIMAR in 2023. He is certified under the Yacht Owner Representative Programme; the 1,200-item delivery snag list cited in the new-build chapter is his.",
   },
   "Benjamin Maltby": {
     name: "Benjamin Maltby",
