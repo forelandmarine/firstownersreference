@@ -2,6 +2,8 @@
 
 Art direction, layout rules and production strategy for the 1st Edition. Written 10 September 2026 against the 8 August proof.
 
+**Layout is now governed by `docs/print/layout-specification.md` (14 November 2026, from the *fly GDN* study), with the build plan in `docs/print/layout-implementation-plan.md`. Its section 11 lists which sections of this document it overrides.**
+
 Read with `docs/print/layout-registers.pdf`, which draws every page architecture described here. This document supersedes `docs/print-designer-brief.md`, which was written for an InDesign handoff that is no longer happening; the deltas it listed as designer work are now either closed in the build or restated below as editorial and production tasks.
 
 ---
