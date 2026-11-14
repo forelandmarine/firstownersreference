@@ -34,7 +34,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Erica Lay": {
     name: "Erica Lay",
     avatar: "/images/contributors/erica-lay.jpg",
-    bio: "Erica Lay is the founder and director of EL Crew Co, the international yacht crew agency she launched in Palma in January 2013 and has run for almost 14 years. It places senior and junior crew across the over-24 metre fleet. Before that she spent five years with a leading brokerage, where she set up and ran its Palma crew agency from 2008 and went on to manage its Barcelona and Antibes crew offices. Known as The Honest Crew Agent, she writes and speaks on crew welfare. She is a widely published freelance journalist and the author of several books.",
+    bio: "Erica Lay is the founder and director of EL Crew Co, the international yacht crew agency she has run in Palma since January 2013. It places senior and junior crew across the over-24 metre fleet. Before that she spent five years with a leading brokerage, where she set up and ran its Palma crew agency from 2008 and went on to manage its Barcelona and Antibes crew offices. Known as The Honest Crew Agent, she writes and speaks on crew welfare. She is a widely published freelance journalist and the author of several books.",
   },
   "Ella Johnson": {
     name: "Ella Johnson",
