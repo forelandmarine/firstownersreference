@@ -84,9 +84,7 @@ export default function HomePage() {
             </div>
             <div className="lg:col-span-9 space-y-6">
               <p className="font-serif font-light text-2xl lg:text-[2rem] leading-[1.3] tracking-tight text-charcoal max-w-2xl">
-                An annual publication on the ownership arrangements,
-                costs and running of a first superyacht, or rather,
-                how to buy a boat.
+                An annual editorial publication on the legal, financial and practical aspects of buying and operating a first superyacht, or rather, how to buy a boat.
               </p>
               <p className="font-serif text-lg lg:text-xl leading-relaxed text-charcoal-soft max-w-2xl">
                 Nine chapters: cost of ownership; market structure; how
@@ -152,7 +150,7 @@ export default function HomePage() {
                 whose interests it covers. That arrangement is not a moral
                 failing; it is simply how the publications fund themselves.
                 The First Owner’s Reference is funded differently and written differently.
-                Its independence comes from how it is funded, not from its tone.
+                The publication carries no advertising. Its editorial independence also depends on disclosing the publisher’s commercial interests and applying the same scrutiny to the businesses it covers, including its own.
               </p>
               <p>
                 It is written for the reader who has recently exited a business

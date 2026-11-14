@@ -55,7 +55,7 @@
             "detail": "The published case-study yields depend on charter income from those weeks."
           },
           {
-            "question": "The charter projection checked against the published case studies, including those that broke even or made a loss, and the exception."
+            "question": "The charter projection checked against published examples of programmes that made a loss, broke even or produced an exceptional result."
           }
         ]
       },
@@ -207,10 +207,10 @@
         "items": [
           {
             "question": "An understanding of which parties in the transaction would walk away from a deal that did not benefit the buyer.",
-            "detail": "An independent adviser paid only by the buyer has no financial reason to want the deal to close."
+            "detail": "An adviser whose fee is paid by the buyer and does not depend on completion has less direct incentive to see the deal close, although that does not eliminate every possible conflict."
           },
           {
-            "question": "At least one party in the transaction whose income does not depend on the deal closing."
+            "question": "At least one adviser whose remuneration does not depend on the transaction completing."
           }
         ]
       }

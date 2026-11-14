@@ -1,0 +1,261 @@
+[
+  {
+    "file": "content/sections.json",
+    "old": "What the first three years of yacht ownership cost, in time and in money.\"",
+    "new": "What the first three years of yacht ownership demand, in time and money.\"",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 1: Preserves both financial cost and the owner’s time; maintain matching standfirst copy elsewhere."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "What the first three years of yacht ownership cost, in time and in money, and how the commonly quoted figures compare with the published data.",
+    "new": "What the first three years of yacht ownership demand, in time and money, and how published figures compare with the estimates buyers are commonly given.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 3: Keeps scope without the stock expression “do not survive contact with the data”. Coordinate with row 1."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "None of this is an argument against ownership, only against buying on a quoted budget that nobody has tested. Made with the full cost in view, ownership can be one of the most rewarding purchases a person makes. Made on rule-of-thumb figures and on advice from people paid only if the sale closes, it can be one of the more expensive mistakes an ultra-high-net-worth (UHNW) buyer makes.",
+    "new": "None of this argues against ownership. It argues against buying on the strength of a quoted budget that nobody has tested. Made with the full cost in view, the right ownership decision is one of the great purchases a person can make. Based on untested figures and advice from parties whose fees depend on completion, it can be an expensive mistake.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 22: Restores the more distinctive sentence. Confirm that the assertion about completion-based remuneration is supported in this example."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The sale left him with cash in the low nine figures.",
+    "new": "The transaction generated proceeds in the low nine figures.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 29: Proceeds, personal cash received and a liquidity event are not synonymous. This wording is conditional on transaction records."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "and that the brokerage could earn referral fees from each of those engagements.",
+    "new": "and that referral payments were made to the brokerage through each of those engagements.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 31: Retains the original assertion of payments instead of changing it to a mere possibility; confirm actual payer, recipient and evidence."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "None of this was illegal, and none of it was unusual by the standards of the industry.",
+    "new": "These arrangements were described as standard industry practice. Whether the payments were properly disclosed is a separate question.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 38: Removes unsupported categorical assertions that the arrangements were lawful and universal; attribution must be supported."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Referral payments from management companies, paint contractors, insurers and crew agencies to the introducing broker are routine. They do not appear on your invoice, so ask about them explicitly.",
+    "new": "Referral payments may be made to introducing brokers by management companies, contractors and other service providers. They may not appear separately on the owner’s invoice. Ask for written disclosure.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 45: Does not assert that referral payments by every listed category are routine or invisible to the owner."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "The charter projection checked against the published case studies, including those that broke even or made a loss, and the exception.",
+    "new": "The charter projection checked against published examples of programmes that made a loss, broke even or produced an exceptional result.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 57: Fixes the unfinished construction and makes the three comparisons parallel; confirm the cited examples exist."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "This illustration sets two 2025 transactions on one 52 m brokerage yacht. One buyer had an adviser and kept to a ceiling price set in advance. The other accepted the listing broker’s account of urgency and paid 5 to 11 percent more than the adviser’s estimate of fair value.",
+    "new": "A constructed comparison based on two separate yacht transactions from 2025. One buyer used independent advice to set a price ceiling; the other relied more heavily on the listing broker’s account of urgency.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 93: Constructed composite: two transactions have been presented as one yacht. Do not publish as a literal single-yacht negotiation; verify facts, separate the cases or label the whole comparison unambiguously. Remove any suggestion they competed for the same yacht."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Composite of two 2025 transactions, set on one yacht for comparison. Quoted remarks are representative of the files, not verbatim",
+    "new": "Illustrative composite drawn from two separate transactions in 2025. It does not describe two buyers competing for the same yacht.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 95: Constructed composite: two transactions have been presented as one yacht. Do not publish as a literal single-yacht negotiation; verify facts, separate the cases or label the whole comparison unambiguously. Verify any retained quotations and numerical details."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The two transactions are set here on one yacht so that they can be compared. Identifying details adjusted; figures kept within their original ranges.",
+    "new": "This is an illustrative comparison drawn from two separate 2025 transactions, not a report of two buyers negotiating for the same yacht. Identifying details have been adjusted, and the figures reflect the source files.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 98: Constructed composite: two transactions have been presented as one yacht. Do not publish as a literal single-yacht negotiation; verify facts, separate the cases or label the whole comparison unambiguously. Final clause only after verification."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "An independent adviser paid only by the buyer has no financial reason to want the deal to close.",
+    "new": "An adviser whose fee is paid by the buyer and does not depend on completion has less direct incentive to see the deal close, although that does not eliminate every possible conflict.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 207: The previous rewrite wrongly implied no financial incentive of any kind. Fee payer and fee structure are both relevant."
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "At least one party in the transaction whose income does not depend on the deal closing.",
+    "new": "At least one adviser whose remuneration does not depend on the transaction completing.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 208: Retains test while avoiding the claim that a fee can depend on advice quality alone."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Brokers add most value during the viewings: they have been aboard many of the yachts for sale and know which are in poor condition and which are well kept. During the viewings they also learn",
+    "new": "During viewings, an experienced broker can draw attention to differences in condition and maintenance that may not be obvious from a listing. This is also when the broker learns",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 214: Removes unsupported “most value”; paragraph continuation must be checked."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Boat shows are for viewing yachts rather than for agreeing sales, and brokers say so publicly.",
+    "new": "Boat shows are useful for viewing and comparing yachts. Negotiations and due diligence generally continue afterwards.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 217: Removes overcategorical statement that sales are not agreed at boat shows."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The price reduction was EUR 2.1 m, about 25 times the EUR 85,000 the survey process cost. The reduction was not a profit: the buyer still spent EUR 2.0 to 2.4 m on remediation, which it roughly covered. Against closing at the asking price without the survey, the buyer was about EUR 2.0 m better off (EUR 2.1 m less EUR 85,000). On any acquisition above about EUR 5 m, the cost of an independent survey is small against what it can find.",
+    "new": "The seller reduced the price by EUR 2.1 m following the survey, approximately 25 times the EUR 85,000 survey cost. That reduction was not a profit: the buyer still faced EUR 2.0 to 2.4 m of remedial work. Any comparison with buying at the original asking price assumes that the buyer would have completed without the survey and paid for the same repairs.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 248: Avoid presenting the survey as generating a realised EUR 2 m return. Price reduction and repair cost must be reconciled."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "He would have paid about EUR 2.0 m more in total than he did, after allowing for the EUR 85,000 the survey process cost. That sum would have stayed with the seller.",
+    "new": "If the buyer had paid the original asking price and incurred the same repair costs, total expenditure would have been about EUR 2.0 m higher after allowing for the EUR 85,000 survey cost. This is a hypothetical comparison, not a realised saving.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 249: Makes the necessary assumptions explicit; do not claim the extra EUR 2 m necessarily would have gone to the seller without evidence."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The risk on the yard side, less covered in the trade press, has recurred through the 2020s: a yard runs into financial difficulty mid-build, and the owner is asked to inject more capital, sometimes as equity in the restructured business, or accept that the build will stop, suppliers will stop work, and the unfinished yacht will become an asset of the insolvency.",
+    "new": "When a yard gets into financial difficulty during construction, it may seek additional funding from the owner or suspend work. The owner’s ability to recover the unfinished yacht and equipment depends on the contract, when title passes, any security held and the law of the country where the yacht is being built.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 277: The unfinished yacht does not automatically become property of the insolvency estate."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The EUR 1.2 m of engineering, materials and labour would have been payable under any contract. The EUR 1.4 m margin was a different matter. A specialist shipbuilding lawyer would have negotiated pre-agreed unit rates and the right to obtain third-party quotes above a threshold at heads of terms, so that the yard’s price could be checked against the rates and against other bidders. Some margin would still have been payable, but the yard could not have set it alone. The owner had instead a general clause under which the yard would charge what it considered reasonable.",
+    "new": "The EUR 1.2 m attributed to engineering, materials and labour reflected the work proposed, but the amount payable could have differed under other pricing terms. The EUR 1.4 m yard margin raised a separate contractual question. Agreed unit rates and the right to obtain third-party quotations could have allowed the owner to test the price of variations. Instead, the contract permitted the yard to charge what it regarded as reasonable.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 322: Do not state that the underlying cost would have been payable under every possible contract; a negotiated margin cannot be assumed wholly avoidable."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "the owner had paid approximately EUR 5.2 m in margin on variations (40 percent of EUR 13 m). The other EUR 7.8 m, the engineering and materials, would have been paid under any contract. Some margin is payable under any terms; unit rates and quote rights would have limited how much.",
+    "new": "the owner had paid approximately EUR 5.2 m in margin on EUR 13 m of variations, equivalent to 40 percent. Defined pricing rules and quotation rights might have limited that margin, but the calculation alone does not establish how much could have been avoided.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 324: Removes unsupported claim that EUR 7.8 m would be due under any contract."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Yachts are refitted in cycles. Every five years a class survey requires structural and systems work, and about every ten years the finishes and major systems need substantial overhaul. Refits account for a large share of the cost of ownership, and they are where the relationship between owner, yard and project manager is most often tested.",
+    "new": "Yachts are refitted at intervals dictated by their age, condition, maintenance history and intended use. Class renewal surveys take place at prescribed intervals, commonly five years under applicable rules, but the repairs required depend on the survey findings. Major refits can account for some of the largest individual costs of ownership and test the working relationship between owner, yard and project manager.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 353: Survey cycles are not automatic repair or ten-year replacement mandates."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Once the yacht was opened up the yard found work that genuinely needed doing, and the final cost was double the original quote. The four main findings added EUR 1.37 m; the rest of the increase built up under a loosely defined scope, payments tied to calendar dates, and reporting that did not track cost against budget.",
+    "new": "Once the yacht was opened up, the yard found additional work and the final cost was double the original quote. Four identified findings accounted for EUR 1.37 m of the EUR 3.2 m increase. The remaining EUR 1.83 m is not itemised in this account.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 394: Do not assign the unaccounted EUR 1.83 m to particular causes without project evidence."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "An overrun of 100 percent is at the high end of practitioner experience, but not unique. Of the EUR 3.2 m increase, the four findings above account for EUR 1.37 m. The rest built up with the scope loosely specified, payments tied to the calendar rather than to completed work, and oversight provided free by a party the owner did not pay.",
+    "new": "The final account was approximately 100 percent above the original quote. The four findings described above total EUR 1.37 m of the EUR 3.2 m increase. The balance is not itemised here and cannot, on these figures alone, be attributed to contract terms or project controls.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 404: The subtraction proves an unallocated remainder, not the cause of that remainder."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "One useful sign in interview is whether a candidate is willing to question the owner’s plans. A captain who asks how the yacht will actually be used, about the family, about the owner’s tolerance for transit days and about the refit reserve is showing",
+    "new": "One useful sign in an interview is whether a captain is prepared to question the owner’s plans. A candidate who asks how the yacht will be used, who will be aboard, how much time the owner is prepared to spend in transit and what has been allowed for refits is showing",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 435: Restores parallel construction and avoids “actually”; check that the sentence remains complete."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Getting the agreed value and its basis wrong can leave the owner eight figures short in a total loss, as the rebuild-cost example above shows, and a specialist broker is more likely to get them right.",
+    "new": "The gap between an agreed insured value and the cost of replacing a yacht can be substantial following a total loss. Owners should examine the policy’s valuation basis and terms with a broker who understands large-yacht insurance.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 465: Removes unsupported assurance that a specialist broker is more likely to get the figures right, and does not infer a certain eight-figure payout gap."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Senior crew staying 5 to 8 years is usually a sign of a well-run yacht. An average stay below 2 years usually means the crew are leaving because of the captain or the owner.",
+    "new": "Long service among senior crew can be a useful sign of stability. If average tenure is short, the owner should establish why. Leadership is one possible cause, alongside pay, rotation, career progression and changes in the yacht’s programme.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 491: Short tenure alone does not identify the captain or owner as the cause."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "deliver few yachts by number, but those yachts tend to hold their value well (see below).",
+    "new": "Sailing yachts account for a relatively small share of new-build deliveries. The discussion below considers whether particular types retain their value well.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 523: Avoids “deliver few yachts by number” and separates fleet share from unverified value-retention claims."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "is one example of the purpose Zimmermann Zschocke describes: authenticity, adventure or community. Builders in this part of the market count on it to keep their owners: an owner who completes one rally tends to order a larger yacht next.",
+    "new": "is one example of the purpose Zimmermann Zschocke describes: authenticity, adventure or community. Whether owners who take part in rallies are more likely to commission a larger yacht is a separate question.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 569: The original hypothesised repeat purchases; the agent presented them as a proven pattern."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The sailing yacht would therefore cost about three quarters as much a year as the motor yacht (between 71 and 82 percent at the ends of the ranges). The adviser was clear that the figures were practitioner ranges rather than precise forecasts, but that the difference was larger than the uncertainty in them.",
+    "new": "On the figures used in this comparison, the sailing yacht would cost approximately three quarters as much to operate annually as the motor yacht (71 to 82 percent at the ends of the ranges). These are practitioner estimates rather than forecasts for either individual yacht.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 584: Removes unsupported claim that difference exceeds uncertainty; verify the underlying calculation and whether ranges can be crossed."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "including at least one engagement that did not go smoothly? Every firm can name successful projects. A list that includes a project that went wrong, and explains what the firm did about it, tells the buyer more. A firm that cannot offer one has either not been working long enough or is not being candid.",
+    "new": "including at least one engagement that did not go smoothly? Ask what went wrong and how the firm dealt with it. That account may tell the buyer more than another example of a successful project.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 636: Removes an unsupported false choice between inexperience and dishonesty; maintains existing question continuation."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The adviser estimated that the yacht would take about 40 to 60 days a year of the buyer’s direct attention, through season planning, refit scheduling, supplier conversations and crew matters, on top of about 80 to 120 days a year of family use. It would also take a large share of household conversation, scheduling and travel arrangements. In the adviser’s view, it would become a centre of gravity in the buyer’s life.",
+    "new": "The adviser estimated that the buyer would spend approximately 40 to 60 days a year on season planning, refits, suppliers and crew, as well as 80 to 120 days using the yacht with family. Ownership would also affect household schedules and travel arrangements.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 659: Removes the repeated “centre of gravity” metaphor; verify whether days of management and family use overlap."
+  },
+  {
+    "file": "content/cases.json",
+    "old": "He returned three days later and told the adviser that he had decided not to proceed. His reason was not the team, which had passed every test. The conversation had made him realise that he did not want the yacht to become a centre of gravity in his life.",
+    "new": "Three days later, he told the adviser that he had decided not to proceed. The advice had addressed the legal and financial arrangements, but he did not want the demands on his time and family life that ownership would bring.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 660: Replaces the second “centre of gravity”; confirm this accurately represents the reason the buyer gave."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Provisional sums are the most common reason a refit’s final account differs from the quote. A well-prepared quote",
+    "new": "Provisional sums can be a significant cause of differences between a refit quotation and the final account. A well-prepared quote",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 694: Removes the unsupported superlative “most common reason”; this is a partial string."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "simple transfer by share sale, and a vehicle through which charter VAT can be handled.",
+    "new": "the ability to transfer ownership interests, subject to due diligence and applicable law, and a legal entity through which charter VAT obligations can be managed.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 695: A share sale is not automatically simple; VAT treatment requires jurisdiction-specific advice."
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "A single-yacht SPV is the ownership structure most practitioners recommend by default.",
+    "new": "A single-yacht SPV is a common ownership arrangement, although the appropriate structure depends on the owner’s circumstances and the applicable law.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 696: Avoid unverified “most practitioners recommend” claim; recognise jurisdictional differences."
+  },
+  {
+    "file": "app/page.tsx",
+    "old": "An annual publication on the ownership arrangements,\n                costs and running of a first superyacht, or rather,\n                how to buy a boat.",
+    "new": "An annual editorial publication on the legal, financial and practical aspects of buying and operating a first superyacht, or rather, how to buy a boat.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 707: Preserves the understated closing phrase while replacing generic business jargon."
+  },
+  {
+    "file": "app/page.tsx",
+    "old": "Its independence comes from how it is funded, not from its tone.",
+    "new": "The publication carries no advertising. Its editorial independence also depends on disclosing the publisher’s commercial interests and applying the same scrutiny to the businesses it covers, including its own.",
+    "kind": "line",
+    "reason": "Editorial revision, CSV row 710: No advertising contributes to independence but cannot by itself establish it."
+  }
+]

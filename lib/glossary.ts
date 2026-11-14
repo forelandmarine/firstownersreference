@@ -535,7 +535,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A placeholder in a quote for work that cannot yet be priced. An estimate, not a price.",
     longDefinition:
-      "Provisional sums are the most common reason a refit’s final account differs from the quote. A well-prepared quote separates fixed-price work, provisional sums, and day-rate work and labels each, so the owner can see how much of the figure is actually committed.",
+      "Provisional sums can be a significant cause of differences between a refit quotation and the final account. A well-prepared quote separates fixed-price work, provisional sums, and day-rate work and labels each, so the owner can see how much of the figure is actually committed.",
     relatedChapters: ["06-refit"],
     relatedTerms: ["refit", "target-cost"],
   },
@@ -620,9 +620,9 @@ export const glossaryEntries: GlossaryEntry[] = [
     slug: "spv",
     term: "SPV (Special Purpose Vehicle)",
     shortDefinition:
-      "A separate legal entity established to own a single yacht, providing limited liability, simple transfer by share sale, and a vehicle through which charter VAT can be handled.",
+      "A separate legal entity established to own a single yacht, providing limited liability, the ability to transfer ownership interests, subject to due diligence and applicable law, and a legal entity through which charter VAT obligations can be managed.",
     longDefinition:
-      "A single-yacht SPV is the ownership structure most practitioners recommend by default. Common SPV jurisdictions include BVI, Cayman, Jersey, Guernsey, Isle of Man, Malta, Marshall Islands, and Luxembourg. Reasons for the structure: limited liability ringfencing per asset, clean sale execution as a share sale (preserves VAT-paid status, registration history, crew contracts), marine-lender mortgage perfection, charter VAT routing through the EU SPV when relevant, succession transfer through share movement. Burgess, Camper & Nicholsons, Y.CO, Dixcart, IQ-EQ, and Praxis all default-recommend single-yacht SPV.",
+      "A single-yacht SPV is a common ownership arrangement, although the appropriate structure depends on the owner’s circumstances and the applicable law. Common SPV jurisdictions include BVI, Cayman, Jersey, Guernsey, Isle of Man, Malta, Marshall Islands, and Luxembourg. Reasons for the structure: limited liability ringfencing per asset, clean sale execution as a share sale (preserves VAT-paid status, registration history, crew contracts), marine-lender mortgage perfection, charter VAT routing through the EU SPV when relevant, succession transfer through share movement. Burgess, Camper & Nicholsons, Y.CO, Dixcart, IQ-EQ, and Praxis all default-recommend single-yacht SPV.",
     relatedChapters: ["04-acquisition-process", "07-operations"],
     relatedTerms: ["beneficial-ownership"],
   },
