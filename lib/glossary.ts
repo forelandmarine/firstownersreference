@@ -31,8 +31,8 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A formal mandate by which a single broker is appointed by the seller to market the yacht. Other brokers can introduce buyers but only the central agent receives the listing-side commission.",
     longDefinition:
-      "Central agency agreements are time-bounded and exclusive. Sub-agency arrangements split the commission between the central agent and any introducing broker, typically at 50/50 on the seller side. The central agent’s incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months.",
-    relatedChapters: ["03-how-the-industry-works"],
+      "Central agency agreements are time-bounded and exclusive. Sub-agency arrangements split the commission between the central agent and any introducing broker, typically at 50/50 on the seller side. The central agent’s incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months. For the seller, Clyde & Co’s Guide to Superyacht Law names three terms to check: the minimum marketing activity, the commission payable after the agreement ends, and the governing law.",
+    relatedChapters: ["03-how-the-industry-works", "06-refit"],
     relatedTerms: ["brokerage", "dual-agency"],
   },
   {
@@ -83,7 +83,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Maritime Labour Convention 2006. The treaty governing crew working conditions, contracts, hours, and welfare. Applies to most commercially operated superyachts.",
     longDefinition:
-      "MLC 2006 sets minimum standards for seafarers’ working and living conditions, including employment agreements, hours of work and rest, accommodation, recreational facilities, food, medical care, and social security. Yachts above 500 GT engaged in international voyages must hold a Maritime Labour Certificate, with a five-year validity and intermediate inspection.",
+      "MLC 2006 sets minimum standards for seafarers’ working and living conditions, including employment agreements, hours of work and rest, accommodation, recreational facilities, food, medical care, and social security. Commercially operated yachts of 500 GT and above engaged in international voyages must hold a Maritime Labour Certificate, with a five-year validity and intermediate inspection. A privately used yacht is outside the Convention.",
     source: {
       name: "International Labour Organization",
       url: "https://www.ilo.org/global/standards/maritime-labour-convention/lang--en/index.htm",
@@ -243,7 +243,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "A 12 percent registration tax levied by Spain on yachts above 8 metres used for private leisure by Spanish-resident owners. Charter use is exempt under qualifying conditions.",
     longDefinition:
-      "The Impuesto Especial sobre Determinados Medios de Transporte applies at 12 percent of the yacht’s value when registered in Spain for private leisure use by a Spanish-resident owner or used in Spanish waters by a Spanish resident for more than 183 days. Yachts engaged in qualifying commercial charter activity, with documented charter contracts and a Spanish charter licence, are exempt. The tax is one of the structural reasons that VAT-paid yachts owned by Spanish residents are commonly held through non-Spanish SPVs operating commercially.",
+      "The Impuesto Especial sobre Determinados Medios de Transporte applies at 12 percent of the yacht’s value when registered in Spain for private leisure use by a Spanish-resident owner or used in Spanish waters by a Spanish resident for more than 183 days. Yachts engaged in qualifying commercial charter activity, with documented charter contracts and the filing Spanish charter rules require (from 2026 an Affidavit of Responsibility with the Harbour Master), can be exempt, subject to conditions on use by owners and their families. The tax is one of the structural reasons that VAT-paid yachts owned by Spanish residents are commonly held through non-Spanish SPVs operating commercially.",
     relatedChapters: ["04-acquisition-process", "07-operations"],
     relatedTerms: ["vat-regime", "vat-paid-status", "charter-vat"],
   },
@@ -253,7 +253,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Value-added tax applied to commercial yacht charters, charged where the charter is enjoyed. Standard EU rates range from 8 to 22 percent depending on jurisdiction and effective use.",
     longDefinition:
-      "EU charter VAT is taxed at the place of enjoyment. The historic length-based reductions (Maltese, Cypriot, Greek lease schemes) were withdrawn between 2018 and 2020 under EU Commission infringement procedures. Effective-use approaches now apply, with pro-rata reductions documented against international-waters time. Italian charters carry 22 percent standard rate; French and Spanish standard rates apply locally. Maltese charters since the 2019 reform follow effective-use rules. Charter VAT is the operator’s liability; the published charter rate is typically VAT-exclusive.",
+      "EU charter VAT is taxed at the place of enjoyment. The historic length-based reductions (Maltese, Cypriot, Greek lease schemes) were withdrawn between 2018 and 2020 under EU Commission infringement procedures. Effective-use approaches now apply, with pro-rata reductions documented against international-waters time. Italian charters carry 22 percent standard rate; French and Spanish standard rates apply locally. Maltese leasing has followed effective-use rules since guidelines of 12 March 2020 (chapter 4). Charter VAT is the operator’s liability; the published charter rate is typically VAT-exclusive.",
     relatedChapters: ["07-operations", "09-decision-framework"],
     relatedTerms: ["vat-regime", "myba", "vat-paid-status"],
   },
@@ -291,12 +291,12 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Memorandum of Agreement. The binding sale and purchase contract for a yacht. The MYBA form is standard in the Mediterranean and Caribbean; the IYBA form is used in the Americas.",
     longDefinition:
-      "The MOA is signed at offer-acceptance and amended through to closing. Key clauses cover title warranties, inventory, deposit handling and escrow, condition at delivery, deficiencies remediation, governing law and jurisdiction, and the closing protocol. MYBA Memorandum of Agreement (current version 2024) is the dominant form. Independent counsel review at heads of terms is the buyer’s structural protection; the form’s defaults often favour the seller’s broker.",
+      "The MOA is signed at offer-acceptance and amended through to closing. Key clauses cover title warranties, inventory, deposit handling and escrow, condition at delivery, deficiencies remediation, governing law and jurisdiction, and the closing protocol. MYBA Memorandum of Agreement (current version 2024) is the dominant form. Independent counsel review at heads of terms is the buyer’s structural protection; the form’s defaults often favour the seller’s broker. For the seller, the warranties are narrow: the right to sell and delivery free of mortgages, liens and other claims, and, in the 2021 MYBA E-MoA, no undischarged tax or VAT liability.",
     source: {
       name: "MYBA Worldwide Yachting Association",
       url: "https://www.myba-association.com/",
     },
-    relatedChapters: ["04-acquisition-process"],
+    relatedChapters: ["04-acquisition-process", "06-refit"],
     relatedTerms: ["myba", "pre-purchase-survey", "sea-trial"],
   },
   {
@@ -329,7 +329,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Protection and Indemnity. Mutual liability insurance covering crew injury, environmental damage, third-party claims, and charter-guest exposure. Typically written by mutual clubs.",
     longDefinition:
-      "P&I cover is the third-party and crew-liability layer above hull insurance. Yacht-specialist mutuals include Shipowners’ Club and Steamship Mutual; commercial insurers including Pantaenius, AON, Gallagher Specialty, and Lloyd’s syndicates also write yacht P&I. Standard limits for a 40 to 50 metre yacht run to EUR 500 million third-party. P&I covers MLC repatriation liability for crew, environmental damage including bunker spill, and charter-guest claims; hull insurance covers the asset itself.",
+      "P&I cover is the third-party and crew-liability layer above hull insurance. In the over-30 metre segment it is written mainly by the mutual clubs, chiefly Shipowners’ Club and Steamship Mutual, and also by Lloyd’s syndicates, placed through specialist brokers. The standard third-party limit is USD 500 million; some clubs offer 25 to 35 metre yachts reduced limits. P&I covers MLC repatriation liability for crew, environmental damage including bunker spill, and charter-guest claims; hull insurance covers the asset itself.",
     relatedChapters: ["07-operations"],
     relatedTerms: ["hull-insurance", "mlc"],
   },
@@ -339,7 +339,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     shortDefinition:
       "Insurance on the yacht as a physical asset. Standard premium for a well-maintained 40 to 50 metre yacht is 0.7 to 1.5 percent of insured value per year.",
     longDefinition:
-      "Hull insurance covers physical loss or damage to the yacht and its machinery. Premium is set by insured value, age, claims history, captain track record, navigation limits, and operational profile (private versus charter). Underwriting is typically through Pantaenius, AON Marine, Gallagher Specialty, or Lloyd’s specialist syndicates. Builder’s risk insurance covers the yacht during refit, with the buyer’s interest noted, and should cover transit between subcontractor sites.",
+      "Hull insurance covers physical loss or damage to the yacht and its machinery. Premium is set by insured value, age, claims history, captain track record, navigation limits, and operational profile (private versus charter). Cover is usually placed by a specialist broker with Lloyd’s syndicates or company markets; chapter 7 names the main brokers. Builder’s risk insurance covers the yacht during refit or new build; chapter 6 explains why the owner should be co-insured rather than only noted, with cover in transit between subcontractor sites.",
     relatedChapters: ["07-operations"],
     relatedTerms: ["p-and-i"],
   },

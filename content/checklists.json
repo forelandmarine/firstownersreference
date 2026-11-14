@@ -319,12 +319,10 @@
             "detail": "Below seven years, the new build cost premium does not amortise."
           },
           {
-            "question": "An intended use pattern specific to the yacht (size, layout, propulsion, range, operational profile).",
-            "detail": "If a brokerage hull within the search window delivers most of the use case, custom is for the residual that does not match."
+            "question": "An intended use pattern specific to the yacht (size, layout, propulsion, range, operational profile)."
           },
           {
-            "question": "Commitment to four disciplines: independent owner’s representative engaged before contract, specialist shipbuilding counsel, technical due diligence on the yard’s order book and financial condition, and willingness to push back on the yard’s first-draft contract.",
-            "detail": "New build with weak buyer-side representation produces the variation-margin overrun pattern documented in industry case studies."
+            "question": "Commitment to four disciplines: independent owner’s representative engaged before contract, specialist shipbuilding counsel, technical due diligence on the yard’s order book and financial condition, and willingness to push back on the yard’s first-draft contract."
           }
         ]
       },
@@ -332,8 +330,8 @@
         "heading": "Contract drafting at heads of terms",
         "items": [
           {
-            "question": "Stage payment loading reviewed against the industry-typical 50 to 70 percent before delivery.",
-            "detail": "Custom yacht schedules can load more, up to 90 percent on some projects. The higher the loading, the more the refund guarantee and independent milestone checks have to carry."
+            "question": "Stage payment loading reviewed: commercial shipbuilding puts 40 percent or more before delivery; custom yacht contracts often well over half.",
+            "detail": "The higher the loading, the more the refund guarantee and independent milestone checks have to carry."
           },
           {
             "question": "No stage payment released without independent verification of the milestone behind it.",
@@ -405,26 +403,19 @@
   },
   "06-refit": {
     "slug": "06-refit",
-    "title": "What to settle, before the refit contract.",
-    "standfirst": "A reference list across the four refit disciplines: whether to refit at all, yard selection, scope, and on-site discipline.",
-    "intent": "A practitioner rule of thumb: if the projected refit cost exceeds 30 percent of the yacht’s pre-refit market value, consider selling. Below that, refit is the usual path. The items below are what contains overrun.",
+    "title": "What to settle before the refit contract, or the sale.",
+    "standfirst": "For the refit, and for the sale if that is the better course.",
+    "intent": "The 30 percent threshold below is a practitioner rule of thumb, not a market rule. Most items contain overrun; the last group prepares a sale.",
     "groups": [
       {
         "heading": "Refit or sell",
         "items": [
           {
-            "question": "Projected refit cost as a percentage of the yacht’s pre-refit market value.",
-            "detail": "A practitioner rule of thumb. Above 30 percent, consider selling. Below, refit is the usual path."
+            "question": "Projected refit cost as a percentage of pre-refit market value, and the sale-and-replace arithmetic tested against it.",
+            "detail": "Above 30 percent, consider selling."
           },
           {
-            "question": "Strategic fit of the post-refit yacht against the actual continued use case, on paper."
-          },
-          {
-            "question": "The sale-and-replace arithmetic (depreciation, transaction cost, crew continuity) tested against the refit case."
-          },
-          {
-            "question": "A ten-year cost profile with four budgets kept apart: maintenance, planned refit, regulatory works, owner upgrades.",
-            "detail": "Costs outside the yard invoice included."
+            "question": "A ten-year cost profile with four budgets kept apart: maintenance, planned refit, regulatory works, owner upgrades."
           }
         ]
       },
@@ -435,21 +426,21 @@
             "question": "The yard’s physical envelope checked first: lift capacity and beam, shed, air draft, approach depth."
           },
           {
-            "question": "A yard suited to the scope and tonnage, chosen on track record and project team rather than cheapest quote."
+            "question": "Yard chosen for this scope and tonnage on track record and project team, not cheapest quote."
           },
           {
-            "question": "Yard slot booked 12 to 18 months ahead of the work."
+            "question": "Yard slot booked as far ahead as the yard’s order book: up to 24 months at top European yards."
           },
           {
-            "question": "At a service yard, one person appointed in writing to coordinate the trades, with every trade contract on the same law and forum."
+            "question": "At a service yard, one coordinator appointed in writing, and every trade contract on the same law and forum."
           }
         ]
       },
       {
-        "heading": "Scope discipline",
+        "heading": "Scope",
         "items": [
           {
-            "question": "Scope defined in writing (deliverables, materials, finishes) and reviewed line by line by the owner’s representative."
+            "question": "Scope defined in writing (deliverables, materials, finishes) and reviewed line by line."
           },
           {
             "question": "A pre-works survey recorded as the baseline for emergent work, with critical areas opened first."
@@ -464,11 +455,10 @@
             "question": "Long-lead items given decide-by dates, and the contract type (fixed price, cost plus, target cost) matched to the scope."
           },
           {
-            "question": "A naval architect’s tonnage calculation in the scope wherever the work adds enclosed volume.",
-            "detail": "Over 1 percent on a 499 GT yacht triggers remeasurement."
+            "question": "A naval architect’s tonnage calculation wherever the work adds enclosed volume (over 1 percent on 499 GT triggers remeasurement)."
           },
           {
-            "question": "A contingency reserve of 15 to 25 percent in the budget."
+            "question": "A contingency of 10 to 25 percent, by how far the hull has been opened before."
           }
         ]
       },
@@ -499,15 +489,31 @@
             "question": "Owner’s representative on site at least weekly, with photographic snag list and variance against budget."
           },
           {
-            "question": "Builder’s risk wording read in full: owner co-insured with a waiver of subrogation, whole-vessel sum insured, hot work and transit covered.",
-            "detail": "Confirm in writing what the owner’s hull policy still covers in the yard."
+            "question": "Builder’s risk wording read in full: owner co-insured, waiver of subrogation, whole-vessel sum insured, hot work and transit covered."
+          }
+        ]
+      },
+      {
+        "heading": "Selling",
+        "items": [
+          {
+            "question": "Listing agreement read by the seller’s own lawyer: term, marketing commitment, commission after it ends, governing law."
+          },
+          {
+            "question": "Commission scale, any split with a buyer’s broker, and any dual agency set out in writing."
+          },
+          {
+            "question": "Records, class status and VAT evidence ready; asking price set against published days on market."
+          },
+          {
+            "question": "Seller’s warranties and any guarantee agreed with a cap and an expiry date."
           }
         ]
       }
     ],
     "printable": "The page is designed to print onto a single A4. Complete with the owner’s representative. Revisit at each milestone.",
     "seoTitle": "Yacht refit checklist: yard, scope and contract",
-    "seoDescription": "A printable list across the four refit disciplines: whether to refit at all, yard selection, scope definition, and on-site discipline."
+    "seoDescription": "A printable list for the refit and the sale: whether to refit at all, yard selection, scope, payments, site presence and selling."
   },
   "07-operations": {
     "slug": "07-operations",
@@ -547,7 +553,7 @@
         "heading": "Insurance",
         "items": [
           {
-            "question": "Competitive quotes from at least three of Pantaenius, AON, and Gallagher Specialty."
+            "question": "Competitive quotes from at least three brokers with over-30 m yacht experience (the chapter names Howden, Pantaenius, AON Marine, Gallagher Specialty, Marsh and PIB Marine), each with its commission disclosed in writing."
           },
           {
             "question": "Hull insurance at the practitioner band of 0.7 to 1.5 percent of insured value (well-maintained 40 to 50 m), with explanations for any deviation."
@@ -565,7 +571,7 @@
             "detail": "Year four is the practitioner threshold for converting a private-operated yacht to charter; the data of actual use is then in hand."
           },
           {
-            "question": "If charter is being considered from year one, a worked case based on yacht size, weekly rate, and weeks against the BOAT International published cases."
+            "question": "If charter is being considered from year one, a worked case based on yacht size, weekly rate, and weeks against the BOAT International published cases (chapter 1)."
           },
           {
             "question": "A clear position on releasing prime-season weeks, given that charter does not pay for ownership for the median operator."

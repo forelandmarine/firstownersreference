@@ -156,6 +156,47 @@
       {
         "type": "note",
         "text": "Run your own numbers using the running cost calculator. Source assumptions are named on every line. Charter economics, with BOAT International’s case studies, are set out in the chapter essay."
+      },
+      {
+        "type": "h2",
+        "text": "Charter, four worked cases"
+      },
+      {
+        "type": "table",
+        "caption": "BOAT International’s four published case studies, discussed in the chapter essay. Most charter operations subsidise rather than recover ownership cost; the profitable exception depends on disciplined operation and releasing the prime weeks.",
+        "head": [
+          "Yacht",
+          "Weekly rate",
+          "Weeks",
+          "Net result"
+        ],
+        "rows": [
+          [
+            "48 m motor",
+            "EUR 250–310 k",
+            "7",
+            "Break-even"
+          ],
+          [
+            "47 m sail",
+            "EUR 110–125 k",
+            "9",
+            "EUR 444 k loss"
+          ],
+          [
+            "85 m motor",
+            "EUR 850–950 k",
+            "8",
+            "EUR 430 k loss"
+          ],
+          [
+            "60 m, owner-optimised",
+            "EUR 220–260 k",
+            "12",
+            "Up to EUR 2 m net positive"
+          ]
+        ],
+        "sourceLine": "BOAT International published case studies."
       }
     ],
     "sources": [
@@ -1336,33 +1377,33 @@
   "06-refit": {
     "slug": "06-refit",
     "title": "Refit yard capacity and typical overrun curve, 2027 to 2029",
-    "standfirst": "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. Capacity at dominant yards is tightening. The numbers to plan against.",
+    "standfirst": "Refit overruns of 30 to 50 percent combine work that could not be seen at quote with changes that loose specification and weak management let through. Capacity at the main yards is tightening. The figures below are the ones to plan against.",
     "blocks": [
       {
         "type": "h2",
-        "text": "Refit cost benchmarks, per metre per year"
+        "text": "Refit cost benchmarks, per metre"
       },
       {
         "type": "table",
-        "caption": "Practitioner working ranges across more than 30 managed refit projects.",
+        "caption": "Practitioner working ranges across more than 30 managed refit projects. Maintenance is a yearly cost; the refit figures are per project.",
         "head": [
           "Scope",
-          "EUR per metre per year",
+          "EUR per metre",
           "On a 50 m yacht"
         ],
         "rows": [
           [
-            "Annual maintenance",
+            "Annual maintenance, per year",
             "2,000–8,000",
             "EUR 100,000–400,000"
           ],
           [
-            "Mid-life refit",
+            "Mid-life refit, per project",
             "10,000–30,000",
             "EUR 500,000–1.5 m"
           ],
           [
-            "Major structural refit",
+            "Major structural refit, per project",
             "40,000–100,000+",
             "EUR 2 m to 5 m+"
           ]
@@ -1394,7 +1435,7 @@
           [
             "Industry typical",
             "30–50 percent",
-            "What the work actually costs"
+            "Hidden work plus uncontained changes"
           ],
           [
             "Poorly-managed",
@@ -1435,11 +1476,15 @@
       },
       {
         "type": "h2",
-        "text": "Dominant refit yards, by geography"
+        "text": "Refit yards, by region"
+      },
+      {
+        "type": "note",
+        "text": "The over-30 m refit market is concentrated in four regions: the Western Mediterranean (Spain, France, Italy), Northern Europe (UK, Netherlands, Germany), the Eastern Mediterranean (Turkey) and the US Eastern Seaboard. Top European yards are typically booked 12 to 24 months ahead for major refits; US East Coast lead times are shorter but tightening, particularly at Rybovich and Derecktor."
       },
       {
         "type": "table",
-        "caption": "Top yards typically booked 12 to 24 months ahead for major refits. Geography concentrates in four clusters: Western Mediterranean, Northern Europe, Eastern Mediterranean, and the US Eastern Seaboard.",
+        "caption": "Western Mediterranean.",
         "head": [
           "Yard",
           "Location",
@@ -1449,111 +1494,175 @@
         "rows": [
           [
             "MB92 Group",
-            "Barcelona; La Ciotat",
+            "Barcelona; La Ciotat and Vallauris Golfe-Juan, France; Neom, Saudi Arabia",
             "Full-service",
-            "Western Med leader; owns paint specialist GYG; Squircle Capital reached 100% ownership March 2026"
+            "The dominant full-service Western Mediterranean operator. Owns paint specialist GYG (parent of Pinmar). CEO Pepe García-Aubert. Squircle Capital majority shareholder since 2019, 100 percent since March 2026. In August 2026 announced more than EUR 40 m of works at Barcelona, 2026 to 2028, including dry-dock renewal and a 680 t Travelift. Equipped for Spanish IPR"
           ],
           [
             "Astilleros de Mallorca",
             "Palma",
-            "Full-service",
-            "78,000 sq m; 1,700 t haul; 120 m outfit quay; 250+ yachts/year"
+            "Full-service; sections run as service yard",
+            "78,000 sq m; 1,700 t haul; 120 m outfitting quay; over 250 yachts a year. Reference Spanish yard for over-50 m refits. Equipped for Spanish IPR"
           ],
           [
-            "STP Palma",
-            "Palma",
+            "STP Palma (Servicios Técnicos Portuarios)",
+            "Port of Palma de Mallorca",
             "Service",
-            "Largest non-full-service refit in Western Med by throughput"
+            "Owner contracts trades directly through the project manager. Largest non-full-service refit facility in the Western Mediterranean"
           ],
           [
             "Marina Port Vell",
             "Barcelona",
-            "Mixed",
-            "OneOcean group ownership"
+            "Mixed full-service and service yard",
+            "OneOcean group"
           ],
           [
             "Monaco Marine",
             "Saint Mandrier, Beaulieu, Antibes, La Ciotat",
             "Full-service",
-            "Multi-site French; strong on 30–60 m"
+            "Multi-site French; particularly strong on 30–60 m"
           ],
           [
             "IMS Shipyard",
-            "La Seyne sur Mer / Toulon",
+            "La Seyne sur Mer (Toulon)",
             "Full-service",
             "220 m drydock; recently expanded"
           ],
           [
             "Lusben",
-            "Viareggio / Livorno",
+            "Viareggio and Livorno",
             "Full-service",
-            "Italian reference; 210 m drydock; 2,400 t syncrolift (2024–2025)"
+            "76,000 sq m; 210 m drydock; 2,000 t syncrolift; Livorno expanded with a 2,400 t syncrolift, 2024–2025. Capacity 20–140 m. Reference Italian full-service yard for large hulls"
           ],
           [
             "Amico & Co",
             "Genoa",
             "Full-service",
-            "Italian refit, paint, mechanical"
+            "Strong on refit, paint and mechanical work. Part of the Amico Marine group since May 2026. CEO Bruno Guglielmini"
           ],
           [
             "Cantiere Rossini",
             "Marina di Carrara",
             "Full-service",
-            "Scaled to superyacht refit over past decade"
+            "Scaled into superyacht refit over the past decade"
           ],
+          [
+            "Codecasa; Picchiotti",
+            "Viareggio",
+            "Builders with refit capacity",
+            "Part of the Viareggio refit cluster alongside Lusben"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "Northern Europe.",
+        "head": [
+          "Yard",
+          "Location",
+          "Model",
+          "Note"
+        ],
+        "rows": [
           [
             "Pendennis Shipyard",
             "Falmouth, UK",
             "Full-service",
-            "~18 projects 2024 vs avg 10; strong on sailing"
+            "CEO Mike Carr. Around 18 projects in 2024, above the typical annual run rate of 10; particularly strong on sailing yacht refits"
           ],
           [
-            "Damen Shipyards",
-            "Vlissingen, NL",
+            "Damen Shipyards Group",
+            "Vlissingen and other Dutch sites",
             "Full-service",
             "Refit alongside new build"
           ],
           [
-            "Lürssen Refit",
+            "Royal Huisman, Vitters, Holland Jachtbouw, Royal Van Lent (Feadship)",
+            "Netherlands",
+            "Builder / refit",
+            "Take their own hulls back for refit; limited third-party capacity, but the standard for owners of those hulls"
+          ],
+          [
+            "Bläsing Yacht Service / Lürssen Refit",
             "Germany",
             "Full-service",
-            "Largest yachts"
-          ],
+            "Refit for the largest yachts"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "Eastern Mediterranean.",
+        "head": [
+          "Yard",
+          "Location",
+          "Model",
+          "Note"
+        ],
+        "rows": [
           [
             "RMK Marine",
             "Tuzla, Istanbul",
             "Full-service",
-            "~80 m capacity; strong reputation on cost"
+            "To around 80 m; strong practitioner reputation on cost"
           ],
           [
             "Bilgin Yachts",
             "Tuzla, Istanbul",
-            "Full-service",
-            "Builder with refit on own and third-party hulls"
+            "Builder / refit",
+            "Refit on its own and third-party hulls"
           ],
+          [
+            "Sirena Marine",
+            "Bursa",
+            "Builder / refit",
+            "Particularly Turkish-built hulls"
+          ],
+          [
+            "Antalya Free Zone",
+            "Antalya",
+            "Several facilities",
+            "Mid-tier facilities serving the Eastern Mediterranean and Black Sea fleets"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The US accounted for 45 to 50 percent of brokerage transactions in 2025 (BOAT International), and US refit infrastructure has expanded substantially over the past decade."
+      },
+      {
+        "type": "table",
+        "caption": "US Eastern Seaboard.",
+        "head": [
+          "Yard",
+          "Location",
+          "Model",
+          "Note"
+        ],
+        "rows": [
           [
             "Rybovich",
             "West Palm Beach, FL",
             "Full-service",
-            "US reference; Safe Harbor Marinas owned"
+            "Reference US yard for large-yacht refit, repaint and mechanical work. Owned by Safe Harbor Marinas, part of Blackstone Infrastructure since April 2025"
           ],
           [
-            "Lauderdale Marine Center",
-            "Fort Lauderdale",
+            "Lauderdale Marine Center (LMC)",
+            "Fort Lauderdale, FL",
             "Service",
-            "Largest US East Coast refit by throughput"
+            "Service-yard model at scale; largest US East Coast facility by throughput"
           ],
           [
             "Bradford Marine",
-            "Fort Lauderdale / Grand Bahama",
+            "Fort Lauderdale, FL; Grand Bahama",
             "Full-service",
-            "US refit, repaint, mechanical"
+            "Refit, repaint, mechanical"
           ],
           [
             "Derecktor Shipyards",
             "Fort Pierce, FL",
             "Full-service",
-            "Expanded substantially over past five years"
+            "Substantially expanded over five years; recent projects include the largest refit haul-outs on the East Coast"
           ],
           [
             "Roscioli Yachting Center",
@@ -1563,39 +1672,39 @@
           ],
           [
             "Merrill-Stevens Dry Dock",
-            "Miami",
+            "Miami, FL",
             "Full-service",
-            "Historic, rebuilt and expanded"
+            "Historic yard, recently rebuilt and expanded"
           ],
           [
             "Front Street Shipyard",
             "Belfast, ME",
             "Full-service",
-            "US Northeast; refit and new build to ~60 m"
+            "Refit and new builds to about 60 m; reference yard for the Northeast US"
           ],
           [
             "Newport Shipyard",
             "Newport, RI",
             "Full-service",
-            "Narragansett Bay; active in New England racing season"
+            "On Narragansett Bay; particularly strong during the New England racing season"
           ],
           [
             "Lyman-Morse",
             "Thomaston, ME",
             "Builder / refit",
-            "Strong on sailing and composite"
+            "Strong on sailing and composite hulls"
           ],
           [
             "Hodgdon Yachts",
             "East Boothbay, ME",
             "Builder / refit",
-            "Largest US-built sailing"
+            "Refit capability on the largest US-built sailing yachts"
           ],
           [
             "Jarrett Bay Boatworks",
             "Beaufort, NC",
-            "Full-service",
-            "Sportfish + motor under 40 m"
+            "Refit and repaint",
+            "Strong on sportfish and motor yachts under 40 m"
           ]
         ],
         "sourceLine": "Yard published statements; Superyacht Group 2025 expert roundtable (paywalled); BOAT International coverage; practitioner working knowledge."
@@ -1712,8 +1821,8 @@
   },
   "07-operations": {
     "slug": "07-operations",
-    "title": "Crew salary bands and insurance market commentary",
-    "standfirst": "Crew is 30 to 40 percent of annual operating cost on a typical 50m, by far the largest single line. Hull insurance has stabilised; the post-Bayesian response was tightening on crew qualifications, not blanket rate rises.",
+    "title": "Crew pay, insurance and charter regimes",
+    "standfirst": "Crew is 30 to 40 percent of annual operating cost on a typical 50m, by far the largest single line. Hull rates rose from 2022, peaked in 2024 and have since softened; after Bayesian, underwriters looked harder at crew procedures and stability rather than raising rates across the board. The commercial charter regimes are set out country by country.",
     "blocks": [
       {
         "type": "h2",
@@ -1756,7 +1865,7 @@
             "Over 25,000"
           ]
         ],
-        "sourceLine": "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey; Erica Lay (EL Crew Co) on senior-captain package premiums."
+        "sourceLine": "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey; Erica Lay (EL Crew Co) on senior-captain salary premiums."
       },
       {
         "type": "chart",
@@ -1768,7 +1877,7 @@
       },
       {
         "type": "table",
-        "caption": "An over-30 m programme typically carries five distinct lines of insurance, each separately underwritten. The right broker secures the right structure on each.",
+        "caption": "An over-30 m programme typically carries five distinct lines of insurance, each separately underwritten and renewed.",
         "head": [
           "Line",
           "Covers",
@@ -1778,36 +1887,36 @@
         "rows": [
           [
             "Hull and machinery",
-            "Loss or damage to the yacht itself; agreed value rebuild basis is the disciplined structure",
+            "Loss or damage to the yacht and its machinery. Written on agreed value, not actual cash value, with the agreed value set on rebuild cost rather than market value",
             "0.7–1.5 percent of insured value (40–50 m well-maintained); 2–5 percent for smaller yachts and hurricane-exposed regions",
-            "Lloyd’s syndicates (CNA Hardy, Beazley, Brit, AIG, Liberty, Tokio Marine HCC, MS Amlin); AXA, Allianz, Generali"
+            "Lloyd’s syndicates (CNA Hardy, Beazley, Brit, AIG, Liberty, Tokio Marine HCC, MS Amlin); AXA, Allianz, Generali, Helvetia"
           ],
           [
             "P&I (protection and indemnity)",
-            "Crew injury, environmental damage, third-party liability, charter guest claims",
-            "Per crew member basis; cover routinely written to USD 500 m third-party limit",
+            "Crew injury, environmental damage, third-party liability, charter-guest claims. The USD 500 m third-party limit follows IMO conventions and the reinsurance the International Group of P&I Clubs accesses; claims testing it are extremely rare on yachts, the plausible cases being major reef damage and significant pollution",
+            "Per crew member basis; cover routinely written to a USD 500 m third-party limit. One club now offers USD 1 bn as standard; some clubs offer 25–35 m yachts reduced limits at premiums that reflect realistic exposure, which Davis reports owners in that size range have welcomed",
             "Shipowners’ Club, Steamship Mutual"
           ],
           [
             "War risk",
-            "Per-voyage cover for transit through war-risk regions",
-            "0.05–2 percent of hull value per voyage, region-dependent",
+            "Unexpected damage from riots, uprisings, vandalism or political incident while the yacht is outside high-risk zones. It does not cover the yacht inside designated War Risk areas",
+            "Bought per voyage rather than annually; 0.05–2 percent of hull value per voyage, region-dependent; an additional premium to enter an exclusion zone (below)",
             "Lloyd’s war risk syndicates"
           ],
           [
             "Builder’s risk",
-            "Loss or damage during refit or new build construction",
-            "Taken out by yard with owner’s interest noted; cost embedded in yard contract",
+            "Loss or damage during refit or new-build construction. Chapter 6 sets out the terms to confirm before the works",
+            "Taken out by the yard with the owner’s interest noted; cost embedded in the yard contract",
             "Specialist marine builder’s risk underwriters"
           ],
           [
             "Charter operation cover",
-            "Uplift on hull and P&I to reflect commercial use",
-            "Embedded in primary policies; charter management company co-ordinates",
+            "Uplift on hull and P&I for charter activities",
+            "Embedded in primary policies; the charter management company normally coordinates, and the owner’s broker confirms the structure",
             "Same hull and P&I markets, with charter rider"
           ]
         ],
-        "sourceLine": "Lloyd’s of London syndicate guidance; published broker structuring commentary; practitioner working ranges."
+        "sourceLine": "Lloyd’s of London syndicate guidance; published broker structuring commentary; Ollie Davis, PIB Marine (May 2026), on P&I limits; practitioner working ranges."
       },
       {
         "type": "h2",
@@ -1815,7 +1924,7 @@
       },
       {
         "type": "table",
-        "caption": "Howden and Pantaenius are the two largest yacht-specialist brokers in the over-30 m segment globally. Structural differences below sit at selection.",
+        "caption": "Brokers with substantial over-30 m yacht books. The practical step is at least three quotes, each with the broker’s commission disclosed in writing.",
         "head": [
           "Broker",
           "Profile",
@@ -1848,6 +1957,11 @@
             "The very top of the segment (above 100 m)"
           ],
           [
+            "PIB Marine (formerly Zorab Insurance Services)",
+            "UK yacht specialist; long-standing partnerships with naval architects, designers and project managers",
+            "Owners wanting a UK specialist alternative to the multi-line firms"
+          ],
+          [
             "Specialist alternatives",
             "Smaller yacht-specialist brokers and single-jurisdiction houses",
             "Relationship-based selection; underwriting markets similar to the larger brokers"
@@ -1861,7 +1975,7 @@
       },
       {
         "type": "table",
-        "caption": "The hardened market that opened in 2022 reflected Lloyd’s underwriting losses (GBP 232.8 m losses against GBP 150.1 m of premium in 2017; 75 percent of 69 yacht-writing syndicates unprofitable). The market remembers.",
+        "caption": "Rates hardened from 2022 after sustained Lloyd’s yacht underwriting losses (GBP 232.8 m of losses against GBP 150.1 m of premium in 2017; 75 percent of 69 yacht-writing syndicates unprofitable), peaked in 2024 and have since softened.",
         "head": [
           "Period",
           "Hull rate movement",
@@ -1875,8 +1989,13 @@
           ],
           [
             "H1 2024",
-            "Stabilised",
-            "Most of the increase had landed by then"
+            "Increases stopped; 2024 the peak of the cycle",
+            "Ollie Davis, PIB Marine"
+          ],
+          [
+            "Bayesian sinking, August 2024",
+            "No blanket rate rises; more requests for risk management surveys",
+            "Pantaenius: “I think everyone thought it was going to have more of an impact than it did”"
           ],
           [
             "Q4 2025",
@@ -1884,9 +2003,9 @@
             "Gallagher Specialty"
           ],
           [
-            "Bayesian sinking, August 2024",
-            "Selective tightening only",
-            "Pantaenius: “more impact expected than landed”"
+            "2026",
+            "Stable: flat, or small inflation-linked rises",
+            "Ollie Davis, PIB Marine; P&I clubs continuing 5 percent increases"
           ],
           [
             "Typical hull rate, 40–50 m well-maintained",
@@ -1899,7 +2018,7 @@
             ""
           ]
         ],
-        "sourceLine": "AIG, Gallagher Specialty published commentary; Pantaenius market notes."
+        "sourceLine": "AIG, Gallagher Specialty published commentary; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026)."
       },
       {
         "type": "chart",
@@ -1945,45 +2064,91 @@
         "sourceLine": "Lloyd’s war risk circular updates; Marsh, Gallagher published commentary."
       },
       {
-        "type": "h2",
-        "text": "Charter, four worked cases"
+        "type": "kv",
+        "caption": "War risk in practice.",
+        "rows": [
+          {
+            "label": "What it covers",
+            "value": "Unexpected damage from riots, uprisings, vandalism or political incident while the yacht is outside high-risk zones. It does not cover the yacht inside designated War Risk areas.",
+            "note": "Reference incidents: MY Kaos, vandalised alongside the dock in Barcelona (2023), and damage during the 2016 Turkish coup attempt."
+          },
+          {
+            "label": "Entering an exclusion zone",
+            "value": "An additional premium (AP), set by motor or sail, maximum cruising speed, freeboard height, appearance, length of stay in the area, and the captain and crew’s experience of the route. Increased deductibles often apply inside the zone.",
+            "note": "Fifty percent of the AP is typically returned as a no-claims discount after a successful transit."
+          },
+          {
+            "label": "High-risk passages",
+            "value": "Insurers normally require a separate Kidnap & Ransom policy and armed security from a partnered or accredited provider, both at the owner’s cost."
+          },
+          {
+            "label": "Notice of cancellation",
+            "value": "Since the Ukraine and Middle East conflicts, insurers have issued seven-day notice of cancellation on H&M and P&I in respect of certain cruising areas. Cover can usually be bought back for an additional premium if the owner intends to visit.",
+            "note": "Ask before the itinerary is fixed."
+          }
+        ],
+        "sourceLine": "Ollie Davis, PIB Marine, interviewed for this chapter (May 2026)."
       },
       {
-        "type": "table",
-        "caption": "Most charter operations subsidise rather than recover ownership cost. The successful exception depends on disciplined operation and willingness to release the prime weeks.",
-        "head": [
-          "Yacht",
-          "Weekly rate",
-          "Weeks",
-          "Net result"
-        ],
+        "type": "h2",
+        "text": "Commercial charter regimes, by jurisdiction"
+      },
+      {
+        "type": "kv",
+        "caption": "Commercial registration is decided jurisdiction by jurisdiction; there is no single global licence. The VAT regimes that interact with charter are in chapter 4.",
         "rows": [
-          [
-            "48 m motor",
-            "EUR 250–310 k",
-            "7",
-            "Break-even"
-          ],
-          [
-            "47 m sail",
-            "EUR 110–125 k",
-            "9",
-            "EUR 444 k loss"
-          ],
-          [
-            "85 m motor",
-            "EUR 850–950 k",
-            "8",
-            "EUR 430 k loss"
-          ],
-          [
-            "60 m, owner-optimised",
-            "EUR 220–260 k",
-            "12",
-            "Up to EUR 2 m net positive"
-          ]
+          {
+            "label": "France",
+            "value": "French Commercial Exemption (FCE): commercial registration, full-time crew, length above 15 m.",
+            "note": "Its VAT conditions, including the share of voyages leaving French waters and the limit on static charter use, are set out in chapter 4."
+          },
+          {
+            "label": "Italy",
+            "value": "Italian flag with commercial registration, or a non-Italian flag meeting Codice della Nautica conditions. VAT on charter fees is 22 percent on the portions in Italian waters.",
+            "note": "Italian leasing and its effective-use test: chapter 4."
+          },
+          {
+            "label": "Spain",
+            "value": "Royal Decrees 186/2023 and 587/2024 replace the charter licence with an Affidavit of Responsibility filed with the Harbour Master, for EU and non-EU flags alike; 2026 is the transition year.",
+            "note": "Spanish residents and entities established in Spain register yachts locally and pay the special tax on certain means of transport at 12 percent of value (11 percent in the Canary Islands); yachts used exclusively for charter can be exempt, subject to conditions on use by owners and their families."
+          },
+          {
+            "label": "Greece",
+            "value": "Historically the most restrictive in the Mediterranean. Greek-flagged and EU-flagged yachts above 35 m can charter under the standard regime. Since February 2024 the e-Charter Permission also lets non-EU-flagged commercial yachts over 35 m with non-wooden hulls charter in Greek waters for up to 28 days a year, subject to a special fee and VAT registration.",
+            "note": "NEPA is the long-form route."
+          },
+          {
+            "label": "Croatia",
+            "value": "Croatian flag or a local charter-agency arrangement under the Croatian Maritime Code. Annual permit.",
+            "note": "13 percent VAT on charter fees."
+          },
+          {
+            "label": "Turkey",
+            "value": "“Blue Cruise” charter requires Turkish-flag operation or a Turkish charter agreement with a licensed local operator.",
+            "note": "Foreign-flagged yachts can cruise privately; commercial charter requires the local licence."
+          },
+          {
+            "label": "Monaco",
+            "value": "The Monégasque flag permits up to 90 days of commercial charter a year without personal tax levies on the owner; under several neighbouring EU flags the same vessel would face VAT on private owner use.",
+            "note": "Visible reflagging at brokerage during 2026 on yachts of 30 to 50 m with light charter intent (Capt. Ukic of M/Y Ellen, MYBA Charter Show 2026, in The Superyacht Report)."
+          },
+          {
+            "label": "Cayman Islands and Marshall Islands",
+            "value": "Both issue commercial certificates covering global charter activity. Cayman applies the Red Ensign Group Yacht Code (July 2024 edition), the Marshall Islands its own Yacht Code (2026 edition).",
+            "note": "The dominant choices for over-30 m commercial programmes."
+          },
+          {
+            "label": "Malta",
+            "value": "An EU charter route widely used for long Mediterranean seasons.",
+            "note": "VAT on a lease under the Maltese leasing guidelines (in force since March 2020) follows documented use: chapter 4."
+          },
+          {
+            "label": "United States",
+            "value": "Regulated under federal law (Coast Guard and the Jones Act). Foreign-flagged yachts cannot embark and disembark passengers between US ports under standard charter, which severely restricts non-US-flagged commercial operation in US waters.",
+            "note": "The US tax treatment of a charter business is in the chapter essay."
+          }
         ],
-        "sourceLine": "BOAT International published case studies."
+        "sourceLine": "Royal Decrees 186/2023 and 587/2024 (Spain); Greek e-Charter Permission (February 2024); Red Ensign Group Yacht Code (July 2024); Marshall Islands Yacht Code (2026); The Superyacht Report (Monaco)."
       }
     ],
     "sources": [
@@ -1999,7 +2164,7 @@
       },
       {
         "label": "Erica Lay (EL Crew Co, Mallorca)",
-        "line": "Recruitment-side reading on senior-captain package premiums above guide rates, rotation as price of entry to the senior-crew market, junior-crew expectation gap, and inconsistency from the top as the most common cause of turnover. Places crew across the over-24 metre fleet.",
+        "line": "Recruitment-side reading on senior-captain salary premiums above guide rates, with rotation and leave on top, rotation as price of entry to the senior-crew market, junior-crew expectation gap, and inconsistency from the top as the most common cause of turnover. Places crew across the over-24 metre fleet.",
         "url": "https://www.elcrewco.com/"
       },
       {
@@ -2038,9 +2203,8 @@
         "url": "https://www.aig.com/"
       },
       {
-        "label": "BOAT International",
-        "line": "Charter case studies.",
-        "url": "https://www.boatinternational.com/"
+        "label": "Ollie Davis (PIB Marine, formerly Zorab Insurance Services)",
+        "line": "Interviewed for this chapter, May 2026: the 2022 to 2024 hardening cycle, P&I limits, negotiable deductibles and war risk."
       }
     ]
   },
@@ -2175,7 +2339,7 @@
           [
             "6",
             "Insurance broker",
-            "Once flag and operating profile determined; commission disclosed in writing; Pantaenius, AON, Gallagher"
+            "Once flag and operating profile determined; commission disclosed in writing; at least three quotes (chapter 7 names the main brokers)"
           ]
         ],
         "sourceLine": "Foreland Marine practitioner framework."

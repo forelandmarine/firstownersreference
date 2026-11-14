@@ -86,7 +86,7 @@
     },
     {
       "question": "What stage payment schedule is typical on a yacht new build?",
-      "answer": "Industry-typical stage payment loading is 50 to 70 percent of contract value before delivery, with the balance paid at delivery and final acceptance. Custom yacht schedules can load more, up to 90 percent on some projects. Refund guarantee credit quality is the buyer’s main protection: a tier-one bank pay-on-demand guarantee is the standard to ask for; surety wrappers are weaker. Liquidated damages are typically 1 percent of contract value per week of delay, capped at 5 to 10 percent. Force majeure burden on the yard to prove but-for causation per English law is the practitioner standard."
+      "answer": "Commercial shipbuilding puts 40 percent or more of the price before delivery (Watson Farley & Williams); custom yacht schedules routinely load well over half, and up to 90 percent on some projects. The balance is paid at delivery and final acceptance. Refund guarantee credit quality is the buyer’s main protection: a tier-one bank pay-on-demand guarantee is the standard to ask for; surety wrappers are weaker. Liquidated damages are typically 1 percent of contract value per week of delay, capped at 5 to 10 percent. Force majeure burden on the yard to prove but-for causation per English law is the practitioner standard."
     },
     {
       "question": "Why is owner-side representation quality a market problem?",
@@ -100,7 +100,7 @@
   "06-refit": [
     {
       "question": "How much does a superyacht refit cost?",
-      "answer": "Refit cost runs from 10 to 60 percent of pre-refit market value depending on scope. Mid-life refits at year five to seven typically cover paint, soft furnishings, and selective system upgrades. Full refits at year ten to fifteen include structural and propulsion work and can run 30 to 60 percent of pre-refit value. Empirical overrun against initial budget runs 30 to 50 percent on the opened-up-vessel pattern. A contingency reserve of 15 to 25 percent included in the budget is calm planning. Above 30 percent of pre-refit market value, a practitioner rule of thumb suggests considering a sale."
+      "answer": "Refit cost runs from 10 to 60 percent of pre-refit market value depending on scope. Mid-life refits at year five to seven typically cover paint, soft furnishings, and selective system upgrades. Full refits at year ten to fifteen include structural and propulsion work and can run 30 to 60 percent of pre-refit value. Overruns of 30 to 50 percent against the original quote are common. Part is work that could not be seen when the yacht was quoted, which a contingency of 10 to 25 percent covers; the rest comes from loose specification and weak project management, which the contract and the owner’s representative should contain. Above 30 percent of pre-refit market value, a practitioner rule of thumb suggests considering a sale."
     },
     {
       "question": "When should I refit a yacht versus selling it?",
@@ -108,29 +108,41 @@
     },
     {
       "question": "Which are the best refit yards for superyachts?",
-      "answer": "Northern European refit specialists include Pendennis (Falmouth), Damen Vlissingen, Royal Huisman (Vollenhove) and Lürssen (Hamburg). Mediterranean refit yards include MB92 Group (Barcelona and La Ciotat), STP and Astilleros de Mallorca (Palma), Lusben (Viareggio), Amico & Co (Genoa) and the Palumbo Superyachts network. Yard slot booking 12 to 18 months ahead is now standard given top-yard demand. Selection is on track record, alignment, and project manager experience, not cheapest quote."
+      "answer": "Northern European refit specialists include Pendennis (Falmouth), Damen Vlissingen, Royal Huisman (Vollenhove) and Lürssen (Hamburg). Mediterranean refit yards include MB92 Group (Barcelona and La Ciotat), STP and Astilleros de Mallorca (Palma), Lusben (Viareggio), Amico & Co (Genoa) and the Palumbo Superyachts network. Top European yards are typically booked 12 to 24 months ahead for major refits, so book as far ahead as the chosen yard’s order book runs. Select on track record with similar yachts and the project manager’s experience, not on the cheapest quote."
     },
     {
       "question": "What is Spanish Inward Processing Relief for yachts?",
       "answer": "Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht’s departure from the EU. It is separate from temporary admission, which covers the yacht’s use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel should select the VAT structure for the specific refit scope."
+    },
+    {
+      "question": "How do I sell a superyacht?",
+      "answer": "Most sellers appoint a central agent: one broker, under a fixed-term exclusive agreement, who markets the yacht while other brokers introduce buyers. The seller’s own lawyer should review that agreement, in particular the minimum marketing activity, the commission payable after it ends, and the governing law (Clyde & Co, The Guide to Superyacht Law). Before listing, assemble the maintenance records, the class status and the evidence of the yacht’s VAT position, and set the asking price against published days on market for the size band. The sale is usually made on the MYBA Memorandum of Agreement, with a deposit of typically 10 percent on signing."
+    },
+    {
+      "question": "What does selling a yacht cost?",
+      "answer": "The main cost is the broker’s commission, paid by the seller from the proceeds. Two norms are in use: the US flat 10 percent of the sale price, and the MYBA sliding scale of 10 percent on the first 10 million, 5 percent on the second 10 million and 2.5 percent above. On a EUR 28 million sale that is EUR 2.8 million, or about EUR 1.7 million. A buyer’s broker is paid out of the seller’s commission, typically half of it or a little less. Agree the scale, any split, and any commission payable after the agreement ends in writing before listing. The seller’s own legal fees come on top."
+    },
+    {
+      "question": "What warranties does a seller give when selling a yacht?",
+      "answer": "Under the MYBA Memorandum of Agreement the seller’s warranties are narrow: the right to sell, and delivery free of mortgages, liens and other claims, with exclusion clauses ruling out warranties on condition beyond what the agreement states (Andrew Charlier of HFW, in BOAT International, September 2025). The 2021 MYBA E-MoA also has the seller warrant that no undischarged tax or VAT liability has been incurred. The warranties are usually backed by a guarantee from the beneficial owner or a company on its behalf. Its scope, cap and expiry are negotiated, so the seller’s lawyer should agree them before signing."
     }
   ],
   "07-operations": [
     {
       "question": "What does a superyacht captain earn in 2026?",
-      "answer": "Per the YPI Crew 2026 salary guide, a captain on a 50 metre yacht earns EUR 10,000 to 16,000 per month. A captain on an 80 metre runs EUR 16,000 to 23,000. Quay Crew’s 2025/26 captain survey records a 7 percent increase in the 70 to 79 metre bracket since its 2023 survey, and 63 percent of captains surveyed on time-for-time rotation. Senior crew are the bottleneck of the industry; their pay continues to rise where junior crew has plateaued. Crew accounts for 30 to 40 percent of total annual operating cost."
+      "answer": "Per the YPI Crew 2026 salary guide, a captain on a 50 metre yacht earns EUR 10,000 to 16,000 per month. A captain on an 80 metre runs EUR 16,000 to 23,000. Quay Crew’s 2025/26 captain survey records a 7 percent increase in the 70 to 79 metre bracket since its 2023 survey, and 63 percent of captains surveyed on time-for-time rotation. Experienced senior crew, captains above all, are in shortest supply; their pay continues to rise where junior crew pay has plateaued. Crew accounts for 30 to 40 percent of total annual operating cost."
     },
     {
       "question": "How many crew does a 50m superyacht need?",
-      "answer": "A 50 metre motor yacht typically carries 12 to 16 crew. A 50 metre sailing yacht carries 9 to 12. Manning levels are set by the flag state’s Minimum Safe Manning Certificate, with senior officers requiring Certificates of Competency and STCW endorsements. MLC 2006 governs working hours, accommodation, and contracts; amendments expected in force on 23 December 2027 add requirements on shore leave, repatriation and harassment. The captain hire compounds with the other operational decisions across the hold period; the candidate hired having pushed back on itinerary, maintenance, budget, and crew during interview is typically the disciplined hire."
+      "answer": "A 50 metre motor yacht typically carries 12 to 16 crew. A 50 metre sailing yacht carries 9 to 12. Manning levels are set by the flag state’s Minimum Safe Manning Certificate, with senior officers requiring Certificates of Competency and STCW endorsements. On commercially operated yachts, MLC 2006 governs working hours, accommodation, and contracts; amendments expected in force on 23 December 2027 add requirements on shore leave, repatriation and harassment. The captain hire compounds with the other operational decisions across the hold period; the candidate who pushed back on itinerary, maintenance, budget, and crew during interview is usually the stronger hire."
     },
     {
       "question": "What insurance does a superyacht need?",
-      "answer": "Hull insurance at 0.7 to 1.5 percent of insured value for a well-maintained 40 to 50 metre yacht. P&I cover for crew injury, environmental liability, third-party, and charter guest claims at USD 500 million third-party limit through Shipowners’ Club or Steamship Mutual. Competitive quotes from at least three of Pantaenius, AON Marine, and Gallagher Specialty before binding. Builder’s risk insurance during refit, with the owner co-insured under a waiver of subrogation rather than only noted, a sum insured covering the whole vessel, and cover in transit between subcontractor sites; the owner’s own hull policy usually suspends or limits cover while the yacht is in the yard."
+      "answer": "Hull insurance at 0.7 to 1.5 percent of insured value for a well-maintained 40 to 50 metre yacht. P&I cover for crew injury, environmental liability, third-party, and charter guest claims at USD 500 million third-party limit through Shipowners’ Club or Steamship Mutual. Competitive quotes from at least three brokers with over-30 metre yacht experience before binding, each with its commission disclosed in writing. Builder’s risk insurance during refit, with the owner co-insured under a waiver of subrogation rather than only noted, a sum insured covering the whole vessel, and cover in transit between subcontractor sites; the owner’s own hull policy usually suspends or limits cover while the yacht is in the yard."
     },
     {
       "question": "Should I operate my yacht as a charter yacht?",
-      "answer": "Most charter operations subsidise rather than recover ownership cost. The first-year owner benefits from a season or two of private operation before introducing charter. Year four is the practitioner threshold for converting a private-operated yacht to charter; the data of actual use is then in hand. If charter is being considered from year one, work a case based on yacht size, weekly rate, and weeks against the BOAT International published cases. A position on releasing prime-season weeks (mid-July to mid-August in the Mediterranean) is what the published case-study yields rest on."
+      "answer": "Most charter operations subsidise rather than recover ownership cost. The first-time owner benefits from three years of private operation before introducing charter. Year four is the practitioner threshold for converting a private-operated yacht to charter; the data of actual use is then in hand. If charter is being considered from year one, work a case based on yacht size, weekly rate, and weeks against the BOAT International published cases set out in chapter 1. A position on releasing prime-season weeks (mid-July to mid-August in the Mediterranean) is what the published case-study yields rest on."
     }
   ],
   "08-motor-versus-sail": [

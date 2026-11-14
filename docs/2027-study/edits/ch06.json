@@ -1,0 +1,939 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "Where ownership cost concentrates, where ownership quality is renewed, and where the owner-yard relationship is most often dysfunctional.",
+    "new": "Where ownership cost concentrates, where the yacht’s condition is renewed, and where the relationship between owner and yard is most often tested. The chapter also covers the alternative to a refit: selling the yacht.",
+    "kind": "selling",
+    "reason": "Standfirst names the new selling section; 'most often dysfunctional' was an unsupported generalisation"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Refit is where ownership cost concentrates, ownership quality is renewed, and the relationship between owner, yard, and project manager is most often dysfunctional.",
+    "new": "Refit is where ownership cost concentrates, where the yacht’s condition is renewed, and where the relationship between owner, yard and project manager is most often tested.",
+    "kind": "line",
+    "reason": "Unsupported generalisation about owner-yard relationships softened"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and the depreciation profile of the post-refit hull versus the alternative.",
+    "new": "and how the post-refit yacht will depreciate against the alternative.",
+    "kind": "line",
+    "reason": "'Profile' made concrete"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the transformational refit on a known hull is a third path that broker conversations rarely surface.",
+    "new": "the transformational refit on a known hull is a third path worth examining before the new-build contract is signed.",
+    "kind": "line",
+    "reason": "Fairness flag 21: unsupported claim about broker conversations"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "A third option, less considered, is the transformational ref"
+    },
+    "new": {
+      "type": "h2",
+      "text": "Selling the yacht"
+    },
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "Selling the yacht"
+    },
+    "new": "Selling is the other answer to the refit question, and it needs the same preparation. The Refit Advisory Group asks owners to decide early how long they will keep the yacht, because selling in two years, keeping her for ten, or passing her on each calls for a different level of investment. A yacht approaching her five-year class survey is sold with that work ahead of her. Chapter 4 notes that a pre-purchase survey commonly misses forthcoming class survey costs, so a well-advised buyer asks about them directly. A seller with the class status and expected scope in writing answers with documents rather than leaving the buyer to estimate.",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "Selling is the other answer to the refit question, and it ne"
+    },
+    "new": "Records are part of what is sold. In the group’s words, “Good records also have resale value. A yacht with a complete history surveys better, sells faster and needs less expensive exploratory work at her next refit.” The papers this chapter recommends for a refit serve a sale as well: the condition record, the Deferred Items Register, class and flag papers, as-built drawings and manuals, and the final account of the last yard period. Chapter 4 lists the full maintenance history among what a pre-purchase survey commonly misses; a seller who supplies it closes that gap.",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "Records are part of what is sold. In the group’s words, “Goo"
+    },
+    "new": "Most sellers appoint a broker under a central agency agreement, a fixed-term and exclusive mandate under which one broker markets the yacht and other brokers introduce buyers through it. MYBA publishes a standard form. Clyde & Co’s Guide to Superyacht Law (fourth edition) names three terms to look for: the minimum marketing activity the broker commits to, the commission payable after the agreement ends, and the governing law, noting that agreements governed by Florida law can be tough on a seller. The seller’s own lawyer should settle how long commission after termination runs and which buyers it covers.",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "Most sellers appoint a broker under a central agency agreeme"
+    },
+    "new": "The seller pays the commission from the proceeds. Chapter 3 sets out the two norms in use: on a EUR 28 million sale, about EUR 1.7 million under the MYBA sliding scale and EUR 2.8 million under the US flat 10 percent. Where another broker introduces the buyer, that broker is paid from the seller’s commission, typically half of it or a little less. Sellers do not always know which norm applies, so the scale and any split belong in the listing agreement. If the central agent also finds the buyer, it acts for both sides. The book’s standard for that, as for any commission, is written disclosure of the payment and the role (chapter 3).",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "The seller pays the commission from the proceeds. Chapter 3 "
+    },
+    "new": "Price governs time on market. Northrop & Johnson’s figures for the third quarter of 2026 show that yachts of 24m and above that sold had been listed for an average of 445 days. Asking prices were cut 1,949 times in the first nine months of the year, and the heaviest average cuts, 31.1 percent, fell on yachts aged 25 to 29 years. Chapter 2 explains what these figures measure. A buyer’s adviser reads a listing’s time on market and its price cuts against them, and the seller should price with the same figures in hand.",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "Price governs time on market. Northrop & Johnson’s figures f"
+    },
+    "new": "The sale contract is usually the MYBA Memorandum of Agreement, described from the buyer’s side in chapter 4, and it binds the seller in the same terms. The buyer pays a deposit, typically 10 percent, on signing. The seller’s warranties are narrow. Andrew Charlier of HFW describes them as the right to sell and delivery free of mortgages, liens and other claims, with exclusion clauses ruling out any warranty on condition beyond what the agreement states. Liens are discharged before closing (BOAT International, September 2025). Under the 2021 MYBA E-MoA the seller also warrants that no undischarged tax or VAT liability has been incurred (Penningtons Manches Cooper, April 2022), so the evidence of the yacht’s VAT status should be ready before listing. The warranties are usually backed by a guarantee, in a form MYBA provides, from the beneficial owner or a company on its behalf; Ezio Dal Maso of Stephenson Harwood notes that its scope, cap and expiry are settled deal by deal (September 2026).",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "The sale contract is usually the MYBA Memorandum of Agreemen"
+    },
+    "new": "Where the yacht is owned through a company, the buyer can buy the yacht or the company. Charlier notes that buying the company means taking on all its liabilities, and that most buyers decide it is cleaner to buy the yacht as an asset through their own structure. A seller who plans to sell the company should expect that preference, and take tax advice on both routes before heads of terms are agreed.",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "Where the yacht is owned through a company, the buyer can bu"
+    },
+    "new": "The seller’s team follows the same rule as the buyer’s. The seller’s own lawyer reviews the listing agreement and the MOA, and an independent adviser paid only by the seller can assemble the records, the class position and the pricing evidence before the yacht is listed.",
+    "kind": "selling",
+    "reason": "New section 'Selling the yacht' (G-selling-plan.md), sourced from the book and published legal commentary"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A five-year survey or major refit typically runs 5 to 15 percent of insured hull value, depending on scope. Working ranges per metre per year, derived from a practitioner project archive of more than 30 managed refit projects:",
+    "new": "A five-year survey or major refit typically runs 5 to 15 percent of insured hull value, depending on scope. The working ranges per metre below come from the archive of more than 30 refit projects managed by Foreland Marine, the publisher of this reference. Annual maintenance is a yearly cost; the two refit figures are the cost of the project.",
+    "kind": "fact",
+    "reason": "C16: per-metre figures were labelled 'per year' but the refit bands are project totals; archive named"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Annual maintenance: EUR 2,000 to 8,000 per metre. Mid-life refit: EUR 10,000 to 30,000 per metre. Major structural refit: EUR 40,000 to 100,000+ per metre.",
+    "new": "Annual maintenance: EUR 2,000 to 8,000 per metre a year. Mid-life refit: EUR 10,000 to 30,000 per metre for the project. Major structural refit: EUR 40,000 to 100,000 or more per metre for the project.",
+    "kind": "fact",
+    "reason": "C16: unit stated for each band"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A 50m yacht with a major structural refit therefore sits in the EUR 2 million to EUR 5 million range, with USD 5 million to 10 million being typical for full-scope projects involving extension, re-engining, or substantial cosmetic and systems renewal.",
+    "new": "On a 50m yacht a major structural refit therefore costs EUR 2 million to EUR 5 million for the project (50 × EUR 40,000 to 100,000). Full-scope projects involving extension, re-engining, or substantial cosmetic and systems renewal sit at the top of that band and above it, typically USD 5 million to 10 million.",
+    "kind": "fact",
+    "reason": "C16: project total shown with its arithmetic"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "These numbers are well-evidenced from project archives but not from published yard rate cards. MB92 and Pendennis do not publish day rates. The numbers in this chapter are within the working ranges that practitioners across the industry would recognise.",
+    "new": "These figures come from project archives, not published rate cards; MB92 and Pendennis do not publish day rates.",
+    "kind": "line",
+    "reason": "Unverifiable assurance removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "The variance between a refit on budget and one that runs hot"
+    },
+    "kind": "structure",
+    "reason": "Unattributed pull quote restating para 22 (fairness flag 22)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A well-maintained hull is a refit decision made in advance and prosecuted in writing.",
+    "new": "Racing in the Caribbean.",
+    "kind": "line",
+    "reason": "Maxim in caption replaced with description"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Industry consensus is that refit projects routinely run 30 to 50 percent over original quoted scope, with poor specification and weak project management the dominant drivers. Dockwalk documented a sixfold overrun on a 1967 Camper & Nicholsons refit (USD 1 million budget, USD 6 million actual, an extreme case but illustrative). Contingency reserves practitioners build reflect this: 10 to 15 percent for known scope, 15 to 20 for opened-up vessels, 20 to 25 for first-time-opened older hulls.",
+    "new": "Industry consensus is that refit projects routinely run 30 to 50 percent over the original quote. Dockwalk documented an extreme case, a sixfold overrun on a 1967 Camper & Nicholsons refit (USD 1 million budget, USD 6 million actual).",
+    "kind": "fact",
+    "reason": "C15: overrun cause moved to para 19 so the two paragraphs no longer contradict"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. A yard quote based on visual inspection cannot anticipate everything that will be found when the deck is opened, the engine room stripped, or the bilges scrubbed. The question is not whether the refit will run over, but by how much, and whether the contract and owner-side representation contain it within reason.",
+    "new": "The overrun has two sources. Part of it is work that could not be seen when the quote was made: a yard quote based on visual inspection cannot anticipate everything found when the deck is opened, the engine room stripped, or the bilges scrubbed. That part is real cost, and no contract removes it. The rest comes from loose specification and weak project management, which let unpriced work and changes of mind through without control. Maltby describes the overrun the same way, as partly a pricing problem and partly a contract problem. The first part is budgeted for; the second is contained.",
+    "kind": "fact",
+    "reason": "C15: overrun split into hidden work and uncontained work, consistent with Maltby's answer and para 22"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "06-refit",
+      "startsWith": "The overrun has two sources. Part of it is work that could n"
+    },
+    "new": "Practitioners size the contingency reserve for the first part: 10 to 15 percent for known scope, 15 to 20 for opened-up vessels, 20 to 25 for older hulls opened for the first time. A reserve on that scale covers a well-managed refit, which typically lands within 10 to 20 percent of the quote, but not the full 30 to 50 percent pattern. On a EUR 3.2 million quote, a 20 percent reserve is EUR 640,000, while a 40 percent overrun is EUR 1.28 million, leaving EUR 640,000 unfunded.",
+    "kind": "fact",
+    "reason": "C15: contingency reconciled with the overrun range, arithmetic shown"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A well-managed refit at a competent yard with experienced owner-side representation typically lands within 10 to 20 percent of original quote, while a poorly-managed one lands at the extremes; the variance is mostly explained by the quality of the owner’s representation.",
+    "new": "In the publisher’s project archive, a well-managed refit at a competent yard with experienced owner-side representation typically lands within 10 to 20 percent of the original quote, and a poorly managed one at the extremes. Representation is one factor among several, with the yard, the contract and the state of the hull.",
+    "kind": "fact",
+    "reason": "Fairness flag 22: unsourced claim in the publisher's line of business attributed and qualified"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Two yard models, both worth understanding",
+    "new": "Two yard models",
+    "kind": "line",
+    "reason": "Heading trimmed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "when one trade’s work interacts with another’s and something fails, each can point at the other",
+    "new": "when one trade’s work interacts with another’s and something goes wrong, each can point at the other",
+    "kind": "line",
+    "reason": "Author decision 5: 'fails' removed near yard context"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Most large-yacht refits land at one of the named yards below.",
+    "new": "Most large-yacht refits land at a few dozen yards in those regions. The data spread for this chapter lists them by region, with location, yard model, capacity and ownership. Ownership has moved recently: Squircle Capital took full ownership of MB92 in March 2026, Amico & Co joined the Amico Marine group in May 2026, and Rybovich belongs to Safe Harbor Marinas, part of Blackstone Infrastructure since April 2025.",
+    "kind": "structure",
+    "reason": "Author decision 3: yard directory moved to the data spread; ownership facts other chapters point to are kept here"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Western Mediterranean"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "MB92 Group. Barcelona, La Ciotat"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Astilleros de Mallorca. Palma. Full-service"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "STP Palma. Palma de Mallorca. Service-yard"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Marina Port Vell. Barcelona. Mixed"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Monaco Marine. Saint Mandrier"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "IMS Shipyard. La Seyne"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Lusben. Viareggio and Livorno"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Amico & Co. Genoa"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Cantiere Rossini. Marina di Carrara"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "The Viareggio cluster also includes"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Northern Europe"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Pendennis Shipyard. Falmouth"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Damen Shipyards Group. Vlissingen"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Royal Huisman, Vitters, Holland Jachtbouw"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Bläsing Yacht Service"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Eastern Mediterranean"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "RMK Marine. Tuzla"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Bilgin Yachts. Tuzla"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Sirena Marine. Bursa"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Antalya Free Zone."
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "US Eastern Seaboard"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "The US accounts for 45 to 50 percent"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Rybovich. West Palm Beach"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Lauderdale Marine Center (LMC). Fort Lauderdale"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Bradford Marine. Fort Lauderdale"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Derecktor Shipyards. Fort Pierce"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Roscioli Yachting Center. Dania Beach"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Merrill-Stevens Dry Dock. Miami"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Front Street Shipyard. Belfast"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Newport Shipyard. Newport"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Lyman-Morse. Thomaston"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Hodgdon Yachts. East Boothbay"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Jarrett Bay Boatworks. Beaufort"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "Capacity tightness"
+    },
+    "kind": "structure",
+    "reason": "Author decision 3: yard listing relocated to the ch06 data spread"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Superyacht Group’s 2025 expert roundtable (Manuel Di Tillio at Amico & Co, Gianni Paladino at Lusben, Txema Rubio at MB92) is the cleanest paywalled source on Mediterranean capacity tightness. The public-source signal is consistent: fleet up 38.7 percent over the past decade against modestly expanding refit capacity.",
+    "new": "The Superyacht Group’s 2025 expert roundtable (Manuel Di Tillio at Amico & Co, Gianni Paladino at Lusben, Txema Rubio at MB92) discussed Mediterranean capacity in detail; it is paywalled. Public figures point the same way: the fleet is up 38.7 percent over the past decade, against modest growth in refit capacity.",
+    "kind": "line",
+    "reason": "Plainer wording"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "For a first-time owner planning refit in 2028 or 2029, slot booking begins 12 to 18 months ahead. The cheapest yard is rarely the best decision; the yard most aligned with the work, with track record on similar yachts and a project manager who has handled comparable scope, is.",
+    "new": "A first-time owner planning a major refit in 2028 or 2029 should therefore book as far ahead as the chosen yard’s order book runs: up to 24 months at the top European yards, less at US yards and for smaller scope. The cheapest yard is rarely the best choice. The better one has a track record on similar yachts and a project manager who has handled comparable scope.",
+    "kind": "fact",
+    "reason": "C17: booking advice now follows the 12 to 24 month order book stated in the previous paragraph"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "is the most consequential VAT structure for refit in EU waters.",
+    "new": "is the principal VAT procedure for refit in EU waters.",
+    "kind": "line",
+    "reason": "'Most consequential' kept for ch07 2 only; substance unchanged (lawyer-reviewed paragraph)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Maltese leasing now bases VAT on documented use inside and outside EU waters rather than on length. The French Commercial Exemption eliminates VAT on refit if its conditions are met; the Italian commercial exemption works similarly. The decision should be informed by a yacht lawyer with VAT specialism, not the yard’s preferred counsel.",
+    "new": "The French Commercial Exemption also removes VAT on refit work where its conditions are met. Those conditions, and Maltese and Italian leasing, are set out in chapter 4. The choice should rest on advice from a yacht lawyer with VAT expertise who is not the yard’s preferred counsel.",
+    "kind": "repetition",
+    "reason": "VAT regimes have their single home in ch04 22; FCE-on-refit clause and the counsel sentence kept"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The insurance interaction",
+    "new": "Insurance during the works",
+    "kind": "line",
+    "reason": "Heading now names the refit-specific subject"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "The August 2024 sinking of Bayesian off Sicily"
+    },
+    "kind": "repetition",
+    "reason": "Insurance market and Bayesian have their home in ch07"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "The earlier hardening (AIG cited 50 to 70 percent"
+    },
+    "kind": "repetition",
+    "reason": "Hull rates and cycle have their home in ch07; removes C10 from ch06"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "For a refit project, the relevant insurance is builder’s risk during the works, not the cruising hull policy. Builder’s risk is taken out by the yard with the buyer’s interest noted, covering loss or damage during construction up to delivery.",
+    "new": "The hull insurance market, including its response to the loss of Bayesian in 2024 and current rates, is covered in chapter 7. During a refit the relevant insurance is builder’s risk, not the cruising hull policy. Builder’s risk is taken out by the yard with the owner’s interest noted, covering loss or damage during the works up to redelivery.",
+    "kind": "repetition",
+    "reason": "One-line pointer to ch07; builder's risk kept here as its single home; 'buyer' corrected to 'owner'"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the deductibles and who bears them, and cover in the water,",
+    "new": "the exclusions (faulty workmanship, defective design, pre-existing damage, delay), the deductibles and who bears them, and cover in the water,",
+    "kind": "fact",
+    "reason": "Builder's risk: exclusions added from the Maltby answer so ch06 is the complete home"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The disciplined specification cites the manufacturer’s data sheet, the relevant ISO standard, or both. Nine specifics every serious specification should name:",
+    "new": "A usable specification cites the manufacturer’s data sheet, the relevant ISO standard, or both. Nine items it should name:",
+    "kind": "line",
+    "reason": "'Discipline' and 'serious' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Skipping this is the most common cause of premature paint failure in the year-three to year-seven window.",
+    "new": "Skipping it is a common cause of premature paint breakdown between years three and seven.",
+    "kind": "line",
+    "reason": "Unsourced 'most common' softened"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The disciplined contract names each in writing",
+    "new": "A well-drafted contract names each in writing",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Three disciplines distinguish well-managed refits from disasters.",
+    "new": "Three habits separate well-managed refits from the rest.",
+    "kind": "line",
+    "reason": "'Discipline' and 'disasters' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "First, scope discipline. Define the work",
+    "new": "First, scope. Define the work",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Scope discipline includes the tonnage.",
+    "new": "The scope includes the tonnage.",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Refit Advisory Group adds four habits to scope discipline.",
+    "new": "The Refit Advisory Group adds four habits to the scope work.",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " The yard delivers when the milestone delivers, not when the calendar runs out.",
+    "new": "",
+    "kind": "line",
+    "reason": "Closing one-line declaration cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The discipline of weekly reporting, with photographs",
+    "new": "Weekly reporting, with photographs",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A note on titles. On a small refit a single individual carries both the owner’s representative and the project manager roles.",
+    "new": "A note on titles. On a small refit one person carries both the owner’s representative role (the independent adviser defined in chapter 3) and the project manager role.",
+    "kind": "fact",
+    "reason": "Author decision 2: pointer to the ch03 definition"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Either arrangement works; the test is that both roles are held by people paid only by the owner.",
+    "new": "Either arrangement works, provided both roles are paid by the owner and any other payment either receives is disclosed to the owner in writing (chapter 3).",
+    "kind": "fact",
+    "reason": "Author decision 1: written-disclosure standard"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The refit is where ownership quality is renewed. It is also where the owner’s representation choice has its sharpest effect on outcome relative to fee. A competent representative on a EUR 5 million refit, charging EUR 200,000 to EUR 400,000, will save the owner the fee several times over through scope discipline alone.",
+    "new": "A representative on a EUR 5 million refit typically charges EUR 200,000 to EUR 400,000, or 4 to 8 percent of project value. In this chapter’s case, an adviser engaged late in the project for EUR 95,000 recovered about EUR 410,000 under the yard’s warranty.",
+    "kind": "fact",
+    "reason": "Fairness flag 23: unsourced 'save the fee several times over' replaced by the fee range and the case figures"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "The 30 to 50 percent overrun is what the work actually costs against an initial scope built on imperfect information, not a project management failure. Capacity at dominant yards is tightening. The numbers to plan against.",
+    "new": "Refit overruns of 30 to 50 percent combine work that could not be seen at quote with changes that loose specification and weak management let through. Capacity at the main yards is tightening. The figures below are the ones to plan against.",
+    "kind": "fact",
+    "reason": "C15 aligned in the spread standfirst"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Refit cost benchmarks, per metre per year",
+    "new": "Refit cost benchmarks, per metre",
+    "kind": "fact",
+    "reason": "C16: unit corrected"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Practitioner working ranges across more than 30 managed refit projects.",
+    "new": "Practitioner working ranges across more than 30 managed refit projects. Maintenance is a yearly cost; the refit figures are per project.",
+    "kind": "fact",
+    "reason": "C16: unit stated"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"EUR per metre per year\"",
+    "new": "\"EUR per metre\"",
+    "kind": "fact",
+    "reason": "C16: unit corrected"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Annual maintenance\"",
+    "new": "\"Annual maintenance, per year\"",
+    "kind": "fact",
+    "reason": "C16"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Mid-life refit\"",
+    "new": "\"Mid-life refit, per project\"",
+    "kind": "fact",
+    "reason": "C16"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "\"Major structural refit\"",
+    "new": "\"Major structural refit, per project\"",
+    "kind": "fact",
+    "reason": "C16"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "What the work actually costs",
+    "new": "Hidden work plus uncontained changes",
+    "kind": "fact",
+    "reason": "C15 aligned"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "{\n        \"type\": \"h2\",\n        \"text\": \"Dominant refit yards, by geography\"\n      },\n      {\n        \"type\": \"table\",\n        \"caption\": \"Top yards typically booked 12 to 24 months ahead for major refits. Geography concentrates in four clusters: Western Mediterranean, Northern Europe, Eastern Mediterranean, and the US Eastern Seaboard.\",\n        \"head\": [\n          \"Yard\",\n          \"Location\",\n          \"Model\",\n          \"Note\"\n        ],\n        \"rows\": [\n          [\n            \"MB92 Group\",\n            \"Barcelona; La Ciotat\",\n            \"Full-service\",\n            \"Western Med leader; owns paint specialist GYG; Squircle Capital reached 100% ownership March 2026\"\n          ],\n          [\n            \"Astilleros de Mallorca\",\n            \"Palma\",\n            \"Full-service\",\n            \"78,000 sq m; 1,700 t haul; 120 m outfit quay; 250+ yachts/year\"\n          ],\n          [\n            \"STP Palma\",\n            \"Palma\",\n            \"Service\",\n            \"Largest non-full-service refit in Western Med by throughput\"\n          ],\n          [\n            \"Marina Port Vell\",\n            \"Barcelona\",\n            \"Mixed\",\n            \"OneOcean group ownership\"\n          ],\n          [\n            \"Monaco Marine\",\n            \"Saint Mandrier, Beaulieu, Antibes, La Ciotat\",\n            \"Full-service\",\n            \"Multi-site French; strong on 30–60 m\"\n          ],\n          [\n            \"IMS Shipyard\",\n            \"La Seyne sur Mer / Toulon\",\n            \"Full-service\",\n            \"220 m drydock; recently expanded\"\n          ],\n          [\n            \"Lusben\",\n            \"Viareggio / Livorno\",\n            \"Full-service\",\n            \"Italian reference; 210 m drydock; 2,400 t syncrolift (2024–2025)\"\n          ],\n          [\n            \"Amico & Co\",\n            \"Genoa\",\n            \"Full-service\",\n            \"Italian refit, paint, mechanical\"\n          ],\n          [\n            \"Cantiere Rossini\",\n            \"Marina di Carrara\",\n            \"Full-service\",\n            \"Scaled to superyacht refit over past decade\"\n          ],\n          [\n            \"Pendennis Shipyard\",\n            \"Falmouth, UK\",\n            \"Full-service\",\n            \"~18 projects 2024 vs avg 10; strong on sailing\"\n          ],\n          [\n            \"Damen Shipyards\",\n            \"Vlissingen, NL\",\n            \"Full-service\",\n            \"Refit alongside new build\"\n          ],\n          [\n            \"Lürssen Refit\",\n            \"Germany\",\n            \"Full-service\",\n            \"Largest yachts\"\n          ],\n          [\n            \"RMK Marine\",\n            \"Tuzla, Istanbul\",\n            \"Full-service\",\n            \"~80 m capacity; strong reputation on cost\"\n          ],\n          [\n            \"Bilgin Yachts\",\n            \"Tuzla, Istanbul\",\n            \"Full-service\",\n            \"Builder with refit on own and third-party hulls\"\n          ],\n          [\n            \"Rybovich\",\n            \"West Palm Beach, FL\",\n            \"Full-service\",\n            \"US reference; Safe Harbor Marinas owned\"\n          ],\n          [\n            \"Lauderdale Marine Center\",\n            \"Fort Lauderdale\",\n            \"Service\",\n            \"Largest US East Coast refit by throughput\"\n          ],\n          [\n            \"Bradford Marine\",\n            \"Fort Lauderdale / Grand Bahama\",\n            \"Full-service\",\n            \"US refit, repaint, mechanical\"\n          ],\n          [\n            \"Derecktor Shipyards\",\n            \"Fort Pierce, FL\",\n            \"Full-service\",\n            \"Expanded substantially over past five years\"\n          ],\n          [\n            \"Roscioli Yachting Center\",\n            \"Dania Beach, FL\",\n            \"Full-service\",\n            \"Mid-tier; strong on 30–50 m\"\n          ],\n          [\n            \"Merrill-Stevens Dry Dock\",\n            \"Miami\",\n            \"Full-service\",\n            \"Historic, rebuilt and expanded\"\n          ],\n          [\n            \"Front Street Shipyard\",\n            \"Belfast, ME\",\n            \"Full-service\",\n            \"US Northeast; refit and new build to ~60 m\"\n          ],\n          [\n            \"Newport Shipyard\",\n            \"Newport, RI\",\n            \"Full-service\",\n            \"Narragansett Bay; active in New England racing season\"\n          ],\n          [\n            \"Lyman-Morse\",\n            \"Thomaston, ME\",\n            \"Builder / refit\",\n            \"Strong on sailing and composite\"\n          ],\n          [\n            \"Hodgdon Yachts\",\n            \"East Boothbay, ME\",\n            \"Builder / refit\",\n            \"Largest US-built sailing\"\n          ],\n          [\n            \"Jarrett Bay Boatworks\",\n            \"Beaufort, NC\",\n            \"Full-service\",\n            \"Sportfish + motor under 40 m\"\n          ]\n        ],\n        \"sourceLine\": \"Yard published statements; Superyacht Group 2025 expert roundtable (paywalled); BOAT International coverage; practitioner working knowledge.\"\n      }",
+    "new": "{\n        \"type\": \"h2\",\n        \"text\": \"Refit yards, by region\"\n      },\n      {\n        \"type\": \"note\",\n        \"text\": \"The over-30 m refit market is concentrated in four regions: the Western Mediterranean (Spain, France, Italy), Northern Europe (UK, Netherlands, Germany), the Eastern Mediterranean (Turkey) and the US Eastern Seaboard. Top European yards are typically booked 12 to 24 months ahead for major refits; US East Coast lead times are shorter but tightening, particularly at Rybovich and Derecktor.\"\n      },\n      {\n        \"type\": \"table\",\n        \"caption\": \"Western Mediterranean.\",\n        \"head\": [\n          \"Yard\",\n          \"Location\",\n          \"Model\",\n          \"Note\"\n        ],\n        \"rows\": [\n          [\n            \"MB92 Group\",\n            \"Barcelona; La Ciotat and Vallauris Golfe-Juan, France; Neom, Saudi Arabia\",\n            \"Full-service\",\n            \"The dominant full-service Western Mediterranean operator. Owns paint specialist GYG (parent of Pinmar). CEO Pepe García-Aubert. Squircle Capital majority shareholder since 2019, 100 percent since March 2026. In August 2026 announced more than EUR 40 m of works at Barcelona, 2026 to 2028, including dry-dock renewal and a 680 t Travelift. Equipped for Spanish IPR\"\n          ],\n          [\n            \"Astilleros de Mallorca\",\n            \"Palma\",\n            \"Full-service; sections run as service yard\",\n            \"78,000 sq m; 1,700 t haul; 120 m outfitting quay; over 250 yachts a year. Reference Spanish yard for over-50 m refits. Equipped for Spanish IPR\"\n          ],\n          [\n            \"STP Palma (Servicios Técnicos Portuarios)\",\n            \"Port of Palma de Mallorca\",\n            \"Service\",\n            \"Owner contracts trades directly through the project manager. Largest non-full-service refit facility in the Western Mediterranean\"\n          ],\n          [\n            \"Marina Port Vell\",\n            \"Barcelona\",\n            \"Mixed full-service and service yard\",\n            \"OneOcean group\"\n          ],\n          [\n            \"Monaco Marine\",\n            \"Saint Mandrier, Beaulieu, Antibes, La Ciotat\",\n            \"Full-service\",\n            \"Multi-site French; particularly strong on 30–60 m\"\n          ],\n          [\n            \"IMS Shipyard\",\n            \"La Seyne sur Mer (Toulon)\",\n            \"Full-service\",\n            \"220 m drydock; recently expanded\"\n          ],\n          [\n            \"Lusben\",\n            \"Viareggio and Livorno\",\n            \"Full-service\",\n            \"76,000 sq m; 210 m drydock; 2,000 t syncrolift; Livorno expanded with a 2,400 t syncrolift, 2024–2025. Capacity 20–140 m. Reference Italian full-service yard for large hulls\"\n          ],\n          [\n            \"Amico & Co\",\n            \"Genoa\",\n            \"Full-service\",\n            \"Strong on refit, paint and mechanical work. Part of the Amico Marine group since May 2026. CEO Bruno Guglielmini\"\n          ],\n          [\n            \"Cantiere Rossini\",\n            \"Marina di Carrara\",\n            \"Full-service\",\n            \"Scaled into superyacht refit over the past decade\"\n          ],\n          [\n            \"Codecasa; Picchiotti\",\n            \"Viareggio\",\n            \"Builders with refit capacity\",\n            \"Part of the Viareggio refit cluster alongside Lusben\"\n          ]\n        ]\n      },\n      {\n        \"type\": \"table\",\n        \"caption\": \"Northern Europe.\",\n        \"head\": [\n          \"Yard\",\n          \"Location\",\n          \"Model\",\n          \"Note\"\n        ],\n        \"rows\": [\n          [\n            \"Pendennis Shipyard\",\n            \"Falmouth, UK\",\n            \"Full-service\",\n            \"CEO Mike Carr. Around 18 projects in 2024, above the typical annual run rate of 10; particularly strong on sailing yacht refits\"\n          ],\n          [\n            \"Damen Shipyards Group\",\n            \"Vlissingen and other Dutch sites\",\n            \"Full-service\",\n            \"Refit alongside new build\"\n          ],\n          [\n            \"Royal Huisman, Vitters, Holland Jachtbouw, Royal Van Lent (Feadship)\",\n            \"Netherlands\",\n            \"Builder / refit\",\n            \"Take their own hulls back for refit; limited third-party capacity, but the standard for owners of those hulls\"\n          ],\n          [\n            \"Bläsing Yacht Service / Lürssen Refit\",\n            \"Germany\",\n            \"Full-service\",\n            \"Refit for the largest yachts\"\n          ]\n        ]\n      },\n      {\n        \"type\": \"table\",\n        \"caption\": \"Eastern Mediterranean.\",\n        \"head\": [\n          \"Yard\",\n          \"Location\",\n          \"Model\",\n          \"Note\"\n        ],\n        \"rows\": [\n          [\n            \"RMK Marine\",\n            \"Tuzla, Istanbul\",\n            \"Full-service\",\n            \"To around 80 m; strong practitioner reputation on cost\"\n          ],\n          [\n            \"Bilgin Yachts\",\n            \"Tuzla, Istanbul\",\n            \"Builder / refit\",\n            \"Refit on its own and third-party hulls\"\n          ],\n          [\n            \"Sirena Marine\",\n            \"Bursa\",\n            \"Builder / refit\",\n            \"Particularly Turkish-built hulls\"\n          ],\n          [\n            \"Antalya Free Zone\",\n            \"Antalya\",\n            \"Several facilities\",\n            \"Mid-tier facilities serving the Eastern Mediterranean and Black Sea fleets\"\n          ]\n        ]\n      },\n      {\n        \"type\": \"note\",\n        \"text\": \"The US accounted for 45 to 50 percent of brokerage transactions in 2025 (BOAT International), and US refit infrastructure has expanded substantially over the past decade.\"\n      },\n      {\n        \"type\": \"table\",\n        \"caption\": \"US Eastern Seaboard.\",\n        \"head\": [\n          \"Yard\",\n          \"Location\",\n          \"Model\",\n          \"Note\"\n        ],\n        \"rows\": [\n          [\n            \"Rybovich\",\n            \"West Palm Beach, FL\",\n            \"Full-service\",\n            \"Reference US yard for large-yacht refit, repaint and mechanical work. Owned by Safe Harbor Marinas, part of Blackstone Infrastructure since April 2025\"\n          ],\n          [\n            \"Lauderdale Marine Center (LMC)\",\n            \"Fort Lauderdale, FL\",\n            \"Service\",\n            \"Service-yard model at scale; largest US East Coast facility by throughput\"\n          ],\n          [\n            \"Bradford Marine\",\n            \"Fort Lauderdale, FL; Grand Bahama\",\n            \"Full-service\",\n            \"Refit, repaint, mechanical\"\n          ],\n          [\n            \"Derecktor Shipyards\",\n            \"Fort Pierce, FL\",\n            \"Full-service\",\n            \"Substantially expanded over five years; recent projects include the largest refit haul-outs on the East Coast\"\n          ],\n          [\n            \"Roscioli Yachting Center\",\n            \"Dania Beach, FL\",\n            \"Full-service\",\n            \"Mid-tier; strong on 30–50 m\"\n          ],\n          [\n            \"Merrill-Stevens Dry Dock\",\n            \"Miami, FL\",\n            \"Full-service\",\n            \"Historic yard, recently rebuilt and expanded\"\n          ],\n          [\n            \"Front Street Shipyard\",\n            \"Belfast, ME\",\n            \"Full-service\",\n            \"Refit and new builds to about 60 m; reference yard for the Northeast US\"\n          ],\n          [\n            \"Newport Shipyard\",\n            \"Newport, RI\",\n            \"Full-service\",\n            \"On Narragansett Bay; particularly strong during the New England racing season\"\n          ],\n          [\n            \"Lyman-Morse\",\n            \"Thomaston, ME\",\n            \"Builder / refit\",\n            \"Strong on sailing and composite hulls\"\n          ],\n          [\n            \"Hodgdon Yachts\",\n            \"East Boothbay, ME\",\n            \"Builder / refit\",\n            \"Refit capability on the largest US-built sailing yachts\"\n          ],\n          [\n            \"Jarrett Bay Boatworks\",\n            \"Beaufort, NC\",\n            \"Refit and repaint\",\n            \"Strong on sportfish and motor yachts under 40 m\"\n          ]\n        ],\n        \"sourceLine\": \"Yard published statements; Superyacht Group 2025 expert roundtable (paywalled); BOAT International coverage; practitioner working knowledge.\"\n      }",
+    "kind": "structure",
+    "reason": "Author decision 3: yard directory relocated from essay paras 29 to 64; every yard fact kept, four regional tables"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "What to settle, before the refit contract.",
+    "new": "What to settle before the refit contract, or the sale.",
+    "kind": "selling",
+    "reason": "Title covers the new selling group"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A reference list across the four refit disciplines: whether to refit at all, yard selection, scope, and on-site discipline.\"",
+    "new": "For the refit, and for the sale if that is the better course.\"",
+    "kind": "selling",
+    "reason": "Standfirst said four disciplines for five groups; now six"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A practitioner rule of thumb: if the projected refit cost exceeds 30 percent of the yacht’s pre-refit market value, consider selling. Below that, refit is the usual path. The items below are what contains overrun.",
+    "new": "The 30 percent threshold below is a practitioner rule of thumb, not a market rule. Most items contain overrun; the last group prepares a sale.",
+    "kind": "line",
+    "reason": "Shortened to keep one A4 with the new group"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A practitioner rule of thumb. Above 30 percent, consider selling. Below, refit is the usual path.",
+    "new": "Above 30 percent, consider selling.",
+    "kind": "line",
+    "reason": "C28 settled; shortened for A4 fit"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "{\n            \"question\": \"Strategic fit of the post-refit yacht against the actual continued use case, on paper.\"\n          },\n          {\n            \"question\": \"The sale-and-replace arithmetic (depreciation, transaction cost, crew continuity) tested against the refit case.\"",
+    "new": "{\n            \"question\": \"The sale-and-replace arithmetic (depreciation, transaction cost, crew continuity) tested on paper against the refit case and the planned use.\"",
+    "kind": "line",
+    "reason": "Two items merged for A4 fit"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Yard slot booked 12 to 18 months ahead of the work.",
+    "new": "Yard slot booked as far ahead as the yard’s order book: up to 24 months at top European yards.",
+    "kind": "fact",
+    "reason": "C17"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"heading\": \"Scope discipline\"",
+    "new": "\"heading\": \"Scope\"",
+    "kind": "line",
+    "reason": "'Discipline' reduced"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A contingency reserve of 15 to 25 percent in the budget.",
+    "new": "A contingency of 10 to 25 percent, by how far the hull has been opened before.",
+    "kind": "fact",
+    "reason": "C15: matches the essay's contingency bands"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "\"detail\": \"Confirm in writing what the owner’s hull policy still covers in the yard.\"\n          }\n        ]\n      }",
+    "new": "\"detail\": \"Confirm in writing what the owner’s hull policy still covers in the yard.\"\n          }\n        ]\n      },\n      {\n        \"heading\": \"Selling\",\n        \"items\": [\n          {\n            \"question\": \"Listing agreement read by the seller’s own lawyer: term, marketing commitment, commission after it ends, governing law.\"\n          },\n          {\n            \"question\": \"Commission scale, any split with a buyer’s broker, and any dual agency set out in writing.\"\n          },\n          {\n            \"question\": \"Records, class status and VAT evidence ready; asking price set against published days on market.\"\n          },\n          {\n            \"question\": \"Seller’s warranties and any guarantee agreed with a cap and an expiry date.\"\n          }\n        ]\n      }",
+    "kind": "selling",
+    "reason": "New 'Selling' group (G-selling-plan.md)"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A printable list across the four refit disciplines: whether to refit at all, yard selection, scope definition, and on-site discipline.",
+    "new": "A printable list for the refit and the sale: whether to refit at all, yard selection, scope, payments, site presence and selling.",
+    "kind": "selling",
+    "reason": "SEO description matches the six groups"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Empirical overrun against initial budget runs 30 to 50 percent on the opened-up-vessel pattern. A contingency reserve of 15 to 25 percent included in the budget is calm planning.",
+    "new": "Overruns of 30 to 50 percent against the original quote are common. Part is work that could not be seen when the yacht was quoted, which a contingency of 10 to 25 percent covers; the rest comes from loose specification and weak project management, which the contract and the owner’s representative should contain.",
+    "kind": "fact",
+    "reason": "C15 aligned"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Yard slot booking 12 to 18 months ahead is now standard given top-yard demand. Selection is on track record, alignment, and project manager experience, not cheapest quote.",
+    "new": "Top European yards are typically booked 12 to 24 months ahead for major refits, so book as far ahead as the chosen yard’s order book runs. Select on track record with similar yachts and the project manager’s experience, not on the cheapest quote.",
+    "kind": "fact",
+    "reason": "C17 aligned"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "\"question\": \"What is Spanish Inward Processing Relief for yachts?\",\n      \"answer\": \"Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht’s departure from the EU. It is separate from temporary admission, which covers the yacht’s use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel should select the VAT structure for the specific refit scope.\"\n    }",
+    "new": "\"question\": \"What is Spanish Inward Processing Relief for yachts?\",\n      \"answer\": \"Spanish IPR (Inward Processing Relief, the régimen de perfeccionamiento activo) is the customs procedure under which a non-EU-flagged yacht can be refitted in Spain with the 21 percent VAT on the works exempt, provided the procedure is followed through to the yacht’s departure from the EU. It is separate from temporary admission, which covers the yacht’s use in EU waters and ordinary repair and maintenance but not a structural refit. Authorisation must be in place before the works begin, through the yard or an agent with the correct customs status, and compliance rests with the owner rather than the yard. If the procedure is not followed, VAT can fall due on the works and potentially on the yacht itself, with interest and penalties. The regime is widely used at MB92 Barcelona, STP Palma, and Astilleros de Mallorca. France and Italy treat refit VAT under different rules. Independent counsel should select the VAT structure for the specific refit scope.\"\n    },\n    {\n      \"question\": \"How do I sell a superyacht?\",\n      \"answer\": \"Most sellers appoint a central agent: one broker, under a fixed-term exclusive agreement, who markets the yacht while other brokers introduce buyers. The seller’s own lawyer should review that agreement, in particular the minimum marketing activity, the commission payable after it ends, and the governing law (Clyde & Co, The Guide to Superyacht Law). Before listing, assemble the maintenance records, the class status and the evidence of the yacht’s VAT position, and set the asking price against published days on market for the size band. The sale is usually made on the MYBA Memorandum of Agreement, with a deposit of typically 10 percent on signing.\"\n    },\n    {\n      \"question\": \"What does selling a yacht cost?\",\n      \"answer\": \"The main cost is the broker’s commission, paid by the seller from the proceeds. Two norms are in use: the US flat 10 percent of the sale price, and the MYBA sliding scale of 10 percent on the first 10 million, 5 percent on the second 10 million and 2.5 percent above. On a EUR 28 million sale that is EUR 2.8 million, or about EUR 1.7 million. A buyer’s broker is paid out of the seller’s commission, typically half of it or a little less. Agree the scale, any split, and any commission payable after the agreement ends in writing before listing. The seller’s own legal fees come on top.\"\n    },\n    {\n      \"question\": \"What warranties does a seller give when selling a yacht?\",\n      \"answer\": \"Under the MYBA Memorandum of Agreement the seller’s warranties are narrow: the right to sell, and delivery free of mortgages, liens and other claims, with exclusion clauses ruling out warranties on condition beyond what the agreement states (Andrew Charlier of HFW, in BOAT International, September 2025). The 2021 MYBA E-MoA also has the seller warrant that no undischarged tax or VAT liability has been incurred. The warranties are usually backed by a guarantee from the beneficial owner or a company on its behalf. Its scope, cap and expiry are negotiated, so the seller’s lawyer should agree them before signing.\"\n    }",
+    "kind": "selling",
+    "reason": "Three selling FAQs (G-selling-plan.md)"
+  },
+  {
+    "file": "content/sections.json",
+    "old": "When to refit and when to sell. Yard selection, scope discipline, and the budget overrun pattern that defines the market.",
+    "new": "When to refit and when to sell, and what a sale involves. Yard selection, scope, and the overrun pattern that runs through refit budgets.",
+    "kind": "selling",
+    "reason": "Standfirst covers the selling section"
+  },
+  {
+    "file": "content/cases.json",
+    "deleteParagraph": {
+      "slug": "06-refit",
+      "startsWith": "The 30 to 50 percent overrun is what the work usually costs."
+    },
+    "kind": "structure",
+    "reason": "Blockquote attributed to the lead essay no longer appears there (C15) and restated the essay"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "The 100 percent overrun is at the high end of practitioner experience. It is not unique. It is the pattern when scope is loosely specified, milestone payments are tied to calendar rather than deliverables, and the owner’s representative is not paid by the owner.",
+    "new": "The 100 percent overrun is at the high end of practitioner experience, but not unique. It follows when scope is loosely specified, milestone payments are tied to the calendar rather than to deliverables, and oversight is provided free by a party the owner does not pay.",
+    "kind": "line",
+    "reason": "'It is not X. It is Y' removed; matches the case facts and the disclosure standard"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "identified the three structural failures: scope specification at contract, milestone payment structure, and representation discipline.",
+    "new": "identified three weaknesses: scope specification at contract, the milestone payment structure, and the representation.",
+    "kind": "line",
+    "reason": "'Failures' and 'discipline' reduced"
+  },
+  {
+    "file": "content/cases.json",
+    "old": "Practitioner contingency reserves of 15 to 25 percent are not pessimism. They are what opened-up vessels typically need.",
+    "new": "Practitioner contingency reserves of 15 to 25 percent are sized for what opened-up vessels typically need.",
+    "kind": "line",
+    "reason": "'Not X. Y' construction removed"
+  },
+  {
+    "file": "content/guest-opinions.json",
+    "old": "Spanish Inward Processing Relief suspends 21 percent VAT on a refit for a non-EU flagged yacht.",
+    "new": "Spanish Inward Processing Relief allows a non-EU flagged yacht to be refitted in Spain without the 21 percent VAT on the works.",
+    "kind": "fact",
+    "reason": "C9: editorial question text now matches ch04 22 and ch06 70 (answer unchanged)"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "The central agent’s incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months.\",\n    relatedChapters: [\"03-how-the-industry-works\"],",
+    "new": "The central agent’s incentive is to clear the listing, which can produce pressure for price reductions on hulls that have been listed beyond six months. For the seller, Clyde & Co’s Guide to Superyacht Law names three terms to check: the minimum marketing activity, the commission payable after the agreement ends, and the governing law.\",\n    relatedChapters: [\"03-how-the-industry-works\", \"06-refit\"],",
+    "kind": "selling",
+    "reason": "Seller's side of the central agency agreement; links ch06"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "the form’s defaults often favour the seller’s broker.\",",
+    "new": "the form’s defaults often favour the seller’s broker. For the seller, the warranties are narrow: the right to sell and delivery free of mortgages, liens and other claims, and, in the 2021 MYBA E-MoA, no undischarged tax or VAT liability.\",",
+    "kind": "selling",
+    "reason": "Seller's side of the MOA"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "    relatedChapters: [\"04-acquisition-process\"],\n    relatedTerms: [\"myba\", \"pre-purchase-survey\", \"sea-trial\"],",
+    "new": "    relatedChapters: [\"04-acquisition-process\", \"06-refit\"],\n    relatedTerms: [\"myba\", \"pre-purchase-survey\", \"sea-trial\"],",
+    "kind": "selling",
+    "reason": "MOA entry links ch06"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Builder’s risk wording read in full: owner co-insured with a waiver of subrogation, whole-vessel sum insured, hot work and transit covered.",
+    "new": "Builder’s risk wording read in full: owner co-insured, waiver of subrogation, whole-vessel sum insured, hot work and transit covered.",
+    "kind": "line",
+    "reason": "Tightened so the checklist with the Selling group still fits one A4"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Confirm in writing what the owner’s hull policy still covers in the yard.",
+    "new": "Confirm in writing what the hull policy still covers.",
+    "kind": "line",
+    "reason": "Tightened so the checklist with the Selling group still fits one A4"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Scope defined in writing (deliverables, materials, finishes) and reviewed line by line by the owner’s representative.",
+    "new": "Scope defined in writing (deliverables, materials, finishes) and reviewed line by line.",
+    "kind": "line",
+    "reason": "Tightened so the checklist with the Selling group still fits one A4"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "A yard suited to the scope and tonnage, chosen on track record and project team rather than cheapest quote.",
+    "new": "Yard chosen for this scope and tonnage on track record and project team, not cheapest quote.",
+    "kind": "line",
+    "reason": "Tightened so the checklist with the Selling group still fits one A4"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "At a service yard, one person appointed in writing to coordinate the trades, with every trade contract on the same law and forum.",
+    "new": "At a service yard, one coordinator appointed in writing, and every trade contract on the same law and forum.",
+    "kind": "line",
+    "reason": "Tightened so the checklist with the Selling group still fits one A4"
+  }
+]

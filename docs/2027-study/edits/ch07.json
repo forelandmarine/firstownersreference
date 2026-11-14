@@ -1,0 +1,689 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "The captain hire alone determines whether the yacht is a pleasure or a chronic source of friction. The other five operational decisions compound across the hold.",
+    "new": "The captain hire does more than any other decision to settle whether the yacht is a pleasure or a source of friction. The other four decisions of year one compound across the hold.",
+    "kind": "fact",
+    "reason": "C18: the chapter now names five year-one decisions throughout; 'alone' overstated"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The operation of a yacht is part of the full life cycle, from delivery to sale. Cumulative spend over a typical seven-year hold approaches the purchase price; the team is most often introduced through the broker who sold the yacht. Six decisions shape how the yacht runs and what it costs: the captain hire, the crew structure, the management company, the insurance arrangement, regulatory compliance, and whether to run as a commercial charter yacht. Each is set in the first year, and each compounds.",
+    "new": "The operation of a yacht runs from delivery to sale. Over a typical seven-year hold, cumulative operating spend approaches the purchase price, and the team is often introduced through the broker who sold the yacht. Five decisions taken in the first year shape how the yacht runs and what it costs: the captain hire, the management company, the insurance arrangement, whether to charter, and the refit reserve. Crew structure follows largely from the captain and the size of the yacht, and regulatory compliance is usually delegated to the management company. Each decision compounds across the hold.",
+    "kind": "fact",
+    "reason": "C18: same five decisions as paras 75 to 81 and the checklist; 'most often' unsourced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The opposite produces the opposite, at considerable cost.",
+    "new": "A poor one produces the reverse, and the cost shows in turnover, maintenance and surprises.",
+    "kind": "line",
+    "reason": "plainer close"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Erica Lay of EL Crew Co reports that captains in the 50 to 70 metre range with proven leadership, commercial awareness, and crew-management capability now command package premiums of EUR 1,500 to 4,000 per month above traditional benchmarks, through rotation and improved leave structures alongside salary. The combination of technical capability and what Lay calls emotional intelligence is the constraint, and where the pressure on cost sits.",
+    "new": "Erica Lay of EL Crew Co reports that captains in the 50 to 70 metre range with proven leadership, commercial awareness and crew-management capability now command salary uplifts of EUR 1,500 to 4,000 per month above traditional benchmarks, with rotation, bonuses and improved leave structures on top. The combination of technical capability and what Lay calls emotional intelligence is rare, and it is where the pressure on cost sits.",
+    "kind": "fact",
+    "reason": "Lay's Q&A gives EUR 1,500 to 4,000 as salary uplift alone, with rotation, bonuses and leave in addition"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The selection framework practitioners consistently endorse is to hire the candidate who pushes back hardest. The captain who asks about actual use pattern, family, tolerance for transit days, and refit reserve budget is the one to hire; easy agreement in the first interview rounds is pleasant in the room and not necessarily the strongest indicator.",
+    "new": "The test this chapter proposes is to hire the candidate who pushes back hardest. The captain who asks about actual use pattern, family, tolerance for transit days and refit reserve budget is showing how he or she will work; easy agreement in the first interview rounds is pleasant in the room but tells the owner less. Erica Lay adds a step: check references “not just from other owners and managers. Dig deeper, and talk to the crew who’ve worked under their leadership.”",
+    "kind": "fact",
+    "reason": "'practitioners consistently endorse' unsourced; Lay's reference advice quoted exactly"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A Captain has to reduce the operating risk profile of his vessel, and fighting for that is part of the job.",
+    "new": "A Captain has to reduce the operating risk profile of his vessel and fighting for that is part of the job.",
+    "kind": "fact",
+    "reason": "quotation now matches the Filippakis answer exactly (no comma)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The independence question applies. A captain recommended by the broker has a relationship with the broker; the broker benefits if the captain calls with charter requests or future acquisition referrals. A captain hired through a recruitment agency engaged by the owner’s independent adviser is free of that relationship.",
+    "new": "The independence question applies here as well. A captain recommended by the broker who sold the yacht may keep a relationship with that broker, which benefits if the captain later passes on charter requests or acquisition referrals. Hiring through a recruitment agency engaged by the owner’s independent adviser removes that link, and any continuing relationship a candidate has with a broker, yard or management company can be disclosed in writing at interview, as the checklist for this chapter asks.",
+    "kind": "line",
+    "reason": "fairness flag 24: both statements were absolute; written-disclosure standard applied"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "\"attribution\": \"Erica Lay, Crew Recruitment Specialist, EL Crew Co\"",
+    "new": "\"attribution\": \"Erica Lay, founder and director, EL Crew Co\"",
+    "kind": "fact",
+    "reason": "attribution aligned with the Q&A and the ch07 case"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Above 50 metres the structure expands to 12 to 20 crew. Above 60m: 18 to 26. Above 80m: 25 to 35. Numbers scale roughly linearly to 70m, faster above. Sailing yachts run a third or so lighter at every length (chapter 08).",
+    "new": "Above 50 metres the structure expands to 12 to 20 crew, above 60m to 18 to 26, and above 80m to 25 to 35. Numbers scale roughly linearly to 70m and faster above. Sailing yachts run a third or so lighter at every length (chapter 8).",
+    "kind": "line",
+    "reason": "fragments joined"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Crew is the largest single line in the operating budget at 30 to 40 percent of total cost.",
+    "new": "Crew is the largest single line in the operating budget, at 30 to 40 percent of total cost (chapter 1).",
+    "kind": "repetition",
+    "reason": "ch01 9 is the home of the cost split; pointer added"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Time-for-time rotation, which Quay Crew records for 63 percent of the captains it surveyed, is no longer a perk on senior-crew programmes; it is the price of entry to the top end of the market. Roles offered without rotation take longer to fill, draw a narrower and less experienced pool, and on Erica Lay’s reading typically replace the hire within 12 to 18 months. Owners trading the rotation provision against headline salary tend to pay both costs.",
+    "new": "Time-for-time rotation, which Quay Crew records for 63 percent of the captains it surveyed, is now expected on senior-crew programmes. In Erica Lay’s words, rotation “is no longer a perk”; in many cases “it is the price of entry to access the top end of the market”. On her reading, roles without rotation take longer to fill, attract a narrower and often less experienced pool, and are far more likely to need refilling within 12 to 18 months. Capt. Pavlos Filippakis, who supports rotation, names the cost the salary line does not show: two captains with different standards on documentation, crew discipline and what gets escalated. “Without active management, you get drift, and crew quietly optimise for whichever captain is onboard.” A management team that oversees standardisation, he says, is what makes it work.",
+    "kind": "fact",
+    "reason": "Lay paraphrase made an attributed quote and 'typically replace' corrected to her 'far more likely'; Filippakis adds the counter-cost; closer cut"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Crew is a variable cost managed through retention, reputation, and culture. The owner who manages the captain manages the crew; the captain who manages the crew manages the cost.",
+    "new": "Lay’s view is that the real cost of crew lies in turnover, retraining and disruption rather than in junior pay, so retention is where the owner can most affect it.",
+    "kind": "line",
+    "reason": "closing aphorism (structural read s.5) replaced with Lay's attributed point"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The most common cause of turnover, on the recruitment-side view, is inconsistency from the top, whether owner, captain, or management structure. Crew can handle hard work, long hours, and demanding programmes. What they struggle with is unpredictability and a lack of trust in leadership. Yachts that retain crew well share clear, consistent leadership, open communication, and an onboard culture that does not change overnight.",
+    "new": "Erica Lay names the most common cause of turnover as inconsistency from the top, whether it comes from the owner, the captain or the management structure. Crew, she says, can handle hard work, long hours and demanding programmes; what they struggle with is unpredictability and a lack of trust in leadership. Capt. Filippakis makes the same link from the captain’s side. Turnover follows the culture aboard, and the owner usually appoints the people who make or break it, mostly the captain, chef and chief stew.",
+    "kind": "fact",
+    "reason": "unattributed paraphrase of Lay now attributed; Filippakis's owner-control point added"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Adix, deck crew. Operations is the part of yacht ownership that lasts the longest, costs the most over a hold, and is most often delegated without the care it warrants.",
+    "new": "Adix, deck crew at work.",
+    "kind": "line",
+    "reason": "caption maxim, unsupported generalisation"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "07-operations",
+      "startsWith": "A yacht is only the visible part"
+    },
+    "new": {
+      "type": "h2",
+      "text": "The owner’s year"
+    },
+    "kind": "structure",
+    "reason": "owner's year section (structural read s.7 step 4)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "07-operations",
+      "startsWith": "The owner’s year"
+    },
+    "new": "Most of this chapter concerns what the owner delegates, but the owner still has work to do. In the chapter 9 case, the adviser estimated that a 49m yacht would take 40 to 60 days a year of the owner’s direct attention, through season planning, refit scheduling, supplier conversations and crew matters, on top of 80 to 120 days of family use. Chapter 1 sets that time against the case for ownership.",
+    "kind": "structure",
+    "reason": "owner's year: ch09 case 15, owner's time"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "07-operations",
+      "startsWith": "Most of this chapter concerns what the owner delegates, but "
+    },
+    "new": "Season planning is where owner and captain first test each other. In this chapter’s case, the captain the owner eventually hired had pushed back in interview on the proposed itinerary, because the transit times between the owner’s preferred destinations would compromise the maintenance schedule, and on a compressed autumn refit that would create cost later. He asked about the owner’s use pattern, the family’s actual behaviour on board and the budget envelope. Asked for the advice brokers and management companies rarely give, Erica Lay puts the same point from the recruitment side: “The best captains understand how to set boundaries, communicate clearly, and guide a first-time owner through decisions they have never had to make before.”",
+    "kind": "structure",
+    "reason": "owner's year: ch07 case paras 5 and 6 (no tenure cited); Lay Q&A quoted exactly"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "07-operations",
+      "startsWith": "Season planning is where owner and captain first test each o"
+    },
+    "new": "The budget is the other recurring conversation. In the chapter 1 case, the owner’s second yacht was bought with a team he paid directly at known rates, and its operating cost has run at 13 to 14 percent of original capex a year, inside the moderate-use band his adviser set out before he bought. On that yacht, the case records, he is unlikely to be surprised by an invoice. The refit reserve and the cost profile described at the end of this chapter belong in the same annual cycle.",
+    "kind": "structure",
+    "reason": "owner's year: ch01 case 13, 15 and 16"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "insertAfter": {
+      "slug": "07-operations",
+      "startsWith": "The budget is the other recurring conversation. In the chapt"
+    },
+    "new": "The owner’s part is to hear advice that is inconvenient. In this chapter’s case, the captain has recommended against particular refit yards, suppliers and charter arrangements, and has recommended selling the yacht when the owner’s use had drifted from the use it was specified for. The owner did not sell, but took the advice as evidence that he had hired the right captain. Lay describes the cost of the opposite: “If you get that hire wrong, everything else becomes harder. Crew turnover increases, the onboard culture suffers, and the programme becomes reactive instead of enjoyable.”",
+    "kind": "structure",
+    "reason": "owner's year: ch07 case para 11 (no counts or decade cited); Lay Q&A quoted exactly"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Compliance is delegated to a yacht management company in most cases. Recognised firms include Hill Robinson, Burgess, Y.CO, Döhle Yachts, Moran, Edmiston, Camper & Nicholsons, Fraser, and Foreland Marine, the publishers of this reference. The management company maintains the SMS, files the regulatory paperwork, runs the audit cycle, and supports the captain on flag state interactions.",
+    "new": "Compliance is delegated to a yacht management company in most cases. Firms offering management include Hill Robinson, Burgess, Y.CO, Döhle Yachts, Moran, Edmiston, Camper & Nicholsons, Fraser, and Foreland Marine, the publisher of this reference. Several of them also broker yachts, so any referral between their brokerage and management sides falls under the written-disclosure standard in chapter 3. The management company maintains the SMS, files the regulatory paperwork, runs the audit cycle, and supports the captain on flag state interactions.",
+    "kind": "fact",
+    "reason": "'publishers' to 'publisher'; 'Recognised' had no recogniser; disclosure standard applied (structural read ch07 21)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The compliance cost on a 40 metre yacht for ISM, MLC, flag administration, class society fees, and the management company’s compliance services typically runs EUR 80,000 to 200,000 per year. This is recurring cost that does not appear in broker-quoted operating budgets.",
+    "new": "What compliance costs depends on how the yacht is used. For a 40 metre yacht in commercial operation, or one whose owner has adopted ISM voluntarily, the safety management system and its audits, MLC compliance, flag administration, class society fees and the management company’s compliance services typically run to EUR 80,000 to 200,000 a year. Flag administration and class fees, about EUR 15,000 to 40,000 of that, are the same fees chapter 4 counts in its EUR 50,000 to 150,000 for tax, structuring and flag administration, and belong in a budget once. A 40 metre yacht in private use is usually outside both ISM and MLC, so its compliance cost is mainly flag and class fees plus whatever compliance work the management company is contracted to do. Chapter 1’s 2 to 3 percent of operating cost for regulatory and class compliance excludes the management fee, which it counts separately. Whichever applies, the operating budget should show compliance as its own line.",
+    "kind": "fact",
+    "reason": "C12: each figure now names what it covers; ISM and MLC no longer applied to a private 40m"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Yacht insurance is the most consequential operational decision after the captain hire, and tends to be taken with the least attention. The hull policy alone covers an asset typically worth EUR 10 million to EUR 200 million. The broker and the underwriting structure behind them determine, at claim time, whether the buyer is whole.",
+    "new": "After the captain, insurance is the operating decision with most money at stake. The hull policy alone covers an asset typically worth EUR 10 million to EUR 200 million, and the broker and the underwriting behind it determine, at claim time, whether the owner is made whole.",
+    "kind": "line",
+    "reason": "'most consequential' kept for the captain only; 'least attention' unsourced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The hardened market of 2022 (AIG citing 50 to 70 percent rate increases) reflected sustained Lloyd’s marine underwriting losses across the mid-2010s. The Lloyd’s yacht line ran loss ratios above 100 percent for several consecutive years (2015: roughly GBP 150 million premium against GBP 210 million claims). Yacht is widely identified as the worst-performing segment in the Lloyd’s marine portfolio; only around 5 percent of yacht premium written returned a profit between 2011 and 2017. Hull and machinery rates stabilised by H1 2024; by Q4 2025, Gallagher Specialty reports softening 4 to 7.5 percent for fleets with good loss records. Typical hull rate for a well-maintained 40 to 50 metre yacht: 0.7 to 1.5 percent of insured value annually. Hurricane-exposed regions and smaller yachts pay 2 to 5 percent.",
+    "new": "The market hardened from 2022. AIG cited rate increases of 50 to 70 percent across 2022 and 2023 in the London market, after sustained Lloyd’s yacht underwriting losses through the mid-2010s. The Lloyd’s yacht line ran loss ratios above 100 percent for several consecutive years (2015: roughly GBP 150 million premium against GBP 210 million claims), and only around 5 percent of yacht premium written returned a profit between 2011 and 2017. Rate increases had largely stopped by the first half of 2024, which Ollie Davis of PIB Marine, interviewed for this chapter, regards as the peak of the cycle. The market has since softened: by Q4 2025, Gallagher Specialty reported reductions of 4 to 7.5 percent for fleets with good loss records. The typical hull rate for a well-maintained 40 to 50 metre yacht is 0.7 to 1.5 percent of insured value a year; smaller yachts and those in hurricane-exposed regions pay 2 to 5 percent.",
+    "kind": "fact",
+    "reason": "C10: one sequence for the cycle (rise 2022 to 2023, peak 2024, softening from 2025); hull rates given once"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ollie Davis of PIB Marine places the peak of the recent cycle in 2024, with the proximate drivers the pandemic and the war in Ukraine compounding: spare-parts shortages, repair-cost inflation, yard capacity squeezed by sanctioned Russian hulls stuck in refit, and COVID-era cruising patterns that left more yachts overwintering in the Caribbean and Florida than usual. Insurers built a premium stockpile against the risk that a repeat of the 2018 hurricane damage would now land on a larger exposed fleet. 2026 reads as stable: H&M flat or marginal inflation-linked rises; P&I clubs continuing the routine 5 percent on the back of claims pushing over USD 1 million more often. The softening creates one buyer trap. A yacht remarketed by different brokers three or more years running can find underwriters declining to quote at all: the file looks shopped.",
+    "new": "Davis attributes the hardening chiefly to the pandemic and the war in Ukraine: spare-parts shortages, repair-cost inflation, yard capacity squeezed by sanctioned Russian hulls stuck in refit, and Covid-era cruising patterns that left more yachts than usual in the Caribbean and Florida through the hurricane season. Insurers built a premium stockpile against the risk that a repeat of the 2018 hurricane damage would land on a larger exposed fleet. He expects 2026 to be stable, with hull and machinery premiums flat or rising marginally with inflation, and P&I clubs continuing their usual 5 percent increases as more claims exceed USD 1 million. The softer market has one catch for owners. When the same yacht is presented to underwriters for several consecutive years, usually three or more times and by different brokers, Davis notes that underwriters can start declining to offer terms.",
+    "kind": "fact",
+    "reason": "C10; 'overwintering' corrected to hurricane season per Davis; 'file looks shopped' was editorial gloss"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Bayesian sinking in August 2024 (USD 150 million insured loss) prompted speculation of a fresh hardening cycle. Pantaenius’s Michelle van der Merwe, on the record: “I think everyone thought it was going to have more of an impact than it did.” Davis confirms the read from the broker side: no significant rating increases across PIB’s large-sailing-yacht book, the Bayesian hull a multiply-built Perini design with a one-off rig configuration. The market response visible at policy level sits at survey level, not rate level.",
+    "new": "The Bayesian sinking in August 2024 (USD 150 million insured loss) prompted speculation of a fresh hardening cycle. Pantaenius’s Michelle van der Merwe, on the record: “I think everyone thought it was going to have more of an impact than it did.” Davis reports the same from the broker side: no significant rating increases across the large sailing yachts PIB Marine handles, the Bayesian hull being a design Perini has built several times but with a rig that is effectively a one-off. Where the market has responded, it has done so through surveys rather than rates.",
+    "kind": "line",
+    "reason": "plainer statement of Davis's reading"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "underwriter appetite for other vessels of the same provenance gets reassessed",
+    "new": "underwriter appetite for other vessels of the same provenance may be reassessed",
+    "kind": "fact",
+    "reason": "Davis says 'potentially ... may reassess'"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Howden and Pantaenius are the two largest yacht insurance brokers in the over-30m segment globally; the other substantial players are AON Marine, Gallagher Specialty, and Marsh. PIB Insurance Brokers (historically Zorab Insurance Services) is the established UK specialist alternative to the multi-line firms, independent at the broker layer, and worth a third quote alongside the first two. The practical point is not which name but the discipline of three quotes from firms with genuine over-30m depth.",
+    "new": "Howden and Pantaenius are among the largest yacht insurance brokers in the over-30m segment, and AON Marine, Gallagher Specialty and Marsh also place substantial large-yacht business. PIB Marine (formerly Zorab Insurance Services), where Ollie Davis works, is a UK yacht specialist. For the owner, the practical step is at least three quotes from brokers with over-30m experience, each disclosing its commission in writing (chapter 9).",
+    "kind": "fact",
+    "reason": "C11: one list of brokers for the book; 'two largest' unsourced; contributor's employer disclosed and no longer singled out for a quote"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "PIB Insurance Brokers (historically Zorab Insurance Services, ZIS) has long-standing partnerships",
+    "new": "PIB Marine (formerly Zorab Insurance Services) has long-standing partnerships",
+    "kind": "fact",
+    "reason": "C11: firm named as in the Davis Q&A"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "First, the hull and machinery policy should be written on agreed value, not actual cash value. Agreed value: the figure paid in a total loss is fixed in advance. Actual cash value: insurer pays the depreciated market value, typically much less. Premium difference small; claim difference tens of millions on a large hull.",
+    "new": "First, the hull and machinery policy should be written on agreed value, not actual cash value. Under agreed value, the sum paid in a total loss is fixed in advance; under actual cash value, the insurer pays the depreciated market value, typically much less. The premium difference is small, but on a large hull the difference at claim time can run to tens of millions.",
+    "kind": "line",
+    "reason": "fragments made sentences"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Second, agreed value should reflect rebuild cost, not market value. A 50m yacht with EUR 18 million market value may have EUR 28 million rebuild cost. Insuring at market value leaves the owner short on rebuild after constructive total loss. Howden and Pantaenius templates support agreed-value rebuild-basis structures; ask for them and verify with a current yard quote.",
+    "new": "Second, the agreed value should reflect rebuild cost, not market value. A 50m yacht with a EUR 18 million market value may cost EUR 28 million to rebuild, and insuring at market value leaves the owner short after a constructive total loss. Brokers including Howden and Pantaenius offer agreed-value cover on a rebuild basis; ask for it and check the figure against a current yard quote.",
+    "kind": "fact",
+    "reason": "C11: no longer reliant on two brokers' templates as the only route"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Fourth, several common deductible and warranty terms are negotiable at quote stage; the broker should be pushing back, not accepting templates. Davis flags four for first-time owners. Actual Cash Value clauses on machinery, increasingly added on yachts five years and older — well-documented maintenance logs, oil-sample results, and manufacturer inspections at the prescribed intervals can often persuade underwriters to remove the separate machinery deductible, sometimes at a modest H&M deductible uplift. No Claims Discount offered upfront — repayable on non-renewal or claim, and not normally worth taking. Mast, spars, sails and rigging (MSSR) deductibles and the inner deductibles on fixtures, emergency towing, tenders, and personal effects — most reviewable to the vessel’s actual risk profile. And tender-towing terms, where standard templates are often more restrictive than current practice supports; monitoring technology from providers like Yacht Trace has made extended towing acceptable to underwriters who previously declined longer passages.",
+    "new": "Fourth, many deductible and warranty terms can be negotiated at quote stage, and the broker should push back rather than accept templates. Davis names four for first-time owners. Insurers increasingly add Actual Cash Value clauses on machinery, or higher engine deductibles, on yachts five years and older; well-documented maintenance logs, oil-sample results and manufacturer inspections at the prescribed intervals can often persuade underwriters to remove the separate machinery deductible, sometimes for a modest rise in the overall H&M deductible or the premium. A No Claims Discount offered upfront has to be repaid on non-renewal or after a claim, and is not normally worth taking. Mast, spars, sails and rigging (MSSR) deductibles and the inner deductibles on fixtures, emergency towing, tenders and personal effects can mostly be adjusted to the vessel’s actual risk. Standard tender-towing terms are often more restrictive than current practice supports, and monitoring systems from providers such as Yacht Trace have made extended towing more acceptable to underwriters.",
+    "kind": "fact",
+    "reason": "em dashes removed; matched to Davis (premium rise option; towing 'more acceptable', not previously declined)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "An over-30m programme will typically carry five distinct lines of insurance, each separately underwritten and renewed.",
+    "new": "An over-30m programme typically carries five lines of insurance, each separately underwritten and renewed: hull and machinery, protection and indemnity (P&I), war risk, builder’s risk during refit or new build, and charter cover where the yacht is chartered. This chapter’s data spread sets out what each covers, what it typically costs and who writes it. War risk is often misunderstood. It covers unexpected damage from riots, uprisings, vandalism or political incident while the yacht is outside high-risk zones; entering a designated War Risk area needs an additional premium agreed with insurers in advance. Since the conflicts in Ukraine and the Middle East, insurers have also issued seven-day notice of cancellation on hull and P&I cover for certain cruising areas, so the itinerary is checked with the broker before it is fixed.",
+    "kind": "structure",
+    "reason": "author decision 3: lines-of-cover detail moved to the data spread; short paragraph and pointer kept"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Hull and machinery: 0.7 to 1.5 percent of insured value annu"
+    },
+    "kind": "structure",
+    "reason": "para 43 moved to the ch07 data spread (lines of cover)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "P&I (protection and indemnity): crew injury, environmental d"
+    },
+    "kind": "structure",
+    "reason": "para 44 moved to the ch07 data spread (lines of cover)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "War risk, per voyage rather than annual. Pre-October 2023 Re"
+    },
+    "kind": "structure",
+    "reason": "para 45 moved to the ch07 data spread (lines of cover)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "For a transit through a War Risk exclusion zone the addition"
+    },
+    "kind": "structure",
+    "reason": "para 47 moved to the ch07 data spread (lines of cover)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Charter operation cover, where applicable. Charter activitie"
+    },
+    "kind": "structure",
+    "reason": "para 49 moved to the ch07 data spread (lines of cover)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Builder’s risk, during refit and new build. Typically taken out by the yard with the owner’s interest noted, which gives the owner much less than named-insured status: possibly no direct right to claim, no right to see the full policy, and no protection if the yard breaches a policy condition (Benjamin Maltby, Keystone Law). Obtain the full wording rather than a certificate, and confirm co-insured status with a waiver of subrogation, a sum insured covering the whole vessel rather than the works, the deductible and who bears it, and cover afloat, on the hard, during lifts and tests, and in transit between subcontractor sites. The owner’s own hull and machinery policy usually suspends or limits cover while the yacht is in the yard, so the broker confirms in writing what remains in force.",
+    "new": "Builder’s risk, which covers the yacht in the yard during refit or new build, is usually taken out by the yard with the owner’s interest noted; chapter 6 explains why that gives the owner less than co-insured status and what to confirm before the works begin.",
+    "kind": "repetition",
+    "reason": "builder's risk: ch06 76 is the home; one sentence and pointer"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Economising on broker selection or underwriting attention is a consequential decision badly made. The fee differential between yacht-specialist and generalist brokers is small; the claim differential can run into eight figures.",
+    "new": "The difference in fee between a yacht-specialist broker and a generalist is small. The difference at claim time can run to eight figures, as the rebuild-cost example above shows.",
+    "kind": "line",
+    "reason": "maxim ('consequential decision badly made') replaced; claim tied to the chapter's own example"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A discipline the trade press has reached late: sexual misconduct cover. A 2025 case in which a crewmember who was sexually assaulted in English Harbour, Antigua — on a Marshall Islands LLC-owned, St Vincent-flagged yacht — had the vessel arrested at the Fort Lauderdale berth on a US maritime lien, after the local authorities did not act, surfaces three structural points. Yacht liability policies routinely exclude coverage for sexual misconduct claims; where the exclusion is enforceable, the owner is personally on the hook for the claim and the defence. The maritime lien attaches at injury, travels with the vessel, and is exposed the first time the vessel touches a US port; foreign flag and offshore SPV do not defeat an in rem arrest under 28 U.S.C. § 1333. US policies also contain strict notice provisions; delay or concealment of an allegation can affect coverage. Supplemental sexual-misconduct cover is available; prudent owners are buying it, and the structure to enable that is set with the broker before an incident, not after (Adria Notari and Ryan Melogy, plaintiff’s US maritime counsel, in The Superyacht Report, Q2 2026).",
+    "new": "Cover for sexual misconduct claims is a newer question. In a 2025 case, a crewmember who was sexually assaulted in English Harbour, Antigua, aboard a St Vincent-flagged yacht owned through a Marshall Islands LLC, had the vessel arrested at its Fort Lauderdale berth on a US maritime lien after the local authorities did not act. The case raises three points. Yacht liability policies routinely exclude sexual misconduct claims; where the exclusion is enforceable, the owner is personally liable for the claim and the defence. The maritime lien attaches at injury, travels with the vessel and is exposed the first time the vessel enters a US port; a foreign flag and an offshore SPV do not defeat an in rem arrest under 28 U.S.C. § 1333. US policies also contain strict notice provisions, and delay or concealment of an allegation can affect coverage. Supplemental sexual misconduct cover is available, some owners now buy it, and it is arranged with the broker before an incident, not after (Adria Notari and Ryan Melogy, plaintiff’s US maritime counsel, in The Superyacht Report, Q2 2026).",
+    "kind": "line",
+    "reason": "em dashes removed; 'discipline', 'structural', 'prudent owners' replaced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The decision to operate commercially through charter is separate from the ownership decision and is too often bundled into broker pitches as if the two were one.",
+    "new": "The decision to operate commercially through charter is separate from the decision to buy, and is best taken separately, even when the two are presented together.",
+    "kind": "line",
+    "reason": "fairness flag 25: 'too often bundled into broker pitches' unsourced"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Commercial registration is jurisdiction by jurisdiction, not a single global licence. The principal regimes a first-time charter operator needs to understand:",
+    "new": "Commercial registration is decided jurisdiction by jurisdiction; there is no single global licence. The regimes a first-time charter operator is most likely to meet, in France, Italy, Spain, Greece, Croatia, Turkey, Monaco, the Cayman Islands and Marshall Islands, Malta and the United States, are set out country by country in this chapter’s data spread. Two have changed recently. Spain has replaced its charter licence with an Affidavit of Responsibility filed with the Harbour Master, with 2026 as the transition year, and since February 2024 Greece has allowed some non-EU-flagged commercial yachts over 35m to charter under the e-Charter Permission. The VAT regimes that interact with charter, the French Commercial Exemption and Maltese and Italian leasing, are covered in chapter 4.",
+    "kind": "structure",
+    "reason": "author decision 3: charter-regime list moved to the data spread; VAT regimes point to ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "France. French Commercial Exemption (FCE): commercial regist"
+    },
+    "kind": "structure",
+    "reason": "para 56 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Italy. Italian commercial charter requires Italian flag with"
+    },
+    "kind": "structure",
+    "reason": "para 57 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Spain. Royal Decrees 186/2023 and 587/2024 replace the chart"
+    },
+    "kind": "structure",
+    "reason": "para 58 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Greece. Historically the most restrictive in the Mediterrane"
+    },
+    "kind": "structure",
+    "reason": "para 59 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Croatia. Croatian flag or local charter-agency arrangement u"
+    },
+    "kind": "structure",
+    "reason": "para 60 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Turkey. “Blue Cruise” charter requires Turkish-flag operatio"
+    },
+    "kind": "structure",
+    "reason": "para 61 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Monaco. Monégasque flag permits up to 90 days of commercial "
+    },
+    "kind": "structure",
+    "reason": "para 62 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Cayman Islands and Marshall Islands. Both issue commercial c"
+    },
+    "kind": "structure",
+    "reason": "para 63 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "Malta. EU charter route widely used for long Mediterranean s"
+    },
+    "kind": "structure",
+    "reason": "para 64 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "United States. Regulated under federal law (Coastguard / Jon"
+    },
+    "kind": "structure",
+    "reason": "para 65 moved to the ch07 data spread (charter regimes); VAT detail lives in ch04"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "US tax treatment is the structural factor that does not appear elsewhere.",
+    "new": "For a US owner, tax treatment is a further consideration.",
+    "kind": "line",
+    "reason": "'structural factor' abstraction"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and the full hours-and-records discipline IRC section 469 demands",
+    "new": "and the hours and records that IRC section 469 demands",
+    "kind": "line",
+    "reason": "plainer"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "audited tightly in practice; the structuring is set with US tax counsel before contract, not after, and",
+    "new": "audited tightly in practice. The arrangements are set with US tax counsel before contract, and",
+    "kind": "line",
+    "reason": "plainer; sentence split"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A 48m motor yacht at EUR 250,000 to 310,000 per week, 7 charter weeks: EUR 1,592,000 income against EUR 1,575,000 cost, break-even (BOAT International). A 47m sail at 9 weeks: EUR 444,000 loss. An 85m motor at 8 weeks: EUR 430,000 loss. An owner-optimised 60m at 12 weeks generates up to EUR 2 million net positive, with disciplined operation, premium rates, and willingness to release prime weeks.",
+    "new": "Whether charter pays is covered in chapter 1, using BOAT International’s case studies. Only one of the four made a clear profit, a 60m at 12 weeks, and that depended on premium rates and on releasing the prime weeks.",
+    "kind": "repetition",
+    "reason": "charter economics: ch01 20 to 22 is the home; pointer kept with the operational condition"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and a clear-eyed projection of charter economics.",
+    "new": "and a projection checked against the chapter 1 cases.",
+    "kind": "line",
+    "reason": "pointer to the home of the figures"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "17,000 islands and unparalleled diving on the cruising-ground side.",
+    "new": "17,000 islands and extensive diving on the cruising-ground side.",
+    "kind": "line",
+    "reason": "promotional superlative"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The Red Sea coast development from Jeddah to Aqaba — including the pro-yacht Amala project — is",
+    "new": "The Red Sea coast development from Jeddah to Aqaba, including the pro-yacht Amala project, is",
+    "kind": "line",
+    "reason": "em dashes removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the buyer should verify each intended cruising area is covered",
+    "new": "the owner should check that each intended cruising area is covered",
+    "kind": "line",
+    "reason": "owner, not buyer, at this stage"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The captain you hire determines the next decade.",
+    "new": "The captain hired now will shape the crew, the maintenance and the budget for years.",
+    "kind": "line",
+    "reason": "avoids echoing the ch07 case's decade, whose dates are under review"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "2. Yacht management company. Engage one independent of the broker’s recommendation. The management company is the long-running operational partner. The choice should reflect that, not the broker’s referral fee economics.",
+    "new": "2. Yacht management company. Choose it on its merits rather than by default from the broker’s recommendation, and ask in writing whether any referral fee passes between the management company and the broker (chapter 3). The management company is the long-running operational partner.",
+    "kind": "fact",
+    "reason": "written-disclosure standard applied; implied accusation removed"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "3. Insurance broker selection. Pantaenius, AON, or Gallagher. All three quote competitively for the over-30m segment. Do not default to whichever broker the seller used.",
+    "new": "3. Insurance broker selection. Obtain quotes from at least three brokers with over-30m yacht experience; the main ones are named above. Ask each to disclose its commission in writing, and do not default to whichever broker the seller used.",
+    "kind": "fact",
+    "reason": "C11: same broker guidance as para 32, the checklist and the FAQ"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The five-year survey is real; the ten-year refit is real. An owner who has not been building a reserve discovers in year four that they are underwater on cash flow. The Refit Advisory Group, an independent, not-for-profit group of owner’s representatives, captains, technical and project managers, surveyors, and yard professionals, of which Foreland Marine, the publisher of this reference, is a member, recommends",
+    "new": "The five-year class survey and the ten-year refit come round on schedule, and an owner who has not built a reserve can find the cash short by year four. The Refit Advisory Group (chapter 6), of which Foreland Marine, the publisher of this reference, is a member, recommends",
+    "kind": "repetition",
+    "reason": "RAG description shortened to its name (given in full in ch06 11); plainer reserve sentence"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "deleteParagraph": {
+      "slug": "07-operations",
+      "startsWith": "These five decisions, taken with the right advisers and the "
+    },
+    "kind": "line",
+    "reason": "closing run of 'X runs Y' aphorisms (structural read)"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Crew salary bands and insurance market commentary",
+    "new": "Crew pay, insurance and charter regimes",
+    "kind": "structure",
+    "reason": "spread now carries the lines of cover and charter regimes"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Crew is 30 to 40 percent of annual operating cost on a typical 50m, by far the largest single line. Hull insurance has stabilised; the post-Bayesian response was tightening on crew qualifications, not blanket rate rises.",
+    "new": "Crew is 30 to 40 percent of annual operating cost on a typical 50m, by far the largest single line. Hull rates rose from 2022, peaked in 2024 and have since softened; after Bayesian, underwriters looked harder at crew procedures and stability rather than raising rates across the board. The commercial charter regimes are set out country by country.",
+    "kind": "fact",
+    "reason": "C10 and the moved charter material"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey; Erica Lay (EL Crew Co) on senior-captain package premiums.",
+    "new": "YPI Crew 2026 salary guide; Quay Crew 2025 captain survey; Erica Lay (EL Crew Co) on senior-captain salary premiums.",
+    "kind": "fact",
+    "reason": "Lay's figure is salary uplift, with package items on top"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Recruitment-side reading on senior-captain package premiums above guide rates,",
+    "new": "Recruitment-side reading on senior-captain salary premiums above guide rates, with rotation and leave on top,",
+    "kind": "fact",
+    "reason": "as above"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "      {\n        \"type\": \"table\",\n        \"caption\": \"An over-30 m programme typically carries five distinct lines of insurance, each separately underwritten. The right broker secures the right structure on each.\",\n        \"head\": [\n          \"Line\",\n          \"Covers\",\n          \"Typical premium\",\n          \"Underwriting market\"\n        ],\n        \"rows\": [\n          [\n            \"Hull and machinery\",\n            \"Loss or damage to the yacht itself; agreed value rebuild basis is the disciplined structure\",\n            \"0.7–1.5 percent of insured value (40–50 m well-maintained); 2–5 percent for smaller yachts and hurricane-exposed regions\",\n            \"Lloyd’s syndicates (CNA Hardy, Beazley, Brit, AIG, Liberty, Tokio Marine HCC, MS Amlin); AXA, Allianz, Generali\"\n          ],\n          [\n            \"P&I (protection and indemnity)\",\n            \"Crew injury, environmental damage, third-party liability, charter guest claims\",\n            \"Per crew member basis; cover routinely written to USD 500 m third-party limit\",\n            \"Shipowners’ Club, Steamship Mutual\"\n          ],\n          [\n            \"War risk\",\n            \"Per-voyage cover for transit through war-risk regions\",\n            \"0.05–2 percent of hull value per voyage, region-dependent\",\n            \"Lloyd’s war risk syndicates\"\n          ],\n          [\n            \"Builder’s risk\",\n            \"Loss or damage during refit or new build construction\",\n            \"Taken out by yard with owner’s interest noted; cost embedded in yard contract\",\n            \"Specialist marine builder’s risk underwriters\"\n          ],\n          [\n            \"Charter operation cover\",\n            \"Uplift on hull and P&I to reflect commercial use\",\n            \"Embedded in primary policies; charter management company co-ordinates\",\n            \"Same hull and P&I markets, with charter rider\"\n          ]\n        ],\n        \"sourceLine\": \"Lloyd’s of London syndicate guidance; published broker structuring commentary; practitioner working ranges.\"\n      }",
+    "new": "      {\n        \"type\": \"table\",\n        \"caption\": \"An over-30 m programme typically carries five distinct lines of insurance, each separately underwritten and renewed.\",\n        \"head\": [\n          \"Line\",\n          \"Covers\",\n          \"Typical premium\",\n          \"Underwriting market\"\n        ],\n        \"rows\": [\n          [\n            \"Hull and machinery\",\n            \"Loss or damage to the yacht and its machinery. Written on agreed value, not actual cash value, with the agreed value set on rebuild cost rather than market value\",\n            \"0.7–1.5 percent of insured value (40–50 m well-maintained); 2–5 percent for smaller yachts and hurricane-exposed regions\",\n            \"Lloyd’s syndicates (CNA Hardy, Beazley, Brit, AIG, Liberty, Tokio Marine HCC, MS Amlin); AXA, Allianz, Generali, Helvetia\"\n          ],\n          [\n            \"P&I (protection and indemnity)\",\n            \"Crew injury, environmental damage, third-party liability, charter-guest claims. The USD 500 m third-party limit follows IMO conventions and the reinsurance the International Group of P&I Clubs accesses; claims testing it are extremely rare on yachts, the plausible cases being major reef damage and significant pollution\",\n            \"Per crew member basis; cover routinely written to a USD 500 m third-party limit. One club now offers USD 1 bn as standard; some clubs offer 25–35 m yachts reduced limits at premiums that reflect realistic exposure, which Davis reports owners in that size range have welcomed\",\n            \"Shipowners’ Club, Steamship Mutual\"\n          ],\n          [\n            \"War risk\",\n            \"Unexpected damage from riots, uprisings, vandalism or political incident while the yacht is outside high-risk zones. It does not cover the yacht inside designated War Risk areas\",\n            \"Bought per voyage rather than annually; 0.05–2 percent of hull value per voyage, region-dependent; an additional premium to enter an exclusion zone (below)\",\n            \"Lloyd’s war risk syndicates\"\n          ],\n          [\n            \"Builder’s risk\",\n            \"Loss or damage during refit or new-build construction. Chapter 6 sets out the terms to confirm before the works\",\n            \"Taken out by the yard with the owner’s interest noted; cost embedded in the yard contract\",\n            \"Specialist marine builder’s risk underwriters\"\n          ],\n          [\n            \"Charter operation cover\",\n            \"Uplift on hull and P&I for charter activities\",\n            \"Embedded in primary policies; the charter management company normally coordinates, and the owner’s broker confirms the structure\",\n            \"Same hull and P&I markets, with charter rider\"\n          ]\n        ],\n        \"sourceLine\": \"Lloyd’s of London syndicate guidance; published broker structuring commentary; Ollie Davis, PIB Marine (May 2026), on P&I limits; practitioner working ranges.\"\n      }",
+    "kind": "structure",
+    "reason": "author decision 3: lines-of-cover detail from essay paras 43 to 49 moved here"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "      {\n        \"type\": \"table\",\n        \"caption\": \"Howden and Pantaenius are the two largest yacht-specialist brokers in the over-30 m segment globally. Structural differences below sit at selection.\",\n        \"head\": [\n          \"Broker\",\n          \"Profile\",\n          \"Best fit\"\n        ],\n        \"rows\": [\n          [\n            \"Howden\",\n            \"London-based; consolidated significant yacht-specialist capacity through acquisitions; strong Lloyd’s access\",\n            \"Sophisticated structures, complex programmes (multiple hulls, charter, aviation overlap)\"\n          ],\n          [\n            \"Pantaenius\",\n            \"Hamburg-founded 1899; reference European yacht-only broker; deep service and loss-management capability\",\n            \"European-domiciled owners; Med-centred programmes\"\n          ],\n          [\n            \"AON Marine\",\n            \"Yacht practice inside broader marine and corporate insurance; integrates with family-office risk programmes\",\n            \"Where the principal’s overall risk programme is already with AON\"\n          ],\n          [\n            \"Gallagher Specialty\",\n            \"Strong US East Coast yacht practice; hurricane-region underwriting; US syndicate access\",\n            \"US-domiciled owners; US-cruising fleets\"\n          ],\n          [\n            \"Marsh\",\n            \"Largest broker globally by revenue; specialty marine teams; bespoke structuring for the largest hulls\",\n            \"The very top of the segment (above 100 m)\"\n          ],\n          [\n            \"Specialist alternatives\",\n            \"Smaller yacht-specialist brokers and single-jurisdiction houses\",\n            \"Relationship-based selection; underwriting markets similar to the larger brokers\"\n          ]\n        ],\n        \"sourceLine\": \"Practitioner working knowledge; published broker capability statements.\"\n      }",
+    "new": "      {\n        \"type\": \"table\",\n        \"caption\": \"Brokers with substantial over-30 m yacht books. The practical step is at least three quotes, each with the broker’s commission disclosed in writing.\",\n        \"head\": [\n          \"Broker\",\n          \"Profile\",\n          \"Best fit\"\n        ],\n        \"rows\": [\n          [\n            \"Howden\",\n            \"London-based; consolidated significant yacht-specialist capacity through acquisitions; strong Lloyd’s access\",\n            \"Sophisticated structures, complex programmes (multiple hulls, charter, aviation overlap)\"\n          ],\n          [\n            \"Pantaenius\",\n            \"Hamburg-founded 1899; reference European yacht-only broker; deep service and loss-management capability\",\n            \"European-domiciled owners; Med-centred programmes\"\n          ],\n          [\n            \"AON Marine\",\n            \"Yacht practice inside broader marine and corporate insurance; integrates with family-office risk programmes\",\n            \"Where the principal’s overall risk programme is already with AON\"\n          ],\n          [\n            \"Gallagher Specialty\",\n            \"Strong US East Coast yacht practice; hurricane-region underwriting; US syndicate access\",\n            \"US-domiciled owners; US-cruising fleets\"\n          ],\n          [\n            \"Marsh\",\n            \"Largest broker globally by revenue; specialty marine teams; bespoke structuring for the largest hulls\",\n            \"The very top of the segment (above 100 m)\"\n          ],\n          [\n            \"PIB Marine (formerly Zorab Insurance Services)\",\n            \"UK yacht specialist; long-standing partnerships with naval architects, designers and project managers\",\n            \"Owners wanting a UK specialist alternative to the multi-line firms\"\n          ],\n          [\n            \"Specialist alternatives\",\n            \"Smaller yacht-specialist brokers and single-jurisdiction houses\",\n            \"Relationship-based selection; underwriting markets similar to the larger brokers\"\n          ]\n        ],\n        \"sourceLine\": \"Practitioner working knowledge; published broker capability statements.\"\n      }",
+    "kind": "fact",
+    "reason": "C11: same brokers as the essay, PIB named as in the Davis Q&A; 'two largest' unsourced"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "      {\n        \"type\": \"table\",\n        \"caption\": \"The hardened market that opened in 2022 reflected Lloyd’s underwriting losses (GBP 232.8 m losses against GBP 150.1 m of premium in 2017; 75 percent of 69 yacht-writing syndicates unprofitable). The market remembers.\",\n        \"head\": [\n          \"Period\",\n          \"Hull rate movement\",\n          \"Note\"\n        ],\n        \"rows\": [\n          [\n            \"2022–2023\",\n            \"Up 50–70 percent (London market)\",\n            \"AIG cited; broad hardening\"\n          ],\n          [\n            \"H1 2024\",\n            \"Stabilised\",\n            \"Most of the increase had landed by then\"\n          ],\n          [\n            \"Q4 2025\",\n            \"Down 4–7.5 percent for clean fleets\",\n            \"Gallagher Specialty\"\n          ],\n          [\n            \"Bayesian sinking, August 2024\",\n            \"Selective tightening only\",\n            \"Pantaenius: “more impact expected than landed”\"\n          ],\n          [\n            \"Typical hull rate, 40–50 m well-maintained\",\n            \"0.7–1.5 percent of insured value\",\n            \"Mediterranean / Northern Europe\"\n          ],\n          [\n            \"Smaller yachts and hurricane-exposed regions\",\n            \"2–5 percent\",\n            \"\"\n          ]\n        ],\n        \"sourceLine\": \"AIG, Gallagher Specialty published commentary; Pantaenius market notes.\"\n      }",
+    "new": "      {\n        \"type\": \"table\",\n        \"caption\": \"Rates hardened from 2022 after sustained Lloyd’s yacht underwriting losses (GBP 232.8 m of losses against GBP 150.1 m of premium in 2017; 75 percent of 69 yacht-writing syndicates unprofitable), peaked in 2024 and have since softened.\",\n        \"head\": [\n          \"Period\",\n          \"Hull rate movement\",\n          \"Note\"\n        ],\n        \"rows\": [\n          [\n            \"2022–2023\",\n            \"Up 50–70 percent (London market)\",\n            \"AIG cited; broad hardening\"\n          ],\n          [\n            \"H1 2024\",\n            \"Increases stopped; 2024 the peak of the cycle\",\n            \"Ollie Davis, PIB Marine\"\n          ],\n          [\n            \"Bayesian sinking, August 2024\",\n            \"No blanket rate rises; more requests for risk management surveys\",\n            \"Pantaenius: “I think everyone thought it was going to have more of an impact than it did”\"\n          ],\n          [\n            \"Q4 2025\",\n            \"Down 4–7.5 percent for clean fleets\",\n            \"Gallagher Specialty\"\n          ],\n          [\n            \"2026\",\n            \"Stable: flat, or small inflation-linked rises\",\n            \"Ollie Davis, PIB Marine; P&I clubs continuing 5 percent increases\"\n          ],\n          [\n            \"Typical hull rate, 40–50 m well-maintained\",\n            \"0.7–1.5 percent of insured value\",\n            \"Mediterranean / Northern Europe\"\n          ],\n          [\n            \"Smaller yachts and hurricane-exposed regions\",\n            \"2–5 percent\",\n            \"\"\n          ]\n        ],\n        \"sourceLine\": \"AIG, Gallagher Specialty published commentary; Pantaenius market notes; Ollie Davis, PIB Marine (May 2026).\"\n      }",
+    "kind": "fact",
+    "reason": "C10: one sequence matching the essay and the Davis Q&A; Pantaenius quotation now exact; 'The market remembers' cut"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "      {\n        \"type\": \"table\",\n        \"caption\": \"Per-voyage premium as a percentage of insured hull value. War risk policies are typically purchased per voyage, not annual.\",\n        \"head\": [\n          \"Region\",\n          \"Pre-October 2023\",\n          \"Early 2024\",\n          \"Peak\",\n          \"Current\"\n        ],\n        \"rows\": [\n          [\n            \"Red Sea\",\n            \"0.05 percent\",\n            \"1 percent\",\n            \"2 percent\",\n            \"Elevated\"\n          ],\n          [\n            \"Black Sea (Russian ports)\",\n            \"Standard\",\n            \"Elevated\",\n            \"1 percent+\",\n            \"0.65–0.80 percent\"\n          ],\n          [\n            \"Ukrainian deep-water ports\",\n            \"Standard\",\n            \"Elevated\",\n            \"1 percent+\",\n            \"0.45–0.55 percent\"\n          ]\n        ],\n        \"sourceLine\": \"Lloyd’s war risk circular updates; Marsh, Gallagher published commentary.\"\n      }",
+    "new": "      {\n        \"type\": \"table\",\n        \"caption\": \"Per-voyage premium as a percentage of insured hull value. War risk policies are typically purchased per voyage, not annual.\",\n        \"head\": [\n          \"Region\",\n          \"Pre-October 2023\",\n          \"Early 2024\",\n          \"Peak\",\n          \"Current\"\n        ],\n        \"rows\": [\n          [\n            \"Red Sea\",\n            \"0.05 percent\",\n            \"1 percent\",\n            \"2 percent\",\n            \"Elevated\"\n          ],\n          [\n            \"Black Sea (Russian ports)\",\n            \"Standard\",\n            \"Elevated\",\n            \"1 percent+\",\n            \"0.65–0.80 percent\"\n          ],\n          [\n            \"Ukrainian deep-water ports\",\n            \"Standard\",\n            \"Elevated\",\n            \"1 percent+\",\n            \"0.45–0.55 percent\"\n          ]\n        ],\n        \"sourceLine\": \"Lloyd’s war risk circular updates; Marsh, Gallagher published commentary.\"\n      },\n      {\n        \"type\": \"kv\",\n        \"caption\": \"War risk in practice.\",\n        \"rows\": [\n          {\n            \"label\": \"What it covers\",\n            \"value\": \"Unexpected damage from riots, uprisings, vandalism or political incident while the yacht is outside high-risk zones. It does not cover the yacht inside designated War Risk areas.\",\n            \"note\": \"Reference incidents: MY Kaos, vandalised alongside the dock in Barcelona (2023), and damage during the 2016 Turkish coup attempt.\"\n          },\n          {\n            \"label\": \"Entering an exclusion zone\",\n            \"value\": \"An additional premium (AP), set by motor or sail, maximum cruising speed, freeboard height, appearance, length of stay in the area, and the captain and crew’s experience of the route. Increased deductibles often apply inside the zone.\",\n            \"note\": \"Fifty percent of the AP is typically returned as a no-claims discount after a successful transit.\"\n          },\n          {\n            \"label\": \"High-risk passages\",\n            \"value\": \"Insurers normally require a separate Kidnap & Ransom policy and armed security from a partnered or accredited provider, both at the owner’s cost.\"\n          },\n          {\n            \"label\": \"Notice of cancellation\",\n            \"value\": \"Since the Ukraine and Middle East conflicts, insurers have issued seven-day notice of cancellation on H&M and P&I in respect of certain cruising areas. Cover can usually be bought back for an additional premium if the owner intends to visit.\",\n            \"note\": \"Ask before the itinerary is fixed.\"\n          }\n        ],\n        \"sourceLine\": \"Ollie Davis, PIB Marine, interviewed for this chapter (May 2026).\"\n      }",
+    "kind": "structure",
+    "reason": "author decision 3: war risk detail from essay paras 45 and 47 moved here"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "      {\n        \"type\": \"h2\",\n        \"text\": \"Charter, four worked cases\"\n      },\n      {\n        \"type\": \"table\",\n        \"caption\": \"Most charter operations subsidise rather than recover ownership cost. The successful exception depends on disciplined operation and willingness to release the prime weeks.\",\n        \"head\": [\n          \"Yacht\",\n          \"Weekly rate\",\n          \"Weeks\",\n          \"Net result\"\n        ],\n        \"rows\": [\n          [\n            \"48 m motor\",\n            \"EUR 250–310 k\",\n            \"7\",\n            \"Break-even\"\n          ],\n          [\n            \"47 m sail\",\n            \"EUR 110–125 k\",\n            \"9\",\n            \"EUR 444 k loss\"\n          ],\n          [\n            \"85 m motor\",\n            \"EUR 850–950 k\",\n            \"8\",\n            \"EUR 430 k loss\"\n          ],\n          [\n            \"60 m, owner-optimised\",\n            \"EUR 220–260 k\",\n            \"12\",\n            \"Up to EUR 2 m net positive\"\n          ]\n        ],\n        \"sourceLine\": \"BOAT International published case studies.\"\n      }",
+    "new": "      {\n        \"type\": \"h2\",\n        \"text\": \"Commercial charter regimes, by jurisdiction\"\n      },\n      {\n        \"type\": \"kv\",\n        \"caption\": \"Commercial registration is decided jurisdiction by jurisdiction; there is no single global licence. The VAT regimes that interact with charter are in chapter 4.\",\n        \"rows\": [\n          {\n            \"label\": \"France\",\n            \"value\": \"French Commercial Exemption (FCE): commercial registration, full-time crew, length above 15 m.\",\n            \"note\": \"Its VAT conditions, including the share of voyages leaving French waters and the limit on static charter use, are set out in chapter 4.\"\n          },\n          {\n            \"label\": \"Italy\",\n            \"value\": \"Italian flag with commercial registration, or a non-Italian flag meeting Codice della Nautica conditions. VAT on charter fees is 22 percent on the portions in Italian waters.\",\n            \"note\": \"Italian leasing and its effective-use test: chapter 4.\"\n          },\n          {\n            \"label\": \"Spain\",\n            \"value\": \"Royal Decrees 186/2023 and 587/2024 replace the charter licence with an Affidavit of Responsibility filed with the Harbour Master, for EU and non-EU flags alike; 2026 is the transition year.\",\n            \"note\": \"Spanish residents and entities established in Spain register yachts locally and pay the special tax on certain means of transport at 12 percent of value (11 percent in the Canary Islands); yachts used exclusively for charter can be exempt, subject to conditions on use by owners and their families.\"\n          },\n          {\n            \"label\": \"Greece\",\n            \"value\": \"Historically the most restrictive in the Mediterranean. Greek-flagged and EU-flagged yachts above 35 m can charter under the standard regime. Since February 2024 the e-Charter Permission also lets non-EU-flagged commercial yachts over 35 m with non-wooden hulls charter in Greek waters for up to 28 days a year, subject to a special fee and VAT registration.\",\n            \"note\": \"NEPA is the long-form route.\"\n          },\n          {\n            \"label\": \"Croatia\",\n            \"value\": \"Croatian flag or a local charter-agency arrangement under the Croatian Maritime Code. Annual permit.\",\n            \"note\": \"13 percent VAT on charter fees.\"\n          },\n          {\n            \"label\": \"Turkey\",\n            \"value\": \"“Blue Cruise” charter requires Turkish-flag operation or a Turkish charter agreement with a licensed local operator.\",\n            \"note\": \"Foreign-flagged yachts can cruise privately; commercial charter requires the local licence.\"\n          },\n          {\n            \"label\": \"Monaco\",\n            \"value\": \"The Monégasque flag permits up to 90 days of commercial charter a year without personal tax levies on the owner; under several neighbouring EU flags the same vessel would face VAT on private owner use.\",\n            \"note\": \"Visible reflagging at brokerage during 2026 on yachts of 30 to 50 m with light charter intent (Capt. Ukic of M/Y Ellen, MYBA Charter Show 2026, in The Superyacht Report).\"\n          },\n          {\n            \"label\": \"Cayman Islands and Marshall Islands\",\n            \"value\": \"Both issue commercial certificates covering global charter activity. Cayman applies the Red Ensign Group Yacht Code (July 2024 edition), the Marshall Islands its own Yacht Code (2026 edition).\",\n            \"note\": \"The dominant choices for over-30 m commercial programmes.\"\n          },\n          {\n            \"label\": \"Malta\",\n            \"value\": \"An EU charter route widely used for long Mediterranean seasons.\",\n            \"note\": \"VAT on a lease under the Maltese leasing guidelines (in force since March 2020) follows documented use: chapter 4.\"\n          },\n          {\n            \"label\": \"United States\",\n            \"value\": \"Regulated under federal law (Coast Guard and the Jones Act). Foreign-flagged yachts cannot embark and disembark passengers between US ports under standard charter, which severely restricts non-US-flagged commercial operation in US waters.\",\n            \"note\": \"The US tax treatment of a charter business is in the chapter essay.\"\n          }\n        ],\n        \"sourceLine\": \"Royal Decrees 186/2023 and 587/2024 (Spain); Greek e-Charter Permission (February 2024); Red Ensign Group Yacht Code (July 2024); Marshall Islands Yacht Code (2026); The Superyacht Report (Monaco).\"\n      }",
+    "kind": "structure",
+    "reason": "author decision 3: charter regimes from essay paras 56 to 65 moved here; the worked cases move to the ch01 spread (ch01 is the home of charter economics)"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "      {\n        \"type\": \"note\",\n        \"text\": \"Run your own numbers using the running cost calculator. Source assumptions are named on every line. Charter economics, with BOAT International’s case studies, are set out in the chapter essay.\"\n      }",
+    "new": "      {\n        \"type\": \"note\",\n        \"text\": \"Run your own numbers using the running cost calculator. Source assumptions are named on every line. Charter economics, with BOAT International’s case studies, are set out in the chapter essay.\"\n      },\n      {\n        \"type\": \"h2\",\n        \"text\": \"Charter, four worked cases\"\n      },\n      {\n        \"type\": \"table\",\n        \"caption\": \"BOAT International’s four published case studies, discussed in the chapter essay. Most charter operations subsidise rather than recover ownership cost; the profitable exception depends on disciplined operation and releasing the prime weeks.\",\n        \"head\": [\n          \"Yacht\",\n          \"Weekly rate\",\n          \"Weeks\",\n          \"Net result\"\n        ],\n        \"rows\": [\n          [\n            \"48 m motor\",\n            \"EUR 250–310 k\",\n            \"7\",\n            \"Break-even\"\n          ],\n          [\n            \"47 m sail\",\n            \"EUR 110–125 k\",\n            \"9\",\n            \"EUR 444 k loss\"\n          ],\n          [\n            \"85 m motor\",\n            \"EUR 850–950 k\",\n            \"8\",\n            \"EUR 430 k loss\"\n          ],\n          [\n            \"60 m, owner-optimised\",\n            \"EUR 220–260 k\",\n            \"12\",\n            \"Up to EUR 2 m net positive\"\n          ]\n        ],\n        \"sourceLine\": \"BOAT International published case studies.\"\n      }",
+    "kind": "repetition",
+    "reason": "charter worked cases moved from the ch07 spread to the ch01 spread, the home of charter economics; weekly rates kept"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "      {\n        \"label\": \"BOAT International\",\n        \"line\": \"Charter case studies.\",\n        \"url\": \"https://www.boatinternational.com/\"\n      }",
+    "new": "      {\n        \"label\": \"Ollie Davis (PIB Marine, formerly Zorab Insurance Services)\",\n        \"line\": \"Interviewed for this chapter, May 2026: the 2022 to 2024 hardening cycle, P&I limits, negotiable deductibles and war risk.\"\n      }",
+    "kind": "structure",
+    "reason": "BOAT case studies now cited in the ch01 spread; Davis is the source for the moved insurance rows"
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Once flag and operating profile determined; commission disclosed in writing; Pantaenius, AON, Gallagher",
+    "new": "Once flag and operating profile determined; commission disclosed in writing; at least three quotes (chapter 7 names the main brokers)",
+    "kind": "fact",
+    "reason": "C11: ch09 spread aligned with ch07"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "which meets the first element of the independence test. Pantaenius, AON, Gallagher all quote competitively.",
+    "new": "which meets the first element of the independence test. Obtain at least three quotes; chapter 7 names the main brokers.",
+    "kind": "fact",
+    "reason": "C11: ch09 43 aligned with ch07 (no ch09 agent running)"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Competitive quotes from at least three of Pantaenius, AON, and Gallagher Specialty.",
+    "new": "Competitive quotes from at least three brokers with over-30 m yacht experience (the chapter names Howden, Pantaenius, AON Marine, Gallagher Specialty, Marsh and PIB Marine), each with its commission disclosed in writing.",
+    "kind": "fact",
+    "reason": "C11"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "a worked case based on yacht size, weekly rate, and weeks against the BOAT International published cases.",
+    "new": "a worked case based on yacht size, weekly rate, and weeks against the BOAT International published cases (chapter 1).",
+    "kind": "repetition",
+    "reason": "pointer to the home of the cases"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Senior crew are the bottleneck of the industry; their pay continues to rise where junior crew has plateaued.",
+    "new": "Experienced senior crew, captains above all, are in shortest supply; their pay continues to rise where junior crew pay has plateaued.",
+    "kind": "line",
+    "reason": "generalisation narrowed to Lay's reading"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "MLC 2006 governs working hours, accommodation, and contracts;",
+    "new": "On commercially operated yachts, MLC 2006 governs working hours, accommodation, and contracts;",
+    "kind": "fact",
+    "reason": "private yachts are outside MLC (ch07 20)"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "the candidate hired having pushed back on itinerary, maintenance, budget, and crew during interview is typically the disciplined hire.",
+    "new": "the candidate who pushed back on itinerary, maintenance, budget, and crew during interview is usually the stronger hire.",
+    "kind": "line",
+    "reason": "plainer"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Competitive quotes from at least three of Pantaenius, AON Marine, and Gallagher Specialty before binding.",
+    "new": "Competitive quotes from at least three brokers with over-30 metre yacht experience before binding, each with its commission disclosed in writing.",
+    "kind": "fact",
+    "reason": "C11"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The first-year owner benefits from a season or two of private operation before introducing charter.",
+    "new": "The first-time owner benefits from three years of private operation before introducing charter.",
+    "kind": "fact",
+    "reason": "matches essay 68, the checklist and the next sentence (year four)"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "work a case based on yacht size, weekly rate, and weeks against the BOAT International published cases.",
+    "new": "work a case based on yacht size, weekly rate, and weeks against the BOAT International published cases set out in chapter 1.",
+    "kind": "repetition",
+    "reason": "pointer"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Yachts above 500 GT engaged in international voyages must hold a Maritime Labour Certificate, with a five-year validity and intermediate inspection.",
+    "new": "Commercially operated yachts of 500 GT and above engaged in international voyages must hold a Maritime Labour Certificate, with a five-year validity and intermediate inspection. A privately used yacht is outside the Convention.",
+    "kind": "fact",
+    "reason": "contradicted ch07 20: MLC applies to commercial operation"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Yacht-specialist mutuals include Shipowners’ Club and Steamship Mutual; commercial insurers including Pantaenius, AON, Gallagher Specialty, and Lloyd’s syndicates also write yacht P&I. Standard limits for a 40 to 50 metre yacht run to EUR 500 million third-party.",
+    "new": "In the over-30 metre segment it is written mainly by the mutual clubs, chiefly Shipowners’ Club and Steamship Mutual, and also by Lloyd’s syndicates, placed through specialist brokers. The standard third-party limit is USD 500 million; some clubs offer 25 to 35 metre yachts reduced limits.",
+    "kind": "fact",
+    "reason": "EUR to USD (ch07, Davis); brokers were described as insurers"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Underwriting is typically through Pantaenius, AON Marine, Gallagher Specialty, or Lloyd’s specialist syndicates. Builder’s risk insurance covers the yacht during refit, with the buyer’s interest noted, and should cover transit between subcontractor sites.",
+    "new": "Cover is usually placed by a specialist broker with Lloyd’s syndicates or company markets; chapter 7 names the main brokers. Builder’s risk insurance covers the yacht during refit or new build; chapter 6 explains why the owner should be co-insured rather than only noted, with cover in transit between subcontractor sites.",
+    "kind": "fact",
+    "reason": "brokers were described as underwriters (C11); 'interest noted' contradicted ch06 76"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Yachts engaged in qualifying commercial charter activity, with documented charter contracts and a Spanish charter licence, are exempt.",
+    "new": "Yachts engaged in qualifying commercial charter activity, with documented charter contracts and the filing Spanish charter rules require (from 2026 an Affidavit of Responsibility with the Harbour Master), can be exempt, subject to conditions on use by owners and their families.",
+    "kind": "fact",
+    "reason": "the charter licence was replaced (Royal Decrees 186/2023 and 587/2024, ch07)"
+  },
+  {
+    "file": "lib/glossary.ts",
+    "old": "Maltese charters since the 2019 reform follow effective-use rules.",
+    "new": "Maltese leasing has followed effective-use rules since guidelines of 12 March 2020 (chapter 4).",
+    "kind": "fact",
+    "reason": "date aligned with ch04 22 and ch07"
+  }
+]
