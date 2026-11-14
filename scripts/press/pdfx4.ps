@@ -1,0 +1,15 @@
+%!
+% PDF/X-4 output intent for Ghostscript. Profile, condition and title are
+% substituted by scripts/press/make-pdfx.py.
+% Adapted from Littlpinguin/marketing-cockpit-template 14-print/lib/pdfx4.ps (MIT).
+[ /GTS_PDFXVersion (PDF/X-4) /Title (@TITLE@) /Trapped /False /DOCINFO pdfmark
+/ICCProfile (@ICC@) def
+[/_objdef {icc_PDFX} /type /stream /OBJ pdfmark
+[{icc_PDFX} << /N 4 >> /PUT pdfmark
+[{icc_PDFX} ICCProfile (r) file /PUT pdfmark
+[/_objdef {OutputIntent_PDFX} /type /dict /OBJ pdfmark
+[{OutputIntent_PDFX} << /Type /OutputIntent /S /GTS_PDFX
+  /OutputCondition (@COND@)
+  /Info (@INFO@) /OutputConditionIdentifier (@ID@)
+  /RegistryName (http://www.color.org) /DestOutputProfile {icc_PDFX} >> /PUT pdfmark
+[{Catalog} <</OutputIntents [ {OutputIntent_PDFX} ]>> /PUT pdfmark

@@ -13,16 +13,17 @@ State of the press files on 14 November 2026 and what remains before the book ca
 | Extent | 180-page block; press block padded to 184 with four blank pages (23 sections of eight) | Signature size (8, 16 or 32) decides the padding. At 16-page sections the block would pad to 192 |
 | Blank pages | Six blank pages inserted so every chapter opener falls on a left-hand page (before ch02, ch03, ch05, ch06, ch08 and ch09) | Confirm blank pages carry no folio or running head |
 
-## Fonts
+## Press file (added 14 November 2026)
 
-**Type 3 subsets: not yet fixed, fix tested.** Chrome embeds variable fonts as Type 3. The proof carries about 80 Type 3 subsets of Newsreader and DM Sans. Many prepress workflows reject Type 3, and some RIPs render it poorly.
+The build now makes the printer's file itself: `print/1st-edition/firstownersreference-1st-edition-press-block-PDFX4.pdf`, via `scripts/press/` (adapted from Littlpinguin/marketing-cockpit-template, MIT).
 
-A static instance of Newsreader made with fontTools from the variable font embeds as CID TrueType (tested: `Newsreader 400, opsz 9`). The fix is to generate static instances for each weight and optical size the book uses and serve them to the print route only:
+1. **Exact mount** at 214 × 286 mm with TrimBox 208 × 280 and BleedBox. Chrome's paper is 214.12 × 286.09 mm but it paints only the 214 × 286 page box, so every full-bleed page had an unpainted 0.17 mm strip at the foot. The mount crops the painted area and scales it by about 1.0004 to the exact sheet.
+2. **PDF/X-4** with output intent PSO Uncoated v3 (FOGRA52), CMYK on that profile, images lossless (Flate) and capped at 600 ppi.
+3. **Text outlined.** This removes the Type 3 font subsets Chrome writes for variable fonts; the press file contains no fonts. Text checks run on the proof, which keeps live text.
+4. **Black text in K only.** Body text (charcoal #1a1a1a) and neutral greys go to black ink of the same lightness through the paper profile; marine and sail stay four-colour.
+5. **Prepress check** (`verify-press.py`) on every build. Result on this proof: **OK**. 184 pages, 214 × 286 mm, CMYK FOGRA52 PDF/X-4, TrimBox 208 × 280, total ink maximum 293 per cent (limit 300), text outlined, ten blank pages (opener spacers and end padding), bleed covered on every edge.
 
-- Newsreader roman 300, 400, 500 and italic 300, 400, at a text optical size (about 9) and a display size (about 36);
-- DM Sans 400, 500, 600, 700 at opsz 9.
-
-This changes the letterforms slightly at display sizes, because Chrome currently picks an optical size per element, so it needs one look at a proof before it is adopted. About half a day's work.
+The check found two faults that the old pipeline could not see: the hairline at the foot of every full-bleed page, fixed in the mount, and a false "RGB left" from the inherited byte search, now replaced by a check of the actual colour spaces.
 
 ## Images
 
@@ -39,18 +40,18 @@ In-flow pictures are served from 1,100-pixel derivatives. The press build must p
 
 ## Colour
 
-| Item | Now | Needed |
+| Item | Now | Still needed |
 |---|---|---|
-| Conversion | Ghostscript generic prepress to CMYK | The printer's profile for the chosen stock. For uncoated Munken Pure that is normally PSO Uncoated v3 (FOGRA52) |
-| Black text | Body text is charcoal #1a1a1a, which converts to four-colour black | Set text to 100 per cent K only, or convert with "preserve K". Four-colour text on uncoated stock misregisters and fills in at 9 pt |
-| Overprint | Not set | Black text and hairlines should overprint |
-| Total ink | Not limited | 300 per cent or the printer's figure for uncoated stock |
-| Marine #0f3b5c | Shifts visibly in conversion | Check on the wet proof; consider a spot colour for the case foil only, as planned |
-| Page ground | White (changed from #f5f2ec); no ink on empty paper | None |
+| Profile | PSO Uncoated v3 (FOGRA52), the ECI standard for uncoated stock such as Munken Pure | Confirm with the printer; if they specify another, the build takes `ICC=` |
+| Black text | K only (see above) | None |
+| Total ink | 293 per cent maximum, checked against 300 | The printer's figure for the chosen stock |
+| Overprint | Black text is K only, so knockouts under it are not a registration risk; no overprint set | Ask whether the printer wants black overprint set in the file or at the RIP |
+| Gradients | Ghostscript rasterises the chapter-opener title gradients at 72 ppi. Smooth, so invisible, but a printer's preflight may flag it | Pre-render the gradient as an image if the printer objects |
+| Marine #0f3b5c | Four-colour | Check on the wet proof |
 
 ## PDF standard
 
-Chrome writes PDF 1.4 with live transparency in places (chart fills, image masks). Ask the printer whether they want PDF/X-4, which keeps transparency, or PDF/X-1a, which needs flattening. X-4 is the safer route from this pipeline. Neither is produced yet. The press block is stamped with boxes but is not a validated PDF/X file.
+PDF/X-4 (transparency kept). Ask the printer to confirm X-4; if they require X-1a the conversion must flatten transparency, which Ghostscript does only by rasterising affected pages, so it should be avoided.
 
 ## Case and endpapers
 

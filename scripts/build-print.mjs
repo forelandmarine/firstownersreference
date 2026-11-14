@@ -397,6 +397,42 @@ async function generatePdf() {
 const FOLIOS_FILE = path.join(ROOT, "lib/print-folios.json");
 const FIT_FILE = path.join(ROOT, "lib/print-fit.json");
 
+/* Printer's file: PDF/X-4 on the paper profile, text outlined, text and
+   neutral greys in K only, then the prepress check (scripts/press/, adapted
+   from marketing-cockpit-template, MIT). Skipped with a message when the
+   ECI profile is not on this machine (print/icc/README.md). The check
+   allows the opener spacers and end padding as blank pages, and reports
+   low-resolution placeholder photographs without failing. */
+function makePressPdfx(pressBlock, blockPages) {
+  const icc = path.join(ROOT, "print/icc/PSOuncoated_v3_FOGRA52.icc");
+  if (!fs.existsSync(icc)) {
+    log("! No paper profile at print/icc; PDF/X-4 press file not made (see print/icc/README.md)");
+    return;
+  }
+  const prefix = pressBlock.replace(/-proof-press-block\.pdf$/, "-press-block");
+  log("  Making PDF/X-4 press file (FOGRA52, outlined text, K-only black)...");
+  execSync(`python3 -I "${path.join(ROOT, "scripts/press/make-pdfx.py")}" "${pressBlock}" "${prefix}"`, {
+    stdio: "pipe",
+    maxBuffer: 1 << 26,
+  });
+  const pdfx = `${prefix}-PDFX4.pdf`;
+  const pages = Number(
+    execSync(`pdfinfo "${pdfx}"`).toString().match(/Pages:\s+(\d+)/)[1],
+  );
+  // Opener spacers inside the block, plus the padding added to reach a whole
+  // section of eight.
+  const blank = (readFoliosFile().spacers ?? []).length + Math.max(0, pages - blockPages);
+  try {
+    const out = execSync(
+      `python3 -I "${path.join(ROOT, "scripts/press/verify-press.py")}" "${pdfx}" ${pages}`,
+      { env: { ...process.env, BLANK_ALLOWED: String(blank) }, maxBuffer: 1 << 26 },
+    ).toString();
+    log(`  Prepress check: ${out.trim().split("\n").join("\n    ")}`);
+  } catch (err) {
+    log(`! Prepress check failed:\n    ${String(err.stdout ?? err).trim().split("\n").join("\n    ")}`);
+  }
+}
+
 // Parse the printed PDF's text layer for the invisible [[CH..]] and
 // [[REF-..]] markers so the build knows which sheet each chapter and
 // reference section landed on.
@@ -1138,7 +1174,10 @@ async function main() {
   stampBoxes(PDF_OUT);
   convertCmyk(PDF_OUT);
   const pressBlock = makePressBlock();
-  if (pressBlock) convertCmyk(pressBlock);
+  if (pressBlock) {
+    convertCmyk(pressBlock);
+    makePressPdfx(pressBlock, pageCount);
+  }
   await printCaseArtwork();
   writeArtifacts(manifest, assignments, pageCount);
 

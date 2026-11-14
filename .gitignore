@@ -47,3 +47,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ECI paper profiles: free to use and embed, not to redistribute
+print/icc/*.icc
