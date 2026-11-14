@@ -687,7 +687,7 @@ export default function PrintEdition() {
           readers. This is disclosed openly. The six-element independence
           test that runs through The First Owner&rsquo;s Reference applies to
           the publisher as it does to every other adviser. Its answers on
-          earnings, relationships, counterparties, fees and principals are set
+          earnings, relationships, counterparties, fees, insurance and principals are set
           out below.
         </p>
         <p>
@@ -717,7 +717,13 @@ export default function PrintEdition() {
           commissions.
         </p>
         <p>
-          <strong>5. Named principals.</strong> The directors of Foreland are
+          <strong>5. Professional indemnity insurance.</strong> Foreland
+          holds professional indemnity insurance. The limit, and any
+          project-specific cover, are confirmed to each client in writing
+          with the engagement letter and are not published here.
+        </p>
+        <p>
+          <strong>6. Named principals.</strong> The directors of Foreland are
           Jack MacNally and Daniel Marks. Both listed at Companies House.
           Registered with the Yacht Owner&rsquo;s Representative Register.
           Resident in London.
