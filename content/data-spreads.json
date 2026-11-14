@@ -144,7 +144,7 @@
       },
       {
         "type": "note",
-        "text": "Run your own numbers using the running cost calculator. Source assumptions are named on every line. Charter economics, with BOAT International’s case studies, are set out in the chapter essay."
+        "text": "Run your own numbers using the running cost calculator. The sources behind the model are listed on the calculator page. Charter economics, with BOAT International’s case studies, are set out in the chapter essay."
       },
       {
         "type": "h2",
@@ -1191,7 +1191,7 @@
       },
       {
         "type": "kv",
-        "caption": "Indicative. There is no fixed relationship between the two values once the new build is delivered: the comparison depends on the dates, the yachts and whether purchase prices or resale values are compared.",
+        "caption": "Indicative. Three measures are involved: the new build’s contract price, the purchase price of a comparable brokerage yacht on the market at the same date, and the resale value each has later. The 30 to 50 percent compares the first two at contract. Once the new build is delivered there is no fixed relationship between the two resale values.",
         "rows": [
           {
             "label": "At contract",
@@ -2476,7 +2476,7 @@
       },
       {
         "type": "table",
-        "caption": "Indicative annual operating cost, 50 m at moderate use (8 to 10 weeks family use). Practitioner working ranges; motor figure on Mediterranean operation, 400 cruising hours. The five lines shown exclude management fees, compliance, provisioning and contingency, which chapter 1 puts at roughly 15 to 25 percent of the full budget; crew is therefore about half of the lines shown and 30 to 40 percent of the whole.",
+        "caption": "Indicative annual operating cost, 50 m at moderate use (8 to 10 weeks family use). Practitioner working ranges; motor figure on Mediterranean operation, 400 cruising hours. The five lines shown exclude management fees, compliance, provisioning and contingency, which chapter 1 puts at roughly 15 to 25 percent of the full budget; crew is therefore about half of the lines shown and roughly 37 to 45 percent of the whole, at or above the top of chapter 1’s 30 to 40 percent.",
         "head": [
           "Cost line",
           "50 m motor",

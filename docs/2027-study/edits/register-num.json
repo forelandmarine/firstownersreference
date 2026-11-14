@@ -1,0 +1,93 @@
+[
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "to EUR 2.3 to 2.8 million for a 50-metre motor yacht at moderate use in this calculator's model,",
+    "new": "to EUR 2.3 to 2.8 million for a 50-metre motor yacht at moderate use in this calculator's model, which assumes 11 crew, private use and the Western Mediterranean (about EUR 2.3 million on one season, EUR 2.7 million on two),",
+    "kind": "fact",
+    "reason": "Inconsistency: the model's assumptions behind the 50 m figure are not stated, so a reader cannot see why it differs from chapter 1."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "The model is calibrated against Christie Yachts' published budgets; a new-build 50-metre yacht priced in the tens of millions runs higher on the percentage bands in chapter 1. The main cost categories are crew (30 to 40 percent of the total), insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. As a rough guide, expect 12 to 15 percent of purchase price for a new 40 to 50 metre yacht at moderate use, rising to 12 to 20 percent for older or larger vessels and higher again on charter-active programmes.",
+    "new": "The model is calibrated against Christie Yachts' published budget table, which puts a 45 to 50 metre motor yacht of about 500 GT with 11 crew at EUR 2 to 3 million a year, and it does not work from purchase price. Chapter 1 does: 12 to 15 percent of purchase price for a new 40 to 50 metre yacht at moderate use, rising to 12 to 20 percent for older or larger vessels and higher again on charter-active programmes. On a 50-metre new build bought for roughly EUR 30 to 50 million, with 12 to 16 crew, that comes to about EUR 4 to 6 million a year. The difference from this model lies mainly in crew numbers and in maintenance, insurance and berth costs, which rise with the yacht's value and specification. The main cost categories are crew, insurance, maintenance, marina berths, fuel, management fees, and regulatory compliance. Crew is 30 to 40 percent of the total on chapter 1's figures and just under half in this model, where the other lines are lower.",
+    "kind": "fact",
+    "reason": "Inconsistency: FAQ gave crew as 30 to 40 percent while the model's own crew line is 47 to 48 percent; it gave 12 to 15 percent of price as a guide although the "
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "On a 50 metre new-build motor yacht that runs to roughly EUR 4 to 6 million per year.",
+    "new": "On a 50 metre new-build motor yacht bought for roughly EUR 30 to 50 million, with 12 to 16 crew, that runs to roughly EUR 4 to 6 million per year. The running cost calculator, calibrated to a published broker budget for a 45 to 50 metre yacht with 11 crew, gives EUR 2.3 to 2.8 million; the difference lies mainly in crew numbers and in maintenance and insurance costs that rise with the yacht’s value.",
+    "kind": "fact",
+    "reason": "Inconsistency: EUR 4 to 6 m here and EUR 2.3 to 2.8 m in the calculator FAQ are both for a 50 m motor yacht at moderate use, with no assumptions stated."
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "tests a buyer’s own figures against MYBA, Pantaenius, and Quay Crew published data.",
+    "new": "tests a buyer’s own figures against Christie Yachts’ published budget table, The Superyacht Report OpEx Survey, and published crew and insurance data.",
+    "kind": "fact",
+    "reason": "Factual error: the calculator is calibrated against Christie Yachts and checked against the TSR OpEx Survey; MYBA, Pantaenius and Quay Crew are secondary inputs"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "the Mediterranean Yacht Brokers Association (MYBA), Pantaenius, Quay Crew, IGY and aggregated practitioner sources",
+    "new": "Christie Yachts’ published budget table, The Superyacht Report OpEx Survey, the Mediterranean Yacht Brokers Association (MYBA), Pantaenius, Quay Crew, YPI Crew and aggregated practitioner sources",
+    "kind": "fact",
+    "reason": "Factual error: IGY is not a source of the calculator; its calibration source (Christie Yachts) and survey check (TSR) are not named."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Source assumptions are named on every line.",
+    "new": "The sources behind the model are listed on the calculator page.",
+    "kind": "fact",
+    "reason": "Factual error: the calculator's cost lines carry no source; the sources are listed once at the foot of the page."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Source assumptions are named on every line.",
+    "new": "The sources behind the model are listed on the calculator page.",
+    "kind": "fact",
+    "reason": "Factual error, as previous row (same sentence in the data spread)."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "Indicative. There is no fixed relationship between the two values once the new build is delivered: the comparison depends on the dates, the yachts and whether purchase prices or resale values are compared.",
+    "new": "Indicative. Three measures are involved: the new build’s contract price, the purchase price of a comparable brokerage yacht on the market at the same date, and the resale value each has later. The 30 to 50 percent compares the first two at contract. Once the new build is delivered there is no fixed relationship between the two resale values.",
+    "kind": "line",
+    "reason": "Clarity: the essay and data spread name the 30 to 50 percent without saying which two prices it compares; the caption now distinguishes contract price, brokerag"
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "the empirical band runs 12 to 20 percent",
+    "new": "practitioner ranges run 12 to 20 percent",
+    "kind": "line",
+    "reason": "Evidence class: the 12 to 20 percent is a practitioner working range (ch01 essay), not an empirical measurement."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "typically 30 to 40 percent of the annual budget.",
+    "new": "typically 30 to 40 percent of the annual budget on the book's practitioner figures, and just under half in this calculator's model.",
+    "kind": "fact",
+    "reason": "Inconsistency: the calculator's own crew bar shows 46 to 48 percent at 30 to 80 m, beside an FAQ saying 30 to 40 percent."
+  },
+  {
+    "file": "app/tools/running-cost-calculator/page.tsx",
+    "old": "A 50-metre yacht with 11 to 13 crew, as this calculator models it, could spend EUR 1.1 to 1.4 million, more on a dual-season programme with rotational crew. Chapter 8 puts a 50-metre motor yacht in private use at 12 to 16 crew, and the salary benchmarks page puts 14 crew at EUR 1.5 to 2.4 million all in.",
+    "new": "A 50-metre motor yacht with 11 crew, as this calculator models it, spends about EUR 1.0 to 1.4 million, the higher figures on a dual-season programme with rotational cover; base salaries are about EUR 740,000 of that. Chapter 8 puts a 50-metre motor yacht in private use at 12 to 16 crew, and the salary benchmarks page puts 14 crew at EUR 1.5 to 2.4 million all in, including recruitment and rotation cover; the difference is mainly headcount and rotation.",
+    "kind": "fact",
+    "reason": "Factual error and clarity: the model carries 11 crew at 50 m (13 is its 55 m figure); base salary and total employment cost were not distinguished."
+  },
+  {
+    "file": "content/data-spreads.json",
+    "old": "crew is therefore about half of the lines shown and 30 to 40 percent of the whole.",
+    "new": "crew is therefore about half of the lines shown and roughly 37 to 45 percent of the whole, at or above the top of chapter 1’s 30 to 40 percent.",
+    "kind": "fact",
+    "reason": "Arithmetic: on the table's own figures crew is 49 to 53 percent of the lines shown, which are 75 to 85 percent of the budget, so 37 to 45 percent of the whole."
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Sailing yachts run a third or so lighter at every length",
+    "new": "Sailing yachts run a quarter or so lighter at every length",
+    "kind": "line",
+    "reason": "Arithmetic: chapter 8, the cited source, gives 9 to 12 crew on a 50 m sailing yacht against 12 to 16 on a motor yacht, 25 percent fewer."
+  }
+]

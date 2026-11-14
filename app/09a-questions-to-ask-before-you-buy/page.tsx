@@ -54,12 +54,12 @@ const FAQS = [
   {
     question: "Is a free yacht advisory service really free?",
     answer:
-      "No party in a yacht transaction works without payment. A service offered at no cost to the buyer is being paid by someone else in the transaction, typically through commission, referral fees, or retrocessions, and the adviser's structural loyalty follows the payment. The question to ask is not whether the service is good but who is paying for it, in writing. If the answer is anyone other than the buyer, weight the advice accordingly.",
+      "No party in a yacht transaction works without payment. A service offered at no cost to the buyer is being paid by someone else in the transaction, typically through commission, referral fees, or retrocessions, and the adviser's incentives follow the payment. Ask, in writing, who is paying for it. If the answer is anyone other than the buyer, weight the advice accordingly.",
   },
   {
     question: "What is the walk-away test for a yacht adviser?",
     answer:
-      "Ask whether the party would walk away from a deal that did not benefit the buyer. A party paid only by the buyer can afford to advise against proceeding; a party paid on closing has a reason not to, which is why that payment should be disclosed in writing. Firms able to point to engagements they declined or terminated, because the right advice was not to proceed, have been tested. The willingness to walk is the truest signal of alignment with the buyer.",
+      "Ask whether the party would walk away from a deal that did not benefit the buyer. A party paid only by the buyer can afford to advise against proceeding; a party paid on closing has a reason not to, which is why that payment should be disclosed in writing. Firms able to point to engagements they declined or terminated, because the right advice was not to proceed, have been tested. A willingness to walk away is good evidence that the party’s interests are aligned with the buyer’s.",
   },
 ];
 

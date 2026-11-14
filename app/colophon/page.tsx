@@ -70,6 +70,13 @@ export default function ColophonPage() {
               Reference. Every commercial relationship is disclosed alongside
               the piece. Where there is none, that is stated.
             </p>
+            <p>
+              Foreland Marine project material in this Reference is anonymised
+              under the firm&rsquo;s confidentiality obligations to its clients.
+              Each case states whether it describes a single project, with
+              identifying details changed, or is a composite illustration drawn
+              from several project files.
+            </p>
 
             <h2>On reception</h2>
             <p>

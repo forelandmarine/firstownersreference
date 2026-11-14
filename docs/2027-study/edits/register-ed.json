@@ -1,0 +1,261 @@
+[
+  {
+    "file": "content/lead-essays.json",
+    "old": "If no, the reader cannot test claims one and two; the firm’s claim to be independent cannot be checked.",
+    "new": "If no, the reader cannot test claims one and two; the firm’s claim to be independent cannot be checked. The list concerns counterparties, not clients. Where naming a yard or broker on a given project would identify a client protected by a confidentiality agreement, the firm can describe the relationship without the project details.",
+    "kind": "fact",
+    "reason": "L5: Clarity: allow for client NDAs in the counterparty list"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ask for three named examples in the comparable band.",
+    "new": "Ask for three examples in the comparable band. Where a confidentiality agreement prevents the firm from naming the client or the yacht, an anonymised project history giving the size, yard tier, type of project, dates and the firm’s role is a fair substitute, and the buyer can ask to speak to a past client who has agreed to be contacted.",
+    "kind": "fact",
+    "reason": "L5: Inconsistency with NDA practice: named examples may be barred by client confidentiality"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A firm that cannot point to engagements declined or terminated has not been tested.",
+    "new": "Such engagements can be described without identifying the client. A firm that cannot point to any has not yet been tested in this way.",
+    "kind": "fact",
+    "reason": "L5: NDA allowance; categorical claim qualified (L8)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Will the firm provide named references, including at least one engagement that did not go smoothly?",
+    "new": "Will the firm provide references, supplied with the clients’ consent, including at least one engagement that did not go smoothly?",
+    "kind": "fact",
+    "reason": "L5: NDA allowance: references only with client consent"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A representative who answers these six questions clearly, with documentary evidence, is suited to the engagement they are being considered for.",
+    "new": "A representative who answers these six questions clearly, with documentary evidence (redacted where a client’s confidentiality agreement requires it), is suited to the engagement they are being considered for. Declining to disclose information protected by a client confidentiality agreement is not evidence of a lack of independence, and the buyer will expect the same protection for their own project.",
+    "kind": "fact",
+    "reason": "L5: NDA allowance: refusal to disclose protected client information is not evidence against independence"
+  },
+  {
+    "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+    "old": "The willingness to walk is the truest signal of alignment with the buyer.",
+    "new": "A willingness to walk away is good evidence that the party’s interests are aligned with the buyer’s.",
+    "kind": "line",
+    "reason": "L8: Categorical superlative without support"
+  },
+  {
+    "file": "app/09a-questions-to-ask-before-you-buy/page.tsx",
+    "old": "and the adviser's structural loyalty follows the payment. The question to ask is not whether the service is good but who is paying for it, in writing.",
+    "new": "and the adviser's incentives follow the payment. Ask, in writing, who is paying for it.",
+    "kind": "line",
+    "reason": "L11: Fluency: abstract noun phrase and formulaic contrast"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "A buyer who can answer all ten clearly, with documents to show for it, is well protected.",
+    "new": "A buyer who can answer all ten clearly, with documents to show for it, has dealt with the conflicts of interest this book describes.",
+    "kind": "line",
+    "reason": "L8: Overstated conclusion: the questions test conflicts, not every risk"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Ownership makes sense when the owner intends to use the yacht for at least 12 weeks per year, plans to hold for at least seven years, has the cash flow to absorb operating cost without strain, and wants a programme charter cannot deliver.",
+    "new": "On cost alone, practitioners treat ownership as justified when the owner intends to use the yacht for at least 12 weeks a year and plans to hold it for at least seven years. These are guidelines, not tests. Below 12 weeks, charter usually covers the same calendar at lower fixed cost, and over a shorter hold the steep early years of depreciation make up a larger share of the total. Privacy, continuity of crew, control of the programme and personal preference can justify ownership at lower use, provided the owner has the cash flow to absorb operating cost without strain.",
+    "kind": "fact",
+    "reason": "L7: Thresholds presented as universal tests; separates financial efficiency from other reasons to own"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "This publication treats 12 weeks of intended use as the point at which ownership starts to make sense.",
+    "new": "This publication uses 12 weeks of intended use as a practitioner guideline for the point at which ownership starts to make financial sense. It is not a fixed test: privacy, continuity of crew, control of the programme and preference can justify ownership at lower use.",
+    "kind": "fact",
+    "reason": "L7: Threshold presented as a universal test"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "Below 12 weeks of intended use, charter and fractional access cover the same calendar at lower fixed cost.",
+    "new": "Below 12 weeks, charter and fractional access usually cover the same calendar at lower fixed cost.",
+    "kind": "fact",
+    "reason": "L7: Categorical claim qualified"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Below 12 weeks of intended use, charter and fractional access cover the same calendar at lower fixed cost.",
+    "new": "A practitioner guideline: below about 12 weeks, charter and fractional access usually cover the same calendar at lower fixed cost. Privacy, continuity and control can still favour ownership.",
+    "kind": "fact",
+    "reason": "L7: Threshold presented as a universal test"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "For a buyer considering new build, the threshold tests are these.",
+    "new": "For a buyer considering new build, practitioners apply three threshold tests. They are guidelines rather than fixed rules, and they measure cost and risk; a buyer may still choose to build for reasons of preference, privacy or control.",
+    "kind": "fact",
+    "reason": "L7: Thresholds presented as universal tests"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "First, do you have a 7 to 10 year hold horizon? If not, brokerage; the new build cost premium does not amortise over a shorter hold.",
+    "new": "First, do you have a hold horizon of seven to ten years? Over a shorter hold the new build premium is spread across too few years of use, so on cost alone brokerage usually comes out ahead.",
+    "kind": "fact",
+    "reason": "L7: Threshold stated as a rule; figure unchanged"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "If a brokerage hull within a reasonable search window can meet 80 percent of your intended use, buy brokerage. Building is justified only if the remaining 20 percent matters to you.",
+    "new": "If a brokerage hull found within a reasonable search can meet about 80 percent of your intended use, brokerage is usually the better value. Building makes sense when the remaining 20 percent matters enough to you to pay for it.",
+    "kind": "fact",
+    "reason": "L7: Categorical instruction ('only') qualified"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "from a builder whose work holds its value.",
+    "new": "from a builder with a record of delivered yachts.",
+    "kind": "fact",
+    "reason": "L8: Unsupported generalisation: SYBAss members include volume yards; ch01 and ch02 attribute the strongest value retention to a named subset"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "The threshold tests are: a hold horizon of seven to ten years on paper,",
+    "new": "Practitioners apply three threshold tests, as guidelines rather than fixed rules: a hold horizon of seven to ten years on paper,",
+    "kind": "fact",
+    "reason": "L7: Thresholds presented as universal tests"
+  },
+  {
+    "file": "content/faqs.json",
+    "old": "If a brokerage yacht meets most of the intended use, building is justified only if the rest matters to the buyer. Below seven years’ hold, the new build cost premium does not amortise.",
+    "new": "If a brokerage yacht meets most of the intended use, building makes sense when the rest matters enough to the buyer to pay for it. Below about seven years’ hold, the new build premium is spread across too few years of use to be justified on cost alone, although preference, privacy or control may still favour building.",
+    "kind": "fact",
+    "reason": "L7: Thresholds presented as universal tests"
+  },
+  {
+    "file": "content/checklists.json",
+    "old": "Below seven years, the new build cost premium does not amortise.",
+    "new": "A practitioner guideline: below about seven years, the new build premium is spread across too few years of use to be justified on cost alone.",
+    "kind": "fact",
+    "reason": "L7: Threshold presented as a universal test"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The largest savings in any project are made here, before the contract is signed.",
+    "new": "Decisions taken here, before the contract is signed, usually have more effect on the final cost than any taken later.",
+    "kind": "line",
+    "reason": "L8: Unsupported absolute ('largest ... in any project')"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "independent paint oversight is a cheap way to avoid them.",
+    "new": "independent paint oversight reduces that risk at modest cost.",
+    "kind": "line",
+    "reason": "L8: Unsupported claim that oversight avoids disputes"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Controlled-atmosphere spray cells are the only reliable way to meet these conditions;",
+    "new": "Controlled-atmosphere spray cells are the most reliable way to meet these conditions;",
+    "kind": "line",
+    "reason": "L8: Unsupported absolute ('only')"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "because almost every serious dispute comes down to a conversation nobody wrote down.",
+    "new": "because many serious disputes turn on a conversation nobody wrote down.",
+    "kind": "line",
+    "reason": "L8: Unsupported generalisation"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Norton Rose Fulbright’s commentary on Chinese-bank refund guarantees expiring within one month of cancellation is widely cited; insolvency proceedings rarely fall within the period the guarantee covers. ",
+    "new": "",
+    "kind": "repetition",
+    "reason": "L8: Second clause is an unsupported generalisation; the Norton Rose Fulbright point is made in full at item 2 of the ten contract points"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": " Disclosed in writing, that payment is something the buyer can weigh. Undisclosed, it is a cost the buyer carries without knowing whose interest it served.",
+    "new": "",
+    "kind": "repetition",
+    "reason": "L9: Repetition: the written-disclosure standard is stated in full five paragraphs later in the same section"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "Chapter 3 sets out the two norms in use: on a EUR 28 million sale, about EUR 1.7 million under the MYBA sliding scale and EUR 2.8 million under the US flat 10 percent. Where another broker introduces the buyer, that broker is paid from the seller’s commission, typically half of it or a little less.",
+    "new": "Chapter 3 sets out the two commission scales in use and how a broker who introduces the buyer is paid from the seller’s commission.",
+    "kind": "repetition",
+    "reason": "L9: Repetition of ch03 commission arithmetic; replaced with a pointer (figures unchanged in ch03)"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "should state the currency of the bands. The seller does not always know",
+    "new": "should state the currency of the bands.\",\n      \"The seller does not always know",
+    "kind": "structure",
+    "reason": "L10: Dense paragraph: split so the scales and arithmetic come first and the buyer's questions follow"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "no major jurisdiction has a financial regulator that supervises yacht brokerage conduct. From 10 July 2027",
+    "new": "no major jurisdiction has a financial regulator that supervises yacht brokerage conduct.\",\n      \"From 10 July 2027",
+    "kind": "structure",
+    "reason": "L10: Dense paragraph: brokerage-conduct regulation and the AML regime separated"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and net profit after tax of HK$13.1 million. Wave Expandary is guaranteed",
+    "new": "and net profit after tax of HK$13.1 million.\",\n      \"Wave Expandary is guaranteed",
+    "kind": "structure",
+    "reason": "L10: Dense paragraph: sale terms separated from the buyer's background"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "with a long stop of 30 September 2026. In October 2026 C&N announced",
+    "new": "with a long stop of 30 September 2026.\",\n      \"The sale has since completed. In October 2026 C&N announced",
+    "kind": "fact",
+    "reason": "L14: Chronology: completion not stated; new paragraph for the post-completion events"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The announcement shows no Fincantieri holding: before the sale, the Lai Sun group held 98.27 percent of C&N International.",
+    "new": "Lai Sun’s May 2026 announcement shows no Fincantieri holding.",
+    "kind": "line",
+    "reason": "L10: Unclear referent ('The announcement' follows the CEO announcement); 98.27 percent repeats para 11"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and 2020 to 2026. What buyers recovered depended",
+    "new": "and 2020 to 2026.\",\n      \"What buyers recovered depended",
+    "kind": "structure",
+    "reason": "L10: Dense paragraph: the insolvency count separated from the recovery record and examples"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "and a correctly presented demand. The instrument is also rarer",
+    "new": "and a correctly presented demand.\",\n      \"The instrument is also rarer",
+    "kind": "structure",
+    "reason": "L10: Dense paragraph: what a guarantee covers separated from how available and durable it is"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "The critique above is not aimed at that work. It is aimed at payments made alongside the commission that are not disclosed, and at arrangements in which one firm answers to both sides of the same transaction.",
+    "new": "The concerns in this chapter are about something else: payments made alongside the commission that are not disclosed, and arrangements in which one firm answers to both sides of the same transaction.",
+    "kind": "line",
+    "reason": "L11: Formulaic 'not X. It is Y' contrast"
+  },
+  {
+    "file": "content/lead-essays.json",
+    "old": "An owner’s representative on a serious new build leads a team.",
+    "new": "On a large new build, the owner’s representative leads a team.",
+    "kind": "line",
+    "reason": "L11: Unnatural adjective ('serious new build')"
+  },
+  {
+    "file": "app/colophon/page.tsx",
+    "old": "Where there is none, that is stated.\n            </p>",
+    "new": "Where there is none, that is stated.\n            </p>\n            <p>\n              Foreland Marine project material in this Reference is anonymised\n              under the firm&rsquo;s confidentiality obligations to its clients.\n              Each case states whether it describes a single project, with\n              identifying details changed, or is a composite illustration drawn\n              from several project files.\n            </p>",
+    "kind": "line",
+    "reason": "L12: Single confidentiality statement for the colophon"
+  },
+  {
+    "file": "app/print/page.tsx",
+    "old": "contributor is paid.\n        </p>\n\n        <h2>Type</h2>",
+    "new": "contributor is paid.\n        </p>\n        <p>\n          Foreland Marine project material in this Reference is anonymised\n          under the firm&rsquo;s confidentiality obligations to its clients.\n          Each case states whether it describes a single project, with\n          identifying details changed, or is a composite illustration drawn\n          from several project files.\n        </p>\n\n        <h2>Type</h2>",
+    "kind": "line",
+    "reason": "L12: Single confidentiality statement, print colophon matching the web colophon"
+  }
+]

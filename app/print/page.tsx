@@ -634,6 +634,13 @@ export default function PrintEdition() {
           contribution is given voluntarily and named transparently; no
           contributor is paid.
         </p>
+        <p>
+          Foreland Marine project material in this Reference is anonymised
+          under the firm&rsquo;s confidentiality obligations to its clients.
+          Each case states whether it describes a single project, with
+          identifying details changed, or is a composite illustration drawn
+          from several project files.
+        </p>
 
         <h2>Type</h2>
         <p>
