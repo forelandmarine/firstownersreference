@@ -19,7 +19,7 @@ export const contributorProfiles: Record<string, ContributorProfile> = {
   "Andrew Roch": {
     name: "Andrew Roch",
     avatar: "/images/contributors/andrew-roch.jpg",
-    bio: "Andrew Roch is the founder and CEO of Yacht Crew Recruitment and Training, a group based in Palma and Sussex that covers the crew career from IAMI/GUEST-accredited leadership and purser training under The Crew Academy to senior-crew placement under The Crew Hunter. He grew up around yachts, sits on the IAMI board as director of the IAMI GUEST programme, and co-designed the Yacht Owner Representative Programme with SYBAss. He writes regularly for SuperyachtNews on crew leadership and the captain’s role.",
+    bio: "Andrew Roch is the founder and CEO of Yacht Crew Recruitment and Training (YCRT), based in Palma. He founded The Crew Academy in 2005 and has since added The Crew Hunter for senior-crew placement, Exclusive Household Cavalry for private households, and the kelp e-learning platform. He has more than 30 years’ experience in headhunting, professional training and technology. He sits on the boards of IAMI and GUEST, co-designed the Yacht Owner Representative Programme with SYBAss, and lectures on leadership and mental health. Through his foundation, The SOOR, he has funded thousands of places on mental health courses. He writes regularly for SuperyachtNews on command, crew retention and refit.",
   },
   "Capt. Pavlos Filippakis": {
     name: "Capt. Pavlos Filippakis",
