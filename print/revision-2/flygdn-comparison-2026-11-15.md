@@ -32,3 +32,7 @@ Options:
 - **A. Keep the book register.** Fix item 9, add captions, and build the data opener and the number boxes when the editors supply copy. This adds about 0 to 4 pages.
 - **B. Magazine treatment in the essays and cases only.** Use the side column and the tall and half-page pictures there, and keep the data and reference pages dense. This adds about 15 to 20 pages, so it needs about 35 pages of editorial cuts to reach 160.
 - **C. Full fly GDN treatment.** This adds about 30 pages, to about 210, which abandons the extent target.
+
+## Action taken, 15 November
+
+Option A. The running heads no longer use middots or capitals: the verso reads "06  Refit" and the recto "The First Owner's Reference, 1st Edition". Fourteen data tables now print as running text (exceptions register E11). The data opener, number boxes and captions wait on copy from the editors.

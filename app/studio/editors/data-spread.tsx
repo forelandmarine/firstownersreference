@@ -354,6 +354,22 @@ function TableBlockEditor({
           placeholder="Source line (optional)"
         />
       </div>
+      <div className="mt-2">
+        <TypeChip label="Print text" tone="bg-charcoal/10 text-charcoal-soft" />
+        <TextField
+          value={(block.printProse ?? []).join("\n\n")}
+          onChange={(v) => {
+            const next = { ...block };
+            // Kept untrimmed so a blank line can be typed; print skips empties.
+            const paras = v.split(/\n\n/);
+            if (v.trim() === "") delete next.printProse;
+            else next.printProse = paras;
+            onChange(next);
+          }}
+          className="font-serif text-small"
+          placeholder="Print only: the table written as paragraphs, blank line between them. Leave empty to print the table."
+        />
+      </div>
       {cols === 0 && (
         <div className="mt-1 font-sans text-meta text-red-700">
           Table has no columns.

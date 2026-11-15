@@ -283,8 +283,10 @@ function validateSpreadBlock(b: unknown, where: string, errors: Errors) {
       checkStrings(b, ["chartId"], where, errors);
       break;
     case "table": {
-      checkKeys(b, ["type", "head", "rows"], ["caption", "sourceLine"], where, errors);
+      checkKeys(b, ["type", "head", "rows"], ["caption", "sourceLine", "printProse"], where, errors);
       checkStrings(b, ["caption", "sourceLine"], where, errors);
+      if ("printProse" in b && !isStrArray(b.printProse))
+        errors.push(`${where}: printProse must be an array of strings`);
       if (!isStrArray(b.head)) {
         errors.push(`${where}: table head must be an array of strings`);
         break;

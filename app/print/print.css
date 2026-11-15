@@ -64,8 +64,7 @@
     content: "";
     font-family: "DM Sans", "Helvetica Neue", sans-serif;
     font-size: 7pt;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    letter-spacing: 0.02em;
     color: #7a756d;
     padding-top: 11mm;
     background: #ffffff;
@@ -98,7 +97,7 @@
   margin-right: 17mm;
   background: #ffffff;
   @top-right {
-    content: "The First Owner\2019s Reference \00b7\0020 1st Edition";
+    content: "The First Owner\2019s Reference, 1st Edition";
     font-family: "Newsreader", Georgia, serif;
     font-size: 8pt;
     font-style: italic;
@@ -2794,8 +2793,7 @@ body {
     content: "Reference";
     font-family: "DM Sans", "Helvetica Neue", sans-serif;
     font-size: 7pt;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    letter-spacing: 0.02em;
     color: #7a756d;
     padding-top: 11mm;
     background: #ffffff;

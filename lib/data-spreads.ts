@@ -9,6 +9,10 @@ export type DataSpreadBlock =
       head: string[];
       rows: string[][];
       sourceLine?: string;
+      /* Print only: the same figures written as paragraphs. When present,
+         the print edition sets these in place of the table and caption;
+         the web keeps the table. */
+      printProse?: string[];
     }
   | {
       type: "kv";

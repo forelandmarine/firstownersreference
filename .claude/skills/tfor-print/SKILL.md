@@ -15,7 +15,7 @@ Canonical documents: `docs/print/layout-specification.md` (layout, from the fly 
 2. **True scale.** Nothing in the flow may lay out wider than the 172 mm type area. One element past it and Chrome shrinks every page to fit: the book printed at 70 per cent from May to November 2026 because of one unbreakable URL. `build-print.mjs` refuses to print if anything overflows. Only standalone-merged pages (cover, frontispiece, openers, plates, closing) may bleed.
 3. **Sources print as domains only** (`lib/print-domain.ts`: `imo.org`, not the full URL). The web keeps full links.
 4. **No eyebrows**: no label above a heading, no "Figure 01.01" or "Table 01.02" over a figure, no "Chapter 05" over the numeral. Where a label was the real name, it becomes the heading.
-5. **No em dashes, no middots** in anything that prints.
+5. **No em dashes, no middots** in anything that prints, running heads included (sentence case: "06  Refit").
 6. **Never** reintroduce paged.js; never wrap a chapter opener inside `.chapter-scope`; never put a full-page or column-spanning element in the middle of a fragmented multicol except the essay head picture, which the build fits.
 7. **White page ground** (ink saving; the cream stock supplies the tone).
 
@@ -46,7 +46,7 @@ Four positions only, all `object-fit: cover`, centred, so commissioned photograp
 
 ## Data pages
 
-Every data section prints. Charts are held to 92 mm, headings stay with their charts, chart notes set in two columns, and a chart drops its own title or standfirst when it repeats the spread title, standfirst or crosshead (`components/print/print-chart.tsx`, compares words, not punctuation). Tables of eight rows or fewer stay whole. A table immediately followed by a chart of the same data is dropped in print (rule from August, listed for approval as exception E1).
+Every data section prints. Charts are held to 92 mm, headings stay with their charts, chart notes set in two columns, and a chart drops its own title or standfirst when it repeats the spread title, standfirst or crosshead (`components/print/print-chart.tsx`, compares words, not punctuation). Tables of eight rows or fewer stay whole. A table immediately followed by a chart of the same data is dropped in print (rule from August, listed for approval as exception E1). A table with `printProse` prints those paragraphs in the two-column flow in place of the table and caption, source line kept; the web keeps the table. Prose must carry every figure in the table and caption (exception E11). Keep as tables only what readers scan: directories, schedules, checklists.
 
 ## Building and checking
 

@@ -44,11 +44,10 @@ export function chapterMastersCss() {
       return `
 @page ch${nn}:left {
   @top-left {
-    content: "Ch ${nn} \\00b7\\0020${title}";
+    content: "${nn}\\2003${title}";
     font-family: "DM Sans", "Helvetica Neue", sans-serif;
     font-size: 7pt;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    letter-spacing: 0.02em;
     color: #7a756d;
     padding-top: 11mm;
     background: #ffffff;
@@ -63,7 +62,7 @@ export function chapterMastersCss() {
 }
 
 function tocFolio(v: number | undefined) {
-  return v !== undefined ? String(v) : "·";
+  return v !== undefined ? String(v) : "";
 }
 
 /* Column-measure picture shapes, cycled so no two adjacent figures share a
@@ -1204,9 +1203,9 @@ export function ChapterBlock({
                chart at column measure would drop its labels to about 3.6pt,
                and because a column-span element inside a fragmented multicol
                strands a balanced row above it. */
-            const isWide = (b: { type: string; head?: string[] }) =>
+            const isWide = (b: { type: string; head?: string[]; printProse?: string[] }) =>
               b.type === "chart" ||
-              (b.type === "table" && (b.head?.length ?? 0) > 2);
+              (b.type === "table" && !b.printProse && (b.head?.length ?? 0) > 2);
 
             const rendered = blocks.map((block, i) => {
             // One form per dataset in print: when a chart follows a table
@@ -1224,6 +1223,23 @@ export function ChapterBlock({
             }
             if (block.type === "paragraph") {
               return <p key={i}>{domainsOnly(block.text)}</p>;
+            }
+            if (block.type === "table" && block.printProse) {
+              /* Tables the editors have written out as text (15 November
+                 2026): the same figures set as running text in the flow,
+                 with the source line kept. */
+              return (
+                <div key={i} className="data-spread__prose">
+                  {block.printProse
+                    .filter((t) => t.trim())
+                    .map((t, pi) => (
+                      <p key={pi}>{domainsOnly(t.trim())}</p>
+                    ))}
+                  {block.sourceLine && (
+                    <p className="data-spread__source">{domainsOnly(block.sourceLine)}</p>
+                  )}
+                </div>
+              );
             }
             if (block.type === "table") {
               /* Short tables are kept whole: split, they strand a row or
