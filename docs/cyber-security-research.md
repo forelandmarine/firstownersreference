@@ -1,6 +1,6 @@
 # Cyber, navigation integrity and payment security: research note
 
-19 November 2026. Prepared for the editors ahead of a possible chapter 07 section and a guest contribution from Diego Zanco (DeepBlue). Nothing here is in the published text yet. Items marked UNVERIFIED need a primary check before print.
+19 November 2026. Prepared for the editors ahead of a possible chapter 07 section and a guest contribution from Diego Zanco (DeepBlue). Decided 19 Nov 2026 for the 1st Edition: chapter 07 section "Connectivity, cyber risk and navigation" (before the insurance section), one closing paragraph in chapter 04, three checklist items (ch04 closing, ch07 management and insurance) and glossary entries GNSS interference, Business email compromise and CL380. Unverified items below were left out of the text. Diego Zanco's question doc: editorial/contributor-docs/Diego Zanco - Chapter 07.docx (built by editorial/build_zanco_questions.py), not yet sent.
 
 ## 1. Where the subject sits in the book
 

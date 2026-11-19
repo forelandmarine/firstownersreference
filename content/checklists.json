@@ -221,7 +221,7 @@
   },
   "04-acquisition-process": {
     "slug": "04-acquisition-process",
-    "title": "Fifteen items to complete before closing.",
+    "title": "Sixteen items to complete before closing.",
     "standfirst": "A reference list across the 12 to 24 week acquisition window. Most of the work comes well before closing.",
     "intent": "The contract terms are fixed at closing, and most of the work that determines them is done in the first ten weeks. Complete the items below in that period.",
     "groups": [
@@ -295,6 +295,9 @@
             "question": "A 3 to 5 day technical handover with the seller’s captain, the buyer’s captain, and the chief engineer."
           },
           {
+            "question": "Deposit and balance account details confirmed by telephone with the stakeholder, on a number obtained independently, before each transfer."
+          },
+          {
             "question": "A closing date the buyer will not bring forward under pressure.",
             "detail": "An early close suits the seller and the parties paid on completion; the buyer carries what was not checked."
           }
@@ -302,7 +305,7 @@
       }
     ],
     "printable": "The page is designed to print onto a single A4. Tick items in writing as the process progresses. File with the closing documents.",
-    "seoTitle": "Yacht acquisition checklist: 15 items in 12 to 24 weeks",
+    "seoTitle": "Yacht acquisition checklist: 16 items in 12 to 24 weeks",
     "seoDescription": "A printable list across the acquisition window. The contract is fixed at closing, and most of the work is done in the first ten weeks."
   },
   "05-new-build-versus-brokerage": {
@@ -546,6 +549,10 @@
           },
           {
             "question": "Contract terms that protect the buyer’s interests in flag-state interactions, ISM and MLC compliance where they apply, and audits."
+          },
+          {
+            "question": "A written payment procedure: two approvals above an agreed threshold, and any change of bank details confirmed by telephone to a number already held.",
+            "detail": "Most documented yacht cyber losses are payments sent to a substituted account."
           }
         ]
       },
@@ -560,6 +567,9 @@
           },
           {
             "question": "P&I cover (crew injury, environmental, third-party, charter guest claims) at USD 500 m third-party limit through Shipowners’ Club or Steamship Mutual."
+          },
+          {
+            "question": "Written confirmation from the broker of whether cyber-caused loss is covered or excluded under CL380."
           }
         ]
       },

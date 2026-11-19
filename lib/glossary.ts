@@ -374,6 +374,36 @@ export const glossaryEntries: GlossaryEntry[] = [
     relatedTerms: ["ais", "ism"],
   },
   {
+    slug: "gnss-interference",
+    term: "GNSS interference",
+    shortDefinition:
+      "Jamming or spoofing of satellite positioning (GNSS, of which GPS is one system). Jamming blocks the signal; spoofing replaces it with a false position.",
+    longDefinition:
+      "Interference is now routine in parts of the Baltic, the eastern Mediterranean and the Gulf. AIS, DSC radio, EPIRBs and man-overboard alarms all take their position from GNSS, so a spoofed position can be broadcast in a distress alert. The usual check is radar against the chart: a coastline offset from where the chart shows it while GNSS looks steady is a sign of spoofing. A second GNSS receiver is no check, since it receives the same signals. Interference maps such as gpsjam.org are published daily.",
+    relatedChapters: ["07-operations"],
+    relatedTerms: ["ais", "ecdis"],
+  },
+  {
+    slug: "business-email-compromise",
+    term: "Business email compromise",
+    shortDefinition:
+      "Fraud in which a criminal impersonates, or takes over, a genuine email account and asks for payment to a new bank account.",
+    longDefinition:
+      "Most documented cyber losses in yachting take this form. The request usually arrives in a real email thread or from an address one character different from a known one, and asks for an invoice, deposit or charter payment to be sent to changed bank details. The control is to confirm any change of bank details by telephone to a number already held, never one given in the request. Closing funds in an acquisition and stage payments in a build are the largest exposures.",
+    relatedChapters: ["04-acquisition-process", "07-operations"],
+    relatedTerms: ["moa", "stage-payments", "cl380"],
+  },
+  {
+    slug: "cl380",
+    term: "CL380",
+    shortDefinition:
+      "The Institute Cyber Attack Exclusion Clause (2003), which removes loss caused by a cyber attack from many marine hull wordings unless it is written back.",
+    longDefinition:
+      "Where CL380 applies, a cyber-caused loss is not covered by the hull policy. Cover can be restored by a buy-back endorsement or bought as standalone marine cyber cover. The broker should confirm in writing which applies to the yacht’s programme.",
+    relatedChapters: ["07-operations"],
+    relatedTerms: ["hull-insurance", "p-and-i", "business-email-compromise"],
+  },
+  {
     slug: "eng1",
     term: "ENG1",
     shortDefinition:
